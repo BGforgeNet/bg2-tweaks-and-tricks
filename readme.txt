@@ -1,25 +1,21 @@
 ##Cheese-of-use mod for Baldur's Gate 2
 
-Version 1
+**Version 1**
 
 This mod aims to fix/tweak the most annoying aspects of the game. Some of the components may be considered cheats, others are just convenience tweaks.
 
 ###Components
 
-#### Smarter familiars
+- Smarter familiars
+  Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory).
+  Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
 
-Make the familiars smarter:
+  **Note:**
+  * This component has an issue: familiars will pick up items from closed or trapped chests. It's a limitation of the engine that I didn't find a workaround for.
+  * The less they're told to pick up, the faster they'll do that. So, try to keep the lists short. For example, don't tell them to pick up bandit scalps in BG2.
 
-- Allow them to pick up loot for you (move chosen items from the floor and chests to your inventory).
-- Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
-
-**Notes:**
-- This components has an issue: familiars will pick up items from closed or trapped chests. It's a limitation of the engine that I didn't find a workaround for.
-- The less they're told to pick up, the faster they'll do that. So, try to keep the lists short. For example, don't tell them to pick up bandit scalps in BG2.
-
-#### Faster familiars
-
-Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
+- Faster familiars
+  Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
 
 #### Fair fights
 
@@ -36,3 +32,12 @@ Currently affects:
 #### No reputation loss on using Slayer form
 
 The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
+
+###Author
+- burner1024 @ Github
+
+###License
+- It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
+
+###Changelog
+* Version 1: initial release.
