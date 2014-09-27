@@ -4,7 +4,7 @@ This mod aims to fix/tweak the most annoying aspects of the game. Some of the co
 
 - [Components](#components)
  - [Smarter familiars](#smarter-familiars)
-  - Note(#note)
+   - [Note](#note)
  - [Faster familiars](#faster-familiars)
  - [Fair fights](#fair-fights)
  - [No reputation loss on using Slayer form](#no-reputation-loss-on-using-slayer-form)
