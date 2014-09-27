@@ -1,0 +1,372 @@
+//when asked to hide into pack, stay there until released
+//once released, can go in/out of pack as directed before
+
+OUTER_SPRINT JumpToPack ~
+IF
+  Global("g_FamJumpToPack","LOCALS",1)
+  OR(2)
+    !CombatCounterLT(1)
+    See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    GiveItemCreate("fam%familiar%",Player1,0,0,0)
+    DestroySelf()
+END
+~
+
+OUTER_SPRINT JumpToPackInjured ~
+IF
+  Global("g_FamJumpToPackInjured","LOCALS",1)
+  HPPercentLT(Myself,50)
+  OR(2)
+    !CombatCounterLT(1)
+    See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    GiveItemCreate("fam%familiar%",Player1,0,0,0)
+    DestroySelf()
+END
+~
+
+OUTER_SPRINT FollowMaster ~
+IF
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  !Detect(Player1)
+  Global("g_FamFollowMaster","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToObject(Player1)
+    SetInterrupt(TRUE)
+    Continue()
+END
+~
+
+OUTER_SPRINT FollowMasterSee ~
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  !Range(Player1,10)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Player1)
+    Continue()
+END
+~
+
+OUTER_SPRINT FollowMasterBetweenAreas ~
+IF
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  !InMyArea(Player1)
+  Global("g_FamFollowMaster","LOCALS",1)
+THEN
+  RESPONSE #100
+    MoveGlobalObject(Myself,Player1)
+    Continue()
+END
+~
+
+OUTER_SPRINT CheckInventoryFull ~
+//Don't pickup anything if player's inventory is full
+//NOTE: Cuts off the rest of the script
+IF
+  HasItemSlot(Player1,SLOT_MISC18)
+  HasItemSlot(Player1,SLOT_MISC17)
+  HasItemSlot(Player1,SLOT_MISC16)
+  HasItemSlot(Player1,SLOT_MISC15)
+  HasItemSlot(Player1,SLOT_MISC14)
+  HasItemSlot(Player1,SLOT_MISC13)
+  HasItemSlot(Player1,SLOT_MISC12)
+  HasItemSlot(Player1,SLOT_MISC11)
+  HasItemSlot(Player1,SLOT_MISC10)
+  HasItemSlot(Player1,SLOT_MISC9)
+  HasItemSlot(Player1,SLOT_MISC8)
+  HasItemSlot(Player1,SLOT_MISC7)
+  HasItemSlot(Player1,SLOT_MISC6)
+  HasItemSlot(Player1,SLOT_MISC5)
+  HasItemSlot(Player1,SLOT_MISC4)
+  HasItemSlot(Player1,SLOT_MISC3)
+  !GlobalTimerNotExpired("g_FamInventoryNotifyTimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobal("g_FamInventoryFull","LOCALS",1)
+    DisplayStringHead(Myself,@15)
+    SetGlobalTimer("g_FamInventoryNotifyTimer","LOCALS",18)
+END
+~
+
+OUTER_SPRINT CheckInventoryNotFull ~
+IF
+  Global("g_FamInventoryFull","LOCALS",1)
+  OR(16)
+    !HasItemSlot(Player1,SLOT_MISC18)
+    !HasItemSlot(Player1,SLOT_MISC17)
+    !HasItemSlot(Player1,SLOT_MISC16)
+    !HasItemSlot(Player1,SLOT_MISC15)
+    !HasItemSlot(Player1,SLOT_MISC14)
+    !HasItemSlot(Player1,SLOT_MISC13)
+    !HasItemSlot(Player1,SLOT_MISC12)
+    !HasItemSlot(Player1,SLOT_MISC11)
+    !HasItemSlot(Player1,SLOT_MISC10)
+    !HasItemSlot(Player1,SLOT_MISC9)
+    !HasItemSlot(Player1,SLOT_MISC8)
+    !HasItemSlot(Player1,SLOT_MISC7)
+    !HasItemSlot(Player1,SLOT_MISC6)
+    !HasItemSlot(Player1,SLOT_MISC5)
+    !HasItemSlot(Player1,SLOT_MISC4)
+    !HasItemSlot(Player1,SLOT_MISC3)
+THEN
+  RESPONSE #100
+    SetGlobal("g_FamInventoryFull","LOCALS",0)
+  Continue()
+END
+~
+
+OUTER_SPRINT PickupGold ~
+//Pickup gold, 10 times
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupGold","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  PickUpItem("misc07")
+  Continue()
+END
+~
+
+OUTER_SPRINT PickupScalps ~
+//Pickup scalps, 5 times
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupScalps","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupJewelsCommon ~
+//Pickup common jewelry, 2 times
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupJewelsCommon","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupJewelsCommon_action%
+    %g_FamPickupJewelsCommon_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupPotionsCommon ~
+//Pickup common potions x3
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupPotions","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupPotionsCommon_action%
+    %g_FamPickupPotionsCommon_action%
+    %g_FamPickupPotionsCommon_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupAmmoMagic ~
+//Pickup (common) magical ammo, 2 times
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupAmmo","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupAmmoMagic_action%
+    %g_FamPickupAmmoMagic_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupJewelryRare ~
+//Pickup rare jewelry
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupJewelsRare","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupJewelsRare_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupPotionsRare ~
+//Pickup rare potions x2
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupPotions","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupPotionsRare_action%
+    %g_FamPickupPotionsRare_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupJewelsMagic ~
+//Pickup magic jewelry
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupJewelsMagic","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupJewelsMagic_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupAmmoMagicRare ~
+//Pickup (rare) magical ammo, 2 times
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupAmmo","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupAmmoMagicRare_action%
+    %g_FamPickupAmmoMagicRare_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupJewelsMagicRare ~
+//Pickup rare magic jewelry
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupJewelsMagicRare","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupJewelsMagicRare_action%
+    Continue()
+END
+~
+
+OUTER_SPRINT PickupScrolls ~
+//Pickup scrolls
+IF
+  ActionListEmpty()
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  Detect(Player1)
+  Global("g_FamPickupScrolls","LOCALS",1)
+  Global("g_FamInventoryFull","LOCALS",0)
+THEN
+  RESPONSE #100
+    %g_FamPickupScrolls_action%
+    Continue()
+END
+~
+
+//actual script
+<<<<<<<< .../cheese-inlined/g_%familiar%.baf
+
+%JumpToPack%
+%JumpToPackInjured%
+%FollowMaster%
+
+%CheckInventoryNotFull%
+
+%CheckInventoryFull%
+%PickupGold%
+
+%CheckInventoryFull%
+%PickupScalps%
+
+%CheckInventoryFull%
+%PickupJewelsCommon%
+
+%CheckInventoryFull%
+%PickupPotionsCommon%
+
+%CheckInventoryFull%
+%PickupAmmoMagic%
+
+%CheckInventoryFull%
+%PickupJewelryRare%
+
+%CheckInventoryFull%
+%PickupPotionsRare%
+
+%CheckInventoryFull%
+%PickupJewelsMagic%
+
+%CheckInventoryFull%
+%PickupAmmoMagicRare%
+
+%CheckInventoryFull%
+%PickupJewelsMagicRare%
+
+%CheckInventoryFull%
+%PickupScrolls%
+
+%FollowMasterSee%
+
+%FollowMasterBetweenAreas%
+
+>>>>>>>>

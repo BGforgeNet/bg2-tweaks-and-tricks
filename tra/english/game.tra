@@ -1,0 +1,28 @@
+//-*- coding: cp1252 -*-
+//These strings are displayed in-game and are encoded in CP1252
+
+@1 = ~Uh, this one is locked.~
+@2 = ~Uh, I smell a trap.~
+@3 = ~Looking for gold...~
+@4 = ~Finished looking for gold.~
+@5 = ~Looking for scalps...~
+@6 = ~Finished looking for scalps.~
+@7 = ~Looking for common ammo...~
+@8 = ~Finished looking for common ammo.~
+@9 = ~Looking for common jewels...~
+@10 = ~Finished looking for common jewels.~
+@11 = ~Looking for common potions...~
+@12 = ~Finished looking for common potions.~
+@13 = ~Looking for scrolls...~
+@14 = ~Finished looking for scrolls.~
+@15 = ~Boss, your pack is full.~
+@16 = ~Looking for rare jewels...~
+@17 = ~Finished looking for rare jewels.~
+@18 = ~Looking for rare potions...~
+@19 = ~Finished looking for rare potions.~
+@20 = ~Looking for magic jewels...~
+@21 = ~Finished looking for magic jewels.~
+@22 = ~Looking for rare ammo...~
+@23 = ~Finished looking for rare ammo.~
+@24 = ~Looking for rare magic jewels...~
+@25 = ~Finished looking for rare magic jewels.~

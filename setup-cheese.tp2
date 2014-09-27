@@ -1,0 +1,325 @@
+BACKUP ~cheese/backup~
+AUTHOR "burner1024 @ github"
+VERSION ~1~
+
+README ~cheese/readme.html~
+ASK_EVERY_COMPONENT
+LANGUAGE ~English~ ~ENGLISH~ ~cheese/tra/english/game.tra~
+
+BEGIN ~Smarter familiars~
+REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
+
+OUTER_SPRINT NewLine ~
+~
+OUTER_SPRINT g_FamPickupJewels_action ~~
+OUTER_SPRINT g_FamPickupJewelsCommon_action ~~
+OUTER_SPRINT g_FamPickupJewelsRare_action ~~
+OUTER_SPRINT g_FamPickupJewelsMagic_action ~~
+OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~~
+OUTER_SPRINT g_FamPickupAmmoMagic_action ~~
+OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~~
+OUTER_SPRINT g_FamPickupPotionsCommon_action ~~
+OUTER_SPRINT g_FamPickupPotionsRare_action ~~
+OUTER_SPRINT g_FamPickupScrolls_action ~~
+
+INCLUDE ~cheese/familiars/autoloot_lists.tph~
+
+COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
+  PATCH_IF (%SOURCE_SIZE% >= 114) BEGIN
+  READ_ASCII 0x003a ~invicon~ ELSE ~No File~  (8) NULL  //8 (resref) Inventory icon
+  READ_ASCII 0x0044 ~groundicon~ ELSE ~No File~(8) NULL //8 (resref) Ground icon
+  READ_ASCII 0x0058 ~descicon~ ELSE ~No File~  (8) NULL //8 (resref) Description icon
+    //following should weed out many player unusable items
+    PATCH_IF ( (FILE_EXISTS_IN_GAME ~%invicon%.bam~)
+           AND (FILE_EXISTS_IN_GAME ~%groundicon%.bam~)
+           AND (FILE_EXISTS_IN_GAME ~%descicon%.bam~) ) BEGIN
+    READ_BYTE 0x18 ~flags~
+    READ_SHORT 0x001c ~item_type~
+    PATCH_IF ((%flags% BAND "0b00000100") = "0b00000100")  // droppable
+         AND ((%flags% BAND "0b00001000") = "0b00001000") BEGIN // displayable in shop
+
+    //Gems
+    PATCH_IF (%item_type%==0x0022) BEGIN
+      PATCH_IF (VARIABLE_IS_SET $g_GemsCommon(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_GemsRare(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+    //Rings
+    PATCH_IF (%item_type%==0x000a) BEGIN
+      PATCH_IF (VARIABLE_IS_SET $g_RingsCommon(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_RingsRare(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_RingsMagic(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_RingsMagicRare(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+    //Necklaces
+    PATCH_IF (%item_type%==0x0001) BEGIN
+      PATCH_IF (VARIABLE_IS_SET $g_NecklacesCommon(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_NecklacesRare(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_NecklacesMagic(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+      PATCH_IF (VARIABLE_IS_SET $g_NecklacesMagicRare(~%SOURCE_RES%~)) BEGIN
+            SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+
+        //Ammo: arrows
+        PATCH_IF (%item_type%==0x0005) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagic(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagicRare(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+        //Ammo: bolts
+        PATCH_IF (%item_type%==0x001f) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $g_BoltsMagic(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        PATCH_IF (VARIABLE_IS_SET $g_BotlsMagicRare(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+        //Ammo: darts
+        PATCH_IF (%item_type%==0x0018) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $g_DartsMagic(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        PATCH_IF (VARIABLE_IS_SET $g_DartsMagicRare(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+        //Ammo: bullets
+        PATCH_IF (%item_type%==0x000e) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $g_BulletsMagic(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        PATCH_IF (VARIABLE_IS_SET $g_BulletsMagicRare(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+
+        //Potions
+        PATCH_IF (%item_type%==0x0009) BEGIN
+        PATCH_IF (VARIABLE_IS_SET $g_PotionsCommon(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupPotionsCommon_action ~%g_FamPickupPotionsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        PATCH_IF (VARIABLE_IS_SET $g_PotionsRare(~%SOURCE_RES%~)) BEGIN
+              SPRINT g_FamPickupPotionsRare_action ~%g_FamPickupPotionsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+      END
+        END
+
+        //Scrolls
+        PATCH_IF (%item_type%==0x000b AND (VARIABLE_IS_SET $g_Scrolls(~%SOURCE_RES%~))) BEGIN
+          SPRINT g_FamPickupScrolls_action ~%g_FamPickupScrolls_action%%NewLine%PickUpItem("%SOURCE_RES%")~
+        END
+    END
+  END
+ END
+BUT_ONLY
+//Daggers: there only one type of throwing daggers worth picking up: poisoned throwing daggers
+OUTER_SPRINT g_FamPickupAmmoRare_action ~%g_FamPickupAmmoRare_action%%NewLine%PickUpItem("DAGG16")~
+
+<<<<<<<< .../cheese-inlined/g_familiar_jumpout.baf
+IF
+  Global("g_FamiliarJumpOut","GLOBAL",1)
+  Global("g_FamStayInPack","GLOBAL",0)
+  HasItem("fam%familiar%",Player1)
+  Delay(10)
+    CombatCounterLT(1)
+    CombatCounter(0)
+    !CombatCounterGT(0)
+    !ActuallyInCombat()
+    !OnScreen([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,DestroyItem("fam%familiar%"))
+    MoveGlobalObject("fam%familiar%",Player1)
+    Continue()
+END
+>>>>>>>>
+
+//SoA
+ACTION_FOR_EACH familiar IN
+  cat
+  dust
+  fair
+  fer
+  imp
+  psd
+  quas
+  rab
+BEGIN
+  INCLUDE ~cheese/familiars/g_fam.baf.tph~
+  COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
+  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
+    COPY_EXISTING ~fam%familiar%.cre~ ~override~
+      WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
+    BUT_ONLY
+  END
+  EXTEND_BOTTOM ~baldur.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
+END
+
+//ToB
+ACTION_FOR_EACH familiar IN
+  cat25
+  dus25
+  fai25
+  fer25
+  imp25
+  psd25
+  quas25
+  rab25
+BEGIN
+  INCLUDE ~cheese/familiars/g_fam.baf.tph~
+  COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
+  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
+    COPY_EXISTING ~fam%familiar%.cre~ ~override~
+      WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
+    BUT_ONLY
+  END
+  EXTEND_BOTTOM ~baldur25.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
+END
+
+ACTION_FOR_EACH familiar_dialog IN
+  famil1
+  famil125
+  famil2
+  famil225
+  famil3
+  famil325
+BEGIN
+  COMPILE EVAL ~cheese/familiars/familiars.d~
+END
+
+
+<<<<<<<< .../cheese-inlined/g_lock.baf
+IF
+  Global("g_ContUnlocked","LOCALS",0)
+  Range([FAMILIAR],15)
+THEN
+  RESPONSE #100
+    Shout(G_LOCK)
+    ActionOverride([FAMILIAR],SetGlobal("g_FamSeeLock","LOCALS",1))
+    ActionOverride([PC],DisplayStringHead(Myself,1))
+    DisplayStringHead(Myself,2)
+    Continue()
+END
+
+IF
+  Unlocked([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_ContUnlocked","LOCALS",1)
+    DisplayStringHead(Myself,3)
+    Continue()
+END
+>>>>>>>>
+
+<<<<<<<< .../cheese-inlined/g_trap.baf
+IF
+  Global("g_TrapDisarmed","LOCALS",0)
+  See([FAMILIAR])
+THEN
+  RESPONSE #100
+    ActionOverride(LastSeenBy,SetGlobal("g_FamSeeTrap","LOCALS",1))
+    Continue()
+END
+
+IF
+  OR(2)
+    Disarmed([ANYONE])
+    TrapTriggered([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_TrapDisarmed","LOCALS",1)
+    Continue()
+END
+
+IF
+  Reset([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_TrapDisarmed","LOCALS",0)
+    Continue()
+END
+>>>>>>>>
+
+BEGIN ~Faster familiars~
+REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
+ACTION_FOR_EACH familiar IN
+  cat
+  cat25
+  dust
+  dus25
+  fair
+  fai25
+  fer
+  fer25
+  imp
+  imp25
+  psd
+  psd25
+  quas
+  quas25
+  rab
+  rab25
+BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
+    COPY_EXISTING ~fam%familiar%.cre~ ~override~
+      REPLACE_CRE_ITEM ~boot01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~BOOTS~
+    BUT_ONLY
+  END
+END
+
+BEGIN ~Fair fights~
+
+//Borda the cheating magic merchant
+ACTION_IF FILE_EXISTS_IN_GAME ~borda.cre~ BEGIN  
+  COPY_EXISTING ~borda.cre~ ~override~
+    WRITE_BYTE 0x005d 0 //magic resistance
+  BUT_ONLY
+END
+
+//Shandalar, Ulgoth's Beard mage
+ACTION_IF FILE_EXISTS_IN_GAME ~shandal2.cre~ BEGIN  
+  COPY_EXISTING ~shandal2.cre~ ~override~
+    //Nullify all resistances
+    PATCH_FOR_EACH offset IN 0x59 0x5a 0x5b 0x5c 0x5d 0x5e 0x5f 0x60 0x61 0x62 0x63 BEGIN
+      WRITE_BYTE %offset% 0
+    END
+    //Set human natural AC
+    WRITE_BYTE 0x46 10
+    //Set cleric-mage class instead of innocent
+    WRITE_BYTE 0x273 14
+    //Set alignment to CN
+    WRITE_BYTE 0x27b 50
+  BUT_ONLY
+END
+
+//Arkanis Gath (on attacking Renal)
+COPY_EXISTING ~stdeath.cre~ ~override~
+  REPLACE_CRE_ITEM ~sw1h10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~weapon1~
+BUT_ONLY
+
+//Marchol Harpell
+COMPILE ~cheese/fair_fights/malchor.d~
+
+BEGIN ~No reputation loss on using Slayer form~
+COMPILE ~cheese/slayer/slayer.d~
