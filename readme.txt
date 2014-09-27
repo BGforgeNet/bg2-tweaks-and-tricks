@@ -3,10 +3,10 @@
 This mod aims to fix/tweak the most annoying aspects of the game. Some of the components may be considered cheats, others are just convenience tweaks.
 
 - [Components](#components)
- - [Smarter familiars](#smarter familiars)
- - [Faster familiars](#faster familiars)
- - [Fair fights](#fair fights)
- - [No reputation loss on using Slayer form](#No reputation loss on using Slayer form)
+ - [Smarter familiars](#smarter-familiars)
+ - [Faster familiars](#faster-familiars)
+ - [Fair fights](#fair-fights)
+ - [No reputation loss on using Slayer form](#no-reputation-loss-on-using-slayer-form)
 - [Changelog](#changelog)
 - [License](#license)
 - [Author](#author)
