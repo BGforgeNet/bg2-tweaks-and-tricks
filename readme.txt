@@ -4,6 +4,7 @@ This mod aims to fix/tweak the most annoying aspects of the game. Some of the co
 
 - [Components](#components)
  - [Smarter familiars](#smarter-familiars)
+  - Note(#note)
  - [Faster familiars](#faster-familiars)
  - [Fair fights](#fair-fights)
  - [No reputation loss on using Slayer form](#no-reputation-loss-on-using-slayer-form)
@@ -17,7 +18,7 @@ This mod aims to fix/tweak the most annoying aspects of the game. Some of the co
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory).
 - Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
 
-**Note:**
+######Note
 - This component has an issue: familiars will pick up items from closed or trapped chests. It's a limitation of the engine that I didn't find a workaround for.
 - The less they're told to pick up, the faster they'll do that. So, try to keep the lists short. For example, don't tell them to pick up bandit scalps in BG2.
 
