@@ -2,7 +2,7 @@ BACKUP ~cheese/backup~
 AUTHOR "burner1024 @ github"
 VERSION ~1~
 
-README ~cheese/readme.html~
+README ~cheese/readme.txt~
 ASK_EVERY_COMPONENT
 LANGUAGE ~English~ ~ENGLISH~ ~cheese/tra/english/game.tra~
 
