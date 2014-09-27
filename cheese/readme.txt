@@ -1,6 +1,6 @@
 ##Cheese-of-use mod for Baldur's Gate 2
 
-This mod aims to fix/tweak the most annoying aspects of the game. Some of the components may be considered cheats, others are just convenience tweaks.
+This mod aims to fix/tweak the most annoying aspects of the game. Some of the components may be considered cheats, others are just convenience tweaks. It will work with BG2 or BGT. Tested only with BG2 fixpack.
 
 - [Components](#components)
  - [Smarter familiars](#smarter-familiars)
@@ -8,9 +8,10 @@ This mod aims to fix/tweak the most annoying aspects of the game. Some of the co
  - [Faster familiars](#faster-familiars)
  - [Fair fights](#fair-fights)
  - [No reputation loss on using Slayer form](#no-reputation-loss-on-using-slayer-form)
-- [Changelog](#changelog)
+- [Installation](#installation)
 - [License](#license)
 - [Author](#author)
+- [Changelog](#changelog)
 
 ###Components
 
@@ -34,6 +35,12 @@ A few opponents in the game basically cheat, or just have unrealistic stats. Som
 
 ##### No reputation loss on using Slayer form
 The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
+
+###Installation
+- Download the [archive](https://github.com/burner1024/bg2-cheese-of-use/archive/master.zip)
+- Unzip it
+- Move "cheese" and "setup-cheese.exe" into the game directory
+- Launch setup-cheese.exe
 
 ###License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
