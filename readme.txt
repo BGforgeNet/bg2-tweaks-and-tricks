@@ -24,9 +24,7 @@ This mod aims to fix/tweak the most annoying aspects of the game. Some of the co
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
 
 ####Fair fights
-A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square.
-
-Currently affects:
+A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
 - Arcanis Gath, the thief that insta-kills you on attacking Renal (now you can fight him, he has a normal sword)
 - Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
