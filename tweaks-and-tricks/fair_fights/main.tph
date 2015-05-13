@@ -1,0 +1,30 @@
+//Borda the cheating magic merchant
+ACTION_IF FILE_EXISTS_IN_GAME ~borda.cre~ BEGIN  
+  COPY_EXISTING ~borda.cre~ ~override~
+    WRITE_BYTE 0x005d 0 //magic resistance
+  BUT_ONLY
+END
+
+//Shandalar, Ulgoth's Beard mage
+ACTION_IF FILE_EXISTS_IN_GAME ~shandal2.cre~ BEGIN  
+  COPY_EXISTING ~shandal2.cre~ ~override~
+    //Nullify all resistances
+    PATCH_FOR_EACH offset IN 0x59 0x5a 0x5b 0x5c 0x5d 0x5e 0x5f 0x60 0x61 0x62 0x63 BEGIN
+      WRITE_BYTE %offset% 0
+    END
+    //Set human natural AC
+    WRITE_BYTE 0x46 10
+    //Set cleric-mage class instead of innocent
+    WRITE_BYTE 0x273 14
+    //Set alignment to CN
+    WRITE_BYTE 0x27b 50
+  BUT_ONLY
+END
+
+//Arkanis Gath (on attacking Renal)
+COPY_EXISTING ~stdeath.cre~ ~override~
+  REPLACE_CRE_ITEM ~sw1h10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~weapon1~
+BUT_ONLY
+
+//Marchol Harpell
+COMPILE ~tweaks-and-tricks/fair_fights/malchor.d~

@@ -1,0 +1,24 @@
+ACTION_FOR_EACH familiar IN
+  cat
+  cat25
+  dust
+  dus25
+  fair
+  fai25
+  fer
+  fer25
+  imp
+  imp25
+  psd
+  psd25
+  quas
+  quas25
+  rab
+  rab25
+BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
+    COPY_EXISTING ~fam%familiar%.cre~ ~override~
+      REPLACE_CRE_ITEM ~boot01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~BOOTS~
+    BUT_ONLY
+  END
+END

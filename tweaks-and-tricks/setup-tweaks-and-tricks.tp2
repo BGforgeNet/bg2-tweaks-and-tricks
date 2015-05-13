@@ -6,6 +6,7 @@ README ~tweaks-and-tricks/readme.txt~
 ASK_EVERY_COMPONENT
 //MODDER
 
+
 //i'm just lazy, okay? it's for npc soundsets to pc 
 ALLOW_MISSING
 ~kivan12.wav~ ~kivan13.wav~ ~kivan14.wav~ ~kivan15.wav~ ~kivan16.wav~
@@ -47,361 +48,34 @@ ALLOW_MISSING
 
 LANGUAGE ~English~ ~ENGLISH~ ~tweaks-and-tricks/tra/english/game.tra~
 
+
+
 BEGIN ~Smarter familiars~
 REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
-
-OUTER_SPRINT NewLine ~
-~
-OUTER_SPRINT g_FamPickupJewels_action ~~
-OUTER_SPRINT g_FamPickupJewelsCommon_action ~~
-OUTER_SPRINT g_FamPickupJewelsRare_action ~~
-OUTER_SPRINT g_FamPickupJewelsMagic_action ~~
-OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~~
-OUTER_SPRINT g_FamPickupAmmoMagic_action ~~
-OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~~
-OUTER_SPRINT g_FamPickupPotionsCommon_action ~~
-OUTER_SPRINT g_FamPickupPotionsRare_action ~~
-OUTER_SPRINT g_FamPickupScrolls_action ~~
-
-INCLUDE ~tweaks-and-tricks/familiars/autoloot_lists.tph~
-
-COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
-  PATCH_IF (%SOURCE_SIZE% >= 114) BEGIN
-  READ_ASCII 0x003a ~invicon~ ELSE ~No File~  (8) NULL  //8 (resref) Inventory icon
-  READ_ASCII 0x0044 ~groundicon~ ELSE ~No File~(8) NULL //8 (resref) Ground icon
-  READ_ASCII 0x0058 ~descicon~ ELSE ~No File~  (8) NULL //8 (resref) Description icon
-    //following should weed out many player unusable items
-    PATCH_IF ( (FILE_EXISTS_IN_GAME ~%invicon%.bam~)
-           AND (FILE_EXISTS_IN_GAME ~%groundicon%.bam~)
-           AND (FILE_EXISTS_IN_GAME ~%descicon%.bam~) ) BEGIN
-    READ_BYTE 0x18 ~flags~
-    READ_SHORT 0x001c ~item_type~
-    PATCH_IF ((%flags% BAND "0b00000100") = "0b00000100")  // droppable
-         AND ((%flags% BAND "0b00001000") = "0b00001000") BEGIN // displayable in shop
-
-    //Gems
-    PATCH_IF (%item_type%==0x0022) BEGIN
-      PATCH_IF (VARIABLE_IS_SET $g_GemsCommon(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_GemsRare(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-    //Rings
-    PATCH_IF (%item_type%==0x000a) BEGIN
-      PATCH_IF (VARIABLE_IS_SET $g_RingsCommon(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_RingsRare(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_RingsMagic(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_RingsMagicRare(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-    //Necklaces
-    PATCH_IF (%item_type%==0x0001) BEGIN
-      PATCH_IF (VARIABLE_IS_SET $g_NecklacesCommon(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_NecklacesRare(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_NecklacesMagic(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-      PATCH_IF (VARIABLE_IS_SET $g_NecklacesMagicRare(~%SOURCE_RES%~)) BEGIN
-            SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-
-        //Ammo: arrows
-        PATCH_IF (%item_type%==0x0005) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagic(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagicRare(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-        //Ammo: bolts
-        PATCH_IF (%item_type%==0x001f) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_BoltsMagic(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        PATCH_IF (VARIABLE_IS_SET $g_BotlsMagicRare(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-        //Ammo: darts
-        PATCH_IF (%item_type%==0x0018) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_DartsMagic(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        PATCH_IF (VARIABLE_IS_SET $g_DartsMagicRare(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-        //Ammo: bullets
-        PATCH_IF (%item_type%==0x000e) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_BulletsMagic(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        PATCH_IF (VARIABLE_IS_SET $g_BulletsMagicRare(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-
-        //Potions
-        PATCH_IF (%item_type%==0x0009) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_PotionsCommon(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupPotionsCommon_action ~%g_FamPickupPotionsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        PATCH_IF (VARIABLE_IS_SET $g_PotionsRare(~%SOURCE_RES%~)) BEGIN
-              SPRINT g_FamPickupPotionsRare_action ~%g_FamPickupPotionsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-        END
-
-        //Scrolls
-        PATCH_IF (%item_type%==0x000b AND (VARIABLE_IS_SET $g_Scrolls(~%SOURCE_RES%~))) BEGIN
-          SPRINT g_FamPickupScrolls_action ~%g_FamPickupScrolls_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-    END
-  END
- END
-BUT_ONLY
-//Daggers: there only one type of throwing daggers worth picking up: poisoned throwing daggers
-OUTER_SPRINT g_FamPickupAmmoRare_action ~%g_FamPickupAmmoRare_action%%NewLine%PickUpItem("DAGG16")~
-
-<<<<<<<< .../cheese-inlined/g_familiar_jumpout.baf
-IF
-  Global("g_FamiliarJumpOut","GLOBAL",1)
-  Global("g_FamStayInPack","GLOBAL",0)
-  HasItem("fam%familiar%",Player1)
-  Delay(10)
-    CombatCounterLT(1)
-    CombatCounter(0)
-    !CombatCounterGT(0)
-    !ActuallyInCombat()
-    !OnScreen([EVILCUTOFF])
-THEN
-  RESPONSE #100
-    ActionOverride(Player1,DestroyItem("fam%familiar%"))
-    MoveGlobalObject("fam%familiar%",Player1)
-    Continue()
-END
->>>>>>>>
-
-//SoA
-ACTION_FOR_EACH familiar IN
-  cat
-  dust
-  fair
-  fer
-  imp
-  psd
-  quas
-  rab
-BEGIN
-  INCLUDE ~tweaks-and-tricks/familiars/g_fam.baf.tph~
-  COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
-  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
-    COPY_EXISTING ~fam%familiar%.cre~ ~override~
-      WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
-    BUT_ONLY
-  END
-  EXTEND_BOTTOM ~baldur.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
-END
-
-//ToB
-ACTION_FOR_EACH familiar IN
-  cat25
-  dus25
-  fai25
-  fer25
-  imp25
-  psd25
-  quas25
-  rab25
-BEGIN
-  INCLUDE ~tweaks-and-tricks/familiars/g_fam.baf.tph~
-  COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
-  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
-    COPY_EXISTING ~fam%familiar%.cre~ ~override~
-      WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
-    BUT_ONLY
-  END
-  EXTEND_BOTTOM ~baldur25.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
-END
-
-ACTION_FOR_EACH familiar_dialog IN
-  famil1
-  famil125
-  famil2
-  famil225
-  famil3
-  famil325
-BEGIN
-  COMPILE EVAL ~tweaks-and-tricks/familiars/familiars.d~
-END
+INCLUDE ~tweaks-and-tricks/smarter_familiars/main.tph~
 
 
-<<<<<<<< .../cheese-inlined/g_lock.baf
-IF
-  Global("g_ContUnlocked","LOCALS",0)
-  Range([FAMILIAR],15)
-THEN
-  RESPONSE #100
-    Shout(G_LOCK)
-    ActionOverride([FAMILIAR],SetGlobal("g_FamSeeLock","LOCALS",1))
-    ActionOverride([PC],DisplayStringHead(Myself,1))
-    DisplayStringHead(Myself,2)
-    Continue()
-END
-
-IF
-  Unlocked([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_ContUnlocked","LOCALS",1)
-    DisplayStringHead(Myself,3)
-    Continue()
-END
->>>>>>>>
-
-<<<<<<<< .../cheese-inlined/g_trap.baf
-IF
-  Global("g_TrapDisarmed","LOCALS",0)
-  See([FAMILIAR])
-THEN
-  RESPONSE #100
-    ActionOverride(LastSeenBy,SetGlobal("g_FamSeeTrap","LOCALS",1))
-    Continue()
-END
-
-IF
-  OR(2)
-    Disarmed([ANYONE])
-    TrapTriggered([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_TrapDisarmed","LOCALS",1)
-    Continue()
-END
-
-IF
-  Reset([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_TrapDisarmed","LOCALS",0)
-    Continue()
-END
->>>>>>>>
 
 BEGIN ~Faster familiars~
 REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
-ACTION_FOR_EACH familiar IN
-  cat
-  cat25
-  dust
-  dus25
-  fair
-  fai25
-  fer
-  fer25
-  imp
-  imp25
-  psd
-  psd25
-  quas
-  quas25
-  rab
-  rab25
-BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
-    COPY_EXISTING ~fam%familiar%.cre~ ~override~
-      REPLACE_CRE_ITEM ~boot01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~BOOTS~
-    BUT_ONLY
-  END
-END
+INCLUDE ~tweaks-and-tricks/faster_familiars/main.tph~
+
+
 
 BEGIN ~Fair fights~
-
-//Borda the cheating magic merchant
-ACTION_IF FILE_EXISTS_IN_GAME ~borda.cre~ BEGIN  
-  COPY_EXISTING ~borda.cre~ ~override~
-    WRITE_BYTE 0x005d 0 //magic resistance
-  BUT_ONLY
-END
-
-//Shandalar, Ulgoth's Beard mage
-ACTION_IF FILE_EXISTS_IN_GAME ~shandal2.cre~ BEGIN  
-  COPY_EXISTING ~shandal2.cre~ ~override~
-    //Nullify all resistances
-    PATCH_FOR_EACH offset IN 0x59 0x5a 0x5b 0x5c 0x5d 0x5e 0x5f 0x60 0x61 0x62 0x63 BEGIN
-      WRITE_BYTE %offset% 0
-    END
-    //Set human natural AC
-    WRITE_BYTE 0x46 10
-    //Set cleric-mage class instead of innocent
-    WRITE_BYTE 0x273 14
-    //Set alignment to CN
-    WRITE_BYTE 0x27b 50
-  BUT_ONLY
-END
-
-//Arkanis Gath (on attacking Renal)
-COPY_EXISTING ~stdeath.cre~ ~override~
-  REPLACE_CRE_ITEM ~sw1h10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~weapon1~
-BUT_ONLY
-
-//Marchol Harpell
-COMPILE ~tweaks-and-tricks/fair_fights/malchor.d~
-
-BEGIN ~No reputation loss on using Slayer form~
-COMPILE ~tweaks-and-tricks/slayer/slayer.d~
-
-/*
-////detection files////
-extended soundsets:
-
-~Additions only~ g_esad.itm
-~BG1 soundsets dominate~ g_esbg1.itm
-~BG2 soundsets dominate~ g_esbg2.itm
-
-~Consistent Cloak of Mirroring~ g_mirr.itm
-
-~Cheesier Slayer Form~ g_slay.itm
-
-Adjust BG1-style interparty chit-chat to BG2 framerate:
-~40 frames per second~ g_frame40.itm
-~50 frames per second~ g_frame50.itm
-~60 frames per second~ g_frame60.itm
-~70 frames per second~ g_frame70.itm
-~80 frames per second~ g_frame80.itm
-~90 frames per second~ g_frame90.itm
-~Disable chit-chat at all (banters will occur anyway)~ g_frame0.itm
-
-~Effects of scrolls and potions do not stack with themselves~ g_eff.itm
-
-~Candlekeep bags~ g_cand.itm
-
-Add BG1 tomes stats bonuses to new BG2 characters:
-~Each stat gets +1~ g_stat1.itm
-~Each stat besides Wisdom gets +1, Wisdom gets +3~ g_stat2.itm
-
-*/
+INCLUDE ~tweaks-and-tricks/fair_fights/main.tph~
 
 
+BEGIN ~Cheesy Slayer: full heal on change~
+COMPILE ~tweaks-and-tricks/slayer/heal.d~
 
+BEGIN ~no loss~
+SUBCOMPONENT ~Cheesy Slayer: reputation~
+COMPILE ~tweaks-and-tricks/slayer/norep.d~
 
-
-
-
+BEGIN ~reduced loss~
+SUBCOMPONENT ~Cheesy Slayer: reputation~
+COMPILE ~tweaks-and-tricks/slayer/low_rep.d~
 
 
 
@@ -410,27 +84,22 @@ BEGIN ~Additions only~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 0
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_esad.itm~
-INCLUDE ~tweaks-and-tricks/extended_soundsets.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_esad.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
-BEGIN ~BG1 soundsets dominate~
+BEGIN ~BG1 soundsets prevail~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 1
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg1.itm~
-INCLUDE ~tweaks-and-tricks/extended_soundsets.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg1.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
-BEGIN ~BG2 soundsets dominate~
+BEGIN ~BG2 soundsets prevail~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 2
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~
-INCLUDE ~tweaks-and-tricks/extended_soundsets.tph~
-
-
+COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
 
 
@@ -454,131 +123,87 @@ BUT_ONLY_IF_IT_CHANGES
 
 
 
-
-
 //Adjust chit-chat to bg2 framerate
-BEGIN ~40 frames per second~
+BEGIN ~40 FPS~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 40
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame40.itm~
-INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame40.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
 
-BEGIN ~50 frames per second~
+BEGIN ~50 FPS~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 50
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame50.itm~
-INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame50.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
 
-BEGIN ~60 frames per second~
+BEGIN ~60 FPS~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 60
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame60.itm~
-INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame60.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
 
-BEGIN ~70 frames per second~
+BEGIN ~70 FPS~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 70
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame70.itm~
-INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame70.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
 
-BEGIN ~80 frames per second~
+BEGIN ~80 FPS~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 80
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame80.itm~
-INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame80.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
 
-BEGIN ~90 frames per second~
+BEGIN ~90 FPS~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 90
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame90.itm~
-INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame90.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
 
-BEGIN ~Disable chit-chat at all (banters will occur anyway).~
+BEGIN ~Disable chit-chat (banters will occur anyway)~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame0.itm~
-INCLUDE ~tweaks-and-tricks/disable_sounds.tph~
-
-
-
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame0.itm~ //dummy detection file
+INCLUDE ~tweaks-and-tricks/chitchat_framerate/disable.tph~
 
 
 
 BEGIN ~Consistent Cloak of Mirroring~
+INCLUDE ~tweaks-and-tricks/cloak_of_mirroring/main.tph~
 
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_mirr.itm~
 
-INCLUDE ~tweaks-and-tricks/tnt_macro.tph~
 
-COPY_EXISTING ~clck26.itm~   ~override~
-  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN
-    //deleting area spell immunities if any
-    LPF DELETE_ITEM_EQEFFECT
-      INT_VAR
-        opcode = 206
-    END
-
-    LPF ADD_ITEM_EQEFFECT
-      INT_VAR
-        opcode = 206 //spell immunity
-        target = 1 //self
-        timing = 2 //while equipped
-      STR_VAR
-        resource = ~sppr302~
-    END
-  END
-BUT_ONLY_IF_IT_CHANGES
-
-//what the title says
 BEGIN ~Make NPC soundsets available to PC~
-INCLUDE ~tweaks-and-tricks/npc_soundsets.tph~
+INCLUDE ~tweaks-and-tricks/npc_soundsets/main.tph~
 
 
 
-
-//give bg1 stat bonuses to new bg2 pcs
 BEGIN ~Each stat gets +1~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~
-ADD_SPELL ~tweaks-and-tricks/stats/g_stat1.spl~ 4 0 ~g_stats~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
+ADD_SPELL ~tweaks-and-tricks/stat_bonuses/g_stat1.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats.baf~
 
 BEGIN ~Each stat besides Wisdom gets +1, Wisdom gets +3~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~
-ADD_SPELL ~tweaks-and-tricks/stats/g_stat2.spl~ 4 0 ~g_stats~
-EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats.baf~
-
-
-
-
-
+COPY_EXISTING ~sw1h01.itm~ ~override/stat_bonuses/g_stat2.itm~ //dummy detection file
+ADD_SPELL ~tweaks-and-tricks/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
+EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
 
 
 
 BEGIN ~Effects of scrolls and potions do not stack with themselves~
-INCLUDE ~tweaks-and-tricks/tnt_macro.tph~
+INCLUDE ~tweaks-and-tricks/lib/macro.tph~
 
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~
-SAY NAME1 ~Potion effect refreshed~
-SAY NAME2 ~Protection scroll effect refreshed~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
+SAY NAME1 @26
+SAY NAME2 @27
 READ_LONG 0x8 pot_strref
 READ_LONG 0xc scr_strref
 BUT_ONLY_IF_IT_CHANGES
@@ -607,14 +232,11 @@ END
 
 
 
-
-
 //3 bags in candlekeep
 BEGIN ~Candlekeep bags~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~ //dummy detection file
 //gem bag
 COPY ~tweaks-and-tricks/bags/g_gem.itm~ ~override/g_gem.itm~
 COPY ~tweaks-and-tricks/bags/g_gem.sto~ ~override/g_gem.sto~
@@ -626,8 +248,8 @@ COPY ~tweaks-and-tricks/bags/g_pot.itm~ ~override/g_pot.itm~
 COPY ~tweaks-and-tricks/bags/g_pot.sto~ ~override/g_pot.sto~
 
 //dialog and script
-COPY ~tweaks-and-tricks/bags/g_bag.cre~ ~override/g_bag.cre~
+COPY ~tweaks-and-tricks/candlekeep_bags/g_bag.cre~ ~override/g_bag.cre~
 SAY NAME1 ~Thorius~
 SAY NAME2 ~Thorius~
-COMPILE ~tweaks-and-tricks/bags/g_bag.d~
+COMPILE ~tweaks-and-tricks/candlekeep_bags/g_bag.d~
 EXTEND_BOTTOM ~AR0015.bcs~ ~tweaks-and-tricks/bags/g_ar0015.baf~
