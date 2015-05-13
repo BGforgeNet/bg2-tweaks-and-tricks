@@ -1,0 +1,7 @@
+COPY_EXISTING_REGEXP ~.*\.cre~ ~override~
+  READ_ASCII  0x280 deathvar
+  PATCH_IF FILE_CONTAINS_EVALUATED(~pdialog.2da~ ~%deathvar%~)
+    THEN BEGIN
+      WRITE_LONG HIDDEN_IN_SHADOWS (0 - 1)
+    END
+  BUT_ONLY

@@ -94,7 +94,7 @@ It's provided as is, without any guarantee. Feel free to use it in any way that 
 burner1024 @ Github
 
 ###Changelog
-* Version 2: merged in Tweaks-And-Tricks, renamed the mod, updated the components
+* Version 2: merged in Tweaks-And-Tricks, renamed the mod, updated the components, updated to weidu 238.
 * Version 1: initial release.
 
 ###Used software

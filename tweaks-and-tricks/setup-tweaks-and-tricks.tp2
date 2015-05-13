@@ -223,3 +223,8 @@ SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 INCLUDE ~tweaks-and-tricks/starting_bags/bottomless.tph~
+
+
+
+BEGIN ~No talking when hiding in shadows~
+INCLUDE ~tweaks-and-tricks/no_talk_shadows/main.tph~
