@@ -1,0 +1,7 @@
+IF 
+Global("wb_bag","AR0015",0) 
+THEN 
+RESPONSE #100 
+SetGlobal("wb_bag","AR0015",1) 
+CreateCreature("wb_bag",[2900.2900],8)
+END

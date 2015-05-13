@@ -1,0 +1,84 @@
+//"item2unstack" - item we want to stop stack, "spellname" is name for hidden spell, "refresh_strref" appears upon refreshing spell. Both without extensions. "2da_row_number" needs to be read previosly also.
+DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
+
+APPEND ~msectype.2da~ ~%spellname% %refresh_strref%~ //new secondary type. 
+OUTER_SET ~2da_row_number~ = (%2da_row_number% + 1)
+
+COPY ~tweaks-and-tricks/wbdummy.spl~ ~override/%spellname%.spl~ //dummy spell
+  //set new secondary type
+  WRITE_BYTE 0x27 ~%2da_row_number%~
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+COPY_EXISTING ~%item2unstack%.itm~ ~override~
+
+  //deleting feedback line
+  LPF DELETE_ITEM_EFFECT
+    INT_VAR
+      opcode = 139
+  END
+  //copying other effects to the shell spell
+  LPF ITEM_EFFECT_TO_SPELL
+    STR_VAR
+      new_itm_spl = ~%spellname%.spl~
+  END
+  //deleting effects
+  LPF DELETE_ITEM_EFFECT
+    INT_VAR
+      opcode = (0 - 1)
+  END
+
+/* STUPID THING DOESN'T WORK
+  //add dispel string immunity
+  SET opcode = 267 //display string
+  SET target = 2 //preserve
+  SET parameter1 = refresh_strref
+  SET power = 10 //power
+  SET timing = 0 //duration
+  SET duration = 10 //duration
+  LAUNCH_PATCH_MACRO ~ADD_ITEM_EFFECT~
+*/
+  //add "gulp" to the item if needed
+  READ_SHORT 0x1c item_type
+  PATCH_IF (item_type = 9) THEN BEGIN //if potion
+    LPF ADD_ITEM_EFFECT
+      INT_VAR
+        opcode = 139 //display string
+        target = 1 //self
+        parameter1 = 16233 //"Gulp!"
+        power = 4 //power
+        timing = 1 //instant
+        resist_dispel = 0 //nonmagical
+        duration = 0 //duration
+    END
+  END
+
+  //setting new secondary type:
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      opcode = 221 //remove secondary type
+      target = 2 //preserve
+      power = 4 //power
+      parameter1 = 10 //max level
+      parameter2 = ~%2da_row_number%~ //remove our secondary type
+      timing = 1 //instant
+      resist_dispel = 3 //dispel and bypass
+  END
+
+  //finally adding shell spell cast
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      opcode = 146 //cast spell
+      target = 2 //preserve target
+      power = 4 //level
+      parameter2 = 1 //instant cast
+      timing = 1 //instant
+      resist_dispel = 3 //dispel and bypass
+    STR_VAR
+      resource ~%spellname%~ //which spell to cast
+  END
+
+BUT_ONLY_IF_IT_CHANGES
+
+END

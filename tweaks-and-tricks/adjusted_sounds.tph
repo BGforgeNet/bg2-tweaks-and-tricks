@@ -1,0 +1,332 @@
+//postfix _wb is for mass deleting of remains at the end
+
+//WAVC sounds that we need to adjust
+COPY_EXISTING ~jaher35.wav~ ~override/jaher35.wavc_wb~
+			~jaher37.wav~ ~override/jaher37.wavc_wb~
+			~jaher30.wav~ ~override/jaher30.wavc_wb~
+			~jaher36.wav~ ~override/jaher36.wavc_wb~
+
+			~bgmnsc35.wav~ ~override/bgmnsc35.wavc_wb~
+			~bgmnsc36.wav~ ~override/bgmnsc36.wavc_wb~
+			~bgmnsc29.wav~ ~override/bgmnsc29.wavc_wb~
+			~bgmnsc37.wav~ ~override/bgmnsc37.wavc_wb~
+
+			~bedwin35.wav~ ~override/bedwin35.wavc_wb~
+			~bedwin36.wav~ ~override/bedwin36.wavc_wb~
+			~bedwin37.wav~ ~override/bedwin37.wavc_wb~
+			~bedwin30.wav~ ~override/bedwin30.wavc_wb~
+
+			~vicon36.wav~ ~override/vicon36.wavc_wb~
+			~vicon31.wav~ ~override/vicon31.wavc_wb~
+			~vicon35.wav~ ~override/vicon35.wavc_wb~
+
+			//bg1 inly npc:
+			~ajant37.wav~ ~override/ajant37.wavc_wb~
+			~ajant27.wav~ ~override/ajant27.wavc_wb~
+			~ajant28.wav~ ~override/ajant28.wavc_wb~
+			~ajant36.wav~ ~override/ajant36.wavc_wb~
+
+			~alora35.wav~ ~override/alora35.wavc_wb~
+			~alora36.wav~ ~override/alora36.wavc_wb~
+			~alora37.wav~ ~override/alora37.wavc_wb~
+
+			~faldn37.wav~ ~override/faldn37.wavc_wb~
+			~faldn35.wav~ ~override/faldn35.wavc_wb~
+			~faldn36.wav~ ~override/faldn36.wavc_wb~
+
+			~eldot36.wav~ ~override/eldot36.wavc_wb~
+			~eldot37.wav~ ~override/eldot37.wavc_wb~
+			~eldot35.wav~ ~override/eldot35.wavc_wb~
+
+			~skiee35.wav~ ~override/skiee35.wavc_wb~
+			~skiee36.wav~ ~override/skiee36.wavc_wb~
+			~skiee37.wav~ ~override/skiee37.wavc_wb~
+
+			~khald35.wav~ ~override/khald35.wavc_wb~
+			~khald30.wav~ ~override/khald30.wavc_wb~
+			~khald31.wav~ ~override/khald31.wavc_wb~
+			~khald37.wav~ ~override/khald37.wavc_wb~
+
+			~xannn35.wav~ ~override/xannn35.wavc_wb~
+			~xannn36.wav~ ~override/xannn36.wavc_wb~
+			~xannn37.wav~ ~override/xannn37.wavc_wb~
+
+			~coran35.wav~ ~override/coran35.wavc_wb~
+			~coran36.wav~ ~override/coran36.wavc_wb~
+			~coran37.wav~ ~override/coran37.wavc_wb~
+
+			~kivan37.wav~ ~override/kivan37.wavc_wb~
+			~kivan35.wav~ ~override/kivan35.wavc_wb~
+			~kivan36.wav~ ~override/kivan36.wavc_wb~
+
+			~montr35.wav~ ~override/montr35.wavc_wb~
+			~montr36.wav~ ~override/montr36.wavc_wb~
+			~montr37.wav~ ~override/montr37.wavc_wb~
+
+			~dynah35.wav~ ~override/dynah35.wavc_wb~
+			~dynah37.wav~ ~override/dynah37.wavc_wb~
+
+			~yeslk37.wav~ ~override/yeslk37.wavc_wb~
+			~yeslk31.wav~ ~override/yeslk31.wavc_wb~
+			~yeslk36.wav~ ~override/yeslk36.wavc_wb~
+
+			~garrk37.wav~ ~override/garrk37.wavc_wb~
+			~garrk35.wav~ ~override/garrk35.wavc_wb~
+
+			~branw37.wav~ ~override/branw37.wavc_wb~
+			~branw35.wav~ ~override/branw35.wavc_wb~
+			~branw29.wav~ ~override/branw29.wavc_wb~
+			~branw36.wav~ ~override/branw36.wavc_wb~
+			~branw30.wav~ ~override/branw30.wavc_wb~
+
+			~safan37.wav~ ~override/safan37.wavc_wb~
+			~safan35.wav~ ~override/safan35.wavc_wb~
+			~safan36.wav~ ~override/safan36.wavc_wb~
+
+			~quayl37.wav~ ~override/quayl37.wavc_wb~
+			~quayl35.wav~ ~override/quayl35.wavc_wb~
+			~quayl36.wav~ ~override/quayl36.wavc_wb~
+
+			~kagan35.wav~ ~override/kagan35.wavc_wb~
+			~kagan37.wav~ ~override/kagan37.wavc_wb~
+
+			~shart35.wav~ ~override/shart35.wavc_wb~
+			~shart36.wav~ ~override/shart36.wavc_wb~
+			~shart37.wav~ ~override/shart37.wavc_wb~
+
+			~tiaxx35.wav~ ~override/tiaxx35.wavc_wb~
+
+
+//read the constant in wavc header
+COPY_EXISTING ~bedwin35.wav~ ~override/bedwin35.wav~
+READ_ASCII 0x10 wavcheader (12)
+BUT_ONLY_IF_IT_CHANGES
+
+//copy converters to override
+AT_NOW ~tweaks-and-tricks/sound/wbcopy.bat~
+
+//decompress to WAV
+AT_NOW ~tweaks-and-tricks/sound/wbdecode.bat~
+
+
+
+//adjust WAV
+COPY_EXISTING ~jaher35.wav_wb~ ~override~
+			~jaher37.wav_wb~ ~override~
+			~jaher30.wav_wb~ ~override~
+			~jaher36.wav_wb~ ~override~
+
+			~bgmnsc35.wav_wb~ ~override~
+			~bgmnsc36.wav_wb~ ~override~
+			~bgmnsc29.wav_wb~ ~override~
+			~bgmnsc37.wav_wb~ ~override~
+
+			~bedwin35.wav_wb~ ~override~
+			~bedwin36.wav_wb~ ~override~
+			~bedwin37.wav_wb~ ~override~
+			~bedwin30.wav_wb~ ~override~
+
+			~vicon36.wav_wb~ ~override~
+			~vicon31.wav_wb~ ~override~
+			~vicon35.wav_wb~ ~override~
+
+
+			//bg1 inly npc:
+			~ajant37.wav_wb~ ~override~
+			~ajant27.wav_wb~ ~override~
+			~ajant28.wav_wb~ ~override~
+			~ajant36.wav_wb~ ~override~
+
+			~alora35.wav_wb~ ~override~
+			~alora36.wav_wb~ ~override~
+			~alora37.wav_wb~ ~override~
+
+			~faldn37.wav_wb~ ~override~
+			~faldn35.wav_wb~ ~override~
+			~faldn36.wav_wb~ ~override~
+
+			~eldot36.wav_wb~ ~override~
+			~eldot37.wav_wb~ ~override~
+			~eldot35.wav_wb~ ~override~
+
+			~skiee35.wav_wb~ ~override~
+			~skiee36.wav_wb~ ~override~
+			~skiee37.wav_wb~ ~override~
+
+			~khald35.wav_wb~ ~override~
+			~khald30.wav_wb~ ~override~
+			~khald31.wav_wb~ ~override~
+			~khald37.wav_wb~ ~override~
+
+			~xannn35.wav_wb~ ~override~
+			~xannn36.wav_wb~ ~override~
+			~xannn37.wav_wb~ ~override~
+
+			~coran35.wav_wb~ ~override~
+			~coran36.wav_wb~ ~override~
+			~coran37.wav_wb~ ~override~
+
+			~kivan37.wav_wb~ ~override~
+			~kivan35.wav_wb~ ~override~
+			~kivan36.wav_wb~ ~override~
+
+			~montr35.wav_wb~ ~override~
+			~montr36.wav_wb~ ~override~
+			~montr37.wav_wb~ ~override~
+
+			~dynah35.wav_wb~ ~override~
+			~dynah37.wav_wb~ ~override~
+
+			~yeslk37.wav_wb~ ~override~
+			~yeslk31.wav_wb~ ~override~
+			~yeslk36.wav_wb~ ~override~
+
+			~garrk37.wav_wb~ ~override~
+			~garrk35.wav_wb~ ~override~
+
+			~branw37.wav_wb~ ~override~
+			~branw35.wav_wb~ ~override~
+			~branw29.wav_wb~ ~override~
+			~branw36.wav_wb~ ~override~
+			~branw30.wav_wb~ ~override~
+
+			~safan37.wav_wb~ ~override~
+			~safan35.wav_wb~ ~override~
+			~safan36.wav_wb~ ~override~
+
+			~quayl37.wav_wb~ ~override~
+			~quayl35.wav_wb~ ~override~
+			~quayl36.wav_wb~ ~override~
+
+			~kagan35.wav_wb~ ~override~
+			~kagan37.wav_wb~ ~override~
+
+			~shart35.wav_wb~ ~override~
+			~shart36.wav_wb~ ~override~
+			~shart37.wav_wb~ ~override~
+
+			~tiaxx35.wav_wb~ ~override~
+
+READ_LONG 0x4 filesize //without header
+SET filesize = (filesize + 8) //include header bytes
+READ_LONG 0x2a datasize //sample size
+//lengthen it
+SET delta = (datasize*frame_rate/30 - datasize) //bg1 original frame rate is 30
+WRITE_LONG 0x4 (filesize + delta)
+WRITE_LONG 0x2a (datasize + delta)
+//track size of .wav
+SET EVALUATE_BUFFER ~%SOURCE_RES%wavsize~ = (SOURCE_SIZE + delta)
+BUT_ONLY_IF_IT_CHANGES
+
+
+//compress to ACM
+AT_NOW ~tweaks-and-tricks/sound/wbencode.bat~
+
+
+
+//turn acm into WAVC
+COPY_EXISTING ~jaher35.acm_wb~ ~override/jaher35.wav~ //wavc actually
+			~jaher37.acm_wb~ ~override/jaher37.wav~
+			~jaher30.acm_wb~ ~override/jaher30.wav~
+			~jaher36.acm_wb~ ~override/jaher36.wav~
+
+			~bgmnsc35.acm_wb~ ~override/bgmnsc35.wav~
+			~bgmnsc36.acm_wb~ ~override/bgmnsc36.wav~
+			~bgmnsc29.acm_wb~ ~override/bgmnsc29.wav~
+			~bgmnsc37.acm_wb~ ~override/bgmnsc37.wav~
+
+			~bedwin35.acm_wb~ ~override/bedwin35.wav~
+			~bedwin36.acm_wb~ ~override/bedwin36.wav~
+			~bedwin37.acm_wb~ ~override/bedwin37.wav~
+			~bedwin30.acm_wb~ ~override/bedwin30.wav~
+
+			~vicon36.acm_wb~ ~override/vicon36.wav~
+			~vicon31.acm_wb~ ~override/vicon31.wav~
+			~vicon35.acm_wb~ ~override/vicon35.wav~
+
+			~ajant37.acm_wb~ ~override/ajant37.wav~
+			~ajant27.acm_wb~ ~override/ajant27.wav~
+			~ajant28.acm_wb~ ~override/ajant28.wav~
+			~ajant36.acm_wb~ ~override/ajant36.wav~
+
+			~alora35.acm_wb~ ~override/alora35.wav~
+			~alora36.acm_wb~ ~override/alora36.wav~
+			~alora37.acm_wb~ ~override/alora37.wav~
+
+			~faldn37.acm_wb~ ~override/faldn37.wav~
+			~faldn35.acm_wb~ ~override/faldn35.wav~
+			~faldn36.acm_wb~ ~override/faldn36.wav~
+
+			~eldot36.acm_wb~ ~override/eldot36.wav~
+			~eldot37.acm_wb~ ~override/eldot37.wav~
+			~eldot35.acm_wb~ ~override/eldot35.wav~
+
+			~skiee35.acm_wb~ ~override/skiee35.wav~
+			~skiee36.acm_wb~ ~override/skiee36.wav~
+			~skiee37.acm_wb~ ~override/skiee37.wav~
+
+			~khald35.acm_wb~ ~override/khald35.wav~
+			~khald30.acm_wb~ ~override/khald30.wav~
+			~khald31.acm_wb~ ~override/khald31.wav~
+			~khald37.acm_wb~ ~override/khald37.wav~
+
+			~xannn35.acm_wb~ ~override/xannn35.wav~
+			~xannn36.acm_wb~ ~override/xannn36.wav~
+			~xannn37.acm_wb~ ~override/xannn37.wav~
+
+			~coran35.acm_wb~ ~override/coran35.wav~
+			~coran36.acm_wb~ ~override/coran36.wav~
+			~coran37.acm_wb~ ~override/coran37.wav~
+
+			~kivan37.acm_wb~ ~override/kivan37.wav~
+			~kivan35.acm_wb~ ~override/kivan35.wav~
+			~kivan36.acm_wb~ ~override/kivan36.wav~
+
+			~montr35.acm_wb~ ~override/montr35.wav~
+			~montr36.acm_wb~ ~override/montr36.wav~
+			~montr37.acm_wb~ ~override/montr37.wav~
+
+			~dynah35.acm_wb~ ~override/dynah35.wav~
+			~dynah37.acm_wb~ ~override/dynah37.wav~
+
+			~yeslk37.acm_wb~ ~override/yeslk37.wav~
+			~yeslk31.acm_wb~ ~override/yeslk31.wav~
+			~yeslk36.acm_wb~ ~override/yeslk36.wav~
+
+			~garrk37.acm_wb~ ~override/garrk37.wav~
+			~garrk35.acm_wb~ ~override/garrk35.wav~
+
+			~branw37.acm_wb~ ~override/branw37.wav~
+			~branw35.acm_wb~ ~override/branw35.wav~
+			~branw29.acm_wb~ ~override/branw29.wav~
+			~branw36.acm_wb~ ~override/branw36.wav~
+			~branw30.acm_wb~ ~override/branw30.wav~
+
+			~safan37.acm_wb~ ~override/safan37.wav~
+			~safan35.acm_wb~ ~override/safan35.wav~
+			~safan36.acm_wb~ ~override/safan36.wav~
+
+			~quayl37.acm_wb~ ~override/quayl37.wav~
+			~quayl35.acm_wb~ ~override/quayl35.wav~
+			~quayl36.acm_wb~ ~override/quayl36.wav~
+
+			~kagan35.acm_wb~ ~override/kagan35.wav~
+			~kagan37.acm_wb~ ~override/kagan37.wav~
+
+			~shart35.acm_wb~ ~override/shart35.wav~
+			~shart36.acm_wb~ ~override/shart36.wav~
+			~shart37.acm_wb~ ~override/shart37.wav~
+
+			~tiaxx35.acm_wb~ ~override/tiaxx35.wav~
+
+SET acmsize = SOURCE_SIZE
+INSERT_BYTES 0x0 28 //acm header is already attached
+WRITE_ASCII 0x0 ~WAVCV1.0~ #8
+WRITE_LONG 0x8 EVALUATE_BUFFER ~%SOURCE_RES%wavsize~  //uncompressed
+WRITE_LONG 0xc acmsize //compressed
+WRITE_EVALUATED_ASCII 0x10 ~%wavcheader%~ #12
+BUT_ONLY_IF_IT_CHANGES
+
+//cleaning remains
+AT_NOW ~tweaks-and-tricks/sound/wbdelete.bat~
+AT_UNINSTALL ~tweaks-and-tricks/sound/wbdelete.bat~

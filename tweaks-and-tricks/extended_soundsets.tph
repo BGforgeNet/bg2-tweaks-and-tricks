@@ -1,0 +1,496 @@
+//first nullifying empty strings with non-(-1) references
+
+//bg1 jaheira
+COPY_EXISTING
+~jaheir.cre~ ~override~
+~jaheir2.cre~ ~override~
+~jaheir4.cre~ ~override~
+~jaheir6.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  WRITE_LONG (0xa4 + 24 * 4) (0 - 1)
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg2 jaheira
+COPY_EXISTING
+~jaheir12.cre~ ~override~
+~jahei12b.cre~ ~override~
+~jahei14.cre~ ~override~
+~jaheir11.cre~ ~override~
+~jaheir7.cre~ ~override~
+~jaheir8.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  PATCH_FOR_EACH number IN 69 70 72 BEGIN
+    WRITE_LONG (0xa4 + number * 4) (0 - 1)
+  END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg1 minsc
+COPY_EXISTING
+~minsc.cre~ ~override~
+~minsc2.cre~ ~override~
+~minsc4.cre~ ~override~
+~minsc6.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  PATCH_FOR_EACH number IN 22 24 BEGIN
+    WRITE_LONG (0xa4 + number * 4) (0 - 1)
+  END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg2 minsc
+COPY_EXISTING
+~minsc7.cre~ ~override~
+~minsc8.cre~ ~override~
+~minsc9.cre~ ~override~
+~minsc10.cre~ ~override~
+~minsc12.cre~ ~override~
+~minsc14.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  PATCH_FOR_EACH number IN 69 72 BEGIN
+    WRITE_LONG (0xa4 + number * 4) (0 - 1)
+  END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg1 edwin
+COPY_EXISTING
+~edwin.cre~ ~override~
+~edwin2.cre~ ~override~
+~edwin4.cre~ ~override~
+~edwin6.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  PATCH_FOR_EACH number IN 21 22 23 24 25 69 72 BEGIN
+    WRITE_LONG (0xa4 + number * 4) (0 - 1)
+  END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg2 edwin - no such strings
+
+//bg1 imoen - no such strings
+
+//bg2 imoen
+COPY_EXISTING
+~imoen6.cre~ ~override~
+~imoen10.cre~ ~override~
+~imoen15.cre~ ~override~
+~imoen211.cre~ ~override~
+~imoen213.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  WRITE_LONG (0xa4 + 5 * 4) (0 - 1)
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg1 viconia
+COPY_EXISTING
+~viconi.cre~ ~override~
+~viconi4.cre~ ~override~
+~viconi9.cre~ ~override~
+~viconi61.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  PATCH_FOR_EACH number IN 63 64 BEGIN
+    WRITE_LONG (0xa4 + number * 4) (0 - 1)
+  END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+//bg2 viconia
+COPY_EXISTING
+~viconi6.cre~ ~override~
+~viconi8.cre~ ~override~
+~viconi9.cre~ ~override~
+~viconi11.cre~ ~override~
+~viconi13.cre~ ~override~
+~viconi16.cre~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x2d3) BEGIN
+  PATCH_FOR_EACH number IN 69 70 72 BEGIN
+    WRITE_LONG (0xa4 + number * 4) (0 - 1)
+  END
+END
+BUT_ONLY_IF_IT_CHANGES
+
+
+
+
+//next reading soundsets//
+
+//JAHEIRA
+//bg1:
+OUTER_SPRINT npc ~jaheir.cre~
+OUTER_SPRINT soundset ~bg1jaheira~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+//bg2:
+OUTER_SPRINT npc ~jaheir12.cre~
+OUTER_SPRINT soundset ~bg2jaheira~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+
+//MINSC
+//bg1:
+OUTER_SPRINT npc ~minsc.cre~
+OUTER_SPRINT soundset ~bg1minsc~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+//bg2:
+OUTER_SPRINT npc ~minsc7.cre~
+OUTER_SPRINT soundset ~bg2minsc~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+
+//EDWIN
+//bg1:
+OUTER_SPRINT npc ~edwin.cre~
+OUTER_SPRINT soundset ~bg1edwin~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+//bg2:
+OUTER_SPRINT npc ~edwin11.cre~
+OUTER_SPRINT soundset ~bg2edwin~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+
+//IMOEN
+//bg1:
+OUTER_SPRINT npc ~imoen1.cre~
+OUTER_SPRINT soundset ~bg1imoen~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+//bg2:
+OUTER_SPRINT npc ~imoen15.cre~ //post-spellhold
+OUTER_SPRINT soundset ~bg2imoen~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+
+//VICONIA
+OUTER_SPRINT npc ~viconi.cre~
+OUTER_SPRINT soundset ~bg1viconia~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+OUTER_SPRINT npc ~viconi9.cre~
+OUTER_SPRINT soundset ~bg2viconia~
+LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+
+
+//moving some interactions to compliments/responces/specifics, for it is a waste to use them only once//
+
+//Jaheira specific:
+//42. INTERACTION4 Do you claim to fight evil while you are diabolic yourself?
+//to insult3:
+OUTER_SET bg1jaheira_46 = bg1jaheira_42
+OUTER_SET bg2jaheira_46 = bg1jaheira_42
+
+//Minsc
+//41. INTERACTION3  Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!
+//to insult3:
+OUTER_SET bg1minsc_46 = bg1minsc_41
+OUTER_SET bg2minsc_46 = bg1minsc_41
+//43. INTERACTION5  Play on, bard!  'Tis sweet music to my furry friend.
+//to specific1:
+OUTER_SET bg1minsc_50 = bg1minsc_43
+OUTER_SET bg2minsc_50 = bg1minsc_43
+//(next part: adjust Minsc to react specifically on Eldoth, Garrick and Haer'dalis)
+
+//Edwin: 2 Alora interaction lines
+//42. INTERACTION4 'Tis welcome you find no fault with one such as I.
+//to compliment1
+OUTER_SET bg1edwin_47 = bg1edwin_42
+OUTER_SET bg2edwin_47 = bg1edwin_42
+//43. INTERACTION5 Her company is refreshing but I am surprised I find it so.
+//to responce to compliment2. Only Viconia compliments him, so gender should be ok
+OUTER_SET bg1edwin_56 = bg1edwin_43
+OUTER_SET bg2edwin_56 = bg1edwin_43
+
+//Imoen: no interactions. She's so silent, (sigh)
+
+//Viconia:
+//43. INTERACTION5  If you wish to die, I am pleased to assist.
+//to insult3:
+OUTER_SET bg1viconia_45 = bg1viconia_43
+OUTER_SET bg2viconia_45 = bg1viconia_43
+
+
+
+//excluding in. meeting, bg1 specifics and bio
+ACTION_FOR_EACH soundset IN bg1jaheira bg1minsc bg1edwin bg1imoen BEGIN
+  ACTION_FOR_EACH sound IN 0 //initial meeting
+  39 40 41 42 43 //interactions
+  74 //bio
+  BEGIN
+    OUTER_SET EVALUATE_BUFFER ~%soundset%_%sound%~ = (0 - 1)
+  END
+END
+
+//excluding bg2 bio
+ACTION_FOR_EACH soundset IN bg2jaheira bg2minsc bg2edwin bg2imoen BEGIN
+  OUTER_SET EVALUATE_BUFFER ~%soundset%_%74%~ = (0 - 1) //bio
+END
+
+//end of get soundsets
+
+
+
+
+//starting to write them
+
+//bg1 jaheira
+OUTER_SPRINT jaheira1 ~jaheir.cre\|jaheir2.cre\|jaheir4.cre\|jaheir6.cre~
+//BPJAHEIR.cre -wtf?
+//bg2 jaheira
+OUTER_SPRINT jaheira2 ~jaheir12.cre\|jahei12b.cre\|jahei14.cre\|jaheir11.cre\|jaheir7.cre\|jaheir8.cre~
+//IDIOT01.cre E36.cre JAHEIRD.cre //wtf?
+//TTJAHIER.cre //tutorial
+//VAMPJAH.cre //vampire
+
+//bg1 minsc
+OUTER_SPRINT minsc1 ~minsc.cre\|minsc2.cre\|minsc4.cre\|minsc6.cre~
+//BPMINSC.cre //wtf?
+//bg2 minsc
+OUTER_SPRINT minsc2 ~minsc7.cre\|minsc8.cre\|minsc9.cre\|minsc10.cre\|minsc12.cre\|minsc14.cre~
+//E32 //wtf?
+//TTMINSC //tutorial
+
+//bg1 edwin
+OUTER_SPRINT edwin1 ~edwin.cre\|edwin2.cre\|edwin4.cre\|edwin6.cre~
+//bg2 edwin
+OUTER_SPRINT edwin2 ~edwin7.cre\|edwin9.cre\|edwin11.cre\|edwin12.cre\|edwin13.cre\|edwin15.cre~
+E35 //wtf?
+
+//bg1 imoen
+OUTER_SPRINT imoen1 ~imoen.cre\|imoen1.cre\|imoen2.cre\|imoen4.cre\|imoen61.cre~
+//BPIMOEN.cre wtf?
+//bg2 imoen
+OUTER_SPRINT imoen2 ~imoen6.cre\|imoen10.cre\|imoen15.cre\|imoen211.cre\|imoen213.cre~
+//scenes and dreams CSIMOEN CUIMOEN CUIMOEN2 CUIMOEN3 DPIMO01 DREAM1 DRIM01 DRIM02 IMOENDRM
+
+//bg1 viconia
+OUTER_SPRINT viconia1 ~viconi.cre\|viconi4.cre\|viconi61.cre~
+//bg2 viconia
+OUTER_SPRINT viconia2 ~viconi6.cre\|viconi8.cre\|viconi9.cre\|viconi11.cre\|viconi13.cre\|viconi16.cre~
+//VAMPVIC vampire
+
+
+//write
+ACTION_IF (dominate = 0) THEN BEGIN //additions only
+  OUTER_SET overwrite = 0
+  ACTION_FOR_EACH jnpc IN jaheira minsc edwin imoen viconia BEGIN
+    OUTER_SPRINT npc EVALUATE_BUFFER ~%%jnpc%1%~ //damn hacking hackery. How does it even work?
+    OUTER_SPRINT soundset ~bg2%jnpc%~
+    LAUNCH_ACTION_MACRO ~WRITE_SOUNDSET~
+    OUTER_SPRINT npc EVALUATE_BUFFER ~%%jnpc%2%~
+    OUTER_SPRINT soundset ~bg1%jnpc%~
+    LAUNCH_ACTION_MACRO ~WRITE_SOUNDSET~
+  END
+END
+
+ACTION_IF (dominate = 1) THEN BEGIN //bg1 dominate
+  ACTION_FOR_EACH jnpc IN jaheira minsc edwin imoen viconia BEGIN
+    OUTER_SET overwrite = 0 //additions first
+    OUTER_SPRINT npc EVALUATE_BUFFER ~%%jnpc%1%\|%%jnpc%2%~
+    OUTER_SPRINT soundset ~bg2%jnpc%~
+    LAUNCH_ACTION_MACRO ~WRITE_SOUNDSET~
+
+    OUTER_SET overwrite = 1 //then dominates
+    OUTER_SPRINT npc EVALUATE_BUFFER ~%%jnpc%1%\|%%jnpc%2%~
+    OUTER_SPRINT soundset ~bg1%jnpc%~
+    LAUNCH_ACTION_MACRO ~WRITE_SOUNDSET~
+  END
+END
+
+ACTION_IF (dominate = 2) THEN BEGIN //bg2 dominate
+  ACTION_FOR_EACH jnpc IN jaheira minsc edwin imoen viconia BEGIN
+    OUTER_SET overwrite = 0 //additions first
+    OUTER_SPRINT npc EVALUATE_BUFFER ~%%jnpc%1%\|%%jnpc%2%~
+    OUTER_SPRINT soundset ~bg1%jnpc%~
+    LAUNCH_ACTION_MACRO ~WRITE_SOUNDSET~
+
+    OUTER_SET overwrite = 1 //then dominates
+    OUTER_SPRINT npc EVALUATE_BUFFER ~%%jnpc%1%\|%%jnpc%2%~
+    OUTER_SPRINT soundset ~bg2%jnpc%~
+    LAUNCH_ACTION_MACRO ~WRITE_SOUNDSET~
+  END
+END
+
+
+//slight 2da changes, to make interactions fire in bg2 as well
+
+//we need to append interact.2da with haerdalis in order to make minsc to react on him
+DEFINE_ACTION_MACRO ~CALCUL_ROW~ BEGIN
+  OUTER_PATCH dummy BEGIN
+    FOR (index=0;index<%2da_rows_number%;index=index+1) BEGIN
+       SPRINT ~row~ ~%row%     0~
+    END
+  END
+END
+DEFINE_ACTION_MACRO ~CALCUL_COL~ BEGIN
+  OUTER_PATCH dummy BEGIN
+    FOR (index=1;index<(%2da_cols_number% + 1);index=index+1) BEGIN
+      SPRINT ~col~ ~%col% 0~
+    END
+  END
+END
+
+//counting rows and columns
+COPY_EXISTING ~interact.2da~ ~override~
+COUNT_2DA_ROWS 1 ~2da_rows_number~
+COUNT_2DA_COLS ~2da_cols_number~
+SET 2da_rows_number = (%2da_rows_number% - 3) //excluding excessive lines
+BUT_ONLY_IF_IT_CHANGES
+
+//introducing Haer'dalis
+OUTER_SPRINT ~row~ ~HAERDALIS  ~
+LAUNCH_ACTION_MACRO ~CALCUL_ROW~
+APPEND ~interact.2da~ ~%row%~ UNLESS ~HAERDALIS~
+OUTER_SPRINT ~col~ ~$ $ HAERDALIS~
+LAUNCH_ACTION_MACRO ~CALCUL_COL~
+APPEND_COL ~interact.2da~ ~%col%~
+
+
+
+COPY_EXISTING ~interact.2da~ ~override~
+//SET 2da_rows_number = (%2da_rows_number% - 3)
+//rows: (are increased by 2)
+//minsc 5
+//jaheira 11
+//edwin 25
+//viconia 26
+//haerdalis 27
+
+//columns:
+//minsc 3
+//jaheira 9
+//edwin 23
+//viconia 24
+//haerdalis 25
+
+SPRINT ~weidu_glitch~ ~i~ //i is the index, so the entry turns into 100
+
+//minsc>jaheira
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 9 ~c~
+//minsc>edwin
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 23 ~%weidu_glitch%~
+//minsc>viconia
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 24 ~%weidu_glitch%~
+//minsc's reaction on bards:
+//minsc>garrick
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 10 ~s~
+//minsc>eldoth
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 17 ~s~
+//minsc>haer'dalis
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 25 ~s~
+
+//jaheira>minsc
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 11 3 ~c~
+//jaheira>edwin
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 11 23 ~%weidu_glitch%~
+//jaheira>viconia
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 11 24 ~0~ //as per original game! In general, Jaheira and Viconia go along well
+
+//edwin>jaheira
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 25 9 ~%weidu_glitch%~
+//edwin>minsc
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 25 3 ~%weidu_glitch%~
+//edwin>viconia //taken from bg1 interactions!!!
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 25 24 ~c~
+
+//viconia>jaheira
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 9 ~c~ //as per original game!
+//viconia>minsc
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 3 ~s~
+//viconia>edwin
+SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 23 ~c~
+
+SET_2DA_ENTRIES_NOW _entries_for_interact_2da 1
+
+
+
+
+
+
+
+
+
+
+
+
+//bg1 npc interaction extensions
+
+//ALORA
+COPY_EXISTING ~alora.cre~ ~override~
+//41. INTERACTION3           Everyone is basically descent, once you get them to unwrinkle their faces.
+READ_LONG (0xa4 +  41 * 4) rcomp2
+//apply
+COPY_EXISTING ~alora.cre~ ~override~
+			~alora6.cre~ ~override~
+WRITE_LONG (0xa4 +  56 * 4) rcomp2
+BUT_ONLY_IF_IT_CHANGES
+
+//DYNAHEIR - not realy anything suitable
+
+//YESLICK
+COPY_EXISTING ~yeslic.cre~ ~override~
+// 43. INTERACTION5           I've been through enough without suffering you as well.  Begone.
+READ_LONG (0xa4 +  43 * 4) insult2
+COPY_EXISTING ~yeslic.cre~ ~override~
+			~yeslic5.cre~ ~override~
+WRITE_LONG (0xa4 +  45 * 4) insult2
+BUT_ONLY_IF_IT_CHANGES
+
+//CORAN - not realy anything suitable
+
+//KIVAN - not realy anything suitable
+
+//ADJANTIS
+COPY_EXISTING ~ajanti.cre~ ~override~
+//39. INTERACTION1 Your actions fly in the face of everything Helm holds sacred.
+READ_LONG (0xa4 +  39 * 4) insult2
+// 40. INTERACTION2           There is not but good and evil. I suspect you are of the latter.
+READ_LONG (0xa4 +  40 * 4) insult3
+// 41. INTERACTION3           Evil must be purged wherever it is found, even among companions.
+READ_LONG (0xa4 +  41 * 4) rinsult3
+//apply them
+COPY_EXISTING ~ajanti.cre~ ~override~
+			~ajanti4.cre~ ~override~
+			~ajanti6.cre~ ~override~
+WRITE_LONG (0xa4 +  45 * 4) insult2
+WRITE_LONG (0xa4 +  46 * 4) insult3
+WRITE_LONG (0xa4 +  60 * 4) rinsult3
+BUT_ONLY_IF_IT_CHANGES
+
+//KHALID
+COPY_EXISTING ~khalid.cre~ ~override~
+// 42. INTERACTION4           Usually everyone proves themselves, but there is something . . . disturbing abo...
+READ_LONG (0xa4 +  42 * 4) insult2
+// 43. INTERACTION5           I had thought none could be so beyond the bounds of goodness.  Certainly you ne...
+READ_LONG (0xa4 +  43 * 4) insult3
+COPY_EXISTING ~khalid.cre~ ~override~
+			~khalid2.cre~ ~override~
+			~khalid4.cre~ ~override~
+			~khalid6.cre~ ~override~
+WRITE_LONG (0xa4 +  45 * 4) insult2
+WRITE_LONG (0xa4 +  46 * 4) insult3
+BUT_ONLY_IF_IT_CHANGES
+
+//GARRICK - not realy anything suitable
+
+//SAFANA - not realy anything suitable
+
+//FALDORN - not really anything suitable
+
+//BRANWEN
+COPY_EXISTING ~branwe.cre~ ~override~
+// 41. INTERACTION3           Stay well clear of me, you foul speakin' heretic!
+READ_LONG (0xa4 +  41 * 4) insult3
+// 42. INTERACTION4           Tempus would guide your wayward soul, if you let him.
+READ_LONG (0xa4 +  42 * 4) comp2
+// 43. INTERACTION5           May Tempus someday show you the error of your ways.
+READ_LONG (0xa4 +  43 * 4) rinsult3
+COPY_EXISTING ~branwe.cre~ ~override~
+			~branwe5.cre~ ~override~
+WRITE_LONG (0xa4 +  46 * 4) insult3
+WRITE_LONG (0xa4 +  48 * 4) comp2
+WRITE_LONG (0xa4 +  60 * 4) rinsult3
+BUT_ONLY_IF_IT_CHANGES
+
+//QUAYLE - not really anything suitable
+//XAN - not really anything suitable
+//SKIE - not really anything suitable
+//ELDOTH - not really anything suitable
+//XZAR - not really anything suitable
+//MONTARON - not really anything suitable
+//TIAX - not really anything suitable
+//KAGAIN - not really anything suitable
+//SHARTEEL - not really anything suitable
