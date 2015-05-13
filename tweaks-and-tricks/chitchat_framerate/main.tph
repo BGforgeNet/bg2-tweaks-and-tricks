@@ -1,100 +1,101 @@
 //postfix _g is for mass deleting of remains at the end
 
 //WAVC sounds that we need to adjust
-COPY_EXISTING ~jaher35.wav~ ~override/jaher35.wavc_g~
-			~jaher37.wav~ ~override/jaher37.wavc_g~
-			~jaher30.wav~ ~override/jaher30.wavc_g~
-			~jaher36.wav~ ~override/jaher36.wavc_g~
+COPY_EXISTING
+  ~jaher35.wav~ ~override/jaher35.wavc_g~
+  ~jaher37.wav~ ~override/jaher37.wavc_g~
+  ~jaher30.wav~ ~override/jaher30.wavc_g~
+  ~jaher36.wav~ ~override/jaher36.wavc_g~
 
-			~bgmnsc35.wav~ ~override/bgmnsc35.wavc_g~
-			~bgmnsc36.wav~ ~override/bgmnsc36.wavc_g~
-			~bgmnsc29.wav~ ~override/bgmnsc29.wavc_g~
-			~bgmnsc37.wav~ ~override/bgmnsc37.wavc_g~
+  ~bgmnsc35.wav~ ~override/bgmnsc35.wavc_g~
+  ~bgmnsc36.wav~ ~override/bgmnsc36.wavc_g~
+  ~bgmnsc29.wav~ ~override/bgmnsc29.wavc_g~
+  ~bgmnsc37.wav~ ~override/bgmnsc37.wavc_g~
 
-			~bedwin35.wav~ ~override/bedwin35.wavc_g~
-			~bedwin36.wav~ ~override/bedwin36.wavc_g~
-			~bedwin37.wav~ ~override/bedwin37.wavc_g~
-			~bedwin30.wav~ ~override/bedwin30.wavc_g~
+  ~bedwin35.wav~ ~override/bedwin35.wavc_g~
+  ~bedwin36.wav~ ~override/bedwin36.wavc_g~
+  ~bedwin37.wav~ ~override/bedwin37.wavc_g~
+  ~bedwin30.wav~ ~override/bedwin30.wavc_g~
 
-			~vicon36.wav~ ~override/vicon36.wavc_g~
-			~vicon31.wav~ ~override/vicon31.wavc_g~
-			~vicon35.wav~ ~override/vicon35.wavc_g~
+  ~vicon36.wav~ ~override/vicon36.wavc_g~
+  ~vicon31.wav~ ~override/vicon31.wavc_g~
+  ~vicon35.wav~ ~override/vicon35.wavc_g~
 
-			//bg1 inly npc:
-			~ajant37.wav~ ~override/ajant37.wavc_g~
-			~ajant27.wav~ ~override/ajant27.wavc_g~
-			~ajant28.wav~ ~override/ajant28.wavc_g~
-			~ajant36.wav~ ~override/ajant36.wavc_g~
+  //bg1 inly npc:
+  ~ajant37.wav~ ~override/ajant37.wavc_g~
+  ~ajant27.wav~ ~override/ajant27.wavc_g~
+  ~ajant28.wav~ ~override/ajant28.wavc_g~
+  ~ajant36.wav~ ~override/ajant36.wavc_g~
 
-			~alora35.wav~ ~override/alora35.wavc_g~
-			~alora36.wav~ ~override/alora36.wavc_g~
-			~alora37.wav~ ~override/alora37.wavc_g~
+  ~alora35.wav~ ~override/alora35.wavc_g~
+  ~alora36.wav~ ~override/alora36.wavc_g~
+  ~alora37.wav~ ~override/alora37.wavc_g~
 
-			~faldn37.wav~ ~override/faldn37.wavc_g~
-			~faldn35.wav~ ~override/faldn35.wavc_g~
-			~faldn36.wav~ ~override/faldn36.wavc_g~
+  ~faldn37.wav~ ~override/faldn37.wavc_g~
+  ~faldn35.wav~ ~override/faldn35.wavc_g~
+  ~faldn36.wav~ ~override/faldn36.wavc_g~
 
-			~eldot36.wav~ ~override/eldot36.wavc_g~
-			~eldot37.wav~ ~override/eldot37.wavc_g~
-			~eldot35.wav~ ~override/eldot35.wavc_g~
+  ~eldot36.wav~ ~override/eldot36.wavc_g~
+  ~eldot37.wav~ ~override/eldot37.wavc_g~
+  ~eldot35.wav~ ~override/eldot35.wavc_g~
 
-			~skiee35.wav~ ~override/skiee35.wavc_g~
-			~skiee36.wav~ ~override/skiee36.wavc_g~
-			~skiee37.wav~ ~override/skiee37.wavc_g~
+  ~skiee35.wav~ ~override/skiee35.wavc_g~
+  ~skiee36.wav~ ~override/skiee36.wavc_g~
+  ~skiee37.wav~ ~override/skiee37.wavc_g~
 
-			~khald35.wav~ ~override/khald35.wavc_g~
-			~khald30.wav~ ~override/khald30.wavc_g~
-			~khald31.wav~ ~override/khald31.wavc_g~
-			~khald37.wav~ ~override/khald37.wavc_g~
+  ~khald35.wav~ ~override/khald35.wavc_g~
+  ~khald30.wav~ ~override/khald30.wavc_g~
+  ~khald31.wav~ ~override/khald31.wavc_g~
+  ~khald37.wav~ ~override/khald37.wavc_g~
 
-			~xannn35.wav~ ~override/xannn35.wavc_g~
-			~xannn36.wav~ ~override/xannn36.wavc_g~
-			~xannn37.wav~ ~override/xannn37.wavc_g~
+  ~xannn35.wav~ ~override/xannn35.wavc_g~
+  ~xannn36.wav~ ~override/xannn36.wavc_g~
+  ~xannn37.wav~ ~override/xannn37.wavc_g~
 
-			~coran35.wav~ ~override/coran35.wavc_g~
-			~coran36.wav~ ~override/coran36.wavc_g~
-			~coran37.wav~ ~override/coran37.wavc_g~
+  ~coran35.wav~ ~override/coran35.wavc_g~
+  ~coran36.wav~ ~override/coran36.wavc_g~
+  ~coran37.wav~ ~override/coran37.wavc_g~
 
-			~kivan37.wav~ ~override/kivan37.wavc_g~
-			~kivan35.wav~ ~override/kivan35.wavc_g~
-			~kivan36.wav~ ~override/kivan36.wavc_g~
+  ~kivan37.wav~ ~override/kivan37.wavc_g~
+  ~kivan35.wav~ ~override/kivan35.wavc_g~
+  ~kivan36.wav~ ~override/kivan36.wavc_g~
 
-			~montr35.wav~ ~override/montr35.wavc_g~
-			~montr36.wav~ ~override/montr36.wavc_g~
-			~montr37.wav~ ~override/montr37.wavc_g~
+  ~montr35.wav~ ~override/montr35.wavc_g~
+  ~montr36.wav~ ~override/montr36.wavc_g~
+  ~montr37.wav~ ~override/montr37.wavc_g~
 
-			~dynah35.wav~ ~override/dynah35.wavc_g~
-			~dynah37.wav~ ~override/dynah37.wavc_g~
+  ~dynah35.wav~ ~override/dynah35.wavc_g~
+  ~dynah37.wav~ ~override/dynah37.wavc_g~
 
-			~yeslk37.wav~ ~override/yeslk37.wavc_g~
-			~yeslk31.wav~ ~override/yeslk31.wavc_g~
-			~yeslk36.wav~ ~override/yeslk36.wavc_g~
+  ~yeslk37.wav~ ~override/yeslk37.wavc_g~
+  ~yeslk31.wav~ ~override/yeslk31.wavc_g~
+  ~yeslk36.wav~ ~override/yeslk36.wavc_g~
 
-			~garrk37.wav~ ~override/garrk37.wavc_g~
-			~garrk35.wav~ ~override/garrk35.wavc_g~
+  ~garrk37.wav~ ~override/garrk37.wavc_g~
+  ~garrk35.wav~ ~override/garrk35.wavc_g~
 
-			~branw37.wav~ ~override/branw37.wavc_g~
-			~branw35.wav~ ~override/branw35.wavc_g~
-			~branw29.wav~ ~override/branw29.wavc_g~
-			~branw36.wav~ ~override/branw36.wavc_g~
-			~branw30.wav~ ~override/branw30.wavc_g~
+  ~branw37.wav~ ~override/branw37.wavc_g~
+  ~branw35.wav~ ~override/branw35.wavc_g~
+  ~branw29.wav~ ~override/branw29.wavc_g~
+  ~branw36.wav~ ~override/branw36.wavc_g~
+  ~branw30.wav~ ~override/branw30.wavc_g~
 
-			~safan37.wav~ ~override/safan37.wavc_g~
-			~safan35.wav~ ~override/safan35.wavc_g~
-			~safan36.wav~ ~override/safan36.wavc_g~
+  ~safan37.wav~ ~override/safan37.wavc_g~
+  ~safan35.wav~ ~override/safan35.wavc_g~
+  ~safan36.wav~ ~override/safan36.wavc_g~
 
-			~quayl37.wav~ ~override/quayl37.wavc_g~
-			~quayl35.wav~ ~override/quayl35.wavc_g~
-			~quayl36.wav~ ~override/quayl36.wavc_g~
+  ~quayl37.wav~ ~override/quayl37.wavc_g~
+  ~quayl35.wav~ ~override/quayl35.wavc_g~
+  ~quayl36.wav~ ~override/quayl36.wavc_g~
 
-			~kagan35.wav~ ~override/kagan35.wavc_g~
-			~kagan37.wav~ ~override/kagan37.wavc_g~
+  ~kagan35.wav~ ~override/kagan35.wavc_g~
+  ~kagan37.wav~ ~override/kagan37.wavc_g~
 
-			~shart35.wav~ ~override/shart35.wavc_g~
-			~shart36.wav~ ~override/shart36.wavc_g~
-			~shart37.wav~ ~override/shart37.wavc_g~
+  ~shart35.wav~ ~override/shart35.wavc_g~
+  ~shart36.wav~ ~override/shart36.wavc_g~
+  ~shart37.wav~ ~override/shart37.wavc_g~
 
-			~tiaxx35.wav~ ~override/tiaxx35.wavc_g~
+  ~tiaxx35.wav~ ~override/tiaxx35.wavc_g~
 
 
 //read the constant in wavc header
@@ -110,101 +111,102 @@ AT_NOW ~tweaks-and-tricks/sound/g_decode.bat~
 
 
 //adjust WAV
-COPY_EXISTING ~jaher35.wav_g~ ~override~
-			~jaher37.wav_g~ ~override~
-			~jaher30.wav_g~ ~override~
-			~jaher36.wav_g~ ~override~
+COPY_EXISTING
+  ~jaher35.wav_g~ ~override~
+  ~jaher37.wav_g~ ~override~
+  ~jaher30.wav_g~ ~override~
+  ~jaher36.wav_g~ ~override~
 
-			~bgmnsc35.wav_g~ ~override~
-			~bgmnsc36.wav_g~ ~override~
-			~bgmnsc29.wav_g~ ~override~
-			~bgmnsc37.wav_g~ ~override~
+  ~bgmnsc35.wav_g~ ~override~
+  ~bgmnsc36.wav_g~ ~override~
+  ~bgmnsc29.wav_g~ ~override~
+  ~bgmnsc37.wav_g~ ~override~
 
-			~bedwin35.wav_g~ ~override~
-			~bedwin36.wav_g~ ~override~
-			~bedwin37.wav_g~ ~override~
-			~bedwin30.wav_g~ ~override~
+  ~bedwin35.wav_g~ ~override~
+  ~bedwin36.wav_g~ ~override~
+  ~bedwin37.wav_g~ ~override~
+  ~bedwin30.wav_g~ ~override~
 
-			~vicon36.wav_g~ ~override~
-			~vicon31.wav_g~ ~override~
-			~vicon35.wav_g~ ~override~
+  ~vicon36.wav_g~ ~override~
+  ~vicon31.wav_g~ ~override~
+  ~vicon35.wav_g~ ~override~
 
 
-			//bg1 inly npc:
-			~ajant37.wav_g~ ~override~
-			~ajant27.wav_g~ ~override~
-			~ajant28.wav_g~ ~override~
-			~ajant36.wav_g~ ~override~
+  //bg1 inly npc:
+  ~ajant37.wav_g~ ~override~
+  ~ajant27.wav_g~ ~override~
+  ~ajant28.wav_g~ ~override~
+  ~ajant36.wav_g~ ~override~
 
-			~alora35.wav_g~ ~override~
-			~alora36.wav_g~ ~override~
-			~alora37.wav_g~ ~override~
+  ~alora35.wav_g~ ~override~
+  ~alora36.wav_g~ ~override~
+  ~alora37.wav_g~ ~override~
 
-			~faldn37.wav_g~ ~override~
-			~faldn35.wav_g~ ~override~
-			~faldn36.wav_g~ ~override~
+  ~faldn37.wav_g~ ~override~
+  ~faldn35.wav_g~ ~override~
+  ~faldn36.wav_g~ ~override~
 
-			~eldot36.wav_g~ ~override~
-			~eldot37.wav_g~ ~override~
-			~eldot35.wav_g~ ~override~
+  ~eldot36.wav_g~ ~override~
+  ~eldot37.wav_g~ ~override~
+  ~eldot35.wav_g~ ~override~
 
-			~skiee35.wav_g~ ~override~
-			~skiee36.wav_g~ ~override~
-			~skiee37.wav_g~ ~override~
+  ~skiee35.wav_g~ ~override~
+  ~skiee36.wav_g~ ~override~
+  ~skiee37.wav_g~ ~override~
 
-			~khald35.wav_g~ ~override~
-			~khald30.wav_g~ ~override~
-			~khald31.wav_g~ ~override~
-			~khald37.wav_g~ ~override~
+  ~khald35.wav_g~ ~override~
+  ~khald30.wav_g~ ~override~
+  ~khald31.wav_g~ ~override~
+  ~khald37.wav_g~ ~override~
 
-			~xannn35.wav_g~ ~override~
-			~xannn36.wav_g~ ~override~
-			~xannn37.wav_g~ ~override~
+  ~xannn35.wav_g~ ~override~
+  ~xannn36.wav_g~ ~override~
+  ~xannn37.wav_g~ ~override~
 
-			~coran35.wav_g~ ~override~
-			~coran36.wav_g~ ~override~
-			~coran37.wav_g~ ~override~
+  ~coran35.wav_g~ ~override~
+  ~coran36.wav_g~ ~override~
+  ~coran37.wav_g~ ~override~
 
-			~kivan37.wav_g~ ~override~
-			~kivan35.wav_g~ ~override~
-			~kivan36.wav_g~ ~override~
+  ~kivan37.wav_g~ ~override~
+  ~kivan35.wav_g~ ~override~
+  ~kivan36.wav_g~ ~override~
 
-			~montr35.wav_g~ ~override~
-			~montr36.wav_g~ ~override~
-			~montr37.wav_g~ ~override~
+  ~montr35.wav_g~ ~override~
+  ~montr36.wav_g~ ~override~
+  ~montr37.wav_g~ ~override~
 
-			~dynah35.wav_g~ ~override~
-			~dynah37.wav_g~ ~override~
+  ~dynah35.wav_g~ ~override~
+  ~dynah37.wav_g~ ~override~
 
-			~yeslk37.wav_g~ ~override~
-			~yeslk31.wav_g~ ~override~
-			~yeslk36.wav_g~ ~override~
+  ~yeslk37.wav_g~ ~override~
+  ~yeslk31.wav_g~ ~override~
+  ~yeslk36.wav_g~ ~override~
 
-			~garrk37.wav_g~ ~override~
-			~garrk35.wav_g~ ~override~
+  ~garrk37.wav_g~ ~override~
+  ~garrk35.wav_g~ ~override~
 
-			~branw37.wav_g~ ~override~
-			~branw35.wav_g~ ~override~
-			~branw29.wav_g~ ~override~
-			~branw36.wav_g~ ~override~
-			~branw30.wav_g~ ~override~
+  ~branw37.wav_g~ ~override~
+  ~branw35.wav_g~ ~override~
+  ~branw29.wav_g~ ~override~
+  ~branw36.wav_g~ ~override~
+  ~branw30.wav_g~ ~override~
 
-			~safan37.wav_g~ ~override~
-			~safan35.wav_g~ ~override~
-			~safan36.wav_g~ ~override~
+  ~safan37.wav_g~ ~override~
+  ~safan35.wav_g~ ~override~
+  ~safan36.wav_g~ ~override~
 
-			~quayl37.wav_g~ ~override~
-			~quayl35.wav_g~ ~override~
-			~quayl36.wav_g~ ~override~
+  ~quayl37.wav_g~ ~override~
+  ~quayl35.wav_g~ ~override~
+  ~quayl36.wav_g~ ~override~
 
-			~kagan35.wav_g~ ~override~
-			~kagan37.wav_g~ ~override~
+  ~kagan35.wav_g~ ~override~
+  ~kagan37.wav_g~ ~override~
 
-			~shart35.wav_g~ ~override~
-			~shart36.wav_g~ ~override~
-			~shart37.wav_g~ ~override~
+  ~shart35.wav_g~ ~override~
+  ~shart36.wav_g~ ~override~
+  ~shart37.wav_g~ ~override~
 
-			~tiaxx35.wav_g~ ~override~
+  ~tiaxx35.wav_g~ ~override~
 
 READ_LONG 0x4 filesize //without header
 SET filesize = (filesize + 8) //include header bytes
@@ -223,99 +225,100 @@ AT_NOW ~tweaks-and-tricks/sound/g_encode.bat~
 
 
 //turn acm into WAVC
-COPY_EXISTING ~jaher35.acm_g~ ~override/jaher35.wav~ //wavc actually
-			~jaher37.acm_g~ ~override/jaher37.wav~
-			~jaher30.acm_g~ ~override/jaher30.wav~
-			~jaher36.acm_g~ ~override/jaher36.wav~
+COPY_EXISTING
+  ~jaher35.acm_g~ ~override/jaher35.wav~ //wavc actually
+  ~jaher37.acm_g~ ~override/jaher37.wav~
+  ~jaher30.acm_g~ ~override/jaher30.wav~
+  ~jaher36.acm_g~ ~override/jaher36.wav~
 
-			~bgmnsc35.acm_g~ ~override/bgmnsc35.wav~
-			~bgmnsc36.acm_g~ ~override/bgmnsc36.wav~
-			~bgmnsc29.acm_g~ ~override/bgmnsc29.wav~
-			~bgmnsc37.acm_g~ ~override/bgmnsc37.wav~
+  ~bgmnsc35.acm_g~ ~override/bgmnsc35.wav~
+  ~bgmnsc36.acm_g~ ~override/bgmnsc36.wav~
+  ~bgmnsc29.acm_g~ ~override/bgmnsc29.wav~
+  ~bgmnsc37.acm_g~ ~override/bgmnsc37.wav~
 
-			~bedwin35.acm_g~ ~override/bedwin35.wav~
-			~bedwin36.acm_g~ ~override/bedwin36.wav~
-			~bedwin37.acm_g~ ~override/bedwin37.wav~
-			~bedwin30.acm_g~ ~override/bedwin30.wav~
+  ~bedwin35.acm_g~ ~override/bedwin35.wav~
+  ~bedwin36.acm_g~ ~override/bedwin36.wav~
+  ~bedwin37.acm_g~ ~override/bedwin37.wav~
+  ~bedwin30.acm_g~ ~override/bedwin30.wav~
 
-			~vicon36.acm_g~ ~override/vicon36.wav~
-			~vicon31.acm_g~ ~override/vicon31.wav~
-			~vicon35.acm_g~ ~override/vicon35.wav~
+  ~vicon36.acm_g~ ~override/vicon36.wav~
+  ~vicon31.acm_g~ ~override/vicon31.wav~
+  ~vicon35.acm_g~ ~override/vicon35.wav~
 
-			~ajant37.acm_g~ ~override/ajant37.wav~
-			~ajant27.acm_g~ ~override/ajant27.wav~
-			~ajant28.acm_g~ ~override/ajant28.wav~
-			~ajant36.acm_g~ ~override/ajant36.wav~
+  ~ajant37.acm_g~ ~override/ajant37.wav~
+  ~ajant27.acm_g~ ~override/ajant27.wav~
+  ~ajant28.acm_g~ ~override/ajant28.wav~
+  ~ajant36.acm_g~ ~override/ajant36.wav~
 
-			~alora35.acm_g~ ~override/alora35.wav~
-			~alora36.acm_g~ ~override/alora36.wav~
-			~alora37.acm_g~ ~override/alora37.wav~
+  ~alora35.acm_g~ ~override/alora35.wav~
+  ~alora36.acm_g~ ~override/alora36.wav~
+  ~alora37.acm_g~ ~override/alora37.wav~
 
-			~faldn37.acm_g~ ~override/faldn37.wav~
-			~faldn35.acm_g~ ~override/faldn35.wav~
-			~faldn36.acm_g~ ~override/faldn36.wav~
+  ~faldn37.acm_g~ ~override/faldn37.wav~
+  ~faldn35.acm_g~ ~override/faldn35.wav~
+  ~faldn36.acm_g~ ~override/faldn36.wav~
 
-			~eldot36.acm_g~ ~override/eldot36.wav~
-			~eldot37.acm_g~ ~override/eldot37.wav~
-			~eldot35.acm_g~ ~override/eldot35.wav~
+  ~eldot36.acm_g~ ~override/eldot36.wav~
+  ~eldot37.acm_g~ ~override/eldot37.wav~
+  ~eldot35.acm_g~ ~override/eldot35.wav~
 
-			~skiee35.acm_g~ ~override/skiee35.wav~
-			~skiee36.acm_g~ ~override/skiee36.wav~
-			~skiee37.acm_g~ ~override/skiee37.wav~
+  ~skiee35.acm_g~ ~override/skiee35.wav~
+  ~skiee36.acm_g~ ~override/skiee36.wav~
+  ~skiee37.acm_g~ ~override/skiee37.wav~
 
-			~khald35.acm_g~ ~override/khald35.wav~
-			~khald30.acm_g~ ~override/khald30.wav~
-			~khald31.acm_g~ ~override/khald31.wav~
-			~khald37.acm_g~ ~override/khald37.wav~
+  ~khald35.acm_g~ ~override/khald35.wav~
+  ~khald30.acm_g~ ~override/khald30.wav~
+  ~khald31.acm_g~ ~override/khald31.wav~
+  ~khald37.acm_g~ ~override/khald37.wav~
 
-			~xannn35.acm_g~ ~override/xannn35.wav~
-			~xannn36.acm_g~ ~override/xannn36.wav~
-			~xannn37.acm_g~ ~override/xannn37.wav~
+  ~xannn35.acm_g~ ~override/xannn35.wav~
+  ~xannn36.acm_g~ ~override/xannn36.wav~
+  ~xannn37.acm_g~ ~override/xannn37.wav~
 
-			~coran35.acm_g~ ~override/coran35.wav~
-			~coran36.acm_g~ ~override/coran36.wav~
-			~coran37.acm_g~ ~override/coran37.wav~
+  ~coran35.acm_g~ ~override/coran35.wav~
+  ~coran36.acm_g~ ~override/coran36.wav~
+  ~coran37.acm_g~ ~override/coran37.wav~
 
-			~kivan37.acm_g~ ~override/kivan37.wav~
-			~kivan35.acm_g~ ~override/kivan35.wav~
-			~kivan36.acm_g~ ~override/kivan36.wav~
+  ~kivan37.acm_g~ ~override/kivan37.wav~
+  ~kivan35.acm_g~ ~override/kivan35.wav~
+  ~kivan36.acm_g~ ~override/kivan36.wav~
 
-			~montr35.acm_g~ ~override/montr35.wav~
-			~montr36.acm_g~ ~override/montr36.wav~
-			~montr37.acm_g~ ~override/montr37.wav~
+  ~montr35.acm_g~ ~override/montr35.wav~
+  ~montr36.acm_g~ ~override/montr36.wav~
+  ~montr37.acm_g~ ~override/montr37.wav~
 
-			~dynah35.acm_g~ ~override/dynah35.wav~
-			~dynah37.acm_g~ ~override/dynah37.wav~
+  ~dynah35.acm_g~ ~override/dynah35.wav~
+  ~dynah37.acm_g~ ~override/dynah37.wav~
 
-			~yeslk37.acm_g~ ~override/yeslk37.wav~
-			~yeslk31.acm_g~ ~override/yeslk31.wav~
-			~yeslk36.acm_g~ ~override/yeslk36.wav~
+  ~yeslk37.acm_g~ ~override/yeslk37.wav~
+  ~yeslk31.acm_g~ ~override/yeslk31.wav~
+  ~yeslk36.acm_g~ ~override/yeslk36.wav~
 
-			~garrk37.acm_g~ ~override/garrk37.wav~
-			~garrk35.acm_g~ ~override/garrk35.wav~
+  ~garrk37.acm_g~ ~override/garrk37.wav~
+  ~garrk35.acm_g~ ~override/garrk35.wav~
 
-			~branw37.acm_g~ ~override/branw37.wav~
-			~branw35.acm_g~ ~override/branw35.wav~
-			~branw29.acm_g~ ~override/branw29.wav~
-			~branw36.acm_g~ ~override/branw36.wav~
-			~branw30.acm_g~ ~override/branw30.wav~
+  ~branw37.acm_g~ ~override/branw37.wav~
+  ~branw35.acm_g~ ~override/branw35.wav~
+  ~branw29.acm_g~ ~override/branw29.wav~
+  ~branw36.acm_g~ ~override/branw36.wav~
+  ~branw30.acm_g~ ~override/branw30.wav~
 
-			~safan37.acm_g~ ~override/safan37.wav~
-			~safan35.acm_g~ ~override/safan35.wav~
-			~safan36.acm_g~ ~override/safan36.wav~
+  ~safan37.acm_g~ ~override/safan37.wav~
+  ~safan35.acm_g~ ~override/safan35.wav~
+  ~safan36.acm_g~ ~override/safan36.wav~
 
-			~quayl37.acm_g~ ~override/quayl37.wav~
-			~quayl35.acm_g~ ~override/quayl35.wav~
-			~quayl36.acm_g~ ~override/quayl36.wav~
+  ~quayl37.acm_g~ ~override/quayl37.wav~
+  ~quayl35.acm_g~ ~override/quayl35.wav~
+  ~quayl36.acm_g~ ~override/quayl36.wav~
 
-			~kagan35.acm_g~ ~override/kagan35.wav~
-			~kagan37.acm_g~ ~override/kagan37.wav~
+  ~kagan35.acm_g~ ~override/kagan35.wav~
+  ~kagan37.acm_g~ ~override/kagan37.wav~
 
-			~shart35.acm_g~ ~override/shart35.wav~
-			~shart36.acm_g~ ~override/shart36.wav~
-			~shart37.acm_g~ ~override/shart37.wav~
+  ~shart35.acm_g~ ~override/shart35.wav~
+  ~shart36.acm_g~ ~override/shart36.wav~
+  ~shart37.acm_g~ ~override/shart37.wav~
 
-			~tiaxx35.acm_g~ ~override/tiaxx35.wav~
+  ~tiaxx35.acm_g~ ~override/tiaxx35.wav~
 
 SET acmsize = SOURCE_SIZE
 INSERT_BYTES 0x0 28 //acm header is already attached

@@ -414,7 +414,7 @@ COPY_EXISTING ~alora.cre~ ~override~
 READ_LONG (0xa4 +  41 * 4) rcomp2
 //apply
 COPY_EXISTING ~alora.cre~ ~override~
-			~alora6.cre~ ~override~
+  ~alora6.cre~ ~override~
 WRITE_LONG (0xa4 +  56 * 4) rcomp2
 BUT_ONLY_IF_IT_CHANGES
 
@@ -425,7 +425,7 @@ COPY_EXISTING ~yeslic.cre~ ~override~
 // 43. INTERACTION5           I've been through enough without suffering you as well.  Begone.
 READ_LONG (0xa4 +  43 * 4) insult2
 COPY_EXISTING ~yeslic.cre~ ~override~
-			~yeslic5.cre~ ~override~
+  ~yeslic5.cre~ ~override~
 WRITE_LONG (0xa4 +  45 * 4) insult2
 BUT_ONLY_IF_IT_CHANGES
 
@@ -443,8 +443,8 @@ READ_LONG (0xa4 +  40 * 4) insult3
 READ_LONG (0xa4 +  41 * 4) rinsult3
 //apply them
 COPY_EXISTING ~ajanti.cre~ ~override~
-			~ajanti4.cre~ ~override~
-			~ajanti6.cre~ ~override~
+  ~ajanti4.cre~ ~override~
+  ~ajanti6.cre~ ~override~
 WRITE_LONG (0xa4 +  45 * 4) insult2
 WRITE_LONG (0xa4 +  46 * 4) insult3
 WRITE_LONG (0xa4 +  60 * 4) rinsult3
@@ -457,9 +457,9 @@ READ_LONG (0xa4 +  42 * 4) insult2
 // 43. INTERACTION5           I had thought none could be so beyond the bounds of goodness.  Certainly you ne...
 READ_LONG (0xa4 +  43 * 4) insult3
 COPY_EXISTING ~khalid.cre~ ~override~
-			~khalid2.cre~ ~override~
-			~khalid4.cre~ ~override~
-			~khalid6.cre~ ~override~
+  ~khalid2.cre~ ~override~
+  ~khalid4.cre~ ~override~
+  ~khalid6.cre~ ~override~
 WRITE_LONG (0xa4 +  45 * 4) insult2
 WRITE_LONG (0xa4 +  46 * 4) insult3
 BUT_ONLY_IF_IT_CHANGES
@@ -479,7 +479,7 @@ READ_LONG (0xa4 +  42 * 4) comp2
 // 43. INTERACTION5           May Tempus someday show you the error of your ways.
 READ_LONG (0xa4 +  43 * 4) rinsult3
 COPY_EXISTING ~branwe.cre~ ~override~
-			~branwe5.cre~ ~override~
+  ~branwe5.cre~ ~override~
 WRITE_LONG (0xa4 +  46 * 4) insult3
 WRITE_LONG (0xa4 +  48 * 4) comp2
 WRITE_LONG (0xa4 +  60 * 4) rinsult3
