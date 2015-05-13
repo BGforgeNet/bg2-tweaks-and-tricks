@@ -1,0 +1,19 @@
+//3 bags in candlekeep
+
+COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~ //dummy detection file
+//gem bag
+COPY ~tweaks-and-tricks/candlekeep_bags/g_gem.itm~ ~override/g_gem.itm~
+COPY ~tweaks-and-tricks/candlekeep_bags/g_gem.sto~ ~override/g_gem.sto~
+//scroll case
+COPY ~tweaks-and-tricks/candlekeep_bags/g_scr.itm~ ~override/g_scr.itm~
+COPY ~tweaks-and-tricks/candlekeep_bags/g_scr.sto~ ~override/g_scr.sto~
+//potion case
+COPY ~tweaks-and-tricks/candlekeep_bags/g_pot.itm~ ~override/g_pot.itm~
+COPY ~tweaks-and-tricks/candlekeep_bags/g_pot.sto~ ~override/g_pot.sto~
+
+//dialog and script
+COPY ~tweaks-and-tricks/candlekeep_bags/g_bag.cre~ ~override/g_bag.cre~
+SAY NAME1 ~Thorius~
+SAY NAME2 ~Thorius~
+COMPILE ~tweaks-and-tricks/candlekeep_bags/g_bag.d~
+EXTEND_BOTTOM ~AR0015.bcs~ ~tweaks-and-tricks/candlekeep_bags/g_ar0015.baf~

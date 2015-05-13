@@ -187,69 +187,23 @@ INCLUDE ~tweaks-and-tricks/npc_soundsets/main.tph~
 BEGIN ~Each stat gets +1~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
-ADD_SPELL ~tweaks-and-tricks/stats_bonuses/g_stat1.spl~ 4 0 ~g_stats~
-EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats.baf~
+ADD_SPELL ~tweaks-and-tricks/stat_bonuses/g_stat1.spl~ 4 0 ~g_stats~
+EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
 
-BEGIN ~Each stat besides Wisdom gets +1, Wisdom gets +3~
+BEGIN ~Each stat except Wisdom gets +1, Wisdom gets +3~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
-COPY_EXISTING ~sw1h01.itm~ ~override/stats_bonuses/g_stat2.itm~ //dummy detection file
-ADD_SPELL ~tweaks-and-tricks/stats_bonuses/g_stat2.spl~ 4 0 ~g_stats~
-EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats_bonuses/stats.baf~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
+ADD_SPELL ~tweaks-and-tricks/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
+EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
 
 
 
-BEGIN ~Effects of scrolls and potions do not stack with themselves~
-INCLUDE ~tweaks-and-tricks/lib/macro.tph~
-
-COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
-SAY NAME1 @26
-SAY NAME2 @27
-READ_LONG 0x8 pot_strref
-READ_LONG 0xc scr_strref
-BUT_ONLY_IF_IT_CHANGES
-
-COPY_EXISTING ~msectype.2da~ ~override~
-COUNT_2DA_ROWS 1 ~2da_row_number~
-SET ~2da_row_number~ = (%2da_row_number% - 4) //excluding first 4 unnesessary rows
-BUT_ONLY_IF_IT_CHANGES
-
-PRINT ~Patching potions...~
-OUTER_SPRINT ~refresh_strref~ ~%pot_strref%~
-ACTION_FOR_EACH item IN potn02 potn22 potn09 potn41 potn18 potn29 potn31 potn40 potn34 potn35 potn36 potn37 potn39 potn42 potn46 potn15 BEGIN 
-  OUTER_SPRINT ~item2unstack~ ~%item%~
-  OUTER_SPRINT ~spellname~ ~g_%item%~
-  LAUNCH_ACTION_MACRO ~UNSTACK_ITEM~
-END
-
-PRINT ~Patching scrolls...~
-OUTER_SPRINT ~refresh_strref~ ~%scr_strref%~
-ACTION_FOR_EACH item IN scrl03 scrl04 scrl05 scrl06
-BEGIN 
-  OUTER_SPRINT ~item2unstack~ ~%item%~
-  OUTER_SPRINT ~spellname~ ~g_%item%~
-  LAUNCH_ACTION_MACRO ~UNSTACK_ITEM~
-END
+BEGIN ~Potions and scrolls do not stack with themselves~
+INCLUDE ~tweaks-and-tricks/potions_no_stack/main.tph~
 
 
 
 //3 bags in candlekeep
 BEGIN ~Candlekeep bags~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-
-COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~ //dummy detection file
-//gem bag
-COPY ~tweaks-and-tricks/bags/g_gem.itm~ ~override/g_gem.itm~
-COPY ~tweaks-and-tricks/bags/g_gem.sto~ ~override/g_gem.sto~
-//scroll case
-COPY ~tweaks-and-tricks/bags/g_scr.itm~ ~override/g_scr.itm~
-COPY ~tweaks-and-tricks/bags/g_scr.sto~ ~override/g_scr.sto~
-//potion case
-COPY ~tweaks-and-tricks/bags/g_pot.itm~ ~override/g_pot.itm~
-COPY ~tweaks-and-tricks/bags/g_pot.sto~ ~override/g_pot.sto~
-
-//dialog and script
-COPY ~tweaks-and-tricks/candlekeep_bags/g_bag.cre~ ~override/g_bag.cre~
-SAY NAME1 ~Thorius~
-SAY NAME2 ~Thorius~
-COMPILE ~tweaks-and-tricks/candlekeep_bags/g_bag.d~
-EXTEND_BOTTOM ~AR0015.bcs~ ~tweaks-and-tricks/bags/g_ar0015.baf~
+INCLUDE ~tweaks-and-tricks/candlekeep_bags/main.tph~
