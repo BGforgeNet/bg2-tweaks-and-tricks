@@ -192,9 +192,9 @@ EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats.baf~
 
 BEGIN ~Each stat besides Wisdom gets +1, Wisdom gets +3~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
-COPY_EXISTING ~sw1h01.itm~ ~override/stat_bonuses/g_stat2.itm~ //dummy detection file
+COPY_EXISTING ~sw1h01.itm~ ~override/stats_bonuses/g_stat2.itm~ //dummy detection file
 ADD_SPELL ~tweaks-and-tricks/stats_bonuses/g_stat2.spl~ 4 0 ~g_stats~
-EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
+EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats_bonuses/stats.baf~
 
 
 
