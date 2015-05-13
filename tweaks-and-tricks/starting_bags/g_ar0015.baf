@@ -1,7 +1,0 @@
-IF
-Global("g_bag","AR0015",0)
-THEN
-RESPONSE #100
-SetGlobal("g_bag","AR0015",1)
-CreateCreature("g_bag",[2900.2900],8)
-END

@@ -205,20 +205,21 @@ INCLUDE ~tweaks-and-tricks/potions_no_stack/main.tph~
 
 BEGIN ~Gem, scroll, potion (GSP)~
 SUBCOMPONENT ~Starting bags~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-INCLUDE ~tweaks-and-tricks/candlekeep_bags/main.tph~
+ACTION_DEFINE_ARRAY bags BEGIN gem scr pot END
+INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
 BEGIN ~GSP + ammo~
 SUBCOMPONENT ~Starting bags~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
+ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
 BEGIN ~GSP + ammo, holding~
 SUBCOMPONENT ~Starting bags~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
+ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
 BEGIN ~GSP + ammo, holding - all bottomless!~
 SUBCOMPONENT ~Starting bags~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
+ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
+INCLUDE ~tweaks-and-tricks/starting_bags/bottomless.tph~

@@ -1,0 +1,8 @@
+IF
+  Global("g_bg2_bags","AR0602",0)
+THEN
+  RESPONSE #100
+    SetGlobal("g_bg2_bags","AR0602",1)
+    %action_bg2_bags%
+    Continue()
+END

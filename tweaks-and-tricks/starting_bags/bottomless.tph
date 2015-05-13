@@ -1,0 +1,7 @@
+ACTION_PHP_EACH bags AS index => bag BEGIN
+  COPY_EXISTING
+    ~g_%bag%.sto~ ~override~
+    ~g_%bag%2.sto~ ~override~
+    WRITE_SHORT 0x22 32000
+  BUT_ONLY
+END
