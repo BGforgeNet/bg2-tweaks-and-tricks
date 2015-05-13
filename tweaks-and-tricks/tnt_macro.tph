@@ -4,7 +4,7 @@ DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 APPEND ~msectype.2da~ ~%spellname% %refresh_strref%~ //new secondary type. 
 OUTER_SET ~2da_row_number~ = (%2da_row_number% + 1)
 
-COPY ~tweaks-and-tricks/wbdummy.spl~ ~override/%spellname%.spl~ //dummy spell
+COPY ~tweaks-and-tricks/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
   //set new secondary type
   WRITE_BYTE 0x27 ~%2da_row_number%~
 BUT_ONLY_IF_IT_CHANGES

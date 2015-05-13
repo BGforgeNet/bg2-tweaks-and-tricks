@@ -5,7 +5,7 @@ IF ~~ THEN REPLY ~Get lost, old man. I've no time.~ GOTO 2
 END
 IF ~~ THEN BEGIN 1
 	SAY ~You have always been my favorite pupil, I want to help you whatever I can. Take these things, it's not weapon or armor, but experienced adventurers know its real value. And I have no need in it here.~
-IF ~~ THEN REPLY ~I'm very grateful for your lessons and your help, Thorius.~ DO ~SetNumTimesTalkedTo(0) GiveItemCreate("wb_gem",Player1,1,1,1) GiveItemCreate("wb_pot",Player1,1,1,1) GiveItemCreate("wb_scr",Player1,1,1,1) EscapeArea()~
+IF ~~ THEN REPLY ~I'm very grateful for your lessons and your help, Thorius.~ DO ~SetNumTimesTalkedTo(0) GiveItemCreate("g_gem",Player1,1,1,1) GiveItemCreate("g_pot",Player1,1,1,1) GiveItemCreate("g_scr",Player1,1,1,1) EscapeArea()~
 EXIT
 END
 IF ~~ THEN BEGIN 2

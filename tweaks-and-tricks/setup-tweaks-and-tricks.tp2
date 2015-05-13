@@ -369,30 +369,30 @@ COMPILE ~tweaks-and-tricks/slayer/slayer.d~
 ////detection files////
 extended soundsets:
 
-~Additions only~ wb_esad.itm
-~BG1 soundsets dominate~ wb_esbg1.itm
-~BG2 soundsets dominate~ wb_esbg2.itm
+~Additions only~ g_esad.itm
+~BG1 soundsets dominate~ g_esbg1.itm
+~BG2 soundsets dominate~ g_esbg2.itm
 
-~Consistent Cloak of Mirroring~ wb_mirr.itm
+~Consistent Cloak of Mirroring~ g_mirr.itm
 
-~Cheesier Slayer Form~ wb_slay.itm
+~Cheesier Slayer Form~ g_slay.itm
 
 Adjust BG1-style interparty chit-chat to BG2 framerate:
-~40 frames per second~ wb_frame40.itm
-~50 frames per second~ wb_frame50.itm
-~60 frames per second~ wb_frame60.itm
-~70 frames per second~ wb_frame70.itm
-~80 frames per second~ wb_frame80.itm
-~90 frames per second~ wb_frame90.itm
-~Disable chit-chat at all (banters will occur anyway)~ wb_frame0.itm
+~40 frames per second~ g_frame40.itm
+~50 frames per second~ g_frame50.itm
+~60 frames per second~ g_frame60.itm
+~70 frames per second~ g_frame70.itm
+~80 frames per second~ g_frame80.itm
+~90 frames per second~ g_frame90.itm
+~Disable chit-chat at all (banters will occur anyway)~ g_frame0.itm
 
-~Effects of scrolls and potions do not stack with themselves~ wb_eff.itm
+~Effects of scrolls and potions do not stack with themselves~ g_eff.itm
 
-~Candlekeep bags~ wb_cand.itm
+~Candlekeep bags~ g_cand.itm
 
 Add BG1 tomes stats bonuses to new BG2 characters:
-~Each stat gets +1~ wb_stat1.itm
-~Each stat besides Wisdom gets +1, Wisdom gets +3~ wb_stat2.itm
+~Each stat gets +1~ g_stat1.itm
+~Each stat besides Wisdom gets +1, Wisdom gets +3~ g_stat2.itm
 
 */
 
@@ -411,7 +411,7 @@ REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 0
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_esad.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_esad.itm~
 INCLUDE ~tweaks-and-tricks/extended_soundsets.tph~
 
 BEGIN ~BG1 soundsets dominate~
@@ -419,7 +419,7 @@ REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 1
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_esbg1.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg1.itm~
 INCLUDE ~tweaks-and-tricks/extended_soundsets.tph~
 
 BEGIN ~BG2 soundsets dominate~
@@ -427,7 +427,7 @@ REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 2
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_esbg2.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~
 INCLUDE ~tweaks-and-tricks/extended_soundsets.tph~
 
 
@@ -462,7 +462,7 @@ SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 40
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame40.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame40.itm~
 INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
 
 BEGIN ~50 frames per second~
@@ -470,7 +470,7 @@ SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 50
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame50.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame50.itm~
 INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
 
 BEGIN ~60 frames per second~
@@ -478,7 +478,7 @@ SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 60
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame60.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame60.itm~
 INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
 
 BEGIN ~70 frames per second~
@@ -486,7 +486,7 @@ SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 70
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame70.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame70.itm~
 INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
 
 BEGIN ~80 frames per second~
@@ -494,7 +494,7 @@ SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 80
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame80.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame80.itm~
 INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
 
 BEGIN ~90 frames per second~
@@ -502,14 +502,14 @@ SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 OUTER_SET frame_rate = 90
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame90.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame90.itm~
 INCLUDE ~tweaks-and-tricks/adjusted_sounds.tph~
 
 BEGIN ~Disable chit-chat at all (banters will occur anyway).~
 SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_frame0.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_frame0.itm~
 INCLUDE ~tweaks-and-tricks/disable_sounds.tph~
 
 
@@ -520,7 +520,7 @@ INCLUDE ~tweaks-and-tricks/disable_sounds.tph~
 BEGIN ~Consistent Cloak of Mirroring~
 
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_mirr.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_mirr.itm~
 
 INCLUDE ~tweaks-and-tricks/tnt_macro.tph~
 
@@ -554,15 +554,15 @@ INCLUDE ~tweaks-and-tricks/npc_soundsets.tph~
 BEGIN ~Each stat gets +1~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_stat1.itm~
-ADD_SPELL ~tweaks-and-tricks/stats/wb_stat1.spl~ 4 0 ~wb_stats~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~
+ADD_SPELL ~tweaks-and-tricks/stats/g_stat1.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats.baf~
 
 BEGIN ~Each stat besides Wisdom gets +1, Wisdom gets +3~
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_stat2.itm~
-ADD_SPELL ~tweaks-and-tricks/stats/wb_stat2.spl~ 4 0 ~wb_stats~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~
+ADD_SPELL ~tweaks-and-tricks/stats/g_stat2.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stats.baf~
 
 
@@ -576,7 +576,7 @@ BEGIN ~Effects of scrolls and potions do not stack with themselves~
 INCLUDE ~tweaks-and-tricks/tnt_macro.tph~
 
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_eff.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~
 SAY NAME1 ~Potion effect refreshed~
 SAY NAME2 ~Protection scroll effect refreshed~
 READ_LONG 0x8 pot_strref
@@ -592,7 +592,7 @@ PRINT ~Patching potions...~
 OUTER_SPRINT ~refresh_strref~ ~%pot_strref%~
 ACTION_FOR_EACH item IN potn02 potn22 potn09 potn41 potn18 potn29 potn31 potn40 potn34 potn35 potn36 potn37 potn39 potn42 potn46 potn15 BEGIN 
   OUTER_SPRINT ~item2unstack~ ~%item%~
-  OUTER_SPRINT ~spellname~ ~wb%item%~
+  OUTER_SPRINT ~spellname~ ~g_%item%~
   LAUNCH_ACTION_MACRO ~UNSTACK_ITEM~
 END
 
@@ -601,7 +601,7 @@ OUTER_SPRINT ~refresh_strref~ ~%scr_strref%~
 ACTION_FOR_EACH item IN scrl03 scrl04 scrl05 scrl06
 BEGIN 
   OUTER_SPRINT ~item2unstack~ ~%item%~
-  OUTER_SPRINT ~spellname~ ~wb%item%~
+  OUTER_SPRINT ~spellname~ ~g_%item%~
   LAUNCH_ACTION_MACRO ~UNSTACK_ITEM~
 END
 
@@ -614,20 +614,20 @@ BEGIN ~Candlekeep bags~
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 
 //dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/wb_cand.itm~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~
 //gem bag
-COPY ~tweaks-and-tricks/bags/wb_gem.itm~ ~override/wb_gem.itm~
-COPY ~tweaks-and-tricks/bags/wb_gem.sto~ ~override/wb_gem.sto~
+COPY ~tweaks-and-tricks/bags/g_gem.itm~ ~override/g_gem.itm~
+COPY ~tweaks-and-tricks/bags/g_gem.sto~ ~override/g_gem.sto~
 //scroll case
-COPY ~tweaks-and-tricks/bags/wb_scr.itm~ ~override/wb_scr.itm~
-COPY ~tweaks-and-tricks/bags/wb_scr.sto~ ~override/wb_scr.sto~
+COPY ~tweaks-and-tricks/bags/g_scr.itm~ ~override/g_scr.itm~
+COPY ~tweaks-and-tricks/bags/g_scr.sto~ ~override/g_scr.sto~
 //potion case
-COPY ~tweaks-and-tricks/bags/wb_pot.itm~ ~override/wb_pot.itm~
-COPY ~tweaks-and-tricks/bags/wb_pot.sto~ ~override/wb_pot.sto~
+COPY ~tweaks-and-tricks/bags/g_pot.itm~ ~override/g_pot.itm~
+COPY ~tweaks-and-tricks/bags/g_pot.sto~ ~override/g_pot.sto~
 
 //dialog and script
-COPY ~tweaks-and-tricks/bags/wb_bag.cre~ ~override/wb_bag.cre~
+COPY ~tweaks-and-tricks/bags/g_bag.cre~ ~override/g_bag.cre~
 SAY NAME1 ~Thorius~
 SAY NAME2 ~Thorius~
-COMPILE ~tweaks-and-tricks/bags/wb_bag.d~
-EXTEND_BOTTOM ~AR0015.bcs~ ~tweaks-and-tricks/bags/wb_ar0015.baf~
+COMPILE ~tweaks-and-tricks/bags/g_bag.d~
+EXTEND_BOTTOM ~AR0015.bcs~ ~tweaks-and-tricks/bags/g_ar0015.baf~

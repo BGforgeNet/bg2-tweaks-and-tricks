@@ -1,9 +1,9 @@
 IF
-  Global("wb_stats","MYAREA",0)
+  Global("g_stats","MYAREA",0)
   Global("endofbg1","GLOBAL",0)
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER1,ReallyForceSpell(Myself,wb_stats))
-    SetGlobal("wb_stats","MYAREA",1)
+    ActionOverride(PLAYER1,ReallyForceSpell(Myself,g_stats))
+    SetGlobal("g_stats","MYAREA",1)
     Continue()
 END
