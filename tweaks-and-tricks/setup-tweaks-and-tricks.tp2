@@ -228,3 +228,13 @@ INCLUDE ~tweaks-and-tricks/starting_bags/bottomless.tph~
 
 BEGIN ~No talking when hiding in shadows~
 INCLUDE ~tweaks-and-tricks/no_talk_shadows/main.tph~
+
+
+
+BEGIN ~Can't steal from fence shops~
+SUBCOMPONENT ~Close shop steal exploit~
+INCLUDE ~tweaks-and-tricks/no_shop_steal/fence.tph~
+
+BEGIN ~Can't steal from any shop~
+SUBCOMPONENT ~Close shop steal exploit~
+INCLUDE ~tweaks-and-tricks/no_shop_steal/all.tph~

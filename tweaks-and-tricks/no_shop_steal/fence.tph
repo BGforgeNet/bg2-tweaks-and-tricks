@@ -1,0 +1,9 @@
+COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
+  PATCH_IF (%SOURCE_SIZE% > 0x9b) BEGIN
+    READ_LONG  0x10 "flags"
+    PATCH_IF (("%flags%" BAND 0x1000) = 0x1000) BEGIN
+      SET "flags" &= (` 0x08)
+      WRITE_LONG 0x10 "flags"
+    END
+  END
+BUT_ONLY
