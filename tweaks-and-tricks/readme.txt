@@ -1,4 +1,4 @@
-# Tweaks-and-Tricks mod for Baldur's Gate 2
+## Tweaks-and-Tricks mod for Baldur's Gate 2
 
 This mod is a collection of tweaks to:
 - fix some annoying aspects of the game
