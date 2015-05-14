@@ -1,5 +1,6 @@
 ## Tweaks-and-Tricks mod for Baldur's Gate 2
 
+
 This mod is a collection of tweaks to:
 - fix some annoying aspects of the game
 - increase consistency, common sense
@@ -35,7 +36,9 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 - [Changelog](#changelog)
 - [Used sotftware](#used-sotftware)
 
+
 ## Components
+
 
 #### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory).
@@ -45,8 +48,10 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 - This component has an issue: familiars will pick up items from closed or trapped chests. It's a limitation of the engine that I didn't find a workaround for.
 - The less they're told to pick up, the faster they'll do that. So, try to keep the lists short. For example, don't tell them to pick up bandit scalps in BG2.
 
+
 #### Faster familiars
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
+
 
 #### Fair fights
 A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
@@ -55,8 +60,10 @@ A few opponents in the game basically cheat, or just have unrealistic stats. Som
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
 - Shandalar, the Ulgoth's Beard archmage (90% all resistances, innocent - removed)
 
+
 #### Cheesy Slayer: full heal on change
 Makes it a better "last resort" ability.
+
 
 #### Cheesy Slayer: reputation
 The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
@@ -66,6 +73,7 @@ With reduced loss, you lose only 1 point of reputation, even when turning into R
 
 ##### No loss
 No reputation hit on any change.
+
 
 #### Extended soundsets for NPC
 This components extends NPC soundsets by re-using their replicas from BG1 in BG2 and vice-versa.
@@ -110,12 +118,15 @@ Edwin: "Watch your words when addressing me, lest they be fed to you on the end 
 
 In addition, this component expands such interaction in BG1 and reintroduces compliments and insults in BG2.
 
+
 #### Adjust BG1-style interparty chit-chat to BG2 framerate
 Adjusts compliments and insults restored by the above component to your frame rate so that they won't overlap (it happens because BG2 runs faster then BG1). You can also disable compliments and insults if you don't like them. This component has DOES NOT affect banters in any way. Recommended if you installed "Extended soundsets".
+
 
 #### Consistent Cloak of Mirroring
 
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which make no sense to me. And it doesn't protect from from Call Lighting, which also doesn't. This compoment fixes both issues.
+
 
 #### Effects of scrolls and potions do not stack with themselves
 
@@ -125,23 +136,25 @@ Example 1: you drink a potion of fire resistance and get +50% fire resistance. A
 
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
 
+
 #### Starting bags
 AKA inventory management painkiller. In both Candlekeep and Irenicus dungeon, you can find a few bags to start the adventure with. In Candlekeep, talk to Thorius. In dungeon, check the painting.
 
 ##### Gem, scroll, potion, ammo (GSPA)
-
 Provides you with 4 basic bags.
 
 ##### GSPA + holding
-
 Same 4 bags, and a bag of holding.
 
 ##### GSPA + holding, bottomless
-
 Same 5 bags, all bottomless.
 
+
 #### Add BG1 tomes stats bonuses to new BG2 characters
-To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain in BG1.
+To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain from tomes in BG1. The subcomponents are self-describing.
+##### Each stat gets +1
+##### Each stats except Wisdom gets +1, Wisdom gets +3
+
 
 ## Installation
 - Download the [archive](https://github.com/burner1024/BG2-cheese-of-use/archive/master.zip)
@@ -149,11 +162,14 @@ To brand new BG2 charaters, gives the stat bonuses that they were supposed to ga
 - Move "tweaks-and-tricks" and "setup-tweaks-and-tricks.exe" into the game directory
 - Launch setup-tweaks-and-tricks.exe
 
+
 ## License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
 
+
 ## Author
 burner1024 @ Github
+
 
 ## Changelog
 * Version 2: merged in Tweaks-And-Tricks, renamed the mod, updated the components, updated to weidu 238.
