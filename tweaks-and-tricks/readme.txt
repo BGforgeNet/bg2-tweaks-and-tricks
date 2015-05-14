@@ -1,103 +1,165 @@
-##Tweaks-and-Tricks mod for Baldur's Gate 2
+## Tweaks-and-Tricks mod for Baldur's Gate 2
 
 This mod is a collection of tweaks to:
 - fix some annoying aspects of the game
-- add consistency, "flavor"
+- increase consistency, common sense
 - make some things easier
 - make other things harder
-- outright cheats
 
 It will work with BG2 or BGT. Tested only with BG2 fixpack.
 
 - [Components](#components)
  - [Smarter familiars](#smarter-familiars)
-   - [Note](#note)
+  - [Note](#note)
  - [Faster familiars](#faster-familiars)
  - [Fair fights](#fair-fights)
- - [Cheesy Slayer form](#cheesy-slayer-form)
+ - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
+ - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
+  - [Reduced loss](#reduced-loss)
+  - [No loss](#no-loss)
+ - [Extended soundsets for NPC](#extended-soundsets-for-npc)
+  - [Additions only](#additions-only)
+  - [BG1 soundsets prevail](#BG1-soundsets-prevail)
+  - [BG2 soundsets prevail](#BG2-soundsets-prevail)
+ - [Adjust BG1-style interparty chit-chat to BG2 framerate](#Adjust-BG1-style-interparty-chit-chat-to-BG2-framerate)
+ - [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
+ - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
+ - [Starting bags](#starting-bags)
+  - Gem, scroll, potion, ammo (GSPA)
+  - GSPA + holding
+  - GSPA + holding, bottomless
+ - [Add BG1 tomes stats bonuses to new BG2 characters](#Add-BG1-tomes-stats-bonuses-to-new-BG2-characters)
 - [Installation](#installation)
 - [License](#license)
 - [Author](#author)
 - [Changelog](#changelog)
 - [Used sotftware](#used-sotftware)
 
-###Components
+### Components
 
-#####Smarter familiars
+##### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory).
 - Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
 
-######Note
+###### Note
 - This component has an issue: familiars will pick up items from closed or trapped chests. It's a limitation of the engine that I didn't find a workaround for.
 - The less they're told to pick up, the faster they'll do that. So, try to keep the lists short. For example, don't tell them to pick up bandit scalps in BG2.
 
-#####Faster familiars
+##### Faster familiars
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
 
-#####Fair fights
+##### Fair fights
 A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
 - Arcanis Gath, the thief that insta-kills you on attacking Renal (now you can fight him, he has a normal sword)
 - Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
 - Shandalar, the Ulgoth's Beard archmage (90% all resistances, innocent - removed)
 
-#####Cheesy Slayer: full heal on change
+##### Cheesy Slayer: full heal on change
 Makes it a better "last resort" ability.
 
-#####Cheesy Slayer: reputation
-- no loss
-- reduced loss
+##### Cheesy Slayer: reputation
 The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
-With reduced loss, you lose only 1 point of reputation, even when turning into Ravager.
 
-##### Extended soundsets (BGT only)
-Affects only NPCs who appear in both BG1 to BG2 (Edwin, Viconia, Imoen,  Jaheira, Minsc). Makes them use sounds from BG1 in BG2 and vice-versa. 
-Example: BG1 Jaheira has only 1 battle cry: "For The fallen!". BG2 jahera has 3 battle cries: "For The fallen!", "Fall creature! And feed the earth!", "Nature take the life she gave!". This component adds 2 recent cries to BG1 Jaheira. If BG1 and BG2 version have different sounds in same slots, it's a collision, so the 3 subcomponents are:
-- Additions only - only unused strings are filled, therefore after transition soundsets change.
-- BG1 soundsets prevail - in both BG1 and BG2 sounds from BG1 prevail, after transition soundsets do not change.
-- BG2 soundsets prevail - in both BG1 and BG2 sounds from BG2 prevail, after transition soundsets do not change.
+###### Reduced loss
+With reduced loss, you lose only 1 point of reputation, even when turning into Ravager (in vanilla, it's 3).
 
-In BG1, interparty interaction was based not on banters, but rather on occasional chit-chat between party members - compliments and insults. They just happen from time to time and have no consequences. In addition, this component expands such interaction in BG1 and reintroduces compliments and insults in BG2.
+###### No loss
+No reputation hit on any change.
+
+##### Extended soundsets for NPC
+This components extends NPC soundsets by re-using their replicas from BG1 in BG2 and vice-versa.
+
+Example: BG1 Jaheira has only 1 battle cry: "For The fallen!". So the whole game you listen to that over and over.
+
+But, BG2 Jaheira has 3 battle cries:
+ - "For The fallen!"
+ - "Fall creature! And feed the earth!"
+ - "Nature take the life she gave!".
+ 
+This component adds 2 extra battle cries to BG1 Jaheira.
+
+Naturally, this is BGT only and works only for NPC who are present in both BG1 and BG2, namely:
+- Edwin
+- Imoen
+- Jaheira
+- Minsc
+- Viconia
+
+In some cases, BG1 and BG2 versions of an NPC have different sounds in same slots, it's a collision, so the 3 subcomponents are:
+
+###### Additions only
+Only missing sounds are added, therefore after transition soundsets may change.
+
+###### BG1 soundsets prevail
+In case of collision, sounds from BG1 prevail, after transition soundsets do not change.
+
+###### BG2 soundsets prevail
+In case of collision, sounds from BG2 prevail, after transition soundsets do not change.
+
+If this explanation is too confusing, but you'd like to hear more different sounds, just take "Additions only".
+
+
+In BG1, interparty interaction was based not on banters, but rather on occasional chit-chat between party members - compliments and insults. They just happen from time to time and have no in-game consequences.
+
 Example:
+
 Jaheira: "You are amusing, in a "what the hell is wrong with you" kind of way."
+
 Edwin: "Watch your words when addressing me, lest they be fed to you on the end of my boot!"
 
-If this explanation is too confusing, just take "Additions only".
+In addition, this component expands such interaction in BG1 and reintroduces compliments and insults in BG2.
 
-#####Adjust BG1-style interparty chit-chat to BG2 framerate.
+##### Adjust BG1-style interparty chit-chat to BG2 framerate
 Adjusts compliments and insults restored by the above component to your frame rate so that they won't overlap (it happens because BG2 runs faster then BG1). You can also disable compliments and insults if you don't like them. This component has DOES NOT affect banters in any way. Recommended if you installed "Extended soundsets".
 
-#####Consistent Cloak of Mirroring.
+##### Consistent Cloak of Mirroring
+
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which make no sense to me. And it doesn't protect from from Call Lighting, which also doesn't. This compoment fixes both issues.
 
-##### Effects of scrolls and potions do not stack with themselves.
+##### Effects of scrolls and potions do not stack with themselves
+
 Makes effects potions and scrolls of resistance non-stackable with themselves.
+
 Example 1: you drink a potion of fire resistance and get +50% fire resistance. A turn later you drink one more potion of fire resistance. No additional resistance is gained, but duration of its effect is refreshed.
+
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
 
-##### Candlekeep bags (BGT only).
-Adds some guy to Candlekeep. Who gives you a gem bag, a scroll case, and a potion case. Not the kind of things that should be rare, IMO.
+##### Starting bags
+AKA inventory management painkiller. In both Candlekeep and Irenicus dungeon, you can find a few bags to start the adventure with. In Candlekeep, talk to Thorius. In dungeon, check the painting.
 
-##### Add BG1 tomes stats bonuses to new BG2 characters.
+###### Gem, scroll, potion, ammo (GSPA)
+
+Provides you with 4 basic bags.
+
+###### GSPA + holding
+
+Same 4 bags, and a bag of holding.
+
+###### GSPA + holding, bottomless
+
+Same 5 bags, all bottomless.
+
+##### Add BG1 tomes stats bonuses to new BG2 characters
 To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain in BG1.
 
-###Installation
+### Installation
 - Download the [archive](https://github.com/burner1024/BG2-cheese-of-use/archive/master.zip)
 - Unzip it
 - Move "tweaks-and-tricks" and "setup-tweaks-and-tricks.exe" into the game directory
 - Launch setup-tweaks-and-tricks.exe
 
-###License
+### License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
 
-###Author
+### Author
 burner1024 @ Github
 
-###Changelog
+### Changelog
 * Version 2: merged in Tweaks-And-Tricks, renamed the mod, updated the components, updated to weidu 238.
 * Version 1: initial release.
 
-###Used software
+### Used software
 [DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)
 [WeiDU](http://weidu.org/main.html#weidu)
 [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
