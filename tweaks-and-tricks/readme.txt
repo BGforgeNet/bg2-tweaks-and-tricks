@@ -20,8 +20,8 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
     - [No loss](#no-loss)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
     - [Additions only](#additions-only)
-    - [BG1 soundsets prevail](#BG1-soundsets-prevail)
-    - [BG2 soundsets prevail](#BG2-soundsets-prevail)
+    - [BG1 soundsets prevail](#bg1-soundsets-prevail)
+    - [BG2 soundsets prevail](#bg2-soundsets-prevail)
   - [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
   - [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
@@ -30,6 +30,10 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
     - [GSPA + holding](#gspa--holding)
     - [GSPA + holding, bottomless](#gspa--holding-bottomless)
   - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
+  - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
+  - [Close shop steal exploit](#close-shop-steal-exploit)
+    - [Can't steal from fences](#cant-steal-from-fences)
+    - [Can't steal from any shops](#cant-steal-from-any-shops)
 - [Installation](#installation)
 - [License](#license)
 - [Author](#author)
@@ -150,10 +154,25 @@ Same 4 bags, and a bag of holding.
 Same 5 bags, all bottomless.
 
 
+#### No talking when hiding in shadows
+
+Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the world is blind to my passage"). It quickly gets annoying if you use thief scout script.
+
+
 #### Add BG1 tomes stats bonuses to new BG2 characters
 To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain from tomes in BG1. The subcomponents are self-describing.
 ##### Each stat gets +1
 ##### Each stats except Wisdom gets +1, Wisdom gets +3
+
+
+#### Close shop steal exploit
+Close infinite money "steal-sell-steal" exploit. Options are:
+
+##### Can't steal from fences
+You can steal from normal merchants, but can't steal from those who buy stolen items themselves.
+
+##### Can't steal from any shops
+Just disable stealing in all shops.
 
 
 ## Installation

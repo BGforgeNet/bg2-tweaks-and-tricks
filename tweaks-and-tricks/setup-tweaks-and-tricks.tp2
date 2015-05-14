@@ -198,27 +198,22 @@ EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
 
 
 
-BEGIN ~Potions and scrolls do not stack with themselves~
+BEGIN ~Effects of scrolls and potions do not stack with themselves~
 INCLUDE ~tweaks-and-tricks/potions_no_stack/main.tph~
 
 
 
-BEGIN ~Gem, scroll, potion (GSP)~
-SUBCOMPONENT ~Starting bags~
-ACTION_DEFINE_ARRAY bags BEGIN gem scr pot END
-INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
-
-BEGIN ~GSP + ammo~
+BEGIN ~Gem, scroll, potion, ammo (GSPA)~
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
-BEGIN ~GSP + ammo, holding~
+BEGIN ~GSPA + holding~
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
-BEGIN ~GSP + ammo, holding - all bottomless!~
+BEGIN ~GSP + holding - all bottomless!~
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
@@ -231,10 +226,10 @@ INCLUDE ~tweaks-and-tricks/no_talk_shadows/main.tph~
 
 
 
-BEGIN ~Can't steal from fence shops~
+BEGIN ~Can't steal from fences~
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~tweaks-and-tricks/no_shop_steal/fence.tph~
 
-BEGIN ~Can't steal from any shop~
+BEGIN ~Can't steal from any shops~
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~tweaks-and-tricks/no_shop_steal/all.tph~
