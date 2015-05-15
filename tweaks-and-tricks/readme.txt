@@ -176,7 +176,7 @@ Just disable stealing in all shops.
 
 
 ## Installation
-- Download the [archive](https://github.com/burner1024/BG2-cheese-of-use/archive/master.zip)
+- Download "Source code (zip)" archive from [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
 - Unzip it
 - Move "tweaks-and-tricks" and "setup-tweaks-and-tricks.exe" into the game directory
 - Launch setup-tweaks-and-tricks.exe
