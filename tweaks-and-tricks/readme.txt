@@ -92,10 +92,10 @@ This components extends NPC soundsets by re-using their replicas from BG1 in BG2
 Example: BG1 Jaheira has only 1 battle cry: "For The fallen!". So the whole game you listen to that over and over.
 
 But, BG2 Jaheira has 3 battle cries:
- - "For The fallen!"
+ - "For the fallen!"
  - "Fall creature! And feed the earth!"
  - "Nature take the life she gave!".
- 
+
 This component adds 2 extra battle cries to BG1 Jaheira.
 
 Naturally, this is BGT only and works only for NPC who are present in both BG1 and BG2, namely:
