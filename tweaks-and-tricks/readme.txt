@@ -18,40 +18,47 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 
 ## Components
 
-- [Smarter familiars](#smarter-familiars)
-  - [Note](#note)
-- [Faster familiars](#faster-familiars)
-- [Fair fights](#fair-fights)
-- [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
-- [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
-  - [Reduced loss](#reduced-loss)
-  - [No loss](#no-loss)
-- [Extended soundsets for NPC](#extended-soundsets-for-npc)
-  - [Additions only](#additions-only)
-  - [BG1 soundsets prevail](#bg1-soundsets-prevail)
-  - [BG2 soundsets prevail](#bg2-soundsets-prevail)
-- [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
-- [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
-- [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
-- [Starting bags](#starting-bags)
-  - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
-  - [GSPA + holding](#gspa--holding)
-  - [GSPA + holding, bottomless](#gspa--holding-bottomless)
-- [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
-- [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
-- [Close shop steal exploit](#close-shop-steal-exploit)
-  - [Can't steal from fences](#cant-steal-from-fences)
-  - [Can't steal from any shops](#cant-steal-from-any-shops)
+- Convenience
+  - [Smarter familiars](#smarter-familiars)
+  - [Faster familiars](#faster-familiars)
+- Soundsets
+  - [Extended soundsets for NPC](#extended-soundsets-for-npc)
+    - [Additions only](#additions-only)
+    - [BG1 soundsets prevail](#bg1-soundsets-prevail)
+    - [BG2 soundsets prevail](#bg2-soundsets-prevail)
+   - [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
+   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
+   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
+- Common sense
+  - [Fair fights](#fair-fights)
+  - [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
+  - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
+- Cheese
+  - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
+  - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
+    - [Reduced loss](#reduced-loss)
+    - [No loss](#no-loss)
+  - [Starting bags](#starting-bags)
+    - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
+    - [GSPA + holding](#gspa--holding)
+    - [GSPA + holding, bottomless](#gspa--holding-bottomless)
+  - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
+- Anti-cheese
+  - [Close shop steal exploit](#close-shop-steal-exploit)
+    - [Can't steal from fences](#cant-steal-from-fences)
+    - [Can't steal from any shops](#cant-steal-from-any-shops)
 
 
 #### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory).
 - Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
 
-##### Note
-- This component has an issue: familiars will pick up items from closed or trapped chests. It's a limitation of the engine that I didn't find a workaround for.
-- The less they're told to pick up, the faster they'll do that. So, try to keep the lists short. For example, don't tell them to pick up bandit scalps in BG2.
+The less a familiar is told to pick up, the faster it'll do it. So, try to keep the list short. For example, don't tell it to pick up bandit scalps in BG2.
 
+There are **known issues** with this component:
+- Familiars will pick up items from closed or trapped chests. Live with it or don't use it.
+- If told to jump into pack when see enemies, and get out of it when not, in certain areas (not many) a glitch happens.
+The familiar will start to jump in and out continuously. In that case, talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
 
 #### Faster familiars
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
@@ -126,6 +133,8 @@ In addition, this component expands such interaction in BG1 and reintroduces com
 #### Adjust BG1-style interparty chit-chat to BG2 framerate
 Adjusts compliments and insults restored by the above component to your frame rate so that they won't overlap (it happens because BG2 runs faster then BG1). You can also disable compliments and insults if you don't like them. This component has DOES NOT affect banters in any way. Recommended if you installed "Extended soundsets".
 
+#### Make NPC soundsets available to PC
+Now you can use any of the original Bioware NPCs soundsets for your main character.
 
 #### Consistent Cloak of Mirroring
 
