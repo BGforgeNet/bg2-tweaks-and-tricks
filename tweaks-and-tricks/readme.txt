@@ -8,32 +8,7 @@ This mod is a collection of tweaks to:
 - make other things harder
 
 It will work with BG2 or BGT. Tested only with BG2 fixpack.
-
-- Components
-  - [Smarter familiars](#smarter-familiars)
-    - [Note](#note)
-  - [Faster familiars](#faster-familiars)
-  - [Fair fights](#fair-fights)
-  - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
-  - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
-    - [Reduced loss](#reduced-loss)
-    - [No loss](#no-loss)
-  - [Extended soundsets for NPC](#extended-soundsets-for-npc)
-    - [Additions only](#additions-only)
-    - [BG1 soundsets prevail](#bg1-soundsets-prevail)
-    - [BG2 soundsets prevail](#bg2-soundsets-prevail)
-  - [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
-  - [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
-  - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
-  - [Starting bags](#starting-bags)
-    - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
-    - [GSPA + holding](#gspa--holding)
-    - [GSPA + holding, bottomless](#gspa--holding-bottomless)
-  - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
-  - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
-  - [Close shop steal exploit](#close-shop-steal-exploit)
-    - [Can't steal from fences](#cant-steal-from-fences)
-    - [Can't steal from any shops](#cant-steal-from-any-shops)
+- [Components](#components)
 - [Installation](#installation)
 - [License](#license)
 - [Author](#author)
@@ -42,6 +17,31 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 
 
 ## Components
+
+- [Smarter familiars](#smarter-familiars)
+  - [Note](#note)
+- [Faster familiars](#faster-familiars)
+- [Fair fights](#fair-fights)
+- [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
+- [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
+  - [Reduced loss](#reduced-loss)
+  - [No loss](#no-loss)
+- [Extended soundsets for NPC](#extended-soundsets-for-npc)
+  - [Additions only](#additions-only)
+  - [BG1 soundsets prevail](#bg1-soundsets-prevail)
+  - [BG2 soundsets prevail](#bg2-soundsets-prevail)
+- [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
+- [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
+- [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
+- [Starting bags](#starting-bags)
+  - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
+  - [GSPA + holding](#gspa--holding)
+  - [GSPA + holding, bottomless](#gspa--holding-bottomless)
+- [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
+- [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
+- [Close shop steal exploit](#close-shop-steal-exploit)
+  - [Can't steal from fences](#cant-steal-from-fences)
+  - [Can't steal from any shops](#cant-steal-from-any-shops)
 
 
 #### Smarter familiars
