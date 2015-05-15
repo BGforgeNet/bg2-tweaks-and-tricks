@@ -203,7 +203,11 @@ burner1024 @ Github
 * Version 2: merged in Tweaks-And-Tricks, renamed the mod, updated the components, updated to weidu 238.
 * Version 1: initial release.
 
+
 ## Used software
+
 [DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)
+
 [WeiDU](http://weidu.org/main.html#weidu)
+
 [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
