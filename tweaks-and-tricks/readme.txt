@@ -21,14 +21,15 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 - Convenience
   - [Smarter familiars](#smarter-familiars)
   - [Faster familiars](#faster-familiars)
+  - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
 - Soundsets
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
     - [Additions only](#additions-only)
     - [BG1 soundsets prevail](#bg1-soundsets-prevail)
     - [BG2 soundsets prevail](#bg2-soundsets-prevail)
-   - [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
-   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
-   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
+  - [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
+  - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
+  - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
 - Common sense
   - [Fair fights](#fair-fights)
   - [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
@@ -148,6 +149,11 @@ Makes effects potions and scrolls of resistance non-stackable with themselves.
 Example 1: you drink a potion of fire resistance and get +50% fire resistance. A turn later you drink one more potion of fire resistance. No additional resistance is gained, but duration of its effect is refreshed.
 
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
+
+
+#### Remove blur graphics from Semaj's cloak
+
+Semaj is one of Sarevok's lieutenants. BGTtweaks allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
 
 
 #### Starting bags
