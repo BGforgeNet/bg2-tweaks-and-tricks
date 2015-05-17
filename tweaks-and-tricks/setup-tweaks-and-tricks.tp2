@@ -233,3 +233,8 @@ INCLUDE ~tweaks-and-tricks/no_shop_steal/fence.tph~
 BEGIN ~Can't steal from any shops~
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~tweaks-and-tricks/no_shop_steal/all.tph~
+
+
+
+BEGIN ~Remove blur graphics from Semaj cloak~
+INCLUDE ~tweaks-and-tricks/semaj_cloak/main.tph~
