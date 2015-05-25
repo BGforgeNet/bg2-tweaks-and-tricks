@@ -1,0 +1,22 @@
+//Variables are defined in cre_list.tph
+
+
+ACTION_FOR_EACH game IN bg1 bg2 BEGIN
+  ACTION_PHP_EACH ~%game%_cre~ AS npc_name => npc_cre BEGIN
+
+    OUTER_SPRINT EVAL npc ~%npc_cre%.cre~
+    OUTER_SPRINT soundset ~%game%%npc_name%~
+    LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+
+    //exclude certain sound slots
+    ACTION_FOR_EACH sound IN
+      0 74 //initial meeting, bio
+    BEGIN
+      OUTER_SET EVAL ~%soundset%_%sound%~ = (0 - 1)
+    END
+    OUTER_FOR ( i=39; i<61; i+=1) BEGIN //exclude interactions, specifics, compliments, insults (39-60)
+      OUTER_SET ~%soundset%_%i%~ = (0 - 1)
+    END
+
+  END
+END //resulting soundsets name are like "bg1jaheira", "bg2viconia", etc

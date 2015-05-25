@@ -1,0 +1,61 @@
+INCLUDE ~tweaks-and-tricks/lib/macro.tph~ //WRITE_SOUNDSET2
+
+
+//Calculate soundsets. "bg1_cre" and "bg2_cre" are identical as far as only "npc_name" is used
+ACTION_IF dominate = 0 BEGIN   //Additions only
+  ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
+    ACTION_PHP_EACH ~bg2_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
+      OUTER_FOR (i=0; i<100; i+=1) BEGIN   //loop through CRE sound slots
+        ACTION_IF (~bg2%npc_name%_%i%~ == (0 - 1) && ~bg1%npc_name%_%i%~ != (0 - 1)) BEGIN   //if bg2 is empty, and bg1 is not
+          OUTER_SET ~bg2%npc_name%_%i%~ = ~bg1%npc_name%_%i%~   //copy bg1 to bg2
+        END
+        ACTION_IF (~bg1%npc_name%_%i%~ == (0 - 1) && ~bg2%npc_name%_%i%~ != (0 - 1)) BEGIN   //if bg1 is empty, and bg2 is not
+          OUTER_SET ~bg1%npc_name%_%i%~ = ~bg2%npc_name%_%i%~   //copy bg2 to bg1
+        END
+      END
+    END
+  END
+  OUTER_SET overwrite = 0 //used in WRITE_SOUNDSET2 later
+END
+ACTION_IF dominate = 1 BEGIN   //BG1 prevail
+  ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
+    ACTION_PHP_EACH ~bg2_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
+      OUTER_FOR (i=0; i<100; i+=1) BEGIN   //loop through CRE sound slots
+        ACTION_IF (~bg1%npc_name%_%i%~ != (0 - 1)) BEGIN   //if bg1 is not empty
+          OUTER_SET ~bg2%npc_name%_%i%~ = ~bg1%npc_name%_%i%~   //copy bg1 to bg2
+        END
+        ACTION_IF (~bg1%npc_name%_%i%~ == (0 - 1) && ~bg2%npc_name%_%i%~ != (0 - 1)) BEGIN   //if bg1 is empty, and bg2 is not
+          OUTER_SET ~bg1%npc_name%_%i%~ = ~bg2%npc_name%_%i%~   //copy bg2 to bg1
+        END
+      END
+    END
+  END
+  OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET2 later
+END
+ACTION_IF dominate = 2 BEGIN   //BG2 prevail
+  ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
+    ACTION_PHP_EACH ~bg2_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
+      OUTER_FOR (i=0; i<100; i+=1) BEGIN   //loop through CRE sound slots
+        ACTION_IF (~bg2%npc_name%_%i%~ == (0 - 1) && ~bg1%npc_name%_%i%~ != (0 - 1)) BEGIN   //if bg2 is empty, and bg1 is not
+          OUTER_SET ~bg2%npc_name%_%i%~ = ~bg1%npc_name%_%i%~   //copy bg1 to bg2
+        END
+        ACTION_IF (~bg2%npc_name%_%i%~ != (0 - 1)) BEGIN   //if bg2 is not empty
+          OUTER_SET ~bg1%npc_name%_%i%~ = ~bg2%npc_name%_%i%~   //copy bg2 to bg1
+        END
+      END
+    END
+  END
+  OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET2 later
+END
+
+//Actually write soundsets
+ACTION_FOR_EACH game IN bg1 bg2 BEGIN //loop through games
+  ACTION_PHP_EACH EVAL ~%game%_cre~ AS npc_name => npc_cre BEGIN   //loop through NPCs
+    ACTION_PHP_EACH ~%game%_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
+      OUTER_SPRINT npc ~%cre%.cre~
+      OUTER_SPRINT soundset ~%game%%npc_name%~
+//      PRINT ~writing SS %game%%npc_name% to CRE %cre%.cre~
+      LAUNCH_ACTION_MACRO WRITE_SOUNDSET2   //"overwrite" set earlier
+    END
+  END
+END

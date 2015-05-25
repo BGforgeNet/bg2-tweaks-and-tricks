@@ -1,0 +1,87 @@
+ACTION_PHP_EACH bg1_jaheira_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      WRITE_LONG (0xa4 + 24 * 4) (0 - 1)
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH bg2_jaheira_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      PATCH_FOR_EACH number IN 69 70 72 BEGIN
+        WRITE_LONG (0xa4 + number * 4) (0 - 1)
+      END
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH bg1_minsc_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      PATCH_FOR_EACH number IN 22 24 BEGIN
+        WRITE_LONG (0xa4 + number * 4) (0 - 1)
+      END
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH bg2_minsc_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      PATCH_FOR_EACH number IN 69 72 BEGIN
+        WRITE_LONG (0xa4 + number * 4) (0 - 1)
+      END
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH bg1_edwin_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      PATCH_FOR_EACH number IN 21 22 23 24 25 69 72 BEGIN
+        WRITE_LONG (0xa4 + number * 4) (0 - 1)
+      END
+    END
+  BUT_ONLY
+END
+
+//bg2 edwin - no such strings
+
+//bg1 imoen - no such strings
+
+ACTION_PHP_EACH bg2_imoen_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      WRITE_LONG (0xa4 + 5 * 4) (0 - 1)
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH bg1_viconia_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      PATCH_FOR_EACH number IN 63 64 BEGIN
+        WRITE_LONG (0xa4 + number * 4) (0 - 1)
+      END
+    END
+  BUT_ONLY
+END
+
+ACTION_PHP_EACH bg2_viconia_cre AS index => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
+    PATCH_IF vl BEGIN
+      PATCH_FOR_EACH number IN 69 70 72 BEGIN
+        WRITE_LONG (0xa4 + number * 4) (0 - 1)
+      END
+    END
+  BUT_ONLY
+END

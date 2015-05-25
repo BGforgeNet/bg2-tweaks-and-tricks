@@ -1,0 +1,29 @@
+//Jaheira
+//to insult3:
+OUTER_SET bg1jaheira_46 = bg1jaheira_42 //42. INTERACTION4 Do you claim to fight evil while you are diabolic yourself?
+OUTER_SET bg2jaheira_46 = bg1jaheira_42
+
+//Minsc
+//to insult3:
+OUTER_SET bg1minsc_46 = bg1minsc_41 //41. INTERACTION3  Lay a finger on what I protect and forevermore ye will answer nature's call with a hook!
+OUTER_SET bg2minsc_46 = bg1minsc_41
+//to specific1:
+OUTER_SET bg1minsc_50 = bg1minsc_43 //43. INTERACTION5  Play on, bard!  'Tis sweet music to my furry friend.
+OUTER_SET bg2minsc_50 = bg1minsc_43
+// (next part: adjust Minsc to react specifically on Eldoth, Garrick and Haer'dalis)
+
+//Edwin - Alora interaction lines
+//to comp1
+OUTER_SET bg1edwin_47 = bg1edwin_42 //42. INTERACTION4 'Tis welcome you find no fault with one such as I.
+OUTER_SET bg2edwin_47 = bg1edwin_42
+//to rcomp2. Only Viconia compliments him, so gender should be ok
+OUTER_SET bg1edwin_56 = bg1edwin_43 //43. INTERACTION5 Her company is refreshing but I am surprised I find it so.
+OUTER_SET bg2edwin_56 = bg1edwin_43
+
+//Imoen - no interactions
+
+//Viconia
+//43. INTERACTION5  If you wish to die, I am pleased to assist.
+//to insult3:
+OUTER_SET bg1viconia_45 = bg1viconia_43
+OUTER_SET bg2viconia_45 = bg1viconia_43

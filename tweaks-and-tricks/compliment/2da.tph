@@ -1,0 +1,33 @@
+//SET 2da_rows_number = (%2da_rows_number% - 3)
+//rows (are increased by 2): Minsc 5, Jaheira 11, Edwin 25, Viconia 26, Haerdalis 27
+//columns: Minsc 3, Jaheira 9, Edwin 23, Viconia 24, Haerdalis 25
+COPY_EXISTING ~interact.2da~ ~override~
+
+  SPRINT ~weidu_glitch~ ~i~ //i is the index, so the entry turns into 100
+
+  //Minsc
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 9 ~c~ // Jaheira
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 23 ~%weidu_glitch%~ // Edwin
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 24 ~%weidu_glitch%~ // Viconia
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 10 ~s~ // Garrick
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 17 ~s~ // Eldoth
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 25 ~s~ // Haerdalis
+
+  //Jaheira
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 11 3 ~c~ // Minsc
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 11 23 ~%weidu_glitch%~ // Edwin
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 11 24 ~0~ // Viconia (original game setting)
+
+  //Edwin
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 25 9 ~%weidu_glitch%~ // Jaheira
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 25 3 ~%weidu_glitch%~ // Minsc
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 25 24 ~c~ // Viconia
+
+  //Viconia
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 9 ~c~ // Jaheira
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 3 ~s~ // Minsc
+  SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 23 ~c~ // Edwin
+
+  SET_2DA_ENTRIES_NOW _entries_for_interact_2da 1
+
+BUT_ONLY

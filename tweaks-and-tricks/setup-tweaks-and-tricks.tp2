@@ -3,7 +3,8 @@ AUTHOR "burner1024 @ github"
 VERSION ~v2~
 NO_IF_EVAL_BUG
 README ~tweaks-and-tricks/readme.txt~
-ASK_EVERY_COMPONENT
+//ASK_EVERY_COMPONENT
+AUTO_EVAL_STRINGS
 //MODDER
 
 
@@ -100,6 +101,11 @@ SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 2
 COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~ //dummy detection file
 INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
+
+
+
+BEGIN ~Reintroduce BG1-style party compliment/insult system~
+INCLUDE ~tweaks-and-tricks/compliment/main.tph~
 
 
 
@@ -213,7 +219,7 @@ SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
-BEGIN ~GSP + holding - all bottomless!~
+BEGIN ~GSPA + holding - all bottomless!~
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
@@ -236,5 +242,5 @@ INCLUDE ~tweaks-and-tricks/no_shop_steal/all.tph~
 
 
 
-BEGIN ~Remove blur graphics from Semaj cloak~
+BEGIN ~Remove blur graphics from Semaj's cloak~
 INCLUDE ~tweaks-and-tricks/semaj_cloak/main.tph~

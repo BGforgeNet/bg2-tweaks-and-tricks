@@ -1,0 +1,20 @@
+//List NPC
+INCLUDE ~tweaks-and-tricks/lib/soundsets/cre_list.tph~
+
+//Read soundsets
+INCLUDE ~tweaks-and-tricks/compliment/read_soundsets.tph~
+
+//Edit soundset for BG1+BG2 NPC, copy some interactions to compliments/insults
+INCLUDE ~tweaks-and-tricks/compliment/extend_soundsets.tph~
+
+//Write them
+INCLUDE ~tweaks-and-tricks/compliment/write_soundsets.tph~
+
+//Add Haerdalis to interactions
+INCLUDE ~tweaks-and-tricks/compliment/haerdalis.tph~
+
+//Fix interact.2da
+INCLUDE ~tweaks-and-tricks/compliment/2da.tph~
+
+//For BG1-only NPC and Edwin, cherry-pick some interactions and copy them to compliments/insults
+INCLUDE ~tweaks-and-tricks/compliment/cherry_pick.tph~

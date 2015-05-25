@@ -1,0 +1,95 @@
+//List all cres
+ACTION_DEFINE_ARRAY bg1_jaheira_cre BEGIN
+  jaheir
+  jaheir2
+  jaheir4
+  jaheir6
+END
+
+ACTION_DEFINE_ARRAY bg2_jaheira_cre BEGIN
+  jaheir7
+  jaheir8
+  jaheir11
+  jaheir12
+  jahei12b
+  jahei14
+END
+
+ACTION_DEFINE_ARRAY bg1_minsc_cre BEGIN
+  minsc
+  minsc2
+  minsc4
+  minsc6
+END
+
+ACTION_DEFINE_ARRAY bg2_minsc_cre BEGIN
+  minsc7
+  minsc8
+  minsc9
+  minsc10
+  minsc12
+  minsc14
+END
+
+ACTION_DEFINE_ARRAY bg1_edwin_cre BEGIN
+  edwin
+  edwin2
+  edwin4
+  edwin6
+END
+
+ACTION_DEFINE_ARRAY bg2_edwin_cre BEGIN
+  edwin7
+  edwin9
+  edwin11
+  edwin12
+  edwin13
+  edwin15
+END
+
+ACTION_DEFINE_ARRAY bg1_imoen_cre BEGIN
+  imoen
+  imoen1
+  imoen2
+END
+
+ACTION_DEFINE_ARRAY bg2_imoen_cre BEGIN
+  imoen6
+  imoen10
+  imoen15
+  imoen211
+  imoen213
+END
+
+ACTION_DEFINE_ARRAY bg1_viconia_cre BEGIN
+  viconi
+  viconi4
+  viconi61
+END
+
+ACTION_DEFINE_ARRAY bg2_viconia_cre BEGIN
+  viconi6
+  viconi8
+  viconi9
+  viconi11
+  viconi13
+  viconi16
+END
+
+
+//List master cres
+ACTION_DEFINE_ASSOCIATIVE_ARRAY bg1_cre BEGIN
+  edwin => edwin
+  jaheira => jaheir
+  imoen => imoen1
+  minsc => minsc
+  viconia => viconi
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY bg2_cre BEGIN
+  edwin => edwin11
+  jaheira => jaheir12
+  imoen => imoen15 //post-spellhold
+  minsc => minsc7
+  viconia => viconi9
+END
