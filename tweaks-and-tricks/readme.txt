@@ -117,12 +117,12 @@ Jaheira: "You are amusing, in a "what the hell is wrong with you" kind of way."
 Edwin: "Watch your words when addressing me, lest they be fed to you on the end of my boot!"
 
 ##### Reintroduce
-This component reintroduces compliments and insults in BG2, and slightly expands them in BG1.
+This option reintroduces compliments and insults in BG2, and slightly expands them in BG1.
 
 ##### Reintroduce and adjust to framerate
 Original BG1 was running at 30 FPS, and sounds were recorded with that in mind.
-But BG2 allows framerates up to 90. Setting high FPS, however, causes compliments and responses to overlap sometimes.
-This option will adjust the sounds to your current framerate.
+But BG2 allows framerates up to 90. Setting high FPS, however, sometimes causes compliments and responses to overlap.
+This option will also adjust the sounds to your current framerate.
 
 ##### Disable
 Or, if you rather prefer your NPC not to talk too much, you can disable this interaction altogether.
