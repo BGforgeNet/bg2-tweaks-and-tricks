@@ -101,7 +101,7 @@ COPY_EXISTING
 //read the constant in wavc header
 COPY_EXISTING ~bedwin35.wav~ ~override/bedwin35.wav~
 READ_ASCII 0x10 wavcheader (12)
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY
 
 //copy converters to override
 AT_NOW ~tweaks-and-tricks/sound/g_copy.bat~
@@ -217,7 +217,7 @@ WRITE_LONG 0x4 (filesize + delta)
 WRITE_LONG 0x2a (datasize + delta)
 //track size of .wav
 SET EVALUATE_BUFFER ~%SOURCE_RES%wavsize~ = (SOURCE_SIZE + delta)
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY
 
 
 //compress to ACM
@@ -326,7 +326,7 @@ WRITE_ASCII 0x0 ~WAVCV1.0~ #8
 WRITE_LONG 0x8 EVALUATE_BUFFER ~%SOURCE_RES%wavsize~  //uncompressed
 WRITE_LONG 0xc acmsize //compressed
 WRITE_EVALUATED_ASCII 0x10 ~%wavcheader%~ #12
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY
 
 //cleaning remains
 AT_NOW ~tweaks-and-tricks/sound/g_delete.bat~

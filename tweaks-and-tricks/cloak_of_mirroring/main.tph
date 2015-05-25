@@ -18,4 +18,4 @@ COPY_EXISTING ~clck26.itm~   ~override~
         resource = ~sppr302~
     END
   END
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY

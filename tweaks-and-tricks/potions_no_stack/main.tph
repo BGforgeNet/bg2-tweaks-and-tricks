@@ -5,12 +5,12 @@ SAY NAME1 @26
 SAY NAME2 @27
 READ_LONG 0x8 pot_strref
 READ_LONG 0xc scr_strref
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY
 
 COPY_EXISTING ~msectype.2da~ ~override~
 COUNT_2DA_ROWS 1 ~2da_row_number~
 SET ~2da_row_number~ = (%2da_row_number% - 4) //excluding first 4 unnesessary rows
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY
 
 PRINT ~Patching potions...~
 OUTER_SPRINT ~refresh_strref~ ~%pot_strref%~

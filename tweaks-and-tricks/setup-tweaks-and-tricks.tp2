@@ -124,7 +124,7 @@ END
 offset = (offset + 4)
 READ_ASCII offset framerate (2)
 PATCH_PRINT ~\\\Your current framerate is: %framerate%///~
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY
 */
 
 
