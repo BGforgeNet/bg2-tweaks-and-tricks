@@ -61,7 +61,7 @@ Make the familiars move as if they had boots of speed, so they don't lag behind 
 
 #### Remove blur graphics from Semaj's cloak
 
-Semaj is one of Sarevok's lieutenants. BGTTweaks allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
+Semaj is one of Sarevok's lieutenants. [BGTTweak](http://readme.spellholdstudios.net/BGTTweakReadme.htm) allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
 
 
 
