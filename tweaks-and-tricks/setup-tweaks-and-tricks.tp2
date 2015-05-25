@@ -8,7 +8,7 @@ AUTO_EVAL_STRINGS
 //MODDER
 
 
-//i'm just lazy, okay? it's for npc soundsets to pc 
+//i'm just lazy, okay? it's for npc soundsets to pc
 ALLOW_MISSING
 ~kivan12.wav~ ~kivan13.wav~ ~kivan14.wav~ ~kivan15.wav~ ~kivan16.wav~
 ~dynah12.wav~ ~dynah13.wav~ ~dynah14.wav~ ~dynah15.wav~ ~dynah16.wav~
@@ -65,27 +65,9 @@ INCLUDE ~%MOD_FOLDER%/faster_familiars/main.tph~
 
 
 
-BEGIN ~Fair fights~
-DESIGNATED 300
-INCLUDE ~%MOD_FOLDER%/fair_fights/main.tph~
-
-
-
-BEGIN ~Cheesy Slayer: full heal on change~
-DESIGNATED 400
-COMPILE ~%MOD_FOLDER%/slayer/heal.d~
-
-
-
-BEGIN ~no loss~
-SUBCOMPONENT ~Cheesy Slayer: reputation~
-DESIGNATED 510
-COMPILE ~%MOD_FOLDER%/slayer/norep.d~
-
-BEGIN ~reduced loss~
-SUBCOMPONENT ~Cheesy Slayer: reputation~
-DESIGNATED 520
-COMPILE ~%MOD_FOLDER%/slayer/low_rep.d~
+BEGIN ~Remove blur graphics from Semaj's cloak~
+DESIGNATED 1500
+INCLUDE ~%MOD_FOLDER%/semaj_cloak/main.tph~
 
 
 
@@ -113,6 +95,7 @@ SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 2
 COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~ //dummy detection file
 INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
+
 
 
 
@@ -148,25 +131,15 @@ INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
 
 
 
-BEGIN ~Consistent Cloak of Mirroring~
+BEGIN ~Fair fights~
+DESIGNATED 300
+INCLUDE ~%MOD_FOLDER%/fair_fights/main.tph~
+
+
+
+BEGIN ~Sensible Cloak of Mirroring~
 DESIGNATED 1000
 INCLUDE ~%MOD_FOLDER%/cloak_of_mirroring/main.tph~
-
-
-
-BEGIN ~Each stat gets +1~
-DESIGNATED 1110
-SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
-COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
-ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat1.spl~ 4 0 ~g_stats~
-EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
-
-BEGIN ~Each stat except Wisdom gets +1, Wisdom gets +3~
-DESIGNATED 1120
-SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
-COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
-ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
-EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
 
 
 
@@ -174,6 +147,23 @@ BEGIN ~Effects of scrolls and potions do not stack with themselves~
 DESIGNATED 1200
 INCLUDE ~%MOD_FOLDER%/potions_no_stack/main.tph~
 
+
+
+BEGIN ~Cheesy Slayer: full heal on change~
+DESIGNATED 400
+COMPILE ~%MOD_FOLDER%/slayer/heal.d~
+
+
+
+BEGIN ~no loss~
+SUBCOMPONENT ~Cheesy Slayer: reputation~
+DESIGNATED 510
+COMPILE ~%MOD_FOLDER%/slayer/norep.d~
+
+BEGIN ~reduced loss~
+SUBCOMPONENT ~Cheesy Slayer: reputation~
+DESIGNATED 520
+COMPILE ~%MOD_FOLDER%/slayer/low_rep.d~
 
 
 BEGIN ~Gem, scroll, potion, ammo (GSPA)~
@@ -197,6 +187,22 @@ INCLUDE ~%MOD_FOLDER%/starting_bags/bottomless.tph~
 
 
 
+BEGIN ~Each stat gets +1~
+DESIGNATED 1110
+SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
+ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat1.spl~ 4 0 ~g_stats~
+EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
+
+BEGIN ~Each stat except Wisdom gets +1, Wisdom gets +3~
+DESIGNATED 1120
+SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
+ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
+EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
+
+
+
 BEGIN ~Can't steal from fences~
 DESIGNATED 1410
 SUBCOMPONENT ~Close shop steal exploit~
@@ -206,9 +212,3 @@ BEGIN ~Can't steal from any shops~
 DESIGNATED 1420
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~%MOD_FOLDER%/no_shop_steal/all.tph~
-
-
-
-BEGIN ~Remove blur graphics from Semaj's cloak~
-DESIGNATED 1500
-INCLUDE ~%MOD_FOLDER%/semaj_cloak/main.tph~
