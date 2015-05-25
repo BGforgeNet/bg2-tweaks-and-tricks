@@ -130,7 +130,7 @@ This only affects compliments and insults, not banters.
 
 #### No talking when hiding in shadows
 
-Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the world is blind to my passage"). It quickly gets annoying if you use thief scout script.
+Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the world is blind to my passing"). It quickly gets annoying if you use thief scout script.
 
 
 #### Make NPC soundsets available to PC
