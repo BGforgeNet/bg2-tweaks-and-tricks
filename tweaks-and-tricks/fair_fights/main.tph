@@ -27,4 +27,4 @@ COPY_EXISTING ~stdeath.cre~ ~override~
 BUT_ONLY
 
 //Marchol Harpell
-COMPILE ~tweaks-and-tricks/fair_fights/malchor.d~
+COMPILE ~%MOD_FOLDER%/fair_fights/malchor.d~

@@ -1,4 +1,4 @@
-INCLUDE ~tweaks-and-tricks/compliment/sound_list.tph~ // define a sound_list array with compliments and insults
+INCLUDE ~%MOD_FOLDER%/compliment/sound_list.tph~ // define a sound_list array with compliments and insults
 
 //get framerate
 COPY ~baldur.ini~ ~baldur.ini~
@@ -26,10 +26,10 @@ COPY_EXISTING ~bedwin35.wav~ ~override/bedwin35.wav~
 BUT_ONLY
 
 //copy converters to override
-AT_NOW ~tweaks-and-tricks/compliment/bat/g_copy.bat~
+AT_NOW ~%MOD_FOLDER%/compliment/bat/g_copy.bat~
 
 //decompress to WAV
-AT_NOW ~tweaks-and-tricks/compliment/bat/g_decode.bat~
+AT_NOW ~%MOD_FOLDER%/compliment/bat/g_decode.bat~
 
 //adjust WAV
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
@@ -47,7 +47,7 @@ ACTION_PHP_EACH sound_list AS index => sound BEGIN
 END
 
 //compress to ACM
-AT_NOW ~tweaks-and-tricks/compliment/bat/g_encode.bat~
+AT_NOW ~%MOD_FOLDER%/compliment/bat/g_encode.bat~
 
 //turn ACM into WAVC
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
@@ -62,7 +62,7 @@ ACTION_PHP_EACH sound_list AS index => sound BEGIN
 END
 
 //cleaning remains
-AT_NOW ~tweaks-and-tricks/compliment/bat/g_delete.bat~
-AT_UNINSTALL ~tweaks-and-tricks/compliment/bat/g_delete.bat~
+AT_NOW ~%MOD_FOLDER%/compliment/bat/g_delete.bat~
+AT_UNINSTALL ~%MOD_FOLDER%/compliment/bat/g_delete.bat~
 
 PRINT "Sounds are adjusted to %framerate% FPS"

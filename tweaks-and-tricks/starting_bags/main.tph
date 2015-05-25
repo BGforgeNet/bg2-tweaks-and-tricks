@@ -1,30 +1,30 @@
 COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~ //dummy detection file
 
 //gem bag
-COPY ~tweaks-and-tricks/starting_bags/g_gem.itm~ ~override/g_gem.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_gem.sto~ ~override/g_gem.sto~
-COPY ~tweaks-and-tricks/starting_bags/g_gem.itm~ ~override/g_gem2.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_gem.sto~ ~override/g_gem2.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_gem.itm~ ~override/g_gem.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_gem.sto~ ~override/g_gem.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_gem.itm~ ~override/g_gem2.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_gem.sto~ ~override/g_gem2.sto~
 //scroll case
-COPY ~tweaks-and-tricks/starting_bags/g_scr.itm~ ~override/g_scr.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_scr.sto~ ~override/g_scr.sto~
-COPY ~tweaks-and-tricks/starting_bags/g_scr.itm~ ~override/g_scr2.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_scr.sto~ ~override/g_scr2.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_scr.itm~ ~override/g_scr.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_scr.sto~ ~override/g_scr.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_scr.itm~ ~override/g_scr2.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_scr.sto~ ~override/g_scr2.sto~
 //potion case
-COPY ~tweaks-and-tricks/starting_bags/g_pot.itm~ ~override/g_pot.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_pot.sto~ ~override/g_pot.sto~
-COPY ~tweaks-and-tricks/starting_bags/g_pot.itm~ ~override/g_pot2.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_pot.sto~ ~override/g_pot2.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_pot.itm~ ~override/g_pot.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_pot.sto~ ~override/g_pot.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_pot.itm~ ~override/g_pot2.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_pot.sto~ ~override/g_pot2.sto~
 //ammo quiver
-COPY ~tweaks-and-tricks/starting_bags/g_ammo.itm~ ~override/g_ammo.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_ammo.sto~ ~override/g_ammo.sto~
-COPY ~tweaks-and-tricks/starting_bags/g_ammo.itm~ ~override/g_ammo2.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_ammo.sto~ ~override/g_ammo2.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_ammo.itm~ ~override/g_ammo.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_ammo.sto~ ~override/g_ammo.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_ammo.itm~ ~override/g_ammo2.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_ammo.sto~ ~override/g_ammo2.sto~
 //holding
-COPY ~tweaks-and-tricks/starting_bags/g_hold.itm~ ~override/g_hold.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_hold.sto~ ~override/g_hold.sto~
-COPY ~tweaks-and-tricks/starting_bags/g_hold.itm~ ~override/g_hold2.itm~
-COPY ~tweaks-and-tricks/starting_bags/g_hold.sto~ ~override/g_hold2.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_hold.itm~ ~override/g_hold.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_hold.sto~ ~override/g_hold.sto~
+COPY ~%MOD_FOLDER%/starting_bags/g_hold.itm~ ~override/g_hold2.itm~
+COPY ~%MOD_FOLDER%/starting_bags/g_hold.sto~ ~override/g_hold2.sto~
 
 //Build actions
 OUTER_TEXT_SPRINT NewLine ~
@@ -38,14 +38,14 @@ END
 
 //Thorius Candlekeep
 ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN //BGT
-  COPY ~tweaks-and-tricks/starting_bags/g_bag.cre~ ~override/g_bag.cre~
+  COPY ~%MOD_FOLDER%/starting_bags/g_bag.cre~ ~override/g_bag.cre~
   SAY NAME1 @28
   SAY NAME2 @28
   WRITE_ASCII DEATHVAR ~G_BAGS~ #32
   WRITE_ASCII DIALOG ~G_BAGS~ #8
-  COMPILE EVAL ~tweaks-and-tricks/starting_bags/g_bag.d~
-  EXTEND_BOTTOM ~AR0015.bcs~ ~tweaks-and-tricks/starting_bags/ar0015.baf~ EVAL
+  COMPILE EVAL ~%MOD_FOLDER%/starting_bags/g_bag.d~
+  EXTEND_BOTTOM ~AR0015.bcs~ ~%MOD_FOLDER%/starting_bags/ar0015.baf~ EVAL
 END
 
 //Picture in Irenicus dungeon
-EXTEND_BOTTOM ~AR0602.bcs~ ~tweaks-and-tricks/starting_bags/ar0602.baf~ EVAL
+EXTEND_BOTTOM ~AR0602.bcs~ ~%MOD_FOLDER%/starting_bags/ar0602.baf~ EVAL

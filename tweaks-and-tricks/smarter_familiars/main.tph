@@ -11,7 +11,7 @@ OUTER_SPRINT g_FamPickupPotionsCommon_action ~~
 OUTER_SPRINT g_FamPickupPotionsRare_action ~~
 OUTER_SPRINT g_FamPickupScrolls_action ~~
 
-INCLUDE ~tweaks-and-tricks/familiars/autoloot_lists.tph~
+INCLUDE ~%MOD_FOLDER%/familiars/autoloot_lists.tph~
 
 COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
   PATCH_IF (%SOURCE_SIZE% >= 114) BEGIN
@@ -155,7 +155,7 @@ ACTION_FOR_EACH familiar IN
   quas
   rab
 BEGIN
-  INCLUDE ~tweaks-and-tricks/familiars/g_fam.baf.tph~
+  INCLUDE ~%MOD_FOLDER%/familiars/g_fam.baf.tph~
   COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
   ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
     COPY_EXISTING ~fam%familiar%.cre~ ~override~
@@ -176,7 +176,7 @@ ACTION_FOR_EACH familiar IN
   quas25
   rab25
 BEGIN
-  INCLUDE ~tweaks-and-tricks/familiars/g_fam.baf.tph~
+  INCLUDE ~%MOD_FOLDER%/familiars/g_fam.baf.tph~
   COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
   ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
     COPY_EXISTING ~fam%familiar%.cre~ ~override~
@@ -194,7 +194,7 @@ ACTION_FOR_EACH familiar_dialog IN
   famil3
   famil325
 BEGIN
-  COMPILE EVAL ~tweaks-and-tricks/familiars/familiars.d~
+  COMPILE EVAL ~%MOD_FOLDER%/familiars/familiars.d~
 END
 
 

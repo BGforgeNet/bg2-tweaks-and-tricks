@@ -1,4 +1,4 @@
-INCLUDE ~tweaks-and-tricks/lib/macro.tph~ //WRITE_SOUNDSET2
+INCLUDE ~%MOD_FOLDER%/lib/macro.tph~ //WRITE_SOUNDSET2
 
 
 //Calculate soundsets. "bg1_cre" and "bg2_cre" are identical as far as only "npc_name" is used

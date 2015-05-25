@@ -1,9 +1,9 @@
 //Clear empty strings with non-(-1) references
-INCLUDE ~tweaks-and-tricks/lib/soundsets/cre_list.tph~
-INCLUDE ~tweaks-and-tricks/extended_soundsets/clear_empty.tph~
+INCLUDE ~%MOD_FOLDER%/lib/soundsets/cre_list.tph~
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/clear_empty.tph~
 
 //Read soundsets
-INCLUDE ~tweaks-and-tricks/extended_soundsets/read_soundsets.tph~
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/read_soundsets.tph~
 
 //Write them
-INCLUDE ~tweaks-and-tricks/extended_soundsets/write_soundsets.tph~
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/write_soundsets.tph~

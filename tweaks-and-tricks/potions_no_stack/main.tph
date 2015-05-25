@@ -1,4 +1,4 @@
-INCLUDE ~tweaks-and-tricks/potions_no_stack/macro.tph~
+INCLUDE ~%MOD_FOLDER%/potions_no_stack/macro.tph~
 
 COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
 SAY NAME1 @26
