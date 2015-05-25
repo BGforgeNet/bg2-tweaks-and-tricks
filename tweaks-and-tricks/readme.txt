@@ -7,9 +7,9 @@ This mod is a collection of tweaks to:
 - make some things easier
 - make other things harder
 
-It will work with BG2:ToB or [BGT](#http://www.spellholdstudios.net/ie/bgt). Some components are BGT-only.
+It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some components are BGT-only.
 
-Tested only with [BG2 fixpack](#http://www.gibberlings3.net/bg2fixpack/).
+Tested only with [BG2 fixpack](http://www.gibberlings3.net/bg2fixpack/).
 
 - [Components](#components)
 - [Installation](#installation)
@@ -234,6 +234,7 @@ Just disable stealing in all shops.
 
 ## License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
+
 One condition: I claim the right to use any derivative works in any way that I see fit.
 
 
@@ -242,8 +243,16 @@ burner1024 @ Github
 
 
 ## Changelog
-* Version 2: merged in Tweaks-And-Tricks, renamed the mod, updated the components, updated to weidu 238.
-* Version 1: initial release.
+- Version 3
+  - Added a few new components
+  - Revised all code
+  - Actually release it
+- Version 2
+  - Merged in Tweaks-And-Tricks
+  - Renamed the mod
+  - Updated the components
+  - Updated to weidu 238
+-  Version 1: initial release.
 
 
 ## Used software
