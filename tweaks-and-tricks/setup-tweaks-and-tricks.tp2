@@ -104,79 +104,18 @@ INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
 
 
-BEGIN ~Reintroduce BG1-style party compliment/insult system~
+BEGIN ~Reintroduce~
+SUBCOMPONENT ~BG1-style party interaction system~
 INCLUDE ~tweaks-and-tricks/compliment/main.tph~
 
+BEGIN ~Reintroduce and adjust to framerate~
+SUBCOMPONENT ~BG1-style party interaction system~
+INCLUDE ~tweaks-and-tricks/compliment/main.tph~
+INCLUDE ~tweaks-and-tricks/compliment/framerate.tph~
 
-
-/*
-//don't call me dumb, suggest something better :P
-BEGIN ~Checking your current framerate.....~
-NOL_LOG_RECORD
-INSTALL_BY_DEFAULT
-COPY ~baldur.ini~ ~baldur.ini~
-SPRINT string ~~
-offset = 0
-WHILE !(~Rate=~ STRING_EQUAL ~%string%~) BEGIN
-  READ_ASCII offset string (5)
-  SET offset = (offset + 1)
-END
-offset = (offset + 4)
-READ_ASCII offset framerate (2)
-PATCH_PRINT ~\\\Your current framerate is: %framerate%///~
-BUT_ONLY
-*/
-
-
-
-//Adjust chit-chat to bg2 framerate
-BEGIN ~40 FPS~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-OUTER_SET frame_rate = 40
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame40.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
-
-BEGIN ~50 FPS~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-OUTER_SET frame_rate = 50
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame50.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
-
-BEGIN ~60 FPS~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-OUTER_SET frame_rate = 60
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame60.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
-
-BEGIN ~70 FPS~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-OUTER_SET frame_rate = 70
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame70.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
-
-BEGIN ~80 FPS~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-OUTER_SET frame_rate = 80
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame80.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
-
-BEGIN ~90 FPS~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-OUTER_SET frame_rate = 90
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame90.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/main.tph~
-
-BEGIN ~Disable chit-chat (banters will occur anyway)~
-SUBCOMPONENT ~Adjust BG1-style interparty chit-chat to BG2 framerate~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-COPY_EXISTING ~sw1h01.itm~ ~override/g_frame0.itm~ //dummy detection file
-INCLUDE ~tweaks-and-tricks/chitchat_framerate/disable.tph~
+BEGIN ~Disable~
+SUBCOMPONENT ~BG1-style party interaction system~
+INCLUDE ~tweaks-and-tricks/compliment/disable.tph~
 
 
 

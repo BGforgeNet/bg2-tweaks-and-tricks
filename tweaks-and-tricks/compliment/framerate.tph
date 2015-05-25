@@ -1,6 +1,19 @@
-//postfix _g is for mass deleting of remains at the end
+//get framerate
+COPY ~baldur.ini~ ~baldur.ini~
+  SPRINT string ~~
+  offset = 0
+  WHILE !(~Rate=~ STRING_EQUAL ~%string%~) BEGIN
+    READ_ASCII offset string (5)
+    SET offset = (offset + 1)
+  END
+  offset = (offset + 4)
+  READ_ASCII offset framerate (2)
+  PATCH_PRINT ~Current framerate is: %framerate%~
+BUT_ONLY
+
 
 //WAVC sounds that we need to adjust
+//postfix _g is for mass deleting of remains at the end
 COPY_EXISTING
   ~jaher35.wav~ ~override/jaher35.wavc_g~
   ~jaher37.wav~ ~override/jaher37.wavc_g~
@@ -100,14 +113,14 @@ COPY_EXISTING
 
 //read the constant in wavc header
 COPY_EXISTING ~bedwin35.wav~ ~override/bedwin35.wav~
-READ_ASCII 0x10 wavcheader (12)
+  READ_ASCII 0x10 wavcheader (12)
 BUT_ONLY
 
 //copy converters to override
-AT_NOW ~tweaks-and-tricks/sound/g_copy.bat~
+AT_NOW ~tweaks-and-tricks/compliment/bat/g_copy.bat~
 
 //decompress to WAV
-AT_NOW ~tweaks-and-tricks/sound/g_decode.bat~
+AT_NOW ~tweaks-and-tricks/compliment/bat/g_decode.bat~
 
 
 //adjust WAV
@@ -208,20 +221,20 @@ COPY_EXISTING
 
   ~tiaxx35.wav_g~ ~override~
 
-READ_LONG 0x4 filesize //without header
-SET filesize = (filesize + 8) //include header bytes
-READ_LONG 0x2a datasize //sample size
-//lengthen it
-SET delta = (datasize*frame_rate/30 - datasize) //bg1 original frame rate is 30
-WRITE_LONG 0x4 (filesize + delta)
-WRITE_LONG 0x2a (datasize + delta)
-//track size of .wav
-SET ~%SOURCE_RES%wavsize~ = (SOURCE_SIZE + delta)
+  READ_LONG 0x4 filesize //without header
+  SET filesize = (filesize + 8) //include header bytes
+  READ_LONG 0x2a datasize //sample size
+  //lengthen it
+  SET delta = (datasize*frame_rate/30 - datasize) //bg1 original frame rate is 30
+  WRITE_LONG 0x4 (filesize + delta)
+  WRITE_LONG 0x2a (datasize + delta)
+  //track size of .wav
+  SET ~%SOURCE_RES%wavsize~ = (SOURCE_SIZE + delta)
 BUT_ONLY
 
 
 //compress to ACM
-AT_NOW ~tweaks-and-tricks/sound/g_encode.bat~
+AT_NOW ~tweaks-and-tricks/compliment/bat/g_encode.bat~
 
 
 //turn acm into WAVC
@@ -320,14 +333,16 @@ COPY_EXISTING
 
   ~tiaxx35.acm_g~ ~override/tiaxx35.wav~
 
-SET acmsize = SOURCE_SIZE
-INSERT_BYTES 0x0 28 //acm header is already attached
-WRITE_ASCII 0x0 ~WAVCV1.0~ #8
-WRITE_LONG 0x8 ~%SOURCE_RES%wavsize~  //uncompressed
-WRITE_LONG 0xc acmsize //compressed
-WRITE_ASCIIE 0x10 ~%wavcheader%~ #12
+  SET acmsize = SOURCE_SIZE
+  INSERT_BYTES 0x0 28 //acm header is already attached
+  WRITE_ASCII 0x0 ~WAVCV1.0~ #8
+  WRITE_LONG 0x8 ~%SOURCE_RES%wavsize~  //uncompressed
+  WRITE_LONG 0xc acmsize //compressed
+  WRITE_ASCIIE 0x10 ~%wavcheader%~ #12
 BUT_ONLY
 
 //cleaning remains
-AT_NOW ~tweaks-and-tricks/sound/g_delete.bat~
-AT_UNINSTALL ~tweaks-and-tricks/sound/g_delete.bat~
+AT_NOW ~tweaks-and-tricks/compliment/bat/g_delete.bat~
+AT_UNINSTALL ~tweaks-and-tricks/compliment/bat/g_delete.bat~
+
+PRINT "Sounds are adjusted to %framerate% FPS"
