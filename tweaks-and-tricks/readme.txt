@@ -71,7 +71,7 @@ Make the familiars move as if they had boots of speed, so they don't lag behind 
 
 #### Remove blur graphics from Semaj's cloak
 
-Semaj is one of Sarevok's lieutenants. BGTtweaks allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
+Semaj is one of Sarevok's lieutenants. BGTTweaks allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
 
 
 
@@ -161,7 +161,7 @@ It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area eff
 
 #### Effects of scrolls and potions do not stack with themselves
 
-Makes effects potions and scrolls of resistance non-stackable with themselves.
+Makes effects potions and scrolls of resistance non-stackable with themselves, to make scrolls more worthwhile.
 
 Example 1: you drink a potion of fire resistance and get +50% fire resistance. A turn later you drink one more potion of fire resistance. No additional resistance is gained, but duration of its effect is refreshed.
 
@@ -171,11 +171,11 @@ Example 2: you drink a potion of fire resistance and use a scroll of fire resist
 ### Cheese
 
 #### Cheesy Slayer: full heal on change
-Makes it a better "last resort" ability.
+The player character will be healed fully on turning into Slayer. Makes it a better "last resort" ability.
 
 
 #### Cheesy Slayer: reputation
-The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
+The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you to decide.
 
 ##### Reduced loss
 With reduced loss, you lose only 1 point of reputation, even when turning into Ravager (in vanilla, it's 3).
