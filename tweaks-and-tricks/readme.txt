@@ -115,7 +115,7 @@ If this explanation is too confusing, but you'd like to hear more different soun
 In BG1, party interaction was based not on banters, but rather on occasional chit-chat between party members - compliments and insults.
 They happen in real time, without a dialog window.
 
-**Example:**
+Example:
 
 Jaheira: "You are amusing, in a "what the hell is wrong with you" kind of way."
 
