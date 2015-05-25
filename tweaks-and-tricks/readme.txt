@@ -24,9 +24,6 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
   - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
 - [Soundsets](#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
-    - [Additions only](#additions-only)
-    - [BG1 soundsets prevail](#bg1-soundsets-prevail)
-    - [BG2 soundsets prevail](#bg2-soundsets-prevail)
   - [BG1-style party interaction system](#bg1-style-party-interaction-system)
     - [Reintroduce](#reintroduce)
     - [Reintroduce and adjust to framerate](#reintroduce-and-adjust-to-framerate)
@@ -79,6 +76,10 @@ Semaj is one of Sarevok's lieutenants. BGTTweaks allows to retrieve his cloak. I
 ### Soundsets
 
 #### Extended soundsets for NPC
+- [Additions only](#additions-only)
+- [BG1 soundsets prevail](#bg1-soundsets-prevail)
+- [BG2 soundsets prevail](#bg2-soundsets-prevail)
+
 This components extends NPC soundsets by re-using their replicas from BG1 in BG2 and vice-versa.
 
 Example: BG1 Jaheira has only 1 battle cry: "For The fallen!". So the whole game you listen to that over and over.
