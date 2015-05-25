@@ -18,11 +18,11 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 
 ## Components
 
-- Convenience
+- Convenience(#convenience)
   - [Smarter familiars](#smarter-familiars)
   - [Faster familiars](#faster-familiars)
   - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
-- Soundsets
+- Soundsets(#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
     - [Additions only](#additions-only)
     - [BG1 soundsets prevail](#bg1-soundsets-prevail)
@@ -33,11 +33,11 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
     - [Disable](#disable)
   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
-- Common sense
+- Common sense(#common-sense)
   - [Fair fights](#fair-fights)
   - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
-- Cheese
+- Cheese(#cheese)
   - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
   - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
     - [Reduced loss](#reduced-loss)
@@ -47,11 +47,12 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
     - [GSPA + holding](#gspa--holding)
     - [GSPA + holding, bottomless](#gspa--holding-bottomless)
   - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
-- Anti-cheese
+- Anti-cheese(#anti-cheese)
   - [Close shop steal exploit](#close-shop-steal-exploit)
     - [Can't steal from fences](#cant-steal-from-fences)
     - [Can't steal from any shops](#cant-steal-from-any-shops)
 
+### Convenience
 
 #### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
@@ -68,27 +69,14 @@ The familiar will start to jump in and out continuously. In that case, talk to i
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
 
 
-#### Fair fights
-A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
-- Arcanis Gath, the thief that insta-kills you on attacking Renal (now you can fight him, he has a normal sword)
-- Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
-- Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
-- Shandalar, the Ulgoth's Beard archmage (90% all resistances, innocent - removed)
+#### Remove blur graphics from Semaj's cloak
+
+Semaj is one of Sarevok's lieutenants. BGTtweaks allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
 
 
-#### Cheesy Slayer: full heal on change
-Makes it a better "last resort" ability.
 
 
-#### Cheesy Slayer: reputation
-The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
-
-##### Reduced loss
-With reduced loss, you lose only 1 point of reputation, even when turning into Ravager (in vanilla, it's 3).
-
-##### No loss
-No reputation hit on any change.
-
+### Soundsets
 
 #### Extended soundsets for NPC
 This components extends NPC soundsets by re-using their replicas from BG1 in BG2 and vice-versa.
@@ -154,6 +142,18 @@ Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the 
 Now you can use any of the original Bioware NPCs soundsets for your main character.
 
 
+
+### Common sense
+
+
+#### Fair fights
+A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
+- Arcanis Gath, the thief that insta-kills you on attacking Renal (now you can fight him, he has a normal sword)
+- Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
+- Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
+- Shandalar, the Ulgoth's Beard archmage (90% all resistances, innocent - removed)
+
+
 #### Sensible Cloak of Mirroring
 
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which doesn't make much sense. And it doesn't protect from Call Lighting, which also is strange. This compoment fixes both issues.
@@ -168,9 +168,20 @@ Example 1: you drink a potion of fire resistance and get +50% fire resistance. A
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
 
 
-#### Remove blur graphics from Semaj's cloak
+### Cheese
 
-Semaj is one of Sarevok's lieutenants. BGTtweaks allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
+#### Cheesy Slayer: full heal on change
+Makes it a better "last resort" ability.
+
+
+#### Cheesy Slayer: reputation
+The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you decide.
+
+##### Reduced loss
+With reduced loss, you lose only 1 point of reputation, even when turning into Ravager (in vanilla, it's 3).
+
+##### No loss
+No reputation hit on any change.
 
 
 #### Starting bags
@@ -187,12 +198,13 @@ Same 5 bags, all bottomless.
 
 
 
-
 #### Add BG1 tomes stats bonuses to new BG2 characters
 To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain from tomes in BG1. The subcomponents are self-describing.
 ##### Each stat gets +1
 ##### Each stats except Wisdom gets +1, Wisdom gets +3
 
+
+### Anti-cheese
 
 #### Close shop steal exploit
 Close infinite money "steal-sell-steal" exploit. Options are:
