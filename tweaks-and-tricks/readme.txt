@@ -246,13 +246,13 @@ burner1024 @ Github
 - Version 3
   - Added a few new components
   - Revised all code
-  - Actually release it
+  - Actually released it
 - Version 2
   - Merged in Tweaks-And-Tricks
   - Renamed the mod
   - Updated the components
   - Updated to weidu 238
--  Version 1: initial release.
+-  Version 1: initial release
 
 
 ## Used software
