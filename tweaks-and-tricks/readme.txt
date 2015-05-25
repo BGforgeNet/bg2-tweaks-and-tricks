@@ -46,7 +46,7 @@ Tested only with [BG2 fixpack](http://www.gibberlings3.net/bg2fixpack/).
 
 #### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
-- Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
+- Have them jump into the pack when there's danger or they're injured. Very useful at later stages.
 
 The less a familiar is told to pick up, the faster it'll do it. So, try to keep the list short. For example, don't tell it to pick up bandit scalps in BG2.
 
