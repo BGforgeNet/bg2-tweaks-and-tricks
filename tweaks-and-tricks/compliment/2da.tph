@@ -3,7 +3,8 @@
 //columns: Minsc 3, Jaheira 9, Edwin 23, Viconia 24, Haerdalis 25
 COPY_EXISTING ~interact.2da~ ~override~
 
-  SPRINT ~weidu_glitch~ ~i~ //i is the index, so the entry turns into 100
+  SPRINT ~weidu_glitch~ ~i~ //i gets taken from previous scope
+  SPRINT ~i~ ~i~ //this is really awkward, isn't it
 
   //Minsc
   SET_2DA_ENTRY_LATER _entries_for_interact_2da 5 9 ~c~ // Jaheira
@@ -29,5 +30,6 @@ COPY_EXISTING ~interact.2da~ ~override~
   SET_2DA_ENTRY_LATER _entries_for_interact_2da 26 23 ~c~ // Edwin
 
   SET_2DA_ENTRIES_NOW _entries_for_interact_2da 1
+  PRETTY_PRINT_2DA
 
 BUT_ONLY
