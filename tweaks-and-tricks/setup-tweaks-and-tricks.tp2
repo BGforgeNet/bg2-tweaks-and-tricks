@@ -52,36 +52,46 @@ LANGUAGE ~English~ ~ENGLISH~ ~tweaks-and-tricks/tra/english/game.tra~
 
 
 BEGIN ~Smarter familiars~
+DESIGNATED 100
 REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
 INCLUDE ~tweaks-and-tricks/smarter_familiars/main.tph~
 
 
 
 BEGIN ~Faster familiars~
+DESIGNATED 200
 REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
 INCLUDE ~tweaks-and-tricks/faster_familiars/main.tph~
 
 
 
 BEGIN ~Fair fights~
+DESIGNATED 300
 INCLUDE ~tweaks-and-tricks/fair_fights/main.tph~
 
 
+
 BEGIN ~Cheesy Slayer: full heal on change~
+DESIGNATED 400
 COMPILE ~tweaks-and-tricks/slayer/heal.d~
+
+
 
 BEGIN ~no loss~
 SUBCOMPONENT ~Cheesy Slayer: reputation~
+DESIGNATED 510
 COMPILE ~tweaks-and-tricks/slayer/norep.d~
 
 BEGIN ~reduced loss~
 SUBCOMPONENT ~Cheesy Slayer: reputation~
+DESIGNATED 520
 COMPILE ~tweaks-and-tricks/slayer/low_rep.d~
 
 
 
 //extended soundsets
 BEGIN ~Additions only~
+DESIGNATED 610
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 0
@@ -89,6 +99,7 @@ COPY_EXISTING ~sw1h01.itm~ ~override/g_esad.itm~ //dummy detection file
 INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
 BEGIN ~BG1 soundsets prevail~
+DESIGNATED 620
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 1
@@ -96,6 +107,7 @@ COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg1.itm~ //dummy detection file
 INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
 BEGIN ~BG2 soundsets prevail~
+DESIGNATED 630
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
 SUBCOMPONENT ~Extended Soundsets for NPC~
 OUTER_SET dominate = 2
@@ -105,43 +117,52 @@ INCLUDE ~tweaks-and-tricks/extended_soundsets/main.tph~
 
 
 BEGIN ~Reintroduce~
+DESIGNATED 710
 SUBCOMPONENT ~BG1-style party interaction system~
 INCLUDE ~tweaks-and-tricks/compliment/main.tph~
 
 BEGIN ~Reintroduce and adjust to framerate~
+DESIGNATED 720
 SUBCOMPONENT ~BG1-style party interaction system~
 INCLUDE ~tweaks-and-tricks/compliment/main.tph~
 INCLUDE ~tweaks-and-tricks/compliment/framerate.tph~
 
 BEGIN ~Disable~
+DESIGNATED 730
 SUBCOMPONENT ~BG1-style party interaction system~
 INCLUDE ~tweaks-and-tricks/compliment/disable.tph~
 
 
 
+
 BEGIN ~No talking when hiding in shadows~
+DESIGNATED 800
 INCLUDE ~tweaks-and-tricks/no_talk_shadows/main.tph~
 
 
 
 
 BEGIN ~Make NPC soundsets available to PC~
+DESIGNATED 900
 INCLUDE ~tweaks-and-tricks/npc_soundsets/main.tph~
 
 
 
 BEGIN ~Consistent Cloak of Mirroring~
+DESIGNATED 1000
 INCLUDE ~tweaks-and-tricks/cloak_of_mirroring/main.tph~
 
 
 
 BEGIN ~Each stat gets +1~
+DESIGNATED 1110
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
 ADD_SPELL ~tweaks-and-tricks/stat_bonuses/g_stat1.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
 
 BEGIN ~Each stat except Wisdom gets +1, Wisdom gets +3~
+DESIGNATED 1120
 SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
 ADD_SPELL ~tweaks-and-tricks/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
@@ -150,21 +171,25 @@ EXTEND_TOP ~ar0602.bcs~ ~tweaks-and-tricks/stat_bonuses/stats.baf~
 
 
 BEGIN ~Effects of scrolls and potions do not stack with themselves~
+DESIGNATED 1200
 INCLUDE ~tweaks-and-tricks/potions_no_stack/main.tph~
 
 
 
 BEGIN ~Gem, scroll, potion, ammo (GSPA)~
+DESIGNATED 1310
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
 BEGIN ~GSPA + holding~
+DESIGNATED 1320
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 
 BEGIN ~GSPA + holding - all bottomless!~
+DESIGNATED 1330
 SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
@@ -173,14 +198,17 @@ INCLUDE ~tweaks-and-tricks/starting_bags/bottomless.tph~
 
 
 BEGIN ~Can't steal from fences~
+DESIGNATED 1410
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~tweaks-and-tricks/no_shop_steal/fence.tph~
 
 BEGIN ~Can't steal from any shops~
+DESIGNATED 1420
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~tweaks-and-tricks/no_shop_steal/all.tph~
 
 
 
 BEGIN ~Remove blur graphics from Semaj's cloak~
+DESIGNATED 1500
 INCLUDE ~tweaks-and-tricks/semaj_cloak/main.tph~
