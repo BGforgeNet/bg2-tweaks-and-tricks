@@ -2,12 +2,15 @@
 
 
 This mod is a collection of tweaks to:
-- fix some annoying aspects of the game
-- increase consistency, common sense
+- fix some annoying and/or unrealistic aspects of the game
+- add some flavor
 - make some things easier
 - make other things harder
 
-It will work with BG2 or BGT. Tested only with BG2 fixpack. Some components are BGT-only.
+It will work with BG2:ToB or [BGT](#http://www.spellholdstudios.net/ie/bgt). Some components are BGT-only.
+
+Tested only with [BG2 fixpack](#http://www.gibberlings3.net/bg2fixpack/).
+
 - [Components](#components)
 - [Installation](#installation)
 - [License](#license)
