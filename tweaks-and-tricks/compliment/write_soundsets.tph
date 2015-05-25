@@ -16,7 +16,7 @@ OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET2 later
 
 //Actually write soundsets
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN //loop through games
-  ACTION_PHP_EACH EVAL ~%game%_cre~ AS npc_name => npc_cre BEGIN   //loop through NPCs
+  ACTION_PHP_EACH ~%game%_cre~ AS npc_name => npc_cre BEGIN   //loop through NPCs
     ACTION_PHP_EACH ~%game%_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
       OUTER_SPRINT npc ~%cre%.cre~
       OUTER_SPRINT soundset ~%game%%npc_name%~
