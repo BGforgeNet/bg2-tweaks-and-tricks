@@ -25,9 +25,6 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 - [Soundsets](#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
   - [BG1-style party interaction system](#bg1-style-party-interaction-system)
-    - [Reintroduce](#reintroduce)
-    - [Reintroduce and adjust to framerate](#reintroduce-and-adjust-to-framerate)
-    - [Disable](#disable)
   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
 - [Common sense](#common-sense)
@@ -37,17 +34,10 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 - [Cheese](#cheese)
   - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
   - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
-    - [Reduced loss](#reduced-loss)
-    - [No loss](#no-loss)
   - [Starting bags](#starting-bags)
-    - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
-    - [GSPA + holding](#gspa--holding)
-    - [GSPA + holding, bottomless](#gspa--holding-bottomless)
   - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
 - [Anti-cheese](#anti-cheese)
   - [Close shop steal exploit](#close-shop-steal-exploit)
-    - [Can't steal from fences](#cant-steal-from-fences)
-    - [Can't steal from any shops](#cant-steal-from-any-shops)
 
 ### Convenience
 
@@ -80,7 +70,7 @@ Semaj is one of Sarevok's lieutenants. BGTTweaks allows to retrieve his cloak. I
 - [BG1 soundsets prevail](#bg1-soundsets-prevail)
 - [BG2 soundsets prevail](#bg2-soundsets-prevail)
 
-This components extends NPC soundsets by re-using their replicas from BG1 in BG2 and vice-versa.
+This component extends NPC soundsets by re-using their sounds from BG1 in BG2 and vice-versa.
 
 Example: BG1 Jaheira has only 1 battle cry: "For The fallen!". So the whole game you listen to that over and over.
 
@@ -104,15 +94,19 @@ In some cases, BG1 and BG2 versions of an NPC have different sounds in same slot
 Only missing sounds are added, therefore after transition soundsets may change.
 
 ##### BG1 soundsets prevail
-In case of collision, sounds from BG1 prevail, after transition soundsets do not change.
+In case of a collision, sounds from BG1 prevail, after transition soundsets do not change.
 
 ##### BG2 soundsets prevail
-In case of collision, sounds from BG2 prevail, after transition soundsets do not change.
+In case of a collision, sounds from BG2 prevail, after transition soundsets do not change.
 
 If this explanation is too confusing, but you'd like to hear more different sounds, just take "Additions only".
 
 
 #### BG1-style party interaction system
+- [Reintroduce](#reintroduce)
+- [Reintroduce and adjust to framerate](#reintroduce-and-adjust-to-framerate)
+- [Disable](#disable)
+
 In BG1, party interaction was based not on banters, but rather on occasional chit-chat between party members - compliments and insults.
 They happen in real time, without a dialog window.
 
@@ -176,6 +170,9 @@ The player character will be healed fully on turning into Slayer. Makes it a bet
 
 
 #### Cheesy Slayer: reputation
+- [Reduced loss](#reduced-loss)
+- [No loss](#no-loss)
+
 The Slayer form is virtually unusable by good characters because of the reputation penalty. But usually no one is even alive after seeing it - so why should reputation suffer? Up to you to decide.
 
 ##### Reduced loss
@@ -186,7 +183,12 @@ No reputation hit on any change.
 
 
 #### Starting bags
-AKA inventory management painkiller. In both Candlekeep and Irenicus dungeon, you can find a few bags to start the adventure with. In Candlekeep, talk to Thorius. In dungeon, check the painting.
+- [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
+- [GSPA + holding](#gspa--holding)
+- [GSPA + holding, bottomless](#gspa--holding-bottomless)
+
+AKA inventory management painkiller. In both Candlekeep and Irenicus dungeon, you can find a few bags to start the adventure with.
+In Candlekeep, talk to Thorius. In the dungeon, check the painting.
 
 ##### Gem, scroll, potion, ammo (GSPA)
 Provides you with 4 basic bags.
@@ -208,6 +210,9 @@ To brand new BG2 charaters, gives the stat bonuses that they were supposed to ga
 ### Anti-cheese
 
 #### Close shop steal exploit
+- [Can't steal from fences](#cant-steal-from-fences)
+- [Can't steal from any shops](#cant-steal-from-any-shops)
+
 Close infinite money "steal-sell-steal" exploit. Options are:
 
 ##### Can't steal from fences
