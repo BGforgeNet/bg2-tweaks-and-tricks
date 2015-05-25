@@ -1,0 +1,96 @@
+// List sounds
+ACTION_DEFINE_ARRAY sound_list BEGIN
+  jaher35
+  jaher37
+  jaher30
+  jaher36
+
+  bgmnsc35
+  bgmnsc36
+  bgmnsc29
+  bgmnsc37
+
+  bedwin35
+  bedwin36
+  bedwin37
+  bedwin30
+
+  vicon36
+  vicon31
+  vicon35
+
+  ajant37
+  ajant27
+  ajant28
+  ajant36
+
+  alora35
+  alora36
+  alora37
+
+  faldn37
+  faldn35
+  faldn36
+
+  eldot36
+  eldot37
+  eldot35
+
+  skiee35
+  skiee36
+  skiee37
+
+  khald35
+  khald30
+  khald31
+  khald37
+
+  xannn35
+  xannn36
+  xannn37
+
+  coran35
+  coran36
+  coran37
+
+  kivan37
+  kivan35
+  kivan36
+
+  montr35
+  montr36
+  montr37
+
+  dynah35
+  dynah37
+
+  yeslk37
+  yeslk31
+  yeslk36
+
+  garrk37
+  garrk35
+
+  branw37
+  branw35
+  branw29
+  branw36
+  branw30
+
+  safan37
+  safan35
+  safan36
+
+  quayl37
+  quayl35
+  quayl36
+
+  kagan35
+  kagan37
+
+  shart35
+  shart36
+  shart37
+
+  tiaxx35
+END //sound_list
