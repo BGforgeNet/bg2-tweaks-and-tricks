@@ -245,8 +245,6 @@ burner1024 @ Github
 
 ## Used software
 
-[DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)
-
-[WeiDU](http://weidu.org/main.html#weidu)
-
-[G3 Debugging Suite](http://www.gibberlings3.net/debug/)
+* [DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)
+* [WeiDU](http://weidu.org/main.html#weidu)
+* [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
