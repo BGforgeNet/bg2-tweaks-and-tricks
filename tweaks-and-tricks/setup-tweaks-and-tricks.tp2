@@ -119,13 +119,19 @@ INCLUDE ~tweaks-and-tricks/compliment/disable.tph~
 
 
 
-BEGIN ~Consistent Cloak of Mirroring~
-INCLUDE ~tweaks-and-tricks/cloak_of_mirroring/main.tph~
+BEGIN ~No talking when hiding in shadows~
+INCLUDE ~tweaks-and-tricks/no_talk_shadows/main.tph~
+
 
 
 
 BEGIN ~Make NPC soundsets available to PC~
 INCLUDE ~tweaks-and-tricks/npc_soundsets/main.tph~
+
+
+
+BEGIN ~Consistent Cloak of Mirroring~
+INCLUDE ~tweaks-and-tricks/cloak_of_mirroring/main.tph~
 
 
 
@@ -163,11 +169,6 @@ SUBCOMPONENT ~Starting bags~
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~tweaks-and-tricks/starting_bags/main.tph~
 INCLUDE ~tweaks-and-tricks/starting_bags/bottomless.tph~
-
-
-
-BEGIN ~No talking when hiding in shadows~
-INCLUDE ~tweaks-and-tricks/no_talk_shadows/main.tph~
 
 
 

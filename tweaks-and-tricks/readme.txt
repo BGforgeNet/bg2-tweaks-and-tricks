@@ -27,12 +27,15 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
     - [Additions only](#additions-only)
     - [BG1 soundsets prevail](#bg1-soundsets-prevail)
     - [BG2 soundsets prevail](#bg2-soundsets-prevail)
-  - [Adjust BG1-style interparty chit-chat to BG2 framerate](#adjust-bg1-style-interparty-chit-chat-to-bg2-framerate)
+  - [BG1-style party interaction system](#bg1-style-party-interaction-system)
+    - [Reintroduce](#reintroduce)
+    - [Reintroduce and adjust to framerate](#reintroduce-and-adjust-to-framerate)
+    - [Disable](#disable)
   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
 - Common sense
   - [Fair fights](#fair-fights)
-  - [Consistent Cloak of Mirroring](#consistent-cloak-of-mirroring)
+  - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
 - Cheese
   - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
@@ -51,12 +54,12 @@ It will work with BG2 or BGT. Tested only with BG2 fixpack.
 
 
 #### Smarter familiars
-- Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory).
+- Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
 - Have them jump in the the pack when there's danger or they're injured. Very useful in later stages.
 
 The less a familiar is told to pick up, the faster it'll do it. So, try to keep the list short. For example, don't tell it to pick up bandit scalps in BG2.
 
-There are **known issues** with this component:
+**There are known issues with this component:**
 - Familiars will pick up items from closed or trapped chests. Live with it or don't use it.
 - If told to jump into pack when see enemies, and get out of it when not, in certain areas (not many) a glitch happens.
 The familiar will start to jump in and out continuously. In that case, talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
@@ -120,26 +123,40 @@ In case of collision, sounds from BG2 prevail, after transition soundsets do not
 If this explanation is too confusing, but you'd like to hear more different sounds, just take "Additions only".
 
 
-In BG1, interparty interaction was based not on banters, but rather on occasional chit-chat between party members - compliments and insults. They just happen from time to time and have no in-game consequences.
+#### BG1-style party interaction system
+In BG1, party interaction was based not on banters, but rather on occasional chit-chat between party members - compliments and insults.
+They happen in real time, without a dialog window.
 
-Example:
+**Example:**
 
 Jaheira: "You are amusing, in a "what the hell is wrong with you" kind of way."
 
 Edwin: "Watch your words when addressing me, lest they be fed to you on the end of my boot!"
 
-In addition, this component expands such interaction in BG1 and reintroduces compliments and insults in BG2.
+##### Reintroduce
+This component reintroduces compliments and insults in BG2, and slightly expands them in BG1.
 
+##### Reintroduce and adjust to framerate
+Original BG1 was running at 30 FPS, and sounds were recorded with that in mind.
+But BG2 allows framerates up to 90. Setting high FPS, however, causes compliments and responses to overlap sometimes.
+This option will adjust the sounds to your current framerate.
 
-#### Adjust BG1-style interparty chit-chat to BG2 framerate
-Adjusts compliments and insults restored by the above component to your frame rate so that they won't overlap (it happens because BG2 runs faster then BG1). You can also disable compliments and insults if you don't like them. This component has DOES NOT affect banters in any way. Recommended if you installed "Extended soundsets".
+##### Disable
+Or, if you rather prefer your NPC not to talk too much, you can disable this interaction altogether.
+This only affects compliments and insults, not banters.
+
+#### No talking when hiding in shadows
+
+Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the world is blind to my passage"). It quickly gets annoying if you use thief scout script.
+
 
 #### Make NPC soundsets available to PC
 Now you can use any of the original Bioware NPCs soundsets for your main character.
 
-#### Consistent Cloak of Mirroring
 
-It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which make no sense to me. And it doesn't protect from from Call Lighting, which also doesn't. This compoment fixes both issues.
+#### Sensible Cloak of Mirroring
+
+It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which doesn't make much sense. And it doesn't protect from Call Lighting, which also is strange. This compoment fixes both issues.
 
 
 #### Effects of scrolls and potions do not stack with themselves
@@ -169,9 +186,6 @@ Same 4 bags, and a bag of holding.
 Same 5 bags, all bottomless.
 
 
-#### No talking when hiding in shadows
-
-Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the world is blind to my passage"). It quickly gets annoying if you use thief scout script.
 
 
 #### Add BG1 tomes stats bonuses to new BG2 characters
