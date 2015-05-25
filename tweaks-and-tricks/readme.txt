@@ -7,7 +7,7 @@ This mod is a collection of tweaks to:
 - make some things easier
 - make other things harder
 
-It will work with BG2 or BGT. Tested only with BG2 fixpack.
+It will work with BG2 or BGT. Tested only with BG2 fixpack. Some components are BGT-only.
 - [Components](#components)
 - [Installation](#installation)
 - [License](#license)
@@ -231,6 +231,7 @@ Just disable stealing in all shops.
 
 ## License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
+One condition: I claim the right to use any derivative works in any way that I see fit.
 
 
 ## Author
