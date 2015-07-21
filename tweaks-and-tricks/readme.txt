@@ -235,8 +235,6 @@ Just disable stealing in all shops.
 ## License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
 
-One condition: I claim the right to use any derivative works in any way that I see fit.
-
 
 ## Author
 burner1024 @ Github
