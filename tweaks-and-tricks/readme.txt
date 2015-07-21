@@ -13,10 +13,10 @@ Tested only with [BG2 fixpack](http://www.gibberlings3.net/bg2fixpack/).
 
 - [Components](#components)
 - [Installation](#installation)
-- [License](#license)
-- [Author](#author)
 - [Changelog](#changelog)
 - [Used sotftware](#used-sotftware)
+- [Author](#author)
+- [License](#license)
 
 
 ## Components
@@ -232,14 +232,6 @@ Just disable stealing in all shops.
 - Launch setup-tweaks-and-tricks.exe
 
 
-## License
-It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
-
-
-## Author
-burner1024 @ Github
-
-
 ## Changelog
 - Version 3
   - Added a few new components
@@ -258,3 +250,10 @@ burner1024 @ Github
 * [DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)
 * [WeiDU](http://weidu.org/main.html#weidu)
 * [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
+
+
+## License
+It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
+
+## Author
+burner1024 @ Github
