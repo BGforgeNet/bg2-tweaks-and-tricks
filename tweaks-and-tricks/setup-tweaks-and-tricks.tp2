@@ -202,6 +202,10 @@ ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
 
 
+BEGIN ~Shops always buy goods at the same price~
+DESIGNATED 1510
+INCLUDE ~%MOD_FOLDER%/no_shop_depreciation/main.tph~
+
 
 BEGIN ~Can't steal from fences~
 DESIGNATED 1410

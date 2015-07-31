@@ -201,11 +201,14 @@ Same 4 bags, and a bag of holding.
 Same 5 bags, all bottomless.
 
 
-
 #### Add BG1 tomes stats bonuses to new BG2 characters
 To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain from tomes in BG1. The subcomponents are self-describing.
 ##### Each stat gets +1
 ##### Each stats except Wisdom gets +1, Wisdom gets +3
+
+
+#### Shops always buy goods at the same price
+Makes store buying price constant, regardless of how many items are already in stock. Now, you don't have to pile up equipment before selling to get the max money for it. The price is always the same!
 
 
 ### Anti-cheese
