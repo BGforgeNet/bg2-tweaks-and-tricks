@@ -37,6 +37,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
   - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
   - [Starting bags](#starting-bags)
   - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
+  - [Shops always buy goods at the same price](#shops-always-buy-goods-at-the-same-price)
 - [Anti-cheese](#anti-cheese)
   - [Close shop steal exploit](#close-shop-steal-exploit)
 
