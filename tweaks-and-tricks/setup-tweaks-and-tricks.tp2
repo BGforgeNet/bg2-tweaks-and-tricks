@@ -216,3 +216,8 @@ BEGIN ~Can't steal from any shops~
 DESIGNATED 1420
 SUBCOMPONENT ~Close shop steal exploit~
 INCLUDE ~%MOD_FOLDER%/no_shop_steal/all.tph~
+
+
+BEGIN ~No XP farming~
+DESIGNATED 1610
+INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~

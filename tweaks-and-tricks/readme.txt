@@ -40,6 +40,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
   - [Shops always buy goods at the same price](#shops-always-buy-goods-at-the-same-price)
 - [Anti-cheese](#anti-cheese)
   - [Close shop steal exploit](#close-shop-steal-exploit)
+  - [No XP farming](#no-xp-farming)
 
 ### Convenience
 
@@ -225,6 +226,10 @@ You can steal from normal merchants, but can't steal from those who buy stolen i
 
 ##### Can't steal from any shops
 Just disable stealing in all shops.
+
+
+#### No XP farming
+Remove rest spawns from the most tempting XP farming spots in BG1: wyvern cave, golem cave and ankheg cave.
 
 
 ## Installation

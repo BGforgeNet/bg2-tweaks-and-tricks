@@ -1,0 +1,7 @@
+COPY_EXISTING
+~ar8301.are~ ~override~  // ankheg cave
+~ar8501.are~ ~override~  // wyvern cave
+~ar9501.are~ ~override~  // golem cave
+  READ_LONG 0xc0 interruptions_offset
+  WRITE_ASCII interruptions_offset ~~ #228
+BUT_ONLY
