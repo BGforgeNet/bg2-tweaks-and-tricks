@@ -65,6 +65,13 @@ INCLUDE ~%MOD_FOLDER%/faster_familiars/main.tph~
 
 
 
+BEGIN ~Resilient familiars~
+DESIGNATED 210
+REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
+INCLUDE ~%MOD_FOLDER%/resilient_familiars/main.tph~
+
+
+
 BEGIN ~Remove blur graphics from Semaj's cloak~
 DESIGNATED 1500
 INCLUDE ~%MOD_FOLDER%/semaj_cloak/main.tph~

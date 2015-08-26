@@ -22,6 +22,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 - [Convenience](#convenience)
   - [Smarter familiars](#smarter-familiars)
   - [Faster familiars](#faster-familiars)
+  - [Resilient familiars](#resilient-familiars)
   - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
 - [Soundsets](#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
@@ -57,6 +58,9 @@ The familiar will start to jump in and out continuously. In that case, talk to i
 
 #### Faster familiars
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
+
+#### Resilient familiars
+Protect familiars from getting critical hits (which are almost always lethal to them).
 
 
 #### Remove blur graphics from Semaj's cloak
