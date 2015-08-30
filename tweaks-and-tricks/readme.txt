@@ -237,7 +237,7 @@ Remove rest spawns from the most tempting XP farming spots in BG1: wyvern cave, 
 
 
 ## Installation
-- Download "Source code (zip)" archive from [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
+- Download tweaks-and-tricks.zip from [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
 - Unzip it
 - Move "tweaks-and-tricks" and "setup-tweaks-and-tricks.exe" into the game directory
 - Launch setup-tweaks-and-tricks.exe
