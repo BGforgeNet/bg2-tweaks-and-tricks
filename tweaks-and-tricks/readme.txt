@@ -244,6 +244,11 @@ Remove rest spawns from the most tempting XP farming spots in BG1: wyvern cave, 
 
 
 ## Changelog
+- Version 4
+  - Add "no shop depreciation" component
+  - Add "no XP farming" component
+  - Add "resilient familiars" component
+  - Fix version tag
 - Version 3
   - Added a few new components
   - Revised all code
@@ -267,4 +272,4 @@ Remove rest spawns from the most tempting XP farming spots in BG1: wyvern cave, 
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
 
 ## Author
-burner1024 @ Github
+burner1024 @ github
