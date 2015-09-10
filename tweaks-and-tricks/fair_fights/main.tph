@@ -39,3 +39,11 @@ COPY_EXISTING ~baldur.bcs~ ~override~
 !Dead("c6harp")~
   END
 BUT_ONLY
+
+//Laskal, shadow druid with a "message"
+ACTION_IF FILE_EXISTS_IN_GAME ~laskal.cre~ BEGIN  
+  COPY_EXISTING ~laskal.cre~ ~override~
+    //Set druid class instead of innocent
+    WRITE_BYTE 0x273 0x0b
+  BUT_ONLY
+END
