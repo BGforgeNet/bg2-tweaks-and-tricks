@@ -1,6 +1,6 @@
 BACKUP ~tweaks-and-tricks/backup~
 AUTHOR "burner1024 @ github"
-VERSION ~v4~
+VERSION ~4~
 NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
