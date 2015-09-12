@@ -5,7 +5,7 @@ IF
   OR(2)
     Detect([PC])
     Detect([Familiar])
-  Range(LastSeenBy,20)
+  Range(LastSeenBy,15)
   Global("g_trap_%script_ind%_detected","myarea",0) // hasn't been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
@@ -51,7 +51,7 @@ IF
     Detect([PC])
     Detect([Familiar])
   CombatCounterLT(1)
-  Range(LastSeenBy,20)
+  Range(LastSeenBy,15)
   Global("g_trap_%script_ind%_detected","myarea",0) // hasn't been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
@@ -59,42 +59,42 @@ THEN
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~Careful. Something's not quite right here.~)
+    DisplayStringHead(LastSeenBy,@29)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~Stop! It's a trap!~)
+    DisplayStringHead(LastSeenBy,@30)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~I sense a trap!~)
+    DisplayStringHead(LastSeenBy,@31)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~Hmm... We should tread lightly here.~)
+    DisplayStringHead(LastSeenBy,@32)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~Wait, wait. Let's take a closer look at this.~)
+    DisplayStringHead(LastSeenBy,@33)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~I sense danger.~)
+    DisplayStringHead(LastSeenBy,@34)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~Watch your step. Looks suspicious.~)
+    DisplayStringHead(LastSeenBy,@35)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
     ClearActions(LastSeenBy)
-    DisplayStringHead(LastSeenBy,~Hold on. See this?~)
+    DisplayStringHead(LastSeenBy,@36)
     Continue()
 END
 >>>>>>>>
@@ -108,7 +108,7 @@ IF
   Global("g_trap_%script_ind%_detected","myarea",1) // has been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
-  Range([PC],20)
+  Range([PC],15)
   CombatCounterLT(1)
 THEN
   RESPONSE #100
@@ -122,7 +122,6 @@ IF
   Detected([ANYONE])
   Global("g_trap_%script_ind%_detected","myarea",0) // has been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
-  CombatCounterLT(1)
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%script_ind%_detected","myarea",1)
@@ -292,11 +291,11 @@ DEFINE_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS BEGIN
     PATCH_IF (VARIABLE_IS_SET $trap_type(~%trap_script%~)) BEGIN // check if it's a known trap type
       SET $trap_index_cur(~%trap_script%~) +=1 //increment current trap type counter
       SET trap_ind = $trap_index_cur(~%trap_script%~) // shortcut var
-      PATCH_IF ( trap_ind > 1) BEGIN // first trap of the type is skipped, next ones are replaces with clones
+      PATCH_IF ( trap_ind > 1) BEGIN // first trap of the type is skipped, next ones are replaced with clones
         PATCH_IF NOT (VARIABLE_IS_SET ~%trap_script%_%trap_ind%~) BEGIN //if no clone yet
           SPRINT EVAL ~%trap_script%_%trap_ind%~ ~%new_trap_ind%~ // record original-to-clone relation, for checking whether a clone exists
-          SPRINT $clone_trap(~%new_trap_ind%~) ~%trap_script%~ // record clone-to-original relation, for creating actual clones later
         END
+        SPRINT $clone_trap(~%new_trap_ind%~) ~%trap_script%~ // record clone-to-original relation, for creating actual clones later
         WRITE_ASCIIE str_script_off ~g_tr%new_trap_ind%~ #8 // assign new script to the structure
         SET new_trap_ind += 1 //increment global counter for g_tr* scripts
       END
@@ -344,20 +343,22 @@ BUT_ONLY
 
 //Clone and extend new scripts
 ACTION_PHP_EACH clone_trap AS clone_ind => script BEGIN
+  PRINT ~cloning %script%.bcs to g_tr%clone_ind%.bcs~
   COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~
-  OUTER_SET script_ind = clone_ind // for EVAL
+  OUTER_SET script_ind = clone_ind //for EXTEND EVAL
+  OUTER_SPRINT trap_type_detected $trap_type(~%script%~) //for EXTEND EVAL
   EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_common.baf~ EVAL //common part is last
   ACTION_IF (traps_combat == 1) BEGIN
-    EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_combat.baf~ EVAL // add combat bits
+    EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_combat.baf~ EVAL //add combat bits
   END
   EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_nocombat.baf~ EVAL //no combat part is first, to allow ClearActions
 END
 
 //EXTEND vanilla scripts
 ACTION_PHP_EACH trap_type AS script => string BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN // skip missing scripts
-    OUTER_SET script_ind = new_trap_ind
-    OUTER_SPRINT trap_type_detected ~%string%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN //skip missing scripts
+    OUTER_SET script_ind = new_trap_ind  //for EXTEND EVAL
+    OUTER_SPRINT trap_type_detected ~%string%~  //for EXTEND EVAL
     EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_common.baf~ EVAL //common part is last
     ACTION_IF (traps_combat == 1) BEGIN
       EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_combat.baf~ EVAL //add combat bits
