@@ -1,22 +1,115 @@
 
-<<<<<<<< .../tnt-inlined/trap_script_extend_top.baf
+//Part of script only for combat detection
+<<<<<<<< .../tnt-inlined/trap_script_combat.baf
 IF
+  OR(2)
+    Detect([PC])
+    Detect([Familiar])
+  Range(LastSeenBy,20)
   Global("g_trap_%script_ind%_detected","myarea",0) // hasn't been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
-  Range([PC],15)
 THEN
-  RESPONSE #100
+  RESPONSE #1
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
-    DisplayStringHead(Myself,~Trap Detected~) // displays over the operating point
+    DisplayStringHead(LastSeenBy,@29)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@30)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@31)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@32)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@33)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@34)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@35)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(LastSeenBy,@36)
     Continue()
 END
+>>>>>>>>
 
+<<<<<<<< .../tnt-inlined/trap_script_nocombat.baf
+IF
+  OR(2)
+    Detect([PC])
+    Detect([Familiar])
+  CombatCounterLT(1)
+  Range(LastSeenBy,20)
+  Global("g_trap_%script_ind%_detected","myarea",0) // hasn't been detected with thief's skill
+  Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
+THEN
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~Careful. Something's not quite right here.~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~Stop! It's a trap!~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~I sense a trap!~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~Hmm... We should tread lightly here.~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~Wait, wait. Let's take a closer look at this.~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~I sense danger.~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~Watch your step. Looks suspicious.~)
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    ClearActions(LastSeenBy)
+    DisplayStringHead(LastSeenBy,~Hold on. See this?~)
+    Continue()
+END
+>>>>>>>>
+
+
+//Common script body
+<<<<<<<< .../tnt-inlined/trap_script_common.baf
+
+// Display trap type second and consequtive times
 IF
   Global("g_trap_%script_ind%_detected","myarea",1) // has been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
-  Range([PC],15)
+  Range([PC],20)
+  CombatCounterLT(1)
 THEN
   RESPONSE #100
     SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
@@ -24,10 +117,12 @@ THEN
     Continue()
 END
 
+// Display trap type first time
 IF
   Detected([ANYONE])
   Global("g_trap_%script_ind%_detected","myarea",0) // has been detected with thief's skill
   Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
+  CombatCounterLT(1)
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%script_ind%_detected","myarea",1)
@@ -36,17 +131,19 @@ THEN
     Continue()
 END
 
+//Stop warning
 IF
   OR(3)
     Disarmed([ANYONE])
-    TrapTriggered([ANYONE]) // doesn't work for containers
-    Opened([ANYONE])
+    TrapTriggered([ANYONE])  // doesn't work for containers
+    Opened([ANYONE])  // does work for containers
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%script_ind%_disarmed","myarea",1)
     Continue()
 END
 
+//Start warning again
 IF
   Reset([ANYONE])
 THEN
@@ -186,15 +283,6 @@ END
 
 OUTER_SET new_trap_ind = 0 // global var for all areas
 
-//EXTEND vanilla scripts first
-ACTION_PHP_EACH trap_type AS script => string BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN // skip missing scripts
-    OUTER_SET script_ind = new_trap_ind
-    OUTER_SPRINT trap_type_detected ~%string%~
-    EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_extend_top.baf~ EVAL
-    new_trap_ind +=1 //increment global clone index
-  END
-END
 
 DEFINE_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS BEGIN
   WHILE (str_num > 0) BEGIN
@@ -256,7 +344,25 @@ BUT_ONLY
 
 //Clone and extend new scripts
 ACTION_PHP_EACH clone_trap AS clone_ind => script BEGIN
-  COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~ BUT_ONLY
+  COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~
   OUTER_SET script_ind = clone_ind // for EVAL
-  EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_extend_top.baf~ EVAL
+  EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_common.baf~ EVAL //common part is last
+  ACTION_IF (traps_combat == 1) BEGIN
+    EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_combat.baf~ EVAL // add combat bits
+  END
+  EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_nocombat.baf~ EVAL //no combat part is first, to allow ClearActions
+END
+
+//EXTEND vanilla scripts
+ACTION_PHP_EACH trap_type AS script => string BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN // skip missing scripts
+    OUTER_SET script_ind = new_trap_ind
+    OUTER_SPRINT trap_type_detected ~%string%~
+    EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_common.baf~ EVAL //common part is last
+    ACTION_IF (traps_combat == 1) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_combat.baf~ EVAL //add combat bits
+    END
+    EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_nocombat.baf~ EVAL //no combat part is first, to allow ClearActions
+    OUTER_SET new_trap_ind +=1 //increment global clone index
+  END
 END

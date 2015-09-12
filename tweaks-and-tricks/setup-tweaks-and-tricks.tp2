@@ -229,7 +229,20 @@ BEGIN ~No XP farming~
 DESIGNATED 1610
 INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 
-
+/*
 BEGIN ~Easy traps~
 DESIGNATED 1700
+INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
+*/
+
+BEGIN ~Works only out of combat~
+DESIGNATED 1701
+SUBCOMPONENT ~Quick trap detection~
+OUTER_SET traps_combat = 0
+INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
+
+BEGIN ~Works both in and out of combat~
+DESIGNATED 1702
+SUBCOMPONENT ~Quick trap detection~
+OUTER_SET traps_combat = 1
 INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
