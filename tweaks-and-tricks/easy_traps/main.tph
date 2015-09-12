@@ -1,0 +1,262 @@
+
+<<<<<<<< .../tnt-inlined/trap_script_extend_top.baf
+IF
+  Global("g_trap_%script_ind%_detected","myarea",0) // hasn't been detected with thief's skill
+  Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
+  Range([PC],15)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(Myself,~Trap Detected~) // displays over the operating point
+    Continue()
+END
+
+IF
+  Global("g_trap_%script_ind%_detected","myarea",1) // has been detected with thief's skill
+  Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("g_trap_%script_ind%_timer","myarea") // don't spam the dialog box
+  Range([PC],15)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(Myself,~%trap_type_detected%~) // get the string from "trap_type" array
+    Continue()
+END
+
+IF
+  Detected([ANYONE])
+  Global("g_trap_%script_ind%_detected","myarea",0) // has been detected with thief's skill
+  Global("g_trap_%script_ind%_disarmed","myarea",0) // hasn't been disarmed or set off
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%script_ind%_detected","myarea",1)
+    SetGlobalTimer("g_trap_%script_ind%_timer","myarea",12)
+    DisplayStringHead(Myself,~%trap_type_detected%~)
+    Continue()
+END
+
+IF
+  OR(3)
+    Disarmed([ANYONE])
+    TrapTriggered([ANYONE]) // doesn't work for containers
+    Opened([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%script_ind%_disarmed","myarea",1)
+    Continue()
+END
+
+IF
+  Reset([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%script_ind%_disarmed","myarea",0)
+    Continue()
+END
+>>>>>>>>
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
+  CTAR  => ~Arrow trap~
+  CTAR2 => ~Repeating arrow trap~
+  CTAR3 => ~Slaying arrow trap~
+  CTAR4 => ~Acid arrow trap~
+  CTAR5 => ~Biting arrow trap~
+  CTAR6 => ~Detonation arrow trap~
+  CTAR7 => ~Dispelling arrow trap~
+  CTAR8 => ~Fire arrow trap~
+  CTAR9 => ~Ice arrow trap~
+  CTAR10 => ~Piercing arrow trap~
+
+  GTAR  => ~Arrow trap~
+  GTAR2 => ~Repeating arrow trap~
+  GTAR3 => ~Slaying arrow trap~
+  GTAR4 => ~Acid arrow trap~
+  GTAR5 => ~Biting arrow trap~
+  GTAR6 => ~Detonation arrow trap~
+  GTAR7 => ~Dispelling arrow trap~
+  GTAR8 => ~Fire arrow trap~
+  GTAR9 => ~Ice arrow trap~
+  GTAR10 => ~Piercing arrow trap~
+
+  CTCK => ~Cloudkill trap~
+  CTCL => ~Call lightning trap~
+  CTCON => ~Confusion trap~
+  CTCORB => ~Chromatic orb trap~
+  CTDC => ~Dire charm trap~
+  CTFB => ~Fireball trap~
+  CTFB2 => ~Fireball trap~
+  CTFR => ~Frost trap~
+  CTFS => ~Flamestrike trap~
+  CTHP => ~Hold person trap~
+  CTLB => ~Lightning bolt trap~
+  CTLB2 => ~Lightning bolt trap~
+  CTMIS => ~Miscast magic trap~
+  CTMM => ~Magic missile trap~
+  CTMS => ~Monster summoning trap~
+  CTPM => ~Cloudkill trap~
+  CTSC => ~Stinking cloud trap~
+  CTSI => ~Silence trap~
+
+  GTCK => ~Cloudkill trap~
+  GTCL => ~Call lightning trap~
+  GTCON => ~Confusion trap~
+  GTCORB => ~Chromatic orb trap~
+  GTDC => ~Dire charm trap~
+  GTFB => ~Fireball trap~
+  GTFB2 => ~Fireball trap~
+  GTFR => ~Frost trap~
+  GTFS => ~Flamestrike trap~
+  GTHP => ~Hold person trap~
+  GTLB => ~Lightning bolt trap~
+  GTMIS => ~Miscast magic trap~
+  GTMM => ~Magic missile trap~
+  GTMS => ~Monster summoning trap~
+  GTPM => ~Cloudkill trap~
+  GTSC => ~Stinking cloud trap~
+  GTSI => ~Silence trap~
+  GTWEB => ~Web trap~
+  GTSPIKE => ~Hallway spikes trap~
+  GTVENT => ~Vent trap~
+
+  GDARTS => ~Dart trap~
+  GSPEAR => ~Spear trap~
+  GSLIME => ~Slime trap~
+  ROLLSPK => ~Hallway spikes trap~
+
+  //Watcher's keep traps
+  GT001 => ~Sleep trap~
+  GT002 => ~Silence trap~
+  GT003 => ~Stun trap~
+  GT004 => ~Enfeeblement trap~
+  GT005 => ~Spell thrust trap~
+  GT006 => ~Flesh to stone trap~
+  GT007 => ~True sight trap~
+  GT008 => ~Chain lightning trap~
+  GT009 => ~Death spell trap~
+  GT010 => ~Desintegrate trap~
+  GT011 => ~Ruby ray trap~
+  GT012 => ~Delayed fireball trap~
+  GT013 => ~Finger of death trap~
+  GT014 => ~Prismatic spray trap~
+  GT015 => ~Pierce shield trap~
+  GT016 => ~Incendiary cloud trap~
+  GT017 => ~Horrid wilting trap~
+  GT018 => ~Maze trap~
+  GT019 => ~Spell strike trap~
+  GT020 => ~Meteor swarm trap~
+  GT021 => ~Power word: kill trap~
+  GT022 => ~Wail of banshee trap~
+  GT023 => ~Energy drain trap~
+  GT024 => ~Sleep trap~
+  GT025 => ~Horror trap~
+  GT026 => ~Acid arrow trap~
+  GT027 => ~Slow trap~
+  GT028 => ~Ice storm trap~
+  GT029 => ~Web trap~
+
+  BGCTDC => ~Dire charm trap~
+  BGCTMM => ~Magic missile trap~
+
+  BATLEHO => ~Unknown trap~ // Davaeorn. SCS?
+
+  // Durlag's dungeon
+  URNTRAP1 => ~Lightning bolt trap~
+  URNTRAP2 => ~Lightning bolt trap~
+  URNTRAP3 => ~Lightning bolt trap~
+  URNTRAP4 => ~Lightning bolt trap~
+  URNTRAP5 => ~Lightning bolt trap~
+  URNTRAP6 => ~Lightning bolt trap~
+  
+  //BGTtweak, random activated traps in pirate cave
+  GTAR9501 => ~Unknown trap~ 
+  
+  // SCS traps
+  DW#GDART => ~Dart trap~
+  DW#GSPEA => ~Spear trap~
+  DW#SLTRP => ~Slime trap~
+  
+  //some other mod?
+  PTSNARE1 => ~Biting arrow trap~
+  PTSNARE2 => ~Dispelling arrow trap~
+  
+  //Tower of Deception?
+  VA#ORBTR => ~Chromatic orb trap~
+END
+
+OUTER_SET new_trap_ind = 0 // global var for all areas
+
+//EXTEND vanilla scripts first
+ACTION_PHP_EACH trap_type AS script => string BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN // skip missing scripts
+    OUTER_SET script_ind = new_trap_ind
+    OUTER_SPRINT trap_type_detected ~%string%~
+    EXTEND_TOP ~%script%.bcs~ ~.../tnt-inlined/trap_script_extend_top.baf~ EVAL
+    new_trap_ind +=1 //increment global clone index
+  END
+END
+
+DEFINE_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS BEGIN
+  WHILE (str_num > 0) BEGIN
+    SET str_num = (str_num - 1)
+    SET str_script_off = (str_off + (str_num * str_size) + rel_script_off)
+    READ_ASCII str_script_off trap_script
+    PATCH_IF (VARIABLE_IS_SET $trap_type(~%trap_script%~)) BEGIN // check if it's a known trap type
+      SET $trap_index_cur(~%trap_script%~) +=1 //increment current trap type counter
+      SET trap_ind = $trap_index_cur(~%trap_script%~) // shortcut var
+      PATCH_IF ( trap_ind > 1) BEGIN // first trap of the type is skipped, next ones are replaces with clones
+        PATCH_IF NOT (VARIABLE_IS_SET ~%trap_script%_%trap_ind%~) BEGIN //if no clone yet
+          SPRINT EVAL ~%trap_script%_%trap_ind%~ ~%new_trap_ind%~ // record original-to-clone relation, for checking whether a clone exists
+          SPRINT $clone_trap(~%new_trap_ind%~) ~%trap_script%~ // record clone-to-original relation, for creating actual clones later
+        END
+        WRITE_ASCIIE str_script_off ~g_tr%new_trap_ind%~ #8 // assign new script to the structure
+        SET new_trap_ind += 1 //increment global counter for g_tr* scripts
+      END
+    END
+  END
+END
+
+COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
+
+  SET reg_size = 0xc4
+  READ_SHORT 0x5a reg_num
+  READ_LONG  0x5c reg_off
+
+  SET cont_size = 0xc0
+  READ_SHORT 0x74 cont_num
+  READ_LONG  0x70 cont_off
+
+  SET door_size = 0xc8
+  READ_SHORT 0xa4 door_num
+  READ_LONG  0xa8 door_off
+
+  PHP_EACH trap_type AS script => string BEGIN
+    SET $trap_index_cur(~%script%~) = 0 // for current area
+  END
+
+  str_off = reg_off
+  str_size = reg_size
+  str_num = reg_num
+  rel_script_off = 0x7c
+  LAUNCH_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS
+
+  str_off = cont_off
+  str_size = cont_size
+  str_num = cont_num
+  rel_script_off = 0x48
+  LAUNCH_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS
+
+  str_off = door_off
+  str_size = door_size
+  str_num = door_num
+  rel_script_off = 0x80
+  LAUNCH_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS
+
+BUT_ONLY
+
+//Clone and extend new scripts
+ACTION_PHP_EACH clone_trap AS clone_ind => script BEGIN
+  COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~ BUT_ONLY
+  OUTER_SET script_ind = clone_ind // for EVAL
+  EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~.../tnt-inlined/trap_script_extend_top.baf~ EVAL
+END
