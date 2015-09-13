@@ -256,6 +256,18 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
 
   BATLEHO => ~Unknown trap~ // Davaeorn. SCS?
 
+  CRUSHTRP => ~Crushing trap~
+  CRUSHTR2 => ~Crushing trap~
+  CRUSHTR3 => ~Crushing trap~
+  PPCRUS1 => ~Crushing trap~
+  PPCRUS2 => ~Crushing trap~
+  TRP1504 => ~Crushing trap~
+
+  TRUESTON => ~Stone trap~
+  WQXSTON => ~Stone trap~
+
+  PIPETRAP => ~Minor ligthning bolt trap~
+
   // Durlag's dungeon
   URNTRAP1 => ~Lightning bolt trap~
   URNTRAP2 => ~Lightning bolt trap~
@@ -271,11 +283,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   DW#GDART => ~Dart trap~
   DW#GSPEA => ~Spear trap~
   DW#SLTRP => ~Slime trap~
-  
+
   //some other mod?
   PTSNARE1 => ~Biting arrow trap~
   PTSNARE2 => ~Dispelling arrow trap~
-  
+
   //Tower of Deception?
   VA#ORBTR => ~Chromatic orb trap~
 END
