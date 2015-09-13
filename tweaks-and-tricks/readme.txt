@@ -234,7 +234,7 @@ Just disable stealing in all shops.
 
 
 #### No XP farming
-Remove rest spawns from the most tempting XP farming spots in BG1: wyvern cave, golem cave and ankheg cave.
+Disables the possibility of XP farming in the most tempting spots in BG1: wyvern cave, golem cave, ankheg cave and skeleton warrior trap (Durlag's tower).
 
 
 ## Installation
