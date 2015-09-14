@@ -323,39 +323,22 @@ THEN
 END
 ~
 
-OUTER_SPRINT PickupAnkheg ~
+OUTER_SPRINT PickupTrophy ~
 IF
   ActionListEmpty()
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupAnkheg","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
-THEN
-  RESPONSE #100
-    PickupItem("misc12")
-    PickupItem("misc12")
-    Continue()
-END
-~
-
-
-OUTER_SPRINT PickupWinter ~
-IF
-  ActionListEmpty()
-  CombatCounterLT(1)
-  !See([EVILCUTOFF])
-  Detect(Player1)
-  Global("g_FamPickupAnkheg","LOCALS",1)
+  Global("g_FamPickupTrophy","LOCALS",1)
   Global("g_FamInventoryFull","LOCALS",0)
 THEN
   RESPONSE #100
     PickupItem("misc01")
-    PickupItem("misc01")
+    PickupItem("misc12")
+    PickupItem("misc52")
     Continue()
 END
 ~
-
 
 //actual script
 <<<<<<<< .../cheese-inlined/g_%familiar%.baf
@@ -382,10 +365,7 @@ END
 %PickupAmmoMagic%
 
 %CheckInventoryFull%
-%PickupAnkheg%
-
-%CheckInventoryFull%
-%PickupWinter%
+%PickupTrophy%
 
 %CheckInventoryFull%
 %PickupJewelryRare%

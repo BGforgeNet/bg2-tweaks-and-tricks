@@ -132,20 +132,12 @@ APPEND %familiar_dialog%
     + ~Stop that scalping, will you? It's disgusting.~ DO ~SetGlobal("g_FamPickupScalps","LOCALS",0)~
     + g_familiar_confirm
 
-    + ~Global("g_FamPickupAnkheg","LOCALS",0)~
-    + ~I need scales from any ankheg that we kill.~ DO ~SetGlobal("g_FamPickupAnkheg","LOCALS",1)~
+    + ~Global("g_FamPickupTrophy","LOCALS",0)~
+    + ~Ankheg scales, winter wolf pelts, wyvern heads - I need it all.~ DO ~SetGlobal("g_FamPickupTrophy","LOCALS",1)~
     + g_familiar_confirm
 
-    + ~Global("g_FamPickupAnkheg","LOCALS",1)~
-    + ~Enough ankheg scales, we're stocked.~ DO ~SetGlobal("g_FamPickupAnkheg","LOCALS",0)~
-    + g_familiar_confirm
-
-    + ~Global("g_FamPickupWinter","LOCALS",0)~
-    + ~Bring me all winter wolf pelts.~ DO ~SetGlobal("g_FamPickupWinter","LOCALS",1)~
-    + g_familiar_confirm
-
-    + ~Global("g_FamPickupWinter","LOCALS",1)~
-    + ~No more winter wolf pelts, we have lots already.~ DO ~SetGlobal("g_FamPickupWinter","LOCALS",0)~
+    + ~Global("g_FamPickupTrophy","LOCALS",1)~
+    + ~No more pelts or scales, we're stocked.~ DO ~SetGlobal("g_FamPickupTrophy","LOCALS",0)~
     + g_familiar_confirm
 
     ++ ~No, nothing.~ + 1
