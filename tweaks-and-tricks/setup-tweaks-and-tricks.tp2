@@ -7,7 +7,6 @@ README ~%MOD_FOLDER%/readme.txt~
 AUTO_EVAL_STRINGS
 //MODDER
 
-
 //i'm just lazy, okay? it's for npc soundsets to pc
 ALLOW_MISSING
 ~kivan12.wav~ ~kivan13.wav~ ~kivan14.wav~ ~kivan15.wav~ ~kivan16.wav~
@@ -229,20 +228,39 @@ BEGIN ~No XP farming~
 DESIGNATED 1610
 INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 
-/*
-BEGIN ~Easy traps~
-DESIGNATED 1700
-INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
-*/
 
-BEGIN ~Works only out of combat~
+
+BEGIN ~Easy traps: allow sensing in combat~
 DESIGNATED 1701
-SUBCOMPONENT ~Quick trap detection~
-OUTER_SET traps_combat = 0
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_combat.g_~
+
+BEGIN ~Easy traps: increase trap sense range~
+DESIGNATED 1702
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_range.g_~
+
+BEGIN ~Easy traps: stop character~
+DESIGNATED 1703
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_stop.g_~
+
+BEGIN ~Easy traps: center on character~
+DESIGNATED 1704
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_view.g_~
+
+BEGIN ~Easy traps: play a sound~
+DESIGNATED 1705
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_sound.g_~
+
+BEGIN ~Easy traps: autopause~
+DESIGNATED 1706
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_pause.g_~
+
+BEGIN ~Easy traps: core (REQUIRED for any of previous "Easy traps" components to work)~
+DESIGNATED 1700
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_core.g_~
 INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
 
-BEGIN ~Works both in and out of combat~
-DESIGNATED 1702
-SUBCOMPONENT ~Quick trap detection~
-OUTER_SET traps_combat = 1
-INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
+
+
+BEGIN ~Less autosaves~
+DESIGNATED 1800
+INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~

@@ -1,0 +1,23 @@
+COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
+  // remove "party required" flag on edges
+  PATCH_FOR_EACH flag_off IN 0x20 0x2c 0x38 0x44 BEGIN
+//    READ_LONG flag_off old_flags
+//    new_flags = old_flags BAND 0b1111111111111110
+//    WRITE_LONG flag_off new_flags
+    WRITE_LONG flag_off THIS BAND BNOT BIT0
+  END
+
+  //remove "party required" flag from regions
+  reg_size = 0xc4
+  reg_rel_flags_off = 0x60
+  READ_SHORT 0x5a reg_num
+  READ_LONG  0x5c reg_off
+  WHILE (reg_num > 0) BEGIN
+    reg_num -= 1
+    reg_flags_off = reg_off + (reg_num * reg_size) + reg_rel_flags_off
+//    READ_LONG reg_flags_off old_flags
+//    new_flags = old_flags BAND 0b1111111111111011
+//    WRITE_LONG reg_flags_off new_flags
+    WRITE_LONG reg_flags_off THIS BAND BNOT BIT2
+  END
+BUT_ONLY
