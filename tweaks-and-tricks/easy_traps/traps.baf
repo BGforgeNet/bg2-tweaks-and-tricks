@@ -1,0 +1,128 @@
+IF
+  OR(2)
+    Detect([PC])
+    Detect([Familiar])
+  %traps_baf_combat%
+  !StateCheck(LastSeenBy,CD_STATE_NOTVALID)
+  %traps_baf_range%
+  Global("g_trap_%trap_type_id%_detected","myarea",0) // hasn't been detected with thief's skill
+  Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
+THEN
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@29)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@30)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@31)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@32)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@33)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@34)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@35)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@36)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+END
+
+
+// Display trap type second and consequtive times
+IF
+  OR(2)
+    Detect([PC])
+    Detect([Familiar])
+  %traps_baf_range%
+  Global("g_trap_%trap_type_id%_detected","myarea",1) // has been detected with thief's skill
+  Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
+  %traps_baf_combat%
+THEN
+  RESPONSE #100
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    DisplayStringHead(Myself,~%trap_type_warning%~) // get the string from "trap_type" array
+    Continue()
+END
+
+// Display trap type first time
+IF
+  Detected([ANYONE])
+  Global("g_trap_%trap_type_id%_detected","myarea",0) // has been detected with thief's skill
+  Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%trap_type_id%_detected","myarea",1)
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    DisplayStringHead(Myself,~%trap_type_warning%~)
+    Continue()
+END
+
+//Stop warning
+IF
+  OR(3)
+    Disarmed([ANYONE])
+    TrapTriggered([ANYONE])  // doesn't work for containers
+    Opened([ANYONE])  // does work for containers
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",1)
+    Continue()
+END
+
+//Start warning again
+IF
+  Reset([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",0)
+    Continue()
+END

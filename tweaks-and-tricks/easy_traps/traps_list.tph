@@ -1,0 +1,146 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
+  CTAR  => ~Arrow trap~
+  CTAR2 => ~Repeating arrow trap~
+  CTAR3 => ~Slaying arrow trap~
+  CTAR4 => ~Acid arrow trap~
+  CTAR5 => ~Biting arrow trap~
+  CTAR6 => ~Detonation arrow trap~
+  CTAR7 => ~Dispelling arrow trap~
+  CTAR8 => ~Fire arrow trap~
+  CTAR9 => ~Ice arrow trap~
+  CTAR10 => ~Piercing arrow trap~
+
+  GTAR  => ~Arrow trap~
+  GTAR2 => ~Repeating arrow trap~
+  GTAR3 => ~Slaying arrow trap~
+  GTAR4 => ~Acid arrow trap~
+  GTAR5 => ~Biting arrow trap~
+  GTAR6 => ~Detonation arrow trap~
+  GTAR7 => ~Dispelling arrow trap~
+  GTAR8 => ~Fire arrow trap~
+  GTAR9 => ~Ice arrow trap~
+  GTAR10 => ~Piercing arrow trap~
+
+  CTCK => ~Cloudkill trap~
+  CTCL => ~Call lightning trap~
+  CTCON => ~Confusion trap~
+  CTCORB => ~Chromatic orb trap~
+  CTDC => ~Dire charm trap~
+  CTFB => ~Fireball trap~
+  CTFB2 => ~Fireball trap~
+  CTFR => ~Frost trap~
+  CTFS => ~Flamestrike trap~
+  CTHP => ~Hold person trap~
+  CTLB => ~Lightning bolt trap~
+  CTLB2 => ~Lightning bolt trap~
+  CTMIS => ~Miscast magic trap~
+  CTMM => ~Magic missile trap~
+  CTMS => ~Monster summoning trap~
+  CTPM => ~Cloudkill trap~
+  CTSC => ~Stinking cloud trap~
+  CTSI => ~Silence trap~
+
+  GTAS => ~Agannazar's scorcher trap~
+  GTCK => ~Cloudkill trap~
+  GTCL => ~Call lightning trap~
+  GTCON => ~Confusion trap~
+  GTCORB => ~Chromatic orb trap~
+  GTDC => ~Dire charm trap~
+  GTFB => ~Fireball trap~
+  GTFB2 => ~Fireball trap~
+  GTFB3 => ~Fireball trap~
+  GTFR => ~Frost trap~
+  GTFS => ~Flamestrike trap~
+  GTGW => ~Glyph of warding~
+  GTHP => ~Hold person trap~
+  GTLB => ~Lightning bolt trap~
+  GTMIS => ~Miscast magic trap~
+  GTMM => ~Magic missile trap~
+  GTMS => ~Monster summoning trap~
+  GTPM => ~Cloudkill trap~
+  GTSC => ~Stinking cloud trap~
+  GTSI => ~Silence trap~
+  GTSPID => ~Spider spawn trap~
+  GTST => ~Skull trap~
+  GTTS => ~True sight trap~
+  GTWEB => ~Web trap~
+  GTSPIKE => ~Hallway spikes trap~
+  GTVENT => ~Vent trap~
+
+  GDARTS => ~Dart trap~
+  GSPEAR => ~Spear trap~
+  GSLIME => ~Slime trap~
+  ROLLSPK => ~Hallway spikes trap~
+
+  //Watcher's keep traps
+  GT001 => ~Sleep trap~
+  GT002 => ~Silence trap~
+  GT003 => ~Stun trap~
+  GT004 => ~Enfeeblement trap~
+  GT005 => ~Spell thrust trap~
+  GT006 => ~Flesh to stone trap~
+  GT007 => ~True sight trap~
+  GT008 => ~Chain lightning trap~
+  GT009 => ~Death spell trap~
+  GT010 => ~Desintegrate trap~
+  GT011 => ~Ruby ray trap~
+  GT012 => ~Delayed fireball trap~
+  GT013 => ~Finger of death trap~
+  GT014 => ~Prismatic spray trap~
+  GT015 => ~Pierce shield trap~
+  GT016 => ~Incendiary cloud trap~
+  GT017 => ~Horrid wilting trap~
+  GT018 => ~Maze trap~
+  GT019 => ~Spell strike trap~
+  GT020 => ~Meteor swarm trap~
+  GT021 => ~Power word: kill trap~
+  GT022 => ~Wail of banshee trap~
+  GT023 => ~Energy drain trap~
+  GT024 => ~Sleep trap~
+  GT025 => ~Horror trap~
+  GT026 => ~Acid arrow trap~
+  GT027 => ~Slow trap~
+  GT028 => ~Ice storm trap~
+  GT029 => ~Web trap~
+
+  BGCTDC => ~Dire charm trap~
+  BGCTMM => ~Magic missile trap~
+  BGGTMM => ~Magic missile trap~
+
+  BATLEHO => ~Unknown trap~ // Davaeorn. SCS?
+
+  CRUSHTRP => ~Crushing trap~
+  CRUSHTR2 => ~Crushing trap~
+  CRUSHTR3 => ~Crushing trap~
+  PPCRUS1 => ~Crushing trap~
+  PPCRUS2 => ~Crushing trap~
+  TRP1504 => ~Crushing trap~
+
+  TRUESTON => ~Stone trap~
+  WQXSTON => ~Stone trap~
+
+  PIPETRAP => ~Minor ligthning bolt trap~
+
+  // Durlag's dungeon
+  URNTRAP1 => ~Lightning bolt trap~
+  URNTRAP2 => ~Lightning bolt trap~
+  URNTRAP3 => ~Lightning bolt trap~
+  URNTRAP4 => ~Lightning bolt trap~
+  URNTRAP5 => ~Lightning bolt trap~
+  URNTRAP6 => ~Lightning bolt trap~
+  
+  //BGTtweak, random activated traps in pirate cave
+  GTAR9501 => ~Unknown trap~ 
+  
+  // SCS traps
+  DW#GDART => ~Dart trap~
+  DW#GSPEA => ~Spear trap~
+  DW#SLTRP => ~Slime trap~
+
+  //some other mod?
+  PTSNARE1 => ~Biting arrow trap~
+  PTSNARE2 => ~Dispelling arrow trap~
+
+  //Tower of Deception?
+  VA#ORBTR => ~Chromatic orb trap~
+END

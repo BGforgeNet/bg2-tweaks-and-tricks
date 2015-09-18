@@ -1,0 +1,25 @@
+DEFINE_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS BEGIN
+  WHILE (str_num > 0) BEGIN
+    str_num -= 1
+    str_script_off = str_off + (str_num * str_size) + rel_script_off
+    READ_ASCII str_script_off trapscript
+    PATCH_IF (VARIABLE_IS_SET $trap_type(~%trapscript%~)) BEGIN // check if it's a known trap type
+      SET trapind = EVAL ~%trapscript%_cur~
+      trapind +=1
+      SET EVAL ~%trapscript%_cur~ = trapind
+      PATCH_IF ( trapind > 1) BEGIN // first trap of the type is skipped, next ones are replaced with clones
+        PATCH_IF NOT (VARIABLE_IS_SET ~sourceclone_%trapscript%_%trapind%~) BEGIN
+          SPRINT new_trap_script ~g_tr%new_trap_ind%~ //clone
+          SPRINT EVAL ~sourceclone_%trapscript%_%trapind%~ ~%new_trap_ind%~ // record original-to-clone relation, for checking whether a clone exists
+          SPRINT $clone_source(~%new_trap_ind%~) ~%trapscript%~ // record clone-to-original relation, for creating actual clones later
+          SPRINT $clone_loc_ind(~%new_trap_ind%~) ~%trapind%~ // record clone-to-original relation, for creating actual clones later
+          new_trap_ind += 1 //increment global counter for g_tr* scripts
+        END ELSE BEGIN
+          SPRINT ~cloneid~ ~sourceclone_%trapscript%_%trapind%~
+          SPRINT new_trap_script EVAL ~g_tr%%cloneid%%~
+        END
+        WRITE_ASCIIE str_script_off ~%new_trap_script%~ #8 // assign new script to the structure
+      END
+    END
+  END
+END
