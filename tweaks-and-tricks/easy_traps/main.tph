@@ -1,3 +1,12 @@
+/*
+ACTION_IF FILE_EXISTS ~override/g_tnt_trap_modal.g_~ BEGIN
+  OUTER_SPRINT traps_baf_modal ~~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_modal ~NextTriggerObject(LastSeenBy)
+ModalState(DETECTTRAPS)~
+END
+*/
+
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_combat.g_~ BEGIN
   OUTER_SPRINT traps_baf_combat ~~
 END ELSE BEGIN
@@ -39,8 +48,21 @@ INCLUDE ~%MOD_FOLDER%/easy_traps/functions.tph~
 INCLUDE ~%MOD_FOLDER%/easy_traps/traps_list.tph~
 OUTER_SET new_trap_ind = 0 // global var for all areas
 
-// Adds CD_STATE_NOTVALID state
-APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+/*
+// ToBEx
+ACTION_IF GAME_IS ~bg2 tob bgt~ BEGIN
+  OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
+  LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
+  ACTION_INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
+END
+*/
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~ // Adds CD_STATE_NOTVALID state
+/* 
+APPEND "trigger.ids" "0x4100 NextTriggerObject(O:Object*)" UNLESS "0x4100 NextTriggerObject(O:Object*)" //Expanded Triggers for TobEx and BG:EE
+APPEND "shoutids.ids" "1200 G_TRAP" UNLESS "1200 G_TRAP" // New shout
+*/
+CLEAR_IDS_MAP
 
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   SET reg_size = 0xc4
@@ -85,7 +107,7 @@ ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
   OUTER_SPRINT trapind $clone_loc_ind(~%clone_ind%~)    //trap index in area: 2
   OUTER_SPRINT trap_type_id ~%script%_%trapind%~        //trap id: GTAR5_2 (for local vars)
   OUTER_SPRINT trap_type_warning $trap_type(~%script%~)  //trap warning string: "Acid arrow trap"
-//  OUTER_SPRINT clone_id ~g_tr%clone_ind%~
+  OUTER_SPRINT clone_id ~g_tr%clone_ind%~
   EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
 END
 
@@ -94,7 +116,7 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN //skip missing scripts
     OUTER_SPRINT trap_type_id ~%script%~  //for EXTEND EVAL
     OUTER_SPRINT trap_type_warning ~%string%~  //for EXTEND EVAL
-//    OUTER_SPRINT clone_id ~no clone~
+    OUTER_SPRINT clone_id ~no clone~
     EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
   END
 END

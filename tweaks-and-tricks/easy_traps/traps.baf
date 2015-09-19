@@ -1,10 +1,25 @@
+/*
+//don't spam warnings from multiple nearby traps
+IF
+  Heard([Anyone],G_TRAP)
+THEN
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) heard shout~)
+    Continue()
+END
+*/
+
+//main detection check
 IF
   OR(2)
     Detect([PC])
     Detect([Familiar])
-  %traps_baf_combat%
-  !StateCheck(LastSeenBy,CD_STATE_NOTVALID)
   %traps_baf_range%
+  %traps_baf_combat%
+  %traps_baf_modal%
+//  !Heard([Anyone],G_TRAP)
+  !StateCheck(LastSeenBy,CD_STATE_NOTVALID)
   Global("g_trap_%trap_type_id%_detected","myarea",0) // hasn't been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
@@ -12,10 +27,21 @@ THEN
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,~Trap %trap_type_id% (%clone_id%) detected~)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+//    Shout(G_TRAP)
+    Continue()
+/*
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@29)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -24,6 +50,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -32,6 +59,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -40,6 +68,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -48,6 +77,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -56,6 +86,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -64,6 +95,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -72,16 +104,19 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
+    Shout(G_TRAP)
     Continue()
+*/
 END
 
 
-// Display trap type second and consequtive times
+// Display detected trap type second and consequtive times
 IF
   OR(2)
     Detect([PC])
     Detect([Familiar])
   %traps_baf_range%
+  %traps_baf_modal%
   Global("g_trap_%trap_type_id%_detected","myarea",1) // has been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
@@ -93,10 +128,10 @@ THEN
     Continue()
 END
 
-// Display trap type first time
+// Display detected trap type first time
 IF
   Detected([ANYONE])
-  Global("g_trap_%trap_type_id%_detected","myarea",0) // has been detected with thief's skill
+  Global("g_trap_%trap_type_id%_detected","myarea",0) // has just been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
 THEN
   RESPONSE #100
@@ -110,11 +145,13 @@ END
 IF
   OR(3)
     Disarmed([ANYONE])
-    TrapTriggered([ANYONE])  // doesn't work for containers
-    Opened([ANYONE])  // does work for containers
+    Opened([ANYONE])  // for containers
+    Entered([ANYONE])  // for regions
+//    TrapTriggered([ANYONE])  // doesn't work
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",1)
+    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) disarmed~)
     Continue()
 END
 
@@ -124,5 +161,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",0)
+    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) armed again~)
     Continue()
 END
