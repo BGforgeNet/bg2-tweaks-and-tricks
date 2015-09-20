@@ -1,14 +1,12 @@
 //"item2unstack" - item we want to stop stack, "spellname" is name for hidden spell, "refresh_strref" appears upon refreshing spell. Both without extensions. "2da_row_number" needs to be read previosly also.
 DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 
-APPEND ~msectype.2da~ ~%spellname% %refresh_strref%~ //new secondary type. 
-OUTER_SET ~2da_row_number~ = (%2da_row_number% + 1)
-
-COPY ~%MOD_FOLDER%/common_resources/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
+ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
+OUTER_SET sectype_id = EVAL ~%%spellname%%~
+COPY ~%MOD_FOLDER%/lib/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
   //set new secondary type
-  WRITE_BYTE 0x27 ~%2da_row_number%~
+  WRITE_BYTE 0x27 sectype_id
 BUT_ONLY
-
 
 
 COPY_EXISTING ~%item2unstack%.itm~ ~override~
@@ -16,7 +14,7 @@ COPY_EXISTING ~%item2unstack%.itm~ ~override~
   //deleting feedback line
   LPF DELETE_ITEM_EFFECT
     INT_VAR
-      opcode = 139
+      opcode_to_delete = 139
   END
   //copying other effects to the shell spell
   LPF ITEM_EFFECT_TO_SPELL
@@ -26,7 +24,7 @@ COPY_EXISTING ~%item2unstack%.itm~ ~override~
   //deleting effects
   LPF DELETE_ITEM_EFFECT
     INT_VAR
-      opcode = (0 - 1)
+      opcode_to_delete = (0 - 1)
   END
 
 /* STUPID THING DOESN'T WORK
@@ -61,7 +59,7 @@ COPY_EXISTING ~%item2unstack%.itm~ ~override~
       target = 2 //preserve
       power = 4 //power
       parameter1 = 10 //max level
-      parameter2 = ~%2da_row_number%~ //remove our secondary type
+      parameter2 = ~%sectype_id%~ //remove our secondary type
       timing = 1 //instant
       resist_dispel = 3 //dispel and bypass
   END
@@ -76,7 +74,7 @@ COPY_EXISTING ~%item2unstack%.itm~ ~override~
       timing = 1 //instant
       resist_dispel = 3 //dispel and bypass
     STR_VAR
-      resource ~%spellname%~ //which spell to cast
+      resource = ~%spellname%~ //which spell to cast
   END
 
 BUT_ONLY

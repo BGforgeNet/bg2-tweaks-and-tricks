@@ -1,20 +1,15 @@
 INCLUDE ~%MOD_FOLDER%/potions_no_stack/macro.tph~
 
 COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
-SAY NAME1 @26
-SAY NAME2 @27
-READ_LONG 0x8 pot_strref
-READ_LONG 0xc scr_strref
-BUT_ONLY
-
-COPY_EXISTING ~msectype.2da~ ~override~
-COUNT_2DA_ROWS 1 ~2da_row_number~
-SET ~2da_row_number~ = (%2da_row_number% - 4) //excluding first 4 unnesessary rows
+  SAY NAME1 @26
+  SAY NAME2 @27
+  READ_LONG 0x8 pot_strref
+  READ_LONG 0xc scr_strref
 BUT_ONLY
 
 PRINT ~Patching potions...~
 OUTER_SPRINT ~refresh_strref~ ~%pot_strref%~
-ACTION_FOR_EACH item IN potn02 potn22 potn09 potn41 potn18 potn29 potn31 potn40 potn34 potn35 potn36 potn37 potn39 potn42 potn46 potn15 BEGIN 
+ACTION_FOR_EACH item IN potn02 potn22 potn09 potn41 potn18 potn29 potn31 potn40 potn34 potn35 potn36 potn37 potn39 potn42 potn46 potn15 BEGIN
   OUTER_SPRINT ~item2unstack~ ~%item%~
   OUTER_SPRINT ~spellname~ ~g_%item%~
   LAUNCH_ACTION_MACRO ~UNSTACK_ITEM~
