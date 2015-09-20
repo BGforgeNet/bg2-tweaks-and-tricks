@@ -17,13 +17,14 @@ IF
     Detect([Familiar])
   %traps_baf_range%
   %traps_baf_combat%
-  %traps_baf_modal%
+//  %traps_baf_modal%
 //  !Heard([Anyone],G_TRAP)
   !StateCheck(LastSeenBy,CD_STATE_NOTVALID)
   Global("g_trap_%trap_type_id%_detected","myarea",0) // hasn't been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
 THEN
+/*
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     %traps_baf_stop%
@@ -33,7 +34,7 @@ THEN
     %traps_baf_pause%
 //    Shout(G_TRAP)
     Continue()
-/*
+*/
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     %traps_baf_stop%
@@ -41,7 +42,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -50,7 +51,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -59,7 +60,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -68,7 +69,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -77,7 +78,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -86,7 +87,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -95,7 +96,7 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -104,9 +105,8 @@ THEN
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
-    Shout(G_TRAP)
+//    Shout(G_TRAP)
     Continue()
-*/
 END
 
 
@@ -116,7 +116,7 @@ IF
     Detect([PC])
     Detect([Familiar])
   %traps_baf_range%
-  %traps_baf_modal%
+//  %traps_baf_modal%
   Global("g_trap_%trap_type_id%_detected","myarea",1) // has been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
