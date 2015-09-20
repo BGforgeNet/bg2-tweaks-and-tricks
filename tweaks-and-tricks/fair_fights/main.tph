@@ -47,3 +47,11 @@ ACTION_IF FILE_EXISTS_IN_GAME ~laskal.cre~ BEGIN
     WRITE_BYTE 0x273 0x0b
   BUT_ONLY
 END
+
+//Phandalyn, BG1 tavern paladin
+ACTION_IF FILE_EXISTS_IN_GAME ~phanda.cre~ BEGIN
+  COPY_EXISTING ~phanda~ ~override~
+    //Set paladin class instead of innocent
+    WRITE_BYTE 0x273 0x06
+  BUT_ONLY
+END
