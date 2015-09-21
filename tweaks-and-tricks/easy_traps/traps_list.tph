@@ -107,7 +107,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   BGCTMM => ~Magic missile trap~
   BGGTMM => ~Magic missile trap~
 
-  BATLEHO => ~Unknown trap~ // Davaeorn. SCS?
+//  BATLEHO => ~Unknown trap~ // Davaeorn. SCS?
 
   CRUSHTRP => ~Crushing trap~
   CRUSHTR2 => ~Crushing trap~
