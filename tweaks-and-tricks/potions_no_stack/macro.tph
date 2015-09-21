@@ -1,4 +1,4 @@
-//"item2unstack" - item we want to stop stack, "spellname" is name for hidden spell, "refresh_strref" appears upon refreshing spell. Both without extensions. "2da_row_number" needs to be read previosly also.
+//"item_to_unstack" - item we want to stop stack, "spellname" is name for hidden spell, "refresh_strref" appears upon refreshing spell. Both without extensions.
 DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 
 ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
@@ -9,7 +9,7 @@ COPY ~%MOD_FOLDER%/lib/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
 BUT_ONLY
 
 
-COPY_EXISTING ~%item2unstack%.itm~ ~override~
+COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
 
   //deleting feedback line
   LPF DELETE_ITEM_EFFECT
