@@ -50,7 +50,7 @@ END
 
 //Phandalyn, BG1 tavern paladin
 ACTION_IF FILE_EXISTS_IN_GAME ~phanda.cre~ BEGIN
-  COPY_EXISTING ~phanda~ ~override~
+  COPY_EXISTING ~phanda.cre~ ~override~
     //Set paladin class instead of innocent
     WRITE_BYTE 0x273 0x06
   BUT_ONLY
