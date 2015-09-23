@@ -151,7 +151,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",1)
-    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) disarmed~)
+//    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) disarmed~)
     Continue()
 END
 
@@ -161,6 +161,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",0)
-    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) armed again~)
+//    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) armed again~)
     Continue()
 END
