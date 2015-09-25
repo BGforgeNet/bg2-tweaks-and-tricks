@@ -43,15 +43,20 @@ BUT_ONLY
 //Laskal, shadow druid with a "message"
 ACTION_IF FILE_EXISTS_IN_GAME ~laskal.cre~ BEGIN  
   COPY_EXISTING ~laskal.cre~ ~override~
-    //Set druid class instead of innocent
-    WRITE_BYTE 0x273 0x0b
+    WRITE_BYTE 0x273 0x0b //Set druid class instead of innocent
   BUT_ONLY
 END
 
 //Phandalyn, BG1 tavern paladin
 ACTION_IF FILE_EXISTS_IN_GAME ~phanda.cre~ BEGIN
   COPY_EXISTING ~phanda.cre~ ~override~
-    //Set paladin class instead of innocent
-    WRITE_BYTE 0x273 0x06
+    WRITE_BYTE 0x273 0x06 //Set paladin class instead of innocent
+  BUT_ONLY
+END
+
+//Winski Perorate
+ACTION_IF FILE_EXISTS_IN_GAME ~winski2.cre~ BEGIN
+  COPY_EXISTING ~winski2.cre~ ~override~
+    WRITE_BYTE 0x273 0x01 //mage class instead of innocent
   BUT_ONLY
 END
