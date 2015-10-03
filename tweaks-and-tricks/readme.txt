@@ -20,10 +20,13 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 ## Components
 
 - [Convenience](#convenience)
-  - [Smarter familiars](#smarter-familiars)
-  - [Faster familiars](#faster-familiars)
-  - [Resilient familiars](#resilient-familiars)
   - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
+  - [Easy traps](easy-traps)
+  - [Less autosaves](less-autosaves)
+  - [Convenient familiars]
+    - [Smarter](#smarter-familiars)
+    - [Faster](#faster-familiars)
+    - [More resilient](#resilient-familiars)
 - [Soundsets](#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
   - [BG1-style party interaction system](#bg1-style-party-interaction-system)
@@ -45,7 +48,25 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 
 ### Convenience
 
-#### Smarter familiars
+#### Remove blur graphics from Semaj's cloak
+Semaj is one of Sarevok's lieutenants. [BGTTweak](http://readme.spellholdstudios.net/BGTTweakReadme.htm) allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
+
+#### Easy traps
+Add "trap sense" to characters. Before a trap is "detected" by thief skill, a party member will "sense" it: notice that something's wrong, and alert others. It allows for faster, less frustrating dungeon exploration.
+Options:
+- Allow sensing in combat (by default, characters will not notice possible traps in combat. With this component, they will)
+- Increase trap sense range (default range is about half line of sight. This component increases it to LoS)
+- Stop moving, or Stop moving and pause game (choose which action do you prefer when trap is "sensed")
+- Center on character (yes/no?)
+- Play a sound ("trap found" sound, yes/no?)
+- Core (required to enable any of previous components)
+
+#### Less autosaves
+Autosave can be a boon or a plague. They consume time, in any case. If you're playing no-reload, you might not need them at all. This components allows you to disable many area transition autosaves. (But not all of them. Every time you go through worldmap, there still be an autosave).
+
+#### Convenient familiars
+
+##### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
 - Have them jump into the pack when there's danger or they're injured. Very useful at later stages.
 
@@ -56,18 +77,11 @@ The less a familiar is told to pick up, the faster it'll do it. So, try to keep 
 - If told to jump into pack when see enemies, and get out of it when not, in certain areas (not many) a glitch happens.
 The familiar will start to jump in and out continuously. In that case, talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
 
-#### Faster familiars
+##### Faster familiars
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
 
-#### Resilient familiars
+##### Resilient familiars
 Protect familiars from getting critical hits (which are almost always lethal to them).
-
-
-#### Remove blur graphics from Semaj's cloak
-
-Semaj is one of Sarevok's lieutenants. [BGTTweak](http://readme.spellholdstudios.net/BGTTweakReadme.htm) allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
-
-
 
 
 ### Soundsets
@@ -246,6 +260,14 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 
 
 ## Changelog
+- Version 5
+  - Add "easy traps" component
+  - Add "less autosaves" component
+  - Add Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag)
+  - Let famliars pick up winter wolf pelts, ankheg shells, wyvern heads
+  - Expand no-farming to skeleton warriors in Durlag's Tower
+  - Fix effect duplication in "unstack potions" component
+  - Make "unstackable potions" compatible with Rogue Rebalancing
 - Version 4
   - Add "no shop depreciation" component
   - Add "no XP farming" component
@@ -268,7 +290,7 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 * [DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)
 * [WeiDU](http://weidu.org/main.html#weidu)
 * [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
-
+* NearInfinity
 
 ## License
 It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
