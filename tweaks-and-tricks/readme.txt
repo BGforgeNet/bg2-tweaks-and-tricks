@@ -155,6 +155,7 @@ A few opponents in the game basically cheat, or just have unrealistic stats. Som
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
 - Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
 - Laskal, Cloakwood shadow druid (innocent no longer, since he attacks first)
+- Winski Perorate (innocent no longer, since he's scum)
 
 
 #### Sensible Cloak of Mirroring
