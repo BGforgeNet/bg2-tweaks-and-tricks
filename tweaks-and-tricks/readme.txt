@@ -21,9 +21,9 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 
 - [Convenience](#convenience)
   - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
-  - [Easy traps](easy-traps)
-  - [Less autosaves](less-autosaves)
-  - [Convenient familiars](convenient-familiars)
+  - [Easy traps](#easy-traps)
+  - [Less autosaves](#less-autosaves)
+  - [Convenient familiars](#convenient-familiars)
     - [Smarter](#smarter-familiars)
     - [Faster](#faster-familiars)
     - [More resilient](#resilient-familiars)
