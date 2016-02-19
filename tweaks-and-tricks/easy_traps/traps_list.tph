@@ -65,11 +65,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   GTTS => ~True sight trap~
   GTWEB => ~Web trap~
   GTSPIKE => ~Hallway spikes trap~
-  GTVENT => ~Vent trap~
 
   GDARTS => ~Dart trap~
   GSPEAR => ~Spear trap~
   GSLIME => ~Slime trap~
+  GVENT => ~Vent trap~
   ROLLSPK => ~Hallway spikes trap~
 
   //Watcher's keep traps
