@@ -1,0 +1,198 @@
+//Aerie
+ACTION_PHP_EACH ~bg2_aerie_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY MORALE @45
+    SAY BATTLE_CRY4 @46
+    SAY BATTLE_CRY5 @47
+  BUT_ONLY
+END
+
+//Alora
+ACTION_PHP_EACH ~bg1_alora_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY SELECT_RARE1 @41
+  BUT_ONLY
+END
+
+//Anomen
+ACTION_PHP_EACH ~bg2_anomen_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @55
+    SAY BATTLE_CRY5 @56
+  BUT_ONLY
+END
+
+//Branwen
+ACTION_PHP_EACH ~bg1_branwen_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY2 @69
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttbra1.wav~ ~override~ //@69
+
+//Edwin
+ACTION_FOR_EACH game IN bg1 bg2 BEGIN
+  ACTION_PHP_EACH ~%game%_edwin_cre~ AS npc => cre BEGIN
+    COPY_EXISTING ~%cre%.cre~ ~override~
+      SAY BATTLE_CRY4 @40
+    BUT_ONLY
+  END
+END
+COPY ~%MOD_FOLDER%/wav/g_ttedw1.wav~ ~override~ //@40
+
+//Jaheira
+ACTION_FOR_EACH game IN bg1 bg2 BEGIN
+  ACTION_PHP_EACH ~%game%_jaheira_cre~ AS npc => cre BEGIN
+    COPY_EXISTING ~%cre%.cre~ ~override~
+      SAY BATTLE_CRY4 @37
+    BUT_ONLY
+  END
+END
+COPY ~%MOD_FOLDER%/wav/g_ttjah1.wav~ ~override~ //@37
+
+//Garrick
+ACTION_PHP_EACH ~bg1_garrick_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY INTERACTION4 @67     //missing sound in original game
+    SAY UNHAPPY_SERIOUS @68  //wrong sound in original game
+  BUT_ONLY
+END
+
+//Haerdalis
+ACTION_PHP_EACH ~bg2_haerdalis_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @60
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_tthae1.wav~ ~override~ //@60
+
+//Kagain
+ACTION_PHP_EACH ~bg1_kagain_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY SELECT_COMMON4 @51
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttkag1.wav~ ~override~ //@51
+
+//Khalid
+ACTION_PHP_EACH ~bg1_khalid_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY SPECIAL2 @43
+  BUT_ONLY
+END
+
+//Korgan
+ACTION_PHP_EACH ~bg2_korgan_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @48
+    SAY BATTLE_CRY5 @49
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttkor1.wav~ ~override~ //@48
+COPY ~%MOD_FOLDER%/wav/g_ttkor2.wav~ ~override~ //@49
+
+//Keldorn
+ACTION_PHP_EACH ~bg2_keldorn_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @50
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttkel1.wav~ ~override~ //@50
+
+//Minsc
+ACTION_FOR_EACH game IN bg1 bg2 BEGIN
+  ACTION_PHP_EACH ~%game%_minsc_cre~ AS npc => cre BEGIN
+    COPY_EXISTING ~%cre%.cre~ ~override~
+      SAY BATTLE_CRY4 @38
+      SAY BATTLE_CRY5 @39
+    BUT_ONLY
+  END
+END
+COPY ~%MOD_FOLDER%/wav/g_ttmin1.wav~ ~override~ //@39
+
+//Montaron
+ACTION_PHP_EACH ~bg1_montaron_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY SELECT_RARE1 @52
+  BUT_ONLY
+END
+
+//Nalia
+ACTION_PHP_EACH ~bg2_nalia_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @55
+    SAY BATTLE_CRY5 @56
+  BUT_ONLY
+END
+
+//Quayle
+ACTION_PHP_EACH ~bg1_quayle_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY SELECT_RARE1 @42
+    WRITE_LONG (0xa4 +  31 * 4) (0 - 1) //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
+  BUT_ONLY
+END
+
+//Safana - wrong sound in original game
+ACTION_PHP_EACH ~bg1_safana_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    WRITE_LONG (0xa4 +  31 * 4) (0 - 1) //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
+  BUT_ONLY
+END
+
+//Shar-teel
+ACTION_PHP_EACH ~bg1_sharteel_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY2 @72
+  BUT_ONLY
+END
+
+//Skie - wrong sound in original game
+ACTION_PHP_EACH ~bg1_skie_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    WRITE_LONG (0xa4 +  31 * 4) (0 - 1) //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
+    SAY HAPPY @70
+  BUT_ONLY
+END
+
+//Sarevok
+ACTION_PHP_EACH ~bg2_sarevok_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @61
+    SAY BATTLE_CRY5 @62
+    SAY SELECT_ACTION4 @63
+    SAY SELECT_ACTION5 @64
+    SAY SELECT_ACTION6 @65
+    SAY SELECT_ACTION7 @66
+  BUT_ONLY
+END
+
+//Valygar
+ACTION_PHP_EACH ~bg2_valygar_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @59
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttval1.wav~ ~override~ //@59
+
+//Xan
+ACTION_PHP_EACH ~bg1_xan_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY AREA_DUNGEON @54
+  BUT_ONLY
+END
+
+//Yeslick
+ACTION_PHP_EACH ~bg1_yeslick_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY SELECT_RARE1 @53
+  BUT_ONLY
+END
+
+//Yoshimo
+ACTION_PHP_EACH ~bg2_yoshimo_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY4 @44
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttyos1.wav~ ~override~ //@44

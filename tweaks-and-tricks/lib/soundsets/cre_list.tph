@@ -1,4 +1,33 @@
 //List all cres
+
+ACTION_DEFINE_ARRAY bg2_aerie_cre BEGIN
+  aerie6
+  aerie7
+  aerie9
+  aerie10
+  aerie11
+  aerie12
+END
+
+ACTION_DEFINE_ARRAY bg1_alora_cre BEGIN
+  alora
+  alora6
+END
+
+ACTION_DEFINE_ARRAY bg2_anomen_cre BEGIN
+  anomen6
+  anomen7
+  anomen8
+  anomen9
+  anomen10
+  anomen12
+END
+
+ACTION_DEFINE_ARRAY bg1_branwen_cre BEGIN
+  branwe
+  branwe5
+END
+
 ACTION_DEFINE_ARRAY bg1_jaheira_cre BEGIN
   jaheir
   jaheir2
@@ -13,22 +42,6 @@ ACTION_DEFINE_ARRAY bg2_jaheira_cre BEGIN
   jaheir12
   jahei12b
   jahei14
-END
-
-ACTION_DEFINE_ARRAY bg1_minsc_cre BEGIN
-  minsc
-  minsc2
-  minsc4
-  minsc6
-END
-
-ACTION_DEFINE_ARRAY bg2_minsc_cre BEGIN
-  minsc7
-  minsc8
-  minsc9
-  minsc10
-  minsc12
-  minsc14
 END
 
 ACTION_DEFINE_ARRAY bg1_edwin_cre BEGIN
@@ -47,6 +60,21 @@ ACTION_DEFINE_ARRAY bg2_edwin_cre BEGIN
   edwin15
 END
 
+ACTION_DEFINE_ARRAY bg1_garrick_cre BEGIN
+  garric
+  garric2
+  garric4
+  garric6
+END
+
+ACTION_DEFINE_ARRAY bg2_haerdalis_cre BEGIN
+  haer10
+  haer11
+  haer13
+  haer15
+  haer19
+END
+
 ACTION_DEFINE_ARRAY bg1_imoen_cre BEGIN
   imoen
   imoen1
@@ -59,6 +87,103 @@ ACTION_DEFINE_ARRAY bg2_imoen_cre BEGIN
   imoen15
   imoen211
   imoen213
+END
+
+ACTION_DEFINE_ARRAY bg1_kagain_cre BEGIN
+  kagain
+  kagain2
+  kagain4
+  kagain6
+END
+
+ACTION_DEFINE_ARRAY bg1_khalid_cre BEGIN
+  khalid
+  khalid2
+  khalid4
+  khalid6
+END
+
+ACTION_DEFINE_ARRAY bg2_keldorn_cre BEGIN
+  keldor8
+  keldor9
+  keldor10
+  keldor12
+  keldor14
+END
+
+ACTION_DEFINE_ARRAY bg2_korgan_cre BEGIN
+  korgan8
+  korgan9
+  korgan11
+  korgan12
+  korgan15
+END
+
+ACTION_DEFINE_ARRAY bg1_minsc_cre BEGIN
+  minsc
+  minsc2
+  minsc4
+  minsc6
+END
+
+ACTION_DEFINE_ARRAY bg2_minsc_cre BEGIN
+  minsc7
+  minsc8
+  minsc9
+  minsc10
+  minsc12
+  minsc14
+END
+
+ACTION_DEFINE_ARRAY bg1_montaron_cre BEGIN
+  montar
+  montar2
+  montar4
+  montar6
+END
+
+ACTION_DEFINE_ARRAY bg2_nalia_cre BEGIN
+  nalia8
+  nalia10
+  nalia11
+  nalia13
+  nalia15
+  nalia18
+END
+
+ACTION_DEFINE_ARRAY bg1_quayle_cre BEGIN
+  quayle
+  quayle4
+  quayle6
+END
+
+ACTION_DEFINE_ARRAY bg1_safana_cre BEGIN
+  safana
+  safana4
+  safana6
+END
+
+ACTION_DEFINE_ARRAY bg1_sharteel_cre BEGIN
+  sharte
+  sharte4
+  sharte6
+END
+
+ACTION_DEFINE_ARRAY bg1_skie_cre BEGIN
+  skie
+  skie6
+END
+
+ACTION_DEFINE_ARRAY bg2_sarevok_cre BEGIN
+  sarevok
+END
+
+ACTION_DEFINE_ARRAY bg2_valygar_cre BEGIN
+  valyg8
+  valyg9
+  valyg11
+  valyg12
+  valyg14
 END
 
 ACTION_DEFINE_ARRAY bg1_viconia_cre BEGIN
@@ -74,6 +199,24 @@ ACTION_DEFINE_ARRAY bg2_viconia_cre BEGIN
   viconi11
   viconi13
   viconi16
+END
+
+ACTION_DEFINE_ARRAY bg1_xan_cre BEGIN
+  xan4
+  xan6
+END
+
+ACTION_DEFINE_ARRAY bg1_yeslick_cre BEGIN
+  yeslic
+  yeslic5
+END
+
+ACTION_DEFINE_ARRAY bg2_yoshimo_cre BEGIN
+  yoshi7
+  yoshi8
+  yoshi10
+  yoshi11
+  yoshi12
 END
 
 

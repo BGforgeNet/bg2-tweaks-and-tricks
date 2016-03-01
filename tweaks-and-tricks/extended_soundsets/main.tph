@@ -7,3 +7,6 @@ INCLUDE ~%MOD_FOLDER%/extended_soundsets/read_soundsets.tph~
 
 //Write them
 INCLUDE ~%MOD_FOLDER%/extended_soundsets/write_soundsets.tph~
+
+//Cherry pick some other lines, mostly battle cries
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/cherry_pick.tph~

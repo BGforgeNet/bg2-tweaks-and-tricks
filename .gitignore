@@ -1,0 +1,3 @@
+setup-tweaks-and-tricks.exe
+tweaks-and-tricks/backup/*
+!tweaks-and-tricks/backup/.keepme
