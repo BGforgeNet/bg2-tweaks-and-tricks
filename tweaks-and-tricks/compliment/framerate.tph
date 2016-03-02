@@ -13,51 +13,26 @@ COPY ~baldur.ini~ ~baldur.ini~
   PATCH_PRINT ~Current framerate is: %framerate%~
 BUT_ONLY
 
-
 //Copy wavc sounds that we need to adjust
-//postfix _g is for mass deleting of remains at the end
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
-  COPY_EXISTING ~%sound%.wav~ ~override/%sound%.wavc_g~
+  COPY_EXISTING ~%sound%.wav~ ~override~
 END
-
-//read the constant in wavc header
-COPY_EXISTING ~bedwin35.wav~ ~override/bedwin35.wav~
-  READ_ASCII 0x10 wavcheader (12)
-BUT_ONLY
 
 //copy converters to override
 AT_NOW ~%MOD_FOLDER%/compliment/bat/g_copy.bat~
 
 //decompress to WAV
 AT_NOW ~%MOD_FOLDER%/compliment/bat/g_decode.bat~
-
 //adjust WAV
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
-  COPY_EXISTING ~%sound%.wav_g~ ~override~
-    READ_LONG 0x4 filesize //without header
-    SET filesize = (filesize + 8) //include header bytes
-    READ_LONG 0x2a datasize //sample size
+  COPY_EXISTING ~%sound%.wav~ ~override~
+    filesize = (SOURCE_SIZE - 8) //without header
+    datasize = (SOURCE_SIZE - 44) //actual data size
     //lengthen it
-    SET delta = (datasize*framerate/30 - datasize) //BG1 original frame rate is 30
+    delta = (datasize*framerate/30 - datasize) //BG1 original frame rate is 30
     WRITE_LONG 0x4 (filesize + delta)
     WRITE_LONG 0x2a (datasize + delta)
-
-    SET ~%SOURCE_RES%wavsize~ = (SOURCE_SIZE + delta) //track size of WAV
-  BUT_ONLY
-END
-
-//compress to ACM
-AT_NOW ~%MOD_FOLDER%/compliment/bat/g_encode.bat~
-
-//turn ACM into WAVC
-ACTION_PHP_EACH sound_list AS index => sound BEGIN
-  COPY_EXISTING ~%sound%.acm_g~ ~override/%sound%.wav~ //wavc, actually
-    SET acmsize = SOURCE_SIZE
-    INSERT_BYTES 0x0 28 //acm header is already attached
-    WRITE_ASCII 0x0 ~WAVCV1.0~ #8
-    WRITE_LONG 0x8 ~%SOURCE_RES%wavsize~  //uncompressed
-    WRITE_LONG 0xc acmsize //compressed
-    WRITE_ASCIIE 0x10 ~%wavcheader%~ #12
+    INSERT_BYTES SOURCE_SIZE delta
   BUT_ONLY
 END
 

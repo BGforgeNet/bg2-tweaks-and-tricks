@@ -95,30 +95,26 @@ This component extends NPC soundsets by re-using their sounds from BG1 in BG2 an
 
 Example: BG1 Jaheira has only 1 battle cry: "For The fallen!". So the whole game you listen to that over and over.
 
-But, BG2 Jaheira has 3 battle cries:
+But, BG2 Jaheira has 2 more battle cries:
+ - "Fall creature! And feed the earth!"
+ - "Nature take the life she gave!"
+
+This component adds those extra battle cries to BG1 Jaheira. And adds one more, from a voiced dialogue line. So in the end, both BG1 and BG2 Jaheira have 4 battle cries:
  - "For the fallen!"
  - "Fall creature! And feed the earth!"
- - "Nature take the life she gave!".
+ - "Nature take the life she gave!"
+ - "Die your final death!"
 
-This component adds 2 extra battle cries to BG1 Jaheira.
-
-Naturally, this is BGT only and works only for NPC who are present in both BG1 and BG2, namely:
-- Edwin
-- Imoen
-- Jaheira
-- Minsc
-- Viconia
-
-In some cases, BG1 and BG2 versions of an NPC have different sounds in same slots, it's a collision, so the 3 subcomponents are:
+In some cases, there are too many sounds to fit into one soundset. So the 3 subcomponents are:
 
 ##### Additions only
 Only missing sounds are added, therefore after transition soundsets may change.
 
 ##### BG1 soundsets prevail
-In case of a collision, sounds from BG1 prevail, after transition soundsets do not change.
+Prefer BG1 sounds, after transition soundsets do not change.
 
 ##### BG2 soundsets prevail
-In case of a collision, sounds from BG2 prevail, after transition soundsets do not change.
+Prefer BG2 sounds, after transition soundsets do not change.
 
 If this explanation is too confusing, but you'd like to hear more different sounds, just take "Additions only".
 
@@ -142,7 +138,7 @@ This option reintroduces compliments and insults in BG2, and slightly expands th
 
 ##### Reintroduce and adjust to framerate
 Original BG1 was running at 30 FPS, and sounds were recorded with that in mind.
-But BG2 allows framerates up to 90. Setting high FPS, however, sometimes causes compliments and responses to overlap.
+But BG2 allows framerates up to 90. Setting high FPS, however, sometimes causes compliments and responses to overlap (responses are triggered too early).
 This option will also adjust the sounds to your current framerate.
 
 ##### Disable
@@ -150,12 +146,11 @@ Or, if you rather prefer your NPC not to talk too much, you can disable this int
 This only affects compliments and insults, not banters.
 
 #### No talking when hiding in shadows
-
 Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the world is blind to my passing"). It quickly gets annoying if you use thief scout script.
 
 
 #### Make NPC soundsets available to PC
-Now you can use any of the original Bioware NPCs soundsets for your main character.
+Allows to use any of the original Bioware NPCs soundsets for the main character.
 
 
 
@@ -260,6 +255,10 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 
 
 ## Changelog
+- Version 6
+  - Added more sounds to "extended soundsets"
+  - Changed compliments to .wav format instead of .wavc
+  - Fixed bug in "easy traps": added missing vent trap
 - Version 5
   - Add "easy traps" component
   - Add "less autosaves" component
