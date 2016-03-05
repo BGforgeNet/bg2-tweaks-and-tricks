@@ -1,99 +1,102 @@
 @echo off
-cd override
 
-wavc.exe jaher35.wav jaher35.wav
-wavc.exe jaher37.wav jaher37.wav
-wavc.exe jaher30.wav jaher30.wav
-wavc.exe jaher36.wav jaher36.wav
+SET "tools_dir=tweaks-and-tricks\tools"
+SET "ov=override"
 
-wavc.exe bgmnsc35.wav bgmnsc35.wav
-wavc.exe bgmnsc36.wav bgmnsc36.wav
-wavc.exe bgmnsc29.wav bgmnsc29.wav
-wavc.exe bgmnsc37.wav bgmnsc37.wav
+FOR %%S IN (
+ajant27
+ajant28
+ajant36
+ajant37
 
-wavc.exe bedwin35.wav bedwin35.wav
-wavc.exe bedwin36.wav bedwin36.wav
-wavc.exe bedwin37.wav bedwin37.wav
-wavc.exe bedwin30.wav bedwin30.wav
+alora35
+alora36
+alora37
 
-wavc.exe vicon36.wav vicon36.wav
-wavc.exe vicon31.wav vicon31.wav
-wavc.exe vicon35.wav vicon35.wav
+bedwin30
+bedwin35
+bedwin36
+bedwin37
 
+bgmnsc29
+bgmnsc35
+bgmnsc36
+bgmnsc37
 
+branw29
+branw30
+branw35
+branw36
+branw37
 
+coran35
+coran36
+coran37
 
-wavc.exe ajant37.wav ajant37.wav
-wavc.exe ajant27.wav ajant27.wav
-wavc.exe ajant28.wav ajant28.wav
-wavc.exe ajant36.wav ajant36.wav
+dynah35
+dynah37
 
-wavc.exe alora35.wav alora35.wav
-wavc.exe alora36.wav alora36.wav
-wavc.exe alora37.wav alora37.wav
+eldot35
+eldot36
+eldot37
 
-wavc.exe faldn37.wav faldn37.wav
-wavc.exe faldn35.wav faldn35.wav
-wavc.exe faldn36.wav faldn36.wav
+faldn35
+faldn36
+faldn37
 
-wavc.exe eldot36.wav eldot36.wav
-wavc.exe eldot37.wav eldot37.wav
-wavc.exe eldot35.wav eldot35.wav
+garrk35
+garrk37
 
-wavc.exe skiee35.wav skiee35.wav
-wavc.exe skiee36.wav skiee36.wav
-wavc.exe skiee37.wav skiee37.wav
+jaher30
+jaher35
+jaher36
+jaher37
 
-wavc.exe khald35.wav khald35.wav
-wavc.exe khald30.wav khald30.wav
-wavc.exe khald31.wav khald31.wav
-wavc.exe khald37.wav khald37.wav
+kagan35
+kagan37
 
-wavc.exe xannn35.wav xannn35.wav
-wavc.exe xannn36.wav xannn36.wav
-wavc.exe xannn37.wav xannn37.wav
+khald30
+khald31
+khald35
+khald37
 
-wavc.exe coran35.wav coran35.wav
-wavc.exe coran36.wav coran36.wav
-wavc.exe coran37.wav coran37.wav
+kivan35
+kivan36
+kivan37
 
-wavc.exe kivan37.wav kivan37.wav
-wavc.exe kivan35.wav kivan35.wav
-wavc.exe kivan36.wav kivan36.wav
+montr35
+montr36
+montr37
 
-wavc.exe montr35.wav montr35.wav
-wavc.exe montr36.wav montr36.wav
-wavc.exe montr37.wav montr37.wav
+quayl35
+quayl36
+quayl37
 
-wavc.exe dynah35.wav dynah35.wav
-wavc.exe dynah37.wav dynah37.wav
+safan35
+safan36
+safan37
 
-wavc.exe yeslk37.wav yeslk37.wav
-wavc.exe yeslk31.wav yeslk31.wav
-wavc.exe yeslk36.wav yeslk36.wav
+shart35
+shart36
+shart37
 
-wavc.exe garrk37.wav garrk37.wav
-wavc.exe garrk35.wav garrk35.wav
+skiee35
+skiee36
+skiee37
 
-wavc.exe branw37.wav branw37.wav
-wavc.exe branw35.wav branw35.wav
-wavc.exe branw29.wav branw29.wav
-wavc.exe branw36.wav branw36.wav
-wavc.exe branw30.wav branw30.wav
+tiaxx35
 
-wavc.exe safan37.wav safan37.wav
-wavc.exe safan35.wav safan35.wav
-wavc.exe safan36.wav safan36.wav
+vicon31
+vicon35
+vicon36
 
-wavc.exe quayl37.wav quayl37.wav
-wavc.exe quayl35.wav quayl35.wav
-wavc.exe quayl36.wav quayl36.wav
+xannn35
+xannn36
+xannn37
 
-wavc.exe kagan35.wav kagan35.wav
-wavc.exe kagan37.wav kagan37.wav
-
-wavc.exe shart35.wav shart35.wav
-wavc.exe shart36.wav shart36.wav
-wavc.exe shart37.wav shart37.wav
-
-wavc.exe tiaxx35.wav tiaxx35.wav
+yeslk31
+yeslk36
+yeslk37
+) DO (
+  "%tools_dir%\wavc.exe" "%ov%\%%S.wav" "%ov%\%%S.wav"
+)
