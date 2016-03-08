@@ -1,13 +1,13 @@
 BACKUP ~tweaks-and-tricks/backup~
 AUTHOR "burner1024 @ github"
-VERSION ~6~
+VERSION ~v6~
 NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
-//MODDER
+MODDER
 
-//i'm just lazy, okay? it's for npc soundsets to pc
+//for "npc soundsets"
 ALLOW_MISSING
 ~kivan12.wav~ ~kivan13.wav~ ~kivan14.wav~ ~kivan15.wav~ ~kivan16.wav~
 ~dynah12.wav~ ~dynah13.wav~ ~dynah14.wav~ ~dynah15.wav~ ~dynah16.wav~

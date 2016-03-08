@@ -427,9 +427,9 @@ COPY_EXISTING  ~bimoen17.wav~ ~sounds/_imoen2_.wav~ //Action Acknowledgement 8
 END
 
 
-
 //ToB Sarevok
-COPY_EXISTING  ~sarevo07.wav~ ~sounds/_sarevo2b.wav~ //Becoming Leader
+COPY_EXISTING
+  ~sarevo07.wav~ ~sounds/_sarevo2b.wav~ //Becoming Leader
   ~sarevo08.wav~ ~sounds/_sarevo2c.wav~ //Tired
   ~sarevo09.wav~ ~sounds/_sarevo2d.wav~ //Bored
   ~sarevo10.wav~ ~sounds/_sarevo2a.wav~ //Battle Cry
@@ -450,14 +450,14 @@ COPY_EXISTING  ~sarevo07.wav~ ~sounds/_sarevo2b.wav~ //Becoming Leader
   ~sarevo32.wav~ ~sounds/_sarevo2i.wav~ //Action Acknowledgement 1 
   ~sarevo33.wav~ ~sounds/_sarevo2j.wav~ //Action Acknowledgement 2 
   ~sarevo34.wav~ ~sounds/_sarevo2k.wav~ //Action Acknowledgement 3 
-//  ~%base%30.wav~ ~_sarevoks.wav~ //Action Acknowledgement 4
-//  ~%base%31.wav~ ~_%soundname%t.wav~ //Action Acknowledgement 5
-//  ~%base%32.wav~ ~_%soundname%u.wav~ //Action Acknowledgement 6
-//  ~%base%33.wav~ ~_%soundname%v.wav~ //Action Acknowledgement 7
-//  ~%base%.wav~ ~_%soundname%_.wav~ //Action Acknowledgement 8
+  ~sarevo35.wav~ ~sounds/_sarevo2s.wav~ //ack4
+  ~sarevo36.wav~ ~sounds/_sarevo3t.wav~ //ack5
+  ~sarevo37.wav~ ~sounds/_sarevo4u.wav~ //ack6
+  ~sarevo38.wav~ ~sounds/_sarevo5v.wav~ //ack7
+  ~sarev05.wav~ ~_%soundname%_.wav~ //Action Acknowledgement 8
   ~sarevo39.wav~ ~sounds/_sarevo2x.wav~ //Rare Select 1
   ~sarevo40.wav~ ~sounds/_sarevo2y.wav~ //Rare Select 2
-//  ~%base%.wav~ ~_sarevokw.wav~ //Reaction to Party Member Death
+  ~sarev06.wav~ ~_sarevokw.wav~ //Reaction to Party Member Death
   ~sarevo41.wav~ ~sounds/_sarevo2z.wav~ //Critical Hit Given
   ~sarevo42.wav~ ~sounds/_sarevo21.wav~ //Critical Miss
   ~sarevo43.wav~ ~sounds/_sarevo22.wav~ //Target Immune
@@ -467,44 +467,5 @@ COPY_EXISTING  ~sarevo07.wav~ ~sounds/_sarevo2b.wav~ //Becoming Leader
   ~sarevo47.wav~ ~sounds/_sarevo26.wav~ //Spell Disrupted
   ~sarevo48.wav~ ~sounds/_sarevo27.wav~ //Set A Trap
 
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
-//bg1 sarevok (almost the same as ToB)
-COPY_EXISTING  ~sarevo07.wav~ ~sounds/_sarevo1b.wav~ //Becoming Leader
-  ~sarevo08.wav~ ~sounds/_sarevo1c.wav~ //Tired
-  ~sarevo09.wav~ ~sounds/_sarevo1d.wav~ //Bored
-  ~sarev05.wav~ ~sounds/_sarevo1a.wav~ //Battle Cry
-  ~sarev06.wav~ ~sounds/_sarevo18.wav~ //Battle Cry 2
-  ~sarev07.wav~ ~sounds/_sarevo19.wav~ //Battle Cry 3
-  ~sarev08.wav~ ~sounds/_sarevo1l.wav~ //Being Hit
-  ~sarev09.wav~ ~sounds/_sarevo1m.wav~ //Dying
-  ~sarevo18.wav~ ~sounds/_sarevo1e.wav~ //Badly Wounded
-  ~sarevo19.wav~ ~sounds/_sarevo1n.wav~ //In Forest
-  ~sarevo20.wav~ ~sounds/_sarevo1o.wav~ //In City
-  ~sarevo22.wav~ ~sounds/_sarevo1p.wav~ //In Dungeon
-  ~sarevo23.wav~ ~sounds/_sarevo1q.wav~ //Daytime
-  ~sarevo24.wav~ ~sounds/_sarevo1r.wav~ //Nighttime
-  ~sarev06.wav~ ~sounds/_sarevo1f.wav~ //Selected 1
-  ~sarev07.wav~ ~sounds/_sarevo1g.wav~ //Selected 2
-  ~sarev04.wav~ ~sounds/_sarevo1h.wav~ //Selected 3
-  ~sarevo29.wav~ ~sounds/_sarevo10.wav~ //Selected 6
-  ~sarevo32.wav~ ~sounds/_sarevo1i.wav~ //Action Acknowledgement 1 
-  ~sarevo33.wav~ ~sounds/_sarevo1j.wav~ //Action Acknowledgement 2 
-  ~sarevo34.wav~ ~sounds/_sarevo1k.wav~ //Action Acknowledgement 3 
-//  ~%base%30.wav~ ~sarevoks.wav~ //Action Acknowledgement 4
-//  ~%base%31.wav~ ~_%soundname%t.wav~ //Action Acknowledgement 5
-//  ~%base%32.wav~ ~_%soundname%u.wav~ //Action Acknowledgement 6
-//  ~%base%33.wav~ ~_%soundname%v.wav~ //Action Acknowledgement 7
-//  ~%base%.wav~ ~_%soundname%_.wav~ //Action Acknowledgement 8
-  ~sarevo39.wav~ ~sounds/_sarevo1x.wav~ //Rare Select 1
-  ~sarevo40.wav~ ~sounds/_sarevo1y.wav~ //Rare Select 2
-//  ~%base%.wav~ ~sarevokw.wav~ //Reaction to Party Member Death
-  ~sarev12.wav~ ~sounds/_sarevo1z.wav~ //Critical Hit Given
-  ~sarevo42.wav~ ~sounds/_sarevo11.wav~ //Critical Miss
-  ~sarevo43.wav~ ~sounds/_sarevo12.wav~ //Target Immune
-  ~sarevo44.wav~ ~sounds/_sarevo13.wav~ //Inventory Full
-  ~sarevo45.wav~ ~sounds/_sarevo14.wav~ //Successfully Picked A Pocket
-  ~sarevo46.wav~ ~sounds/_sarevo15.wav~ //Successfully Hid In shadows
-  ~sarevo47.wav~ ~sounds/_sarevo16.wav~ //Spell Disrupted
-  ~sarevo48.wav~ ~sounds/_sarevo17.wav~ //Set A Trap
-END //end of bg1 sarevok
+//Other custom sounds
+INCLUDE ~%MOD_FOLDER%/npc_soundsets/cherry_pick.tph~

@@ -1,0 +1,23 @@
+//alora
+COPY_EXISTING ~alora02.wav~ ~sounds/_alorax.wav~ //rare1
+
+//branwen
+COPY ~%MOD_FOLDER%/wav/g_ttbra1.wav~ ~sounds/_branwe8.wav~ //bcry2
+
+//kagain
+COPY ~%MOD_FOLDER%/wav/g_ttkag1.wav~ ~_kagainx.wav~ //rare1
+
+//montaron
+COPY_EXISTING ~montr01.wav~ ~sounds/_montarx.wav~ //rare1
+
+//quayle
+COPY_EXISTING ~quayl01.wav~ ~sounds/_quaylex.wav~ //rare1
+
+//shar-teel
+COPY_EXISTING ~shart34.wav~ ~sounds/_sharte8.wav~ //bcry2
+
+//xan
+COPY ~%MOD_FOLDER%/wav/g_ttxan1.wav~ ~_xanp.wav~ //dungeon
+
+//yeslick
+COPY_EXISTING ~yeslk01.wav~ ~sounds/_yeslicx.wav~ //rare1

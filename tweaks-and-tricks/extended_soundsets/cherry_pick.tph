@@ -181,6 +181,7 @@ ACTION_PHP_EACH ~bg1_xan_cre~ AS npc => cre BEGIN
     SAY AREA_DUNGEON @54
   BUT_ONLY
 END
+COPY ~%MOD_FOLDER%/wav/g_ttxan1.wav~ ~override~ //@54
 
 //Yeslick
 ACTION_PHP_EACH ~bg1_yeslick_cre~ AS npc => cre BEGIN
