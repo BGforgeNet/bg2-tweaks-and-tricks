@@ -1,283 +1,200 @@
+DEFINE_ACTION_MACRO ~COPY_BG1_SOUNDSET~ BEGIN // pass %base% (NPC wav sound name common root) and %soundname% (new PC soundset name)
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY bg1_ss_map BEGIN
+    03 => a  //  Battle Cry 1
+    08 => b  //  Becoming Leader
+    09 => c  //  Tired
+    10 => d  //  Bored
+    11 => e  //  Badly Wounded
+    17 => f  //  Selected 1
+    18 => g  //  Selected 2
+    19 => h  //  Selected 3
+    20 => i  //  Action Acknowledgement 1
+    21 => j  //  Action Acknowledgement 2
+    22 => k  //  Action Acknowledgement 3
+    23 => s  //  Action Acknowledgement 4
+    24 => t  //  Action Acknowledgement 5
+    25 => u  //  Action Acknowledgement 6
+    26 => v  //  Action Acknowledgement 7
+    38 => l  //  Being Hit
+    39 => m  //  Dying
+    12 => n  //  In Forest
+    13 => o  //  In City
+    14 => p  //  In Dungeon
+    15 => q  //  Daytime
+    16 => r  //  Nighttime
+    40 => w  //  Reaction to Party Member Death
+  END
+  ACTION_PHP_EACH bg1_ss_map AS fnum => snum BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%base%%fnum%.wav~ BEGIN
+      COPY_EXISTING ~%base%%fnum%.wav~ ~sounds/_%soundname%%snum%.wav~
+    END
+  END
+END
 
-DEFINE_ACTION_MACRO ~COPY_BG1_SOUNDSET~ BEGIN
-COPY_EXISTING
-  ~%base%03.wav~ ~sounds/_%soundname%a.wav~  //  Battle Cry
-  ~%base%08.wav~ ~sounds/_%soundname%b.wav~  //  Becoming Leader
-  ~%base%09.wav~ ~sounds/_%soundname%c.wav~  //  Tired
-  ~%base%10.wav~ ~sounds/_%soundname%d.wav~  //  Bored
-  ~%base%11.wav~ ~sounds/_%soundname%e.wav~  //  Badly Wounded
+DEFINE_ACTION_MACRO ~COPY_BG2_SOUNDSET~ BEGIN // pass %base% (NPC wav sound name common root) and %soundname% (new PC soundset name)
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY bg2_ss_map BEGIN
+    07 => b  // Becoming Leader
+    08 => c  // Tired
+    09 => d  // Bored
+    10 => a  // Battle Cry
+    11 => 8  // Battle Cry 2
+    12 => 9  // Battle Cry 3
+    13 => l  // Being Hit
+    14 => m  // Dying
+    15 => e  // Badly Wounded
+    16 => n  // In Forest
+    17 => o  // In City
+    18 => p  // In Dungeon
+    19 => q  // Daytime
+    20 => r  // Nighttime
+    21 => f  // Selected 1
+    22 => g  // Selected 2
+    23 => h  // Selected 3
+    24 => 0  // Selected 6
+    27 => i  // Action Acknowledgement 1 
+    28 => j  // Action Acknowledgement 2 
+    29 => k  // Action Acknowledgement 3 
+    30 => s  // Action Acknowledgement 4
+    31 => t  // Action Acknowledgement 5
+    32 => u  // Action Acknowledgement 6
+    33 => v  // Action Acknowledgement 7
+//       => _  // Action Acknowledgement 8
+    34 => x  // Rare Select 1
+    35 => y  // Rare Select 2
+//       => w  // Reaction to Party Member Death
+    36 => z  // Critical Hit Given
+    37 => 1  // Critical Miss
+    38 => 2  // Target Immune
+    39 => 3  // Inventory Full
+    40 => 4  // Successfully Picked A Pocket
+    41 => 5  // Successfully Hid In shadows
+    42 => 6  // Spell Disrupted
+    43 => 7  // Set A Trap
+  END
+  ACTION_PHP_EACH bg2_ss_map AS fnum => snum BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%base%%fnum%.wav~ BEGIN
+      COPY_EXISTING ~%base%%fnum%.wav~ ~sounds/_%soundname%%snum%.wav~
+    END
+  END
+END
 
-  ~%base%17.wav~ ~sounds/_%soundname%f.wav~  //  Selected 1
-  ~%base%18.wav~ ~sounds/_%soundname%g.wav~  //  Selected 2
-  ~%base%19.wav~ ~sounds/_%soundname%h.wav~  //  Selected 3
-
-  ~%base%20.wav~ ~sounds/_%soundname%i.wav~  //  Action Acknowledgement 1 
-  ~%base%21.wav~ ~sounds/_%soundname%j.wav~  //  Action Acknowledgement 2 
-  ~%base%22.wav~ ~sounds/_%soundname%k.wav~  //  Action Acknowledgement 3 
-  ~%base%23.wav~ ~sounds/_%soundname%s.wav~  //  Action Acknowledgement 4
-  ~%base%24.wav~ ~sounds/_%soundname%t.wav~  //  Action Acknowledgement 5
-  ~%base%25.wav~ ~sounds/_%soundname%u.wav~  //  Action Acknowledgement 6
-  ~%base%26.wav~ ~sounds/_%soundname%v.wav~  //  Action Acknowledgement 7
-
-  ~%base%38.wav~ ~sounds/_%soundname%l.wav~  //  Being Hit
-  ~%base%39.wav~ ~sounds/_%soundname%m.wav~  //  Dying
-
-  ~%base%12.wav~ ~sounds/_%soundname%n.wav~  //  In Forest
-  ~%base%13.wav~ ~sounds/_%soundname%o.wav~  //  In City
-  ~%base%14.wav~ ~sounds/_%soundname%p.wav~  //  In Dungeon
-  ~%base%15.wav~ ~sounds/_%soundname%q.wav~  //  Daytime
-  ~%base%16.wav~ ~sounds/_%soundname%r.wav~  //  Nighttime
-
-  ~%base%40.wav~ ~sounds/_%soundname%w.wav~  //  Reaction to Party Member Death
-END //end of macro
-
-
-
-DEFINE_ACTION_MACRO ~COPY_BG2_SOUNDSET~ BEGIN
-COPY_EXISTING
-  ~%base%07.wav~ ~sounds/_%soundname%b.wav~ //Becoming Leader
-  ~%base%08.wav~ ~sounds/_%soundname%c.wav~ //Tired
-  ~%base%09.wav~ ~sounds/_%soundname%d.wav~ //Bored
-  ~%base%10.wav~ ~sounds/_%soundname%a.wav~ //Battle Cry
-  ~%base%11.wav~ ~sounds/_%soundname%8.wav~ //Battle Cry 2
-  ~%base%12.wav~ ~sounds/_%soundname%9.wav~ //Battle Cry 3
-  ~%base%13.wav~ ~sounds/_%soundname%l.wav~ //Being Hit
-  ~%base%14.wav~ ~sounds/_%soundname%m.wav~ //Dying
-  ~%base%15.wav~ ~sounds/_%soundname%e.wav~ //Badly Wounded
-  ~%base%16.wav~ ~sounds/_%soundname%n.wav~ //In Forest
-  ~%base%17.wav~ ~sounds/_%soundname%o.wav~ //In City
-  ~%base%18.wav~ ~sounds/_%soundname%p.wav~ //In Dungeon
-  ~%base%19.wav~ ~sounds/_%soundname%q.wav~ //Daytime
-  ~%base%20.wav~ ~sounds/_%soundname%r.wav~ //Nighttime
-  ~%base%21.wav~ ~sounds/_%soundname%f.wav~ //Selected 1
-  ~%base%22.wav~ ~sounds/_%soundname%g.wav~ //Selected 2
-  ~%base%23.wav~ ~sounds/_%soundname%h.wav~ //Selected 3
-  ~%base%24.wav~ ~sounds/_%soundname%0.wav~ //Selected 6
-  ~%base%27.wav~ ~sounds/_%soundname%i.wav~ //Action Acknowledgement 1 
-  ~%base%28.wav~ ~sounds/_%soundname%j.wav~ //Action Acknowledgement 2 
-  ~%base%29.wav~ ~sounds/_%soundname%k.wav~ //Action Acknowledgement 3 
-  ~%base%30.wav~ ~sounds/_%soundname%s.wav~ //Action Acknowledgement 4
-  ~%base%31.wav~ ~sounds/_%soundname%t.wav~ //Action Acknowledgement 5
-  ~%base%32.wav~ ~sounds/_%soundname%u.wav~ //Action Acknowledgement 6
-  ~%base%33.wav~ ~sounds/_%soundname%v.wav~ //Action Acknowledgement 7
-//  ~%base%.wav~ ~sounds/_%soundname%_.wav~ //Action Acknowledgement 8
-  ~%base%34.wav~ ~sounds/_%soundname%x.wav~ //Rare Select 1
-  ~%base%35.wav~ ~sounds/_%soundname%y.wav~ //Rare Select 2
-//  ~%base%.wav~ ~sounds/_%soundname%w.wav~ //Reaction to Party Member Death
-  ~%base%36.wav~ ~sounds/_%soundname%z.wav~ //Critical Hit Given
-  ~%base%37.wav~ ~sounds/_%soundname%1.wav~ //Critical Miss
-  ~%base%38.wav~ ~sounds/_%soundname%2.wav~ //Target Immune
-  ~%base%39.wav~ ~sounds/_%soundname%3.wav~ //Inventory Full
-  ~%base%40.wav~ ~sounds/_%soundname%4.wav~ //Successfully Picked A Pocket
-  ~%base%41.wav~ ~sounds/_%soundname%5.wav~ //Successfully Hid In shadows
-  ~%base%42.wav~ ~sounds/_%soundname%6.wav~ //Spell Disrupted
-  ~%base%43.wav~ ~sounds/_%soundname%7.wav~ //Set A Trap
-END //end of macro
-
-
-
-//some NPC have sounds shifted by 1
+//some BG2 NPC have sound numbers shifted by 1
 DEFINE_ACTION_MACRO ~COPY_BG2_SOUNDSET_2~ BEGIN
-COPY_EXISTING
-  ~%base%08.wav~ ~sounds/_%soundname%b.wav~ //Becoming Leader
-  ~%base%09.wav~ ~sounds/_%soundname%c.wav~ //Tired
-  ~%base%10.wav~ ~sounds/_%soundname%d.wav~ //Bored
-  ~%base%11.wav~ ~sounds/_%soundname%a.wav~ //Battle Cry
-  ~%base%12.wav~ ~sounds/_%soundname%8.wav~ //Battle Cry 2
-  ~%base%13.wav~ ~sounds/_%soundname%9.wav~ //Battle Cry 3
-  ~%base%14.wav~ ~sounds/_%soundname%l.wav~ //Being Hit
-  ~%base%15.wav~ ~sounds/_%soundname%m.wav~ //Dying
-  ~%base%16.wav~ ~sounds/_%soundname%e.wav~ //Badly Wounded
-  ~%base%17.wav~ ~sounds/_%soundname%n.wav~ //In Forest
-  ~%base%18.wav~ ~sounds/_%soundname%o.wav~ //In City
-  ~%base%19.wav~ ~sounds/_%soundname%p.wav~ //In Dungeon
-  ~%base%20.wav~ ~sounds/_%soundname%q.wav~ //Daytime
-  ~%base%21.wav~ ~sounds/_%soundname%r.wav~ //Nighttime
-  ~%base%22.wav~ ~sounds/_%soundname%f.wav~ //Selected 1
-  ~%base%23.wav~ ~sounds/_%soundname%g.wav~ //Selected 2
-  ~%base%24.wav~ ~sounds/_%soundname%h.wav~ //Selected 3
-  ~%base%25.wav~ ~sounds/_%soundname%0.wav~ //Selected 6
-  ~%base%28.wav~ ~sounds/_%soundname%i.wav~ //Action Acknowledgement 1 
-  ~%base%29.wav~ ~sounds/_%soundname%j.wav~ //Action Acknowledgement 2 
-  ~%base%30.wav~ ~sounds/_%soundname%k.wav~ //Action Acknowledgement 3 
-  ~%base%31.wav~ ~sounds/_%soundname%s.wav~ //Action Acknowledgement 4
-  ~%base%32.wav~ ~sounds/_%soundname%t.wav~ //Action Acknowledgement 5
-  ~%base%33.wav~ ~sounds/_%soundname%u.wav~ //Action Acknowledgement 6
-  ~%base%34.wav~ ~sounds/_%soundname%v.wav~ //Action Acknowledgement 7
-//  ~%base%.wav~ ~sounds/_%soundname%_.wav~ //Action Acknowledgement 8
-  ~%base%35.wav~ ~sounds/_%soundname%x.wav~ //Rare Select 1
-  ~%base%36.wav~ ~sounds/_%soundname%y.wav~ //Rare Select 2
-//  ~%base%.wav~ ~sounds/_%soundname%w.wav~ //Reaction to Party Member Death
-  ~%base%37.wav~ ~sounds/_%soundname%z.wav~ //Critical Hit Given
-  ~%base%38.wav~ ~sounds/_%soundname%1.wav~ //Critical Miss
-  ~%base%39.wav~ ~sounds/_%soundname%2.wav~ //Target Immune
-  ~%base%40.wav~ ~sounds/_%soundname%3.wav~ //Inventory Full
-  ~%base%41.wav~ ~sounds/_%soundname%4.wav~ //Successfully Picked A Pocket
-  ~%base%42.wav~ ~sounds/_%soundname%5.wav~ //Successfully Hid In shadows
-  ~%base%43.wav~ ~sounds/_%soundname%6.wav~ //Spell Disrupted
-  ~%base%44.wav~ ~sounds/_%soundname%7.wav~ //Set A Trap
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY bg2_ss_map2 BEGIN
+    08 => b  // Becoming Leader
+    09 => c  // Tired
+    10 => d  // Bored
+    11 => a  // Battle Cry
+    12 => 8  // Battle Cry 2
+    13 => 9  // Battle Cry 3
+    14 => l  // Being Hit
+    15 => m  // Dying
+    16 => e  // Badly Wounded
+    17 => n  // In Forest
+    18 => o  // In City
+    19 => p  // In Dungeon
+    20 => q  // Daytime
+    21 => r  // Nighttime
+    22 => f  // Selected 1
+    23 => g  // Selected 2
+    24 => h  // Selected 3
+    25 => 0  // Selected 6
+    28 => i  // Action Acknowledgement 1 
+    29 => j  // Action Acknowledgement 2 
+    30 => k  // Action Acknowledgement 3 
+    31 => s  // Action Acknowledgement 4
+    32 => t  // Action Acknowledgement 5
+    33 => u  // Action Acknowledgement 6
+    34 => v  // Action Acknowledgement 7
+//       => _  // Action Acknowledgement 8
+    35 => x  // Rare Select 1
+    36 => y  // Rare Select 2
+//       => w  // Reaction to Party Member Death
+    37 => z  // Critical Hit Given
+    38 => 1  // Critical Miss
+    39 => 2  // Target Immune
+    40 => 3  // Inventory Full
+    41 => 4  // Successfully Picked A Pocket
+    42 => 5  // Successfully Hid In shadows
+    43 => 6  // Spell Disrupted
+    44 => 7  // Set A Trap
+  END
+  ACTION_PHP_EACH bg2_ss_map2 AS fnum => snum BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%base%%fnum%.wav~ BEGIN
+      COPY_EXISTING ~%base%%fnum%.wav~ ~sounds/_%soundname%%snum%.wav~
+    END
+  END
 END
 
 
-
-
-
 //BG1 only NPC
+ACTION_DEFINE_ASSOCIATIVE_ARRAY bg1_ssets BEGIN
+  ajant => ajanti
+  alora => alora
+  branw => branwe
+  coran => coran
+  dynah => dynahe
+  eldot => eldoth
+  faldn => faldor
+  garrk => garric
+  kagan => kagain
+  khald => khalid
+  kivan => kivan
+  montr => montar
+  quayl => quayle
+  skiee => skie
+  safan => safana
+  shart => sharte
+  tiaxx => tiax
+  yeslk => yeslic
+  xannn => xan
+  xzarr => xzar
+END
 
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
-
-OUTER_SPRINT base ~kivan~
-OUTER_SPRINT soundname ~kivan~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~alora~
-OUTER_SPRINT soundname ~alora~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~dynah~
-OUTER_SPRINT soundname ~dynahe~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~yeslk~
-OUTER_SPRINT soundname ~yeslic~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~coran~
-OUTER_SPRINT soundname ~coran~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~ajant~
-OUTER_SPRINT soundname ~ajanti~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~khald~
-OUTER_SPRINT soundname ~khalid~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~garrk~
-OUTER_SPRINT soundname ~garric~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~safan~
-OUTER_SPRINT soundname ~safana~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~faldn~
-OUTER_SPRINT soundname ~faldor~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~branw~
-OUTER_SPRINT soundname ~branwe~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~quayl~
-OUTER_SPRINT soundname ~quayle~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~xannn~
-OUTER_SPRINT soundname ~xan~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~skiee~
-OUTER_SPRINT soundname ~skie~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~eldot~
-OUTER_SPRINT soundname ~eldoth~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~xzarr~
-OUTER_SPRINT soundname ~xzar~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~montr~
-OUTER_SPRINT soundname ~montar~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~tiaxx~
-OUTER_SPRINT soundname ~tiax~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~kagan~
-OUTER_SPRINT soundname ~kagain~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-OUTER_SPRINT base ~shart~
-OUTER_SPRINT soundname ~sharte~
-LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
-END //end of bg1 soundsets
-
-
-
-
+ACTION_IF FILE_EXISTS_IN_GAME ~bg1start.2da~ BEGIN
+  ACTION_PHP_EACH bg1_ssets AS base => soundname BEGIN
+    LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
+  END
+END
 
 //BG2 only NPC
+ACTION_DEFINE_ASSOCIATIVE_ARRAY bg2_ssets BEGIN
+  aerie => aerie
+  janjan => jan
+  keldor => keldor
+  korgan => korgan
+  mazzy => mazzy
+  nalia => nalia
+  valyga => valyga
+  yoshim => yoshim
+END
+ACTION_PHP_EACH bg2_ssets AS base => soundname BEGIN
+  LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
+END
 
-OUTER_SPRINT base ~aerie~
-OUTER_SPRINT soundname ~aerie~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~yoshim~
-OUTER_SPRINT soundname ~yoshim~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~mazzy~
-OUTER_SPRINT soundname ~mazzy~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~nalia~
-OUTER_SPRINT soundname ~nalia~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~korgan~
-OUTER_SPRINT soundname ~korgan~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~janjan~
-OUTER_SPRINT soundname ~jan~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~keldor~
-OUTER_SPRINT soundname ~keldor~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
-
-OUTER_SPRINT base ~valyga~
-OUTER_SPRINT soundname ~valyga~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
+//BG2 shifted NPC
+ACTION_DEFINE_ASSOCIATIVE_ARRAY bg2_ssets_2 BEGIN
+  anomen => anomen
+  cernd => cernd
+  haerda => haerda
+END
+ACTION_PHP_EACH bg2_ssets_2 AS base => soundname BEGIN
+  LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET_2~
+END
 
 
-//shifted guys
+//NPC from both BG1 and BG2. If BGT, copy 1>2, then 2>2, then 2>1,then 1>1
 
-OUTER_SPRINT base ~cernd~
-OUTER_SPRINT soundname ~cernd~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET_2~
-
-OUTER_SPRINT base ~anomen~
-OUTER_SPRINT soundname ~anomen~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET_2~
-
-OUTER_SPRINT base ~haerda~
-OUTER_SPRINT soundname ~haerda~
-LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET_2~
-
-
-
-
-
-
-//NPC from both BG1 and BG2
-
-//jaheira
+//Jaheira
 OUTER_SPRINT soundname ~jahei2~
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+  OUTER_SPRINT base ~jaher~
+  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
+END
 OUTER_SPRINT base ~jaheir~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
-  OUTER_SPRINT base ~jaher~
-  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
   OUTER_SPRINT soundname ~jahei1~
   OUTER_SPRINT base ~jaheir~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
@@ -285,16 +202,16 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
   LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
 END
 
-
-//viconia
+//Viconia
 OUTER_SPRINT soundname ~vicon2~
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+  OUTER_SPRINT base ~vicon~
+  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
+END
 OUTER_SPRINT base ~viconi~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
-  OUTER_SPRINT base ~vicon~
-  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
   OUTER_SPRINT soundname ~vicon1~
   OUTER_SPRINT base ~viconi~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
@@ -304,13 +221,14 @@ END
 
 //edwin
 OUTER_SPRINT soundname ~edwin2~
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+  OUTER_SPRINT base ~bedwin~
+  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
+END
 OUTER_SPRINT base ~edwin~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
-  OUTER_SPRINT base ~bedwin~
-  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
   OUTER_SPRINT base ~edwin~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
   OUTER_SPRINT soundname ~edwin1~
@@ -318,15 +236,16 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
   LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
 END
 
-//minsc
+//Minsc
 OUTER_SPRINT soundname ~minsc2~
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+  OUTER_SPRINT base ~bgmnsc~
+  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
+END
 OUTER_SPRINT base ~minsc~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
-  OUTER_SPRINT base ~bgmnsc~
-  LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
-
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
   OUTER_SPRINT soundname ~minsc1~
   OUTER_SPRINT base ~minsc~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
@@ -336,14 +255,9 @@ END
 
 
 
-
-
-
-
 //Imoen and Sarevok are special cases, have to do them manually
 
-
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
 //bg1 imoen
 COPY_EXISTING  ~bimoen09.wav~ ~sounds/_imoen1b.wav~ //Becoming Leader
   ~bimoen11.wav~ ~sounds/_imoen1c.wav~ //Tired
@@ -421,7 +335,7 @@ COPY_EXISTING  ~imoen08.wav~ ~sounds/_imoen2b.wav~ //Becoming Leader
   ~imoen48.wav~ ~sounds/_imoen26.wav~ //Spell Disrupted
   ~imoen49.wav~ ~sounds/_imoen27.wav~ //Set A Trap
 //bg1 additions:
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
 COPY_EXISTING  ~bimoen17.wav~ ~sounds/_imoen2_.wav~ //Action Acknowledgement 8
   ~bimoen14.wav~ ~sounds/_imoen2w.wav~ //Reaction to Party Member Death
 END
