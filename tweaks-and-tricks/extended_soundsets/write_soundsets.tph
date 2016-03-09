@@ -1,6 +1,3 @@
-INCLUDE ~%MOD_FOLDER%/lib/macro.tph~ //WRITE_SOUNDSET2
-
-
 //Calculate soundsets. "bg1_cre" and "bg2_cre" are identical as far as only "npc_name" is used
 ACTION_IF dominate = 0 BEGIN   //Additions only
   ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
@@ -15,7 +12,7 @@ ACTION_IF dominate = 0 BEGIN   //Additions only
       END
     END
   END
-  OUTER_SET overwrite = 0 //used in WRITE_SOUNDSET2 later
+  OUTER_SET overwrite = 0 //used in WRITE_SOUNDSET later
 END
 ACTION_IF dominate = 1 BEGIN   //BG1 prevail
   ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
@@ -30,7 +27,7 @@ ACTION_IF dominate = 1 BEGIN   //BG1 prevail
       END
     END
   END
-  OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET2 later
+  OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET later
 END
 ACTION_IF dominate = 2 BEGIN   //BG2 prevail
   ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
@@ -45,7 +42,7 @@ ACTION_IF dominate = 2 BEGIN   //BG2 prevail
       END
     END
   END
-  OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET2 later
+  OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET later
 END
 
 //Actually write soundsets
@@ -55,7 +52,7 @@ ACTION_FOR_EACH game IN bg1 bg2 BEGIN //loop through games
       OUTER_SPRINT npc ~%cre%.cre~
       OUTER_SPRINT soundset ~%game%%npc_name%~
 //      PRINT ~writing SS %game%%npc_name% to CRE %cre%.cre~
-      LAUNCH_ACTION_MACRO WRITE_SOUNDSET2   //"overwrite" set earlier
+      LAUNCH_ACTION_MACRO WRITE_SOUNDSET   //"overwrite" set earlier
     END
   END
 END
