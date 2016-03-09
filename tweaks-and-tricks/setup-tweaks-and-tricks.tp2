@@ -5,46 +5,7 @@ NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
-MODDER
-
-//for "npc soundsets"
-ALLOW_MISSING
-~kivan12.wav~ ~kivan13.wav~ ~kivan14.wav~ ~kivan15.wav~ ~kivan16.wav~
-~dynah12.wav~ ~dynah13.wav~ ~dynah14.wav~ ~dynah15.wav~ ~dynah16.wav~
-~yeslk12.wav~ ~yeslk13.wav~ ~yeslk14.wav~ ~yeslk15.wav~ ~yeslk16.wav~
-~coran12.wav~ ~coran13.wav~ ~coran14.wav~ ~coran15.wav~ ~coran16.wav~
-~ajant12.wav~ ~ajant13.wav~ ~ajant14.wav~ ~ajant15.wav~ ~ajant16.wav~
-~garrk12.wav~ ~garrk13.wav~ ~garrk14.wav~ ~garrk15.wav~ ~garrk16.wav~
-~safan03.wav~ ~safan12.wav~ ~safan13.wav~ ~safan14.wav~ ~safan15.wav~ ~safan16.wav~
-~faldn12.wav~ ~faldn13.wav~ ~faldn14.wav~ ~faldn15.wav~ ~faldn16.wav~
-~branw12.wav~ ~branw13.wav~ ~branw14.wav~ ~branw15.wav~ ~branw16.wav~
-~quayl03.wav~ ~quayl12.wav~ ~quayl13.wav~ ~quayl14.wav~ ~quayl15.wav~ ~quayl16.wav~
-~xannn12.wav~ ~xannn13.wav~ ~xannn14.wav~ ~xannn15.wav~ ~xannn16.wav~
-~skiee03.wav~ ~skiee12.wav~ ~skiee13.wav~ ~skiee14.wav~ ~skiee15.wav~ ~skiee16.wav~
-~eldot12.wav~ ~eldot13.wav~ ~eldot14.wav~ ~eldot15.wav~ ~eldot16.wav~
-~xzarr12.wav~ ~xzarr13.wav~ ~xzarr14.wav~ ~xzarr15.wav~ ~xzarr16.wav~
-~montr12.wav~ ~montr13.wav~ ~montr14.wav~ ~montr15.wav~ ~montr16.wav~
-~tiaxx12.wav~ ~tiaxx13.wav~ ~tiaxx14.wav~ ~tiaxx15.wav~ ~tiaxx16.wav~
-~kagan12.wav~ ~kagan13.wav~ ~kagan14.wav~ ~kagan15.wav~ ~kagan16.wav~
-~shart12.wav~ ~shart13.wav~ ~shart14.wav~ ~shart15.wav~ ~shart16.wav~
-
-~jaher03.wav~ ~jaher12.wav~ ~jaher13.wav~ ~jaher14.wav~ ~jaher15.wav~ ~jaher16.wav~
-~bgmnsc03.wav~ ~bgmnsc12.wav~ ~bgmnsc13.wav~ ~bgmnsc14.wav~ ~bgmnsc15.wav~ ~bgmnsc16.wav~
-~bedwin03.wav~ ~bedwin12.wav~ ~bedwin13.wav~ ~bedwin14.wav~ ~bedwin15.wav~ ~bedwin16.wav~
-~vicon03.wav~ ~vicon12.wav~ ~vicon13.wav~ ~vicon14.wav~ ~vicon15.wav~ ~vicon16.wav~
-
-
-~aerie40.wav~ ~aerie41.wav~ ~aerie42.wav~ ~aerie43.wav~ ~aerie44.wav~
-~mazzy40.wav~ ~mazzy41.wav~ ~mazzy42.wav~ ~mazzy43.wav~ ~mazzy44.wav~
-~korgan40.wav~ ~korgan41.wav~ ~korgan42.wav~ ~korgan43.wav~ ~korgan44.wav~
-~keldor40.wav~ ~keldor41.wav~ ~keldor42.wav~ ~keldor43.wav~ ~keldor44.wav~
-~anomen40.wav~ ~anomen41.wav~ ~anomen42.wav~ ~anomen43.wav~ ~anomen44.wav~
-~haerda40.wav~ ~haerda41.wav~ ~haerda42.wav~ ~haerda43.wav~ ~haerda44.wav~
-
-~jaheir40.wav~ ~jaheir41.wav~ ~jaheir42.wav~ ~jaheir43.wav~ ~jaheir44.wav~
-~minsc40.wav~ ~minsc41.wav~ ~minsc42.wav~ ~minsc43.wav~ ~minsc44.wav~
-~edwin40.wav~ ~edwin41.wav~ ~edwin42.wav~ ~edwin43.wav~ ~edwin44.wav~
-~viconi40.wav~ ~viconi41.wav~ ~viconi42.wav~ ~viconi43.wav~ ~viconi44.wav~
+//MODDER setup_tra none
 
 LANGUAGE ~English~ ~ENGLISH~ ~%MOD_FOLDER%/tra/english/game.tra~
 
