@@ -173,7 +173,7 @@ ACTION_FOR_EACH familiar IN
   fer25
   imp25
   psd25
-  quas25
+  qua25
   rab25
 BEGIN
   INCLUDE ~%MOD_FOLDER%/familiars/g_fam.baf.tph~
