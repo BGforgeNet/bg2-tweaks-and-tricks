@@ -1,14 +1,9 @@
 INCLUDE ~%MOD_FOLDER%/potions_no_stack/macro.tph~
 
 COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
-  SAY NAME1 @26
-  SAY NAME2 @27
-  READ_LONG 0x8 pot_strref
-  READ_LONG 0xc scr_strref
-BUT_ONLY
 
 PRINT ~Patching potions...~
-OUTER_SPRINT ~refresh_strref~ ~%pot_strref%~
+OUTER_SPRINT ~refresh_strref~ @26
 ACTION_FOR_EACH item IN potn02 potn22 potn09 potn41 potn18 potn29 potn31 potn40 potn34 potn35 potn36 potn37 potn39 potn42 potn46 potn15 BEGIN
   OUTER_SPRINT ~item_to_unstack~ ~%item%~
   OUTER_SPRINT ~spellname~ ~g_%item%~
@@ -27,9 +22,8 @@ ACTION_FOR_EACH file IN ~rr#pnp36.spl~ ~rr#pnp39.spl~ BEGIN
 END
 
 PRINT ~Patching scrolls...~
-OUTER_SPRINT ~refresh_strref~ ~%scr_strref%~
-ACTION_FOR_EACH item IN scrl03 scrl04 scrl05 scrl06
-BEGIN 
+OUTER_SPRINT ~refresh_strref~ @27
+ACTION_FOR_EACH item IN scrl03 scrl04 scrl05 scrl06 BEGIN 
   OUTER_SPRINT ~item_to_unstack~ ~%item%~
   OUTER_SPRINT ~spellname~ ~g_%item%~
   LAUNCH_ACTION_MACRO ~UNSTACK_ITEM~

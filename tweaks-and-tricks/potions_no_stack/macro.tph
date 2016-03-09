@@ -39,7 +39,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
 */
   //add "gulp" to the item if needed
   READ_SHORT 0x1c item_type
-  PATCH_IF (item_type = 9) THEN BEGIN //if potion
+  PATCH_IF (item_type = 9) BEGIN //if potion
     LPF ADD_ITEM_EFFECT
       INT_VAR
         opcode = 139 //display string
@@ -74,7 +74,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
       timing = 1 //instant
       resist_dispel = 3 //dispel and bypass
     STR_VAR
-      resource = ~%spellname%~ //which spell to cast
+      resource = EVAL ~%spellname%~ //which spell to cast
   END
 
 BUT_ONLY
