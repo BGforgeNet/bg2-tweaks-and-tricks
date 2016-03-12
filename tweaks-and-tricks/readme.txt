@@ -256,22 +256,28 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 
 ## Changelog
 - Version 6
-  - Added more sounds to "extended soundsets"
-  - Changed compliments to .wav format instead of .wavc
-  - Fixed bug in "easy traps": added missing vent trap
+  - Extended soundsets: more sounds
+  - Easy traps: fixed missing vent trap
+  - Smarter familiars: fixed quasit missing in ToB
+  - NPC soundsets for PC: fixed bug when 1/2 versions were the same
+  - NPC soundsets for PC: added more sounds
+  - Under the hood changes:
+    - compliments/insults: left as .wav instead of .wavc - make DTLCEP happy
+    - update weidu to 239
+    - general code cleanup
 - Version 5
-  - Add "easy traps" component
-  - Add "less autosaves" component
-  - Add Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag)
+  - Added "easy traps" component
+  - Added "less autosaves" component
+  - Added Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag)
   - Let famliars pick up winter wolf pelts, ankheg shells, wyvern heads
-  - Expand no-farming to skeleton warriors in Durlag's Tower
-  - Fix effect duplication in "unstack potions" component
-  - Make "unstackable potions" compatible with Rogue Rebalancing
+  - Expanded no-farming to skeleton warriors in Durlag's Tower
+  - Fixed effect duplication in "unstack potions" component
+  - Made "unstackable potions" compatible with Rogue Rebalancing
 - Version 4
-  - Add "no shop depreciation" component
-  - Add "no XP farming" component
-  - Add "resilient familiars" component
-  - Fix version tag
+  - Added "no shop depreciation" component
+  - Added "no XP farming" component
+  - Added "resilient familiars" component
+  - Fixed version tag
 - Version 3
   - Added a few new components
   - Revised all code
