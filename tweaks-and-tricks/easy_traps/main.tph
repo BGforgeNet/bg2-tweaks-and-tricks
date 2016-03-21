@@ -120,3 +120,6 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
     EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
   END
 END
+
+//some other customizations
+INCLUDE ~%MOD_FOLDER%/easy_traps/cherry_pick.tph~
