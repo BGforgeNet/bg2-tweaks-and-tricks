@@ -7,7 +7,7 @@ README ~%MOD_FOLDER%/readme.txt~
 AUTO_EVAL_STRINGS
 MODDER setup_tra none
 
-LANGUAGE ~English~ ~ENGLISH~ ~%MOD_FOLDER%/tra/english/game.tra~
+LANGUAGE ~English~ ~ENGLISH~ ~tweaks-and-tricks/tra/english/game.tra~
 
 
 BEGIN ~Smarter familiars~
