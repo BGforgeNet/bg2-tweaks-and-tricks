@@ -1,8 +1,0 @@
-ACTION_IF FILE_EXISTS_IN_GAME ~clck33.itm~ BEGIN
-  COPY_EXISTING ~clck33.itm~ ~override~
-    LPF DELETE_ITEM_EQEFFECT
-      INT_VAR
-        opcode_to_delete=65
-    END
-  BUT_ONLY
-END

@@ -1,0 +1,15 @@
+//dummy detection file
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tt_web.itm~
+
+COPY_EXISTING ~plyspid.itm~  ~override~
+  PATCH_FOR_EACH spell IN spin683 spin575 spdr201 spwi215 dw#0w215 BEGIN //from SCS spider shapeshift token
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = 206 //spell immunity
+        target = 1 //self
+        timing = 2 //while equipped
+      STR_VAR
+        resource = EVAL ~%spell%~
+    END
+  END
+BUT_ONLY

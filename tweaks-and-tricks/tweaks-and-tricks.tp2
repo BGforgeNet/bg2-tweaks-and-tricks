@@ -1,14 +1,13 @@
 BACKUP ~tweaks-and-tricks/backup~
 AUTHOR "burner1024 @ github"
-VERSION ~v6~
+VERSION ~v7~
 NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
-//MODDER setup_tra none
+MODDER setup_tra none
 
 LANGUAGE ~English~ ~ENGLISH~ ~%MOD_FOLDER%/tra/english/game.tra~
-
 
 
 BEGIN ~Smarter familiars~
@@ -17,12 +16,10 @@ REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
 INCLUDE ~%MOD_FOLDER%/smarter_familiars/main.tph~
 
 
-
 BEGIN ~Faster familiars~
 DESIGNATED 200
 REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
 INCLUDE ~%MOD_FOLDER%/faster_familiars/main.tph~
-
 
 
 BEGIN ~Resilient familiars~
@@ -31,14 +28,11 @@ REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
 INCLUDE ~%MOD_FOLDER%/resilient_familiars/main.tph~
 
 
-
-BEGIN ~Remove blur graphics from Semaj's cloak~
+BEGIN ~Remove blur graphics from items~
 DESIGNATED 1500
-INCLUDE ~%MOD_FOLDER%/semaj_cloak/main.tph~
+INCLUDE ~%MOD_FOLDER%/no_blur/main.tph~
 
 
-
-//extended soundsets
 BEGIN ~Additions only~
 DESIGNATED 610
 REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
@@ -64,8 +58,6 @@ COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~ //dummy detection file
 INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
 
 
-
-
 BEGIN ~Reintroduce~
 DESIGNATED 710
 SUBCOMPONENT ~BG1-style party interaction system~
@@ -83,13 +75,9 @@ SUBCOMPONENT ~BG1-style party interaction system~
 INCLUDE ~%MOD_FOLDER%/compliment/disable.tph~
 
 
-
-
 BEGIN ~No talking when hiding in shadows~
 DESIGNATED 800
 INCLUDE ~%MOD_FOLDER%/no_talk_shadows/main.tph~
-
-
 
 
 BEGIN ~Make NPC soundsets available to PC~
@@ -97,17 +85,19 @@ DESIGNATED 900
 INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
 
 
-
 BEGIN ~Fair fights~
 DESIGNATED 300
 INCLUDE ~%MOD_FOLDER%/fair_fights/main.tph~
-
 
 
 BEGIN ~Sensible Cloak of Mirroring~
 DESIGNATED 1000
 INCLUDE ~%MOD_FOLDER%/cloak_of_mirroring/main.tph~
 
+
+BEGIN ~Spider form ignores web~
+DESIGNATED 1001
+INCLUDE ~%MOD_FOLDER%/spider_form/main.tph~
 
 
 BEGIN ~Effects of scrolls and potions do not stack with themselves~

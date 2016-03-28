@@ -20,7 +20,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 ## Components
 
 - [Convenience](#convenience)
-  - [Remove blur graphics from Semaj's cloak](#remove-blur-graphics-from-semajs-cloak)
+  - [Remove blur graphics from items](#remove-blur-graphics-from-items)
   - [Easy traps](#easy-traps)
   - [Less autosaves](#less-autosaves)
   - [Convenient familiars](#convenient-familiars)
@@ -35,6 +35,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 - [Common sense](#common-sense)
   - [Fair fights](#fair-fights)
   - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
+  - [Spider form ignores web](#spider-form-ignores-web)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
 - [Cheese](#cheese)
   - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
@@ -48,8 +49,12 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 
 ### Convenience
 
-#### Remove blur graphics from Semaj's cloak
-Semaj is one of Sarevok's lieutenants. [BGTTweak](http://readme.spellholdstudios.net/BGTTweakReadme.htm) allows to retrieve his cloak. It's a fine item, but one of its effects is Blur, which is quite an eyestrain in the long term. Save your eyes, install this component.
+#### Remove blur graphics from items
+Removes eye-straining blur graphics from several items. Doesn't touch actual Blur spell.
+
+Currently includes:
+- Semaj's cloak
+- Claw of Kazgaroth
 
 #### Easy traps
 Add "trap sense" to characters. Before a trap is "detected" by thief skill, a party member will "sense" it: notice that something's wrong, and alert others. It allows for faster, less frustrating dungeon exploration.
@@ -168,9 +173,11 @@ A few opponents in the game basically cheat, or just have unrealistic stats. Som
 
 
 #### Sensible Cloak of Mirroring
-
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which doesn't make much sense. And it doesn't protect from Call Lighting, which also is strange. This compoment fixes both issues.
 
+
+#### Spider form ignores web
+Become immune to web while in spider form (which is strangely not the case in the original game).
 
 #### Effects of scrolls and potions do not stack with themselves
 
