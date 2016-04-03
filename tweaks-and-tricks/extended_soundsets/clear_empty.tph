@@ -68,7 +68,7 @@ ACTION_PHP_EACH bg1_viconia_cre AS index => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
     LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
     PATCH_IF vl BEGIN
-      PATCH_FOR_EACH number IN 63 64 BEGIN
+      PATCH_FOR_EACH number IN 62 63 64 BEGIN
         WRITE_LONG (0xa4 + number * 4) (0 - 1)
       END
     END
@@ -79,7 +79,7 @@ ACTION_PHP_EACH bg2_viconia_cre AS index => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
     LPF ~FJ_CRE_VALIDITY~ RET vl=valid END
     PATCH_IF vl BEGIN
-      PATCH_FOR_EACH number IN 69 70 72 BEGIN
+      PATCH_FOR_EACH number IN 62 69 70 72 BEGIN
         WRITE_LONG (0xa4 + number * 4) (0 - 1)
       END
     END
