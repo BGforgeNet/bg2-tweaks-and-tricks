@@ -65,6 +65,66 @@ APPEND "shoutids.ids" "1200 G_TRAP" UNLESS "1200 G_TRAP" // New shout
 CLEAR_IDS_MAP
 
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
+  GET_OFFSET_ARRAY reg_array ARE_V10_REGIONS
+  PHP_EACH reg_array AS int => reg_off BEGIN
+    READ_SHORT (reg_off + 0x6c) is_trapped
+    READ_ASCII (reg_off + 0x7c) reg_script
+    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
+      READ_ASCII reg_off reg_name (32) NULL
+//      PATCH_PRINT ~Found faulty region: area %SOURCE_FILE%, region %reg_name%, script %reg_script%, trap status is %is_trapped%~
+      LPF ALTER_AREA_REGION
+        INT_VAR
+          trapped = 0
+          detected = 0
+          trap_detect = 0
+          trap_remove = 0
+        STR_VAR
+          region_name = ~%reg_name%~
+          door_script = ~~
+      END
+    END
+  END
+  GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
+  PHP_EACH cont_array AS int => cont_off BEGIN
+    READ_SHORT (cont_off + 0x30) is_trapped
+    READ_ASCII (cont_off + 0x48) cont_script
+    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
+      READ_ASCII cont_off cont_name (32) NULL
+//      PATCH_PRINT ~Found faulty container: area %SOURCE_FILE%, container %cont_name%, script %cont_script%, trap status is %is_trapped%~
+      LPF ALTER_AREA_CONTAINER
+        INT_VAR
+          trapped = 0
+          detected = 0
+          trap_detect = 0
+          trap_remove = 0
+        STR_VAR
+          container_name = ~%cont_name%~
+          container_script = ~~
+      END
+    END
+  END
+  GET_OFFSET_ARRAY door_array ARE_V10_DOORS
+  PHP_EACH door_array AS int => door_off BEGIN
+    READ_SHORT (door_off + 0x70) is_trapped
+    READ_ASCII (door_off + 0x80) door_script
+    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%door_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
+      READ_ASCII door_off door_name (32) NULL
+//      PATCH_PRINT ~Found faulty door: area %SOURCE_FILE%, door %door_name%, script %door_script%, trap status is %is_trapped%~
+      LPF ALTER_AREA_DOOR
+        INT_VAR
+          trapped = 0
+          detected = 0
+          trap_detect = 0
+          trap_remove = 0
+        STR_VAR
+          door_name = ~%door_name%~
+          door_script = ~~
+      END
+    END
+  END
+BUT_ONLY
+
+COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   SET reg_size = 0xc4
   READ_SHORT 0x5a reg_num
   READ_LONG  0x5c reg_off
@@ -120,6 +180,3 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
     EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
   END
 END
-
-//some other customizations
-INCLUDE ~%MOD_FOLDER%/easy_traps/cherry_pick.tph~
