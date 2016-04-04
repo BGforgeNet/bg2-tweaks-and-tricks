@@ -37,6 +37,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
   - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
   - [Spider form ignores web](#spider-form-ignores-web)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
+  - [True true sight](true-true-sight)
 - [Cheese](#cheese)
   - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
   - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
@@ -188,6 +189,17 @@ Example 1: you drink a potion of fire resistance and get +50% fire resistance. A
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
 
 
+#### True True sight
+Make True sight dispel illusions almost instantly, not once per round.
+
+This is for people who don't like thieves' "gulp an invisibility potion - backstab - gulp - backstab" routine. Which gets especially annoying with SCS.
+
+There are 2 justifying motives:
+- True sight is supposed to be true sight. Not "true sight every 6 seconds". The caster always sees everything for what it is.
+- Even if the caster didn't, the rogues are supposed to have 1 action per round, which either drink the potion or attack. Not both.
+
+It works in both mage and priest versions of the spell. And of course, in enemy spells, as well.
+
 ### Cheese
 
 #### Cheesy Slayer: full heal on change
@@ -262,6 +274,8 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 
 
 ## Changelog
+- Version 7
+  - New component: True true sight
 - Version 6
   - Extended soundsets: more sounds
   - Easy traps: fixed missing vent trap
