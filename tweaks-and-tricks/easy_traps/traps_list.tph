@@ -21,6 +21,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   GTAR9 => ~Ice arrow trap~
   GTAR10 => ~Piercing arrow trap~
 
+  CTAS  => ~Agannazar's scorcher trap~
   CTCK => ~Cloudkill trap~
   CTCL => ~Call lightning trap~
   CTCON => ~Confusion trap~
@@ -48,7 +49,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   GTDC => ~Dire charm trap~
   GTFB => ~Fireball trap~
   GTFB2 => ~Fireball trap~
-  GTFB3 => ~Fireball trap~
+//  GTFB3 => ~Fireball trap~ //this is repeating fireball in durlag's tower
   GTFR => ~Frost trap~
   GTFS => ~Flamestrike trap~
   GTGW => ~Glyph of warding~
@@ -107,7 +108,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   BGCTMM => ~Magic missile trap~
   BGGTMM => ~Magic missile trap~
 
-//  BATLEHO => ~Unknown trap~ // Davaeorn. SCS?
+  BATTLEHO => ~Unknown trap~ // Davaeorn. SCS edits this
 
   CRUSHTRP => ~Crushing trap~
   CRUSHTR2 => ~Crushing trap~
@@ -116,22 +117,29 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   PPCRUS2 => ~Crushing trap~
   TRP1504 => ~Crushing trap~
 
-  TRUESTON => ~Stone trap~
-  WQXSTON => ~Stone trap~
+  TRUESTON => ~Petrification trap~
+//  WQXSTON => ~Stone trap~ //WhiteQueen mod. Can't be disabled
 
   PIPETRAP => ~Minor ligthning bolt trap~
 
-  // Durlag's dungeon
-  URNTRAP1 => ~Lightning bolt trap~
-  URNTRAP2 => ~Lightning bolt trap~
-  URNTRAP3 => ~Lightning bolt trap~
-  URNTRAP4 => ~Lightning bolt trap~
-  URNTRAP5 => ~Lightning bolt trap~
-  URNTRAP6 => ~Lightning bolt trap~
-  
+// Durlag's dungeon
+//  URNTRAP1 => ~Lightning bolt trap~ // Urns. Not real traps, only trigger when a wardstone is put inside an urn.
+//  URNTRAP2 => ~Lightning bolt trap~
+//  URNTRAP3 => ~Lightning bolt trap~
+//  URNTRAP4 => ~Lightning bolt trap~
+//  URNTRAP5 => ~Lightning bolt trap~
+//  URNTRAP6 => ~Lightning bolt trap~
+  FDRAKET1 => ~Agannazar's scorcher trap~ //Level 2, engine room. Scorcher traps. Once activated, can't be disabled.
+  FDRAKET2 => ~Agannazar's scorcher trap~
+  FDRAKET3 => ~Agannazar's scorcher trap~
+  FDRAKET4 => ~Agannazar's scorcher trap~
+  FDRAKET5 => ~Agannazar's scorcher trap~
+  FDRAKET6 => ~Agannazar's scorcher trap~
+  FDRAKET7 => ~Agannazar's scorcher trap~
+
   //BGTtweak, random activated traps in pirate cave
   GTAR9501 => ~Unknown trap~ 
-  
+
   // SCS traps
   DW#GDART => ~Dart trap~
   DW#GSPEA => ~Spear trap~
@@ -143,4 +151,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
 
   //Tower of Deception?
   VA#ORBTR => ~Chromatic orb trap~
+
+//  GTWEREWO => ~Unknown trap~ //spawns werewolves somewhere on WW island, if Global "Infected"=1
+//  CTWEREWO => ~Unknown trap~ //spawns werewolves somewhere on WW island, if Global "Infected"=1
+//  FIREDAM = => ~Fire trap~ //firedrake damage, isn't referenced anywhere
 END
