@@ -1,0 +1,78 @@
+//True seeing (priest) shell spell
+COPY_EXISTING ~sppr505d.spl~ ~override/g_pr505d.spl~
+  WRITE_LONG 0x8 ~-1~ //silence it
+
+//True seeing actual spell
+COPY_EXISTING ~sppr505.spl~ ~override~
+  PATCH_FOR_EACH t IN
+    1 2 3 4 5
+    7 8 9 10 11
+    12 13 14 16 17
+    19 20 21 22 23
+    25 26 27 28 29
+    31 32 33 34 35
+    37 38 39 40 41
+    43 44 45 46 47
+    49 50 51 52 53
+    55 56 57 58 59
+  BEGIN
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 146 //cast spell
+        target = 1 //self
+        timing = 4 //delayed
+        resist_dispel = 3 //bypass, dispel
+        duration = EVAL %t% //delay
+        parameter1 = 9 //cast level
+        parameter2 = 1 //cast instantly
+      STR_VAR
+        resource = ~g_pr505d~
+    END
+  END
+  READ_LONG 0x50 desc_strref
+  GET_STRREF desc_strref desc
+  INNER_PATCH_SAVE new_desc ~%desc%~ BEGIN
+    REPLACE_TEXTUALLY ~each round~ ~each second~
+  END
+  SAY UNIDENTIFIED_DESC ~%new_desc%~
+BUT_ONLY
+
+
+//True sight (wizard) shell spell
+COPY_EXISTING ~sppr950.spl~ ~override/g_wi950.spl~ //for some reason it's not using spwi609d.spl?
+  WRITE_LONG 0x8 ~-1~ //silence it
+
+//True seeing actual spell
+COPY_EXISTING ~spwi609.spl~ ~override~
+  PATCH_FOR_EACH t IN
+    1 2 3 4 5
+    7 8 9 10 11
+    12 13 14 16 17
+    19 20 21 22 23
+    25 26 27 28 29
+    31 32 33 34 35
+    37 38 39 40 41
+    43 44 45 46 47
+    49 50 51 52 53
+    55 56 57 58 59
+  BEGIN
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 146 //cast spell
+        target = 1 //self
+        timing = 4 //delayed
+        resist_dispel = 3 //bypass, dispel
+        duration = EVAL %t% //delay
+        parameter1 = 12 //cast level
+        parameter2 = 1 //cast instantly
+      STR_VAR
+        resource = ~g_wi950~
+    END
+  END
+  READ_LONG 0x50 desc_strref
+  GET_STRREF desc_strref desc
+  INNER_PATCH_SAVE new_desc ~%desc%~ BEGIN
+    REPLACE_TEXTUALLY ~each round~ ~each second~
+  END
+  SAY UNIDENTIFIED_DESC ~%new_desc%~
+BUT_ONLY

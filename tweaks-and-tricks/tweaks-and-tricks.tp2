@@ -182,5 +182,5 @@ BEGIN ~Less autosaves~
 INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
 
 
-//BEGIN ~True true sight~
-//INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~
+BEGIN ~True true sight~
+INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~
