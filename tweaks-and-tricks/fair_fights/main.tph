@@ -24,6 +24,7 @@ END
 //Arkanis Gath (on attacking Renal)
 COPY_EXISTING ~stdeath.cre~ ~override~
   REPLACE_CRE_ITEM ~sw1h10~ #0 #0 #0 ~identified&unstealable&undroppable~ ~weapon1~
+  REMOVE_CRE_ITEM ~minhp1~
 BUT_ONLY
 
 //Marchol Harpell

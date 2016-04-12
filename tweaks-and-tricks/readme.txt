@@ -165,12 +165,12 @@ Allows to use any of the original Bioware NPCs soundsets for the main character.
 
 #### Fair fights
 A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
-- Arcanis Gath, the thief that insta-kills you on attacking Renal (now you can fight him, he has a normal sword)
+- Arcanis Gath, the thief that insta-kills you upon attacking Renal. Now you can fight him, he has a normal sword. Beware - if you do that, the game plot may be broken.
 - Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
 - Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
 - Laskal, Cloakwood shadow druid (innocent no longer, since he attacks first)
-- Winski Perorate (innocent no longer, since he's scum)
+- Winski Perorate (innocent no longer, since he's just not)
 
 
 #### Sensible Cloak of Mirroring
@@ -276,6 +276,7 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 ## Changelog
 - Version 7
   - New component: True true sight
+  - Fair fights: make Arkanis Gath killable
 - Version 6
   - Extended soundsets: more sounds
   - Easy traps: fixed missing vent trap
