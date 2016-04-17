@@ -6,7 +6,7 @@ ACTION_FOR_EACH game IN bg1 bg2 BEGIN
 
     OUTER_SPRINT npc ~%npc_cre%.cre~
     OUTER_SPRINT soundset ~%game%%npc_name%~
-    LAUNCH_ACTION_MACRO ~READ_SOUNDSET~
+    LAM ~READ_SOUNDSET~
 
     //include only interactions, specifics, compliments, insults (39-60)
     OUTER_FOR ( i=0; i<39; i+=1) BEGIN

@@ -53,7 +53,7 @@ OUTER_SET new_trap_ind = 0 // global var for all areas
 ACTION_IF GAME_IS ~bg2 tob bgt~ BEGIN
   OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
   LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
-  ACTION_INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
+  INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
 END
 */
 
@@ -145,19 +145,19 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   str_size = reg_size
   str_num = reg_num
   rel_script_off = 0x7c
-  LAUNCH_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS
+  LPM G_REPLACE_TRAP_SCRIPTS
 
   str_off = cont_off
   str_size = cont_size
   str_num = cont_num
   rel_script_off = 0x48
-  LAUNCH_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS
+  LPM G_REPLACE_TRAP_SCRIPTS
 
   str_off = door_off
   str_size = door_size
   str_num = door_num
   rel_script_off = 0x80
-  LAUNCH_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS
+  LPM G_REPLACE_TRAP_SCRIPTS
 
 BUT_ONLY
 

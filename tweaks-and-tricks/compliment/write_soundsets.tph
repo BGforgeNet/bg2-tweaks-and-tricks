@@ -19,7 +19,7 @@ ACTION_FOR_EACH game IN bg1 bg2 BEGIN //loop through games
       OUTER_SPRINT npc ~%cre%.cre~
       OUTER_SPRINT soundset ~%game%%npc_name%~
 //      PRINT ~writing SS %game%%npc_name% to CRE %cre%.cre~
-      LAUNCH_ACTION_MACRO WRITE_SOUNDSET   //"overwrite" set earlier
+      LAM WRITE_SOUNDSET   //"overwrite" set earlier
     END
   END
 END

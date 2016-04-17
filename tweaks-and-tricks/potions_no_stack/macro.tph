@@ -35,7 +35,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
   SET power = 10 //power
   SET timing = 0 //duration
   SET duration = 10 //duration
-  LAUNCH_PATCH_MACRO ~ADD_ITEM_EFFECT~
+  LPM ~ADD_ITEM_EFFECT~
 */
   //add "gulp" to the item if needed
   READ_SHORT 0x1c item_type
