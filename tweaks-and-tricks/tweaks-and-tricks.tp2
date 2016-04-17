@@ -64,7 +64,7 @@ INCLUDE ~%MOD_FOLDER%/compliment/main.tph~
 INCLUDE ~%MOD_FOLDER%/compliment/framerate.tph~
 
 BEGIN @87 /* Disable */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @88 /* BGT or BG1 only */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @121 /* BG1 content not present */
 SUBCOMPONENT @85 /* BG1-style party interaction system */
 INCLUDE ~%MOD_FOLDER%/compliment/disable.tph~
 
