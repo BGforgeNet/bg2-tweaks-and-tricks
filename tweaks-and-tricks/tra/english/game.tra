@@ -28,8 +28,8 @@
 @25 = ~Finished looking for rare magic jewels.~
 @26 = ~Potion effect refreshed~
 @27 = ~Protection scroll effect refreshed~
-@28 = ~Thorius~
 
+@28 = ~Thorius~
 
 //easy traps
 @29 = ~Careful. Something's not quite right here.~
@@ -102,3 +102,52 @@
 @71 = ~Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!~ [xzarr01]
 
 @72 = ~How would you like my sword tickling your innards?~ [shart34]
+
+//TP2
+@74   = ~Smarter familiars~
+@75   = ~Only BG2:ToB engine is supported~
+@76   = ~Faster familiars~
+@77   = ~Resilient familiars~
+@78   = ~Remove blur graphics from items~
+@79   = ~Additions only~
+@80   = ~BGT or EET only~
+@81   = ~Extended Soundsets for NPC~
+@82   = ~BG1 soundsets prevail~
+@83   = ~BG2 soundsets prevail~
+@84   = ~Reintroduce~
+@85   = ~BG1-style party interaction system~
+@86   = ~Reintroduce and adjust to framerate~
+@87   = ~Disable~
+@88   = ~BGT or BG1 only~
+@89   = ~No talking when hiding in shadows~
+@90   = ~Make NPC soundsets available to PC~
+@91   = ~Fair fights~
+@92   = ~Sensible Cloak of Mirroring~
+@93   = ~Spider form ignores web~
+@94   = ~Effects of scrolls and potions do not stack with themselves~
+@95   = ~Cheesy Slayer: full heal on change~
+@96   = ~no loss~
+@97   = ~Cheesy Slayer: reputation~
+@98   = ~reduced loss~
+@99   = ~Gem, scroll, potion, ammo (GSPA)~
+@100  = ~Starting bags~
+@101  = ~GSPA + holding~
+@102  = ~GSPA + holding - all bottomless!~
+@103  = ~Each stat gets +1~
+@104  = ~Add BG1 tomes stats bonuses to new BG2 characters~
+@105  = ~Each stat except Wisdom gets +1, Wisdom gets +3~
+@106  = ~Shops always buy goods at the same price~
+@107  = ~Can't steal from fences~
+@108  = ~Close shop steal exploit~
+@109  = ~Can't steal from any shops~
+@110  = ~No XP farming~
+@111  = ~Easy traps: allow sensing in combat~
+@112  = ~Easy traps: increase trap sense range~
+@113  = ~stop moving~
+@114  = ~Easy traps: character action~
+@115  = ~stop moving and pause game~
+@116  = ~Easy traps: center on character~
+@117  = ~Easy traps: play a sound~
+@118  = ~Easy traps: core (REQUIRED for any of previous "Easy traps" components to work)~
+@119  = ~Less autosaves~
+@120  = ~True true sight~

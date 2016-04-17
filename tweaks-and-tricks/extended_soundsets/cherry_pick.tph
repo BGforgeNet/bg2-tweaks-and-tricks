@@ -1,134 +1,134 @@
 //Aerie
 ACTION_PHP_EACH ~bg2_aerie_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY MORALE @45
-    SAY BATTLE_CRY4 @46
-    SAY BATTLE_CRY5 @47
+    SAY MORALE @45 /* Ahhh!!  Help me!  help me, pleeeaase!! */
+    SAY BATTLE_CRY4 @46 /* Oh, this is going to hurt you a LOT more than me! */
+    SAY BATTLE_CRY5 @47 /* By all that is decent, I fight! */
   BUT_ONLY
 END
 
 //Alora
 ACTION_PHP_EACH ~bg1_alora_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY SELECT_RARE1 @41
+    SAY SELECT_RARE1 @41 /* Blast and bother!  These locks have always given me trouble!  Trouble they are! */
   BUT_ONLY
 END
 
 //Anomen
 ACTION_PHP_EACH ~bg2_anomen_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @55
-    SAY BATTLE_CRY5 @56
+    SAY BATTLE_CRY4 @55 /* Evil falls today! */
+    SAY BATTLE_CRY5 @56 /* If you fight, you die!  You cannot match our power!! */
   BUT_ONLY
 END
 
 //Branwen
 ACTION_PHP_EACH ~bg1_branwen_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY2 @69
+    SAY BATTLE_CRY2 @69 /* By the ice breath of Auril! */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttbra1.wav~ ~override~ //@69
+COPY ~%MOD_FOLDER%/wav/g_ttbra1.wav~ ~override~ //@69 /* By the ice breath of Auril! */
 
 //Edwin
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN
   ACTION_PHP_EACH ~%game%_edwin_cre~ AS npc => cre BEGIN
     COPY_EXISTING ~%cre%.cre~ ~override~
-      SAY BATTLE_CRY4 @40
+      SAY BATTLE_CRY4 @40 /* Your end is near at hand, wail if you must!! */
     BUT_ONLY
   END
 END
-COPY ~%MOD_FOLDER%/wav/g_ttedw1.wav~ ~override~ //@40
+COPY ~%MOD_FOLDER%/wav/g_ttedw1.wav~ ~override~ //@40 /* Your end is near at hand, wail if you must!! */
 
 //Jaheira
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN
   ACTION_PHP_EACH ~%game%_jaheira_cre~ AS npc => cre BEGIN
     COPY_EXISTING ~%cre%.cre~ ~override~
-      SAY BATTLE_CRY4 @37
+      SAY BATTLE_CRY4 @37 /* Die your final death! */
     BUT_ONLY
   END
 END
-COPY ~%MOD_FOLDER%/wav/g_ttjah1.wav~ ~override~ //@37
+COPY ~%MOD_FOLDER%/wav/g_ttjah1.wav~ ~override~ //@37 /* Die your final death! */
 
 //Garrick
 ACTION_PHP_EACH ~bg1_garrick_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY INTERACTION4 @67     //missing sound in original game
-    SAY UNHAPPY_SERIOUS @68  //wrong sound in original game
+    SAY INTERACTION4 @67 /* My music is superior to yours, Eldoth, I was taught at the college in Berdusk. */     //missing sound in original game
+    SAY UNHAPPY_SERIOUS @68 /* I can't stand by and just let this happen. */  //wrong sound in original game
   BUT_ONLY
 END
 
 //Haerdalis
 ACTION_PHP_EACH ~bg2_haerdalis_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @60
+    SAY BATTLE_CRY4 @60 /* Ahhh, this is a fine battle that shall ring throughout the planes! */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_tthae1.wav~ ~override~ //@60
+COPY ~%MOD_FOLDER%/wav/g_tthae1.wav~ ~override~ //@60 /* Ahhh, this is a fine battle that shall ring throughout the planes! */
 
 //Kagain
 ACTION_PHP_EACH ~bg1_kagain_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY SELECT_COMMON4 @51
+    SAY SELECT_COMMON4 @51 /* What can I do for you? */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttkag1.wav~ ~override~ //@51
+COPY ~%MOD_FOLDER%/wav/g_ttkag1.wav~ ~override~ //@51 /* What can I do for you? */
 
 //Khalid
 ACTION_PHP_EACH ~bg1_khalid_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY SPECIAL2 @43
+    SAY SPECIAL2 @43 /* Calm yourself dear, we must proceed c-c-carefully. */
   BUT_ONLY
 END
 
 //Korgan
 ACTION_PHP_EACH ~bg2_korgan_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @48
-    SAY BATTLE_CRY5 @49
+    SAY BATTLE_CRY4 @48 /* Killing is our business, and business be good! */
+    SAY BATTLE_CRY5 @49 /* Hahahaha! */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttkor1.wav~ ~override~ //@48
-COPY ~%MOD_FOLDER%/wav/g_ttkor2.wav~ ~override~ //@49
+COPY ~%MOD_FOLDER%/wav/g_ttkor1.wav~ ~override~ //@48 /* Killing is our business, and business be good! */
+COPY ~%MOD_FOLDER%/wav/g_ttkor2.wav~ ~override~ //@49 /* Hahahaha! */
 
 //Keldorn
 ACTION_PHP_EACH ~bg2_keldorn_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @50
+    SAY BATTLE_CRY4 @50 /* In Tyr's name we shall be victorious once and for all! */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttkel1.wav~ ~override~ //@50
+COPY ~%MOD_FOLDER%/wav/g_ttkel1.wav~ ~override~ //@50 /* In Tyr's name we shall be victorious once and for all! */
 
 //Minsc
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN
   ACTION_PHP_EACH ~%game%_minsc_cre~ AS npc => cre BEGIN
     COPY_EXISTING ~%cre%.cre~ ~override~
-      SAY BATTLE_CRY4 @38
-      SAY BATTLE_CRY5 @39
+      SAY BATTLE_CRY4 @38 /* Aaargh!  Kill says Boo, kill does Minsc! */
+      SAY BATTLE_CRY5 @39 /* Prepare to feel the wrath of my hamster! */
     BUT_ONLY
   END
 END
-COPY ~%MOD_FOLDER%/wav/g_ttmin1.wav~ ~override~ //@39
+COPY ~%MOD_FOLDER%/wav/g_ttmin1.wav~ ~override~ //@39 /* Prepare to feel the wrath of my hamster! */
 
 //Montaron
 ACTION_PHP_EACH ~bg1_montaron_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY SELECT_RARE1 @52
+    SAY SELECT_RARE1 @52 /* Ye already be disturbed, now leave me be.  Yer company be toil enough as is. */
   BUT_ONLY
 END
 
 //Nalia
 ACTION_PHP_EACH ~bg2_nalia_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @55
-    SAY BATTLE_CRY5 @56
+    SAY BATTLE_CRY4 @55 /* Evil falls today! */
+    SAY BATTLE_CRY5 @56 /* If you fight, you die!  You cannot match our power!! */
   BUT_ONLY
 END
 
 //Quayle
 ACTION_PHP_EACH ~bg1_quayle_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY SELECT_RARE1 @42
+    SAY SELECT_RARE1 @42 /* Walking alone on the Coastway road!  How smart is this? */
     WRITE_LONG (0xa4 +  31 * 4) (0 - 1) //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
   BUT_ONLY
 END
@@ -143,7 +143,7 @@ END
 //Shar-teel
 ACTION_PHP_EACH ~bg1_sharteel_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY2 @72
+    SAY BATTLE_CRY2 @72 /* How would you like my sword tickling your innards? */
   BUT_ONLY
 END
 
@@ -151,49 +151,49 @@ END
 ACTION_PHP_EACH ~bg1_skie_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
     WRITE_LONG (0xa4 +  31 * 4) (0 - 1) //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
-    SAY HAPPY @70
+    SAY HAPPY @70 /* You're the finest group of friends I've ever had. */
   BUT_ONLY
 END
 
 //Sarevok
 ACTION_PHP_EACH ~bg2_sarevok_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @61
-    SAY BATTLE_CRY5 @62
-    SAY SELECT_ACTION4 @63
-    SAY SELECT_ACTION5 @64
-    SAY SELECT_ACTION6 @65
-    SAY SELECT_ACTION7 @66
+    SAY BATTLE_CRY4 @61 /* We children of Bhaal cannot be stopped! */
+    SAY BATTLE_CRY5 @62 /* Ha!  This arena I know well!! */
+    SAY SELECT_ACTION4 @63 /* I shall carve a path, if need be. */
+    SAY SELECT_ACTION5 @64 /* As you wish. */
+    SAY SELECT_ACTION6 @65 /* Hmph.  Not what I would have done. */
+    SAY SELECT_ACTION7 @66 /* So you say. */
   BUT_ONLY
 END
 
 //Valygar
 ACTION_PHP_EACH ~bg2_valygar_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @59
+    SAY BATTLE_CRY4 @59 /* You will not pass! */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttval1.wav~ ~override~ //@59
+COPY ~%MOD_FOLDER%/wav/g_ttval1.wav~ ~override~ //@59 /* You will not pass! */
 
 //Xan
 ACTION_PHP_EACH ~bg1_xan_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY AREA_DUNGEON @54
+    SAY AREA_DUNGEON @54 /* I have languished in these dismal vaults too long. */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttxan1.wav~ ~override~ //@54
+COPY ~%MOD_FOLDER%/wav/g_ttxan1.wav~ ~override~ //@54 /* I have languished in these dismal vaults too long. */
 
 //Yeslick
 ACTION_PHP_EACH ~bg1_yeslick_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY SELECT_RARE1 @53
+    SAY SELECT_RARE1 @53 /* Aye, who's there now?  More smithing, or did ye burrow into another river? */
   BUT_ONLY
 END
 
 //Yoshimo
 ACTION_PHP_EACH ~bg2_yoshimo_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    SAY BATTLE_CRY4 @44
+    SAY BATTLE_CRY4 @44 /* Let us get this over with! */
   BUT_ONLY
 END
-COPY ~%MOD_FOLDER%/wav/g_ttyos1.wav~ ~override~ //@44
+COPY ~%MOD_FOLDER%/wav/g_ttyos1.wav~ ~override~ //@44 /* Let us get this over with! */

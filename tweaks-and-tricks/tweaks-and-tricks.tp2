@@ -5,182 +5,187 @@ NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
-//MODDER setup_tra none
+MODDER setup_tra none
+//AUTO_TRA ~%MOD_FOLDER%/tra~
 
 LANGUAGE ~English~ ~ENGLISH~ ~tweaks-and-tricks/tra/english/game.tra~
 
 
-BEGIN ~Smarter familiars~
-REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
+BEGIN @74 /* Smarter familiars */
+REQUIRE_PREDICATE ENGINE_IS ~tob~ @75 /* Only BG2:ToB engine is supported */
 INCLUDE ~%MOD_FOLDER%/smarter_familiars/main.tph~
 
 
-BEGIN ~Faster familiars~
-REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
+BEGIN @76 /* Faster familiars */
+REQUIRE_PREDICATE ENGINE_IS ~tob~ @75 /* Only BG2:ToB engine is supported */
 INCLUDE ~%MOD_FOLDER%/faster_familiars/main.tph~
 
 
-BEGIN ~Resilient familiars~
-REQUIRE_PREDICATE ENGINE_IS ~tob~ ~Only BG2:ToB engine is supported~
+BEGIN @77 /* Resilient familiars */
+REQUIRE_PREDICATE ENGINE_IS ~tob~ @75 /* Only BG2:ToB engine is supported */
 INCLUDE ~%MOD_FOLDER%/resilient_familiars/main.tph~
 
 
-BEGIN ~Remove blur graphics from items~
+BEGIN @78 /* Remove blur graphics from items */
 INCLUDE ~%MOD_FOLDER%/no_blur/main.tph~
 
 
-BEGIN ~Additions only~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-SUBCOMPONENT ~Extended Soundsets for NPC~
+BEGIN @79 /* Additions only */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
+SUBCOMPONENT @81 /* Extended Soundsets for NPC */
 OUTER_SET dominate = 0
 COPY_EXISTING ~sw1h01.itm~ ~override/g_esad.itm~ //dummy detection file
 INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
 
-BEGIN ~BG1 soundsets prevail~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-SUBCOMPONENT ~Extended Soundsets for NPC~
+BEGIN @82 /* BG1 soundsets prevail */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
+SUBCOMPONENT @81 /* Extended Soundsets for NPC */
 OUTER_SET dominate = 1
 COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg1.itm~ //dummy detection file
 INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
 
-BEGIN ~BG2 soundsets prevail~
-REQUIRE_PREDICATE ((FILE_EXISTS_IN_GAME ~bg1start.2da~)) ~BGT only~
-SUBCOMPONENT ~Extended Soundsets for NPC~
+BEGIN @83 /* BG2 soundsets prevail */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
+SUBCOMPONENT @81 /* Extended Soundsets for NPC */
 OUTER_SET dominate = 2
 COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~ //dummy detection file
 INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
 
 
-BEGIN ~Reintroduce~
-SUBCOMPONENT ~BG1-style party interaction system~
+BEGIN @84 /* Reintroduce */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
+SUBCOMPONENT @85 /* BG1-style party interaction system */
 INCLUDE ~%MOD_FOLDER%/compliment/main.tph~
 
-BEGIN ~Reintroduce and adjust to framerate~
-SUBCOMPONENT ~BG1-style party interaction system~
+BEGIN @86 /* Reintroduce and adjust to framerate */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
+SUBCOMPONENT @85 /* BG1-style party interaction system */
 INCLUDE ~%MOD_FOLDER%/compliment/main.tph~
 INCLUDE ~%MOD_FOLDER%/compliment/framerate.tph~
 
-BEGIN ~Disable~
-SUBCOMPONENT ~BG1-style party interaction system~
+BEGIN @87 /* Disable */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @88 /* BGT or BG1 only */
+SUBCOMPONENT @85 /* BG1-style party interaction system */
 INCLUDE ~%MOD_FOLDER%/compliment/disable.tph~
 
 
-BEGIN ~No talking when hiding in shadows~
+BEGIN @89 /* No talking when hiding in shadows */
 INCLUDE ~%MOD_FOLDER%/no_talk_shadows/main.tph~
 
 
-BEGIN ~Make NPC soundsets available to PC~
+BEGIN @90 /* Make NPC soundsets available to PC */
 INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
 
 
-BEGIN ~Fair fights~
+BEGIN @91 /* Fair fights */
 INCLUDE ~%MOD_FOLDER%/fair_fights/main.tph~
 
 
-BEGIN ~Sensible Cloak of Mirroring~
+BEGIN @92 /* Sensible Cloak of Mirroring */
 INCLUDE ~%MOD_FOLDER%/cloak_of_mirroring/main.tph~
 
 
-BEGIN ~Spider form ignores web~
+BEGIN @93 /* Spider form ignores web */
 INCLUDE ~%MOD_FOLDER%/spider_form/main.tph~
 
 
-BEGIN ~Effects of scrolls and potions do not stack with themselves~
+BEGIN @94 /* Effects of scrolls and potions do not stack with themselves */
 INCLUDE ~%MOD_FOLDER%/potions_no_stack/main.tph~
 
 
 
-BEGIN ~Cheesy Slayer: full heal on change~
+BEGIN @95 /* Cheesy Slayer: full heal on change */
 COMPILE ~%MOD_FOLDER%/slayer/heal.d~
 
 
 
-BEGIN ~no loss~
-SUBCOMPONENT ~Cheesy Slayer: reputation~
+BEGIN @96 /* no loss */
+SUBCOMPONENT @97 /* Cheesy Slayer: reputation */
 COMPILE ~%MOD_FOLDER%/slayer/norep.d~
 
-BEGIN ~reduced loss~
-SUBCOMPONENT ~Cheesy Slayer: reputation~
+BEGIN @98 /* reduced loss */
+SUBCOMPONENT @97 /* Cheesy Slayer: reputation */
 COMPILE ~%MOD_FOLDER%/slayer/low_rep.d~
 
 
-BEGIN ~Gem, scroll, potion, ammo (GSPA)~
-SUBCOMPONENT ~Starting bags~
+BEGIN @99 /* Gem, scroll, potion, ammo (GSPA) */
+SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
 INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
 
-BEGIN ~GSPA + holding~
-SUBCOMPONENT ~Starting bags~
+BEGIN @101 /* GSPA + holding */
+SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
 
-BEGIN ~GSPA + holding - all bottomless!~
-SUBCOMPONENT ~Starting bags~
+BEGIN @102 /* GSPA + holding - all bottomless! */
+SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
 INCLUDE ~%MOD_FOLDER%/starting_bags/bottomless.tph~
 
 
 
-BEGIN ~Each stat gets +1~
-SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
+BEGIN @103 /* Each stat gets +1 */
+SUBCOMPONENT @104 /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
 ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat1.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
 
-BEGIN ~Each stat except Wisdom gets +1, Wisdom gets +3~
-SUBCOMPONENT ~Add BG1 tomes stats bonuses to new BG2 characters~
+BEGIN @105 /* Each stat except Wisdom gets +1, Wisdom gets +3 */
+SUBCOMPONENT @104 /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
 ADD_SPELL ~%MOD_FOLDER%/stat_bonuses/g_stat2.spl~ 4 0 ~g_stats~
 EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
 
 
-BEGIN ~Shops always buy goods at the same price~
+BEGIN @106 /* Shops always buy goods at the same price */
 INCLUDE ~%MOD_FOLDER%/no_shop_depreciation/main.tph~
 
 
-BEGIN ~Can't steal from fences~
-SUBCOMPONENT ~Close shop steal exploit~
+BEGIN @107 /* Can't steal from fences */
+SUBCOMPONENT @108 /* Close shop steal exploit */
 INCLUDE ~%MOD_FOLDER%/no_shop_steal/fence.tph~
 
-BEGIN ~Can't steal from any shops~
-SUBCOMPONENT ~Close shop steal exploit~
+BEGIN @109 /* Can't steal from any shops */
+SUBCOMPONENT @108 /* Close shop steal exploit */
 INCLUDE ~%MOD_FOLDER%/no_shop_steal/all.tph~
 
 
-BEGIN ~No XP farming~
+BEGIN @110 /* No XP farming */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @88 /* BGT or BG1 only */
 INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 
 
-BEGIN ~Easy traps: allow sensing in combat~
+BEGIN @111 /* Easy traps: allow sensing in combat */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_combat.g_~
 
-BEGIN ~Easy traps: increase trap sense range~
+BEGIN @112 /* Easy traps: increase trap sense range */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_range.g_~
 
-BEGIN ~stop moving~
-SUBCOMPONENT ~Easy traps: character action~
+BEGIN @113 /* stop moving */
+SUBCOMPONENT @114 /* Easy traps: character action */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_stop.g_~
 
-BEGIN ~stop moving and pause game~
-SUBCOMPONENT ~Easy traps: character action~
+BEGIN @115 /* stop moving and pause game */
+SUBCOMPONENT @114 /* Easy traps: character action */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_pause.g_~
 
-BEGIN ~Easy traps: center on character~
+BEGIN @116 /* Easy traps: center on character */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_view.g_~
 
-BEGIN ~Easy traps: play a sound~
+BEGIN @117 /* Easy traps: play a sound */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_sound.g_~
 
-BEGIN ~Easy traps: core (REQUIRED for any of previous "Easy traps" components to work)~
+BEGIN @118 /* Easy traps: core (REQUIRED for any of previous "Easy traps" components to work) */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_core.g_~
 INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
 
 
 
-BEGIN ~Less autosaves~
+BEGIN @119 /* Less autosaves */
 INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
 
 
-BEGIN ~True true sight~
+BEGIN @120 /* True true sight */
 INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~

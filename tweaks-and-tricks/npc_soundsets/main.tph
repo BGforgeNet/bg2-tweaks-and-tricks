@@ -151,7 +151,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY bg1_ssets BEGIN
   xzarr => xzar
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~bg1start.2da~ BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   ACTION_PHP_EACH bg1_ssets AS base => soundname BEGIN
     LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
   END
@@ -187,14 +187,14 @@ END
 
 //Jaheira
 OUTER_SPRINT soundname ~jahei2~
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT base ~jaher~
   LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
 END
 OUTER_SPRINT base ~jaheir~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT soundname ~jahei1~
   OUTER_SPRINT base ~jaheir~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
@@ -204,14 +204,14 @@ END
 
 //Viconia
 OUTER_SPRINT soundname ~vicon2~
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT base ~vicon~
   LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
 END
 OUTER_SPRINT base ~viconi~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT soundname ~vicon1~
   OUTER_SPRINT base ~viconi~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
@@ -221,14 +221,14 @@ END
 
 //edwin
 OUTER_SPRINT soundname ~edwin2~
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT base ~bedwin~
   LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
 END
 OUTER_SPRINT base ~edwin~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT base ~edwin~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
   OUTER_SPRINT soundname ~edwin1~
@@ -238,14 +238,14 @@ END
 
 //Minsc
 OUTER_SPRINT soundname ~minsc2~
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT base ~bgmnsc~
   LAUNCH_ACTION_MACRO ~COPY_BG1_SOUNDSET~
 END
 OUTER_SPRINT base ~minsc~
 LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   OUTER_SPRINT soundname ~minsc1~
   OUTER_SPRINT base ~minsc~
   LAUNCH_ACTION_MACRO ~COPY_BG2_SOUNDSET~
@@ -257,7 +257,7 @@ END
 
 //Imoen and Sarevok are special cases, have to do them manually
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
 //bg1 imoen
 COPY_EXISTING  ~bimoen09.wav~ ~sounds/_imoen1b.wav~ //Becoming Leader
   ~bimoen11.wav~ ~sounds/_imoen1c.wav~ //Tired
@@ -335,9 +335,10 @@ COPY_EXISTING  ~imoen08.wav~ ~sounds/_imoen2b.wav~ //Becoming Leader
   ~imoen48.wav~ ~sounds/_imoen26.wav~ //Spell Disrupted
   ~imoen49.wav~ ~sounds/_imoen27.wav~ //Set A Trap
 //bg1 additions:
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg1start.2da~) BEGIN
-COPY_EXISTING  ~bimoen17.wav~ ~sounds/_imoen2_.wav~ //Action Acknowledgement 8
-  ~bimoen14.wav~ ~sounds/_imoen2w.wav~ //Reaction to Party Member Death
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
+  COPY_EXISTING
+    ~bimoen17.wav~ ~sounds/_imoen2_.wav~ //Action Acknowledgement 8
+    ~bimoen14.wav~ ~sounds/_imoen2w.wav~ //Reaction to Party Member Death
 END
 
 
@@ -368,10 +369,8 @@ COPY_EXISTING
   ~sarevo36.wav~ ~sounds/_sarevo3t.wav~ //ack5
   ~sarevo37.wav~ ~sounds/_sarevo4u.wav~ //ack6
   ~sarevo38.wav~ ~sounds/_sarevo5v.wav~ //ack7
-  ~sarev05.wav~ ~_%soundname%_.wav~ //Action Acknowledgement 8
   ~sarevo39.wav~ ~sounds/_sarevo2x.wav~ //Rare Select 1
   ~sarevo40.wav~ ~sounds/_sarevo2y.wav~ //Rare Select 2
-  ~sarev06.wav~ ~_sarevokw.wav~ //Reaction to Party Member Death
   ~sarevo41.wav~ ~sounds/_sarevo2z.wav~ //Critical Hit Given
   ~sarevo42.wav~ ~sounds/_sarevo21.wav~ //Critical Miss
   ~sarevo43.wav~ ~sounds/_sarevo22.wav~ //Target Immune
@@ -380,6 +379,14 @@ COPY_EXISTING
   ~sarevo46.wav~ ~sounds/_sarevo25.wav~ //Successfully Hid In shadows
   ~sarevo47.wav~ ~sounds/_sarevo26.wav~ //Spell Disrupted
   ~sarevo48.wav~ ~sounds/_sarevo27.wav~ //Set A Trap
+//bg1 additions:
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
+  COPY_EXISTING
+    ~sarev05.wav~ ~_%soundname%_.wav~ //Action Acknowledgement 8
+    ~sarev06.wav~ ~_sarevokw.wav~ //Reaction to Party Member Death
+END
 
-//Other custom sounds
-INCLUDE ~%MOD_FOLDER%/npc_soundsets/cherry_pick.tph~
+//Other custom sounds (bg1 npc)
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
+  INCLUDE ~%MOD_FOLDER%/npc_soundsets/cherry_pick.tph~
+END
