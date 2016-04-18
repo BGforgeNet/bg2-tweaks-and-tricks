@@ -1,3 +1,11 @@
+/*
+ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN
+  OUTER_SPRINT sounds_dir ~lang/en_us~
+END ELSE BEGIN
+  OUTER_SPRINT sounds_dir ~sounds~
+END
+*/ EE is just making this too complicated
+
 DEFINE_ACTION_MACRO ~COPY_BG1_SOUNDSET~ BEGIN // pass %base% (NPC wav sound name common root) and %soundname% (new PC soundset name)
   ACTION_DEFINE_ASSOCIATIVE_ARRAY bg1_ss_map BEGIN
     03 => a  //  Battle Cry 1
@@ -26,7 +34,7 @@ DEFINE_ACTION_MACRO ~COPY_BG1_SOUNDSET~ BEGIN // pass %base% (NPC wav sound name
   END
   ACTION_PHP_EACH bg1_ss_map AS fnum => snum BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%base%%fnum%.wav~ BEGIN
-      COPY_EXISTING ~%base%%fnum%.wav~ ~sounds/_%soundname%%snum%.wav~
+      COPY_EXISTING ~%base%%fnum%.wav~ ~%sounds_dir%/_%soundname%%snum%.wav~
     END
   END
 END
@@ -73,7 +81,7 @@ DEFINE_ACTION_MACRO ~COPY_BG2_SOUNDSET~ BEGIN // pass %base% (NPC wav sound name
   END
   ACTION_PHP_EACH bg2_ss_map AS fnum => snum BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%base%%fnum%.wav~ BEGIN
-      COPY_EXISTING ~%base%%fnum%.wav~ ~sounds/_%soundname%%snum%.wav~
+      COPY_EXISTING ~%base%%fnum%.wav~ ~%sounds_dir%/_%soundname%%snum%.wav~
     END
   END
 END
@@ -121,7 +129,7 @@ DEFINE_ACTION_MACRO ~COPY_BG2_SOUNDSET_2~ BEGIN
   END
   ACTION_PHP_EACH bg2_ss_map2 AS fnum => snum BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%base%%fnum%.wav~ BEGIN
-      COPY_EXISTING ~%base%%fnum%.wav~ ~sounds/_%soundname%%snum%.wav~
+      COPY_EXISTING ~%base%%fnum%.wav~ ~%sounds_dir%/_%soundname%%snum%.wav~
     END
   END
 END
@@ -259,126 +267,126 @@ END
 
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
 //bg1 imoen
-COPY_EXISTING  ~bimoen09.wav~ ~sounds/_imoen1b.wav~ //Becoming Leader
-  ~bimoen11.wav~ ~sounds/_imoen1c.wav~ //Tired
-  ~bimoen05.wav~ ~sounds/_imoen1d.wav~ //Bored
-  ~bimoen18.wav~ ~sounds/_imoen1a.wav~ //Battle Cry
-  ~imoen15.wav~ ~sounds/_imoen18.wav~ //Battle Cry 2
-  ~imoen16.wav~ ~sounds/_imoen19.wav~ //Battle Cry 3
-  ~bimoen12.wav~ ~sounds/_imoen1l.wav~ //Being Hit
-  ~bimoen13.wav~ ~sounds/_imoen1m.wav~ //Dying
-  ~bimoen02.wav~ ~sounds/_imoen1e.wav~ //Badly Wounded
-  ~imoen22.wav~ ~sounds/_imoen1n.wav~ //In Forest
-  ~imoen23.wav~ ~sounds/_imoen1o.wav~ //In City
-  ~bimoen19.wav~ ~sounds/_imoen1p.wav~ //In Dungeon
-  ~imoen25.wav~ ~sounds/_imoen1q.wav~ //Daytime
-  ~imoen26.wav~ ~sounds/_imoen1r.wav~ //Nighttime
-  ~bimoen06.wav~ ~sounds/_imoen1f.wav~ //Selected 1
-  ~bimoen04.wav~ ~sounds/_imoen1g.wav~ //Selected 2
-  ~bimoen03.wav~ ~sounds/_imoen1h.wav~ //Selected 3
-  ~bimoen26.wav~ ~sounds/_imoen10.wav~ //Selected 6
-  ~bimoen24.wav~ ~sounds/_imoen1i.wav~ //Action Acknowledgement 1 
-  ~bimoen07.wav~ ~sounds/_imoen1j.wav~ //Action Acknowledgement 2 
-  ~bimoen17.wav~ ~sounds/_imoen1k.wav~ //Action Acknowledgement 3 
-  ~bimoen08.wav~ ~sounds/_imoen1s.wav~ //Action Acknowledgement 4
-  ~bimoen28.wav~ ~sounds/_imoen1t.wav~ //Action Acknowledgement 5
-  ~bimoen27.wav~ ~sounds/_imoen1u.wav~ //Action Acknowledgement 6
-  ~bimoen30.wav~ ~sounds/_imoen1v.wav~ //Action Acknowledgement 7
-  ~imoen33.wav~ ~sounds/_imoen1_.wav~ //Action Acknowledgement 8
-  ~bimoen16.wav~ ~sounds/_imoen1x.wav~ //Rare Select 1
-  ~bimoen01.wav~ ~sounds/_imoen1y.wav~ //Rare Select 2
-  ~bimoen14.wav~ ~sounds/_imoen1w.wav~ //Reaction to Party Member Death
-  ~imoen42.wav~ ~sounds/_imoen1z.wav~ //Critical Hit Given
-  ~imoen43.wav~ ~sounds/_imoen11.wav~ //Critical Miss
-  ~imoen44.wav~ ~sounds/_imoen12.wav~ //Target Immune
-  ~imoen45.wav~ ~sounds/_imoen13.wav~ //Inventory Full
-  ~imoen46.wav~ ~sounds/_imoen14.wav~ //Successfully Picked A Pocket
-  ~imoen47.wav~ ~sounds/_imoen15.wav~ //Successfully Hid In shadows
-  ~imoen48.wav~ ~sounds/_imoen16.wav~ //Spell Disrupted
-  ~imoen49.wav~ ~sounds/_imoen17.wav~ //Set A Trap
+COPY_EXISTING  ~bimoen09.wav~ ~%sounds_dir%/_imoen1b.wav~ //Becoming Leader
+  ~bimoen11.wav~ ~%sounds_dir%/_imoen1c.wav~ //Tired
+  ~bimoen05.wav~ ~%sounds_dir%/_imoen1d.wav~ //Bored
+  ~bimoen18.wav~ ~%sounds_dir%/_imoen1a.wav~ //Battle Cry
+  ~imoen15.wav~ ~%sounds_dir%/_imoen18.wav~ //Battle Cry 2
+  ~imoen16.wav~ ~%sounds_dir%/_imoen19.wav~ //Battle Cry 3
+  ~bimoen12.wav~ ~%sounds_dir%/_imoen1l.wav~ //Being Hit
+  ~bimoen13.wav~ ~%sounds_dir%/_imoen1m.wav~ //Dying
+  ~bimoen02.wav~ ~%sounds_dir%/_imoen1e.wav~ //Badly Wounded
+  ~imoen22.wav~ ~%sounds_dir%/_imoen1n.wav~ //In Forest
+  ~imoen23.wav~ ~%sounds_dir%/_imoen1o.wav~ //In City
+  ~bimoen19.wav~ ~%sounds_dir%/_imoen1p.wav~ //In Dungeon
+  ~imoen25.wav~ ~%sounds_dir%/_imoen1q.wav~ //Daytime
+  ~imoen26.wav~ ~%sounds_dir%/_imoen1r.wav~ //Nighttime
+  ~bimoen06.wav~ ~%sounds_dir%/_imoen1f.wav~ //Selected 1
+  ~bimoen04.wav~ ~%sounds_dir%/_imoen1g.wav~ //Selected 2
+  ~bimoen03.wav~ ~%sounds_dir%/_imoen1h.wav~ //Selected 3
+  ~bimoen26.wav~ ~%sounds_dir%/_imoen10.wav~ //Selected 6
+  ~bimoen24.wav~ ~%sounds_dir%/_imoen1i.wav~ //Action Acknowledgement 1 
+  ~bimoen07.wav~ ~%sounds_dir%/_imoen1j.wav~ //Action Acknowledgement 2 
+  ~bimoen17.wav~ ~%sounds_dir%/_imoen1k.wav~ //Action Acknowledgement 3 
+  ~bimoen08.wav~ ~%sounds_dir%/_imoen1s.wav~ //Action Acknowledgement 4
+  ~bimoen28.wav~ ~%sounds_dir%/_imoen1t.wav~ //Action Acknowledgement 5
+  ~bimoen27.wav~ ~%sounds_dir%/_imoen1u.wav~ //Action Acknowledgement 6
+  ~bimoen30.wav~ ~%sounds_dir%/_imoen1v.wav~ //Action Acknowledgement 7
+  ~imoen33.wav~ ~%sounds_dir%/_imoen1_.wav~ //Action Acknowledgement 8
+  ~bimoen16.wav~ ~%sounds_dir%/_imoen1x.wav~ //Rare Select 1
+  ~bimoen01.wav~ ~%sounds_dir%/_imoen1y.wav~ //Rare Select 2
+  ~bimoen14.wav~ ~%sounds_dir%/_imoen1w.wav~ //Reaction to Party Member Death
+  ~imoen42.wav~ ~%sounds_dir%/_imoen1z.wav~ //Critical Hit Given
+  ~imoen43.wav~ ~%sounds_dir%/_imoen11.wav~ //Critical Miss
+  ~imoen44.wav~ ~%sounds_dir%/_imoen12.wav~ //Target Immune
+  ~imoen45.wav~ ~%sounds_dir%/_imoen13.wav~ //Inventory Full
+  ~imoen46.wav~ ~%sounds_dir%/_imoen14.wav~ //Successfully Picked A Pocket
+  ~imoen47.wav~ ~%sounds_dir%/_imoen15.wav~ //Successfully Hid In shadows
+  ~imoen48.wav~ ~%sounds_dir%/_imoen16.wav~ //Spell Disrupted
+  ~imoen49.wav~ ~%sounds_dir%/_imoen17.wav~ //Set A Trap
 END //end of bg1 imoen
 
 //bg2 imoen
-COPY_EXISTING  ~imoen08.wav~ ~sounds/_imoen2b.wav~ //Becoming Leader
-  ~imoen09.wav~ ~sounds/_imoen2c.wav~ //Tired
-  ~imoen11.wav~ ~sounds/_imoen2d.wav~ //Bored
-  ~imoen15.wav~ ~sounds/_imoen2a.wav~ //Battle Cry
-  ~imoen16.wav~ ~sounds/_imoen28.wav~ //Battle Cry 2
-  ~imoen12.wav~ ~sounds/_imoen29.wav~ //Battle Cry 3
-  ~imoen18.wav~ ~sounds/_imoen2l.wav~ //Being Hit
-  ~imoen19.wav~ ~sounds/_imoen2m.wav~ //Dying
-  ~imoen21.wav~ ~sounds/_imoen2e.wav~ //Badly Wounded
-  ~imoen22.wav~ ~sounds/_imoen2n.wav~ //In Forest
-  ~imoen23.wav~ ~sounds/_imoen2o.wav~ //In City
-  ~imoen24.wav~ ~sounds/_imoen2p.wav~ //In Dungeon
-  ~imoen25.wav~ ~sounds/_imoen2q.wav~ //Daytime
-  ~imoen26.wav~ ~sounds/_imoen2r.wav~ //Nighttime
-  ~imoen27.wav~ ~sounds/_imoen2f.wav~ //Selected 1
-  ~imoen28.wav~ ~sounds/_imoen2g.wav~ //Selected 2
-  ~imoen29.wav~ ~sounds/_imoen2h.wav~ //Selected 3
-  ~imoen30.wav~ ~sounds/_imoen20.wav~ //Selected 6
-  ~imoen33.wav~ ~sounds/_imoen2i.wav~ //Action Acknowledgement 1 
-  ~imoen34.wav~ ~sounds/_imoen2j.wav~ //Action Acknowledgement 2 
-  ~imoen35.wav~ ~sounds/_imoen2k.wav~ //Action Acknowledgement 3 
-  ~imoen36.wav~ ~sounds/_imoen2s.wav~ //Action Acknowledgement 4
-  ~imoen37.wav~ ~sounds/_imoen2t.wav~ //Action Acknowledgement 5
-  ~imoen38.wav~ ~sounds/_imoen2u.wav~ //Action Acknowledgement 6
-  ~imoen39.wav~ ~sounds/_imoen2v.wav~ //Action Acknowledgement 7
-  ~imoen40.wav~ ~sounds/_imoen2x.wav~ //Rare Select 1
-  ~imoen41.wav~ ~sounds/_imoen2y.wav~ //Rare Select 2
-  ~imoen42.wav~ ~sounds/_imoen2z.wav~ //Critical Hit Given
-  ~imoen43.wav~ ~sounds/_imoen21.wav~ //Critical Miss
-  ~imoen44.wav~ ~sounds/_imoen22.wav~ //Target Immune
-  ~imoen45.wav~ ~sounds/_imoen23.wav~ //Inventory Full
-  ~imoen46.wav~ ~sounds/_imoen24.wav~ //Successfully Picked A Pocket
-  ~imoen47.wav~ ~sounds/_imoen25.wav~ //Successfully Hid In shadows
-  ~imoen48.wav~ ~sounds/_imoen26.wav~ //Spell Disrupted
-  ~imoen49.wav~ ~sounds/_imoen27.wav~ //Set A Trap
+COPY_EXISTING  ~imoen08.wav~ ~%sounds_dir%/_imoen2b.wav~ //Becoming Leader
+  ~imoen09.wav~ ~%sounds_dir%/_imoen2c.wav~ //Tired
+  ~imoen11.wav~ ~%sounds_dir%/_imoen2d.wav~ //Bored
+  ~imoen15.wav~ ~%sounds_dir%/_imoen2a.wav~ //Battle Cry
+  ~imoen16.wav~ ~%sounds_dir%/_imoen28.wav~ //Battle Cry 2
+  ~imoen12.wav~ ~%sounds_dir%/_imoen29.wav~ //Battle Cry 3
+  ~imoen18.wav~ ~%sounds_dir%/_imoen2l.wav~ //Being Hit
+  ~imoen19.wav~ ~%sounds_dir%/_imoen2m.wav~ //Dying
+  ~imoen21.wav~ ~%sounds_dir%/_imoen2e.wav~ //Badly Wounded
+  ~imoen22.wav~ ~%sounds_dir%/_imoen2n.wav~ //In Forest
+  ~imoen23.wav~ ~%sounds_dir%/_imoen2o.wav~ //In City
+  ~imoen24.wav~ ~%sounds_dir%/_imoen2p.wav~ //In Dungeon
+  ~imoen25.wav~ ~%sounds_dir%/_imoen2q.wav~ //Daytime
+  ~imoen26.wav~ ~%sounds_dir%/_imoen2r.wav~ //Nighttime
+  ~imoen27.wav~ ~%sounds_dir%/_imoen2f.wav~ //Selected 1
+  ~imoen28.wav~ ~%sounds_dir%/_imoen2g.wav~ //Selected 2
+  ~imoen29.wav~ ~%sounds_dir%/_imoen2h.wav~ //Selected 3
+  ~imoen30.wav~ ~%sounds_dir%/_imoen20.wav~ //Selected 6
+  ~imoen33.wav~ ~%sounds_dir%/_imoen2i.wav~ //Action Acknowledgement 1 
+  ~imoen34.wav~ ~%sounds_dir%/_imoen2j.wav~ //Action Acknowledgement 2 
+  ~imoen35.wav~ ~%sounds_dir%/_imoen2k.wav~ //Action Acknowledgement 3 
+  ~imoen36.wav~ ~%sounds_dir%/_imoen2s.wav~ //Action Acknowledgement 4
+  ~imoen37.wav~ ~%sounds_dir%/_imoen2t.wav~ //Action Acknowledgement 5
+  ~imoen38.wav~ ~%sounds_dir%/_imoen2u.wav~ //Action Acknowledgement 6
+  ~imoen39.wav~ ~%sounds_dir%/_imoen2v.wav~ //Action Acknowledgement 7
+  ~imoen40.wav~ ~%sounds_dir%/_imoen2x.wav~ //Rare Select 1
+  ~imoen41.wav~ ~%sounds_dir%/_imoen2y.wav~ //Rare Select 2
+  ~imoen42.wav~ ~%sounds_dir%/_imoen2z.wav~ //Critical Hit Given
+  ~imoen43.wav~ ~%sounds_dir%/_imoen21.wav~ //Critical Miss
+  ~imoen44.wav~ ~%sounds_dir%/_imoen22.wav~ //Target Immune
+  ~imoen45.wav~ ~%sounds_dir%/_imoen23.wav~ //Inventory Full
+  ~imoen46.wav~ ~%sounds_dir%/_imoen24.wav~ //Successfully Picked A Pocket
+  ~imoen47.wav~ ~%sounds_dir%/_imoen25.wav~ //Successfully Hid In shadows
+  ~imoen48.wav~ ~%sounds_dir%/_imoen26.wav~ //Spell Disrupted
+  ~imoen49.wav~ ~%sounds_dir%/_imoen27.wav~ //Set A Trap
 //bg1 additions:
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   COPY_EXISTING
-    ~bimoen17.wav~ ~sounds/_imoen2_.wav~ //Action Acknowledgement 8
-    ~bimoen14.wav~ ~sounds/_imoen2w.wav~ //Reaction to Party Member Death
+    ~bimoen17.wav~ ~%sounds_dir%/_imoen2_.wav~ //Action Acknowledgement 8
+    ~bimoen14.wav~ ~%sounds_dir%/_imoen2w.wav~ //Reaction to Party Member Death
 END
 
 
 //ToB Sarevok
 COPY_EXISTING
-  ~sarevo07.wav~ ~sounds/_sarevo2b.wav~ //Becoming Leader
-  ~sarevo08.wav~ ~sounds/_sarevo2c.wav~ //Tired
-  ~sarevo09.wav~ ~sounds/_sarevo2d.wav~ //Bored
-  ~sarevo10.wav~ ~sounds/_sarevo2a.wav~ //Battle Cry
-  ~sarevo11.wav~ ~sounds/_sarevo28.wav~ //Battle Cry 2
-  ~sarevo12.wav~ ~sounds/_sarevo29.wav~ //Battle Cry 3
-  ~sarevo15.wav~ ~sounds/_sarevo2l.wav~ //Being Hit
-  ~sarevo16.wav~ ~sounds/_sarevo2m.wav~ //Dying
-  ~sarevo18.wav~ ~sounds/_sarevo2e.wav~ //Badly Wounded
-  ~sarevo19.wav~ ~sounds/_sarevo2n.wav~ //In Forest
-  ~sarevo20.wav~ ~sounds/_sarevo2o.wav~ //In City
-  ~sarevo22.wav~ ~sounds/_sarevo2p.wav~ //In Dungeon
-  ~sarevo23.wav~ ~sounds/_sarevo2q.wav~ //Daytime
-  ~sarevo24.wav~ ~sounds/_sarevo2r.wav~ //Nighttime
-  ~sarevo26.wav~ ~sounds/_sarevo2f.wav~ //Selected 1
-  ~sarevo27.wav~ ~sounds/_sarevo2g.wav~ //Selected 2
-  ~sarevo28.wav~ ~sounds/_sarevo2h.wav~ //Selected 3
-  ~sarevo29.wav~ ~sounds/_sarevo20.wav~ //Selected 6
-  ~sarevo32.wav~ ~sounds/_sarevo2i.wav~ //Action Acknowledgement 1 
-  ~sarevo33.wav~ ~sounds/_sarevo2j.wav~ //Action Acknowledgement 2 
-  ~sarevo34.wav~ ~sounds/_sarevo2k.wav~ //Action Acknowledgement 3 
-  ~sarevo35.wav~ ~sounds/_sarevo2s.wav~ //ack4
-  ~sarevo36.wav~ ~sounds/_sarevo3t.wav~ //ack5
-  ~sarevo37.wav~ ~sounds/_sarevo4u.wav~ //ack6
-  ~sarevo38.wav~ ~sounds/_sarevo5v.wav~ //ack7
-  ~sarevo39.wav~ ~sounds/_sarevo2x.wav~ //Rare Select 1
-  ~sarevo40.wav~ ~sounds/_sarevo2y.wav~ //Rare Select 2
-  ~sarevo41.wav~ ~sounds/_sarevo2z.wav~ //Critical Hit Given
-  ~sarevo42.wav~ ~sounds/_sarevo21.wav~ //Critical Miss
-  ~sarevo43.wav~ ~sounds/_sarevo22.wav~ //Target Immune
-  ~sarevo44.wav~ ~sounds/_sarevo23.wav~ //Inventory Full
-  ~sarevo45.wav~ ~sounds/_sarevo24.wav~ //Successfully Picked A Pocket
-  ~sarevo46.wav~ ~sounds/_sarevo25.wav~ //Successfully Hid In shadows
-  ~sarevo47.wav~ ~sounds/_sarevo26.wav~ //Spell Disrupted
-  ~sarevo48.wav~ ~sounds/_sarevo27.wav~ //Set A Trap
+  ~sarevo07.wav~ ~%sounds_dir%/_sarevo2b.wav~ //Becoming Leader
+  ~sarevo08.wav~ ~%sounds_dir%/_sarevo2c.wav~ //Tired
+  ~sarevo09.wav~ ~%sounds_dir%/_sarevo2d.wav~ //Bored
+  ~sarevo10.wav~ ~%sounds_dir%/_sarevo2a.wav~ //Battle Cry
+  ~sarevo11.wav~ ~%sounds_dir%/_sarevo28.wav~ //Battle Cry 2
+  ~sarevo12.wav~ ~%sounds_dir%/_sarevo29.wav~ //Battle Cry 3
+  ~sarevo15.wav~ ~%sounds_dir%/_sarevo2l.wav~ //Being Hit
+  ~sarevo16.wav~ ~%sounds_dir%/_sarevo2m.wav~ //Dying
+  ~sarevo18.wav~ ~%sounds_dir%/_sarevo2e.wav~ //Badly Wounded
+  ~sarevo19.wav~ ~%sounds_dir%/_sarevo2n.wav~ //In Forest
+  ~sarevo20.wav~ ~%sounds_dir%/_sarevo2o.wav~ //In City
+  ~sarevo22.wav~ ~%sounds_dir%/_sarevo2p.wav~ //In Dungeon
+  ~sarevo23.wav~ ~%sounds_dir%/_sarevo2q.wav~ //Daytime
+  ~sarevo24.wav~ ~%sounds_dir%/_sarevo2r.wav~ //Nighttime
+  ~sarevo26.wav~ ~%sounds_dir%/_sarevo2f.wav~ //Selected 1
+  ~sarevo27.wav~ ~%sounds_dir%/_sarevo2g.wav~ //Selected 2
+  ~sarevo28.wav~ ~%sounds_dir%/_sarevo2h.wav~ //Selected 3
+  ~sarevo29.wav~ ~%sounds_dir%/_sarevo20.wav~ //Selected 6
+  ~sarevo32.wav~ ~%sounds_dir%/_sarevo2i.wav~ //Action Acknowledgement 1 
+  ~sarevo33.wav~ ~%sounds_dir%/_sarevo2j.wav~ //Action Acknowledgement 2 
+  ~sarevo34.wav~ ~%sounds_dir%/_sarevo2k.wav~ //Action Acknowledgement 3 
+  ~sarevo35.wav~ ~%sounds_dir%/_sarevo2s.wav~ //ack4
+  ~sarevo36.wav~ ~%sounds_dir%/_sarevo3t.wav~ //ack5
+  ~sarevo37.wav~ ~%sounds_dir%/_sarevo4u.wav~ //ack6
+  ~sarevo38.wav~ ~%sounds_dir%/_sarevo5v.wav~ //ack7
+  ~sarevo39.wav~ ~%sounds_dir%/_sarevo2x.wav~ //Rare Select 1
+  ~sarevo40.wav~ ~%sounds_dir%/_sarevo2y.wav~ //Rare Select 2
+  ~sarevo41.wav~ ~%sounds_dir%/_sarevo2z.wav~ //Critical Hit Given
+  ~sarevo42.wav~ ~%sounds_dir%/_sarevo21.wav~ //Critical Miss
+  ~sarevo43.wav~ ~%sounds_dir%/_sarevo22.wav~ //Target Immune
+  ~sarevo44.wav~ ~%sounds_dir%/_sarevo23.wav~ //Inventory Full
+  ~sarevo45.wav~ ~%sounds_dir%/_sarevo24.wav~ //Successfully Picked A Pocket
+  ~sarevo46.wav~ ~%sounds_dir%/_sarevo25.wav~ //Successfully Hid In shadows
+  ~sarevo47.wav~ ~%sounds_dir%/_sarevo26.wav~ //Spell Disrupted
+  ~sarevo48.wav~ ~%sounds_dir%/_sarevo27.wav~ //Set A Trap
 //bg1 additions:
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   COPY_EXISTING

@@ -75,7 +75,7 @@ INCLUDE ~%MOD_FOLDER%/no_talk_shadows/main.tph~
 
 
 BEGIN @90 /* Make NPC soundsets available to PC */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+REQUIRE_PREDICATE ((GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) AND NOT GAME_IS ~bgee bg2ee eet~) @123 /* EEs not supported. Try ... instead */
 INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
 
 
