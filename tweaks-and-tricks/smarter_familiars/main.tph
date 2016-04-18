@@ -183,7 +183,9 @@ BEGIN
       WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
     BUT_ONLY
   END
-  EXTEND_BOTTOM ~baldur25.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
+  ACTION_IF (GAME_INCLUDES ~tob~) BEGIN
+    EXTEND_BOTTOM ~baldur25.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
+  END
 END
 
 ACTION_FOR_EACH familiar_dialog IN
@@ -194,10 +196,12 @@ ACTION_FOR_EACH familiar_dialog IN
   famil3
   famil325
 BEGIN
-  COMPILE EVAL ~%MOD_FOLDER%/familiars/familiars.d~
+  ACTION_IF FILE_EXISTS_IN_GAME ~%familiar_dialog%.dlg~ BEGIN  
+    COMPILE EVAL ~%MOD_FOLDER%/familiars/familiars.d~
+  END
 END
 
-
+/* this is a failed experiment
 <<<<<<<< .../cheese-inlined/g_lock.baf
 IF
   Global("g_ContUnlocked","LOCALS",0)
@@ -249,3 +253,4 @@ THEN
     Continue()
 END
 >>>>>>>>
+*/
