@@ -152,3 +152,9 @@
 @119  = ~Less autosaves~
 @120  = ~True true sight~
 @121  = ~BG1 content not present~
+@122  = ~BG saga only~
+@123  = ~~
+@124  = ~Requires ToB or EE engine~
+@125  = ~Requires BG2 or EE engine~
+@126  = ~Requires BG2~
+@127  = ~BGT only~
