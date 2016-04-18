@@ -4,7 +4,9 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN
 END ELSE BEGIN
   OUTER_SPRINT sounds_dir ~sounds~
 END
-*/ EE is just making this too complicated
+*/ //EE is just making this too complicated
+
+OUTER_SPRINT sounds_dir ~sounds~
 
 DEFINE_ACTION_MACRO ~COPY_BG1_SOUNDSET~ BEGIN // pass %base% (NPC wav sound name common root) and %soundname% (new PC soundset name)
   ACTION_DEFINE_ASSOCIATIVE_ARRAY bg1_ss_map BEGIN
