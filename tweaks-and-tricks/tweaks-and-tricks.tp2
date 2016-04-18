@@ -75,7 +75,7 @@ INCLUDE ~%MOD_FOLDER%/no_talk_shadows/main.tph~
 
 
 BEGIN @90 /* Make NPC soundsets available to PC */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
 
 
@@ -95,7 +95,7 @@ INCLUDE ~%MOD_FOLDER%/spider_form/main.tph~
 
 
 BEGIN @94 /* Effects of scrolls and potions do not stack with themselves */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 INCLUDE ~%MOD_FOLDER%/potions_no_stack/main.tph~
 
 
@@ -172,26 +172,33 @@ INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 
 
 BEGIN @111 /* Easy traps: allow sensing in combat */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_combat.g_~
 
 BEGIN @112 /* Easy traps: increase trap sense range */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_range.g_~
 
 BEGIN @113 /* stop moving */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 SUBCOMPONENT @114 /* Easy traps: character action */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_stop.g_~
 
 BEGIN @115 /* stop moving and pause game */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 SUBCOMPONENT @114 /* Easy traps: character action */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_pause.g_~
 
 BEGIN @116 /* Easy traps: center on character */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_view.g_~
 
 BEGIN @117 /* Easy traps: play a sound */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_sound.g_~
 
 BEGIN @118 /* Easy traps: core (REQUIRED for any of previous "Easy traps" components to work) */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_core.g_~
 INCLUDE ~%MOD_FOLDER%/easy_traps/main.tph~
 
