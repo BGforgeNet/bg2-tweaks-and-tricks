@@ -109,6 +109,12 @@ ACTION_DEFINE_ARRAY bg1_khalid_cre BEGIN
   khalid6
 END
 
+ACTION_DEFINE_ARRAY bg1_kivan_cre BEGIN
+  kivan
+  kivan4
+  kivan6
+END
+
 ACTION_DEFINE_ARRAY bg2_keldorn_cre BEGIN
   keldor8
   keldor9
