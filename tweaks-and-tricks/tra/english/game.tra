@@ -159,7 +159,7 @@
 @126  = ~Requires BG2~
 @127  = ~BGT only~
 @128  = ~Weightless ammo~
-@129  = ~~
+@129  = ~All easy traps components must be installed before core~
 
 //ext soundsets again
 @130  = ~You evil ways end here!~ [g_ttaja1]
