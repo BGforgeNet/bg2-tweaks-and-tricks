@@ -44,6 +44,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
   - [Starting bags](#starting-bags)
   - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
   - [Shops always buy goods at the same price](#shops-always-buy-goods-at-the-same-price)
+  - [Weightless flasher swarmers]
 - [Anti-cheese](#anti-cheese)
   - [Close shop steal exploit](#close-shop-steal-exploit)
   - [No XP farming](#no-xp-farming)
@@ -246,6 +247,11 @@ To brand new BG2 charaters, gives the stat bonuses that they were supposed to ga
 #### Shops always buy goods at the same price
 Makes store buying price constant, regardless of how many items are already in stock. Now, you don't have to pile up equipment before selling to get the max money for it. The price is always the same!
 
+
+#### Weightless ammo
+Make throwing daggers, axes and darts weightless.
+
+If [PPG banterpack users](http://www.pocketplane.net/bant) is install, it will also affect Jan's new ammo
 
 ### Anti-cheese
 

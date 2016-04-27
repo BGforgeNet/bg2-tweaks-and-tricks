@@ -211,3 +211,7 @@ INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
 BEGIN @120 /* True true sight */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
 INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~
+
+
+BEGIN @128 /* Weightless ammo */
+INCLUDE ~%MOD_FOLDER%/ammo_weight/main.tpa~
