@@ -158,3 +158,9 @@
 @125  = ~Requires BG2 or EE engine~
 @126  = ~Requires BG2~
 @127  = ~BGT only~
+@128  = ~Weightless ammo~
+@129  = ~~
+
+//ext soundsets again
+@130  = ~You evil ways end here!~ [g_ttaja1]
+@131  = ~Draw steel!~ [g_ttaja2]

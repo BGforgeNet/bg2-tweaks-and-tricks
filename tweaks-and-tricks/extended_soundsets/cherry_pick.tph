@@ -7,6 +7,16 @@ ACTION_PHP_EACH ~bg2_aerie_cre~ AS npc => cre BEGIN
   BUT_ONLY
 END
 
+//Ajantis
+ACTION_PHP_EACH ~bg1_ajantis_cre~ AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    SAY BATTLE_CRY2 @130 /* You evil ways end here! */
+    SAY BATTLE_CRY3 @131 /* Draw steel! */
+  BUT_ONLY
+END
+COPY ~%MOD_FOLDER%/wav/g_ttaja1.wav~ ~override~ //@130
+COPY ~%MOD_FOLDER%/wav/g_ttaja2.wav~ ~override~ //@131
+
 //Alora
 ACTION_PHP_EACH ~bg1_alora_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~

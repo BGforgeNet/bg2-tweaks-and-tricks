@@ -9,6 +9,12 @@ ACTION_DEFINE_ARRAY bg2_aerie_cre BEGIN
   aerie12
 END
 
+ACTION_DEFINE_ARRAY bg1_ajantis_cre BEGIN
+  ajanti
+  ajanti4
+  ajanti6
+END
+
 ACTION_DEFINE_ARRAY bg1_alora_cre BEGIN
   alora
   alora6
