@@ -220,3 +220,7 @@ INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~
 
 BEGIN @128 /* Weightless ammo */
 INCLUDE ~%MOD_FOLDER%/ammo_weight/main.tpa~
+
+
+BEGIN @134 /* Sensible Otiluke's Sphere */
+INCLUDE ~%MOD_FOLDER%/otiluke/main.tpa~
