@@ -224,3 +224,6 @@ INCLUDE ~%MOD_FOLDER%/ammo_weight/main.tpa~
 
 BEGIN @134 /* Sensible Otiluke's Sphere */
 INCLUDE ~%MOD_FOLDER%/otiluke/main.tpa~
+
+BEGIN @135 /* Improved strongholds */
+INCLUDE ~%MOD_FOLDER%/improved_strongholds/main.tpa~
