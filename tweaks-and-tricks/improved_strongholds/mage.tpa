@@ -1,0 +1,36 @@
+//Mage
+<<<<<<<< .../tnt-inlined/improved_strongholds/mage.baf
+IF
+  GlobalTimerNotExpired("ApprentiBuildTimer","GLOBAL")
+  Global("g_tnt_mage_notif","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_mage_notif","GLOBAL",0)
+END
+IF
+  !Global("ApprentiOver","GLOBAL",1)
+  GlobalTimerExpired("ApprentiBuildTimer","GLOBAL")
+  Global("g_tnt_mage_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_mage_notif","GLOBAL",1)
+    DisplayString(Player1,@137) //The apprentices must have finished the task. Time to check up on them.
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/mage.baf~ EVAL
+COPY_EXISTING ~baldur.bcs~ ~override~ //Set NatulaSpawn in dialog, not script
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~SetGlobal("NatulaSpawn","GLOBAL",1)~ ~~
+  END
+BUT_ONLY
+<<<<<<<< .../tnt-inlined/improved_strongholds/mgass01.d
+REPLACE_ACTION_TEXT mgass01
+~SetGlobal("SpawnTeosAssasin","GLOBAL",1)~
+~SetGlobal("SpawnTeosAssasin","GLOBAL",1)
+SetGlobal("NatulaSpawn","GLOBAL",1)
+~
+>>>>>>>>
+COMPILE ~.../tnt-inlined/improved_strongholds/mgass01.d~

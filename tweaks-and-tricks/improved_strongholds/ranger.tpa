@@ -1,0 +1,51 @@
+// Ranger
+COPY_EXISTING //speed up Delon and Mairyn
+  ~delon.cre~    ~override~
+  ~rspirit1.cre~ ~override~
+  ADD_CRE_ITEM ~boot01~ #0 #0 #0 ~unstealable&undroppable~ ~boots~
+BUT_ONLY
+COPY_EXISTING ~ar1100.bcs~ ~override~ //create Mairyn next to the player
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE
+      ~CreateCreatureObjectOffScreen("rspirit1",Player1,0,0,0)~
+      ~CreateCreatureObject("rspirit1",Player1,0,0,0)~
+  END
+BUT_ONLY
+COPY_EXISTING ~baldur.bcs~ ~override~ //create Delon next to the player
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE
+      ~CreateCreatureObjectOffScreen("delon",Player1,0,0,0)~
+      ~CreateCreatureObject("delon",Player1,0,0,0)~
+  END
+BUT_ONLY
+COPY_EXISTING ~minsc.bcs~ ~override~ //create Delon next to Minsc
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE
+      ~CreateCreatureObjectOffScreen("delon",Myself,0,0,0)~
+      ~CreateCreatureObject("delon",Myself,0,0,0)~
+  END
+BUT_ONLY
+COPY_EXISTING ~delon.bcs~ ~override~ //Delon talks to Minsc from distance
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE
+      ~Dialogue("Minsc")~
+      ~StartDialogNoSet("Minsc")~
+  END
+BUT_ONLY
+
+<<<<<<<< .../tnt-inlined/improved_strongholds/ranger.baf
+IF
+  Global("RangerProtector","GLOBAL",1)
+  GlobalTimerExpired("MairynAppear","GLOBAL")
+//  Global("MairynSpawn","AR1100",0)
+  Global("g_tnt_ranger_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_ranger_notif","GLOBAL",1)
+    DisplayString(Player1,@139) //It's time to visit the cabin.
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/ranger.baf~ EVAL

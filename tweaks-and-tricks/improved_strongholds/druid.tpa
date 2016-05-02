@@ -1,0 +1,38 @@
+//Druid
+<<<<<<<< .../tnt-inlined/improved_strongholds/druid.baf
+IF
+  Global("DruidStronghold","GLOBAL",1)
+  Global("DruidQuest1","GLOBAL",0)
+  Global("g_tnt_druid_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_druid_notif","GLOBAL",1)
+    DisplayString(Player1,@138) //The Grove awaits.
+END
+
+IF
+  GlobalTimerNotExpired("DruidQuest2Begin","GLOBAL")
+  Global("g_tnt_druid_notif","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_druid_notif","GLOBAL",0)
+END
+
+IF
+  GlobalTimerExpired("DruidQuest2Begin","GLOBAL")
+  Global("DruidStronghold","GLOBAL",1)
+  Global("DruidQuest2","GLOBAL",0)
+  Global("g_tnt_druid_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_druid_notif","GLOBAL",1)
+    DisplayString(Player1,@138) //The Grove awaits.
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/druid.baf~ EVAL
