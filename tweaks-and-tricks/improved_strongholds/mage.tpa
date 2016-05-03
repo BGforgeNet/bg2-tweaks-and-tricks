@@ -1,4 +1,4 @@
-//Mage
+//Add notification about apprenti items
 <<<<<<<< .../tnt-inlined/improved_strongholds/mage.baf
 IF
   GlobalTimerNotExpired("ApprentiBuildTimer","GLOBAL")
@@ -21,7 +21,10 @@ THEN
 END
 >>>>>>>>
 EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/mage.baf~ EVAL
-COPY_EXISTING ~baldur.bcs~ ~override~ //Set NatulaSpawn in dialog, not script
+
+
+//Ensure Natula spawns again if he couldn't talk the first time
+COPY_EXISTING ~baldur.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~SetGlobal("NatulaSpawn","GLOBAL",1)~ ~~
   END
@@ -34,3 +37,184 @@ SetGlobal("NatulaSpawn","GLOBAL",1)
 ~
 >>>>>>>>
 COMPILE ~.../tnt-inlined/improved_strongholds/mgass01.d~
+
+
+//Make Morul create a batch of potions every week
+<<<<<<<< .../tnt-inlined/improved_strongholds/mage_potion.baf
+IF
+  GlobalTimerNotExpired("MorulMaking","GLOBAL")
+  Global("g_tnt_mage_potion_notif","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_mage_potion_notif","GLOBAL",0)
+END
+IF
+  GlobalTimerExpired("MorulMaking","GLOBAL")
+  Global("g_tnt_mage_potion_notif","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_mage_potion_notif","GLOBAL",1)
+    DisplayString(Player1,@141) //Morul has prepared a new batch of potions.
+    IncrementGlobal("g_tnt_mage_potion_count","GLOBAL",5) //count of potions
+    SetGlobalTimer("MorulMaking","GLOBAL",SEVEN_DAYS)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/mage_potion.baf~ EVAL //notification and count
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY g_potions BEGIN
+  POTN02 => ~Potion of Fire Resistance~
+  POTN03 => ~Potion of Hill Giant Strength~
+  POTN04 => ~Potion of Frost Giant Strength~
+  POTN05 => ~Potion of Fire Giant Strength~
+  POTN06 => ~Potion of Cloud Giant Strength~
+  POTN07 => ~Potion of Storm Giant Strength~
+  POTN08 => ~Potion of Healing~
+  POTN09 => ~Potion of Heroism~
+  POTN10 => ~Potion of Invisibility~
+  POTN11 => ~Potion of Invulnerability~
+  POTN12 => ~Potion of Stone Giant Strength~
+  POTN13 => ~Oil of Fiery Burning~
+  POTN14 => ~Oil of Speed~
+  POTN17 => ~Elixir of Health~
+  POTN18 => ~Potion of Absorption~
+  POTN19 => ~Potion of Agility~
+  POTN20 => ~Antidote~
+  POTN21 => ~Potion of Clarity~
+  POTN22 => ~Potion of Cold Resistance~
+  POTN24 => ~Potion of Defense~
+  POTN26 => ~Potion of Explosions~
+  POTN27 => ~Potion of Firebreath~
+  POTN28 => ~Potion of Fortitude~
+  POTN29 => ~Potion of Genius~
+  POTN30 => ~Potion of Infravision~
+  POTN31 => ~Potion of Insulation~
+  POTN33 => ~Potion of Magic Blocking~
+  POTN32 => ~Antidote~
+  POTN34 => ~Potion of Magic Protection~
+  POTN35 => ~Potion of Magic Shielding~
+  POTN36 => ~Potion of Master Thievery~
+  POTN37 => ~Potion of Mind Focusing~
+  POTN38 => ~Potion of Mirrored Eyes~
+  POTN39 => ~Potion of Perception~
+  POTN40 => ~Potion of Invulnerability~
+  POTN41 => ~Potion of Power~
+  POTN42 => ~Potion of Regeneration~
+  POTN43 => ~Potion of Insight~
+  POTN44 => ~Potion of Strength~
+  POTN45 => ~Potion of Freedom~
+  POTN46 => ~Potion of Stone Form~
+  POTN52 => ~Potion of Extra Healing~
+  POTN55 => ~Potion of Superior Healing~
+END
+
+OUTER_SPRINT potion_create_action ~~
+ACTION_PHP_EACH g_potions AS item => name BEGIN
+  OUTER_SPRINT potion_create_action ~%potion_create_action%
+  RESPONSE #1
+    ActionOverride("Golem Room Table",CreateItem("%item%",0,0,0))
+    IncrementGlobal("g_tnt_mage_potion_count","GLOBAL",-1) //count of potions
+~
+END
+
+
+//old bcs block to set timer
+<<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_old1.baf
+IF
+  GlobalTimerExpired("MorulMaking","GLOBAL")
+  Global("mgPotionReady","AR0411",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MorulMaking","GLOBAL",SEVEN_DAYS)
+    SetGlobal("mgPotionReady","AR0411",1)
+END
+>>>>>>>>
+
+//old bcs block to give potions
+<<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_old2.baf
+IF
+  Global("mgPotionMade","AR0411",1)
+THEN
+  RESPONSE #10
+    SetGlobal("mgPotionMade","AR0411",0)
+    GiveItemCreate("POTN17",Player1,1,0,0)
+    GiveItemCreate("POTN02",Player1,1,0,0)
+    GiveItemCreate("POTN14",Player1,1,0,0)
+    GiveItemCreate("POTN29",Player1,1,0,0)
+    GiveItemCreate("POTN29",Player1,1,0,0)
+  RESPONSE #10
+    SetGlobal("mgPotionMade","AR0411",0)
+    GiveItemCreate("POTN36",Player1,1,0,0)
+    GiveItemCreate("POTN39",Player1,1,0,0)
+    GiveItemCreate("POTN40",Player1,1,0,0)
+    GiveItemCreate("POTN43",Player1,1,0,0)
+    GiveItemCreate("POTN52",Player1,1,0,0)
+  RESPONSE #10
+    SetGlobal("mgPotionMade","AR0411",0)
+    GiveItemCreate("POTN24",Player1,1,0,0)
+    GiveItemCreate("POTN22",Player1,1,0,0)
+    GiveItemCreate("POTN19",Player1,1,0,0)
+    GiveItemCreate("POTN27",Player1,1,0,0)
+    GiveItemCreate("POTN54",Player1,1,0,0)
+  RESPONSE #10
+    SetGlobal("mgPotionMade","AR0411",0)
+    GiveItemCreate("POTN11",Player1,1,0,0)
+    GiveItemCreate("POTN04",Player1,1,0,0)
+    GiveItemCreate("POTN42",Player1,1,0,0)
+    GiveItemCreate("POTN46",Player1,1,0,0)
+    GiveItemCreate("POTN29",Player1,1,0,0)
+END
+>>>>>>>>
+
+//empty bcs block for replacement
+<<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_empty.baf
+>>>>>>>>
+
+//new bcs block to create potions on table in golem room
+<<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_new.baf
+IF
+  GlobalGT("g_tnt_mage_potion_count","GLOBAL",0)
+THEN
+%potion_create_action%
+END
+>>>>>>>>
+EXTEND_BOTTOM ~ar0411.bcs~ ~.../tnt-inlined/improved_strongholds/ar0411_new.baf~ EVAL //actually create potions
+
+COPY_EXISTING ~ar0411.bcs~ ~override~ //disable original potions given by area script
+  R_B_B CASE_INSENSITIVE
+    ~.../tnt-inlined/improved_strongholds/ar0411_old1.baf~
+    ~.../tnt-inlined/improved_strongholds/ar0411_empty.baf~
+    ON_MISMATCH
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE
+          ~Global("mgPotionMade","AR0411",1)~
+          ~False()
+           Global("mgPotionMade","AR0411",1)~
+      END
+    END
+  R_B_B CASE_INSENSITIVE
+    ~.../tnt-inlined/improved_strongholds/ar0411_old2.baf~
+    ~.../tnt-inlined/improved_strongholds/ar0411_empty.baf~
+    ON_MISMATCH
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE
+          ~Global("mgPotionReady","AR0411",1)~
+          ~False()
+           Global("mgPotionReady","AR0411",1)~
+      END
+    END
+BUT_ONLY
+
+//Disable old potion lines in Morul dialogue
+<<<<<<<< .../tnt-inlined/improved_strongholds/mgappr02.d
+ADD_STATE_TRIGGER mgappr02 118 ~False()~ 119
+
+APPEND mgappr02
+  IF ~InPartySlot(LastTalkedToBy,0)
+      Global("MageStrongHoldDone","AR0411",3)~
+  BEGIN g_potions
+    SAY @142
+    IF ~~ THEN EXIT
+  END
+END
+>>>>>>>>
+COMPILE ~.../tnt-inlined/improved_strongholds/mgappr02.d~
