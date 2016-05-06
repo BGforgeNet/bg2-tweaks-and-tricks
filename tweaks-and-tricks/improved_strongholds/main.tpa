@@ -6,5 +6,6 @@ INCLUDE ~%comp_dir%/druid.tpa~
 INCLUDE ~%comp_dir%/fighter.tpa~
 INCLUDE ~%comp_dir%/mage.tpa~
 INCLUDE ~%comp_dir%/ranger.tpa~
+INCLUDE ~%comp_dir%/cleric.tpa~
 
 INCLUDE ~%comp_dir%/other.tpa~

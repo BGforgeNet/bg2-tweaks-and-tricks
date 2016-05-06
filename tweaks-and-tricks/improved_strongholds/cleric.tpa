@@ -1,0 +1,70 @@
+//cleric | helm
+<<<<<<<< .../tnt-inlined/improved_strongholds/cleric.baf
+IF
+  GlobalTimerExpired("HelmbyrReturn","GLOBAL")
+  Global("HelmbyrEnd","GLOBAL",0)
+  !Dead("helmbyr")
+  Global("g_tnt_cleric_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_cleric_notif","GLOBAL",1)
+    DisplayString(Player1,@143) //Your presence is required at the church. The needs of the faithful must be tended to.
+END
+IF
+  GlobalTimerNotExpired("HelmbyrReturn","GLOBAL")
+  Global("g_tnt_cleric_notif","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_cleric_notif","GLOBAL",0)
+END
+
+
+IF
+  GlobalTimerExpired("LatlaraReturn","GLOBAL")
+  Global("LatlaraEnd","GLOBAL",0)
+  !Dead("Latlara")
+  Global("g_tnt_cleric_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_cleric_notif","GLOBAL",1)
+    DisplayString(Player1,@143) //Your presence is required at the church. The needs of the faithful must be tended to.
+END
+IF
+  GlobalTimerNotExpired("LatlaraReturn","GLOBAL")
+  Global("g_tnt_cleric_notif","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_cleric_notif","GLOBAL",0)
+END
+
+
+IF
+  GlobalTimerExpired("TalvilonReturn","GLOBAL")
+  Global("TalvilonEnd","GLOBAL",0)
+  !Dead("Talvilon")
+  Global("g_tnt_cleric_notif","GLOBAL",0)
+  !Global("Chapter","GLOBAL",4)
+  !Global("Chapter","GLOBAL",5)
+  !Global("Chapter","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_cleric_notif","GLOBAL",1)
+    DisplayString(Player1,@143) //Your presence is required at the church. The needs of the faithful must be tended to.
+END
+IF
+  GlobalTimerNotExpired("TalvilonReturn","GLOBAL")
+  Global("g_tnt_cleric_notif","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("g_tnt_cleric_notif","GLOBAL",0)
+END
+>>>>>>>>
+
+
+EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/cleric.baf~ EVAL
