@@ -33,7 +33,7 @@ OUTER_TEXT_SPRINT action_bg1_bags ~~
 OUTER_TEXT_SPRINT action_bg2_bags ~~
 ACTION_PHP_EACH bags AS index => bag BEGIN
   OUTER_TEXT_SPRINT action_bg1_bags ~%action_bg1_bags%%NewLine%GiveItemCreate("g_%bag%",Player1,1,1,1)~
-  OUTER_TEXT_SPRINT action_bg2_bags ~%action_bg2_bags%%NewLine%ActionOverride("Picture1",CreateItem("g_%bag%2",0,0,0))~
+  OUTER_TEXT_SPRINT action_bg2_bags ~%action_bg2_bags%%NewLine%ActionOverride("Jailkeep Table",CreateItem("g_%bag%2",0,0,0))~
 END
 
 //Thorius Candlekeep
