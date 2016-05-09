@@ -226,4 +226,5 @@ BEGIN @134 /* Sensible Otiluke's Sphere */
 INCLUDE ~%MOD_FOLDER%/otiluke/main.tpa~
 
 BEGIN @135 /* Improved strongholds */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 INCLUDE ~%MOD_FOLDER%/improved_strongholds/main.tpa~
