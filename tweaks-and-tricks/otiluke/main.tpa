@@ -11,6 +11,7 @@ COPY_EXISTING ~spwi413a.spl~ ~override~
       duration = 60
       target = 2
       resist_dispel = 3
+      power = 10 //strongest effect
   END
   LPF ADD_SPELL_EFFECT
     INT_VAR
