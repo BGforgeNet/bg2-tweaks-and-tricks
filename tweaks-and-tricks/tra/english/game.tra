@@ -178,3 +178,23 @@
 @141  = ~Morul has prepared a new batch of potions.~
 @142  = ~The potions are on the table in the laboratory <SIRMAAM>.~
 @143  = ~Your presence is required at the church. The needs of the faithful must be tended to.~
+
+@144  = ~Sensible wand of frost~
+@145  = ~Single target~
+@146  = ~AoE~
+@147  = ~The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.
+
+STATISTICS:
+
+Effect:  Cone of Cold
+Damage:  8D6 (save vs. wands for half)
+Range:  100
+Area of effect:  Special
+Not usable by:
+ Fighter
+ Cleric
+ Druid
+ Thief
+ Paladin
+ Ranger
+~

@@ -1,0 +1,14 @@
+COPY_EXISTING ~wand06.itm~ ~override~
+  PATCH_IF cone = 0 BEGIN
+    LPF ALTER_ITEM_HEADER
+      INT_VAR
+        projectile = 191 //ice scorcher
+    END
+  END ELSE BEGIN
+    LPF ALTER_ITEM_HEADER
+      INT_VAR
+        target = 4 //area
+    END
+    SAY IDENTIFIED_DESC @147 //The wand will create...
+  END
+BUT_ONLY

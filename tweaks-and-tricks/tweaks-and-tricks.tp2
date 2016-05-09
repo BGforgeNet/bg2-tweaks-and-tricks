@@ -225,6 +225,17 @@ INCLUDE ~%MOD_FOLDER%/ammo_weight/main.tpa~
 BEGIN @134 /* Sensible Otiluke's Sphere */
 INCLUDE ~%MOD_FOLDER%/otiluke/main.tpa~
 
+
 BEGIN @135 /* Improved strongholds */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 INCLUDE ~%MOD_FOLDER%/improved_strongholds/main.tpa~
+
+
+BEGIN @146 //AoE
+SUBCOMPONENT @144 /* Sensible wand of frost */
+OUTER_SET cone = 1
+INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
+BEGIN @145 //Single target
+SUBCOMPONENT @144 /* Sensible wand of frost */
+OUTER_SET cone = 0
+INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
