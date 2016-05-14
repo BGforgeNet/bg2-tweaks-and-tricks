@@ -1,7 +1,7 @@
 IF
-  Global("g_bag","AR0015",0)
+  Global("g_bag","MYAREA",0)
 THEN
   RESPONSE #100
-    SetGlobal("g_bag","AR0015",1)
+    SetGlobal("g_bag","MYAREA",1)
     CreateCreature("g_bag",[2900.2900],8)
 END
