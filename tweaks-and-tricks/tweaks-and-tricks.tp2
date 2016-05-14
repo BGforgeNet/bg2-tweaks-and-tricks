@@ -118,19 +118,19 @@ COMPILE ~%MOD_FOLDER%/slayer/low_rep.d~
 
 
 BEGIN @99 /* Gem, scroll, potion, ammo (GSPA) */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
 INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
 
 BEGIN @101 /* GSPA + holding */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
 
 BEGIN @102 /* GSPA + holding - all bottomless! */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
@@ -239,3 +239,6 @@ BEGIN @145 //Single target
 SUBCOMPONENT @144 /* Sensible wand of frost */
 OUTER_SET cone = 0
 INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
+
+BEGIN @148 /* No cast and attack */
+INCLUDE ~%MOD_FOLDER%/no_cast_and_attack/main.tpa~
