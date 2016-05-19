@@ -5,70 +5,69 @@ COPY ~%MOD_FOLDER%/starting_bags/g_gem.itm~ ~override/g_gem.itm~
   SAY NAME1 @149
   SAY NAME2 @149
   SAY IDENTIFIED_DESC @150
-  SAY UNIDENTIFIED_DESC @150
 COPY ~%MOD_FOLDER%/starting_bags/g_gem.sto~ ~override/g_gem.sto~
+  SAY NAME2 @149
 COPY ~%MOD_FOLDER%/starting_bags/g_gem.itm~ ~override/g_gem2.itm~
   SAY NAME1 @149
   SAY NAME2 @149
   SAY IDENTIFIED_DESC @150
-  SAY UNIDENTIFIED_DESC @150
 COPY ~%MOD_FOLDER%/starting_bags/g_gem.sto~ ~override/g_gem2.sto~
-
+  SAY NAME2 @149
 //scroll case
 COPY ~%MOD_FOLDER%/starting_bags/g_scr.itm~ ~override/g_scr.itm~
   SAY NAME1 @151
   SAY NAME2 @151
   SAY IDENTIFIED_DESC @152
-  SAY UNIDENTIFIED_DESC @152
 COPY ~%MOD_FOLDER%/starting_bags/g_scr.sto~ ~override/g_scr.sto~
+  SAY NAME2 @151
 COPY ~%MOD_FOLDER%/starting_bags/g_scr.itm~ ~override/g_scr2.itm~
   SAY NAME1 @151
   SAY NAME2 @151
   SAY IDENTIFIED_DESC @152
-  SAY UNIDENTIFIED_DESC @152
 COPY ~%MOD_FOLDER%/starting_bags/g_scr.sto~ ~override/g_scr2.sto~
+  SAY NAME2 @151
 
 //potion case
 COPY ~%MOD_FOLDER%/starting_bags/g_pot.itm~ ~override/g_pot.itm~
   SAY NAME1 @153
   SAY NAME2 @153
   SAY IDENTIFIED_DESC @154
-  SAY UNIDENTIFIED_DESC @154
 COPY ~%MOD_FOLDER%/starting_bags/g_pot.sto~ ~override/g_pot.sto~
+  SAY NAME2 @153
 COPY ~%MOD_FOLDER%/starting_bags/g_pot.itm~ ~override/g_pot2.itm~
   SAY NAME1 @153
   SAY NAME2 @153
   SAY IDENTIFIED_DESC @154
-  SAY UNIDENTIFIED_DESC @154
 COPY ~%MOD_FOLDER%/starting_bags/g_pot.sto~ ~override/g_pot2.sto~
+  SAY NAME2 @153
 
 //ammo quiver
 COPY ~%MOD_FOLDER%/starting_bags/g_ammo.itm~ ~override/g_ammo.itm~
   SAY NAME1 @155
   SAY NAME2 @155
   SAY IDENTIFIED_DESC @156
-  SAY UNIDENTIFIED_DESC @156
 COPY ~%MOD_FOLDER%/starting_bags/g_ammo.sto~ ~override/g_ammo.sto~
+  SAY NAME2 @155
 COPY ~%MOD_FOLDER%/starting_bags/g_ammo.itm~ ~override/g_ammo2.itm~
   SAY NAME1 @155
   SAY NAME2 @155
   SAY IDENTIFIED_DESC @156
-  SAY UNIDENTIFIED_DESC @156
 COPY ~%MOD_FOLDER%/starting_bags/g_ammo.sto~ ~override/g_ammo2.sto~
+  SAY NAME2 @155
 
 //holding
 COPY ~%MOD_FOLDER%/starting_bags/g_hold.itm~ ~override/g_hold.itm~
   SAY NAME1 @157
   SAY NAME2 @157
   SAY IDENTIFIED_DESC @158
-  SAY UNIDENTIFIED_DESC @158
 COPY ~%MOD_FOLDER%/starting_bags/g_hold.sto~ ~override/g_hold.sto~
+  SAY NAME2 @157
 COPY ~%MOD_FOLDER%/starting_bags/g_hold.itm~ ~override/g_hold2.itm~
   SAY NAME1 @157
   SAY NAME2 @157
   SAY IDENTIFIED_DESC @158
-  SAY UNIDENTIFIED_DESC @158
 COPY ~%MOD_FOLDER%/starting_bags/g_hold.sto~ ~override/g_hold2.sto~
+  SAY NAME2 @157
 
 //Build actions
 OUTER_TEXT_SPRINT NewLine ~
