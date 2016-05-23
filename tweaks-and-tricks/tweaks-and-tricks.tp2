@@ -167,7 +167,7 @@ INCLUDE ~%MOD_FOLDER%/no_shop_steal/all.tph~
 
 
 BEGIN @110 /* No XP farming */
-REQUIRE_PREDICATE (GAME_IS ~bgt~) @127 /* BGT only */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 
 

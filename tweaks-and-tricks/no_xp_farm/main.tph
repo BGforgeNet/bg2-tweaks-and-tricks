@@ -1,28 +1,48 @@
-COPY_EXISTING
-~ar8301.are~ ~override~  // ankheg cave
-~ar8501.are~ ~override~  // wyvern cave
-~ar9501.are~ ~override~  // golem cave
-  READ_LONG 0xc0 interruptions_offset
-  WRITE_ASCII interruptions_offset ~~ #228
-BUT_ONLY
+ACTION_FOR_EACH area IN
+  ar1401 //ankheg cave BG1/EE
+  ar8301 //ankheg cave BGT
+  fw1401 //ankheg cave TuTu
 
-//Durlag tower level 2, infinite skeletons trap
-COPY_EXISTING ~ard012.are~ ~override~
-  reg_size = 0xc4
-  reg_rel_script_off = 0x7c
-  reg_rel_flags_off = 0x60
-  READ_SHORT 0x5a reg_num
-  READ_LONG  0x5c reg_off
+  ar4501 // wyvern cave BG1/EE
+  ar8501 // wyvern cave BGT
+  fw4501 // wyvern cave TuTu
 
-  WHILE reg_num > 0 BEGIN
-    reg_num = reg_num - 1
-    reg_script_off = reg_off + (reg_num * reg_size) + reg_rel_script_off
-    reg_flags_off = reg_off + (reg_num * reg_size) + reg_rel_flags_off
-    READ_ASCII reg_script_off trap_script
-    PATCH_IF ( ~%trap_script%~ STR_EQ ~TRPSKEL~ ) BEGIN //skeleton trap (false exit)
-      READ_LONG reg_flags_off trap_flags
-      new_flags = trap_flags BAND 0b1111111111111101
-      WRITE_LONG reg_flags_off new_flags
-    END
+  ar3601 // golem cave BG1/EE
+  ar9501 // golem cave BGT
+  fw3601 // golem cave TuTu
+BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%area%.are~ BEGIN
+    COPY_EXISTING ~%area%.are~ ~override~
+      READ_LONG 0xc0 interruptions_offset
+      WRITE_ASCII interruptions_offset ~~ #228
+    BUT_ONLY
   END
-BUT_ONLY
+END
+
+
+ACTION_FOR_EACH area IN //Durlag tower level 2, infinite skeletons trap
+  ar0512 //BG1
+  fw0512 //TuTu
+  ard012 //BGT
+BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%area%.are~ BEGIN
+    COPY_EXISTING ~%area%.are~ ~override~
+      reg_size = 0xc4
+      reg_rel_script_off = 0x7c
+      reg_rel_flags_off = 0x60
+      READ_SHORT 0x5a reg_num
+      READ_LONG  0x5c reg_off
+      WHILE reg_num > 0 BEGIN
+        reg_num = reg_num - 1
+        reg_script_off = reg_off + (reg_num * reg_size) + reg_rel_script_off
+        reg_flags_off = reg_off + (reg_num * reg_size) + reg_rel_flags_off
+        READ_ASCII reg_script_off trap_script
+        PATCH_IF ( ~%trap_script%~ STR_EQ ~TRPSKEL~ ) BEGIN //skeleton trap (false exit)
+          READ_LONG reg_flags_off trap_flags
+          new_flags = trap_flags BAND 0b1111111111111101
+          WRITE_LONG reg_flags_off new_flags
+        END
+      END
+    BUT_ONLY
+  END
+END
