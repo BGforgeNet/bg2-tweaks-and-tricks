@@ -1,0 +1,15 @@
+<<<<<<<< .../tnt-inlined/more_ankhegs_for_taerom/taerom.d
+ADD_STATE_TRIGGER taerom 4 ~False()~ 5 12 //no rotting, no "return" lines
+
+REPLACE_STATE_TRIGGER taerom 0 ~PartyHasItem("MISC12")~ //BG1
+
+REPLACE_TRANS_TRIGGER taerom //BGEE
+  BEGIN 0 END // An interesting piece o' material you got there ...
+  BEGIN 0 END // I'm not interested in selling it just now ...
+  ~Global("MakeArmor","GLOBAL",0)~
+  ~OR(2)
+     Global("MakeArmor","GLOBAL",0)
+     Global("MakeArmor","GLOBAL",2)~
+>>>>>>>>
+
+COMPILE ~.../tnt-inlined/more_ankhegs_for_taerom/taerom.d~
