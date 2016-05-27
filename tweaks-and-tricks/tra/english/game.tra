@@ -213,3 +213,58 @@ Not usable by:
 @158 = ~As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount.~
 
 @159 = ~More ankheg armors by Taerom~
+
+@160 = ~Returning throwing axe~
+@161 = ~The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.
+
+This particular axe has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.
+
+STATISTICS:
+
+Damage:  1D6 +1
+Damage type:  missile (piercing)
+Weight: 5
+Speed Factor: 4
+Proficiency Type:  Axe
+Type:  1-handed
+Requires: 4 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief~
+
+@162 = ~Returning throwing dagger~
+@163 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.
+
+This particular dagger has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.
+
+STATISTICS:
+
+Damage:  1D4
+Damage type:   missile (piercing)
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type:  1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~
+
+@164 = ~Returning dart~
+@165 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. 
+
+This particular dart has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.
+
+STATISTICS:
+
+Damage:  1D3
+Damage type:  missile (piercing)
+Weight: 0
+Speed Factor: 2
+Proficiency Type: Dart
+Type:  1-handed
+Not Usable By:
+ Cleric~
+
+@166 = ~Hassle-free returning weapons~
