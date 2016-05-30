@@ -28,7 +28,10 @@ BUT_ONLY
 COPY_EXISTING ~delon.bcs~ ~override~ //Delon talks to Minsc from distance
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE
-      ~Dialogue("Minsc")~
+      ~[%tab% ]+Dialogue("Minsc")~
+      ~StartDialogNoSet("Minsc")~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE
+      ~[%tab% ]+Dialog("Minsc")~
       ~StartDialogNoSet("Minsc")~
   END
 BUT_ONLY
