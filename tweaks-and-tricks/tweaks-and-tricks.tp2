@@ -6,7 +6,7 @@ README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
 //MODDER setup_tra none
-//AUTO_TRA ~%MOD_FOLDER%/tra~
+//AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~ ~ENGLISH~ ~tweaks-and-tricks/tra/english/game.tra~
 

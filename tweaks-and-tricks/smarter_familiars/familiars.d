@@ -1,65 +1,65 @@
 EXTEND_TOP %familiar_dialog% 1 4
-  +~InPartySlot(LastTalkedToBy,0)~+ ~We need to discuss how you follow me.~ + g_familiar_follow
-  +~InPartySlot(LastTalkedToBy,0)~+ ~I want to give you new instructions about the loot.~ + g_familiar_loot
-  +~InPartySlot(LastTalkedToBy,0)~+ ~Let's change your behaviour in combat.~ + g_familiar_combat
+  +~InPartySlot(LastTalkedToBy,0)~+ @167 + g_familiar_follow
+  +~InPartySlot(LastTalkedToBy,0)~+ @168 + g_familiar_loot
+  +~InPartySlot(LastTalkedToBy,0)~+ @169 + g_familiar_combat
 END
 
 
 APPEND %familiar_dialog%
   IF ~~ g_familiar_follow
-    SAY ~Yes, boss?~
+    SAY @170
 
     + ~Global("g_FamFollowMaster","LOCALS",0)~
-    + ~Follow me at all times.~ DO ~SetGlobal("g_FamFollowMaster","LOCALS",1)~
+    + @171 DO ~SetGlobal("g_FamFollowMaster","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamFollowMaster","LOCALS",1)~
-    + ~Stop following me all the time.~ DO ~SetGlobal("g_FamFollowMaster","LOCALS",0)~
+    + @172 DO ~SetGlobal("g_FamFollowMaster","LOCALS",0)~
     + g_familiar_confirm
 
-    ++ ~Actually, nevermind. Distance is fine for now.~ + 1
+    ++ @173 + 1
   END
 END
 
 
 APPEND %familiar_dialog%
   IF ~~ g_familiar_combat
-    SAY ~Yes, boss?~
+    SAY @170
 
     + ~Global("g_FamJumpToPack","LOCALS",0)~
-    + ~If you see any danger, jump to my pack right away!~ DO ~SetGlobal("g_FamJumpToPack","LOCALS",1)~
+    + @174 DO ~SetGlobal("g_FamJumpToPack","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamJumpToPack","LOCALS",1)~
-    + ~Don't hide in my pack when you see enemies.~ DO ~SetGlobal("g_FamJumpToPack","LOCALS",0)~ 
+    + @175 DO ~SetGlobal("g_FamJumpToPack","LOCALS",0)~ 
     + g_familiar_confirm
 
     + ~Global("g_FamJumpToPackInjured","LOCALS",0)~
-    + ~If you're injured, rush to my pack immediately.~ DO ~SetGlobal("g_FamJumpToPackInjured","LOCALS",1)~
+    + @176 DO ~SetGlobal("g_FamJumpToPackInjured","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamJumpToPack","LOCALS",1)~
-    + ~Even when you're injured, don't hide in my pack unless I ask you.~ DO ~SetGlobal("g_FamJumpToPackInjured","LOCALS",0)~ 
+    + @177 DO ~SetGlobal("g_FamJumpToPackInjured","LOCALS",0)~ 
     + g_familiar_confirm
 
     + ~Global("g_FamiliarJumpOut","GLOBAL",0)~
-    + ~When the enemies are gone, get out of the pack by yourself.~ DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",1)~
+    + @178 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamiliarJumpOut","GLOBAL",1)~
-    + ~Stay in the pack until I tell you specifically. One cannot be too careful.~ DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",0)~
+    + @179 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ ~Ah, maybe later.~ + 1
+    ++ @180 + 1
   END
 END
 
 
 APPEND %familiar_dialog%
   IF ~~ g_familiar_loot
-    SAY ~Yes, boss?~
+    SAY @170
 
-    ++ ~Stop picking up any items, okay?~
+    ++ @181
       DO ~SetGlobal("g_FamPickupGold","LOCALS",0)
           SetGlobal("g_FamPickupJewelsCommon","LOCALS",0)
           SetGlobal("g_FamPickupJewelsRare","LOCALS",0)
@@ -71,7 +71,7 @@ APPEND %familiar_dialog%
          ~
     + g_familiar_confirm
 
-    ++ ~I want you to bring me everything. Any valuables.~
+    ++ @182
       DO ~SetGlobal("g_FamPickupGold","LOCALS",1)
           SetGlobal("g_FamPickupJewelsCommon","LOCALS",1)
           SetGlobal("g_FamPickupJewelsRare","LOCALS",1)
@@ -83,29 +83,29 @@ APPEND %familiar_dialog%
          ~
     + g_familiar_confirm
 
-    +~Global("g_FamPickupGold","LOCALS",0)~+ ~Pick up any gold that you find.~ DO ~SetGlobal("g_FamPickupGold","LOCALS",1)~ + g_familiar_confirm
-    +~Global("g_FamPickupGold","LOCALS",1)~+ ~Don't pick up the gold that you find.~ DO ~SetGlobal("g_FamPickupGold","LOCALS",0)~ + g_familiar_confirm
+    +~Global("g_FamPickupGold","LOCALS",0)~+ @183 DO ~SetGlobal("g_FamPickupGold","LOCALS",1)~ + g_familiar_confirm
+    +~Global("g_FamPickupGold","LOCALS",1)~+ @184 DO ~SetGlobal("g_FamPickupGold","LOCALS",0)~ + g_familiar_confirm
 
     + ~OR(3)
         Global("g_FamPickupJewelsCommon","LOCALS",0)
         Global("g_FamPickupJewelsRare","LOCALS",0)
         Global("g_FamPickupJewelsMagic","LOCALS",0)
       ~
-    + ~Pick up any jewels that you find.~
+    + @185
       DO ~SetGlobal("g_FamPickupJewelsCommon","LOCALS",1)
           SetGlobal("g_FamPickupJewelsRare","LOCALS",1)
           SetGlobal("g_FamPickupJewelsMagic","LOCALS",1)
          ~
     + g_familiar_confirm
 
-    ++ ~Pick up only valuable and magical jewelry.~
+    ++ @186
         DO ~SetGlobal("g_FamPickupJewelsCommon","LOCALS",0)
         SetGlobal("g_FamPickupJewelsRare","LOCALS",1)
         SetGlobal("g_FamPickupJewelsMagic","LOCALS",1)
        ~
     + g_familiar_confirm
 
-    ++ ~Pick up only magical jewelry.~
+    ++ @187
         DO ~SetGlobal("g_FamPickupJewelsCommon","LOCALS",0)
         SetGlobal("g_FamPickupJewelsRare","LOCALS",0)
         SetGlobal("g_FamPickupJewelsMagic","LOCALS",1)
@@ -117,7 +117,7 @@ APPEND %familiar_dialog%
         Global("g_FamPickupJewelsRare","LOCALS",1)
         Global("g_FamPickupJewelsMagic","LOCALS",1)
       ~
-    + ~Don't pick up the jewelry.~
+    + @188
         DO ~SetGlobal("g_FamPickupJewelsCommon","LOCALS",0)
         SetGlobal("g_FamPickupJewelsRare","LOCALS",0)
         SetGlobal("g_FamPickupJewelsMagic","LOCALS",0)
@@ -125,51 +125,51 @@ APPEND %familiar_dialog%
     + g_familiar_confirm
 
     + ~Global("g_FamPickupAmmo","LOCALS",0)~
-    + ~Pick up any magical ammo that you find.~ DO ~SetGlobal("g_FamPickupAmmo","LOCALS",1)~
+    + @189 DO ~SetGlobal("g_FamPickupAmmo","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupAmmo","LOCALS",1)~
-    + ~Don't pick up the ammo.~ DO ~SetGlobal("g_FamPickupAmmo","LOCALS",0)~
+    + @190 DO ~SetGlobal("g_FamPickupAmmo","LOCALS",0)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupPotions","LOCALS",0)~
-    + ~If you find any potions, bring them to me!~ DO ~SetGlobal("g_FamPickupPotions","LOCALS",1)~
+    + @191 DO ~SetGlobal("g_FamPickupPotions","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupPotions","LOCALS",1)~
-    + ~Stop picking up potions.~ DO ~SetGlobal("g_FamPickupPotions","LOCALS",0)~
+    + @192 DO ~SetGlobal("g_FamPickupPotions","LOCALS",0)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupScrolls","LOCALS",0)~
-    + ~Get me any scrolls that you can find.~ DO ~SetGlobal("g_FamPickupScrolls","LOCALS",1)~
+    + @193 DO ~SetGlobal("g_FamPickupScrolls","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupScrolls","LOCALS",1)~
-    + ~I don't need you to bring any more scrolls.~ DO ~SetGlobal("g_FamPickupScrolls","LOCALS",0)~
+    + @194 DO ~SetGlobal("g_FamPickupScrolls","LOCALS",0)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupScalps","LOCALS",0)~
-    + ~Fetch scalps from those bandits we kill. There's a nice bounty for them.~ DO ~SetGlobal("g_FamPickupScalps","LOCALS",1)~
+    + @195 DO ~SetGlobal("g_FamPickupScalps","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupScalps","LOCALS",1)~
-    + ~Stop that scalping, will you? It's disgusting.~ DO ~SetGlobal("g_FamPickupScalps","LOCALS",0)~
+    + @196 DO ~SetGlobal("g_FamPickupScalps","LOCALS",0)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupTrophy","LOCALS",0)~
-    + ~Ankheg scales, winter wolf pelts, wyvern heads - I need it all.~ DO ~SetGlobal("g_FamPickupTrophy","LOCALS",1)~
+    + @197 DO ~SetGlobal("g_FamPickupTrophy","LOCALS",1)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupTrophy","LOCALS",1)~
-    + ~No more pelts or scales, we're stocked.~ DO ~SetGlobal("g_FamPickupTrophy","LOCALS",0)~
+    + @198 DO ~SetGlobal("g_FamPickupTrophy","LOCALS",0)~
     + g_familiar_confirm
 
-    ++ ~No, nothing.~ + 1
+    ++ @199 + 1
 
   END
 
   IF ~~ g_familiar_confirm
-    SAY ~As you wish, master.~
+    SAY @200
   IF ~~ + 1
   END
 

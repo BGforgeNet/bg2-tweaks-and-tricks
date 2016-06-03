@@ -180,6 +180,6 @@ ACTION_FOR_EACH familiar_dialog IN
   famil325
 BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%familiar_dialog%.dlg~ BEGIN  
-    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~
+    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
   END
 END
