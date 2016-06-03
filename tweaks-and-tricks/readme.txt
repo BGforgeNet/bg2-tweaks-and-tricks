@@ -14,7 +14,7 @@ It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some
 - [Changelog](#changelog)
 - [Used sotftware](#used-sotftware)
 - [Author](#author)
-- [License](#license)
+- [Licence](#licence)
 
 
 ## Components
@@ -325,8 +325,10 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 * [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
 * [NearInfinity](https://github.com/Argent77/NearInfinity)
 
-## License
-It's provided as is, without any guarantee. Feel free to use it in any way that you see fit.
+## Licence
+The mod is [CC0 v1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+
+Weidu is GPLv3
 
 ## Author
 burner1024 @ github
