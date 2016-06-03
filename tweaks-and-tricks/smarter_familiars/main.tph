@@ -164,8 +164,10 @@ ACTION_PHP_EACH familiar_list AS int => fam BEGIN
       COMPILE EVAL ~.../tnt-inlined/g_%fam%.baf~
     END
   END
-  EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
-  ACTION_IF (GAME_INCLUDES ~tob~) BEGIN
+  ACTION_IF (~%fam%~ STRING_CONTAINS_REGEXP ~25~ = 1) BEGIN //only non-*25 familiars in SoA baldur.bcs
+    EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
+  END
+  ACTION_IF (GAME_INCLUDES ~tob~ AND (~%fam%~ STRING_CONTAINS_REGEXP ~25~ = 0)) BEGIN //only *25 familiars in ToB baldur25.bcs
     EXTEND_BOTTOM ~baldur25.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
   END
 END
