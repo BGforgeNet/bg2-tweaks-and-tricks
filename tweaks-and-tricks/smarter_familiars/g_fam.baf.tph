@@ -10,7 +10,7 @@ IF
 THEN
   RESPONSE #100
     MoveToObject(Player1)
-    GiveItemCreate("fam%familiar%",Player1,0,0,0)
+    GiveItemCreate("fam%fam%",Player1,0,0,0)
     DestroySelf()
 END
 ~
@@ -25,7 +25,7 @@ IF
 THEN
   RESPONSE #100
     MoveToObject(Player1)
-    GiveItemCreate("fam%familiar%",Player1,0,0,0)
+    GiveItemCreate("fam%fam%",Player1,0,0,0)
     DestroySelf()
 END
 ~
@@ -124,7 +124,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_FamInventoryFull","LOCALS",0)
-  Continue()
+    Continue()
 END
 ~
 
@@ -341,7 +341,7 @@ END
 ~
 
 //actual script
-<<<<<<<< .../cheese-inlined/g_%familiar%.baf
+<<<<<<<< .../tnt-inlined/g_%fam%.baf
 
 %JumpToPack%
 %JumpToPackInjured%

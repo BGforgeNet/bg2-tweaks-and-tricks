@@ -11,24 +11,24 @@ OUTER_SPRINT g_FamPickupPotionsCommon_action ~~
 OUTER_SPRINT g_FamPickupPotionsRare_action ~~
 OUTER_SPRINT g_FamPickupScrolls_action ~~
 
-INCLUDE ~%MOD_FOLDER%/familiars/autoloot_lists.tph~
+INCLUDE ~%MOD_FOLDER%/smarter_familiars/autoloot_lists.tph~
 
 COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
-  PATCH_IF (%SOURCE_SIZE% >= 114) BEGIN
-  READ_ASCII 0x003a ~invicon~ ELSE ~No File~  (8) NULL  //8 (resref) Inventory icon
-  READ_ASCII 0x0044 ~groundicon~ ELSE ~No File~(8) NULL //8 (resref) Ground icon
-  READ_ASCII 0x0058 ~descicon~ ELSE ~No File~  (8) NULL //8 (resref) Description icon
+  PATCH_IF (SOURCE_SIZE >= 114) BEGIN
+  READ_ASCII 0x3a invicon ELSE ~No File~  (8) NULL  //8 (resref) Inventory icon
+  READ_ASCII 0x44 groundicon ELSE ~No File~(8) NULL //8 (resref) Ground icon
+  READ_ASCII 0x58 descicon ELSE ~No File~  (8) NULL //8 (resref) Description icon
     //following should weed out many player unusable items
     PATCH_IF ( (FILE_EXISTS_IN_GAME ~%invicon%.bam~)
            AND (FILE_EXISTS_IN_GAME ~%groundicon%.bam~)
            AND (FILE_EXISTS_IN_GAME ~%descicon%.bam~) ) BEGIN
-      READ_BYTE 0x18 ~flags~
-      READ_SHORT 0x001c ~item_type~
-      PATCH_IF ((%flags% BAND "0b00000100") = "0b00000100")  // droppable
-           AND ((%flags% BAND "0b00001000") = "0b00001000") BEGIN // displayable in shop
+      READ_BYTE 0x18 flags
+      READ_SHORT 0x1c item_type
+      PATCH_IF ((flags BAND 0b00000100) = 0b00000100)  // droppable
+           AND ((flags BAND 0b00001000) = 0b00001000) BEGIN // displayable in shop
 
       //Gems
-      PATCH_IF (%item_type%==0x0022) BEGIN
+      PATCH_IF (item_type = 0x22) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_GemsCommon(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -37,7 +37,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
         END
       END
       //Rings
-      PATCH_IF (%item_type%==0x000a) BEGIN
+      PATCH_IF (item_type = 0xa) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_RingsCommon(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -52,7 +52,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
         END
       END
       //Necklaces
-      PATCH_IF (%item_type%==0x0001) BEGIN
+      PATCH_IF (item_type = 0x1) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_NecklacesCommon(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -68,7 +68,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
       END
 
       //Ammo: arrows
-      PATCH_IF (%item_type%==0x0005) BEGIN
+      PATCH_IF (item_type = 0x5) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagic(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -77,7 +77,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
         END
       END
       //Ammo: bolts
-      PATCH_IF (%item_type%==0x001f) BEGIN
+      PATCH_IF (item_type = 0x1f) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_BoltsMagic(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -86,7 +86,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
         END
       END
       //Ammo: darts
-      PATCH_IF (%item_type%==0x0018) BEGIN
+      PATCH_IF (item_type = 0x18) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_DartsMagic(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -95,7 +95,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
         END
       END
       //Ammo: bullets
-      PATCH_IF (%item_type%==0x000e) BEGIN
+      PATCH_IF (item_type = 0xe) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_BulletsMagic(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -105,7 +105,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
       END
 
       //Potions
-      PATCH_IF (%item_type%==0x0009) BEGIN
+      PATCH_IF (item_type = 0x9) BEGIN
         PATCH_IF (VARIABLE_IS_SET $g_PotionsCommon(~%SOURCE_RES%~)) BEGIN
           SPRINT g_FamPickupPotionsCommon_action ~%g_FamPickupPotionsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
         END
@@ -115,7 +115,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
       END
 
       //Scrolls
-      PATCH_IF (%item_type%==0x000b AND (VARIABLE_IS_SET $g_Scrolls(~%SOURCE_RES%~))) BEGIN
+      PATCH_IF (item_type = 0xb AND (VARIABLE_IS_SET $g_Scrolls(~%SOURCE_RES%~))) BEGIN
         SPRINT g_FamPickupScrolls_action ~%g_FamPickupScrolls_action%%NewLine%PickUpItem("%SOURCE_RES%")~
       END
     END
@@ -125,69 +125,52 @@ BUT_ONLY
 //Daggers: there only one type of throwing daggers worth picking up: poisoned throwing daggers
 OUTER_SPRINT g_FamPickupAmmoRare_action ~%g_FamPickupAmmoRare_action%%NewLine%PickUpItem("DAGG16")~
 
-<<<<<<<< .../cheese-inlined/g_familiar_jumpout.baf
+//Script to jump out of the pack, added to baldur.bcs
+<<<<<<<< .../tnt-inlined/g_familiar_jumpout.baf
 IF
   Global("g_FamiliarJumpOut","GLOBAL",1)
   Global("g_FamStayInPack","GLOBAL",0)
-  HasItem("fam%familiar%",Player1)
-  Delay(10)
-    CombatCounterLT(1)
-    CombatCounter(0)
-    !CombatCounterGT(0)
-    !ActuallyInCombat()
-    !OnScreen([EVILCUTOFF])
+  HasItem("fam%fam%",Player1)
+  Delay(12) //check every 2 rounds
+  CombatCounterLT(1)
+  !OnScreen([EVILCUTOFF])
 THEN
   RESPONSE #100
-    ActionOverride(Player1,DestroyItem("fam%familiar%"))
-    MoveGlobalObject("fam%familiar%",Player1)
+    TakePartyItem("fam%fam%")
+    DestroyItem("fam%fam%")
+    MoveGlobalObject("fam%fam%",Player1)
     Continue()
 END
 >>>>>>>>
 
-//SoA
-ACTION_FOR_EACH familiar IN
-  cat
-  dust
-  fair
-  fer
-  imp
-  psd
-  quas
-  rab
-BEGIN
-  INCLUDE ~%MOD_FOLDER%/familiars/g_fam.baf.tph~
-  COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
-  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
-    COPY_EXISTING ~fam%familiar%.cre~ ~override~
-      WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
-    BUT_ONLY
-  END
-  EXTEND_BOTTOM ~baldur.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
-END
+//Override script
+INCLUDE ~%MOD_FOLDER%/lib/familiars.tph~ //familiar_list, compatibility with WTPfamiliars
 
-//ToB
-ACTION_FOR_EACH familiar IN
-  cat25
-  dus25
-  fai25
-  fer25
-  imp25
-  psd25
-  qua25
-  rab25
-BEGIN
-  INCLUDE ~%MOD_FOLDER%/familiars/g_fam.baf.tph~
-  COMPILE EVAL ~.../cheese-inlined/g_%familiar%.baf~
-  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN  
-    COPY_EXISTING ~fam%familiar%.cre~ ~override~
-      WRITE_ASCIIE 0x248 ~g_%familiar%~ #8
+ACTION_PHP_EACH familiar_list AS int => fam BEGIN
+  INCLUDE ~%MOD_FOLDER%/smarter_familiars/g_fam.baf.tph~ //generate script. The only difference is GiveItemCreate for jumping into pack
+  ACTION_IF FILE_EXISTS_IN_GAME ~fam%fam%.cre~ BEGIN  
+    COPY_EXISTING ~fam%fam%.cre~ ~override~
+      READ_ASCII 0x248 over_script
+      PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN //use existing script if possible
+        over_exists = 1
+      END ELSE BEGIN //or create a new one
+        over_exists = 0
+        WRITE_ASCIIE 0x248 ~g_%fam%~ #8
+      END
     BUT_ONLY
+    ACTION_IF over_exists = 1 BEGIN
+      EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/g_%fam%.baf~ EVAL
+    END ELSE BEGIN
+      COMPILE EVAL ~.../tnt-inlined/g_%fam%.baf~
+    END
   END
+  EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
   ACTION_IF (GAME_INCLUDES ~tob~) BEGIN
-    EXTEND_BOTTOM ~baldur25.bcs~ ~.../cheese-inlined/g_familiar_jumpout.baf~ EVAL
+    EXTEND_BOTTOM ~baldur25.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
   END
 END
 
+//New dialog options
 ACTION_FOR_EACH familiar_dialog IN
   famil1
   famil125
@@ -197,60 +180,6 @@ ACTION_FOR_EACH familiar_dialog IN
   famil325
 BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%familiar_dialog%.dlg~ BEGIN  
-    COMPILE EVAL ~%MOD_FOLDER%/familiars/familiars.d~
+    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~
   END
 END
-
-/* this is a failed experiment
-<<<<<<<< .../cheese-inlined/g_lock.baf
-IF
-  Global("g_ContUnlocked","LOCALS",0)
-  Range([FAMILIAR],15)
-THEN
-  RESPONSE #100
-    Shout(G_LOCK)
-    ActionOverride([FAMILIAR],SetGlobal("g_FamSeeLock","LOCALS",1))
-    ActionOverride([PC],DisplayStringHead(Myself,1))
-    DisplayStringHead(Myself,2)
-    Continue()
-END
-
-IF
-  Unlocked([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_ContUnlocked","LOCALS",1)
-    DisplayStringHead(Myself,3)
-    Continue()
-END
->>>>>>>>
-
-<<<<<<<< .../cheese-inlined/g_trap.baf
-IF
-  Global("g_TrapDisarmed","LOCALS",0)
-  See([FAMILIAR])
-THEN
-  RESPONSE #100
-    ActionOverride(LastSeenBy,SetGlobal("g_FamSeeTrap","LOCALS",1))
-    Continue()
-END
-
-IF
-  OR(2)
-    Disarmed([ANYONE])
-    TrapTriggered([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_TrapDisarmed","LOCALS",1)
-    Continue()
-END
-
-IF
-  Reset([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_TrapDisarmed","LOCALS",0)
-    Continue()
-END
->>>>>>>>
-*/

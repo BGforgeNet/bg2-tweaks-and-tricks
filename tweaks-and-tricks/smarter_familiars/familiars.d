@@ -1,10 +1,12 @@
 EXTEND_TOP %familiar_dialog% 1 4
-  +~InPartySlot(LastTalkedToBy,0)~+ ~I want to give you new instructions about the loot.~ + g_familiar_instructions
-  +~InPartySlot(LastTalkedToBy,0)~+ ~Let's change your behaviour in combat.~ + g_familiar_behaviour
+  +~InPartySlot(LastTalkedToBy,0)~+ ~We need to discuss how you follow me.~ + g_familiar_follow
+  +~InPartySlot(LastTalkedToBy,0)~+ ~I want to give you new instructions about the loot.~ + g_familiar_loot
+  +~InPartySlot(LastTalkedToBy,0)~+ ~Let's change your behaviour in combat.~ + g_familiar_combat
 END
 
+
 APPEND %familiar_dialog%
-  IF ~~ g_familiar_behaviour
+  IF ~~ g_familiar_follow
     SAY ~Yes, boss?~
 
     + ~Global("g_FamFollowMaster","LOCALS",0)~
@@ -15,6 +17,14 @@ APPEND %familiar_dialog%
     + ~Stop following me all the time.~ DO ~SetGlobal("g_FamFollowMaster","LOCALS",0)~
     + g_familiar_confirm
 
+    ++ ~Actually, nevermind. Distance is fine for now.~ + 1
+  END
+END
+
+
+APPEND %familiar_dialog%
+  IF ~~ g_familiar_combat
+    SAY ~Yes, boss?~
 
     + ~Global("g_FamJumpToPack","LOCALS",0)~
     + ~If you see any danger, jump to my pack right away!~ DO ~SetGlobal("g_FamJumpToPack","LOCALS",1)~
@@ -44,8 +54,9 @@ APPEND %familiar_dialog%
   END
 END
 
+
 APPEND %familiar_dialog%
-  IF ~~ g_familiar_instructions
+  IF ~~ g_familiar_loot
     SAY ~Yes, boss?~
 
     ++ ~Stop picking up any items, okay?~
@@ -56,6 +67,19 @@ APPEND %familiar_dialog%
           SetGlobal("g_FamPickupAmmoMagic","LOCALS",0)
           SetGlobal("g_FamPickupPotions","LOCALS",0)
           SetGlobal("g_FamPickupScrolls","LOCALS",0)
+          SetGlobal("g_FamPickupTrophy","LOCALS",0)
+         ~
+    + g_familiar_confirm
+
+    ++ ~I want you to bring me everything. Any valuables.~
+      DO ~SetGlobal("g_FamPickupGold","LOCALS",1)
+          SetGlobal("g_FamPickupJewelsCommon","LOCALS",1)
+          SetGlobal("g_FamPickupJewelsRare","LOCALS",1)
+          SetGlobal("g_FamPickupJewelsMagic","LOCALS",1)
+          SetGlobal("g_FamPickupAmmoMagic","LOCALS",1)
+          SetGlobal("g_FamPickupPotions","LOCALS",1)
+          SetGlobal("g_FamPickupScrolls","LOCALS",1)
+          SetGlobal("g_FamPickupTrophy","LOCALS",1)
          ~
     + g_familiar_confirm
 

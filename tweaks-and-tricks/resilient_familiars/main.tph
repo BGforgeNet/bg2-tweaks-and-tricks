@@ -1,23 +1,8 @@
-ACTION_FOR_EACH familiar IN
-  cat
-  cat25
-  dust
-  dus25
-  fair
-  fai25
-  fer
-  fer25
-  imp
-  imp25
-  psd
-  psd25
-  quas
-  quas25
-  rab
-  rab25
-BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~fam%familiar%.cre~ BEGIN
-    COPY_EXISTING ~fam%familiar%.cre~ ~override~
+INCLUDE ~%MOD_FOLDER%/lib/familiars.tph~ //familiar_list, compatibility with WTPfamiliars
+
+ACTION_PHP_EACH familiar_list AS int => fam BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%prefix%%fam%.cre~ BEGIN
+    COPY_EXISTING ~%prefix%%fam%.cre~ ~override~
       REPLACE_CRE_ITEM ~helm01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~HELMET~
     BUT_ONLY
   END

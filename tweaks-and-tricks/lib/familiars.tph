@@ -1,0 +1,35 @@
+ACTION_IF FILE_EXISTS_IN_GAME ~wtpcat.cre~ BEGIN
+  PRINT ~WTP familiars installed, skipping original familiars~
+  OUTER_SPRINT prefix ~wtp~
+  ACTION_DEFINE_ARRAY familiar_list BEGIN
+    cat
+    dmeph
+    fairy
+    ferre
+    imp
+    quasi
+    rabbi
+    seudo
+    spide
+  END
+END ELSE BEGIN //original game
+  OUTER_SPRINT prefix ~fam~
+  ACTION_DEFINE_ARRAY familiar_list BEGIN
+    cat
+    cat25
+    dust
+    dus25
+    fair
+    fai25
+    fer
+    fer25
+    imp
+    imp25
+    psd
+    psd25
+    quas
+    quas25
+    rab
+    rab25
+  END
+END
