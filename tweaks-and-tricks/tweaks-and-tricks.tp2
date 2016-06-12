@@ -60,6 +60,7 @@ INCLUDE ~%MOD_FOLDER%/compliment/main.tph~
 
 BEGIN @86 /* Reintroduce and adjust to framerate */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
+REQUIRE_PREDICATE (~%WEIDU_OS%~ STR_EQ ~win32~) @206 /* Windows only */
 SUBCOMPONENT @85 /* BG1-style party interaction system */
 INCLUDE ~%MOD_FOLDER%/compliment/main.tph~
 INCLUDE ~%MOD_FOLDER%/compliment/framerate.tph~
