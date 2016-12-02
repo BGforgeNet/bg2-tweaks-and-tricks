@@ -241,8 +241,8 @@ SUBCOMPONENT @144 /* Sensible wand of frost */
 OUTER_SET cone = 0
 INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
 
-BEGIN @148 /* No cast and attack */
-INCLUDE ~%MOD_FOLDER%/no_cast_and_attack/main.tpa~
+//BEGIN @148 /* No cast and attack */
+//INCLUDE ~%MOD_FOLDER%/no_cast_and_attack/main.tpa~
 
 BEGIN @159 /* More ankheg armors by Taerom */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
