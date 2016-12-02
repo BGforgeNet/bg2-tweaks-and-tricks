@@ -1,9 +1,47 @@
 //when asked to hide into pack, stay there until released
 //once released, can go in/out of pack as directed before
+/*
+OUTER_SPRINT take_dart ~
+IF
+  Global("g_fam_take_dart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,46150)
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    SetGlobal("g_fam_take_dart","GLOBAL",2)
+    Wait(6)
+END
+~
+
+OUTER_SPRINT take_dart_2 ~
+IF
+  Global("g_fam_take_dart","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,46151)
+    ActionOverride(Player1,DestroyItem("g_dart"))
+    CreateItem("g_dart",0,0,0)
+    FillSlot(SLOT_WEAPON1)
+    EquipItem("g_dart")
+    SetGlobal("g_fam_take_dart","GLOBAL",0)
+    Wait(6)
+END
+~
+
+OUTER_SPRINT change_allegiance ~
+IF
+  !Allegiance(Myself,FAMILIAR)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,46152)
+    ChangeEnemyAlly(Myself,FAMILIAR)
+END
+~
+*/
 
 OUTER_SPRINT JumpToPack ~
 IF
-  Global("g_FamJumpToPack","LOCALS",1)
+  Global("g_FamJumpToPack","GLOBAL",1)
   OR(2)
     !CombatCounterLT(1)
     See([EVILCUTOFF])
@@ -17,7 +55,7 @@ END
 
 OUTER_SPRINT JumpToPackInjured ~
 IF
-  Global("g_FamJumpToPackInjured","LOCALS",1)
+  Global("g_FamJumpToPackInjured","GLOBAL",1)
   HPPercentLT(Myself,50)
   OR(2)
     !CombatCounterLT(1)
@@ -35,7 +73,7 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   !Detect(Player1)
-  Global("g_FamFollowMaster","LOCALS",1)
+  Global("g_FamFollowMaster","GLOBAL",1)
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
@@ -64,7 +102,7 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   !InMyArea(Player1)
-  Global("g_FamFollowMaster","LOCALS",1)
+  Global("g_FamFollowMaster","GLOBAL",1)
 THEN
   RESPONSE #100
     MoveGlobalObject(Myself,Player1)
@@ -92,18 +130,18 @@ IF
   HasItemSlot(Player1,SLOT_MISC5)
   HasItemSlot(Player1,SLOT_MISC4)
   HasItemSlot(Player1,SLOT_MISC3)
-  !GlobalTimerNotExpired("g_FamInventoryNotifyTimer","LOCALS")
+  !GlobalTimerNotExpired("g_FamInventoryNotifyTimer","GLOBAL")
 THEN
   RESPONSE #100
-    SetGlobal("g_FamInventoryFull","LOCALS",1)
+    SetGlobal("g_FamInventoryFull","GLOBAL",1)
     DisplayStringHead(Myself,@15)
-    SetGlobalTimer("g_FamInventoryNotifyTimer","LOCALS",18)
+    SetGlobalTimer("g_FamInventoryNotifyTimer","GLOBAL",18)
 END
 ~
 
 OUTER_SPRINT CheckInventoryNotFull ~
 IF
-  Global("g_FamInventoryFull","LOCALS",1)
+  Global("g_FamInventoryFull","GLOBAL",1)
   OR(16)
     !HasItemSlot(Player1,SLOT_MISC18)
     !HasItemSlot(Player1,SLOT_MISC17)
@@ -123,7 +161,7 @@ IF
     !HasItemSlot(Player1,SLOT_MISC3)
 THEN
   RESPONSE #100
-    SetGlobal("g_FamInventoryFull","LOCALS",0)
+    SetGlobal("g_FamInventoryFull","GLOBAL",0)
     Continue()
 END
 ~
@@ -135,8 +173,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupGold","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupGold","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
   PickUpItem("misc07")
@@ -160,8 +198,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupScalps","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupScalps","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     PickUpItem("misc86")
@@ -180,8 +218,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupJewelsCommon","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupJewelsCommon","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupJewelsCommon_action%
@@ -197,8 +235,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupPotions","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupPotions","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupPotionsCommon_action%
@@ -215,8 +253,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupAmmo","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupAmmo","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupAmmoMagic_action%
@@ -232,8 +270,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupJewelsRare","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupJewelsRare","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupJewelsRare_action%
@@ -248,8 +286,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupPotions","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupPotions","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupPotionsRare_action%
@@ -265,8 +303,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupJewelsMagic","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupJewelsMagic","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupJewelsMagic_action%
@@ -281,8 +319,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupAmmo","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupAmmo","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupAmmoMagicRare_action%
@@ -298,8 +336,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupJewelsMagicRare","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupJewelsMagicRare","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupJewelsMagicRare_action%
@@ -314,8 +352,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupScrolls","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupScrolls","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     %g_FamPickupScrolls_action%
@@ -329,8 +367,8 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamPickupTrophy","LOCALS",1)
-  Global("g_FamInventoryFull","LOCALS",0)
+  Global("g_FamPickupTrophy","GLOBAL",1)
+  Global("g_FamInventoryFull","GLOBAL",0)
 THEN
   RESPONSE #100
     PickupItem("misc01")
@@ -345,6 +383,11 @@ END
 
 %JumpToPack%
 %JumpToPackInjured%
+/*
+%take_dart%
+//%take_dart_2%
+//%change_allegiance%
+*/
 %FollowMaster%
 
 %CheckInventoryNotFull%
