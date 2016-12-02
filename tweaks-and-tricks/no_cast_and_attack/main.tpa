@@ -1,18 +1,77 @@
+//some items, like club of detonation, have actual spells cast from header. These spells should not trigger an attack pause
+//first, find and replace references to such spells
+OUTER_SET i=0
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
+  PHP_EACH ab_array AS int => ab_off BEGIN
+    READ_BYTE (ab_off+2) use_loc
+    PATCH_IF use_loc = 1 BEGIN
+      GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
+      PHP_EACH fx_array AS int2 => fx_off BEGIN
+        READ_SHORT fx_off fx_type
+        PATCH_IF fx_type = 146 BEGIN
+          READ_ASCII (fx_off+0x14) fx_res
+//          PATCH_PRINT ~item %SOURCE_FILE% has spell %fx_res% in ability index %int% available for use at location %use_loc%~
+          TO_LOWER fx_res
+          PATCH_IF NOT VARIABLE_IS_SET $spell_list(~%fx_res%~) BEGIN
+            SET $spell_list(~%fx_res%~) = i
+            i+=1
+          END
+          WRITE_ASCIIE (fx_off+0x14) ~g_nc%i%~ #8
+        END
+      END
+    END
+  END
+BUT_ONLY
+
+//second, create item spell replacements
+ACTION_PHP_EACH spell_list AS spell => i BEGIN
+  PRINT ~%spell%~
+  COPY_EXISTING ~%spell%.spl~ ~override/g_nc%i%.spl~
+END
+
+//third, enumerate spells that are cast by other spells (shell spells)
+OUTER_SET i=0
 COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
   GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
   PHP_EACH ab_array AS int => ab_off BEGIN
-    READ_SHORT (ab_off + 0x12) cast_time
-    delay = (10 - cast_time) * 6 / 10
-    LPF ADD_SPELL_EFFECT
-      INT_VAR
-        opcode = 1 //apr
-        parameter1 = 0 //0 apr
-        parameter2 = 1 //flat mod
-        duration = delay
-        target = 1 //self
-        resist_dispel = 0 //non magical
-        header = int
+    GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
+    PHP_EACH fx_array AS int2 => fx_off BEGIN
+      READ_SHORT fx_off fx_type
+      PATCH_IF fx_type=146 OR fx_type=148 OR fx_type=232 BEGIN
+        READ_ASCII (fx_off+0x14) fx_res
+//        PATCH_PRINT ~spell %SOURCE_FILE% has spell %fx_res% in ability index %int% cast by effect type %fx_type%~
+        TO_LOWER fx_res
+        PATCH_IF NOT VARIABLE_IS_SET $spell_list(~%fx_res%~) BEGIN
+          SPRINT $spell_list(~%fx_res%~) ~%SOURCE_FILE%~
+        END
+      END
     END
-//    PATCH_PRINT ~%SOURCE_FILE%: header %int%, casting time is %cast_time%, no attack time is %delay%~
+  END
+BUT_ONLY
+
+
+//last, add delay to all remaining spells and abilities
+COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
+  PATCH_IF NOT (
+    (~%SOURCE_RES%~ STRING_MATCHES_REGEXP ~^g_nc.*~) = 0 AND
+    NOT VARIABLE_IS_SET $spell_list(~%SOURCE_RES%~)
+  ) BEGIN
+    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
+    PHP_EACH ab_array AS int => ab_off BEGIN
+      READ_SHORT (ab_off + 0x12) cast_time
+      delay = (10 - cast_time) * 6 / 10
+      LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode = 1 //apr
+          parameter1 = 0 //0 apr
+          parameter2 = 1 //flat mod
+          duration = delay
+          target = 1 //self
+          resist_dispel = 0 //non magical
+          header = int
+      END
+//      PATCH_PRINT ~%SOURCE_FILE%: header %int%, casting time is %cast_time%, no attack time is %delay%~
+    END
   END
 BUT_ONLY
