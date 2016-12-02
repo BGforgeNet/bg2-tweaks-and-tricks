@@ -185,3 +185,29 @@ BEGIN
     COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
   END
 END
+
+
+/* an attempt to make them able to use wands
+ACTION_IF ~%prefix%~ STR_EQ ~fam~ BEGIN
+  ACTION_FOR_EACH familiar IN
+    dust
+    dus25
+    imp
+    imp25
+    psd
+    psd25
+    quas
+    qua25
+  BEGIN
+    COPY_EXISTING ~%prefix%%familiar%.cre~ ~override~
+      WRITE_BYTE 0x273 7  //fighter/mage
+    BUT_ONLY
+  END
+END
+
+CREATE SPL g_dart
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 143
+      target = 1
+*/
