@@ -7,7 +7,7 @@ This mod is a collection of tweaks to:
 - make some things easier
 - make other things harder
 
-It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some components are BGT-only. [Download](#installation)
+It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some components are BGT-only. [Download](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
 
 - [Components](#components)
 - [Installation](#installation)
