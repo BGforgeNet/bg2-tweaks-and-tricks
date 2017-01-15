@@ -1,19 +1,9 @@
-EXTEND_TOP %familiar_dialog% 1 4
+EXTEND_TOP %familiar_dialog% %dlg_state%
   +~InPartySlot(LastTalkedToBy,0)~+ @167 + g_familiar_follow
   +~InPartySlot(LastTalkedToBy,0)~+ @168 + g_familiar_loot
   +~InPartySlot(LastTalkedToBy,0)~+ @169 + g_familiar_combat
-//  +~InPartySlot(LastTalkedToBy,0)~+ @201 + g_familiar_gear //darts
 END
 
-/* darts
-APPEND %familiar_dialog%
-  IF ~~ g_familiar_gear
-    SAY @170
-    + ~PartyHasItem("g_dart")~ + @202 + g_familiar_dart
-    ++ @205 + 1
-  END
-END
-*/
 
 APPEND %familiar_dialog%
   IF ~~ g_familiar_follow
@@ -27,7 +17,7 @@ APPEND %familiar_dialog%
     + @172 DO ~SetGlobal("g_FamFollowMaster","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ @173 + 1
+    ++ @173 + %dlg_state%
   END
 END
 
@@ -60,7 +50,7 @@ APPEND %familiar_dialog%
     + @179 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ @180 + 1
+    ++ @180 + %dlg_state%
   END
 END
 
@@ -174,22 +164,14 @@ APPEND %familiar_dialog%
     + @198 DO ~SetGlobal("g_FamPickupTrophy","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ @199 + 1
+    ++ @199 + %dlg_state%
 
   END
 
 
   IF ~~ g_familiar_confirm
     SAY @200
-  IF ~~ + 1
+  IF ~~ + %dlg_state%
   END
-
-/* darts
-  IF ~~ BEGIN g_familiar_dart
-    SAY @203
-    IF ~~ DO
-     ~SetGlobal("g_fam_take_dart","GLOBAL",1)~ GOTO 1
-  END
-*/
 
 END

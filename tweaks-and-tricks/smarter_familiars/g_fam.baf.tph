@@ -1,43 +1,5 @@
 //when asked to hide into pack, stay there until released
 //once released, can go in/out of pack as directed before
-/*
-OUTER_SPRINT take_dart ~
-IF
-  Global("g_fam_take_dart","GLOBAL",1)
-THEN
-  RESPONSE #100
-    DisplayStringHead(Myself,46150)
-    ChangeEnemyAlly(Myself,NEUTRAL)
-    SetGlobal("g_fam_take_dart","GLOBAL",2)
-    Wait(6)
-END
-~
-
-OUTER_SPRINT take_dart_2 ~
-IF
-  Global("g_fam_take_dart","GLOBAL",2)
-THEN
-  RESPONSE #100
-    DisplayStringHead(Myself,46151)
-    ActionOverride(Player1,DestroyItem("g_dart"))
-    CreateItem("g_dart",0,0,0)
-    FillSlot(SLOT_WEAPON1)
-    EquipItem("g_dart")
-    SetGlobal("g_fam_take_dart","GLOBAL",0)
-    Wait(6)
-END
-~
-
-OUTER_SPRINT change_allegiance ~
-IF
-  !Allegiance(Myself,FAMILIAR)
-THEN
-  RESPONSE #100
-    DisplayStringHead(Myself,46152)
-    ChangeEnemyAlly(Myself,FAMILIAR)
-END
-~
-*/
 
 OUTER_SPRINT JumpToPack ~
 IF
@@ -48,7 +10,7 @@ IF
 THEN
   RESPONSE #100
     MoveToObject(Player1)
-    GiveItemCreate("fam%fam%",Player1,0,0,0)
+    GiveItemCreate("%prefix%%fam_item%",Player1,0,0,0)
     DestroySelf()
 END
 ~
@@ -63,7 +25,7 @@ IF
 THEN
   RESPONSE #100
     MoveToObject(Player1)
-    GiveItemCreate("fam%fam%",Player1,0,0,0)
+    GiveItemCreate("%prefix%%fam_item%",Player1,0,0,0)
     DestroySelf()
 END
 ~
@@ -379,15 +341,10 @@ END
 ~
 
 //actual script
-<<<<<<<< .../tnt-inlined/g_%fam%.baf
+<<<<<<<< .../tnt-inlined/g_%fam_cre%.baf
 
 %JumpToPack%
 %JumpToPackInjured%
-/*
-%take_dart%
-//%take_dart_2%
-//%change_allegiance%
-*/
 %FollowMaster%
 
 %CheckInventoryNotFull%

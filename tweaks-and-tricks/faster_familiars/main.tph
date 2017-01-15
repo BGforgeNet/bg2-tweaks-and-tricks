@@ -1,8 +1,8 @@
 INCLUDE ~%MOD_FOLDER%/lib/familiars.tph~ //familiar_list, compatibility with WTPfamiliars
 
-ACTION_PHP_EACH familiar_list AS int => fam BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~%prefix%%fam%.cre~ BEGIN
-    COPY_EXISTING ~%prefix%%fam%.cre~ ~override~
+ACTION_PHP_EACH familiar_list AS cre => item BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%prefix%%cre%.cre~ BEGIN
+    COPY_EXISTING ~%prefix%%cre%.cre~ ~override~
       REPLACE_CRE_ITEM ~boot01~ #0 #0 #0 ~identified&unstealable&undroppable~ ~BOOTS~
     BUT_ONLY
   END
