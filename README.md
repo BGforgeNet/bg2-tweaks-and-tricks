@@ -1,1 +1,1 @@
-tweaks-and-tricks/readme.txt
+tnt/readme.txt
