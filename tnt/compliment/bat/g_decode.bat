@@ -1,6 +1,6 @@
 @echo off
 
-SET "tools_dir=tweaks-and-tricks\tools"
+SET "tools_dir=tnt\tools"
 SET "ov=override"
 
 FOR %%S IN (

@@ -3,11 +3,11 @@
 
 This mod is a collection of tweaks to:
 - fix some annoying and/or unrealistic aspects of the game
-- add some flavor
+- add some flavour
 - make some things easier
 - make other things harder
 
-It will work with BG2:ToB or [BGT](http://www.spellholdstudios.net/ie/bgt). Some components are BGT-only. [Download](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
+It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhanced Editions (not all components are applicable to all games). [Download](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
 
 - [Components](#components)
 - [Installation](#installation)
@@ -260,10 +260,11 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 
 
 ## Installation
-- Download tweaks-and-tricks.zip from the [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
+- Download tnt.zip from the [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
 - Unzip it
-- Move "tweaks-and-tricks" and "setup-tweaks-and-tricks.exe" into the game directory
-- Launch setup-tweaks-and-tricks.exe
+- Move "tnt" and "setup-tnt.exe" into the game directory
+- Launch setup-tnt.exe
+- Answer the question
 
 
 ## Changelog
@@ -310,7 +311,7 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 * [NearInfinity](https://github.com/Argent77/NearInfinity)
 
 ## Licence
-The mod is [CC0 v1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+The mod is [CC BY-NC v4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Weidu is GPLv3
 

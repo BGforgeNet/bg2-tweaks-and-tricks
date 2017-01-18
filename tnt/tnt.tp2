@@ -1,4 +1,4 @@
-BACKUP ~tweaks-and-tricks/backup~
+BACKUP ~tnt/backup~
 AUTHOR "burner1024 @ github"
 VERSION ~v7~
 NO_IF_EVAL_BUG
@@ -8,7 +8,7 @@ AUTO_EVAL_STRINGS
 //MODDER setup_tra none
 //AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
-LANGUAGE ~English~ ~ENGLISH~ ~tweaks-and-tricks/tra/english/game.tra~
+LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~
 
 
 BEGIN @74 /* Smarter familiars */

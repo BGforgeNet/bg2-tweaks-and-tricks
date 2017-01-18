@@ -1,4 +1,4 @@
-setup-tweaks-and-tricks.exe
-tweaks-and-tricks/backup/*
-!tweaks-and-tricks/backup/.keepme
+setup-tnt.exe
+tnt/backup/*
+!tnt/backup/.keepme
 *.DEBUG
