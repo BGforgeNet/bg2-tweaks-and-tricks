@@ -130,15 +130,15 @@ OUTER_SPRINT g_FamPickupAmmoRare_action ~%g_FamPickupAmmoRare_action%%NewLine%Pi
 IF
   Global("g_FamiliarJumpOut","GLOBAL",1)
   Global("g_FamStayInPack","GLOBAL",0)
-  HasItem("%prefix%%fam_item%",Player1)
+  HasItem("%fam_item%",Player1)
   Delay(12) //check every 2 rounds
   CombatCounterLT(1)
   !OnScreen([EVILCUTOFF])
 THEN
   RESPONSE #100
-    TakePartyItem("%prefix%%fam_item%")
-    DestroyItem("%prefix%%fam_item%")
-    MoveGlobalObject("%prefix%%fam_cre%",Player1)
+    TakePartyItem("%fam_item%")
+    DestroyItem("%fam_item%")
+    MoveGlobalObject("%fam_cre%",Player1)
     Continue()
 END
 >>>>>>>>
@@ -146,11 +146,17 @@ END
 //Override script
 INCLUDE ~%MOD_FOLDER%/lib/familiars.tph~ //familiar_list, compatibility with WTPfamiliars
 
-ACTION_PHP_EACH familiar_list AS fam_cre => fam_item BEGIN
-  INCLUDE ~%MOD_FOLDER%/smarter_familiars/g_fam.baf.tph~ //generate script. The only difference is GiveItemCreate for jumping into pack
-  ACTION_IF FILE_EXISTS_IN_GAME ~%prefix%%fam_cre%.cre~ BEGIN
-    COPY_EXISTING ~%prefix%%fam_cre%.cre~ ~override~
+ACTION_PHP_EACH familiar_list AS cre => item BEGIN
+  OUTER_SPRINT fam_cre ~%prefix%%cre%~
+  OUTER_SPRINT fam_item ~%prefix%%item%~
+  ACTION_IF FILE_EXISTS_IN_GAME ~%fam_cre%.cre~ BEGIN
+    COPY_EXISTING ~%fam_cre%.cre~ ~override~
+      READ_ASCII 0x280 death_var
+    BUT_ONLY
+    INCLUDE ~%MOD_FOLDER%/smarter_familiars/g_fam.baf.tph~ //ACTION to generate script. Depends on %death_var% and %fam_item%
+    COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII 0x248 over_script
+      PATCH_PRINT ~cre is %fam_cre%, script is %over_script%, death_var is %death_var%~
       PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN //use existing script if possible
         over_exists = 1
       END ELSE BEGIN //or create a new one
@@ -178,37 +184,8 @@ ACTION_PHP_EACH familiar_list AS fam_cre => fam_item BEGIN
 END
 
 //New dialog options
-ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN
-  ACTION_FOR_EACH familiar_dialog IN
-    wtpfamp1
-    wtpfamp3
-  BEGIN
-    OUTER_SET dlg_state = 8
-    ACTION_IF FILE_EXISTS_IN_GAME ~%familiar_dialog%.dlg~ BEGIN
-      COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
-    END
-  END
-  ACTION_FOR_EACH familiar_dialog IN
-    wtpfamp2
-    wtpfamp4
-  BEGIN
-    OUTER_SET dlg_state = 7
-    ACTION_IF FILE_EXISTS_IN_GAME ~%familiar_dialog%.dlg~ BEGIN
-      COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
-    END
-  END
-END ELSE BEGIN
-  OUTER_SET dlg_state = 1
-  ACTION_FOR_EACH familiar_dialog IN
-    famil1
-    famil125
-    famil2
-    famil225
-    famil3
-    famil325
-  BEGIN
-    ACTION_IF FILE_EXISTS_IN_GAME ~%familiar_dialog%.dlg~ BEGIN
-      COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
-    END
+ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
+    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
   END
 END

@@ -1,11 +1,11 @@
-EXTEND_TOP %familiar_dialog% %dlg_state%
+EXTEND_TOP %dialog% %state%
   +~InPartySlot(LastTalkedToBy,0)~+ @167 + g_familiar_follow
   +~InPartySlot(LastTalkedToBy,0)~+ @168 + g_familiar_loot
   +~InPartySlot(LastTalkedToBy,0)~+ @169 + g_familiar_combat
 END
 
 
-APPEND %familiar_dialog%
+APPEND %dialog%
   IF ~~ g_familiar_follow
     SAY @170
 
@@ -17,12 +17,12 @@ APPEND %familiar_dialog%
     + @172 DO ~SetGlobal("g_FamFollowMaster","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ @173 + %dlg_state%
+    ++ @173 + %state%
   END
 END
 
 
-APPEND %familiar_dialog%
+APPEND %dialog%
   IF ~~ g_familiar_combat
     SAY @170
 
@@ -50,12 +50,12 @@ APPEND %familiar_dialog%
     + @179 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ @180 + %dlg_state%
+    ++ @180 + %state%
   END
 END
 
 
-APPEND %familiar_dialog%
+APPEND %dialog%
   IF ~~ g_familiar_loot
     SAY @170
 
@@ -164,14 +164,14 @@ APPEND %familiar_dialog%
     + @198 DO ~SetGlobal("g_FamPickupTrophy","GLOBAL",0)~
     + g_familiar_confirm
 
-    ++ @199 + %dlg_state%
+    ++ @199 + %state%
 
   END
 
 
   IF ~~ g_familiar_confirm
     SAY @200
-  IF ~~ + %dlg_state%
+  IF ~~ + %state%
   END
 
 END

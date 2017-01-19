@@ -4,14 +4,14 @@
 OUTER_SPRINT JumpToPack ~
 IF
   Global("g_FamJumpToPack","GLOBAL",1)
-  !Dead(Myself)
   OR(2)
     !CombatCounterLT(1)
     See([EVILCUTOFF])
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     MoveToObject(Player1)
-    GiveItemCreate("%prefix%%fam_item%",Player1,0,0,0)
+    GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
 END
 ~
@@ -20,14 +20,14 @@ OUTER_SPRINT JumpToPackInjured ~
 IF
   Global("g_FamJumpToPackInjured","GLOBAL",1)
   HPPercentLT(Myself,50)
-  !Dead(Myself)
   OR(2)
     !CombatCounterLT(1)
     See([EVILCUTOFF])
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     MoveToObject(Player1)
-    GiveItemCreate("%prefix%%fam_item%",Player1,0,0,0)
+    GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
 END
 ~
@@ -38,7 +38,7 @@ IF
   !See([EVILCUTOFF])
   !Detect(Player1)
   Global("g_FamFollowMaster","GLOBAL",1)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
@@ -55,7 +55,7 @@ IF
   !See([EVILCUTOFF])
   Detect(Player1)
   !Range(Player1,10)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     MoveToObjectFollow(Player1)
@@ -69,7 +69,7 @@ IF
   !See([EVILCUTOFF])
   !InMyArea(Player1)
   Global("g_FamFollowMaster","GLOBAL",1)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     MoveGlobalObject(Myself,Player1)
@@ -98,7 +98,7 @@ IF
   HasItemSlot(Player1,SLOT_MISC4)
   HasItemSlot(Player1,SLOT_MISC3)
   !GlobalTimerNotExpired("g_FamInventoryNotifyTimer","GLOBAL")
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     SetGlobal("g_FamInventoryFull","GLOBAL",1)
@@ -110,7 +110,7 @@ END
 OUTER_SPRINT CheckInventoryNotFull ~
 IF
   Global("g_FamInventoryFull","GLOBAL",1)
-  !Dead(Myself)
+  !Dead("%death_var%")
   OR(16)
     !HasItemSlot(Player1,SLOT_MISC18)
     !HasItemSlot(Player1,SLOT_MISC17)
@@ -144,7 +144,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupGold","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
   PickUpItem("misc07")
@@ -170,7 +170,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupScalps","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     PickUpItem("misc86")
@@ -191,7 +191,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupJewelsCommon","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupJewelsCommon_action%
@@ -209,7 +209,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupPotions","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupPotionsCommon_action%
@@ -228,7 +228,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupAmmo","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupAmmoMagic_action%
@@ -246,7 +246,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupJewelsRare","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupJewelsRare_action%
@@ -263,7 +263,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupPotions","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupPotionsRare_action%
@@ -281,7 +281,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupJewelsMagic","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupJewelsMagic_action%
@@ -298,7 +298,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupAmmo","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupAmmoMagicRare_action%
@@ -316,7 +316,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupJewelsMagicRare","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupJewelsMagicRare_action%
@@ -333,7 +333,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupScrolls","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     %g_FamPickupScrolls_action%
@@ -349,7 +349,7 @@ IF
   Detect(Player1)
   Global("g_FamPickupTrophy","GLOBAL",1)
   Global("g_FamInventoryFull","GLOBAL",0)
-  !Dead(Myself)
+  !Dead("%death_var%")
 THEN
   RESPONSE #100
     PickupItem("misc01")
