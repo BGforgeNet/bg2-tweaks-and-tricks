@@ -77,10 +77,9 @@ Autosave can be a boon or a plague. They consume time, in any case. If you're pl
 
 The less a familiar is told to pick up, the faster it'll do it. So, try to keep the list short. For example, don't tell it to pick up bandit scalps in BG2.
 
-**There are known issues with this component:**
-- Familiars will pick up items from closed or trapped chests. Live with it or don't use it.
-- If told to jump into pack when see enemies, and get out of it when not, in certain areas (not many) a glitch happens.
-The familiar will start to jump in and out continuously. In that case, talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
+**Note:**
+- Familiars as small creatures can get through where humans cannot. So they will pick up items from closed chests. If you don't like that, don't tell them to pick up items.
+- If a familiar starts to jump in and out of backpack continuously - talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
 
 ##### Faster familiars
 Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
