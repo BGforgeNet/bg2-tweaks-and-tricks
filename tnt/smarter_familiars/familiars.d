@@ -26,28 +26,60 @@ APPEND %dialog%
   IF ~~ g_familiar_combat
     SAY @170
 
-    + ~Global("g_FamJumpToPack","GLOBAL",0)~
-    + @174 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",1)~
+    + ~Global("g_FamJumpToPack","GLOBAL",0)~ //hide on sight
+    + @174 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",1)
+               SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)
+               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",0)
+              ~
     + g_familiar_confirm
 
-    + ~Global("g_FamJumpToPack","GLOBAL",1)~
-    + @175 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)~ 
+    + ~Global("g_FamJumpToPack","GLOBAL",1)~ //never hide
+    + @175 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)
+               SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)
+               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",0)
+              ~
     + g_familiar_confirm
 
-    + ~Global("g_FamJumpToPackInjured","GLOBAL",0)~
-    + @176 DO ~SetGlobal("g_FamJumpToPackInjured","GLOBAL",1)~
+    + ~Global("g_FamJumpToPackInjured","GLOBAL",0)~ //hide when injured
+    + @176 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)
+               SetGlobal("g_FamJumpToPackInjured","GLOBAL",1)
+               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",0)
+              ~
     + g_familiar_confirm
 
-    + ~Global("g_FamJumpToPack","GLOBAL",1)~
-    + @177 DO ~SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)~ 
+    + ~Global("g_FamJumpToPackBadlyInjured","GLOBAL",0)~ //hide when badly injured
+    + @177 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)
+               SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)
+               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",1)
+              ~
     + g_familiar_confirm
 
-    + ~Global("g_FamiliarJumpOut","GLOBAL",0)~
+    + ~Global("g_FamiliarJumpOut","GLOBAL",0)~ //jump out self
     + @178 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",1)~
     + g_familiar_confirm
 
-    + ~Global("g_FamiliarJumpOut","GLOBAL",1)~
+    + ~Global("g_FamiliarJumpOut","GLOBAL",1)~ //don't ever jump out
     + @179 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",0)~
+    + g_familiar_confirm
+
+    + ~OR(2)
+         Global("g_FamHurtNotif","GLOBAL",1)
+         Global("g_FamBadlyHurtNotif","GLOBAL",1)~ //no Notif when hurt
+    + @207 DO ~SetGlobal("g_FamHurtNotif","GLOBAL",0)
+               SetGlobal("g_FamBadlyHurtNotif","GLOBAL",0)
+              ~
+    + g_familiar_confirm
+
+    + ~Global("g_FamHurtNotif","GLOBAL",0)~ //Notif when hurt
+    + @208 DO ~SetGlobal("g_FamHurtNotif","GLOBAL",1)
+               SetGlobal("g_FamBadlyHurtNotif","GLOBAL",0)
+              ~
+    + g_familiar_confirm
+
+    + ~Global("g_FamBadlyHurtNotif","GLOBAL",0)~ //Notif when badly hurt
+    + @209 DO ~SetGlobal("g_FamHurtNotif","GLOBAL",0)
+               SetGlobal("g_FamBadlyHurtNotif","GLOBAL",1)
+              ~
     + g_familiar_confirm
 
     ++ @180 + %state%

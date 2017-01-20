@@ -19,7 +19,7 @@ END
 OUTER_SPRINT JumpToPackInjured ~
 IF
   Global("g_FamJumpToPackInjured","GLOBAL",1)
-  HPPercentLT(Myself,50)
+  HPPercentLT(Myself,70)
   OR(2)
     !CombatCounterLT(1)
     See([EVILCUTOFF])
@@ -29,6 +29,66 @@ THEN
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
+END
+~
+
+OUTER_SPRINT JumpToPackBadlyInjured ~
+IF
+  Global("g_FamJumpToPackBadlyInjured","GLOBAL",1)
+  HPPercentLT(Myself,30)
+  OR(2)
+    !CombatCounterLT(1)
+    See([EVILCUTOFF])
+  !Dead("%death_var%")
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    GiveItemCreate("%fam_item%",Player1,0,0,0)
+    DestroySelf()
+END
+~
+
+OUTER_SPRINT HurtNotif ~
+IF
+  Global("g_FamHurtNotif","GLOBAL",1)
+  Global("g_FamHurtNotifDone","GLOBAL",0)
+  HPPercentLT(Myself,70)
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  !Dead("%death_var%")
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@210)
+    SetGlobal("g_FamHurtNotifDone","GLOBAL",1)
+    Continue()
+END
+~
+
+OUTER_SPRINT BadlyHurtNotif ~
+IF
+  Global("g_FamBadlyHurtNotif","GLOBAL",1)
+  Global("g_FamHurtNotifDone","GLOBAL",0)
+  HPPercentLT(Myself,30)
+  CombatCounterLT(1)
+  !See([EVILCUTOFF])
+  !Dead("%death_var%")
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@211)
+    SetGlobal("g_FamHurtNotifDone","GLOBAL",1)
+    Continue()
+END
+~
+
+OUTER_SPRINT ResetHurtNotifDone ~ //at start of each combat
+IF
+  Global("g_FamHurtNotifDone","GLOBAL",1)
+  !CombatCounterLT(1)
+  !Dead("%death_var%")
+THEN
+  RESPONSE #100
+    SetGlobal("g_FamHurtNotifDone","GLOBAL",0)
+    Continue()
 END
 ~
 
@@ -364,6 +424,12 @@ END
 
 %JumpToPack%
 %JumpToPackInjured%
+%JumpToPackBadlyInjured%
+
+%ResetHurtNotifDone%
+%HurtNotif%
+%BadlyHurtNotif%
+
 %FollowMaster%
 
 %CheckInventoryNotFull%

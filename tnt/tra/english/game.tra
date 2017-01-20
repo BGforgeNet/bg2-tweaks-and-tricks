@@ -270,19 +270,19 @@ Not Usable By:
 @166 = ~Hassle-free returning weapons~
 
 
-@167  = ~We need to discuss formation.~
+@167  = ~Let's change formation.~
 @168  = ~I want to give you new instructions about the loot.~
-@169  = ~Let's change your behaviour in combat.~
+@169  = ~We need to discuss combat.~
 @170  = ~Yes, boss?~
 @171  = ~Follow me at all times.~
 @172  = ~Stop following me all the time.~
 @173  = ~Actually, nevermind. Distance is fine for now.~
 @174  = ~If you see any danger, jump to my pack right away!~
 @175  = ~Don't hide in my pack when you see enemies.~
-@176  = ~If you're injured, rush to my pack immediately.~
-@177  = ~Even when you're injured, don't hide in my pack unless I ask you.~
+@176  = ~When you're injured, rush to my pack immediately.~
+@177  = ~When you're badly injured, rush to my pack immediately.~
 @178  = ~When the enemies are gone, get out of the pack by yourself.~
-@179  = ~Stay in the pack until I tell you specifically. One cannot be too careful.~
+@179  = ~After hiding in my pack, stay there. One cannot be too careful.~
 @180  = ~Ah, maybe later.~
 @181  = ~Stop picking up any items, okay?~
 @182  = ~I want you to bring me everything. Any valuables.~
@@ -310,4 +310,12 @@ Not Usable By:
 @204  = ~Done.~
 @205  = ~No, actually I think your gear is fine.~
 
+//tp2
 @206 = ~Windows only~
+
+//smarter familiars
+@207 = ~Don't bother me with your whining, I don't care if you're hurt.~
+@208 = ~After fight, if you're hurt, let me know.~
+@209 = ~After fight, if you're badly hurt, let me know.~
+@210 = ~I'm hurting here, Boss.~
+@211 = ~I'm really hurting here, Boss.~
