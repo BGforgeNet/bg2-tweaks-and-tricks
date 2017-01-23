@@ -1,0 +1,57 @@
+OUTER_SPRINT comp_dir ~%MOD_FOLDER%/hassle_free_ammo~
+
+COPY ~%comp_dir%/g_axe.itm~ ~override~
+  SAY NAME1 @160
+  SAY NAME2 @160
+  SAY UNIDENTIFIED_DESC @161
+  WRITE_LONG 0x54 "-1" //id desc
+  WRITE_LONG 0x34 300 //price
+
+COPY ~%comp_dir%/g_dagg.itm~ ~override~
+  SAY NAME1 @162
+  SAY NAME2 @162
+  SAY UNIDENTIFIED_DESC @163
+  WRITE_LONG 0x54 "-1"
+  WRITE_LONG 0x34 300
+
+COPY ~%comp_dir%/g_dart.itm~ ~override~
+  SAY NAME1 @164
+  SAY NAME2 @164
+  SAY UNIDENTIFIED_DESC @165
+  WRITE_LONG 0x54 "-1"
+  WRITE_LONG 0x34 300
+
+COPY ~%comp_dir%/g_arrow.itm~ ~override~
+  SAY NAME1 @215
+  SAY NAME2 @215
+  SAY UNIDENTIFIED_DESC @216
+  WRITE_LONG 0x54 "-1"
+  WRITE_LONG 0x34 300
+
+COPY ~%comp_dir%/g_bolt.itm~ ~override~
+  SAY NAME1 @217
+  SAY NAME2 @217
+  SAY UNIDENTIFIED_DESC @218
+  WRITE_LONG 0x54 "-1"
+  WRITE_LONG 0x34 300
+
+COPY ~%comp_dir%/g_bull.itm~ ~override~
+  SAY NAME1 @219
+  SAY NAME2 @219
+  SAY UNIDENTIFIED_DESC @220
+  WRITE_LONG 0x54 "-1"
+  WRITE_LONG 0x34 300
+
+
+ACTION_FOR_EACH store IN taerum ribald BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%store%.sto~ BEGIN
+    COPY_EXISTING ~%store%.sto~ ~override~
+      ADD_STORE_ITEM "g_axe" #0 #0 #0 ~IDENTIFIED~ #10
+      ADD_STORE_ITEM "g_dagg" #0 #0 #0 ~IDENTIFIED~ #10
+      ADD_STORE_ITEM "g_dart" #0 #0 #0 ~IDENTIFIED~ #10
+      ADD_STORE_ITEM "g_arrow" #0 #0 #0 ~IDENTIFIED~ #10
+      ADD_STORE_ITEM "g_bolt" #0 #0 #0 ~IDENTIFIED~ #10
+      ADD_STORE_ITEM "g_bull" #0 #0 #0 ~IDENTIFIED~ #10
+    BUT_ONLY
+  END
+END
