@@ -17,6 +17,16 @@ APPEND %dialog%
     + @172 DO ~SetGlobal("g_FamFollowMaster","GLOBAL",0)~
     + g_familiar_confirm
 
+    + ~Global("g_FamSpeed","GLOBAL",0)~
+    + @212 DO ~SetGlobal("g_FamSpeed","GLOBAL",1)
+               ApplySpellRES("G_FSPED1","%death_var%")~
+    + g_familiar_confirm
+
+    + ~Global("g_FamSpeed","GLOBAL",1)~
+    + @213 DO ~SetGlobal("g_FamSpeed","GLOBAL",0)
+               ApplySpellRES("G_FSPED0","%death_var%")~
+    + g_familiar_confirm
+
     ++ @173 + %state%
   END
 END
@@ -100,6 +110,7 @@ APPEND %dialog%
           SetGlobal("g_FamPickupPotions","GLOBAL",0)
           SetGlobal("g_FamPickupScrolls","GLOBAL",0)
           SetGlobal("g_FamPickupTrophy","GLOBAL",0)
+          SetGlobal("g_FamPickupScalps","GLOBAL",0)
          ~
     + g_familiar_confirm
 
@@ -112,6 +123,7 @@ APPEND %dialog%
           SetGlobal("g_FamPickupPotions","GLOBAL",1)
           SetGlobal("g_FamPickupScrolls","GLOBAL",1)
           SetGlobal("g_FamPickupTrophy","GLOBAL",1)
+          SetGlobal("g_FamPickupScalps","GLOBAL",1)
          ~
     + g_familiar_confirm
 

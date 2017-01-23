@@ -26,6 +26,8 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    DisplayStringHead(Myself,@214) //Ouch!
+    ApplySpellRES("G_FSPED2",Myself)
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
@@ -42,6 +44,8 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    DisplayStringHead(Myself,@214) //Ouch!
+    ApplySpellRES("G_FSPED2",Myself)
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
@@ -101,9 +105,9 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
-    SetInterrupt(FALSE)
+//    SetInterrupt(FALSE)
     MoveToObject(Player1)
-    SetInterrupt(TRUE)
+//    SetInterrupt(TRUE)
     Continue()
 END
 ~
