@@ -267,9 +267,9 @@ Type:  1-handed
 Not Usable By:
  Cleric~
 
-@166 = ~Hassle-free returning weapons~
+@166 = ~Hassle-free ammo~
 
-
+//smarter familiars
 @167  = ~Let's change formation.~
 @168  = ~I want to give you new instructions about the loot.~
 @169  = ~We need to discuss combat.~
@@ -319,3 +319,26 @@ Not Usable By:
 @209 = ~After fight, if you're badly hurt, let me know.~
 @210 = ~I'm hurting here, Boss.~
 @211 = ~I'm really hurting here, Boss.~
+@212 = ~Move faster, will you? Don't lag behind.~
+@213 = ~Don't run so fast. I can't catch up to you.~
+@214 = ~Ouch!~
+
+//returning weapons
+@215 = ~Quiver of Plenty~
+@216 = ~Enchanted quivers like this one are highly sought after by professional archers.
+
+STATISTICS:
+
+Unlimited plain arrows~
+@217 = ~Case of Plenty~
+@218 = ~Enchanted bolt cases like this one are highly sought after by professional crossbow users.
+
+STATISTICS:
+
+Unlimited plain bolts~
+@219 = ~Bag of Plenty~
+@220 = ~Enchanted bullet bags like this one are highly sought after by professional slingers.
+
+STATISTICS:
+
+Unlimited plain bullets~
