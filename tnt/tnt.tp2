@@ -248,5 +248,5 @@ BEGIN @159 /* More ankheg armors by Taerom */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 INCLUDE ~%MOD_FOLDER%/more_ankhegs/main.tpa~
 
-BEGIN @166 /* Hassle-free returning weapons */
-INCLUDE ~%MOD_FOLDER%/returning_weapons/main.tpa~
+BEGIN @166 /* Hassle-free ammo */
+INCLUDE ~%MOD_FOLDER%/hassle_free_ammo/main.tpa~
