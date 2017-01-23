@@ -65,3 +65,10 @@ ACTION_IF FILE_EXISTS_IN_GAME ~winski2.cre~ BEGIN
     WRITE_BYTE 0x273 0x01 //mage class instead of innocent
   BUT_ONLY
 END
+
+//Kahrk, the mightiest ogre mage - in Firewine
+ACTION_IF FILE_EXISTS_IN_GAME ~kahrk.cre~ BEGIN  
+  COPY_EXISTING ~kahrk.cre~ ~override~
+    REMOVE_CRE_ITEM ~mageamul~ ~magebrac~
+  BUT_ONLY
+END
