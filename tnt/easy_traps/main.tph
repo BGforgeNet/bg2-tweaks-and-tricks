@@ -15,6 +15,10 @@ END
 
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause.g_~ BEGIN
   OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
+/*  OUTER_SPRINT traps_baf_pause ~
+CreateCreature("g_trap",[-1.-1],0)
+DisplayStringHead(Myself,3)
+~*/
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_pause ~~
 END
@@ -180,3 +184,31 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
     EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
   END
 END
+
+/*
+//spy cre for pause game
+COPY_EXISTING ~cutspy.cre~ ~override/g_trap.cre~
+  SAY 0x8 ~Trap sense~ //name
+  PATCH_FOR_EACH off IN 0x250 0x258 0x260 0x268 BEGIN
+    WRITE_ASCII off ~~ #8 //null scripts
+  END
+  WRITE_ASCII 0x248 ~g_trap~ #8 //over script
+  WRITE_ASCII 0x280 ~g_trap~ #32 //death var
+  REMOVE_CRE_EFFECTS
+  LPF ADD_CRE_EFFECT INT_VAR opcode = 20 timing = 1 END
+BUT_ONLY
+
+//spy cre script
+<<<<<<<< .../tnt-inlined/g_trap.baf
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,1)
+    PauseGame()
+    DisplayStringHead(Myself,2)
+    DestroySelf()
+END
+>>>>>>>>
+COMPILE ~.../tnt-inlined/g_trap.baf~
+*/

@@ -12,9 +12,9 @@ END
 
 //main detection check
 IF
-  OR(2)
+//  OR(2)
     Detect([PC])
-    Detect([Familiar])
+//    Detect([Familiar])
   %traps_baf_range%
   %traps_baf_combat%
 //  %traps_baf_modal%
@@ -23,6 +23,7 @@ IF
   Global("g_trap_%trap_type_id%_detected","myarea",0) // hasn't been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
+  !GlobalTimerNotExpired("g_trap_common_timer","global") // don't spam pause
 THEN
 /*
   RESPONSE #1
@@ -37,6 +38,7 @@ THEN
 */
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@29)
     %traps_baf_sound%
@@ -46,6 +48,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@30)
     %traps_baf_sound%
@@ -55,6 +58,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@31)
     %traps_baf_sound%
@@ -64,6 +68,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@32)
     %traps_baf_sound%
@@ -73,6 +78,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@33)
     %traps_baf_sound%
@@ -82,6 +88,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@34)
     %traps_baf_sound%
@@ -91,6 +98,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@35)
     %traps_baf_sound%
@@ -100,6 +108,7 @@ THEN
     Continue()
   RESPONSE #1
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
     DisplayStringHead(LastSeenBy,@36)
     %traps_baf_sound%
