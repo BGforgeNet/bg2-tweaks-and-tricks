@@ -12,9 +12,7 @@ END
 
 //main detection check
 IF
-//  OR(2)
     Detect([PC])
-//    Detect([Familiar])
   %traps_baf_range%
   %traps_baf_combat%
 //  %traps_baf_modal%
@@ -121,9 +119,7 @@ END
 
 // Display detected trap type second and consequtive times
 IF
-  OR(2)
-    Detect([PC])
-    Detect([Familiar])
+  Detect([PC])
   %traps_baf_range%
 //  %traps_baf_modal%
   Global("g_trap_%trap_type_id%_detected","myarea",1) // has been detected with thief's skill
@@ -150,7 +146,17 @@ THEN
     Continue()
 END
 
-//Stop warning
+//Start warning again when reset
+IF
+  Reset([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",0)
+//    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) armed again~)
+    Continue()
+END
+
+//Stop warning when fired
 IF
   OR(3)
     Disarmed([ANYONE])
@@ -161,15 +167,6 @@ THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",1)
 //    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) disarmed~)
-    Continue()
+//    Continue()
 END
 
-//Start warning again
-IF
-  Reset([ANYONE])
-THEN
-  RESPONSE #100
-    SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",0)
-//    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) armed again~)
-    Continue()
-END
