@@ -167,6 +167,5 @@ THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",1)
 //    DisplayStringHead(Myself,~Trap %trap_type_id% (%clone_id%) disarmed~)
-//    Continue()
+    Continue()
 END
-
