@@ -136,6 +136,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
   FDRAKET5 => ~Agannazar's scorcher trap~
   FDRAKET6 => ~Agannazar's scorcher trap~
   FDRAKET7 => ~Agannazar's scorcher trap~
+  WARDEXIT => ~Cloudkill trap~
 
   //BGTtweak, random activated traps in pirate cave
   GTAR9501 => ~Unknown trap~ 
