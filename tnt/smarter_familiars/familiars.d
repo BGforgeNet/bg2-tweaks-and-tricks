@@ -92,6 +92,14 @@ APPEND %dialog%
               ~
     + g_familiar_confirm
 
+    + ~Global("g_FamHitAndRun","GLOBAL",0)~ //hit and run on
+    + @221 DO ~SetGlobal("g_FamHitAndRun","GLOBAL",1)~
+    + g_familiar_confirm
+
+    + ~Global("g_FamHitAndRun","GLOBAL",1)~ //hit and run off
+    + @222 DO ~SetGlobal("g_FamHitAndRun","GLOBAL",1)~
+    + g_familiar_confirm
+
     ++ @180 + %state%
   END
 END

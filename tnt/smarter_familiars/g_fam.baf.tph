@@ -96,6 +96,31 @@ THEN
 END
 ~
 
+OUTER_SPRINT HitAndRun ~
+IF
+  Global("g_FamHitAndRun","GLOBAL",1)
+  !Dead("%death_var%")
+  AttackedBy([EVILCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    ApplySpellRES("G_FSPED2",Myself)
+    RunAwayFrom(LastAttackerOf(Myself),45)
+    AttackOneRound(LastAttackerOf(Myself))
+//    Continue()
+END
+/*
+IF
+  Global("g_FamHitAndRun","GLOBAL",1)
+  !Dead("%death_var%")
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    AttackOneRound(LastTargetedBy(Myself))
+//    Continue()
+END
+*/
+~
+
 OUTER_SPRINT FollowMaster ~
 IF
   CombatCounterLT(1)
@@ -161,13 +186,12 @@ IF
   HasItemSlot(Player1,SLOT_MISC5)
   HasItemSlot(Player1,SLOT_MISC4)
   HasItemSlot(Player1,SLOT_MISC3)
-  !GlobalTimerNotExpired("g_FamInventoryNotifyTimer","GLOBAL")
+  Global("g_FamInventoryFull","GLOBAL",0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
     SetGlobal("g_FamInventoryFull","GLOBAL",1)
     DisplayStringHead(Myself,@15)
-    SetGlobalTimer("g_FamInventoryNotifyTimer","GLOBAL",18)
 END
 ~
 
@@ -429,6 +453,8 @@ END
 %JumpToPack%
 %JumpToPackInjured%
 %JumpToPackBadlyInjured%
+
+%HitAndRun%
 
 %ResetHurtNotifDone%
 %HurtNotif%

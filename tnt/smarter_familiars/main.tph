@@ -170,9 +170,19 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
       COMPILE EVAL ~.../tnt-inlined/g_%fam_cre%.baf~
     END
   END
-  ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN //WTP fams
-    EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
-    EXTEND_BOTTOM ~baldur25.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
+  ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN
+    ACTION_FOR_EACH script IN ~baldur.bcs~ ~baldur25.bcs~ BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%script%~ BEGIN
+        //jump in/out
+        EXTEND_BOTTOM ~%script%~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
+        //disable WTP nagging
+        COPY_EXISTING ~%script%~ ~override~
+          DECOMPILE_AND_PATCH BEGIN
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GlobalTimerExpired("#GWANOUT","GLOBAL")~ ~False()~
+          END
+        BUT_ONLY
+      END
+    END
   END ELSE BEGIN //normal fams
     ACTION_IF (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 1) BEGIN //only non-*25 familiars in SoA baldur.bcs
       EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
