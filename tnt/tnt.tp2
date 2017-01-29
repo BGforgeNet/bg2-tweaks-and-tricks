@@ -250,3 +250,6 @@ INCLUDE ~%MOD_FOLDER%/more_ankhegs/main.tpa~
 
 BEGIN @166 /* Hassle-free ammo */
 INCLUDE ~%MOD_FOLDER%/hassle_free_ammo/main.tpa~
+
+BEGIN @223 /* Really mirrored eyes potion */
+INCLUDE ~%MOD_FOLDER%/really_mirrored_eyes/main.tpa~

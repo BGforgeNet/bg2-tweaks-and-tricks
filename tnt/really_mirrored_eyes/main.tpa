@@ -1,0 +1,63 @@
+OUTER_SET i = 0
+COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
+  READ_STRREF 0x8 name
+  PATCH_IF NOT ~%name%~ STRING_CONTAINS_REGEXP ~gaze~ BEGIN //check "gaze" in the name
+    DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END //record resource
+    DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END //record name
+    i+=1
+  END ELSE BEGIN //check for gaze projectile
+    gaze = 0
+    GET_OFFSET_ARRAY h_array SPL_V10_HEADERS
+    PHP_EACH h_array AS int => h_off BEGIN
+      READ_SHORT (h_off + 0x26) pro
+      PATCH_IF pro == 65 BEGIN
+        gaze = 1
+      END
+    END
+    PATCH_IF gaze == 1 BEGIN
+      DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END
+      DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END
+      i+=1
+    END
+  END
+BUT_ONLY
+
+COPY_EXISTING ~potn38.itm~ ~override~ //mirrored eyes
+  j = 0
+  GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
+  PHP_EACH h_array AS int => h_off BEGIN //find out which spells are already protected from
+    GET_OFFSET_ARRAY2 fx_array h_off ITM_V10_HEAD_EFFECTS
+    PHP_EACH fx_array AS int => fx_off BEGIN
+      READ_SHORT fx_off fx_type
+      PATCH_IF fx_type = 206 BEGIN //protection from spell
+        READ_ASCII fx_off + 0x14 spell
+//        PATCH_PRINT "protection from %spell% found"
+        DEFINE_ASSOCIATIVE_ARRAY old_list BEGIN ~%j%~ => ~%spell%~ END
+        j+=1
+      END
+    END
+  END
+  PHP_EACH spell_list AS i => res BEGIN
+    add = 1
+    PHP_EACH old_list AS j => old_res BEGIN //skip spells that are already protected from
+      PATCH_IF ~%old_res%~ STR_EQ ~%res%~ BEGIN
+        add = 0
+      END
+    END
+    PATCH_IF add == 1 BEGIN
+      SPRINT name $spell_names(~%i%~)
+//      PATCH_PRINT ~Adding immunity to %name% (%res%)~
+      LPF ADD_ITEM_EFFECT
+        INT_VAR
+          opcode = 206 //protection from spell
+          parameter1 = 0 //no feedback line
+          duration = 60
+          target = 1 //self
+          resist_dispel = 1 //dispel, no bypass
+          power = 4 //potion power
+        STR_VAR
+          resource = ~%res%~
+      END
+    END
+  END
+BUT_ONLY
