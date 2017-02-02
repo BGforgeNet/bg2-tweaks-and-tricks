@@ -192,7 +192,13 @@ BEGIN @115 /* stop moving and pause game */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME ~g_tr1.bcs~ @129 /* All easy traps components must be installed before core */
 SUBCOMPONENT @114 /* Easy traps: character action */
-COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_pause.g_~
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_pause1.g_~
+
+BEGIN @224 /* stop moving and pause game only for ground traps */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
+REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME ~g_tr1.bcs~ @129 /* All easy traps components must be installed before core */
+SUBCOMPONENT @114 /* Easy traps: character action */
+COPY_EXISTING ~sw1h01.itm~ ~override/g_tnt_trap_pause2.g_~
 
 BEGIN @116 /* Easy traps: center on character */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */

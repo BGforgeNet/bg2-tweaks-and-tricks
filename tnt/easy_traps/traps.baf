@@ -12,7 +12,7 @@ END
 
 //main detection check
 IF
-    Detect([PC])
+  Detect([PC])
   %traps_baf_range%
   %traps_baf_combat%
 //  %traps_baf_modal%
@@ -22,7 +22,7 @@ IF
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
   !GlobalTimerNotExpired("g_trap_common_timer","global") // don't spam pause
-  IsActive(Myself)
+  %is_active%
 THEN
 /*
   RESPONSE #1
@@ -127,7 +127,7 @@ IF
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
   !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer","myarea") // don't spam the dialog box
   %traps_baf_combat%
-  IsActive(Myself)
+  %is_active%
 THEN
   RESPONSE #100
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
@@ -140,7 +140,7 @@ IF
   Detected([ANYONE])
   Global("g_trap_%trap_type_id%_detected","myarea",0) // has just been detected with thief's skill
   Global("g_trap_%trap_type_id%_disarmed","myarea",0) // hasn't been disarmed or set off
-  IsActive(Myself)
+  %is_active%
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_detected","myarea",1)
@@ -152,7 +152,7 @@ END
 //Start warning again when reset
 IF
   Reset([ANYONE])
-  IsActive(Myself)
+//  %is_active%
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",0)
@@ -167,7 +167,7 @@ IF
     Opened([ANYONE])  // for containers
     Entered([ANYONE])  // for regions
 //    TrapTriggered([ANYONE])  // doesn't work
-  IsActive(Myself)
+//  %is_active%
 THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_disarmed","myarea",1)

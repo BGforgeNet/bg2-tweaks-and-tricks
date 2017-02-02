@@ -13,12 +13,12 @@ END ELSE BEGIN
   OUTER_SPRINT traps_baf_combat ~CombatCounterLT(1)~
 END
 
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause.g_~ BEGIN
+ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause1.g_~ BEGIN //pause on all traps
+  OUTER_SPRINT traps_baf_stop ~~
   OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
-/*  OUTER_SPRINT traps_baf_pause ~
-CreateCreature("g_trap",[-1.-1],0)
-DisplayStringHead(Myself,3)
-~*/
+//  OUTER_SPRINT traps_baf_pause ~
+//  CreateCreature("g_trap",[-1.-1],0)
+//  DisplayStringHead(Myself,3)
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_pause ~~
 END
@@ -37,6 +37,7 @@ END
 
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_stop.g_~ BEGIN
   OUTER_SPRINT traps_baf_stop ~ClearActions(LastSeenBy)~
+  OUTER_SPRINT traps_baf_pause ~~
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_stop ~~
 END
@@ -172,6 +173,20 @@ ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
   OUTER_SPRINT trap_type_id ~%script%_%trapind%~        //trap id: GTAR5_2 (for local vars)
   OUTER_SPRINT trap_type_warning $trap_type(~%script%~)  //trap warning string: "Acid arrow trap"
   OUTER_SPRINT clone_id ~g_tr%clone_ind%~
+  ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^gt.*~ == 0) BEGIN //ground traps IsActive clause
+    OUTER_SPRINT is_active ~IsActive(Myself)~
+  END ELSE BEGIN
+    OUTER_SPRINT is_active ~~
+  END
+  ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN //don't pause on container traps class
+    ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR
+              (~%script%~ STRING_MATCHES_REGEXP ~^bgct.*~ == 0)
+    BEGIN
+      OUTER_SPRINT traps_baf_pause ~~
+    END ELSE BEGIN
+      OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
+    END
+  END
   EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
 END
 
@@ -181,6 +196,20 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
     OUTER_SPRINT trap_type_id ~%script%~  //for EXTEND EVAL
     OUTER_SPRINT trap_type_warning ~%string%~  //for EXTEND EVAL
     OUTER_SPRINT clone_id ~no clone~
+    ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^gt.*~ == 0) BEGIN //ground traps IsActive clause
+      OUTER_SPRINT is_active ~IsActive(Myself)~
+    END ELSE BEGIN
+      OUTER_SPRINT is_active ~~
+    END
+    ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN //don't pause on container traps class
+      ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR
+                (~%script%~ STRING_MATCHES_REGEXP ~^bgct.*~ == 0)
+      BEGIN
+        OUTER_SPRINT traps_baf_pause ~~
+      END ELSE BEGIN
+        OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
+      END
+    END
     EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/easy_traps/traps.baf~ EVAL
   END
 END
