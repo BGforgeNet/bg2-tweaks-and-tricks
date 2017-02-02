@@ -165,7 +165,14 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
       END
     BUT_ONLY
     ACTION_IF over_exists = 1 BEGIN
-      EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/g_%fam_cre%.baf~ EVAL
+      EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/g_%fam_cre%.baf~ EVAL //main familiar script
+      ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN //disable WTP leaving when attacked
+        COPY_EXISTING ~%over_script%.bcs~ ~override~
+          DECOMPILE_AND_PATCH BEGIN
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~AttackedBy(Player1,DEFAULT)~ ~False()~
+          END
+        BUT_ONLY
+      END
     END ELSE BEGIN
       COMPILE EVAL ~.../tnt-inlined/g_%fam_cre%.baf~
     END
@@ -173,10 +180,8 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN
     ACTION_FOR_EACH script IN ~baldur.bcs~ ~baldur25.bcs~ BEGIN
       ACTION_IF FILE_EXISTS_IN_GAME ~%script%~ BEGIN
-        //jump in/out
-        EXTEND_BOTTOM ~%script%~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
-        //disable WTP nagging
-        COPY_EXISTING ~%script%~ ~override~
+        EXTEND_BOTTOM ~%script%~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL //jump in/out
+        COPY_EXISTING ~%script%~ ~override~ //disable WTP nagging
           DECOMPILE_AND_PATCH BEGIN
             REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GlobalTimerExpired("#GWANOUT","GLOBAL")~ ~False()~
           END
