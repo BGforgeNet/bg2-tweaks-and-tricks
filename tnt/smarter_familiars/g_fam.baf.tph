@@ -1,6 +1,8 @@
 //when asked to hide into pack, stay there until released
 //once released, can go in/out of pack as directed before
 
+OUTER_SPRINT increase_speed_tmp ~ApplySpellRES("G_FSPED2",Myself)~
+
 OUTER_SPRINT JumpToPack ~
 IF
   Global("g_FamJumpToPack","GLOBAL",1)
@@ -27,7 +29,7 @@ IF
 THEN
   RESPONSE #100
     DisplayStringHead(Myself,@214) //Ouch!
-    ApplySpellRES("G_FSPED2",Myself)
+    %increase_speed_tmp%
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
@@ -45,7 +47,7 @@ IF
 THEN
   RESPONSE #100
     DisplayStringHead(Myself,@214) //Ouch!
-    ApplySpellRES("G_FSPED2",Myself)
+    %increase_speed_tmp%
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
     DestroySelf()
@@ -103,7 +105,7 @@ IF
   AttackedBy([EVILCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
-    ApplySpellRES("G_FSPED2",Myself)
+    %increase_speed_tmp%
     RunAwayFrom(LastAttackerOf(Myself),45)
     AttackOneRound(LastAttackerOf(Myself))
 //    Continue()
@@ -235,6 +237,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+  %increase_speed_tmp%
   PickUpItem("misc07")
   PickUpItem("misc07")
   PickUpItem("misc07")
@@ -261,6 +264,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     PickUpItem("misc86")
     PickUpItem("misc86")
     PickUpItem("misc86")
@@ -282,6 +286,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupJewelsCommon_action%
     %g_FamPickupJewelsCommon_action%
     Continue()
@@ -300,6 +305,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupPotionsCommon_action%
     %g_FamPickupPotionsCommon_action%
     %g_FamPickupPotionsCommon_action%
@@ -319,6 +325,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupAmmoMagic_action%
     %g_FamPickupAmmoMagic_action%
     Continue()
@@ -337,6 +344,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupJewelsRare_action%
     Continue()
 END
@@ -354,6 +362,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupPotionsRare_action%
     %g_FamPickupPotionsRare_action%
     Continue()
@@ -372,6 +381,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupJewelsMagic_action%
     Continue()
 END
@@ -389,6 +399,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupAmmoMagicRare_action%
     %g_FamPickupAmmoMagicRare_action%
     Continue()
@@ -407,6 +418,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupJewelsMagicRare_action%
     Continue()
 END
@@ -424,6 +436,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     %g_FamPickupScrolls_action%
     Continue()
 END
@@ -440,6 +453,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
+    %increase_speed_tmp%
     PickupItem("misc01")
     PickupItem("misc12")
     PickupItem("misc52")
