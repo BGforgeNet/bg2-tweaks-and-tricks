@@ -1,4 +1,5 @@
 INCLUDE ~%MOD_FOLDER%/lib/familiars.tph~ //familiar_list, compatibility with WTPfamiliars
+OUTER_SPRINT comp_dir ~%MOD_FOLDER%/resilient_familiars~
 
 ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   OUTER_SPRINT fam_cre ~%prefix%%cre%.cre~
@@ -8,3 +9,61 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
     BUT_ONLY
   END
 END
+
+
+/* failed attempt to disable con drain
+ACTION_IF not ~%prefix%~ STR_EQ ~wtp~ //stock familiars BEGIN
+  COPY ~tnt/resilient_familiars/g_fimm.spl~ ~override~
+
+<<<<<<<< .../tnt-inlined/g_fam_no_con_drain.baf
+IF
+  Global("g_FamNoConDrain","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ReallyForceSpellRES("G_FIMM",Myself))
+    SetGlobal("g_FamNoConDrain","GLOBAL",1)
+    Continue()
+END
+>>>>>>>>
+  ACTION_FOR_EACH area_script IN //append to all starting areas
+    ar0015
+    fw2600
+    ar0602
+    ar4000
+  BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%area_script%.bcs~ BEGIN
+     EXTEND_BOTTOM ~%area_script%.bcs~ ~.../tnt-inlined/g_fam_no_con_drain.baf~
+    END
+  END
+
+<<<<<<<< .../tnt-inlined/g_fam_death_dam.baf
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ApplyDamage(Player1,12,STUNNING)
+    Continue()
+END
+>>>>>>>>
+  ACTION_PHP_EACH familiar_list AS cre => item BEGIN
+    OUTER_SPRINT fam_cre ~%prefix%%cre%~
+    ACTION_IF FILE_EXISTS_IN_GAME ~%fam_cre%.cre~ BEGIN
+      COPY_EXISTING ~%fam_cre%.cre~ ~override~
+        READ_ASCII 0x248 over_script
+        PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN //use existing script if possible
+          over_exists = 1
+        END ELSE BEGIN //or create a new one
+          over_exists = 0
+          WRITE_ASCIIE 0x248 ~g_%fam_cre%~ #8
+        END
+      BUT_ONLY
+      ACTION_IF over_exists = 1 BEGIN
+        EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/g_%fam_cre%.baf~ EVAL //main familiar script
+      END ELSE BEGIN
+        COPY ~%comp_dir%/g_fdie.bcs~ ~override/g_%fam_cre%.bcs~
+      END
+    END
+  END
+
+END
+*/
