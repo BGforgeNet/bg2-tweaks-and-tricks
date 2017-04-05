@@ -350,3 +350,10 @@ Unlimited plain bullets~
 //tp2
 @223 = ~Potion of really mirrored eyes~
 @224 = ~stop moving and pause game only for ground traps~
+//tp2 groups
+@225 = ~Familiars~
+@226 = ~Traps~
+@227 = ~Soundsets~
+@228 = ~Items~
+@229 = ~Spells and abilities~
+@230 = ~Gameplay and rules~
