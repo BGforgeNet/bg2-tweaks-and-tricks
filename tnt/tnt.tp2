@@ -281,7 +281,7 @@ INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 //Quest and dialog tweaks
 BEGIN @135 /* Improved strongholds */
 GROUP @230 /* Gameplay and rules */
-    REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 INCLUDE ~%MOD_FOLDER%/improved_strongholds/main.tpa~
 
 BEGIN @159 /* More ankheg armors by Taerom */
