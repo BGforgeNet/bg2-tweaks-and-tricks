@@ -8,7 +8,7 @@ AUTO_EVAL_STRINGS
 //MODDER setup_tra none
 //AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
-LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~
+LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
 
 // FAMILIARS
 BEGIN @74 /* Smarter familiars */
