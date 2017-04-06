@@ -23,18 +23,16 @@ It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhan
 
 ## Components
 
-- [Convenience](#convenience)
-  - [Convenient familiars](#convenient-familiars)
-    - [Smarter](#smarter-familiars)
-    - [More resilient](#resilient-familiars)
-  - [Easy traps](#easy-traps)
-  - [Less autosaves](#less-autosaves)
+- [Familiars](#familiars)
+  - [Smarter](#smarter-familiars)
+  - [More resilient](#resilient-familiars)
+- [Easy traps](#easy-traps)
 - [Soundsets](#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
   - [BG1-style party interaction system](#bg1-style-party-interaction-system)
   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
-- [Item tweaks](#Item tweaks)
+- [Item tweaks](#item-tweaks)
   - [Remove blur graphics from items](#remove-blur-graphics-from-items)
   - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
@@ -58,11 +56,10 @@ It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhan
 - [Quest and dialog tweaks](#quest-and-dialog-tweaks)
   - [Improved strongholds](#improved-strongholds)
   - [More ankheg armors by Taerom](#more-ankheg-armors-by-taerom)
+- [Less autosaves](#less-autosaves)
 
-### Convenience
-
-#### Convenient familiars
-##### Smarter familiars
+### Familiars
+#### Smarter familiars
 - Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
 - Have them jump into the pack when there's danger or they're injured. Very useful at later stages.
 
@@ -71,10 +68,10 @@ The less a familiar is told to pick up, the faster it'll do it. So, try to keep 
 **Note:**
 - Familiars as small creatures can get through where humans cannot. So they will pick up items from closed chests. If you don't like that, don't tell them to pick up items.
 - If a familiar starts to jump in and out of backpack continuously - talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
-##### Resilient familiars
+#### Resilient familiars
 Protect familiars from getting critical hits (which are almost always lethal to them).
 
-#### Easy traps
+### Easy traps
 Add "trap sense" to characters. Before a trap is "detected" by thief skill, a party member will "sense" it: notice that something's wrong, and alert others. It allows for faster, less frustrating dungeon exploration.
 Options:
 - Allow sensing in combat (by default, characters will not notice possible traps in combat. With this component, they will)
