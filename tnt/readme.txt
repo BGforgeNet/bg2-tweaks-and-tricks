@@ -1,5 +1,10 @@
 ## Tweaks-and-Tricks mod for Baldur's Gate 2
-
+<a href="https://tra.bgforge.net/projects/baldurs-gate-tweaks-and-tricks/main/">
+<img src="https://tra.bgforge.net/widgets/baldurs-gate-tweaks-and-tricks/-/svg-badge.svg" alt="Translation status" />
+</a>
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
+</a>
 
 This mod is a collection of tweaks to:
 - fix some annoying and/or unrealistic aspects of the game
@@ -14,47 +19,60 @@ It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhan
 - [Changelog](#changelog)
 - [Used sotftware](#used-sotftware)
 - [Author](#author)
-- [Licence](#licence)
-
+- [License](#license)
 
 ## Components
 
 - [Convenience](#convenience)
-  - [Remove blur graphics from items](#remove-blur-graphics-from-items)
-  - [Easy traps](#easy-traps)
-  - [Less autosaves](#less-autosaves)
   - [Convenient familiars](#convenient-familiars)
     - [Smarter](#smarter-familiars)
-    - [Faster](#faster-familiars)
     - [More resilient](#resilient-familiars)
+  - [Easy traps](#easy-traps)
+  - [Less autosaves](#less-autosaves)
 - [Soundsets](#soundsets)
   - [Extended soundsets for NPC](#extended-soundsets-for-npc)
   - [BG1-style party interaction system](#bg1-style-party-interaction-system)
   - [No talking when hiding in shadows](#no-talking-when-hiding-in-shadows)
   - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
-- [Common sense](#common-sense)
-  - [Fair fights](#fair-fights)
+- [Item tweaks](#Item tweaks)
+  - [Remove blur graphics from items](#remove-blur-graphics-from-items)
   - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
-  - [Spider form ignores web](#spider-form-ignores-web)
   - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
-- [Cheese](#cheese)
+  - [Weightless ammo](#weightless-ammo)
+  - [Sensible Wand of Frost](#sensible-wand-of-frost)
+  - [Hassle-free ammo](#hassle--free-ammo)
+  - [Potion of really mirrored eyes](#potion-of-really-mirrored-eyes)
+- [Spell tweaks](#spell-tweaks)
+  - [Spider form ignores web](#spider-form-ignores-web)
   - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
   - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
+  - [True true sight](#true-true-sight)
+  - [Sensible Otiluke's Sphere](#sensible-otilukes-phere)
+- [Gameplay and rules](#gameplay-and-rules)
+  - [Fair fights](#fair-fights)
   - [Starting bags](#starting-bags)
-  - [Add BG1 tomes stats bonuses to new BG2 characters](#add-bg1-tomes-stats-bonuses-to-new-bg2-characters)
+  - [Add BG1 tome stats bonuses to new BG2 characters](#add-bg1-tome-stats-bonuses-to-new-bg2-characters)
   - [Shops always buy goods at the same price](#shops-always-buy-goods-at-the-same-price)
-- [Anti-cheese](#anti-cheese)
   - [Close shop steal exploit](#close-shop-steal-exploit)
   - [No XP farming](#no-xp-farming)
+- [Quest and dialog tweaks](#quest-and-dialog-tweaks)
+  - [Improved strongholds](#improved-strongholds)
+  - [More ankheg armors by Taerom](#more-ankheg-armors-by-taerom)
 
 ### Convenience
 
-#### Remove blur graphics from items
-Removes eye-straining blur graphics from several items. Doesn't touch actual Blur spell.
+#### Convenient familiars
+##### Smarter familiars
+- Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
+- Have them jump into the pack when there's danger or they're injured. Very useful at later stages.
 
-Currently includes:
-- Semaj's cloak
-- Claw of Kazgaroth
+The less a familiar is told to pick up, the faster it'll do it. So, try to keep the list short. For example, don't tell it to pick up bandit scalps in BG2.
+
+**Note:**
+- Familiars as small creatures can get through where humans cannot. So they will pick up items from closed chests. If you don't like that, don't tell them to pick up items.
+- If a familiar starts to jump in and out of backpack continuously - talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
+##### Resilient familiars
+Protect familiars from getting critical hits (which are almost always lethal to them).
 
 #### Easy traps
 Add "trap sense" to characters. Before a trap is "detected" by thief skill, a party member will "sense" it: notice that something's wrong, and alert others. It allows for faster, less frustrating dungeon exploration.
@@ -67,25 +85,7 @@ Options:
 - Core (required to enable any of previous components)
 
 #### Less autosaves
-Autosave can be a boon or a plague. They consume time, in any case. If you're playing no-reload, you might not need them at all. This components allows you to disable many area transition autosaves. (But not all of them. Every time you go through worldmap, there still be an autosave).
-
-#### Convenient familiars
-
-##### Smarter familiars
-- Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
-- Have them jump into the pack when there's danger or they're injured. Very useful at later stages.
-
-The less a familiar is told to pick up, the faster it'll do it. So, try to keep the list short. For example, don't tell it to pick up bandit scalps in BG2.
-
-**Note:**
-- Familiars as small creatures can get through where humans cannot. So they will pick up items from closed chests. If you don't like that, don't tell them to pick up items.
-- If a familiar starts to jump in and out of backpack continuously - talk to it, tell it to stay in the pack. Reverse the directive when you leave this area.
-
-##### Faster familiars
-Make the familiars move as if they had boots of speed, so they don't lag behind the rest of the team.
-
-##### Resilient familiars
-Protect familiars from getting critical hits (which are almost always lethal to them).
+Disables autosave on area transition. This only affects transitions that don't go through worldmap.
 
 
 ### Soundsets
@@ -157,25 +157,16 @@ Silence joinable NPC "hidden in shadows" sound (for example, Yoshimo's "All the 
 Allows to use any of the original Bioware NPCs soundsets for the main character.
 
 
+### Item tweaks
+#### Remove blur graphics from items
+Removes eye-straining blur graphics from several items. Doesn't touch actual Blur spell.
 
-### Common sense
-
-
-#### Fair fights
-A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
-- Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
-- Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
-- Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
-- Laskal, Cloakwood shadow druid (innocent no longer, since he attacks first)
-- Winski Perorate (innocent no longer, since he's just not)
-
+Currently includes:
+- Semaj's cloak
+- Claw of Kazgaroth
 
 #### Sensible Cloak of Mirroring
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which doesn't make much sense. And it doesn't protect from Call Lighting, which also is strange. This compoment fixes both issues.
-
-
-#### Spider form ignores web
-Become immune to web while in spider form (which is strangely not the case in the original game).
 
 #### Effects of scrolls and potions do not stack with themselves
 
@@ -185,12 +176,26 @@ Example 1: you drink a potion of fire resistance and get +50% fire resistance. A
 
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
 
+#### Weightless ammo
+Make throwing daggers and axes weightless
 
-### Cheese
+#### Sensible Wand of Frost
+In vanilla, Wand of Frost must target on a creature, but affects an area, which makes no sense. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Fireball).
+
+#### Hassle-free ammo
+Add returning non-magical ammo (darts, arrows, axes, daggers, etc) to Taerom and Ribald, at a fair price.
+
+#### Potion of really mirrored eyes
+Contrary to the description, Potion of Mirrored Eyes doesn't protect from all gaze attacks. Demons' Death Gaze, for example, will bypass it. This component fixes that oversight, and makes the Potion realiable against ANY gaze attack.
+
+
+### Spell tweaks
+
+#### Spider form ignores web
+Become immune to web while in spider form (which is strangely not the case in the original game).
 
 #### Cheesy Slayer: full heal on change
 The player character will be healed fully on turning into Slayer. Makes it a better "last resort" ability.
-
 
 #### Cheesy Slayer: reputation
 - [Reduced loss](#reduced-loss)
@@ -204,6 +209,25 @@ With reduced loss, you lose only 1 point of reputation, even when turning into R
 ##### No loss
 No reputation hit on any change.
 
+#### True true sight
+True sight in PnP is supposed to be just that - true sight. Not "dispel all illusions every 6 seconds" sight. This component makes illusion dispel near instant when True Sight is active.
+
+While it might not have much effect in original game, with certain mods such as SCS, some creatures abuse "backstab - gulp invisibility potion - repeat" technique, which is annoying and illegal per PnP. That was the inspiration for this tweak.
+
+#### Sensible Otiluke's Sphere
+With BG2 fixpack, Otiluke's Sphere is pretty much Hold + immunity to any damage. This doesn't really match its description. While the creature in the sphere can't affect the outside world, it should be able to affect the inside, meaning themselves. Healing, buffing, etc - all that should be possible.
+
+### Gameplay and rules
+
+#### Fair fights
+A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
+- Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
+- Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
+- Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
+- Laskal, Cloakwood shadow druid (innocent no longer, since he attacks first)
+- Winski Perorate (innocent no longer, since he's just not)
+- Arkanis Gath, the Renal's guard
+- Kahrk, the mightiest ogre mage
 
 #### Starting bags
 - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
@@ -222,17 +246,13 @@ Same 4 bags, and a bag of holding.
 ##### GSPA + holding, bottomless
 Same 5 bags, all bottomless.
 
-
 #### Add BG1 tomes stats bonuses to new BG2 characters
 To brand new BG2 charaters, gives the stat bonuses that they were supposed to gain from tomes in BG1. The subcomponents are self-describing.
 ##### Each stat gets +1
 ##### Each stats except Wisdom gets +1, Wisdom gets +3
 
-
 #### Shops always buy goods at the same price
 Makes store buying price constant, regardless of how many items are already in stock. Now, you don't have to pile up equipment before selling to get the max money for it. The price is always the same!
-
-### Anti-cheese
 
 #### Close shop steal exploit
 - [Can't steal from fences](#cant-steal-from-fences)
@@ -246,9 +266,24 @@ You can steal from normal merchants, but can't steal from those who buy stolen i
 ##### Can't steal from any shops
 Just disable stealing in all shops.
 
-
 #### No XP farming
 Disables the possibility of XP farming in the most tempting spots in BG1: wyvern cave, golem cave, ankheg cave and skeleton warrior trap (Durlag's tower).
+
+### Quest and dialog tweaks
+#### Improved strongholds
+This component mostly improves messengers and messages, making them more faster and less likely to miss the player, but has some other changes, too:
+- Bard: make the messenger more reliable. Make money collection notification different from fighter stronhold
+- Cleric: notify when it's time to visit the Church
+- Druid: notify when it's time to visit the Grove
+- Fighter: make the messenger more reliable. Notify when it's time to visit the Keep
+- Mage: make sergeant Natula more reliable. Notify when it's time to visit the Sphere. Let Morul create new potions every week, not just you visit him. Allow a wider variety of potions.
+- Ranger: make the messenger more reliable. Notify when it's time to visit the Cabin
+
+#### More ankheg armors by Taerom
+Allow Taerom to make more ankheg armors
+
+
+It saves some time, but on the other hand you should treat your saves more carefully. You've been warned.
 
 
 ## Installation
@@ -260,6 +295,32 @@ Disables the possibility of XP farming in the most tempting spots in BG1: wyvern
 
 
 ## Changelog
+- Version 7
+  - add spider form/web protection component
+  - fix viconia's dialog_default and area_city in extended soundsets
+  - disable all traps that never fire and just give notifications (not marked as trapped but have a script)
+  - fix multiple Durlag's tower traps
+  - add compatibility with WhiteQueen (traps)
+  - add true true sight component
+  - add Kahrk and Arkanis Gath to fair fights
+  - improve EE compatibility
+  - fix npc_soundsets typo
+  - add weightless ammo component
+  - add more battle cries for Ajantis, Kivan and Keldorn
+  - ensure Easy traps installation order
+  - add sensible otiluke component
+  - add improved strongholds components
+  - add sensible wand of frost component
+  - add more ankheg armors component
+  - add hassle-free returning weapons component
+  - add compatibility with WTP familiars
+  - fix quasit in smarter familiars
+  - ensure that dead familiars don't do anything
+  - smarter familiars: add option to jump into pack when badly injured, and injured notifications
+  - smarter familiars: add dialog option to manage familiar speed, remove faster familiars component
+  - smarter familiars: add hit and run technique
+  - add potion of really mirrored eyes component
+  - speed up familiar looting
 - Version 6
   - Extended soundsets: more sounds
   - Easy traps: fixed missing vent trap
