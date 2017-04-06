@@ -1,169 +1,171 @@
-#. #-#-#-#-#  s.po (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  tmp.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from tnt/tra/english/setup.tra
-#. #-#-#-#-#  g.po (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  english.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from tnt/tra/english/game.tra
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-4-5 13:40+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2017-4-5 13:54+0000\n"
+"PO-Revision-Date: 2017-04-06 15:14+0000\n"
+"Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: tra2po v.1.0.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.12\n"
 
 #: tnt/tra/english/setup.tra:74
 msgid "Smarter familiars"
-msgstr ""
+msgstr "Умные фамильяры"
 
 #: tnt/tra/english/setup.tra:75
 msgid "Only BG2:ToB engine is supported"
-msgstr ""
+msgstr "Требует движок BG2:ToB"
 
 #: tnt/tra/english/setup.tra:76
 msgid "Faster familiars"
-msgstr ""
+msgstr "Быстрые фамильяры"
 
 #: tnt/tra/english/setup.tra:77
 msgid "Resilient familiars"
-msgstr ""
+msgstr "Менее хрупкие фамильяры"
 
 #: tnt/tra/english/setup.tra:78
 msgid "Remove blur graphics from items"
-msgstr ""
+msgstr "Убрать визуальный эффект размытия с предметов"
 
 #: tnt/tra/english/setup.tra:79
 msgid "Additions only"
-msgstr ""
+msgstr "Только добавления"
 
 #: tnt/tra/english/setup.tra:80
 msgid "BGT or EET only"
-msgstr ""
+msgstr "Требует BGT или EET"
 
 #: tnt/tra/english/setup.tra:81
 msgid "Extended Soundsets for NPC"
-msgstr ""
+msgstr "Расширенные саундсеты для NPC"
 
 #: tnt/tra/english/setup.tra:82
 msgid "BG1 soundsets prevail"
-msgstr ""
+msgstr "Преобладают сеты из BG1"
 
 #: tnt/tra/english/setup.tra:83
 msgid "BG2 soundsets prevail"
-msgstr ""
+msgstr "Преобладают сеты из BG2"
 
 #: tnt/tra/english/setup.tra:84
 msgid "Reintroduce"
-msgstr ""
+msgstr "Восстановить"
 
 #: tnt/tra/english/setup.tra:85
 msgid "BG1-style party interaction system"
-msgstr ""
+msgstr "Система разговоров в стиле BG1"
 
 #: tnt/tra/english/setup.tra:86
 msgid "Reintroduce and adjust to framerate"
-msgstr ""
+msgstr "Восстановить и приспособить к скорости игры"
 
 #: tnt/tra/english/setup.tra:87
 msgid "Disable"
-msgstr ""
+msgstr "Отключить"
 
 #: tnt/tra/english/setup.tra:88
 msgid "BGT or BG1 only"
-msgstr ""
+msgstr "Только BGT или BG1"
 
 #: tnt/tra/english/setup.tra:89
 msgid "No talking when hiding in shadows"
-msgstr ""
+msgstr "Не разговаривать в тенях"
 
 #: tnt/tra/english/setup.tra:90
 msgid "Make NPC soundsets available to PC"
-msgstr ""
+msgstr "Сделать саундсеты NPC доступными главному герою"
 
 #: tnt/tra/english/setup.tra:91
 msgid "Fair fights"
-msgstr ""
+msgstr "Честные схватки"
 
 #: tnt/tra/english/setup.tra:92
 msgid "Sensible Cloak of Mirroring"
-msgstr ""
+msgstr "Более правдоподобный Плащ Отражения"
 
 #: tnt/tra/english/setup.tra:93
 msgid "Spider form ignores web"
-msgstr ""
+msgstr "Форма паука имеет иммунитет к паутине"
 
 #: tnt/tra/english/setup.tra:94
 msgid "Effects of scrolls and potions do not stack with themselves"
-msgstr ""
+msgstr "Эффекты свитков и зелий не складываются сами с собой"
 
 #: tnt/tra/english/setup.tra:95
 msgid "Cheesy Slayer: full heal on change"
-msgstr ""
+msgstr "Улучшенная форма Убийцы: полное излечение при изменении"
 
 #: tnt/tra/english/setup.tra:96
 msgid "no loss"
-msgstr ""
+msgstr "без потерь"
 
 #: tnt/tra/english/setup.tra:97
 msgid "Cheesy Slayer: reputation"
-msgstr ""
+msgstr "Удобная форма Убийцы: репутация"
 
 #: tnt/tra/english/setup.tra:98
 msgid "reduced loss"
-msgstr ""
+msgstr "уменьшенная потеря"
 
 #: tnt/tra/english/setup.tra:99
 msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr ""
+msgstr "Драгоценные камни, свитки, зелья, снаряды (КСЗС)"
 
 #: tnt/tra/english/setup.tra:100
 msgid "Starting bags"
-msgstr ""
+msgstr "Сумки в начале игры"
 
 #: tnt/tra/english/setup.tra:101
 msgid "GSPA + holding"
-msgstr ""
+msgstr "КСЗС + cумка хранения"
 
 #: tnt/tra/english/setup.tra:102
 msgid "GSPA + holding - all bottomless!"
-msgstr ""
+msgstr "КСЗС + cумка хранения - все бездонные!"
 
 #: tnt/tra/english/setup.tra:103
 msgid "Each stat gets +1"
-msgstr ""
+msgstr "Каждая характеристика получает +1"
 
 #: tnt/tra/english/setup.tra:104
 msgid "Add BG1 tomes stats bonuses to new BG2 characters"
 msgstr ""
+"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
 
 #: tnt/tra/english/setup.tra:105
 msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr ""
+msgstr "Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
 
 #: tnt/tra/english/setup.tra:106
 msgid "Shops always buy goods at the same price"
-msgstr ""
+msgstr "Магазины покупают товар по неизменной цене"
 
 #: tnt/tra/english/setup.tra:107
 msgid "Can't steal from fences"
-msgstr ""
+msgstr "Нельзя воровать у скупщиков краденого"
 
 #: tnt/tra/english/setup.tra:108
 msgid "Close shop steal exploit"
-msgstr ""
+msgstr "Закрыть эксплоит с воровством из магазинов"
 
 #: tnt/tra/english/setup.tra:109
 msgid "Can't steal from any shops"
-msgstr ""
+msgstr "Нельзя воровать из магазинов вообще"
 
 #: tnt/tra/english/setup.tra:110
 msgid "No XP farming"
-msgstr ""
+msgstr "Затруднить фарминг опыта"
 
 #: tnt/tra/english/setup.tra:111
 msgid "Easy traps: allow sensing in combat"

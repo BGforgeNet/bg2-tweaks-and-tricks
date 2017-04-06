@@ -1,13 +1,13 @@
-#. #-#-#-#-#  s.po (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  tmp.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from tnt/tra/english/setup.tra
-#. #-#-#-#-#  g.po (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  english.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from tnt/tra/english/game.tra
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-4-5 13:40+0000\n"
+"POT-Creation-Date: 2017-4-5 13:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
