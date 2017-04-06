@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-5 13:54+0000\n"
-"PO-Revision-Date: 2017-04-05 14:11+0000\n"
+"PO-Revision-Date: 2017-04-06 15:14+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -120,51 +120,52 @@ msgstr "уменьшенная потеря"
 
 #: tnt/tra/english/setup.tra:99
 msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr ""
+msgstr "Драгоценные камни, свитки, зелья, снаряды (КСЗС)"
 
 #: tnt/tra/english/setup.tra:100
 msgid "Starting bags"
-msgstr ""
+msgstr "Сумки в начале игры"
 
 #: tnt/tra/english/setup.tra:101
 msgid "GSPA + holding"
-msgstr ""
+msgstr "КСЗС + cумка хранения"
 
 #: tnt/tra/english/setup.tra:102
 msgid "GSPA + holding - all bottomless!"
-msgstr ""
+msgstr "КСЗС + cумка хранения - все бездонные!"
 
 #: tnt/tra/english/setup.tra:103
 msgid "Each stat gets +1"
-msgstr ""
+msgstr "Каждая характеристика получает +1"
 
 #: tnt/tra/english/setup.tra:104
 msgid "Add BG1 tomes stats bonuses to new BG2 characters"
 msgstr ""
+"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
 
 #: tnt/tra/english/setup.tra:105
 msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr ""
+msgstr "Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
 
 #: tnt/tra/english/setup.tra:106
 msgid "Shops always buy goods at the same price"
-msgstr ""
+msgstr "Магазины покупают товар по неизменной цене"
 
 #: tnt/tra/english/setup.tra:107
 msgid "Can't steal from fences"
-msgstr ""
+msgstr "Нельзя воровать у скупщиков краденого"
 
 #: tnt/tra/english/setup.tra:108
 msgid "Close shop steal exploit"
-msgstr ""
+msgstr "Закрыть эксплоит с воровством из магазинов"
 
 #: tnt/tra/english/setup.tra:109
 msgid "Can't steal from any shops"
-msgstr ""
+msgstr "Нельзя воровать из магазинов вообще"
 
 #: tnt/tra/english/setup.tra:110
 msgid "No XP farming"
-msgstr ""
+msgstr "Затруднить фарминг опыта"
 
 #: tnt/tra/english/setup.tra:111
 msgid "Easy traps: allow sensing in combat"
