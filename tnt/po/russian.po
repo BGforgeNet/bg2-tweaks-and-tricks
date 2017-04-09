@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-5 13:54+0000\n"
-"PO-Revision-Date: 2017-04-06 15:14+0000\n"
+"PO-Revision-Date: 2017-04-08 02:56+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -169,123 +169,131 @@ msgstr "Затруднить фарминг опыта"
 
 #: tnt/tra/english/setup.tra:111
 msgid "Easy traps: allow sensing in combat"
-msgstr ""
+msgstr "Упрощенные ловушки: можно замечать в бою"
 
 #: tnt/tra/english/setup.tra:112
 msgid "Easy traps: increase trap sense range"
-msgstr ""
+msgstr "Упрощенные ловушки: увеличить расстояние, на котором их заметно"
 
 #: tnt/tra/english/setup.tra:113
 msgid "stop moving"
-msgstr ""
+msgstr "остановиться"
 
 #: tnt/tra/english/setup.tra:114
 msgid "Easy traps: character action"
-msgstr ""
+msgstr "Упрощенные ловушки: действие персонажа"
 
 #: tnt/tra/english/setup.tra:115
 msgid "stop moving and pause game"
-msgstr ""
+msgstr "остановиться поставить игру на паузу"
 
 #: tnt/tra/english/setup.tra:116
 msgid "Easy traps: center on character"
-msgstr ""
+msgstr "Упрощенные ловушки: отцентровать экран на персонаже"
 
 #: tnt/tra/english/setup.tra:117
 msgid "Easy traps: play a sound"
-msgstr ""
+msgstr "Упрощенные ловушки: звуковой сигнал"
 
 #: tnt/tra/english/setup.tra:118
 msgid "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to work)"
 msgstr ""
+"Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
+"компоненты работали)"
 
 #: tnt/tra/english/setup.tra:119
 msgid "Less autosaves"
-msgstr ""
+msgstr "Меньше автосохранений"
 
 #: tnt/tra/english/setup.tra:120
 msgid "True true sight"
-msgstr ""
+msgstr "Настоящее истинное зрение"
 
 #: tnt/tra/english/setup.tra:121
 msgid "BG1 content not present"
-msgstr ""
+msgstr "БГ1 не найден"
 
 #: tnt/tra/english/setup.tra:122
 msgid "BG saga only"
-msgstr ""
+msgstr "Только для саги БГ"
 
 #: tnt/tra/english/setup.tra:123
 msgid "EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee instead."
 msgstr ""
+"Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать "
+"https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-"
+"master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
 
 #: tnt/tra/english/setup.tra:124
 msgid "Requires ToB or EE engine"
-msgstr ""
+msgstr "Требует движок ToB или EE"
 
 #: tnt/tra/english/setup.tra:125
 msgid "Requires BG2 or EE engine"
-msgstr ""
+msgstr "Требует движок BG2 или EE"
 
 #: tnt/tra/english/setup.tra:126
 msgid "Requires BG2"
-msgstr ""
+msgstr "Требует BG2"
 
 #: tnt/tra/english/setup.tra:127
 msgid "BGT only"
-msgstr ""
+msgstr "Только для BGT"
 
 #: tnt/tra/english/setup.tra:128
 msgid "Weightless ammo"
-msgstr ""
+msgstr "Невесомые снаряды"
 
 #: tnt/tra/english/setup.tra:129
 msgid "All easy traps components must be installed before core"
 msgstr ""
+"Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
 
 #: tnt/tra/english/setup.tra:206
 msgid "Windows only"
-msgstr ""
+msgstr "Только для Windows"
 
 #: tnt/tra/english/setup.tra:223
 msgid "Potion of really mirrored eyes"
-msgstr ""
+msgstr "Зелье по-настоящему зеркальных глаз"
 
 #: tnt/tra/english/setup.tra:224
 msgid "stop moving and pause game only for ground traps"
 msgstr ""
+"Остановиться и поставить игру на паузу только для ловушек, на которые можно "
+"наступить"
 
 #: tnt/tra/english/setup.tra:225
 msgid "Familiars"
-msgstr ""
+msgstr "Фамильяры"
 
 #: tnt/tra/english/setup.tra:226
 msgid "Traps"
-msgstr ""
+msgstr "Ловушки"
 
 #: tnt/tra/english/setup.tra:227
 msgid "Soundsets"
-msgstr ""
+msgstr "Саундсеты"
 
 #: tnt/tra/english/setup.tra:228
 msgid "Items"
-msgstr ""
+msgstr "Предметы"
 
 #: tnt/tra/english/setup.tra:229
 msgid "Spells and abilities"
-msgstr ""
+msgstr "Заклинания и способности"
 
 #: tnt/tra/english/setup.tra:230
 msgid "Gameplay and rules"
-msgstr ""
+msgstr "Игровая механика и правила"
 
 #: tnt/tra/english/game.tra:1
 msgid "Uh, this one is locked."
-msgstr ""
+msgstr "Эм, это заперто."
 
 #: tnt/tra/english/game.tra:2
 msgid "Uh, I smell a trap."
-msgstr ""
+msgstr "Эм, я чувствую ловушку."
 
 #: tnt/tra/english/game.tra:3
 msgid "Looking for gold..."
