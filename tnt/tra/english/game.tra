@@ -108,9 +108,6 @@
 @132  = ~Defend yourselves!~ [g_ttkiv1]
 @133  = ~You soul is forfeit!~ [g_ttkel2]
 
-@134  = ~Sensible Otiluke's sphere~
-@135  = ~Improved strongholds~
-
 @136  = ~Theater earnings are ready.~
 @137  = ~The apprentices must have finished the task. Time to check up on them.~
 @138  = ~The Grove awaits.~
@@ -120,9 +117,6 @@
 @142  = ~The potions are on the table in the laboratory <SIRMAAM>.~
 @143  = ~Your presence is required at the church. The needs of the faithful must be tended to.~
 
-@144  = ~Sensible wand of frost~
-@145  = ~Single target~
-@146  = ~AoE~
 @147  = ~The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.
 
 STATISTICS:
@@ -140,8 +134,6 @@ Not usable by:
  Ranger
 ~
 
-@148 =  ~No cast and attack~
-
 @149 = ~Gem bag~
 @150 = ~This small bag is ideally suited for holding gems.~
 @151 = ~Scroll case~
@@ -153,9 +145,6 @@ Not usable by:
 @157 = ~Bag of Holding~
 @158 = ~As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount.~
 
-@159 = ~More ankheg armors by Taerom~
-
-@160 = ~Returning throwing axe~
 @161 = ~The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.
 
 This particular axe has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.

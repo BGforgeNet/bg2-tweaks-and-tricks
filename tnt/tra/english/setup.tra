@@ -1,6 +1,5 @@
 @74   = ~Smarter familiars~
-@75   = ~Only BG2:ToB engine is supported~
-@76   = ~Faster familiars~
+
 @77   = ~Resilient familiars~
 @78   = ~Remove blur graphics from items~
 @79   = ~Additions only~
@@ -51,14 +50,27 @@
 @124  = ~Requires ToB or EE engine~
 @125  = ~Requires BG2 or EE engine~
 @126  = ~Requires BG2~
-@127  = ~BGT only~
+
 @128  = ~Weightless ammo~
 @129  = ~All easy traps components must be installed before core~
+
+@134  = ~Sensible Otiluke's sphere~
+@135  = ~Improved strongholds~
+
+@144  = ~Sensible wand of frost~
+@145  = ~Single target~
+@146  = ~AoE~
+
+@148 =  ~No cast and attack~
+
+@159 = ~More ankheg armors by Taerom~
+
+@166 = ~Hassle-free ammo~
+
 @206 = ~Windows only~
+
 @223 = ~Potion of really mirrored eyes~
 @224 = ~stop moving and pause game only for ground traps~
-
-//groups
 @225 = ~Familiars~
 @226 = ~Traps~
 @227 = ~Soundsets~
