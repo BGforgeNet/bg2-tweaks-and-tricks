@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-4-9 1:57+0000\n"
+"POT-Creation-Date: 2017-4-10 5:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,19 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: tra2po v.1.0.1\n"
-
-#: tnt/tra/english/setup.tra:74
-msgid "Smarter familiars"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:75
-msgid "Only BG2:ToB engine is supported"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:76
-msgid "Faster familiars"
-msgstr ""
+"X-Generator: tra2po v.1.0.2\n"
 
 #: tnt/tra/english/setup.tra:77
 msgid "Resilient familiars"
@@ -229,16 +217,44 @@ msgstr ""
 msgid "Requires BG2"
 msgstr ""
 
-#: tnt/tra/english/setup.tra:127
-msgid "BGT only"
-msgstr ""
-
 #: tnt/tra/english/setup.tra:128
 msgid "Weightless ammo"
 msgstr ""
 
 #: tnt/tra/english/setup.tra:129
 msgid "All easy traps components must be installed before core"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:134
+msgid "Sensible Otiluke's sphere"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:135
+msgid "Improved strongholds"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:144
+msgid "Sensible wand of frost"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:145
+msgid "Single target"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:146
+msgid "AoE"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:148
+msgid "No cast and attack"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:159
+msgid "More ankheg armors by Taerom"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:166 tnt/tra/english/game.tra:166
+msgid "Hassle-free ammo"
 msgstr ""
 
 #: tnt/tra/english/setup.tra:206
@@ -275,114 +291,6 @@ msgstr ""
 
 #: tnt/tra/english/setup.tra:230
 msgid "Gameplay and rules"
-msgstr ""
-
-#: tnt/tra/english/game.tra:1
-msgid "Uh, this one is locked."
-msgstr ""
-
-#: tnt/tra/english/game.tra:2
-msgid "Uh, I smell a trap."
-msgstr ""
-
-#: tnt/tra/english/game.tra:3
-msgid "Looking for gold..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:4
-msgid "Finished looking for gold."
-msgstr ""
-
-#: tnt/tra/english/game.tra:5
-msgid "Looking for scalps..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:6
-msgid "Finished looking for scalps."
-msgstr ""
-
-#: tnt/tra/english/game.tra:7
-msgid "Looking for common ammo..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:8
-msgid "Finished looking for common ammo."
-msgstr ""
-
-#: tnt/tra/english/game.tra:9
-msgid "Looking for common jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:10
-msgid "Finished looking for common jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:11
-msgid "Looking for common potions..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:12
-msgid "Finished looking for common potions."
-msgstr ""
-
-#: tnt/tra/english/game.tra:13
-msgid "Looking for scrolls..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:14
-msgid "Finished looking for scrolls."
-msgstr ""
-
-#: tnt/tra/english/game.tra:15
-msgid "Boss, your pack is full."
-msgstr ""
-
-#: tnt/tra/english/game.tra:16
-msgid "Looking for rare jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:17
-msgid "Finished looking for rare jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:18
-msgid "Looking for rare potions..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:19
-msgid "Finished looking for rare potions."
-msgstr ""
-
-#: tnt/tra/english/game.tra:20
-msgid "Looking for magic jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:21
-msgid "Finished looking for magic jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:22
-msgid "Looking for rare ammo..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:23
-msgid "Finished looking for rare ammo."
-msgstr ""
-
-#: tnt/tra/english/game.tra:24
-msgid "Looking for rare magic jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:25
-msgid "Finished looking for rare magic jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:26
-msgid "Potion effect refreshed"
-msgstr ""
-
-#: tnt/tra/english/game.tra:27
-msgid "Protection scroll effect refreshed"
 msgstr ""
 
 #: tnt/tra/english/game.tra:28
@@ -581,14 +489,6 @@ msgstr ""
 msgid "You soul is forfeit!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:134
-msgid "Sensible Otiluke's sphere"
-msgstr ""
-
-#: tnt/tra/english/game.tra:135
-msgid "Improved strongholds"
-msgstr ""
-
 #: tnt/tra/english/game.tra:136
 msgid "Theater earnings are ready."
 msgstr ""
@@ -621,18 +521,6 @@ msgstr ""
 msgid "Your presence is required at the church. The needs of the faithful must be tended to."
 msgstr ""
 
-#: tnt/tra/english/game.tra:144
-msgid "Sensible wand of frost"
-msgstr ""
-
-#: tnt/tra/english/game.tra:145
-msgid "Single target"
-msgstr ""
-
-#: tnt/tra/english/game.tra:146
-msgid "AoE"
-msgstr ""
-
 #: tnt/tra/english/game.tra:147
 msgid ""
 "The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
@@ -650,10 +538,6 @@ msgid ""
 " Thief\n"
 " Paladin\n"
 " Ranger\n"
-msgstr ""
-
-#: tnt/tra/english/game.tra:148
-msgid "No cast and attack"
 msgstr ""
 
 #: tnt/tra/english/game.tra:149
@@ -694,14 +578,6 @@ msgstr ""
 
 #: tnt/tra/english/game.tra:158
 msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
-msgstr ""
-
-#: tnt/tra/english/game.tra:159
-msgid "More ankheg armors by Taerom"
-msgstr ""
-
-#: tnt/tra/english/game.tra:160
-msgid "Returning throwing axe"
 msgstr ""
 
 #: tnt/tra/english/game.tra:161
@@ -769,10 +645,6 @@ msgid ""
 "Type:  1-handed\n"
 "Not Usable By:\n"
 " Cleric"
-msgstr ""
-
-#: tnt/tra/english/game.tra:166
-msgid "Hassle-free ammo"
 msgstr ""
 
 #: tnt/tra/english/game.tra:167

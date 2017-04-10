@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-4-5 13:54+0000\n"
+"POT-Creation-Date: 2017-4-10 5:24+0000\n"
 "PO-Revision-Date: 2017-04-09 02:56+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,21 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12\n"
-
-#: tnt/tra/english/setup.tra:74
-msgid "Smarter familiars"
-msgstr "Умные фамильяры"
-
-#: tnt/tra/english/setup.tra:75
-msgid "Only BG2:ToB engine is supported"
-msgstr "Требует движок BG2:ToB"
-
-#: tnt/tra/english/setup.tra:76
-msgid "Faster familiars"
-msgstr "Быстрые фамильяры"
 
 #: tnt/tra/english/setup.tra:77
 msgid "Resilient familiars"
@@ -140,8 +127,7 @@ msgstr "Каждая характеристика получает +1"
 
 #: tnt/tra/english/setup.tra:104
 msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr ""
-"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
+msgstr "Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
 
 #: tnt/tra/english/setup.tra:105
 msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
@@ -197,9 +183,7 @@ msgstr "Упрощенные ловушки: звуковой сигнал"
 
 #: tnt/tra/english/setup.tra:118
 msgid "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to work)"
-msgstr ""
-"Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
-"компоненты работали)"
+msgstr "Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие компоненты работали)"
 
 #: tnt/tra/english/setup.tra:119
 msgid "Less autosaves"
@@ -219,10 +203,7 @@ msgstr "Только для саги БГ"
 
 #: tnt/tra/english/setup.tra:123
 msgid "EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee instead."
-msgstr ""
-"Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать "
-"https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-"
-"master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
+msgstr "Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
 
 #: tnt/tra/english/setup.tra:124
 msgid "Requires ToB or EE engine"
@@ -236,18 +217,45 @@ msgstr "Требует движок BG2 или EE"
 msgid "Requires BG2"
 msgstr "Требует BG2"
 
-#: tnt/tra/english/setup.tra:127
-msgid "BGT only"
-msgstr "Только для BGT"
-
 #: tnt/tra/english/setup.tra:128
 msgid "Weightless ammo"
 msgstr "Невесомые снаряды"
 
 #: tnt/tra/english/setup.tra:129
 msgid "All easy traps components must be installed before core"
+msgstr "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
+
+#: tnt/tra/english/setup.tra:134
+msgid "Sensible Otiluke's sphere"
 msgstr ""
-"Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
+
+#: tnt/tra/english/setup.tra:135
+msgid "Improved strongholds"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:144
+msgid "Sensible wand of frost"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:145
+msgid "Single target"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:146
+msgid "AoE"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:148
+msgid "No cast and attack"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:159
+msgid "More ankheg armors by Taerom"
+msgstr ""
+
+#: tnt/tra/english/setup.tra:166 tnt/tra/english/game.tra:166
+msgid "Hassle-free ammo"
+msgstr ""
 
 #: tnt/tra/english/setup.tra:206
 msgid "Windows only"
@@ -259,9 +267,7 @@ msgstr "Зелье по-настоящему зеркальных глаз"
 
 #: tnt/tra/english/setup.tra:224
 msgid "stop moving and pause game only for ground traps"
-msgstr ""
-"Остановиться и поставить игру на паузу только для ловушек, на которые можно "
-"наступить"
+msgstr "Остановиться и поставить игру на паузу только для ловушек, на которые можно наступить"
 
 #: tnt/tra/english/setup.tra:225
 msgid "Familiars"
@@ -286,114 +292,6 @@ msgstr "Заклинания и способности"
 #: tnt/tra/english/setup.tra:230
 msgid "Gameplay and rules"
 msgstr "Игровая механика и правила"
-
-#: tnt/tra/english/game.tra:1
-msgid "Uh, this one is locked."
-msgstr "Эм, это заперто."
-
-#: tnt/tra/english/game.tra:2
-msgid "Uh, I smell a trap."
-msgstr "Эм, я чувствую ловушку."
-
-#: tnt/tra/english/game.tra:3
-msgid "Looking for gold..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:4
-msgid "Finished looking for gold."
-msgstr ""
-
-#: tnt/tra/english/game.tra:5
-msgid "Looking for scalps..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:6
-msgid "Finished looking for scalps."
-msgstr ""
-
-#: tnt/tra/english/game.tra:7
-msgid "Looking for common ammo..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:8
-msgid "Finished looking for common ammo."
-msgstr ""
-
-#: tnt/tra/english/game.tra:9
-msgid "Looking for common jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:10
-msgid "Finished looking for common jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:11
-msgid "Looking for common potions..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:12
-msgid "Finished looking for common potions."
-msgstr ""
-
-#: tnt/tra/english/game.tra:13
-msgid "Looking for scrolls..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:14
-msgid "Finished looking for scrolls."
-msgstr ""
-
-#: tnt/tra/english/game.tra:15
-msgid "Boss, your pack is full."
-msgstr ""
-
-#: tnt/tra/english/game.tra:16
-msgid "Looking for rare jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:17
-msgid "Finished looking for rare jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:18
-msgid "Looking for rare potions..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:19
-msgid "Finished looking for rare potions."
-msgstr ""
-
-#: tnt/tra/english/game.tra:20
-msgid "Looking for magic jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:21
-msgid "Finished looking for magic jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:22
-msgid "Looking for rare ammo..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:23
-msgid "Finished looking for rare ammo."
-msgstr ""
-
-#: tnt/tra/english/game.tra:24
-msgid "Looking for rare magic jewels..."
-msgstr ""
-
-#: tnt/tra/english/game.tra:25
-msgid "Finished looking for rare magic jewels."
-msgstr ""
-
-#: tnt/tra/english/game.tra:26
-msgid "Potion effect refreshed"
-msgstr ""
-
-#: tnt/tra/english/game.tra:27
-msgid "Protection scroll effect refreshed"
-msgstr ""
 
 #: tnt/tra/english/game.tra:28
 msgid "Thorius"
@@ -591,14 +489,6 @@ msgstr ""
 msgid "You soul is forfeit!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:134
-msgid "Sensible Otiluke's sphere"
-msgstr ""
-
-#: tnt/tra/english/game.tra:135
-msgid "Improved strongholds"
-msgstr ""
-
 #: tnt/tra/english/game.tra:136
 msgid "Theater earnings are ready."
 msgstr ""
@@ -631,18 +521,6 @@ msgstr ""
 msgid "Your presence is required at the church. The needs of the faithful must be tended to."
 msgstr ""
 
-#: tnt/tra/english/game.tra:144
-msgid "Sensible wand of frost"
-msgstr ""
-
-#: tnt/tra/english/game.tra:145
-msgid "Single target"
-msgstr ""
-
-#: tnt/tra/english/game.tra:146
-msgid "AoE"
-msgstr ""
-
 #: tnt/tra/english/game.tra:147
 msgid ""
 "The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
@@ -660,10 +538,6 @@ msgid ""
 " Thief\n"
 " Paladin\n"
 " Ranger\n"
-msgstr ""
-
-#: tnt/tra/english/game.tra:148
-msgid "No cast and attack"
 msgstr ""
 
 #: tnt/tra/english/game.tra:149
@@ -704,14 +578,6 @@ msgstr ""
 
 #: tnt/tra/english/game.tra:158
 msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
-msgstr ""
-
-#: tnt/tra/english/game.tra:159
-msgid "More ankheg armors by Taerom"
-msgstr ""
-
-#: tnt/tra/english/game.tra:160
-msgid "Returning throwing axe"
 msgstr ""
 
 #: tnt/tra/english/game.tra:161
@@ -779,10 +645,6 @@ msgid ""
 "Type:  1-handed\n"
 "Not Usable By:\n"
 " Cleric"
-msgstr ""
-
-#: tnt/tra/english/game.tra:166
-msgid "Hassle-free ammo"
 msgstr ""
 
 #: tnt/tra/english/game.tra:167
@@ -1019,3 +881,21 @@ msgstr ""
 #: tnt/tra/english/game.tra:222
 msgid "Don't disengage, even if you're being attacked."
 msgstr "Не убегай, даже если на тебя напали."
+
+#~ msgid "Smarter familiars"
+#~ msgstr "Умные фамильяры"
+
+#~ msgid "Only BG2:ToB engine is supported"
+#~ msgstr "Требует движок BG2:ToB"
+
+#~ msgid "Faster familiars"
+#~ msgstr "Быстрые фамильяры"
+
+#~ msgid "BGT only"
+#~ msgstr "Только для BGT"
+
+#~ msgid "Uh, this one is locked."
+#~ msgstr "Эм, это заперто."
+
+#~ msgid "Uh, I smell a trap."
+#~ msgstr "Эм, я чувствую ловушку."
