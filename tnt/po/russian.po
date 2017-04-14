@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-10 5:24+0000\n"
-"PO-Revision-Date: 2017-04-09 02:56+0000\n"
+"PO-Revision-Date: 2017-04-14 10:47+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12\n"
 
 #: tnt/tra/english/setup.tra:77
@@ -227,35 +228,35 @@ msgstr "Любые компоненты Упрощенных Ловушек до
 
 #: tnt/tra/english/setup.tra:134
 msgid "Sensible Otiluke's sphere"
-msgstr ""
+msgstr "Более адекватная сфера Отилюка"
 
 #: tnt/tra/english/setup.tra:135
 msgid "Improved strongholds"
-msgstr ""
+msgstr "Улучшенные стронгхолды"
 
 #: tnt/tra/english/setup.tra:144
 msgid "Sensible wand of frost"
-msgstr ""
+msgstr "Более адекватный жезл мороза"
 
 #: tnt/tra/english/setup.tra:145
 msgid "Single target"
-msgstr ""
+msgstr "Одиночная цель"
 
 #: tnt/tra/english/setup.tra:146
 msgid "AoE"
-msgstr ""
+msgstr "Действие на область"
 
 #: tnt/tra/english/setup.tra:148
 msgid "No cast and attack"
-msgstr ""
+msgstr "Запретить кастование заклинаний и атаку в том же раунде"
 
 #: tnt/tra/english/setup.tra:159
 msgid "More ankheg armors by Taerom"
-msgstr ""
+msgstr "Таэром может делать больше панцирей из анкегов"
 
 #: tnt/tra/english/setup.tra:166 tnt/tra/english/game.tra:166
 msgid "Hassle-free ammo"
-msgstr ""
+msgstr "Более удобные снаряды"
 
 #: tnt/tra/english/setup.tra:206
 msgid "Windows only"
@@ -295,215 +296,217 @@ msgstr "Игровая механика и правила"
 
 #: tnt/tra/english/game.tra:28
 msgid "Thorius"
-msgstr ""
+msgstr "Ториус"
 
 #: tnt/tra/english/game.tra:29
 msgid "Careful. Something's not quite right here."
-msgstr ""
+msgstr "Осторожно. Что-то здесь не так."
 
 #: tnt/tra/english/game.tra:30
 msgid "Stop! It's a trap!"
-msgstr ""
+msgstr "Стоп! Это ловушка!"
 
 #: tnt/tra/english/game.tra:31
 msgid "I sense a trap!"
-msgstr ""
+msgstr "Я чувствую ловушку!"
 
 #: tnt/tra/english/game.tra:32
 msgid "Hmm... We should tread lightly here."
-msgstr ""
+msgstr "Хм... Тут нужно шагать аккуратно."
 
 #: tnt/tra/english/game.tra:33
 msgid "Wait, wait. Let's take a closer look at this."
-msgstr ""
+msgstr "Погодите. Давайте присмотримся повнимательней."
 
 #: tnt/tra/english/game.tra:34
 msgid "I sense danger."
-msgstr ""
+msgstr "Я чувствую опасность."
 
 #: tnt/tra/english/game.tra:35
 msgid "Watch your step. Looks suspicious."
-msgstr ""
+msgstr "Смотрите куда наступаете. Выглядит подозрительно."
 
 #: tnt/tra/english/game.tra:36
 msgid "Hold on. See this?"
-msgstr ""
+msgstr "Погодите. Видите вот это?"
 
 #: tnt/tra/english/game.tra:37
 msgid "Die your final death!"
-msgstr ""
+msgstr "Сдохни окончательно!"
 
 #: tnt/tra/english/game.tra:38
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr ""
+msgstr "Арргх! Бу говорить убивать, Минск убивает!"
 
 #: tnt/tra/english/game.tra:39
 msgid "Prepare to feel the wrath of my hamster!"
-msgstr ""
+msgstr "Готовьтесь почувствовать гнев моего хомяка!"
 
 #: tnt/tra/english/game.tra:40
 msgid "Your end is near at hand, wail if you must!!"
-msgstr ""
+msgstr "Ваш конец близок, плачьте, если хотите!!"
 
 #: tnt/tra/english/game.tra:41
 msgid "Blast and bother!  These locks have always given me trouble!  Trouble they are!"
-msgstr ""
+msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
 
 #: tnt/tra/english/game.tra:42
 msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr ""
+msgstr "Ходить в одиночку по дорогам Побережья?  Что за умник это придумал?"
 
 #: tnt/tra/english/game.tra:43
 msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr ""
+msgstr "Успокойся дорогая, мы должны действовать ак-к-куратно."
 
 #: tnt/tra/english/game.tra:44
 msgid "Let us get this over with!"
-msgstr ""
+msgstr "Давайте покончим с этим!"
 
 #: tnt/tra/english/game.tra:45
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr ""
+msgstr "Ааа!! Спасите!  Помогите мне, пожалуйстааа!"
 
 #: tnt/tra/english/game.tra:46
 msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr ""
+msgstr "О, вам будет НАМНОГО больнее, чем мне!"
 
 #: tnt/tra/english/game.tra:47
 msgid "By all that is decent, I fight!"
-msgstr ""
+msgstr "Я сражаюсь за все хорошее!"
 
 #: tnt/tra/english/game.tra:48
 msgid "Killing is our business, and business be good!"
-msgstr ""
+msgstr "Наше дело - это убийства... и дело идет хорошо!"
 
 #: tnt/tra/english/game.tra:49
 msgid "Hahahaha!"
-msgstr ""
+msgstr "Хахаха!"
 
 #: tnt/tra/english/game.tra:50
 msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr ""
+msgstr "Во имя Тира мы победим раз и навсегда!"
 
 #: tnt/tra/english/game.tra:51
 msgid "What can I do for you?"
-msgstr ""
+msgstr "Что я могу сделать для вас?"
 
 #: tnt/tra/english/game.tra:52
 msgid "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgstr ""
+"Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
 
 #: tnt/tra/english/game.tra:53
 msgid "Aye, who's there now?  More smithing, or did ye burrow into another river?"
-msgstr ""
+msgstr "Да, что там опять?  Будем ковать, или снова наткнулись на реку?"
 
 #: tnt/tra/english/game.tra:54
 msgid "I have languished in these dismal vaults too long."
-msgstr ""
+msgstr "Я слишком долго томился в этих мрачных пещерах."
 
 #: tnt/tra/english/game.tra:55
 msgid "Evil falls today!"
-msgstr ""
+msgstr "Сегодня зло падет!"
 
 #: tnt/tra/english/game.tra:56
 msgid "If you fight, you die!  You cannot match our power!!"
 msgstr ""
+"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!!"
 
 #: tnt/tra/english/game.tra:57
 msgid "Helm's fury upon you all!!"
-msgstr ""
+msgstr "Вас настигнет гнев Хелма!!"
 
 #: tnt/tra/english/game.tra:58
 msgid "By skill and might we shall prevail!!"
-msgstr ""
+msgstr "Сила и умение помогут нам победить!!"
 
 #: tnt/tra/english/game.tra:59
 msgid "You will not pass!"
-msgstr ""
+msgstr "Вы не пройдете!"
 
 #: tnt/tra/english/game.tra:60
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
-msgstr ""
+msgstr "Ах, это отличная битва, о которой узнают на всех планах!"
 
 #: tnt/tra/english/game.tra:61
 msgid "We children of Bhaal cannot be stopped!"
-msgstr ""
+msgstr "Нас, детей Баала, нельзя остановить!"
 
 #: tnt/tra/english/game.tra:62
 msgid "Ha!  This arena I know well!!"
-msgstr ""
+msgstr "Ха!  Это я хорошо умею!!"
 
 #: tnt/tra/english/game.tra:63
 msgid "I shall carve a path, if need be."
-msgstr ""
+msgstr "Я проделаю путь, если понадобится."
 
 #: tnt/tra/english/game.tra:64
 msgid "As you wish."
-msgstr ""
+msgstr "Как пожелаешь."
 
 #: tnt/tra/english/game.tra:65
 msgid "Hmph.  Not what I would have done."
-msgstr ""
+msgstr "Хм.   Я бы сделал не так."
 
 #: tnt/tra/english/game.tra:66
 msgid "So you say."
-msgstr ""
+msgstr "Как скажешь."
 
 #: tnt/tra/english/game.tra:67
 msgid "My music is superior to yours, Eldoth, I was taught at the college in Berdusk."
-msgstr ""
+msgstr "Моя музыка лучше твоей, Элдот.  Я обучался в колледже в Бердуске."
 
 #: tnt/tra/english/game.tra:68
 msgid "I can't stand by and just let this happen."
-msgstr ""
+msgstr "Я не могу стоять в стороне и позволить этому произойти."
 
 #: tnt/tra/english/game.tra:69
 msgid "By the ice breath of Auril!"
-msgstr ""
+msgstr "Ледяным дыханием Орил!"
 
 #: tnt/tra/english/game.tra:70
 msgid "You're the finest group of friends I've ever had."
-msgstr ""
+msgstr "Вы лучшие друзья, которые у меня были."
 
 #: tnt/tra/english/game.tra:71
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr ""
+msgstr "Montaron, ты такой РАЗДРАЖАЩИЙ!  Это меня беспокоит!"
 
 #: tnt/tra/english/game.tra:72
 msgid "How would you like my sword tickling your innards?"
-msgstr ""
+msgstr "Как тебе понравится, если мой меч пощекочет твои кишки?"
 
 #: tnt/tra/english/game.tra:130
 msgid "You evil ways end here!"
-msgstr ""
+msgstr "Твои злодеяния подошли к концу!"
 
 #: tnt/tra/english/game.tra:131
 msgid "Draw steel!"
-msgstr ""
+msgstr "К оружию!"
 
 #: tnt/tra/english/game.tra:132
 msgid "Defend yourselves!"
-msgstr ""
+msgstr "Защищайтесь!"
 
 #: tnt/tra/english/game.tra:133
 msgid "You soul is forfeit!"
-msgstr ""
+msgstr "Твоя душа потеряна!"
 
 #: tnt/tra/english/game.tra:136
 msgid "Theater earnings are ready."
-msgstr ""
+msgstr "Поступил доход от театра."
 
 #: tnt/tra/english/game.tra:137
 msgid "The apprentices must have finished the task. Time to check up on them."
-msgstr ""
+msgstr "Ученики уже должны были закончить задание. Пора к ним наведаться."
 
 #: tnt/tra/english/game.tra:138
 msgid "The Grove awaits."
-msgstr ""
+msgstr "Роще ожидает."
 
 #: tnt/tra/english/game.tra:139
 msgid "It's time to visit the cabin."
-msgstr ""
+msgstr "Пора посетить хижину следопыта."
 
 #: tnt/tra/english/game.tra:140
 msgid "The people of de'Arnise keep need presence of their Lord."
