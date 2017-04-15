@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-10 5:24+0000\n"
-"PO-Revision-Date: 2017-04-14 10:47+0000\n"
+"PO-Revision-Date: 2017-04-15 11:57+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -510,19 +510,20 @@ msgstr "Пора посетить хижину следопыта."
 
 #: tnt/tra/english/game.tra:140
 msgid "The people of de'Arnise keep need presence of their Lord."
-msgstr ""
+msgstr "Людям крепости де'Арниз требуется присутствие их господина."
 
 #: tnt/tra/english/game.tra:141
 msgid "Morul has prepared a new batch of potions."
-msgstr ""
+msgstr "Морул подготовил новую порцию зелий."
 
 #: tnt/tra/english/game.tra:142
 msgid "The potions are on the table in the laboratory <SIRMAAM>."
-msgstr ""
+msgstr "Зелья на столе в лаборатории, <SIRMAAM>."
 
 #: tnt/tra/english/game.tra:143
 msgid "Your presence is required at the church. The needs of the faithful must be tended to."
 msgstr ""
+"Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
 
 #: tnt/tra/english/game.tra:147
 msgid ""
