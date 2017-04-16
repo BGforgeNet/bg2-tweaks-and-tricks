@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-10 5:24+0000\n"
-"PO-Revision-Date: 2017-04-15 11:57+0000\n"
+"PO-Revision-Date: 2017-04-16 07:23+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -546,23 +546,26 @@ msgstr ""
 
 #: tnt/tra/english/game.tra:149
 msgid "Gem bag"
-msgstr ""
+msgstr "Сумка для драгоценностей"
 
 #: tnt/tra/english/game.tra:150
 msgid "This small bag is ideally suited for holding gems."
-msgstr ""
+msgstr "Эта маленькая сумка идеально подходит для хранения драгоценных камней."
 
 #: tnt/tra/english/game.tra:151
 msgid "Scroll case"
-msgstr ""
+msgstr "Футляр для свитков"
 
 #: tnt/tra/english/game.tra:152
 msgid "This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard."
 msgstr ""
+"Этот прочный контейнер позволяет хранить десятки свитков в безопасности от "
+"огня, дождя или молнии - обычных опасностей, с которыми приходиваться "
+"сталкиваться странствующим волшебникам."
 
 #: tnt/tra/english/game.tra:153
 msgid "Potion case"
-msgstr ""
+msgstr "Футляр для зельев"
 
 #: tnt/tra/english/game.tra:154
 msgid "Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel."
