@@ -62,7 +62,7 @@ It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhan
 
 ### Familiars
 #### Smarter familiars
-- Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, it can actually fetch items for you!
+- Allow familiars to pick up loot for you (move chosen items from the floor and chests to your inventory). Yes, they can actually fetch items for you!
 - Have them jump into the pack when there's danger or they're injured. Very useful at later stages.
 - Compatible with [WTP familiars](http://gibberlings3.net/forums/index.php?showtopic=23874).
 
