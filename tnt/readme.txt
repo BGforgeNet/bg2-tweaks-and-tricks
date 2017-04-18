@@ -4,9 +4,7 @@
 </a>
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
-</a>
-
-[__Download__](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest) | [__Support__](https://github.com/burner1024/bg2-tweaks-and-tricks/issues) | [__Discussion__](https://forum.bgforge.net/viewtopic.php?f=4&t=15&p=33)
+</a> [__Download__](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest) | [__Support__](https://github.com/burner1024/bg2-tweaks-and-tricks/issues) | [__Discussion__](https://forum.bgforge.net/viewtopic.php?f=4&t=15&p=33)
 
 This is a collection of tweaks to:
 - fix some annoying and/or unrealistic aspects of the game
