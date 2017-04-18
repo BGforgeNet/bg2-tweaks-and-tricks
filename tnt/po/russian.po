@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-16 07:23+0000\n"
+"PO-Revision-Date: 2017-04-18 18:12+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12\n"
 
 #: tnt/tra/english/setup.tra:77
@@ -555,6 +556,24 @@ msgid ""
 " Paladin\n"
 " Ranger\n"
 msgstr ""
+"Этот жезл вызывает невероятный холод в конусообразной области, начинающейся "
+"у руки чародея и распространяющейся наружу, почти как магческое заклинание 5 "
+"уровня Конус Холода. Наносит урон 8d6 (все 1 превращаются в 2), с "
+"уменьшением пополам при успешном спасброске против жезлов.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Эффект: Конус Холода\n"
+"Урон: 8d6 (спасбросок против жезлов уменьшает наполовину)\n"
+"Дальность: 100\n"
+"Область действия: специальная\n"
+"Не используют:\n"
+" Боец\n"
+" Священник\n"
+" Друид\n"
+" Вор\n"
+" Паладин\n"
+" Следопыт"
 
 #: tnt/tra/english/game.tra:149
 msgid "Gem bag"
@@ -579,18 +598,23 @@ msgstr "Футляр для зельев"
 #: tnt/tra/english/game.tra:154
 msgid "Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel."
 msgstr ""
+"Кожаные сумки наподобие этой обычно носят странствующие целители. Она "
+"раскрывается и позволяет прикрепить хрупкие бутылочки с зельями к мягкому "
+"валику с многочисленными кожаными ремешками для безопасной переноски."
 
 #: tnt/tra/english/game.tra:155
 msgid "Ammo belt"
-msgstr ""
+msgstr "Пояс для снарядов"
 
 #: tnt/tra/english/game.tra:156
 msgid "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts."
 msgstr ""
+"Этот наплечный ремень идеально подходит для хранения ядер, дротиков, стрел и "
+"арбалетных болтов."
 
 #: tnt/tra/english/game.tra:157
 msgid "Bag of Holding"
-msgstr ""
+msgstr "Сумка Хранения"
 
 #: tnt/tra/english/game.tra:158
 msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
