@@ -363,7 +363,7 @@ It saves some time, but on the other hand you should treat your saves more caref
 * [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
 * [NearInfinity](https://github.com/Argent77/NearInfinity)
 
-## Licence
+## License
 The mod is [CC BY-NC v4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Weidu is GPLv3
