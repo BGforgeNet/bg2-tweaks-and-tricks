@@ -14,7 +14,7 @@ This is a collection of tweaks to:
 - make some things easier
 - make other things harder
 
-It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhanced Editions (not all components are applicable to all games). [Download](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
+It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhanced Editions (not all components are applicable to all games).
 
 - [Components](#components)
 - [Installation](#installation)
