@@ -87,6 +87,7 @@ Options:
 #### Less autosaves
 Disables autosave on area transition. This only affects transitions that don't go through worldmap.
 
+It saves some time, but on the other hand you should treat your saves more carefully. You've been warned.
 
 ### Soundsets
 
@@ -281,10 +282,6 @@ This component mostly improves messengers and messages, making them more faster 
 
 #### More ankheg armors by Taerom
 Allow Taerom to make more ankheg armors
-
-
-It saves some time, but on the other hand you should treat your saves more carefully. You've been warned.
-
 
 ## Installation
 - Download tnt.zip from the [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
