@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-18 18:12+0000\n"
+"PO-Revision-Date: 2017-04-20 17:29+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -619,6 +619,10 @@ msgstr "Сумка Хранения"
 #: tnt/tra/english/game.tra:158
 msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
 msgstr ""
+"Как и другие магические сумки, эта кажется обычным тканевым мешком примерно "
+"2 на 4 фута. Сумка хранения открывается в безразмерное пространства, и ее "
+"внутренние размеры больше внешних. Независимо от того, что в нее сложено, "
+"сумка всегда весит одинаково."
 
 #: tnt/tra/english/game.tra:160
 msgid "Returning throwing axe"
@@ -645,10 +649,32 @@ msgid ""
 " Mage \n"
 " Thief"
 msgstr ""
+"Метательный топорик также известен как томагавк. Лезвие топора имеет острый "
+"стальной наконечник, уравновешенный шипом с другой стороны. Конец короткой "
+"ручки заострен. С другой стороны, на головке, также может иметься шип.\n"
+"\n"
+"Конкретно этот топор зачарован слабым заклинанием - он всегда возвращается в "
+"руку хозяина после броска. Однако, в остальных отношениях он считается "
+"немагическим.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Урон: 1d6 +1\n"
+"Тип урона: стрелковый (колющий)\n"
+"Вес: 5\n"
+"Фактор Скорости: 4\n"
+"Тип Умения: Топор\n"
+"Тип: 1-рукий\n"
+"Требует: 4 Силы\n"
+"Не Может Использовать:\n"
+" Друид\n"
+" Священник\n"
+" Маг\n"
+" Вор"
 
 #: tnt/tra/english/game.tra:162
 msgid "Returning throwing dagger"
-msgstr ""
+msgstr "Возвращающийся метательный кинжал"
 
 #: tnt/tra/english/game.tra:163
 msgid ""
@@ -668,10 +694,29 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"Типичный метательный кинжал имеет заостренное, обычно обоюдоострое лезвие, в "
+"отличие от ножа, который заточен с одного края и немного короче. По "
+"сравнению с простым кинжалом, у этого уменьшенная рукоятка и другой баланс.\n"
+"\n"
+"Конкретно этот кинжал зачарован слабым заклинанием - он всегда возвращается "
+"в руку хозяина после броска. Однако, в остальных отношениях он считается "
+"немагическим.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Урон: 1D4\n"
+"Тип урона: стрелковый (колющий)\n"
+"Вес: 1\n"
+"Фактор Скорости: 2\n"
+"Тип Умения: Кинжал\n"
+"Тип: 1-рукий\n"
+"Требует: 3 Силы\n"
+"Не Может Использовать:\n"
+" Клерик"
 
 #: tnt/tra/english/game.tra:164
 msgid "Returning dart"
-msgstr ""
+msgstr "Возвращающийся дротик"
 
 #: tnt/tra/english/game.tra:165
 msgid ""
@@ -690,42 +735,59 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"Дротик - это маленькое метательное оружие, которое легко спрятать. Его "
+"бросают, а не пускают из лука или другого устройста.\n"
+"\n"
+"Конкретно этот дротик зачарован слабым заклинанием - он всегда возвращается "
+"в руку хозяина после броска. Однако, в остальных отношениях он считается "
+"немагическим.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Урон: 1d3\n"
+"Тип урона: стрелковый (колющий)\n"
+"Вес: 0\n"
+"Фактор Скорости: 2\n"
+"Тип Умения: Дарт\n"
+"Тип: 1-рукий\n"
+"Не Может Использовать:\n"
+" Клерик"
 
 #: tnt/tra/english/game.tra:167
 msgid "Let's change formation."
-msgstr ""
+msgstr "Давай-ка поменяем строй."
 
 #: tnt/tra/english/game.tra:168
 msgid "I want to give you new instructions about the loot."
-msgstr ""
+msgstr "Я хочу дать тебе новые инструкции по поводу добычи."
 
 #: tnt/tra/english/game.tra:169
 msgid "We need to discuss combat."
-msgstr ""
+msgstr "Нам нужно обсудить сражения."
 
 #: tnt/tra/english/game.tra:170
 msgid "Yes, boss?"
-msgstr ""
+msgstr "Да, хозяин?"
 
 #: tnt/tra/english/game.tra:171
 msgid "Follow me at all times."
-msgstr ""
+msgstr "Всегда следуй за мной."
 
 #: tnt/tra/english/game.tra:172
 msgid "Stop following me all the time."
-msgstr ""
+msgstr "Перестань все время за мной ходить."
 
 #: tnt/tra/english/game.tra:173
 msgid "Actually, nevermind. Distance is fine for now."
-msgstr ""
+msgstr "Вообще-то, неважно. И так сойдет."
 
 #: tnt/tra/english/game.tra:174
 msgid "If you see any danger, jump to my pack right away!"
-msgstr ""
+msgstr "Если ты заметил опасность, сразу прыгай в мой рюкзак!"
 
 #: tnt/tra/english/game.tra:175
 msgid "Don't hide in my pack when you see enemies."
-msgstr ""
+msgstr "Не прячься в рюкзаке, когда заметил врагов."
 
 #: tnt/tra/english/game.tra:176
 msgid "When you're injured, rush to my pack immediately."
