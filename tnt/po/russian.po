@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-20 17:29+0000\n"
+"PO-Revision-Date: 2017-04-21 03:51+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -791,47 +791,49 @@ msgstr "Не прячься в рюкзаке, когда заметил вра�
 
 #: tnt/tra/english/game.tra:176
 msgid "When you're injured, rush to my pack immediately."
-msgstr ""
+msgstr "Если ты ранен, немедленно прыгай в мой рюкзак."
 
 #: tnt/tra/english/game.tra:177
 msgid "When you're badly injured, rush to my pack immediately."
-msgstr ""
+msgstr "Если ты тяжело ранен, немедленно прыгай в мой рюкзак."
 
 #: tnt/tra/english/game.tra:178
 msgid "When the enemies are gone, get out of the pack by yourself."
-msgstr ""
+msgstr "Когда врагов больше не видно, вылезай из рюкзака."
 
 #: tnt/tra/english/game.tra:179
 msgid "After hiding in my pack, stay there. One cannot be too careful."
 msgstr ""
+"После того, как спрятался в рюкзаке, оставайся там. Нам нужно быть "
+"осторожными."
 
 #: tnt/tra/english/game.tra:180
 msgid "Ah, maybe later."
-msgstr ""
+msgstr "Да нет, может, в другой раз."
 
 #: tnt/tra/english/game.tra:181
 msgid "Stop picking up any items, okay?"
-msgstr ""
+msgstr "Перестань подбирать добычу, ладно?"
 
 #: tnt/tra/english/game.tra:182
 msgid "I want you to bring me everything. Any valuables."
-msgstr ""
+msgstr "Я хочу, чтобы ты приносил мне все, что найдешь. Любые ценности."
 
 #: tnt/tra/english/game.tra:183
 msgid "Pick up any gold that you find."
-msgstr ""
+msgstr "Собирай все золото, что найдешь."
 
 #: tnt/tra/english/game.tra:184
 msgid "Don't pick up the gold that you find."
-msgstr ""
+msgstr "Не подбирай золото."
 
 #: tnt/tra/english/game.tra:185
 msgid "Pick up any jewels that you find."
-msgstr ""
+msgstr "Собирай любые драгоценности."
 
 #: tnt/tra/english/game.tra:186
 msgid "Pick up only valuable and magical jewelry."
-msgstr ""
+msgstr "Подбирай только дорогие и магические драгоценности."
 
 #: tnt/tra/english/game.tra:187
 msgid "Pick up only magical jewelry."
