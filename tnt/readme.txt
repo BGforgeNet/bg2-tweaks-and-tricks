@@ -361,7 +361,7 @@ Allow Taerom to make more ankheg armors
 * [NearInfinity](https://github.com/Argent77/NearInfinity)
 
 ## License
-The mod is [CC BY-NC v4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+The mod is [CC BY-NC-SA v4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 Weidu is GPLv3
 
