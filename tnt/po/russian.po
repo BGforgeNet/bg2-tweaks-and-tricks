@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-21 03:51+0000\n"
+"PO-Revision-Date: 2017-04-22 19:49+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -837,47 +837,47 @@ msgstr "Подбирай только дорогие и магические д�
 
 #: tnt/tra/english/game.tra:187
 msgid "Pick up only magical jewelry."
-msgstr ""
+msgstr "Подбирай только волшебные драгоценности."
 
 #: tnt/tra/english/game.tra:188
 msgid "Don't pick up the jewelry."
-msgstr ""
+msgstr "Не подбирай драгоценности."
 
 #: tnt/tra/english/game.tra:189
 msgid "Pick up any magical ammo that you find."
-msgstr ""
+msgstr "Приноси все зачарованные снаряды, которые найдешь."
 
 #: tnt/tra/english/game.tra:190
 msgid "Don't pick up the ammo."
-msgstr ""
+msgstr "Не подбирай снаряды."
 
 #: tnt/tra/english/game.tra:191
 msgid "If you find any potions, bring them to me!"
-msgstr ""
+msgstr "Если найдешь зелья - сразу неси мне!"
 
 #: tnt/tra/english/game.tra:192
 msgid "Stop picking up potions."
-msgstr ""
+msgstr "Не нужно больше зельев."
 
 #: tnt/tra/english/game.tra:193
 msgid "Get me any scrolls that you can find."
-msgstr ""
+msgstr "Мне нужны все свитки, что ты найдешь."
 
 #: tnt/tra/english/game.tra:194
 msgid "I don't need you to bring any more scrolls."
-msgstr ""
+msgstr "Мне больше не нужны свитки."
 
 #: tnt/tra/english/game.tra:195
 msgid "Fetch scalps from those bandits we kill. There's a nice bounty for them."
-msgstr ""
+msgstr "Срезай скальпы с мертых бандитов. За них неплохая награда."
 
 #: tnt/tra/english/game.tra:196
 msgid "Stop that scalping, will you? It's disgusting."
-msgstr ""
+msgstr "Хватит скальпов, а? Это отвратительно."
 
 #: tnt/tra/english/game.tra:197
 msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
-msgstr ""
+msgstr "Чешуя анкегов, шкуры зимних волков, головы вивернов - неси все."
 
 #: tnt/tra/english/game.tra:198
 msgid "No more pelts or scales, we're stocked."
