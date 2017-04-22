@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-16 07:23+0000\n"
+"PO-Revision-Date: 2017-04-21 03:51+0000\n"
 "Last-Translator: The Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12\n"
 
 #: tnt/tra/english/setup.tra:77
@@ -555,6 +556,24 @@ msgid ""
 " Paladin\n"
 " Ranger\n"
 msgstr ""
+"Этот жезл вызывает невероятный холод в конусообразной области, начинающейся "
+"у руки чародея и распространяющейся наружу, почти как магческое заклинание 5 "
+"уровня Конус Холода. Наносит урон 8d6 (все 1 превращаются в 2), с "
+"уменьшением пополам при успешном спасброске против жезлов.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Эффект: Конус Холода\n"
+"Урон: 8d6 (спасбросок против жезлов уменьшает наполовину)\n"
+"Дальность: 100\n"
+"Область действия: специальная\n"
+"Не используют:\n"
+" Боец\n"
+" Священник\n"
+" Друид\n"
+" Вор\n"
+" Паладин\n"
+" Следопыт"
 
 #: tnt/tra/english/game.tra:149
 msgid "Gem bag"
@@ -579,22 +598,31 @@ msgstr "Футляр для зельев"
 #: tnt/tra/english/game.tra:154
 msgid "Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel."
 msgstr ""
+"Кожаные сумки наподобие этой обычно носят странствующие целители. Она "
+"раскрывается и позволяет прикрепить хрупкие бутылочки с зельями к мягкому "
+"валику с многочисленными кожаными ремешками для безопасной переноски."
 
 #: tnt/tra/english/game.tra:155
 msgid "Ammo belt"
-msgstr ""
+msgstr "Пояс для снарядов"
 
 #: tnt/tra/english/game.tra:156
 msgid "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts."
 msgstr ""
+"Этот наплечный ремень идеально подходит для хранения ядер, дротиков, стрел и "
+"арбалетных болтов."
 
 #: tnt/tra/english/game.tra:157
 msgid "Bag of Holding"
-msgstr ""
+msgstr "Сумка Хранения"
 
 #: tnt/tra/english/game.tra:158
 msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
 msgstr ""
+"Как и другие магические сумки, эта кажется обычным тканевым мешком примерно "
+"2 на 4 фута. Сумка хранения открывается в безразмерное пространства, и ее "
+"внутренние размеры больше внешних. Независимо от того, что в нее сложено, "
+"сумка всегда весит одинаково."
 
 #: tnt/tra/english/game.tra:160
 msgid "Returning throwing axe"
@@ -621,10 +649,32 @@ msgid ""
 " Mage \n"
 " Thief"
 msgstr ""
+"Метательный топорик также известен как томагавк. Лезвие топора имеет острый "
+"стальной наконечник, уравновешенный шипом с другой стороны. Конец короткой "
+"ручки заострен. С другой стороны, на головке, также может иметься шип.\n"
+"\n"
+"Конкретно этот топор зачарован слабым заклинанием - он всегда возвращается в "
+"руку хозяина после броска. Однако, в остальных отношениях он считается "
+"немагическим.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Урон: 1d6 +1\n"
+"Тип урона: стрелковый (колющий)\n"
+"Вес: 5\n"
+"Фактор Скорости: 4\n"
+"Тип Умения: Топор\n"
+"Тип: 1-рукий\n"
+"Требует: 4 Силы\n"
+"Не Может Использовать:\n"
+" Друид\n"
+" Священник\n"
+" Маг\n"
+" Вор"
 
 #: tnt/tra/english/game.tra:162
 msgid "Returning throwing dagger"
-msgstr ""
+msgstr "Возвращающийся метательный кинжал"
 
 #: tnt/tra/english/game.tra:163
 msgid ""
@@ -644,10 +694,29 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"Типичный метательный кинжал имеет заостренное, обычно обоюдоострое лезвие, в "
+"отличие от ножа, который заточен с одного края и немного короче. По "
+"сравнению с простым кинжалом, у этого уменьшенная рукоятка и другой баланс.\n"
+"\n"
+"Конкретно этот кинжал зачарован слабым заклинанием - он всегда возвращается "
+"в руку хозяина после броска. Однако, в остальных отношениях он считается "
+"немагическим.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Урон: 1D4\n"
+"Тип урона: стрелковый (колющий)\n"
+"Вес: 1\n"
+"Фактор Скорости: 2\n"
+"Тип Умения: Кинжал\n"
+"Тип: 1-рукий\n"
+"Требует: 3 Силы\n"
+"Не Может Использовать:\n"
+" Клерик"
 
 #: tnt/tra/english/game.tra:164
 msgid "Returning dart"
-msgstr ""
+msgstr "Возвращающийся дротик"
 
 #: tnt/tra/english/game.tra:165
 msgid ""
@@ -666,86 +735,105 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"Дротик - это маленькое метательное оружие, которое легко спрятать. Его "
+"бросают, а не пускают из лука или другого устройста.\n"
+"\n"
+"Конкретно этот дротик зачарован слабым заклинанием - он всегда возвращается "
+"в руку хозяина после броска. Однако, в остальных отношениях он считается "
+"немагическим.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Урон: 1d3\n"
+"Тип урона: стрелковый (колющий)\n"
+"Вес: 0\n"
+"Фактор Скорости: 2\n"
+"Тип Умения: Дарт\n"
+"Тип: 1-рукий\n"
+"Не Может Использовать:\n"
+" Клерик"
 
 #: tnt/tra/english/game.tra:167
 msgid "Let's change formation."
-msgstr ""
+msgstr "Давай-ка поменяем строй."
 
 #: tnt/tra/english/game.tra:168
 msgid "I want to give you new instructions about the loot."
-msgstr ""
+msgstr "Я хочу дать тебе новые инструкции по поводу добычи."
 
 #: tnt/tra/english/game.tra:169
 msgid "We need to discuss combat."
-msgstr ""
+msgstr "Нам нужно обсудить сражения."
 
 #: tnt/tra/english/game.tra:170
 msgid "Yes, boss?"
-msgstr ""
+msgstr "Да, хозяин?"
 
 #: tnt/tra/english/game.tra:171
 msgid "Follow me at all times."
-msgstr ""
+msgstr "Всегда следуй за мной."
 
 #: tnt/tra/english/game.tra:172
 msgid "Stop following me all the time."
-msgstr ""
+msgstr "Перестань все время за мной ходить."
 
 #: tnt/tra/english/game.tra:173
 msgid "Actually, nevermind. Distance is fine for now."
-msgstr ""
+msgstr "Вообще-то, неважно. И так сойдет."
 
 #: tnt/tra/english/game.tra:174
 msgid "If you see any danger, jump to my pack right away!"
-msgstr ""
+msgstr "Если ты заметил опасность, сразу прыгай в мой рюкзак!"
 
 #: tnt/tra/english/game.tra:175
 msgid "Don't hide in my pack when you see enemies."
-msgstr ""
+msgstr "Не прячься в рюкзаке, когда заметил врагов."
 
 #: tnt/tra/english/game.tra:176
 msgid "When you're injured, rush to my pack immediately."
-msgstr ""
+msgstr "Если ты ранен, немедленно прыгай в мой рюкзак."
 
 #: tnt/tra/english/game.tra:177
 msgid "When you're badly injured, rush to my pack immediately."
-msgstr ""
+msgstr "Если ты тяжело ранен, немедленно прыгай в мой рюкзак."
 
 #: tnt/tra/english/game.tra:178
 msgid "When the enemies are gone, get out of the pack by yourself."
-msgstr ""
+msgstr "Когда врагов больше не видно, вылезай из рюкзака."
 
 #: tnt/tra/english/game.tra:179
 msgid "After hiding in my pack, stay there. One cannot be too careful."
 msgstr ""
+"После того, как спрятался в рюкзаке, оставайся там. Нам нужно быть "
+"осторожными."
 
 #: tnt/tra/english/game.tra:180
 msgid "Ah, maybe later."
-msgstr ""
+msgstr "Да нет, может, в другой раз."
 
 #: tnt/tra/english/game.tra:181
 msgid "Stop picking up any items, okay?"
-msgstr ""
+msgstr "Перестань подбирать добычу, ладно?"
 
 #: tnt/tra/english/game.tra:182
 msgid "I want you to bring me everything. Any valuables."
-msgstr ""
+msgstr "Я хочу, чтобы ты приносил мне все, что найдешь. Любые ценности."
 
 #: tnt/tra/english/game.tra:183
 msgid "Pick up any gold that you find."
-msgstr ""
+msgstr "Собирай все золото, что найдешь."
 
 #: tnt/tra/english/game.tra:184
 msgid "Don't pick up the gold that you find."
-msgstr ""
+msgstr "Не подбирай золото."
 
 #: tnt/tra/english/game.tra:185
 msgid "Pick up any jewels that you find."
-msgstr ""
+msgstr "Собирай любые драгоценности."
 
 #: tnt/tra/english/game.tra:186
 msgid "Pick up only valuable and magical jewelry."
-msgstr ""
+msgstr "Подбирай только дорогие и магические драгоценности."
 
 #: tnt/tra/english/game.tra:187
 msgid "Pick up only magical jewelry."
