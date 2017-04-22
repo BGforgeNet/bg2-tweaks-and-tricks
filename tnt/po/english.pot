@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-4-18 7:55+0000\n"
+"POT-Creation-Date: 1970-1-01 00:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,6 +291,22 @@ msgstr ""
 
 #: tnt/tra/english/setup.tra:230
 msgid "Gameplay and rules"
+msgstr ""
+
+#: tnt/tra/english/game.tra:2
+msgid "Uh, I smell a trap."
+msgstr ""
+
+#: tnt/tra/english/game.tra:15
+msgid "Boss, your pack is full."
+msgstr ""
+
+#: tnt/tra/english/game.tra:26
+msgid "Potion effect refreshed"
+msgstr ""
+
+#: tnt/tra/english/game.tra:27
+msgid "Protection scroll effect refreshed"
 msgstr ""
 
 #: tnt/tra/english/game.tra:28
@@ -578,6 +594,10 @@ msgstr ""
 
 #: tnt/tra/english/game.tra:158
 msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
+msgstr ""
+
+#: tnt/tra/english/game.tra:160
+msgid "Returning throwing axe"
 msgstr ""
 
 #: tnt/tra/english/game.tra:161
