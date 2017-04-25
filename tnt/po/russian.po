@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-22 19:49+0000\n"
-"Last-Translator: The Magus <weblate@bgforge.net>\n"
+"PO-Revision-Date: 2017-04-25 13:23+0000\n"
+"Last-Translator: Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
@@ -557,8 +557,8 @@ msgid ""
 " Ranger\n"
 msgstr ""
 "Этот жезл вызывает невероятный холод в конусообразной области, начинающейся "
-"у руки чародея и распространяющейся наружу, почти как магческое заклинание 5 "
-"уровня Конус Холода. Наносит урон 8d6 (все 1 превращаются в 2), с "
+"у руки чародея и распространяющейся наружу, как магическое заклинание 5 "
+"уровня Конус Холода. Наносит урон 8d6 (выброшенные 1 превращаются в 2), с "
 "уменьшением пополам при успешном спасброске против жезлов.\n"
 "\n"
 "Статистика:\n"
@@ -881,35 +881,37 @@ msgstr "Чешуя анкегов, шкуры зимних волков, гол�
 
 #: tnt/tra/english/game.tra:198
 msgid "No more pelts or scales, we're stocked."
-msgstr ""
+msgstr "Хватит уже шкур и панцирей."
 
 #: tnt/tra/english/game.tra:199
 msgid "No, nothing."
-msgstr ""
+msgstr "Да нет, ничего."
 
 #: tnt/tra/english/game.tra:200
 msgid "As you wish, master."
-msgstr ""
+msgstr "Как пожелаешь, хозяин."
 
 #: tnt/tra/english/game.tra:201
 msgid "Let's talk about your gear."
-msgstr ""
+msgstr "Давай обсудим твое снаряжение."
 
 #: tnt/tra/english/game.tra:202
 msgid "Take this returning dart. I think you're better off attacking from distance."
 msgstr ""
+"Возьми этот возвращающийся дротик. Я думаю, тебе лучше держаться на "
+"расстоянии."
 
 #: tnt/tra/english/game.tra:203
 msgid "OK, boss."
-msgstr ""
+msgstr "Хорошо, хозяин."
 
 #: tnt/tra/english/game.tra:204
 msgid "Done."
-msgstr ""
+msgstr "Готово."
 
 #: tnt/tra/english/game.tra:205
 msgid "No, actually I think your gear is fine."
-msgstr ""
+msgstr "Нет, на самом деле я думаю, что у тебя все в порядке со снаряжением."
 
 #: tnt/tra/english/game.tra:207
 msgid "Don't bother me with your whining, I don't care if you're hurt."
