@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-25 13:23+0000\n"
+"PO-Revision-Date: 2017-04-26 12:54+0000\n"
 "Last-Translator: Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -915,35 +915,35 @@ msgstr "Нет, на самом деле я думаю, что у тебя вс�
 
 #: tnt/tra/english/game.tra:207
 msgid "Don't bother me with your whining, I don't care if you're hurt."
-msgstr ""
+msgstr "Не ной мне тут, мне все равно на твои раны."
 
 #: tnt/tra/english/game.tra:208
 msgid "After fight, if you're hurt, let me know."
-msgstr ""
+msgstr "После битвы, если ты ранен, дай мне знать."
 
 #: tnt/tra/english/game.tra:209
 msgid "After fight, if you're badly hurt, let me know."
-msgstr ""
+msgstr "После битвы, если ты сильно ранен, дай мне знать."
 
 #: tnt/tra/english/game.tra:210
 msgid "I'm hurting here, Boss."
-msgstr ""
+msgstr "Хозяин, я ранен."
 
 #: tnt/tra/english/game.tra:211
 msgid "I'm really hurting here, Boss."
-msgstr ""
+msgstr "Хозяин, я помираю уже."
 
 #: tnt/tra/english/game.tra:212
 msgid "Move faster, will you? Don't lag behind."
-msgstr ""
+msgstr "Шевелись быстрее, ага? Не отставай."
 
 #: tnt/tra/english/game.tra:213
 msgid "Don't run so fast. I can't catch up to you."
-msgstr ""
+msgstr "Не беги так быстро. Я за тобой не успеваю."
 
 #: tnt/tra/english/game.tra:214
 msgid "Ouch!"
-msgstr ""
+msgstr "Ай!"
 
 #: tnt/tra/english/game.tra:215
 msgid "Quiver of Plenty"
