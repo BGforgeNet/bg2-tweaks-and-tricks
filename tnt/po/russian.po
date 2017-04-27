@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-4-18 13:30+0000\n"
-"PO-Revision-Date: 2017-04-26 12:54+0000\n"
+"PO-Revision-Date: 2017-04-27 03:14+0000\n"
 "Last-Translator: Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -947,7 +947,7 @@ msgstr "Ай!"
 
 #: tnt/tra/english/game.tra:215
 msgid "Quiver of Plenty"
-msgstr ""
+msgstr "Колчан Изобилия"
 
 #: tnt/tra/english/game.tra:216
 msgid ""
@@ -957,10 +957,16 @@ msgid ""
 "\n"
 "Unlimited plain arrows"
 msgstr ""
+"Зачарованные колчаны вроде этого высоко ценятся профессиональными лучниками."
+"\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Бесконечные обычные стрелы"
 
 #: tnt/tra/english/game.tra:217
 msgid "Case of Plenty"
-msgstr ""
+msgstr "Чехол Изобилия"
 
 #: tnt/tra/english/game.tra:218
 msgid ""
@@ -970,10 +976,16 @@ msgid ""
 "\n"
 "Unlimited plain bolts"
 msgstr ""
+"Зачарованные чехлы для болтов вроде этого высоко ценятся профессиональными "
+"арбалетчиками.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Бесконечные обычные арбалетные болты"
 
 #: tnt/tra/english/game.tra:219
 msgid "Bag of Plenty"
-msgstr ""
+msgstr "Сумка Изобилия"
 
 #: tnt/tra/english/game.tra:220
 msgid ""
@@ -983,10 +995,16 @@ msgid ""
 "\n"
 "Unlimited plain bullets"
 msgstr ""
+"Волшебные сумки для снарядов вроде этой высоко ценятся профессиональными "
+"пращниками.\n"
+"\n"
+"Статистика:\n"
+"\n"
+"Бесконечные снаряды для пращи"
 
 #: tnt/tra/english/game.tra:221
 msgid "When you're being attacked, disengage for a short time, then get back at that enemy."
-msgstr ""
+msgstr "Если на тебя напали, отступи, а затем вернись в бой."
 
 #: tnt/tra/english/game.tra:222
 msgid "Don't disengage, even if you're being attacked."
