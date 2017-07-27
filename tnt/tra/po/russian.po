@@ -1,12 +1,9 @@
-#. #-#-#-#-#  tmp.pot (PACKAGE VERSION)  #-#-#-#-#
-#. extracted from tnt/tra/english/setup.tra
-#. #-#-#-#-#  english.pot (PACKAGE VERSION)  #-#-#-#-#
-#. extracted from tnt/tra/english/game.tra
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-4-18 13:30+0000\n"
+"POT-Creation-Date: 1970-1-01 00:00+0000\n"
 "PO-Revision-Date: 2017-04-27 03:15+0000\n"
 "Last-Translator: Magus <weblate@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,531 +11,265 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.12\n"
 
-#: tnt/tra/english/setup.tra:77
-msgid "Resilient familiars"
-msgstr "Менее хрупкие фамильяры"
-
-#: tnt/tra/english/setup.tra:78
-msgid "Remove blur graphics from items"
-msgstr "Убрать визуальный эффект размытия с предметов"
-
-#: tnt/tra/english/setup.tra:79
-msgid "Additions only"
-msgstr "Только добавления"
-
-#: tnt/tra/english/setup.tra:80
-msgid "BGT or EET only"
-msgstr "Требует BGT или EET"
-
-#: tnt/tra/english/setup.tra:81
-msgid "Extended Soundsets for NPC"
-msgstr "Расширенные саундсеты для NPC"
-
-#: tnt/tra/english/setup.tra:82
-msgid "BG1 soundsets prevail"
-msgstr "Преобладают сеты из BG1"
-
-#: tnt/tra/english/setup.tra:83
-msgid "BG2 soundsets prevail"
-msgstr "Преобладают сеты из BG2"
-
-#: tnt/tra/english/setup.tra:84
-msgid "Reintroduce"
-msgstr "Восстановить"
-
-#: tnt/tra/english/setup.tra:85
-msgid "BG1-style party interaction system"
-msgstr "Система разговоров в стиле BG1"
-
-#: tnt/tra/english/setup.tra:86
-msgid "Reintroduce and adjust to framerate"
-msgstr "Восстановить и приспособить к скорости игры"
-
-#: tnt/tra/english/setup.tra:87
-msgid "Disable"
-msgstr "Отключить"
-
-#: tnt/tra/english/setup.tra:88
-msgid "BGT or BG1 only"
-msgstr "Только BGT или BG1"
-
-#: tnt/tra/english/setup.tra:89
-msgid "No talking when hiding in shadows"
-msgstr "Не разговаривать в тенях"
-
-#: tnt/tra/english/setup.tra:90
-msgid "Make NPC soundsets available to PC"
-msgstr "Сделать саундсеты NPC доступными главному герою"
-
-#: tnt/tra/english/setup.tra:91
-msgid "Fair fights"
-msgstr "Честные схватки"
-
-#: tnt/tra/english/setup.tra:92
-msgid "Sensible Cloak of Mirroring"
-msgstr "Более правдоподобный Плащ Отражения"
-
-#: tnt/tra/english/setup.tra:93
-msgid "Spider form ignores web"
-msgstr "Форма паука имеет иммунитет к паутине"
-
-#: tnt/tra/english/setup.tra:94
-msgid "Effects of scrolls and potions do not stack with themselves"
-msgstr "Эффекты свитков и зелий не складываются сами с собой"
-
-#: tnt/tra/english/setup.tra:95
-msgid "Cheesy Slayer: full heal on change"
-msgstr "Улучшенная форма Убийцы: полное излечение при изменении"
-
-#: tnt/tra/english/setup.tra:96
-msgid "no loss"
-msgstr "без потерь"
-
-#: tnt/tra/english/setup.tra:97
-msgid "Cheesy Slayer: reputation"
-msgstr "Удобная форма Убийцы: репутация"
-
-#: tnt/tra/english/setup.tra:98
-msgid "reduced loss"
-msgstr "уменьшенная потеря"
-
-#: tnt/tra/english/setup.tra:99
-msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr "Драгоценные камни, свитки, зелья, снаряды (КСЗС)"
-
-#: tnt/tra/english/setup.tra:100
-msgid "Starting bags"
-msgstr "Сумки в начале игры"
-
-#: tnt/tra/english/setup.tra:101
-msgid "GSPA + holding"
-msgstr "КСЗС + cумка хранения"
-
-#: tnt/tra/english/setup.tra:102
-msgid "GSPA + holding - all bottomless!"
-msgstr "КСЗС + cумка хранения - все бездонные!"
-
-#: tnt/tra/english/setup.tra:103
-msgid "Each stat gets +1"
-msgstr "Каждая характеристика получает +1"
-
-#: tnt/tra/english/setup.tra:104
-msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr "Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
-
-#: tnt/tra/english/setup.tra:105
-msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr "Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
-
-#: tnt/tra/english/setup.tra:106
-msgid "Shops always buy goods at the same price"
-msgstr "Магазины покупают товар по неизменной цене"
-
-#: tnt/tra/english/setup.tra:107
-msgid "Can't steal from fences"
-msgstr "Нельзя воровать у скупщиков краденого"
-
-#: tnt/tra/english/setup.tra:108
-msgid "Close shop steal exploit"
-msgstr "Закрыть эксплоит с воровством из магазинов"
-
-#: tnt/tra/english/setup.tra:109
-msgid "Can't steal from any shops"
-msgstr "Нельзя воровать из магазинов вообще"
-
-#: tnt/tra/english/setup.tra:110
-msgid "No XP farming"
-msgstr "Затруднить фарминг опыта"
-
-#: tnt/tra/english/setup.tra:111
-msgid "Easy traps: allow sensing in combat"
-msgstr "Упрощенные ловушки: можно замечать в бою"
-
-#: tnt/tra/english/setup.tra:112
-msgid "Easy traps: increase trap sense range"
-msgstr "Упрощенные ловушки: увеличить расстояние, на котором их заметно"
-
-#: tnt/tra/english/setup.tra:113
-msgid "stop moving"
-msgstr "остановиться"
-
-#: tnt/tra/english/setup.tra:114
-msgid "Easy traps: character action"
-msgstr "Упрощенные ловушки: действие персонажа"
-
-#: tnt/tra/english/setup.tra:115
-msgid "stop moving and pause game"
-msgstr "остановиться поставить игру на паузу"
-
-#: tnt/tra/english/setup.tra:116
-msgid "Easy traps: center on character"
-msgstr "Упрощенные ловушки: отцентровать экран на персонаже"
-
-#: tnt/tra/english/setup.tra:117
-msgid "Easy traps: play a sound"
-msgstr "Упрощенные ловушки: звуковой сигнал"
-
-#: tnt/tra/english/setup.tra:118
-msgid "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to work)"
-msgstr "Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие компоненты работали)"
-
-#: tnt/tra/english/setup.tra:119
-msgid "Less autosaves"
-msgstr "Меньше автосохранений"
-
-#: tnt/tra/english/setup.tra:120
-msgid "True true sight"
-msgstr "Настоящее истинное зрение"
-
-#: tnt/tra/english/setup.tra:121
-msgid "BG1 content not present"
-msgstr "БГ1 не найден"
-
-#: tnt/tra/english/setup.tra:122
-msgid "BG saga only"
-msgstr "Только для саги БГ"
-
-#: tnt/tra/english/setup.tra:123
-msgid "EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee instead."
-msgstr "Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
-
-#: tnt/tra/english/setup.tra:124
-msgid "Requires ToB or EE engine"
-msgstr "Требует движок ToB или EE"
-
-#: tnt/tra/english/setup.tra:125
-msgid "Requires BG2 or EE engine"
-msgstr "Требует движок BG2 или EE"
-
-#: tnt/tra/english/setup.tra:126
-msgid "Requires BG2"
-msgstr "Требует BG2"
-
-#: tnt/tra/english/setup.tra:128
-msgid "Weightless ammo"
-msgstr "Невесомые снаряды"
-
-#: tnt/tra/english/setup.tra:129
-msgid "All easy traps components must be installed before core"
-msgstr "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
-
-#: tnt/tra/english/setup.tra:134
-msgid "Sensible Otiluke's sphere"
-msgstr "Более адекватная сфера Отилюка"
-
-#: tnt/tra/english/setup.tra:135
-msgid "Improved strongholds"
-msgstr "Улучшенные стронгхолды"
-
-#: tnt/tra/english/setup.tra:144
-msgid "Sensible wand of frost"
-msgstr "Более адекватный жезл мороза"
-
-#: tnt/tra/english/setup.tra:145
-msgid "Single target"
-msgstr "Одиночная цель"
-
-#: tnt/tra/english/setup.tra:146
-msgid "AoE"
-msgstr "Действие на область"
-
-#: tnt/tra/english/setup.tra:148
-msgid "No cast and attack"
-msgstr "Запретить кастование заклинаний и атаку в том же раунде"
-
-#: tnt/tra/english/setup.tra:159
-msgid "More ankheg armors by Taerom"
-msgstr "Таэром может делать больше панцирей из анкегов"
-
-#: tnt/tra/english/setup.tra:166 tnt/tra/english/game.tra:166
-msgid "Hassle-free ammo"
-msgstr "Более удобные снаряды"
-
-#: tnt/tra/english/setup.tra:206
-msgid "Windows only"
-msgstr "Только для Windows"
-
-#: tnt/tra/english/setup.tra:223
-msgid "Potion of really mirrored eyes"
-msgstr "Зелье по-настоящему зеркальных глаз"
-
-#: tnt/tra/english/setup.tra:224
-msgid "stop moving and pause game only for ground traps"
-msgstr "Остановиться и поставить игру на паузу только для ловушек, на которые можно наступить"
-
-#: tnt/tra/english/setup.tra:225
-msgid "Familiars"
-msgstr "Фамильяры"
-
-#: tnt/tra/english/setup.tra:226
-msgid "Traps"
-msgstr "Ловушки"
-
-#: tnt/tra/english/setup.tra:227
-msgid "Soundsets"
-msgstr "Саундсеты"
-
-#: tnt/tra/english/setup.tra:228
-msgid "Items"
-msgstr "Предметы"
-
-#: tnt/tra/english/setup.tra:229
-msgid "Spells and abilities"
-msgstr "Заклинания и способности"
-
-#: tnt/tra/english/setup.tra:230
-msgid "Gameplay and rules"
-msgstr "Игровая механика и правила"
-
-#: tnt/tra/english/game.tra:2
+#: game.tra:2
 msgid "Uh, I smell a trap."
 msgstr "Эм, я чувствую ловушку."
 
-#: tnt/tra/english/game.tra:15
+#: game.tra:15
 msgid "Boss, your pack is full."
 msgstr ""
 
-#: tnt/tra/english/game.tra:26
+#: game.tra:26
 msgid "Potion effect refreshed"
 msgstr ""
 
-#: tnt/tra/english/game.tra:27
+#: game.tra:27
 msgid "Protection scroll effect refreshed"
 msgstr ""
 
-#: tnt/tra/english/game.tra:28
+#: game.tra:28
 msgid "Thorius"
 msgstr "Ториус"
 
-#: tnt/tra/english/game.tra:29
+#: game.tra:29
 msgid "Careful. Something's not quite right here."
 msgstr "Осторожно. Что-то здесь не так."
 
-#: tnt/tra/english/game.tra:30
+#: game.tra:30
 msgid "Stop! It's a trap!"
 msgstr "Стоп! Это ловушка!"
 
-#: tnt/tra/english/game.tra:31
+#: game.tra:31
 msgid "I sense a trap!"
 msgstr "Я чувствую ловушку!"
 
-#: tnt/tra/english/game.tra:32
+#: game.tra:32
 msgid "Hmm... We should tread lightly here."
 msgstr "Хм... Тут нужно шагать аккуратно."
 
-#: tnt/tra/english/game.tra:33
+#: game.tra:33
 msgid "Wait, wait. Let's take a closer look at this."
 msgstr "Погодите. Давайте присмотримся повнимательней."
 
-#: tnt/tra/english/game.tra:34
+#: game.tra:34
 msgid "I sense danger."
 msgstr "Я чувствую опасность."
 
-#: tnt/tra/english/game.tra:35
+#: game.tra:35
 msgid "Watch your step. Looks suspicious."
 msgstr "Смотрите куда наступаете. Выглядит подозрительно."
 
-#: tnt/tra/english/game.tra:36
+#: game.tra:36
 msgid "Hold on. See this?"
 msgstr "Погодите. Видите вот это?"
 
-#: tnt/tra/english/game.tra:37
+#: game.tra:37
 msgid "Die your final death!"
 msgstr "Сдохни окончательно!"
 
-#: tnt/tra/english/game.tra:38
+#: game.tra:38
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
 msgstr "Арргх! Бу говорить убивать, Минск убивает!"
 
-#: tnt/tra/english/game.tra:39
+#: game.tra:39
 msgid "Prepare to feel the wrath of my hamster!"
 msgstr "Готовьтесь почувствовать гнев моего хомяка!"
 
-#: tnt/tra/english/game.tra:40
+#: game.tra:40
 msgid "Your end is near at hand, wail if you must!!"
 msgstr "Ваш конец близок, плачьте, если хотите!!"
 
-#: tnt/tra/english/game.tra:41
-msgid "Blast and bother!  These locks have always given me trouble!  Trouble they are!"
+#: game.tra:41
+msgid ""
+"Blast and bother!  These locks have always given me trouble!  Trouble they "
+"are!"
 msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
 
-#: tnt/tra/english/game.tra:42
+#: game.tra:42
 msgid "Walking alone on the Coastway road!  How smart is this?"
 msgstr "Ходить в одиночку по дорогам Побережья?  Что за умник это придумал?"
 
-#: tnt/tra/english/game.tra:43
+#: game.tra:43
 msgid "Calm yourself dear, we must proceed c-c-carefully."
 msgstr "Успокойся дорогая, мы должны действовать ак-к-куратно."
 
-#: tnt/tra/english/game.tra:44
+#: game.tra:44
 msgid "Let us get this over with!"
 msgstr "Давайте покончим с этим!"
 
-#: tnt/tra/english/game.tra:45
+#: game.tra:45
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
 msgstr "Ааа!! Спасите!  Помогите мне, пожалуйстааа!"
 
-#: tnt/tra/english/game.tra:46
+#: game.tra:46
 msgid "Oh, this is going to hurt you a LOT more than me!"
 msgstr "О, вам будет НАМНОГО больнее, чем мне!"
 
-#: tnt/tra/english/game.tra:47
+#: game.tra:47
 msgid "By all that is decent, I fight!"
 msgstr "Я сражаюсь за все хорошее!"
 
-#: tnt/tra/english/game.tra:48
+#: game.tra:48
 msgid "Killing is our business, and business be good!"
 msgstr "Наше дело - это убийства... и дело идет хорошо!"
 
-#: tnt/tra/english/game.tra:49
+#: game.tra:49
 msgid "Hahahaha!"
 msgstr "Хахаха!"
 
-#: tnt/tra/english/game.tra:50
+#: game.tra:50
 msgid "In Tyr's name we shall be victorious once and for all!"
 msgstr "Во имя Тира мы победим раз и навсегда!"
 
-#: tnt/tra/english/game.tra:51
+#: game.tra:51
 msgid "What can I do for you?"
 msgstr "Что я могу сделать для вас?"
 
-#: tnt/tra/english/game.tra:52
-msgid "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
-msgstr "Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
+#: game.tra:52
+msgid ""
+"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+msgstr ""
+"Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
 
-#: tnt/tra/english/game.tra:53
-msgid "Aye, who's there now?  More smithing, or did ye burrow into another river?"
+#: game.tra:53
+msgid ""
+"Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgstr "Да, что там опять?  Будем ковать, или снова наткнулись на реку?"
 
-#: tnt/tra/english/game.tra:54
+#: game.tra:54
 msgid "I have languished in these dismal vaults too long."
 msgstr "Я слишком долго томился в этих мрачных пещерах."
 
-#: tnt/tra/english/game.tra:55
+#: game.tra:55
 msgid "Evil falls today!"
 msgstr "Сегодня зло падет!"
 
-#: tnt/tra/english/game.tra:56
+#: game.tra:56
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr "Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!!"
+msgstr ""
+"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!!"
 
-#: tnt/tra/english/game.tra:57
+#: game.tra:57
 msgid "Helm's fury upon you all!!"
 msgstr "Вас настигнет гнев Хелма!!"
 
-#: tnt/tra/english/game.tra:58
+#: game.tra:58
 msgid "By skill and might we shall prevail!!"
 msgstr "Сила и умение помогут нам победить!!"
 
-#: tnt/tra/english/game.tra:59
+#: game.tra:59
 msgid "You will not pass!"
 msgstr "Вы не пройдете!"
 
-#: tnt/tra/english/game.tra:60
+#: game.tra:60
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
 msgstr "Ах, это отличная битва, о которой узнают на всех планах!"
 
-#: tnt/tra/english/game.tra:61
+#: game.tra:61
 msgid "We children of Bhaal cannot be stopped!"
 msgstr "Нас, детей Баала, нельзя остановить!"
 
-#: tnt/tra/english/game.tra:62
+#: game.tra:62
 msgid "Ha!  This arena I know well!!"
 msgstr "Ха!  Это я хорошо умею!!"
 
-#: tnt/tra/english/game.tra:63
+#: game.tra:63
 msgid "I shall carve a path, if need be."
 msgstr "Я проделаю путь, если понадобится."
 
-#: tnt/tra/english/game.tra:64
+#: game.tra:64
 msgid "As you wish."
 msgstr "Как пожелаешь."
 
-#: tnt/tra/english/game.tra:65
+#: game.tra:65
 msgid "Hmph.  Not what I would have done."
 msgstr "Хм.   Я бы сделал не так."
 
-#: tnt/tra/english/game.tra:66
+#: game.tra:66
 msgid "So you say."
 msgstr "Как скажешь."
 
-#: tnt/tra/english/game.tra:67
-msgid "My music is superior to yours, Eldoth, I was taught at the college in Berdusk."
+#: game.tra:67
+msgid ""
+"My music is superior to yours, Eldoth, I was taught at the college in "
+"Berdusk."
 msgstr "Моя музыка лучше твоей, Элдот.  Я обучался в колледже в Бердуске."
 
-#: tnt/tra/english/game.tra:68
+#: game.tra:68
 msgid "I can't stand by and just let this happen."
 msgstr "Я не могу стоять в стороне и позволить этому произойти."
 
-#: tnt/tra/english/game.tra:69
+#: game.tra:69
 msgid "By the ice breath of Auril!"
 msgstr "Ледяным дыханием Орил!"
 
-#: tnt/tra/english/game.tra:70
+#: game.tra:70
 msgid "You're the finest group of friends I've ever had."
 msgstr "Вы лучшие друзья, которые у меня были."
 
-#: tnt/tra/english/game.tra:71
+#: game.tra:71
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
 msgstr "Montaron, ты такой РАЗДРАЖАЩИЙ!  Это меня беспокоит!"
 
-#: tnt/tra/english/game.tra:72
+#: game.tra:72
 msgid "How would you like my sword tickling your innards?"
 msgstr "Как тебе понравится, если мой меч пощекочет твои кишки?"
 
-#: tnt/tra/english/game.tra:130
+#: game.tra:130
 msgid "You evil ways end here!"
 msgstr "Твои злодеяния подошли к концу!"
 
-#: tnt/tra/english/game.tra:131
+#: game.tra:131
 msgid "Draw steel!"
 msgstr "К оружию!"
 
-#: tnt/tra/english/game.tra:132
+#: game.tra:132
 msgid "Defend yourselves!"
 msgstr "Защищайтесь!"
 
-#: tnt/tra/english/game.tra:133
+#: game.tra:133
 msgid "You soul is forfeit!"
 msgstr "Твоя душа потеряна!"
 
-#: tnt/tra/english/game.tra:136
+#: game.tra:136
 msgid "Theater earnings are ready."
 msgstr "Поступил доход от театра."
 
-#: tnt/tra/english/game.tra:137
+#: game.tra:137
 msgid "The apprentices must have finished the task. Time to check up on them."
 msgstr "Ученики уже должны были закончить задание. Пора к ним наведаться."
 
-#: tnt/tra/english/game.tra:138
+#: game.tra:138
 msgid "The Grove awaits."
 msgstr "Роще ожидает."
 
-#: tnt/tra/english/game.tra:139
+#: game.tra:139
 msgid "It's time to visit the cabin."
 msgstr "Пора посетить хижину следопыта."
 
-#: tnt/tra/english/game.tra:140
+#: game.tra:140
 msgid "The people of de'Arnise keep need presence of their Lord."
 msgstr "Людям крепости де'Арниз требуется присутствие их господина."
 
-#: tnt/tra/english/game.tra:141
+#: game.tra:141
 msgid "Morul has prepared a new batch of potions."
 msgstr "Морул подготовил новую порцию зелий."
 
-#: tnt/tra/english/game.tra:142
+#: game.tra:142
 msgid "The potions are on the table in the laboratory <SIRMAAM>."
 msgstr "Зелья на столе в лаборатории, <SIRMAAM>."
 
-#: tnt/tra/english/game.tra:143
-msgid "Your presence is required at the church. The needs of the faithful must be tended to."
-msgstr "Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
+#: game.tra:143
+msgid ""
+"Your presence is required at the church. The needs of the faithful must be "
+"tended to."
+msgstr ""
+"Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
 
-#: tnt/tra/english/game.tra:147
+#: game.tra:147
 msgid ""
 "The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
 "\n"
@@ -556,10 +287,7 @@ msgid ""
 " Paladin\n"
 " Ranger\n"
 msgstr ""
-"Этот жезл вызывает невероятный холод в конусообразной области, начинающейся "
-"у руки чародея и распространяющейся наружу, как магическое заклинание 5 "
-"уровня Конус Холода. Наносит урон 8d6 (выброшенные 1 превращаются в 2), с "
-"уменьшением пополам при успешном спасброске против жезлов.\n"
+"Этот жезл вызывает невероятный холод в конусообразной области, начинающейся у руки чародея и распространяющейся наружу, как магическое заклинание 5 уровня Конус Холода. Наносит урон 8d6 (выброшенные 1 превращаются в 2), с уменьшением пополам при успешном спасброске против жезлов.\n"
 "\n"
 "Статистика:\n"
 "\n"
@@ -575,60 +303,77 @@ msgstr ""
 " Паладин\n"
 " Следопыт\n"
 
-#: tnt/tra/english/game.tra:149
+#: game.tra:149
 msgid "Gem bag"
 msgstr "Сумка для драгоценностей"
 
-#: tnt/tra/english/game.tra:150
+#: game.tra:150
 msgid "This small bag is ideally suited for holding gems."
-msgstr "Эта маленькая сумка идеально подходит для хранения драгоценных камней."
+msgstr ""
+"Эта маленькая сумка идеально подходит для хранения драгоценных камней."
 
-#: tnt/tra/english/game.tra:151
+#: game.tra:151
 msgid "Scroll case"
 msgstr "Футляр для свитков"
 
-#: tnt/tra/english/game.tra:152
-msgid "This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard."
-msgstr "Этот прочный контейнер позволяет хранить десятки свитков в безопасности от огня, дождя или молнии - обычных опасностей, с которыми приходиваться сталкиваться странствующим волшебникам."
+#: game.tra:152
+msgid ""
+"This sturdy container allows dozens of scrolls to be placed in it, safe from"
+" exposure to fire, rain, or lightning -- common hazards faced by any "
+"adventuring wizard."
+msgstr ""
+"Этот прочный контейнер позволяет хранить десятки свитков в безопасности от "
+"огня, дождя или молнии - обычных опасностей, с которыми приходиваться "
+"сталкиваться странствующим волшебникам."
 
-#: tnt/tra/english/game.tra:153
+#: game.tra:153
 msgid "Potion case"
 msgstr "Футляр для зельев"
 
-#: tnt/tra/english/game.tra:154
-msgid "Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel."
+#: game.tra:154
+msgid ""
+"Typically carried by travelling healers, this leather case folds open and "
+"allows the user to strap delicate potion bottles to its cushioned side with "
+"numerous leather thongs for safe storage during travel."
 msgstr ""
 "Кожаные сумки наподобие этой обычно носят странствующие целители. Она "
 "раскрывается и позволяет прикрепить хрупкие бутылочки с зельями к мягкому "
 "валику с многочисленными кожаными ремешками для безопасной переноски."
 
-#: tnt/tra/english/game.tra:155
+#: game.tra:155
 msgid "Ammo belt"
 msgstr "Пояс для снарядов"
 
-#: tnt/tra/english/game.tra:156
-msgid "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts."
+#: game.tra:156
+msgid ""
+"This shoulder belt is ideally suited for holding sling bullets, darts, "
+"arrows or bolts."
 msgstr ""
-"Этот наплечный ремень идеально подходит для хранения ядер, дротиков, стрел и "
-"арбалетных болтов."
+"Этот наплечный ремень идеально подходит для хранения ядер, дротиков, стрел и"
+" арбалетных болтов."
 
-#: tnt/tra/english/game.tra:157
+#: game.tra:157
 msgid "Bag of Holding"
 msgstr "Сумка Хранения"
 
-#: tnt/tra/english/game.tra:158
-msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
+#: game.tra:158
+msgid ""
+"As with other magical bags, this one appears to be a common cloth sack of "
+"about 2 feet by 4 feet in size. The bag of holding opens into a "
+"nondimensional space, and its inside is larger than its outside dimensions. "
+"Regardless of what is put into this item, the bag always weighs a fixed "
+"amount."
 msgstr ""
 "Как и другие магические сумки, эта кажется обычным тканевым мешком примерно "
 "2 на 4 фута. Сумка хранения открывается в безразмерное пространства, и ее "
 "внутренние размеры больше внешних. Независимо от того, что в нее сложено, "
 "сумка всегда весит одинаково."
 
-#: tnt/tra/english/game.tra:160
+#: game.tra:160
 msgid "Returning throwing axe"
 msgstr ""
 
-#: tnt/tra/english/game.tra:161
+#: game.tra:161
 msgid ""
 "The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.\n"
 "\n"
@@ -649,13 +394,9 @@ msgid ""
 " Mage \n"
 " Thief"
 msgstr ""
-"Метательный топорик также известен как томагавк. Лезвие топора имеет острый "
-"стальной наконечник, уравновешенный шипом с другой стороны. Конец короткой "
-"ручки заострен. С другой стороны, на головке, также может иметься шип.\n"
+"Метательный топорик также известен как томагавк. Лезвие топора имеет острый стальной наконечник, уравновешенный шипом с другой стороны. Конец короткой ручки заострен. С другой стороны, на головке, также может иметься шип.\n"
 "\n"
-"Конкретно этот топор зачарован слабым заклинанием - он всегда возвращается в "
-"руку хозяина после броска. Однако, в остальных отношениях он считается "
-"немагическим.\n"
+"Конкретно этот топор зачарован слабым заклинанием - он всегда возвращается в руку хозяина после броска. Однако, в остальных отношениях он считается немагическим.\n"
 "\n"
 "Статистика:\n"
 "\n"
@@ -672,11 +413,11 @@ msgstr ""
 " Маг\n"
 " Вор"
 
-#: tnt/tra/english/game.tra:162
+#: game.tra:162
 msgid "Returning throwing dagger"
 msgstr "Возвращающийся метательный кинжал"
 
-#: tnt/tra/english/game.tra:163
+#: game.tra:163
 msgid ""
 "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.\n"
 "\n"
@@ -694,13 +435,9 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
-"Типичный метательный кинжал имеет заостренное, обычно обоюдоострое лезвие, в "
-"отличие от ножа, который заточен с одного края и немного короче. По "
-"сравнению с простым кинжалом, у этого уменьшенная рукоятка и другой баланс.\n"
+"Типичный метательный кинжал имеет заостренное, обычно обоюдоострое лезвие, в отличие от ножа, который заточен с одного края и немного короче. По сравнению с простым кинжалом, у этого уменьшенная рукоятка и другой баланс.\n"
 "\n"
-"Конкретно этот кинжал зачарован слабым заклинанием - он всегда возвращается "
-"в руку хозяина после броска. Однако, в остальных отношениях он считается "
-"немагическим.\n"
+"Конкретно этот кинжал зачарован слабым заклинанием - он всегда возвращается в руку хозяина после броска. Однако, в остальных отношениях он считается немагическим.\n"
 "\n"
 "Статистика:\n"
 "\n"
@@ -714,11 +451,11 @@ msgstr ""
 "Не Может Использовать:\n"
 " Клерик"
 
-#: tnt/tra/english/game.tra:164
+#: game.tra:164
 msgid "Returning dart"
 msgstr "Возвращающийся дротик"
 
-#: tnt/tra/english/game.tra:165
+#: game.tra:165
 msgid ""
 "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n"
 "\n"
@@ -735,12 +472,9 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
-"Дротик - это маленькое метательное оружие, которое легко спрятать. Его "
-"бросают, а не пускают из лука или другого устройста.\n"
+"Дротик - это маленькое метательное оружие, которое легко спрятать. Его бросают, а не пускают из лука или другого устройста.\n"
 "\n"
-"Конкретно этот дротик зачарован слабым заклинанием - он всегда возвращается "
-"в руку хозяина после броска. Однако, в остальных отношениях он считается "
-"немагическим.\n"
+"Конкретно этот дротик зачарован слабым заклинанием - он всегда возвращается в руку хозяина после броска. Однако, в остальных отношениях он считается немагическим.\n"
 "\n"
 "Статистика:\n"
 "\n"
@@ -753,203 +487,209 @@ msgstr ""
 "Не Может Использовать:\n"
 " Клерик"
 
-#: tnt/tra/english/game.tra:167
+#: game.tra:166 setup.tra:166
+msgid "Hassle-free ammo"
+msgstr "Более удобные снаряды"
+
+#: game.tra:167
 msgid "Let's change formation."
 msgstr "Давай-ка поменяем строй."
 
-#: tnt/tra/english/game.tra:168
+#: game.tra:168
 msgid "I want to give you new instructions about the loot."
 msgstr "Я хочу дать тебе новые инструкции по поводу добычи."
 
-#: tnt/tra/english/game.tra:169
+#: game.tra:169
 msgid "We need to discuss combat."
 msgstr "Нам нужно обсудить сражения."
 
-#: tnt/tra/english/game.tra:170
+#: game.tra:170
 msgid "Yes, boss?"
 msgstr "Да, хозяин?"
 
-#: tnt/tra/english/game.tra:171
+#: game.tra:171
 msgid "Follow me at all times."
 msgstr "Всегда следуй за мной."
 
-#: tnt/tra/english/game.tra:172
+#: game.tra:172
 msgid "Stop following me all the time."
 msgstr "Перестань все время за мной ходить."
 
-#: tnt/tra/english/game.tra:173
+#: game.tra:173
 msgid "Actually, nevermind. Distance is fine for now."
 msgstr "Вообще-то, неважно. И так сойдет."
 
-#: tnt/tra/english/game.tra:174
+#: game.tra:174
 msgid "If you see any danger, jump to my pack right away!"
 msgstr "Если ты заметил опасность, сразу прыгай в мой рюкзак!"
 
-#: tnt/tra/english/game.tra:175
+#: game.tra:175
 msgid "Don't hide in my pack when you see enemies."
 msgstr "Не прячься в рюкзаке, когда заметил врагов."
 
-#: tnt/tra/english/game.tra:176
+#: game.tra:176
 msgid "When you're injured, rush to my pack immediately."
 msgstr "Если ты ранен, немедленно прыгай в мой рюкзак."
 
-#: tnt/tra/english/game.tra:177
+#: game.tra:177
 msgid "When you're badly injured, rush to my pack immediately."
 msgstr "Если ты тяжело ранен, немедленно прыгай в мой рюкзак."
 
-#: tnt/tra/english/game.tra:178
+#: game.tra:178
 msgid "When the enemies are gone, get out of the pack by yourself."
 msgstr "Когда врагов больше не видно, вылезай из рюкзака."
 
-#: tnt/tra/english/game.tra:179
+#: game.tra:179
 msgid "After hiding in my pack, stay there. One cannot be too careful."
 msgstr ""
 "После того, как спрятался в рюкзаке, оставайся там. Нам нужно быть "
 "осторожными."
 
-#: tnt/tra/english/game.tra:180
+#: game.tra:180
 msgid "Ah, maybe later."
 msgstr "Да нет, может, в другой раз."
 
-#: tnt/tra/english/game.tra:181
+#: game.tra:181
 msgid "Stop picking up any items, okay?"
 msgstr "Перестань подбирать добычу, ладно?"
 
-#: tnt/tra/english/game.tra:182
+#: game.tra:182
 msgid "I want you to bring me everything. Any valuables."
 msgstr "Я хочу, чтобы ты приносил мне все, что найдешь. Любые ценности."
 
-#: tnt/tra/english/game.tra:183
+#: game.tra:183
 msgid "Pick up any gold that you find."
 msgstr "Собирай все золото, что найдешь."
 
-#: tnt/tra/english/game.tra:184
+#: game.tra:184
 msgid "Don't pick up the gold that you find."
 msgstr "Не подбирай золото."
 
-#: tnt/tra/english/game.tra:185
+#: game.tra:185
 msgid "Pick up any jewels that you find."
 msgstr "Собирай любые драгоценности."
 
-#: tnt/tra/english/game.tra:186
+#: game.tra:186
 msgid "Pick up only valuable and magical jewelry."
 msgstr "Подбирай только дорогие и магические драгоценности."
 
-#: tnt/tra/english/game.tra:187
+#: game.tra:187
 msgid "Pick up only magical jewelry."
 msgstr "Подбирай только волшебные драгоценности."
 
-#: tnt/tra/english/game.tra:188
+#: game.tra:188
 msgid "Don't pick up the jewelry."
 msgstr "Не подбирай драгоценности."
 
-#: tnt/tra/english/game.tra:189
+#: game.tra:189
 msgid "Pick up any magical ammo that you find."
 msgstr "Приноси все зачарованные снаряды, которые найдешь."
 
-#: tnt/tra/english/game.tra:190
+#: game.tra:190
 msgid "Don't pick up the ammo."
 msgstr "Не подбирай снаряды."
 
-#: tnt/tra/english/game.tra:191
+#: game.tra:191
 msgid "If you find any potions, bring them to me!"
 msgstr "Если найдешь зелья - сразу неси мне!"
 
-#: tnt/tra/english/game.tra:192
+#: game.tra:192
 msgid "Stop picking up potions."
 msgstr "Не нужно больше зельев."
 
-#: tnt/tra/english/game.tra:193
+#: game.tra:193
 msgid "Get me any scrolls that you can find."
 msgstr "Мне нужны все свитки, что ты найдешь."
 
-#: tnt/tra/english/game.tra:194
+#: game.tra:194
 msgid "I don't need you to bring any more scrolls."
 msgstr "Мне больше не нужны свитки."
 
-#: tnt/tra/english/game.tra:195
-msgid "Fetch scalps from those bandits we kill. There's a nice bounty for them."
+#: game.tra:195
+msgid ""
+"Fetch scalps from those bandits we kill. There's a nice bounty for them."
 msgstr "Срезай скальпы с мертых бандитов. За них неплохая награда."
 
-#: tnt/tra/english/game.tra:196
+#: game.tra:196
 msgid "Stop that scalping, will you? It's disgusting."
 msgstr "Хватит скальпов, а? Это отвратительно."
 
-#: tnt/tra/english/game.tra:197
+#: game.tra:197
 msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
 msgstr "Чешуя анкегов, шкуры зимних волков, головы вивернов - неси все."
 
-#: tnt/tra/english/game.tra:198
+#: game.tra:198
 msgid "No more pelts or scales, we're stocked."
 msgstr "Хватит уже шкур и панцирей."
 
-#: tnt/tra/english/game.tra:199
+#: game.tra:199
 msgid "No, nothing."
 msgstr "Да нет, ничего."
 
-#: tnt/tra/english/game.tra:200
+#: game.tra:200
 msgid "As you wish, master."
 msgstr "Как пожелаешь, хозяин."
 
-#: tnt/tra/english/game.tra:201
+#: game.tra:201
 msgid "Let's talk about your gear."
 msgstr "Давай обсудим твое снаряжение."
 
-#: tnt/tra/english/game.tra:202
-msgid "Take this returning dart. I think you're better off attacking from distance."
+#: game.tra:202
+msgid ""
+"Take this returning dart. I think you're better off attacking from distance."
 msgstr ""
 "Возьми этот возвращающийся дротик. Я думаю, тебе лучше держаться на "
 "расстоянии."
 
-#: tnt/tra/english/game.tra:203
+#: game.tra:203
 msgid "OK, boss."
 msgstr "Хорошо, хозяин."
 
-#: tnt/tra/english/game.tra:204
+#: game.tra:204
 msgid "Done."
 msgstr "Готово."
 
-#: tnt/tra/english/game.tra:205
+#: game.tra:205
 msgid "No, actually I think your gear is fine."
 msgstr "Нет, на самом деле я думаю, что у тебя все в порядке со снаряжением."
 
-#: tnt/tra/english/game.tra:207
+#: game.tra:207
 msgid "Don't bother me with your whining, I don't care if you're hurt."
 msgstr "Не ной мне тут, мне все равно на твои раны."
 
-#: tnt/tra/english/game.tra:208
+#: game.tra:208
 msgid "After fight, if you're hurt, let me know."
 msgstr "После битвы, если ты ранен, дай мне знать."
 
-#: tnt/tra/english/game.tra:209
+#: game.tra:209
 msgid "After fight, if you're badly hurt, let me know."
 msgstr "После битвы, если ты сильно ранен, дай мне знать."
 
-#: tnt/tra/english/game.tra:210
+#: game.tra:210
 msgid "I'm hurting here, Boss."
 msgstr "Хозяин, я ранен."
 
-#: tnt/tra/english/game.tra:211
+#: game.tra:211
 msgid "I'm really hurting here, Boss."
 msgstr "Хозяин, я помираю уже."
 
-#: tnt/tra/english/game.tra:212
+#: game.tra:212
 msgid "Move faster, will you? Don't lag behind."
 msgstr "Шевелись быстрее, ага? Не отставай."
 
-#: tnt/tra/english/game.tra:213
+#: game.tra:213
 msgid "Don't run so fast. I can't catch up to you."
 msgstr "Не беги так быстро. Я за тобой не успеваю."
 
-#: tnt/tra/english/game.tra:214
+#: game.tra:214
 msgid "Ouch!"
 msgstr "Ай!"
 
-#: tnt/tra/english/game.tra:215
+#: game.tra:215
 msgid "Quiver of Plenty"
 msgstr "Колчан Изобилия"
 
-#: tnt/tra/english/game.tra:216
+#: game.tra:216
 msgid ""
 "Enchanted quivers like this one are highly sought after by professional archers.\n"
 "\n"
@@ -957,18 +697,17 @@ msgid ""
 "\n"
 "Unlimited plain arrows"
 msgstr ""
-"Зачарованные колчаны вроде этого высоко ценятся профессиональными лучниками."
-"\n"
+"Зачарованные колчаны вроде этого высоко ценятся профессиональными лучниками.\n"
 "\n"
 "Статистика:\n"
 "\n"
 "Бесконечные обычные стрелы"
 
-#: tnt/tra/english/game.tra:217
+#: game.tra:217
 msgid "Case of Plenty"
 msgstr "Чехол Изобилия"
 
-#: tnt/tra/english/game.tra:218
+#: game.tra:218
 msgid ""
 "Enchanted bolt cases like this one are highly sought after by professional crossbow users.\n"
 "\n"
@@ -976,18 +715,17 @@ msgid ""
 "\n"
 "Unlimited plain bolts"
 msgstr ""
-"Зачарованные чехлы для болтов вроде этого высоко ценятся профессиональными "
-"арбалетчиками.\n"
+"Зачарованные чехлы для болтов вроде этого высоко ценятся профессиональными арбалетчиками.\n"
 "\n"
 "Статистика:\n"
 "\n"
 "Бесконечные обычные арбалетные болты"
 
-#: tnt/tra/english/game.tra:219
+#: game.tra:219
 msgid "Bag of Plenty"
 msgstr "Сумка Изобилия"
 
-#: tnt/tra/english/game.tra:220
+#: game.tra:220
 msgid ""
 "Enchanted bullet bags like this one are highly sought after by professional slingers.\n"
 "\n"
@@ -995,20 +733,308 @@ msgid ""
 "\n"
 "Unlimited plain bullets"
 msgstr ""
-"Волшебные сумки для снарядов вроде этой высоко ценятся профессиональными "
-"пращниками.\n"
+"Волшебные сумки для снарядов вроде этой высоко ценятся профессиональными пращниками.\n"
 "\n"
 "Статистика:\n"
 "\n"
 "Бесконечные снаряды для пращи"
 
-#: tnt/tra/english/game.tra:221
-msgid "When you're being attacked, disengage for a short time, then get back at that enemy."
+#: game.tra:221
+msgid ""
+"When you're being attacked, disengage for a short time, then get back at "
+"that enemy."
 msgstr "Если на тебя напали, отступи, а затем вернись в бой."
 
-#: tnt/tra/english/game.tra:222
+#: game.tra:222
 msgid "Don't disengage, even if you're being attacked."
 msgstr "Не убегай, даже если на тебя напали."
+
+#: setup.tra:77
+msgid "Resilient familiars"
+msgstr "Менее хрупкие фамильяры"
+
+#: setup.tra:78
+msgid "Remove blur graphics from items"
+msgstr "Убрать визуальный эффект размытия с предметов"
+
+#: setup.tra:79
+msgid "Additions only"
+msgstr "Только добавления"
+
+#: setup.tra:80
+msgid "BGT or EET only"
+msgstr "Требует BGT или EET"
+
+#: setup.tra:81
+msgid "Extended Soundsets for NPC"
+msgstr "Расширенные саундсеты для NPC"
+
+#: setup.tra:82
+msgid "BG1 soundsets prevail"
+msgstr "Преобладают сеты из BG1"
+
+#: setup.tra:83
+msgid "BG2 soundsets prevail"
+msgstr "Преобладают сеты из BG2"
+
+#: setup.tra:84
+msgid "Reintroduce"
+msgstr "Восстановить"
+
+#: setup.tra:85
+msgid "BG1-style party interaction system"
+msgstr "Система разговоров в стиле BG1"
+
+#: setup.tra:86
+msgid "Reintroduce and adjust to framerate"
+msgstr "Восстановить и приспособить к скорости игры"
+
+#: setup.tra:87
+msgid "Disable"
+msgstr "Отключить"
+
+#: setup.tra:88
+msgid "BGT or BG1 only"
+msgstr "Только BGT или BG1"
+
+#: setup.tra:89
+msgid "No talking when hiding in shadows"
+msgstr "Не разговаривать в тенях"
+
+#: setup.tra:90
+msgid "Make NPC soundsets available to PC"
+msgstr "Сделать саундсеты NPC доступными главному герою"
+
+#: setup.tra:91
+msgid "Fair fights"
+msgstr "Честные схватки"
+
+#: setup.tra:92
+msgid "Sensible Cloak of Mirroring"
+msgstr "Более правдоподобный Плащ Отражения"
+
+#: setup.tra:93
+msgid "Spider form ignores web"
+msgstr "Форма паука имеет иммунитет к паутине"
+
+#: setup.tra:94
+msgid "Effects of scrolls and potions do not stack with themselves"
+msgstr "Эффекты свитков и зелий не складываются сами с собой"
+
+#: setup.tra:95
+msgid "Cheesy Slayer: full heal on change"
+msgstr "Улучшенная форма Убийцы: полное излечение при изменении"
+
+#: setup.tra:96
+msgid "no loss"
+msgstr "без потерь"
+
+#: setup.tra:97
+msgid "Cheesy Slayer: reputation"
+msgstr "Удобная форма Убийцы: репутация"
+
+#: setup.tra:98
+msgid "reduced loss"
+msgstr "уменьшенная потеря"
+
+#: setup.tra:99
+msgid "Gem, scroll, potion, ammo (GSPA)"
+msgstr "Драгоценные камни, свитки, зелья, снаряды (КСЗС)"
+
+#: setup.tra:100
+msgid "Starting bags"
+msgstr "Сумки в начале игры"
+
+#: setup.tra:101
+msgid "GSPA + holding"
+msgstr "КСЗС + cумка хранения"
+
+#: setup.tra:102
+msgid "GSPA + holding - all bottomless!"
+msgstr "КСЗС + cумка хранения - все бездонные!"
+
+#: setup.tra:103
+msgid "Each stat gets +1"
+msgstr "Каждая характеристика получает +1"
+
+#: setup.tra:104
+msgid "Add BG1 tomes stats bonuses to new BG2 characters"
+msgstr ""
+"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
+
+#: setup.tra:105
+msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
+msgstr ""
+"Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
+
+#: setup.tra:106
+msgid "Shops always buy goods at the same price"
+msgstr "Магазины покупают товар по неизменной цене"
+
+#: setup.tra:107
+msgid "Can't steal from fences"
+msgstr "Нельзя воровать у скупщиков краденого"
+
+#: setup.tra:108
+msgid "Close shop steal exploit"
+msgstr "Закрыть эксплоит с воровством из магазинов"
+
+#: setup.tra:109
+msgid "Can't steal from any shops"
+msgstr "Нельзя воровать из магазинов вообще"
+
+#: setup.tra:110
+msgid "No XP farming"
+msgstr "Затруднить фарминг опыта"
+
+#: setup.tra:111
+msgid "Easy traps: allow sensing in combat"
+msgstr "Упрощенные ловушки: можно замечать в бою"
+
+#: setup.tra:112
+msgid "Easy traps: increase trap sense range"
+msgstr "Упрощенные ловушки: увеличить расстояние, на котором их заметно"
+
+#: setup.tra:113
+msgid "stop moving"
+msgstr "остановиться"
+
+#: setup.tra:114
+msgid "Easy traps: character action"
+msgstr "Упрощенные ловушки: действие персонажа"
+
+#: setup.tra:115
+msgid "stop moving and pause game"
+msgstr "остановиться поставить игру на паузу"
+
+#: setup.tra:116
+msgid "Easy traps: center on character"
+msgstr "Упрощенные ловушки: отцентровать экран на персонаже"
+
+#: setup.tra:117
+msgid "Easy traps: play a sound"
+msgstr "Упрощенные ловушки: звуковой сигнал"
+
+#: setup.tra:118
+msgid ""
+"Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
+"work)"
+msgstr ""
+"Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
+"компоненты работали)"
+
+#: setup.tra:119
+msgid "Less autosaves"
+msgstr "Меньше автосохранений"
+
+#: setup.tra:120
+msgid "True true sight"
+msgstr "Настоящее истинное зрение"
+
+#: setup.tra:121
+msgid "BG1 content not present"
+msgstr "БГ1 не найден"
+
+#: setup.tra:122
+msgid "BG saga only"
+msgstr "Только для саги БГ"
+
+#: setup.tra:123
+msgid ""
+"EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-"
+"awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-"
+"iwdee instead."
+msgstr ""
+"Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать "
+"https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-"
+"master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
+
+#: setup.tra:124
+msgid "Requires ToB or EE engine"
+msgstr "Требует движок ToB или EE"
+
+#: setup.tra:125
+msgid "Requires BG2 or EE engine"
+msgstr "Требует движок BG2 или EE"
+
+#: setup.tra:126
+msgid "Requires BG2"
+msgstr "Требует BG2"
+
+#: setup.tra:128
+msgid "Weightless ammo"
+msgstr "Невесомые снаряды"
+
+#: setup.tra:129
+msgid "All easy traps components must be installed before core"
+msgstr ""
+"Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
+
+#: setup.tra:134
+msgid "Sensible Otiluke's sphere"
+msgstr "Более адекватная сфера Отилюка"
+
+#: setup.tra:135
+msgid "Improved strongholds"
+msgstr "Улучшенные стронгхолды"
+
+#: setup.tra:144
+msgid "Sensible wand of frost"
+msgstr "Более адекватный жезл мороза"
+
+#: setup.tra:145
+msgid "Single target"
+msgstr "Одиночная цель"
+
+#: setup.tra:146
+msgid "AoE"
+msgstr "Действие на область"
+
+#: setup.tra:148
+msgid "No cast and attack"
+msgstr "Запретить кастование заклинаний и атаку в том же раунде"
+
+#: setup.tra:159
+msgid "More ankheg armors by Taerom"
+msgstr "Таэром может делать больше панцирей из анкегов"
+
+#: setup.tra:206
+msgid "Windows only"
+msgstr "Только для Windows"
+
+#: setup.tra:223
+msgid "Potion of really mirrored eyes"
+msgstr "Зелье по-настоящему зеркальных глаз"
+
+#: setup.tra:224
+msgid "stop moving and pause game only for ground traps"
+msgstr ""
+"Остановиться и поставить игру на паузу только для ловушек, на которые можно "
+"наступить"
+
+#: setup.tra:225
+msgid "Familiars"
+msgstr "Фамильяры"
+
+#: setup.tra:226
+msgid "Traps"
+msgstr "Ловушки"
+
+#: setup.tra:227
+msgid "Soundsets"
+msgstr "Саундсеты"
+
+#: setup.tra:228
+msgid "Items"
+msgstr "Предметы"
+
+#: setup.tra:229
+msgid "Spells and abilities"
+msgstr "Заклинания и способности"
+
+#: setup.tra:230
+msgid "Gameplay and rules"
+msgstr "Игровая механика и правила"
 
 #~ msgid "Smarter familiars"
 #~ msgstr "Умные фамильяры"

@@ -1,8 +1,4 @@
-#. #-#-#-#-#  tmp.pot (PACKAGE VERSION)  #-#-#-#-#
-#. extracted from tnt/tra/english/setup.tra
-#. #-#-#-#-#  english.pot (PACKAGE VERSION)  #-#-#-#-#
-#. extracted from tnt/tra/english/game.tra
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,529 +11,261 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: tra2po v.1.0.2\n"
+"X-Generator: bgforge_po v.1.0.0\n"
 
-#: tnt/tra/english/setup.tra:77
-msgid "Resilient familiars"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:78
-msgid "Remove blur graphics from items"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:79
-msgid "Additions only"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:80
-msgid "BGT or EET only"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:81
-msgid "Extended Soundsets for NPC"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:82
-msgid "BG1 soundsets prevail"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:83
-msgid "BG2 soundsets prevail"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:84
-msgid "Reintroduce"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:85
-msgid "BG1-style party interaction system"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:86
-msgid "Reintroduce and adjust to framerate"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:87
-msgid "Disable"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:88
-msgid "BGT or BG1 only"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:89
-msgid "No talking when hiding in shadows"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:90
-msgid "Make NPC soundsets available to PC"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:91
-msgid "Fair fights"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:92
-msgid "Sensible Cloak of Mirroring"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:93
-msgid "Spider form ignores web"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:94
-msgid "Effects of scrolls and potions do not stack with themselves"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:95
-msgid "Cheesy Slayer: full heal on change"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:96
-msgid "no loss"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:97
-msgid "Cheesy Slayer: reputation"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:98
-msgid "reduced loss"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:99
-msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:100
-msgid "Starting bags"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:101
-msgid "GSPA + holding"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:102
-msgid "GSPA + holding - all bottomless!"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:103
-msgid "Each stat gets +1"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:104
-msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:105
-msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:106
-msgid "Shops always buy goods at the same price"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:107
-msgid "Can't steal from fences"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:108
-msgid "Close shop steal exploit"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:109
-msgid "Can't steal from any shops"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:110
-msgid "No XP farming"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:111
-msgid "Easy traps: allow sensing in combat"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:112
-msgid "Easy traps: increase trap sense range"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:113
-msgid "stop moving"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:114
-msgid "Easy traps: character action"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:115
-msgid "stop moving and pause game"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:116
-msgid "Easy traps: center on character"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:117
-msgid "Easy traps: play a sound"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:118
-msgid "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to work)"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:119
-msgid "Less autosaves"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:120
-msgid "True true sight"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:121
-msgid "BG1 content not present"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:122
-msgid "BG saga only"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:123
-msgid "EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee instead."
-msgstr ""
-
-#: tnt/tra/english/setup.tra:124
-msgid "Requires ToB or EE engine"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:125
-msgid "Requires BG2 or EE engine"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:126
-msgid "Requires BG2"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:128
-msgid "Weightless ammo"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:129
-msgid "All easy traps components must be installed before core"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:134
-msgid "Sensible Otiluke's sphere"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:135
-msgid "Improved strongholds"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:144
-msgid "Sensible wand of frost"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:145
-msgid "Single target"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:146
-msgid "AoE"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:148
-msgid "No cast and attack"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:159
-msgid "More ankheg armors by Taerom"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:166 tnt/tra/english/game.tra:166
-msgid "Hassle-free ammo"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:206
-msgid "Windows only"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:223
-msgid "Potion of really mirrored eyes"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:224
-msgid "stop moving and pause game only for ground traps"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:225
-msgid "Familiars"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:226
-msgid "Traps"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:227
-msgid "Soundsets"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:228
-msgid "Items"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:229
-msgid "Spells and abilities"
-msgstr ""
-
-#: tnt/tra/english/setup.tra:230
-msgid "Gameplay and rules"
-msgstr ""
-
-#: tnt/tra/english/game.tra:2
+#: game.tra:2
 msgid "Uh, I smell a trap."
 msgstr ""
 
-#: tnt/tra/english/game.tra:15
+#: game.tra:15
 msgid "Boss, your pack is full."
 msgstr ""
 
-#: tnt/tra/english/game.tra:26
+#: game.tra:26
 msgid "Potion effect refreshed"
 msgstr ""
 
-#: tnt/tra/english/game.tra:27
+#: game.tra:27
 msgid "Protection scroll effect refreshed"
 msgstr ""
 
-#: tnt/tra/english/game.tra:28
+#: game.tra:28
 msgid "Thorius"
 msgstr ""
 
-#: tnt/tra/english/game.tra:29
+#: game.tra:29
 msgid "Careful. Something's not quite right here."
 msgstr ""
 
-#: tnt/tra/english/game.tra:30
+#: game.tra:30
 msgid "Stop! It's a trap!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:31
+#: game.tra:31
 msgid "I sense a trap!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:32
+#: game.tra:32
 msgid "Hmm... We should tread lightly here."
 msgstr ""
 
-#: tnt/tra/english/game.tra:33
+#: game.tra:33
 msgid "Wait, wait. Let's take a closer look at this."
 msgstr ""
 
-#: tnt/tra/english/game.tra:34
+#: game.tra:34
 msgid "I sense danger."
 msgstr ""
 
-#: tnt/tra/english/game.tra:35
+#: game.tra:35
 msgid "Watch your step. Looks suspicious."
 msgstr ""
 
-#: tnt/tra/english/game.tra:36
+#: game.tra:36
 msgid "Hold on. See this?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:37
+#: game.tra:37
 msgid "Die your final death!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:38
+#: game.tra:38
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:39
+#: game.tra:39
 msgid "Prepare to feel the wrath of my hamster!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:40
+#: game.tra:40
 msgid "Your end is near at hand, wail if you must!!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:41
-msgid "Blast and bother!  These locks have always given me trouble!  Trouble they are!"
+#: game.tra:41
+msgid ""
+"Blast and bother!  These locks have always given me trouble!  Trouble they "
+"are!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:42
+#: game.tra:42
 msgid "Walking alone on the Coastway road!  How smart is this?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:43
+#: game.tra:43
 msgid "Calm yourself dear, we must proceed c-c-carefully."
 msgstr ""
 
-#: tnt/tra/english/game.tra:44
+#: game.tra:44
 msgid "Let us get this over with!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:45
+#: game.tra:45
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:46
+#: game.tra:46
 msgid "Oh, this is going to hurt you a LOT more than me!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:47
+#: game.tra:47
 msgid "By all that is decent, I fight!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:48
+#: game.tra:48
 msgid "Killing is our business, and business be good!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:49
+#: game.tra:49
 msgid "Hahahaha!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:50
+#: game.tra:50
 msgid "In Tyr's name we shall be victorious once and for all!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:51
+#: game.tra:51
 msgid "What can I do for you?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:52
-msgid "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+#: game.tra:52
+msgid ""
+"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgstr ""
 
-#: tnt/tra/english/game.tra:53
-msgid "Aye, who's there now?  More smithing, or did ye burrow into another river?"
+#: game.tra:53
+msgid ""
+"Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:54
+#: game.tra:54
 msgid "I have languished in these dismal vaults too long."
 msgstr ""
 
-#: tnt/tra/english/game.tra:55
+#: game.tra:55
 msgid "Evil falls today!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:56
+#: game.tra:56
 msgid "If you fight, you die!  You cannot match our power!!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:57
+#: game.tra:57
 msgid "Helm's fury upon you all!!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:58
+#: game.tra:58
 msgid "By skill and might we shall prevail!!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:59
+#: game.tra:59
 msgid "You will not pass!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:60
+#: game.tra:60
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:61
+#: game.tra:61
 msgid "We children of Bhaal cannot be stopped!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:62
+#: game.tra:62
 msgid "Ha!  This arena I know well!!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:63
+#: game.tra:63
 msgid "I shall carve a path, if need be."
 msgstr ""
 
-#: tnt/tra/english/game.tra:64
+#: game.tra:64
 msgid "As you wish."
 msgstr ""
 
-#: tnt/tra/english/game.tra:65
+#: game.tra:65
 msgid "Hmph.  Not what I would have done."
 msgstr ""
 
-#: tnt/tra/english/game.tra:66
+#: game.tra:66
 msgid "So you say."
 msgstr ""
 
-#: tnt/tra/english/game.tra:67
-msgid "My music is superior to yours, Eldoth, I was taught at the college in Berdusk."
+#: game.tra:67
+msgid ""
+"My music is superior to yours, Eldoth, I was taught at the college in "
+"Berdusk."
 msgstr ""
 
-#: tnt/tra/english/game.tra:68
+#: game.tra:68
 msgid "I can't stand by and just let this happen."
 msgstr ""
 
-#: tnt/tra/english/game.tra:69
+#: game.tra:69
 msgid "By the ice breath of Auril!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:70
+#: game.tra:70
 msgid "You're the finest group of friends I've ever had."
 msgstr ""
 
-#: tnt/tra/english/game.tra:71
+#: game.tra:71
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:72
+#: game.tra:72
 msgid "How would you like my sword tickling your innards?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:130
+#: game.tra:130
 msgid "You evil ways end here!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:131
+#: game.tra:131
 msgid "Draw steel!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:132
+#: game.tra:132
 msgid "Defend yourselves!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:133
+#: game.tra:133
 msgid "You soul is forfeit!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:136
+#: game.tra:136
 msgid "Theater earnings are ready."
 msgstr ""
 
-#: tnt/tra/english/game.tra:137
+#: game.tra:137
 msgid "The apprentices must have finished the task. Time to check up on them."
 msgstr ""
 
-#: tnt/tra/english/game.tra:138
+#: game.tra:138
 msgid "The Grove awaits."
 msgstr ""
 
-#: tnt/tra/english/game.tra:139
+#: game.tra:139
 msgid "It's time to visit the cabin."
 msgstr ""
 
-#: tnt/tra/english/game.tra:140
+#: game.tra:140
 msgid "The people of de'Arnise keep need presence of their Lord."
 msgstr ""
 
-#: tnt/tra/english/game.tra:141
+#: game.tra:141
 msgid "Morul has prepared a new batch of potions."
 msgstr ""
 
-#: tnt/tra/english/game.tra:142
+#: game.tra:142
 msgid "The potions are on the table in the laboratory <SIRMAAM>."
 msgstr ""
 
-#: tnt/tra/english/game.tra:143
-msgid "Your presence is required at the church. The needs of the faithful must be tended to."
+#: game.tra:143
+msgid ""
+"Your presence is required at the church. The needs of the faithful must be "
+"tended to."
 msgstr ""
 
-#: tnt/tra/english/game.tra:147
+#: game.tra:147
 msgid ""
 "The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
 "\n"
@@ -556,51 +284,64 @@ msgid ""
 " Ranger\n"
 msgstr ""
 
-#: tnt/tra/english/game.tra:149
+#: game.tra:149
 msgid "Gem bag"
 msgstr ""
 
-#: tnt/tra/english/game.tra:150
+#: game.tra:150
 msgid "This small bag is ideally suited for holding gems."
 msgstr ""
 
-#: tnt/tra/english/game.tra:151
+#: game.tra:151
 msgid "Scroll case"
 msgstr ""
 
-#: tnt/tra/english/game.tra:152
-msgid "This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard."
+#: game.tra:152
+msgid ""
+"This sturdy container allows dozens of scrolls to be placed in it, safe from"
+" exposure to fire, rain, or lightning -- common hazards faced by any "
+"adventuring wizard."
 msgstr ""
 
-#: tnt/tra/english/game.tra:153
+#: game.tra:153
 msgid "Potion case"
 msgstr ""
 
-#: tnt/tra/english/game.tra:154
-msgid "Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel."
+#: game.tra:154
+msgid ""
+"Typically carried by travelling healers, this leather case folds open and "
+"allows the user to strap delicate potion bottles to its cushioned side with "
+"numerous leather thongs for safe storage during travel."
 msgstr ""
 
-#: tnt/tra/english/game.tra:155
+#: game.tra:155
 msgid "Ammo belt"
 msgstr ""
 
-#: tnt/tra/english/game.tra:156
-msgid "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts."
+#: game.tra:156
+msgid ""
+"This shoulder belt is ideally suited for holding sling bullets, darts, "
+"arrows or bolts."
 msgstr ""
 
-#: tnt/tra/english/game.tra:157
+#: game.tra:157
 msgid "Bag of Holding"
 msgstr ""
 
-#: tnt/tra/english/game.tra:158
-msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
+#: game.tra:158
+msgid ""
+"As with other magical bags, this one appears to be a common cloth sack of "
+"about 2 feet by 4 feet in size. The bag of holding opens into a "
+"nondimensional space, and its inside is larger than its outside dimensions. "
+"Regardless of what is put into this item, the bag always weighs a fixed "
+"amount."
 msgstr ""
 
-#: tnt/tra/english/game.tra:160
+#: game.tra:160
 msgid "Returning throwing axe"
 msgstr ""
 
-#: tnt/tra/english/game.tra:161
+#: game.tra:161
 msgid ""
 "The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.\n"
 "\n"
@@ -622,11 +363,11 @@ msgid ""
 " Thief"
 msgstr ""
 
-#: tnt/tra/english/game.tra:162
+#: game.tra:162
 msgid "Returning throwing dagger"
 msgstr ""
 
-#: tnt/tra/english/game.tra:163
+#: game.tra:163
 msgid ""
 "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.\n"
 "\n"
@@ -645,11 +386,11 @@ msgid ""
 " Cleric"
 msgstr ""
 
-#: tnt/tra/english/game.tra:164
+#: game.tra:164
 msgid "Returning dart"
 msgstr ""
 
-#: tnt/tra/english/game.tra:165
+#: game.tra:165
 msgid ""
 "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n"
 "\n"
@@ -667,199 +408,205 @@ msgid ""
 " Cleric"
 msgstr ""
 
-#: tnt/tra/english/game.tra:167
+#: game.tra:166 setup.tra:166
+msgid "Hassle-free ammo"
+msgstr ""
+
+#: game.tra:167
 msgid "Let's change formation."
 msgstr ""
 
-#: tnt/tra/english/game.tra:168
+#: game.tra:168
 msgid "I want to give you new instructions about the loot."
 msgstr ""
 
-#: tnt/tra/english/game.tra:169
+#: game.tra:169
 msgid "We need to discuss combat."
 msgstr ""
 
-#: tnt/tra/english/game.tra:170
+#: game.tra:170
 msgid "Yes, boss?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:171
+#: game.tra:171
 msgid "Follow me at all times."
 msgstr ""
 
-#: tnt/tra/english/game.tra:172
+#: game.tra:172
 msgid "Stop following me all the time."
 msgstr ""
 
-#: tnt/tra/english/game.tra:173
+#: game.tra:173
 msgid "Actually, nevermind. Distance is fine for now."
 msgstr ""
 
-#: tnt/tra/english/game.tra:174
+#: game.tra:174
 msgid "If you see any danger, jump to my pack right away!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:175
+#: game.tra:175
 msgid "Don't hide in my pack when you see enemies."
 msgstr ""
 
-#: tnt/tra/english/game.tra:176
+#: game.tra:176
 msgid "When you're injured, rush to my pack immediately."
 msgstr ""
 
-#: tnt/tra/english/game.tra:177
+#: game.tra:177
 msgid "When you're badly injured, rush to my pack immediately."
 msgstr ""
 
-#: tnt/tra/english/game.tra:178
+#: game.tra:178
 msgid "When the enemies are gone, get out of the pack by yourself."
 msgstr ""
 
-#: tnt/tra/english/game.tra:179
+#: game.tra:179
 msgid "After hiding in my pack, stay there. One cannot be too careful."
 msgstr ""
 
-#: tnt/tra/english/game.tra:180
+#: game.tra:180
 msgid "Ah, maybe later."
 msgstr ""
 
-#: tnt/tra/english/game.tra:181
+#: game.tra:181
 msgid "Stop picking up any items, okay?"
 msgstr ""
 
-#: tnt/tra/english/game.tra:182
+#: game.tra:182
 msgid "I want you to bring me everything. Any valuables."
 msgstr ""
 
-#: tnt/tra/english/game.tra:183
+#: game.tra:183
 msgid "Pick up any gold that you find."
 msgstr ""
 
-#: tnt/tra/english/game.tra:184
+#: game.tra:184
 msgid "Don't pick up the gold that you find."
 msgstr ""
 
-#: tnt/tra/english/game.tra:185
+#: game.tra:185
 msgid "Pick up any jewels that you find."
 msgstr ""
 
-#: tnt/tra/english/game.tra:186
+#: game.tra:186
 msgid "Pick up only valuable and magical jewelry."
 msgstr ""
 
-#: tnt/tra/english/game.tra:187
+#: game.tra:187
 msgid "Pick up only magical jewelry."
 msgstr ""
 
-#: tnt/tra/english/game.tra:188
+#: game.tra:188
 msgid "Don't pick up the jewelry."
 msgstr ""
 
-#: tnt/tra/english/game.tra:189
+#: game.tra:189
 msgid "Pick up any magical ammo that you find."
 msgstr ""
 
-#: tnt/tra/english/game.tra:190
+#: game.tra:190
 msgid "Don't pick up the ammo."
 msgstr ""
 
-#: tnt/tra/english/game.tra:191
+#: game.tra:191
 msgid "If you find any potions, bring them to me!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:192
+#: game.tra:192
 msgid "Stop picking up potions."
 msgstr ""
 
-#: tnt/tra/english/game.tra:193
+#: game.tra:193
 msgid "Get me any scrolls that you can find."
 msgstr ""
 
-#: tnt/tra/english/game.tra:194
+#: game.tra:194
 msgid "I don't need you to bring any more scrolls."
 msgstr ""
 
-#: tnt/tra/english/game.tra:195
-msgid "Fetch scalps from those bandits we kill. There's a nice bounty for them."
+#: game.tra:195
+msgid ""
+"Fetch scalps from those bandits we kill. There's a nice bounty for them."
 msgstr ""
 
-#: tnt/tra/english/game.tra:196
+#: game.tra:196
 msgid "Stop that scalping, will you? It's disgusting."
 msgstr ""
 
-#: tnt/tra/english/game.tra:197
+#: game.tra:197
 msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
 msgstr ""
 
-#: tnt/tra/english/game.tra:198
+#: game.tra:198
 msgid "No more pelts or scales, we're stocked."
 msgstr ""
 
-#: tnt/tra/english/game.tra:199
+#: game.tra:199
 msgid "No, nothing."
 msgstr ""
 
-#: tnt/tra/english/game.tra:200
+#: game.tra:200
 msgid "As you wish, master."
 msgstr ""
 
-#: tnt/tra/english/game.tra:201
+#: game.tra:201
 msgid "Let's talk about your gear."
 msgstr ""
 
-#: tnt/tra/english/game.tra:202
-msgid "Take this returning dart. I think you're better off attacking from distance."
+#: game.tra:202
+msgid ""
+"Take this returning dart. I think you're better off attacking from distance."
 msgstr ""
 
-#: tnt/tra/english/game.tra:203
+#: game.tra:203
 msgid "OK, boss."
 msgstr ""
 
-#: tnt/tra/english/game.tra:204
+#: game.tra:204
 msgid "Done."
 msgstr ""
 
-#: tnt/tra/english/game.tra:205
+#: game.tra:205
 msgid "No, actually I think your gear is fine."
 msgstr ""
 
-#: tnt/tra/english/game.tra:207
+#: game.tra:207
 msgid "Don't bother me with your whining, I don't care if you're hurt."
 msgstr ""
 
-#: tnt/tra/english/game.tra:208
+#: game.tra:208
 msgid "After fight, if you're hurt, let me know."
 msgstr ""
 
-#: tnt/tra/english/game.tra:209
+#: game.tra:209
 msgid "After fight, if you're badly hurt, let me know."
 msgstr ""
 
-#: tnt/tra/english/game.tra:210
+#: game.tra:210
 msgid "I'm hurting here, Boss."
 msgstr ""
 
-#: tnt/tra/english/game.tra:211
+#: game.tra:211
 msgid "I'm really hurting here, Boss."
 msgstr ""
 
-#: tnt/tra/english/game.tra:212
+#: game.tra:212
 msgid "Move faster, will you? Don't lag behind."
 msgstr ""
 
-#: tnt/tra/english/game.tra:213
+#: game.tra:213
 msgid "Don't run so fast. I can't catch up to you."
 msgstr ""
 
-#: tnt/tra/english/game.tra:214
+#: game.tra:214
 msgid "Ouch!"
 msgstr ""
 
-#: tnt/tra/english/game.tra:215
+#: game.tra:215
 msgid "Quiver of Plenty"
 msgstr ""
 
-#: tnt/tra/english/game.tra:216
+#: game.tra:216
 msgid ""
 "Enchanted quivers like this one are highly sought after by professional archers.\n"
 "\n"
@@ -868,11 +615,11 @@ msgid ""
 "Unlimited plain arrows"
 msgstr ""
 
-#: tnt/tra/english/game.tra:217
+#: game.tra:217
 msgid "Case of Plenty"
 msgstr ""
 
-#: tnt/tra/english/game.tra:218
+#: game.tra:218
 msgid ""
 "Enchanted bolt cases like this one are highly sought after by professional crossbow users.\n"
 "\n"
@@ -881,11 +628,11 @@ msgid ""
 "Unlimited plain bolts"
 msgstr ""
 
-#: tnt/tra/english/game.tra:219
+#: game.tra:219
 msgid "Bag of Plenty"
 msgstr ""
 
-#: tnt/tra/english/game.tra:220
+#: game.tra:220
 msgid ""
 "Enchanted bullet bags like this one are highly sought after by professional slingers.\n"
 "\n"
@@ -894,10 +641,289 @@ msgid ""
 "Unlimited plain bullets"
 msgstr ""
 
-#: tnt/tra/english/game.tra:221
-msgid "When you're being attacked, disengage for a short time, then get back at that enemy."
+#: game.tra:221
+msgid ""
+"When you're being attacked, disengage for a short time, then get back at "
+"that enemy."
 msgstr ""
 
-#: tnt/tra/english/game.tra:222
+#: game.tra:222
 msgid "Don't disengage, even if you're being attacked."
+msgstr ""
+
+#: setup.tra:77
+msgid "Resilient familiars"
+msgstr ""
+
+#: setup.tra:78
+msgid "Remove blur graphics from items"
+msgstr ""
+
+#: setup.tra:79
+msgid "Additions only"
+msgstr ""
+
+#: setup.tra:80
+msgid "BGT or EET only"
+msgstr ""
+
+#: setup.tra:81
+msgid "Extended Soundsets for NPC"
+msgstr ""
+
+#: setup.tra:82
+msgid "BG1 soundsets prevail"
+msgstr ""
+
+#: setup.tra:83
+msgid "BG2 soundsets prevail"
+msgstr ""
+
+#: setup.tra:84
+msgid "Reintroduce"
+msgstr ""
+
+#: setup.tra:85
+msgid "BG1-style party interaction system"
+msgstr ""
+
+#: setup.tra:86
+msgid "Reintroduce and adjust to framerate"
+msgstr ""
+
+#: setup.tra:87
+msgid "Disable"
+msgstr ""
+
+#: setup.tra:88
+msgid "BGT or BG1 only"
+msgstr ""
+
+#: setup.tra:89
+msgid "No talking when hiding in shadows"
+msgstr ""
+
+#: setup.tra:90
+msgid "Make NPC soundsets available to PC"
+msgstr ""
+
+#: setup.tra:91
+msgid "Fair fights"
+msgstr ""
+
+#: setup.tra:92
+msgid "Sensible Cloak of Mirroring"
+msgstr ""
+
+#: setup.tra:93
+msgid "Spider form ignores web"
+msgstr ""
+
+#: setup.tra:94
+msgid "Effects of scrolls and potions do not stack with themselves"
+msgstr ""
+
+#: setup.tra:95
+msgid "Cheesy Slayer: full heal on change"
+msgstr ""
+
+#: setup.tra:96
+msgid "no loss"
+msgstr ""
+
+#: setup.tra:97
+msgid "Cheesy Slayer: reputation"
+msgstr ""
+
+#: setup.tra:98
+msgid "reduced loss"
+msgstr ""
+
+#: setup.tra:99
+msgid "Gem, scroll, potion, ammo (GSPA)"
+msgstr ""
+
+#: setup.tra:100
+msgid "Starting bags"
+msgstr ""
+
+#: setup.tra:101
+msgid "GSPA + holding"
+msgstr ""
+
+#: setup.tra:102
+msgid "GSPA + holding - all bottomless!"
+msgstr ""
+
+#: setup.tra:103
+msgid "Each stat gets +1"
+msgstr ""
+
+#: setup.tra:104
+msgid "Add BG1 tomes stats bonuses to new BG2 characters"
+msgstr ""
+
+#: setup.tra:105
+msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
+msgstr ""
+
+#: setup.tra:106
+msgid "Shops always buy goods at the same price"
+msgstr ""
+
+#: setup.tra:107
+msgid "Can't steal from fences"
+msgstr ""
+
+#: setup.tra:108
+msgid "Close shop steal exploit"
+msgstr ""
+
+#: setup.tra:109
+msgid "Can't steal from any shops"
+msgstr ""
+
+#: setup.tra:110
+msgid "No XP farming"
+msgstr ""
+
+#: setup.tra:111
+msgid "Easy traps: allow sensing in combat"
+msgstr ""
+
+#: setup.tra:112
+msgid "Easy traps: increase trap sense range"
+msgstr ""
+
+#: setup.tra:113
+msgid "stop moving"
+msgstr ""
+
+#: setup.tra:114
+msgid "Easy traps: character action"
+msgstr ""
+
+#: setup.tra:115
+msgid "stop moving and pause game"
+msgstr ""
+
+#: setup.tra:116
+msgid "Easy traps: center on character"
+msgstr ""
+
+#: setup.tra:117
+msgid "Easy traps: play a sound"
+msgstr ""
+
+#: setup.tra:118
+msgid ""
+"Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
+"work)"
+msgstr ""
+
+#: setup.tra:119
+msgid "Less autosaves"
+msgstr ""
+
+#: setup.tra:120
+msgid "True true sight"
+msgstr ""
+
+#: setup.tra:121
+msgid "BG1 content not present"
+msgstr ""
+
+#: setup.tra:122
+msgid "BG saga only"
+msgstr ""
+
+#: setup.tra:123
+msgid ""
+"EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-"
+"awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-"
+"iwdee instead."
+msgstr ""
+
+#: setup.tra:124
+msgid "Requires ToB or EE engine"
+msgstr ""
+
+#: setup.tra:125
+msgid "Requires BG2 or EE engine"
+msgstr ""
+
+#: setup.tra:126
+msgid "Requires BG2"
+msgstr ""
+
+#: setup.tra:128
+msgid "Weightless ammo"
+msgstr ""
+
+#: setup.tra:129
+msgid "All easy traps components must be installed before core"
+msgstr ""
+
+#: setup.tra:134
+msgid "Sensible Otiluke's sphere"
+msgstr ""
+
+#: setup.tra:135
+msgid "Improved strongholds"
+msgstr ""
+
+#: setup.tra:144
+msgid "Sensible wand of frost"
+msgstr ""
+
+#: setup.tra:145
+msgid "Single target"
+msgstr ""
+
+#: setup.tra:146
+msgid "AoE"
+msgstr ""
+
+#: setup.tra:148
+msgid "No cast and attack"
+msgstr ""
+
+#: setup.tra:159
+msgid "More ankheg armors by Taerom"
+msgstr ""
+
+#: setup.tra:206
+msgid "Windows only"
+msgstr ""
+
+#: setup.tra:223
+msgid "Potion of really mirrored eyes"
+msgstr ""
+
+#: setup.tra:224
+msgid "stop moving and pause game only for ground traps"
+msgstr ""
+
+#: setup.tra:225
+msgid "Familiars"
+msgstr ""
+
+#: setup.tra:226
+msgid "Traps"
+msgstr ""
+
+#: setup.tra:227
+msgid "Soundsets"
+msgstr ""
+
+#: setup.tra:228
+msgid "Items"
+msgstr ""
+
+#: setup.tra:229
+msgid "Spells and abilities"
+msgstr ""
+
+#: setup.tra:230
+msgid "Gameplay and rules"
 msgstr ""
