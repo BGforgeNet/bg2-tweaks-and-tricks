@@ -271,7 +271,7 @@ Just disable stealing in all shops.
 
 #### No XP farming
 Disables the possibility of XP farming in the most tempting spots in BG1: wyvern cave, golem cave, ankheg cave and skeleton warrior trap (Durlag's tower).
-#### Can't steal Carsomyr](#cant-steal-carsomyr)
+#### Can't steal Carsomyr
 Disables the silly possibility of stealing Carsomyr from Firkraag.
 
 ### Quest and dialog tweaks
