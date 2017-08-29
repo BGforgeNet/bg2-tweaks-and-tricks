@@ -4,14 +4,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2017-07-30 10:47+0000\n"
+"PO-Revision-Date: 2017-08-29 22:19+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.15\n"
 
 #: game.tra:1
@@ -20,91 +21,91 @@ msgstr "Эм, это заперто."
 
 #: game.tra:3
 msgid "Looking for gold..."
-msgstr ""
+msgstr "Ищу золото..."
 
 #: game.tra:4
 msgid "Finished looking for gold."
-msgstr ""
+msgstr "Закончил искать золото."
 
 #: game.tra:5
 msgid "Looking for scalps..."
-msgstr ""
+msgstr "Ищу скальпы..."
 
 #: game.tra:6
 msgid "Finished looking for scalps."
-msgstr ""
+msgstr "Закончил искать скальпы."
 
 #: game.tra:7
 msgid "Looking for common ammo..."
-msgstr ""
+msgstr "Ищу обычные снаряды..."
 
 #: game.tra:8
 msgid "Finished looking for common ammo."
-msgstr ""
+msgstr "Закончил искать обычные снаряды."
 
 #: game.tra:9
 msgid "Looking for common jewels..."
-msgstr ""
+msgstr "Ищу обычные драгоценности..."
 
 #: game.tra:10
 msgid "Finished looking for common jewels."
-msgstr ""
+msgstr "Закончил искать обычные драгоценности."
 
 #: game.tra:11
 msgid "Looking for common potions..."
-msgstr ""
+msgstr "Ищу обычные зелья..."
 
 #: game.tra:12
 msgid "Finished looking for common potions."
-msgstr ""
+msgstr "Закончил искать обычные зелья."
 
 #: game.tra:13
 msgid "Looking for scrolls..."
-msgstr ""
+msgstr "Ищу свитки..."
 
 #: game.tra:14
 msgid "Finished looking for scrolls."
-msgstr ""
+msgstr "Закончил искать свитки."
 
 #: game.tra:16
 msgid "Looking for rare jewels..."
-msgstr ""
+msgstr "Ищу редкие драгоценности..."
 
 #: game.tra:17
 msgid "Finished looking for rare jewels."
-msgstr ""
+msgstr "Закончил искать редкие драгоценности."
 
 #: game.tra:18
 msgid "Looking for rare potions..."
-msgstr ""
+msgstr "Ищу редкие зелья..."
 
 #: game.tra:19
 msgid "Finished looking for rare potions."
-msgstr ""
+msgstr "Закончил искать редкие зелья."
 
 #: game.tra:20
 msgid "Looking for magic jewels..."
-msgstr ""
+msgstr "Ищу волшебные драгоценности..."
 
 #: game.tra:21
 msgid "Finished looking for magic jewels."
-msgstr ""
+msgstr "Закончил искать волшебные драгоценности."
 
 #: game.tra:22
 msgid "Looking for rare ammo..."
-msgstr ""
+msgstr "Ищу редкие снаряды..."
 
 #: game.tra:23
 msgid "Finished looking for rare ammo."
-msgstr ""
+msgstr "Закончил искать редкие снаряды."
 
 #: game.tra:24
 msgid "Looking for rare magic jewels..."
-msgstr ""
+msgstr "Ищу редкие волшебные драгоценности..."
 
 #: game.tra:25
 msgid "Finished looking for rare magic jewels."
-msgstr ""
+msgstr "Закончил искать редкие волшебные драгоценности."
 
 #: game.tra:2
 msgid "Uh, I smell a trap."
@@ -1133,10 +1134,8 @@ msgid "Gameplay and rules"
 msgstr "Игровая механика и правила"
 
 #: setup.tra:231
-#, fuzzy
-#| msgid "Can't steal from fences"
 msgid "Can't steal Carsomyr"
-msgstr "Нельзя воровать у скупщиков краденого"
+msgstr "Нельзя украсть Карсомир"
 
 #~ msgid "Only BG2:ToB engine is supported"
 #~ msgstr "Требует движок BG2:ToB"
