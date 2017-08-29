@@ -1,0 +1,8 @@
+//Carsomyr: make unstealable from Firkraag
+COPY_EXISTING ~firkra02.cre~ ~override~
+  LPF ADD_CRE_ITEM_FLAGS
+    STR_VAR
+    item_to_change = ~sw2h10~
+    flags = ~UNSTEALABLE~
+  END
+BUT_ONLY

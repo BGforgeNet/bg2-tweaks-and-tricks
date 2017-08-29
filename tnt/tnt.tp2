@@ -1,6 +1,6 @@
 BACKUP ~tnt/backup~
 AUTHOR "burner1024 @ github"
-VERSION ~v7~
+VERSION ~v8~
 NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 //ASK_EVERY_COMPONENT
@@ -277,6 +277,10 @@ GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
 
+BEGIN @231 /* Can't steal Carsomyr */
+GROUP @230 /* Gameplay and rules */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+INCLUDE ~%MOD_FOLDER%/no_steal_carsomyr/main.tph~
 
 //Quest and dialog tweaks
 BEGIN @135 /* Improved strongholds */

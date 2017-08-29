@@ -55,6 +55,7 @@ It will work with BG1, BG2, [BGT](http://www.spellholdstudios.net/ie/bgt), Enhan
   - [Shops always buy goods at the same price](#shops-always-buy-goods-at-the-same-price)
   - [Close shop steal exploit](#close-shop-steal-exploit)
   - [No XP farming](#no-xp-farming)
+  - [Can't steal Carsomyr](#cant-steal-carsomyr)
 - [Quest and dialog tweaks](#quest-and-dialog-tweaks)
   - [Improved strongholds](#improved-strongholds)
   - [More ankheg armors by Taerom](#more-ankheg-armors-by-taerom)
@@ -270,6 +271,8 @@ Just disable stealing in all shops.
 
 #### No XP farming
 Disables the possibility of XP farming in the most tempting spots in BG1: wyvern cave, golem cave, ankheg cave and skeleton warrior trap (Durlag's tower).
+#### Can't steal Carsomyr](#cant-steal-carsomyr)
+Disables the silly possibility of stealing Carsomyr from Firkraag.
 
 ### Quest and dialog tweaks
 #### Improved strongholds
@@ -289,10 +292,12 @@ Allow Taerom to make more ankheg armors
 - Unzip it
 - Move "tnt" and "setup-tnt.exe" into the game directory
 - Launch setup-tnt.exe
-- Answer the question
+- Answer the questions
 
 
 ## Changelog
+- Version 8
+  - add "can't steal carsomyr" component
 - Version 7
   - add spider form/web protection component
   - fix viconia's dialog_default and area_city in extended soundsets
