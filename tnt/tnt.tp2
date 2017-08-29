@@ -9,6 +9,7 @@ AUTO_EVAL_STRINGS
 //AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 
 LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
+LANGUAGE ~Russian~ ~RUSSIAN~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
 
 // FAMILIARS
 BEGIN @74 /* Smarter familiars */
