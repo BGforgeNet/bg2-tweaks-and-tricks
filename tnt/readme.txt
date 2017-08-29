@@ -225,10 +225,11 @@ A few opponents in the game basically cheat, or just have unrealistic stats. Som
 - Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
 - Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
-- Laskal, Cloakwood shadow druid (innocent no longer, since he attacks first)
-- Winski Perorate (innocent no longer, since he's just not)
-- Arkanis Gath, the Renal's guard
-- Kahrk, the mightiest ogre mage
+- Laskal, the Cloakwood shadow druid (innocent no longer, since he attacks first)
+- Phandalyn, the fanatic paladin in Baldur's Gate (innocent no longer, since he attacks first)
+- Winski Perorate (innocent no longer, since he's not)
+- Arkanis Gath, the Renal's guard (now you can fight him)
+- Kahrk, the mightiest ogre mage (permanent spell turning removed)
 
 #### Starting bags
 - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
