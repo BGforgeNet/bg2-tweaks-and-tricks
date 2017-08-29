@@ -277,7 +277,7 @@ Disables the silly possibility of stealing Carsomyr from Firkraag.
 ### Quest and dialog tweaks
 #### Improved strongholds
 This component mostly improves messengers and messages, making them more faster and less likely to miss the player, but has some other changes, too:
-- Bard: make the messenger more reliable. Make money collection notification different from fighter stronhold
+- Bard: make the messenger more reliable. Make money collection notification different from fighter stronghold
 - Cleric: notify when it's time to visit the Church
 - Druid: notify when it's time to visit the Grove
 - Fighter: make the messenger more reliable. Notify when it's time to visit the Keep
