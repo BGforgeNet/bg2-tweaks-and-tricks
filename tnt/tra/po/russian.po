@@ -14,6 +14,98 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.15\n"
 
+#: game.tra:1
+msgid "Uh, this one is locked."
+msgstr "Эм, это заперто."
+
+#: game.tra:3
+msgid "Looking for gold..."
+msgstr ""
+
+#: game.tra:4
+msgid "Finished looking for gold."
+msgstr ""
+
+#: game.tra:5
+msgid "Looking for scalps..."
+msgstr ""
+
+#: game.tra:6
+msgid "Finished looking for scalps."
+msgstr ""
+
+#: game.tra:7
+msgid "Looking for common ammo..."
+msgstr ""
+
+#: game.tra:8
+msgid "Finished looking for common ammo."
+msgstr ""
+
+#: game.tra:9
+msgid "Looking for common jewels..."
+msgstr ""
+
+#: game.tra:10
+msgid "Finished looking for common jewels."
+msgstr ""
+
+#: game.tra:11
+msgid "Looking for common potions..."
+msgstr ""
+
+#: game.tra:12
+msgid "Finished looking for common potions."
+msgstr ""
+
+#: game.tra:13
+msgid "Looking for scrolls..."
+msgstr ""
+
+#: game.tra:14
+msgid "Finished looking for scrolls."
+msgstr ""
+
+#: game.tra:16
+msgid "Looking for rare jewels..."
+msgstr ""
+
+#: game.tra:17
+msgid "Finished looking for rare jewels."
+msgstr ""
+
+#: game.tra:18
+msgid "Looking for rare potions..."
+msgstr ""
+
+#: game.tra:19
+msgid "Finished looking for rare potions."
+msgstr ""
+
+#: game.tra:20
+msgid "Looking for magic jewels..."
+msgstr ""
+
+#: game.tra:21
+msgid "Finished looking for magic jewels."
+msgstr ""
+
+#: game.tra:22
+msgid "Looking for rare ammo..."
+msgstr ""
+
+#: game.tra:23
+msgid "Finished looking for rare ammo."
+msgstr ""
+
+#: game.tra:24
+msgid "Looking for rare magic jewels..."
+msgstr ""
+
+#: game.tra:25
+msgid "Finished looking for rare magic jewels."
+msgstr ""
+
 #: game.tra:2
 msgid "Uh, I smell a trap."
 msgstr "Эм, я чувствую ловушку."
@@ -749,6 +841,10 @@ msgstr "Если на тебя напали, отступи, а затем ве�
 msgid "Don't disengage, even if you're being attacked."
 msgstr "Не убегай, даже если на тебя напали."
 
+#: setup.tra:74
+msgid "Smarter familiars"
+msgstr "Умные фамильяры"
+
 #: setup.tra:77
 msgid "Resilient familiars"
 msgstr "Менее хрупкие фамильяры"
@@ -1036,8 +1132,11 @@ msgstr "Заклинания и способности"
 msgid "Gameplay and rules"
 msgstr "Игровая механика и правила"
 
-#~ msgid "Smarter familiars"
-#~ msgstr "Умные фамильяры"
+#: setup.tra:231
+#, fuzzy
+#| msgid "Can't steal from fences"
+msgid "Can't steal Carsomyr"
+msgstr "Нельзя воровать у скупщиков краденого"
 
 #~ msgid "Only BG2:ToB engine is supported"
 #~ msgstr "Требует движок BG2:ToB"
@@ -1047,6 +1146,3 @@ msgstr "Игровая механика и правила"
 
 #~ msgid "BGT only"
 #~ msgstr "Только для BGT"
-
-#~ msgid "Uh, this one is locked."
-#~ msgstr "Эм, это заперто."

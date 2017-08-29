@@ -13,6 +13,98 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: bgforge_po v.1.0.0\n"
 
+#: game.tra:1
+msgid "Uh, this one is locked."
+msgstr ""
+
+#: game.tra:3
+msgid "Looking for gold..."
+msgstr ""
+
+#: game.tra:4
+msgid "Finished looking for gold."
+msgstr ""
+
+#: game.tra:5
+msgid "Looking for scalps..."
+msgstr ""
+
+#: game.tra:6
+msgid "Finished looking for scalps."
+msgstr ""
+
+#: game.tra:7
+msgid "Looking for common ammo..."
+msgstr ""
+
+#: game.tra:8
+msgid "Finished looking for common ammo."
+msgstr ""
+
+#: game.tra:9
+msgid "Looking for common jewels..."
+msgstr ""
+
+#: game.tra:10
+msgid "Finished looking for common jewels."
+msgstr ""
+
+#: game.tra:11
+msgid "Looking for common potions..."
+msgstr ""
+
+#: game.tra:12
+msgid "Finished looking for common potions."
+msgstr ""
+
+#: game.tra:13
+msgid "Looking for scrolls..."
+msgstr ""
+
+#: game.tra:14
+msgid "Finished looking for scrolls."
+msgstr ""
+
+#: game.tra:16
+msgid "Looking for rare jewels..."
+msgstr ""
+
+#: game.tra:17
+msgid "Finished looking for rare jewels."
+msgstr ""
+
+#: game.tra:18
+msgid "Looking for rare potions..."
+msgstr ""
+
+#: game.tra:19
+msgid "Finished looking for rare potions."
+msgstr ""
+
+#: game.tra:20
+msgid "Looking for magic jewels..."
+msgstr ""
+
+#: game.tra:21
+msgid "Finished looking for magic jewels."
+msgstr ""
+
+#: game.tra:22
+msgid "Looking for rare ammo..."
+msgstr ""
+
+#: game.tra:23
+msgid "Finished looking for rare ammo."
+msgstr ""
+
+#: game.tra:24
+msgid "Looking for rare magic jewels..."
+msgstr ""
+
+#: game.tra:25
+msgid "Finished looking for rare magic jewels."
+msgstr ""
+
 #: game.tra:2
 msgid "Uh, I smell a trap."
 msgstr ""
@@ -651,6 +743,10 @@ msgstr ""
 msgid "Don't disengage, even if you're being attacked."
 msgstr ""
 
+#: setup.tra:74
+msgid "Smarter familiars"
+msgstr ""
+
 #: setup.tra:77
 msgid "Resilient familiars"
 msgstr ""
@@ -926,4 +1022,8 @@ msgstr ""
 
 #: setup.tra:230
 msgid "Gameplay and rules"
+msgstr ""
+
+#: setup.tra:231
+msgid "Can't steal Carsomyr"
 msgstr ""
