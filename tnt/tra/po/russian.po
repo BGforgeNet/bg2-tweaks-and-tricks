@@ -1136,6 +1136,10 @@ msgstr "Игровая механика и правила"
 msgid "Can't steal Carsomyr"
 msgstr "Нельзя украсть Карсомир"
 
+#: setup.tra:232
+msgid "Greater Command AoE"
+msgstr ""
+
 #~ msgid "Only BG2:ToB engine is supported"
 #~ msgstr "Требует движок BG2:ToB"
 

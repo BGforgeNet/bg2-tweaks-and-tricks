@@ -1027,3 +1027,7 @@ msgstr ""
 #: setup.tra:231
 msgid "Can't steal Carsomyr"
 msgstr ""
+
+#: setup.tra:232
+msgid "Greater Command AoE"
+msgstr ""
