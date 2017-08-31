@@ -298,6 +298,7 @@ Allow Taerom to make more ankheg armors
 ## Changelog
 - Version 8
   - add "can't steal carsomyr" component
+  - add "greater command AoE" component
   - add Russian translation
 - Version 7
   - add spider form/web protection component
