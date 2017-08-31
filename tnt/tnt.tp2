@@ -207,6 +207,10 @@ INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~
 BEGIN @134 /* Sensible Otiluke's Sphere */
 GROUP @229 /* Spells and abilities */
 INCLUDE ~%MOD_FOLDER%/otiluke/main.tpa~
+
+BEGIN @232 /* Greater Command AoE */
+GROUP @229 /* Spells and abilities */
+INCLUDE ~%MOD_FOLDER%/greater_command/main.tpa~
 //END SPELL TWEAKS
 
 

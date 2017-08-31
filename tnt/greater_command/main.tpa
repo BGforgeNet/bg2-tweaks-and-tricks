@@ -1,0 +1,6 @@
+COPY_EXISTING ~sppr512.spl~ ~override~
+  LPF ALTER_SPELL_HEADER
+    INT_VAR
+      target = 4 //area
+  END
+BUT_ONLY
