@@ -13,115 +13,88 @@ OUTER_SPRINT g_FamPickupScrolls_action ~~
 
 INCLUDE ~%MOD_FOLDER%/smarter_familiars/autoloot_lists.tph~
 
-COPY_EXISTING_REGEXP GLOB ~.*\.itm~ ~override~
-  PATCH_IF (SOURCE_SIZE >= 114) BEGIN
-  READ_ASCII 0x3a invicon ELSE ~No File~  (8) NULL  //8 (resref) Inventory icon
-  READ_ASCII 0x44 groundicon ELSE ~No File~(8) NULL //8 (resref) Ground icon
-  READ_ASCII 0x58 descicon ELSE ~No File~  (8) NULL //8 (resref) Description icon
-    //following should weed out many player unusable items
-    PATCH_IF ( (FILE_EXISTS_IN_GAME ~%invicon%.bam~)
-           AND (FILE_EXISTS_IN_GAME ~%groundicon%.bam~)
-           AND (FILE_EXISTS_IN_GAME ~%descicon%.bam~) ) BEGIN
-      READ_BYTE 0x18 flags
-      READ_SHORT 0x1c item_type
-      PATCH_IF ((flags BAND 0b00000100) = 0b00000100)  // droppable
-           AND ((flags BAND 0b00001000) = 0b00001000) BEGIN // displayable in shop
 
-      //Gems
-      PATCH_IF (item_type = 0x22) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_GemsCommon(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_GemsRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-      //Rings
-      PATCH_IF (item_type = 0xa) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_RingsCommon(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_RingsRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_RingsMagic(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_RingsMagicRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-      //Necklaces
-      PATCH_IF (item_type = 0x1) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_NecklacesCommon(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_NecklacesRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_NecklacesMagic(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_NecklacesMagicRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-
-      //Ammo: arrows
-      PATCH_IF (item_type = 0x5) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagic(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_ArrowsMagicRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-      //Ammo: bolts
-      PATCH_IF (item_type = 0x1f) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_BoltsMagic(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_BotlsMagicRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-      //Ammo: darts
-      PATCH_IF (item_type = 0x18) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_DartsMagic(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_DartsMagicRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-      //Ammo: bullets
-      PATCH_IF (item_type = 0xe) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_BulletsMagic(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_BulletsMagicRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-
-      //Potions
-      PATCH_IF (item_type = 0x9) BEGIN
-        PATCH_IF (VARIABLE_IS_SET $g_PotionsCommon(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupPotionsCommon_action ~%g_FamPickupPotionsCommon_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-        PATCH_IF (VARIABLE_IS_SET $g_PotionsRare(~%SOURCE_RES%~)) BEGIN
-          SPRINT g_FamPickupPotionsRare_action ~%g_FamPickupPotionsRare_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-        END
-      END
-
-      //Scrolls
-      PATCH_IF (item_type = 0xb AND (VARIABLE_IS_SET $g_Scrolls(~%SOURCE_RES%~))) BEGIN
-        SPRINT g_FamPickupScrolls_action ~%g_FamPickupScrolls_action%%NewLine%PickUpItem("%SOURCE_RES%")~
-      END
-    END
-  END
+//Gems
+ACTION_PHP_EACH g_GemsCommon AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%code%")~
 END
-BUT_ONLY
+ACTION_PHP_EACH g_GemsRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Rings
+ACTION_PHP_EACH g_RingsCommon AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_RingsRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_RingsMagic AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_RingsMagicRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Necklaces
+ACTION_PHP_EACH g_NecklacesCommon AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_NecklacesRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_NecklacesMagic AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_NecklacesMagicRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Ammo: arrows
+ACTION_PHP_EACH g_ArrowsMagic AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_ArrowsMagicRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Ammo: bolts
+ACTION_PHP_EACH g_BoltsMagic AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_BoltsMagicRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Ammo: darts
+ACTION_PHP_EACH g_DartsMagic AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_DartsMagicRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Ammo: bullets
+ACTION_PHP_EACH g_BulletsMagic AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_BulletsMagicRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Potions
+ACTION_PHP_EACH g_PotionsCommon AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupPotionsCommon_action ~%g_FamPickupPotionsCommon_action%%NewLine%PickUpItem("%code%")~
+END
+ACTION_PHP_EACH g_PotionsRare AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupPotionsRare_action ~%g_FamPickupPotionsRare_action%%NewLine%PickUpItem("%code%")~
+END
+
+//Scrolls
+ACTION_PHP_EACH g_Scrolls AS code => name BEGIN
+  OUTER_SPRINT g_FamPickupScrolls_action ~%g_FamPickupScrolls_action%%NewLine%PickUpItem("%code%")~
+END
+
 //Daggers: there only one type of throwing daggers worth picking up: poisoned throwing daggers
 OUTER_SPRINT g_FamPickupAmmoRare_action ~%g_FamPickupAmmoRare_action%%NewLine%PickUpItem("DAGG16")~
 

@@ -17,11 +17,11 @@ END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY g_NecklacesMagic BEGIN
   AMUL14 => ~Amulet of Protection +1~
   AMUL15 => ~Shield Amulet~
-  AMUL17 => ~Greenstone Amulet~
 END
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY g_NecklacesMagicRare BEGIN
   AMUL16 => ~Metaspell Influence Amulet~
+  AMUL17 => ~Greenstone Amulet~
   AMUL18 => ~Wolfsbane Charm~
   AMUL19 => ~Amulet of 5% Magic Resistance~
   AMUL20 => ~Kaligun's Amulet of Magic Resistance~
