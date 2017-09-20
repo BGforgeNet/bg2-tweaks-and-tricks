@@ -743,6 +743,90 @@ msgstr ""
 msgid "Don't disengage, even if you're being attacked."
 msgstr ""
 
+#: map_notes.tra:1
+msgid "Degrodel"
+msgstr ""
+
+#: map_notes.tra:2
+msgid "Pheirkas"
+msgstr ""
+
+#: map_notes.tra:3
+msgid "Nadine"
+msgstr ""
+
+#: map_notes.tra:4
+msgid "Arkion"
+msgstr ""
+
+#: map_notes.tra:5
+msgid "Sunin"
+msgstr ""
+
+#: map_notes.tra:6
+msgid "Cordyr"
+msgstr ""
+
+#: map_notes.tra:7
+msgid "Basilisk"
+msgstr ""
+
+#: map_notes.tra:8
+msgid "Noralee"
+msgstr ""
+
+#: map_notes.tra:9
+msgid "Ghorak"
+msgstr ""
+
+#: map_notes.tra:10
+msgid "Nemphre"
+msgstr ""
+
+#: map_notes.tra:11
+msgid "Nadarin"
+msgstr ""
+
+#: map_notes.tra:12
+msgid "Fenten"
+msgstr ""
+
+#: map_notes.tra:13
+msgid "Evalt"
+msgstr ""
+
+#: map_notes.tra:14
+msgid "Taloun"
+msgstr ""
+
+#: map_notes.tra:15
+msgid "Kaishas Gan"
+msgstr ""
+
+#: map_notes.tra:16
+msgid "Maralee"
+msgstr ""
+
+#: map_notes.tra:17
+msgid "Jorin"
+msgstr ""
+
+#: map_notes.tra:18
+msgid "Farthing"
+msgstr ""
+
+#: map_notes.tra:19
+msgid "Delainy"
+msgstr ""
+
+#: map_notes.tra:20
+msgid "Lahl"
+msgstr ""
+
+#: map_notes.tra:21
+msgid "Solianna"
+msgstr ""
+
 #: setup.tra:74
 msgid "Smarter familiars"
 msgstr ""
@@ -1030,4 +1114,8 @@ msgstr ""
 
 #: setup.tra:232
 msgid "Greater Command AoE"
+msgstr ""
+
+#: setup.tra:233
+msgid "More map notes"
 msgstr ""
