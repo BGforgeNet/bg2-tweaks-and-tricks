@@ -1,0 +1,60 @@
+LOAD_TRA ~%MOD_FOLDER%/tra/%LANGUAGE%/map_notes.tra~
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY notes BEGIN
+
+ar7200, 2108, 2963 => 1
+ar7200, 1770, 2481 => 2
+
+ar7700, 4157, 873 => 3
+
+ar7800, 1587, 3180 => 4
+
+ar8000, 1714, 2476 => 5
+
+ar8100, 3066, 879 => 6
+ar8100, 3261, 1141 => 7
+ar8100, 3548, 1516 => 8
+ar8100, 4227, 1920 => 9
+
+/*
+ar8200, 1737, 238 => Nemphre
+ar8200, 818, 2000 => Nadarin
+
+ar7600, 3411, 3154 => Fenten
+
+arw000, 2377, 2638 => Evalt
+arw000, 854, 2466 => Taloun
+arw000, 3266, 1262 => ~Kaishas Gan~
+arw000, 3263, 1479 => Maralee
+arw000, 2450, 1936 => Jorin
+arw000, 2136, 2245 => Farthing
+arw000, 2530, 1237 => Delainy
+arw000, 2523, 785 => Lahl
+arw000, 4455, 3401 => Solianna
+*/
+
+END
+
+/*
+Phlydia ar0015 1605 319
+Mirianne ar6700 4792 2103
+Kagain ar6700 1539 2057
+Firebead ar6700 2080 2925
+*/
+
+ACTION_PHP_EACH notes AS loc => note_num BEGIN
+  OUTER_SPRINT map ~%loc_0%~
+  OUTER_SET x = %loc_1%
+  OUTER_SET y = %loc_2%
+  OUTER_SPRINT note (AT note_num)
+  PRINT ~Adding %note% to %map%: %x%, %y%~
+  ACTION_IF FILE_EXISTS_IN_GAME ~%map%.are~ BEGIN
+    COPY_EXISTING ~%map%.are~ ~override~
+      ADD_MAP_NOTE (x) (y) ~blue~ ~%note%~
+    BUT_ONLY
+  END
+END
+
+/*
+
+*/

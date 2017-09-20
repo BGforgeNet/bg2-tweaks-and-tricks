@@ -1,4 +1,5 @@
-## Tweaks-and-Tricks mod for Baldur's Gate 2
+
+y## Tweaks-and-Tricks mod for Baldur's Gate 2
 <a href="https://tra.bgforge.net/projects/baldurs-gate-tweaks-and-tricks/main/">
 <img src="https://tra.bgforge.net/widgets/baldurs-gate-tweaks-and-tricks/-/svg-badge.svg" alt="Translation status" />
 </a>
@@ -182,7 +183,7 @@ Example 2: you drink a potion of fire resistance and use a scroll of fire resist
 Make throwing daggers and axes weightless
 
 #### Sensible Wand of Frost
-In vanilla, Wand of Frost must target on a creature, but affects an area, which makes no sense. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Fireball).
+In vanilla, Wand of Frost must target on a creature, but affects an area, which makes no sense. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Cone of Cold).
 
 #### Hassle-free ammo
 Add returning non-magical ammo (darts, arrows, axes, daggers, etc) to Taerom and Ribald, at a fair price.

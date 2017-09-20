@@ -304,3 +304,6 @@ INCLUDE ~%MOD_FOLDER%/more_ankhegs/main.tpa~
 
 BEGIN @119 /* Less autosaves */
 INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
+
+BEGIN @233 /* More map notes */
+INCLUDE ~%MOD_FOLDER%/more_map_notes/main.tpa~
