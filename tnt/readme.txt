@@ -1,5 +1,4 @@
-
-y## Tweaks-and-Tricks mod for Baldur's Gate 2
+## Tweaks-and-Tricks mod for Baldur's Gate 2
 <a href="https://tra.bgforge.net/projects/baldurs-gate-tweaks-and-tricks/main/">
 <img src="https://tra.bgforge.net/widgets/baldurs-gate-tweaks-and-tricks/-/svg-badge.svg" alt="Translation status" />
 </a>
