@@ -1,12 +1,15 @@
 ## Tweaks-and-Tricks mod for Baldur's Gate 2
-<a href="https://tra.bgforge.net/projects/baldurs-gate-tweaks-and-tricks/main/">
+<a href="https://tra.bgforge.net/projects/baldurs-gate/tweaks-and-tricks/">
 <img src="https://tra.bgforge.net/widgets/baldurs-gate/-/tweaks-and-tricks/svg-badge.svg" alt="Translation status" />
 </a>
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
 </a>
 
-[__Download__](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest) | [__Support__](https://github.com/burner1024/bg2-tweaks-and-tricks/issues) | [__Discussion__](https://forum.bgforge.net/viewtopic.php?f=4&t=15&p=33)
+[__Download__](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
+ | [__Support__](https://github.com/burner1024/bg2-tweaks-and-tricks/issues)
+ | [__Discussion__](https://forum.bgforge.net/viewtopic.php?f=4&t=15&p=33)
+ | [__Help translating__](https://tra.bgforge.net/projects/baldurs-gate/tweaks-and-tricks/)
 
 This is a collection of tweaks to:
 - fix some annoying and/or unrealistic aspects of the game
