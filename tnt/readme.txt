@@ -1,6 +1,6 @@
 ## Tweaks-and-Tricks mod for Baldur's Gate 2
 <a href="https://tra.bgforge.net/projects/baldurs-gate-tweaks-and-tricks/main/">
-<img src="https://tra.bgforge.net/widgets/baldurs-gate-tweaks-and-tricks/-/svg-badge.svg" alt="Translation status" />
+<img src="https://tra.bgforge.net/widgets/baldurs-gate/-/tweaks-and-tricks/svg-badge.svg" alt="Translation status" />
 </a>
 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
