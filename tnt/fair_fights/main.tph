@@ -12,12 +12,19 @@ ACTION_IF FILE_EXISTS_IN_GAME ~shandal2.cre~ BEGIN
     PATCH_FOR_EACH offset IN 0x59 0x5a 0x5b 0x5c 0x5d 0x5e 0x5f 0x60 0x61 0x62 0x63 BEGIN
       WRITE_BYTE %offset% 0
     END
-    //Set human natural AC
-    WRITE_BYTE 0x46 10
+    //Set human natural and effective AC
+    WRITE_SHORT 0x46 10
+    WRITE_SHORT 0x48 10
     //Set cleric-mage class instead of innocent
     WRITE_BYTE 0x273 14
     //Set alignment to CN
     WRITE_BYTE 0x27b 50
+    //Saves
+    WRITE_BYTE 0x54 2  // Save versus death (0-20)
+    WRITE_BYTE 0x55 3  // Save versus wands (0-20)
+    WRITE_BYTE 0x56 5  // Save versus polymorph (0-20)
+    WRITE_BYTE 0x57 7  // Save versus breath attacks (0-20)
+    WRITE_BYTE 0x58 4  // Save versus spells (0-20)
   BUT_ONLY
 END
 
@@ -66,9 +73,16 @@ ACTION_IF FILE_EXISTS_IN_GAME ~winski2.cre~ BEGIN
   BUT_ONLY
 END
 
-//Kahrk, the mightiest ogre mage - in Firewine
-ACTION_IF FILE_EXISTS_IN_GAME ~kahrk.cre~ BEGIN  
-  COPY_EXISTING ~kahrk.cre~ ~override~
-    REMOVE_CRE_ITEM ~mageamul~ ~magebrac~
-  BUT_ONLY
-END
+//Kahrk, the mightiest ogre mage - in Firewine. And others...
+COPY_EXISTING_REGEXP ~.*\.cre~ ~override~
+  REMOVE_CRE_ITEM
+    ~mageamul~
+    ~magebrac~
+    ~mage01~
+    ~mage02~
+    ~mage03~
+    ~mage04~
+    ~mage05~
+    ~mage06~
+    ~stonskin~
+BUT_ONLY
