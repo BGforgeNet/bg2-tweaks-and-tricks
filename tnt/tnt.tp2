@@ -307,3 +307,6 @@ INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
 
 BEGIN @233 /* More map notes */
 INCLUDE ~%MOD_FOLDER%/more_map_notes/main.tpa~
+
+BEGIN @234 /* Disable lightning during rain */
+INCLUDE ~%MOD_FOLDER%/no_lightning/main.tpa~

@@ -40,6 +40,7 @@ Phlydia ar0015 1605 319
 Mirianne ar6700 4792 2103
 Kagain ar6700 1539 2057
 Firebead ar6700 2080 2925
+Kivan ar7100 3655 1474
 */
 
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
