@@ -14,7 +14,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~wtpcat.cre~ BEGIN
   END
   ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN //dlg > append_state
     wtpfamp1 => 8
-    wtpfamp2 => 7
+    wtpfamp2 => 8
     wtpfamp3 => 8
     wtpfamp4 => 7
   END
