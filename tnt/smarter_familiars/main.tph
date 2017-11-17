@@ -1,3 +1,7 @@
+OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
+LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
+ACTION_INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
+
 OUTER_SPRINT NewLine ~
 ~
 OUTER_SPRINT g_FamPickupJewels_action ~~
@@ -107,6 +111,8 @@ IF
   Delay(12) //check every 2 rounds
   CombatCounterLT(1)
   !OnScreen([EVILCUTOFF])
+  NextTriggerObject(Player1)
+  !Detect([EVILCUTOFF])
 THEN
   RESPONSE #100
     TakePartyItem("%fam_item%")
@@ -174,7 +180,7 @@ END
 //New dialog options
 ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
-    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ //auto_tra
+    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/game.tra~
   END
 END
 

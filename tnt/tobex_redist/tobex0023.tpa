@@ -1,0 +1,7 @@
+//Incremental update for TobEx beta 0023
+
+//Externalise Stealable Item Slots
+LAF tobex_copy STR_VAR file = "sltsteal.2da" END
+
+//Externalise Item-Creature Exclusions (updated)
+LAF tobex_copy STR_VAR file = "item_use.2da" END

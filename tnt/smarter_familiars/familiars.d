@@ -97,7 +97,17 @@ APPEND %dialog%
     + g_familiar_confirm
 
     + ~Global("g_FamHitAndRun","GLOBAL",1)~ //hit and run off
-    + @222 DO ~SetGlobal("g_FamHitAndRun","GLOBAL",1)~
+    + @222 DO ~SetGlobal("g_FamHitAndRun","GLOBAL",0)~
+    + g_familiar_confirm
+
+    + ~!Global("g_FamTactic","GLOBAL",0)~ //combat tactic: do nothing
+    + @223 DO ~SetGlobal("g_FamTactic","GLOBAL",0)~
+    + g_familiar_confirm
+    + ~!Global("g_FamTactic","GLOBAL",1)~ //combat tactic: attack nearest
+    + @224 DO ~SetGlobal("g_FamTactic","GLOBAL",1)~
+    + g_familiar_confirm
+    + ~!Global("g_FamTactic","GLOBAL",2)~ //combat tactic: attack nearest spellcaster
+    + @225 DO ~SetGlobal("g_FamTactic","GLOBAL",2)~
     + g_familiar_confirm
 
     ++ @180 + %state%

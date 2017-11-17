@@ -107,7 +107,7 @@ THEN
   RESPONSE #100
     %increase_speed_tmp%
     RunAwayFrom(LastAttackerOf(Myself),45)
-    AttackOneRound(LastAttackerOf(Myself))
+    AttackOneRound(LastTargetedBy(Myself))
 //    Continue()
 END
 /*
@@ -145,7 +145,7 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  !Range(Player1,10)
+  !Range(Player1,5)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -461,6 +461,37 @@ THEN
 END
 ~
 
+OUTER_SPRINT AttackEnemy ~
+IF
+  ActionListEmpty()
+  See([EVILCUTOFF])
+  OR(2)
+    Global("g_FamTactic","GLOBAL",1)
+    Global("g_FamTactic","GLOBAL",2)
+  !Dead("%death_var%")
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+~
+
+OUTER_SPRINT AttackEnemyCasters ~
+IF
+  ActionListEmpty()
+  See([EVILCUTOFF])
+  Global("g_FamTactic","GLOBAL",2)
+  !Dead("%death_var%")
+  OR(4)
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.MAGE_ALL]))
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.CLERIC_ALL]))
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.DRUID_ALL]))
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.BARD_ALL]))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+~
+
 //actual script
 <<<<<<<< .../tnt-inlined/g_%fam_cre%.baf
 
@@ -469,6 +500,9 @@ END
 %JumpToPackBadlyInjured%
 
 %HitAndRun%
+
+%AttackEnemyCasters%
+%AttackEnemy%
 
 %ResetHurtNotifDone%
 %HurtNotif%
@@ -514,7 +548,7 @@ END
 %CheckInventoryFull%
 %PickupScrolls%
 
-%FollowMasterSee%
+%FollowMaster%
 
 %FollowMasterBetweenAreas%
 
