@@ -1,4 +1,5 @@
 ACTION_FOR_EACH item IN
+  clck03  //cloak of displacement
   clck33  //semaj's cloak
   misc72  //claw of kazgaroth
 BEGIN
