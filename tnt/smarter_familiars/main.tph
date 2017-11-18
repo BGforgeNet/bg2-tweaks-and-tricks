@@ -188,3 +188,22 @@ END
 COPY ~%MOD_FOLDER%/smarter_familiars/g_fsped0.spl~ ~override~
 COPY ~%MOD_FOLDER%/smarter_familiars/g_fsped1.spl~ ~override~
 COPY ~%MOD_FOLDER%/smarter_familiars/g_fsped2.spl~ ~override~
+
+
+//potion spy
+COPY_EXISTING ~cutspy.cre~ ~override/g_spy1.cre~
+  WRITE_ASCIIT 0x280 ~g_spy1~
+  WRITE_ASCIIT 0x248 ~g_spy1~
+BUT_ONLY
+
+//script for potion spy
+<<<<<<<< .../tnt-inlined/g_spy1.baf
+IF
+  True()
+THEN
+  RESPONSE #100
+    DestroyAllEquipment()
+    DestroySelf()
+END
+>>>>>>>>
+COMPILE ~.../tnt-inlined/g_spy1.baf~
