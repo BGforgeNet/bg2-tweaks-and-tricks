@@ -1,0 +1,15 @@
+ACTION_FOR_EACH item IN
+  gberry
+  gberry2 //this and below - enhanced goodberries from d0tweak
+  gberry3
+  gberry4
+  gberry5
+  gberry6
+  gberry7
+BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%item%.itm~ BEGIN
+    COPY_EXISTING ~%item%.itm~ ~override~
+      WRITE_SHORT 0x38 65000
+    BUT_ONLY
+  END
+END

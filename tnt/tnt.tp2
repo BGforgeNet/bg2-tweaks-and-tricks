@@ -310,3 +310,9 @@ INCLUDE ~%MOD_FOLDER%/more_map_notes/main.tpa~
 
 BEGIN @234 /* Disable lightning during rain */
 INCLUDE ~%MOD_FOLDER%/no_lightning/main.tpa~
+
+BEGIN ~Mod romance cheats~
+INCLUDE ~%MOD_FOLDER%/romance_cheats/main.tpa~
+
+BEGIN ~Unlimited goodberries stacking~
+INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~

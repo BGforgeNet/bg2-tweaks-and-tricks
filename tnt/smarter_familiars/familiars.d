@@ -119,6 +119,16 @@ END
 APPEND %dialog%
   IF ~~ g_familiar_potions
     SAY @226
+
+    + ~PartyHasItem("gberry")~ //goodberry
+    + @251 DO ~
+               CreateCreature("g_spy1",[-1.-1],0)
+               GiveItemCreate("gberry",Myself,1,0,0)
+               ActionOverride("g_spy1", TakePartyItemNum("gberry",2) )
+               UseItem("gberry",Myself)
+              ~
+    + g_familiar_confirm
+
     + ~PartyHasItem("potn08")~ //healing
     + @227 DO ~
                CreateCreature("g_spy1",[-1.-1],0)

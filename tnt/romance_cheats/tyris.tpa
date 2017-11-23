@@ -1,0 +1,66 @@
+ACTION_FOR_EACH script IN
+  aerie
+  jaheira
+  viconia
+  dorn
+  neera
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~ AND FILE_EXISTS_IN_GAME ~g#tyris.bcs~) BEGIN
+    COPY_EXISTING ~%script%.bcs~ ~override~
+
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+          ~ Global("G#TF.TyrisRomanceActive","GLOBAL",1)~
+          ~ False()~
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+          ~ Global("G#TF.TyrisRomanceActive","GLOBAL",2)~
+          ~ False()~
+      END
+
+    BUT_ONLY
+  END
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~g#tyris.bcs~ BEGIN
+  COPY_EXISTING ~g#tyris.bcs~ ~override~
+
+    DECOMPILE_AND_PATCH BEGIN
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("AerieRomanceActive","GLOBAL",1)~
+        ~ False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("AerieRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("JaheiraRomanceActive","GLOBAL",1)~
+        ~ False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("JaheiraRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("ViconiaRomanceActive","GLOBAL",1)~
+        ~ False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("ViconiaRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("NeeraRomanceActive","GLOBAL",1)~
+        ~ False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("NeeraRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("DornRomanceActive","GLOBAL",1)~
+        ~ False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("DornRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+    END
+  BUT_ONLY
+END
