@@ -120,6 +120,7 @@ APPEND %dialog%
   IF ~~ g_familiar_potions
     SAY @226
 
+/* For some reason, the whole stack of goodberries gets removed
     + ~PartyHasItem("gberry")~ //goodberry
     + @251 DO ~
                CreateCreature("g_spy1",[-1.-1],0)
@@ -134,7 +135,7 @@ APPEND %dialog%
     + @251 DO ~
                CreateCreature("g_spy1",[-1.-1],0)
                GiveItemCreate("gberry2",Myself,1,0,0)
-               ActionOverride("g_spy1", TakePartyItemNum("gberry",2) )
+               ActionOverride("g_spy1", TakePartyItemNum("gberry2",2) )
                UseItem("gberry2",Myself)
               ~
     + g_familiar_confirm
@@ -203,7 +204,8 @@ APPEND %dialog%
                UseItem("gberry7",Myself)
               ~
     + g_familiar_confirm
-    /* Finally, goodberries are finished */
+    // Finally, goodberries are finished
+*/
 
     + ~PartyHasItem("potn08")~ //healing
     + @227 DO ~
