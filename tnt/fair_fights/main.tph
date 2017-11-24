@@ -78,7 +78,7 @@ COPY_EXISTING_REGEXP ~.*\.cre~ ~override~
   REMOVE_CRE_ITEM
     ~mageamul~
     ~magebrac~
-    ~mage01~
+//    ~mage01~ // invisibility. Needed for bridge guardian in unseeing eye quest
     ~mage02~
     ~mage03~
     ~mage04~
