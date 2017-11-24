@@ -20,37 +20,81 @@ ACTION_IF FILE_EXISTS_IN_GAME ~m#amber.bcs~ BEGIN
         ~ False()~
 
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("AerieRomanceActive","GLOBAL",1)~
+        ~ False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("AerieRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("JaheiraRomanceActive","GLOBAL",1)~
         ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("JaheiraRomanceActive","GLOBAL",2)~
         ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("ViconiaRomanceActive","GLOBAL",1)~
+        ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("ViconiaRomanceActive","GLOBAL",2)~
         ~ False()~
+
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ GlobalGT("SolaTalk","GLOBAL",13)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("KiaraRomanceActive","GLOBAL",1)~
         ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("KiaraRomanceActive","GLOBAL",2)~
         ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("E3FadeRomanceActive","GLOBAL",1)~
+        ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("E3FadeRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("imoenromanceactive","GLOBAL",1)~
         ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("imoenromanceactive","GLOBAL",2)~
         ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("SaerilethRomanceActive","GLOBAL",1)~
+        ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("SaerilethRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("TashiaRomanceActive","GLOBAL",1)~
         ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("TashiaRomanceActive","GLOBAL",2)~
         ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("SimeRomanceActive","GLOBAL",1)~
+        ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("SimeRomanceActive","GLOBAL",2)~
         ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("NathRomanceActive","GLOBAL",1)~
+        ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("NathRomanceActive","GLOBAL",2)~
+        ~ False()~
+
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("AnomenRomanceActive","GLOBAL",1)~
         ~ False()~
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
         ~ Global("AnomenRomanceActive","GLOBAL",2)~
