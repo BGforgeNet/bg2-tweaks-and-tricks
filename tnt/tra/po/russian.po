@@ -4,14 +4,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2017-10-13 21:22+0000\n"
-"Last-Translator: Magus <magus@bgforge.net>\n"
+"PO-Revision-Date: 2017-12-03 07:59+0000\n"
+"Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.17\n"
 
 #: game.tra:1
@@ -172,7 +173,7 @@ msgstr "Готовьтесь почувствовать гнев моего хо
 
 #: game.tra:40
 msgid "Your end is near at hand, wail if you must!!"
-msgstr "Ваш конец близок, плачьте, если хотите!!"
+msgstr "Ваш конец близок, плачьте, если хотите!"
 
 #: game.tra:41
 msgid ""
@@ -194,7 +195,7 @@ msgstr "Давайте покончим с этим!"
 
 #: game.tra:45
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr "Ааа!! Спасите!  Помогите мне, пожалуйстааа!"
+msgstr "Ааа! Спасите!  Помогите мне, пожалуйстааа!"
 
 #: game.tra:46
 msgid "Oh, this is going to hurt you a LOT more than me!"
@@ -241,16 +242,15 @@ msgstr "Сегодня зло падет!"
 
 #: game.tra:56
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
-"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!!"
+msgstr "Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
 
 #: game.tra:57
 msgid "Helm's fury upon you all!!"
-msgstr "Вас настигнет гнев Хелма!!"
+msgstr "Вас настигнет гнев Хелма!"
 
 #: game.tra:58
 msgid "By skill and might we shall prevail!!"
-msgstr "Сила и умение помогут нам победить!!"
+msgstr "Сила и умение помогут нам победить!"
 
 #: game.tra:59
 msgid "You will not pass!"
@@ -266,7 +266,7 @@ msgstr "Нас, детей Баала, нельзя остановить!"
 
 #: game.tra:62
 msgid "Ha!  This arena I know well!!"
-msgstr "Ха!  Это я хорошо умею!!"
+msgstr "Ха!  Это я хорошо умею!"
 
 #: game.tra:63
 msgid "I shall carve a path, if need be."
