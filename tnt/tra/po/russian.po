@@ -11,8 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.17\n"
 
 #: game.tra:1
@@ -160,169 +159,298 @@ msgid "Hold on. See this?"
 msgstr "Погодите. Видите вот это?"
 
 #: game.tra:37
+#, fuzzy
+#| msgid "Die your final death!"
+msgctxt "g_ttjah1"
 msgid "Die your final death!"
 msgstr "Сдохни окончательно!"
 
 #: game.tra:38
+#, fuzzy
+#| msgid "Aaargh!  Kill says Boo, kill does Minsc!"
+msgctxt "minsc57"
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
 msgstr "Арргх! Бу говорить убивать, Минск убивает!"
 
 #: game.tra:39
+#, fuzzy
+#| msgid "Prepare to feel the wrath of my hamster!"
+msgctxt "g_ttmin1"
 msgid "Prepare to feel the wrath of my hamster!"
 msgstr "Готовьтесь почувствовать гнев моего хомяка!"
 
 #: game.tra:40
+#, fuzzy
+#| msgid "Your end is near at hand, wail if you must!!"
+msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
 msgstr "Ваш конец близок, плачьте, если хотите!"
 
 #: game.tra:41
+#, fuzzy
+#| msgid ""
+#| "Blast and bother!  These locks have always given me trouble!  Trouble they "
+#| "are!"
+msgctxt "alora02"
 msgid ""
 "Blast and bother!  These locks have always given me trouble!  Trouble they "
 "are!"
 msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
 
 #: game.tra:42
+#, fuzzy
+#| msgid "Walking alone on the Coastway road!  How smart is this?"
+msgctxt "quayl01"
 msgid "Walking alone on the Coastway road!  How smart is this?"
 msgstr "Ходить в одиночку по дорогам Побережья?  Что за умник это придумал?"
 
 #: game.tra:43
+#, fuzzy
+#| msgid "Calm yourself dear, we must proceed c-c-carefully."
+msgctxt "khald02"
 msgid "Calm yourself dear, we must proceed c-c-carefully."
 msgstr "Успокойся дорогая, мы должны действовать ак-к-куратно."
 
 #: game.tra:44
+#, fuzzy
+#| msgid "Let us get this over with!"
+msgctxt "g_ttyos1"
 msgid "Let us get this over with!"
 msgstr "Давайте покончим с этим!"
 
 #: game.tra:45
+#, fuzzy
+#| msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
+msgctxt "aerie95"
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
 msgstr "Ааа! Спасите!  Помогите мне, пожалуйстааа!"
 
 #: game.tra:46
+#, fuzzy
+#| msgid "Oh, this is going to hurt you a LOT more than me!"
+msgctxt "aeri2540"
 msgid "Oh, this is going to hurt you a LOT more than me!"
 msgstr "О, вам будет НАМНОГО больнее, чем мне!"
 
 #: game.tra:47
+#, fuzzy
+#| msgid "By all that is decent, I fight!"
+msgctxt "aeri2541"
 msgid "By all that is decent, I fight!"
 msgstr "Я сражаюсь за все хорошее!"
 
 #: game.tra:48
+#, fuzzy
+#| msgid "Killing is our business, and business be good!"
+msgctxt "g_ttkor1"
 msgid "Killing is our business, and business be good!"
 msgstr "Наше дело - это убийства... и дело идет хорошо!"
 
 #: game.tra:49
+#, fuzzy
+#| msgid "Hahahaha!"
+msgctxt "g_ttkor2"
 msgid "Hahahaha!"
 msgstr "Хахаха!"
 
 #: game.tra:50
+#, fuzzy
+#| msgid "In Tyr's name we shall be victorious once and for all!"
+msgctxt "g_ttkel1"
 msgid "In Tyr's name we shall be victorious once and for all!"
 msgstr "Во имя Тира мы победим раз и навсегда!"
 
 #: game.tra:51
+#, fuzzy
+#| msgid "What can I do for you?"
+msgctxt "g_ttkag1"
 msgid "What can I do for you?"
 msgstr "Что я могу сделать для вас?"
 
 #: game.tra:52
+#, fuzzy
+#| msgid ""
+#| "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+msgctxt "montr01"
 msgid ""
 "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgstr ""
 "Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
 
 #: game.tra:53
+#, fuzzy
+#| msgid ""
+#| "Aye, who's there now?  More smithing, or did ye burrow into another river?"
+msgctxt "yeslk01"
 msgid ""
 "Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgstr "Да, что там опять?  Будем ковать, или снова наткнулись на реку?"
 
 #: game.tra:54
+#, fuzzy
+#| msgid "I have languished in these dismal vaults too long."
+msgctxt "g_ttxan1"
 msgid "I have languished in these dismal vaults too long."
 msgstr "Я слишком долго томился в этих мрачных пещерах."
 
 #: game.tra:55
+#, fuzzy
+#| msgid "Evil falls today!"
+msgctxt "nali2520"
 msgid "Evil falls today!"
 msgstr "Сегодня зло падет!"
 
 #: game.tra:56
+#, fuzzy
+#| msgid "If you fight, you die!  You cannot match our power!!"
+msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr "Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
+msgstr ""
+"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
 
 #: game.tra:57
+#, fuzzy
+#| msgid "Helm's fury upon you all!!"
+msgctxt "anom2539"
 msgid "Helm's fury upon you all!!"
 msgstr "Вас настигнет гнев Хелма!"
 
 #: game.tra:58
+#, fuzzy
+#| msgid "By skill and might we shall prevail!!"
+msgctxt "anom2540"
 msgid "By skill and might we shall prevail!!"
 msgstr "Сила и умение помогут нам победить!"
 
 #: game.tra:59
+#, fuzzy
+#| msgid "You will not pass!"
+msgctxt "g_ttval1"
 msgid "You will not pass!"
 msgstr "Вы не пройдете!"
 
 #: game.tra:60
+#, fuzzy
+#| msgid ""
+#| "Ahhh, this is a fine battle that shall ring throughout the planes!"
+msgctxt "g_tthae1"
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
 msgstr "Ах, это отличная битва, о которой узнают на всех планах!"
 
 #: game.tra:61
+#, fuzzy
+#| msgid "We children of Bhaal cannot be stopped!"
+msgctxt "sarevo13"
 msgid "We children of Bhaal cannot be stopped!"
 msgstr "Нас, детей Баала, нельзя остановить!"
 
 #: game.tra:62
+#, fuzzy
+#| msgid "Ha!  This arena I know well!!"
+msgctxt "sarevo14"
 msgid "Ha!  This arena I know well!!"
 msgstr "Ха!  Это я хорошо умею!"
 
 #: game.tra:63
+#, fuzzy
+#| msgid "I shall carve a path, if need be."
+msgctxt "sarevo35"
 msgid "I shall carve a path, if need be."
 msgstr "Я проделаю путь, если понадобится."
 
 #: game.tra:64
+#, fuzzy
+#| msgid "As you wish."
+msgctxt "sarevo36"
 msgid "As you wish."
 msgstr "Как пожелаешь."
 
 #: game.tra:65
+#, fuzzy
+#| msgid "Hmph.  Not what I would have done."
+msgctxt "sarevo37"
 msgid "Hmph.  Not what I would have done."
 msgstr "Хм.   Я бы сделал не так."
 
 #: game.tra:66
+#, fuzzy
+#| msgid "So you say."
+msgctxt "sarevo38"
 msgid "So you say."
 msgstr "Как скажешь."
 
 #: game.tra:67
+#, fuzzy
+#| msgid ""
+#| "My music is superior to yours, Eldoth, I was taught at the college in "
+#| "Berdusk."
+msgctxt "garrk30"
 msgid ""
 "My music is superior to yours, Eldoth, I was taught at the college in "
 "Berdusk."
 msgstr "Моя музыка лучше твоей, Элдот.  Я обучался в колледже в Бердуске."
 
 #: game.tra:68
+#, fuzzy
+#| msgid "I can't stand by and just let this happen."
+msgctxt "garrk06"
 msgid "I can't stand by and just let this happen."
 msgstr "Я не могу стоять в стороне и позволить этому произойти."
 
 #: game.tra:69
+#, fuzzy
+#| msgid "By the ice breath of Auril!"
+msgctxt "g_ttbra1"
 msgid "By the ice breath of Auril!"
 msgstr "Ледяным дыханием Орил!"
 
 #: game.tra:70
+#, fuzzy
+#| msgid "You're the finest group of friends I've ever had."
+msgctxt "skie04"
 msgid "You're the finest group of friends I've ever had."
 msgstr "Вы лучшие друзья, которые у меня были."
 
 #: game.tra:71
+#, fuzzy
+#| msgid ""
+#| "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
+msgctxt "xzarr01"
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
 msgstr "Montaron, ты такой РАЗДРАЖАЩИЙ!  Это меня беспокоит!"
 
 #: game.tra:72
+#, fuzzy
+#| msgid "How would you like my sword tickling your innards?"
+msgctxt "shart34"
 msgid "How would you like my sword tickling your innards?"
 msgstr "Как тебе понравится, если мой меч пощекочет твои кишки?"
 
 #: game.tra:130
+#, fuzzy
+#| msgid "You evil ways end here!"
+msgctxt "g_ttaja1"
 msgid "You evil ways end here!"
 msgstr "Твои злодеяния подошли к концу!"
 
 #: game.tra:131
+#, fuzzy
+#| msgid "Draw steel!"
+msgctxt "g_ttaja2"
 msgid "Draw steel!"
 msgstr "К оружию!"
 
 #: game.tra:132
+#, fuzzy
+#| msgid "Defend yourselves!"
+msgctxt "g_ttkiv1"
 msgid "Defend yourselves!"
 msgstr "Защищайтесь!"
 
 #: game.tra:133
+#, fuzzy
+#| msgid "You soul is forfeit!"
+msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
 msgstr "Твоя душа потеряна!"
 
@@ -832,14 +960,137 @@ msgstr ""
 "Бесконечные снаряды для пращи"
 
 #: game.tra:221
+#, fuzzy
+#| msgid ""
+#| "When you're being attacked, disengage for a short time, then get back at "
+#| "that enemy."
 msgid ""
-"When you're being attacked, disengage for a short time, then get back at "
-"that enemy."
+"When you're being attacked, disengage for a short time, then get back at the"
+" enemy."
 msgstr "Если на тебя напали, отступи, а затем вернись в бой."
 
 #: game.tra:222
 msgid "Don't disengage, even if you're being attacked."
 msgstr "Не убегай, даже если на тебя напали."
+
+#: game.tra:223
+msgid "In combat, don't attack enemies, unless I tell you to."
+msgstr ""
+
+#: game.tra:224
+msgid "In combat, attack enemies when you see them."
+msgstr ""
+
+#: game.tra:225
+msgid ""
+"In combat, attack enemies when you see them, prioritizing spellcasters."
+msgstr ""
+
+#: game.tra:226
+msgid "Here, take this potion."
+msgstr ""
+
+#: game.tra:227
+msgid "(Give a healing potion)."
+msgstr ""
+
+#: game.tra:228
+msgid "(Give an extra healing potion)."
+msgstr ""
+
+#: game.tra:229
+msgid "(Give a superior healing potion)."
+msgstr ""
+
+#: game.tra:230
+msgid "(Give a fire resistance potion)."
+msgstr ""
+
+#: game.tra:231
+msgid "(Give an invisibility potion)."
+msgstr ""
+
+#: game.tra:232
+msgid "(Give a oil of speed)."
+msgstr ""
+
+#: game.tra:233
+msgid "(Give an elixir of health)."
+msgstr ""
+
+#: game.tra:234
+msgid "(Give a potion of absorption)."
+msgstr ""
+
+#: game.tra:235
+msgid "(Give a potion of agility)."
+msgstr ""
+
+#: game.tra:236
+msgid "(Give an antidote)."
+msgstr ""
+
+#: game.tra:237
+msgid "(Give a potion of clarity)."
+msgstr ""
+
+#: game.tra:238
+msgid "(Give a cold resistance potion)."
+msgstr ""
+
+#: game.tra:239
+msgid "(Give a potion of defence)."
+msgstr ""
+
+#: game.tra:240
+msgid "(Give a potion of fortitude)."
+msgstr ""
+
+#: game.tra:241
+msgid "(Give a potion of insulation)."
+msgstr ""
+
+#: game.tra:242
+msgid "(Give a potion of magic blocking)."
+msgstr ""
+
+#: game.tra:243
+msgid "(Give a potion of magic resistance)."
+msgstr ""
+
+#: game.tra:244
+msgid "(Give a potion of magic shielding)."
+msgstr ""
+
+#: game.tra:245
+#, fuzzy
+#| msgid "Potion of really mirrored eyes"
+msgid "(Give a potion of mirrored eyes)."
+msgstr "Зелье по-настоящему зеркальных глаз"
+
+#: game.tra:246
+msgid "(Give a potion of power)."
+msgstr ""
+
+#: game.tra:247
+msgid "(Give a potion of regeneration)."
+msgstr ""
+
+#: game.tra:248
+msgid "(Give a potion of strength)."
+msgstr ""
+
+#: game.tra:249
+msgid "(Give a potion of freedom)."
+msgstr ""
+
+#: game.tra:250
+msgid "(Give a potion of stone form)."
+msgstr ""
+
+#: game.tra:251
+msgid "Actually, take a goodberry."
+msgstr ""
 
 #: map_notes.tra:1
 msgid "Degrodel"
@@ -1226,6 +1477,18 @@ msgstr ""
 
 #: setup.tra:233
 msgid "More map notes"
+msgstr ""
+
+#: setup.tra:234
+msgid "Disable lightning during rain"
+msgstr ""
+
+#: setup.tra:235
+msgid "Mod romance cheats"
+msgstr ""
+
+#: setup.tra:236
+msgid "Unlimited goodberries stacking"
 msgstr ""
 
 #~ msgid "Only BG2:ToB engine is supported"
