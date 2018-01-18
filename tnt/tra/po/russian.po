@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2018-01-18 15:58+0000\n"
+"PO-Revision-Date: 2018-01-18 18:33+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -1051,7 +1051,7 @@ msgstr ""
 
 #: game.tra:242
 msgid "(Give a potion of magic blocking)."
-msgstr ""
+msgstr "(Дать зелье блокирования магии)."
 
 #: game.tra:243
 msgid "(Give a potion of magic resistance)."
