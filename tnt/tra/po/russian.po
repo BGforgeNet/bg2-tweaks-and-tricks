@@ -4,14 +4,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2018-01-18 18:33+0000\n"
+"PO-Revision-Date: 2018-06-18 08:22+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.17\n"
 
 #: game.tra:1
@@ -164,18 +165,14 @@ msgid "Die your final death!"
 msgstr "Умри наконец!"
 
 #: game.tra:38
-#, fuzzy
-#| msgid "Aaargh!  Kill says Boo, kill does Minsc!"
 msgctxt "minsc57"
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
 msgstr "Арргх! Бу говорить убивать, Минск убивает!"
 
 #: game.tra:39
-#, fuzzy
-#| msgid "Prepare to feel the wrath of my hamster!"
 msgctxt "g_ttmin1"
 msgid "Prepare to feel the wrath of my hamster!"
-msgstr "Готовьтесь почувствовать гнев моего хомяка!"
+msgstr "Готовься почувствовать гнев моего хомяка!"
 
 #: game.tra:40
 #, fuzzy
