@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2018-06-18 08:22+0000\n"
+"PO-Revision-Date: 2018-06-24 17:22+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: russian\n"
@@ -175,17 +175,11 @@ msgid "Prepare to feel the wrath of my hamster!"
 msgstr "Готовься почувствовать гнев моего хомяка!"
 
 #: game.tra:40
-#, fuzzy
-#| msgid "Your end is near at hand, wail if you must!!"
 msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
 msgstr "Ваш конец близок, плачьте, если хотите!"
 
 #: game.tra:41
-#, fuzzy
-#| msgid ""
-#| "Blast and bother!  These locks have always given me trouble!  Trouble they "
-#| "are!"
 msgctxt "alora02"
 msgid ""
 "Blast and bother!  These locks have always given me trouble!  Trouble they "
@@ -193,79 +187,56 @@ msgid ""
 msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
 
 #: game.tra:42
-#, fuzzy
-#| msgid "Walking alone on the Coastway road!  How smart is this?"
 msgctxt "quayl01"
 msgid "Walking alone on the Coastway road!  How smart is this?"
 msgstr "Ходить в одиночку по дорогам Побережья?  Что за умник это придумал?"
 
 #: game.tra:43
-#, fuzzy
-#| msgid "Calm yourself dear, we must proceed c-c-carefully."
 msgctxt "khald02"
 msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr "Успокойся дорогая, мы должны действовать ак-к-куратно."
+msgstr "Успокойся, дорогая, мы должны действовать ак-к-куратно."
 
 #: game.tra:44
-#, fuzzy
-#| msgid "Let us get this over with!"
 msgctxt "g_ttyos1"
 msgid "Let us get this over with!"
 msgstr "Давайте покончим с этим!"
 
 #: game.tra:45
-#, fuzzy
-#| msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
 msgctxt "aerie95"
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
 msgstr "Ааа! Спасите!  Помогите мне, пожалуйстааа!"
 
 #: game.tra:46
-#, fuzzy
-#| msgid "Oh, this is going to hurt you a LOT more than me!"
 msgctxt "aeri2540"
 msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr "О, вам будет НАМНОГО больнее, чем мне!"
+msgstr "О, тебе будет НАМНОГО больнее, чем мне!"
 
 #: game.tra:47
-#, fuzzy
-#| msgid "By all that is decent, I fight!"
 msgctxt "aeri2541"
 msgid "By all that is decent, I fight!"
 msgstr "Я сражаюсь за все хорошее!"
 
 #: game.tra:48
-#, fuzzy
-#| msgid "Killing is our business, and business be good!"
 msgctxt "g_ttkor1"
 msgid "Killing is our business, and business be good!"
-msgstr "Наше дело - это убийства... и дело идет хорошо!"
+msgstr "Наше дело - убийства... и дело идет хорошо!"
 
 #: game.tra:49
-#, fuzzy
-#| msgid "Hahahaha!"
 msgctxt "g_ttkor2"
 msgid "Hahahaha!"
 msgstr "Хахаха!"
 
 #: game.tra:50
-#, fuzzy
-#| msgid "In Tyr's name we shall be victorious once and for all!"
 msgctxt "g_ttkel1"
 msgid "In Tyr's name we shall be victorious once and for all!"
 msgstr "Во имя Тира мы победим раз и навсегда!"
 
 #: game.tra:51
-#, fuzzy
-#| msgid "What can I do for you?"
 msgctxt "g_ttkag1"
 msgid "What can I do for you?"
-msgstr "Что я могу сделать для вас?"
+msgstr "Чем я могу помочь?"
 
 #: game.tra:52
-#, fuzzy
-#| msgid ""
-#| "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgctxt "montr01"
 msgid ""
 "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
@@ -273,46 +244,32 @@ msgstr ""
 "Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
 
 #: game.tra:53
-#, fuzzy
-#| msgid ""
-#| "Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgctxt "yeslk01"
 msgid ""
 "Aye, who's there now?  More smithing, or did ye burrow into another river?"
-msgstr "Да, что там опять?  Будем ковать, или снова наткнулись на реку?"
+msgstr "Да, что там опять?  Будем ковать, или снова докопались до реки?"
 
 #: game.tra:54
-#, fuzzy
-#| msgid "I have languished in these dismal vaults too long."
 msgctxt "g_ttxan1"
 msgid "I have languished in these dismal vaults too long."
 msgstr "Я слишком долго томился в этих мрачных пещерах."
 
 #: game.tra:55
-#, fuzzy
-#| msgid "Evil falls today!"
 msgctxt "nali2520"
 msgid "Evil falls today!"
 msgstr "Сегодня зло падет!"
 
 #: game.tra:56
-#, fuzzy
-#| msgid "If you fight, you die!  You cannot match our power!!"
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
-"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
+msgstr "Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
 
 #: game.tra:57
-#, fuzzy
-#| msgid "Helm's fury upon you all!!"
 msgctxt "anom2539"
 msgid "Helm's fury upon you all!!"
 msgstr "Вас настигнет гнев Хелма!"
 
 #: game.tra:58
-#, fuzzy
-#| msgid "By skill and might we shall prevail!!"
 msgctxt "anom2540"
 msgid "By skill and might we shall prevail!!"
 msgstr "Сила и умение помогут нам победить!"
