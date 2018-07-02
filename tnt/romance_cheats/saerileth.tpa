@@ -1,4 +1,4 @@
-ACTION_FOR script IN saerilet saeril25 BEGIN
+ACTION_FOR_EACH script IN saerilet saeril25 BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ BEGIN
     COPY_EXISTING ~%script%.bcs~ ~override~
       DECOMPILE_AND_PATCH BEGIN
