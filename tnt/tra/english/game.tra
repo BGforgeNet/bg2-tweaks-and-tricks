@@ -149,9 +149,11 @@ Not usable by:
 @157 = ~Bag of Holding~
 @158 = ~As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount.~
 @160 = ~Returning throwing axe~
-@161 = ~The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.
+@161 = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.
 
-This particular axe has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.
+This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+
+Strength damage bonus is applied when using this weapon.
 
 STATISTICS:
 
@@ -169,9 +171,11 @@ Not Usable By:
  Thief~
 
 @162 = ~Returning throwing dagger~
-@163 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.
+@163 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.
 
-This particular dagger has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.
+This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+
+Strength damage bonus is not applied when using this weapon.
 
 STATISTICS:
 
@@ -186,9 +190,11 @@ Not Usable By:
  Cleric~
 
 @164 = ~Returning dart~
-@165 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. 
+@165 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
 
-This particular dart has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.
+This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+
+Strength damage bonus is not applied when using this weapon.
 
 STATISTICS:
 
@@ -306,3 +312,7 @@ Unlimited plain bullets~
 @249 = ~(Give a potion of freedom).~
 @250 = ~(Give a potion of stone form).~
 @251 = ~Actually, take a goodberry.~
+
+
+//traps
+@252 = ~Arrow trap~
