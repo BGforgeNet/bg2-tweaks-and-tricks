@@ -177,6 +177,56 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   END
 END
 
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to tra
+  potn08 => 227 //healing
+  potn52 => 228 //extra healing
+  potn55 => 229 //superior healing
+  potn17 => 233 //health
+  potn20 => 236 //antidote
+  potn02 => 230 //fire res
+  potn10 => 231 //invis
+  potn14 => 232 //speed
+  potn18 => 234 //absorption
+  potn19 => 235 //agility
+  potn20 => 236 //antidote
+  potn21 => 237 //clarity
+  potn22 => 238 //cold res
+  potn24 => 239 //defence
+  potn28 => 240 //fortitude
+  potn31 => 241 //insulation
+  potn33 => 242 //magic blocking
+  potn34 => 243 //magic res
+  potn35 => 244 //magic shield
+  potn38 => 245 //mirrored eyes
+  potn41 => 246 //power
+  potn42 => 247 //regen
+  potn44 => 248 //strength
+  potn45 => 249 //freedom
+  potn46 => 250 //stone form
+END
+
+OUTER_SPRINT action_drink ~~
+ACTION_PHP_EACH potion_string AS potion => string BEGIN
+  OUTER_SPRINT EVAL action_drink
+~~~~~
+    %action_drink%
+
+    + ~PartyHasItem("%potion%")~ //healing
+    + @%string%
+        DO ~
+          CreateCreature("g_spy1",[-1.-1],0)
+          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
+          ActionOverride("g_spy1", DestroyItem("%potion%") )
+          ActionOverride("g_spy1", DestroySelf() )
+          CreateItem("%potion%", 1, 0, 0)
+          UseItem("%potion%", Myself)
+        ~
+    + g_familiar_confirm
+~~~~~
+END
+
+
 //New dialog options
 ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
@@ -207,3 +257,4 @@ THEN
 END
 >>>>>>>>
 COMPILE ~.../tnt-inlined/g_spy1.baf~
+
