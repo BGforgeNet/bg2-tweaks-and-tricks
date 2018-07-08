@@ -11,8 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.17\n"
 
 #: game.tra:1
@@ -262,7 +261,8 @@ msgstr "Сегодня зло падет!"
 #: game.tra:56
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr "Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
+msgstr ""
+"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
 
 #: game.tra:57
 msgctxt "anom2539"
@@ -506,10 +506,30 @@ msgid "Returning throwing axe"
 msgstr "Возвращающийся метательный топор"
 
 #: game.tra:161
+#, fuzzy
+#| msgid ""
+#| "The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.\n"
+#| "\n"
+#| "This particular axe has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+#| "\n"
+#| "STATISTICS:\n"
+#| "\n"
+#| "Damage:  1D6 +1\n"
+#| "Damage type:  missile (piercing)\n"
+#| "Weight: 5\n"
+#| "Speed Factor: 4\n"
+#| "Proficiency Type:  Axe\n"
+#| "Type:  1-handed\n"
+#| "Requires: 4 Strength\n"
+#| "Not Usable By:\n"
+#| " Druid\n"
+#| " Cleric\n"
+#| " Mage \n"
+#| " Thief"
 msgid ""
-"The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.\n"
+"The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.\n"
 "\n"
-"This particular axe has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+"This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -550,10 +570,27 @@ msgid "Returning throwing dagger"
 msgstr "Возвращающийся метательный кинжал"
 
 #: game.tra:163
+#, fuzzy
+#| msgid ""
+#| "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.\n"
+#| "\n"
+#| "This particular dagger has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+#| "\n"
+#| "STATISTICS:\n"
+#| "\n"
+#| "Damage:  1D4\n"
+#| "Damage type:   missile (piercing)\n"
+#| "Weight: 1\n"
+#| "Speed Factor: 2\n"
+#| "Proficiency Type: Dagger\n"
+#| "Type:  1-handed\n"
+#| "Requires: 3 Strength\n"
+#| "Not Usable By:\n"
+#| " Cleric"
 msgid ""
-"The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.\n"
+"The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.\n"
 "\n"
-"This particular dagger has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+"This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -588,10 +625,26 @@ msgid "Returning dart"
 msgstr "Возвращающийся дротик"
 
 #: game.tra:165
+#, fuzzy
+#| msgid ""
+#| "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n"
+#| "\n"
+#| "This particular dart has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+#| "\n"
+#| "STATISTICS:\n"
+#| "\n"
+#| "Damage:  1D3\n"
+#| "Damage type:  missile (piercing)\n"
+#| "Weight: 0\n"
+#| "Speed Factor: 2\n"
+#| "Proficiency Type: Dart\n"
+#| "Type:  1-handed\n"
+#| "Not Usable By:\n"
+#| " Cleric"
 msgid ""
-"The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n"
+"The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.\n"
 "\n"
-"This particular dart has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+"This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -998,6 +1051,26 @@ msgstr "(Дать зелье каменной формы)."
 msgid "Actually, take a goodberry."
 msgstr "Вообще-то, возьми хорошую ягоду."
 
+#: game.tra:252
+msgid "Arrow trap"
+msgstr ""
+
+#: game.tra:253
+msgid "missile (piercing)"
+msgstr ""
+
+#: game.tra:254
+#, fuzzy
+#| msgid "Farthing"
+msgid "crushing"
+msgstr "Фарфинг"
+
+#: game.tra:255
+#, fuzzy
+#| msgid "Farthing"
+msgid "slashing"
+msgstr "Фарфинг"
+
 #: map_notes.tra:1
 msgid "Degrodel"
 msgstr "Дегродел"
@@ -1396,6 +1469,22 @@ msgstr "Читы для романов с персонажами из модов
 #: setup.tra:236
 msgid "Unlimited goodberries stacking"
 msgstr "Неограниченное складывание хороших ягод"
+
+#: setup.tra:237
+msgid "Add strength bonus"
+msgstr ""
+
+#: setup.tra:238
+msgid "Make axes slashing and hammers blunt"
+msgstr ""
+
+#: setup.tra:239
+msgid "Both of the above options"
+msgstr ""
+
+#: setup.tra:240
+msgid "Throwing weapons damage"
+msgstr ""
 
 #~ msgid "Only BG2:ToB engine is supported"
 #~ msgstr "Требует движок BG2:ToB"

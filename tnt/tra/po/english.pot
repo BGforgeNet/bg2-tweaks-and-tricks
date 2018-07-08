@@ -475,9 +475,9 @@ msgstr ""
 
 #: game.tra:161
 msgid ""
-"The hand axe or throwing axe is also known as a hatchet.  The axe blade has a sharp steel tip, counterbalanced by a pointed fluke.  The short handle has a point on the bottom and the head may have a spike on the top.\n"
+"The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.\n"
 "\n"
-"This particular axe has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+"This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -501,9 +501,9 @@ msgstr ""
 
 #: game.tra:163
 msgid ""
-"The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.  Unlike a dagger, this one has a smaller handle and is balanced differently.\n"
+"The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.\n"
 "\n"
-"This particular dagger has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+"This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -524,9 +524,9 @@ msgstr ""
 
 #: game.tra:165
 msgid ""
-"The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. \n"
+"The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.\n"
 "\n"
-"This particular dart has a minor enchantment applied.  It always returns to user's hand.  Still, it strikes as normal weapon, not a magical one.\n"
+"This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -898,6 +898,22 @@ msgstr ""
 
 #: game.tra:251
 msgid "Actually, take a goodberry."
+msgstr ""
+
+#: game.tra:252
+msgid "Arrow trap"
+msgstr ""
+
+#: game.tra:253
+msgid "missile (piercing)"
+msgstr ""
+
+#: game.tra:254
+msgid "crushing"
+msgstr ""
+
+#: game.tra:255
+msgid "slashing"
 msgstr ""
 
 #: map_notes.tra:1
@@ -1287,4 +1303,20 @@ msgstr ""
 
 #: setup.tra:236
 msgid "Unlimited goodberries stacking"
+msgstr ""
+
+#: setup.tra:237
+msgid "Add strength bonus"
+msgstr ""
+
+#: setup.tra:238
+msgid "Make axes slashing and hammers blunt"
+msgstr ""
+
+#: setup.tra:239
+msgid "Both of the above options"
+msgstr ""
+
+#: setup.tra:240
+msgid "Throwing weapons damage"
 msgstr ""
