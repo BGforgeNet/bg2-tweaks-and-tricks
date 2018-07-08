@@ -1,0 +1,62 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY typedamage BEGIN
+  21 => 2 //hammer - crushing
+  25 => 3 //axe - slashing
+END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY typetra BEGIN
+  21 => 254 //crushing
+  25 => 255 //slashing
+END
+
+INCLUDE ~%MOD_FOLDER%/lib/macro.tpa~
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  READ_SHORT 0x1c type
+  PATCH_IF type == 0x19 BEGIN //axe
+    damage_type = $typedamage(~%type%~)
+    damage_tra = $typetra(~%type%~)
+    GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
+    PHP_EACH h_array AS int => h_off BEGIN
+      READ_BYTE h_off attack_type
+      PATCH_IF attack_type == 2 BEGIN //ranged
+        PATCH_IF damage == 1 BEGIN
+          WRITE_SHORT (h_off + 0x1c) damage_type
+          PATCH_FOR_EACH off IN 0x50 0x54 BEGIN
+            LPF g_replace_strref
+              INT_VAR
+                offset = off
+                old_substring_traref = 253 //missile (piercing)
+                new_substring_traref = damage_tra //slashing
+             END
+          END
+        END
+        PATCH_IF strength == 1 BEGIN
+          WRITE_LONG (h_off + 0x26) (THIS BAND BIT0) //strength bonus
+        END
+      END
+    END
+  END
+/*
+  PATCH_IF type == 0x15 BEGIN //hammer
+    GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
+    PHP_EACH h_array AS int => h_off BEGIN
+      READ_BYTE h_off attack_type
+      PATCH_IF attack_type == 2 BEGIN //ranged
+        PATCH_IF damage == 1 BEGIN
+          WRITE_SHORT (h_off + 0x1c) 2 //crushing
+          PATCH_FOR_EACH off IN 0x50 0x54 BEGIN
+            LPF g_replace_strref
+              INT_VAR
+                offset = off
+                old_substring_traref = 253 //missile (piercing)
+                new_substring_traref = 254 //crushing
+             END
+          END
+        END
+        PATCH_IF strength == 1 BEGIN
+          WRITE_LONG (h_off + 0x26) (THIS BAND BIT0) //strength bonus
+        END
+      END
+    END
+  END
+*/
+BUT_ONLY
