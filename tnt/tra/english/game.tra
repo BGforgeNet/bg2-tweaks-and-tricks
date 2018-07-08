@@ -153,8 +153,6 @@ Not usable by:
 
 This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
 
-Strength damage bonus is applied when using this weapon.
-
 STATISTICS:
 
 Damage:  1D6 +1
@@ -175,8 +173,6 @@ Not Usable By:
 
 This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
 
-Strength damage bonus is not applied when using this weapon.
-
 STATISTICS:
 
 Damage:  1D4
@@ -193,8 +189,6 @@ Not Usable By:
 @165 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
 
 This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
-
-Strength damage bonus is not applied when using this weapon.
 
 STATISTICS:
 
@@ -316,3 +310,7 @@ Unlimited plain bullets~
 
 //traps
 @252 = ~Arrow trap~
+
+@253 = ~missile (piercing)~
+@254 = ~crushing~
+@255 = ~slashing~
