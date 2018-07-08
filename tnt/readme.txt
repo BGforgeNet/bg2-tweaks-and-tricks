@@ -181,14 +181,13 @@ Example 1: you drink a potion of fire resistance and get +50% fire resistance. A
 
 Example 2: you drink a potion of fire resistance and use a scroll of fire resistance. Now you have +100% fire resistance.
 
-#### Weightless ammo
-Make throwing daggers and axes weightless
-
 #### Sensible Wand of Frost
 In vanilla, Wand of Frost must target on a creature, but affects an area, which makes no sense. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Cone of Cold).
 
 #### Hassle-free ammo
-Add returning non-magical ammo (darts, arrows, axes, daggers, etc) to Taerom and Ribald, at a fair price.
+This component does 2 things
+* Changes all ammo and stackable throwing weapons to have 0 weight. Kind of cheese.
+* Adds returning **non-magical** ammo and throwing weapons to Taerom and Ribald, at a fair price.
 
 #### Potion of really mirrored eyes
 Contrary to the description, Potion of Mirrored Eyes doesn't protect from all gaze attacks. Demons' Death Gaze, for example, will bypass it. This component fixes that oversight, and makes the Potion realiable against ANY gaze attack.
