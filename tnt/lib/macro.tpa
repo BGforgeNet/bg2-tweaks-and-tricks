@@ -1,0 +1,23 @@
+DEFINE_PATCH_FUNCTION g_replace_strref
+  INT_VAR
+    offset = 0
+    old_substring_traref = 0
+    new_substring_traref = 0
+BEGIN
+  READ_STRREF offset old_string ELSE ~~
+  READ_LONG offset old_string_num
+  PATCH_IF (NOT (old_string STRING_EQUAL ~~))
+            AND (old_string_num != "-1")
+  BEGIN
+    SPRINT old_substring (AT old_substring_traref)
+    SPRINT new_substring (AT new_substring_traref)
+//    PATCH_PRINT ~old string: %old_string%~
+//    PATCH_PRINT ~old substring: %old_substring%~
+//    PATCH_PRINT ~new substring: %new_substring%~
+    INNER_PATCH_SAVE new_string ~%old_string%~ BEGIN
+      REPLACE_TEXTUALLY ~%old_substring%~ ~%new_substring%~
+    END
+//    PATCH_PRINT ~new string: %new_string%~
+    SAY_EVALUATED offset ~%new_string%~
+  END
+END
