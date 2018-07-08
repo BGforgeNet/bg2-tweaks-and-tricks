@@ -72,7 +72,8 @@ ACTION_PHP_EACH item_name AS item => name BEGIN
   BUT_ONLY
 END
 
-//add to Taerum and Ribald
+
+//add to Taerom and Ribald
 ACTION_FOR_EACH store IN taerum ribald BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%store%.sto~ BEGIN
     COPY_EXISTING ~%store%.sto~ ~override~
@@ -85,3 +86,38 @@ ACTION_FOR_EACH store IN taerum ribald BEGIN
     BUT_ONLY
   END
 END
+
+
+//remove weight and maximize stacks
+ACTION_DEFINE_ASSOCIATIVE_ARRAY item_type BEGIN
+  arrow => 0x5
+  bullet => 0xe
+  dagger => 0x10
+  hammer => 0x15
+  dart => 0x18
+  axe => 0x19
+  bolt => 0x1f
+END
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  READ_SHORT 0x38 stack
+  PATCH_IF stack > 1 BEGIN
+    READ_SHORT 0x1c type
+    match = 0
+    PHP_EACH item_type AS item => itype BEGIN
+      PATCH_IF type == itype BEGIN
+        GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
+        PHP_EACH h_array AS int => h_off BEGIN
+          READ_BYTE h_off attack_type
+          PATCH_IF attack_type == 2 BEGIN //ranged
+            match = 1 //ranged weapon which stacks
+          END
+        END
+      END
+    END
+    PATCH_IF match == 1 BEGIN
+      WRITE_SHORT 0x38 65535 //max stack
+      WRITE_LONG 0x4c 0 //weight
+    END
+  END
+BUT_ONLY
