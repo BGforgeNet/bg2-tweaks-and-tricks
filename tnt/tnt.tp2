@@ -137,6 +137,29 @@ INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
 
 
 //ITEM TWEAKS
+BEGIN @166 /* Hassle-free ammo */
+GROUP @228 /* Items */
+INCLUDE ~%MOD_FOLDER%/hassle_free_ammo/main.tpa~
+
+BEGIN @237 /* Add strength bonus */
+GROUP @228 /* Items */
+SUBCOMPONENT @240 /* Throwing weapons damage */
+OUTER_SET strength = 1
+OUTER_SET damage = 0
+INCLUDE ~%MOD_FOLDER%/throwing_damage/main.tpa~
+BEGIN @238 /* Make axes slashing and hammber blunt */
+GROUP @228 /* Items */
+SUBCOMPONENT @240 /* Throwing weapons damage */
+OUTER_SET strength = 0
+OUTER_SET damage = 1
+INCLUDE ~%MOD_FOLDER%/throwing_damage/main.tpa~
+BEGIN @239 /* Both of the above options */
+GROUP @228 /* Items */
+SUBCOMPONENT @240 /* Throwing weapons damage */
+OUTER_SET strength = 1
+OUTER_SET damage = 1
+INCLUDE ~%MOD_FOLDER%/throwing_damage/main.tpa~
+
 BEGIN @78 /* Remove blur graphics from items */
 GROUP @228 /* Items */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
@@ -152,9 +175,6 @@ GROUP @228 /* Items */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 INCLUDE ~%MOD_FOLDER%/potions_no_stack/main.tph~
 
-BEGIN @128 /* Weightless ammo */
-GROUP @228 /* Items */
-INCLUDE ~%MOD_FOLDER%/ammo_weight/main.tpa~
 
 BEGIN @146 //AoE
 GROUP @228 /* Items */
@@ -166,10 +186,6 @@ GROUP @228 /* Items */
 SUBCOMPONENT @144 /* Sensible wand of frost */
 OUTER_SET cone = 0
 INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
-
-BEGIN @166 /* Hassle-free ammo */
-GROUP @228 /* Items */
-INCLUDE ~%MOD_FOLDER%/hassle_free_ammo/main.tpa~
 
 BEGIN @223 /* Potion of really mirrored eyes */
 GROUP @228 /* Items */
@@ -316,3 +332,6 @@ INCLUDE ~%MOD_FOLDER%/romance_cheats/main.tpa~
 
 BEGIN @236 /* Unlimited goodberries stacking */
 INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
+
+BEGIN ~thieves str~
+INCLUDE ~%MOD_FOLDER%/improved_strongholds/thief.tpa~
