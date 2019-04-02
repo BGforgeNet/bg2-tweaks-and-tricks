@@ -8,7 +8,7 @@
 
 [__Download__](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
  | [__Support__](https://github.com/burner1024/bg2-tweaks-and-tricks/issues)
- | [__Discussion__](https://forum.bgforge.net/viewtopic.php?f=4&t=15&p=33)
+ | [__Discussion__](https://forums.bgforge.net/viewtopic.php?f=4&t=15&p=33)
  | [__Help translating__](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 
 This is a collection of tweaks to:
