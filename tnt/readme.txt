@@ -6,8 +6,8 @@
 <img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
 </a>
 
-[__Download__](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
- | [__Support__](https://github.com/burner1024/bg2-tweaks-and-tricks/issues)
+[__Download__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
+ | [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
  | [__Discussion__](https://forums.bgforge.net/viewtopic.php?f=4&t=15&p=33)
  | [__Help translating__](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 
@@ -290,7 +290,7 @@ This component mostly improves messengers and messages, making them more faster 
 Allow Taerom to make more ankheg armors
 
 ## Installation
-- Download tnt.zip from the [latest release page](https://github.com/burner1024/bg2-tweaks-and-tricks/releases/latest)
+- Download tnt.zip from the [latest release page](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
 - Unzip it
 - Move "tnt" and "setup-tnt.exe" into the game directory
 - Launch setup-tnt.exe
@@ -376,4 +376,4 @@ The mod is [CC BY-NC-SA v4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/
 Weidu is GPLv3
 
 ## Author
-burner1024 @ github
+Magus @ BGforge
