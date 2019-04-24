@@ -281,32 +281,31 @@ Unlimited plain bullets~
 @224 = ~In combat, attack enemies when you see them.~
 @225 = ~In combat, attack enemies when you see them, prioritizing spellcasters.~
 @226 = ~Here, take this potion.~
-@227 = ~(Give a healing potion).~
-@228 = ~(Give an extra healing potion).~
-@229 = ~(Give a superior healing potion).~
-@230 = ~(Give a fire resistance potion).~
-@231 = ~(Give an invisibility potion).~
-@232 = ~(Give a oil of speed).~
-@233 = ~(Give an elixir of health).~
-@234 = ~(Give a potion of absorption).~
-@235 = ~(Give a potion of agility).~
-@236 = ~(Give an antidote).~
-@237 = ~(Give a potion of clarity).~
-@238 = ~(Give a cold resistance potion).~
-@239 = ~(Give a potion of defence).~
-@240 = ~(Give a potion of fortitude).~
-@241 = ~(Give a potion of insulation).~
-@242 = ~(Give a potion of magic blocking).~
-@243 = ~(Give a potion of magic resistance).~
-@244 = ~(Give a potion of magic shielding).~
-@245 = ~(Give a potion of mirrored eyes).~
-@246 = ~(Give a potion of power).~
-@247 = ~(Give a potion of regeneration).~
-@248 = ~(Give a potion of strength).~
-@249 = ~(Give a potion of freedom).~
-@250 = ~(Give a potion of stone form).~
+@227 = ~(Give a Healing potion).~
+@228 = ~(Give an Extra Healing potion).~
+@229 = ~(Give a Superior Healing potion).~
+@230 = ~(Give a Fire Resistance potion).~
+@231 = ~(Give an Invisibility potion).~
+@232 = ~(Give a oil of Speed).~
+@233 = ~(Give an elixir of Health).~
+@234 = ~(Give a potion of Absorption).~
+@235 = ~(Give a potion of Agility).~
+@236 = ~(Give an Antidote).~
+@237 = ~(Give a potion of Clarity).~
+@238 = ~(Give a Cold Resistance potion).~
+@239 = ~(Give a potion of Defence).~
+@240 = ~(Give a potion of Fortitude).~
+@241 = ~(Give a potion of Insulation).~
+@242 = ~(Give a potion of Magic Blocking).~
+@243 = ~(Give a potion of Magic Resistance).~
+@244 = ~(Give a potion of Magic Shielding).~
+@245 = ~(Give a potion of Mirrored Eyes).~
+@246 = ~(Give a potion of Power).~
+@247 = ~(Give a potion of Regeneration).~
+@248 = ~(Give a potion of Strength).~
+@249 = ~(Give a potion of Freedom).~
+@250 = ~(Give a potion of Stone Form).~
 @251 = ~Actually, take a goodberry.~
-
 
 //traps
 @252 = ~Arrow trap~
@@ -314,3 +313,18 @@ Unlimited plain bullets~
 @253 = ~missile (piercing)~
 @254 = ~crushing~
 @255 = ~slashing~
+
+//more smarter fams
+@256 = ~(Give a potion of Hill Giant Strength).~
+@257 = ~(Give a potion of Frost Giant Strength).~
+@258 = ~(Give a potion of Fire Giant Strength).~
+@259 = ~(Give a potion of Cloud Giant Strength).~
+@260 = ~(Give a potion of Storm Giant Strength).~
+@261 = ~(Give a potion of Heroism).~
+@262 = ~(Give a potion of Invulnerability).~
+@263 = ~(Give a potion of Stone Giant Strength).~
+
+@264 = ~(Give a potion of Master Thievery).~
+@265 = ~(Give a potion of Mind Focusing).~
+@266 = ~(Give a potion of Perception).~
+@267 = ~(Give a Rogue's potion of Frost Giant Strength).~

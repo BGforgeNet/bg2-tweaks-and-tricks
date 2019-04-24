@@ -178,6 +178,7 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
 END
 
 
+//potions available to all
 ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to tra
   potn08 => 227 //healing
   potn52 => 228 //extra healing
@@ -198,6 +199,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to t
   potn33 => 242 //magic blocking
   potn34 => 243 //magic res
   potn35 => 244 //magic shield
+  potn37 => 265 //mind focusing
   potn38 => 245 //mirrored eyes
   potn41 => 246 //power
   potn42 => 247 //regen
@@ -206,13 +208,32 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to t
   potn46 => 250 //stone form
 END
 
-OUTER_SPRINT action_drink ~~
+//warrior type
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_warrior BEGIN
+  potn03 => 256 //hill giant strength
+  potn12 => 263 //stone giant strength
+  potn04 => 257 //frost giant strength
+  potn05 => 258 //fire giant strength
+  potn06 => 259 //cloud giant strength
+  potn07 => 260 //storm giant strength
+  potn09 => 261 //heroism
+  potn11 => 262 //invulnerability
+END
+
+//thief type
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_thief BEGIN
+  potn36 => 264 //master thievery
+  potn39 => 266 //perception
+  potn56 => 267 //rogue's frost giant strength
+END
+
+OUTER_SPRINT action_drink ~~ //using spy because if familiar takes an item it ends in PC inventory
 ACTION_PHP_EACH potion_string AS potion => string BEGIN
   OUTER_SPRINT EVAL action_drink
 ~~~~~
     %action_drink%
 
-    + ~PartyHasItem("%potion%")~ //healing
+    + ~PartyHasItem("%potion%")~
     + @%string%
         DO ~
           CreateCreature("g_spy1",[-1.-1],0)
@@ -225,6 +246,54 @@ ACTION_PHP_EACH potion_string AS potion => string BEGIN
     + g_familiar_confirm
 ~~~~~
 END
+
+//warrior potions - mephit, quasit, spider (wtp)
+ACTION_PHP_EACH potion_string_warrior AS potion => string BEGIN
+  OUTER_SPRINT EVAL action_drink
+~~~~~
+    %action_drink%
+
+    + ~PartyHasItem("%potion%")
+       OR(4)
+        Race(Myself, MEPHIT)
+        Name("FAMQUAS", Myself)
+        Name("WTPQUASI", Myself)
+        Name("WTPSPIDE", Myself)
+    ~
+    + @%string%
+        DO ~
+          CreateCreature("g_spy1",[-1.-1],0)
+          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
+          ActionOverride("g_spy1", DestroyItem("%potion%") )
+          ActionOverride("g_spy1", DestroySelf() )
+          CreateItem("%potion%", 1, 0, 0)
+          UseItem("%potion%", Myself)
+        ~
+    + g_familiar_confirm
+~~~~~
+END
+
+
+//thievery potions - easy to check by class
+ACTION_PHP_EACH potion_string_thief AS potion => string BEGIN
+  OUTER_SPRINT EVAL action_drink
+~~~~~
+    %action_drink%
+
+    + ~PartyHasItem("%potion%") Class(Myself,THIEF_ALL)~
+    + @%string%
+        DO ~
+          CreateCreature("g_spy1",[-1.-1],0)
+          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
+          ActionOverride("g_spy1", DestroyItem("%potion%") )
+          ActionOverride("g_spy1", DestroySelf() )
+          CreateItem("%potion%", 1, 0, 0)
+          UseItem("%potion%", Myself)
+        ~
+    + g_familiar_confirm
+~~~~~
+END
+
 
 
 //New dialog options

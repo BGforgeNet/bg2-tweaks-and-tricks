@@ -335,3 +335,6 @@ INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
 
 BEGIN ~thieves str~
 INCLUDE ~%MOD_FOLDER%/improved_strongholds/thief.tpa~
+
+BEGIN ~Limited stock~
+INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
