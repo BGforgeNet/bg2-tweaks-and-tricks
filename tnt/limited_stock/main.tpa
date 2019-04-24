@@ -1,0 +1,12 @@
+COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
+  GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
+  PHP_EACH sold AS int => it_off BEGIN
+    READ_LONG (it_off + 0x18) infinite
+    PATCH_IF infinite == 1 BEGIN
+      WRITE_LONG (it_off + 0x18) 0 //limited
+      WRITE_LONG (it_off + 0x14) 10 // quantity
+      READ_ASCII it_off item_name
+      PATCH_PRINT "%SOURCE_FILE%: limited %item_name% quantity to 10"
+    END
+  END
+BUT_ONLY
