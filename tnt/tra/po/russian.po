@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2019-07-23 15:56+0000\n"
+"PO-Revision-Date: 2019-07-23 15:58+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
 "tweaks-and-tricks/ru/>\n"
@@ -871,8 +871,6 @@ msgid "(Give a Fire Resistance potion)."
 msgstr "(Дать зелье сопротивления огню)."
 
 #: game.tra:231
-#, fuzzy
-#| msgid "(Give an invisibility potion)."
 msgid "(Give an Invisibility potion)."
 msgstr "(Дать зелье невидимости)."
 
