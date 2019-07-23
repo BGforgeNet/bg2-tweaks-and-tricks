@@ -801,99 +801,99 @@ msgid "Here, take this potion."
 msgstr ""
 
 #: game.tra:227
-msgid "(Give a healing potion)."
+msgid "(Give a Healing potion)."
 msgstr ""
 
 #: game.tra:228
-msgid "(Give an extra healing potion)."
+msgid "(Give an Extra Healing potion)."
 msgstr ""
 
 #: game.tra:229
-msgid "(Give a superior healing potion)."
+msgid "(Give a Superior Healing potion)."
 msgstr ""
 
 #: game.tra:230
-msgid "(Give a fire resistance potion)."
+msgid "(Give a Fire Resistance potion)."
 msgstr ""
 
 #: game.tra:231
-msgid "(Give an invisibility potion)."
+msgid "(Give an Invisibility potion)."
 msgstr ""
 
 #: game.tra:232
-msgid "(Give a oil of speed)."
+msgid "(Give a oil of Speed)."
 msgstr ""
 
 #: game.tra:233
-msgid "(Give an elixir of health)."
+msgid "(Give an elixir of Health)."
 msgstr ""
 
 #: game.tra:234
-msgid "(Give a potion of absorption)."
+msgid "(Give a potion of Absorption)."
 msgstr ""
 
 #: game.tra:235
-msgid "(Give a potion of agility)."
+msgid "(Give a potion of Agility)."
 msgstr ""
 
 #: game.tra:236
-msgid "(Give an antidote)."
+msgid "(Give an Antidote)."
 msgstr ""
 
 #: game.tra:237
-msgid "(Give a potion of clarity)."
+msgid "(Give a potion of Clarity)."
 msgstr ""
 
 #: game.tra:238
-msgid "(Give a cold resistance potion)."
+msgid "(Give a Cold Resistance potion)."
 msgstr ""
 
 #: game.tra:239
-msgid "(Give a potion of defence)."
+msgid "(Give a potion of Defence)."
 msgstr ""
 
 #: game.tra:240
-msgid "(Give a potion of fortitude)."
+msgid "(Give a potion of Fortitude)."
 msgstr ""
 
 #: game.tra:241
-msgid "(Give a potion of insulation)."
+msgid "(Give a potion of Insulation)."
 msgstr ""
 
 #: game.tra:242
-msgid "(Give a potion of magic blocking)."
+msgid "(Give a potion of Magic Blocking)."
 msgstr ""
 
 #: game.tra:243
-msgid "(Give a potion of magic resistance)."
+msgid "(Give a potion of Magic Resistance)."
 msgstr ""
 
 #: game.tra:244
-msgid "(Give a potion of magic shielding)."
+msgid "(Give a potion of Magic Shielding)."
 msgstr ""
 
 #: game.tra:245
-msgid "(Give a potion of mirrored eyes)."
+msgid "(Give a potion of Mirrored Eyes)."
 msgstr ""
 
 #: game.tra:246
-msgid "(Give a potion of power)."
+msgid "(Give a potion of Power)."
 msgstr ""
 
 #: game.tra:247
-msgid "(Give a potion of regeneration)."
+msgid "(Give a potion of Regeneration)."
 msgstr ""
 
 #: game.tra:248
-msgid "(Give a potion of strength)."
+msgid "(Give a potion of Strength)."
 msgstr ""
 
 #: game.tra:249
-msgid "(Give a potion of freedom)."
+msgid "(Give a potion of Freedom)."
 msgstr ""
 
 #: game.tra:250
-msgid "(Give a potion of stone form)."
+msgid "(Give a potion of Stone Form)."
 msgstr ""
 
 #: game.tra:251
@@ -914,6 +914,54 @@ msgstr ""
 
 #: game.tra:255
 msgid "slashing"
+msgstr ""
+
+#: game.tra:256
+msgid "(Give a potion of Hill Giant Strength)."
+msgstr ""
+
+#: game.tra:257
+msgid "(Give a potion of Frost Giant Strength)."
+msgstr ""
+
+#: game.tra:258
+msgid "(Give a potion of Fire Giant Strength)."
+msgstr ""
+
+#: game.tra:259
+msgid "(Give a potion of Cloud Giant Strength)."
+msgstr ""
+
+#: game.tra:260
+msgid "(Give a potion of Storm Giant Strength)."
+msgstr ""
+
+#: game.tra:261
+msgid "(Give a potion of Heroism)."
+msgstr ""
+
+#: game.tra:262
+msgid "(Give a potion of Invulnerability)."
+msgstr ""
+
+#: game.tra:263
+msgid "(Give a potion of Stone Giant Strength)."
+msgstr ""
+
+#: game.tra:264
+msgid "(Give a potion of Master Thievery)."
+msgstr ""
+
+#: game.tra:265
+msgid "(Give a potion of Mind Focusing)."
+msgstr ""
+
+#: game.tra:266
+msgid "(Give a potion of Perception)."
+msgstr ""
+
+#: game.tra:267
+msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr ""
 
 #: map_notes.tra:1
