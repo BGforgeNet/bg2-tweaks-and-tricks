@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2019-07-23 15:58+0000\n"
+"PO-Revision-Date: 2019-08-02 14:58+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
 "tweaks-and-tricks/ru/>\n"
@@ -875,116 +875,78 @@ msgid "(Give an Invisibility potion)."
 msgstr "(Дать зелье невидимости)."
 
 #: game.tra:232
-#, fuzzy
-#| msgid "(Give a oil of speed)."
 msgid "(Give a oil of Speed)."
 msgstr "(Дать масло скорости)."
 
 #: game.tra:233
-#, fuzzy
-#| msgid "(Give an elixir of health)."
 msgid "(Give an elixir of Health)."
 msgstr "(Дать эликсир здоровья)."
 
 #: game.tra:234
-#, fuzzy
-#| msgid "(Give a potion of absorption)."
 msgid "(Give a potion of Absorption)."
 msgstr "(Дать зелье поглощения)."
 
 #: game.tra:235
-#, fuzzy
-#| msgid "(Give a potion of agility)."
 msgid "(Give a potion of Agility)."
 msgstr "(Дать зелье ловкости)."
 
 #: game.tra:236
-#, fuzzy
-#| msgid "(Give an antidote)."
 msgid "(Give an Antidote)."
 msgstr "(Дать противоядие)."
 
 #: game.tra:237
-#, fuzzy
-#| msgid "(Give a potion of clarity)."
 msgid "(Give a potion of Clarity)."
 msgstr "(Дать зелье ясности)."
 
 #: game.tra:238
-#, fuzzy
-#| msgid "(Give a cold resistance potion)."
 msgid "(Give a Cold Resistance potion)."
 msgstr "(Дать зелье сопротивления холоду)."
 
 #: game.tra:239
-#, fuzzy
-#| msgid "(Give a potion of defence)."
 msgid "(Give a potion of Defence)."
 msgstr "(Дать зелье защиты)."
 
 #: game.tra:240
-#, fuzzy
-#| msgid "(Give a potion of fortitude)."
 msgid "(Give a potion of Fortitude)."
 msgstr "(Дать зелье стойкости)."
 
 #: game.tra:241
-#, fuzzy
-#| msgid "(Give a potion of insulation)."
 msgid "(Give a potion of Insulation)."
 msgstr "(Дать зелье изоляции)."
 
 #: game.tra:242
-#, fuzzy
-#| msgid "(Give a potion of magic blocking)."
 msgid "(Give a potion of Magic Blocking)."
 msgstr "(Дать зелье блокирования магии)."
 
 #: game.tra:243
-#, fuzzy
-#| msgid "(Give a potion of magic resistance)."
 msgid "(Give a potion of Magic Resistance)."
 msgstr "(Дать зелье сопротивления магии)."
 
 #: game.tra:244
-#, fuzzy
-#| msgid "(Give a potion of magic shielding)."
 msgid "(Give a potion of Magic Shielding)."
 msgstr "(Дать зелье защиты от магии)."
 
 #: game.tra:245
-#, fuzzy
-#| msgid "(Give a potion of mirrored eyes)."
 msgid "(Give a potion of Mirrored Eyes)."
 msgstr "(Дать зелье зеркальных глаз)."
 
 #: game.tra:246
-#, fuzzy
-#| msgid "(Give a potion of power)."
 msgid "(Give a potion of Power)."
 msgstr "(Дать зелье мощи)."
 
 #: game.tra:247
-#, fuzzy
-#| msgid "(Give a potion of regeneration)."
 msgid "(Give a potion of Regeneration)."
 msgstr "(Дать зелье регенерации)."
 
 #: game.tra:248
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Strength)."
 msgstr "(Дать зелье силы)."
 
 #: game.tra:249
-#, fuzzy
-#| msgid "(Give a potion of freedom)."
 msgid "(Give a potion of Freedom)."
 msgstr "(Дать зелье свободы)."
 
 #: game.tra:250
-#, fuzzy
-#| msgid "(Give a potion of stone form)."
 msgid "(Give a potion of Stone Form)."
 msgstr "(Дать зелье каменной формы)."
 
@@ -1009,76 +971,52 @@ msgid "slashing"
 msgstr "рубящее"
 
 #: game.tra:256
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Hill Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать зелье силы гиганта холмов)."
 
 #: game.tra:257
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Frost Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать зелье силы морозного гиганта)."
 
 #: game.tra:258
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Fire Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать зелье силы огненного гиганта)."
 
 #: game.tra:259
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Cloud Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать зелье силы облачного гиганта)."
 
 #: game.tra:260
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Storm Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать зелье силы гиганта штормов)."
 
 #: game.tra:261
-#, fuzzy
-#| msgid "(Give a potion of freedom)."
 msgid "(Give a potion of Heroism)."
-msgstr "(Дать зелье свободы)."
+msgstr "(Дать зелье героизма)."
 
 #: game.tra:262
-#, fuzzy
-#| msgid "(Give a potion of agility)."
 msgid "(Give a potion of Invulnerability)."
-msgstr "(Дать зелье ловкости)."
+msgstr "(Дать зелье неуязвимости)."
 
 #: game.tra:263
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a potion of Stone Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать зелье силы каменного гиганта)."
 
 #: game.tra:264
-#, fuzzy
-#| msgid "(Give a potion of clarity)."
 msgid "(Give a potion of Master Thievery)."
-msgstr "(Дать зелье ясности)."
+msgstr "(Дать зелье воровского мастерства)."
 
 #: game.tra:265
-#, fuzzy
-#| msgid "(Give a potion of magic blocking)."
 msgid "(Give a potion of Mind Focusing)."
-msgstr "(Дать зелье блокирования магии)."
+msgstr "(Дать зелье фокусирования разума)."
 
 #: game.tra:266
-#, fuzzy
-#| msgid "(Give a potion of absorption)."
 msgid "(Give a potion of Perception)."
-msgstr "(Дать зелье поглощения)."
+msgstr "(Дать зелье восприятия)."
 
 #: game.tra:267
-#, fuzzy
-#| msgid "(Give a potion of strength)."
 msgid "(Give a Rogue's potion of Frost Giant Strength)."
-msgstr "(Дать зелье силы)."
+msgstr "(Дать воровское зелье силы морозного гиганта)."
 
 #: map_notes.tra:1
 msgid "Degrodel"
