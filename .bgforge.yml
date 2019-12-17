@@ -1,2 +1,8 @@
 translation:
   tra_dir: tnt/tra
+golem:
+  mod_dir: tnt
+  platforms:
+    - tob
+    - bgee
+    - bg2ee
