@@ -6,14 +6,12 @@ msgstr ""
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
 "PO-Revision-Date: 2019-08-02 14:58+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
-"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
-"tweaks-and-tricks/ru/>\n"
+"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.1.1\n"
 
 #: game.tra:1
@@ -182,7 +180,9 @@ msgstr "Ваш конец близок, плачьте, если хотите!"
 
 #: game.tra:41
 msgctxt "alora02"
-msgid "Blast and bother!  These locks have always given me trouble!  Trouble they are!"
+msgid ""
+"Blast and bother!  These locks have always given me trouble!  Trouble they "
+"are!"
 msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
 
 #: game.tra:42
@@ -237,12 +237,15 @@ msgstr "Чем я могу помочь?"
 
 #: game.tra:52
 msgctxt "montr01"
-msgid "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
-msgstr "Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
+msgid ""
+"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+msgstr ""
+"Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
 
 #: game.tra:53
 msgctxt "yeslk01"
-msgid "Aye, who's there now?  More smithing, or did ye burrow into another river?"
+msgid ""
+"Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgstr "Да, что там опять?  Будем ковать, или снова докопались до реки?"
 
 #: game.tra:54
@@ -258,7 +261,8 @@ msgstr "Сегодня зло падет!"
 #: game.tra:56
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr "Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
+msgstr ""
+"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
 
 #: game.tra:57
 msgctxt "anom2539"
@@ -312,7 +316,9 @@ msgstr "Как скажешь."
 
 #: game.tra:67
 msgctxt "garrk30"
-msgid "My music is superior to yours, Eldoth, I was taught at the college in Berdusk."
+msgid ""
+"My music is superior to yours, Eldoth, I was taught at the college in "
+"Berdusk."
 msgstr "Моя музыка лучше твоей, Элдот.  Я обучался в колледже в Бердуске."
 
 #: game.tra:68
@@ -389,8 +395,11 @@ msgid "The potions are on the table in the laboratory <SIRMAAM>."
 msgstr "Зелья на столе в лаборатории, <SIRMAAM>."
 
 #: game.tra:143
-msgid "Your presence is required at the church. The needs of the faithful must be tended to."
-msgstr "Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
+msgid ""
+"Your presence is required at the church. The needs of the faithful must be "
+"tended to."
+msgstr ""
+"Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
 
 #: game.tra:147
 msgid ""
@@ -432,39 +441,65 @@ msgstr "Сумка для драгоценностей"
 
 #: game.tra:150
 msgid "This small bag is ideally suited for holding gems."
-msgstr "Эта маленькая сумка идеально подходит для хранения драгоценных камней."
+msgstr ""
+"Эта маленькая сумка идеально подходит для хранения драгоценных камней."
 
 #: game.tra:151
 msgid "Scroll case"
 msgstr "Футляр для свитков"
 
 #: game.tra:152
-msgid "This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard."
-msgstr "Этот прочный контейнер позволяет хранить десятки свитков в безопасности от огня, дождя или молнии - обычных опасностей, с которыми приходиваться сталкиваться странствующим волшебникам."
+msgid ""
+"This sturdy container allows dozens of scrolls to be placed in it, safe from"
+" exposure to fire, rain, or lightning -- common hazards faced by any "
+"adventuring wizard."
+msgstr ""
+"Этот прочный контейнер позволяет хранить десятки свитков в безопасности от "
+"огня, дождя или молнии - обычных опасностей, с которыми приходиваться "
+"сталкиваться странствующим волшебникам."
 
 #: game.tra:153
 msgid "Potion case"
 msgstr "Футляр для зельев"
 
 #: game.tra:154
-msgid "Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel."
-msgstr "Кожаные сумки наподобие этой обычно носят странствующие целители. Она раскрывается и позволяет прикрепить хрупкие бутылочки с зельями к мягкому валику с многочисленными кожаными ремешками для безопасной переноски."
+msgid ""
+"Typically carried by travelling healers, this leather case folds open and "
+"allows the user to strap delicate potion bottles to its cushioned side with "
+"numerous leather thongs for safe storage during travel."
+msgstr ""
+"Кожаные сумки наподобие этой обычно носят странствующие целители. Она "
+"раскрывается и позволяет прикрепить хрупкие бутылочки с зельями к мягкому "
+"валику с многочисленными кожаными ремешками для безопасной переноски."
 
 #: game.tra:155
 msgid "Ammo belt"
 msgstr "Пояс для снарядов"
 
 #: game.tra:156
-msgid "This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts."
-msgstr "Этот наплечный ремень идеально подходит для хранения ядер, дротиков, стрел и арбалетных болтов."
+msgid ""
+"This shoulder belt is ideally suited for holding sling bullets, darts, "
+"arrows or bolts."
+msgstr ""
+"Этот наплечный ремень идеально подходит для хранения ядер, дротиков, стрел и"
+" арбалетных болтов."
 
 #: game.tra:157
 msgid "Bag of Holding"
 msgstr "Сумка Хранения"
 
 #: game.tra:158
-msgid "As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount."
-msgstr "Как и другие магические сумки, эта кажется обычным тканевым мешком примерно 2 на 4 фута. Сумка хранения открывается в безразмерное пространства, и ее внутренние размеры больше внешних. Независимо от того, что в нее сложено, сумка всегда весит одинаково."
+msgid ""
+"As with other magical bags, this one appears to be a common cloth sack of "
+"about 2 feet by 4 feet in size. The bag of holding opens into a "
+"nondimensional space, and its inside is larger than its outside dimensions. "
+"Regardless of what is put into this item, the bag always weighs a fixed "
+"amount."
+msgstr ""
+"Как и другие магические сумки, эта кажется обычным тканевым мешком примерно "
+"2 на 4 фута. Сумка хранения открывается в безразмерное пространства, и ее "
+"внутренние размеры больше внешних. Независимо от того, что в нее сложено, "
+"сумка всегда весит одинаково."
 
 #: game.tra:160
 msgid "Returning throwing axe"
@@ -638,7 +673,9 @@ msgstr "Когда врагов больше не видно, вылезай и�
 
 #: game.tra:179
 msgid "After hiding in my pack, stay there. One cannot be too careful."
-msgstr "После того, как спрятался в рюкзаке, оставайся там. Нам нужно быть осторожными."
+msgstr ""
+"После того, как спрятался в рюкзаке, оставайся там. Нам нужно быть "
+"осторожными."
 
 #: game.tra:180
 msgid "Ah, maybe later."
@@ -701,7 +738,8 @@ msgid "I don't need you to bring any more scrolls."
 msgstr "Мне больше не нужны свитки."
 
 #: game.tra:195
-msgid "Fetch scalps from those bandits we kill. There's a nice bounty for them."
+msgid ""
+"Fetch scalps from those bandits we kill. There's a nice bounty for them."
 msgstr "Срезай скальпы с мертых бандитов. За них неплохая награда."
 
 #: game.tra:196
@@ -729,8 +767,11 @@ msgid "Let's talk about your gear."
 msgstr "Давай обсудим твое снаряжение."
 
 #: game.tra:202
-msgid "Take this returning dart. I think you're better off attacking from distance."
-msgstr "Возьми этот возвращающийся дротик. Я думаю, тебе лучше держаться на расстоянии."
+msgid ""
+"Take this returning dart. I think you're better off attacking from distance."
+msgstr ""
+"Возьми этот возвращающийся дротик. Я думаю, тебе лучше держаться на "
+"расстоянии."
 
 #: game.tra:203
 msgid "OK, boss."
@@ -831,7 +872,9 @@ msgstr ""
 "Бесконечные снаряды для пращи"
 
 #: game.tra:221
-msgid "When you're being attacked, disengage for a short time, then get back at the enemy."
+msgid ""
+"When you're being attacked, disengage for a short time, then get back at the"
+" enemy."
 msgstr "Если на тебя напали, отступи, а затем вернись в бой."
 
 #: game.tra:222
@@ -847,7 +890,8 @@ msgid "In combat, attack enemies when you see them."
 msgstr "В бою, нападай на врагов сам."
 
 #: game.tra:225
-msgid "In combat, attack enemies when you see them, prioritizing spellcasters."
+msgid ""
+"In combat, attack enemies when you see them, prioritizing spellcasters."
 msgstr "В бою, нападай на врагов сам. Первым делом на магов."
 
 #: game.tra:226
@@ -1216,11 +1260,13 @@ msgstr "Каждая характеристика получает +1"
 
 #: setup.tra:104
 msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr "Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
+msgstr ""
+"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
 
 #: setup.tra:105
 msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr "Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
+msgstr ""
+"Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
 
 #: setup.tra:106
 msgid "Shops always buy goods at the same price"
@@ -1271,8 +1317,12 @@ msgid "Easy traps: play a sound"
 msgstr "Упрощенные ловушки: звуковой сигнал"
 
 #: setup.tra:118
-msgid "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to work)"
-msgstr "Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие компоненты работали)"
+msgid ""
+"Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
+"work)"
+msgstr ""
+"Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
+"компоненты работали)"
 
 #: setup.tra:119
 msgid "Less autosaves"
@@ -1291,8 +1341,14 @@ msgid "BG saga only"
 msgstr "Только для саги БГ"
 
 #: setup.tra:123
-msgid "EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee instead."
-msgstr "Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
+msgid ""
+"EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-"
+"awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-"
+"iwdee instead."
+msgstr ""
+"Движок ЕЕ не поддерживается. Вместо этого компонента, можете попробовать "
+"https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-"
+"master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee."
 
 #: setup.tra:124
 msgid "Requires ToB or EE engine"
@@ -1312,7 +1368,8 @@ msgstr "Невесомые снаряды"
 
 #: setup.tra:129
 msgid "All easy traps components must be installed before core"
-msgstr "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
+msgstr ""
+"Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
 
 #: setup.tra:134
 msgid "Sensible Otiluke's sphere"
@@ -1352,7 +1409,9 @@ msgstr "Зелье по-настоящему зеркальных глаз"
 
 #: setup.tra:224
 msgid "stop moving and pause game only for ground traps"
-msgstr "Остановиться и поставить игру на паузу только для ловушек, на которые можно наступить"
+msgstr ""
+"Остановиться и поставить игру на паузу только для ловушек, на которые можно "
+"наступить"
 
 #: setup.tra:225
 msgid "Familiars"
