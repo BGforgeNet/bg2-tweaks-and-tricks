@@ -339,5 +339,5 @@ INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
 BEGIN ~Limited stock~
 INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
 
-BEGIN ~Easy travel~
-INCLUDE ~%MOD_FOLDER%/easy_travel/main.tpa~
+// BEGIN ~Easy travel~
+// INCLUDE ~%MOD_FOLDER%/easy_travel/main.tpa~
