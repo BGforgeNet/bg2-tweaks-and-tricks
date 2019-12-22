@@ -1,4 +1,35 @@
+<<<<<<<< .../tnt-inlined/romance_cheats/amber_old1.baf
+IF
+  Global("M#AmberMatch","GLOBAL",0)
+  Gender(Player1,MALE)
+  CheckStatGT(Player1,11,CHR)
+  CheckStatGT(Player1,11,INT)
+THEN 
+  RESPONSE #100
+    SetGlobal("M#AmberMatch","GLOBAL",1)
+END
+>>>>>>>>
+<<<<<<<< .../tnt-inlined/romance_cheats/amber_new1.baf
+IF
+  Global("M#AmberMatch","GLOBAL",0)
+THEN 
+  RESPONSE #100
+    SetGlobal("M#AmberMatch","GLOBAL",1)
+END
+>>>>>>>>
+
 ACTION_IF FILE_EXISTS_IN_GAME ~m#amber.bcs~ BEGIN
+  COPY_EXISTING ~baldur.bcs~ ~override~
+    R_B_B CASE_INSENSITIVE
+      ~.../tnt-inlined/romance_cheats/amber_old1.baf~
+      ~.../tnt-inlined/romance_cheats/amber_new1.baf~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+        ~ Global("M#AmberRomanceOut","GLOBAL",0)~
+        ~ False()~
+    END
+  BUT_ONLY
+
   COPY_EXISTING ~m#amber.bcs~ ~override~
 
     DECOMPILE_AND_PATCH BEGIN
@@ -104,32 +135,3 @@ ACTION_IF FILE_EXISTS_IN_GAME ~m#amber.bcs~ BEGIN
   BUT_ONLY
 END
 
-<<<<<<<< .../tnt-inlined/romance_cheats/amber_old1.baf
-IF
-  Global("M#AmberMatch","GLOBAL",0)
-  Gender(Player1,MALE)
-  CheckStatGT(Player1,11,CHR)
-  CheckStatGT(Player1,11,INT)
-THEN 
-  RESPONSE #100
-    SetGlobal("M#AmberMatch","GLOBAL",1)
-END
->>>>>>>>
-<<<<<<<< .../tnt-inlined/romance_cheats/amber_new1.baf
-IF
-  Global("M#AmberMatch","GLOBAL",0)
-THEN 
-  RESPONSE #100
-    SetGlobal("M#AmberMatch","GLOBAL",1)
-END
->>>>>>>>
-COPY_EXISTING ~baldur.bcs~ ~override~
-  R_B_B CASE_INSENSITIVE
-    ~.../tnt-inlined/romance_cheats/amber_old1.baf~
-    ~.../tnt-inlined/romance_cheats/amber_new1.baf~
-  DECOMPILE_AND_PATCH BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
-      ~ Global("M#AmberRomanceOut","GLOBAL",0)~
-      ~ False()~
-  END
-BUT_ONLY
