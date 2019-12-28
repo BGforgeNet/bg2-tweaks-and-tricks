@@ -1,10 +1,8 @@
 ## Tweaks-and-Tricks mod for Baldur's Gate 2
-<a href="https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/">
-<img src="https://tra.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg" alt="Translation status" />
-</a>
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-<img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
-</a>
+
+[![Translation status](https://tra.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
+[![Build Status](https://golem.bgforge.net/mods/tweaks-and-tricks/status.svg)](https://golem.bgforge.net/mods/tweaks-and-tricks)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 [__Download__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
  | [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
