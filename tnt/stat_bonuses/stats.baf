@@ -3,7 +3,7 @@ IF
   Global("endofbg1","GLOBAL",0)
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER1,ReallyForceSpellRES(Myself,"g_tomes"))
+    ActionOverride(PLAYER1,ReallyForceSpellRES("g_tomes", Myself))
     SetGlobal("g_tomes","MYAREA",1)
     Continue()
 END
