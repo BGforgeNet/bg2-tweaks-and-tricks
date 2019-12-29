@@ -134,7 +134,7 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII 0x280 death_var
     BUT_ONLY
-    INCLUDE ~%MOD_FOLDER%/smarter_familiars/g_fam.baf.tph~ //ACTION to generate script. Depends on %death_var% and %fam_item%
+    REINCLUDE ~%MOD_FOLDER%/smarter_familiars/g_fam.baf.tph~ //ACTION to generate script. Depends on %death_var% and %fam_item%
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII 0x248 over_script
 //      PATCH_PRINT ~cre is %fam_cre%, script is %over_script%, death_var is %death_var%~
