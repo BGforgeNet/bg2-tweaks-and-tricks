@@ -493,7 +493,7 @@ END
 ~
 
 //actual script
-<<<<<<<< .../tnt-inlined/g_%fam_cre%.baf
+<<<<<<<< .../tnt-inlined/%fam_script%.baf
 
 %JumpToPack%
 %JumpToPackInjured%
