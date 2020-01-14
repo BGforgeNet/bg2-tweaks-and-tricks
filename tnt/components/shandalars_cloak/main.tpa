@@ -1,56 +1,54 @@
 LAF list_web_spells RET_ARRAY web_spells = spells END
 
-WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN
-  COPY_EXISTING ~clck22.itm~  ~override~
-    SAY DESC @1
+COPY_EXISTING ~clck22.itm~  ~override~
+  SAY DESC @1
 
-    PATCH_FOR_EACH opcode IN 129 157 BEGIN //web portait icon, web effect
-      LPF ADD_ITEM_EQEFFECT
-        INT_VAR
-          opcode = 101 //opcode immunity
-          target = 1 //self
-          timing = 2 //while equipped
-          paremeter2 = opcode //web
-          resist_dispel = 2 // no dispel, bypass res
-      END
-    END
-
-    // extra protection from individual spells
-    PHP_EACH web_spells AS index => spell BEGIN
-      LPF ADD_ITEM_EQEFFECT
-        INT_VAR
-          opcode = 206 //spell immunity
-          target = 1 //self
-          timing = 2 //while equipped
-          resist_dispel = 2 // no dispel, bypass res
-        STR_VAR
-          resource = EVAL ~%spell%~
-      END
-    END
-
-    // save vs poison bonus
+  PATCH_FOR_EACH opcode IN 129 157 BEGIN //web portait icon, web effect
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
-        opcode = 33 // save vs death
+        opcode = 101 //opcode immunity
         target = 1 //self
         timing = 2 //while equipped
-        paremeter2 = 2 //amount
+        paremeter2 = opcode //web
         resist_dispel = 2 // no dispel, bypass res
     END
+  END
 
-    // web spell
-    READ_ASCII 0x3a icon
-    LPF ADD_ITEM_HEADER INT_VAR range=60 insert_point=0 STR_VAR icon END // I think 60 is correct?
-
-    // web spell
-    LPF ADD_ITEM_EFFECT
+  // extra protection from individual spells
+  PHP_EACH web_spells AS index => spell BEGIN
+    LPF ADD_ITEM_EQEFFECT
       INT_VAR
-        opcode = 148 // cast spell
-        parameter1 = 10 // default casting level from items
-        paremeter2 = 1 // cast instantly
+        opcode = 206 //spell immunity
+        target = 1 //self
+        timing = 2 //while equipped
+        resist_dispel = 2 // no dispel, bypass res
       STR_VAR
-        resource = "spwi215"
+        resource = EVAL ~%spell%~
     END
+  END
 
-  BUT_ONLY
-END
+  // save vs poison bonus
+  LPF ADD_ITEM_EQEFFECT
+    INT_VAR
+      opcode = 33 // save vs death
+      target = 1 //self
+      timing = 2 //while equipped
+      paremeter2 = 2 //amount
+      resist_dispel = 2 // no dispel, bypass res
+  END
+
+  // web spell
+  READ_ASCII 0x3a icon
+  LPF ADD_ITEM_HEADER INT_VAR range=60 insert_point=0 STR_VAR icon END // I think 60 is correct?
+
+  // web spell
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      opcode = 148 // cast spell
+      parameter1 = 10 // default casting level from items
+      paremeter2 = 1 // cast instantly
+    STR_VAR
+      resource = "spwi215"
+  END
+
+BUT_ONLY
