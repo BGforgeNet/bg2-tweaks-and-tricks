@@ -3,13 +3,13 @@ LAF list_web_spells RET_ARRAY web_spells = spells END
 COPY_EXISTING ~clck22.itm~  ~override~
   SAY DESC @1
 
-  PATCH_FOR_EACH opcode IN 129 157 BEGIN //web portait icon, web effect
+  PATCH_FOR_EACH eff_opcode IN 129 157 BEGIN //web portait icon, web effect
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
         opcode = 101 //opcode immunity
         target = 1 //self
         timing = 2 //while equipped
-        paremeter2 = opcode //web
+        paremeter2 = eff_opcode //web
         resist_dispel = 2 // no dispel, bypass res
     END
   END
@@ -47,6 +47,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
       opcode = 148 // cast spell
       parameter1 = 10 // default casting level from items
       paremeter2 = 1 // cast instantly
+      duration = 1 // instant
     STR_VAR
       resource = "spwi215"
   END
