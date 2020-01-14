@@ -23,7 +23,7 @@ BEGIN
 END
 
 // list web spells to build immunity
-DEFINE_ACTION_FUNCTION list_web_spells BEGIN
+DEFINE_ACTION_FUNCTION list_web_spells
   RET_ARRAY spells
 BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~dw#0w215.spl~ BEGIN //SCS spider shapeshift token
