@@ -1368,3 +1368,19 @@ msgstr ""
 #: setup.tra:240
 msgid "Throwing weapons damage"
 msgstr ""
+
+#: setup.tra:250
+msgid "Shandalar's cloak"
+msgstr ""
+
+#: shandalars_cloak.tra:1
+msgid ""
+"This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
+"\n"
+"In addition, the cloak allows to cast Web once per day, and provides extra protection from poison.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Saving Throws:  +2 bonus vs Poison.\n"
+"Special: The wearer is immune to webs, and can cast Web once per day."
+msgstr ""
