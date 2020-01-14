@@ -7,6 +7,9 @@ README ~%MOD_FOLDER%/readme.txt~
 AUTO_EVAL_STRINGS
 //MODDER setup_tra none
 //AUTO_TRA ~%MOD_FOLDER%/tra/%s~
+ALWAYS
+  OUTER_SPRINT comp_dir ~%MOD_FOLDER%/components~
+END
 
 LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
 LANGUAGE ~Russian~ ~RUSSIAN~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
@@ -339,5 +342,7 @@ INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
 BEGIN ~Limited stock~
 INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
 
-// BEGIN ~Easy travel~
-// INCLUDE ~%MOD_FOLDER%/easy_travel/main.tpa~
+BEGIN @250 /* Shandalar's cloak */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
+OUTER_SPRINT comp_name ~shandalars_cloak~
+WITH_TRA ~%LANGUAGE%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/%comp_name%/main.tpa~ END
