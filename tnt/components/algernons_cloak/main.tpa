@@ -1,0 +1,8 @@
+COPY_EXISTING ~clck08.itm~  ~override~
+  LPF ALTER_ITEM_HEADER
+    INT_VAR
+      header = 1
+      charges = 1
+      flag_recharge = 1
+  END
+BUT_ONLY
