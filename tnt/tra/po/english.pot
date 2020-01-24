@@ -1370,7 +1370,11 @@ msgid "Throwing weapons damage"
 msgstr ""
 
 #: setup.tra:250
-msgid "Shandalar's cloak"
+msgid "Improved Shandalar's cloak"
+msgstr ""
+
+#: setup.tra:251
+msgid "EE-style Algernon's cloak"
 msgstr ""
 
 #: shandalars_cloak.tra:1
