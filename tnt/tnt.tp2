@@ -350,3 +350,7 @@ WITH_TRA ~%LANGUAGE%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/%comp_name%/main
 BEGIN @251 /* EE-style Algernon's cloak */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 INCLUDE ~%comp_dir%/algernons_cloak/main.tpa~
+
+BEGIN @252 /* Bloodless deeds */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
+INCLUDE ~%comp_dir%/bloodless_deeds/main.tpa~

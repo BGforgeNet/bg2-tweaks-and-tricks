@@ -1,0 +1,7 @@
+COPY_EXISTING ~nemphr.dlg~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+      ~TakePartyItemNum("BGAMUL13",1)~
+      ~TakePartyItem("BGAMUL13",1)~
+  END
+BUT_ONLY
