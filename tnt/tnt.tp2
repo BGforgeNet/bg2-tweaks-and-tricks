@@ -9,6 +9,8 @@ AUTO_EVAL_STRINGS
 //AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 ALWAYS
   OUTER_SPRINT comp_dir ~%MOD_FOLDER%/components~
+  OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
+  INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
 END
 
 LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
