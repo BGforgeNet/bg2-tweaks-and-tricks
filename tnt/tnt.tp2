@@ -352,5 +352,5 @@ REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 INCLUDE ~%comp_dir%/algernons_cloak/main.tpa~
 
 BEGIN @252 /* Bloodless deeds */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
+REQUIRE_PREDICATE GAME_IS ~bgt~ @253 /* BGT only */
 INCLUDE ~%comp_dir%/bloodless_deeds/main.tpa~
