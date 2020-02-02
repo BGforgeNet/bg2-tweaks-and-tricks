@@ -354,3 +354,7 @@ INCLUDE ~%comp_dir%/algernons_cloak/main.tpa~
 BEGIN @252 /* Bloodless deeds */
 REQUIRE_PREDICATE GAME_IS ~bgt~ @253 /* BGT only */
 INCLUDE ~%comp_dir%/bloodless_deeds/main.tpa~
+
+BEGIN @254 /* True protection poison */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+INCLUDE ~%comp_dir%/poison_protection/main.tpa~

@@ -1,0 +1,25 @@
+//periapt of proof against poison in in BG2 only
+ACTION_IF FILE_EXISTS_IN_GAME ~amul22.itm~ BEGIN
+  COPY_EXISTING ~amul22.itm~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = OPCODE_poison_resist_mod
+        parameter1 = 100 // %
+        probability1 = 99
+        timing = TIMING_while_equipped
+        resist_dispel = DISPEL_no_BYPASS_MR_yes
+    END
+  BUT_ONLY
+END
+
+//scroll of protection fro poison
+COPY_EXISTING ~scrl08.itm~ ~override~
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      opcode = OPCODE_poison_resist_mod
+      parameter1 = 100 // %
+      probability1 = 99
+      duration = 1800
+      resist_dispel = DISPEL_yes_BYPASS_MR_yes
+  END
+BUT_ONLY
