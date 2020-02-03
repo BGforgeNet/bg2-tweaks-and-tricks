@@ -1,4 +1,4 @@
-OUTER_SPRINT comp_dir ~%MOD_FOLDER%/romance_cheats~
+OUTER_SPRINT comp_dir ~%components%/romance_cheats~
 
 INCLUDE ~%comp_dir%/amber.tpa~
 INCLUDE ~%comp_dir%/tyris.tpa~

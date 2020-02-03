@@ -8,7 +8,7 @@ AUTO_EVAL_STRINGS
 //MODDER setup_tra none
 //AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 ALWAYS
-  OUTER_SPRINT comp_dir ~%MOD_FOLDER%/components~
+  OUTER_SPRINT components ~%MOD_FOLDER%/components~
   OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
   INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
 END
@@ -333,7 +333,7 @@ BEGIN @234 /* Disable lightning during rain */
 INCLUDE ~%MOD_FOLDER%/no_lightning/main.tpa~
 
 BEGIN @235 /* Mod romance cheats */
-INCLUDE ~%MOD_FOLDER%/romance_cheats/main.tpa~
+INCLUDE ~%comp_dir%/romance_cheats/main.tpa~
 
 BEGIN @236 /* Unlimited goodberries stacking */
 INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
@@ -347,16 +347,16 @@ INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
 BEGIN @250 /* Improved Shandalar's cloak */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 OUTER_SPRINT comp_name ~shandalars_cloak~
-WITH_TRA ~%LANGUAGE%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/%comp_name%/main.tpa~ END
+WITH_TRA ~%LANGUAGE%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @251 /* EE-style Algernon's cloak */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
-INCLUDE ~%comp_dir%/algernons_cloak/main.tpa~
+INCLUDE ~%components%/algernons_cloak/main.tpa~
 
 BEGIN @252 /* Bloodless deeds */
 REQUIRE_PREDICATE GAME_IS ~bgt~ @253 /* BGT only */
-INCLUDE ~%comp_dir%/bloodless_deeds/main.tpa~
+INCLUDE ~%components%/bloodless_deeds/main.tpa~
 
 BEGIN @254 /* True protection from poison */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-INCLUDE ~%comp_dir%/poison_protection/main.tpa~
+INCLUDE ~%components%/poison_protection/main.tpa~
