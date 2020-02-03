@@ -333,7 +333,7 @@ BEGIN @234 /* Disable lightning during rain */
 INCLUDE ~%MOD_FOLDER%/no_lightning/main.tpa~
 
 BEGIN @235 /* Mod romance cheats */
-INCLUDE ~%comp_dir%/romance_cheats/main.tpa~
+INCLUDE ~%components%/romance_cheats/main.tpa~
 
 BEGIN @236 /* Unlimited goodberries stacking */
 INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
