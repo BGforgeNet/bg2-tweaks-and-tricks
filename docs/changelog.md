@@ -9,66 +9,75 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
-- Version 8
-  - add "can't steal carsomyr" component
-  - add "greater command AoE" component
-  - add Russian translation
-- Version 7
-  - add spider form/web protection component
-  - fix viconia's dialog_default and area_city in extended soundsets
-  - disable all traps that never fire and just give notifications (not marked as trapped but have a script)
-  - fix multiple Durlag's tower traps
-  - add compatibility with WhiteQueen (traps)
-  - add true true sight component
-  - add Kahrk and Arkanis Gath to fair fights
-  - improve EE compatibility
-  - fix npc_soundsets typo
-  - add weightless ammo component
-  - add more battle cries for Ajantis, Kivan and Keldorn
-  - ensure Easy traps installation order
-  - add sensible otiluke component
-  - add improved strongholds components
-  - add sensible wand of frost component
-  - add more ankheg armors component
-  - add hassle-free returning weapons component
-  - add compatibility with WTP familiars
-  - fix quasit in smarter familiars
-  - ensure that dead familiars don't do anything
-  - smarter familiars: add option to jump into pack when badly injured, and injured notifications
-  - smarter familiars: add dialog option to manage familiar speed, remove faster familiars component
-  - smarter familiars: add hit and run technique
-  - add potion of really mirrored eyes component
-  - speed up familiar looting
-- Version 6
-  - Extended soundsets: more sounds
-  - Easy traps: fixed missing vent trap
-  - Smarter familiars: fixed quasit missing in ToB
-  - NPC soundsets for PC: fixed bug when 1/2 versions were the same
-  - NPC soundsets for PC: added more sounds
-  - Under the hood changes:
-    - compliments/insults: left as .wav instead of .wavc - make DTLCEP happy
-    - update weidu to 239
-    - general code cleanup
-- Version 5
-  - Added "easy traps" component
-  - Added "less autosaves" component
-  - Added Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag)
-  - Let famliars pick up winter wolf pelts, ankheg shells, wyvern heads
-  - Expanded no-farming to skeleton warriors in Durlag's Tower
-  - Fixed effect duplication in "unstack potions" component
-  - Made "unstackable potions" compatible with Rogue Rebalancing
-- Version 4
-  - Added "no shop depreciation" component
-  - Added "no XP farming" component
-  - Added "resilient familiars" component
-  - Fixed version tag
-- Version 3
-  - Added a few new components
-  - Revised all code
-  - Actually released it
-- Version 2
-  - Merged in Tweaks-And-Tricks
-  - Renamed the mod
-  - Updated the components
-  - Updated to weidu 238
--  Version 1: initial release
+### Version 8
+- Added "can't steal Carsomyr" component.
+- Added "greater command AoE" component.
+- Added Russian translation.
+
+### Version 7
+- Added spider form/web protection component.
+- Fixed Viconia's dialog_default and area_city in extended soundsets.
+- Easy Traps:
+  - Disabled all traps that never fire and just give notifications (not marked as trapped but have a script).
+  - Fixed multiple Durlag's tower traps.
+  - Added compatibility with WhiteQueen.
+- Added True True Sight component.
+- Added Kahrk and Arkanis Gath to fair fights.
+- Improved EE compatibility.
+- Fixed npc_soundsets typo.
+- Added Weightless Ammo component.
+- Added more battle cries for Ajantis, Kivan and Keldorn.
+- Ensured Easy Traps installation order.
+- Added Sensible Otiluke component.
+- Added Improved Strongholds components.
+- Added Sensible Wand of Frost component.
+- Added More Ankheg Armors component.
+- Added Hassle-free Returning Weapons component.
+- Smarter familiars:
+  - Added compatibility with WTP familiars.
+  - Fixed quasit.
+  - Ensured that dead familiars don't do anything.
+  - Added option to jump into pack when badly injured, and injured notifications.
+  - Added dialog option to manage familiar speed, remove faster familiars component.
+  - Added hit and run technique.
+  - Sped up looting.
+- Added potion of really mirrored eyes component.
+
+### Version 6
+- Extended soundsets: more sounds.
+- Easy traps: fixed missing vent trap.
+- Smarter familiars: fixed quasit missing in ToB.
+- NPC soundsets for PC: fixed bug when 1/2 versions were the same.
+- NPC soundsets for PC: added more sounds.
+- Under the hood changes:
+  - Compliments/insults: left as .wav instead of .wavc - make DTLCEP happy.
+  - Update weidu to 239.
+  - General code cleanup.
+
+### Version 5
+- Added "easy traps" component.
+- Added "less autosaves" component.
+- Added Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag).
+- Let famliars pick up winter wolf pelts, ankheg shells, wyvern heads.
+- Expanded no-farming to skeleton warriors in Durlag's Tower.
+- Fixed effect duplication in "unstack potions" component.
+- Made "unstackable potions" compatible with Rogue Rebalancing.
+
+### Version 4
+- Added "no shop depreciation" component.
+- Added "no XP farming" component.
+- Added "resilient familiars" component.
+- Fixed version tag.
+
+### Version 3
+- Added a few new components.
+- Revised all code.
+- Actually released it.
+
+### Version 2
+- Merged in Tweaks-And-Tricks.
+- Renamed the mod.
+- Updated the components.
+- Updated to weidu 238.
+
+### Version 1: initial release
