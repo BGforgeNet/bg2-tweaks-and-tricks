@@ -359,3 +359,6 @@ INCLUDE ~%components%/bloodless_deeds/main.tpa~
 BEGIN @254 /* True protection from poison */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 INCLUDE ~%components%/poison_protection/main.tpa~
+
+BEGIN @255 /* Disable intro movies */
+DISABLE_FROM_KEY bwdragon.mve bislogo.mve wotc.mve
