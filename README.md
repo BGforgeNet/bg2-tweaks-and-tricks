@@ -1,4 +1,4 @@
-## Tweaks and Tricks mod for Baldur's Gate 2
+# Tweaks and Tricks mod for Baldur's Gate 2
 
 [![Translation status](https://tra.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 [![Build Status](https://golem.bgforge.net/mods/tweaks-and-tricks/status.svg)](https://golem.bgforge.net/mods/tweaks-and-tricks)
@@ -294,73 +294,6 @@ Allow Taerom to make more ankheg armors
 - Move "tnt" and "setup-tnt.exe" into the game directory
 - Launch setup-tnt.exe
 - Answer the questions
-
-
-## Changelog
-- Version 8
-  - add "can't steal carsomyr" component
-  - add "greater command AoE" component
-  - add Russian translation
-- Version 7
-  - add spider form/web protection component
-  - fix viconia's dialog_default and area_city in extended soundsets
-  - disable all traps that never fire and just give notifications (not marked as trapped but have a script)
-  - fix multiple Durlag's tower traps
-  - add compatibility with WhiteQueen (traps)
-  - add true true sight component
-  - add Kahrk and Arkanis Gath to fair fights
-  - improve EE compatibility
-  - fix npc_soundsets typo
-  - add weightless ammo component
-  - add more battle cries for Ajantis, Kivan and Keldorn
-  - ensure Easy traps installation order
-  - add sensible otiluke component
-  - add improved strongholds components
-  - add sensible wand of frost component
-  - add more ankheg armors component
-  - add hassle-free returning weapons component
-  - add compatibility with WTP familiars
-  - fix quasit in smarter familiars
-  - ensure that dead familiars don't do anything
-  - smarter familiars: add option to jump into pack when badly injured, and injured notifications
-  - smarter familiars: add dialog option to manage familiar speed, remove faster familiars component
-  - smarter familiars: add hit and run technique
-  - add potion of really mirrored eyes component
-  - speed up familiar looting
-- Version 6
-  - Extended soundsets: more sounds
-  - Easy traps: fixed missing vent trap
-  - Smarter familiars: fixed quasit missing in ToB
-  - NPC soundsets for PC: fixed bug when 1/2 versions were the same
-  - NPC soundsets for PC: added more sounds
-  - Under the hood changes:
-    - compliments/insults: left as .wav instead of .wavc - make DTLCEP happy
-    - update weidu to 239
-    - general code cleanup
-- Version 5
-  - Added "easy traps" component
-  - Added "less autosaves" component
-  - Added Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag)
-  - Let famliars pick up winter wolf pelts, ankheg shells, wyvern heads
-  - Expanded no-farming to skeleton warriors in Durlag's Tower
-  - Fixed effect duplication in "unstack potions" component
-  - Made "unstackable potions" compatible with Rogue Rebalancing
-- Version 4
-  - Added "no shop depreciation" component
-  - Added "no XP farming" component
-  - Added "resilient familiars" component
-  - Fixed version tag
-- Version 3
-  - Added a few new components
-  - Revised all code
-  - Actually released it
-- Version 2
-  - Merged in Tweaks-And-Tricks
-  - Renamed the mod
-  - Updated the components
-  - Updated to weidu 238
--  Version 1: initial release
-
 
 ## Used software
 
