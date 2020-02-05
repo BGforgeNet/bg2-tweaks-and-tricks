@@ -13,104 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: bgforge_po v.1.0.0\n"
 
-#: game.tra:1
-msgid "Uh, this one is locked."
-msgstr ""
-
-#: game.tra:3
-msgid "Looking for gold..."
-msgstr ""
-
-#: game.tra:4
-msgid "Finished looking for gold."
-msgstr ""
-
-#: game.tra:5
-msgid "Looking for scalps..."
-msgstr ""
-
-#: game.tra:6
-msgid "Finished looking for scalps."
-msgstr ""
-
-#: game.tra:7
-msgid "Looking for common ammo..."
-msgstr ""
-
-#: game.tra:8
-msgid "Finished looking for common ammo."
-msgstr ""
-
-#: game.tra:9
-msgid "Looking for common jewels..."
-msgstr ""
-
-#: game.tra:10
-msgid "Finished looking for common jewels."
-msgstr ""
-
-#: game.tra:11
-msgid "Looking for common potions..."
-msgstr ""
-
-#: game.tra:12
-msgid "Finished looking for common potions."
-msgstr ""
-
-#: game.tra:13
-msgid "Looking for scrolls..."
-msgstr ""
-
-#: game.tra:14
-msgid "Finished looking for scrolls."
-msgstr ""
-
-#: game.tra:16
-msgid "Looking for rare jewels..."
-msgstr ""
-
-#: game.tra:17
-msgid "Finished looking for rare jewels."
-msgstr ""
-
-#: game.tra:18
-msgid "Looking for rare potions..."
-msgstr ""
-
-#: game.tra:19
-msgid "Finished looking for rare potions."
-msgstr ""
-
-#: game.tra:20
-msgid "Looking for magic jewels..."
-msgstr ""
-
-#: game.tra:21
-msgid "Finished looking for magic jewels."
-msgstr ""
-
-#: game.tra:22
-msgid "Looking for rare ammo..."
-msgstr ""
-
-#: game.tra:23
-msgid "Finished looking for rare ammo."
-msgstr ""
-
-#: game.tra:24
-msgid "Looking for rare magic jewels..."
-msgstr ""
-
-#: game.tra:25
-msgid "Finished looking for rare magic jewels."
-msgstr ""
-
 #: game.tra:2
 msgid "Uh, I smell a trap."
-msgstr ""
-
-#: game.tra:15
-msgid "Boss, your pack is full."
 msgstr ""
 
 #: game.tra:26
@@ -544,196 +448,6 @@ msgstr ""
 msgid "Hassle-free ammo"
 msgstr ""
 
-#: game.tra:167
-msgid "Let's change formation."
-msgstr ""
-
-#: game.tra:168
-msgid "I want to give you new instructions about the loot."
-msgstr ""
-
-#: game.tra:169
-msgid "We need to discuss combat."
-msgstr ""
-
-#: game.tra:170
-msgid "Yes, boss?"
-msgstr ""
-
-#: game.tra:171
-msgid "Follow me at all times."
-msgstr ""
-
-#: game.tra:172
-msgid "Stop following me all the time."
-msgstr ""
-
-#: game.tra:173
-msgid "Actually, nevermind. Distance is fine for now."
-msgstr ""
-
-#: game.tra:174
-msgid "If you see any danger, jump to my pack right away!"
-msgstr ""
-
-#: game.tra:175
-msgid "Don't hide in my pack when you see enemies."
-msgstr ""
-
-#: game.tra:176
-msgid "When you're injured, rush to my pack immediately."
-msgstr ""
-
-#: game.tra:177
-msgid "When you're badly injured, rush to my pack immediately."
-msgstr ""
-
-#: game.tra:178
-msgid "When the enemies are gone, get out of the pack by yourself."
-msgstr ""
-
-#: game.tra:179
-msgid "After hiding in my pack, stay there. One cannot be too careful."
-msgstr ""
-
-#: game.tra:180
-msgid "Ah, maybe later."
-msgstr ""
-
-#: game.tra:181
-msgid "Stop picking up any items, okay?"
-msgstr ""
-
-#: game.tra:182
-msgid "I want you to bring me everything. Any valuables."
-msgstr ""
-
-#: game.tra:183
-msgid "Pick up any gold that you find."
-msgstr ""
-
-#: game.tra:184
-msgid "Don't pick up the gold that you find."
-msgstr ""
-
-#: game.tra:185
-msgid "Pick up any jewels that you find."
-msgstr ""
-
-#: game.tra:186
-msgid "Pick up only valuable and magical jewelry."
-msgstr ""
-
-#: game.tra:187
-msgid "Pick up only magical jewelry."
-msgstr ""
-
-#: game.tra:188
-msgid "Don't pick up the jewelry."
-msgstr ""
-
-#: game.tra:189
-msgid "Pick up any magical ammo that you find."
-msgstr ""
-
-#: game.tra:190
-msgid "Don't pick up the ammo."
-msgstr ""
-
-#: game.tra:191
-msgid "If you find any potions, bring them to me!"
-msgstr ""
-
-#: game.tra:192
-msgid "Stop picking up potions."
-msgstr ""
-
-#: game.tra:193
-msgid "Get me any scrolls that you can find."
-msgstr ""
-
-#: game.tra:194
-msgid "I don't need you to bring any more scrolls."
-msgstr ""
-
-#: game.tra:195
-msgid ""
-"Fetch scalps from those bandits we kill. There's a nice bounty for them."
-msgstr ""
-
-#: game.tra:196
-msgid "Stop that scalping, will you? It's disgusting."
-msgstr ""
-
-#: game.tra:197
-msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
-msgstr ""
-
-#: game.tra:198
-msgid "No more pelts or scales, we're stocked."
-msgstr ""
-
-#: game.tra:199
-msgid "No, nothing."
-msgstr ""
-
-#: game.tra:200
-msgid "As you wish, master."
-msgstr ""
-
-#: game.tra:201
-msgid "Let's talk about your gear."
-msgstr ""
-
-#: game.tra:202
-msgid ""
-"Take this returning dart. I think you're better off attacking from distance."
-msgstr ""
-
-#: game.tra:203
-msgid "OK, boss."
-msgstr ""
-
-#: game.tra:204
-msgid "Done."
-msgstr ""
-
-#: game.tra:205
-msgid "No, actually I think your gear is fine."
-msgstr ""
-
-#: game.tra:207
-msgid "Don't bother me with your whining, I don't care if you're hurt."
-msgstr ""
-
-#: game.tra:208
-msgid "After fight, if you're hurt, let me know."
-msgstr ""
-
-#: game.tra:209
-msgid "After fight, if you're badly hurt, let me know."
-msgstr ""
-
-#: game.tra:210
-msgid "I'm hurting here, Boss."
-msgstr ""
-
-#: game.tra:211
-msgid "I'm really hurting here, Boss."
-msgstr ""
-
-#: game.tra:212
-msgid "Move faster, will you? Don't lag behind."
-msgstr ""
-
-#: game.tra:213
-msgid "Don't run so fast. I can't catch up to you."
-msgstr ""
-
-#: game.tra:214
-msgid "Ouch!"
-msgstr ""
-
 #: game.tra:215
 msgid "Quiver of Plenty"
 msgstr ""
@@ -773,133 +487,6 @@ msgid ""
 "Unlimited plain bullets"
 msgstr ""
 
-#: game.tra:221
-msgid ""
-"When you're being attacked, disengage for a short time, then get back at the"
-" enemy."
-msgstr ""
-
-#: game.tra:222
-msgid "Don't disengage, even if you're being attacked."
-msgstr ""
-
-#: game.tra:223
-msgid "In combat, don't attack enemies, unless I tell you to."
-msgstr ""
-
-#: game.tra:224
-msgid "In combat, attack enemies when you see them."
-msgstr ""
-
-#: game.tra:225
-msgid ""
-"In combat, attack enemies when you see them, prioritizing spellcasters."
-msgstr ""
-
-#: game.tra:226
-msgid "Here, take this potion."
-msgstr ""
-
-#: game.tra:227
-msgid "(Give a Healing potion)."
-msgstr ""
-
-#: game.tra:228
-msgid "(Give an Extra Healing potion)."
-msgstr ""
-
-#: game.tra:229
-msgid "(Give a Superior Healing potion)."
-msgstr ""
-
-#: game.tra:230
-msgid "(Give a Fire Resistance potion)."
-msgstr ""
-
-#: game.tra:231
-msgid "(Give an Invisibility potion)."
-msgstr ""
-
-#: game.tra:232
-msgid "(Give a oil of Speed)."
-msgstr ""
-
-#: game.tra:233
-msgid "(Give an elixir of Health)."
-msgstr ""
-
-#: game.tra:234
-msgid "(Give a potion of Absorption)."
-msgstr ""
-
-#: game.tra:235
-msgid "(Give a potion of Agility)."
-msgstr ""
-
-#: game.tra:236
-msgid "(Give an Antidote)."
-msgstr ""
-
-#: game.tra:237
-msgid "(Give a potion of Clarity)."
-msgstr ""
-
-#: game.tra:238
-msgid "(Give a Cold Resistance potion)."
-msgstr ""
-
-#: game.tra:239
-msgid "(Give a potion of Defence)."
-msgstr ""
-
-#: game.tra:240
-msgid "(Give a potion of Fortitude)."
-msgstr ""
-
-#: game.tra:241
-msgid "(Give a potion of Insulation)."
-msgstr ""
-
-#: game.tra:242
-msgid "(Give a potion of Magic Blocking)."
-msgstr ""
-
-#: game.tra:243
-msgid "(Give a potion of Magic Resistance)."
-msgstr ""
-
-#: game.tra:244
-msgid "(Give a potion of Magic Shielding)."
-msgstr ""
-
-#: game.tra:245
-msgid "(Give a potion of Mirrored Eyes)."
-msgstr ""
-
-#: game.tra:246
-msgid "(Give a potion of Power)."
-msgstr ""
-
-#: game.tra:247
-msgid "(Give a potion of Regeneration)."
-msgstr ""
-
-#: game.tra:248
-msgid "(Give a potion of Strength)."
-msgstr ""
-
-#: game.tra:249
-msgid "(Give a potion of Freedom)."
-msgstr ""
-
-#: game.tra:250
-msgid "(Give a potion of Stone Form)."
-msgstr ""
-
-#: game.tra:251
-msgid "Actually, take a goodberry."
-msgstr ""
-
 #: game.tra:252
 msgid "Arrow trap"
 msgstr ""
@@ -914,54 +501,6 @@ msgstr ""
 
 #: game.tra:255
 msgid "slashing"
-msgstr ""
-
-#: game.tra:256
-msgid "(Give a potion of Hill Giant Strength)."
-msgstr ""
-
-#: game.tra:257
-msgid "(Give a potion of Frost Giant Strength)."
-msgstr ""
-
-#: game.tra:258
-msgid "(Give a potion of Fire Giant Strength)."
-msgstr ""
-
-#: game.tra:259
-msgid "(Give a potion of Cloud Giant Strength)."
-msgstr ""
-
-#: game.tra:260
-msgid "(Give a potion of Storm Giant Strength)."
-msgstr ""
-
-#: game.tra:261
-msgid "(Give a potion of Heroism)."
-msgstr ""
-
-#: game.tra:262
-msgid "(Give a potion of Invulnerability)."
-msgstr ""
-
-#: game.tra:263
-msgid "(Give a potion of Stone Giant Strength)."
-msgstr ""
-
-#: game.tra:264
-msgid "(Give a potion of Master Thievery)."
-msgstr ""
-
-#: game.tra:265
-msgid "(Give a potion of Mind Focusing)."
-msgstr ""
-
-#: game.tra:266
-msgid "(Give a potion of Perception)."
-msgstr ""
-
-#: game.tra:267
-msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr ""
 
 #: map_notes.tra:1
@@ -1399,4 +938,373 @@ msgid ""
 "\n"
 "Saving Throws:  +2 bonus vs Poison.\n"
 "Special: The wearer is immune to webs, and can cast Web once per day."
+msgstr ""
+
+#: smarter_familiars.tra:15
+msgid "Boss, your pack is full."
+msgstr ""
+
+#: smarter_familiars.tra:167
+msgid "Let's change formation."
+msgstr ""
+
+#: smarter_familiars.tra:168
+msgid "I want to give you new instructions about the loot."
+msgstr ""
+
+#: smarter_familiars.tra:169
+msgid "We need to discuss combat."
+msgstr ""
+
+#: smarter_familiars.tra:170
+msgid "Yes, boss?"
+msgstr ""
+
+#: smarter_familiars.tra:171
+msgid "Follow me at all times."
+msgstr ""
+
+#: smarter_familiars.tra:172
+msgid "Stop following me all the time."
+msgstr ""
+
+#: smarter_familiars.tra:173
+msgid "Actually, nevermind. Distance is fine for now."
+msgstr ""
+
+#: smarter_familiars.tra:174
+msgid "If you see any danger, jump to my pack right away!"
+msgstr ""
+
+#: smarter_familiars.tra:175
+msgid "Don't hide in my pack when you see enemies."
+msgstr ""
+
+#: smarter_familiars.tra:176
+msgid "When you're injured, rush to my pack immediately."
+msgstr ""
+
+#: smarter_familiars.tra:177
+msgid "When you're badly injured, rush to my pack immediately."
+msgstr ""
+
+#: smarter_familiars.tra:178
+msgid "When the enemies are gone, get out of the pack by yourself."
+msgstr ""
+
+#: smarter_familiars.tra:179
+msgid "After hiding in my pack, stay there. One cannot be too careful."
+msgstr ""
+
+#: smarter_familiars.tra:180
+msgid "Ah, maybe later."
+msgstr ""
+
+#: smarter_familiars.tra:181
+msgid "Stop picking up any items, okay?"
+msgstr ""
+
+#: smarter_familiars.tra:182
+msgid "I want you to bring me everything. Any valuables."
+msgstr ""
+
+#: smarter_familiars.tra:183
+msgid "Pick up any gold that you find."
+msgstr ""
+
+#: smarter_familiars.tra:184
+msgid "Don't pick up the gold that you find."
+msgstr ""
+
+#: smarter_familiars.tra:185
+msgid "Pick up any jewels that you find."
+msgstr ""
+
+#: smarter_familiars.tra:186
+msgid "Pick up only valuable and magical jewelry."
+msgstr ""
+
+#: smarter_familiars.tra:187
+msgid "Pick up only magical jewelry."
+msgstr ""
+
+#: smarter_familiars.tra:188
+msgid "Don't pick up the jewelry."
+msgstr ""
+
+#: smarter_familiars.tra:189
+msgid "Pick up any magical ammo that you find."
+msgstr ""
+
+#: smarter_familiars.tra:190
+msgid "Don't pick up the ammo."
+msgstr ""
+
+#: smarter_familiars.tra:191
+msgid "If you find any potions, bring them to me!"
+msgstr ""
+
+#: smarter_familiars.tra:192
+msgid "Stop picking up potions."
+msgstr ""
+
+#: smarter_familiars.tra:193
+msgid "Get me any scrolls that you can find."
+msgstr ""
+
+#: smarter_familiars.tra:194
+msgid "I don't need you to bring any more scrolls."
+msgstr ""
+
+#: smarter_familiars.tra:195
+msgid ""
+"Fetch scalps from those bandits we kill. There's a nice bounty for them."
+msgstr ""
+
+#: smarter_familiars.tra:196
+msgid "Stop that scalping, will you? It's disgusting."
+msgstr ""
+
+#: smarter_familiars.tra:197
+msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
+msgstr ""
+
+#: smarter_familiars.tra:198
+msgid "No more pelts or scales, we're stocked."
+msgstr ""
+
+#: smarter_familiars.tra:199
+msgid "No, nothing."
+msgstr ""
+
+#: smarter_familiars.tra:200
+msgid "As you wish, master."
+msgstr ""
+
+#: smarter_familiars.tra:201
+msgid "Let's talk about your gear."
+msgstr ""
+
+#: smarter_familiars.tra:202
+msgid ""
+"Take this returning dart. I think you're better off attacking from distance."
+msgstr ""
+
+#: smarter_familiars.tra:203
+msgid "OK, boss."
+msgstr ""
+
+#: smarter_familiars.tra:204
+msgid "Done."
+msgstr ""
+
+#: smarter_familiars.tra:205
+msgid "No, actually I think your gear is fine."
+msgstr ""
+
+#: smarter_familiars.tra:207
+msgid "Don't bother me with your whining, I don't care if you're hurt."
+msgstr ""
+
+#: smarter_familiars.tra:208
+msgid "After fight, if you're hurt, let me know."
+msgstr ""
+
+#: smarter_familiars.tra:209
+msgid "After fight, if you're badly hurt, let me know."
+msgstr ""
+
+#: smarter_familiars.tra:210
+msgid "I'm hurting here, Boss."
+msgstr ""
+
+#: smarter_familiars.tra:211
+msgid "I'm really hurting here, Boss."
+msgstr ""
+
+#: smarter_familiars.tra:212
+msgid "Move faster, will you? Don't lag behind."
+msgstr ""
+
+#: smarter_familiars.tra:213
+msgid "Don't run so fast. I can't catch up to you."
+msgstr ""
+
+#: smarter_familiars.tra:214
+msgid "Ouch!"
+msgstr ""
+
+#: smarter_familiars.tra:221
+msgid ""
+"When you're being attacked, disengage for a short time, then get back at the"
+" enemy."
+msgstr ""
+
+#: smarter_familiars.tra:222
+msgid "Don't disengage, even if you're being attacked."
+msgstr ""
+
+#: smarter_familiars.tra:223
+msgid "In combat, don't attack enemies, unless I tell you to."
+msgstr ""
+
+#: smarter_familiars.tra:224
+msgid "In combat, attack enemies when you see them."
+msgstr ""
+
+#: smarter_familiars.tra:225
+msgid ""
+"In combat, attack enemies when you see them, prioritizing spellcasters."
+msgstr ""
+
+#: smarter_familiars.tra:226
+msgid "Here, take this potion."
+msgstr ""
+
+#: smarter_familiars.tra:227
+msgid "(Give a Healing potion)."
+msgstr ""
+
+#: smarter_familiars.tra:228
+msgid "(Give an Extra Healing potion)."
+msgstr ""
+
+#: smarter_familiars.tra:229
+msgid "(Give a Superior Healing potion)."
+msgstr ""
+
+#: smarter_familiars.tra:230
+msgid "(Give a Fire Resistance potion)."
+msgstr ""
+
+#: smarter_familiars.tra:231
+msgid "(Give an Invisibility potion)."
+msgstr ""
+
+#: smarter_familiars.tra:232
+msgid "(Give a oil of Speed)."
+msgstr ""
+
+#: smarter_familiars.tra:233
+msgid "(Give an elixir of Health)."
+msgstr ""
+
+#: smarter_familiars.tra:234
+msgid "(Give a potion of Absorption)."
+msgstr ""
+
+#: smarter_familiars.tra:235
+msgid "(Give a potion of Agility)."
+msgstr ""
+
+#: smarter_familiars.tra:236
+msgid "(Give an Antidote)."
+msgstr ""
+
+#: smarter_familiars.tra:237
+msgid "(Give a potion of Clarity)."
+msgstr ""
+
+#: smarter_familiars.tra:238
+msgid "(Give a Cold Resistance potion)."
+msgstr ""
+
+#: smarter_familiars.tra:239
+msgid "(Give a potion of Defence)."
+msgstr ""
+
+#: smarter_familiars.tra:240
+msgid "(Give a potion of Fortitude)."
+msgstr ""
+
+#: smarter_familiars.tra:241
+msgid "(Give a potion of Insulation)."
+msgstr ""
+
+#: smarter_familiars.tra:242
+msgid "(Give a potion of Magic Blocking)."
+msgstr ""
+
+#: smarter_familiars.tra:243
+msgid "(Give a potion of Magic Resistance)."
+msgstr ""
+
+#: smarter_familiars.tra:244
+msgid "(Give a potion of Magic Shielding)."
+msgstr ""
+
+#: smarter_familiars.tra:245
+msgid "(Give a potion of Mirrored Eyes)."
+msgstr ""
+
+#: smarter_familiars.tra:246
+msgid "(Give a potion of Power)."
+msgstr ""
+
+#: smarter_familiars.tra:247
+msgid "(Give a potion of Regeneration)."
+msgstr ""
+
+#: smarter_familiars.tra:248
+msgid "(Give a potion of Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:249
+msgid "(Give a potion of Freedom)."
+msgstr ""
+
+#: smarter_familiars.tra:250
+msgid "(Give a potion of Stone Form)."
+msgstr ""
+
+#: smarter_familiars.tra:251
+msgid "Actually, take a goodberry."
+msgstr ""
+
+#: smarter_familiars.tra:256
+msgid "(Give a potion of Hill Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:257
+msgid "(Give a potion of Frost Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:258
+msgid "(Give a potion of Fire Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:259
+msgid "(Give a potion of Cloud Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:260
+msgid "(Give a potion of Storm Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:261
+msgid "(Give a potion of Heroism)."
+msgstr ""
+
+#: smarter_familiars.tra:262
+msgid "(Give a potion of Invulnerability)."
+msgstr ""
+
+#: smarter_familiars.tra:263
+msgid "(Give a potion of Stone Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:264
+msgid "(Give a potion of Master Thievery)."
+msgstr ""
+
+#: smarter_familiars.tra:265
+msgid "(Give a potion of Mind Focusing)."
+msgstr ""
+
+#: smarter_familiars.tra:266
+msgid "(Give a potion of Perception)."
+msgstr ""
+
+#: smarter_familiars.tra:267
+msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr ""
