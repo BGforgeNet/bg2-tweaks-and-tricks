@@ -1,3 +1,5 @@
+OUTER_SPRINT comp_dir ~%comp_dir%~
+
 ACTION_IF ENGINE_IS ~tob~ BEGIN
   OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
   LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
@@ -17,7 +19,7 @@ OUTER_SPRINT g_FamPickupPotionsCommon_action ~~
 OUTER_SPRINT g_FamPickupPotionsRare_action ~~
 OUTER_SPRINT g_FamPickupScrolls_action ~~
 
-INCLUDE ~%MOD_FOLDER%/smarter_familiars/autoloot_lists.tph~
+INCLUDE ~%comp_dir%/autoloot_lists.tpa~
 
 
 //Gems
@@ -125,7 +127,7 @@ END
 >>>>>>>>
 
 //Override script
-INCLUDE ~%MOD_FOLDER%/lib/familiars.tph~ //familiar_list, compatibility with WTPfamiliars
+INCLUDE ~%lib_dir%/familiars.tpa~ //familiar_list, compatibility with WTPfamiliars
 
 ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   OUTER_SPRINT fam_cre ~%prefix%%cre%~
@@ -135,7 +137,7 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII 0x280 death_var
     BUT_ONLY
-    REINCLUDE ~%MOD_FOLDER%/smarter_familiars/g_fam.baf.tph~ //ACTION to generate script. Depends on %death_var% and %fam_item%
+    REINCLUDE ~%comp_dir%/g_fam.baf.tpa~ //ACTION to generate script. Depends on %death_var% and %fam_item%
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII 0x248 over_script
       PATCH_PRINT ~cre is %fam_cre%, script is %over_script%, death_var is %death_var%~
@@ -304,14 +306,14 @@ END
 //New dialog options
 ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
-    COMPILE EVAL ~%MOD_FOLDER%/smarter_familiars/familiars.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/game.tra~
+    COMPILE EVAL ~%comp_dir%/familiars.d~ USING ~%MOD_FOLDER%/tra/%LANGUAGE%/game.tra~
   END
 END
 
 //Speed spells
-COPY ~%MOD_FOLDER%/smarter_familiars/g_fsped0.spl~ ~override~
-COPY ~%MOD_FOLDER%/smarter_familiars/g_fsped1.spl~ ~override~
-COPY ~%MOD_FOLDER%/smarter_familiars/g_fsped2.spl~ ~override~
+COPY ~%comp_dir%/g_fsped0.spl~ ~override~
+COPY ~%comp_dir%/g_fsped1.spl~ ~override~
+COPY ~%comp_dir%/g_fsped2.spl~ ~override~
 
 
 //potion spy
@@ -331,4 +333,3 @@ THEN
 END
 >>>>>>>>
 COMPILE ~.../tnt-inlined/g_spy1.baf~
-

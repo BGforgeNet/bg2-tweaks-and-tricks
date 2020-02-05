@@ -206,7 +206,7 @@ APPEND %dialog%
     + g_familiar_confirm
     // Finally, goodberries are finished
 */
-    //generated in main.tph, a state for each potion
+    //generated in main.tpa, a state for each potion
     %action_drink%
     ++ @180 + %state%
   END

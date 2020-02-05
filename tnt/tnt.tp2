@@ -3,14 +3,12 @@ AUTHOR "burner1024 @ github"
 VERSION ~v8~
 NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
-//ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
-//MODDER setup_tra none
-//AUTO_TRA ~%MOD_FOLDER%/tra/%s~
 ALWAYS
   OUTER_SPRINT components ~%MOD_FOLDER%/components~
-  OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
-  INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
+  OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
+  OUTER_SPRINT BGFORGE_LIB "%MOD_FOLDER%/lib/bgforge"
+  INCLUDE ~%BGFORGE_LIB%/main.tpa~
 END
 
 LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
@@ -20,12 +18,12 @@ LANGUAGE ~Russian~ ~RUSSIAN~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.t
 BEGIN @74 /* Smarter familiars */
 GROUP @225 /* Familiars */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-INCLUDE ~%MOD_FOLDER%/smarter_familiars/main.tph~
+INCLUDE ~%components%/smarter_familiars/main.tpa~
 
 BEGIN @77 /* Resilient familiars */
 GROUP @225 /* Familiars */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
-INCLUDE ~%MOD_FOLDER%/resilient_familiars/main.tph~
+INCLUDE ~%components%/resilient_familiars/main.tpa~
 // End familiars
 
 
