@@ -18,7 +18,8 @@ LANGUAGE ~Russian~ ~RUSSIAN~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.t
 BEGIN @74 /* Smarter familiars */
 GROUP @225 /* Familiars */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-INCLUDE ~%components%/smarter_familiars/main.tpa~
+OUTER_SPRINT comp_name ~smarter_familiars~
+WITH_TRA ~%LANGUAGE%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @77 /* Resilient familiars */
 GROUP @225 /* Familiars */
