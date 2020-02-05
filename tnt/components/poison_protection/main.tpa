@@ -1,4 +1,4 @@
-//periapt of proof against poison in in BG2 only
+//periapt of proof against poison is in BG2 only
 ACTION_IF FILE_EXISTS_IN_GAME ~amul22.itm~ BEGIN
   COPY_EXISTING ~amul22.itm~ ~override~
     LPF ADD_ITEM_EQEFFECT
