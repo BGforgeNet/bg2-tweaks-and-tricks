@@ -1,14 +1,14 @@
 BACKUP ~tnt/backup~
 AUTHOR "burner1024 @ github"
-VERSION ~v8~
+VERSION ~v8.beta~
 NO_IF_EVAL_BUG
 README ~%MOD_FOLDER%/readme.txt~
 AUTO_EVAL_STRINGS
 ALWAYS
   OUTER_SPRINT components ~%MOD_FOLDER%/components~
   OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
-  OUTER_SPRINT BGFORGE_LIB "%MOD_FOLDER%/lib/bgforge"
-  INCLUDE ~%BGFORGE_LIB%/main.tpa~
+  OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
+  INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
 END
 
 LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
