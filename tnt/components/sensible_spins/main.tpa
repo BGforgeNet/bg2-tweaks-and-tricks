@@ -6,13 +6,13 @@ COPY ~%comp_dir%/%icon%.bam~ ~override~ //"cancel spin" ability icon
 
 OUTER_TEXT_SPRINT sectype ~g_spin~
 ADD_SECTYPE ~%sectype%~ @1
-OUTER_SET sectype_id = g_spin
+OUTER_SET sectype_id = g_spin  //set by ADD_SECTYPE
 
 // "cancel spin" ability
 LAF CREATE_SPELL
   INT_VAR
-    flags = SPL_FLAG_ignore_dead_wild_magic
-    sectype = sectype_id // set by ADD_SECTYPE
+    flags = FLAG_SPL_ignore_dead_wild_magic
+    sectype = sectype_id
   STR_VAR spell = ~%spl_despin%.spl~
 END
 COPY_EXISTING ~%spl_despin%.spl~ override
@@ -34,7 +34,7 @@ COPY_EXISTING ~%spl_despin%.spl~ override
 BUT_ONLY
 
 ACTION_FOR_EACH spl IN BLADE_OFFENSIVE_SPIN BLADE_DEFENSIVE_SPIN BEGIN //spins
-  COPY_EXISTING ~%spl%~ override
+  COPY_EXISTING ~%spl%.spl~ override
     WRITE_BYTE SPL_sectype sectype_id
     LPF ADD_SPELL_EFFECT //remove active spins first
       INT_VAR

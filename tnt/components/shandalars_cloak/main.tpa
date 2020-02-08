@@ -50,7 +50,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
       insert_point = 0
       charges = 1
       depletion = DEPLETION_recharges
-      flags = FLAG_ABILITY_recharge_after_rest
+      flags = FLAG_HEADER_recharge_after_rest
     STR_VAR
       icon = ~%icon%~
   END 
