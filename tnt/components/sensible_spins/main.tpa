@@ -1,4 +1,4 @@
-OUTER_TEXT_SPRINT spl = ~g_despin.spl~
+OUTER_TEXT_SPRINT spl ~g_despin.spl~
 
 ADD_SECTYPE ~g_spin~ @1
 LAF CREATE_SPELL
