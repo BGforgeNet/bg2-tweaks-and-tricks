@@ -1,34 +1,60 @@
-OUTER_TEXT_SPRINT spl ~g_despin.spl~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 
-ADD_SECTYPE g_spin @1
+OUTER_TEXT_SPRINT spl_despin ~g_despin~
+OUTER_TEXT_SPRINT icon ~%spl_despin%~
+COPY ~%comp_dir%/%icon%.bam~ ~override~ //"cancel spin" ability icon
+
+OUTER_TEXT_SPRINT sectype ~g_spin~
+ADD_SECTYPE sectype @1
+
+// "cancel spin" ability
 LAF CREATE_SPELL
   INT_VAR
     flags = SPL_FLAG_ignore_dead_wild_magic
-    sectype = g_spin // set by ADD_SECTYPE
-  STR_VAR spell = ~%spl%~
+    sectype = sectype // set by ADD_SECTYPE
+  STR_VAR spell = ~%spl_despin%.spl~
 END
-
-COPY_EXISTING ~%spl%~ override
+COPY_EXISTING ~%spl_despin%.spl~ override
   LPF ADD_SPELL_HEADER END
-  LPF ADD_SPELL_EFFECT
+  LPF ADD_SPELL_EFFECT //remove active spins
     INT_VAR
       opcode = OPCODE_remove_secondary_type
       parameter1 = 1 //max level
-      paremeter2 = g_spin
+      paremeter2 = sectype
       timing = TIMING_permanent
   END
+  LPF ADD_SPELL_EFFECT //remove self
+    INT_VAR
+      opcode = OPCODE_remove_spell
+      timing = TIMING_permanent
+    STR_VAR resource = ~%spl_despin%~
+  END
+  WRITE_ASCIIT SPL_icon ~%icon%~
 BUT_ONLY
 
-ACTION_FOR_EACH spl IN ~spcl521.spl~ ~spcl522.spl~ BEGIN
+ACTION_FOR_EACH spl IN BLADE_OFFENSIVE_SPIN BLADE_DEFENSIVE_SPIN BEGIN //spins
   COPY_EXISTING ~%spl%~ override
-    WRITE_BYTE SPL_sectype g_spin
-    LPF ADD_SPELL_EFFECT //dispel self before reapplying
+    WRITE_BYTE SPL_sectype sectype
+    LPF ADD_SPELL_EFFECT //remove active spins first
       INT_VAR
         opcode = OPCODE_remove_secondary_type
         parameter1 = 1 //max level
-        paremeter2 = g_spin
+        paremeter2 = sectype
         timing = TIMING_permanent
         insert_point = 0
+    END
+    LPF ADD_SPELL_EFFECT //add "cancel spin" ability
+      INT_VAR
+        opcode = OPCODE_give_ability
+        timing = TIMING_permanent
+      STR_VAR resource = ~%spl_despin%~
+    END
+    LPF ADD_SPELL_EFFECT //remove "cancel spin" ability
+      INT_VAR
+        opcode = OPCODE_remove_spell
+        timing = TIMING_delayed
+        duration = 24
+      STR_VAR resource = ~%spl_despin%~
     END
   BUT_ONLY
 END
