@@ -43,7 +43,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
   END
 
   // web spell ability
-  READ_ASCII 0x3a icon
+  READ_ASCII SPL_icon icon
   LPF ADD_ITEM_HEADER
     INT_VAR
       range = 60 // I think 60 is correct?
@@ -63,7 +63,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
       paremeter2 = 1 // cast instantly
       timing = TIMING_permanent
     STR_VAR
-      resource = "spwi215"
+      resource = WIZARD_WEB
   END
 
 BUT_ONLY
