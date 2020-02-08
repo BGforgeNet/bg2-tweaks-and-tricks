@@ -587,6 +587,10 @@ msgstr ""
 msgid "Solianna"
 msgstr ""
 
+#: sensible_spins.tra:1
+msgid "Spin refreshed."
+msgstr ""
+
 #: setup.tra:74
 msgid "Smarter familiars"
 msgstr ""
@@ -930,6 +934,10 @@ msgstr ""
 
 #: setup.tra:255
 msgid "Disable intro movies"
+msgstr ""
+
+#: setup.tra:256
+msgid "Sensible Blade spins"
 msgstr ""
 
 #: shandalars_cloak.tra:1

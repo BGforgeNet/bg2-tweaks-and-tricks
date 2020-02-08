@@ -681,6 +681,12 @@ msgstr "Лал"
 msgid "Solianna"
 msgstr "Солианна"
 
+#: sensible_spins.tra:1
+#, fuzzy
+#| msgid "Potion effect refreshed"
+msgid "Spin refreshed."
+msgstr "Эффект зелья обновлен"
+
 #: setup.tra:74
 msgid "Smarter familiars"
 msgstr "Умные фамильяры"
@@ -1035,6 +1041,12 @@ msgstr ""
 #: setup.tra:255
 msgid "Disable intro movies"
 msgstr ""
+
+#: setup.tra:256
+#, fuzzy
+#| msgid "Sensible Otiluke's sphere"
+msgid "Sensible Blade spins"
+msgstr "Более адекватная сфера Отилюка"
 
 #: shandalars_cloak.tra:1
 msgid ""
