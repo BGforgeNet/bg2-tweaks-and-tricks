@@ -13,7 +13,7 @@ LAF CREATE_SPELL
   INT_VAR
     flags = FLAG_SPL_ignore_dead_wild_magic
     sectype = sectype_id
-  STR_VAR spell = ~%spl_despin%.spl~
+  STR_VAR spell = EVAL ~%spl_despin%.spl~
 END
 COPY_EXISTING ~%spl_despin%.spl~ override
   LPF ADD_SPELL_HEADER END
