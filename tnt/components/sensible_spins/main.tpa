@@ -8,6 +8,10 @@ OUTER_TEXT_SPRINT sectype ~g_spin~
 ADD_SECTYPE ~%sectype%~ @1
 OUTER_SET sectype_id = g_spin  //set by ADD_SECTYPE
 
+PRINT ~%spl_despin%.spl~
+OUTER_TEXT_SPRINT test EVAL ~%spl_despin%.spl~
+PRINT ~%test%~
+
 // "cancel spin" ability
 LAF CREATE_SPELL
   INT_VAR
