@@ -33,7 +33,7 @@ COPY_EXISTING ~%spl_despin%.spl~ override
   WRITE_ASCIIT SPL_icon ~%icon%~
 BUT_ONLY
 
-ACTION_FOR_EACH spl IN %BLADE_OFFENSIVE_SPIN% %BLADE_DEFENSIVE_SPIN% BEGIN //spins
+ACTION_FOR_EACH spl IN ~%BLADE_OFFENSIVE_SPIN%~ ~%BLADE_DEFENSIVE_SPIN%~ BEGIN //spins
   COPY_EXISTING ~%spl%.spl~ override
     WRITE_BYTE SPL_sectype sectype_id
     LPF ADD_SPELL_EFFECT //remove active spins first
