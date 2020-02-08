@@ -1,10 +1,10 @@
 OUTER_TEXT_SPRINT spl ~g_despin.spl~
 
-ADD_SECTYPE ~g_spin~ @1
+ADD_SECTYPE g_spin @1
 LAF CREATE_SPELL
   INT_VAR
     flags = SPL_FLAG_ignore_dead_wild_magic
-    sectype = sectypeName // set by ADD_SECTYPE
+    sectype = g_spin // set by ADD_SECTYPE
   STR_VAR spell = ~%spl%~
 END
 
@@ -14,19 +14,19 @@ COPY_EXISTING spl override
     INT_VAR
       opcode = OPCODE_remove_secondary_type
       parameter1 = 1 //max level
-      paremeter2 = sectypeName
+      paremeter2 = g_spin
       timing = TIMING_permanent
   END
 BUT_ONLY
 
 ACTION_FOR_EACH spl IN ~spcl521.spl~ ~spcl522.spl~ BEGIN
   COPY_EXISTING spl override
-    WRITE_BYTE SPL_sectype sectypeName
+    WRITE_BYTE SPL_sectype g_spin
     LPF ADD_SPELL_EFFECT //dispel self before reapplying
       INT_VAR
         opcode = OPCODE_remove_secondary_type
         parameter1 = 1 //max level
-        paremeter2 = sectypeName
+        paremeter2 = g_spin
         timing = TIMING_permanent
         insert_point = 0
     END
