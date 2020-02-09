@@ -6,8 +6,8 @@ COPY_EXISTING ~weapprof.2da~ override
   COUNT_2DA_COLS column_num
   fighter_column = 5
   READ_2DA_ENTRIES_NOW g_weapprof_read column_num
-  FOR (r=0; r<g_weapprof_read; r++) BEGIN //iterate over rows
-    FOR(c=0; c<column_num; c++) BEGIN //and over columns
+  FOR (r=0; r<g_weapprof_read; ++r) BEGIN //iterate over rows
+    FOR(c=0; c<column_num; ++c) BEGIN //and over columns
       PATCH_IF c != fighter_column BEGIN //skip true fighter
         READ_2DA_ENTRY_FORMER g_weapprof_read r c max_pips
         PATCH_IF max_pips == 5 BEGIN
