@@ -367,3 +367,6 @@ DISABLE_FROM_KEY bwdragon.mve bislogo.mve wotc.mve
 BEGIN @256 /* Sensible Blade spins */
 OUTER_SPRINT comp_name ~sensible_spins~
 WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
+BEGIN @257 /* True True Grandmastery */
+INCLUDE ~%components%/true_true_grandmastery/main.tpa~
