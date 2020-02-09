@@ -1,9 +1,9 @@
 //APR table stolen from cdtweaks, goes to level 50
-COPY ~%components%/true_true_grandmastery/wspatck.2da~ ~override~
+COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
 
 // limit max pips
-COPY_EXISTING ~weapprof.2da~ ~override~
-  column_num = COUNT_2DA_COLS
+COPY_EXISTING ~weapprof.2da~ override
+  COUNT_2DA_COLS column_num
   fighter_column = 5
   READ_2DA_ENTRIES_NOW g_weapprof_read column_num
   FOR (r=0; r<g_weapprof_read; r++) BEGIN //iterate over rows
