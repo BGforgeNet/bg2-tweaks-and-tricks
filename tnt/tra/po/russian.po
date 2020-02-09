@@ -1048,6 +1048,10 @@ msgstr ""
 msgid "Sensible Blade spins"
 msgstr "Более адекватная сфера Отилюка"
 
+#: setup.tra:257
+msgid "True True Grandmastery"
+msgstr ""
+
 #: shandalars_cloak.tra:1
 msgid ""
 "This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
