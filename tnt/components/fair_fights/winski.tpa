@@ -3,6 +3,8 @@ COPY_EXISTING ~winski2.cre~ ~override~
 	WRITE_BYTE CRE_class IDS_OF_SYMBOL (~class~ ~mage~) //make non-innocent
 BUT_ONLY
 
+<<<<<<<< .../tnt-inlined/fair_fights/empty.baf
+>>>>>>>>
 //instakill on attacking sarevok in ducal palace
 <<<<<<<< .../tnt-inlined/fair_fights/sarevok.baf
 IF
@@ -22,7 +24,9 @@ ACTION_FOR_EACH script IN
 BEGIN
 	ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ BEGIN
 		COPY_EXISTING ~%script%.bcs~ ~override~
-			R_B_B CASE_INSENSITIVE ~.../tnt-inlined/fair_fights/sarevok.baf~ ~~
+			R_B_B CASE_INSENSITIVE
+				~.../tnt-inlined/fair_fights/sarevok.baf~
+				~.../tnt-inlined/fair_fights/empty.baf~
 		BUT_ONLY
 	END
 END
@@ -44,6 +48,8 @@ END
 ACTION_FOR_EACH script IN ~belt~ ~liia~
 BEGIN
 	COPY_EXISTING ~%script%.bcs~ ~override~
-		R_B_B CASE_INSENSITIVE ~.../tnt-inlined/fair_fights/sarevok.baf~ ~~
+		R_B_B CASE_INSENSITIVE
+			~.../tnt-inlined/fair_fights/dukes.baf~
+			~.../tnt-inlined/fair_fights/empty.baf~
 	BUT_ONLY
 END
