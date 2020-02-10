@@ -7,7 +7,7 @@ END
 COPY_EXISTING ~clsrcreq.2da~ override
   LAF GET_2DA_INDEX RET col_index row_index END
   COUNT_2DA_COLS columns
-  READ_2DA_ENTRIES_NOW rows (columns-1)
+  READ_2DA_ENTRIES_NOW rows (columns - 1)
   human_col = col_index(~HUMAN~)
   PATCH_FOR_EACH row IN ~FIGHTER_CLERIC~ ~FIGHTER_THIEF~ ~CLERIC_THIEF~ BEGIN
     FOR (c=1;c<columns;++c) BEGIN
