@@ -5,7 +5,7 @@ ACTION_IF ENGINE_IS ~tob~ BEGIN
 END
 
 COPY_EXISTING ~clsrcreq.2da~ override
-  LAF GET_2DA_INDEX RET_ARRAY col_index = col_index row_index = row_index END
+  LPF GET_2DA_INDEX RET_ARRAY col_index row_index END
   COUNT_2DA_COLS columns
   READ_2DA_ENTRIES_NOW rows (columns - 1)
   human_col = col_index(~HUMAN~)
@@ -20,4 +20,6 @@ COPY_EXISTING ~clsrcreq.2da~ override
   SET_2DA_ENTRY_LATER new_rows $row_index(CLERIC_RANGER) $col_index(ELF) 1
   SET_2DA_ENTRY_LATER new_rows $row_index(FIGHTER_MAGE_CLERIC) $col_index(ELF) 1
   SET_2DA_ENTRY_LATER new_rows $row_index(FIGHTER_MAGE_THIEF) $col_index(GNOME) 1
+  SET_2DA_ENTRIES_NOW new_rows (columns - 1)
+  PRETTY_PRINT_2DA
 BUT_ONLY

@@ -16,6 +16,6 @@ COPY_EXISTING ~weapprof.2da~ override
       END
     END
   END
-  SET_2DA_ENTRIES_NOW weapprof_set column_num
+  SET_2DA_ENTRIES_NOW weapprof_set columns
   PRETTY_PRINT_2DA
 BUT_ONLY
