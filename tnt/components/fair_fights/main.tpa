@@ -6,3 +6,4 @@ INCLUDE ~%comp_dir%/arkanis.tpa~
 INCLUDE ~%comp_dir%/malchor.tpa~
 INCLUDE ~%comp_dir%/non_innocents.tpa~
 INCLUDE ~%comp_dir%/mages.tpa~
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN INCLUDE ~%comp_dir%/winski.tpa~ END

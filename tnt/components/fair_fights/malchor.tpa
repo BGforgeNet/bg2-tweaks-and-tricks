@@ -1,6 +1,6 @@
 //Malchor Harpell
 
-<<<<<<<< .../tnt-inlined/malchor.d
+<<<<<<<< .../tnt-inlined/fair_fights/malchor.d
 REPLACE_ACTION_TEXT c6harp
   ~SetGlobal("TalkedToMalchor","GLOBAL",3).*~
   ~SetGlobal("TalkedToMalchor","GLOBAL",3)
@@ -10,7 +10,7 @@ REPLACE_ACTION_TEXT c6harp ~ReallyForceSpell.*~ ~~  //imprisonment action
 >>>>>>>>
 
 ACTION_IF FILE_EXISTS_IN_GAME ~c6harp.dlg~ BEGIN
-  COMPILE ~.../tnt-inlined/malchor.d~
+  COMPILE ~.../tnt-inlined/fair_fights/malchor.d~
   COPY_EXISTING ~c6harp.cre~ ~override~
     REMOVE_CRE_ITEM ~imoenhp1~
   BUT_ONLY
