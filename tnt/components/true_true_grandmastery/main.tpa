@@ -5,7 +5,7 @@ COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
 COPY_EXISTING ~weapprof.2da~ override
   COUNT_2DA_COLS column_num
   fighter_column = 5
-  READ_2DA_ENTRIES_NOW g_weapprof_read column_num
+  READ_2DA_ENTRIES_NOW g_weapprof_read (column_num-1)
   FOR (r=0; r<g_weapprof_read; ++r) BEGIN //iterate over rows
     FOR(c=0; c<column_num; ++c) BEGIN //and over columns
       PATCH_IF c != fighter_column BEGIN //skip true fighter
