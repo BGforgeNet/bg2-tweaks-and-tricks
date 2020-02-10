@@ -3,19 +3,21 @@ COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
 
 // limit max pips
 COPY_EXISTING ~weapprof.2da~ override
-  COUNT_2DA_COLS column_num
+  COUNT_2DA_COLS columns
+  PATCH_PRINT ~columns: %columns%~
   fighter_column = 5
-  READ_2DA_ENTRIES_NOW g_weapprof_read (column_num - 1)
-  FOR (r=0; r<g_weapprof_read; ++r) BEGIN //iterate over rows
-    FOR(c=0; c<column_num; ++c) BEGIN //and over columns
+  READ_2DA_ENTRIES_NOW weapprof_read (columns - 1)
+  FOR (r=0; r<weapprof_read; ++r) BEGIN //iterate over rows
+    FOR(c=0; c<columns; ++c) BEGIN //and over columns
+      PATCH_PRINT ~c: %c%~
       PATCH_IF c != fighter_column BEGIN //skip true fighter
-        READ_2DA_ENTRY_FORMER g_weapprof_read r c max_pips
+        READ_2DA_ENTRY_FORMER weapprof_read r c max_pips
         PATCH_IF ~%max_pips%~ STR_EQ ~5~ BEGIN
-          SET_2DA_ENTRY_LATER g_weapprof_set r c 4 //limit everyone else to 4
+          SET_2DA_ENTRY_LATER weapprof_set r c 4 //limit everyone else to 4
         END
       END
     END
   END
-  SET_2DA_ENTRIES_NOW g_weapprof_set column_num
+  SET_2DA_ENTRIES_NOW weapprof_set column_num
   PRETTY_PRINT_2DA
 BUT_ONLY
