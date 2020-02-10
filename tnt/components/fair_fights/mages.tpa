@@ -1,0 +1,13 @@
+//Kahrk, the mightiest ogre mage - in Firewine. And others...
+COPY_EXISTING_REGEXP ~.*\.cre~ ~override~
+  REMOVE_CRE_ITEM
+    ~mageamul~
+    ~magebrac~
+//    ~mage01~ // invisibility. Needed for bridge guardian in unseeing eye quest
+    ~mage02~
+    ~mage03~
+    ~mage04~
+    ~mage05~
+    ~mage06~
+    ~stonskin~
+BUT_ONLY

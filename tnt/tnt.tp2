@@ -239,7 +239,7 @@ INCLUDE ~%MOD_FOLDER%/greater_command/main.tpa~
 BEGIN @91 /* Fair fights */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-INCLUDE ~%MOD_FOLDER%/fair_fights/main.tph~
+INCLUDE ~%components%/fair_fights/main.tpa~
 
 
 BEGIN @99 /* Gem, scroll, potion, ammo (GSPA) */

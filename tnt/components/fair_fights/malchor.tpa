@@ -1,0 +1,25 @@
+//Malchor Harpell
+
+<<<<<<<< .../tnt-inlined/malchor.d
+REPLACE_ACTION_TEXT c6harp
+  ~SetGlobal("TalkedToMalchor","GLOBAL",3).*~
+  ~SetGlobal("TalkedToMalchor","GLOBAL",3)
+   ENEMY()~
+
+REPLACE_ACTION_TEXT c6harp ~ReallyForceSpell.*~ ~~  //imprisonment action
+>>>>>>>>
+
+ACTION_IF FILE_EXISTS_IN_GAME ~c6harp.dlg~ BEGIN
+  COMPILE ~.../tnt-inlined/malchor.d~
+  COPY_EXISTING ~c6harp.cre~ ~override~
+    REMOVE_CRE_ITEM ~imoenhp1~
+  BUT_ONLY
+  COPY_EXISTING ~baldur.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY
+        ~!Exists("c6harp")~
+        ~!Exists("c6harp")
+!Dead("c6harp")~
+    END
+  BUT_ONLY
+END
