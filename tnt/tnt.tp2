@@ -370,3 +370,7 @@ WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/mai
 
 BEGIN @257 /* True True Grandmastery */
 INCLUDE ~%components%/true_true_grandmastery/main.tpa~
+
+BEGIN @258 /* Sensible multiclass restrictions */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~

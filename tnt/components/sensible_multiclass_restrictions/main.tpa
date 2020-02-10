@@ -1,0 +1,23 @@
+ACTION_IF ENGINE_IS ~tob~ BEGIN
+  OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
+  LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
+  ACTION_INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
+END
+
+COPY_EXISTING ~clsrcreq.2da~ override
+  LAF GET_2DA_INDEX RET col_index row_index END
+  COUNT_2DA_COLS columns
+  READ_2DA_ENTRIES_NOW rows (columns-1)
+  human_col = col_index(~HUMAN~)
+  PATCH_FOR_EACH row IN ~FIGHTER_CLERIC~ ~FIGHTER_THIEF~ ~CLERIC_THIEF~ BEGIN
+    FOR (c=1;c<columns;++c) BEGIN
+      PATCH_IF c != human_col BEGIN
+        SET_2DA_ENTRY_LATER new_rows $row_index(~%row%~) c 1
+      END
+    END
+  END
+  SET_2DA_ENTRY_LATER new_rows $row_index(CLERIC_MAGE) $col_index(ELF) 1
+  SET_2DA_ENTRY_LATER new_rows $row_index(CLERIC_RANGER) $col_index(ELF) 1
+  SET_2DA_ENTRY_LATER new_rows $row_index(FIGHTER_MAGE_CLERIC) $col_index(ELF) 1
+  SET_2DA_ENTRY_LATER new_rows $row_index(FIGHTER_MAGE_THIEF) $col_index(GNOME) 1
+BUT_ONLY
