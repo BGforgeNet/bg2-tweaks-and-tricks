@@ -5,7 +5,7 @@ ACTION_IF ENGINE_IS ~tob~ BEGIN
 END
 
 COPY_EXISTING ~clsrcreq.2da~ override
-  LAF GET_2DA_INDEX RET_ARRAY col_index row_index END
+  LAF GET_2DA_INDEX RET_ARRAY col_index = col_index row_index = row_index END
   COUNT_2DA_COLS columns
   READ_2DA_ENTRIES_NOW rows (columns - 1)
   human_col = col_index(~HUMAN~)
