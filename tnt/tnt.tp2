@@ -1,8 +1,7 @@
 BACKUP ~tnt/backup~
-AUTHOR "burner1024 @ github"
+SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
 VERSION ~v8.beta~
 NO_IF_EVAL_BUG
-README ~%MOD_FOLDER%/readme.txt~
 AUTO_EVAL_STRINGS
 ALWAYS
   OUTER_SPRINT components ~%MOD_FOLDER%/components~
