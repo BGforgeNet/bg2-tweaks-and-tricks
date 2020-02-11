@@ -7,7 +7,7 @@ BEGIN
     READ_2DA_ENTRY_FORMER rows 0 c name
     TEXT_SPRINT $col_index("%name%") c
   END
-  FOR (r=0; r<rows; ++c) BEGIN
+  FOR (r=1; r<rows; ++c) BEGIN
     READ_2DA_ENTRY_FORMER rows r 0 name
     TEXT_SPRINT $row_index("%name%") r
   END
