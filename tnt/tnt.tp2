@@ -373,3 +373,6 @@ INCLUDE ~%components%/true_true_grandmastery/main.tpa~
 BEGIN @258 /* Sensible multiclass restrictions */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
+
+BEGIN @259 /* Faster loading times */
+INCLUDE ~%components%/faster_loading_times/main.tpa~

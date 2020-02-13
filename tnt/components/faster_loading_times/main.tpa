@@ -1,0 +1,22 @@
+// don't remember what's this for, but must've been a reason
+ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
+  AT_NOW ~del /s /f /q cache\data~
+END ELSE BEGIN
+  AT_NOW ~rm -rf cache/data~
+END
+MKDIR ~cache/data~
+
+// actual decompression
+ACTION_BASH_FOR ~data~ ~^.+\.bif$~ BEGIN
+  ACTION_IF NOT (~%BASH_FOR_FILE%~ STRING_MATCHES_REGEXP ~fl#biffbackup.*~ = 0) BEGIN
+    DECOMPRESS_BIFF ~%BASH_FOR_FILE%~
+    OUTER_TEXT_SPRINT $already_done(~%BASH_FOR_FILE%~) 1
+  END
+END
+ACTION_BASH_FOR ~data/data~ ~^.+\.bif$~ BEGIN
+  ACTION_IF NOT (~%BASH_FOR_FILE%~ STRING_MATCHES_REGEXP ~fl#biffbackup.*~ = 0) BEGIN
+    ACTION_IF NOT VARIABLE_IS_SET $already_done(~%BASH_FOR_FILE%~) BEGIN
+      DECOMPRESS_BIFF ~%BASH_FOR_FILE%~
+    END
+  END
+END
