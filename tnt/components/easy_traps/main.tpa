@@ -49,8 +49,8 @@ END ELSE BEGIN
 END
 
 
-INCLUDE ~%MOD_FOLDER%/easy_traps/functions.tph~
-INCLUDE ~%MOD_FOLDER%/easy_traps/traps_list.tph~
+INCLUDE ~%comp_dir%/functions.tpa~
+INCLUDE ~%comp_dir%/traps_list.tpa~
 OUTER_SET new_trap_ind = 0 // global var for all areas
 
 /*
