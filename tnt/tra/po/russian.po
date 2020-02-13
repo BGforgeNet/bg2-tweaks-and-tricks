@@ -1058,6 +1058,12 @@ msgstr ""
 msgid "Sensible multiclass restrictions"
 msgstr "Более адекватная сфера Отилюка"
 
+#: setup.tra:259
+#, fuzzy
+#| msgid "Faster familiars"
+msgid "Faster loading times"
+msgstr "Быстрые фамильяры"
+
 #: shandalars_cloak.tra:1
 msgid ""
 "This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
@@ -1514,6 +1520,3 @@ msgstr "(Дать воровское зелье силы морозного ги
 
 #~ msgid "Only BG2:ToB engine is supported"
 #~ msgstr "Требует движок BG2:ToB"
-
-#~ msgid "Faster familiars"
-#~ msgstr "Быстрые фамильяры"
