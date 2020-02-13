@@ -1,4 +1,4 @@
-// don't remember what's this for, but must've been a reason
+// don't remember what's this for, but there must've been a reason
 ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
   AT_NOW ~del /s /f /q cache\data~
 END ELSE BEGIN
