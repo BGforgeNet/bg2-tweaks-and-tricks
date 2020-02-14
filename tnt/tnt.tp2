@@ -79,7 +79,7 @@ GROUP @226 /* Traps */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 OUTER_TEXT_SPRINT comp_name ~easy_traps~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-INCLUDE ~%comp_dir%/main.tpa~
+WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 //END TRAPS
 
 
