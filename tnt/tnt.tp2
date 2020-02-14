@@ -6,7 +6,7 @@ AUTO_EVAL_STRINGS
 ALWAYS
   OUTER_SPRINT components ~%MOD_FOLDER%/components~
   OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
-  OUTER_SPRINT tra_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
+  OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
   OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
   INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
 END
@@ -19,7 +19,7 @@ BEGIN @74 /* Smarter familiars */
 GROUP @225 /* Familiars */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 OUTER_SPRINT comp_name ~smarter_familiars~
-WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @77 /* Resilient familiars */
 GROUP @225 /* Familiars */
@@ -79,7 +79,7 @@ GROUP @226 /* Traps */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
 OUTER_TEXT_SPRINT comp_name ~easy_traps~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 //END TRAPS
 
 
@@ -348,7 +348,7 @@ INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
 BEGIN @250 /* Improved Shandalar's cloak */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
 OUTER_SPRINT comp_name ~shandalars_cloak~
-WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @251 /* EE-style Algernon's cloak */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
@@ -367,7 +367,7 @@ DISABLE_FROM_KEY bwdragon.mve bislogo.mve wotc.mve
 
 BEGIN @256 /* Sensible Blade spins */
 OUTER_SPRINT comp_name ~sensible_spins~
-WITH_TRA ~%tra_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @257 /* True True Grandmastery */
 INCLUDE ~%components%/true_true_grandmastery/main.tpa~
