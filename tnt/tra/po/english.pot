@@ -13,8 +13,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: bgforge_po v.1.0.0\n"
 
-#: game.tra:2
+#: easy_traps.tra:1 game.tra:2
 msgid "Uh, I smell a trap."
+msgstr ""
+
+#: easy_traps.tra:2 game.tra:29
+msgid "Careful. Something's not quite right here."
+msgstr ""
+
+#: easy_traps.tra:3 game.tra:30
+msgid "Stop! It's a trap!"
+msgstr ""
+
+#: easy_traps.tra:4 game.tra:31
+msgid "I sense a trap!"
+msgstr ""
+
+#: easy_traps.tra:5 game.tra:32
+msgid "Hmm... We should tread lightly here."
+msgstr ""
+
+#: easy_traps.tra:6 game.tra:33
+msgid "Wait, wait. Let's take a closer look at this."
+msgstr ""
+
+#: easy_traps.tra:7 game.tra:34
+msgid "I sense danger."
+msgstr ""
+
+#: easy_traps.tra:8 game.tra:35
+msgid "Watch your step. Looks suspicious."
+msgstr ""
+
+#: easy_traps.tra:10 game.tra:36
+msgid "Hold on. See this?"
+msgstr ""
+
+#: easy_traps.tra:100 game.tra:252
+msgid "Arrow trap"
+msgstr ""
+
+#: easy_traps.tra:101
+msgid "Repeating arrow trap"
+msgstr ""
+
+#: easy_traps.tra:102
+msgid "Slaying arrow trap"
+msgstr ""
+
+#: easy_traps.tra:103
+msgid "Acid arrow trap"
+msgstr ""
+
+#: easy_traps.tra:104
+msgid "Biting arrow trap"
+msgstr ""
+
+#: easy_traps.tra:105
+msgid "Detonation arrow trap"
+msgstr ""
+
+#: easy_traps.tra:106
+msgid "Dispelling arrow trap"
+msgstr ""
+
+#: easy_traps.tra:107
+msgid "Fire arrow trap"
+msgstr ""
+
+#: easy_traps.tra:108
+msgid "Ice arrow trap"
+msgstr ""
+
+#: easy_traps.tra:110
+msgid "Piercing arrow trap"
 msgstr ""
 
 #: game.tra:26
@@ -27,38 +99,6 @@ msgstr ""
 
 #: game.tra:28
 msgid "Thorius"
-msgstr ""
-
-#: game.tra:29
-msgid "Careful. Something's not quite right here."
-msgstr ""
-
-#: game.tra:30
-msgid "Stop! It's a trap!"
-msgstr ""
-
-#: game.tra:31
-msgid "I sense a trap!"
-msgstr ""
-
-#: game.tra:32
-msgid "Hmm... We should tread lightly here."
-msgstr ""
-
-#: game.tra:33
-msgid "Wait, wait. Let's take a closer look at this."
-msgstr ""
-
-#: game.tra:34
-msgid "I sense danger."
-msgstr ""
-
-#: game.tra:35
-msgid "Watch your step. Looks suspicious."
-msgstr ""
-
-#: game.tra:36
-msgid "Hold on. See this?"
 msgstr ""
 
 #: game.tra:37
@@ -485,10 +525,6 @@ msgid ""
 "STATISTICS:\n"
 "\n"
 "Unlimited plain bullets"
-msgstr ""
-
-#: game.tra:252
-msgid "Arrow trap"
 msgstr ""
 
 #: game.tra:253
