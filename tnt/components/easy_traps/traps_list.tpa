@@ -1,14 +1,15 @@
-ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN // main hash
-  CTAR  => ~Arrow trap~
-  CTAR2 => ~Repeating arrow trap~
-  CTAR3 => ~Slaying arrow trap~
-  CTAR4 => ~Acid arrow trap~
-  CTAR5 => ~Biting arrow trap~
-  CTAR6 => ~Detonation arrow trap~
-  CTAR7 => ~Dispelling arrow trap~
-  CTAR8 => ~Fire arrow trap~
-  CTAR9 => ~Ice arrow trap~
-  CTAR10 => ~Piercing arrow trap~
+// main hash
+ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN
+  CTAR  => @100
+  CTAR2 => @101
+  CTAR3 => @102
+  CTAR4 => @103
+  CTAR5 => @104
+  CTAR6 => @105
+  CTAR7 => @105
+  CTAR8 => @107
+  CTAR9 => @108
+  CTAR10 => @109
 
   GTAR  => ~Arrow trap~
   GTAR2 => ~Repeating arrow trap~

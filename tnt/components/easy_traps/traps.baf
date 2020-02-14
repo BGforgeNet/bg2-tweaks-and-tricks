@@ -14,7 +14,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@29)
+    DisplayStringHead(LastSeenBy,@2)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -23,7 +23,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@30)
+    DisplayStringHead(LastSeenBy,@3)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -32,7 +32,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@31)
+    DisplayStringHead(LastSeenBy,@4)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -41,7 +41,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@32)
+    DisplayStringHead(LastSeenBy,@5)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -50,7 +50,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@33)
+    DisplayStringHead(LastSeenBy,@6)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -59,7 +59,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@34)
+    DisplayStringHead(LastSeenBy,@7)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -68,7 +68,7 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@35)
+    DisplayStringHead(LastSeenBy,@8)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
@@ -77,7 +77,16 @@ THEN
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
     SetGlobalTimer("g_trap_common_timer","global",12)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@36)
+    DisplayStringHead(LastSeenBy,@9)
+    %traps_baf_sound%
+    %traps_baf_view%
+    %traps_baf_pause%
+    Continue()
+  RESPONSE #1
+    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
+    SetGlobalTimer("g_trap_common_timer","global",12)
+    %traps_baf_stop%
+    DisplayStringHead(LastSeenBy,@10)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
