@@ -14,9 +14,95 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.1.1\n"
 
-#: game.tra:2
+#: easy_traps.tra:1 game.tra:2
 msgid "Uh, I smell a trap."
 msgstr "Эм, я чувствую ловушку."
+
+#: easy_traps.tra:2 game.tra:29
+msgid "Careful. Something's not quite right here."
+msgstr "Осторожно. Что-то здесь не так."
+
+#: easy_traps.tra:3 game.tra:30
+msgid "Stop! It's a trap!"
+msgstr "Стоп! Это ловушка!"
+
+#: easy_traps.tra:4 game.tra:31
+msgid "I sense a trap!"
+msgstr "Я чувствую ловушку!"
+
+#: easy_traps.tra:5 game.tra:32
+msgid "Hmm... We should tread lightly here."
+msgstr "Хм... Тут нужно шагать аккуратно."
+
+#: easy_traps.tra:6 game.tra:33
+msgid "Wait, wait. Let's take a closer look at this."
+msgstr "Погодите. Давайте присмотримся повнимательней."
+
+#: easy_traps.tra:7 game.tra:34
+msgid "I sense danger."
+msgstr "Я чувствую опасность."
+
+#: easy_traps.tra:8 game.tra:35
+msgid "Watch your step. Looks suspicious."
+msgstr "Смотрите куда наступаете. Выглядит подозрительно."
+
+#: easy_traps.tra:10 game.tra:36
+msgid "Hold on. See this?"
+msgstr "Погодите. Видите вот это?"
+
+#: easy_traps.tra:100 game.tra:252
+msgid "Arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:101
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Repeating arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:102
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Slaying arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:103
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Acid arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:104
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Biting arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:105
+msgid "Detonation arrow trap"
+msgstr ""
+
+#: easy_traps.tra:106
+msgid "Dispelling arrow trap"
+msgstr ""
+
+#: easy_traps.tra:107
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Fire arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:108
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Ice arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:110
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Piercing arrow trap"
+msgstr "Ловушка со стрелой"
 
 #: game.tra:26
 msgid "Potion effect refreshed"
@@ -29,38 +115,6 @@ msgstr "Эффект свитка защиты обновлен"
 #: game.tra:28
 msgid "Thorius"
 msgstr "Ториус"
-
-#: game.tra:29
-msgid "Careful. Something's not quite right here."
-msgstr "Осторожно. Что-то здесь не так."
-
-#: game.tra:30
-msgid "Stop! It's a trap!"
-msgstr "Стоп! Это ловушка!"
-
-#: game.tra:31
-msgid "I sense a trap!"
-msgstr "Я чувствую ловушку!"
-
-#: game.tra:32
-msgid "Hmm... We should tread lightly here."
-msgstr "Хм... Тут нужно шагать аккуратно."
-
-#: game.tra:33
-msgid "Wait, wait. Let's take a closer look at this."
-msgstr "Погодите. Давайте присмотримся повнимательней."
-
-#: game.tra:34
-msgid "I sense danger."
-msgstr "Я чувствую опасность."
-
-#: game.tra:35
-msgid "Watch your step. Looks suspicious."
-msgstr "Смотрите куда наступаете. Выглядит подозрительно."
-
-#: game.tra:36
-msgid "Hold on. See this?"
-msgstr "Погодите. Видите вот это?"
 
 #: game.tra:37
 msgctxt "g_ttjah1"
@@ -580,10 +634,6 @@ msgstr ""
 "Статистика:\n"
 "\n"
 "Бесконечные снаряды для пращи"
-
-#: game.tra:252
-msgid "Arrow trap"
-msgstr "Ловушка со стрелой"
 
 #: game.tra:253
 msgid "missile (piercing)"
