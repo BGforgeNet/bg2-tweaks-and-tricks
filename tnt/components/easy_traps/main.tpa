@@ -51,7 +51,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
     READ_ASCII (reg_off + 0x7c) reg_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII reg_off reg_name (32) NULL
-      PATCH_LOG ~Found faulty region: area %SOURCE_FILE%, region %reg_name%, script %reg_script%, trap status is %is_trapped%~
+      PATCH_LOG ~Found faulty region: area %SOURCE_FILE%, region %reg_name%, script %reg_script%, trap status is %is_trapped% - clearing.~
       LPF ALTER_AREA_REGION
         INT_VAR
           trapped = 0
@@ -70,7 +70,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
     READ_ASCII (cont_off + 0x48) cont_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII cont_off cont_name (32) NULL
-      PATCH_LOG ~Found faulty container: area %SOURCE_FILE%, container %cont_name%, script %cont_script%, trap status is %is_trapped%~
+      PATCH_LOG ~Found faulty container: area %SOURCE_FILE%, container %cont_name%, script %cont_script%, trap status is %is_trapped% - clearing~
       LPF ALTER_AREA_CONTAINER
         INT_VAR
           trapped = 0
@@ -89,7 +89,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
     READ_ASCII (door_off + 0x80) door_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%door_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII door_off door_name (32) NULL
-      PATCH_LOG ~Found faulty door: area %SOURCE_FILE%, door %door_name%, script %door_script%, trap status is %is_trapped%~
+      PATCH_LOG ~Found faulty door: area %SOURCE_FILE%, door %door_name%, script %door_script%, trap status is %is_trapped% - clearing~
       LPF ALTER_AREA_DOOR
         INT_VAR
           trapped = 0
