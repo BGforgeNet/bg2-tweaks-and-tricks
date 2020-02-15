@@ -45,7 +45,7 @@ msgstr ""
 msgid "Watch your step. Looks suspicious."
 msgstr ""
 
-#: easy_traps.tra:10 game.tra:36
+#: easy_traps.tra:9 game.tra:36
 msgid "Hold on. See this?"
 msgstr ""
 
