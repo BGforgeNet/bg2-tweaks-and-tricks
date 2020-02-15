@@ -46,7 +46,7 @@ msgstr "Я чувствую опасность."
 msgid "Watch your step. Looks suspicious."
 msgstr "Смотрите куда наступаете. Выглядит подозрительно."
 
-#: easy_traps.tra:10 game.tra:36
+#: easy_traps.tra:9 game.tra:36
 msgid "Hold on. See this?"
 msgstr "Погодите. Видите вот это?"
 
