@@ -27,6 +27,9 @@ BEGIN
 			R_B_B CASE_INSENSITIVE
 				~.../tnt-inlined/fair_fights/sarevok.baf~
 				~.../tnt-inlined/fair_fights/empty.baf~
+			ON_MISMATCH
+				PATCH_LOG ~%SOURCE_FILE%: block not found, pass~
+			END
 		BUT_ONLY
 	END
 END
