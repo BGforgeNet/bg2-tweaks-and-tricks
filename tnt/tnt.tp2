@@ -89,24 +89,27 @@ GROUP @227 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
 SUBCOMPONENT @81 /* Extended Soundsets for NPC */
 OUTER_SET dominate = 0
-COPY_EXISTING ~sw1h01.itm~ ~override/g_esad.itm~ //dummy detection file
-INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
+OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @82 /* BG1 soundsets prevail */
 GROUP @227 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
 SUBCOMPONENT @81 /* Extended Soundsets for NPC */
 OUTER_SET dominate = 1
-COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg1.itm~ //dummy detection file
-INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
+OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @83 /* BG2 soundsets prevail */
 GROUP @227 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @80 /* BGT or EET only */
 SUBCOMPONENT @81 /* Extended Soundsets for NPC */
 OUTER_SET dominate = 2
-COPY_EXISTING ~sw1h01.itm~ ~override/g_esbg2.itm~ //dummy detection file
-INCLUDE ~%MOD_FOLDER%/extended_soundsets/main.tph~
+OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 
 BEGIN @84 /* Reintroduce */
