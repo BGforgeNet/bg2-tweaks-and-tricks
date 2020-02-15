@@ -1,6 +1,6 @@
 //Winski Perorate
 COPY_EXISTING ~winski2.cre~ ~override~
-	WRITE_BYTE CRE_class IDS_OF_SYMBOL (~class~ ~mage~) //make non-innocent
+  WRITE_BYTE CRE_class IDS_OF_SYMBOL (~class~ ~mage~) //make non-innocent
 BUT_ONLY
 
 <<<<<<<< .../tnt-inlined/fair_fights/empty.baf
@@ -8,51 +8,51 @@ BUT_ONLY
 //instakill on attacking sarevok in ducal palace
 <<<<<<<< .../tnt-inlined/fair_fights/sarevok.baf
 IF
-	AttackedBy([GOODCUTOFF],DEFAULT)
-	Allegiance(Myself,NEUTRAL)
-	!Global("SarevokBehavior","GLOBAL",2)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  Allegiance(Myself,NEUTRAL)
+  !Global("SarevokBehavior","GLOBAL",2)
 THEN
-	RESPONSE #100
-		SetGlobal("SarevokBehavior","GLOBAL",3)
-		SetGlobalTimer("EndGame","GLOBAL",5)
-		Enemy()
+  RESPONSE #100
+    SetGlobal("SarevokBehavior","GLOBAL",3)
+    SetGlobalTimer("EndGame","GLOBAL",5)
+    Enemy()
 END
 >>>>>>>>
 ACTION_FOR_EACH script IN
-	~sarevok~ //bg1
-	~bgsarvok~ //bgt
+  ~sarevok~ //bg1
+  ~bgsarvok~ //bgt
 BEGIN
-	ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ BEGIN
-		COPY_EXISTING ~%script%.bcs~ ~override~
-			R_B_B CASE_INSENSITIVE
-				~.../tnt-inlined/fair_fights/sarevok.baf~
-				~.../tnt-inlined/fair_fights/empty.baf~
-			ON_MISMATCH
-				PATCH_LOG ~%SOURCE_FILE%: block not found, pass~
-			END
-		BUT_ONLY
-	END
+  ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ BEGIN
+    COPY_EXISTING ~%script%.bcs~ ~override~
+      R_B_B CASE_INSENSITIVE
+        ~.../tnt-inlined/fair_fights/sarevok.baf~
+        ~.../tnt-inlined/fair_fights/empty.baf~
+      ON_MISMATCH
+        PATCH_LOG ~%SOURCE_FILE%: block not found, pass~
+      END
+    BUT_ONLY
+  END
 END
 
 //instakill on attacking one of the dukes
 <<<<<<<< .../tnt-inlined/fair_fights/dukes.baf
 IF
-	AttackedBy([PC],DEFAULT)
+  AttackedBy([PC],DEFAULT)
 THEN
-	RESPONSE #100
-		SetInterrupt(FALSE)
-		CreateCreature("WINSKI",[693.578],0)
-		ActionOverride("WINSKI",ForceSpell(Player1,SAREVOK_STRIKE))
-		Wait(2)
-		Kill(Player1)
-		SetInterrupt(TRUE)
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    CreateCreature("WINSKI",[693.578],0)
+    ActionOverride("WINSKI",ForceSpell(Player1,SAREVOK_STRIKE))
+    Wait(2)
+    Kill(Player1)
+    SetInterrupt(TRUE)
 END
 >>>>>>>>
 ACTION_FOR_EACH script IN ~belt~ ~liia~
 BEGIN
-	COPY_EXISTING ~%script%.bcs~ ~override~
-		R_B_B CASE_INSENSITIVE
-			~.../tnt-inlined/fair_fights/dukes.baf~
-			~.../tnt-inlined/fair_fights/empty.baf~
-	BUT_ONLY
+  COPY_EXISTING ~%script%.bcs~ ~override~
+    R_B_B CASE_INSENSITIVE
+      ~.../tnt-inlined/fair_fights/dukes.baf~
+      ~.../tnt-inlined/fair_fights/empty.baf~
+  BUT_ONLY
 END
