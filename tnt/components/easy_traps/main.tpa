@@ -47,7 +47,7 @@ CLEAR_IDS_MAP
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   GET_OFFSET_ARRAY reg_array ARE_V10_REGIONS
   PHP_EACH reg_array AS int => reg_off BEGIN
-    READ_SHORT (reg_off + ARE_REGION_is_trapped) is_trapped
+    READ_SHORT (reg_off + ARE_REGION_trapped) is_trapped
     READ_ASCII (reg_off + ARE_REGION_script) reg_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII reg_off reg_name (32) NULL
