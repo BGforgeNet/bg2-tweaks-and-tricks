@@ -14,39 +14,39 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.1.1\n"
 
-#: easy_traps.tra:1 game.tra:2
+#: easy_traps.tra:1
 msgid "Uh, I smell a trap."
 msgstr "Эм, я чувствую ловушку."
 
-#: easy_traps.tra:2 game.tra:29
+#: easy_traps.tra:2
 msgid "Careful. Something's not quite right here."
 msgstr "Осторожно. Что-то здесь не так."
 
-#: easy_traps.tra:3 game.tra:30
+#: easy_traps.tra:3
 msgid "Stop! It's a trap!"
 msgstr "Стоп! Это ловушка!"
 
-#: easy_traps.tra:4 game.tra:31
+#: easy_traps.tra:4
 msgid "I sense a trap!"
 msgstr "Я чувствую ловушку!"
 
-#: easy_traps.tra:5 game.tra:32
+#: easy_traps.tra:5
 msgid "Hmm... We should tread lightly here."
 msgstr "Хм... Тут нужно шагать аккуратно."
 
-#: easy_traps.tra:6 game.tra:33
+#: easy_traps.tra:6
 msgid "Wait, wait. Let's take a closer look at this."
 msgstr "Погодите. Давайте присмотримся повнимательней."
 
-#: easy_traps.tra:7 game.tra:34
+#: easy_traps.tra:7
 msgid "I sense danger."
 msgstr "Я чувствую опасность."
 
-#: easy_traps.tra:8 game.tra:35
+#: easy_traps.tra:8
 msgid "Watch your step. Looks suspicious."
 msgstr "Смотрите куда наступаете. Выглядит подозрительно."
 
-#: easy_traps.tra:9 game.tra:36
+#: easy_traps.tra:9
 msgid "Hold on. See this?"
 msgstr "Погодите. Видите вот это?"
 
@@ -56,7 +56,7 @@ msgstr "Погодите. Видите вот это?"
 msgid "Unknown trap"
 msgstr "Ловушка со стрелой"
 
-#: easy_traps.tra:101 game.tra:252
+#: easy_traps.tra:101
 msgid "Arrow trap"
 msgstr "Ловушка со стрелой"
 
@@ -370,6 +370,217 @@ msgstr "крушашее"
 msgid "Minor ligthning bolt trap"
 msgstr ""
 
+#: extended_soundsets.tra:37
+msgctxt "g_ttjah1"
+msgid "Die your final death!"
+msgstr "Умри наконец!"
+
+#: extended_soundsets.tra:38
+msgctxt "minsc57"
+msgid "Aaargh!  Kill says Boo, kill does Minsc!"
+msgstr "Арргх! Бу говорить убивать, Минск убивает!"
+
+#: extended_soundsets.tra:39
+msgctxt "g_ttmin1"
+msgid "Prepare to feel the wrath of my hamster!"
+msgstr "Готовься почувствовать гнев моего хомяка!"
+
+#: extended_soundsets.tra:40
+msgctxt "g_ttedw1"
+msgid "Your end is near at hand, wail if you must!!"
+msgstr "Ваш конец близок, плачьте, если хотите!"
+
+#: extended_soundsets.tra:41
+msgctxt "alora02"
+msgid ""
+"Blast and bother!  These locks have always given me trouble!  Trouble they "
+"are!"
+msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
+
+#: extended_soundsets.tra:42
+msgctxt "quayl01"
+msgid "Walking alone on the Coastway road!  How smart is this?"
+msgstr "Ходить в одиночку по дорогам Побережья?  Что за умник это придумал?"
+
+#: extended_soundsets.tra:43
+msgctxt "khald02"
+msgid "Calm yourself dear, we must proceed c-c-carefully."
+msgstr "Успокойся, дорогая, мы должны действовать ак-к-куратно."
+
+#: extended_soundsets.tra:44
+msgctxt "g_ttyos1"
+msgid "Let us get this over with!"
+msgstr "Давайте покончим с этим!"
+
+#: extended_soundsets.tra:45
+msgctxt "aerie95"
+msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
+msgstr "Ааа! Спасите!  Помогите мне, пожалуйстааа!"
+
+#: extended_soundsets.tra:46
+msgctxt "aeri2540"
+msgid "Oh, this is going to hurt you a LOT more than me!"
+msgstr "О, тебе будет НАМНОГО больнее, чем мне!"
+
+#: extended_soundsets.tra:47
+msgctxt "aeri2541"
+msgid "By all that is decent, I fight!"
+msgstr "Я сражаюсь за все хорошее!"
+
+#: extended_soundsets.tra:48
+msgctxt "g_ttkor1"
+msgid "Killing is our business, and business be good!"
+msgstr "Наше дело - убийства... и дело идет хорошо!"
+
+#: extended_soundsets.tra:49
+msgctxt "g_ttkor2"
+msgid "Hahahaha!"
+msgstr "Хахаха!"
+
+#: extended_soundsets.tra:50
+msgctxt "g_ttkel1"
+msgid "In Tyr's name we shall be victorious once and for all!"
+msgstr "Во имя Тира мы победим раз и навсегда!"
+
+#: extended_soundsets.tra:51
+msgctxt "g_ttkag1"
+msgid "What can I do for you?"
+msgstr "Чем я могу помочь?"
+
+#: extended_soundsets.tra:52
+msgctxt "montr01"
+msgid ""
+"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+msgstr ""
+"Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
+
+#: extended_soundsets.tra:53
+msgctxt "yeslk01"
+msgid ""
+"Aye, who's there now?  More smithing, or did ye burrow into another river?"
+msgstr "Да, что там опять?  Будем ковать, или снова докопались до реки?"
+
+#: extended_soundsets.tra:54
+msgctxt "g_ttxan1"
+msgid "I have languished in these dismal vaults too long."
+msgstr "Я слишком долго томился в этих мрачных пещерах."
+
+#: extended_soundsets.tra:55
+msgctxt "nali2520"
+msgid "Evil falls today!"
+msgstr "Сегодня зло падет!"
+
+#: extended_soundsets.tra:56
+msgctxt "nali2521"
+msgid "If you fight, you die!  You cannot match our power!!"
+msgstr ""
+"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
+
+#: extended_soundsets.tra:57
+msgctxt "anom2539"
+msgid "Helm's fury upon you all!!"
+msgstr "Вас настигнет гнев Хелма!"
+
+#: extended_soundsets.tra:58
+msgctxt "anom2540"
+msgid "By skill and might we shall prevail!!"
+msgstr "Сила и умение помогут нам победить!"
+
+#: extended_soundsets.tra:59
+msgctxt "g_ttval1"
+msgid "You will not pass!"
+msgstr "Ты не пройдешь!"
+
+#: extended_soundsets.tra:60
+msgctxt "g_tthae1"
+msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
+msgstr "Ах, это отличная битва, о которой узнают на всех планах!"
+
+#: extended_soundsets.tra:61
+msgctxt "sarevo13"
+msgid "We children of Bhaal cannot be stopped!"
+msgstr "Нас, детей Баала, нельзя остановить!"
+
+#: extended_soundsets.tra:62
+msgctxt "sarevo14"
+msgid "Ha!  This arena I know well!!"
+msgstr "Ха!  Это я хорошо умею!"
+
+#: extended_soundsets.tra:63
+msgctxt "sarevo35"
+msgid "I shall carve a path, if need be."
+msgstr "Я проделаю путь, если понадобится."
+
+#: extended_soundsets.tra:64
+msgctxt "sarevo36"
+msgid "As you wish."
+msgstr "Как пожелаешь."
+
+#: extended_soundsets.tra:65
+msgctxt "sarevo37"
+msgid "Hmph.  Not what I would have done."
+msgstr "Хм.  Я бы сделал не так."
+
+#: extended_soundsets.tra:66
+msgctxt "sarevo38"
+msgid "So you say."
+msgstr "Как скажешь."
+
+#: extended_soundsets.tra:67
+msgctxt "garrk30"
+msgid ""
+"My music is superior to yours, Eldoth, I was taught at the college in "
+"Berdusk."
+msgstr "Моя музыка лучше твоей, Элдот.  Я обучался в колледже в Бердуске."
+
+#: extended_soundsets.tra:68
+msgctxt "garrk06"
+msgid "I can't stand by and just let this happen."
+msgstr "Я не могу стоять в стороне и позволить этому произойти."
+
+#: extended_soundsets.tra:69
+msgctxt "g_ttbra1"
+msgid "By the ice breath of Auril!"
+msgstr "Ледяным дыханием Орил!"
+
+#: extended_soundsets.tra:70
+#, fuzzy
+#| msgctxt "skie04"
+#| msgid "You're the finest group of friends I've ever had."
+msgctxt "skiee04"
+msgid "You're the finest group of friends I've ever had."
+msgstr "Вы лучшие друзья, которые у меня были."
+
+#: extended_soundsets.tra:71
+msgctxt "xzarr01"
+msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
+msgstr "Монтарон, ты такой РАЗДРАЖАЩИЙ!  Это меня беспокоит!"
+
+#: extended_soundsets.tra:72
+msgctxt "shart34"
+msgid "How would you like my sword tickling your innards?"
+msgstr "Как тебе понравится, если мой меч пощекочет твои кишки?"
+
+#: extended_soundsets.tra:130
+msgctxt "g_ttaja1"
+msgid "You evil ways end here!"
+msgstr "Твои злодеяния подошли к концу!"
+
+#: extended_soundsets.tra:131
+msgctxt "g_ttaja2"
+msgid "Draw steel!"
+msgstr "К оружию!"
+
+#: extended_soundsets.tra:132
+msgctxt "g_ttkiv1"
+msgid "Defend yourselves!"
+msgstr "Защищайтесь!"
+
+#: extended_soundsets.tra:133
+msgctxt "g_ttkel2"
+msgid "You soul is forfeit!"
+msgstr "Твоя душа потеряна!"
+
 #: game.tra:26
 msgid "Potion effect refreshed"
 msgstr "Эффект зелья обновлен"
@@ -381,214 +592,6 @@ msgstr "Эффект свитка защиты обновлен"
 #: game.tra:28
 msgid "Thorius"
 msgstr "Ториус"
-
-#: game.tra:37
-msgctxt "g_ttjah1"
-msgid "Die your final death!"
-msgstr "Умри наконец!"
-
-#: game.tra:38
-msgctxt "minsc57"
-msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr "Арргх! Бу говорить убивать, Минск убивает!"
-
-#: game.tra:39
-msgctxt "g_ttmin1"
-msgid "Prepare to feel the wrath of my hamster!"
-msgstr "Готовься почувствовать гнев моего хомяка!"
-
-#: game.tra:40
-msgctxt "g_ttedw1"
-msgid "Your end is near at hand, wail if you must!!"
-msgstr "Ваш конец близок, плачьте, если хотите!"
-
-#: game.tra:41
-msgctxt "alora02"
-msgid ""
-"Blast and bother!  These locks have always given me trouble!  Trouble they "
-"are!"
-msgstr "Черт побери!  Эти замки вечно мне докучают!  Одни хлопоты с ними!"
-
-#: game.tra:42
-msgctxt "quayl01"
-msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr "Ходить в одиночку по дорогам Побережья?  Что за умник это придумал?"
-
-#: game.tra:43
-msgctxt "khald02"
-msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr "Успокойся, дорогая, мы должны действовать ак-к-куратно."
-
-#: game.tra:44
-msgctxt "g_ttyos1"
-msgid "Let us get this over with!"
-msgstr "Давайте покончим с этим!"
-
-#: game.tra:45
-msgctxt "aerie95"
-msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr "Ааа! Спасите!  Помогите мне, пожалуйстааа!"
-
-#: game.tra:46
-msgctxt "aeri2540"
-msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr "О, тебе будет НАМНОГО больнее, чем мне!"
-
-#: game.tra:47
-msgctxt "aeri2541"
-msgid "By all that is decent, I fight!"
-msgstr "Я сражаюсь за все хорошее!"
-
-#: game.tra:48
-msgctxt "g_ttkor1"
-msgid "Killing is our business, and business be good!"
-msgstr "Наше дело - убийства... и дело идет хорошо!"
-
-#: game.tra:49
-msgctxt "g_ttkor2"
-msgid "Hahahaha!"
-msgstr "Хахаха!"
-
-#: game.tra:50
-msgctxt "g_ttkel1"
-msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr "Во имя Тира мы победим раз и навсегда!"
-
-#: game.tra:51
-msgctxt "g_ttkag1"
-msgid "What can I do for you?"
-msgstr "Чем я могу помочь?"
-
-#: game.tra:52
-msgctxt "montr01"
-msgid ""
-"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
-msgstr ""
-"Ты уже меня беспокоил, теперь отстань. Твою компанию и так тяжело терпеть."
-
-#: game.tra:53
-msgctxt "yeslk01"
-msgid ""
-"Aye, who's there now?  More smithing, or did ye burrow into another river?"
-msgstr "Да, что там опять?  Будем ковать, или снова докопались до реки?"
-
-#: game.tra:54
-msgctxt "g_ttxan1"
-msgid "I have languished in these dismal vaults too long."
-msgstr "Я слишком долго томился в этих мрачных пещерах."
-
-#: game.tra:55
-msgctxt "nali2520"
-msgid "Evil falls today!"
-msgstr "Сегодня зло падет!"
-
-#: game.tra:56
-msgctxt "nali2521"
-msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
-"Если будешь драться, ты умрешь!  Ты не можешь противостоять нашей силе!"
-
-#: game.tra:57
-msgctxt "anom2539"
-msgid "Helm's fury upon you all!!"
-msgstr "Вас настигнет гнев Хелма!"
-
-#: game.tra:58
-msgctxt "anom2540"
-msgid "By skill and might we shall prevail!!"
-msgstr "Сила и умение помогут нам победить!"
-
-#: game.tra:59
-msgctxt "g_ttval1"
-msgid "You will not pass!"
-msgstr "Ты не пройдешь!"
-
-#: game.tra:60
-msgctxt "g_tthae1"
-msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
-msgstr "Ах, это отличная битва, о которой узнают на всех планах!"
-
-#: game.tra:61
-msgctxt "sarevo13"
-msgid "We children of Bhaal cannot be stopped!"
-msgstr "Нас, детей Баала, нельзя остановить!"
-
-#: game.tra:62
-msgctxt "sarevo14"
-msgid "Ha!  This arena I know well!!"
-msgstr "Ха!  Это я хорошо умею!"
-
-#: game.tra:63
-msgctxt "sarevo35"
-msgid "I shall carve a path, if need be."
-msgstr "Я проделаю путь, если понадобится."
-
-#: game.tra:64
-msgctxt "sarevo36"
-msgid "As you wish."
-msgstr "Как пожелаешь."
-
-#: game.tra:65
-msgctxt "sarevo37"
-msgid "Hmph.  Not what I would have done."
-msgstr "Хм.  Я бы сделал не так."
-
-#: game.tra:66
-msgctxt "sarevo38"
-msgid "So you say."
-msgstr "Как скажешь."
-
-#: game.tra:67
-msgctxt "garrk30"
-msgid ""
-"My music is superior to yours, Eldoth, I was taught at the college in "
-"Berdusk."
-msgstr "Моя музыка лучше твоей, Элдот.  Я обучался в колледже в Бердуске."
-
-#: game.tra:68
-msgctxt "garrk06"
-msgid "I can't stand by and just let this happen."
-msgstr "Я не могу стоять в стороне и позволить этому произойти."
-
-#: game.tra:69
-msgctxt "g_ttbra1"
-msgid "By the ice breath of Auril!"
-msgstr "Ледяным дыханием Орил!"
-
-#: game.tra:70
-msgctxt "skie04"
-msgid "You're the finest group of friends I've ever had."
-msgstr "Вы лучшие друзья, которые у меня были."
-
-#: game.tra:71
-msgctxt "xzarr01"
-msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr "Монтарон, ты такой РАЗДРАЖАЩИЙ!  Это меня беспокоит!"
-
-#: game.tra:72
-msgctxt "shart34"
-msgid "How would you like my sword tickling your innards?"
-msgstr "Как тебе понравится, если мой меч пощекочет твои кишки?"
-
-#: game.tra:130
-msgctxt "g_ttaja1"
-msgid "You evil ways end here!"
-msgstr "Твои злодеяния подошли к концу!"
-
-#: game.tra:131
-msgctxt "g_ttaja2"
-msgid "Draw steel!"
-msgstr "К оружию!"
-
-#: game.tra:132
-msgctxt "g_ttkiv1"
-msgid "Defend yourselves!"
-msgstr "Защищайтесь!"
-
-#: game.tra:133
-msgctxt "g_ttkel2"
-msgid "You soul is forfeit!"
-msgstr "Твоя душа потеряна!"
 
 #: game.tra:136
 msgid "Theater earnings are ready."

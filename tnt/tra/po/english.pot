@@ -13,39 +13,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: bgforge_po v.1.0.0\n"
 
-#: easy_traps.tra:1 game.tra:2
+#: easy_traps.tra:1
 msgid "Uh, I smell a trap."
 msgstr ""
 
-#: easy_traps.tra:2 game.tra:29
+#: easy_traps.tra:2
 msgid "Careful. Something's not quite right here."
 msgstr ""
 
-#: easy_traps.tra:3 game.tra:30
+#: easy_traps.tra:3
 msgid "Stop! It's a trap!"
 msgstr ""
 
-#: easy_traps.tra:4 game.tra:31
+#: easy_traps.tra:4
 msgid "I sense a trap!"
 msgstr ""
 
-#: easy_traps.tra:5 game.tra:32
+#: easy_traps.tra:5
 msgid "Hmm... We should tread lightly here."
 msgstr ""
 
-#: easy_traps.tra:6 game.tra:33
+#: easy_traps.tra:6
 msgid "Wait, wait. Let's take a closer look at this."
 msgstr ""
 
-#: easy_traps.tra:7 game.tra:34
+#: easy_traps.tra:7
 msgid "I sense danger."
 msgstr ""
 
-#: easy_traps.tra:8 game.tra:35
+#: easy_traps.tra:8
 msgid "Watch your step. Looks suspicious."
 msgstr ""
 
-#: easy_traps.tra:9 game.tra:36
+#: easy_traps.tra:9
 msgid "Hold on. See this?"
 msgstr ""
 
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Unknown trap"
 msgstr ""
 
-#: easy_traps.tra:101 game.tra:252
+#: easy_traps.tra:101
 msgid "Arrow trap"
 msgstr ""
 
@@ -317,6 +317,212 @@ msgstr ""
 msgid "Minor ligthning bolt trap"
 msgstr ""
 
+#: extended_soundsets.tra:37
+msgctxt "g_ttjah1"
+msgid "Die your final death!"
+msgstr ""
+
+#: extended_soundsets.tra:38
+msgctxt "minsc57"
+msgid "Aaargh!  Kill says Boo, kill does Minsc!"
+msgstr ""
+
+#: extended_soundsets.tra:39
+msgctxt "g_ttmin1"
+msgid "Prepare to feel the wrath of my hamster!"
+msgstr ""
+
+#: extended_soundsets.tra:40
+msgctxt "g_ttedw1"
+msgid "Your end is near at hand, wail if you must!!"
+msgstr ""
+
+#: extended_soundsets.tra:41
+msgctxt "alora02"
+msgid ""
+"Blast and bother!  These locks have always given me trouble!  Trouble they "
+"are!"
+msgstr ""
+
+#: extended_soundsets.tra:42
+msgctxt "quayl01"
+msgid "Walking alone on the Coastway road!  How smart is this?"
+msgstr ""
+
+#: extended_soundsets.tra:43
+msgctxt "khald02"
+msgid "Calm yourself dear, we must proceed c-c-carefully."
+msgstr ""
+
+#: extended_soundsets.tra:44
+msgctxt "g_ttyos1"
+msgid "Let us get this over with!"
+msgstr ""
+
+#: extended_soundsets.tra:45
+msgctxt "aerie95"
+msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
+msgstr ""
+
+#: extended_soundsets.tra:46
+msgctxt "aeri2540"
+msgid "Oh, this is going to hurt you a LOT more than me!"
+msgstr ""
+
+#: extended_soundsets.tra:47
+msgctxt "aeri2541"
+msgid "By all that is decent, I fight!"
+msgstr ""
+
+#: extended_soundsets.tra:48
+msgctxt "g_ttkor1"
+msgid "Killing is our business, and business be good!"
+msgstr ""
+
+#: extended_soundsets.tra:49
+msgctxt "g_ttkor2"
+msgid "Hahahaha!"
+msgstr ""
+
+#: extended_soundsets.tra:50
+msgctxt "g_ttkel1"
+msgid "In Tyr's name we shall be victorious once and for all!"
+msgstr ""
+
+#: extended_soundsets.tra:51
+msgctxt "g_ttkag1"
+msgid "What can I do for you?"
+msgstr ""
+
+#: extended_soundsets.tra:52
+msgctxt "montr01"
+msgid ""
+"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+msgstr ""
+
+#: extended_soundsets.tra:53
+msgctxt "yeslk01"
+msgid ""
+"Aye, who's there now?  More smithing, or did ye burrow into another river?"
+msgstr ""
+
+#: extended_soundsets.tra:54
+msgctxt "g_ttxan1"
+msgid "I have languished in these dismal vaults too long."
+msgstr ""
+
+#: extended_soundsets.tra:55
+msgctxt "nali2520"
+msgid "Evil falls today!"
+msgstr ""
+
+#: extended_soundsets.tra:56
+msgctxt "nali2521"
+msgid "If you fight, you die!  You cannot match our power!!"
+msgstr ""
+
+#: extended_soundsets.tra:57
+msgctxt "anom2539"
+msgid "Helm's fury upon you all!!"
+msgstr ""
+
+#: extended_soundsets.tra:58
+msgctxt "anom2540"
+msgid "By skill and might we shall prevail!!"
+msgstr ""
+
+#: extended_soundsets.tra:59
+msgctxt "g_ttval1"
+msgid "You will not pass!"
+msgstr ""
+
+#: extended_soundsets.tra:60
+msgctxt "g_tthae1"
+msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
+msgstr ""
+
+#: extended_soundsets.tra:61
+msgctxt "sarevo13"
+msgid "We children of Bhaal cannot be stopped!"
+msgstr ""
+
+#: extended_soundsets.tra:62
+msgctxt "sarevo14"
+msgid "Ha!  This arena I know well!!"
+msgstr ""
+
+#: extended_soundsets.tra:63
+msgctxt "sarevo35"
+msgid "I shall carve a path, if need be."
+msgstr ""
+
+#: extended_soundsets.tra:64
+msgctxt "sarevo36"
+msgid "As you wish."
+msgstr ""
+
+#: extended_soundsets.tra:65
+msgctxt "sarevo37"
+msgid "Hmph.  Not what I would have done."
+msgstr ""
+
+#: extended_soundsets.tra:66
+msgctxt "sarevo38"
+msgid "So you say."
+msgstr ""
+
+#: extended_soundsets.tra:67
+msgctxt "garrk30"
+msgid ""
+"My music is superior to yours, Eldoth, I was taught at the college in "
+"Berdusk."
+msgstr ""
+
+#: extended_soundsets.tra:68
+msgctxt "garrk06"
+msgid "I can't stand by and just let this happen."
+msgstr ""
+
+#: extended_soundsets.tra:69
+msgctxt "g_ttbra1"
+msgid "By the ice breath of Auril!"
+msgstr ""
+
+#: extended_soundsets.tra:70
+msgctxt "skiee04"
+msgid "You're the finest group of friends I've ever had."
+msgstr ""
+
+#: extended_soundsets.tra:71
+msgctxt "xzarr01"
+msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
+msgstr ""
+
+#: extended_soundsets.tra:72
+msgctxt "shart34"
+msgid "How would you like my sword tickling your innards?"
+msgstr ""
+
+#: extended_soundsets.tra:130
+msgctxt "g_ttaja1"
+msgid "You evil ways end here!"
+msgstr ""
+
+#: extended_soundsets.tra:131
+msgctxt "g_ttaja2"
+msgid "Draw steel!"
+msgstr ""
+
+#: extended_soundsets.tra:132
+msgctxt "g_ttkiv1"
+msgid "Defend yourselves!"
+msgstr ""
+
+#: extended_soundsets.tra:133
+msgctxt "g_ttkel2"
+msgid "You soul is forfeit!"
+msgstr ""
+
 #: game.tra:26
 msgid "Potion effect refreshed"
 msgstr ""
@@ -327,212 +533,6 @@ msgstr ""
 
 #: game.tra:28
 msgid "Thorius"
-msgstr ""
-
-#: game.tra:37
-msgctxt "g_ttjah1"
-msgid "Die your final death!"
-msgstr ""
-
-#: game.tra:38
-msgctxt "minsc57"
-msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr ""
-
-#: game.tra:39
-msgctxt "g_ttmin1"
-msgid "Prepare to feel the wrath of my hamster!"
-msgstr ""
-
-#: game.tra:40
-msgctxt "g_ttedw1"
-msgid "Your end is near at hand, wail if you must!!"
-msgstr ""
-
-#: game.tra:41
-msgctxt "alora02"
-msgid ""
-"Blast and bother!  These locks have always given me trouble!  Trouble they "
-"are!"
-msgstr ""
-
-#: game.tra:42
-msgctxt "quayl01"
-msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr ""
-
-#: game.tra:43
-msgctxt "khald02"
-msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr ""
-
-#: game.tra:44
-msgctxt "g_ttyos1"
-msgid "Let us get this over with!"
-msgstr ""
-
-#: game.tra:45
-msgctxt "aerie95"
-msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr ""
-
-#: game.tra:46
-msgctxt "aeri2540"
-msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr ""
-
-#: game.tra:47
-msgctxt "aeri2541"
-msgid "By all that is decent, I fight!"
-msgstr ""
-
-#: game.tra:48
-msgctxt "g_ttkor1"
-msgid "Killing is our business, and business be good!"
-msgstr ""
-
-#: game.tra:49
-msgctxt "g_ttkor2"
-msgid "Hahahaha!"
-msgstr ""
-
-#: game.tra:50
-msgctxt "g_ttkel1"
-msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr ""
-
-#: game.tra:51
-msgctxt "g_ttkag1"
-msgid "What can I do for you?"
-msgstr ""
-
-#: game.tra:52
-msgctxt "montr01"
-msgid ""
-"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
-msgstr ""
-
-#: game.tra:53
-msgctxt "yeslk01"
-msgid ""
-"Aye, who's there now?  More smithing, or did ye burrow into another river?"
-msgstr ""
-
-#: game.tra:54
-msgctxt "g_ttxan1"
-msgid "I have languished in these dismal vaults too long."
-msgstr ""
-
-#: game.tra:55
-msgctxt "nali2520"
-msgid "Evil falls today!"
-msgstr ""
-
-#: game.tra:56
-msgctxt "nali2521"
-msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
-
-#: game.tra:57
-msgctxt "anom2539"
-msgid "Helm's fury upon you all!!"
-msgstr ""
-
-#: game.tra:58
-msgctxt "anom2540"
-msgid "By skill and might we shall prevail!!"
-msgstr ""
-
-#: game.tra:59
-msgctxt "g_ttval1"
-msgid "You will not pass!"
-msgstr ""
-
-#: game.tra:60
-msgctxt "g_tthae1"
-msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
-msgstr ""
-
-#: game.tra:61
-msgctxt "sarevo13"
-msgid "We children of Bhaal cannot be stopped!"
-msgstr ""
-
-#: game.tra:62
-msgctxt "sarevo14"
-msgid "Ha!  This arena I know well!!"
-msgstr ""
-
-#: game.tra:63
-msgctxt "sarevo35"
-msgid "I shall carve a path, if need be."
-msgstr ""
-
-#: game.tra:64
-msgctxt "sarevo36"
-msgid "As you wish."
-msgstr ""
-
-#: game.tra:65
-msgctxt "sarevo37"
-msgid "Hmph.  Not what I would have done."
-msgstr ""
-
-#: game.tra:66
-msgctxt "sarevo38"
-msgid "So you say."
-msgstr ""
-
-#: game.tra:67
-msgctxt "garrk30"
-msgid ""
-"My music is superior to yours, Eldoth, I was taught at the college in "
-"Berdusk."
-msgstr ""
-
-#: game.tra:68
-msgctxt "garrk06"
-msgid "I can't stand by and just let this happen."
-msgstr ""
-
-#: game.tra:69
-msgctxt "g_ttbra1"
-msgid "By the ice breath of Auril!"
-msgstr ""
-
-#: game.tra:70
-msgctxt "skie04"
-msgid "You're the finest group of friends I've ever had."
-msgstr ""
-
-#: game.tra:71
-msgctxt "xzarr01"
-msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr ""
-
-#: game.tra:72
-msgctxt "shart34"
-msgid "How would you like my sword tickling your innards?"
-msgstr ""
-
-#: game.tra:130
-msgctxt "g_ttaja1"
-msgid "You evil ways end here!"
-msgstr ""
-
-#: game.tra:131
-msgctxt "g_ttaja2"
-msgid "Draw steel!"
-msgstr ""
-
-#: game.tra:132
-msgctxt "g_ttkiv1"
-msgid "Defend yourselves!"
-msgstr ""
-
-#: game.tra:133
-msgctxt "g_ttkel2"
-msgid "You soul is forfeit!"
 msgstr ""
 
 #: game.tra:136
