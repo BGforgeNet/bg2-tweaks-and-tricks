@@ -23,13 +23,24 @@ COPY_EXISTING ~%spl_despin%.spl~ override
       parameter1 = 1 //max level
       paremeter2 = sectype_id
       timing = TIMING_permanent
+      target = TARGET_FEATURE_self
   END
   LPF ADD_SPELL_EFFECT //remove self
     INT_VAR
       opcode = OPCODE_remove_spell
       timing = TIMING_permanent
+      target = TARGET_FEATURE_self
     STR_VAR resource = ~%spl_despin%~
   END
+  LPF ADD_SPELL_EFFECT // allow to cast another spell right away
+  INT_VAR
+    opcode = OPCODE_aura_cleansing
+    paremeter2 = 1
+    timing = TIMING_duration
+    duration = 6 // 1 round
+    target = TARGET_FEATURE_self
+END
+
   WRITE_ASCIIT SPL_icon ~%icon%~
 BUT_ONLY
 
@@ -43,11 +54,13 @@ ACTION_FOR_EACH spl IN ~%BLADE_OFFENSIVE_SPIN%~ ~%BLADE_DEFENSIVE_SPIN%~ BEGIN /
         paremeter2 = sectype_id
         timing = TIMING_permanent
         insert_point = 0
+        target = TARGET_FEATURE_self
     END
     LPF ADD_SPELL_EFFECT //add "cancel spin" ability
       INT_VAR
         opcode = OPCODE_give_ability
         timing = TIMING_permanent
+        target = TARGET_FEATURE_self
       STR_VAR resource = ~%spl_despin%~
     END
     LPF ADD_SPELL_EFFECT //remove "cancel spin" ability
@@ -55,6 +68,7 @@ ACTION_FOR_EACH spl IN ~%BLADE_OFFENSIVE_SPIN%~ ~%BLADE_DEFENSIVE_SPIN%~ BEGIN /
         opcode = OPCODE_remove_spell
         timing = TIMING_delayed
         duration = 24
+        target = TARGET_FEATURE_self
       STR_VAR resource = ~%spl_despin%~
     END
   BUT_ONLY
