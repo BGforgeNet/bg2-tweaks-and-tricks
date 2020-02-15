@@ -67,6 +67,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
   PHP_EACH cont_array AS int => cont_off BEGIN
     READ_SHORT (cont_off + ARE_CONTAINER_trapped) is_trapped
+    READ_SHORT (cont_off + ARE_CONTAINER_trap_detected) is_detected
     READ_ASCII (cont_off + ARE_CONTAINER_script) cont_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII cont_off cont_name (32) NULL
@@ -80,6 +81,9 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
         STR_VAR
           container_name = ~%cont_name%~
           container_script = ~~
+      END
+      PATCH_IF is_detected == 1 BEGIN
+        PATCH_LOG ~Faulty container? area %SOURCE_FILE%, container %cont_name%, script %cont_script% - marked as detected. No action.~
       END
     END
   END
