@@ -82,15 +82,6 @@ THEN
     %traps_baf_view%
     %traps_baf_pause%
     Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
-    SetGlobalTimer("g_trap_common_timer","global",12)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy,@10)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
 END
 
 

@@ -7,15 +7,15 @@
 @6 = ~Wait, wait. Let's take a closer look at this.~
 @7 = ~I sense danger.~
 @8 = ~Watch your step. Looks suspicious.~
-@10 = ~Hold on. See this?~
+@9 = ~Hold on. See this?~
 
 // trap floats
 @100 = ~Arrow trap~
 @101 = ~Repeating arrow trap~
 @102 = ~Slaying arrow trap~
-@103 =  ~Acid arrow trap~
-@104 =  ~Biting arrow trap~
-@105 =  ~Detonation arrow trap~
+@103 = ~Acid arrow trap~
+@104 = ~Biting arrow trap~
+@105 = ~Detonation arrow trap~
 @106 = ~Dispelling arrow trap~
 @107 = ~Fire arrow trap~
 @108 = ~Ice arrow trap~
