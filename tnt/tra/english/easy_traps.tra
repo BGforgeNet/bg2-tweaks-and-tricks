@@ -10,13 +10,75 @@
 @9 = ~Hold on. See this?~
 
 // trap floats
-@100 = ~Arrow trap~
-@101 = ~Repeating arrow trap~
-@102 = ~Slaying arrow trap~
-@103 = ~Acid arrow trap~
-@104 = ~Biting arrow trap~
-@105 = ~Detonation arrow trap~
-@106 = ~Dispelling arrow trap~
-@107 = ~Fire arrow trap~
-@108 = ~Ice arrow trap~
+@100 = ~Unknown trap~
+
+@101 = ~Arrow trap~
+@102 = ~Repeating arrow trap~
+@103 = ~Slaying arrow trap~
+@104 = ~Acid arrow trap~
+@105 = ~Biting arrow trap~
+@106 = ~Detonation arrow trap~
+@107 = ~Dispelling arrow trap~
+@108 = ~Fire arrow trap~
+@109 = ~Ice arrow trap~
 @110 = ~Piercing arrow trap~
+
+@111 = ~Agannazar's scorcher trap~
+@112 = ~Cloudkill trap~
+@113 = ~Call lightning trap~
+@114 = ~Confusion trap~
+@115 = ~Chromatic orb trap~
+@116 = ~Dire charm trap~
+@117 = ~Fireball trap~
+@118 = ~Repeating Fireball trap~
+@119 = ~Frost trap~
+@120 = ~Flamestrike trap~
+@121 = ~Hold person trap~
+@122 = ~Lightning bolt trap~
+@123 = ~Repeating Lightning bolt trap~
+@124 = ~Miscast magic trap~
+@125 = ~Magic missile trap~
+@126 = ~Monster summoning trap~
+@127 = ~Stinking cloud trap~
+@128 = ~Silence trap~
+@129 = ~Spider spawn trap~
+@130 = ~Skull trap~
+@131 = ~True Sight trap~
+@132 = ~Web trap~
+@133 = ~Hallway spikes trap~
+
+@134 = ~Dart trap~
+@135 = ~Spear trap~
+@136 = ~Slime trap~
+@137 = ~Vent trap~
+
+@138 = ~Power Word: Sleep trap~
+@139 = ~Power Word: Silence trap~
+@140 = ~Power Word: Stun trap~
+@141 = ~Enfeeblement trap~
+@142 = ~Spell Thrust trap~
+@143 = ~Flesh to Stone trap~
+@144 = ~Chain Lightning trap~
+@145 = ~Death Spell trap~
+@146 = ~Desintegrate trap~
+@147 = ~Ruby Ray trap~
+@148 = ~Delayed Fireball trap~
+@149 = ~Finger of Death trap~
+@150 = ~Prismatic Spray trap~
+@151 = ~Pierce Shield trap~
+@152 = ~Incendiary Cloud trap~
+@153 = ~Horrid Wilting trap~
+@154 = ~Maze trap~
+@155 = ~Spell Strike trap~
+@156 = ~Meteor Swarm trap~
+@157 = ~Power Word: Kill trap~
+@158 = ~Wail of Banshee trap~
+@159 = ~Energy Drain trap~
+@160 = ~Sleep trap~
+@161 = ~Horror trap~
+@162 = ~Melf's Acid Arrow trap~
+@163 = ~Slow trap~
+@164 = ~Icestorm trap~
+
+@165 = ~Crushing trap~
+@166 = ~Minor ligthning bolt trap~
