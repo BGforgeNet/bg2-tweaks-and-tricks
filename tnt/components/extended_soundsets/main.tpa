@@ -1,0 +1,14 @@
+//List npc/cre
+INCLUDE ~%lib_dir%/soundsets/cre_list.tpa~
+
+//Clear silent strings with non-(-1) references
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/clear_silent.tpa~
+
+//Read soundsets
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/read_soundsets.tpa~
+
+//Write them
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/write_soundsets.tpa~
+
+//Cherry pick some other lines, mostly battle cries
+INCLUDE ~%MOD_FOLDER%/extended_soundsets/cherry_pick.tpa~

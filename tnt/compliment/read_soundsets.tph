@@ -1,5 +1,4 @@
-//Variables are defined in cre_list.tph
-
+//Variables are defined in cre_list.tpa
 
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN
   ACTION_PHP_EACH ~%game%_cre~ AS npc_name => npc_cre BEGIN

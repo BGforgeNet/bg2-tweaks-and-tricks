@@ -1,5 +1,5 @@
 //List NPC
-INCLUDE ~%MOD_FOLDER%/lib/soundsets/cre_list.tph~
+INCLUDE ~%lib_dir%/soundsets/cre_list.tpa~
 
 //Read soundsets
 INCLUDE ~%MOD_FOLDER%/compliment/read_soundsets.tph~
