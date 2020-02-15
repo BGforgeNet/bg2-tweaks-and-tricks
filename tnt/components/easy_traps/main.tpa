@@ -47,8 +47,8 @@ CLEAR_IDS_MAP
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   GET_OFFSET_ARRAY reg_array ARE_V10_REGIONS
   PHP_EACH reg_array AS int => reg_off BEGIN
-    READ_SHORT (reg_off + 0x6c) is_trapped
-    READ_ASCII (reg_off + 0x7c) reg_script
+    READ_SHORT (reg_off + ARE_REGION_is_trapped) is_trapped
+    READ_ASCII (reg_off + ARE_REGION_script) reg_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII reg_off reg_name (32) NULL
       PATCH_LOG ~Found faulty region: area %SOURCE_FILE%, region %reg_name%, script %reg_script%, trap status is %is_trapped% - clearing.~
@@ -66,8 +66,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   END
   GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
   PHP_EACH cont_array AS int => cont_off BEGIN
-    READ_SHORT (cont_off + 0x30) is_trapped
-    READ_ASCII (cont_off + 0x48) cont_script
+    READ_SHORT (cont_off + ARE_CONTAINER_trapped) is_trapped
+    READ_ASCII (cont_off + ARE_CONTAINER_script) cont_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII cont_off cont_name (32) NULL
       PATCH_LOG ~Found faulty container: area %SOURCE_FILE%, container %cont_name%, script %cont_script%, trap status is %is_trapped% - clearing~
@@ -85,8 +85,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   END
   GET_OFFSET_ARRAY door_array ARE_V10_DOORS
   PHP_EACH door_array AS int => door_off BEGIN
-    READ_SHORT (door_off + 0x70) is_trapped
-    READ_ASCII (door_off + 0x80) door_script
+    READ_SHORT (door_off + ARE_DOOR_trapped) is_trapped
+    READ_ASCII (door_off + ARE_DOOR_script) door_script
     PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%door_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
       READ_ASCII door_off door_name (32) NULL
       PATCH_LOG ~Found faulty door: area %SOURCE_FILE%, door %door_name%, script %door_script%, trap status is %is_trapped% - clearing~
@@ -105,17 +105,17 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
 BUT_ONLY
 
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
-  SET reg_size = 0xc4
-  READ_SHORT 0x5a reg_num
-  READ_LONG  0x5c reg_off
+  SET reg_size = ARE_REGION_size
+  READ_SHORT ARE_regions_count reg_num
+  READ_LONG  ARE_regions_offset reg_off
 
-  SET cont_size = 0xc0
-  READ_SHORT 0x74 cont_num
-  READ_LONG  0x70 cont_off
+  SET cont_size = ARE_CONTAINER_size
+  READ_SHORT ARE_containers_count cont_num
+  READ_LONG  ARE_containers_offset cont_off
 
-  SET door_size = 0xc8
-  READ_SHORT 0xa4 door_num
-  READ_LONG  0xa8 door_off
+  SET door_size = ARE_DOOR_size
+  READ_SHORT ARE_doors_count door_num
+  READ_LONG  ARE_doors_offset door_off
 
   PHP_EACH trap_type AS script => string BEGIN
     SET ~%script%_cur~ = 0 // current area script type counter
@@ -124,19 +124,19 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   str_off = reg_off
   str_size = reg_size
   str_num = reg_num
-  rel_script_off = 0x7c
+  rel_script_off = ARE_REGION_script
   LPM G_REPLACE_TRAP_SCRIPTS
 
   str_off = cont_off
   str_size = cont_size
   str_num = cont_num
-  rel_script_off = 0x48
+  rel_script_off = ARE_CONTAINER_script
   LPM G_REPLACE_TRAP_SCRIPTS
 
   str_off = door_off
   str_size = door_size
   str_num = door_num
-  rel_script_off = 0x80
+  rel_script_off = ARE_DOOR_script
   LPM G_REPLACE_TRAP_SCRIPTS
 
 BUT_ONLY
@@ -153,8 +153,8 @@ ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
   END ELSE BEGIN
     OUTER_SPRINT is_active ~~
   END
-  ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN //don't pause on container traps class
-    ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR
+  ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN
+    ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR //don't pause on container traps class
               (~%script%~ STRING_MATCHES_REGEXP ~^bgct.*~ == 0)
     BEGIN
       OUTER_SPRINT traps_baf_pause ~~
@@ -176,8 +176,8 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
     END ELSE BEGIN
       OUTER_SPRINT is_active ~~
     END
-    ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN //don't pause on container traps class
-      ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR
+    ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN
+      ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR // don't pause on container traps class
                 (~%script%~ STRING_MATCHES_REGEXP ~^bgct.*~ == 0)
       BEGIN
         OUTER_SPRINT traps_baf_pause ~~
