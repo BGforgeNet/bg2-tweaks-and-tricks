@@ -1,4 +1,6 @@
-DEFINE_PATCH_MACRO G_REPLACE_TRAP_SCRIPTS BEGIN
+// makes sure each trap in an area has a script unique for that area
+// doesn't actually create the scripts, just calculates the names and writes them into the area
+DEFINE_PATCH_MACRO MAKE_TRAP_SCRIPTS_UNIQUE BEGIN
   WHILE (str_num > 0) BEGIN
     str_num -= 1
     str_script_off = str_off + (str_num * str_size) + rel_script_off

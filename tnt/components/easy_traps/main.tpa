@@ -44,12 +44,42 @@ OUTER_SET new_trap_ind = 0 // global var for all areas
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~ // Adds CD_STATE_NOTVALID state
 CLEAR_IDS_MAP
 
+
+// separate scripts which have both Open and Entered triggers
+<<<<<<<< .../tnt-inlined/easy_traps/entered_opened.baf
+	OR(2)
+		Entered([ANYONE])
+		Opened([ANYONE])
+>>>>>>>>
+<<<<<<<< .../tnt-inlined/easy_traps/entered.baf
+	Entered([ANYONE])
+>>>>>>>>
+<<<<<<<< .../tnt-inlined/easy_traps/opened.baf
+	Opened([ANYONE])
+>>>>>>>>
+OUTER_SET i = 0
+ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
+  ground_name = "g_gtr%i%.bcs"
+  COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
+    R_B_B ~.../tnt-inlined/easy_traps/entered_opened.baf~ ~.../tnt-inlined/easy_traps/entered.baf~
+  BUT_ONLY
+  COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
+    R_B_B ~.../tnt-inlined/easy_traps/entered_opened.baf~ ~.../tnt-inlined/easy_traps/opened.baf~
+  BUT_ONLY
+  traref = $trap_type(~%trap%~)
+  OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) ~%traref%~
+  OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) ~%ground_name%~
+  i+=1
+END
+
+// clear faulty scripts, assign new ground ones
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   GET_OFFSET_ARRAY reg_array ARE_V10_REGIONS
   PHP_EACH reg_array AS int => reg_off BEGIN
     READ_SHORT (reg_off + ARE_REGION_trapped) is_trapped
     READ_ASCII (reg_off + ARE_REGION_script) reg_script
-    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
+    // if it's not trapped but script exists and is a known trap type then remove
+    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN
       READ_ASCII reg_off reg_name (32) NULL
       PATCH_LOG ~Found faulty region: area %SOURCE_FILE%, region %reg_name%, script %reg_script%, trap status is %is_trapped% - clearing.~
       LPF ALTER_AREA_REGION
@@ -60,7 +90,16 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
           trap_remove = 0
         STR_VAR
           region_name = ~%reg_name%~
-          door_script = ~~
+          region_script = ~~
+      END
+    END
+    // replace with new
+    PATCH_IF is_trapped == 1 AND VARIABLE_IS_SET $trap_double_trigger(~%reg_script%~) BEGIN
+      new_trap_script = $new_ground_trap(~%reg_scrip%~)
+      LPF ALTER_AREA_REGION
+        STR_VAR
+          region_name = ~%reg_name%~
+          region_script = ~%new_trap_script%~
       END
     END
   END
@@ -69,7 +108,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
     READ_SHORT (cont_off + ARE_CONTAINER_trapped) is_trapped
     READ_SHORT (cont_off + ARE_CONTAINER_trap_detected) is_detected
     READ_ASCII (cont_off + ARE_CONTAINER_script) cont_script
-    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
+    // if it's not trapped but script exists and is a known trap type
+    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN
       READ_ASCII cont_off cont_name (32) NULL
       PATCH_LOG ~Found faulty container: area %SOURCE_FILE%, container %cont_name%, script %cont_script%, trap status is %is_trapped% - clearing~
       LPF ALTER_AREA_CONTAINER
@@ -91,7 +131,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   PHP_EACH door_array AS int => door_off BEGIN
     READ_SHORT (door_off + ARE_DOOR_trapped) is_trapped
     READ_ASCII (door_off + ARE_DOOR_script) door_script
-    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%door_script%~)) BEGIN //if it's not trapped but script exists and is a known trap type
+    // if it's not trapped but script exists and is a known trap type
+    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%door_script%~)) BEGIN
       READ_ASCII door_off door_name (32) NULL
       PATCH_LOG ~Found faulty door: area %SOURCE_FILE%, door %door_name%, script %door_script%, trap status is %is_trapped% - clearing~
       LPF ALTER_AREA_DOOR
@@ -129,19 +170,19 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   str_size = reg_size
   str_num = reg_num
   rel_script_off = ARE_REGION_script
-  LPM G_REPLACE_TRAP_SCRIPTS
+  LPM MAKE_TRAP_SCRIPTS_UNIQUE
 
   str_off = cont_off
   str_size = cont_size
   str_num = cont_num
   rel_script_off = ARE_CONTAINER_script
-  LPM G_REPLACE_TRAP_SCRIPTS
+  LPM MAKE_TRAP_SCRIPTS_UNIQUE
 
   str_off = door_off
   str_size = door_size
   str_num = door_num
   rel_script_off = ARE_DOOR_script
-  LPM G_REPLACE_TRAP_SCRIPTS
+  LPM MAKE_TRAP_SCRIPTS_UNIQUE
 
 BUT_ONLY
 

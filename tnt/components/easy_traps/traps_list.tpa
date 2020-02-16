@@ -79,7 +79,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN
   GSPEAR => ~@135~
   GSLIME => ~@136~
   GVENT => ~@137~
-
   //Watcher's keep traps
   GT001 => ~@138~
   GT002 => ~@139~
@@ -174,4 +173,42 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_type BEGIN
   // WhiteQueen mod. Can't be disabled.
 //  WQXSTON => ~Stone trap~ 
 
+END
+
+// these are both container and ground, need to separate them
+// all 1's, just need to check them with VARIABLE_IS_SET later
+ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_double_trigger BEGIN
+  GDARTS => 1
+  GSPEAR => 1
+  GSLIME => 1
+  GVENT => 1
+  GT001 => 1
+  GT002 => 1
+  GT003 => 1
+  GT004 => 1
+  GT005 => 1
+  GT006 => 1
+  GT007 => 1
+  GT008 => 1
+  GT009 => 1
+  GT010 => 1
+  GT011 => 1
+  GT012 => 1
+  GT013 => 1
+  GT014 => 1
+  GT015 => 1
+  GT016 => 1
+  GT017 => 1
+  GT018 => 1
+  GT019 => 1
+  GT020 => 1
+  GT021 => 1
+  GT022 => 1
+  GT023 => 1
+  GT024 => 1
+  GT025 => 1
+  GT026 => 1
+  GT027 => 1
+  GT028 => 1
+  GT029 => 1
 END
