@@ -59,15 +59,14 @@ CLEAR_IDS_MAP
 >>>>>>>>
 OUTER_SET i = 0
 ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
-  ground_name = "g_gtr%i%.bcs"
+  OUTER_TEXT_SPRINT ground_name "g_gtr%i%.bcs"
   COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
     R_B_B ~.../tnt-inlined/easy_traps/entered_opened.baf~ ~.../tnt-inlined/easy_traps/entered.baf~
   BUT_ONLY
   COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
     R_B_B ~.../tnt-inlined/easy_traps/entered_opened.baf~ ~.../tnt-inlined/easy_traps/opened.baf~
   BUT_ONLY
-  traref = $trap_type(~%trap%~)
-  OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) ~%traref%~
+  OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) $trap_type(~%trap%~)
   OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) ~%ground_name%~
   i+=1
 END
