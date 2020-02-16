@@ -52,19 +52,20 @@ OUTER_TEXT_SPRINT trigger_opened_entered
     Opened([ANYONE])~
 OUTER_TEXT_SPRINT trigger_entered ~Entered([ANYONE])~
 OUTER_TEXT_SPRINT trigger_opened ~Opened([ANYONE])~
-
 OUTER_SET i = 0
 ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
-  OUTER_TEXT_SPRINT ground_name ~g_gtr%i%~
-  COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
-    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_entered%~
-  BUT_ONLY
-  COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
-    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_opened%~
-  BUT_ONLY
-  OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) EVAL $trap_type(~%trap%~)
-  OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) EVAL ~%ground_name%~
-  OUTER_SET i+=1
+  ACTION_IF FILE_EXISTS_IN_GAME ~%trap%.bcs~ BEGIN
+    OUTER_TEXT_SPRINT ground_name ~g_gtr%i%~
+    COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_entered%~
+    BUT_ONLY
+    COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_opened%~
+    BUT_ONLY
+    OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) EVAL $trap_type(~%trap%~)
+    OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) EVAL ~%ground_name%~
+    OUTER_SET i+=1
+  END
 END
 
 
