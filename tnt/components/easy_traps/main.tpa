@@ -46,33 +46,30 @@ CLEAR_IDS_MAP
 
 
 // separate scripts which have both Open and Entered triggers
-<<<<<<<< .../tnt-inlined/easy_traps/entered_opened.baf
-  OR(2)
+OUTER_TEXT_SPRINT trigger_opened_entered
+~OR(2)
     Entered([ANYONE])
-    Opened([ANYONE])
->>>>>>>>
-<<<<<<<< .../tnt-inlined/easy_traps/entered.baf
-  Entered([ANYONE])
->>>>>>>>
-<<<<<<<< .../tnt-inlined/easy_traps/opened.baf
-  Opened([ANYONE])
->>>>>>>>
+    Opened([ANYONE])~
+OUTER_TEXT_SPRINT trigger_entered ~Entered([ANYONE])~
+OUTER_TEXT_SPRINT trigger_opened ~Opened([ANYONE])~
+
 OUTER_SET i = 0
 ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
-  OUTER_TEXT_SPRINT ground_name "g_gtr%i%.bcs"
+  OUTER_TEXT_SPRINT ground_name ~g_gtr%i%~
   COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
-    R_B_B ~.../tnt-inlined/easy_traps/entered_opened.baf~ ~.../tnt-inlined/easy_traps/entered.baf~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_entered%~
   BUT_ONLY
   COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
-    R_B_B ~.../tnt-inlined/easy_traps/entered_opened.baf~ ~.../tnt-inlined/easy_traps/opened.baf~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_opened%~
   BUT_ONLY
-  OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) $trap_type(~%trap%~)
-  OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) ~%ground_name%~
-  i+=1
+  OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) EVAL $trap_type(~%trap%~)
+  OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) EVAL ~%ground_name%~
+  OUTER_SET i+=1
 END
 
+
 // clear faulty scripts, assign new ground ones
-COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
+COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
   GET_OFFSET_ARRAY reg_array ARE_V10_REGIONS
   PHP_EACH reg_array AS int => reg_off BEGIN
     READ_SHORT (reg_off + ARE_REGION_trapped) is_trapped
@@ -94,7 +91,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
     END
     // replace with new
     PATCH_IF is_trapped == 1 AND VARIABLE_IS_SET $trap_double_trigger(~%reg_script%~) BEGIN
-      new_trap_script = $new_ground_trap(~%reg_scrip%~)
+      TEXT_SPRINT new_trap_script $new_ground_trap(~%reg_script%~)
       LPF ALTER_AREA_REGION
         STR_VAR
           region_name = ~%reg_name%~
@@ -148,7 +145,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
+// replace scripts with copies
+COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
   SET reg_size = ARE_REGION_size
   READ_SHORT ARE_regions_count reg_num
   READ_LONG  ARE_regions_offset reg_off
@@ -185,7 +183,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
 
 BUT_ONLY
 
-//Clone and extend new scripts
+// actually create and extend new scripts
 ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
   COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~
   OUTER_SPRINT trapind $clone_loc_ind(~%clone_ind%~)    //trap index in area: 2
@@ -209,7 +207,7 @@ ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
   EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~%comp_dir%/traps.baf~ EVAL
 END
 
-//last, EXTEND vanilla scripts
+// lastly, EXTEND vanilla scripts
 ACTION_PHP_EACH trap_type AS script => string BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN //skip missing scripts
     OUTER_SPRINT trap_type_id ~%script%~  //for EXTEND EVAL
