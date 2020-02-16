@@ -47,15 +47,15 @@ CLEAR_IDS_MAP
 
 // separate scripts which have both Open and Entered triggers
 <<<<<<<< .../tnt-inlined/easy_traps/entered_opened.baf
-	OR(2)
-		Entered([ANYONE])
-		Opened([ANYONE])
+  OR(2)
+    Entered([ANYONE])
+    Opened([ANYONE])
 >>>>>>>>
 <<<<<<<< .../tnt-inlined/easy_traps/entered.baf
-	Entered([ANYONE])
+  Entered([ANYONE])
 >>>>>>>>
 <<<<<<<< .../tnt-inlined/easy_traps/opened.baf
-	Opened([ANYONE])
+  Opened([ANYONE])
 >>>>>>>>
 OUTER_SET i = 0
 ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
