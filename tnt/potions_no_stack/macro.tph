@@ -24,7 +24,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
   //deleting effects
   LPF DELETE_ITEM_EFFECT
     INT_VAR
-      opcode_to_delete = (0 - 1)
+      opcode_to_delete = "-1"
   END
 
 /* STUPID THING DOESN'T WORK

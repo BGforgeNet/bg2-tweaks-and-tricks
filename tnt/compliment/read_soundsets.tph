@@ -9,10 +9,10 @@ ACTION_FOR_EACH game IN bg1 bg2 BEGIN
 
     //include only interactions, specifics, compliments, insults (39-60)
     OUTER_FOR ( i=0; i<39; i+=1) BEGIN
-      OUTER_SET ~%soundset%_%i%~ = (0 - 1)
+      OUTER_SET ~%soundset%_%i%~ = "-1"
     END
     OUTER_FOR ( i=61; i<100; i+=1) BEGIN
-      OUTER_SET ~%soundset%_%i%~ = (0 - 1)
+      OUTER_SET ~%soundset%_%i%~ = "-1"
     END
 
   END

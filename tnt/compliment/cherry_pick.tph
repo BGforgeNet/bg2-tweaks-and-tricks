@@ -64,7 +64,7 @@ BUT_ONLY
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN
   ACTION_PHP_EACH ~%game%_edwin_cre~ AS npc_name => npc_cre BEGIN
     COPY_EXISTING ~%npc_cre%.cre~ ~override~
-      WRITE_LONG (0xa4 +  46 * 4) (0 - 1)  // clear reference
+      WRITE_LONG (0xa4 +  46 * 4) "-1"  // clear reference
       WRITE_LONG (0xa4 +  59 * 4) rinsult2
     BUT_ONLY
   END
