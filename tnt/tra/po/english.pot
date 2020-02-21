@@ -767,6 +767,36 @@ msgstr ""
 msgid "slashing"
 msgstr ""
 
+#: improved_equalizer.tra:1
+msgid ""
+"Long Sword: The Equalizer\n"
+"The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the \"Sword of Neutrality,\" it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Always considered to be of +4 enchantment when determining what it can hit.\n"
+"THAC0 & Damage:\n"
+"  vs True Neutral: +0 to hit, +0 damage\n"
+"  vs Chaotic Neutral, Lawful Neutral: +1 to hit, +2 damage\n"
+"  vs Neutral Good, Neutral Evil: +2 to hit, +4 damage\n"
+"  vs Chaotic Good, Lawful Evil: +3 to hit, +6 damage\n"
+"  vs Lawful Good, Chaotic Evil: +4 to hit, +8 damage\n"
+"\n"
+"Equipped Abilities: Immunity to Charm and Confusion\n"
+"\n"
+"Damage type: slashing\n"
+"Weight: 3\n"
+"Speed Factor: 3\n"
+"Proficiency Type: Long Sword\n"
+"Type: 1-handed\n"
+"Requires: 6 Strength\n"
+"Not Usable By:\n"
+" Druid\n"
+" Cleric\n"
+" Mage\n"
+" Beast Master"
+msgstr ""
+
 #: map_notes.tra:1
 msgid "Degrodel"
 msgstr ""
@@ -1214,6 +1244,10 @@ msgstr ""
 
 #: setup.tra:259
 msgid "Faster loading times"
+msgstr ""
+
+#: setup.tra:260
+msgid "Improved Equalizer"
 msgstr ""
 
 #: shandalars_cloak.tra:1
