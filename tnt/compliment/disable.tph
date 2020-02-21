@@ -3,11 +3,11 @@ COPY_EXISTING_REGEXP GLOB ~.*\.cre~ ~override~
   READ_ASCII  0x280 deathvar
   PATCH_IF FILE_CONTAINS_EVALUATED(~pdialog.2da~ ~%deathvar%~) BEGIN
     FOR (i = 44; i < 53; i = i + 1) BEGIN
-      WRITE_LONG (0xa4 + i * 4) "-1"
+      WRITE_LONG (CRE_soundset_start + i * 4) "-1"
     END
     //responses to compliments and insults
     FOR (i = 55; i < 61; i = i + 1) BEGIN
-      WRITE_LONG (0xa4 + i * 4) "-1"
+      WRITE_LONG (CRE_soundset_start + i * 4) "-1"
     END
   END
 BUT_ONLY

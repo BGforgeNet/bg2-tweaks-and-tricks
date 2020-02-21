@@ -149,14 +149,14 @@ END
 ACTION_PHP_EACH ~bg1_quayle_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
     SAY SELECT_RARE1 @42 /* Walking alone on the Coastway road!  How smart is this? */
-    WRITE_LONG (0xa4 +  31 * 4) "-1" //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
+    WRITE_LONG (CRE_soundset_start +  31 * 4) "-1" //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
   BUT_ONLY
 END
 
 //Safana - wrong sound in original game
 ACTION_PHP_EACH ~bg1_safana_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    WRITE_LONG (0xa4 +  31 * 4) "-1" //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
+    WRITE_LONG (CRE_soundset_start +  31 * 4) "-1" //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
   BUT_ONLY
 END
 
@@ -170,7 +170,7 @@ END
 //Skie - wrong sound in original game
 ACTION_PHP_EACH ~bg1_skie_cre~ AS npc => cre BEGIN
   COPY_EXISTING ~%cre%.cre~ ~override~
-    WRITE_LONG (0xa4 +  31 * 4) "-1" //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
+    WRITE_LONG (CRE_soundset_start +  31 * 4) "-1" //I cannot tarry about for idle conversation.  As a knight there are many tasks that must be looked after!
     SAY HAPPY @70 /* You're the finest group of friends I've ever had. */
   BUT_ONLY
 END

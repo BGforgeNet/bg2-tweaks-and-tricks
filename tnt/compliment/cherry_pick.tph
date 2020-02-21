@@ -1,71 +1,71 @@
 //Alora
 COPY_EXISTING ~alora.cre~ ~override~
-  READ_LONG (0xa4 +  41 * 4) rcomp2 //41. INTERACTION3           Everyone is basically descent, once you get them to unwrinkle their faces.
+  READ_LONG (CRE_soundset_start +  41 * 4) rcomp2 //41. INTERACTION3           Everyone is basically descent, once you get them to unwrinkle their faces.
 BUT_ONLY
 COPY_EXISTING ~alora.cre~ ~override~
               ~alora6.cre~ ~override~
-  WRITE_LONG (0xa4 +  56 * 4) rcomp2
+  WRITE_LONG (CRE_soundset_start +  56 * 4) rcomp2
 BUT_ONLY
 
 //Yeslick
 COPY_EXISTING ~yeslic.cre~ ~override~
-  READ_LONG (0xa4 +  43 * 4) insult2  // 43. INTERACTION5           I've been through enough without suffering you as well.  Begone.
+  READ_LONG (CRE_soundset_start +  43 * 4) insult2  // 43. INTERACTION5           I've been through enough without suffering you as well.  Begone.
 BUT_ONLY
 COPY_EXISTING ~yeslic.cre~ ~override~
               ~yeslic5.cre~ ~override~
-  WRITE_LONG (0xa4 +  45 * 4) insult2
+  WRITE_LONG (CRE_soundset_start +  45 * 4) insult2
 BUT_ONLY
 
 //Adjantis
 COPY_EXISTING ~ajanti.cre~ ~override~
-  READ_LONG (0xa4 +  39 * 4) insult2 //39. INTERACTION1 Your actions fly in the face of everything Helm holds sacred.
-  READ_LONG (0xa4 +  40 * 4) insult3  // 40. INTERACTION2           There is not but good and evil. I suspect you are of the latter.
-  READ_LONG (0xa4 +  41 * 4) rinsult3  // 41. INTERACTION3           Evil must be purged wherever it is found, even among companions.
+  READ_LONG (CRE_soundset_start +  39 * 4) insult2 //39. INTERACTION1 Your actions fly in the face of everything Helm holds sacred.
+  READ_LONG (CRE_soundset_start +  40 * 4) insult3  // 40. INTERACTION2           There is not but good and evil. I suspect you are of the latter.
+  READ_LONG (CRE_soundset_start +  41 * 4) rinsult3  // 41. INTERACTION3           Evil must be purged wherever it is found, even among companions.
 BUT_ONLY
 COPY_EXISTING ~ajanti.cre~ ~override~
               ~ajanti4.cre~ ~override~
               ~ajanti6.cre~ ~override~
-  WRITE_LONG (0xa4 +  45 * 4) insult2
-  WRITE_LONG (0xa4 +  46 * 4) insult3
-  WRITE_LONG (0xa4 +  60 * 4) rinsult3
+  WRITE_LONG (CRE_soundset_start +  45 * 4) insult2
+  WRITE_LONG (CRE_soundset_start +  46 * 4) insult3
+  WRITE_LONG (CRE_soundset_start +  60 * 4) rinsult3
 BUT_ONLY
 
 //Khalid
 COPY_EXISTING ~khalid.cre~ ~override~
-  READ_LONG (0xa4 +  42 * 4) insult2 // 42. INTERACTION4           Usually everyone proves themselves, but there is something . . . disturbing abo...
-  READ_LONG (0xa4 +  43 * 4) insult3  // 43. INTERACTION5           I had thought none could be so beyond the bounds of goodness.  Certainly you ne...
+  READ_LONG (CRE_soundset_start +  42 * 4) insult2 // 42. INTERACTION4           Usually everyone proves themselves, but there is something . . . disturbing abo...
+  READ_LONG (CRE_soundset_start +  43 * 4) insult3  // 43. INTERACTION5           I had thought none could be so beyond the bounds of goodness.  Certainly you ne...
 BUT_ONLY
 COPY_EXISTING ~khalid.cre~ ~override~
               ~khalid2.cre~ ~override~
               ~khalid4.cre~ ~override~
               ~khalid6.cre~ ~override~
-  WRITE_LONG (0xa4 +  45 * 4) insult2
-  WRITE_LONG (0xa4 +  46 * 4) insult3
+  WRITE_LONG (CRE_soundset_start +  45 * 4) insult2
+  WRITE_LONG (CRE_soundset_start +  46 * 4) insult3
 BUT_ONLY
 
 
 //Branwen
 COPY_EXISTING ~branwe.cre~ ~override~
-  READ_LONG (0xa4 +  41 * 4) insult3 // 41. INTERACTION3           Stay well clear of me, you foul speakin' heretic!
-  READ_LONG (0xa4 +  42 * 4) comp2  // 42. INTERACTION4           Tempus would guide your wayward soul, if you let him.
-  READ_LONG (0xa4 +  43 * 4) rinsult3  // 43. INTERACTION5           May Tempus someday show you the error of your ways.
+  READ_LONG (CRE_soundset_start +  41 * 4) insult3 // 41. INTERACTION3           Stay well clear of me, you foul speakin' heretic!
+  READ_LONG (CRE_soundset_start +  42 * 4) comp2  // 42. INTERACTION4           Tempus would guide your wayward soul, if you let him.
+  READ_LONG (CRE_soundset_start +  43 * 4) rinsult3  // 43. INTERACTION5           May Tempus someday show you the error of your ways.
 BUT_ONLY
 COPY_EXISTING ~branwe.cre~ ~override~
               ~branwe5.cre~ ~override~
-  WRITE_LONG (0xa4 +  46 * 4) insult3
-  WRITE_LONG (0xa4 +  48 * 4) comp2
-  WRITE_LONG (0xa4 +  60 * 4) rinsult3
+  WRITE_LONG (CRE_soundset_start +  46 * 4) insult3
+  WRITE_LONG (CRE_soundset_start +  48 * 4) comp2
+  WRITE_LONG (CRE_soundset_start +  60 * 4) rinsult3
 BUT_ONLY
 
 //Edwin - change insult3 to rinsult2
 COPY_EXISTING ~edwin.cre~ ~override~
-  READ_LONG (0xa4 +  46 * 4) rinsult2  //46. INSULT3: Typical response; I wonder if they will prove useful at all
+  READ_LONG (CRE_soundset_start +  46 * 4) rinsult2  //46. INSULT3: Typical response; I wonder if they will prove useful at all
 BUT_ONLY
 ACTION_FOR_EACH game IN bg1 bg2 BEGIN
   ACTION_PHP_EACH ~%game%_edwin_cre~ AS npc_name => npc_cre BEGIN
     COPY_EXISTING ~%npc_cre%.cre~ ~override~
-      WRITE_LONG (0xa4 +  46 * 4) "-1"  // clear reference
-      WRITE_LONG (0xa4 +  59 * 4) rinsult2
+      WRITE_LONG (CRE_soundset_start +  46 * 4) "-1"  // clear reference
+      WRITE_LONG (CRE_soundset_start +  59 * 4) rinsult2
     BUT_ONLY
   END
 END
