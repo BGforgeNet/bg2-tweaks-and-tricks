@@ -40,7 +40,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
     LAWFUL_GOOD => 4
     CHAOTIC_EVIL => 4
   END
-  ACTION_PHP_EACH align_effnum AS align => i BEGIN
+  PHP_EACH align_effnum AS align => i BEGIN
     LPF ADD_ITEM_EQEFFECT
       INT_VAR parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
       STR_VAR resource = "g_equat%i%"
