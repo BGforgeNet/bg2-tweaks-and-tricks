@@ -1,7 +1,7 @@
 // thac0, damage bonuses
 OUTER_SET probability1 = 99
 OUTER_SET timing = TIMING_while_equipped
-OUTER_SET target = TARGET_eff_self
+OUTER_SET target = TARGET_FEATURE_self
 ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // 0 against TN, so not included
   LAF CREATE_EFFECT
     INT_VAR
