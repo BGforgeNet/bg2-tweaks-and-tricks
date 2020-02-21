@@ -1,7 +1,8 @@
+// thac0, damage bonuses
 OUTER_SET probability1 = 99
 OUTER_SET timing = TIMING_while_equipped
 OUTER_SET target = TARGET_eff_self
-ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // thac0+damage bonus. 0 against TN, so not included
+ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // 0 against TN, so not included
   LAF CREATE_EFFECT
     INT_VAR
       opcode = OPCODE_thac0_mod
@@ -24,10 +25,10 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
 
   LPF DELETE_ITEM_EFFECT INT_VAR opcode = OPCODE_use_eff_file END //delete all alignment effects
 
-  OUTER_SET opcode = OPCODE_use_eff_file
-  OUTER_SET target = TARGET_FEATURE_self
-  OUTER_SET timing = TIMING_while_equipped
-  OUTER_SET parameter2 = EFFECT_IDS_align
+  opcode = OPCODE_use_eff_file
+  target = TARGET_FEATURE_self
+  timing = TIMING_while_equipped
+  parameter2 = EFFECT_IDS_align
 
   ACTION_DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
     LAWFUL_NEUTRAL => 1
