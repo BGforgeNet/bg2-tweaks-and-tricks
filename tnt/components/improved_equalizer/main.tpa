@@ -30,7 +30,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   timing = TIMING_while_equipped
   parameter2 = EFFECT_IDS_align
 
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
+  DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
     LAWFUL_NEUTRAL => 1
     CHAOTIC_NEUTRAL => 1
     NEUTRAL_GOOD => 2
