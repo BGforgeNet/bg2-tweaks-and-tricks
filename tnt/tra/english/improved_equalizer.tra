@@ -1,0 +1,26 @@
+@1 = ~Long Sword: The Equalizer
+The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer.
+
+STATISTICS:
+
+Always considered to be of +4 enchantment when determining what it can hit.
+THAC0 & Damage:
+  vs True Neutral: +0 to hit, +0 damage
+  vs Chaotic Neutral, Lawful Neutral: +1 to hit, +2 damage
+  vs Neutral Good, Neutral Evil: +2 to hit, +4 damage
+  vs Chaotic Good, Lawful Evil: +3 to hit, +6 damage
+  vs Lawful Good, Chaotic Evil: +4 to hit, +8 damage
+
+Equipped Abilities: Immunity to Charm and Confusion
+
+Damage type: slashing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: 1-handed
+Requires: 6 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage
+ Beast Master~

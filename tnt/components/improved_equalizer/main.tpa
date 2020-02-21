@@ -1,0 +1,54 @@
+OUTER_SET probability1 = 99
+OUTER_SET timing = TIMING_while_equipped
+OUTER_SET target = TARGET_eff_self
+ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // thac0+damage bonus. 0 against TN, so not included
+  LAF CREATE_EFFECT
+    INT_VAR
+      opcode = OPCODE_thac0_mod
+      parameter1 = ~%i%~ // amount
+    STR_VAR
+      effect = EVAL ~g_equat%i%~ //thac0
+  END
+  OUTER_SET dmg = i * 2
+  LAF CREATE_EFFECT
+    INT_VAR
+      opcode = OPCODE_extra_damage_mod
+      parameter1 = EVAL ~%dmg%~
+    STR_VAR
+      effect = EVAL ~g_equad%i%~ //damage
+  END
+END
+
+COPY_EXISTING ~sw1h54.itm~ ~override~
+  SAY DESC @1
+
+  LPF DELETE_ITEM_EFFECT INT_VAR opcode = OPCODE_use_eff_file END //delete all alignment effects
+
+  OUTER_SET opcode = OPCODE_use_eff_file
+  OUTER_SET target = TARGET_FEATURE_self
+  OUTER_SET timing = TIMING_while_equipped
+  OUTER_SET parameter2 = EFFECT_IDS_align
+
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
+    LAWFUL_NEUTRAL => 1
+    CHAOTIC_NEUTRAL => 1
+    NEUTRAL_GOOD => 2
+    NEUTRAL_EVIL => 2
+    CHAOTIC_GOOD => 3
+    LAWFUL_EVIL => 3
+    LAWFUL_GOOD => 4
+    CHAOTIC_EVIL => 4
+  END
+  ACTION_PHP_EACH align_effnum AS align => i BEGIN
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      STR_VAR resource = "g_equat%i%"
+    END
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      STR_VAR resource = "g_equad%i%"
+    END
+  END
+
+  WRITE_LONG ITM_enchantment 4
+BUT_ONLY

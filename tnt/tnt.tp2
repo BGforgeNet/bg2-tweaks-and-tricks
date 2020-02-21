@@ -381,3 +381,7 @@ INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 
 //BEGIN @259 /* Faster loading times */
 //INCLUDE ~%components%/faster_loading_times/main.tpa~
+
+BEGIN @260 /* Improved Equalizer */
+OUTER_SPRINT comp_name ~improved_equalizer~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
