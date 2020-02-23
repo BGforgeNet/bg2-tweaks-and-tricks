@@ -1,10 +1,11 @@
 // thac0, damage bonuses
 OUTER_SET probability1 = 99
-OUTER_SET timing = TIMING_while_equipped
 OUTER_SET target = TARGET_FEATURE_self
+OUTER_SET timing = TIMING_while_equipped
 ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // 0 against TN, so not included
   LAF CREATE_EFFECT
     INT_VAR
+      probability1 target target
       opcode = OPCODE_thac0_mod
       parameter1 = ~%i%~ // amount
     STR_VAR
@@ -13,6 +14,7 @@ ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // 0 against TN, so not included
   OUTER_SET dmg = i * 2
   LAF CREATE_EFFECT
     INT_VAR
+      probability1 target target
       opcode = OPCODE_extra_damage_mod
       parameter1 = EVAL ~%dmg%~
     STR_VAR
@@ -42,11 +44,15 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   END
   PHP_EACH align_effnum AS align => i BEGIN
     LPF ADD_ITEM_EQEFFECT
-      INT_VAR parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      INT_VAR
+        opcode target timing parameter2 probability1
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
       STR_VAR resource = "g_equat%i%"
     END
     LPF ADD_ITEM_EQEFFECT
-      INT_VAR parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      INT_VAR
+        opcode target timing parameter2 probability1
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
       STR_VAR resource = "g_equad%i%"
     END
   END

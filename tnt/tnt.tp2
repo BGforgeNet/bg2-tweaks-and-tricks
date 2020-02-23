@@ -9,6 +9,7 @@ ALWAYS
   OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
   OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
   INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
+  INCLUDE ~%lib_dir%/external/ir.tpa~
 END
 
 LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
@@ -383,5 +384,6 @@ INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 //INCLUDE ~%components%/faster_loading_times/main.tpa~
 
 BEGIN @260 /* Improved Equalizer */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
