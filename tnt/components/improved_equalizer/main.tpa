@@ -2,21 +2,19 @@
 OUTER_SET probability1 = 99
 OUTER_SET target = TARGET_FEATURE_self
 OUTER_SET timing = TIMING_while_equipped
-ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // 0 against TN, so not included
+parameter1 = i // amount
+ACTION_FOR_EACH i IN 1 2 3 4 BEGIN
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 target timing
+      probability1 target timing parameter1
       opcode = OPCODE_thac0_mod
-      parameter1 = i // amount
     STR_VAR
       effect = EVAL ~g_equat%i%~ //thac0
   END
-  OUTER_SET dmg = i * 2
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 target timing
+      probability1 target timing parameter1
       opcode = OPCODE_extra_damage_mod
-      parameter1 = dmg
     STR_VAR
       effect = EVAL ~g_equad%i%~ //damage
   END
@@ -25,22 +23,21 @@ END
 COPY_EXISTING ~sw1h54.itm~ ~override~
   SAY DESC @1
 
-  LPF DELETE_ITEM_EFFECT INT_VAR opcode = OPCODE_use_eff_file END //delete all alignment effects
-
   opcode = OPCODE_use_eff_file
   target = TARGET_FEATURE_self
   timing = TIMING_while_equipped
   parameter2 = EFFECT_IDS_align
 
   DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
-    LAWFUL_NEUTRAL => 1
-    CHAOTIC_NEUTRAL => 1
+    TRUE_NEUTRAL => 4
+    LAWFUL_NEUTRAL => 3
+    CHAOTIC_NEUTRAL => 3
     NEUTRAL_GOOD => 2
     NEUTRAL_EVIL => 2
-    CHAOTIC_GOOD => 3
-    LAWFUL_EVIL => 3
-    LAWFUL_GOOD => 4
-    CHAOTIC_EVIL => 4
+    CHAOTIC_GOOD => 1
+    LAWFUL_EVIL => 1
+//    LAWFUL_GOOD => 0
+//    CHAOTIC_EVIL => 0
   END
   PHP_EACH align_effnum AS align => i BEGIN
     LPF ADD_ITEM_EQEFFECT
@@ -58,4 +55,26 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   END
 
   WRITE_LONG ITM_enchantment 4
+
+  // know alightnment ability
+  READ_ASCII SPL_icon icon
+  LPF ADD_ITEM_HEADER
+    INT_VAR
+      insert_point = 0
+      charges = 3
+      depletion = DEPLETION_recharges
+      flags = FLAG_HEADER_recharge_after_rest
+    STR_VAR
+      icon = ~%icon%~
+  END 
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      opcode = OPCODE_cast_spell_at_creature
+      parameter1 = 10 // default casting level from items
+      paremeter2 = 1 // cast instantly
+      timing = TIMING_permanent
+    STR_VAR
+      resource = WIZARD_KNOW_ALIGNMENT
+  END
+
 BUT_ONLY
