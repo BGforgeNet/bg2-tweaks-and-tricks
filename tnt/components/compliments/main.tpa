@@ -1,4 +1,4 @@
-OUTER_TEXT_SPRINT comp_dir ~%components%/compliments%~
+OUTER_TEXT_SPRINT comp_dir ~%components%/compliments~
 
 //List NPC
 INCLUDE ~%lib_dir%/soundsets/cre_list.tpa~
