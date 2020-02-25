@@ -143,7 +143,8 @@ INCLUDE ~%MOD_FOLDER%/no_talk_shadows/main.tph~
 BEGIN @90 /* Make NPC soundsets available to PC */
 GROUP @227 /* Soundsets */
 REQUIRE_PREDICATE ((GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) AND NOT GAME_IS ~bgee bg2ee eet~) @123 /* EEs not supported. Try ... instead */
-INCLUDE ~%MOD_FOLDER%/npc_soundsets/main.tph~
+OUTER_TEXT_SPRINT comp_dir ~%components%/npc_soundsets~
+INCLUDE ~%comp_dir%/main.tpa~
 // END SOUNDSETS
 
 

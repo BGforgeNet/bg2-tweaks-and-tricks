@@ -398,5 +398,5 @@ END
 
 //Other custom sounds (bg1 npc)
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
-  INCLUDE ~%MOD_FOLDER%/npc_soundsets/cherry_pick.tph~
+  INCLUDE ~%comp_dir%/cherry_pick.tpa~
 END
