@@ -10,13 +10,14 @@ THAC0 & Damage:
   vs True Neutral: +0 to hit, +0 damage
   vs Chaotic Neutral, Lawful Neutral: +1 to hit, +2 damage
   vs Neutral Good, Neutral Evil: +2 to hit, +4 damage
-  vs Chaotic Good, Lawful Evil: +3 to hit, +6 damage
+  vs other alignments: +3 to hit, +6 damage
 
 Extra bonuses based on wielder's alignment:
   True Neutral: +4 to hit, +4 damage
   Chaotic Neutral, Lawful Neutral: +3 to hit, +3 damage
   Neutral Good, Neutral Evil: +2 to hit, +2 damage
   Chaotic Good, Lawful Evil: +1 to hit, +1 damage
+  Other alignments: +0 to hit, +0 damage
 
 Equipped Abilities: Immunity to Charm and Confusion
 
