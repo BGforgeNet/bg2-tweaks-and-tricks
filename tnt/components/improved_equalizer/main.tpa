@@ -5,18 +5,18 @@ OUTER_SET timing = TIMING_while_equipped
 ACTION_FOR_EACH i IN 1 2 3 4 BEGIN // 0 against TN, so not included
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 target target
+      probability1 target timing
       opcode = OPCODE_thac0_mod
-      parameter1 = ~%i%~ // amount
+      parameter1 = i // amount
     STR_VAR
       effect = EVAL ~g_equat%i%~ //thac0
   END
   OUTER_SET dmg = i * 2
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 target target
+      probability1 target timing
       opcode = OPCODE_extra_damage_mod
-      parameter1 = EVAL ~%dmg%~
+      parameter1 = dmg
     STR_VAR
       effect = EVAL ~g_equad%i%~ //damage
   END
