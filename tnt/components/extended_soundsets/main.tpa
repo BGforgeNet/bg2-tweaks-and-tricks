@@ -10,5 +10,5 @@ INCLUDE ~%comp_dir%/read_soundsets.tpa~
 //Write them
 INCLUDE ~%comp_dir%/write_soundsets.tpa~
 
-//Cherry pick some other lines, mostly battle cries
+//Cherry pick some other lines, mostly battle cries. Also custom-made additions.
 INCLUDE ~%comp_dir%/cherry_pick.tpa~

@@ -12,8 +12,8 @@ ALWAYS
   INCLUDE ~%lib_dir%/external/ir.tpa~
 END
 
-LANGUAGE ~English~ ~ENGLISH~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
-LANGUAGE ~Russian~ ~RUSSIAN~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
+LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
+LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
 
 // FAMILIARS
 BEGIN @74 /* Smarter familiars */
