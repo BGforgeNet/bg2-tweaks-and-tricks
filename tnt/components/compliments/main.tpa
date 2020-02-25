@@ -1,20 +1,22 @@
+OUTER_TEXT_SPRINT comp_dir ~%components%/compliments%~
+
 //List NPC
 INCLUDE ~%lib_dir%/soundsets/cre_list.tpa~
 
 //Read soundsets
-INCLUDE ~%MOD_FOLDER%/compliment/read_soundsets.tph~
+INCLUDE ~%comp_dir%/read_soundsets.tpa~
 
 //Edit soundset for BG1+BG2 NPC, copy some interactions to compliments/insults
-INCLUDE ~%MOD_FOLDER%/compliment/extend_soundsets.tph~
+INCLUDE ~%comp_dir%/extend_soundsets.tpa~
 
 //Write them
-INCLUDE ~%MOD_FOLDER%/compliment/write_soundsets.tph~
+INCLUDE ~%comp_dir%/write_soundsets.tpa~
 
 //Add Haerdalis to interactions
-INCLUDE ~%MOD_FOLDER%/compliment/haerdalis.tph~
+INCLUDE ~%comp_dir%/haerdalis.tpa~
 
 //Fix interact.2da
-INCLUDE ~%MOD_FOLDER%/compliment/2da.tph~
+INCLUDE ~%comp_dir%/2da.tpa~
 
 //For BG1-only NPC and Edwin, cherry-pick some interactions and copy them to compliments/insults
-INCLUDE ~%MOD_FOLDER%/compliment/cherry_pick.tph~
+INCLUDE ~%comp_dir%/cherry_pick.tpa~

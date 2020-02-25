@@ -1,4 +1,4 @@
-INCLUDE ~%MOD_FOLDER%/compliment/sound_list.tph~ // define a sound_list array with compliments and insults
+INCLUDE ~%comp_dir%/sound_list.tpa~ // define a sound_list array with compliments and insults
 
 //get framerate
 COPY ~baldur.ini~ ~baldur.ini~
@@ -19,7 +19,11 @@ ACTION_PHP_EACH sound_list AS index => sound BEGIN
 END
 
 //decompress to WAV
-AT_NOW ~%MOD_FOLDER%/compliment/bat/g_decode.bat~
+ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
+  AT_NOW ~%comp_dir%/framerate.bat~
+END ELSE BEGIN
+  AT_NOW ~wineconsole %comp_dir%/framerate.bat~
+END
 //adjust WAV
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
   COPY_EXISTING ~%sound%.wav~ ~override~
