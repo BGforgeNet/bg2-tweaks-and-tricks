@@ -389,3 +389,7 @@ BEGIN @260 /* Improved Equalizer */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
+BEGIN @261 /* Working Non-Detection */
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_NON_DETECTION%.spl~ @262 /* Non-Detection not found */
+INCLUDE ~%components%/working_non_detection/main.tpa~

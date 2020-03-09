@@ -1,0 +1,3 @@
+COPY_EXISTING ~%WIZARD_NON_DETECTION%.spl~ ~override~
+  WRITE_BYTE SPL_sectype SECTYPE_specific_protections
+BUT_ONLY
