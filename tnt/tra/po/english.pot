@@ -1261,6 +1261,14 @@ msgstr ""
 msgid "Improved Equalizer"
 msgstr ""
 
+#: setup.tra:261
+msgid "Working Non-Detection"
+msgstr ""
+
+#: setup.tra:262
+msgid "Non-Detection not found"
+msgstr ""
+
 #: shandalars_cloak.tra:1
 msgid ""
 "This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
