@@ -348,7 +348,7 @@ INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
 //BEGIN ~thieves str~
 //INCLUDE ~%MOD_FOLDER%/improved_strongholds/thief.tpa~
 
-BEGIN ~Limited stock~
+BEGIN @264 // /* Limited stock */
 INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
 
 BEGIN @250 /* Improved Shandalar's cloak */
@@ -383,6 +383,7 @@ REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga o
 INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 
 BEGIN @259 /* Faster loading times */
+REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @263 /* Only non-EE engines */
 INCLUDE ~%components%/faster_loading_times/main.tpa~
 
 BEGIN @260 /* Improved Equalizer */
