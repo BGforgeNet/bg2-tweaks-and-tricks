@@ -1269,6 +1269,14 @@ msgstr ""
 msgid "Non-Detection not found"
 msgstr ""
 
+#: setup.tra:263
+msgid "Only non-EE engines"
+msgstr ""
+
+#: setup.tra:264
+msgid "Limited stock"
+msgstr ""
+
 #: shandalars_cloak.tra:1
 msgid ""
 "This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
