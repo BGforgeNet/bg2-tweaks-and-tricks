@@ -140,7 +140,6 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
     REINCLUDE ~%comp_dir%/g_fam.baf.tpa~ //ACTION to generate script. Depends on %death_var% and %fam_item%
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII SCRIPT_OVERRIDE over_script
-      PATCH_PRINT ~cre is %fam_cre%, script is %over_script%, death_var is %death_var%~
       PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN //use existing script if possible
         over_exists = 1
       END ELSE BEGIN //or create a new one
