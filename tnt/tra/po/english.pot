@@ -808,88 +808,108 @@ msgid ""
 " Beast Master"
 msgstr ""
 
-#: map_notes.tra:1
-msgid "Degrodel"
+#: more_map_notes.tra:1
+msgid "Degrodel's house"
 msgstr ""
 
-#: map_notes.tra:2
-msgid "Pheirkas"
+#: more_map_notes.tra:2
+msgid "Pheirkas' house"
 msgstr ""
 
-#: map_notes.tra:3
-msgid "Nadine"
+#: more_map_notes.tra:3
+msgid "Nadine's house"
 msgstr ""
 
-#: map_notes.tra:4
-msgid "Arkion"
+#: more_map_notes.tra:4
+msgid "Arkion's house"
 msgstr ""
 
-#: map_notes.tra:5
-msgid "Sunin"
+#: more_map_notes.tra:5
+msgid "Sunin's house"
 msgstr ""
 
-#: map_notes.tra:6
-msgid "Cordyr"
+#: more_map_notes.tra:6
+msgid "Cordyr' house"
 msgstr ""
 
-#: map_notes.tra:7
-msgid "Basilisk"
+#: more_map_notes.tra:7
+msgid "Nadarin's warehouse"
 msgstr ""
 
-#: map_notes.tra:8
+#: more_map_notes.tra:8
 msgid "Noralee"
 msgstr ""
 
-#: map_notes.tra:9
-msgid "Ghorak"
+#: more_map_notes.tra:9
+msgid "Ghorak's house"
 msgstr ""
 
-#: map_notes.tra:10
-msgid "Nemphre"
+#: more_map_notes.tra:10
+msgid "Nemphre's house"
 msgstr ""
 
-#: map_notes.tra:11
-msgid "Nadarin"
+#: more_map_notes.tra:11
+msgid "Nadarin's house"
 msgstr ""
 
-#: map_notes.tra:12
-msgid "Fenten"
+#: more_map_notes.tra:12
+msgid "Fenten's house"
 msgstr ""
 
-#: map_notes.tra:13
+#: more_map_notes.tra:13
 msgid "Evalt"
 msgstr ""
 
-#: map_notes.tra:14
+#: more_map_notes.tra:14
 msgid "Taloun"
 msgstr ""
 
-#: map_notes.tra:15
+#: more_map_notes.tra:15
 msgid "Kaishas Gan"
 msgstr ""
 
-#: map_notes.tra:16
+#: more_map_notes.tra:16
 msgid "Maralee"
 msgstr ""
 
-#: map_notes.tra:17
+#: more_map_notes.tra:17
 msgid "Jorin"
 msgstr ""
 
-#: map_notes.tra:18
+#: more_map_notes.tra:18
 msgid "Farthing"
 msgstr ""
 
-#: map_notes.tra:19
+#: more_map_notes.tra:19
 msgid "Delainy"
 msgstr ""
 
-#: map_notes.tra:20
+#: more_map_notes.tra:20
 msgid "Lahl"
 msgstr ""
 
-#: map_notes.tra:21
+#: more_map_notes.tra:21
 msgid "Solianna"
+msgstr ""
+
+#: more_map_notes.tra:22
+msgid "Phlydia"
+msgstr ""
+
+#: more_map_notes.tra:23
+msgid "Mirianne's house"
+msgstr ""
+
+#: more_map_notes.tra:24
+msgid "Kagain's house"
+msgstr ""
+
+#: more_map_notes.tra:25
+msgid "Firebead's house"
+msgstr ""
+
+#: more_map_notes.tra:26
+msgid "Kivan"
 msgstr ""
 
 #: sensible_spins.tra:1
