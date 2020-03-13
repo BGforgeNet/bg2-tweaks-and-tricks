@@ -3,6 +3,6 @@
 	url = https://github.com/BGforgeNet/BGforge-MLS-IElib.git
 	branch = master
 [submodule "tnt/lib/external/BG1NPC"]
-	path = tnt/lib/external/BG1NPC
+	path = tnt/lib/external/bg1npc
 	url = https://github.com/Gibberlings3/BG1NPC.git
 	branch = master
