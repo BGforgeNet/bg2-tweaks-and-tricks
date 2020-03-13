@@ -6,10 +6,11 @@ AUTO_EVAL_STRINGS
 ALWAYS
   OUTER_SPRINT components ~%MOD_FOLDER%/components~
   OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
+  OUTER_SPRINT external ~%lib_dir%/external~
   OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
   OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
   INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
-  INCLUDE ~%lib_dir%/external/ir.tpa~
+  INCLUDE ~%external%/ir.tpa~
 END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
@@ -334,7 +335,8 @@ BEGIN @119 /* Less autosaves */
 INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
 
 BEGIN @233 /* More map notes */
-INCLUDE ~%MOD_FOLDER%/more_map_notes/main.tpa~
+OUTER_SPRINT comp_name ~more_map_notes~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @234 /* Disable lightning during rain */
 INCLUDE ~%MOD_FOLDER%/no_lightning/main.tpa~
