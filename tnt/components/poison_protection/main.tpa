@@ -7,7 +7,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~amul22.itm~ BEGIN
         parameter1 = 100 // %
         probability1 = 99
         timing = TIMING_while_equipped
-        resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
+        resist_dispel = DISPEL | BYPASS_MR
     END
   BUT_ONLY
 END
@@ -20,6 +20,6 @@ COPY_EXISTING ~scrl08.itm~ ~override~
       parameter1 = 100 // %
       probability1 = 99
       duration = 1800
-      resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
+      resist_dispel = DISPEL | BYPASS_MR
   END
 BUT_ONLY
