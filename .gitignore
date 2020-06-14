@@ -2,3 +2,4 @@ setup-tnt.exe
 tnt/backup/*
 !tnt/backup/.keepme
 *.DEBUG
+tnt/weidu.log
