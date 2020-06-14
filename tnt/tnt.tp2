@@ -138,7 +138,7 @@ INCLUDE ~%components%/compliments/disable.tpa~
 
 BEGIN @89 /* No talking when hiding in shadows */
 GROUP @227 /* Soundsets */
-INCLUDE ~%MOD_FOLDER%/no_talk_shadows/main.tph~
+INCLUDE ~%components%/no_talk_shadows/main.tpa~
 
 
 BEGIN @90 /* Make NPC soundsets available to PC */
@@ -152,94 +152,94 @@ INCLUDE ~%comp_dir%/main.tpa~
 //ITEM TWEAKS
 BEGIN @166 /* Hassle-free ammo */
 GROUP @228 /* Items */
-INCLUDE ~%MOD_FOLDER%/hassle_free_ammo/main.tpa~
+INCLUDE ~%components%/hassle_free_ammo/main.tpa~
 
 BEGIN @237 /* Add strength bonus */
 GROUP @228 /* Items */
 SUBCOMPONENT @240 /* Throwing weapons damage */
 OUTER_SET strength = 1
 OUTER_SET damage = 0
-INCLUDE ~%MOD_FOLDER%/throwing_damage/main.tpa~
+INCLUDE ~%components%/throwing_damage/main.tpa~
 BEGIN @238 /* Make axes slashing and hammber blunt */
 GROUP @228 /* Items */
 SUBCOMPONENT @240 /* Throwing weapons damage */
 OUTER_SET strength = 0
 OUTER_SET damage = 1
-INCLUDE ~%MOD_FOLDER%/throwing_damage/main.tpa~
+INCLUDE ~%components%/throwing_damage/main.tpa~
 BEGIN @239 /* Both of the above options */
 GROUP @228 /* Items */
 SUBCOMPONENT @240 /* Throwing weapons damage */
 OUTER_SET strength = 1
 OUTER_SET damage = 1
-INCLUDE ~%MOD_FOLDER%/throwing_damage/main.tpa~
+INCLUDE ~%components%/throwing_damage/main.tpa~
 
 BEGIN @78 /* Remove blur graphics from items */
 GROUP @228 /* Items */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-INCLUDE ~%MOD_FOLDER%/no_blur/main.tph~
+INCLUDE ~%components%/no_blur/main.tpa~
 
 BEGIN @92 /* Sensible Cloak of Mirroring */
 GROUP @228 /* Items */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
-INCLUDE ~%MOD_FOLDER%/cloak_of_mirroring/main.tph~
+INCLUDE ~%components%/cloak_of_mirroring/main.tpa~
 
 BEGIN @94 /* Effects of scrolls and potions do not stack with themselves */
 GROUP @228 /* Items */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
-INCLUDE ~%MOD_FOLDER%/potions_no_stack/main.tph~
+INCLUDE ~%components%/potions_no_stack/main.tpa~
 
 
 BEGIN @146 //AoE
 GROUP @228 /* Items */
 SUBCOMPONENT @144 /* Sensible wand of frost */
 OUTER_SET cone = 1
-INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
+INCLUDE ~%components%/wand_of_frost/main.tpa~
 BEGIN @145 //Single target
 GROUP @228 /* Items */
 SUBCOMPONENT @144 /* Sensible wand of frost */
 OUTER_SET cone = 0
-INCLUDE ~%MOD_FOLDER%/wand_of_frost/main.tpa~
+INCLUDE ~%components%/wand_of_frost/main.tpa~
 
 BEGIN @223 /* Potion of really mirrored eyes */
 GROUP @228 /* Items */
-INCLUDE ~%MOD_FOLDER%/really_mirrored_eyes/main.tpa~
+INCLUDE ~%components%/really_mirrored_eyes/main.tpa~
 // END ITEM TWEAKS
 
 //SPELL TWEAKS
 BEGIN @93 /* Spider form ignores web */
 GROUP @229 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-INCLUDE ~%MOD_FOLDER%/spider_form/main.tph~
+INCLUDE ~%components%/spider_form/main.tpa~
 
 BEGIN @95 /* Cheesy Slayer: full heal on change */
 GROUP @229 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
-COMPILE ~%MOD_FOLDER%/slayer/heal.d~
+COMPILE ~%components%/slayer/heal.d~
 
 BEGIN @96 /* no loss */
 GROUP @229 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 SUBCOMPONENT @97 /* Cheesy Slayer: reputation */
-COMPILE ~%MOD_FOLDER%/slayer/norep.d~
+COMPILE ~%components%/slayer/norep.d~
 
 BEGIN @98 /* reduced loss */
 GROUP @229 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 SUBCOMPONENT @97 /* Cheesy Slayer: reputation */
-COMPILE ~%MOD_FOLDER%/slayer/low_rep.d~
+COMPILE ~%components%/slayer/low_rep.d~
 
 BEGIN @120 /* True true sight */
 GROUP @229 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
-INCLUDE ~%MOD_FOLDER%/true_true_sight/main.tph~
+INCLUDE ~%components%/true_true_sight/main.tpa~
 
 BEGIN @134 /* Sensible Otiluke's Sphere */
 GROUP @229 /* Spells and abilities */
-INCLUDE ~%MOD_FOLDER%/otiluke/main.tpa~
+INCLUDE ~%components%/otiluke/main.tpa~
 
 BEGIN @232 /* Greater Command AoE */
 GROUP @229 /* Spells and abilities */
-INCLUDE ~%MOD_FOLDER%/greater_command/main.tpa~
+INCLUDE ~%components%/greater_command/main.tpa~
 //END SPELL TWEAKS
 
 
@@ -255,22 +255,22 @@ GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
-INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
+INCLUDE ~%components%/starting_bags/main.tpa~
 
 BEGIN @101 /* GSPA + holding */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
-INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
+INCLUDE ~%components%/starting_bags/main.tpa~
 
 BEGIN @102 /* GSPA + holding - all bottomless! */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @100 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
-INCLUDE ~%MOD_FOLDER%/starting_bags/main.tph~
-INCLUDE ~%MOD_FOLDER%/starting_bags/bottomless.tph~
+INCLUDE ~%components%/starting_bags/main.tpa~
+INCLUDE ~%components%/starting_bags/bottomless.tpa~
 
 
 BEGIN @103 /* Each stat gets +1 */
@@ -278,80 +278,76 @@ GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 SUBCOMPONENT @104 /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
-COPY ~%MOD_FOLDER%/stat_bonuses/g_stat1.spl~ ~override/g_tomes.spl~
-EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
+COPY ~%components%/stat_bonuses/g_stat1.spl~ ~override/g_tomes.spl~
+EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
 BEGIN @105 /* Each stat except Wisdom gets +1, Wisdom gets +3 */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 SUBCOMPONENT @104 /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
-COPY ~%MOD_FOLDER%/stat_bonuses/g_stat2.spl~ ~override/g_tomes.spl~
-EXTEND_TOP ~ar0602.bcs~ ~%MOD_FOLDER%/stat_bonuses/stats.baf~
+COPY ~%components%/stat_bonuses/g_stat2.spl~ ~override/g_tomes.spl~
+EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
 
 BEGIN @106 /* Shops always buy goods at the same price */
 GROUP @230 /* Gameplay and rules */
-INCLUDE ~%MOD_FOLDER%/no_shop_depreciation/main.tph~
+INCLUDE ~%components%/no_shop_depreciation/main.tpa~
 
 
 BEGIN @107 /* Can't steal from fences */
 GROUP @230 /* Gameplay and rules */
 SUBCOMPONENT @108 /* Close shop steal exploit */
-INCLUDE ~%MOD_FOLDER%/no_shop_steal/fence.tph~
+INCLUDE ~%components%/no_shop_steal/fence.tpa~
 
 BEGIN @109 /* Can't steal from any shops */
 GROUP @230 /* Gameplay and rules */
 SUBCOMPONENT @108 /* Close shop steal exploit */
-INCLUDE ~%MOD_FOLDER%/no_shop_steal/all.tph~
+INCLUDE ~%components%/no_shop_steal/all.tpa~
 
 
 BEGIN @110 /* No XP farming */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
-INCLUDE ~%MOD_FOLDER%/no_xp_farm/main.tph~
+INCLUDE ~%components%/no_xp_farm/main.tpa~
 
 BEGIN @231 /* Can't steal Carsomyr */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-INCLUDE ~%MOD_FOLDER%/no_steal_carsomyr/main.tph~
+INCLUDE ~%components%/no_steal_carsomyr/main.tpa~
+
 
 //Quest and dialog tweaks
 BEGIN @135 /* Improved strongholds */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-INCLUDE ~%MOD_FOLDER%/improved_strongholds/main.tpa~
+INCLUDE ~%components%/improved_strongholds/main.tpa~
 
 BEGIN @159 /* More ankheg armors by Taerom */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
-INCLUDE ~%MOD_FOLDER%/more_ankhegs/main.tpa~
+INCLUDE ~%components%/more_ankhegs/main.tpa~
 //End quest and dialog tweaks
 
-//BEGIN @148 /* No cast and attack */
-//INCLUDE ~%MOD_FOLDER%/no_cast_and_attack/main.tpa~
 
 BEGIN @119 /* Less autosaves */
-INCLUDE ~%MOD_FOLDER%/less_autosaves/main.tph~
+INCLUDE ~%components%/less_autosaves/main.tpa~
 
 BEGIN @233 /* More map notes */
 OUTER_SPRINT comp_name ~more_map_notes~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @234 /* Disable lightning during rain */
-INCLUDE ~%MOD_FOLDER%/no_lightning/main.tpa~
+INCLUDE ~%components%/no_lightning/main.tpa~
 
 BEGIN @235 /* Mod romance cheats */
 INCLUDE ~%components%/romance_cheats/main.tpa~
 
 BEGIN @236 /* Unlimited goodberries stacking */
-INCLUDE ~%MOD_FOLDER%/goodberries_stacking/main.tpa~
+INCLUDE ~%components%/goodberries_stacking/main.tpa~
 
-//BEGIN ~thieves str~
-//INCLUDE ~%MOD_FOLDER%/improved_strongholds/thief.tpa~
-
-BEGIN @264 // /* Limited stock */
-INCLUDE ~%MOD_FOLDER%/limited_stock/main.tpa~
+BEGIN @264 /* Limited stock */
+INCLUDE ~%components%/limited_stock/main.tpa~
 
 BEGIN @250 /* Improved Shandalar's cloak */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @121 /* BG1 content not present */
