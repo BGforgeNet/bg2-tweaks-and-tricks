@@ -1228,11 +1228,15 @@ msgid "No XP farming"
 msgstr "Затруднить фарминг опыта"
 
 #: setup.tra:111
-msgid "Easy traps: allow sensing in combat"
+#, fuzzy
+#| msgid "Easy traps: allow sensing in combat"
+msgid "Improved trap detection: allow sensing in combat"
 msgstr "Упрощенные ловушки: можно замечать в бою"
 
 #: setup.tra:112
-msgid "Easy traps: increase trap sense range"
+#, fuzzy
+#| msgid "Easy traps: increase trap sense range"
+msgid "Improved trap detection: increase trap sense range"
 msgstr "Упрощенные ловушки: увеличить расстояние, на котором их заметно"
 
 #: setup.tra:113
@@ -1240,7 +1244,9 @@ msgid "stop moving"
 msgstr "остановиться"
 
 #: setup.tra:114
-msgid "Easy traps: character action"
+#, fuzzy
+#| msgid "Easy traps: character action"
+msgid "Improved trap detection: character action"
 msgstr "Упрощенные ловушки: действие персонажа"
 
 #: setup.tra:115
@@ -1248,17 +1254,25 @@ msgid "stop moving and pause game"
 msgstr "остановиться поставить игру на паузу"
 
 #: setup.tra:116
-msgid "Easy traps: center on character"
+#, fuzzy
+#| msgid "Easy traps: center on character"
+msgid "Improved trap detection: center on character"
 msgstr "Упрощенные ловушки: отцентровать экран на персонаже"
 
 #: setup.tra:117
-msgid "Easy traps: play a sound"
+#, fuzzy
+#| msgid "Easy traps: play a sound"
+msgid "Improved trap detection: play a sound"
 msgstr "Упрощенные ловушки: звуковой сигнал"
 
 #: setup.tra:118
+#, fuzzy
+#| msgid ""
+#| "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
+#| "work)"
 msgid ""
-"Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
-"work)"
+"Improved trap detection: core (REQUIRED for any of previous \"Improved trap "
+"detection\" components to work)"
 msgstr ""
 "Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
 "компоненты работали)"
@@ -1306,7 +1320,9 @@ msgid "Weightless ammo"
 msgstr "Невесомые снаряды"
 
 #: setup.tra:129
-msgid "All easy traps components must be installed before core"
+#, fuzzy
+#| msgid "All easy traps components must be installed before core"
+msgid "All Improved trap detection components must be installed before core"
 msgstr ""
 "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
 

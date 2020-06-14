@@ -1057,11 +1057,11 @@ msgid "No XP farming"
 msgstr ""
 
 #: setup.tra:111
-msgid "Easy traps: allow sensing in combat"
+msgid "Improved trap detection: allow sensing in combat"
 msgstr ""
 
 #: setup.tra:112
-msgid "Easy traps: increase trap sense range"
+msgid "Improved trap detection: increase trap sense range"
 msgstr ""
 
 #: setup.tra:113
@@ -1069,7 +1069,7 @@ msgid "stop moving"
 msgstr ""
 
 #: setup.tra:114
-msgid "Easy traps: character action"
+msgid "Improved trap detection: character action"
 msgstr ""
 
 #: setup.tra:115
@@ -1077,17 +1077,17 @@ msgid "stop moving and pause game"
 msgstr ""
 
 #: setup.tra:116
-msgid "Easy traps: center on character"
+msgid "Improved trap detection: center on character"
 msgstr ""
 
 #: setup.tra:117
-msgid "Easy traps: play a sound"
+msgid "Improved trap detection: play a sound"
 msgstr ""
 
 #: setup.tra:118
 msgid ""
-"Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
-"work)"
+"Improved trap detection: core (REQUIRED for any of previous \"Improved trap "
+"detection\" components to work)"
 msgstr ""
 
 #: setup.tra:119
@@ -1130,7 +1130,7 @@ msgid "Weightless ammo"
 msgstr ""
 
 #: setup.tra:129
-msgid "All easy traps components must be installed before core"
+msgid "All Improved trap detection components must be installed before core"
 msgstr ""
 
 #: setup.tra:134
