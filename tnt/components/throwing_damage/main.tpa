@@ -17,9 +17,9 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
     PHP_EACH h_array AS int => h_off BEGIN
       READ_BYTE h_off attack_type
-      PATCH_IF attack_type == ITEM_ATTACK_TYPE_ranged BEGIN
+      PATCH_IF attack_type == ITM_ATTACK_TYPE_ranged BEGIN
         PATCH_IF damage == 1 BEGIN
-          WRITE_SHORT (h_off + ITEM_HEADER_damage_type) damage_type
+          WRITE_SHORT (h_off + ITM_HEADER_damage_type) damage_type
           PATCH_FOR_EACH off IN DESC UNIDENTIFIED_DESC BEGIN
             LPF g_replace_strref
               INT_VAR
@@ -30,7 +30,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
           END
         END
         PATCH_IF strength == 1 BEGIN
-          WRITE_LONG (h_off + ITEM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
+          WRITE_LONG (h_off + ITM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
         END
       END
     END

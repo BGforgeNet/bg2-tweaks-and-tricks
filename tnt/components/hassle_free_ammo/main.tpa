@@ -53,20 +53,20 @@ ACTION_PHP_EACH item_name AS item => name BEGIN
     GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
       //thac0 bonus
-      WRITE_SHORT (ab_off + ITEM_HEADER_thac0_bonus) 0
+      WRITE_SHORT (ab_off + ITM_HEADER_thac0_bonus) 0
 
       //add strength bonus to axe, remove from others
       PATCH_IF (~%item%~ STRING_EQUAL ~axe~) BEGIN
-        WRITE_LONG (ab_off + ITEM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
+        WRITE_LONG (ab_off + ITM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
       END ELSE BEGIN
-        WRITE_LONG (ab_off + ITEM_HEADER_flags) (THIS BAND BNOT FLAG_HEADER_add_strength_bonus)
+        WRITE_LONG (ab_off + ITM_HEADER_flags) (THIS BAND BNOT FLAG_HEADER_add_strength_bonus)
       END
 
       //damage bonus
-      WRITE_SHORT (ab_off + ITEM_HEADER_damage_bonus) damagebonus
+      WRITE_SHORT (ab_off + ITM_HEADER_damage_bonus) damagebonus
 
       //speed
-      WRITE_BYTE (ab_off + ITEM_HEADER_speed) speed
+      WRITE_BYTE (ab_off + ITM_HEADER_speed) speed
     END
 
   BUT_ONLY
@@ -109,7 +109,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
         GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
         PHP_EACH h_array AS int => h_off BEGIN
           READ_BYTE h_off attack_type
-          PATCH_IF attack_type == ITEM_ATTACK_TYPE_ranged BEGIN
+          PATCH_IF attack_type == ITM_ATTACK_TYPE_ranged BEGIN
             match = 1 //ranged weapon which stacks
           END
         END
