@@ -105,7 +105,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     READ_SHORT ITM_type type
     match = 0
     PATCH_FOR_EACH itype IN item_type BEGIN
-      PATCH_IF type == itype BEGIN
+      PATCH_IF type == EVAL ~%%itype%%~ BEGIN
         GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
         PHP_EACH h_array AS int => h_off BEGIN
           READ_BYTE h_off attack_type

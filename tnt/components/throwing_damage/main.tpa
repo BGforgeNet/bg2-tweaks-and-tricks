@@ -1,10 +1,10 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY typedamage BEGIN
-  EVAL ITM_TYPE_hammer => 2 //hammer - crushing
-  EVAL ITM_TYPE_axe => 3 //axe - slashing
+  EVAL ~%ITM_TYPE_hammer%~ => 2 //hammer - crushing
+  EVAL ~%ITM_TYPE_axe%~ => 3 //axe - slashing
 END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY typetra BEGIN
-  EVAL ITM_TYPE_hammer => 254 //crushing
-  EVAL ITM_TYPE_axe => 255 //slashing
+  EVAL ~%ITM_TYPE_hammer%~ => 254 //crushing
+  EVAL ~%ITM_TYPE_axe%~ => 255 //slashing
 END
 
 INCLUDE ~%lib_dir%/macro.tpa~
