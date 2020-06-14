@@ -89,14 +89,14 @@ END
 
 
 //remove weight and maximize stacks
-ACTION_DEFINE_ASSOCIATIVE_ARRAY item_type BEGIN
-  arrow => ITM_TYPE_arrows
-  bullet => ITM_TYPE_bullets
-  dagger => ITM_TYPE_dagger
-  hammer => ITM_TYPE_hammer
-  dart => ITM_TYPE_dart
-  axe => ITM_TYPE_axe
-  bolt => ITM_TYPE_bolts
+ACTION_DEFINE_ARRAY item_type BEGIN
+  ITM_TYPE_arrows
+  ITM_TYPE_bullets
+  ITM_TYPE_dagger
+  ITM_TYPE_hammer
+  ITM_TYPE_dart
+  ITM_TYPE_axe
+  ITM_TYPE_bolts
 END
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
@@ -104,7 +104,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   PATCH_IF stack > 1 BEGIN
     READ_SHORT ITM_type type
     match = 0
-    PHP_EACH item_type AS item => itype BEGIN
+    PATCH_FOR_EACH itype IN item_type BEGIN
       PATCH_IF type == itype BEGIN
         GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
         PHP_EACH h_array AS int => h_off BEGIN
