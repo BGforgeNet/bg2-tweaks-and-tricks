@@ -1,0 +1,49 @@
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+
+  CreateIEModZipPackagesUploadToPublishedRelease:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Clone repository using 'github.ref' from release
+        uses: actions/checkout@v2.1.0
+        with:
+          submodules: true
+
+      - name: Create Infinity Engine Mod Packages (.iemod and .zip)
+        uses: ALIENQuake/CreateIEModZipPackage@master
+        id: CreateIEModZipPackage
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload iemod package to latest release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
+          asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
+          tag: ${{ github.ref }}
+          overwrite: true
+
+      - name: Upload zip package to latest release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
+          asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
+          tag: ${{ github.ref }}
+          overwrite: true
