@@ -277,7 +277,6 @@ BEGIN @103 /* Each stat gets +1 */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 SUBCOMPONENT @104 /* Add BG1 tomes stats bonuses to new BG2 characters */
-COPY_EXISTING ~sw1h01.itm~ ~override/g_stat1.itm~ //dummy detection file
 COPY ~%components%/stat_bonuses/g_stat1.spl~ ~override/g_tomes.spl~
 EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
@@ -285,7 +284,6 @@ BEGIN @105 /* Each stat except Wisdom gets +1, Wisdom gets +3 */
 GROUP @230 /* Gameplay and rules */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 SUBCOMPONENT @104 /* Add BG1 tomes stats bonuses to new BG2 characters */
-COPY_EXISTING ~sw1h01.itm~ ~override/g_stat2.itm~ //dummy detection file
 COPY ~%components%/stat_bonuses/g_stat2.spl~ ~override/g_tomes.spl~
 EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
