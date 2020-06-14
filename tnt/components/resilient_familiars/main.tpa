@@ -48,12 +48,12 @@ END
     OUTER_SPRINT fam_cre ~%prefix%%cre%~
     ACTION_IF FILE_EXISTS_IN_GAME ~%fam_cre%.cre~ BEGIN
       COPY_EXISTING ~%fam_cre%.cre~ ~override~
-        READ_ASCII 0x248 over_script
+        READ_ASCII SCRIPT_OVERRIDE over_script
         PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN //use existing script if possible
           over_exists = 1
         END ELSE BEGIN //or create a new one
           over_exists = 0
-          WRITE_ASCIIE 0x248 ~g_%fam_cre%~ #8
+          WRITE_ASCIIE SCRIPT_OVERRIDE ~g_%fam_cre%~ #8
         END
       BUT_ONLY
       ACTION_IF over_exists = 1 BEGIN

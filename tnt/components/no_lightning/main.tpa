@@ -1,3 +1,3 @@
 COPY_EXISTING_REGEXP "^.*\.are$" override
-  WRITE_SHORT 0x50 0
+  WRITE_SHORT ARE_lighting_probability 0
 BUT_ONLY

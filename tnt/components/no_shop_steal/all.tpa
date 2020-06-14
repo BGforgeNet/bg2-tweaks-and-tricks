@@ -1,7 +1,3 @@
 COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
-  PATCH_IF (%SOURCE_SIZE% > 0x9b) BEGIN
-    READ_LONG  0x10 "flags"
-    SET "flags" &= (` 0x08)
-    WRITE_LONG 0x10 "flags"
-  END
+  WRITE_LONG STO_flags THIS BAND BNOT FLAG_STO_can_steal
 BUT_ONLY

@@ -43,30 +43,30 @@ ACTION_PHP_EACH item_name AS item => name BEGIN
   COPY ~%comp_dir%/g_%item%.itm~ ~override~
     SAY NAME1 ( AT name )
     SAY NAME2 ( AT name )
-    WRITE_SHORT 0x42 0 //lore
+    WRITE_SHORT ITM_lore_to_id 0 //lore
     SAY UNIDENTIFIED_DESC ( AT desc )
-    WRITE_LONG 0x54 "-1" //identified desc
-    WRITE_LONG 0x34 300 //price
-    WRITE_LONG 0x60 0 //enchantment
+    WRITE_LONG DESC "-1" //identified desc
+    WRITE_LONG ITM_price 300 //price
+    WRITE_LONG ITM_enchantment 0 //enchantment
 
     //minor patching to ensure consistency
     GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
       //thac0 bonus
-      WRITE_SHORT (ab_off + 0x14) 0
+      WRITE_SHORT (ab_off + ITEM_HEADER_thac0_bonus) 0
 
       //add strength bonus to axe, remove from others
       PATCH_IF (~%item%~ STRING_EQUAL ~axe~) BEGIN
-        WRITE_LONG (ab_off + 0x26) (THIS BAND BIT0)
+        WRITE_LONG (ab_off + ITEM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
       END ELSE BEGIN
-        WRITE_LONG (ab_off + 0x26) (THIS BAND BNOT BIT0)
+        WRITE_LONG (ab_off + ITEM_HEADER_flags) (THIS BAND BNOT FLAG_HEADER_add_strength_bonus)
       END
 
       //damage bonus
-      WRITE_SHORT (ab_off + 0x1a) damagebonus
+      WRITE_SHORT (ab_off + ITEM_HEADER_damage_bonus) damagebonus
 
       //speed
-      WRITE_BYTE (ab_off + 0x12) speed
+      WRITE_BYTE (ab_off + ITEM_HEADER_speed) speed
     END
 
   BUT_ONLY
@@ -90,34 +90,34 @@ END
 
 //remove weight and maximize stacks
 ACTION_DEFINE_ASSOCIATIVE_ARRAY item_type BEGIN
-  arrow => 0x5
-  bullet => 0xe
-  dagger => 0x10
-  hammer => 0x15
-  dart => 0x18
-  axe => 0x19
-  bolt => 0x1f
+  arrow => ITM_TYPE_arrows
+  bullet => ITM_TYPE_bullets
+  dagger => ITM_TYPE_dagger
+  hammer => ITM_TYPE_hammer
+  dart => ITM_TYPE_dart
+  axe => ITM_TYPE_axe
+  bolt => ITM_TYPE_bolts
 END
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
-  READ_SHORT 0x38 stack
+  READ_SHORT ITM_stack_amount stack
   PATCH_IF stack > 1 BEGIN
-    READ_SHORT 0x1c type
+    READ_SHORT ITM_type type
     match = 0
     PHP_EACH item_type AS item => itype BEGIN
       PATCH_IF type == itype BEGIN
         GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
         PHP_EACH h_array AS int => h_off BEGIN
           READ_BYTE h_off attack_type
-          PATCH_IF attack_type == 2 BEGIN //ranged
+          PATCH_IF attack_type == ITEM_ATTACK_TYPE_ranged BEGIN
             match = 1 //ranged weapon which stacks
           END
         END
       END
     END
     PATCH_IF match == 1 BEGIN
-      WRITE_SHORT 0x38 65535 //max stack
-      WRITE_LONG 0x4c 0 //weight
+      WRITE_SHORT ITM_stack_amount 65535
+      WRITE_LONG ITM_weight 0
     END
   END
 BUT_ONLY

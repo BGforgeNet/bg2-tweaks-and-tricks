@@ -4,20 +4,20 @@ OUTER_SET i=0
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
   PHP_EACH ab_array AS int => ab_off BEGIN
-    READ_BYTE (ab_off+2) use_loc
-    PATCH_IF use_loc = 1 BEGIN
+    READ_BYTE (ab_off + ITM_HEADER_location) use_loc
+    PATCH_IF use_loc = ITM_HEADER_LOCATION_weapon BEGIN
       GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
       PHP_EACH fx_array AS int2 => fx_off BEGIN
         READ_SHORT fx_off fx_type
-        PATCH_IF fx_type = 146 BEGIN
-          READ_ASCII (fx_off+0x14) fx_res
+        PATCH_IF fx_type = OPCODE_cast_spell_at_creature BEGIN
+          READ_ASCII (fx_off + FEATURE_resource) fx_res
 //          PATCH_PRINT ~item %SOURCE_FILE% has spell %fx_res% in ability index %int% available for use at location %use_loc%~
           TO_LOWER fx_res
           PATCH_IF NOT VARIABLE_IS_SET $spell_list(~%fx_res%~) BEGIN
             SET $spell_list(~%fx_res%~) = i
             i+=1
           END
-          WRITE_ASCIIE (fx_off+0x14) ~g_nc%i%~ #8
+          WRITE_ASCIIE (fx_off+ FEATURE_resource) ~g_nc%i%~ #8
         END
       END
     END
@@ -38,8 +38,11 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
     GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
     PHP_EACH fx_array AS int2 => fx_off BEGIN
       READ_SHORT fx_off fx_type
-      PATCH_IF fx_type=146 OR fx_type=148 OR fx_type=232 BEGIN
-        READ_ASCII (fx_off+0x14) fx_res
+      PATCH_IF fx_type == OPCODE_cast_spell_at_creature
+        OR fx_type == OPCODE_cast_spell_at_point
+        OR fx_type == OPCODE_cast_spell_on_condition
+      BEGIN
+        READ_ASCII (fx_off + FEATURE_resource) fx_res
 //        PATCH_PRINT ~spell %SOURCE_FILE% has spell %fx_res% in ability index %int% cast by effect type %fx_type%~
         TO_LOWER fx_res
         PATCH_IF NOT VARIABLE_IS_SET $spell_list(~%fx_res%~) BEGIN
@@ -59,16 +62,16 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
   ) BEGIN
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
-      READ_SHORT (ab_off + 0x12) cast_time
+      READ_SHORT (ab_off + SPL_HEADER_casting_time) cast_time
       delay = (10 - cast_time) * 6 / 10
       LPF ADD_SPELL_EFFECT
         INT_VAR
-          opcode = 1 //apr
+          opcode = OPCODE_attacks_per_round_mod
           parameter1 = 0 //0 apr
           parameter2 = 1 //flat mod
           duration = delay
-          target = 1 //self
-          resist_dispel = 0 //non magical
+          target = TARGET_FEATURE_self
+          resist_dispel = 0
           header = int
       END
 //      PATCH_PRINT ~%SOURCE_FILE%: header %int%, casting time is %cast_time%, no attack time is %delay%~

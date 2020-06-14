@@ -1,6 +1,6 @@
 //True seeing (priest) shell spell
 COPY_EXISTING ~sppr505d.spl~ ~override/g_trues.spl~
-  WRITE_LONG 0x8 ~-1~ //silence it
+  WRITE_LONG NAME1 ~-1~ //silence it
 
 ACTION_FOR_EACH spell IN sppr505 spwi609 spcl232 BEGIN
   //True seeing actual spell
@@ -19,10 +19,10 @@ ACTION_FOR_EACH spell IN sppr505 spwi609 spcl232 BEGIN
     BEGIN
       LPF ADD_SPELL_EFFECT
         INT_VAR
-          opcode = 146 //cast spell
-          target = 1 //self
-          timing = 4 //delayed
-          resist_dispel = 3 //bypass, dispel
+          opcode = OPCODE_cast_spell_at_creature
+          target = TARGET_FEATURE_self
+          timing = TIMING_delayed
+          resist_dispel = DISPEL | BYPASS_MR
           duration = EVAL %t% //delay
           parameter1 = 12 //cast level
           parameter2 = 1 //cast instantly
@@ -30,7 +30,7 @@ ACTION_FOR_EACH spell IN sppr505 spwi609 spcl232 BEGIN
           resource = ~g_trues~
       END
     END
-    READ_LONG 0x50 desc_strref
+    READ_LONG SPL_desc desc_strref
     GET_STRREF desc_strref desc
     INNER_PATCH_SAVE new_desc ~%desc%~ BEGIN
       REPLACE_TEXTUALLY ~each round~ ~each second~

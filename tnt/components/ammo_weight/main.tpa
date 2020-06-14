@@ -1,12 +1,11 @@
 COPY_EXISTING_REGEXP GLOB ~^.*\.itm$~ ~override~
-  READ_LONG 0xc name_ref
-  READ_SHORT 0x1c type
-  READ_SHORT 0x38 stack
-  READ_LONG 0x4c weight
+  READ_SHORT ITM_type type
+  READ_SHORT ITM_stack_amount stack
+  READ_LONG ITM_weight weight
   PATCH_MATCH type WITH
-    0x18 0x19 0x10 WHEN stack > 1 //dart, axe, dagger
+    ITM_TYPE_dart ITM_TYPE_axe ITM_TYPE_dagger WHEN stack > 1
     BEGIN
-      WRITE_LONG 0x4c 0
+      WRITE_LONG ITM_weight 0
     END
     DEFAULT
   END
@@ -14,6 +13,6 @@ BUT_ONLY
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~j#janbol.itm~) BEGIN
   COPY_EXISTING ~j#janbol.itm~ ~override~
-    WRITE_LONG 0x4c 0
+    WRITE_LONG ITM_weight 0
   BUT_ONLY
 END

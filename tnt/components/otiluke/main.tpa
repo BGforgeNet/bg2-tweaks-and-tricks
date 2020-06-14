@@ -1,34 +1,34 @@
 COPY_EXISTING ~spwi413a.spl~ ~override~
   LPF DELETE_SPELL_EFFECT
     INT_VAR
-      opcode_to_delete = 185 //stun
+      opcode_to_delete = OPCODE_hold_2
   END
   LPF ADD_SPELL_EFFECT
     INT_VAR
-      opcode = 1 //apr
+      opcode = OPCODE_attacks_per_round_mod
       parameter1 = 0 //0 apr
       parameter2 = 1 //flat mod
       duration = 60
-      target = 2
-      resist_dispel = 3
+      target = TARGET_FEATURE_preset
+      resist_dispel = DISPEL | BYPASS_MR
       power = 10 //strongest effect
   END
   LPF ADD_SPELL_EFFECT
     INT_VAR
-      opcode = 126 //move speed
+      opcode = OPCODE_movement_mod
       parameter1 = 0 //immobile
       parameter2 = 1 //flat mod
       duration = 60
-      target = 2
-      resist_dispel = 3
+      target = TARGET_FEATURE_preset
+      resist_dispel = DISPEL | BYPASS_MR
   END
   LPF ADD_SPELL_EFFECT
     INT_VAR
-      opcode = 262 //visual range
+      opcode = OPCODE_visual_range
       parameter1 = 0 //blind
       parameter2 = 1 //flat mod
       duration = 60
-      target = 2
-      resist_dispel = 3
+      target = TARGET_FEATURE_preset
+      resist_dispel = DISPEL | BYPASS_MR
   END
 BUT_ONLY

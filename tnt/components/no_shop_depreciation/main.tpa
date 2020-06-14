@@ -1,5 +1,3 @@
 COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
-  PATCH_IF (%SOURCE_SIZE% > 0x9b) BEGIN
-    WRITE_LONG 0x1c 0  // disable depreciation
-  END
+  WRITE_LONG STO_depreciation_rate 0  // disable depreciation
 BUT_ONLY

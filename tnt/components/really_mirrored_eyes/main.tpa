@@ -1,6 +1,6 @@
 OUTER_SET i = 0
 COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
-  READ_STRREF 0x8 name
+  READ_STRREF NAME1 name
   PATCH_IF NOT ~%name%~ STRING_CONTAINS_REGEXP ~gaze~ BEGIN //check "gaze" in the name
     DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END //record resource
     DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END //record name
@@ -9,8 +9,8 @@ COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
     gaze = 0
     GET_OFFSET_ARRAY h_array SPL_V10_HEADERS
     PHP_EACH h_array AS int => h_off BEGIN
-      READ_SHORT (h_off + 0x26) pro
-      PATCH_IF pro == 65 BEGIN
+      READ_SHORT (h_off + SPL_HEADER_projectile) pro
+      PATCH_IF pro == PRO_gaze BEGIN
         gaze = 1
       END
     END
@@ -29,9 +29,8 @@ COPY_EXISTING ~potn38.itm~ ~override~ //mirrored eyes
     GET_OFFSET_ARRAY2 fx_array h_off ITM_V10_HEAD_EFFECTS
     PHP_EACH fx_array AS int => fx_off BEGIN
       READ_SHORT fx_off fx_type
-      PATCH_IF fx_type = 206 BEGIN //protection from spell
-        READ_ASCII fx_off + 0x14 spell
-//        PATCH_PRINT "protection from %spell% found"
+      PATCH_IF fx_type = OPCODE_protection_from_spell BEGIN
+        READ_ASCII fx_off + FEATURE_resource spell
         DEFINE_ASSOCIATIVE_ARRAY old_list BEGIN ~%j%~ => ~%spell%~ END
         j+=1
       END
@@ -46,14 +45,13 @@ COPY_EXISTING ~potn38.itm~ ~override~ //mirrored eyes
     END
     PATCH_IF add == 1 BEGIN
       SPRINT name $spell_names(~%i%~)
-//      PATCH_PRINT ~Adding immunity to %name% (%res%)~
       LPF ADD_ITEM_EFFECT
         INT_VAR
-          opcode = 206 //protection from spell
+          opcode = OPCODE_protection_from_spell
           parameter1 = 0 //no feedback line
           duration = 60
-          target = 1 //self
-          resist_dispel = 1 //dispel, no bypass
+          target = TARGET_FEATURE_self
+          resist_dispel = DISPEL
           power = 4 //potion power
         STR_VAR
           resource = ~%res%~

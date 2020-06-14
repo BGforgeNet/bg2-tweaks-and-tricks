@@ -9,7 +9,7 @@ ACTION_FOR_EACH item IN
 BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%item%.itm~ BEGIN
     COPY_EXISTING ~%item%.itm~ ~override~
-      WRITE_SHORT 0x38 65000
+      WRITE_SHORT ITM_stack_amount 65535
     BUT_ONLY
   END
 END

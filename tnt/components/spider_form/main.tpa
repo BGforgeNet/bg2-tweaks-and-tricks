@@ -7,10 +7,10 @@ COPY_EXISTING ~plyspid.itm~  ~override~
   PHP_EACH web_spells AS index => spell BEGIN
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
-        opcode = 206 //spell immunity
-        target = 1 //self
-        timing = 2 //while equipped
-        resist_dispel = 2 // no dispell, bypass res
+        opcode = OPCODE_protection_from_spell
+        target = TARGET_FEATURE_self
+        timing = TIMING_while_equipped
+        resist_dispel = BYPASS_MR
       STR_VAR
         resource = EVAL ~%spell%~
     END

@@ -26,13 +26,9 @@ BEGIN
   BEGIN
     SPRINT old_substring (AT old_substring_traref)
     SPRINT new_substring (AT new_substring_traref)
-//    PATCH_PRINT ~old string: %old_string%~
-//    PATCH_PRINT ~old substring: %old_substring%~
-//    PATCH_PRINT ~new substring: %new_substring%~
     INNER_PATCH_SAVE new_string ~%old_string%~ BEGIN
       REPLACE_TEXTUALLY ~%old_substring%~ ~%new_substring%~
     END
-//    PATCH_PRINT ~new string: %new_string%~
     SAY_EVALUATED offset ~%new_string%~
   END
 END

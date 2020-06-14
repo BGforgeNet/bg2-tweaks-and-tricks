@@ -4,7 +4,24 @@ COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
 
 PRINT ~Patching potions...~
 OUTER_SPRINT ~refresh_strref~ @26
-ACTION_FOR_EACH item IN potn02 potn22 potn09 potn41 potn18 potn29 potn31 potn40 potn34 potn35 potn36 potn37 potn39 potn42 potn46 potn15 BEGIN
+ACTION_FOR_EACH item IN
+  potn02
+  potn22
+  potn09
+  potn41
+  potn18
+  potn29
+  potn31
+  potn40
+  potn34
+  potn35
+  potn36
+  potn37
+  potn39
+  potn42
+  potn46
+  potn15
+BEGIN
   OUTER_SPRINT ~item_to_unstack~ ~%item%~
   OUTER_SPRINT ~spellname~ ~g_%item%~
   LAM ~UNSTACK_ITEM~
@@ -15,7 +32,7 @@ ACTION_FOR_EACH file IN ~rr#pnp36.spl~ ~rr#pnp39.spl~ BEGIN
     COPY_EXISTING ~%file%~ ~override~
       LPF DELETE_SPELL_EFFECT
         INT_VAR
-          opcode_to_delete = 139 //display string
+          opcode_to_delete = OPCODE_text_display_string
       END
     BUT_ONLY
   END

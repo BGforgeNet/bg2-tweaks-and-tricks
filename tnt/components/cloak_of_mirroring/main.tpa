@@ -1,21 +1,16 @@
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_mirr.itm~
-
 COPY_EXISTING ~clck26.itm~   ~override~
-  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-    //deleting area spell immunities if any
-    LPF DELETE_ITEM_EQEFFECT
-      INT_VAR
-        opcode_to_delete = 206
-    END
+  //deleting area spell immunities if any
+  LPF DELETE_ITEM_EQEFFECT
+    INT_VAR
+      opcode_to_delete = OPCODE_protection_from_spell
+  END
 
-    LPF ADD_ITEM_EQEFFECT
-      INT_VAR
-        opcode = 206 //spell immunity
-        target = 1 //self
-        timing = 2 //while equipped
-      STR_VAR
-        resource = ~sppr302~
-    END
+  LPF ADD_ITEM_EQEFFECT
+    INT_VAR
+      opcode = OPCODE_protection_from_spell //spell immunity
+      target = TARGET_FEATURE_self
+      timing = TIMING_while_equipped
+    STR_VAR
+      resource = ~sppr302~
   END
 BUT_ONLY
