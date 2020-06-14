@@ -34,14 +34,14 @@
 @108  = ~Close shop steal exploit~
 @109  = ~Can't steal from any shops~
 @110  = ~No XP farming~
-@111  = ~Easy traps: allow sensing in combat~
-@112  = ~Easy traps: increase trap sense range~
+@111  = ~Improved trap detection: allow sensing in combat~
+@112  = ~Improved trap detection: increase trap sense range~
 @113  = ~stop moving~
-@114  = ~Easy traps: character action~
+@114  = ~Improved trap detection: character action~
 @115  = ~stop moving and pause game~
-@116  = ~Easy traps: center on character~
-@117  = ~Easy traps: play a sound~
-@118  = ~Easy traps: core (REQUIRED for any of previous "Easy traps" components to work)~
+@116  = ~Improved trap detection: center on character~
+@117  = ~Improved trap detection: play a sound~
+@118  = ~Improved trap detection: core (REQUIRED for any of previous "Improved trap detection" components to work)~
 @119  = ~Less autosaves~
 @120  = ~True true sight~
 @121  = ~BG1 content not present~
@@ -52,7 +52,7 @@
 @126  = ~Requires BG2~
 
 @128  = ~Weightless ammo~
-@129  = ~All easy traps components must be installed before core~
+@129  = ~All Improved trap detection components must be installed before core~
 
 @134  = ~Sensible Otiluke's sphere~
 @135  = ~Improved strongholds~
