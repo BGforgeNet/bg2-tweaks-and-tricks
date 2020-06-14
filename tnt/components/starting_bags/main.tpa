@@ -1,72 +1,74 @@
+OUTER_TEXT_SPRINT comp_dir ~%components%/starting_bags~
+
 COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~ //dummy detection file
 
 //gem bag
-COPY ~%MOD_FOLDER%/starting_bags/g_gem.itm~ ~override/g_gem.itm~
+COPY ~%comp_dir%/g_gem.itm~ ~override/g_gem.itm~
   SAY NAME1 @149
   SAY NAME2 @149
   SAY IDENTIFIED_DESC @150
-COPY ~%MOD_FOLDER%/starting_bags/g_gem.sto~ ~override/g_gem.sto~
+COPY ~%comp_dir%/g_gem.sto~ ~override/g_gem.sto~
   SAY NAME2 @149
-COPY ~%MOD_FOLDER%/starting_bags/g_gem.itm~ ~override/g_gem2.itm~
+COPY ~%comp_dir%/g_gem.itm~ ~override/g_gem2.itm~
   SAY NAME1 @149
   SAY NAME2 @149
   SAY IDENTIFIED_DESC @150
-COPY ~%MOD_FOLDER%/starting_bags/g_gem.sto~ ~override/g_gem2.sto~
+COPY ~%comp_dir%/g_gem.sto~ ~override/g_gem2.sto~
   SAY NAME2 @149
 //scroll case
-COPY ~%MOD_FOLDER%/starting_bags/g_scr.itm~ ~override/g_scr.itm~
+COPY ~%comp_dir%/g_scr.itm~ ~override/g_scr.itm~
   SAY NAME1 @151
   SAY NAME2 @151
   SAY IDENTIFIED_DESC @152
-COPY ~%MOD_FOLDER%/starting_bags/g_scr.sto~ ~override/g_scr.sto~
+COPY ~%comp_dir%/g_scr.sto~ ~override/g_scr.sto~
   SAY NAME2 @151
-COPY ~%MOD_FOLDER%/starting_bags/g_scr.itm~ ~override/g_scr2.itm~
+COPY ~%comp_dir%/g_scr.itm~ ~override/g_scr2.itm~
   SAY NAME1 @151
   SAY NAME2 @151
   SAY IDENTIFIED_DESC @152
-COPY ~%MOD_FOLDER%/starting_bags/g_scr.sto~ ~override/g_scr2.sto~
+COPY ~%comp_dir%/g_scr.sto~ ~override/g_scr2.sto~
   SAY NAME2 @151
 
 //potion case
-COPY ~%MOD_FOLDER%/starting_bags/g_pot.itm~ ~override/g_pot.itm~
+COPY ~%comp_dir%/g_pot.itm~ ~override/g_pot.itm~
   SAY NAME1 @153
   SAY NAME2 @153
   SAY IDENTIFIED_DESC @154
-COPY ~%MOD_FOLDER%/starting_bags/g_pot.sto~ ~override/g_pot.sto~
+COPY ~%comp_dir%/g_pot.sto~ ~override/g_pot.sto~
   SAY NAME2 @153
-COPY ~%MOD_FOLDER%/starting_bags/g_pot.itm~ ~override/g_pot2.itm~
+COPY ~%comp_dir%/g_pot.itm~ ~override/g_pot2.itm~
   SAY NAME1 @153
   SAY NAME2 @153
   SAY IDENTIFIED_DESC @154
-COPY ~%MOD_FOLDER%/starting_bags/g_pot.sto~ ~override/g_pot2.sto~
+COPY ~%comp_dir%/g_pot.sto~ ~override/g_pot2.sto~
   SAY NAME2 @153
 
 //ammo quiver
-COPY ~%MOD_FOLDER%/starting_bags/g_ammo.itm~ ~override/g_ammo.itm~
+COPY ~%comp_dir%/g_ammo.itm~ ~override/g_ammo.itm~
   SAY NAME1 @155
   SAY NAME2 @155
   SAY IDENTIFIED_DESC @156
-COPY ~%MOD_FOLDER%/starting_bags/g_ammo.sto~ ~override/g_ammo.sto~
+COPY ~%comp_dir%/g_ammo.sto~ ~override/g_ammo.sto~
   SAY NAME2 @155
-COPY ~%MOD_FOLDER%/starting_bags/g_ammo.itm~ ~override/g_ammo2.itm~
+COPY ~%comp_dir%/g_ammo.itm~ ~override/g_ammo2.itm~
   SAY NAME1 @155
   SAY NAME2 @155
   SAY IDENTIFIED_DESC @156
-COPY ~%MOD_FOLDER%/starting_bags/g_ammo.sto~ ~override/g_ammo2.sto~
+COPY ~%comp_dir%/g_ammo.sto~ ~override/g_ammo2.sto~
   SAY NAME2 @155
 
 //holding
-COPY ~%MOD_FOLDER%/starting_bags/g_hold.itm~ ~override/g_hold.itm~
+COPY ~%comp_dir%/g_hold.itm~ ~override/g_hold.itm~
   SAY NAME1 @157
   SAY NAME2 @157
   SAY IDENTIFIED_DESC @158
-COPY ~%MOD_FOLDER%/starting_bags/g_hold.sto~ ~override/g_hold.sto~
+COPY ~%comp_dir%/g_hold.sto~ ~override/g_hold.sto~
   SAY NAME2 @157
-COPY ~%MOD_FOLDER%/starting_bags/g_hold.itm~ ~override/g_hold2.itm~
+COPY ~%comp_dir%/g_hold.itm~ ~override/g_hold2.itm~
   SAY NAME1 @157
   SAY NAME2 @157
   SAY IDENTIFIED_DESC @158
-COPY ~%MOD_FOLDER%/starting_bags/g_hold.sto~ ~override/g_hold2.sto~
+COPY ~%comp_dir%/g_hold.sto~ ~override/g_hold2.sto~
   SAY NAME2 @157
 
 //Build actions
@@ -81,19 +83,19 @@ END
 
 //Thorius Candlekeep
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
-  COPY ~%MOD_FOLDER%/starting_bags/g_bag.cre~ ~override/g_bag.cre~
+  COPY ~%comp_dir%/g_bag.cre~ ~override/g_bag.cre~
   SAY NAME1 @28
   SAY NAME2 @28
   WRITE_ASCII DEATHVAR ~G_BAGS~ #32
   WRITE_ASCII DIALOG ~G_BAGS~ #8
-  COMPILE EVAL ~%MOD_FOLDER%/starting_bags/g_bag.d~
+  COMPILE EVAL ~%comp_dir%/g_bag.d~
 
   ACTION_IF GAME_IS ~bgee~ BEGIN OUTER_SPRINT candle_area ~ar2600~ END //bgee
     ELSE BEGIN OUTER_SPRINT candle_area ~ar0015~ END //bgt
   
-  EXTEND_BOTTOM ~%candle_area%.bcs~ ~%MOD_FOLDER%/starting_bags/candle.baf~ EVAL
+  EXTEND_BOTTOM ~%candle_area%.bcs~ ~%comp_dir%/candle.baf~ EVAL
 END
 
 ACTION_IF GAME_INCLUDES ~bg2~ BEGIN //Picture in Irenicus dungeon
-  EXTEND_BOTTOM ~ar0602.bcs~ ~%MOD_FOLDER%/starting_bags/ar0602.baf~ EVAL
+  EXTEND_BOTTOM ~ar0602.bcs~ ~%comp_dir%/ar0602.baf~ EVAL
 END

@@ -1,4 +1,4 @@
-OUTER_SPRINT comp_dir ~%MOD_FOLDER%/hassle_free_ammo~
+OUTER_SPRINT comp_dir ~%components%/hassle_free_ammo~
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY item_name BEGIN
   axe => 160

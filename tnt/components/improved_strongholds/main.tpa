@@ -1,5 +1,5 @@
 OUTER_SPRINT ~G_BLANK~ ~%TAB%%MNL%%LNL% ~ //2-line replacement for bard notifications
-OUTER_SPRINT comp_dir ~%MOD_FOLDER%/improved_strongholds~
+OUTER_SPRINT comp_dir ~%components%/improved_strongholds~
 
 INCLUDE ~%comp_dir%/bard.tpa~
 INCLUDE ~%comp_dir%/druid.tpa~

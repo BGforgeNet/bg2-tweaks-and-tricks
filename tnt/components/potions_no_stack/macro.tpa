@@ -3,7 +3,7 @@ DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 
 ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
 OUTER_SET sectype_id = EVAL ~%%spellname%%~
-COPY ~%MOD_FOLDER%/lib/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
+COPY ~%lib_dir%/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
   //set new secondary type
   WRITE_BYTE 0x27 sectype_id
 BUT_ONLY

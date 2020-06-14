@@ -1,4 +1,4 @@
-INCLUDE ~%MOD_FOLDER%/potions_no_stack/macro.tpa~
+INCLUDE ~%components%/potions_no_stack/macro.tpa~
 
 COPY_EXISTING ~sw1h01.itm~ ~override/g_eff.itm~ //dummy detection file
 

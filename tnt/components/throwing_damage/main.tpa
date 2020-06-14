@@ -7,7 +7,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY typetra BEGIN
   25 => 255 //slashing
 END
 
-INCLUDE ~%MOD_FOLDER%/lib/macro.tpa~
+INCLUDE ~%lib_dir%/macro.tpa~
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT 0x1c type
