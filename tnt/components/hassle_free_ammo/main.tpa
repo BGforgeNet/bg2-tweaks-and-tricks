@@ -3,6 +3,7 @@ OUTER_SPRINT comp_dir ~%components%/hassle_free_ammo~
 COPY - ~%comp_dir%/items.2da~ ~.../tnt-inlined/hassle_free_ammo/items.2da~
   READ_2DA_ENTRIES_NOW items 5
 
+// create items
 OUTER_FOR (i=0;i<items;i+=1) BEGIN
   OUTER_PATCH dummy BEGIN READ_2DA_ENTRY_FORMER items i 0 item END
   COPY ~%comp_dir%/g_%item%.itm~ ~override~
@@ -39,51 +40,44 @@ OUTER_FOR (i=0;i<items;i+=1) BEGIN
     END
 
   BUT_ONLY
-END
 
-
-//add to Taerom and Ribald
-ACTION_FOR_EACH store IN taerum ribald BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~%store%.sto~ BEGIN
-    COPY_EXISTING ~%store%.sto~ ~override~
-      ADD_STORE_ITEM + "g_axe" #0 #0 #0 ~IDENTIFIED~ #10
-      ADD_STORE_ITEM + "g_dagg" #0 #0 #0 ~IDENTIFIED~ #10
-      ADD_STORE_ITEM + "g_dart" #0 #0 #0 ~IDENTIFIED~ #10
-      ADD_STORE_ITEM + "g_arrow" #0 #0 #0 ~IDENTIFIED~ #10
-      ADD_STORE_ITEM + "g_bolt" #0 #0 #0 ~IDENTIFIED~ #10
-      ADD_STORE_ITEM + "g_bull" #0 #0 #0 ~IDENTIFIED~ #10
-    BUT_ONLY
+  //add to Taerom and Ribald
+  ACTION_FOR_EACH store IN taerum ribald BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%store%.sto~ BEGIN
+      COPY_EXISTING ~%store%.sto~ ~override~
+        ADD_STORE_ITEM + "g_%item%" #0 #0 #0 ~IDENTIFIED~ #10
+      BUT_ONLY
+    END
   END
+
 END
 
 
-//remove weight and maximize stacks
-ACTION_DEFINE_ARRAY item_type BEGIN
-  ITM_TYPE_arrows
-  ITM_TYPE_bullets
-  ITM_TYPE_dagger
-  ITM_TYPE_hammer
-  ITM_TYPE_dart
-  ITM_TYPE_axe
-  ITM_TYPE_bolts
-END
-
+//remove weight and maximize stack
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT ITM_stack_amount stack
   PATCH_IF stack > 1 BEGIN
     READ_SHORT ITM_type type
     match = 0
-    PATCH_FOR_EACH itype IN item_type BEGIN
-      PATCH_IF type == EVAL ~%%itype%%~ BEGIN
+    PATCH_MATCH type
+      WITH
+        ITM_TYPE_arrows
+        ITM_TYPE_bullets
+        ITM_TYPE_dagger
+        ITM_TYPE_hammer
+        ITM_TYPE_dart
+        ITM_TYPE_axe
+        ITM_TYPE_bolts
+      BEGIN
         GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
         PHP_EACH h_array AS int => h_off BEGIN
           READ_BYTE h_off attack_type
           PATCH_IF attack_type == ITM_ATTACK_TYPE_ranged BEGIN
-            match = 1 //ranged weapon which stacks
+            match = 1 // found ranged weapon which stacks
           END
         END
       END
-    END
+    DEFAULT END
     PATCH_IF match == 1 BEGIN
       WRITE_SHORT ITM_stack_amount 65535
       WRITE_LONG ITM_weight 0

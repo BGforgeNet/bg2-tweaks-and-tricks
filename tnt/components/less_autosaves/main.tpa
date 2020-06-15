@@ -1,12 +1,17 @@
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ override
   // remove "party required" flag on edges
-  PATCH_FOR_EACH flag_off IN ARE_north_flags ARE_east_flags ARE_south_flags ARE_west_flags BEGIN
+  PATCH_FOR_EACH flag_off IN
+    ARE_north_flags
+    ARE_east_flags
+    ARE_south_flags
+    ARE_west_flags
+  BEGIN
     WRITE_LONG EVAL ~%%flag_off%%~ THIS BAND BNOT FLAG_ARE_EDGE_party_required
   END
   //remove "party required" flag from regions
   READ_SHORT ARE_regions_count reg_num
   READ_LONG ARE_regions_offset reg_off
-  WHILE (reg_num > 0) BEGIN
+  WHILE reg_num > 0 BEGIN
     reg_num -= 1
     reg_flags_off = reg_off + (reg_num * ARE_REGION_size) + ARE_REGION_flags
     WRITE_LONG reg_flags_off THIS BAND BNOT FLAG_ARE_REGION_party_required
