@@ -1315,6 +1315,10 @@ msgstr "Требует движок BG2 или EE"
 msgid "Requires BG2"
 msgstr "Требует BG2"
 
+#: setup.tra:127
+msgid "Shandalar's cloak not present in game"
+msgstr ""
+
 #: setup.tra:128
 msgid "Weightless ammo"
 msgstr "Невесомые снаряды"
@@ -1322,7 +1326,7 @@ msgstr "Невесомые снаряды"
 #: setup.tra:129
 #, fuzzy
 #| msgid "All easy traps components must be installed before core"
-msgid "All Improved trap detection components must be installed before core"
+msgid "All Improved Traps Detection components must be installed before core"
 msgstr ""
 "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
 
@@ -1882,6 +1886,14 @@ msgstr "(Дать зелье восприятия)."
 #: smarter_familiars.tra:267
 msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr "(Дать воровское зелье силы морозного гиганта)."
+
+#: true_true_sight.tra:1
+msgid "each round"
+msgstr ""
+
+#: true_true_sight.tra:2
+msgid "each second"
+msgstr ""
 
 #~ msgid "Sunin"
 #~ msgstr "Сунин"

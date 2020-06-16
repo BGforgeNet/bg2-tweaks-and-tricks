@@ -1125,12 +1125,16 @@ msgstr ""
 msgid "Requires BG2"
 msgstr ""
 
+#: setup.tra:127
+msgid "Shandalar's cloak not present in game"
+msgstr ""
+
 #: setup.tra:128
 msgid "Weightless ammo"
 msgstr ""
 
 #: setup.tra:129
-msgid "All Improved trap detection components must be installed before core"
+msgid "All Improved Traps Detection components must be installed before core"
 msgstr ""
 
 #: setup.tra:134
@@ -1676,4 +1680,12 @@ msgstr ""
 
 #: smarter_familiars.tra:267
 msgid "(Give a Rogue's potion of Frost Giant Strength)."
+msgstr ""
+
+#: true_true_sight.tra:1
+msgid "each round"
+msgstr ""
+
+#: true_true_sight.tra:2
+msgid "each second"
 msgstr ""
