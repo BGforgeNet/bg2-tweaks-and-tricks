@@ -29,7 +29,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   parameter2 = EFFECT_IDS_align
 
   DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
-    TRUE_NEUTRAL => 4
+    NEUTRAL => 4 // True Neutral
     LAWFUL_NEUTRAL => 3
     CHAOTIC_NEUTRAL => 3
     NEUTRAL_GOOD => 2
