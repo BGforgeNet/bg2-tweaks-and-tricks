@@ -4,6 +4,7 @@ COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
   PATCH_IF NOT ~%name%~ STRING_CONTAINS_REGEXP ~gaze~ BEGIN //check "gaze" in the name
     DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END //record resource
     DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END //record name
+    PATCH_PRINT ~found spell: %SOURCE_RES% - %name%~
     i+=1
   END ELSE BEGIN //check for gaze projectile
     gaze = 0
@@ -15,6 +16,7 @@ COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
       END
     END
     PATCH_IF gaze == 1 BEGIN
+      PATCH_PRINT ~found spell 2: %SOURCE_RES% - %name%~
       DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END
       DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END
       i+=1
