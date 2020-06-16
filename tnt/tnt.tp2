@@ -231,7 +231,9 @@ COMPILE ~%components%/slayer/low_rep.d~
 BEGIN @120 /* True true sight */
 GROUP @229 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
-INCLUDE ~%components%/true_true_sight/main.tpa~
+OUTER_TEXT_SPRINT comp_name ~true_true_sight~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @134 /* Sensible Otiluke's Sphere */
 GROUP @229 /* Spells and abilities */
