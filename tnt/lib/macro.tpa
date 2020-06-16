@@ -2,13 +2,17 @@ DEFINE_PATCH_FUNCTION GET_2DA_INDEX
   RET_ARRAY row_index col_index
 BEGIN
   COUNT_2DA_COLS columns
+  PATCH_PRINT ~found %columns% columns~
   READ_2DA_ENTRIES_NOW rows (columns - 1) //top row/first column is normally empty
+  PATCH_PRINT ~found %rows% rows~
   FOR (c=0; c<(columns - 1); ++c) BEGIN //weidu counts from the first field, so first named column starts from index 0, too ("shifted to the left" by one)
     READ_2DA_ENTRY_FORMER rows 0 c name
+    PATCH_PRINT ~column %c%: name %name%~
     TEXT_SPRINT $col_index("%name%") c
   END
   FOR (r=1; r<rows; ++r) BEGIN
     READ_2DA_ENTRY_FORMER rows r 0 name
+    PATCH_PRINT ~row %r%: name %name%~
     TEXT_SPRINT $row_index("%name%") r
   END
 END
