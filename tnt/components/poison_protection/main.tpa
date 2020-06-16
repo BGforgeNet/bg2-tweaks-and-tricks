@@ -7,7 +7,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~amul22.itm~ BEGIN
         parameter1 = 100 // %
         probability1 = 99
         timing = TIMING_while_equipped
-        resist_dispel = DISPEL | BYPASS_MR
+        resist_dispel = BYPASS_MR
     END
   BUT_ONLY
 END
