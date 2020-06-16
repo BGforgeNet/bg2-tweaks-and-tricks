@@ -5,26 +5,7 @@ COPY_EXISTING ~spwi413a.spl~ ~override~
   END
   LPF ADD_SPELL_EFFECT
     INT_VAR
-      opcode = OPCODE_attacks_per_round_mod
-      parameter1 = 0 //0 apr
-      parameter2 = 1 //flat mod
-      duration = 60
-      target = TARGET_FEATURE_preset
-      resist_dispel = DISPEL | BYPASS_MR
-      power = 10 //strongest effect
-  END
-  LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode = OPCODE_movement_mod
-      parameter1 = 0 //immobile
-      parameter2 = 1 //flat mod
-      duration = 60
-      target = TARGET_FEATURE_preset
-      resist_dispel = DISPEL | BYPASS_MR
-  END
-  LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode = OPCODE_visual_range
+      opcode = OPCODE_visual_range // to disable using wands and stuff
       parameter1 = 0 //blind
       parameter2 = 1 //flat mod
       duration = 60
