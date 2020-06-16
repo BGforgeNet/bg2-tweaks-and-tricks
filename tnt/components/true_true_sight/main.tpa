@@ -32,10 +32,10 @@ ACTION_FOR_EACH spell IN sppr505 spwi609 spcl232 BEGIN
     END
     READ_LONG SPL_desc desc_strref
     GET_STRREF desc_strref desc
-    each_round = RESOLVE_STR_REF @1
-    each_second = RESOLVE_STR_REF @2
+    each_round = RESOLVE_STR_REF (@1)
+    each_second = RESOLVE_STR_REF (@2)
     INNER_PATCH_SAVE new_desc ~%desc%~ BEGIN
-      REPLACE_TEXTUALLY @1 @2
+      REPLACE_TEXTUALLY ~%each_round%~ ~%each_second%~
     END
     SAY UNIDENTIFIED_DESC ~%new_desc%~
   BUT_ONLY
