@@ -1,24 +1,29 @@
 OUTER_SET i = 0
 COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
-  READ_STRREF NAME1 name
-  PATCH_IF NOT ~%name%~ STRING_CONTAINS_REGEXP ~gaze~ BEGIN //check "gaze" in the name
-    DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END //record resource
-    DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END //record name
-    PATCH_PRINT ~found spell: %SOURCE_RES% - %name%~
-    i+=1
-  END ELSE BEGIN //check for gaze projectile
-    gaze = 0
-    GET_OFFSET_ARRAY h_array SPL_V10_HEADERS
-    PHP_EACH h_array AS int => h_off BEGIN
-      READ_SHORT (h_off + SPL_HEADER_projectile) pro
-      PATCH_IF pro == PRO_gaze BEGIN
-        gaze = 1
-      END
+  READ_STRREF NAME1 name // temp
+  // check for gaze projectile
+  gaze = 0
+  GET_OFFSET_ARRAY h_array SPL_V10_HEADERS
+  PHP_EACH h_array AS int => h_off BEGIN
+    READ_SHORT (h_off + SPL_HEADER_projectile) pro
+    PATCH_IF pro == PRO_gaze BEGIN
+      gaze = 1
     END
-    PATCH_IF gaze == 1 BEGIN
-      PATCH_PRINT ~found spell 2: %SOURCE_RES% - %name%~
-      DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END
-      DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END
+  END
+  PATCH_IF gaze == 1 BEGIN
+    PATCH_PRINT ~found gaze pro: %SOURCE_RES% - %name%~
+    DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END
+    DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END
+    i+=1
+  END
+
+  // check "gaze" in the name
+  PATCH_IF gaze == 0 BEGIN
+    READ_STRREF NAME1 name
+    PATCH_IF (~%name%~ STRING_CONTAINS_REGEXP ~gaze~) == 0 BEGIN 
+      DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END //record resource
+      DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END //record name
+      PATCH_PRINT ~found gaze name: %SOURCE_RES% - %name%~
       i+=1
     END
   END
