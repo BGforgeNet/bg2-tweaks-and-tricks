@@ -47,12 +47,12 @@ END
 PRINT ~NWBaldursGate=%NWBaldursGate%~
 
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
-  OUTER_SPRINT map EVAL EVAL ~%loc_0%~
+  OUTER_SPRINT map EVAL EVAL ~%%loc_0%%~
   OUTER_SET x = %loc_1%
   OUTER_SET y = %loc_2%
   OUTER_SPRINT note (AT note_num)
   PRINT ~Adding %note% to %map%: %x%, %y%~
-  ACTION_IF FILE_EXISTS_IN_GAME EVAL ~%map%.are~ BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%map%.are~ BEGIN
     COPY_EXISTING  ~%map%.are~ ~override~
       ADD_MAP_NOTE (x) (y) ~blue~ ~%note%~
     BUT_ONLY
