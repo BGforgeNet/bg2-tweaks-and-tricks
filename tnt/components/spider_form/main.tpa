@@ -1,6 +1,3 @@
-//dummy detection file
-COPY_EXISTING ~sw1h01.itm~ ~override/g_tt_web.itm~
- 
 LAF list_web_spells RET_ARRAY web_spells = spells END
 
 COPY_EXISTING ~plyspid.itm~  ~override~
