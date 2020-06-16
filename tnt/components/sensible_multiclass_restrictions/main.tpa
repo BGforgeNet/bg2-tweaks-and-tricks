@@ -11,7 +11,7 @@ COPY_EXISTING ~clsrcreq.2da~ override
   READ_2DA_ENTRIES_NOW rows (columns - 1)
   human_col = $col_index(HUMAN)
   PATCH_PRINT ~human_col=%human_col%~
-  human_col = $col_index(~HUMAN~~)
+  human_col = $col_index(~HUMAN~)
   PATCH_PRINT ~human_col=%human_col%~
   PATCH_FOR_EACH row IN ~FIGHTER_CLERIC~ ~FIGHTER_THIEF~ ~CLERIC_THIEF~ BEGIN
     FOR (c=1;c<columns;++c) BEGIN
