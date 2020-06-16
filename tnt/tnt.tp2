@@ -350,7 +350,7 @@ BEGIN @264 /* Limited stock */
 INCLUDE ~%components%/limited_stock/main.tpa~
 
 BEGIN @250 /* Improved Shandalar's cloak */
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~clck22.itm~ /* Shandalar's cloak not present in game */
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~clck22.itm~ @127 /* Shandalar's cloak not present in game */
 OUTER_SPRINT comp_name ~shandalars_cloak~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
