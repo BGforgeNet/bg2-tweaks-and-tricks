@@ -6,9 +6,11 @@ END
 
 COPY_EXISTING ~clsrcreq.2da~ override
   LPF GET_2DA_INDEX RET_ARRAY row_index col_index END
+  PATCH_PRINT ~row_index=%row_index%, col_index = %col_index%~
   COUNT_2DA_COLS columns
   READ_2DA_ENTRIES_NOW rows (columns - 1)
   human_col = $col_index(HUMAN)
+  PATCH_PRINT ~human_col=%human_col%~
   PATCH_FOR_EACH row IN ~FIGHTER_CLERIC~ ~FIGHTER_THIEF~ ~CLERIC_THIEF~ BEGIN
     FOR (c=1;c<columns;++c) BEGIN
       PATCH_IF c != human_col BEGIN
