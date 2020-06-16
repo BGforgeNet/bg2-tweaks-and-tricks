@@ -1,7 +1,5 @@
 OUTER_TEXT_SPRINT comp_dir ~%components%/starting_bags~
 
-COPY_EXISTING ~sw1h01.itm~ ~override/g_cand.itm~ //dummy detection file
-
 //gem bag
 COPY ~%comp_dir%/g_gem.itm~ ~override/g_gem.itm~
   SAY NAME1 @149
