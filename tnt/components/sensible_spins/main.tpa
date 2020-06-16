@@ -4,10 +4,7 @@ OUTER_TEXT_SPRINT spl_despin ~g_despin~
 OUTER_TEXT_SPRINT icon ~%spl_despin%~
 COPY ~%comp_dir%/%icon%.bam~ ~override~ //"cancel spin" ability icon
 
-OUTER_TEXT_SPRINT sectype ~g_spin~
-ADD_SECTYPE ~%sectype%~ @1
-ADD_SECTYPE ~%sectype%~ @1 // set sectypeName to id
-OUTER_SET sectype_id = sectypeName  //set by second ADD_SECTYPE
+ADD_SECTYPE sectype_id @1
 
 // "cancel spin" ability
 LAF CREATE_SPELL
