@@ -35,9 +35,7 @@ BEGIN
         reg_flags_off = reg_off + (reg_num * ARE_REGION_size) + ARE_REGION_flags
         READ_ASCII reg_script_off trap_script
         PATCH_IF ( ~%trap_script%~ STR_EQ ~TRPSKEL~ ) BEGIN //skeleton trap (false exit)
-          READ_LONG reg_flags_off trap_flags
-          new_flags = trap_flags BAND 0b1111111111111101
-          WRITE_LONG reg_flags_off new_flags
+          WRITE_LONG reg_flags_off THIS BAND BNOT FLAG_ARE_REGION_reset_trap
         END
       END
     BUT_ONLY
