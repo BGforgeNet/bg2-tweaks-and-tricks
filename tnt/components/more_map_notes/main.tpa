@@ -44,6 +44,8 @@ HighHedge, 3655, 1474 => 26 // Kivan
 
 END
 
+PRINT ~NWBaldursGate=%NWBaldursGate%~
+
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
   OUTER_SPRINT map EVAL EVAL ~%loc_0%~
   OUTER_SET x = %loc_1%
