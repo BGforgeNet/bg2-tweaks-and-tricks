@@ -1,5 +1,6 @@
 OUTER_SET i = 0
 OUTER_SET gaze_id = IDS_OF_SYMBOL(projectl ~GAZE~) + 1
+OUTER_SPRINT gaze_string @1 // gaze
 
 COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
   READ_STRREF NAME1 name
@@ -22,7 +23,7 @@ COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
   // check "gaze" in the name
   PATCH_IF gaze == 0 BEGIN
     READ_STRREF NAME1 name
-    PATCH_IF (~%name%~ STRING_CONTAINS_REGEXP ~gaze~) == 0 BEGIN 
+    PATCH_IF (~%name%~ STRING_CONTAINS_REGEXP ~%gaze_string%~) == 0 BEGIN
       DEFINE_ASSOCIATIVE_ARRAY spell_list BEGIN ~%i%~ => ~%SOURCE_RES%~ END //record resource
       DEFINE_ASSOCIATIVE_ARRAY spell_names BEGIN ~%i%~ => ~%name%~ END //record name
       PATCH_PRINT ~found gaze name: %SOURCE_RES% - %name%~

@@ -202,7 +202,8 @@ INCLUDE ~%components%/wand_of_frost/main.tpa~
 
 BEGIN @223 /* Potion of really mirrored eyes */
 GROUP @228 /* Items */
-INCLUDE ~%components%/really_mirrored_eyes/main.tpa~
+OUTER_SPRINT comp_name ~really_mirrored_eyes~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 // END ITEM TWEAKS
 
 //SPELL TWEAKS
