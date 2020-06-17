@@ -26,7 +26,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
                 offset = off
                 old_substring_traref = 253 //missile (piercing)
                 new_substring_traref = damage_tra
-             END
+            END
           END
         END
         PATCH_IF strength == 1 BEGIN
