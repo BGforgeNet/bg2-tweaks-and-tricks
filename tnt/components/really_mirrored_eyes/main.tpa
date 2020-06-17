@@ -1,12 +1,14 @@
 OUTER_SET i = 0
+OUTER_SET gaze_id = IDS_OF_SYMBOL(projectl ~GAZE~) + 1
+
 COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
-  READ_STRREF NAME1 name // temp
+  READ_STRREF NAME1 name
   // check for gaze projectile
   gaze = 0
   GET_OFFSET_ARRAY h_array SPL_V10_HEADERS
   PHP_EACH h_array AS int => h_off BEGIN
     READ_SHORT (h_off + SPL_HEADER_projectile) pro
-    PATCH_IF pro == PRO_gaze BEGIN
+    PATCH_IF pro == gaze_id BEGIN
       gaze = 1
     END
   END
