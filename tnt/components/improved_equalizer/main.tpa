@@ -71,7 +71,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
     INT_VAR
       opcode = OPCODE_cast_spell_at_creature
       parameter1 = 10 // default casting level from items
-      paremeter2 = 1 // cast instantly
+      parameter2 = 1 // cast instantly
       timing = TIMING_permanent
     STR_VAR
       resource = WIZARD_KNOW_ALIGNMENT

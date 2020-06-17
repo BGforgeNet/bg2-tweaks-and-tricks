@@ -38,7 +38,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
       opcode = OPCODE_save_vs_death_mod
       target = TARGET_HEADER_self
       timing = TIMING_while_equipped
-      paremeter2 = 2 //amount
+      parameter2 = 2 //amount
       resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
   END
 
@@ -60,7 +60,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
     INT_VAR
       opcode = OPCODE_cast_spell_at_point
       parameter1 = 10 // default casting level from items
-      paremeter2 = 1 // cast instantly
+      parameter2 = 1 // cast instantly
       timing = TIMING_permanent
     STR_VAR
       resource = WIZARD_WEB
