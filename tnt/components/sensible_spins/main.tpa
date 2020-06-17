@@ -1,8 +1,9 @@
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 
 OUTER_TEXT_SPRINT spl_despin ~g_despin~
-OUTER_TEXT_SPRINT icon ~%spl_despin%~
-COPY ~%comp_dir%/%icon%.bam~ ~override~ //"cancel spin" ability icon
+OUTER_TEXT_SPRINT icon ~g_despi~ // 8 chars limit
+COPY ~%comp_dir%/%icon%.bam~ ~override~ //"cancel spin" spell icon
+COPY ~%comp_dir%/%icon%b.bam~ ~override~ //"cancel spin" spell header icon
 
 ADD_SECTYPE g_despin @1
 
@@ -14,7 +15,10 @@ LAF CREATE_SPELL
   STR_VAR spell = ~%spl_despin%~
 END
 COPY_EXISTING ~%spl_despin%.spl~ override
-  LPF ADD_SPELL_HEADER END
+  LPF ADD_SPELL_HEADER
+    INT_VAR target = TARGET_HEADER_self
+    STR_VAR icon=~%icon%b~
+  END
   LPF ADD_SPELL_EFFECT //remove active spins
     INT_VAR
       opcode = OPCODE_remove_secondary_type
@@ -31,13 +35,14 @@ COPY_EXISTING ~%spl_despin%.spl~ override
     STR_VAR resource = ~%spl_despin%~
   END
   LPF ADD_SPELL_EFFECT // allow to cast another spell right away
-  INT_VAR
-    opcode = OPCODE_aura_cleansing
-    parameter2 = 1
-    timing = TIMING_duration
-    duration = 6 // 1 round
-    target = TARGET_FEATURE_self
-END
+    INT_VAR
+      opcode = OPCODE_aura_cleansing
+      parameter2 = 1
+      timing = TIMING_duration
+      duration = 6 // 1 round
+      target = TARGET_FEATURE_self
+  END
+  SAY NAME1 @2
 
   WRITE_ASCIIT SPL_icon ~%icon%~
 BUT_ONLY
@@ -45,6 +50,14 @@ BUT_ONLY
 COPY_EXISTING ~%BLADE_OFFENSIVE_SPIN%.spl~ override
               ~%BLADE_DEFENSIVE_SPIN%.spl~ override
   WRITE_BYTE SPL_sectype g_despin
+  PATCH_FOR_EACH spl IN ~%BLADE_OFFENSIVE_SPIN%~ ~%BLADE_DEFENSIVE_SPIN%~ BEGIN
+    LPF DELETE_EFFECT
+      INT_VAR
+        match_opcode = OPCODE_protection_from_spell
+      STR_VAR
+        match_resource = ~%spl%~
+    END
+  END
   LPF ADD_SPELL_EFFECT //remove active spins first
     INT_VAR
       opcode = OPCODE_remove_secondary_type
@@ -54,6 +67,15 @@ COPY_EXISTING ~%BLADE_OFFENSIVE_SPIN%.spl~ override
       insert_point = 0
       target = TARGET_FEATURE_self
   END
+  LPF ADD_SPELL_EFFECT //remove "cancel spin" ability from previous spin, if any
+    INT_VAR
+      opcode = OPCODE_remove_spell
+      timing = TIMING_permanent
+      target = TARGET_FEATURE_self
+      power = 1
+      insert_point = 1
+    STR_VAR resource = ~%spl_despin%~
+  END
   LPF ADD_SPELL_EFFECT //add "cancel spin" ability
     INT_VAR
       opcode = OPCODE_give_ability
@@ -61,7 +83,7 @@ COPY_EXISTING ~%BLADE_OFFENSIVE_SPIN%.spl~ override
       target = TARGET_FEATURE_self
     STR_VAR resource = ~%spl_despin%~
   END
-  LPF ADD_SPELL_EFFECT //remove "cancel spin" ability
+  LPF ADD_SPELL_EFFECT //remove "cancel spin" ability on expiration
     INT_VAR
       opcode = OPCODE_remove_spell
       timing = TIMING_delayed
