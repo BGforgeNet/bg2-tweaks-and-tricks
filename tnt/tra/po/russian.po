@@ -1079,6 +1079,10 @@ msgstr ""
 msgid "Kivan"
 msgstr ""
 
+#: really_mirrored_eyes.tra:1
+msgid "gaze"
+msgstr ""
+
 #: sensible_spins.tra:1
 #, fuzzy
 #| msgid "Potion effect refreshed"
