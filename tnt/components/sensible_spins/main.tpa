@@ -1,7 +1,7 @@
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 
-OUTER_TEXT_SPRINT spl_despin ~g_despin~
-OUTER_TEXT_SPRINT icon ~g_despi~ // 8 chars limit
+OUTER_TEXT_SPRINT spl_despin ~g_despi~ // If the key is not 8 characters long, all memorized copies will be removed
+OUTER_TEXT_SPRINT icon ~%spl_despin%~
 COPY ~%comp_dir%/%icon%.bam~ ~override~ //"cancel spin" spell icon
 COPY ~%comp_dir%/%icon%b.bam~ ~override~ //"cancel spin" spell header icon
 
@@ -72,7 +72,6 @@ COPY_EXISTING ~%BLADE_OFFENSIVE_SPIN%.spl~ override
       opcode = OPCODE_remove_spell
       timing = TIMING_permanent
       target = TARGET_FEATURE_self
-      power = 1
       insert_point = 1
     STR_VAR resource = ~%spl_despin%~
   END
