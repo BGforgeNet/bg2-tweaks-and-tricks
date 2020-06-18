@@ -1309,6 +1309,14 @@ msgstr ""
 msgid "Limited stock"
 msgstr ""
 
+#: setup.tra:265
+msgid "Unstack Chaos Shield"
+msgstr ""
+
+#: setup.tra:266
+msgid "Chaos Shield spells not present in game"
+msgstr ""
+
 #: shandalars_cloak.tra:1
 msgid ""
 "This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
