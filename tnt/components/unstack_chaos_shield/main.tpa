@@ -1,0 +1,27 @@
+ACTION_IF ENGINE_IS ~tob~ BEGIN
+  OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
+  LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
+  ACTION_INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
+END
+
+OUTER_SET stacking_id = 1
+ACTION_FOR_EACH spl IN ~%WIZARD_CHAOS_SHIELD%~ ~%WIZARD_IMPROVED_CHAOS_SHIELD%~ BEGIN
+  COPY_EXISTING ~%spl%.spl~ override
+    // fixpack's crude fix was to prevent re-casting
+    LPF DELETE_EFFECT
+      INT_VAR
+        match_opcode = OPCODE_protection_from_spell
+        verbose = 1
+    END
+    // set stacking bits and type
+    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
+    PHP_EACH ab_array AS int => ab_off BEGIN
+      GET_OFFSET_ARRAY2 fx_array ab_off SPL_V10_HEAD_EFFECTS
+      PHP_EACH fx_array AS int => fx_off BEGIN
+        WRITE_LONG fx_off + FEATURE_savingthrow THIS BOR FLAG_SAVINGTHROW_tobex_limit_effect_stacking
+        WRITE_LONG fx_off + FEATURE_stacking_id (effect_stacking_id_base + stacking_id)
+      END
+    END
+    stacking_id += 1 // for chaos shield, each opcode is unique per header, so using the same id for the whole header
+  BUT_ONLY
+END
