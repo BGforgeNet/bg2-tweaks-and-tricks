@@ -917,7 +917,11 @@ msgid "gaze"
 msgstr ""
 
 #: sensible_spins.tra:1
-msgid "Spin refreshed."
+msgid "Spin stopped"
+msgstr ""
+
+#: sensible_spins.tra:2
+msgid "Cancel Spin"
 msgstr ""
 
 #: setup.tra:74

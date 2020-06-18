@@ -1084,10 +1084,12 @@ msgid "gaze"
 msgstr ""
 
 #: sensible_spins.tra:1
-#, fuzzy
-#| msgid "Potion effect refreshed"
-msgid "Spin refreshed."
-msgstr "Эффект зелья обновлен"
+msgid "Spin stopped"
+msgstr ""
+
+#: sensible_spins.tra:2
+msgid "Cancel Spin"
+msgstr ""
 
 #: setup.tra:74
 msgid "Smarter familiars"
@@ -1898,6 +1900,10 @@ msgstr ""
 #: true_true_sight.tra:2
 msgid "each second"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Spin refreshed."
+#~ msgstr "Эффект зелья обновлен"
 
 #~ msgid "Sunin"
 #~ msgstr "Сунин"
