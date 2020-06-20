@@ -397,10 +397,11 @@ REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_NON_DETECTION%.spl~ @262 /* Non-D
 INCLUDE ~%components%/working_non_detection/main.tpa~
 
 BEGIN @265 /* Unstack Chaos Shield */
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_CHAOS_SHIELD%.spl~ @266 /* Chaos Shield spells not present in game */
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_CHAOS_SHIELD%.spl~ @266 /* Chaos Shield spells are not present in game */
 INCLUDE ~%components%/unstack_chaos_shield/main.tpa~
 
-BEGIN @268 /* ~Uncheese Project Image */
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~projimag.spl~ ~Project Image spell not present in game~
-OUTER_SPRINT comp_name ~uncheese_project_image~
-INCLUDE ~%components%/%comp_name%/main.tpa~
+BEGIN @267 /* ~Uncheese Project Image */
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~projimag.spl~ @268 /* Project Image spell is not present in game */
+OUTER_TEXT_SPRINT comp_name ~uncheese_project_image~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+INCLUDE ~%comp_dir%/main.tpa~

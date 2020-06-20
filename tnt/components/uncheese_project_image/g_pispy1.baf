@@ -1,0 +1,28 @@
+// Main PI spy script.
+// It tracks spells cast by the clone, sets local variables, then removes them one by one and once all is clear, destroys itself.
+// The grunt work is APPENDed later in main.tpa
+
+IF
+  Global("interrupt_set", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE) // just in case
+    SetGlobal("interrupt_set", "LOCALS", 1)
+END
+IF
+  !Exists(LastHeardBy)
+  %final_check_list%
+THEN
+  RESPONSE #100
+    ActionOverride(LastSummonerOf, SetInterrupt(TRUE))
+    DestroySelf()
+END
+// IF
+//   True()
+// THEN
+//   RESPONSE #100
+//     DisplayStringHead(LastHeardBy, ~I am projected image~)
+//     DisplayStringHead(LastSummonerOf, ~I am original~)
+//     DisplayStringHead(Myself, ~pi checking spells~)
+//     Continue()
+// END

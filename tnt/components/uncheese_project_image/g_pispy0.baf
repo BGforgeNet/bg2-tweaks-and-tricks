@@ -1,0 +1,23 @@
+// Initial PI spy script.
+// Its only purpose is to get clone creature into LastHeard, then pass management to the main script.
+IF
+  Heard([ANYONE], %g_pnp_pi_shout%)
+THEN
+  RESPONSE #100
+    // DisplayStringHead(Myself, ~spy heard~)
+    ChangeAIScript("g_pispy1", OVERRIDE)
+    // DisplayStringHead(Myself, ~spy changed~)
+END
+// IF
+//   OnCreation()
+// THEN
+//   RESPONSE #100
+//     DisplayStringHead(Myself, ~spy created~)
+// END
+// IF
+//   True()
+// THEN
+//   RESPONSE #100
+//     DisplayStringHead(Myself, ~spy waiting~)
+//     Continue()
+// END

@@ -1,6 +1,25 @@
-OUTER_TEXT_SPRINT comp_dir ~%components%/pnp_project_image~
+/*
+High level overview
 
-// build lists of all spells
+1. LastSummonerOf doesn't work for clones. The only other place where the information about clone's master is stored is PUPPETMASTERID stat. But there's seemingly no way to retrieve it with scripting or opcodes.
+2. So PI spell creates a spy to track and remove spells.
+3. Can't use clone itself for tracking and removing, because script commands will interfere with player actions.
+4. LastSummonerOf does work for the spy. It's set to the original caster.
+5. On creation, the spy starts to listen for a custom shout.
+6. PI spell assigns a short script to the created clone.
+7. On creation, the clone shouts the custom shout.
+8. The spy hears the shout. It now has both objects: LastHeardBy=clone, LastSummoneerOf=caster.
+9. The spy switches its initial script to the main one. It's no longer listening, so following PI casts won't interfere.
+10. The main script tracks each spell cast by the clone in local vars, incrementing them.
+11. Removing them right away result in missing some. (Something's off with action queue.)
+12. Instead, once the image has ended or is destroyed, the spy goes over each local var and decrements them until each cast spell is accounted for.
+13. Once all vars are back to 0, the spy destroys itself.
+*/
+
+
+
+// Build lists of all spells. Just mage and cleric for now.
+// Wizard first, for faster removal - probably most casters will be single class mages.
 COPY_EXISTING ~spell.ids~ ~override~
   READ_2DA_ENTRIES_NOW rows 2
   TEXT_SPRINT final_check_list ~~
@@ -40,106 +59,29 @@ COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
   END
 BUT_ONLY
 
-// unique shout to ids
+// add unique shout to ids
 LAF g_add_ids_unique STR_VAR ids = ~shoutids~ label = ~g_pnp_pi~ RET g_pnp_pi_shout = index END
 
 // spy: listen once for a shout
-<<<<<<<< .../tnt-inlined/g_pispy0.baf
-IF
-  Heard([ANYONE], %g_pnp_pi_shout%)
-THEN
-  RESPONSE #100
-    // DisplayStringHead(Myself, ~spy heard~)
-    ChangeAIScript("g_pispy1", OVERRIDE)
-    // DisplayStringHead(Myself, ~spy changed~)
-END
-// IF
-//   OnCreation()
-// THEN
-//   RESPONSE #100
-//     DisplayStringHead(Myself, ~spy created~)
-// END
-// IF
-//   True()
-// THEN
-//   RESPONSE #100
-//     DisplayStringHead(Myself, ~spy waiting~)
-//     Continue()
-// END
->>>>>>>>
-COMPILE EVAL ~.../tnt-inlined/g_pispy0.baf~
+COMPILE EVAL ~%comp_dir%/%pi_spy_script0%.baf~
 
-// once heard, don't listen anymore, keep LastHeardBy intact
-<<<<<<<< .../tnt-inlined/g_pispy1.baf
-IF
-  Global("interrupt_set", "LOCALS", 0)
-THEN
-  RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("interrupt_set", "LOCALS", 1)
-END
-IF
-  !Exists(LastHeardBy)
-  %final_check_list%
-THEN
-  RESPONSE #100
-    ActionOverride(LastSummonerOf, SetInterrupt(TRUE))
-    DestroySelf()
-END
-// IF
-//   True()
-// THEN
-//   RESPONSE #100
-//     DisplayStringHead(LastHeardBy, ~I am projected image~)
-//     DisplayStringHead(LastSummonerOf, ~I am original~)
-//     DisplayStringHead(Myself, ~pi checking spells~)
-//     Continue()
-// END
->>>>>>>>
-COMPILE EVAL ~.../tnt-inlined/g_pispy1.baf~
+// spy: main script. Once heard, don't listen anymore, keep LastHeardBy intact.
+COMPILE EVAL ~%comp_dir%/%pi_spy_script1%.baf~
 
-// PI: announce self once
+// clone: announce self once
 OUTER_TEXT_SPRINT pi_script ~g_pnp_pi~
-<<<<<<<< .../tnt-inlined/g_pnp_pi.baf
-IF
-  OnCreation()
-THEN
-  RESPONSE #100
-    GlobalShout(%g_pnp_pi_shout%)
-    // DisplayStringHead(Myself, ~pi shouted~)
-END
->>>>>>>>
-COMPILE EVAL ~.../tnt-inlined/%pi_script%.baf~
-
-
-<<<<<<<< .../tnt-inlined/g_pnp_pi_spell.baf
-IF
-  SpellCast(LastHeardBy, %spell%)
-THEN
-  RESPONSE #100
-    IncrementGlobal("%spell_res%", "LOCALS", 1)
-    // DisplayStringHead(Myself, ~Detected cast: %spell%~)
-END
-IF
-  GlobalGT("%spell_res%", "LOCALS", 0)
-THEN
-  RESPONSE #100
-    IncrementGlobal("%spell_res%", "LOCALS", -1)
-    ActionOverride(LastSummonerOf, SetInterrupt(FALSE))
-    ActionOverride(LastSummonerOf, RemoveSpellRES("%spell_res%"))
-    // ActionOverride(LastSummonerOf, DisplayStringHead(Myself, ~Removed %spell_res%~))
-END
->>>>>>>>
+COMPILE EVAL ~%comp_dir%/%pi_script%.baf~
 
 ACTION_PHP_EACH wizard_spells AS int => spell BEGIN
   OUTER_TEXT_SPRINT spell_res EVAL ~%%spell%%~
-  EXTEND_BOTTOM ~%pi_spy_script1%.bcs~ ~.../tnt-inlined/g_pnp_pi_spell.baf~ EVAL
+  EXTEND_BOTTOM ~%pi_spy_script1%.bcs~ ~%comp_dir%/g_pispy1_spell_block.baf~ EVAL
 END
 ACTION_PHP_EACH cleric_spells AS int => spell BEGIN
   OUTER_TEXT_SPRINT spell_res EVAL ~%%spell%%~
-  EXTEND_BOTTOM ~%pi_spy_script1%.bcs~ ~.../tnt-inlined/g_pnp_pi_spell.baf~ EVAL
+  EXTEND_BOTTOM ~%pi_spy_script1%.bcs~ ~%comp_dir%/g_pispy1_spell_block.baf~ EVAL
 END
 
+// assign shout script to the clone
 COPY_EXISTING ~projimag.spl~ override
   LPF ADD_SPELL_CFEFFECT
     INT_VAR
@@ -149,5 +91,6 @@ COPY_EXISTING ~projimag.spl~ override
       parameter2 = SCRIPT_TYPE_override 
     STR_VAR
       resource = ~%pi_script%~
+      resource2 = ~shskull~
   END
 BUT_ONLY

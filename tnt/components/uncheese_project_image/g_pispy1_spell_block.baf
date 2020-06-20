@@ -1,0 +1,20 @@
+// Individual spell blocks for each spell.
+// Local vars track how many times the spell was cast.
+// Some spell ids are too long for a var name, so have to use spell resource instead.
+
+IF
+  SpellCast(LastHeardBy, %spell%)
+THEN
+  RESPONSE #100
+    IncrementGlobal("%spell_res%", "LOCALS", 1)
+    // DisplayStringHead(Myself, ~Detected cast: %spell%~)
+END
+IF
+  GlobalGT("%spell_res%", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("%spell_res%", "LOCALS", -1)
+    ActionOverride(LastSummonerOf, SetInterrupt(FALSE))
+    ActionOverride(LastSummonerOf, RemoveSpellRES("%spell_res%"))
+    // ActionOverride(LastSummonerOf, DisplayStringHead(Myself, ~Removed %spell_res%~))
+END
