@@ -1,0 +1,153 @@
+OUTER_TEXT_SPRINT comp_dir ~%components%/pnp_project_image~
+
+// build lists of all spells
+COPY_EXISTING ~spell.ids~ ~override~
+  READ_2DA_ENTRIES_NOW rows 2
+  TEXT_SPRINT final_check_list ~~
+  FOR (row = 0; row < rows; ++row) BEGIN 
+    READ_2DA_ENTRY_FORMER rows row 1 spell_id
+    TEXT_SPRINT spell_final_res EVAL ~%%spell_id%%~
+    PATCH_IF (~%spell_id%~ STRING_MATCHES_REGEXP ~WIZARD_.*~) == 0 BEGIN
+      DEFINE_ASSOCIATIVE_ARRAY wizard_spells BEGIN ~%row%~ => ~%spell_id%~ END
+      TEXT_SPRINT final_check_list ~%final_check_list%
+        Global("%spell_final_res%", "LOCALS", 0)~
+    END ELSE BEGIN
+      PATCH_IF (~%spell_id%~ STRING_MATCHES_REGEXP ~CLERIC_.*~) == 0 BEGIN
+        DEFINE_ASSOCIATIVE_ARRAY cleric_spells BEGIN ~%row%~ => ~%spell_id%~ END
+        TEXT_SPRINT final_check_list ~%final_check_list%
+          Global("%spell_final_res%", "LOCALS", 0)~
+      END
+    END
+  END
+BUT_ONLY
+
+// PI spy
+OUTER_TEXT_SPRINT pi_spy_cre ~g_pispy~
+OUTER_TEXT_SPRINT pi_spy_script0 ~g_pispy0~ // initial script
+OUTER_TEXT_SPRINT pi_spy_script1 ~g_pispy1~ // real script
+LAF create_spy STR_VAR cre = ~%pi_spy_cre%~ script = ~%pi_spy_script0%~ END
+COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = OPCODE_creature_summoning
+      parameter2 = 0 // EA match target
+      target = TARGET_FEATURE_self
+      insert_point = 0
+      duration = 1000
+      timing = TIMING_duration
+    STR_VAR
+      resource = ~%pi_spy_cre%~
+  END
+BUT_ONLY
+
+// unique shout to ids
+LAF g_add_ids_unique STR_VAR ids = ~shoutids~ label = ~g_pnp_pi~ RET g_pnp_pi_shout = index END
+
+// spy: listen once for a shout
+<<<<<<<< .../tnt-inlined/g_pispy0.baf
+IF
+  Heard([ANYONE], %g_pnp_pi_shout%)
+THEN
+  RESPONSE #100
+    // DisplayStringHead(Myself, ~spy heard~)
+    ChangeAIScript("g_pispy1", OVERRIDE)
+    // DisplayStringHead(Myself, ~spy changed~)
+END
+// IF
+//   OnCreation()
+// THEN
+//   RESPONSE #100
+//     DisplayStringHead(Myself, ~spy created~)
+// END
+// IF
+//   True()
+// THEN
+//   RESPONSE #100
+//     DisplayStringHead(Myself, ~spy waiting~)
+//     Continue()
+// END
+>>>>>>>>
+COMPILE EVAL ~.../tnt-inlined/g_pispy0.baf~
+
+// once heard, don't listen anymore, keep LastHeardBy intact
+<<<<<<<< .../tnt-inlined/g_pispy1.baf
+IF
+  Global("interrupt_set", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("interrupt_set", "LOCALS", 1)
+END
+IF
+  !Exists(LastHeardBy)
+  %final_check_list%
+THEN
+  RESPONSE #100
+    ActionOverride(LastSummonerOf, SetInterrupt(TRUE))
+    DestroySelf()
+END
+// IF
+//   True()
+// THEN
+//   RESPONSE #100
+//     DisplayStringHead(LastHeardBy, ~I am projected image~)
+//     DisplayStringHead(LastSummonerOf, ~I am original~)
+//     DisplayStringHead(Myself, ~pi checking spells~)
+//     Continue()
+// END
+>>>>>>>>
+COMPILE EVAL ~.../tnt-inlined/g_pispy1.baf~
+
+// PI: announce self once
+OUTER_TEXT_SPRINT pi_script ~g_pnp_pi~
+<<<<<<<< .../tnt-inlined/g_pnp_pi.baf
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    GlobalShout(%g_pnp_pi_shout%)
+    // DisplayStringHead(Myself, ~pi shouted~)
+END
+>>>>>>>>
+COMPILE EVAL ~.../tnt-inlined/%pi_script%.baf~
+
+
+<<<<<<<< .../tnt-inlined/g_pnp_pi_spell.baf
+IF
+  SpellCast(LastHeardBy, %spell%)
+THEN
+  RESPONSE #100
+    IncrementGlobal("%spell_res%", "LOCALS", 1)
+    // DisplayStringHead(Myself, ~Detected cast: %spell%~)
+END
+IF
+  GlobalGT("%spell_res%", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("%spell_res%", "LOCALS", -1)
+    ActionOverride(LastSummonerOf, SetInterrupt(FALSE))
+    ActionOverride(LastSummonerOf, RemoveSpellRES("%spell_res%"))
+    // ActionOverride(LastSummonerOf, DisplayStringHead(Myself, ~Removed %spell_res%~))
+END
+>>>>>>>>
+
+ACTION_PHP_EACH wizard_spells AS int => spell BEGIN
+  OUTER_TEXT_SPRINT spell_res EVAL ~%%spell%%~
+  EXTEND_BOTTOM ~%pi_spy_script1%.bcs~ ~.../tnt-inlined/g_pnp_pi_spell.baf~ EVAL
+END
+ACTION_PHP_EACH cleric_spells AS int => spell BEGIN
+  OUTER_TEXT_SPRINT spell_res EVAL ~%%spell%%~
+  EXTEND_BOTTOM ~%pi_spy_script1%.bcs~ ~.../tnt-inlined/g_pnp_pi_spell.baf~ EVAL
+END
+
+COPY_EXISTING ~projimag.spl~ override
+  LPF ADD_SPELL_CFEFFECT
+    INT_VAR
+      opcode = OPCODE_set_ai_script
+      target = TARGET_FEATURE_self
+      timing = TIMING_permanent
+      parameter2 = SCRIPT_TYPE_override 
+    STR_VAR
+      resource = ~%pi_script%~
+  END
+BUT_ONLY

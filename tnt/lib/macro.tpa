@@ -47,3 +47,21 @@ END
 
 // ADD_ITEM_HEADER from https://github.com/Gibberlings3/ItemRevisions/blob/master/item_rev/lib/macros.tpa
 INCLUDE ~%MOD_FOLDER%/lib/external/ir.tpa~
+INCLUDE ~%MOD_FOLDER%/lib/external/ids.tpa~
+
+DEFINE_ACTION_FUNCTION create_spy
+  STR_VAR
+    cre = ~~
+    script = ~~
+BEGIN
+  COPY_EXISTING ~cutspy.cre~ ~override/%cre%.cre~
+    WRITE_ASCIIT DEATHVAR ~%cre%~
+    WRITE_ASCIIT SCRIPT_OVERRIDE ~%script%~
+    WRITE_BYTE CRE_allegiance IDS_OF_SYMBOL (~ea~ ~neutral~)
+    WRITE_LONG CRE_animation IDS_OF_SYMBOL (~animate~ ~DOOM_GUARD~) // https://forums.beamdog.com/discussion/73632/a-few-uses-for-invisible-minions
+    LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_clear_fog_of_war_wizard_eye END
+    LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_avatar_removal END
+    LPF ADD_CRE_EFFECT INT_VAR opcode = OPCODE_animation_removal timing = TIMING_permanent parameter2 = 1 END
+    LPF ADD_CRE_EFFECT INT_VAR opcode = OPCODE_selection_circle_removal timing = TIMING_permanent END
+  BUT_ONLY
+END

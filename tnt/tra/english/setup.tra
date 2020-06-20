@@ -5,8 +5,8 @@
 @79   = ~Additions only~
 @80   = ~BGT or EET only~
 @81   = ~Extended Soundsets for NPC~
-@82   = ~BG1 soundsets prevail~
-@83   = ~BG2 soundsets prevail~
+@82   = ~Prefer BG1 sounds~
+@83   = ~Prefer BG2 sounds~
 @84   = ~Reintroduce~
 @85   = ~BG1-style party interaction system~
 @86   = ~Reintroduce and adjust to framerate~
@@ -108,3 +108,5 @@
 @264 = ~Limited stock~
 @265 = ~Unstack Chaos Shield~
 @266 = ~Chaos Shield spells not present in game~
+@267 = ~Uncheese Project Image~
+@268 = ~Project Image spell not present in game~

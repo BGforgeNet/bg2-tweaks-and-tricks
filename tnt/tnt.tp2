@@ -11,7 +11,8 @@ ALWAYS
   OUTER_SPRINT BGFORGE_LIB_DIR "%MOD_FOLDER%/lib/bgforge"
   INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
   INCLUDE ~%external%/ir.tpa~
-  OUTER_SET effect_stacking_id_base = 0x675f0000 // ascii g_
+  //OUTER_SET effect_stacking_id_base = 0x675f0000 // ascii g_
+  OUTER_SET effect_stacking_id_base = 0x41360000
 END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
@@ -398,3 +399,8 @@ INCLUDE ~%components%/working_non_detection/main.tpa~
 BEGIN @265 /* Unstack Chaos Shield */
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_CHAOS_SHIELD%.spl~ @266 /* Chaos Shield spells not present in game */
 INCLUDE ~%components%/unstack_chaos_shield/main.tpa~
+
+BEGIN @268 /* ~Uncheese Project Image */
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~projimag.spl~ ~Project Image spell not present in game~
+OUTER_SPRINT comp_name ~uncheese_project_image~
+INCLUDE ~%components%/%comp_name%/main.tpa~
