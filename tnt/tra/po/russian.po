@@ -1116,12 +1116,12 @@ msgid "Extended Soundsets for NPC"
 msgstr "Расширенные саундсеты для NPC"
 
 #: setup.tra:82
-msgid "BG1 soundsets prevail"
-msgstr "Преобладают сеты из BG1"
+msgid "Prefer BG1 sounds"
+msgstr ""
 
 #: setup.tra:83
-msgid "BG2 soundsets prevail"
-msgstr "Преобладают сеты из BG2"
+msgid "Prefer BG2 sounds"
+msgstr ""
 
 #: setup.tra:84
 msgid "Reintroduce"
@@ -1513,7 +1513,15 @@ msgid "Unstack Chaos Shield"
 msgstr ""
 
 #: setup.tra:266
-msgid "Chaos Shield spells not present in game"
+msgid "Chaos Shield spells are not present in game"
+msgstr ""
+
+#: setup.tra:267
+msgid "Uncheese Project Image"
+msgstr ""
+
+#: setup.tra:268
+msgid "Project Image spell is not present in game"
 msgstr ""
 
 #: shandalars_cloak.tra:1
@@ -1908,6 +1916,12 @@ msgstr ""
 #: true_true_sight.tra:2
 msgid "each second"
 msgstr ""
+
+#~ msgid "BG1 soundsets prevail"
+#~ msgstr "Преобладают сеты из BG1"
+
+#~ msgid "BG2 soundsets prevail"
+#~ msgstr "Преобладают сеты из BG2"
 
 #, fuzzy
 #~ msgid "Spin refreshed."
