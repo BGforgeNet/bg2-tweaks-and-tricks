@@ -393,20 +393,20 @@ OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @261 /* Working Non-Detection */
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_NON_DETECTION%.spl~ @262 /* Non-Detection not found */
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_NON_DETECTION%.spl~ @262 /* Non-Detection spell is not present in game */
 INCLUDE ~%components%/working_non_detection/main.tpa~
 
 BEGIN @265 /* Unstack Chaos Shield */
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_CHAOS_SHIELD%.spl~ @266 /* Chaos Shield spells are not present in game */
 INCLUDE ~%components%/unstack_chaos_shield/main.tpa~
 
-BEGIN @267 /* ~Uncheese Project Image */
+BEGIN @267 /* Uncheese Project Image */
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~projimag.spl~ @268 /* Project Image spell is not present in game */
 OUTER_TEXT_SPRINT comp_name ~uncheese_project_image~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
 
-BEGIN @269 /* ~Uncheese Mislead */
+BEGIN @269 /* Uncheese Mislead */
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_MISLEAD%.spl~ @270 /* Mislead spell is not present in game */
 OUTER_TEXT_SPRINT comp_name ~uncheese_mislead~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
