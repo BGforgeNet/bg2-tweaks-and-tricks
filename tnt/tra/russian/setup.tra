@@ -4,8 +4,8 @@
 @79 = ~Только добавления~
 @80 = ~Требует BGT или EET~
 @81 = ~Расширенные саундсеты для NPC~
-@82 = ~Преобладают сеты из BG1~
-@83 = ~Преобладают сеты из BG2~
+@82 = ~Prefer BG1 sounds~
+@83 = ~Prefer BG2 sounds~
 @84 = ~Восстановить~
 @85 = ~Система разговоров в стиле BG1~
 @86 = ~Восстановить и приспособить к скорости игры~
@@ -95,4 +95,6 @@
 @263 = ~Only non-EE engines~
 @264 = ~Limited stock~
 @265 = ~Unstack Chaos Shield~
-@266 = ~Chaos Shield spells not present in game~
+@266 = ~Chaos Shield spells are not present in game~
+@267 = ~Uncheese Project Image~
+@268 = ~Project Image spell is not present in game~
