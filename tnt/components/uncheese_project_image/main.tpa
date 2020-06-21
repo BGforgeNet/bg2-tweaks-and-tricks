@@ -47,6 +47,9 @@ OUTER_TEXT_SPRINT pi_spy_cre ~g_pispy~
 OUTER_TEXT_SPRINT pi_spy_script0 ~g_pispy0~ // initial script
 OUTER_TEXT_SPRINT pi_spy_script1 ~g_pispy1~ // real script
 LAF create_spy STR_VAR cre = ~%pi_spy_cre%~ script = ~%pi_spy_script0%~ END
+
+APPEND ~ea.ids~ ~0 ANYONE~ UNLESS ~ANYONE~ // so that IDS_OF_SYMBOL works properly
+CLEAR_IDS_MAP
 COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
   LPF ADD_SPELL_EFFECT
     INT_VAR
@@ -55,15 +58,15 @@ COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
       insert_point = 0
       duration = 1000
       timing = TIMING_duration
-      parameter1 = 0 // anyone
-      parameter2 = 2 // EA.ids
+      parameter1 = IDS_OF_SYMBOL (~ea~ ~anyone~)
+      parameter2 = IDS_ea
     STR_VAR
       resource = ~g_pi_spy~
   END
 BUT_ONLY
 COPY ~%comp_dir%/g_pi_spy.eff~ override
-  WRITE_ASCIIT 0x30 ~%pi_spy_cre%~
-  WRITE_ASCIIT 0x70 ~shskull~ // this is what disables the smoke cloud
+  WRITE_ASCIIT EFF2_resource ~%pi_spy_cre%~
+  WRITE_ASCIIT EFF2_vvc ~shskull~ // this is what disables the smoke cloud
 
 // add unique shout to ids
 LAF g_add_ids_unique STR_VAR ids = ~shoutids~ label = ~g_pnp_pi~ RET g_pnp_pi_shout = index END
