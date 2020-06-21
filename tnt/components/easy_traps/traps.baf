@@ -97,7 +97,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
-    DisplayStringHead(Myself,~%trap_type_warning%~) // get the string from "trap_type" array
+    DisplayStringHead(Myself, ~%trap_type_warning%~) // get the string from "trap_type" array
     Continue()
 END
 
@@ -111,7 +111,7 @@ THEN
   RESPONSE #100
     SetGlobal("g_trap_%trap_type_id%_detected","myarea",1)
     SetGlobalTimer("g_trap_%trap_type_id%_timer","myarea",12)
-    DisplayStringHead(Myself,~%trap_type_warning%~)
+    DisplayStringHead(Myself, ~%trap_type_warning%~)
     Continue()
 END
 

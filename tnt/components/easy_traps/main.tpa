@@ -187,9 +187,10 @@ BUT_ONLY
 // actually create and extend new scripts
 ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
   COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~
-  OUTER_SPRINT trapind $clone_loc_ind(~%clone_ind%~)    //trap index in area: 2
-  OUTER_SPRINT trap_type_id ~%script%_%trapind%~        //trap id: GTAR5_2 (for local vars)
-  OUTER_SPRINT trap_type_warning $trap_type(~%script%~)  //trap warning string: "Acid arrow trap"
+  OUTER_SPRINT trapind $clone_loc_ind(~%clone_ind%~)    // trap index in area: 2
+  OUTER_SPRINT trap_type_id ~%script%_%trapind%~        // trap id: GTAR5_2 (for local vars)
+  OUTER_SPRINT trap_type_warning $trap_type(~%script%~) // trap warning id
+  OUTER_SPRINT trap_type_warning (AT trap_type_warning) // trap warning string from tra
   OUTER_SPRINT clone_id ~g_tr%clone_ind%~
   ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^gt.*~ == 0) BEGIN //ground traps IsActive clause
     OUTER_SPRINT is_active ~IsActive(Myself)~
@@ -213,6 +214,7 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN //skip missing scripts
     OUTER_SPRINT trap_type_id ~%script%~  //for EXTEND EVAL
     OUTER_SPRINT trap_type_warning ~%string%~  //for EXTEND EVAL
+    OUTER_SPRINT trap_type_warning (AT trap_type_warning) // trap warning string from tra
     OUTER_SPRINT clone_id ~no clone~
     ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^gt.*~ == 0) BEGIN //ground traps IsActive clause
       OUTER_SPRINT is_active ~IsActive(Myself)~
