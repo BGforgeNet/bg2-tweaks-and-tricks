@@ -23,7 +23,7 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
       insert_point = 1
       target = TARGET_FEATURE_self
       parameter1 = 20 // %
-      parameter2 = 2 // type: percentage mod
+      parameter2 = CURRENT_HP_MOD_TYPE_percentage
   END
 
 // use simulacr type for mislead
