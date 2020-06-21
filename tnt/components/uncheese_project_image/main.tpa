@@ -62,8 +62,8 @@ COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
   END
 BUT_ONLY
 COPY ~%comp_dir%/g_pi_spy.eff~ override
-  WRITE_ASCIIT 0x30 ~g_pispy~
-  WRITE_ASCIIT 0x70 ~shskull~
+  WRITE_ASCIIT 0x30 ~%pi_spy_cre%~
+  WRITE_ASCIIT 0x70 ~shskull~ // this is what disables the smoke cloud
 
 // add unique shout to ids
 LAF g_add_ids_unique STR_VAR ids = ~shoutids~ label = ~g_pnp_pi~ RET g_pnp_pi_shout = index END
@@ -97,6 +97,5 @@ COPY_EXISTING ~projimag.spl~ override
       parameter2 = SCRIPT_TYPE_override 
     STR_VAR
       resource = ~%pi_script%~
-      resource2 = ~shskull~
   END
 BUT_ONLY
