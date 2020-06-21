@@ -1,0 +1,80 @@
+// real simulacr spell
+OUTER_TEXT_SPRINT simulacr_spell ~g_simul~
+OUTER_TEXT_SPRINT mislead_spell ~g_misled~
+OUTER_TEXT_SPRINT clone_gvar ~g_clotyp~
+OUTER_TEXT_SPRINT clone_script ~g_simul~
+OUTER_SET clone_gvar_mislead = 1
+OUTER_SET clone_gvar_simulacrum = 2
+
+// spells are copied for later usage in clone script
+COPY_EXISTING ~simulacr.spl~ ~override/%simulacr_spell%.spl~
+  WRITE_LONG NAME1 "-1" // silence
+COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
+  WRITE_LONG NAME1 "-1"
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = OPCODE_cure_level_drain_restoration
+      insert_point = 0
+      target = TARGET_FEATURE_self
+  END
+  LPF ADD_SPELL_EFFECT // recover lost HP after restoration
+    INT_VAR
+      opcode = OPCODE_hp_current_hp_mod
+      insert_point = 1
+      target = TARGET_FEATURE_self
+      parameter1 = 20 // %
+      parameter2 = 2 // type: percentage mod
+  END
+
+// use simulacr type for mislead
+COPY_EXISTING ~%WIZARD_MISLEAD%.spl~ override
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode = OPCODE_image_projection
+      parameter2 = CLONE_TYPE_simulacrum
+      verbose = 1
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = OPCODE_script_modify_global_variable
+      parameter1 = clone_gvar_mislead
+      parameter2 = 0 // set global
+      target = TARGET_FEATURE_self // crashes without it
+      insert_point = 0
+    STR_VAR resource = ~%clone_gvar%~
+  END
+BUT_ONLY
+// simulacr notes its type in gvar too
+COPY_EXISTING ~%WIZARD_SIMULACRUM%.spl~ override
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = OPCODE_script_modify_global_variable
+      parameter1 = clone_gvar_simulacrum
+      parameter2 = 0 // set global
+      target = TARGET_FEATURE_self
+      insert_point = 0
+    STR_VAR resource = ~%clone_gvar%~
+  END
+BUT_ONLY
+
+
+// simulacr.spl only assigns script to the clone
+COPY_EXISTING ~simulacr.spl~ override
+  LPF ADD_SPELL_CFEFFECT
+    INT_VAR
+      opcode = OPCODE_set_ai_script
+      target = TARGET_FEATURE_self
+      timing = TIMING_permanent
+      parameter2 = SCRIPT_TYPE_override
+    STR_VAR
+      resource = ~%clone_script%~
+  END
+  PATCH_FOR_EACH opcode IN
+    OPCODE_remove_spell
+    OPCODE_colour_change_by_rgb
+    OPCODE_protection_from_opcode
+    OPCODE_protection_from_spell
+  BEGIN LPF DELETE_EFFECT INT_VAR match_opcode = EVAL ~%%opcode%%~ END END
+BUT_ONLY
+// script actually casts the corresponding spell on the clone
+COMPILE EVAL ~%comp_dir%/%clone_script%.baf~

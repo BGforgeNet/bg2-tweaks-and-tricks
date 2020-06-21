@@ -1,0 +1,20 @@
+IF
+  Global("g_clone_type_set", "LOCALS", 0)
+  Global("%clone_gvar%", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself, ~I am mislead~)
+    ReallyForceSpellRES("%mislead_spell%", Myself)
+    SetGlobal("g_clone_type_set", "LOCALS", 1)
+    SetGlobal("%clone_gvar%", "GLOBAL", 0)
+END
+IF
+  Global("g_clone_type_set", "LOCALS", 0)
+  Global("%clone_gvar%", "GLOBAL", 2)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself, ~I am simulacrum~)
+    ReallyForceSpellRES("%simulacr_spell%", Myself)
+    SetGlobal("g_clone_type_set", "LOCALS", 1)
+    SetGlobal("%clone_gvar%", "GLOBAL", 0)
+END
