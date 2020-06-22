@@ -317,6 +317,10 @@ msgstr ""
 msgid "Minor ligthning bolt trap"
 msgstr ""
 
+#: easy_traps.tra:167
+msgid "Web Tangle trap"
+msgstr ""
+
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
 msgid "Die your final death!"
@@ -1298,7 +1302,7 @@ msgid "Working Non-Detection"
 msgstr ""
 
 #: setup.tra:262
-msgid "Non-Detection not found"
+msgid "Non-Detection spell is not present in game"
 msgstr ""
 
 #: setup.tra:263
@@ -1323,6 +1327,14 @@ msgstr ""
 
 #: setup.tra:268
 msgid "Project Image spell is not present in game"
+msgstr ""
+
+#: setup.tra:269
+msgid "Uncheese Mislead"
+msgstr ""
+
+#: setup.tra:270
+msgid "Mislead spell is not present in game"
 msgstr ""
 
 #: shandalars_cloak.tra:1
