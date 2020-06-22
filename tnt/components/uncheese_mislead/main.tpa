@@ -25,6 +25,25 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
       parameter1 = 20 // %
       parameter2 = CURRENT_HP_MOD_TYPE_percentage
   END
+  // Some buttons are still enabled with fixpack, for some reason. Disabling them.
+  PATCH_FOR_EACH btn IN
+    BUTTON_use_item
+    BUTTON_quick_item1
+    BUTTON_bard_song_ee
+    BUTTON_quick_item2
+    BUTTON_quick_item3
+    BUTTON_innate_ability
+    BUTTON_find_traps
+    BUTTON_inventory_ee
+  BEGIN
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = OPCODE_button_disable_button
+        target = TARGET_FEATURE_self
+        timing = TIMING_permanent
+        parameter2 = EVAL ~%%btn%%~
+    END
+  END
 
 // use simulacr type for mislead
 COPY_EXISTING ~%WIZARD_MISLEAD%.spl~ override
