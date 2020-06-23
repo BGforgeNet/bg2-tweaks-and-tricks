@@ -8,19 +8,19 @@ END
 
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause1.g_~ BEGIN //pause on all traps
   OUTER_SPRINT traps_baf_stop ~~
-  OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
+  OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_pause ~~
 END
 
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_range.g_~ BEGIN
-  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy,30)~
+  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 30)~
 END ELSE BEGIN
-  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy,15)~
+  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 15)~
 END
 
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_view.g_~ BEGIN
-  OUTER_SPRINT traps_baf_view ~MoveViewObject(LastSeenBy,INSTANT)~
+  OUTER_SPRINT traps_baf_view ~MoveViewObject(LastSeenBy, INSTANT)~
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_view ~~
 END
@@ -48,24 +48,24 @@ CLEAR_IDS_MAP
 
 
 // separate scripts which have both Open and Entered triggers
-OUTER_TEXT_SPRINT trigger_opened_entered
+OUTER_SPRINT trigger_opened_entered
 ~OR(2)
     Entered([ANYONE])
     Opened([ANYONE])~
-OUTER_TEXT_SPRINT trigger_entered ~Entered([ANYONE])~
-OUTER_TEXT_SPRINT trigger_opened ~Opened([ANYONE])~
+OUTER_SPRINT trigger_entered ~Entered([ANYONE])~
+OUTER_SPRINT trigger_opened ~Opened([ANYONE])~
 OUTER_SET i = 0
 ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%trap%.bcs~ BEGIN
-    OUTER_TEXT_SPRINT ground_name ~g_gtr%i%~
+    OUTER_SPRINT ground_name ~g_gtr%i%~
     COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_entered%~
     BUT_ONLY
     COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_opened%~
     BUT_ONLY
-    OUTER_TEXT_SPRINT $trap_type(~%ground_name%~) EVAL $trap_type(~%trap%~)
-    OUTER_TEXT_SPRINT $new_ground_trap(~%trap%~) EVAL ~%ground_name%~
+    OUTER_SPRINT $trap_type(~%ground_name%~) EVAL $trap_type(~%trap%~)
+    OUTER_SPRINT $new_ground_trap(~%trap%~) EVAL ~%ground_name%~
     OUTER_SET i+=1
   END
 END
@@ -205,7 +205,7 @@ ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
     BEGIN
       OUTER_SPRINT traps_baf_pause ~~
     END ELSE BEGIN
-      OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
+      OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
     END
   END
   EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~%comp_dir%/traps.baf~ EVAL
@@ -229,7 +229,7 @@ ACTION_PHP_EACH trap_type AS script => string BEGIN
       BEGIN
         OUTER_SPRINT traps_baf_pause ~~
       END ELSE BEGIN
-        OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy,PauseGame())~
+        OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
       END
     END
     EXTEND_TOP ~%script%.bcs~ ~%comp_dir%/traps.baf~ EVAL
