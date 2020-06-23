@@ -1,3 +1,5 @@
+OUTER_SET notification_delay = 12
+
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_combat.g_~ BEGIN
   OUTER_SPRINT traps_baf_combat ~~
 END ELSE BEGIN
