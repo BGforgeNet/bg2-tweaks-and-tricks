@@ -1,4 +1,10 @@
 OUTER_SET notification_delay = 12
+OUTER_SPRINT unknown_trap_name (AT 100)
+OUTER_SPRINT trap_lower (AT 99)
+OUTER_SPRINT trap_capitalized (AT 98)
+PRINT ~unknown_trap_name=%unknown_trap_name%~
+OUTER_SPRINT common_timer ~%modder_prefix%tnt_traps_common_timer~
+INCLUDE ~%comp_dir%/traps_tra.tpa~
 
 ACTION_IF FILE_EXISTS ~override/g_tnt_trap_combat.g_~ BEGIN
   OUTER_SPRINT traps_baf_combat ~~
@@ -82,6 +88,16 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                 SPRINT is_active ~~ // containers and doors
                 // ground traps IsActive clause
                 PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN SPRINT is_active ~IsActive(Myself)~ END
+
+                LPF calculate_trap_warning_string
+                  STR_VAR
+                    spell_res
+                    unknown = ~%unknown_trap_name%~
+                    trap_lower
+                    trap_capitalized
+                  RET trap_warning_string = string
+                END
+                PATCH_PRINT ~trap_warning_string=%trap_warning_string%~
                 INNER_ACTION BEGIN EXTEND_TOP ~%new_script%.bcs~ ~%comp_dir%/traps.baf~ EVAL END
 
               END ELSE BEGIN

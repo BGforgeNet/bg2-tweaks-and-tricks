@@ -1,32 +1,3 @@
-// makes sure each trap in an area has a script unique for that area
-// doesn't actually create the scripts, just calculates the names and writes them into the area
-DEFINE_PATCH_MACRO MAKE_TRAP_SCRIPTS_UNIQUE BEGIN
-  WHILE (str_num > 0) BEGIN
-    str_num -= 1
-    str_script_off = str_off + (str_num * str_size) + rel_script_off
-    READ_ASCII str_script_off trapscript
-    PATCH_IF (VARIABLE_IS_SET $trap_type(~%trapscript%~)) BEGIN // check if it's a known trap type
-      SET trapind = EVAL ~%trapscript%_cur~
-      trapind +=1
-      SET EVAL ~%trapscript%_cur~ = trapind
-      PATCH_IF ( trapind > 1) BEGIN // first trap of the type is skipped, next ones are replaced with clones
-        PATCH_IF NOT (VARIABLE_IS_SET ~sourceclone_%trapscript%_%trapind%~) BEGIN
-          SPRINT new_trap_script ~g_tr%new_trap_ind%~ //clone
-          SPRINT EVAL ~sourceclone_%trapscript%_%trapind%~ ~%new_trap_ind%~ // record original-to-clone relation, for checking whether a clone exists
-          SPRINT $clone_source(~%new_trap_ind%~) ~%trapscript%~ // record clone-to-original relation, for creating actual clones later
-          SPRINT $clone_loc_ind(~%new_trap_ind%~) ~%trapind%~ // record clone-to-original relation, for creating actual clones later
-          new_trap_ind += 1 //increment global counter for g_tr* scripts
-        END ELSE BEGIN
-          SPRINT ~cloneid~ ~sourceclone_%trapscript%_%trapind%~
-          SPRINT new_trap_script EVAL ~g_tr%%cloneid%%~
-        END
-        WRITE_ASCIIE str_script_off ~%new_trap_script%~ #8 // assign new script to the structure
-      END
-    END
-  END
-END
-
-
 DEFINE_PATCH_FUNCTION GET_AREA_DETECTABLE_TRAP_SCRIPTS
   INT_VAR max_detection = 99
   STR_VAR type = ~~
@@ -169,4 +140,32 @@ BEGIN
   END
   off = $struct_off_list(~%index%~) + script_off
   WRITE_ASCIIE off ~%script%~ #8
+END
+
+DEFINE_PATCH_FUNCTION calculate_trap_warning_string
+  INT_VAR simple = 0
+  STR_VAR
+    spell_res = ~~
+    unknown = ~~
+    trap_lower = ~~
+    trap_capitalized = ~~
+  RET string
+BEGIN
+  PATCH_IF simple == 1 BEGIN
+    SPRINT string ~%trap_capitalized%~
+  END ELSE BEGIN
+    PATCH_IF VARIABLE_IS_SET $trap_names(~%spell_res%~) BEGIN
+      SPRINT string $trap_names(~%spell_res%~)
+    END ELSE BEGIN
+      PATCH_IF FILE_EXISTS_IN_GAME ~%spell_res%.spl~ BEGIN
+        INNER_PATCH_FILE ~%spell_res%.spl~ BEGIN
+          READ_STRREF NAME1 string
+          PATCH_IF ~%string%~ STR_EQ ~<Invalid Strref -1>~ BEGIN
+            SPRINT string ~%unknown%~
+          END
+        END
+        SPRINT string ~%string%~ ^ ~ %trap_lower%~
+      END
+    END
+  END
 END
