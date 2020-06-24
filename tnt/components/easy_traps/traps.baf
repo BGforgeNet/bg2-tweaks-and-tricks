@@ -1,11 +1,26 @@
+IF
+  Global("%trap_var_base%_detected", "MYAREA", 0) // hasn't been detected with thief's skill
+  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  %traps_baf_class%
+  %traps_baf_range%
+  %is_active%
+  !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
+  !CheckStatLT(LastSeenBy, %detection%, TRAPS)
+  TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
+  ActionListEmpty()
+THEN
+	RESPONSE #1
+    ReallyForceSpellRES("%trap_spl%", Myself)
+END
+
 //main detection check
 IF
   Detect([PC])
   %traps_baf_range%
   %traps_baf_combat%
   !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
-  Global("%trap_var_base%_detected", "MYAREA", 0) // hasn't been detected with thief's skill
-  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  Global("%trap_var_base%_detected", "MYAREA", 0)
+  Global("%trap_var_base%_disarmed", "MYAREA", 0)
   !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
   !GlobalTimerNotExpired("%common_timer%", "GLOBAL") // don't spam pause
   %is_active%

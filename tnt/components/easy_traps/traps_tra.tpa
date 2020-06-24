@@ -51,6 +51,5 @@ END
 
 ACTION_PHP_EACH trap_tra AS res => tra_num BEGIN
   OUTER_SPRINT tra (AT tra_num)
-  PRINT ~tra=%tra%~
   ACTION_DEFINE_ASSOCIATIVE_ARRAY trap_names BEGIN ~%res%~ => ~%tra%~ END
 END

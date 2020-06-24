@@ -4,11 +4,36 @@ OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
 PRINT ~unknown_trap_name=%unknown_trap_name%~
 OUTER_SPRINT common_timer ~%modder_prefix%tnt_traps_common_timer~
-INCLUDE ~%comp_dir%/traps_tra.tpa~
 
+INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
 INCLUDE ~%comp_dir%/functions.tpa~
 INCLUDE ~%comp_dir%/traps_list.tpa~
+
+OUTER_SPRINT traps_baf_class ~~
+// shaman is in ee only
+ACTION_IF IDS_OF_SYMBOL (~class.ids~ ~shaman~) != "-1" BEGIN
+  OUTER_SPRINT traps_baf_class
+  ~OR(3)
+    Detect([GOODCUTOFF.0.0.THIEF_ALL])
+    Detect([GOODCUTOFF.0.0.MONK])
+    Detect([GOODCUTOFF.0.0.SHAMAN])
+~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_class
+  ~OR(2)
+    Detect([GOODCUTOFF.0.0.THIEF_ALL])
+    Detect([GOODCUTOFF.0.0.MONK])
+~
+END
+
+OUTER_SPRINT trap_spl ~%modder_prefix%trap~
+LAF CREATE_SPELL STR_VAR spell = ~%trap_spl%~ END
+COPY_EXISTING ~%trap_spl%.spl~ override
+  LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEADER_self END
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_find_traps target = TARGET_FEATURE_self END
+BUT_ONLY
+
 
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~ // Adds CD_STATE_NOTVALID state
 CLEAR_IDS_MAP
@@ -59,7 +84,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                     trap_capitalized
                   RET trap_warning_string = string
                 END
-                PATCH_PRINT ~trap_warning_string=%trap_warning_string%~
+                PATCH_PRINT ~trap_warning_string=%trap_warning_string%, trap_spl=%trap_spl%~
                 INNER_ACTION BEGIN EXTEND_TOP ~%new_script%.bcs~ ~%comp_dir%/traps.baf~ EVAL END
 
               END ELSE BEGIN
