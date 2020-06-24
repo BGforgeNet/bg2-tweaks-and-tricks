@@ -46,192 +46,59 @@ OUTER_SET new_trap_ind = 0 // global var for all areas
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~ // Adds CD_STATE_NOTVALID state
 CLEAR_IDS_MAP
 
-
-// separate scripts which have both Open and Entered triggers
-OUTER_SPRINT trigger_opened_entered
-~OR(2)
-    Entered([ANYONE])
-    Opened([ANYONE])~
-OUTER_SPRINT trigger_entered ~Entered([ANYONE])~
-OUTER_SPRINT trigger_opened ~Opened([ANYONE])~
-OUTER_SET i = 0
-ACTION_PHP_EACH trap_double_trigger AS trap => num BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~%trap%.bcs~ BEGIN
-    OUTER_SPRINT ground_name ~g_gtr%i%~
-    COPY_EXISTING ~%trap%.bcs~ ~override/%ground_name%.bcs~ // ground script is new
-      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_entered%~
-    BUT_ONLY
-    COPY_EXISTING ~%trap%.bcs~ ~override/%trap%.bcs~ // container/door script has "entered" removed
-      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%trigger_opened_entered%~ ~%trigger_opened%~
-    BUT_ONLY
-    OUTER_SPRINT $trap_type(~%ground_name%~) EVAL $trap_type(~%trap%~)
-    OUTER_SPRINT $new_ground_trap(~%trap%~) EVAL ~%ground_name%~
-    OUTER_SET i+=1
-  END
-END
-
-
 // clear faulty scripts, assign new ground ones
 COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
-  GET_OFFSET_ARRAY reg_array ARE_V10_REGIONS
-  PHP_EACH reg_array AS int => reg_off BEGIN
-    READ_SHORT (reg_off + ARE_REGION_trapped) is_trapped
-    READ_ASCII (reg_off + ARE_REGION_script) reg_script
-    // if it's not trapped but script exists and is a known trap type then remove
-    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%reg_script%~)) BEGIN
-      READ_ASCII reg_off reg_name (32) NULL
-      PATCH_LOG ~Found faulty region: area %SOURCE_FILE%, region %reg_name%, script %reg_script%, trap status is %is_trapped% - clearing.~
-      LPF ALTER_AREA_REGION
-        INT_VAR
-          trapped = 0
-          detected = 0
-          trap_detect = 0
-          trap_remove = 0
-        STR_VAR
-          region_name = ~%reg_name%~
-          region_script = ~~
+  LPF GET_AREA_DETECTABLE_TRAP_SCRIPTS STR_VAR type = ~region~ RET found = count RET_ARRAY scripts END
+  PATCH_IF found > 0 BEGIN
+    PHP_EACH scripts AS i => s BEGIN
+      valid_trap_script = 0
+      idx = ~%i_0%~
+      SPRINT type ~%i_1%~
+      detection = ~%i_2%~
+      removal = ~%i_3%~
+      resets = ~%i_4%~
+      trap_var = 0 // this is used for unique MYAREA vars
+      SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
+      INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
+        COPY_EXISTING ~%s%.bcs~ override
+          DECOMPILE_AND_PATCH BEGIN
+            entered = INDEX_BUFFER (CASE_SENSITIVE EXACT_MATCH ~Entered(~ )
+            spell = INDEX_BUFFER (CASE_SENSITIVE EVALUATE_REGEXP ~[ %TAB%^]\(Spell\|ForceSpell\|ReallyForceSpell\|ApplySpell\|SpellNoDec\|ReallyForceSpellDead\)\(Point\)? ?(.+,~ )
+            PATCH_IF entered != "-1" AND spell != "-1" BEGIN
+              valid_trap_script = 1
+              trap_var += 1
+              LPF get_spell_res_from_baf INT_VAR spell_index_buffer = spell RET spell_res END
+              PATCH_PRINT ~%SOURCE_FILE% %found% - %idx% - %type% - %detection% - %removal% - %resets% - %s% - %entered% - %spell_res%~
+              PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_var%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) BEGIN
+                LPF GET_UNIQUE_FILE_NAME
+                  STR_VAR
+                    extension = ~bcs~
+                    base = ~g_tnt_traps_%s%_%type%_%trap_var%_%detection%_%removal%_%resets%_%spell_res%~
+                  RET new_script = filename
+                END
+                SPRINT $script_map(~%s%~ ~%type%~ ~%trap_var%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) ~%new_script%~
+                INNER_ACTION BEGIN COPY_EXISTING ~%s%.bcs~ ~override/%new_script%.bcs~ END
+              END ELSE BEGIN
+                SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_var%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~)
+                PATCH_PRINT ~%new_script% already exists~
+              END
+              PATCH_PRINT ~unique name: %new_script%~
+            END
+          END
+        BUT_ONLY
       END
-    END
-    // replace with new
-    PATCH_IF is_trapped == 1 AND VARIABLE_IS_SET $trap_double_trigger(~%reg_script%~) BEGIN
-      TEXT_SPRINT new_trap_script $new_ground_trap(~%reg_script%~)
-      LPF ALTER_AREA_REGION
-        STR_VAR
-          region_name = ~%reg_name%~
-          region_script = ~%new_trap_script%~
+
+      // Reset vars after inner action. Workaround for weidu bug https://github.com/WeiDUorg/weidu/issues/168
+      INNER_ACTION BEGIN COPY_EXISTING ~%are_file%~ override BUT_ONLY END
+      PATCH_PRINT ~valid_trap_script=%valid_trap_script%~
+      // assign new script
+      PATCH_IF valid_trap_script == 1 BEGIN
+        LPF WRITE_AREA_STRUCT_SCRIPT
+          INT_VAR index = idx
+          STR_VAR script = ~%new_script%~ type = ~region~
+        END
       END
-    END
-  END
-  GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
-  PHP_EACH cont_array AS int => cont_off BEGIN
-    READ_SHORT (cont_off + ARE_CONTAINER_trapped) is_trapped
-    READ_SHORT (cont_off + ARE_CONTAINER_trap_detected) is_detected
-    READ_ASCII (cont_off + ARE_CONTAINER_script) cont_script
-    // if it's not trapped but script exists and is a known trap type
-    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%cont_script%~)) BEGIN
-      READ_ASCII cont_off cont_name (32) NULL
-      PATCH_LOG ~Found faulty container: area %SOURCE_FILE%, container %cont_name%, script %cont_script%, trap status is %is_trapped% - clearing~
-      LPF ALTER_AREA_CONTAINER
-        INT_VAR
-          trapped = 0
-          detected = 0
-          trap_detect = 0
-          trap_remove = 0
-        STR_VAR
-          container_name = ~%cont_name%~
-          container_script = ~~
-      END
-      PATCH_IF is_detected == 1 BEGIN
-        PATCH_LOG ~Faulty container? area %SOURCE_FILE%, container %cont_name%, script %cont_script% - marked as detected. No action.~
-      END
-    END
-  END
-  GET_OFFSET_ARRAY door_array ARE_V10_DOORS
-  PHP_EACH door_array AS int => door_off BEGIN
-    READ_SHORT (door_off + ARE_DOOR_trapped) is_trapped
-    READ_ASCII (door_off + ARE_DOOR_script) door_script
-    // if it's not trapped but script exists and is a known trap type
-    PATCH_IF (is_trapped == 0 AND VARIABLE_IS_SET $trap_type(~%door_script%~)) BEGIN
-      READ_ASCII door_off door_name (32) NULL
-      PATCH_LOG ~Found faulty door: area %SOURCE_FILE%, door %door_name%, script %door_script%, trap status is %is_trapped% - clearing~
-      LPF ALTER_AREA_DOOR
-        INT_VAR
-          trapped = 0
-          detected = 0
-          trap_detect = 0
-          trap_remove = 0
-        STR_VAR
-          door_name = ~%door_name%~
-          door_script = ~~
-      END
+
     END
   END
 BUT_ONLY
-
-// replace scripts with copies
-COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
-  SET reg_size = ARE_REGION_size
-  READ_SHORT ARE_regions_count reg_num
-  READ_LONG  ARE_regions_offset reg_off
-
-  SET cont_size = ARE_CONTAINER_size
-  READ_SHORT ARE_containers_count cont_num
-  READ_LONG  ARE_containers_offset cont_off
-
-  SET door_size = ARE_DOOR_size
-  READ_SHORT ARE_doors_count door_num
-  READ_LONG  ARE_doors_offset door_off
-
-  PHP_EACH trap_type AS script => string BEGIN
-    SET ~%script%_cur~ = 0 // current area script type counter
-  END
-
-  str_off = reg_off
-  str_size = reg_size
-  str_num = reg_num
-  rel_script_off = ARE_REGION_script
-  LPM MAKE_TRAP_SCRIPTS_UNIQUE
-
-  str_off = cont_off
-  str_size = cont_size
-  str_num = cont_num
-  rel_script_off = ARE_CONTAINER_script
-  LPM MAKE_TRAP_SCRIPTS_UNIQUE
-
-  str_off = door_off
-  str_size = door_size
-  str_num = door_num
-  rel_script_off = ARE_DOOR_script
-  LPM MAKE_TRAP_SCRIPTS_UNIQUE
-
-BUT_ONLY
-
-// actually create and extend new scripts
-ACTION_PHP_EACH clone_source AS clone_ind => script BEGIN
-  COPY_EXISTING ~%script%.bcs~ ~override/g_tr%clone_ind%.bcs~
-  OUTER_SPRINT trapind $clone_loc_ind(~%clone_ind%~)    // trap index in area: 2
-  OUTER_SPRINT trap_type_id ~%script%_%trapind%~        // trap id: GTAR5_2 (for local vars)
-  OUTER_SPRINT trap_type_warning $trap_type(~%script%~) // trap warning id
-  OUTER_SPRINT trap_type_warning (AT trap_type_warning) // trap warning string from tra
-  OUTER_SPRINT clone_id ~g_tr%clone_ind%~
-  ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^gt.*~ == 0) BEGIN //ground traps IsActive clause
-    OUTER_SPRINT is_active ~IsActive(Myself)~
-  END ELSE BEGIN
-    OUTER_SPRINT is_active ~~
-  END
-  ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN
-    ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR //don't pause on container traps class
-              (~%script%~ STRING_MATCHES_REGEXP ~^bgct.*~ == 0)
-    BEGIN
-      OUTER_SPRINT traps_baf_pause ~~
-    END ELSE BEGIN
-      OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
-    END
-  END
-  EXTEND_TOP ~g_tr%clone_ind%.bcs~ ~%comp_dir%/traps.baf~ EVAL
-END
-
-// lastly, EXTEND vanilla scripts
-ACTION_PHP_EACH trap_type AS script => string BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN //skip missing scripts
-    OUTER_SPRINT trap_type_id ~%script%~  //for EXTEND EVAL
-    OUTER_SPRINT trap_type_warning ~%string%~  //for EXTEND EVAL
-    OUTER_SPRINT trap_type_warning (AT trap_type_warning) // trap warning string from tra
-    OUTER_SPRINT clone_id ~no clone~
-    ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^gt.*~ == 0) BEGIN //ground traps IsActive clause
-      OUTER_SPRINT is_active ~IsActive(Myself)~
-    END ELSE BEGIN
-      OUTER_SPRINT is_active ~~
-    END
-    ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause2.g_~ BEGIN
-      ACTION_IF (~%script%~ STRING_MATCHES_REGEXP ~^ct.*~ == 0) OR // don't pause on container traps class
-                (~%script%~ STRING_MATCHES_REGEXP ~^bgct.*~ == 0)
-      BEGIN
-        OUTER_SPRINT traps_baf_pause ~~
-      END ELSE BEGIN
-        OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
-      END
-    END
-    EXTEND_TOP ~%script%.bcs~ ~%comp_dir%/traps.baf~ EVAL
-  END
-END

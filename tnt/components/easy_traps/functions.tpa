@@ -25,3 +25,148 @@ DEFINE_PATCH_MACRO MAKE_TRAP_SCRIPTS_UNIQUE BEGIN
     END
   END
 END
+
+
+DEFINE_PATCH_FUNCTION GET_AREA_DETECTABLE_TRAP_SCRIPTS
+  INT_VAR max_detection = 99
+  STR_VAR type = ~~
+  RET count
+  RET_ARRAY scripts
+BEGIN
+  PATCH_MATCH 1 WITH
+    (~%type%~ STR_EQ ~region~)
+      BEGIN
+        GET_OFFSET_ARRAY struct_off_list ARE_V10_REGIONS
+        script_off = ARE_REGION_script
+        trapped_off = ARE_REGION_trapped
+        detected_off = ARE_REGION_trap_detected
+        removal_off = ARE_REGION_trap_removal_difficulty
+        detection_off = ARE_REGION_trap_detection_difficulty
+        flags_off = ARE_REGION_flags
+        flag_resets = FLAG_ARE_REGION_trap_resets
+        flag_detectable = FLAG_ARE_REGION_trap_detectable
+      END
+    (~%type%~ STR_EQ ~container~)
+      BEGIN
+        GET_OFFSET_ARRAY struct_off_list ARE_V10_CONTAINERS
+        script_off = ARE_CONTAINER_script
+        trapped_off = ARE_CONTAINER_trapped
+        detected_off = ARE_CONTAINER_trap_detected
+        removal_off = ARE_CONTAINER_trap_removal_difficulty
+        detection_off = ARE_CONTAINER_trap_detection_difficulty
+        flags_off = ARE_CONTAINER_flags
+        flag_resets = FLAG_ARE_CONTAINER_trap_resets
+      END
+    (~%type%~ STR_EQ ~door~)
+      BEGIN
+        GET_OFFSET_ARRAY struct_off_list ARE_V10_DOORS
+        script_off = ARE_DOOR_script
+        trapped_off = ARE_DOOR_trapped
+        detected_off = ARE_DOOR_trap_detected
+        removal_off = ARE_DOOR_trap_removal_difficulty
+        detection_off = ARE_DOOR_trap_detection_difficulty
+        flags_off = ARE_DOOR_flags
+        flag_resets = FLAG_ARE_DOOR_trap_resets
+        flag_detectable = FLAG_ARE_REGION_trap_detectable
+      END
+  DEFAULT
+    PATCH_FAIL ~GET_AREA_STRUCTURE_SCRIPTS: unknown structure type %type%~
+  END
+  CLEAR_ARRAY scripts
+  count = 0
+  PHP_EACH struct_off_list AS idx => struct_off BEGIN
+    PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN READ_SHORT (struct_off + ARE_REGION_type) rtype END // filter just proximity in regions
+    PATCH_IF NOT (~%type%~ STR_EQ ~region~) OR (rtype == ARE_REGION_TYPE_proximity) BEGIN
+      READ_ASCII struct_off name (32) NULL
+      READ_ASCII (struct_off + script_off) script
+      TO_UPPER script // uniform key
+      READ_SHORT (struct_off + trapped_off) trapped
+      READ_SHORT (struct_off + detected_off) detected
+      READ_SHORT (struct_off + detection_off) detection
+      READ_SHORT (struct_off + removal_off) removal
+      READ_LONG (struct_off + flags_off) flags
+      resets = 0
+      PATCH_IF flags BAND flag_resets > 0 BEGIN resets = 1 END
+      detectable = 1
+      PATCH_IF (NOT (~%type%~ STR_EQ ~container~)) AND (flags BAND flag_detectable == 0) BEGIN detectable = 0 END
+
+      PATCH_IF trapped == 1 AND detection <= max_detection BEGIN
+        skip = 0
+        PATCH_IF NOT FILE_EXISTS_IN_GAME ~%script%.bcs~ BEGIN
+          PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN
+            SPRINT ~rtype_message~ ~, region_type=%rtype%~
+          END ELSE BEGIN
+            SPRINT ~rtype_message~ ~~
+          END
+          PATCH_PRINT ~structure is marked as trapped but the script is missing: area %SOURCE_FILE%, type %type%%rtype_message%, name "%name%", script "%script%", trapped=%trapped%, removal=%removal%, detection=%detection% - clearing trapped flag and related trap settings~
+          LPF ALTER_AREA_REGION
+            INT_VAR trapped = 0 detected = 0 trap_detect = 0 trap_remove = 0
+            STR_VAR region_name = ~%reg_name%~ region_script = ~~
+          END
+          skip = 1
+        END
+        PATCH_IF detected != 0 BEGIN
+          PATCH_PRINT ~structure is marked as detected from the get go: area %SOURCE_FILE%, type %type%, name "%name%", script "%script%", trapped=%trapped%, removal=%removal%, detection=%detection% - removing detected flag~
+          LPF ALTER_AREA_REGION INT_VAR detected = 0 STR_VAR region_name = ~%reg_name%~ END
+        END
+        PATCH_IF skip == 0 BEGIN
+          DEFINE_ASSOCIATIVE_ARRAY scripts BEGIN ~%idx%~, ~%type%~, ~%detection%~, ~%removal%~, ~%resets%~ => ~%script%~ END
+          count += 1
+        END
+      END
+
+    END
+  END
+  PATCH_IF count == 0 BEGIN // have to return an array
+    DEFINE_ASSOCIATIVE_ARRAY scripts BEGIN ~g_none~ => ~g_none~ END
+  END
+END
+
+DEFINE_PATCH_FUNCTION get_spell_res_from_baf
+  INT_VAR spell_index_buffer = 0
+  RET spell_res
+BEGIN
+  start	= INDEX_BUFFER (~,~ spell_index_buffer)
+  PATCH_IF start != ~-1~	BEGIN
+    end	= INDEX_BUFFER	(~)~ start)
+    PATCH_IF end != ~-1~	BEGIN
+      READ_ASCII (start + 1) label (end - start - 1)
+      PATCH_IF FILE_CONTAINS_EVALUATED (~spell.ids~	~[ %TAB%]%label%[ %TAB%%WNL%%MNL%%LNL%$]~)	BEGIN
+        LPF	RES_NUM_OF_SPELL_NAME	STR_VAR	spell_name = EVAL ~%label%~	RET	spell_res	END	TO_UPPER spell_res
+      END ELSE BEGIN spell_res = spell TO_UPPER spell_res END
+    END
+  END
+END
+
+
+DEFINE_PATCH_FUNCTION WRITE_AREA_STRUCT_SCRIPT
+  INT_VAR index = 0
+  STR_VAR
+    script = ~~
+    type = ~~
+BEGIN
+  PATCH_MATCH 1 WITH
+    (~%type%~ STR_EQ ~region~)
+      BEGIN
+        GET_OFFSET_ARRAY struct_off_list ARE_V10_REGIONS
+        struct_off = ARE_regions_offset
+        script_off = ARE_REGION_script
+      END
+    (~%type%~ STR_EQ ~container~)
+      BEGIN
+        GET_OFFSET_ARRAY struct_off_list ARE_V10_CONTAINERS
+        struct_off = ARE_containers_offset
+        script_off = ARE_CONTAINER_script
+      END
+    (~%type%~ STR_EQ ~door~)
+      BEGIN
+        GET_OFFSET_ARRAY struct_off_list ARE_V10_DOORS
+        struct_off = ARE_doors_offset
+        script_off = ARE_DOOR_script
+      END
+  DEFAULT
+    PATCH_FAIL ~WRITE_AREA_STRUCT_SCRIPT: unknown structure type %type%~
+  END
+  off = $struct_off_list(~%index%~) + script_off
+  WRITE_ASCIIE off ~%script%~ #8
+END
