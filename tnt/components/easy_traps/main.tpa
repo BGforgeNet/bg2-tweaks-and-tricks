@@ -6,45 +6,7 @@ PRINT ~unknown_trap_name=%unknown_trap_name%~
 OUTER_SPRINT common_timer ~%modder_prefix%tnt_traps_common_timer~
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_combat.g_~ BEGIN
-  OUTER_SPRINT traps_baf_combat ~~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_combat ~CombatCounterLT(1)~
-END
-
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_pause1.g_~ BEGIN //pause on all traps
-  OUTER_SPRINT traps_baf_stop ~~
-  OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_pause ~~
-END
-
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_range.g_~ BEGIN
-  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 30)~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 15)~
-END
-
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_view.g_~ BEGIN
-  OUTER_SPRINT traps_baf_view ~MoveViewObject(LastSeenBy, INSTANT)~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_view ~~
-END
-
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_stop.g_~ BEGIN
-  OUTER_SPRINT traps_baf_stop ~ClearActions(LastSeenBy)~
-  OUTER_SPRINT traps_baf_pause ~~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_stop ~~
-END
-
-ACTION_IF FILE_EXISTS ~override/g_tnt_trap_sound.g_~ BEGIN
-  OUTER_SPRINT traps_baf_sound ~PlaySound("act_09")~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_sound ~~
-END
-
-
+INCLUDE ~%comp_dir%/subcomponents.tpa~
 INCLUDE ~%comp_dir%/functions.tpa~
 INCLUDE ~%comp_dir%/traps_list.tpa~
 

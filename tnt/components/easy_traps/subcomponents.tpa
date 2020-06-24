@@ -1,0 +1,39 @@
+// look up which components were chosen
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_combat~) BEGIN
+  OUTER_SPRINT traps_baf_combat ~~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_combat ~CombatCounterLT(1)~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_stop_moving_and_pause~) BEGIN
+  OUTER_SPRINT traps_baf_stop ~~
+  OUTER_SPRINT traps_baf_pause ~ActionOverride(LastSeenBy, PauseGame())~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_pause ~~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_range~) BEGIN
+  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 30)~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 15)~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_center_on_character~) BEGIN
+  OUTER_SPRINT traps_baf_view ~MoveViewObject(LastSeenBy, INSTANT)~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_view ~~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_stop_moving~) BEGIN
+  OUTER_SPRINT traps_baf_stop ~ClearActions(LastSeenBy)~
+  OUTER_SPRINT traps_baf_pause ~~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_stop ~~
+END
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_sound~) BEGIN
+  OUTER_SPRINT traps_baf_sound ~PlaySound("act_09")~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_sound ~~
+END
