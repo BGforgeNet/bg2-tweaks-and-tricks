@@ -4,99 +4,69 @@ IF
   %traps_baf_range%
   %traps_baf_combat%
   !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
-  Global("g_trap_%trap_type_id%_detected", "MYAREA", 0) // hasn't been detected with thief's skill
-  Global("g_trap_%trap_type_id%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
-  !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer", "MYAREA") // don't spam the dialog box
-  !GlobalTimerNotExpired("g_trap_common_timer", "GLOBAL") // don't spam pause
+  Global("%trap_var_base%_detected", "MYAREA", 0) // hasn't been detected with thief's skill
+  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
+  !GlobalTimerNotExpired("%modder_prefix%traps_common_timer", "GLOBAL") // don't spam pause
   %is_active%
 THEN
   RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
+    SetGlobal("%trap_var_base%_display_string", "MYAREA", 1)
+    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
+    SetGlobalTimer("%modder_prefix%traps_common_timer", "GLOBAL", %notification_delay%)
     %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @2)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @3)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @4)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @5)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @6)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @7)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @8)
-    %traps_baf_sound%
-    %traps_baf_view%
-    %traps_baf_pause%
-    Continue()
-  RESPONSE #1
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
-    SetGlobalTimer("g_trap_common_timer", "GLOBAL", %notification_delay%)
-    %traps_baf_stop%
-    DisplayStringHead(LastSeenBy, @9)
     %traps_baf_sound%
     %traps_baf_view%
     %traps_baf_pause%
     Continue()
 END
 
+// shorter random string display
+IF
+  Global("%trap_var_base%_display_string", "MYAREA", 1)
+THEN
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @3)
+    Continue()
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @4)
+    Continue()
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @5)
+    Continue()
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @6)
+    Continue()
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @7)
+    Continue()
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @8)
+    Continue()
+  RESPONSE #1
+    DisplayStringHead(LastSeenBy, @9)
+    Continue()
+END
+IF
+  Global("%trap_var_base%_display_string", "MYAREA", 1)
+THEN
+  RESPONSE #1
+    SetGlobal("%trap_var_base%_display_string", "MYAREA", 0)
+    Continue()
+END
 
 // Display detected trap type second and consequtive times
 IF
   Detect([PC])
   %traps_baf_range%
-  Global("g_trap_%trap_type_id%_detected", "MYAREA", 1) // has been detected with thief's skill
-  Global("g_trap_%trap_type_id%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
-  !GlobalTimerNotExpired("g_trap_%trap_type_id%_timer", "MYAREA") // don't spam the dialog box
+  Global("%trap_var_base%_detected", "MYAREA", 1) // has been detected with thief's skill
+  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
   %traps_baf_combat%
   %is_active%
 THEN
   RESPONSE #100
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
+    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
     DisplayStringHead(Myself, ~%trap_type_warning%~) // get the string from "trap_type" array
     Continue()
 END
@@ -104,13 +74,13 @@ END
 // Display detected trap type first time
 IF
   Detected([ANYONE])
-  Global("g_trap_%trap_type_id%_detected", "MYAREA", 0) // has just been detected with thief's skill
-  Global("g_trap_%trap_type_id%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  Global("%trap_var_base%_detected", "MYAREA", 0) // has just been detected with thief's skill
+  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
   %is_active%
 THEN
   RESPONSE #100
-    SetGlobal("g_trap_%trap_type_id%_detected", "MYAREA", 1)
-    SetGlobalTimer("g_trap_%trap_type_id%_timer", "MYAREA", %notification_delay%)
+    SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
+    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
     DisplayStringHead(Myself, ~%trap_type_warning%~)
     Continue()
 END
@@ -120,7 +90,7 @@ IF
   Reset([ANYONE])
 THEN
   RESPONSE #100
-    SetGlobal("g_trap_%trap_type_id%_disarmed", "MYAREA", 0)
+    SetGlobal("%trap_var_base%_disarmed", "MYAREA", 0)
     Continue()
 END
 
@@ -132,6 +102,6 @@ IF
     Entered([ANYONE])  // for regions
 THEN
   RESPONSE #100
-    SetGlobal("g_trap_%trap_type_id%_disarmed", "MYAREA", 1)
+    SetGlobal("%trap_var_base%_disarmed", "MYAREA", 1)
     Continue()
 END

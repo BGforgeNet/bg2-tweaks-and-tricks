@@ -41,7 +41,6 @@ END
 
 INCLUDE ~%comp_dir%/functions.tpa~
 INCLUDE ~%comp_dir%/traps_list.tpa~
-OUTER_SET new_trap_ind = 0 // global var for all areas
 
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~ // Adds CD_STATE_NOTVALID state
 CLEAR_IDS_MAP
@@ -57,7 +56,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
       detection = ~%i_2%~
       removal = ~%i_3%~
       resets = ~%i_4%~
-      trap_var = 0 // this is used for unique MYAREA vars
+      trap_index = 0 // this is used for unique MYAREA vars
       SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
       INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
         COPY_EXISTING ~%s%.bcs~ override
@@ -66,31 +65,35 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
             spell = INDEX_BUFFER (CASE_SENSITIVE EVALUATE_REGEXP ~[ %TAB%^]\(Spell\|ForceSpell\|ReallyForceSpell\|ApplySpell\|SpellNoDec\|ReallyForceSpellDead\)\(Point\)? ?(.+,~ )
             PATCH_IF entered != "-1" AND spell != "-1" BEGIN
               valid_trap_script = 1
-              trap_var += 1
+              trap_index += 1
               LPF get_spell_res_from_baf INT_VAR spell_index_buffer = spell RET spell_res END
-              PATCH_PRINT ~%SOURCE_FILE% %found% - %idx% - %type% - %detection% - %removal% - %resets% - %s% - %entered% - %spell_res%~
-              PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_var%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) BEGIN
+              PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) BEGIN
                 LPF GET_UNIQUE_FILE_NAME
                   STR_VAR
                     extension = ~bcs~
-                    base = ~g_tnt_traps_%s%_%type%_%trap_var%_%detection%_%removal%_%resets%_%spell_res%~
+                    base = ~%modder_prefix%tnt_traps_%s%_%type%_%trap_index%_%detection%_%removal%_%resets%_%spell_res%~
                   RET new_script = filename
                 END
-                SPRINT $script_map(~%s%~ ~%type%~ ~%trap_var%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) ~%new_script%~
+                SPRINT $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) ~%new_script%~
+
                 INNER_ACTION BEGIN COPY_EXISTING ~%s%.bcs~ ~override/%new_script%.bcs~ END
+                SPRINT trap_var_base ~%modder_prefix%tnt_traps%new_script%~
+                
+                SPRINT is_active ~~ // containers and doors
+                // ground traps IsActive clause
+                PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN SPRINT is_active ~IsActive(Myself)~ END
+                INNER_ACTION BEGIN EXTEND_TOP ~%new_script%.bcs~ ~%comp_dir%/traps.baf~ EVAL END
+
               END ELSE BEGIN
-                SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_var%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~)
-                PATCH_PRINT ~%new_script% already exists~
+                SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~)
               END
-              PATCH_PRINT ~unique name: %new_script%~
             END
           END
         BUT_ONLY
-      END
+      END // inner action end
 
       // Reset vars after inner action. Workaround for weidu bug https://github.com/WeiDUorg/weidu/issues/168
       INNER_ACTION BEGIN COPY_EXISTING ~%are_file%~ override BUT_ONLY END
-      PATCH_PRINT ~valid_trap_script=%valid_trap_script%~
       // assign new script
       PATCH_IF valid_trap_script == 1 BEGIN
         LPF WRITE_AREA_STRUCT_SCRIPT

@@ -13,6 +13,7 @@ ALWAYS
   INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
   INCLUDE ~%external%/ir.tpa~
   OUTER_SET effect_stacking_id_base = 0x675f0000 // ascii g_
+  OUTER_SPRINT modder_prefix ~g_~
 END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
