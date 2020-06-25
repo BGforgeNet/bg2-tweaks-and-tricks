@@ -103,6 +103,16 @@ REQUIRE_PREDICATE (
   ) @304
 SUBCOMPONENT @305
 
+BEGIN @314
+GROUP @226
+LABEL ~g_tnt_traps_intuition_toggle_find_traps~
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE (
+  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
+  ) @304
+
 BEGIN @309
 GROUP @226
 LABEL ~g_tnt_traps_intuition_center_on_character~

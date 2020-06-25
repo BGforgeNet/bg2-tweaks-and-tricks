@@ -61,3 +61,8 @@ END
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_reminders_specific~) BEGIN
   OUTER_SET reminders = 2 // advanced
 END
+
+OUTER_SPRINT traps_baf_force_find_traps_toggle ~False()~
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_toggle_find_traps~) BEGIN
+  OUTER_SPRINT traps_baf_force_find_traps_toggle ~~
+END

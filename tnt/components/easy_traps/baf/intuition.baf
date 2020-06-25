@@ -55,6 +55,7 @@ END
 
 // intuition: start searching for traps
 IF
+  %traps_baf_force_find_traps_toggle%
   Global("%trap_var_base%_intuition", "MYAREA", 1)
   Global("%trap_var_base%_detected", "MYAREA", 0)
   %traps_baf_class%
