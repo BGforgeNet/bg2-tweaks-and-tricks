@@ -968,36 +968,6 @@ msgstr ""
 msgid "No XP farming"
 msgstr ""
 
-#: setup.tra:111
-msgid "Improved trap detection: allow sensing in combat"
-msgstr ""
-
-#: setup.tra:112
-msgid "Improved trap detection: increase trap sense range"
-msgstr ""
-
-#: setup.tra:113
-msgid "stop moving"
-msgstr ""
-
-#: setup.tra:114
-msgid "Improved trap detection: character action"
-msgstr ""
-
-#: setup.tra:115
-msgid "stop moving and pause game"
-msgstr ""
-
-#: setup.tra:117
-msgid "Improved trap detection: play a sound"
-msgstr ""
-
-#: setup.tra:118
-msgid ""
-"Improved trap detection: core (REQUIRED for any of previous \"Improved trap "
-"detection\" components to work)"
-msgstr ""
-
 #: setup.tra:119
 msgid "Less autosaves"
 msgstr ""
@@ -1041,10 +1011,6 @@ msgstr ""
 msgid "Weightless ammo"
 msgstr ""
 
-#: setup.tra:129
-msgid "All Improved Traps Detection components must be installed before core"
-msgstr ""
-
 #: setup.tra:134
 msgid "Sensible Otiluke's sphere"
 msgstr ""
@@ -1081,16 +1047,8 @@ msgstr ""
 msgid "Potion of really mirrored eyes"
 msgstr ""
 
-#: setup.tra:224
-msgid "stop moving and pause game only for ground traps"
-msgstr ""
-
 #: setup.tra:225
 msgid "Familiars"
-msgstr ""
-
-#: setup.tra:226
-msgid "Traps"
 msgstr ""
 
 #: setup.tra:227
@@ -1233,10 +1191,6 @@ msgstr ""
 msgid "Mislead spell is not present in game"
 msgstr ""
 
-#: setup.tra:271
-msgid "Improved trap detection: instant detection"
-msgstr ""
-
 #: setup.tra:301
 msgid "Trap intuition"
 msgstr ""
@@ -1293,6 +1247,32 @@ msgstr ""
 msgid ""
 "Trap intuition: toggle Find Traps automatically on a hunch (will interrupt "
 "whatever the thief is doing)"
+msgstr ""
+
+#: setup.tra:315
+msgid "Improved trap detection: increase trap sense range"
+msgstr ""
+
+#: setup.tra:316
+msgid "Improved trap detection: play a sound"
+msgstr ""
+
+#: setup.tra:317
+msgid ""
+"Improved trap detection: core (REQUIRED for any of previous traps components"
+" to work)"
+msgstr ""
+
+#: setup.tra:318
+msgid "Improved trap detection: instant detection"
+msgstr ""
+
+#: setup.tra:319
+msgid "All Improved Traps components must be installed BEFORE core"
+msgstr ""
+
+#: setup.tra:320
+msgid "Traps"
 msgstr ""
 
 #: shandalars_cloak.tra:1

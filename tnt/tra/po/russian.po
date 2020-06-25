@@ -1131,50 +1131,6 @@ msgstr "Нельзя воровать из магазинов вообще"
 msgid "No XP farming"
 msgstr "Затруднить фарминг опыта"
 
-#: setup.tra:111
-#, fuzzy
-#| msgid "Easy traps: allow sensing in combat"
-msgid "Improved trap detection: allow sensing in combat"
-msgstr "Упрощенные ловушки: можно замечать в бою"
-
-#: setup.tra:112
-#, fuzzy
-#| msgid "Easy traps: increase trap sense range"
-msgid "Improved trap detection: increase trap sense range"
-msgstr "Упрощенные ловушки: увеличить расстояние, на котором их заметно"
-
-#: setup.tra:113
-msgid "stop moving"
-msgstr "остановиться"
-
-#: setup.tra:114
-#, fuzzy
-#| msgid "Easy traps: character action"
-msgid "Improved trap detection: character action"
-msgstr "Упрощенные ловушки: действие персонажа"
-
-#: setup.tra:115
-msgid "stop moving and pause game"
-msgstr "остановиться поставить игру на паузу"
-
-#: setup.tra:117
-#, fuzzy
-#| msgid "Easy traps: play a sound"
-msgid "Improved trap detection: play a sound"
-msgstr "Упрощенные ловушки: звуковой сигнал"
-
-#: setup.tra:118
-#, fuzzy
-#| msgid ""
-#| "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
-#| "work)"
-msgid ""
-"Improved trap detection: core (REQUIRED for any of previous \"Improved trap "
-"detection\" components to work)"
-msgstr ""
-"Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
-"компоненты работали)"
-
 #: setup.tra:119
 msgid "Less autosaves"
 msgstr "Меньше автосохранений"
@@ -1221,13 +1177,6 @@ msgstr ""
 msgid "Weightless ammo"
 msgstr "Невесомые снаряды"
 
-#: setup.tra:129
-#, fuzzy
-#| msgid "All easy traps components must be installed before core"
-msgid "All Improved Traps Detection components must be installed before core"
-msgstr ""
-"Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
-
 #: setup.tra:134
 msgid "Sensible Otiluke's sphere"
 msgstr "Более адекватная сфера Отилюка"
@@ -1264,19 +1213,9 @@ msgstr "Только для Windows"
 msgid "Potion of really mirrored eyes"
 msgstr "Зелье по-настоящему зеркальных глаз"
 
-#: setup.tra:224
-msgid "stop moving and pause game only for ground traps"
-msgstr ""
-"Остановиться и поставить игру на паузу только для ловушек, на которые можно "
-"наступить"
-
 #: setup.tra:225
 msgid "Familiars"
 msgstr "Фамильяры"
-
-#: setup.tra:226
-msgid "Traps"
-msgstr "Ловушки"
 
 #: setup.tra:227
 msgid "Soundsets"
@@ -1424,12 +1363,6 @@ msgstr ""
 msgid "Mislead spell is not present in game"
 msgstr ""
 
-#: setup.tra:271
-#, fuzzy
-#| msgid "Easy traps: character action"
-msgid "Improved trap detection: instant detection"
-msgstr "Упрощенные ловушки: действие персонажа"
-
 #: setup.tra:301
 msgid "Trap intuition"
 msgstr ""
@@ -1489,6 +1422,47 @@ msgid ""
 "Trap intuition: toggle Find Traps automatically on a hunch (will interrupt "
 "whatever the thief is doing)"
 msgstr ""
+
+#: setup.tra:315
+#, fuzzy
+#| msgid "Easy traps: increase trap sense range"
+msgid "Improved trap detection: increase trap sense range"
+msgstr "Упрощенные ловушки: увеличить расстояние, на котором их заметно"
+
+#: setup.tra:316
+#, fuzzy
+#| msgid "Easy traps: play a sound"
+msgid "Improved trap detection: play a sound"
+msgstr "Упрощенные ловушки: звуковой сигнал"
+
+#: setup.tra:317
+#, fuzzy
+#| msgid ""
+#| "Easy traps: core (REQUIRED for any of previous \"Easy traps\" components to "
+#| "work)"
+msgid ""
+"Improved trap detection: core (REQUIRED for any of previous traps components"
+" to work)"
+msgstr ""
+"Упрощенные ловушки: главный компонент (ТРЕБУЕТСЯ, чтобы предыдущие "
+"компоненты работали)"
+
+#: setup.tra:318
+#, fuzzy
+#| msgid "Easy traps: character action"
+msgid "Improved trap detection: instant detection"
+msgstr "Упрощенные ловушки: действие персонажа"
+
+#: setup.tra:319
+#, fuzzy
+#| msgid "All easy traps components must be installed before core"
+msgid "All Improved Traps components must be installed BEFORE core"
+msgstr ""
+"Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
+
+#: setup.tra:320
+msgid "Traps"
+msgstr "Ловушки"
 
 #: shandalars_cloak.tra:1
 msgid ""
@@ -1882,6 +1856,25 @@ msgstr ""
 #: true_true_sight.tra:2
 msgid "each second"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Improved trap detection: allow sensing in combat"
+#~ msgstr "Упрощенные ловушки: можно замечать в бою"
+
+#~ msgid "stop moving"
+#~ msgstr "остановиться"
+
+#, fuzzy
+#~ msgid "Improved trap detection: character action"
+#~ msgstr "Упрощенные ловушки: действие персонажа"
+
+#~ msgid "stop moving and pause game"
+#~ msgstr "остановиться поставить игру на паузу"
+
+#~ msgid "stop moving and pause game only for ground traps"
+#~ msgstr ""
+#~ "Остановиться и поставить игру на паузу только для ловушек, на которые можно "
+#~ "наступить"
 
 #, fuzzy
 #~ msgid "Repeating arrow trap"
