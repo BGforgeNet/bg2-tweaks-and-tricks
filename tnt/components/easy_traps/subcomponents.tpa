@@ -1,6 +1,6 @@
 // look up which components were chosen
 
-OUTER_SET intution = 0
+OUTER_SET intuition = 0
 OUTER_SPRINT traps_baf_combat ~CombatCounterLT(1)~
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_combat~) BEGIN
   OUTER_SPRINT traps_baf_combat ~~
