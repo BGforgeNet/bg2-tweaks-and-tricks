@@ -3,7 +3,7 @@ OUTER_SPRINT unknown_trap_name (AT 100)
 OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
 PRINT ~unknown_trap_name=%unknown_trap_name%~
-OUTER_SPRINT common_timer ~%modder_prefix%tnt_traps_common_timer~
+OUTER_SPRINT pause_timer ~%modder_prefix%traps_pause_timer~
 
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
