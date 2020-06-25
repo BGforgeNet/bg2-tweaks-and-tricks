@@ -41,62 +41,62 @@ INCLUDE ~%components%/resilient_familiars/main.tpa~
 
 
 // Traps
-BEGIN @271
-GROUP @226
+BEGIN @318
+GROUP @320
 LABEL ~g_tnt_traps_instant~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 
-BEGIN @112
-GROUP @226
+BEGIN @315
+GROUP @320
 LABEL ~g_tnt_traps_range~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 
 BEGIN @312
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_reminders_generic~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @311
 BEGIN @313
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_reminders_specific~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @311
 
 
 BEGIN @302
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_no_combat~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @301
 
 BEGIN @303
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_combat~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @301
 
 
 BEGIN @306
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_pause_ground_traps_only~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 REQUIRE_PREDICATE (
   MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
   OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
   ) @304
 SUBCOMPONENT @305
 BEGIN @307
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_pause_all_traps~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 REQUIRE_PREDICATE (
   MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
   OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
@@ -104,49 +104,49 @@ REQUIRE_PREDICATE (
 SUBCOMPONENT @305
 
 BEGIN @314
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_toggle_find_traps~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 REQUIRE_PREDICATE (
   MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
   OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
   ) @304
 
 BEGIN @309
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_center_on_character~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 REQUIRE_PREDICATE (
   MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
   OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
   ) @304
 SUBCOMPONENT @308
 BEGIN @310
-GROUP @226
+GROUP @320
 LABEL ~g_tnt_traps_intuition_center_on_trap~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 REQUIRE_PREDICATE (
   MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
   OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
   ) @304
 SUBCOMPONENT @308
 
-BEGIN @117
-GROUP @226
+BEGIN @316
+GROUP @320
 LABEL ~g_tnt_traps_intuition_sound~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 REQUIRE_PREDICATE (
   MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
   OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
   ) @304
 
 
-BEGIN @118
-GROUP @226
+BEGIN @317
+GROUP @320
 LABEL ~g_tnt_traps_core~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 OUTER_TEXT_SPRINT comp_name ~easy_traps~

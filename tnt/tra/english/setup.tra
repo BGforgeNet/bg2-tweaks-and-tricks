@@ -34,13 +34,6 @@
 @108  = ~Close shop steal exploit~
 @109  = ~Can't steal from any shops~
 @110  = ~No XP farming~
-@111  = ~Improved trap detection: allow sensing in combat~
-@112  = ~Improved trap detection: increase trap sense range~
-@113  = ~stop moving~
-@114  = ~Improved trap detection: character action~
-@115  = ~stop moving and pause game~
-@117  = ~Improved trap detection: play a sound~
-@118  = ~Improved trap detection: core (REQUIRED for any of previous "Improved trap detection" components to work)~
 @119  = ~Less autosaves~
 @120  = ~True true sight~
 @121  = ~BG1 content not present~
@@ -52,7 +45,6 @@
 @127  = ~Shandalar's cloak not present in game~
 
 @128  = ~Weightless ammo~
-@129  = ~All Improved Traps Detection components must be installed before core~
 
 @134  = ~Sensible Otiluke's sphere~
 @135  = ~Improved strongholds~
@@ -70,9 +62,7 @@
 @206 = ~Windows only~
 
 @223 = ~Potion of really mirrored eyes~
-@224 = ~stop moving and pause game only for ground traps~
 @225 = ~Familiars~
-@226 = ~Traps~
 @227 = ~Soundsets~
 @228 = ~Items~
 @229 = ~Spells and abilities~
@@ -111,7 +101,6 @@
 @268 = ~Project Image spell is not present in game~
 @269 = ~Uncheese Mislead~
 @270 = ~Mislead spell is not present in game~
-@271 = ~Improved trap detection: instant detection~
 
 @301 = ~Trap intuition~
 @302 = ~not in combat~
@@ -127,3 +116,9 @@
 @312 = ~generic~
 @313 = ~disclose trap type~
 @314 = ~Trap intuition: toggle Find Traps automatically on a hunch (will interrupt whatever the thief is doing)~
+@315 = ~Improved trap detection: increase trap sense range~
+@316 = ~Improved trap detection: play a sound~
+@317 = ~Improved trap detection: core (REQUIRED for any of previous traps components to work)~
+@318 = ~Improved trap detection: instant detection~
+@319 = ~All Improved Traps components must be installed BEFORE core~
+@320 = ~Traps~
