@@ -72,17 +72,21 @@ END
 
 // intuition: sound
 IF
+  %traps_baf_sound_toggle%
   Global("%trap_var_base%_intuition", "MYAREA", 1)
 THEN
   RESPONSE #1
-    %traps_baf_sound%
+    PlaySound("act_09")
     Continue()
 END
+
+// intuition: autopause
 IF
+  %traps_baf_pause_toggle%
   Global("%trap_var_base%_intuition", "MYAREA", 1)
 THEN
   RESPONSE #1
-    CreateCreature("g_traps", [-1.-1], 0)
+    CreateCreature("%traps_minion%", [-1.-1], 0)
     Continue()
 END
 

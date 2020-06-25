@@ -10,25 +10,6 @@ ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_i
   OUTER_SET intuition = 1
 END
 
-OUTER_SPRINT traps_baf_pause ~~
-ACTION_IF
-  MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_all_traps~) OR
-  MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_ground_traps_only~)
-BEGIN
-  OUTER_SPRINT traps_baf_pause // using a minion becase it's not working from trap script
-    // ~ActionOverride(LastSeenBy, PauseGame())~
-    ~~~~~
-    CreateCreature("%traps_minion%", [-1.-1], 0)
-    ActionOverride("%traps_minion%", DisplayStringHead(Myself, ~QQQQQ~))
-    ActionOverride("%traps_minion%", MakeGlobal())
-    ChangeEnemyAlly("%traps_minion%", FAMILIAR)
-    ActionOverride("%traps_minion%", AddFamiliar())
-    ActionOverride("%traps_minion%", PauseGame())
-    ActionOverride("%traps_minion%", DisplayStringHead(Myself, ~WWWWW~))
-    // ActionOverride("%traps_minion%", DestroySelf())
-    ~~~~~
-END
-
 OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 15)~
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_range~) BEGIN
   OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 30)~
@@ -42,25 +23,30 @@ ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_i
   OUTER_SPRINT traps_baf_view ~MoveViewObject(Myself, INSTANT)~
 END
 
-ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_sound~) BEGIN
-  OUTER_SPRINT traps_baf_sound ~PlaySound("act_09")~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_sound ~~
+OUTER_SPRINT traps_baf_pause_toggle ~False()~
+ACTION_IF (MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_ground_traps_only~) )
+          OR (MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_all_traps~))
+BEGIN
+  OUTER_SPRINT traps_baf_pause_toggle ~~
 END
 
+OUTER_SPRINT traps_baf_sound_toggle ~False()~
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_sound~) BEGIN
+  OUTER_SPRINT traps_baf_sound_toggle ~~
+END
+
+OUTER_SPRINT traps_baf_instant_toggle ~False()~
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_instant~) BEGIN
   OUTER_SPRINT traps_baf_instant_toggle ~~
   INCLUDE ~%comp_dir%/cleric.tpa~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_instant_toggle ~False()~
 END
 
-OUTER_SET reminders = 0 // simple
+OUTER_SET reminders = 0 // disabled
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_reminders_generic~) BEGIN
   OUTER_SET reminders = 1 // generic
 END
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_reminders_specific~) BEGIN
-  OUTER_SET reminders = 2 // advanced
+  OUTER_SET reminders = 2 // specific
 END
 
 OUTER_SPRINT traps_baf_force_find_traps_toggle ~False()~
