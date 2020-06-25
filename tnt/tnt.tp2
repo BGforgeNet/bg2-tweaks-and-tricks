@@ -53,6 +53,19 @@ LABEL ~g_tnt_traps_range~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
 
+BEGIN @312
+GROUP @226
+LABEL ~g_tnt_traps_reminders_generic~
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+SUBCOMPONENT @311
+BEGIN @313
+GROUP @226
+LABEL ~g_tnt_traps_reminders_specific~
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @129
+SUBCOMPONENT @311
+
 
 BEGIN @302
 GROUP @226

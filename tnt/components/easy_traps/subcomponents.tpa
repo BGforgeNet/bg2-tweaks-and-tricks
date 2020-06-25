@@ -53,3 +53,11 @@ ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_i
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_instant_toggle ~False()~
 END
+
+OUTER_SET reminders = 0 // simple
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_reminders_generic~) BEGIN
+  OUTER_SET reminders = 1 // generic
+END
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_reminders_specific~) BEGIN
+  OUTER_SET reminders = 2 // advanced
+END

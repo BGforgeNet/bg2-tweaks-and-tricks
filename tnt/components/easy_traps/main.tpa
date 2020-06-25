@@ -94,17 +94,25 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                   // ground traps IsActive clause
                   PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN SPRINT is_active ~IsActive(Myself)~ END
 
-                  LPF calculate_trap_warning_string
-                    STR_VAR
-                      spell_res
-                      unknown = ~%unknown_trap_name%~
-                      trap_lower
-                      trap_capitalized
-                    RET trap_warning_string = string
+                  PATCH_IF reminders != 0 BEGIN
+                    simple_floats = 1 // disclose type?
+                    PATCH_IF reminders == 2 BEGIN simple_floats = 0 END
+                    LPF calculate_trap_warning_string
+                      INT_VAR simple = simple_floats
+                      STR_VAR
+                        spell_res
+                        unknown = ~%unknown_trap_name%~
+                        trap_lower
+                        trap_capitalized
+                      RET trap_warning_string = string
+                    END
                   END
+
                   INNER_ACTION BEGIN
                     EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/main.baf~ EVAL
-                    EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/displaystring.baf~ EVAL
+                    ACTION_IF reminders != 0 BEGIN
+                      EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/displaystring.baf~ EVAL
+                    END
                     ACTION_IF intuition == 1 BEGIN
                       EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/intuition.baf~ EVAL
                     END
