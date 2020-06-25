@@ -7,7 +7,7 @@ OUTER_SPRINT trap_capitalized (AT 98)
 OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
 
 OUTER_SPRINT traps_minion ~g_traps~
-LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~g_traps~ ea = ~FAMILIAR~ END
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~g_traps~ END
 COMPILE ~%comp_baf_dir%/g_traps.baf~
 
 INCLUDE ~%comp_dir%/traps_tra.tpa~
