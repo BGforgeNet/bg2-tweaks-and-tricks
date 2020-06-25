@@ -1,0 +1,13 @@
+
+COPY_EXISTING ~%CLERIC_FIND_TRAPS%.spl~ ~override~
+  FOR (i=1; i<180; ++i) BEGIN
+    PATCH_IF i REM 6 != 0 BEGIN
+      LPF CLONE_EFFECT
+        INT_VAR
+          multi_match = 1
+          match_opcode = OPCODE_cast_spell_at_creature
+          duration = i
+      END
+    END
+  END
+BUT_ONLY
