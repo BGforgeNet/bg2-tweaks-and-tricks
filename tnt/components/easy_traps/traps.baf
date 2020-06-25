@@ -1,9 +1,21 @@
+// normal detection
 IF
-  Global("%trap_var_base%_detected", "MYAREA", 0) // hasn't been detected with thief's skill
-  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  Detected([ANYONE])
+  %is_active%
+THEN
+  RESPONSE #100
+    SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
+    DisplayStringHead(Myself, ~%trap_warning_string%~)
+    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
+    Continue()
+END
+
+// instant detection
+IF
+  Global("%trap_var_base%_detected", "MYAREA", 0)
+  %is_active%
   %traps_baf_class%
   %traps_baf_range%
-  %is_active%
   !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
   !CheckStatLT(LastSeenBy, %detection%, TRAPS)
   TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
@@ -11,19 +23,40 @@ IF
 THEN
 	RESPONSE #1
     ReallyForceSpellRES("%trap_spl%", Myself)
+    SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
+    Continue()
+END
+
+
+// Display detected trap type second and consequtive times
+IF
+  Global("%trap_var_base%_detected", "MYAREA", 1) // has been detected with thief's skill
+  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
+  %is_active%
+  %traps_baf_combat%
+  Detect([PC])
+  %traps_baf_range%
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
+    DisplayStringHead(Myself, ~%trap_warning_string%~)
+    Continue()
 END
 
 //main detection check
 IF
-  Detect([PC])
-  %traps_baf_range%
-  %traps_baf_combat%
-  !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
   Global("%trap_var_base%_detected", "MYAREA", 0)
   Global("%trap_var_base%_disarmed", "MYAREA", 0)
   !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
   !GlobalTimerNotExpired("%common_timer%", "GLOBAL") // don't spam pause
   %is_active%
+  %traps_baf_combat%
+  Detect([PC])
+  %traps_baf_range%
+  !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
+  ActionListEmpty()
 THEN
   RESPONSE #1
     SetGlobal("%trap_var_base%_display_string", "MYAREA", 1)
@@ -39,6 +72,7 @@ END
 // shorter random string display
 IF
   Global("%trap_var_base%_display_string", "MYAREA", 1)
+  ActionListEmpty()
 THEN
   RESPONSE #1
     DisplayStringHead(LastSeenBy, @3)
@@ -64,41 +98,13 @@ THEN
 END
 IF
   Global("%trap_var_base%_display_string", "MYAREA", 1)
+  ActionListEmpty()
 THEN
   RESPONSE #1
     SetGlobal("%trap_var_base%_display_string", "MYAREA", 0)
     Continue()
 END
 
-// Display detected trap type second and consequtive times
-IF
-  Detect([PC])
-  %traps_baf_range%
-  Global("%trap_var_base%_detected", "MYAREA", 1) // has been detected with thief's skill
-  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
-  !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
-  %traps_baf_combat%
-  %is_active%
-THEN
-  RESPONSE #100
-    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
-    DisplayStringHead(Myself, ~%trap_warning_string%~)
-    Continue()
-END
-
-// Display detected trap type first time
-IF
-  Detected([ANYONE])
-  Global("%trap_var_base%_detected", "MYAREA", 0) // has just been detected with thief's skill
-  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
-  %is_active%
-THEN
-  RESPONSE #100
-    SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
-    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
-    DisplayStringHead(Myself, ~%trap_warning_string%~)
-    Continue()
-END
 
 //Start warning again when reset
 IF

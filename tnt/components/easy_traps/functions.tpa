@@ -64,10 +64,9 @@ BEGIN
       PATCH_IF trapped == 1 AND detection <= max_detection BEGIN
         skip = 0
         PATCH_IF NOT FILE_EXISTS_IN_GAME ~%script%.bcs~ BEGIN
+          SPRINT ~rtype_message~ ~~
           PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN
             SPRINT ~rtype_message~ ~, region_type=%rtype%~
-          END ELSE BEGIN
-            SPRINT ~rtype_message~ ~~
           END
           PATCH_PRINT ~structure is marked as trapped but the script is missing: area %SOURCE_FILE%, type %type%%rtype_message%, name "%name%", script "%script%", trapped=%trapped%, removal=%removal%, detection=%detection% - clearing trapped flag and related trap settings~
           LPF ALTER_AREA_REGION
