@@ -120,7 +120,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                   END
 
                 END ELSE BEGIN
-                  SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~)
+                  SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~)
                 END
               END
             END
