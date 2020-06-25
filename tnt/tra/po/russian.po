@@ -50,331 +50,223 @@ msgstr "Смотрите куда наступаете. Выглядит под�
 msgid "Hold on. See this?"
 msgstr "Погодите. Видите вот это?"
 
+#: easy_traps.tra:98
+#, fuzzy
+#| msgid "Traps"
+msgid "Trap"
+msgstr "Ловушки"
+
+#: easy_traps.tra:99
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "trap"
+msgstr "Ловушка со стрелой"
+
 #: easy_traps.tra:100
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Unknown trap"
+msgid "Unknown"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:101
-msgid "Arrow trap"
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Hold Person trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:102
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Repeating arrow trap"
-msgstr "Ловушка со стрелой"
+msgid "Silence trap"
+msgstr ""
 
 #: easy_traps.tra:103
 #, fuzzy
-#| msgid "Arrow trap"
-msgid "Slaying arrow trap"
-msgstr "Ловушка со стрелой"
+#| msgid "Disable lightning during rain"
+msgid "Call Lightning trap"
+msgstr "Отключить молнию во время дождя"
 
 #: easy_traps.tra:104
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Acid arrow trap"
-msgstr "Ловушка со стрелой"
+msgid "Miscast Magic trap"
+msgstr ""
 
 #: easy_traps.tra:105
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Biting arrow trap"
-msgstr "Ловушка со стрелой"
+msgid "Flamestrike trap"
+msgstr ""
 
 #: easy_traps.tra:106
-msgid "Detonation arrow trap"
+msgid "Chromatic orb trap"
 msgstr ""
 
 #: easy_traps.tra:107
-msgid "Dispelling arrow trap"
+msgid "Confusion trap"
 msgstr ""
 
 #: easy_traps.tra:108
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Fire arrow trap"
+msgid "Dire Charm trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:109
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Ice arrow trap"
+msgid "Fireball trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:110
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Piercing arrow trap"
+msgid "Lightning bolt trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:111
-msgid "Agannazar's scorcher trap"
+msgid "Magic Missile trap"
 msgstr ""
 
 #: easy_traps.tra:112
-msgid "Cloudkill trap"
-msgstr ""
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Stinking Cloud trap"
+msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:113
-#, fuzzy
-#| msgid "Disable lightning during rain"
-msgid "Call lightning trap"
-msgstr "Отключить молнию во время дождя"
+msgid "Arrow trap"
+msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:114
-msgid "Confusion trap"
-msgstr ""
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Slaying arrow trap"
+msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:115
-msgid "Chromatic orb trap"
-msgstr ""
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Acid arrow trap"
+msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:116
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Dire charm trap"
+msgid "Biting arrow trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:117
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Fireball trap"
-msgstr "Ловушка со стрелой"
+msgid "Detonation arrow trap"
+msgstr ""
 
 #: easy_traps.tra:118
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Repeating Fireball trap"
-msgstr "Ловушка со стрелой"
+msgid "Dispelling arrow trap"
+msgstr ""
 
 #: easy_traps.tra:119
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Fire arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:120
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Ice arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:121
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Piercing arrow trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:122
+msgid "Monster Summoning trap"
+msgstr ""
+
+#: easy_traps.tra:123
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Frost trap"
 msgstr "Ловушка со стрелой"
 
-#: easy_traps.tra:120
-msgid "Flamestrike trap"
-msgstr ""
-
-#: easy_traps.tra:121
-msgid "Hold person trap"
-msgstr ""
-
-#: easy_traps.tra:122
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Lightning bolt trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:123
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Repeating Lightning bolt trap"
-msgstr "Ловушка со стрелой"
-
 #: easy_traps.tra:124
-msgid "Miscast magic trap"
+msgid "Cloudkill trap"
 msgstr ""
 
 #: easy_traps.tra:125
-msgid "Magic missile trap"
-msgstr ""
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Minor Lightning Bolt trap"
+msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:126
-msgid "Monster summoning trap"
+msgid "Underwater Bite trap"
 msgstr ""
 
 #: easy_traps.tra:127
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Stinking cloud trap"
-msgstr "Ловушка со стрелой"
+msgid "Hallway Spikes trap"
+msgstr ""
 
 #: easy_traps.tra:128
-msgid "Silence trap"
+msgid "Muck trap"
 msgstr ""
 
 #: easy_traps.tra:129
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Spider spawn trap"
+msgid "Shadow Death trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:130
-msgid "Skull trap"
+msgid "Guillotine trap"
 msgstr ""
 
-#: easy_traps.tra:131
+#: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
 #, fuzzy
-#| msgid "True true sight"
-msgid "True Sight trap"
-msgstr "Настоящее истинное зрение"
-
-#: easy_traps.tra:132
-msgid "Web trap"
-msgstr ""
-
-#: easy_traps.tra:133
-msgid "Hallway spikes trap"
-msgstr ""
+#| msgid "Arrow trap"
+msgid "Lightning orb trap"
+msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:134
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Dart trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:135
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Spear trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:136
-msgid "Slime trap"
-msgstr ""
-
-#: easy_traps.tra:137
-msgid "Vent trap"
-msgstr ""
-
-#: easy_traps.tra:138
-msgid "Power Word: Sleep trap"
-msgstr ""
-
-#: easy_traps.tra:139
-msgid "Power Word: Silence trap"
-msgstr ""
-
-#: easy_traps.tra:140
-msgid "Power Word: Stun trap"
-msgstr ""
-
-#: easy_traps.tra:141
-msgid "Enfeeblement trap"
-msgstr ""
-
-#: easy_traps.tra:142
-msgid "Spell Thrust trap"
-msgstr ""
-
-#: easy_traps.tra:143
-msgid "Flesh to Stone trap"
-msgstr ""
-
-#: easy_traps.tra:144
-msgid "Chain Lightning trap"
-msgstr ""
-
-#: easy_traps.tra:145
-msgid "Death Spell trap"
-msgstr ""
-
-#: easy_traps.tra:146
-msgid "Desintegrate trap"
-msgstr ""
-
-#: easy_traps.tra:147
-msgid "Ruby Ray trap"
-msgstr ""
-
-#: easy_traps.tra:148
-msgid "Delayed Fireball trap"
-msgstr ""
-
-#: easy_traps.tra:149
-msgid "Finger of Death trap"
-msgstr ""
-
-#: easy_traps.tra:150
-msgid "Prismatic Spray trap"
-msgstr ""
-
-#: easy_traps.tra:151
-msgid "Pierce Shield trap"
-msgstr ""
-
-#: easy_traps.tra:152
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Incendiary Cloud trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:153
-msgid "Horrid Wilting trap"
-msgstr ""
-
-#: easy_traps.tra:154
-msgid "Maze trap"
-msgstr ""
-
-#: easy_traps.tra:155
-msgid "Spell Strike trap"
-msgstr ""
-
-#: easy_traps.tra:156
-msgid "Meteor Swarm trap"
-msgstr ""
-
-#: easy_traps.tra:157
-msgid "Power Word: Kill trap"
-msgstr ""
-
-#: easy_traps.tra:158
-msgid "Wail of Banshee trap"
-msgstr ""
-
-#: easy_traps.tra:159
-msgid "Energy Drain trap"
-msgstr ""
-
-#: easy_traps.tra:160
-msgid "Sleep trap"
-msgstr ""
-
-#: easy_traps.tra:161
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Horror trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:162
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Melf's Acid Arrow trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:163
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Slow trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:164
-#, fuzzy
-#| msgid "Arrow trap"
-msgid "Icestorm trap"
-msgstr "Ловушка со стрелой"
-
-#: easy_traps.tra:165
 #, fuzzy
 #| msgid "crushing"
 msgid "Crushing trap"
 msgstr "крушашее"
 
-#: easy_traps.tra:166
-msgid "Minor ligthning bolt trap"
+#: easy_traps.tra:135
+msgid "Skull trap"
 msgstr ""
 
-#: easy_traps.tra:167
+#: easy_traps.tra:136
 #, fuzzy
 #| msgid "Arrow trap"
-msgid "Web Tangle trap"
+msgid "Stone trap"
 msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:137
+msgid "Summon Djinn trap"
+msgstr ""
+
+#: easy_traps.tra:138
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Spear trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:139
+msgid "Slime trap"
+msgstr ""
+
+#: easy_traps.tra:140
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "Dart trap"
+msgstr "Ловушка со стрелой"
+
+#: easy_traps.tra:141
+msgid "Vent trap"
+msgstr ""
+
+#: easy_traps.tra:142
+msgid "Pendulum trap"
+msgstr ""
 
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
@@ -1265,12 +1157,6 @@ msgstr "Упрощенные ловушки: действие персонажа
 msgid "stop moving and pause game"
 msgstr "остановиться поставить игру на паузу"
 
-#: setup.tra:116
-#, fuzzy
-#| msgid "Easy traps: center on character"
-msgid "Improved trap detection: center on character"
-msgstr "Упрощенные ловушки: отцентровать экран на персонаже"
-
 #: setup.tra:117
 #, fuzzy
 #| msgid "Easy traps: play a sound"
@@ -1536,6 +1422,72 @@ msgstr ""
 
 #: setup.tra:270
 msgid "Mislead spell is not present in game"
+msgstr ""
+
+#: setup.tra:271
+#, fuzzy
+#| msgid "Easy traps: character action"
+msgid "Improved trap detection: instant detection"
+msgstr "Упрощенные ловушки: действие персонажа"
+
+#: setup.tra:301
+msgid "Trap intuition"
+msgstr ""
+
+#: setup.tra:302
+msgid "not in combat"
+msgstr ""
+
+#: setup.tra:303
+msgid "works in combat"
+msgstr ""
+
+#: setup.tra:304
+msgid "Intuition not selected, skipping"
+msgstr ""
+
+#: setup.tra:305
+msgid "Trap intuition: pause game on a hunch"
+msgstr ""
+
+#: setup.tra:306
+msgid "ground traps only"
+msgstr ""
+
+#: setup.tra:307
+#, fuzzy
+#| msgid "Arrow trap"
+msgid "all traps"
+msgstr "Ловушка со стрелой"
+
+#: setup.tra:308
+msgid "Trap intuition: center screen"
+msgstr ""
+
+#: setup.tra:309
+msgid "on the character"
+msgstr ""
+
+#: setup.tra:310
+msgid "on the supposed trap"
+msgstr ""
+
+#: setup.tra:311
+msgid "Trap reminders"
+msgstr ""
+
+#: setup.tra:312
+msgid "generic"
+msgstr ""
+
+#: setup.tra:313
+msgid "disclose trap type"
+msgstr ""
+
+#: setup.tra:314
+msgid ""
+"Trap intuition: toggle Find Traps automatically on a hunch (will interrupt "
+"whatever the thief is doing)"
 msgstr ""
 
 #: shandalars_cloak.tra:1
@@ -1930,6 +1882,46 @@ msgstr ""
 #: true_true_sight.tra:2
 msgid "each second"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Repeating arrow trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Repeating Fireball trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Repeating Lightning bolt trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Spider spawn trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "True Sight trap"
+#~ msgstr "Настоящее истинное зрение"
+
+#, fuzzy
+#~ msgid "Incendiary Cloud trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Melf's Acid Arrow trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Icestorm trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Web Tangle trap"
+#~ msgstr "Ловушка со стрелой"
+
+#, fuzzy
+#~ msgid "Improved trap detection: center on character"
+#~ msgstr "Упрощенные ловушки: отцентровать экран на персонаже"
 
 #~ msgid "BG1 soundsets prevail"
 #~ msgstr "Преобладают сеты из BG1"

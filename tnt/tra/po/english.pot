@@ -49,276 +49,176 @@ msgstr ""
 msgid "Hold on. See this?"
 msgstr ""
 
+#: easy_traps.tra:98
+msgid "Trap"
+msgstr ""
+
+#: easy_traps.tra:99
+msgid "trap"
+msgstr ""
+
 #: easy_traps.tra:100
-msgid "Unknown trap"
+msgid "Unknown"
 msgstr ""
 
 #: easy_traps.tra:101
-msgid "Arrow trap"
+msgid "Hold Person trap"
 msgstr ""
 
 #: easy_traps.tra:102
-msgid "Repeating arrow trap"
-msgstr ""
-
-#: easy_traps.tra:103
-msgid "Slaying arrow trap"
-msgstr ""
-
-#: easy_traps.tra:104
-msgid "Acid arrow trap"
-msgstr ""
-
-#: easy_traps.tra:105
-msgid "Biting arrow trap"
-msgstr ""
-
-#: easy_traps.tra:106
-msgid "Detonation arrow trap"
-msgstr ""
-
-#: easy_traps.tra:107
-msgid "Dispelling arrow trap"
-msgstr ""
-
-#: easy_traps.tra:108
-msgid "Fire arrow trap"
-msgstr ""
-
-#: easy_traps.tra:109
-msgid "Ice arrow trap"
-msgstr ""
-
-#: easy_traps.tra:110
-msgid "Piercing arrow trap"
-msgstr ""
-
-#: easy_traps.tra:111
-msgid "Agannazar's scorcher trap"
-msgstr ""
-
-#: easy_traps.tra:112
-msgid "Cloudkill trap"
-msgstr ""
-
-#: easy_traps.tra:113
-msgid "Call lightning trap"
-msgstr ""
-
-#: easy_traps.tra:114
-msgid "Confusion trap"
-msgstr ""
-
-#: easy_traps.tra:115
-msgid "Chromatic orb trap"
-msgstr ""
-
-#: easy_traps.tra:116
-msgid "Dire charm trap"
-msgstr ""
-
-#: easy_traps.tra:117
-msgid "Fireball trap"
-msgstr ""
-
-#: easy_traps.tra:118
-msgid "Repeating Fireball trap"
-msgstr ""
-
-#: easy_traps.tra:119
-msgid "Frost trap"
-msgstr ""
-
-#: easy_traps.tra:120
-msgid "Flamestrike trap"
-msgstr ""
-
-#: easy_traps.tra:121
-msgid "Hold person trap"
-msgstr ""
-
-#: easy_traps.tra:122
-msgid "Lightning bolt trap"
-msgstr ""
-
-#: easy_traps.tra:123
-msgid "Repeating Lightning bolt trap"
-msgstr ""
-
-#: easy_traps.tra:124
-msgid "Miscast magic trap"
-msgstr ""
-
-#: easy_traps.tra:125
-msgid "Magic missile trap"
-msgstr ""
-
-#: easy_traps.tra:126
-msgid "Monster summoning trap"
-msgstr ""
-
-#: easy_traps.tra:127
-msgid "Stinking cloud trap"
-msgstr ""
-
-#: easy_traps.tra:128
 msgid "Silence trap"
 msgstr ""
 
+#: easy_traps.tra:103
+msgid "Call Lightning trap"
+msgstr ""
+
+#: easy_traps.tra:104
+msgid "Miscast Magic trap"
+msgstr ""
+
+#: easy_traps.tra:105
+msgid "Flamestrike trap"
+msgstr ""
+
+#: easy_traps.tra:106
+msgid "Chromatic orb trap"
+msgstr ""
+
+#: easy_traps.tra:107
+msgid "Confusion trap"
+msgstr ""
+
+#: easy_traps.tra:108
+msgid "Dire Charm trap"
+msgstr ""
+
+#: easy_traps.tra:109
+msgid "Fireball trap"
+msgstr ""
+
+#: easy_traps.tra:110
+msgid "Lightning bolt trap"
+msgstr ""
+
+#: easy_traps.tra:111
+msgid "Magic Missile trap"
+msgstr ""
+
+#: easy_traps.tra:112
+msgid "Stinking Cloud trap"
+msgstr ""
+
+#: easy_traps.tra:113
+msgid "Arrow trap"
+msgstr ""
+
+#: easy_traps.tra:114
+msgid "Slaying arrow trap"
+msgstr ""
+
+#: easy_traps.tra:115
+msgid "Acid arrow trap"
+msgstr ""
+
+#: easy_traps.tra:116
+msgid "Biting arrow trap"
+msgstr ""
+
+#: easy_traps.tra:117
+msgid "Detonation arrow trap"
+msgstr ""
+
+#: easy_traps.tra:118
+msgid "Dispelling arrow trap"
+msgstr ""
+
+#: easy_traps.tra:119
+msgid "Fire arrow trap"
+msgstr ""
+
+#: easy_traps.tra:120
+msgid "Ice arrow trap"
+msgstr ""
+
+#: easy_traps.tra:121
+msgid "Piercing arrow trap"
+msgstr ""
+
+#: easy_traps.tra:122
+msgid "Monster Summoning trap"
+msgstr ""
+
+#: easy_traps.tra:123
+msgid "Frost trap"
+msgstr ""
+
+#: easy_traps.tra:124
+msgid "Cloudkill trap"
+msgstr ""
+
+#: easy_traps.tra:125
+msgid "Minor Lightning Bolt trap"
+msgstr ""
+
+#: easy_traps.tra:126
+msgid "Underwater Bite trap"
+msgstr ""
+
+#: easy_traps.tra:127
+msgid "Hallway Spikes trap"
+msgstr ""
+
+#: easy_traps.tra:128
+msgid "Muck trap"
+msgstr ""
+
 #: easy_traps.tra:129
-msgid "Spider spawn trap"
+msgid "Shadow Death trap"
 msgstr ""
 
 #: easy_traps.tra:130
-msgid "Skull trap"
+msgid "Guillotine trap"
 msgstr ""
 
-#: easy_traps.tra:131
-msgid "True Sight trap"
-msgstr ""
-
-#: easy_traps.tra:132
-msgid "Web trap"
-msgstr ""
-
-#: easy_traps.tra:133
-msgid "Hallway spikes trap"
+#: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
+msgid "Lightning orb trap"
 msgstr ""
 
 #: easy_traps.tra:134
-msgid "Dart trap"
-msgstr ""
-
-#: easy_traps.tra:135
-msgid "Spear trap"
-msgstr ""
-
-#: easy_traps.tra:136
-msgid "Slime trap"
-msgstr ""
-
-#: easy_traps.tra:137
-msgid "Vent trap"
-msgstr ""
-
-#: easy_traps.tra:138
-msgid "Power Word: Sleep trap"
-msgstr ""
-
-#: easy_traps.tra:139
-msgid "Power Word: Silence trap"
-msgstr ""
-
-#: easy_traps.tra:140
-msgid "Power Word: Stun trap"
-msgstr ""
-
-#: easy_traps.tra:141
-msgid "Enfeeblement trap"
-msgstr ""
-
-#: easy_traps.tra:142
-msgid "Spell Thrust trap"
-msgstr ""
-
-#: easy_traps.tra:143
-msgid "Flesh to Stone trap"
-msgstr ""
-
-#: easy_traps.tra:144
-msgid "Chain Lightning trap"
-msgstr ""
-
-#: easy_traps.tra:145
-msgid "Death Spell trap"
-msgstr ""
-
-#: easy_traps.tra:146
-msgid "Desintegrate trap"
-msgstr ""
-
-#: easy_traps.tra:147
-msgid "Ruby Ray trap"
-msgstr ""
-
-#: easy_traps.tra:148
-msgid "Delayed Fireball trap"
-msgstr ""
-
-#: easy_traps.tra:149
-msgid "Finger of Death trap"
-msgstr ""
-
-#: easy_traps.tra:150
-msgid "Prismatic Spray trap"
-msgstr ""
-
-#: easy_traps.tra:151
-msgid "Pierce Shield trap"
-msgstr ""
-
-#: easy_traps.tra:152
-msgid "Incendiary Cloud trap"
-msgstr ""
-
-#: easy_traps.tra:153
-msgid "Horrid Wilting trap"
-msgstr ""
-
-#: easy_traps.tra:154
-msgid "Maze trap"
-msgstr ""
-
-#: easy_traps.tra:155
-msgid "Spell Strike trap"
-msgstr ""
-
-#: easy_traps.tra:156
-msgid "Meteor Swarm trap"
-msgstr ""
-
-#: easy_traps.tra:157
-msgid "Power Word: Kill trap"
-msgstr ""
-
-#: easy_traps.tra:158
-msgid "Wail of Banshee trap"
-msgstr ""
-
-#: easy_traps.tra:159
-msgid "Energy Drain trap"
-msgstr ""
-
-#: easy_traps.tra:160
-msgid "Sleep trap"
-msgstr ""
-
-#: easy_traps.tra:161
-msgid "Horror trap"
-msgstr ""
-
-#: easy_traps.tra:162
-msgid "Melf's Acid Arrow trap"
-msgstr ""
-
-#: easy_traps.tra:163
-msgid "Slow trap"
-msgstr ""
-
-#: easy_traps.tra:164
-msgid "Icestorm trap"
-msgstr ""
-
-#: easy_traps.tra:165
 msgid "Crushing trap"
 msgstr ""
 
-#: easy_traps.tra:166
-msgid "Minor ligthning bolt trap"
+#: easy_traps.tra:135
+msgid "Skull trap"
 msgstr ""
 
-#: easy_traps.tra:167
-msgid "Web Tangle trap"
+#: easy_traps.tra:136
+msgid "Stone trap"
+msgstr ""
+
+#: easy_traps.tra:137
+msgid "Summon Djinn trap"
+msgstr ""
+
+#: easy_traps.tra:138
+msgid "Spear trap"
+msgstr ""
+
+#: easy_traps.tra:139
+msgid "Slime trap"
+msgstr ""
+
+#: easy_traps.tra:140
+msgid "Dart trap"
+msgstr ""
+
+#: easy_traps.tra:141
+msgid "Vent trap"
+msgstr ""
+
+#: easy_traps.tra:142
+msgid "Pendulum trap"
 msgstr ""
 
 #: extended_soundsets.tra:37
@@ -1088,10 +988,6 @@ msgstr ""
 msgid "stop moving and pause game"
 msgstr ""
 
-#: setup.tra:116
-msgid "Improved trap detection: center on character"
-msgstr ""
-
 #: setup.tra:117
 msgid "Improved trap detection: play a sound"
 msgstr ""
@@ -1335,6 +1231,68 @@ msgstr ""
 
 #: setup.tra:270
 msgid "Mislead spell is not present in game"
+msgstr ""
+
+#: setup.tra:271
+msgid "Improved trap detection: instant detection"
+msgstr ""
+
+#: setup.tra:301
+msgid "Trap intuition"
+msgstr ""
+
+#: setup.tra:302
+msgid "not in combat"
+msgstr ""
+
+#: setup.tra:303
+msgid "works in combat"
+msgstr ""
+
+#: setup.tra:304
+msgid "Intuition not selected, skipping"
+msgstr ""
+
+#: setup.tra:305
+msgid "Trap intuition: pause game on a hunch"
+msgstr ""
+
+#: setup.tra:306
+msgid "ground traps only"
+msgstr ""
+
+#: setup.tra:307
+msgid "all traps"
+msgstr ""
+
+#: setup.tra:308
+msgid "Trap intuition: center screen"
+msgstr ""
+
+#: setup.tra:309
+msgid "on the character"
+msgstr ""
+
+#: setup.tra:310
+msgid "on the supposed trap"
+msgstr ""
+
+#: setup.tra:311
+msgid "Trap reminders"
+msgstr ""
+
+#: setup.tra:312
+msgid "generic"
+msgstr ""
+
+#: setup.tra:313
+msgid "disclose trap type"
+msgstr ""
+
+#: setup.tra:314
+msgid ""
+"Trap intuition: toggle Find Traps automatically on a hunch (will interrupt "
+"whatever the thief is doing)"
 msgstr ""
 
 #: shandalars_cloak.tra:1
