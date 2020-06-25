@@ -5,8 +5,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
-    DisplayStringHead(Myself, ~%trap_warning_string%~)
-    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
     Continue()
 END
 
@@ -28,8 +26,7 @@ THEN
     Continue()
 END
 
-
-// Display detected trap type second and consequtive times
+// Display detected trap type
 IF
   Global("%trap_var_base%_detected", "MYAREA", 1) // has been detected with thief's skill
   Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
@@ -46,7 +43,7 @@ THEN
     Continue()
 END
 
-//main detection check
+// intuition main action
 IF
   Global("%trap_var_base%_detected", "MYAREA", 0)
   Global("%trap_var_base%_disarmed", "MYAREA", 0)
@@ -70,21 +67,7 @@ THEN
     Continue()
 END
 
-// intuition: action find traps
-IF
-  Global("%trap_var_base%_detected", "MYAREA", 0)
-  %is_active%
-  %traps_baf_class%
-  %traps_baf_range%
-  !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
-  !TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
-THEN
-	RESPONSE #1
-    ActionOverride(LastSeenBy, FindTraps())
-    Continue()
-END
-
-// shorter random string display
+// intuition: character strings
 IF
   Global("%trap_var_base%_string", "MYAREA", 1)
   ActionListEmpty()
@@ -120,6 +103,19 @@ THEN
     Continue()
 END
 
+// intuition: action find traps
+IF
+  Global("%trap_var_base%_detected", "MYAREA", 0)
+  %is_active%
+  %traps_baf_class%
+  %traps_baf_range%
+  !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
+  !TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
+THEN
+	RESPONSE #1
+    ActionOverride(LastSeenBy, FindTraps())
+    Continue()
+END
 
 //Start warning again when reset
 IF
