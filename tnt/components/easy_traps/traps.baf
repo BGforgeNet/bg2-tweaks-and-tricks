@@ -12,6 +12,7 @@ END
 
 // instant detection
 IF
+  %traps_baf_instant_toggle%
   Global("%trap_var_base%_detected", "MYAREA", 0)
   %is_active%
   %traps_baf_class%
@@ -59,7 +60,7 @@ IF
   ActionListEmpty()
 THEN
   RESPONSE #1
-    SetGlobal("%trap_var_base%_display_string", "MYAREA", 1)
+    SetGlobal("%trap_var_base%_string", "MYAREA", 1)
     SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
     SetGlobalTimer("%common_timer%", "GLOBAL", %notification_delay%)
     %traps_baf_stop%
@@ -71,7 +72,7 @@ END
 
 // shorter random string display
 IF
-  Global("%trap_var_base%_display_string", "MYAREA", 1)
+  Global("%trap_var_base%_string", "MYAREA", 1)
   ActionListEmpty()
 THEN
   RESPONSE #1
@@ -97,11 +98,11 @@ THEN
     Continue()
 END
 IF
-  Global("%trap_var_base%_display_string", "MYAREA", 1)
+  Global("%trap_var_base%_string", "MYAREA", 1)
   ActionListEmpty()
 THEN
   RESPONSE #1
-    SetGlobal("%trap_var_base%_display_string", "MYAREA", 0)
+    SetGlobal("%trap_var_base%_string", "MYAREA", 0)
     Continue()
 END
 

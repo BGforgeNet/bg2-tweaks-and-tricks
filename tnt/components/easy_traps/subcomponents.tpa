@@ -37,3 +37,9 @@ ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_a
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_sound ~~
 END
+
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_instant~) BEGIN
+  OUTER_SPRINT traps_baf_instant_toggle ~~
+END ELSE BEGIN
+  OUTER_SPRINT traps_baf_instant_toggle ~False()~
+END

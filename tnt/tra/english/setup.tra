@@ -50,7 +50,7 @@
 @124  = ~Requires ToB or EE engine~
 @125  = ~Requires BG2 or EE engine~
 @126  = ~Requires BG2~
-@127 =  ~Shandalar's cloak not present in game~
+@127  = ~Shandalar's cloak not present in game~
 
 @128  = ~Weightless ammo~
 @129  = ~All Improved Traps Detection components must be installed before core~
@@ -112,3 +112,4 @@
 @268 = ~Project Image spell is not present in game~
 @269 = ~Uncheese Mislead~
 @270 = ~Mislead spell is not present in game~
+@271 = ~Improved trap detection: instant detection~

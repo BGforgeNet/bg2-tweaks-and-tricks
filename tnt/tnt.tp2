@@ -23,7 +23,7 @@ LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.t
 // FAMILIARS
 BEGIN @74 /* Smarter familiars */
 GROUP @225 /* Familiars */
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124 /* Requires ToB or EE engine */
 OUTER_SPRINT comp_name ~smarter_familiars~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
@@ -33,61 +33,67 @@ REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* 
 INCLUDE ~%components%/resilient_familiars/main.tpa~
 // End familiars
 
-// TRAPS
-BEGIN @111 /* Easy traps: allow sensing in combat */
-GROUP @226 /* Traps */
+
+// Traps
+BEGIN @271
+GROUP @226
+LABEL ~g_tnt_traps_instant~
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
+
+BEGIN @111
+GROUP @226
 LABEL ~g_tnt_traps_intuition_combat~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
 
-BEGIN @112 /* Easy traps: increase trap sense range */
-GROUP @226 /* Traps */
+BEGIN @112
+GROUP @226
 LABEL ~g_tnt_traps_range~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
 
-BEGIN @113 /* stop moving */
-GROUP @226 /* Traps */
+BEGIN @113
+GROUP @226
 LABEL ~g_tnt_traps_action_stop_moving~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
-SUBCOMPONENT @114 /* Easy traps: character action */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
+SUBCOMPONENT @114
 
-BEGIN @115 /* stop moving and pause game */
-GROUP @226 /* Traps */
+BEGIN @115
+GROUP @226
 LABEL ~g_tnt_traps_action_stop_moving_and_pause~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
-SUBCOMPONENT @114 /* Easy traps: character action */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
+SUBCOMPONENT @114
 
-BEGIN @224 /* stop moving and pause game only for ground traps */
-GROUP @226 /* Traps */
+BEGIN @224
+GROUP @226
 LABEL ~g_tnt_traps_action_stop_moving_and_pause_ground_only~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
-SUBCOMPONENT @114 /* Easy traps: character action */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
+SUBCOMPONENT @114
 
-BEGIN @116 /* Easy traps: center on character */
-GROUP @226 /* Traps */
+BEGIN @116
+GROUP @226
 LABEL ~g_tnt_traps_action_center_on_character~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
 
-BEGIN @117 /* Easy traps: play a sound */
-GROUP @226 /* Traps */
+BEGIN @117
+GROUP @226
 LABEL ~g_tnt_traps_action_sound~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129 /* All easy traps components must be installed before core */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_core~) @129
 
-BEGIN @118 /* Easy traps: core (REQUIRED for any of previous "Easy traps" components to work) */
-GROUP @226 /* Traps */
+BEGIN @118
+GROUP @226
 LABEL ~g_tnt_traps_core~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @124 /* Requires ToB or EE engine */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 OUTER_TEXT_SPRINT comp_name ~easy_traps~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
-//END TRAPS
-
+// end traps
 
 //SOUNDSETS
 BEGIN @79 /* Additions only */
