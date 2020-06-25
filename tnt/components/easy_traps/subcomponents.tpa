@@ -23,11 +23,12 @@ ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_i
   OUTER_SPRINT traps_baf_view ~MoveViewObject(Myself, INSTANT)~
 END
 
-OUTER_SPRINT traps_baf_pause_toggle ~False()~
-ACTION_IF (MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_ground_traps_only~) )
-          OR (MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_all_traps~))
-BEGIN
-  OUTER_SPRINT traps_baf_pause_toggle ~~
+OUTER_SET autopause = 0
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_ground_traps_only~) BEGIN
+  OUTER_SET autopause = 1
+END
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_all_traps~) BEGIN
+  OUTER_SET autopause = 2
 END
 
 OUTER_SPRINT traps_baf_sound_toggle ~False()~
