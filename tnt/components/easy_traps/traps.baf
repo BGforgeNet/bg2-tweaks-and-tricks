@@ -39,7 +39,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
-    DisplayStringHead(Myself, ~%trap_warning_string%~)
+    CreateCreatureImpassableAllowOverlap("%traps_minion%", [%x%.%y%], 0)
+    DisplayStringNoNameHead("%traps_minion%", ~%trap_warning_string%~)
+    ActionOverride("%traps_minion%", DestroySelf())
     Continue()
 END
 

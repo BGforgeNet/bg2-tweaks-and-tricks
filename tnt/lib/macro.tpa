@@ -49,12 +49,16 @@ END
 INCLUDE ~%MOD_FOLDER%/lib/external/ir.tpa~
 INCLUDE ~%MOD_FOLDER%/lib/external/ids.tpa~
 
-DEFINE_ACTION_FUNCTION create_spy
+DEFINE_ACTION_FUNCTION CREATE_MINION
   STR_VAR
     cre = ~~
     script = ~~
+    name = ~-1~
 BEGIN
   COPY_EXISTING ~cutspy.cre~ ~override/%cre%.cre~
+    PATCH_IF NOT ~%name%~ STR_EQ ~-1~ BEGIN
+      SAY_EVALUATED NAME1 ~%name%~
+    END
     WRITE_ASCIIT DEATHVAR ~%cre%~
     WRITE_ASCIIT SCRIPT_OVERRIDE ~%script%~
     WRITE_BYTE CRE_allegiance IDS_OF_SYMBOL (~ea~ ~neutral~)

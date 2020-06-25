@@ -5,6 +5,9 @@ OUTER_SPRINT trap_capitalized (AT 98)
 PRINT ~unknown_trap_name=%unknown_trap_name%~
 OUTER_SPRINT pause_timer ~%modder_prefix%traps_pause_timer~
 
+OUTER_SPRINT traps_minion ~g_traps~
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~~ END
+
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
 INCLUDE ~%comp_dir%/functions.tpa~
@@ -60,6 +63,10 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
         resets = ~%i_4%~
         trap_index = 0 // this is used for unique MYAREA vars
         SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
+
+        LPF GET_AREA_STRUCTURE_CENTER_POINT INT_VAR index = idx STR_VAR type RET x=x_center y=y_center END
+        PATCH_PRINT ~%SOURCE_FILE%: center point %x% %y%~
+
         INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
           COPY_EXISTING ~%s%.bcs~ override
             DECOMPILE_AND_PATCH BEGIN
@@ -69,14 +76,14 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                 valid_trap_script = 1
                 trap_index += 1
                 LPF get_spell_res_from_baf INT_VAR spell_index_buffer = spell RET spell_res END
-                PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) BEGIN
+                PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) BEGIN
                   LPF GET_UNIQUE_FILE_NAME
                     STR_VAR
                       extension = ~bcs~
-                      base = ~%modder_prefix%tnt_traps_%s%_%type%_%trap_index%_%detection%_%removal%_%resets%_%spell_res%~
+                      base = ~%modder_prefix%tnt_traps_%s%_%type%_%trap_index%_%detection%_%removal%_%resets%_%spell_res%_%x%_%y%~
                     RET new_script = filename
                   END
-                  SPRINT $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~) ~%new_script%~
+                  SPRINT $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) ~%new_script%~
 
                   INNER_ACTION BEGIN COPY_EXISTING ~%s%.bcs~ ~override/%new_script%.bcs~ END
                   SPRINT trap_var_base ~%modder_prefix%tnt_traps%new_script%~
