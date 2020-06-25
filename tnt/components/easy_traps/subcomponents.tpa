@@ -1,41 +1,48 @@
 // look up which components were chosen
 
+OUTER_SET intution = 0
+OUTER_SPRINT traps_baf_combat ~CombatCounterLT(1)~
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_combat~) BEGIN
   OUTER_SPRINT traps_baf_combat ~~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_combat ~CombatCounterLT(1)~
+  OUTER_SET intuition = 1
+END
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_no_combat~) BEGIN
+  OUTER_SET intuition = 1
 END
 
-ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_stop_moving_and_pause~) BEGIN
-  OUTER_SPRINT traps_baf_stop ~~
+OUTER_SPRINT traps_baf_pause ~~
+ACTION_IF
+  MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_all_traps~) OR
+  MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_pause_ground_traps_only~)
+BEGIN
   OUTER_SPRINT traps_baf_pause // using a minion becase it's not working from trap script
-    ~CreateCreatureImpassableAllowOverlap("%traps_minion%", [-1.-1], 0)
+    // ~ActionOverride(LastSeenBy, PauseGame())~
+    ~~~~~
+    CreateCreature("%traps_minion%", [-1.-1], 0)
+    ActionOverride("%traps_minion%", DisplayStringHead(Myself, ~QQQQQ~))
+    ActionOverride("%traps_minion%", MakeGlobal())
+    ChangeEnemyAlly("%traps_minion%", FAMILIAR)
+    ActionOverride("%traps_minion%", AddFamiliar())
     ActionOverride("%traps_minion%", PauseGame())
-    ActionOverride("%traps_minion%", DestroySelf())~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_pause ~~
+    ActionOverride("%traps_minion%", DisplayStringHead(Myself, ~WWWWW~))
+    // ActionOverride("%traps_minion%", DestroySelf())
+    ~~~~~
 END
 
+OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 15)~
 ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_range~) BEGIN
   OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 30)~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_range ~Range(LastSeenBy, 15)~
 END
 
-ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_center_on_character~) BEGIN
+OUTER_SPRINT traps_baf_view ~~
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_center_on_character~) BEGIN
   OUTER_SPRINT traps_baf_view ~MoveViewObject(LastSeenBy, INSTANT)~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_view ~~
+END
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_center_on_trap~) BEGIN
+  OUTER_SPRINT traps_baf_view ~MoveViewObject(Myself, INSTANT)~
 END
 
-ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_stop_moving~) BEGIN
-  OUTER_SPRINT traps_baf_stop ~ClearActions(LastSeenBy)~
-  OUTER_SPRINT traps_baf_pause ~~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_stop ~~
-END
-
-ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_action_sound~) BEGIN
+ACTION_IF MOD_IS_INSTALLED ~%tp2_name%~ (ID_OF_LABEL ~%tp2_name%~ ~g_tnt_traps_intuition_sound~) BEGIN
   OUTER_SPRINT traps_baf_sound ~PlaySound("act_09")~
 END ELSE BEGIN
   OUTER_SPRINT traps_baf_sound ~~

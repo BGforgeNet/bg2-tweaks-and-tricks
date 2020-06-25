@@ -1,0 +1,20 @@
+//Start warning again when reset
+IF
+  Reset([ANYONE])
+THEN
+  RESPONSE #100
+    SetGlobal("%trap_var_base%_disarmed", "MYAREA", 0)
+    Continue()
+END
+
+//Stop warning when fired
+IF
+  OR(3)
+    Disarmed([ANYONE])
+    Opened([ANYONE])  // for containers
+    Entered([ANYONE])  // for regions
+THEN
+  RESPONSE #100
+    SetGlobal("%trap_var_base%_disarmed", "MYAREA", 1)
+    Continue()
+END

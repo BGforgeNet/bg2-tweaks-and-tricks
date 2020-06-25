@@ -1,9 +1,3 @@
-ACTION_IF ENGINE_IS ~tob~ BEGIN
-  OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
-  LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
-  ACTION_INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
-END
-
 INCLUDE ~%lib_dir%/macro.tpa~
 
 COPY_EXISTING ~clsrcreq.2da~ override

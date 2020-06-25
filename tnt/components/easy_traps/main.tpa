@@ -1,12 +1,14 @@
+OUTER_SPRINT comp_baf_dir ~%comp_dir%/baf~
 OUTER_SET notification_delay = 12
+OUTER_SET intuition_delay = 24
 OUTER_SPRINT unknown_trap_name (AT 100)
 OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
-PRINT ~unknown_trap_name=%unknown_trap_name%~
-OUTER_SPRINT pause_timer ~%modder_prefix%traps_pause_timer~
+OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
 
 OUTER_SPRINT traps_minion ~g_traps~
-LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~~ END
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~g_traps~ ea = ~FAMILIAR~ END
+COMPILE ~%comp_baf_dir%/g_traps.baf~
 
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
@@ -64,8 +66,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
         trap_index = 0 // this is used for unique MYAREA vars
         SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
 
+        // location for minion to display the string at actual trap location, not trap launch point
         LPF GET_AREA_STRUCTURE_CENTER_POINT INT_VAR index = idx STR_VAR type RET x=x_center y=y_center END
-        PATCH_PRINT ~%SOURCE_FILE%: center point %x% %y%~
 
         INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
           COPY_EXISTING ~%s%.bcs~ override
@@ -100,7 +102,14 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                       trap_capitalized
                     RET trap_warning_string = string
                   END
-                  INNER_ACTION BEGIN EXTEND_TOP ~%new_script%.bcs~ ~%comp_dir%/traps.baf~ EVAL END
+                  INNER_ACTION BEGIN
+                    EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/main.baf~ EVAL
+                    EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/displaystring.baf~ EVAL
+                    ACTION_IF intuition == 1 BEGIN
+                      EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/intuition.baf~ EVAL
+                    END
+                    EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/detection.baf~ EVAL
+                  END
 
                 END ELSE BEGIN
                   SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~)

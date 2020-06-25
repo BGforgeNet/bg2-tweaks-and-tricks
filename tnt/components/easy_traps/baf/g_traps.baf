@@ -1,0 +1,16 @@
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    AddFamiliar()
+    SmallWait(1)
+    PauseGame()
+END
+IF
+  True()
+THEN
+  RESPONSE #100
+    RemoveFamiliar()
+    DestroySelf()
+END

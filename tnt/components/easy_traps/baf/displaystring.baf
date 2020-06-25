@@ -1,0 +1,18 @@
+// Display detected trap type
+IF
+  Global("%trap_var_base%_detected", "MYAREA", 1) // has been detected with thief's skill
+  Global("%trap_var_base%_disarmed", "MYAREA", 0) // hasn't been disarmed or set off
+  !GlobalTimerNotExpired("%trap_var_base%_timer", "MYAREA") // don't spam the dialog box
+  %is_active%
+  %traps_baf_combat%
+  Detect([PC])
+  %traps_baf_range%
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
+    CreateCreatureImpassableAllowOverlap("%traps_minion%", [%x%.%y%], 0)
+    DisplayStringNoNameHead("%traps_minion%", ~%trap_warning_string%~)
+    ActionOverride("%traps_minion%", DestroySelf())
+    Continue()
+END

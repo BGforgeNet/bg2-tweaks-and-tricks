@@ -1,5 +1,16 @@
+// normal detection
+IF
+  Detected([ANYONE])
+  %is_active%
+THEN
+  RESPONSE #100
+    SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
+    Continue()
+END
+
 // instant detection
 IF
+  %traps_baf_instant_toggle%
   Global("%trap_var_base%_detected", "MYAREA", 0)
   %is_active%
   %traps_baf_class%
