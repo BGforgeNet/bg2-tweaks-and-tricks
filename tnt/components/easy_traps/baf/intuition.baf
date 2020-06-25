@@ -13,14 +13,11 @@ THEN
   RESPONSE #1
     SetGlobal("%trap_var_base%_intuition", "MYAREA", 1)
     SetGlobalTimer("%intuition_timer%", "MYAREA", %intuition_delay%)
-    // SetGlobal("%trap_var_base%_string", "MYAREA", 1)
     Continue()
 END
 
 // intuition: character strings
 IF
-  // Global("%trap_var_base%_string", "MYAREA", 1)
-  // !GlobalTimerNotExpired("%common_timer%", "MYAREA")
   Global("%trap_var_base%_intuition", "MYAREA", 1)
   ActionListEmpty()
 THEN
@@ -46,22 +43,10 @@ THEN
     DisplayStringHead(LastSeenBy, @9)
     Continue()
 END
-// IF
-//   Global("%trap_var_base%_string", "MYAREA", 1)
-//   ActionListEmpty()
-// THEN
-//   RESPONSE #1
-//     SetGlobal("%trap_var_base%_string", "MYAREA", 0)
-//     Continue()
-// END
 
 // intuition: center
 IF
   Global("%trap_var_base%_intuition", "MYAREA", 1)
-  // Global("%trap_var_base%_detected", "MYAREA", 0)
-  // %is_active%
-  // %traps_baf_range%
-  // !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
 THEN
 	RESPONSE #1
     %traps_baf_view%
@@ -94,18 +79,12 @@ THEN
 END
 IF
   Global("%trap_var_base%_intuition", "MYAREA", 1)
-  // !GlobalTimerNotExpired("%view_timer%", "GLOBAL") // don't spam pause
 THEN
   RESPONSE #1
     CreateCreature("g_traps", [-1.-1], 0)
-    // ActionOverride("g_traps", DisplayStringHead(Myself, @1) )
-    // ActionOverride("g_traps", MakeGlobal() )
-    // ChangeEnemyAlly("g_traps", FAMILIAR)
-    // ActionOverride("g_traps", AddFamiliar() )
-    // ActionOverride("g_traps", PauseGame() )
-    // ActionOverride("g_traps", DisplayStringHead(Myself, @2) )
     Continue()
 END
+
 // end intuition
 IF
   Global("%trap_var_base%_intuition", "MYAREA", 1)
