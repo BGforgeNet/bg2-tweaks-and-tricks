@@ -10,6 +10,7 @@ BUT_ONLY
 
 // Remove non-detection from description
 COPY_EXISTING
+    ~%WIZARD_ORACLE%.spl~ override
     ~%WIZARD_TRUE_SIGHT%.spl~ override
     ~%CLERIC_TRUE_SIGHT%.spl~ override
   LPF g_replace_strref
@@ -17,5 +18,14 @@ COPY_EXISTING
       offset = UNIDENTIFIED_DESC
       old_substring_traref = 3
       new_substring_traref = 4
+  END
+BUT_ONLY IF_EXISTS
+COPY_EXISTING
+    ~%WIZARD_DETECT_ILLUSION%.spl~ override
+  LPF g_replace_strref
+    INT_VAR
+      offset = UNIDENTIFIED_DESC
+      old_substring_traref = 5
+      new_substring_traref = 6
   END
 BUT_ONLY IF_EXISTS
