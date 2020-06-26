@@ -478,3 +478,7 @@ REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_MISLEAD%.spl~ @270 /* Mislead spe
 OUTER_TEXT_SPRINT comp_name ~uncheese_mislead~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
+
+BEGIN @400
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @121 /* BG1 content not present */
+INCLUDE ~%components%/davaeorns_battle_horrors/main.tpa~

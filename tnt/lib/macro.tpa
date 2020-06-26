@@ -72,3 +72,30 @@ BEGIN
     LPF ADD_CRE_EFFECT INT_VAR opcode = OPCODE_selection_circle_removal timing = TIMING_permanent END
   BUT_ONLY
 END
+
+DEFINE_PATCH_FUNCTION ALTER_AREA_REGION2
+  INT_VAR
+    index = "-1"
+    trapped = "-1"
+    trap_detect = "-1"
+    trap_remove = "-1"
+    flag_trap_detectable = "-1"
+  STR_VAR
+    match_script = "-1"
+BEGIN
+  GET_OFFSET_ARRAY regions ARE_V10_REGIONS
+  PHP_EACH regions AS int => r_off BEGIN
+    READ_ASCII (r_off + ARE_REGION_script) script
+    PATCH_IF ~%script%~ STR_EQ ~%match_script%~ BEGIN
+      PATCH_IF trapped != "-1" BEGIN WRITE_LONG (r_off + ARE_REGION_trapped) 1 END
+      PATCH_IF trap_detect != "-1" BEGIN WRITE_LONG (r_off + ARE_REGION_trap_detection_difficulty) trap_detect END
+      PATCH_IF trap_remove != "-1" BEGIN WRITE_LONG (r_off + ARE_REGION_trap_removal_difficulty) trap_remove END
+      PATCH_IF flag_trap_detectable == 0 BEGIN
+        WRITE_LONG (r_off + ARE_REGION_flags) THIS BAND BNOT FLAG_ARE_REGION_detectable
+      END
+      PATCH_IF flag_trap_detectable == 1 BEGIN
+        WRITE_LONG (r_off + ARE_REGION_flags) THIS BOR FLAG_ARE_REGION_detectable
+      END
+    END
+  END
+END
