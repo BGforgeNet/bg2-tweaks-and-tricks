@@ -1,3 +1,21 @@
 COPY_EXISTING ~%WIZARD_NON_DETECTION%.spl~ ~override~
   WRITE_BYTE SPL_sectype SECTYPE_specific_protections
+    LPF g_replace_strref // add True Sight to description
+      INT_VAR
+        offset = UNIDENTIFIED_DESC
+        old_substring_traref = 1
+        new_substring_traref = 2
+    END
 BUT_ONLY
+
+// Remove non-detection from description
+COPY_EXISTING
+    ~%WIZARD_TRUE_SIGHT%.spl~ override
+    ~%CLERIC_TRUE_SIGHT%.spl~ override
+  LPF g_replace_strref
+    INT_VAR
+      offset = UNIDENTIFIED_DESC
+      old_substring_traref = 3
+      new_substring_traref = 4
+  END
+BUT_ONLY IF_EXISTS

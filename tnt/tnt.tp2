@@ -322,7 +322,9 @@ INCLUDE ~%components%/greater_command/main.tpa~
 BEGIN @809 /* Working Non-Detection */
 GROUP @800 /* Spells and abilities */
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~%WIZARD_NON_DETECTION%.spl~ @810 /* Non-Detection spell is not present in game */
-INCLUDE ~%components%/working_non_detection/main.tpa~
+OUTER_TEXT_SPRINT comp_name ~working_non_detection~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @811 /* Unstack Chaos Shield */
 GROUP @800 /* Spells and abilities */

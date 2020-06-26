@@ -3,26 +3,27 @@ OUTER_SPRINT silent_true_sight ~g_trues~
 COPY_EXISTING ~%CLERIC_TRUE_SIGHT%d.spl~ ~override/%silent_true_sight%.spl~
   WRITE_LONG NAME1 ~-1~ //silence it
 
-ACTION_FOR_EACH spell IN ~%WIZARD_TRUE_SIGHT%~ ~%CLERIC_TRUE_SIGHT%~ ~%INQUIS_TRUE_SIGHT%~ BEGIN
-  COPY_EXISTING ~%spell%.spl~ ~override~
-    FOR (i=1; i<60; ++i) BEGIN
-      PATCH_IF i REM 6 != 0 BEGIN
-        LPF CLONE_EFFECT
-          INT_VAR
-            multi_match = 1
-            match_opcode = OPCODE_cast_spell_at_creature
-            duration = i
-          STR_VAR
-            resource = ~%silent_true_sight%~
-        END
-        // update description
-        LPF g_replace_strref
-          INT_VAR
-            offset = UNIDENTIFIED_DESC
-            old_substring_traref = 1 // each round
-            new_substring_traref = 2 // each second
-        END
+COPY_EXISTING
+    ~%WIZARD_TRUE_SIGHT%.spl~ override
+    ~%CLERIC_TRUE_SIGHT%.spl~ override
+    ~%INQUIS_TRUE_SIGHT%.spl~ override
+  FOR (i=1; i<60; ++i) BEGIN
+    PATCH_IF i REM 6 != 0 BEGIN
+      LPF CLONE_EFFECT
+        INT_VAR
+          multi_match = 1
+          match_opcode = OPCODE_cast_spell_at_creature
+          duration = i
+        STR_VAR
+          resource = ~%silent_true_sight%~
+      END
+      // update description
+      LPF g_replace_strref
+        INT_VAR
+          offset = UNIDENTIFIED_DESC
+          old_substring_traref = 1 // each round
+          new_substring_traref = 2 // each second
       END
     END
-  BUT_ONLY
-END
+  END
+BUT_ONLY IF_EXISTS
