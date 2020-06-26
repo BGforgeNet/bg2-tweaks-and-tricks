@@ -91,10 +91,10 @@ BEGIN
       PATCH_IF trap_detect != "-1" BEGIN WRITE_LONG (r_off + ARE_REGION_trap_detect) trap_detect END
       PATCH_IF trap_remove != "-1" BEGIN WRITE_LONG (r_off + ARE_REGION_trap_remove) trap_remove END
       PATCH_IF flag_trap_detectable == 0 BEGIN
-        WRITE_LONG (r_off + ARE_REGION_flags) THIS BAND BNOT FLAG_ARE_REGION_detectable
+        WRITE_LONG (r_off + ARE_REGION_flags) THIS BAND BNOT FLAG_ARE_REGION_trap_detectable
       END
       PATCH_IF flag_trap_detectable == 1 BEGIN
-        WRITE_LONG (r_off + ARE_REGION_flags) THIS BOR FLAG_ARE_REGION_detectable
+        WRITE_LONG (r_off + ARE_REGION_flags) THIS BOR FLAG_ARE_REGION_trap_detectable
       END
     END
   END
