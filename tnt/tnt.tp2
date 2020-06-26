@@ -138,10 +138,9 @@ OUTER_TEXT_SPRINT comp_name ~easy_traps~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
-BEGIN @1106
+BEGIN @350
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
 INCLUDE ~%components%/davaeorns_battle_horrors/main.tpa~
-
 // end traps
 
 //SOUNDSETS
