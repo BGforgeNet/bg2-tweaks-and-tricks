@@ -1,3 +1,4 @@
+INCLUDE ~%lib_dir%/tobex.tpa~
 OUTER_SET stacking_id = 1
 ACTION_FOR_EACH spl IN ~%WIZARD_CHAOS_SHIELD%~ ~%WIZARD_IMPROVED_CHAOS_SHIELD%~ BEGIN
   COPY_EXISTING ~%spl%.spl~ override

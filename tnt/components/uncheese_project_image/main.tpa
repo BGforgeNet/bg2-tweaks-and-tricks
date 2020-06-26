@@ -18,7 +18,7 @@ High level overview
 It is still less than perfect, sometimes spells seem to slip through.
 */
 
-
+INCLUDE ~%lib_dir%/tobex.tpa~
 
 // Build lists of all spells. Just mage and cleric for now.
 // Wizard first, for faster removal - probably most casters will be single class mages.

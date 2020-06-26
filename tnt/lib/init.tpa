@@ -11,9 +11,3 @@ INCLUDE ~%lib_dir%/functions.tpa~
 
 OUTER_SPRINT external ~%lib_dir%/external~
 INCLUDE ~%external%/main.tpa~
-
-ACTION_IF ENGINE_IS ~tob~ BEGIN
-  OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
-  LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
-  INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
-END

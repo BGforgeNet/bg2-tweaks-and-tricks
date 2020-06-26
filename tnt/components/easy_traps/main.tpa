@@ -1,3 +1,4 @@
+INCLUDE ~%lib_dir%/tobex.tpa~
 OUTER_SPRINT comp_baf_dir ~%comp_dir%/baf~
 OUTER_SET notification_delay = 12
 OUTER_SET intuition_delay = 24

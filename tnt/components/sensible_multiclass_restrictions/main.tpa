@@ -1,3 +1,5 @@
+INCLUDE ~%lib_dir%/tobex.tpa~
+
 COPY_EXISTING ~clsrcreq.2da~ override
   LPF GET_2DA_INDEX RET_ARRAY row_index col_index END
   COUNT_2DA_COLS columns

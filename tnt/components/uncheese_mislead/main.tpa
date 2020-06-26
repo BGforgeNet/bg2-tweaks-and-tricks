@@ -1,3 +1,5 @@
+INCLUDE ~%lib_dir%/tobex.tpa~
+
 // real simulacr spell
 OUTER_TEXT_SPRINT simulacr_spell ~g_simul~
 OUTER_TEXT_SPRINT mislead_spell ~g_misled~
