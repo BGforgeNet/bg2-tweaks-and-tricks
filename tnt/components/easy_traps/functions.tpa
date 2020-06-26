@@ -10,9 +10,9 @@ BEGIN
         GET_OFFSET_ARRAY struct_off_list ARE_V10_REGIONS
         script_off = ARE_REGION_script
         trapped_off = ARE_REGION_trapped
-        detected_off = ARE_REGION_trap_detected
-        removal_off = ARE_REGION_trap_removal_difficulty
-        detection_off = ARE_REGION_trap_detection_difficulty
+        detected_off = ARE_REGION_detected
+        removal_off = ARE_REGION_trap_remove
+        detection_off = ARE_REGION_trap_detect
         flags_off = ARE_REGION_flags
         flag_resets = FLAG_ARE_REGION_trap_resets
         flag_detectable = FLAG_ARE_REGION_trap_detectable
@@ -22,9 +22,9 @@ BEGIN
         GET_OFFSET_ARRAY struct_off_list ARE_V10_CONTAINERS
         script_off = ARE_CONTAINER_script
         trapped_off = ARE_CONTAINER_trapped
-        detected_off = ARE_CONTAINER_trap_detected
-        removal_off = ARE_CONTAINER_trap_removal_difficulty
-        detection_off = ARE_CONTAINER_trap_detection_difficulty
+        detected_off = ARE_REGION_detected
+        removal_off = ARE_CONTAINER_trap_remove
+        detection_off = ARE_CONTAINER_trap_detect
         flags_off = ARE_CONTAINER_flags
         flag_resets = FLAG_ARE_CONTAINER_trap_resets
       END
@@ -33,9 +33,9 @@ BEGIN
         GET_OFFSET_ARRAY struct_off_list ARE_V10_DOORS
         script_off = ARE_DOOR_script
         trapped_off = ARE_DOOR_trapped
-        detected_off = ARE_DOOR_trap_detected
-        removal_off = ARE_DOOR_trap_removal_difficulty
-        detection_off = ARE_DOOR_trap_detection_difficulty
+        detected_off = ARE_DOOR_detected
+        removal_off = ARE_DOOR_trap_remove
+        detection_off = ARE_DOOR_trap_detect
         flags_off = ARE_DOOR_flags
         flag_resets = FLAG_ARE_DOOR_trap_resets
         flag_detectable = FLAG_ARE_REGION_trap_detectable
