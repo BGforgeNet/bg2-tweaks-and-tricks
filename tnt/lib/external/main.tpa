@@ -1,0 +1,9 @@
+// ADD_ITEM_HEADER from https://github.com/Gibberlings3/ItemRevisions/blob/master/item_rev/lib/macros.tpa
+INCLUDE ~%external%/ir.tpa~
+
+INCLUDE ~%external%/ids.tpa~
+
+OUTER_SPRINT area_lib_dir ~%external%/bg1npc~
+INCLUDE ~%area_lib_dir%/g3_bgee_cpmvars.tpa~
+INCLUDE ~%area_lib_dir%/g3_bgt_cpmvars.tpa~
+INCLUDE ~%area_lib_dir%/g3_tutu_cpmvars.tpa~

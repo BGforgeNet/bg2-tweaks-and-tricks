@@ -1,5 +1,3 @@
-INCLUDE ~%lib_dir%/macro.tpa~
-
 //True seeing (priest) shell spell
 OUTER_SPRINT silent_true_sight ~g_trues~
 COPY_EXISTING ~%CLERIC_TRUE_SIGHT%d.spl~ ~override/%silent_true_sight%.spl~

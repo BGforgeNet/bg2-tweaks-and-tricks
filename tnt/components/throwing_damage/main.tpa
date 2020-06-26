@@ -7,8 +7,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY typetra BEGIN
   EVAL ~%ITM_TYPE_axe%~ => 255 //slashing
 END
 
-INCLUDE ~%lib_dir%/macro.tpa~
-
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT ITM_type type
   PATCH_IF type == ITM_TYPE_axe OR type == ITM_TYPE_hammer BEGIN

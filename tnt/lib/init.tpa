@@ -1,0 +1,19 @@
+OUTER_SPRINT components ~%MOD_FOLDER%/components~
+OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
+OUTER_SET effect_stacking_id_base = 0x675f0000 // ascii g_
+OUTER_SPRINT modder_prefix ~g_~
+OUTER_SPRINT tp2_name ~tnt.tp2~
+
+OUTER_SPRINT BGFORGE_LIB_DIR ~%lib_dir%/bgforge~
+INCLUDE ~%BGFORGE_LIB_DIR%/main.tpa~
+
+INCLUDE ~%lib_dir%/functions.tpa~
+
+OUTER_SPRINT external ~%lib_dir%/external~
+INCLUDE ~%external%/main.tpa~
+
+ACTION_IF ENGINE_IS ~tob~ BEGIN
+  OUTER_SPRINT TOBEX_MOD_DIRECTORY ~%MOD_FOLDER%~
+  LOAD_TRA "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tra"
+  INCLUDE "%TOBEX_MOD_DIRECTORY%/TobEx_redist/TobEx.tpa"
+END

@@ -1,8 +1,3 @@
-OUTER_SPRINT area_lib_dir ~%external%/bg1npc/bg1npc/lib~
-INCLUDE ~%area_lib_dir%/g3_bgee_cpmvars.tpa~
-INCLUDE ~%area_lib_dir%/g3_bgt_cpmvars.tpa~
-INCLUDE ~%area_lib_dir%/g3_tutu_cpmvars.tpa~
-
 ACTION_DEFINE_ASSOCIATIVE_ARRAY notes BEGIN
 
 NWBaldursGate, 2108, 2963 => 1 // Degrodel's house

@@ -45,10 +45,6 @@ BEGIN
   END  
 END
 
-// ADD_ITEM_HEADER from https://github.com/Gibberlings3/ItemRevisions/blob/master/item_rev/lib/macros.tpa
-INCLUDE ~%MOD_FOLDER%/lib/external/ir.tpa~
-INCLUDE ~%MOD_FOLDER%/lib/external/ids.tpa~
-
 DEFINE_ACTION_FUNCTION CREATE_MINION
   STR_VAR
     cre = ~~
