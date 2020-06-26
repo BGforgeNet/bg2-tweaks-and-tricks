@@ -616,7 +616,7 @@ msgid ""
 " Cleric"
 msgstr ""
 
-#: game.tra:166 setup.tra:166
+#: game.tra:166
 msgid "Hassle-free ammo"
 msgstr ""
 
@@ -733,7 +733,7 @@ msgid "Sunin's house"
 msgstr ""
 
 #: more_map_notes.tra:6
-msgid "Cordyr' house"
+msgid "Cordyr's house"
 msgstr ""
 
 #: more_map_notes.tra:7
@@ -828,156 +828,16 @@ msgstr ""
 msgid "Cancel Spin"
 msgstr ""
 
-#: setup.tra:74
-msgid "Smarter familiars"
-msgstr ""
-
-#: setup.tra:77
-msgid "Resilient familiars"
-msgstr ""
-
-#: setup.tra:78
-msgid "Remove blur graphics from items"
-msgstr ""
-
-#: setup.tra:79
-msgid "Additions only"
-msgstr ""
-
-#: setup.tra:80
+#: setup.tra:101
 msgid "BGT or EET only"
 msgstr ""
 
-#: setup.tra:81
-msgid "Extended Soundsets for NPC"
-msgstr ""
-
-#: setup.tra:82
-msgid "Prefer BG1 sounds"
-msgstr ""
-
-#: setup.tra:83
-msgid "Prefer BG2 sounds"
-msgstr ""
-
-#: setup.tra:84
-msgid "Reintroduce"
-msgstr ""
-
-#: setup.tra:85
-msgid "BG1-style party interaction system"
-msgstr ""
-
-#: setup.tra:86
-msgid "Reintroduce and adjust to framerate"
-msgstr ""
-
-#: setup.tra:87
-msgid "Disable"
-msgstr ""
-
-#: setup.tra:88
-msgid "BGT or BG1 only"
-msgstr ""
-
-#: setup.tra:89
-msgid "No talking when hiding in shadows"
-msgstr ""
-
-#: setup.tra:90
-msgid "Make NPC soundsets available to PC"
-msgstr ""
-
-#: setup.tra:91
-msgid "Fair fights"
-msgstr ""
-
-#: setup.tra:92
-msgid "Sensible Cloak of Mirroring"
-msgstr ""
-
-#: setup.tra:93
-msgid "Spider form ignores web"
-msgstr ""
-
-#: setup.tra:94
-msgid "Effects of scrolls and potions do not stack with themselves"
-msgstr ""
-
-#: setup.tra:95
-msgid "Cheesy Slayer: full heal on change"
-msgstr ""
-
-#: setup.tra:96
-msgid "no loss"
-msgstr ""
-
-#: setup.tra:97
-msgid "Cheesy Slayer: reputation"
-msgstr ""
-
-#: setup.tra:98
-msgid "reduced loss"
-msgstr ""
-
-#: setup.tra:99
-msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr ""
-
-#: setup.tra:100
-msgid "Starting bags"
-msgstr ""
-
-#: setup.tra:101
-msgid "GSPA + holding"
-msgstr ""
-
 #: setup.tra:102
-msgid "GSPA + holding - all bottomless!"
+msgid "BG1 content not present"
 msgstr ""
 
 #: setup.tra:103
-msgid "Each stat gets +1"
-msgstr ""
-
-#: setup.tra:104
-msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr ""
-
-#: setup.tra:105
-msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr ""
-
-#: setup.tra:106
-msgid "Shops always buy goods at the same price"
-msgstr ""
-
-#: setup.tra:107
-msgid "Can't steal from fences"
-msgstr ""
-
-#: setup.tra:108
-msgid "Close shop steal exploit"
-msgstr ""
-
-#: setup.tra:109
-msgid "Can't steal from any shops"
-msgstr ""
-
-#: setup.tra:110
-msgid "No XP farming"
-msgstr ""
-
-#: setup.tra:119
-msgid "Less autosaves"
-msgstr ""
-
-#: setup.tra:120
-msgid "True true sight"
-msgstr ""
-
-#: setup.tra:121
-msgid "BG1 content not present"
+msgid "Windows only"
 msgstr ""
 
 #: setup.tra:122
@@ -1003,108 +863,60 @@ msgstr ""
 msgid "Requires BG2"
 msgstr ""
 
-#: setup.tra:127
-msgid "Shandalar's cloak not present in game"
+#: setup.tra:200
+msgid "Items"
 msgstr ""
 
-#: setup.tra:128
+#: setup.tra:201
 msgid "Weightless ammo"
 msgstr ""
 
-#: setup.tra:134
-msgid "Sensible Otiluke's sphere"
+#: setup.tra:202
+msgid "Remove blur graphics from items"
 msgstr ""
 
-#: setup.tra:135
-msgid "Improved strongholds"
+#: setup.tra:203
+msgid "Sensible Cloak of Mirroring"
 msgstr ""
 
-#: setup.tra:144
+#: setup.tra:204
+msgid "Effects of scrolls and potions do not stack with themselves"
+msgstr ""
+
+#: setup.tra:205
 msgid "Sensible wand of frost"
 msgstr ""
 
-#: setup.tra:145
+#: setup.tra:206
 msgid "Single target"
 msgstr ""
 
-#: setup.tra:146
+#: setup.tra:207
 msgid "AoE"
-msgstr ""
-
-#: setup.tra:148
-msgid "No cast and attack"
-msgstr ""
-
-#: setup.tra:159
-msgid "More ankheg armors by Taerom"
-msgstr ""
-
-#: setup.tra:206
-msgid "Windows only"
 msgstr ""
 
 #: setup.tra:223
 msgid "Potion of really mirrored eyes"
 msgstr ""
 
-#: setup.tra:225
-msgid "Familiars"
-msgstr ""
-
-#: setup.tra:227
-msgid "Soundsets"
-msgstr ""
-
-#: setup.tra:228
-msgid "Items"
-msgstr ""
-
-#: setup.tra:229
-msgid "Spells and abilities"
-msgstr ""
-
-#: setup.tra:230
-msgid "Gameplay and rules"
-msgstr ""
-
-#: setup.tra:231
-msgid "Can't steal Carsomyr"
-msgstr ""
-
-#: setup.tra:232
-msgid "Greater Command AoE"
-msgstr ""
-
-#: setup.tra:233
-msgid "More map notes"
-msgstr ""
-
-#: setup.tra:234
-msgid "Disable lightning during rain"
-msgstr ""
-
-#: setup.tra:235
-msgid "Mod romance cheats"
-msgstr ""
-
 #: setup.tra:236
 msgid "Unlimited goodberries stacking"
 msgstr ""
 
-#: setup.tra:237
+#: setup.tra:240
+msgid "Throwing weapons damage"
+msgstr ""
+
+#: setup.tra:241
 msgid "Add strength bonus"
 msgstr ""
 
-#: setup.tra:238
+#: setup.tra:242
 msgid "Make axes slashing and hammers blunt"
 msgstr ""
 
-#: setup.tra:239
+#: setup.tra:243
 msgid "Both of the above options"
-msgstr ""
-
-#: setup.tra:240
-msgid "Throwing weapons damage"
 msgstr ""
 
 #: setup.tra:250
@@ -1112,83 +924,27 @@ msgid "Improved Shandalar's cloak"
 msgstr ""
 
 #: setup.tra:251
-msgid "EE-style Algernon's cloak"
+msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252
-msgid "Bloodless deeds"
+msgid "EE-style Algernon's cloak"
 msgstr ""
 
 #: setup.tra:253
 msgid "BGT only"
 msgstr ""
 
-#: setup.tra:254
-msgid "True protection from poison"
-msgstr ""
-
-#: setup.tra:255
-msgid "Disable intro movies"
-msgstr ""
-
-#: setup.tra:256
-msgid "Sensible Blade spins"
-msgstr ""
-
-#: setup.tra:257
-msgid "True True Grandmastery"
-msgstr ""
-
-#: setup.tra:258
-msgid "Sensible multiclass restrictions"
-msgstr ""
-
-#: setup.tra:259
-msgid "Faster loading times"
-msgstr ""
-
 #: setup.tra:260
 msgid "Improved Equalizer"
-msgstr ""
-
-#: setup.tra:261
-msgid "Working Non-Detection"
-msgstr ""
-
-#: setup.tra:262
-msgid "Non-Detection spell is not present in game"
 msgstr ""
 
 #: setup.tra:263
 msgid "Only non-EE engines"
 msgstr ""
 
-#: setup.tra:264
-msgid "Limited stock"
-msgstr ""
-
-#: setup.tra:265
-msgid "Unstack Chaos Shield"
-msgstr ""
-
-#: setup.tra:266
-msgid "Chaos Shield spells are not present in game"
-msgstr ""
-
-#: setup.tra:267
-msgid "Uncheese Project Image"
-msgstr ""
-
-#: setup.tra:268
-msgid "Project Image spell is not present in game"
-msgstr ""
-
-#: setup.tra:269
-msgid "Uncheese Mislead"
-msgstr ""
-
-#: setup.tra:270
-msgid "Mislead spell is not present in game"
+#: setup.tra:300
+msgid "Traps"
 msgstr ""
 
 #: setup.tra:301
@@ -1208,7 +964,7 @@ msgid "Intuition not selected, skipping"
 msgstr ""
 
 #: setup.tra:305
-msgid "Trap intuition: pause game on a hunch"
+msgid "Trap intuition: pause game"
 msgstr ""
 
 #: setup.tra:306
@@ -1244,9 +1000,7 @@ msgid "disclose trap type"
 msgstr ""
 
 #: setup.tra:314
-msgid ""
-"Trap intuition: toggle Find Traps automatically on a hunch (will interrupt "
-"whatever the thief is doing)"
+msgid "Trap intuition: toggle Find Traps automatically"
 msgstr ""
 
 #: setup.tra:315
@@ -1254,7 +1008,7 @@ msgid "Improved trap detection: increase trap sense range"
 msgstr ""
 
 #: setup.tra:316
-msgid "Improved trap detection: play a sound"
+msgid "Trap intuition: play \"trap found\" sound"
 msgstr ""
 
 #: setup.tra:317
@@ -1271,12 +1025,260 @@ msgstr ""
 msgid "All Improved Traps components must be installed BEFORE core"
 msgstr ""
 
-#: setup.tra:320
-msgid "Traps"
+#: setup.tra:350
+msgid "Non-disarmable Davaeorn's Battle Horrors"
 msgstr ""
 
-#: setup.tra:400
-msgid "Undisarmable Davaeorn's Battle Horrors"
+#: setup.tra:500
+msgid "Shops"
+msgstr ""
+
+#: setup.tra:501
+msgid "Can't steal from fences"
+msgstr ""
+
+#: setup.tra:502
+msgid "Close shop steal exploit"
+msgstr ""
+
+#: setup.tra:503
+msgid "Can't steal from any shops"
+msgstr ""
+
+#: setup.tra:504
+msgid "More ankheg armors by Taerom"
+msgstr ""
+
+#: setup.tra:505
+msgid "Shops always buy goods at the same price"
+msgstr ""
+
+#: setup.tra:506
+msgid "Limited stock"
+msgstr ""
+
+#: setup.tra:600
+msgid "Assorted convenience components"
+msgstr ""
+
+#: setup.tra:601
+msgid "Less autosaves"
+msgstr ""
+
+#: setup.tra:602
+msgid "More map notes"
+msgstr ""
+
+#: setup.tra:603
+msgid "Disable lightning during rain"
+msgstr ""
+
+#: setup.tra:604
+msgid "Mod romance cheats"
+msgstr ""
+
+#: setup.tra:605
+msgid "Disable intro movies"
+msgstr ""
+
+#: setup.tra:606
+msgid "Faster loading times"
+msgstr ""
+
+#: setup.tra:607
+msgid "Add BG1 tomes stats bonuses to new BG2 characters"
+msgstr ""
+
+#: setup.tra:608
+msgid "Each stat gets +1"
+msgstr ""
+
+#: setup.tra:609
+msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
+msgstr ""
+
+#: setup.tra:610
+msgid "Starting bags"
+msgstr ""
+
+#: setup.tra:611
+msgid "Gem, scroll, potion, ammo (GSPA)"
+msgstr ""
+
+#: setup.tra:612
+msgid "GSPA + holding"
+msgstr ""
+
+#: setup.tra:613
+msgid "GSPA + holding - all bottomless!"
+msgstr ""
+
+#: setup.tra:700
+msgid "Quest and dialog tweaks"
+msgstr ""
+
+#: setup.tra:701
+msgid "Bloodless deeds"
+msgstr ""
+
+#: setup.tra:702
+msgid "Improved strongholds"
+msgstr ""
+
+#: setup.tra:800
+msgid "Spells and abilities"
+msgstr ""
+
+#: setup.tra:801
+msgid "Spider form ignores web"
+msgstr ""
+
+#: setup.tra:802
+msgid "Cheesy Slayer: full heal on change"
+msgstr ""
+
+#: setup.tra:803
+msgid "Cheesy Slayer: reputation"
+msgstr ""
+
+#: setup.tra:804
+msgid "no loss"
+msgstr ""
+
+#: setup.tra:805
+msgid "reduced loss"
+msgstr ""
+
+#: setup.tra:806
+msgid "True True Sight"
+msgstr ""
+
+#: setup.tra:807
+msgid "Sensible Otiluke's Resilient Sphere"
+msgstr ""
+
+#: setup.tra:808
+msgid "Greater Command AoE"
+msgstr ""
+
+#: setup.tra:809
+msgid "Non-Detection blocks True Sight and other divination spells"
+msgstr ""
+
+#: setup.tra:810
+msgid "Non-Detection spell is not present in game"
+msgstr ""
+
+#: setup.tra:811
+msgid "Unstack Chaos Shield"
+msgstr ""
+
+#: setup.tra:812
+msgid "Chaos Shield spells are not present in game"
+msgstr ""
+
+#: setup.tra:813
+msgid "Uncheese Project Image"
+msgstr ""
+
+#: setup.tra:814
+msgid "Project Image spell is not present in game"
+msgstr ""
+
+#: setup.tra:815
+msgid "Uncheese Mislead"
+msgstr ""
+
+#: setup.tra:816
+msgid "Mislead spell is not present in game"
+msgstr ""
+
+#: setup.tra:817
+msgid "Actually working protection from poison"
+msgstr ""
+
+#: setup.tra:818
+msgid "Sensible Blade spins"
+msgstr ""
+
+#: setup.tra:900
+msgid "Familiars"
+msgstr ""
+
+#: setup.tra:901
+msgid "Smarter familiars"
+msgstr ""
+
+#: setup.tra:902
+msgid "More resilient familiars"
+msgstr ""
+
+#: setup.tra:1000
+msgid "Soundsets"
+msgstr ""
+
+#: setup.tra:1001
+msgid "BG1-style party interaction system"
+msgstr ""
+
+#: setup.tra:1002
+msgid "Reintroduce"
+msgstr ""
+
+#: setup.tra:1003
+msgid "Reintroduce and adjust to framerate"
+msgstr ""
+
+#: setup.tra:1004
+msgid "Disable"
+msgstr ""
+
+#: setup.tra:1010
+msgid "Extended soundsets for NPC"
+msgstr ""
+
+#: setup.tra:1011
+msgid "Additions only"
+msgstr ""
+
+#: setup.tra:1012
+msgid "Prefer BG1 sounds"
+msgstr ""
+
+#: setup.tra:1013
+msgid "Prefer BG2 sounds"
+msgstr ""
+
+#: setup.tra:1020
+msgid "No talking when hiding in shadows"
+msgstr ""
+
+#: setup.tra:1021
+msgid "Make NPC soundsets available to PC"
+msgstr ""
+
+#: setup.tra:1100
+msgid "Gameplay, rules, difficulty"
+msgstr ""
+
+#: setup.tra:1101
+msgid "Fair fights"
+msgstr ""
+
+#: setup.tra:1102
+msgid "No XP farming"
+msgstr ""
+
+#: setup.tra:1103
+msgid "Can't steal Carsomyr"
+msgstr ""
+
+#: setup.tra:1104
+msgid "True True Grandmastery"
+msgstr ""
+
+#: setup.tra:1105
+msgid "Sensible multiclass restrictions"
 msgstr ""
 
 #: shandalars_cloak.tra:1
@@ -1666,4 +1668,28 @@ msgstr ""
 
 #: true_true_sight.tra:2
 msgid "each second"
+msgstr ""
+
+#: working_non_detection.tra:1
+msgid "Invisibility Purge"
+msgstr ""
+
+#: working_non_detection.tra:2
+msgid "Invisibility Purge and True Sight"
+msgstr ""
+
+#: working_non_detection.tra:3
+msgid " Non-detection, "
+msgstr ""
+
+#: working_non_detection.tra:4
+msgid " "
+msgstr ""
+
+#: working_non_detection.tra:5
+msgid ", and Non-Detection."
+msgstr ""
+
+#: working_non_detection.tra:6
+msgid "."
 msgstr ""

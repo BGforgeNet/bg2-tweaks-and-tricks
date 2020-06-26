@@ -744,7 +744,7 @@ msgstr ""
 "Не Может Использовать:\n"
 " Клерик"
 
-#: game.tra:166 setup.tra:166
+#: game.tra:166
 msgid "Hassle-free ammo"
 msgstr "Более удобные снаряды"
 
@@ -886,7 +886,7 @@ msgstr ""
 #: more_map_notes.tra:6
 #, fuzzy
 #| msgid "Cordyr"
-msgid "Cordyr' house"
+msgid "Cordyr's house"
 msgstr "Кордир"
 
 #: more_map_notes.tra:7
@@ -989,159 +989,17 @@ msgstr ""
 msgid "Cancel Spin"
 msgstr ""
 
-#: setup.tra:74
-msgid "Smarter familiars"
-msgstr "Умные фамильяры"
-
-#: setup.tra:77
-msgid "Resilient familiars"
-msgstr "Менее хрупкие фамильяры"
-
-#: setup.tra:78
-msgid "Remove blur graphics from items"
-msgstr "Убрать визуальный эффект размытия с предметов"
-
-#: setup.tra:79
-msgid "Additions only"
-msgstr "Только добавления"
-
-#: setup.tra:80
+#: setup.tra:101
 msgid "BGT or EET only"
 msgstr "Требует BGT или EET"
 
-#: setup.tra:81
-msgid "Extended Soundsets for NPC"
-msgstr "Расширенные саундсеты для NPC"
-
-#: setup.tra:82
-msgid "Prefer BG1 sounds"
-msgstr ""
-
-#: setup.tra:83
-msgid "Prefer BG2 sounds"
-msgstr ""
-
-#: setup.tra:84
-msgid "Reintroduce"
-msgstr "Восстановить"
-
-#: setup.tra:85
-msgid "BG1-style party interaction system"
-msgstr "Система разговоров в стиле BG1"
-
-#: setup.tra:86
-msgid "Reintroduce and adjust to framerate"
-msgstr "Восстановить и приспособить к скорости игры"
-
-#: setup.tra:87
-msgid "Disable"
-msgstr "Отключить"
-
-#: setup.tra:88
-msgid "BGT or BG1 only"
-msgstr "Только BGT или BG1"
-
-#: setup.tra:89
-msgid "No talking when hiding in shadows"
-msgstr "Не разговаривать в тенях"
-
-#: setup.tra:90
-msgid "Make NPC soundsets available to PC"
-msgstr "Сделать саундсеты NPC доступными главному герою"
-
-#: setup.tra:91
-msgid "Fair fights"
-msgstr "Честные схватки"
-
-#: setup.tra:92
-msgid "Sensible Cloak of Mirroring"
-msgstr "Более правдоподобный Плащ Отражения"
-
-#: setup.tra:93
-msgid "Spider form ignores web"
-msgstr "Форма паука имеет иммунитет к паутине"
-
-#: setup.tra:94
-msgid "Effects of scrolls and potions do not stack with themselves"
-msgstr "Эффекты свитков и зелий не складываются сами с собой"
-
-#: setup.tra:95
-msgid "Cheesy Slayer: full heal on change"
-msgstr "Улучшенная форма Убийцы: полное излечение при изменении"
-
-#: setup.tra:96
-msgid "no loss"
-msgstr "без потерь"
-
-#: setup.tra:97
-msgid "Cheesy Slayer: reputation"
-msgstr "Удобная форма Убийцы: репутация"
-
-#: setup.tra:98
-msgid "reduced loss"
-msgstr "уменьшенная потеря"
-
-#: setup.tra:99
-msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr "Драгоценные камни, свитки, зелья, снаряды (КСЗС)"
-
-#: setup.tra:100
-msgid "Starting bags"
-msgstr "Сумки в начале игры"
-
-#: setup.tra:101
-msgid "GSPA + holding"
-msgstr "КСЗС + cумка хранения"
-
 #: setup.tra:102
-msgid "GSPA + holding - all bottomless!"
-msgstr "КСЗС + cумка хранения - все бездонные!"
-
-#: setup.tra:103
-msgid "Each stat gets +1"
-msgstr "Каждая характеристика получает +1"
-
-#: setup.tra:104
-msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr ""
-"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
-
-#: setup.tra:105
-msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr ""
-"Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
-
-#: setup.tra:106
-msgid "Shops always buy goods at the same price"
-msgstr "Магазины покупают товар по неизменной цене"
-
-#: setup.tra:107
-msgid "Can't steal from fences"
-msgstr "Нельзя воровать у скупщиков краденого"
-
-#: setup.tra:108
-msgid "Close shop steal exploit"
-msgstr "Закрыть эксплоит с воровством из магазинов"
-
-#: setup.tra:109
-msgid "Can't steal from any shops"
-msgstr "Нельзя воровать из магазинов вообще"
-
-#: setup.tra:110
-msgid "No XP farming"
-msgstr "Затруднить фарминг опыта"
-
-#: setup.tra:119
-msgid "Less autosaves"
-msgstr "Меньше автосохранений"
-
-#: setup.tra:120
-msgid "True true sight"
-msgstr "Настоящее истинное зрение"
-
-#: setup.tra:121
 msgid "BG1 content not present"
 msgstr "БГ1 не найден"
+
+#: setup.tra:103
+msgid "Windows only"
+msgstr "Только для Windows"
 
 #: setup.tra:122
 msgid "BG saga only"
@@ -1169,199 +1027,89 @@ msgstr "Требует движок BG2 или EE"
 msgid "Requires BG2"
 msgstr "Требует BG2"
 
-#: setup.tra:127
-msgid "Shandalar's cloak not present in game"
-msgstr ""
+#: setup.tra:200
+msgid "Items"
+msgstr "Предметы"
 
-#: setup.tra:128
+#: setup.tra:201
 msgid "Weightless ammo"
 msgstr "Невесомые снаряды"
 
-#: setup.tra:134
-msgid "Sensible Otiluke's sphere"
-msgstr "Более адекватная сфера Отилюка"
+#: setup.tra:202
+msgid "Remove blur graphics from items"
+msgstr "Убрать визуальный эффект размытия с предметов"
 
-#: setup.tra:135
-msgid "Improved strongholds"
-msgstr "Улучшенные стронгхолды"
+#: setup.tra:203
+msgid "Sensible Cloak of Mirroring"
+msgstr "Более правдоподобный Плащ Отражения"
 
-#: setup.tra:144
+#: setup.tra:204
+msgid "Effects of scrolls and potions do not stack with themselves"
+msgstr "Эффекты свитков и зелий не складываются сами с собой"
+
+#: setup.tra:205
 msgid "Sensible wand of frost"
 msgstr "Более адекватный жезл мороза"
 
-#: setup.tra:145
+#: setup.tra:206
 msgid "Single target"
 msgstr "Одиночная цель"
 
-#: setup.tra:146
+#: setup.tra:207
 msgid "AoE"
 msgstr "Действие на область"
-
-#: setup.tra:148
-msgid "No cast and attack"
-msgstr "Запретить кастование заклинаний и атаку в том же раунде"
-
-#: setup.tra:159
-msgid "More ankheg armors by Taerom"
-msgstr "Таэром может делать больше панцирей из анкегов"
-
-#: setup.tra:206
-msgid "Windows only"
-msgstr "Только для Windows"
 
 #: setup.tra:223
 msgid "Potion of really mirrored eyes"
 msgstr "Зелье по-настоящему зеркальных глаз"
 
-#: setup.tra:225
-msgid "Familiars"
-msgstr "Фамильяры"
-
-#: setup.tra:227
-msgid "Soundsets"
-msgstr "Саундсеты"
-
-#: setup.tra:228
-msgid "Items"
-msgstr "Предметы"
-
-#: setup.tra:229
-msgid "Spells and abilities"
-msgstr "Заклинания и способности"
-
-#: setup.tra:230
-msgid "Gameplay and rules"
-msgstr "Игровая механика и правила"
-
-#: setup.tra:231
-msgid "Can't steal Carsomyr"
-msgstr "Нельзя украсть Карсомир"
-
-#: setup.tra:232
-msgid "Greater Command AoE"
-msgstr "Великая Команда - действие на площадь"
-
-#: setup.tra:233
-msgid "More map notes"
-msgstr "Больше отметок на карте"
-
-#: setup.tra:234
-msgid "Disable lightning during rain"
-msgstr "Отключить молнию во время дождя"
-
-#: setup.tra:235
-msgid "Mod romance cheats"
-msgstr "Читы для романов с персонажами из модов"
-
 #: setup.tra:236
 msgid "Unlimited goodberries stacking"
 msgstr "Неограниченное складывание хороших ягод"
 
-#: setup.tra:237
-msgid "Add strength bonus"
-msgstr "Добавить бонус от силы"
-
-#: setup.tra:238
-msgid "Make axes slashing and hammers blunt"
-msgstr "Сделать топоры рубящими, а молоты крушащими"
-
-#: setup.tra:239
-msgid "Both of the above options"
-msgstr "И то, и другое"
-
 #: setup.tra:240
 msgid "Throwing weapons damage"
 msgstr "Урон от метательного оружия"
+
+#: setup.tra:241
+msgid "Add strength bonus"
+msgstr "Добавить бонус от силы"
+
+#: setup.tra:242
+msgid "Make axes slashing and hammers blunt"
+msgstr "Сделать топоры рубящими, а молоты крушащими"
+
+#: setup.tra:243
+msgid "Both of the above options"
+msgstr "И то, и другое"
 
 #: setup.tra:250
 msgid "Improved Shandalar's cloak"
 msgstr ""
 
 #: setup.tra:251
-msgid "EE-style Algernon's cloak"
+msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252
-msgid "Bloodless deeds"
+msgid "EE-style Algernon's cloak"
 msgstr ""
 
 #: setup.tra:253
 msgid "BGT only"
 msgstr "Только для BGT"
 
-#: setup.tra:254
-msgid "True protection from poison"
-msgstr ""
-
-#: setup.tra:255
-msgid "Disable intro movies"
-msgstr ""
-
-#: setup.tra:256
-#, fuzzy
-#| msgid "Sensible Otiluke's sphere"
-msgid "Sensible Blade spins"
-msgstr "Более адекватная сфера Отилюка"
-
-#: setup.tra:257
-msgid "True True Grandmastery"
-msgstr ""
-
-#: setup.tra:258
-#, fuzzy
-#| msgid "Sensible Otiluke's sphere"
-msgid "Sensible multiclass restrictions"
-msgstr "Более адекватная сфера Отилюка"
-
-#: setup.tra:259
-#, fuzzy
-#| msgid "Faster familiars"
-msgid "Faster loading times"
-msgstr "Быстрые фамильяры"
-
 #: setup.tra:260
 msgid "Improved Equalizer"
-msgstr ""
-
-#: setup.tra:261
-msgid "Working Non-Detection"
-msgstr ""
-
-#: setup.tra:262
-msgid "Non-Detection spell is not present in game"
 msgstr ""
 
 #: setup.tra:263
 msgid "Only non-EE engines"
 msgstr ""
 
-#: setup.tra:264
-msgid "Limited stock"
-msgstr ""
-
-#: setup.tra:265
-msgid "Unstack Chaos Shield"
-msgstr ""
-
-#: setup.tra:266
-msgid "Chaos Shield spells are not present in game"
-msgstr ""
-
-#: setup.tra:267
-msgid "Uncheese Project Image"
-msgstr ""
-
-#: setup.tra:268
-msgid "Project Image spell is not present in game"
-msgstr ""
-
-#: setup.tra:269
-msgid "Uncheese Mislead"
-msgstr ""
-
-#: setup.tra:270
-msgid "Mislead spell is not present in game"
-msgstr ""
+#: setup.tra:300
+msgid "Traps"
+msgstr "Ловушки"
 
 #: setup.tra:301
 msgid "Trap intuition"
@@ -1380,8 +1128,10 @@ msgid "Intuition not selected, skipping"
 msgstr ""
 
 #: setup.tra:305
-msgid "Trap intuition: pause game on a hunch"
-msgstr ""
+#, fuzzy
+#| msgid "stop moving and pause game"
+msgid "Trap intuition: pause game"
+msgstr "остановиться поставить игру на паузу"
 
 #: setup.tra:306
 msgid "ground traps only"
@@ -1418,9 +1168,7 @@ msgid "disclose trap type"
 msgstr ""
 
 #: setup.tra:314
-msgid ""
-"Trap intuition: toggle Find Traps automatically on a hunch (will interrupt "
-"whatever the thief is doing)"
+msgid "Trap intuition: toggle Find Traps automatically"
 msgstr ""
 
 #: setup.tra:315
@@ -1432,7 +1180,7 @@ msgstr "Упрощенные ловушки: увеличить расстоян
 #: setup.tra:316
 #, fuzzy
 #| msgid "Easy traps: play a sound"
-msgid "Improved trap detection: play a sound"
+msgid "Trap intuition: play \"trap found\" sound"
 msgstr "Упрощенные ловушки: звуковой сигнал"
 
 #: setup.tra:317
@@ -1460,13 +1208,279 @@ msgid "All Improved Traps components must be installed BEFORE core"
 msgstr ""
 "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
 
-#: setup.tra:320
-msgid "Traps"
-msgstr "Ловушки"
-
-#: setup.tra:400
-msgid "Undisarmable Davaeorn's Battle Horrors"
+#: setup.tra:350
+msgid "Non-disarmable Davaeorn's Battle Horrors"
 msgstr ""
+
+#: setup.tra:500
+msgid "Shops"
+msgstr ""
+
+#: setup.tra:501
+msgid "Can't steal from fences"
+msgstr "Нельзя воровать у скупщиков краденого"
+
+#: setup.tra:502
+msgid "Close shop steal exploit"
+msgstr "Закрыть эксплоит с воровством из магазинов"
+
+#: setup.tra:503
+msgid "Can't steal from any shops"
+msgstr "Нельзя воровать из магазинов вообще"
+
+#: setup.tra:504
+msgid "More ankheg armors by Taerom"
+msgstr "Таэром может делать больше панцирей из анкегов"
+
+#: setup.tra:505
+msgid "Shops always buy goods at the same price"
+msgstr "Магазины покупают товар по неизменной цене"
+
+#: setup.tra:506
+msgid "Limited stock"
+msgstr ""
+
+#: setup.tra:600
+msgid "Assorted convenience components"
+msgstr ""
+
+#: setup.tra:601
+msgid "Less autosaves"
+msgstr "Меньше автосохранений"
+
+#: setup.tra:602
+msgid "More map notes"
+msgstr "Больше отметок на карте"
+
+#: setup.tra:603
+msgid "Disable lightning during rain"
+msgstr "Отключить молнию во время дождя"
+
+#: setup.tra:604
+msgid "Mod romance cheats"
+msgstr "Читы для романов с персонажами из модов"
+
+#: setup.tra:605
+msgid "Disable intro movies"
+msgstr ""
+
+#: setup.tra:606
+#, fuzzy
+#| msgid "Faster familiars"
+msgid "Faster loading times"
+msgstr "Быстрые фамильяры"
+
+#: setup.tra:607
+msgid "Add BG1 tomes stats bonuses to new BG2 characters"
+msgstr ""
+"Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2"
+
+#: setup.tra:608
+msgid "Each stat gets +1"
+msgstr "Каждая характеристика получает +1"
+
+#: setup.tra:609
+msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
+msgstr ""
+"Каждая характеристика кроме Мудрости получает +1, Мудрость получает +3"
+
+#: setup.tra:610
+msgid "Starting bags"
+msgstr "Сумки в начале игры"
+
+#: setup.tra:611
+msgid "Gem, scroll, potion, ammo (GSPA)"
+msgstr "Драгоценные камни, свитки, зелья, снаряды (КСЗС)"
+
+#: setup.tra:612
+msgid "GSPA + holding"
+msgstr "КСЗС + cумка хранения"
+
+#: setup.tra:613
+msgid "GSPA + holding - all bottomless!"
+msgstr "КСЗС + cумка хранения - все бездонные!"
+
+#: setup.tra:700
+msgid "Quest and dialog tweaks"
+msgstr ""
+
+#: setup.tra:701
+msgid "Bloodless deeds"
+msgstr ""
+
+#: setup.tra:702
+msgid "Improved strongholds"
+msgstr "Улучшенные стронгхолды"
+
+#: setup.tra:800
+msgid "Spells and abilities"
+msgstr "Заклинания и способности"
+
+#: setup.tra:801
+msgid "Spider form ignores web"
+msgstr "Форма паука имеет иммунитет к паутине"
+
+#: setup.tra:802
+msgid "Cheesy Slayer: full heal on change"
+msgstr "Улучшенная форма Убийцы: полное излечение при изменении"
+
+#: setup.tra:803
+msgid "Cheesy Slayer: reputation"
+msgstr "Удобная форма Убийцы: репутация"
+
+#: setup.tra:804
+msgid "no loss"
+msgstr "без потерь"
+
+#: setup.tra:805
+msgid "reduced loss"
+msgstr "уменьшенная потеря"
+
+#: setup.tra:806
+#, fuzzy
+#| msgid "True true sight"
+msgid "True True Sight"
+msgstr "Настоящее истинное зрение"
+
+#: setup.tra:807
+#, fuzzy
+#| msgid "Sensible Otiluke's sphere"
+msgid "Sensible Otiluke's Resilient Sphere"
+msgstr "Более адекватная сфера Отилюка"
+
+#: setup.tra:808
+msgid "Greater Command AoE"
+msgstr "Великая Команда - действие на площадь"
+
+#: setup.tra:809
+msgid "Non-Detection blocks True Sight and other divination spells"
+msgstr ""
+
+#: setup.tra:810
+msgid "Non-Detection spell is not present in game"
+msgstr ""
+
+#: setup.tra:811
+msgid "Unstack Chaos Shield"
+msgstr ""
+
+#: setup.tra:812
+msgid "Chaos Shield spells are not present in game"
+msgstr ""
+
+#: setup.tra:813
+msgid "Uncheese Project Image"
+msgstr ""
+
+#: setup.tra:814
+msgid "Project Image spell is not present in game"
+msgstr ""
+
+#: setup.tra:815
+msgid "Uncheese Mislead"
+msgstr ""
+
+#: setup.tra:816
+msgid "Mislead spell is not present in game"
+msgstr ""
+
+#: setup.tra:817
+msgid "Actually working protection from poison"
+msgstr ""
+
+#: setup.tra:818
+#, fuzzy
+#| msgid "Sensible Otiluke's sphere"
+msgid "Sensible Blade spins"
+msgstr "Более адекватная сфера Отилюка"
+
+#: setup.tra:900
+msgid "Familiars"
+msgstr "Фамильяры"
+
+#: setup.tra:901
+msgid "Smarter familiars"
+msgstr "Умные фамильяры"
+
+#: setup.tra:902
+#, fuzzy
+#| msgid "Resilient familiars"
+msgid "More resilient familiars"
+msgstr "Менее хрупкие фамильяры"
+
+#: setup.tra:1000
+msgid "Soundsets"
+msgstr "Саундсеты"
+
+#: setup.tra:1001
+msgid "BG1-style party interaction system"
+msgstr "Система разговоров в стиле BG1"
+
+#: setup.tra:1002
+msgid "Reintroduce"
+msgstr "Восстановить"
+
+#: setup.tra:1003
+msgid "Reintroduce and adjust to framerate"
+msgstr "Восстановить и приспособить к скорости игры"
+
+#: setup.tra:1004
+msgid "Disable"
+msgstr "Отключить"
+
+#: setup.tra:1010
+#, fuzzy
+#| msgid "Extended Soundsets for NPC"
+msgid "Extended soundsets for NPC"
+msgstr "Расширенные саундсеты для NPC"
+
+#: setup.tra:1011
+msgid "Additions only"
+msgstr "Только добавления"
+
+#: setup.tra:1012
+msgid "Prefer BG1 sounds"
+msgstr ""
+
+#: setup.tra:1013
+msgid "Prefer BG2 sounds"
+msgstr ""
+
+#: setup.tra:1020
+msgid "No talking when hiding in shadows"
+msgstr "Не разговаривать в тенях"
+
+#: setup.tra:1021
+msgid "Make NPC soundsets available to PC"
+msgstr "Сделать саундсеты NPC доступными главному герою"
+
+#: setup.tra:1100
+#, fuzzy
+#| msgid "Gameplay and rules"
+msgid "Gameplay, rules, difficulty"
+msgstr "Игровая механика и правила"
+
+#: setup.tra:1101
+msgid "Fair fights"
+msgstr "Честные схватки"
+
+#: setup.tra:1102
+msgid "No XP farming"
+msgstr "Затруднить фарминг опыта"
+
+#: setup.tra:1103
+msgid "Can't steal Carsomyr"
+msgstr "Нельзя украсть Карсомир"
+
+#: setup.tra:1104
+msgid "True True Grandmastery"
+msgstr ""
+
+#: setup.tra:1105
+#, fuzzy
+#| msgid "Sensible Otiluke's sphere"
+msgid "Sensible multiclass restrictions"
+msgstr "Более адекватная сфера Отилюка"
 
 #: shandalars_cloak.tra:1
 msgid ""
@@ -1861,6 +1875,36 @@ msgstr ""
 msgid "each second"
 msgstr ""
 
+#: working_non_detection.tra:1
+msgid "Invisibility Purge"
+msgstr ""
+
+#: working_non_detection.tra:2
+msgid "Invisibility Purge and True Sight"
+msgstr ""
+
+#: working_non_detection.tra:3
+msgid " Non-detection, "
+msgstr ""
+
+#: working_non_detection.tra:4
+msgid " "
+msgstr ""
+
+#: working_non_detection.tra:5
+msgid ", and Non-Detection."
+msgstr ""
+
+#: working_non_detection.tra:6
+msgid "."
+msgstr ""
+
+#~ msgid "BGT or BG1 only"
+#~ msgstr "Только BGT или BG1"
+
+#~ msgid "No cast and attack"
+#~ msgstr "Запретить кастование заклинаний и атаку в том же раунде"
+
 #, fuzzy
 #~ msgid "Improved trap detection: allow sensing in combat"
 #~ msgstr "Упрощенные ловушки: можно замечать в бою"
@@ -1871,9 +1915,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Improved trap detection: character action"
 #~ msgstr "Упрощенные ловушки: действие персонажа"
-
-#~ msgid "stop moving and pause game"
-#~ msgstr "остановиться поставить игру на паузу"
 
 #~ msgid "stop moving and pause game only for ground traps"
 #~ msgstr ""
