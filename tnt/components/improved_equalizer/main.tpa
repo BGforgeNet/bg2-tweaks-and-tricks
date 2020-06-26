@@ -2,8 +2,8 @@
 OUTER_SET probability1 = 99
 OUTER_SET target = TARGET_FEATURE_self
 OUTER_SET timing = TIMING_while_equipped
-OUTER_SET parameter1 = i // amount
 ACTION_FOR_EACH i IN 1 2 3 4 BEGIN
+  OUTER_SET parameter1 = i // amount
   LAF CREATE_EFFECT
     INT_VAR
       probability1 target timing parameter1

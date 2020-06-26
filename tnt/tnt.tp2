@@ -4,6 +4,7 @@ VERSION ~v8.beta~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
+  CLEAR_EVERYTHING
   OUTER_SPRINT components ~%MOD_FOLDER%/components~
   OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
   INCLUDE ~%lib_dir%/macro.tpa~
