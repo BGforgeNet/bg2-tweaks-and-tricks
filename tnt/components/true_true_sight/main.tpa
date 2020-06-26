@@ -1,43 +1,30 @@
 INCLUDE ~%lib_dir%/macro.tpa~
 
 //True seeing (priest) shell spell
-COPY_EXISTING ~sppr505d.spl~ ~override/g_trues.spl~
+OUTER_SPRINT silent_true_sight ~g_trues~
+COPY_EXISTING ~%CLERIC_TRUE_SIGHT%d.spl~ ~override/%silent_true_sight%.spl~
   WRITE_LONG NAME1 ~-1~ //silence it
 
-ACTION_FOR_EACH spell IN sppr505 spwi609 spcl232 BEGIN
-  //True seeing actual spell
+ACTION_FOR_EACH spell IN ~%WIZARD_TRUE_SIGHT%~ ~%CLERIC_TRUE_SIGHT%~ ~%INQUIS_TRUE_SIGHT%~ BEGIN
   COPY_EXISTING ~%spell%.spl~ ~override~
-    PATCH_FOR_EACH t IN
-      1 2 3 4 5
-      7 8 9 10 11
-      12 13 14 16 17
-      19 20 21 22 23
-      25 26 27 28 29
-      31 32 33 34 35
-      37 38 39 40 41
-      43 44 45 46 47
-      49 50 51 52 53
-      55 56 57 58 59
-    BEGIN
-      LPF ADD_SPELL_EFFECT
-        INT_VAR
-          opcode = OPCODE_cast_spell_at_creature
-          target = TARGET_FEATURE_self
-          timing = TIMING_delayed
-          resist_dispel = DISPEL | BYPASS_MR
-          duration = EVAL %t% //delay
-          parameter1 = 12 //cast level
-          parameter2 = 1 //cast instantly
-        STR_VAR
-          resource = ~g_trues~
+    FOR (i=1; i<60; ++i) BEGIN
+      PATCH_IF i REM 6 != 0 BEGIN
+        LPF CLONE_EFFECT
+          INT_VAR
+            multi_match = 1
+            match_opcode = OPCODE_cast_spell_at_creature
+            duration = i
+          STR_VAR
+            resource = ~%silent_true_sight%~
+        END
+        // update description
+        LPF g_replace_strref
+          INT_VAR
+            offset = UNIDENTIFIED_DESC
+            old_substring_traref = 1 // each round
+            new_substring_traref = 2 // each second
+        END
       END
-    END
-    // update description
-    LPF g_replace_strref
-      INT_VAR
-        offset = UNIDENTIFIED_DESC
-        old_substring_traref = 1 // each round
-        new_substring_traref = 2  // each second
     END
   BUT_ONLY
 END
