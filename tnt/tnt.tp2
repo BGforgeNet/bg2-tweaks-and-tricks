@@ -206,7 +206,7 @@ INCLUDE ~%comp_dir%/main.tpa~
 
 
 //ITEM TWEAKS
-BEGIN @201 /* Weightless ammo */
+BEGIN @201 /* Hassle free ammo */
 GROUP @200 /* Items */
 INCLUDE ~%components%/hassle_free_ammo/main.tpa~
 
@@ -269,7 +269,7 @@ REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~clck22.itm~ @251 /* Shandalar's cloak not
 OUTER_SPRINT comp_name ~shandalars_cloak~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
-BEGIN @252 /* EE-style Algernon's cloak */
+BEGIN @252 /* Algernon's cloak: usable once per day */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/algernons_cloak/main.tpa~
