@@ -6,7 +6,8 @@
 @124 = ~Requires ToB or EE engine~
 @125 = ~Requires BG2 or EE engine~
 @126 = ~Requires BG2~
-
+@127 = ~Only non-EE engines~
+@128 = ~BGT only~
 
 @200 = ~Items~
 @201 = ~Hassle-free ammo~
@@ -18,8 +19,8 @@
 @206 = ~Single target~
 @207 = ~AoE~
 
+@208 = ~Working protection from poison~
 @223 = ~Potion of really mirrored eyes~
-
 @236 = ~Unlimited goodberries stacking~
 
 @240 = ~Throwing weapons damage~
@@ -30,11 +31,8 @@
 @250 = ~Improved Shandalar's cloak~
 @251 = ~Shandalar's cloak not present in game~
 @252 = ~Algernon's cloak: usable once per day~
-@253 = ~BGT only~
 
 @260 = ~Improved Equalizer~
-@263 = ~Only non-EE engines~
-
 
 @300 = ~Traps~
 @301 = ~Trap intuition~
@@ -60,12 +58,12 @@
 @350 = ~Non-disarmable Davaeorn's Battle Horrors~
 
 
-@500 = ~Shops~
+@500 = ~Stores~
 @501 = ~Can't steal from fences~
 @502 = ~Close shop steal exploit~
-@503 = ~Can't steal from any shops~
+@503 = ~Can't steal from any stores~
 @504 = ~More ankheg armors by Taerom~
-@505 = ~Shops always buy goods at the same price~
+@505 = ~Stores always buy goods at the same price~
 @506 = ~Limited stock~
 
 
@@ -107,7 +105,6 @@
 @814 = ~Project Image spell is not present in game~
 @815 = ~Uncheese Mislead~
 @816 = ~Mislead spell is not present in game~
-@817 = ~Working protection from poison~
 @818 = ~Sensible Blade spins~
 
 
