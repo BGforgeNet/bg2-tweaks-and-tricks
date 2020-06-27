@@ -4,14 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2019-08-02 14:58+0000\n"
-"Last-Translator: Magus <magus@bgforge.net>\n"
-"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
+"PO-Revision-Date: 2020-06-28 14:23+0000\n"
+"Last-Translator: egornovivan <egornov.ivan@gmail.com>\n"
+"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
+"tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.1.1\n"
 
 #: easy_traps.tra:1
@@ -51,46 +53,42 @@ msgid "Hold on. See this?"
 msgstr "Погодите. Видите вот это?"
 
 #: easy_traps.tra:98
-#, fuzzy
-#| msgid "Traps"
 msgid "Trap"
-msgstr "Ловушки"
+msgstr "Ловушка"
 
 #: easy_traps.tra:99
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "trap"
-msgstr "Ловушка со стрелой"
+msgstr "ловушка"
 
 #: easy_traps.tra:100
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Unknown"
-msgstr "Ловушка со стрелой"
+msgstr "Неизвестно"
 
 #: easy_traps.tra:101
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Hold Person trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка удерживающая людей"
 
 #: easy_traps.tra:102
+#, fuzzy
 msgid "Silence trap"
-msgstr ""
+msgstr "Ловушка безмолвия"
 
 #: easy_traps.tra:103
 #, fuzzy
 #| msgid "Disable lightning during rain"
 msgid "Call Lightning trap"
-msgstr "Отключить молнию во время дождя"
+msgstr "Ловушка призывающая молнии"
 
 #: easy_traps.tra:104
 msgid "Miscast Magic trap"
 msgstr ""
 
 #: easy_traps.tra:105
+#, fuzzy
 msgid "Flamestrike trap"
-msgstr ""
+msgstr "Ловушка бьющая пламенем"
 
 #: easy_traps.tra:106
 msgid "Chromatic orb trap"
@@ -98,35 +96,30 @@ msgstr ""
 
 #: easy_traps.tra:107
 msgid "Confusion trap"
-msgstr ""
+msgstr "Запутывающая ловушка"
 
 #: easy_traps.tra:108
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Dire Charm trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ужасно очаровательная ловушка"
 
 #: easy_traps.tra:109
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Fireball trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с огненным шаром"
 
 #: easy_traps.tra:110
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Lightning bolt trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с разрядом молнии"
 
 #: easy_traps.tra:111
+#, fuzzy
 msgid "Magic Missile trap"
-msgstr ""
+msgstr "Ловушка с магической ракетой"
 
 #: easy_traps.tra:112
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Stinking Cloud trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с вонючим облаком"
 
 #: easy_traps.tra:113
 msgid "Arrow trap"
@@ -136,65 +129,69 @@ msgstr "Ловушка со стрелой"
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Slaying arrow trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с убийственной стрелой"
 
 #: easy_traps.tra:115
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Acid arrow trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с кислотной стрелой"
 
 #: easy_traps.tra:116
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Biting arrow trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с кусающейся стрелой"
 
 #: easy_traps.tra:117
+#, fuzzy
 msgid "Detonation arrow trap"
-msgstr ""
+msgstr "Ловушка с детонирующей стрелой"
 
 #: easy_traps.tra:118
+#, fuzzy
 msgid "Dispelling arrow trap"
-msgstr ""
+msgstr "Ловушка с рассеивающей стрелой"
 
 #: easy_traps.tra:119
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Fire arrow trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с огненной стрелой"
 
 #: easy_traps.tra:120
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Ice arrow trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с ледяной стрелой"
 
 #: easy_traps.tra:121
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Piercing arrow trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с пронзительной стрелой"
 
 #: easy_traps.tra:122
+#, fuzzy
 msgid "Monster Summoning trap"
-msgstr ""
+msgstr "Ловушка призывающая монстров"
 
 #: easy_traps.tra:123
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Frost trap"
-msgstr "Ловушка со стрелой"
+msgstr "Замораживающая ловушка"
 
 #: easy_traps.tra:124
+#, fuzzy
 msgid "Cloudkill trap"
-msgstr ""
+msgstr "Ловушка со смертельным облаком"
 
 #: easy_traps.tra:125
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Minor Lightning Bolt trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с небольшим разрядом молнии"
 
 #: easy_traps.tra:126
 msgid "Underwater Bite trap"
