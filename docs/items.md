@@ -50,7 +50,7 @@ Example 2: you drink a potion of fire resistance and use a scroll of fire resist
 _(Now you can actually use all the resistance scrolls you've been hoarding and never using.)_
 
 ### Sensible Wand of Frost
-In vanilla, Wand of Frost mechaincs is strange: it must target on a creature, but affects an area. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Cone of Cold).
+In vanilla, Wand of Frost mechanics are strange: it must target on a creature, but affects an area. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Cone of Cold).
 
 ### Potion of really mirrored eyes
 Strangely, Potion of Mirrored Eyes doesn't protect from all gaze attacks. Demons' Death Gaze, for example, will bypass it. This component fixes that oversight, and makes the Potion realiable against ANY gaze attack.
