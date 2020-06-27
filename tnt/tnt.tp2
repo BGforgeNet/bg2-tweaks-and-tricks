@@ -275,9 +275,16 @@ REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/algernons_cloak/main.tpa~
 
 BEGIN @260 /* Improved Equalizer */
+GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
+BEGIN @208 /* Working protection from poison */
+GROUP @200 /* Items */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+INCLUDE ~%components%/poison_protection/main.tpa~
+
 // END ITEM TWEAKS
 
 // SPELL TWEAKS
@@ -303,7 +310,7 @@ REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 SUBCOMPONENT @803 /* Cheesy Slayer: reputation */
 COMPILE ~%components%/slayer/low_rep.d~
 
-BEGIN @806 /* Toue true sight */
+BEGIN @806 /* True True Sight */
 GROUP @800 /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
 OUTER_TEXT_SPRINT comp_name ~true_true_sight~
@@ -344,11 +351,6 @@ OUTER_TEXT_SPRINT comp_name ~uncheese_mislead~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
 
-BEGIN @817 /* True protection from poison */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-INCLUDE ~%components%/poison_protection/main.tpa~
-
 BEGIN @818 /* Sensible Blade spins */
 GROUP @800 /* Spells and abilities */
 OUTER_SPRINT comp_name ~sensible_spins~
@@ -356,30 +358,30 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/ma
 //END SPELL TWEAKS
 
 
-// shops
-BEGIN @505 /* Shops always buy goods at the same price */
-GROUP @500 /* Shops */
+// Stores
+BEGIN @505 /* Stores always buy goods at the same price */
+GROUP @500 /* Stores */
 INCLUDE ~%components%/no_shop_depreciation/main.tpa~
 
 BEGIN @501 /* Can't steal from fences */
-GROUP @500 /* Shops */
-SUBCOMPONENT @502 /* Close shop steal exploit */
+GROUP @500 /* Stores */
+SUBCOMPONENT @502 /* Close store steal exploit */
 INCLUDE ~%components%/no_shop_steal/fence.tpa~
 
-BEGIN @503 /* Can't steal from any shops */
-GROUP @500 /* Shops */
-SUBCOMPONENT @502 /* Close shop steal exploit */
+BEGIN @503 /* Can't steal from any Stores */
+GROUP @500 /* Stores */
+SUBCOMPONENT @502 /* Close store steal exploit */
 INCLUDE ~%components%/no_shop_steal/all.tpa~
 
 BEGIN @504 /* More ankheg armors by Taerom */
-GROUP @500 /* Shops */
+GROUP @500 /* Stores */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/more_ankhegs/main.tpa~
 
 BEGIN @506 /* Limited stock */
-GROUP @500 /* Shops */
+GROUP @500 /* Stores */
 INCLUDE ~%components%/limited_stock/main.tpa~
-// end shops
+// end Stores
 
 // gameplay and rules
 BEGIN @1101 /* Fair fights */
@@ -409,7 +411,7 @@ INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 //Quest and dialog tweaks
 BEGIN @701 /* Bloodless deeds */
 GROUP @700 /* Quest and dialog tweaks */
-REQUIRE_PREDICATE GAME_IS ~bgt~ @253 /* BGT only */
+REQUIRE_PREDICATE GAME_IS ~bgt~ @128 /* BGT only */
 INCLUDE ~%components%/bloodless_deeds/main.tpa~
 
 BEGIN @702 /* Improved strongholds */
@@ -443,7 +445,7 @@ DISABLE_FROM_KEY bwdragon.mve bislogo.mve wotc.mve
 
 BEGIN @606 /* Faster loading times */
 GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @263 /* Only non-EE engines */
+REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127 /* Only non-EE engines */
 INCLUDE ~%components%/faster_loading_times/main.tpa~
 
 BEGIN @608 /* Each stat gets +1 */
