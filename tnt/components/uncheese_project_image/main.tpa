@@ -11,7 +11,7 @@ High level overview
 8. The spy hears the shout. It now has both objects: LastHeardBy=clone, LastSummoneerOf=caster.
 9. The spy switches its initial script to the main one. It's no longer listening, so following PI casts won't interfere.
 10. The main script tracks each spell cast by the clone in local vars, incrementing them.
-11. Removing them right away result in missing some. (Something's off with action queue.)
+11. Removing spell right away results in missing some. (Something's off with action queue.)
 12. Instead, once the image has ended or is destroyed, the spy goes over each local var and decrements them until each cast spell is accounted for.
 13. Once all vars are back to 0, the spy destroys itself.
 
