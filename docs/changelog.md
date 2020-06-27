@@ -10,9 +10,75 @@
 - [Version 1](#version-1)
 
 ### Version 8
-- Added "can't steal Carsomyr" component.
-- Added "greater command AoE" component.
+
+#### General
+- Ensured EE, SoD compatibility.
+- Removed dummy component detection files, switched to `LABEL`, only using it for some components.
 - Added Russian translation.
+
+#### New components
+- Algernon's cloak: usable once per day.
+- Bloodless deeds.
+- Can't steal Carsomyr.
+- Faster loading times.
+- Greater Command AoE.
+- Improved Equalizer.
+- Limited stock.
+- More map notes.
+- Mod romance cheats: Saerileth, Amber, Tyris.
+- No lightning during rain.
+- Sensible Blade spins.
+- Sensible multiclass restrictions.
+- Shandalar's cloak.
+- Throwing damage type.
+- True True Grandmastery.
+- Unstack Chaos Shield.
+- Uncheese Mislead.
+- Uncheese Project Image.
+- Working Non-Detection.
+- Working protection from poison.
+
+#### Improved traps
+Massive rewrite under the hood.
+- Allowed instant detection.
+- Allowed to increase detection range.
+- Added an option to center on the trap, rather than the character.
+- Fixed trap reminders begin displayed off the location of the actual trap.
+- Ensured that no traps are marked as detected by default.
+- Pause game option no longer interrupts character actions.
+- Allowed to toggle Find Traps automatically.
+- Added an option to display a generic reminder, not disclosing trap type.
+- Added an option to make Davaeorn's Battle Horrors non-disarmable.
+
+#### Smarter familiars
+- Improved looting speed.
+- Fixed wrong dialog for WTP's imp.
+- Added combat tactics options.
+- Added dialog options to give potions.
+- Fixed quasit, dust mephit, fairy dragon missing their scripts.
+
+#### Fair Fights
+- Fixed Shandalar's AC and saves to correspond to a normal human.
+- Winski Perorate - disabled instakill upon attacking Sarevok in the Ducal Palace.
+- Now affects all mages in game, removing items that pre-cast "spells" on them.
+
+#### Remove Blur graphics
+Now includes Cloak of Displacement.
+
+#### True True Sight
+Now includes Inquisitor's ability.
+
+#### Hassle-free ammo
+- Fixed THAC0/damage bonuses for new returning items.
+- Maximized stack size for all ammo and throwing weapons.
+
+#### Extended soundsets
+- Fixed Skie's happy line being silent.
+- Custom sounds changed to install on English only for now.
+- Allowed to install framerate-adjusted sound on Linux if wine is present.
+
+#### Potion of really mirrored eyes
+Added more comprehensive check to include various Gaze spells.
 
 ### Version 7
 - Added spider form/web protection component.
