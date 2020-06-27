@@ -54,6 +54,7 @@ Where to find the bag:
 - In Candlekeep, talk to Thorius - near the cellars.
 - In the dungeon, check the painting.
 
+Options:
 - [Gem, scroll, potion, ammo (GSPA)](#gem-scroll-potion-ammo-gspa)
 - [GSPA + holding](#gspa--holding)
 - [GSPA + holding, bottomless](#gspa--holding-bottomless)
