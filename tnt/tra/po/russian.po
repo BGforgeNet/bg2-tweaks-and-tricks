@@ -1385,7 +1385,7 @@ msgid "Mislead spell is not present in game"
 msgstr ""
 
 #: setup.tra:817
-msgid "Actually working protection from poison"
+msgid "Working protection from poison"
 msgstr ""
 
 #: setup.tra:818
