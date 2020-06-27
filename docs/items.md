@@ -27,7 +27,7 @@ In BG2, all throwing weapons does missile (piercing) damage. Including axes, and
 This component allows to change either, or both.
 
 ### Remove blur graphics from items
-Removes eye-straining blur graphics from several items. Doesn't change actual Blur spell.
+Removes eye-straining blur graphics from several items. Doesn't change the actual Blur spell.
 
 Currently includes:
 - Semaj's cloak
@@ -52,7 +52,7 @@ _(Now you can actually use all the resistance scrolls you've been hoarding and n
 ### Sensible Wand of Frost
 In vanilla, Wand of Frost mechanics are strange: it must target on a creature, but affects an area. This will allow you to either make it fully single-target (like Agannazar's Scorcher), or AoE (like Cone of Cold).
 
-### Potion of really mirrored eyes
+### Potion of Really Mirrored Eyes
 Strangely, Potion of Mirrored Eyes doesn't protect from all gaze attacks. Demons' Death Gaze, for example, will bypass it. This component fixes that oversight, and makes the Potion realiable against ANY gaze attack.
 
 ### Unlimited goodberries stacking
@@ -61,7 +61,7 @@ Goodberries stack size is 5 by default, and if created regularly, they quickly c
 That is is silly, of course - just how much space a berry takes? Now you can stuff them all into a single slot.
 
 ### Improved Shandalar's cloak
-The cloak that an archmage sends a group of adventurers to get must be something important, right? However, in game it's just a rag with no abilities, which is a bummer. TnT changes the cloak into something worthwhile.
+A cloak that an archmage sends a group of adventurers to get must be something important, right? However, in game it's just a rag with no abilities, which is a bummer. TnT changes the cloak into something worthwhile.
 
 ### Algernon's cloak: usable once per day
 Algernon's cloak is also known as the Cloak of Cheese, because it has nigh unlimited uses - a developers oversight. EE changes that to a single use per day. TnT does the same for classic editions.
@@ -78,4 +78,3 @@ Currently affects:
 - Ring of Gaxx
 - Periart of Proof against Poison
 - Protection from Poison scrolls
-
