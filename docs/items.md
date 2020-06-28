@@ -21,7 +21,7 @@ An inventory management pain killer:
 - Changes all ammo and stackable throwing weapons to have 0 weight. Kind of cheese.
 - Adds returning **non-magical** ammo and throwing weapons to Taerom and Ribald, at a fair price.
 
-### Throwing weapons damage type
+### Throwing axes and hammers damage
 In BG2, all throwing weapons does missile (piercing) damage. Including axes, and even hammers. Also both axes and hammers are missing strength bonus. This was likely done for balance purposes, but seems a bit silly.
 
 This component allows to change either, or both.
@@ -31,7 +31,7 @@ Removes eye-straining blur graphics from several items. Doesn't change the actua
 
 Currently includes:
 - Semaj's cloak
-- Claw of Kazgaroth
+- [Claw of Kazgaroth](https://pihwiki.bgforge.net/Baldur's_Gate:_Claw_of_Kazgaroth)
 - Cloack of Displacement.
 
 ### Sensible Cloak of Mirroring
