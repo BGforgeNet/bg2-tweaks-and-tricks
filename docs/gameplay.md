@@ -39,9 +39,8 @@ It's well known that Grandmastery was nerfed in BG2 by Bioware for "balance". An
 However, not every fighter is supposed to be able to become a Grand Master. Certainly not multiclass, and not even **kits**. It should be available only to a single class, true class Fighter. That is his one edge over the kitted ones. And it's been taken away from him. (Although, pretty much all true classes in BG2 share the same fate - they are overshadowed by their kits.)
 
 This component does the following changes:
-- Only true class Fighters get Grand Mastery. Grand Mastery grants one extra attack over Specialist (the "unnerfed" version).
-- Kitted fighters are limited to High Mastery (4 pips). High Mastery grants extra *1/2* attack.
-Any other class is unchanged.
+- Only true class Fighters get Grand Mastery. (Specifically, Archers are also limited to 2 pips.)
+- Grand Mastery grants one extra attack over Specialist (the "unnerfed" version).
 
 This version does not proclaim to be "better", "more balanced", or "more PnP" than other GM mods. It's just different, and I think it's more "fair" to the good old fighters.
 
