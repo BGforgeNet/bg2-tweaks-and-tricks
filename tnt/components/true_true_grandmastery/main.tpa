@@ -7,13 +7,14 @@ COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
 COPY_EXISTING ~weapprof.2da~ override
   COUNT_2DA_COLS columns
   fighter_column = 5
+  column_values_start = 5
   READ_2DA_ENTRIES_NOW weapprof_read columns //skip first row
   FOR (r=0; r<weapprof_read; ++r) BEGIN
-    FOR(c=1; c<columns; ++c) BEGIN //and skip first column
+    FOR(c=column_values_start; c<columns; ++c) BEGIN
       PATCH_IF c != fighter_column BEGIN //skip true fighter
         READ_2DA_ENTRY_FORMER weapprof_read r c max_pips
-        PATCH_IF ~%max_pips%~ STR_EQ ~5~ BEGIN
-          SET_2DA_ENTRY_LATER weapprof_set r c 4 //limit everyone else to 4
+        PATCH_IF max_pips > 2 BEGIN
+          SET_2DA_ENTRY_LATER weapprof_set r c 2 //limit everyone else to 2
         END
       END
     END
