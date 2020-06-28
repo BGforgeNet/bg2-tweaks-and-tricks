@@ -45,30 +45,6 @@ BEGIN
   END  
 END
 
-DEFINE_ACTION_FUNCTION CREATE_MINION
-  STR_VAR
-    cre = ~~
-    script = ~~
-    name = ~-1~
-    ea = ~~
-BEGIN
-  COPY_EXISTING ~cutspy.cre~ ~override/%cre%.cre~
-    PATCH_IF NOT ~%name%~ STR_EQ ~-1~ BEGIN
-      SAY_EVALUATED NAME1 ~%name%~
-    END
-    WRITE_ASCIIT DEATHVAR ~%cre%~
-    WRITE_ASCIIT SCRIPT_OVERRIDE ~%script%~
-    PATCH_IF NOT ~%ea%~ STR_EQ ~~ BEGIN
-      WRITE_BYTE CRE_allegiance IDS_OF_SYMBOL (~ea~ ~%ea%~)
-    END
-    WRITE_LONG CRE_animation IDS_OF_SYMBOL (~animate~ ~DOOM_GUARD~) // https://forums.beamdog.com/discussion/73632/a-few-uses-for-invisible-minions
-    LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_clear_fog_of_war_wizard_eye END
-    LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_avatar_removal END // this seems to block shouts for some reason, or maybe even preventing creature scripts from running altogether
-    LPF ADD_CRE_EFFECT INT_VAR opcode = OPCODE_animation_removal timing = TIMING_permanent parameter2 = 1 END
-    LPF ADD_CRE_EFFECT INT_VAR opcode = OPCODE_selection_circle_removal timing = TIMING_permanent END
-  BUT_ONLY
-END
-
 DEFINE_PATCH_FUNCTION ALTER_AREA_REGION2
   INT_VAR
     index = "-1"
