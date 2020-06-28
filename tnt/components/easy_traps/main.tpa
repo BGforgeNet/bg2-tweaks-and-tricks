@@ -14,7 +14,6 @@ COMPILE ~%comp_baf_dir%/%traps_minion%.baf~
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
 INCLUDE ~%comp_dir%/functions.tpa~
-INCLUDE ~%comp_dir%/traps_list.tpa~
 
 OUTER_SPRINT traps_baf_class ~~
 // shaman is in ee only
