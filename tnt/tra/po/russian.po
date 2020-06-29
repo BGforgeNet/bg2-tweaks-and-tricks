@@ -4,14 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2020-06-28 14:23+0000\n"
+"PO-Revision-Date: 2020-06-30 14:14+0000\n"
 "Last-Translator: egornovivan <egornov.ivan@gmail.com>\n"
-"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
+"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
+"tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.1.1\n"
 
 #: easy_traps.tra:1
@@ -66,47 +68,53 @@ msgstr "Неизвестно"
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Hold Person trap"
-msgstr "Ловушка удерживающая людей"
+msgstr "Удерживающая ловушка"
 
 #: easy_traps.tra:102
 #, fuzzy
 msgid "Silence trap"
-msgstr "Ловушка безмолвия"
+msgstr "Безмолвная ловушка"
 
 #: easy_traps.tra:103
 #, fuzzy
 #| msgid "Disable lightning during rain"
 msgid "Call Lightning trap"
-msgstr "Ловушка призывающая молнии"
+msgstr "Призывающая молнии ловушка"
 
 #: easy_traps.tra:104
+#, fuzzy
 msgid "Miscast Magic trap"
-msgstr ""
+msgstr "Антимагическая ловушка"
 
 #: easy_traps.tra:105
 #, fuzzy
 msgid "Flamestrike trap"
-msgstr "Ловушка бьющая пламенем"
+msgstr "Пламенная ловушка"
 
 #: easy_traps.tra:106
+#, fuzzy
 msgid "Chromatic orb trap"
-msgstr ""
+msgstr "Призматическая ловушка"
 
 #: easy_traps.tra:107
+#, fuzzy
 msgid "Confusion trap"
 msgstr "Запутывающая ловушка"
 
 #: easy_traps.tra:108
+#, fuzzy
 msgid "Dire Charm trap"
 msgstr "Ужасно очаровательная ловушка"
 
 #: easy_traps.tra:109
+#, fuzzy
 msgid "Fireball trap"
-msgstr "Ловушка с огненным шаром"
+msgstr "Огненная ловушка"
 
 #: easy_traps.tra:110
+#, fuzzy
 msgid "Lightning bolt trap"
-msgstr "Ловушка с разрядом молнии"
+msgstr "Ловушка с ударом молнии"
 
 #: easy_traps.tra:111
 #, fuzzy
@@ -144,12 +152,12 @@ msgstr "Ловушка с кусающейся стрелой"
 #: easy_traps.tra:117
 #, fuzzy
 msgid "Detonation arrow trap"
-msgstr "Ловушка с детонирующей стрелой"
+msgstr "Ловушка со взрывающейся стрелой"
 
 #: easy_traps.tra:118
 #, fuzzy
 msgid "Dispelling arrow trap"
-msgstr "Ловушка с рассеивающей стрелой"
+msgstr "Ловушка с антимагической стрелой"
 
 #: easy_traps.tra:119
 #, fuzzy
@@ -196,72 +204,80 @@ msgid "Underwater Bite trap"
 msgstr ""
 
 #: easy_traps.tra:127
+#, fuzzy
 msgid "Hallway Spikes trap"
-msgstr ""
+msgstr "Ловушка с шипами"
 
 #: easy_traps.tra:128
+#, fuzzy
 msgid "Muck trap"
-msgstr ""
+msgstr "Гадкая ловушка"
 
 #: easy_traps.tra:129
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Shadow Death trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка со смертельной тенью"
 
 #: easy_traps.tra:130
+#, fuzzy
 msgid "Guillotine trap"
-msgstr ""
+msgstr "Ловушка гильотина"
 
 #: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Lightning orb trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с шаровой молнией"
 
 #: easy_traps.tra:134
 #, fuzzy
 #| msgid "crushing"
 msgid "Crushing trap"
-msgstr "крушашее"
+msgstr "Сокрушительная ловушка"
 
 #: easy_traps.tra:135
+#, fuzzy
 msgid "Skull trap"
-msgstr ""
+msgstr "Ловушка с черепом"
 
 #: easy_traps.tra:136
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Stone trap"
-msgstr "Ловушка со стрелой"
+msgstr "Каменная ловушка"
 
 #: easy_traps.tra:137
+#, fuzzy
 msgid "Summon Djinn trap"
-msgstr ""
+msgstr "Ловушка с джинном"
 
 #: easy_traps.tra:138
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Spear trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с копьём"
 
 #: easy_traps.tra:139
+#, fuzzy
 msgid "Slime trap"
-msgstr ""
+msgstr "Ловушка со слизью"
 
 #: easy_traps.tra:140
 #, fuzzy
 #| msgid "Arrow trap"
 msgid "Dart trap"
-msgstr "Ловушка со стрелой"
+msgstr "Ловушка с дротиком"
 
 #: easy_traps.tra:141
+#, fuzzy
 msgid "Vent trap"
-msgstr ""
+msgstr "Ловушка с отверстием"
 
 #: easy_traps.tra:142
+#, fuzzy
 msgid "Pendulum trap"
-msgstr ""
+msgstr "Ловушка маятник"
 
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
@@ -445,9 +461,10 @@ msgid "You're the finest group of friends I've ever had."
 msgstr "Вы лучшие друзья, которые у меня были."
 
 #: extended_soundsets.tra:71
+#, fuzzy
 msgctxt "xzarr01"
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr "Монтарон, ты такой РАЗДРАЖАЩИЙ!  Это меня беспокоит!"
+msgstr "Монтарон, ты такой РАЗДРАЖАЩИЙ!  Это меня просто бесит!"
 
 #: extended_soundsets.tra:72
 msgctxt "shart34"
@@ -876,7 +893,7 @@ msgstr "Аркион"
 
 #: more_map_notes.tra:5
 msgid "Sunin's house"
-msgstr ""
+msgstr "Дом Сунина"
 
 #: more_map_notes.tra:6
 #, fuzzy
@@ -886,7 +903,7 @@ msgstr "Кордир"
 
 #: more_map_notes.tra:7
 msgid "Nadarin's warehouse"
-msgstr ""
+msgstr "Склад Надарина"
 
 #: more_map_notes.tra:8
 msgid "Noralee"
