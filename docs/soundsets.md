@@ -54,7 +54,7 @@ This adds certain flavour to game. Now you can have it in BG2, too.
 This option reintroduces compliments and insults in BG2, and slightly expands them in BG1.
 
 #### Reintroduce and adjust to framerate
-Original BG1 was running at 30 FPS, and responces to compliment trigger with that in mind.
+Original BG1 was running at 30 FPS, and responses to compliment trigger with that in mind.
 But BG2 allows framerates up to 90. Setting high FPS, however, sometimes causes compliments and responses to overlap (responses are triggered too early).
 This option will also adjust the timing to your current framerate.
 
