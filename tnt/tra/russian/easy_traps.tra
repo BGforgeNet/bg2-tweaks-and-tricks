@@ -16,10 +16,10 @@
 @104 = ~Miscast Magic trap~
 @105 = ~Flamestrike trap~
 @106 = ~Chromatic orb trap~
-@107 = ~Запутывающая ловушка~
-@108 = ~Ужасно очаровательная ловушка~
-@109 = ~Ловушка с огненным шаром~
-@110 = ~Ловушка с разрядом молнии~
+@107 = ~Confusion trap~
+@108 = ~Dire Charm trap~
+@109 = ~Fireball trap~
+@110 = ~Lightning bolt trap~
 @111 = ~Magic Missile trap~
 @112 = ~Stinking Cloud trap~
 @113 = ~Ловушка со стрелой~
