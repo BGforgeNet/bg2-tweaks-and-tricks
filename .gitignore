@@ -3,3 +3,4 @@ tnt/backup/*
 !tnt/backup/.keepme
 *.DEBUG
 tnt/weidu.log
+*.zip
