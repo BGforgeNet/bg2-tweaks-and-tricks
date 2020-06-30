@@ -19,7 +19,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
         PATCH_IF damage == 1 BEGIN
           WRITE_SHORT (h_off + ITM_HEADER_damage_type) damage_type
           PATCH_FOR_EACH off IN DESC UNIDENTIFIED_DESC BEGIN
-            LPF g_replace_strref
+            LPF REPLACE_STRREF_TRA
               INT_VAR
                 offset = off
                 old_substring_traref = 253 //missile (piercing)

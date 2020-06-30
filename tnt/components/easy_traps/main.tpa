@@ -67,7 +67,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
         SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
 
         // location for minion to display the string at actual trap location, not trap launch point
-        LPF GET_AREA_STRUCTURE_CENTER_POINT INT_VAR index = idx STR_VAR type RET x=x_center y=y_center END
+        LPF GET_AREA_STRUCTURE_CENTER_POINT INT_VAR index = idx STR_VAR type RET x y END
 
         INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
           COPY_EXISTING ~%s%.bcs~ override
@@ -137,7 +137,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
         INNER_ACTION BEGIN COPY_EXISTING ~%are_file%~ override BUT_ONLY END
         // assign new script
         PATCH_IF valid_trap_script == 1 BEGIN
-          LPF WRITE_AREA_STRUCT_SCRIPT
+          LPF ALTER_AREA_STRUCTURE_SCRIPT
             INT_VAR index = idx
             STR_VAR script = ~%new_script%~ type = ~%type%~
           END

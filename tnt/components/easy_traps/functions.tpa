@@ -41,7 +41,7 @@ BEGIN
         flag_detectable = FLAG_ARE_REGION_trap_detectable
       END
   DEFAULT
-    PATCH_FAIL ~GET_AREA_STRUCTURE_SCRIPTS: unknown structure type %type%~
+    PATCH_FAIL ~GET_AREA_DETECTABLE_TRAP_SCRIPTS: unknown structure type %type%~
   END
   CLEAR_ARRAY scripts
   count = 0
@@ -108,39 +108,6 @@ BEGIN
   END
 END
 
-
-DEFINE_PATCH_FUNCTION WRITE_AREA_STRUCT_SCRIPT
-  INT_VAR index = 0
-  STR_VAR
-    script = ~~
-    type = ~~
-BEGIN
-  PATCH_MATCH 1 WITH
-    (~%type%~ STR_EQ ~region~)
-      BEGIN
-        GET_OFFSET_ARRAY struct_off_list ARE_V10_REGIONS
-        struct_off = ARE_regions_offset
-        script_off = ARE_REGION_script
-      END
-    (~%type%~ STR_EQ ~container~)
-      BEGIN
-        GET_OFFSET_ARRAY struct_off_list ARE_V10_CONTAINERS
-        struct_off = ARE_containers_offset
-        script_off = ARE_CONTAINER_script
-      END
-    (~%type%~ STR_EQ ~door~)
-      BEGIN
-        GET_OFFSET_ARRAY struct_off_list ARE_V10_DOORS
-        struct_off = ARE_doors_offset
-        script_off = ARE_DOOR_script
-      END
-  DEFAULT
-    PATCH_FAIL ~WRITE_AREA_STRUCT_SCRIPT: unknown structure type %type%~
-  END
-  off = $struct_off_list(~%index%~) + script_off
-  WRITE_ASCIIE off ~%script%~ #8
-END
-
 DEFINE_PATCH_FUNCTION calculate_trap_warning_string
   INT_VAR simple = 0
   STR_VAR
@@ -167,43 +134,4 @@ BEGIN
       END
     END
   END
-END
-
-
-DEFINE_PATCH_FUNCTION GET_AREA_STRUCTURE_CENTER_POINT
-  INT_VAR index = 0
-  STR_VAR type = ~~
-  RET x_center y_center
-BEGIN
-  PATCH_MATCH 1 WITH
-    (~%type%~ STR_EQ ~region~)
-      BEGIN
-        GET_OFFSET_ARRAY structures ARE_V10_REGIONS
-        GET_OFFSET_ARRAY2 vertices $structures(~%index%~) ARE_V10_REGION_VERTICES
-      END
-    (~%type%~ STR_EQ ~container~)
-      BEGIN
-        GET_OFFSET_ARRAY structures ARE_V10_CONTAINERS
-        GET_OFFSET_ARRAY2 vertices $structures(~%index%~) ARE_V10_CONTAINER_VERTICES
-      END
-    (~%type%~ STR_EQ ~door~)
-      BEGIN
-        GET_OFFSET_ARRAY structures ARE_V10_DOORS
-        GET_OFFSET_ARRAY2 vertices $structures(~%index%~) ARE_V10_DOOR_CLOSED_OUTLINE_VERTICES
-      END
-  DEFAULT
-    PATCH_FAIL ~GET_AREA_STRUCTURE_CENTER_POINT: unknown structure type %type%~
-  END
-  i = 0
-  x_total = 0
-  y_total = 0
-  PHP_EACH vertices AS int => v_off BEGIN
-    READ_SHORT v_off x
-    READ_SHORT (v_off + 2) y
-    x_total+=x
-    y_total+=y
-    i+=1
-  END
-  x_center = x_total / i
-  y_center = y_total / i
 END
