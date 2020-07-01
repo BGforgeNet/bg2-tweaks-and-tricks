@@ -22,7 +22,7 @@ It will work with any IE game, but not all components are applicable to all game
 Components are many and varied. Refer to the individual sections for the details.
 
 - [Familiars](docs/familiars.md)
-- [Improved traps](docs/improved-traps.md)
+- [Improved traps](docs/traps.md)
 - [Soundsets](docs/soundsets.md)
 - [Items](docs/items.md)
 - [Spell and abilities](docs/spells.md)
