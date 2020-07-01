@@ -6,8 +6,8 @@ Improved traps offres multiple components to change trap mechannics.
 
 - [Instant detection](#instant-detection)
 - [Increase detection range](#increase-detection-range)
-- [Trap-reminders](#trap-reminders)
-- [Trap-intuition](#trap-intuition)
+- [Trap reminders](#trap-reminders)
+- [Trap intuition](#trap-intuition)
 - [Core](#core)
 - [Non-disarmable Davaeorn's Battle Horrors](#non-disarmable-davaeorns-battle-horrors)
 
