@@ -37,4 +37,4 @@ Core is required to enable the selected components. Components installed after C
 ### Non-disarmable Davaeorn's Battle Horrors
 Davaeorn's Battle Horrors can be avoided by disarming the corresponding traps, which seems a bit silly, likely an oversight on developers part. Now they are undetectable and undisarmable.
 
-This is the only Improved raps component that does *not* require Core.
+This is the only Improved Traps component that does *not* require Core.
