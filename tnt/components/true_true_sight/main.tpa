@@ -18,7 +18,7 @@ COPY_EXISTING
           resource = ~%silent_true_sight%~
       END
       // update description
-      LPF g_replace_strref
+      LPF REPLACE_STRREF_TRA
         INT_VAR
           offset = UNIDENTIFIED_DESC
           old_substring_traref = 1 // each round

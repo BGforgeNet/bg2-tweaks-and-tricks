@@ -1,6 +1,6 @@
 COPY_EXISTING ~%WIZARD_NON_DETECTION%.spl~ ~override~
   WRITE_BYTE SPL_sectype SECTYPE_specific_protections
-    LPF g_replace_strref // add True Sight to description
+    LPF REPLACE_STRREF_TRA // add True Sight to description
       INT_VAR
         offset = UNIDENTIFIED_DESC
         old_substring_traref = 1
@@ -13,7 +13,7 @@ COPY_EXISTING
     ~%WIZARD_ORACLE%.spl~ override
     ~%WIZARD_TRUE_SIGHT%.spl~ override
     ~%CLERIC_TRUE_SIGHT%.spl~ override
-  LPF g_replace_strref
+  LPF REPLACE_STRREF_TRA
     INT_VAR
       offset = UNIDENTIFIED_DESC
       old_substring_traref = 3
@@ -22,7 +22,7 @@ COPY_EXISTING
 BUT_ONLY IF_EXISTS
 COPY_EXISTING
     ~%WIZARD_DETECT_ILLUSION%.spl~ override
-  LPF g_replace_strref
+  LPF REPLACE_STRREF_TRA
     INT_VAR
       offset = UNIDENTIFIED_DESC
       old_substring_traref = 5
