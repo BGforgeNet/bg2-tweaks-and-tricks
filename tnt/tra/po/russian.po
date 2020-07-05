@@ -1037,6 +1037,10 @@ msgstr "Требует движок BG2 или EE"
 msgid "Requires BG2"
 msgstr "Требует BG2"
 
+#: setup.tra:127
+msgid "Only non-EE engines"
+msgstr ""
+
 #: setup.tra:200
 msgid "Items"
 msgstr "Предметы"
@@ -1113,8 +1117,8 @@ msgstr "Только для BGT"
 msgid "Improved Equalizer"
 msgstr ""
 
-#: setup.tra:263
-msgid "Only non-EE engines"
+#: setup.tra:261
+msgid "Distinct color for Perdue's sword"
 msgstr ""
 
 #: setup.tra:300

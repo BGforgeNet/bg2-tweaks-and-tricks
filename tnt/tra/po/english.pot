@@ -863,6 +863,10 @@ msgstr ""
 msgid "Requires BG2"
 msgstr ""
 
+#: setup.tra:127
+msgid "Only non-EE engines"
+msgstr ""
+
 #: setup.tra:200
 msgid "Items"
 msgstr ""
@@ -939,8 +943,8 @@ msgstr ""
 msgid "Improved Equalizer"
 msgstr ""
 
-#: setup.tra:263
-msgid "Only non-EE engines"
+#: setup.tra:261
+msgid "Distinct color for Perdue's sword"
 msgstr ""
 
 #: setup.tra:300
