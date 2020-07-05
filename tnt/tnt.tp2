@@ -279,8 +279,8 @@ REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
-GROUP @200 /* Items */
 BEGIN @261 /* Distinct color for Perdue's sword */
+GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/perdue_sword/main.tpa~
 // END ITEM TWEAKS
