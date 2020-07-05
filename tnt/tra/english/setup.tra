@@ -6,6 +6,7 @@
 @124 = ~Requires ToB or EE engine~
 @125 = ~Requires BG2 or EE engine~
 @126 = ~Requires BG2~
+@127 = ~Only non-EE engines~
 
 
 @200 = ~Items~
@@ -33,8 +34,8 @@
 @253 = ~BGT only~
 
 @260 = ~Improved Equalizer~
-@263 = ~Only non-EE engines~
 
+@261 = ~Distinct color for Perdue's sword~
 
 @300 = ~Traps~
 @301 = ~Trap intuition~

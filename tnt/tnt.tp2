@@ -278,6 +278,11 @@ BEGIN @260 /* Improved Equalizer */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
+GROUP @200 /* Items */
+BEGIN @261 /* Distinct color for Perdue's sword */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+INCLUDE ~%components%/perdue_sword/main.tpa~
 // END ITEM TWEAKS
 
 // SPELL TWEAKS
@@ -443,7 +448,7 @@ DISABLE_FROM_KEY bwdragon.mve bislogo.mve wotc.mve
 
 BEGIN @606 /* Faster loading times */
 GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @263 /* Only non-EE engines */
+REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127 /* Only non-EE engines */
 INCLUDE ~%components%/faster_loading_times/main.tpa~
 
 BEGIN @608 /* Each stat gets +1 */
