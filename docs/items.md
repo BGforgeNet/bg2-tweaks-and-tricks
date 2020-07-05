@@ -78,3 +78,6 @@ Currently affects:
 - Ring of Gaxx
 - Periart of Proof against Poison
 - Protection from Poison scrolls
+
+### Distinct color for Perdue's sword
+Perdue's sword is annoying to search for, because it looks just like any other short sword. This simply gives it another color, to make it stand out.
