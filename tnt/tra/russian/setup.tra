@@ -6,6 +6,7 @@
 @124 = ~Требует движок ToB или EE~
 @125 = ~Требует движок BG2 или EE~
 @126 = ~Требует BG2~
+@127 = ~Only non-EE engines~
 @200 = ~Предметы~
 @201 = ~Невесомые снаряды~
 @202 = ~Убрать визуальный эффект размытия с предметов~
@@ -25,7 +26,7 @@
 @252 = ~EE-style Algernon's cloak~
 @253 = ~Только для BGT~
 @260 = ~Improved Equalizer~
-@263 = ~Only non-EE engines~
+@261 = ~Distinct color for Perdue's sword~
 @300 = ~Ловушки~
 @301 = ~Trap intuition~
 @302 = ~not in combat~
