@@ -10,4 +10,4 @@ COPY_EXISTING_REGEXP ~kahrk.cre~ ~override~
     ~mage05~
     ~mage06~
     ~stonskin~
-BUT_ONLY
+BUT_ONLY IF_EXISTS
