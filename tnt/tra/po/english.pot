@@ -616,7 +616,7 @@ msgid ""
 " Cleric"
 msgstr ""
 
-#: game.tra:166
+#: game.tra:166 setup.tra:201
 msgid "Hassle-free ammo"
 msgstr ""
 
@@ -871,12 +871,12 @@ msgstr ""
 msgid "Requires Classic ToB engine"
 msgstr ""
 
-#: setup.tra:200
-msgid "Items"
+#: setup.tra:129
+msgid "BGT only"
 msgstr ""
 
-#: setup.tra:201
-msgid "Weightless ammo"
+#: setup.tra:200
+msgid "Items"
 msgstr ""
 
 #: setup.tra:202
@@ -903,6 +903,10 @@ msgstr ""
 msgid "AoE"
 msgstr ""
 
+#: setup.tra:208
+msgid "Working protection from poison"
+msgstr ""
+
 #: setup.tra:210
 msgid "Really PnP protection items"
 msgstr ""
@@ -916,7 +920,7 @@ msgid "Unlimited goodberries stacking"
 msgstr ""
 
 #: setup.tra:240
-msgid "Throwing weapons damage"
+msgid "Throwing axes and hammers damage"
 msgstr ""
 
 #: setup.tra:241
@@ -940,11 +944,7 @@ msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252
-msgid "Algernon's cloak usable once per day"
-msgstr ""
-
-#: setup.tra:253
-msgid "BGT only"
+msgid "Algernon's cloak: usable once per day"
 msgstr ""
 
 #: setup.tra:260
@@ -1042,7 +1042,7 @@ msgid "Non-disarmable Davaeorn's Battle Horrors"
 msgstr ""
 
 #: setup.tra:500
-msgid "Shops"
+msgid "Stores"
 msgstr ""
 
 #: setup.tra:501
@@ -1054,7 +1054,7 @@ msgid "Close shop steal exploit"
 msgstr ""
 
 #: setup.tra:503
-msgid "Can't steal from any shops"
+msgid "Can't steal from any stores"
 msgstr ""
 
 #: setup.tra:504
@@ -1062,7 +1062,7 @@ msgid "More ankheg armors by Taerom"
 msgstr ""
 
 #: setup.tra:505
-msgid "Shops always buy goods at the same price"
+msgid "Stores always buy goods at the same price"
 msgstr ""
 
 #: setup.tra:506
@@ -1205,10 +1205,6 @@ msgstr ""
 msgid "Mislead spell is not present in game"
 msgstr ""
 
-#: setup.tra:817
-msgid "Working protection from poison"
-msgstr ""
-
 #: setup.tra:818
 msgid "Sensible Blade spins"
 msgstr ""
@@ -1294,6 +1290,23 @@ msgid "Sensible multiclass restrictions"
 msgstr ""
 
 #: shandalars_cloak.tra:1
+msgid "Shandalar's Cloak"
+msgstr ""
+
+#: shandalars_cloak.tra:2
+msgid "Cloak of Arachnida"
+msgstr ""
+
+#: shandalars_cloak.tra:3
+msgid ""
+"This cloak was originally stolen from Shandalar by the powerful mage Semia, "
+"presumably for the powerful magics woven into the fabric. How it has come to"
+" be in your possession and the fate of Semia are complete mysteries, and "
+"ones not likely to be solved. Much like the exact workings of the cloak, "
+"which would remain a mystery even to a powerful mage."
+msgstr ""
+
+#: shandalars_cloak.tra:4
 msgid ""
 "This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
 "\n"
