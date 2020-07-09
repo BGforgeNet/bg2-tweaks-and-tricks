@@ -1488,10 +1488,6 @@ msgstr "Сделать саундсеты NPC доступными главно�
 msgid "Gameplay, rules, difficulty"
 msgstr "Игровая механика и правила"
 
-#: setup.tra:1101
-msgid "Fair fights"
-msgstr "Честные схватки"
-
 #: setup.tra:1102
 msgid "No XP farming"
 msgstr "Затруднить фарминг опыта"
@@ -1509,6 +1505,19 @@ msgstr ""
 #| msgid "Sensible Otiluke's sphere"
 msgid "Sensible multiclass restrictions"
 msgstr "Более адекватная сфера Отилюка"
+
+#: setup.tra:1110
+msgid "Fair fights"
+msgstr "Честные схватки"
+
+#: setup.tra:1111
+msgid "Just a few selected enemies"
+msgstr ""
+
+#: setup.tra:1112
+msgid ""
+"Also remove undroppable items granting unfair advantages from ALL enemies"
+msgstr ""
 
 #: shandalars_cloak.tra:1
 msgid "Shandalar's Cloak"

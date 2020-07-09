@@ -1269,10 +1269,6 @@ msgstr ""
 msgid "Gameplay, rules, difficulty"
 msgstr ""
 
-#: setup.tra:1101
-msgid "Fair fights"
-msgstr ""
-
 #: setup.tra:1102
 msgid "No XP farming"
 msgstr ""
@@ -1287,6 +1283,19 @@ msgstr ""
 
 #: setup.tra:1105
 msgid "Sensible multiclass restrictions"
+msgstr ""
+
+#: setup.tra:1110
+msgid "Fair fights"
+msgstr ""
+
+#: setup.tra:1111
+msgid "Just a few selected enemies"
+msgstr ""
+
+#: setup.tra:1112
+msgid ""
+"Also remove undroppable items granting unfair advantages from ALL enemies"
 msgstr ""
 
 #: shandalars_cloak.tra:1
