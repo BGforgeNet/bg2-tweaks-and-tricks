@@ -135,8 +135,12 @@
 
 
 @1100 = ~Gameplay, rules, difficulty~
-@1101 = ~Fair fights~
+
 @1102 = ~No XP farming~
 @1103 = ~Can't steal Carsomyr~
 @1104 = ~True True Grandmastery~
 @1105 = ~Sensible multiclass restrictions~
+
+@1110 = ~Fair fights~
+@1111 = ~Just a few selected enemies~
+@1112 = ~Also remove undroppable items granting unfair advantages from ALL enemies~

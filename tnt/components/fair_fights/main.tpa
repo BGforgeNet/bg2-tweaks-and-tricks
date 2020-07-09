@@ -1,9 +1,13 @@
 OUTER_TEXT_SPRINT comp_dir ~%components%/fair_fights~
 
-INCLUDE ~%comp_dir%/borda.tpa~
-INCLUDE ~%comp_dir%/shandalar.tpa~
 INCLUDE ~%comp_dir%/arkanis.tpa~
+INCLUDE ~%comp_dir%/borda.tpa~
+INCLUDE ~%comp_dir%/kahrk.tpa~
 INCLUDE ~%comp_dir%/malchor.tpa~
 INCLUDE ~%comp_dir%/non_innocents.tpa~
-INCLUDE ~%comp_dir%/mages.tpa~
+INCLUDE ~%comp_dir%/shandalar.tpa~
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN INCLUDE ~%comp_dir%/winski.tpa~ END
+
+ACTION_IF remove_items == 1 BEGIN
+  INCLUDE ~%comp_dir%/mages.tpa~
+END

@@ -387,10 +387,16 @@ INCLUDE ~%components%/limited_stock/main.tpa~
 // end Stores
 
 // gameplay and rules
-BEGIN @1101 /* Fair fights */
+BEGIN @1111 /* Just a few selected enemies */
 GROUP @1100 /* Gameplay and rules */
+SUBCOMPONENT @1110 /* Fair fights */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-INCLUDE ~%components%/fair_fights/main.tpa~
+OUTER_SET remove_items = 0 INCLUDE ~%components%/fair_fights/main.tpa~
+BEGIN @1112 /* Also remove undroppable items granting unfair advantages from ALL enemies */
+GROUP @1100 /* Gameplay and rules */
+SUBCOMPONENT @1110 /* Fair fights */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+OUTER_SET remove_items = 1 INCLUDE ~%components%/fair_fights/main.tpa~
 
 BEGIN @1102 /* No XP farming */
 GROUP @1100 /* Gameplay and rules */

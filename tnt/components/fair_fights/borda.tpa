@@ -1,6 +1,4 @@
 //Borda the cheating magic merchant
-ACTION_IF FILE_EXISTS_IN_GAME ~borda.cre~ BEGIN  
-  COPY_EXISTING ~borda.cre~ ~override~
-    WRITE_BYTE CRE_magic_resistance 0
-  BUT_ONLY
-END
+COPY_EXISTING ~borda.cre~ ~override~
+  WRITE_BYTE CRE_magic_resistance 0
+BUT_ONLY IF_EXISTS
