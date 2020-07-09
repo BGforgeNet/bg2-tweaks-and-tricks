@@ -48,8 +48,6 @@ OUTER_TEXT_SPRINT pi_spy_script0 ~g_pispy0~ // initial script
 OUTER_TEXT_SPRINT pi_spy_script1 ~g_pispy1~ // real script
 LAF CREATE_MINION STR_VAR cre = ~%pi_spy_cre%~ script = ~%pi_spy_script0%~ END
 
-APPEND ~ea.ids~ ~0 ANYONE~ UNLESS ~ANYONE~ // so that IDS_OF_SYMBOL works properly
-CLEAR_IDS_MAP
 COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
   LPF ADD_SPELL_EFFECT
     INT_VAR

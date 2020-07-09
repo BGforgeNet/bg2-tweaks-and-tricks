@@ -7,7 +7,8 @@
 @125 = ~Requires BG2 or EE engine~
 @126 = ~Requires BG2~
 @127 = ~Only non-EE engines~
-@128 = ~BGT only~
+@128 = ~Requires Classic ToB engine~
+@129 = ~BGT only~
 
 @200 = ~Items~
 @201 = ~Hassle-free ammo~
@@ -20,7 +21,10 @@
 @207 = ~AoE~
 
 @208 = ~Working protection from poison~
-@223 = ~Potion of really mirrored eyes~
+@210 = ~Really PnP protection items~
+
+@223 = ~Potion of Really Mirrored Eyes~
+
 @236 = ~Unlimited goodberries stacking~
 
 @240 = ~Throwing axes and hammers damage~

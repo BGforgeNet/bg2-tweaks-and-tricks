@@ -6,6 +6,8 @@
 @124 = ~Требует движок ToB или EE~
 @125 = ~Требует движок BG2 или EE~
 @126 = ~Требует BG2~
+@127 = ~Only non-EE engines~
+@128 = ~Requires Classic ToB engine~
 @200 = ~Предметы~
 @201 = ~Невесомые снаряды~
 @202 = ~Убрать визуальный эффект размытия с предметов~
@@ -14,7 +16,8 @@
 @205 = ~Более адекватный жезл мороза~
 @206 = ~Одиночная цель~
 @207 = ~Действие на область~
-@223 = ~Зелье по-настоящему зеркальных глаз~
+@210 = ~Really PnP protection items~
+@223 = ~Potion of Really Mirrored Eyes~
 @236 = ~Неограниченное складывание хороших ягод~
 @240 = ~Урон от метательного оружия~
 @241 = ~Добавить бонус от силы~
@@ -22,10 +25,10 @@
 @243 = ~И то, и другое~
 @250 = ~Improved Shandalar's cloak~
 @251 = ~Shandalar's cloak not present in game~
-@252 = ~EE-style Algernon's cloak~
+@252 = ~Algernon's cloak usable once per day~
 @253 = ~Только для BGT~
 @260 = ~Improved Equalizer~
-@263 = ~Only non-EE engines~
+@261 = ~Distinct color for Perdue's sword~
 @300 = ~Ловушки~
 @301 = ~Trap intuition~
 @302 = ~not in combat~

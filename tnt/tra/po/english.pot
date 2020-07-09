@@ -863,6 +863,14 @@ msgstr ""
 msgid "Requires BG2"
 msgstr ""
 
+#: setup.tra:127
+msgid "Only non-EE engines"
+msgstr ""
+
+#: setup.tra:128
+msgid "Requires Classic ToB engine"
+msgstr ""
+
 #: setup.tra:200
 msgid "Items"
 msgstr ""
@@ -895,8 +903,12 @@ msgstr ""
 msgid "AoE"
 msgstr ""
 
+#: setup.tra:210
+msgid "Really PnP protection items"
+msgstr ""
+
 #: setup.tra:223
-msgid "Potion of really mirrored eyes"
+msgid "Potion of Really Mirrored Eyes"
 msgstr ""
 
 #: setup.tra:236
@@ -928,7 +940,7 @@ msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252
-msgid "EE-style Algernon's cloak"
+msgid "Algernon's cloak usable once per day"
 msgstr ""
 
 #: setup.tra:253
@@ -939,8 +951,8 @@ msgstr ""
 msgid "Improved Equalizer"
 msgstr ""
 
-#: setup.tra:263
-msgid "Only non-EE engines"
+#: setup.tra:261
+msgid "Distinct color for Perdue's sword"
 msgstr ""
 
 #: setup.tra:300

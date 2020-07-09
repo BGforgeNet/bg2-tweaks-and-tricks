@@ -1,3 +1,7 @@
+APPEND ~ea.ids~ ~0 ANYONE~ UNLESS ~ANYONE~ // so that IDS_OF_SYMBOL works properly
+APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+CLEAR_IDS_MAP
+
 // list web spells to build immunity
 DEFINE_ACTION_FUNCTION list_web_spells
   RET_ARRAY spells
@@ -8,3 +12,38 @@ BEGIN
     ACTION_DEFINE_ARRAY spells BEGIN spin683 spin575 spdr201 spwi215 END
   END  
 END
+
+DEFINE_PATCH_FUNCTION unstack_armor_bonus
+  INT_VAR bonus = 0 stacking_id_base = 0
+BEGIN
+  found = 0
+  GET_OFFSET_ARRAY fx_offs ITM_V10_GEN_EFFECTS
+  PHP_EACH fx_offs AS int => fx_off BEGIN
+    READ_SHORT fx_off opcode
+    PATCH_IF opcode == OPCODE_ac_vs_damage_type_mod BEGIN
+      READ_LONG (fx_off + FEATURE_parameter2) type
+      PATCH_IF type == 16 BEGIN // base ac settting
+        READ_LONG (fx_off + FEATURE_parameter1) ac_mod
+        WRITE_LONG (fx_off + FEATURE_parameter1) (ac_mod + bonus)
+        found = 1
+      END
+    END
+  END
+  PATCH_IF found == 1 BEGIN
+    FOR (i=1;i<=bonus;++i) BEGIN
+      LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+          opcode = OPCODE_ac_vs_damage_type_mod
+          target = TARGET_FEATURE_self
+          timing = TIMING_while_equipped
+          insert_point = "-1"
+          parameter1 = 1 // amount
+          parameter2 = 0 // any damage type
+          savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
+          special = (stacking_id_base + i)
+          probability1 = (100 + i) // see main.tpa
+      END
+    END
+  END
+END
+

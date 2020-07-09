@@ -40,10 +40,6 @@ COPY_EXISTING ~%trap_spl%.spl~ override
   LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_find_traps target = TARGET_FEATURE_self END
 BUT_ONLY
 
-// we don't want incapacitated thieves detecting
-APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
-CLEAR_IDS_MAP
-
 ACTION_DEFINE_ASSOCIATIVE_ARRAY struct_types BEGIN
   ~region~ => ~Entered(~
   ~door~ => ~Opened(~

@@ -1037,6 +1037,16 @@ msgstr "Требует движок BG2 или EE"
 msgid "Requires BG2"
 msgstr "Требует BG2"
 
+#: setup.tra:127
+msgid "Only non-EE engines"
+msgstr ""
+
+#: setup.tra:128
+#, fuzzy
+#| msgid "Requires ToB or EE engine"
+msgid "Requires Classic ToB engine"
+msgstr "Требует движок ToB или EE"
+
 #: setup.tra:200
 msgid "Items"
 msgstr "Предметы"
@@ -1069,8 +1079,14 @@ msgstr "Одиночная цель"
 msgid "AoE"
 msgstr "Действие на область"
 
+#: setup.tra:210
+msgid "Really PnP protection items"
+msgstr ""
+
 #: setup.tra:223
-msgid "Potion of really mirrored eyes"
+#, fuzzy
+#| msgid "Potion of really mirrored eyes"
+msgid "Potion of Really Mirrored Eyes"
 msgstr "Зелье по-настоящему зеркальных глаз"
 
 #: setup.tra:236
@@ -1102,7 +1118,7 @@ msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252
-msgid "EE-style Algernon's cloak"
+msgid "Algernon's cloak usable once per day"
 msgstr ""
 
 #: setup.tra:253
@@ -1113,8 +1129,8 @@ msgstr "Только для BGT"
 msgid "Improved Equalizer"
 msgstr ""
 
-#: setup.tra:263
-msgid "Only non-EE engines"
+#: setup.tra:261
+msgid "Distinct color for Perdue's sword"
 msgstr ""
 
 #: setup.tra:300

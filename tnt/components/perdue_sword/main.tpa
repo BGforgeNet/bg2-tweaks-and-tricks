@@ -1,0 +1,4 @@
+COPY ~%components%/perdue_sword/g_perdue.bam~ override
+COPY_EXISTING ~sw1h17.itm~ override
+  WRITE_ASCIIT ITM_inventory_icon ~g_perdue~
+BUT_ONLY
