@@ -15,7 +15,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Algernon's cloak: usable once per day](#algernons-cloak-usable-once-per-day)
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
-
+- [Really PnP protection items](#really-pnp-protection-items)
 ### Hassle-free ammo
 An inventory management pain killer:
 - Changes all ammo and stackable throwing weapons to have 0 weight. Kind of cheese.
@@ -32,7 +32,7 @@ Removes eye-straining blur graphics from several items. Doesn't change the actua
 Currently includes:
 - Semaj's cloak
 - [Claw of Kazgaroth](https://pihwiki.bgforge.net/Baldur's_Gate:_Claw_of_Kazgaroth)
-- Cloack of Displacement.
+- Cloak of Displacement.
 
 ### Sensible Cloak of Mirroring
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which doesn't make much sense. And it doesn't protect from Call Lighting, which also is strange. This compoment fixes both issues.
@@ -81,3 +81,10 @@ Currently affects:
 
 ### Distinct color for Perdue's sword
 Perdue's sword is annoying to search for, because it looks just like any other short sword. This simply gives it another color, to make it stand out.
+
+### Really PnP protection items
+BG2 always restricted wearing rings of protection (and other similar jewelry) with magical armor. That is a crude way to enforce a PnP rule saying that their bonuses shouldn't stack. Gameplay-wise, though, it leads to much inventory tetris a frustration. There are tweaks to address it, but they work in an unperfect way, still forcing the tetris or stacking AC.
+
+Now you can wear whatever you want at the same time. But only the highest bonuses will apply. As it should have been.
+
+For example, if a character wears a Leather Armor +3, a Ring of Protection +1 and a Ring of Protection +2, he will receive a total bonus of +3 AC and +2 Saving Throws (compared to another character who wears just plain Leather Armor).
