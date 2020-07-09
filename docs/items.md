@@ -88,3 +88,5 @@ BG2 always restricted wearing rings of protection (and other similar jewelry) wi
 Now you can wear whatever you want at the same time. But only the highest bonuses will apply. As it should have been.
 
 For example, if a character wears a Leather Armor +3, a Ring of Protection +1 and a Ring of Protection +2, he will receive a total bonus of +3 AC and +2 Saving Throws (compared to another character who wears just plain Leather Armor).
+
+Unfortunately, only available to Classic Edition users.
