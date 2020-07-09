@@ -19,7 +19,9 @@
 @206 = ~Single target~
 @207 = ~AoE~
 
-@223 = ~Potion of really mirrored eyes~
+@210 = ~Really PnP protection items~
+
+@223 = ~Potion of Really Mirrored Eyes~
 
 @236 = ~Unlimited goodberries stacking~
 
@@ -30,7 +32,7 @@
 
 @250 = ~Improved Shandalar's cloak~
 @251 = ~Shandalar's cloak not present in game~
-@252 = ~EE-style Algernon's cloak~
+@252 = ~Algernon's cloak usable once per day~
 @253 = ~BGT only~
 
 @260 = ~Improved Equalizer~

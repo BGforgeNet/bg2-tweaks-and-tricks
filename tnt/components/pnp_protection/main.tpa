@@ -1,0 +1,116 @@
+INCLUDE ~%lib_dir%/tobex.tpa~
+
+// ACTION_DEFINE_ASSOCIATIVE_ARRAY savetypes BEGIN
+//   OPCODE_save_vs_spells_mod => "ss"
+//   OPCODE_save_vs_wands_mod => "sw"
+//   OPCODE_save_vs_breath_weapons_mod => "sb"
+//   OPCODE_save_vs_death_mod => "sd"
+//   OPCODE_save_vs_petrification_polymorph_mod => "sp"
+// END
+
+// ACTION_FOR_EACH i IN 1 2 3 4 5 6 BEGIN
+//   OUTER_PATCH test BEGIN
+//     FOR (j=1;j<=i;++j) BEGIN
+//       SET $fx_ids(~%i%%j%~) = j
+//     END
+//   END
+//   // ACTION_PHP_EACH savetypes AS type => slug BEGIN
+//   //   LAF CREATE_EFFECT
+//   //     INT_VAR
+//   //       opcode = EVAL ~%%type%%~
+//   //       target = TARGET_FEATURE_self
+//   //       timing = TIMING_while_equipped
+//   //       parameter1 = 1 // amount
+//   //       savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
+//   //       special = (effect_stacking_id_base + i)
+//   //     STR_VAR
+//   //       effect = ~g_bon%slug%%i%~
+//   //   END
+//   // END
+// END
+
+// ACTION_PHP_EACH fx_ids AS id => stacking_id BEGIN
+//   LAF CREATE_EFFECT
+//     INT_VAR
+//       opcode = OPCODE_ac_vs_damage_type_mod
+//       target = TARGET_FEATURE_self
+//       timing = TIMING_while_equipped
+//       parameter1 = 1 // amount
+//       savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
+//       special = (effect_stacking_id_base + stacking_id)
+//       power = id
+//     STR_VAR
+//       effect = ~g_bona%id%~
+//   END
+// END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_opcodes BEGIN
+  OPCODE_ac_vs_damage_type_mod => 1
+  OPCODE_save_vs_death_mod => 1
+  OPCODE_save_vs_wands_mod => 1
+  OPCODE_save_vs_petrification_polymorph_mod => 1
+  OPCODE_save_vs_breath_weapons_mod => 1
+  OPCODE_save_vs_spells_mod => 1
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_power BEGIN
+  amul14 => 1
+  clck01 => 1
+  clck02 => 2
+  clck31 => 2
+  ring06 => 1
+  ring07 => 2
+  ring41 => 3
+END
+
+ACTION_PHP_EACH protection_power AS item => power BEGIN
+  COPY_EXISTING ~%item%.itm~ override
+    PHP_EACH protection_opcodes AS opcode => int BEGIN
+      LPF DELETE_EFFECT INT_VAR match_opcode = EVAL ~%%opcode%%~ END
+    END
+    FOR (i=1;i<=power;++i) BEGIN
+      PHP_EACH protection_opcodes AS opcode => int BEGIN
+        LPF ADD_ITEM_EQEFFECT
+          INT_VAR
+            opcode = EVAL ~%%opcode%%~
+            target = TARGET_FEATURE_self
+            timing = TIMING_while_equipped
+            parameter1 = 1 // amount
+            savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
+            special = (effect_stacking_id_base + i) // opcodes not overlapping with Chaos Shield, so no problem
+            probability1 = (100 + i)  // this is necessary to prevent engine from confusing which effects belong to which items. Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
+        END
+      END
+    END
+  BUT_ONLY IF_EXISTS
+END
+
+COPY_EXISTING ~itemexcl.2da~ override
+  READ_2DA_ENTRIES_NOW itemexcl 2
+  FOR (i=1;i<itemexcl;++i) BEGIN
+    READ_2DA_ENTRY_FORMER itemexcl i 0 item
+    TO_LOWER item
+    PATCH_IF NOT VARIABLE_IS_SET $protection_power(~%item%~) BEGIN
+      SET $items(~%item%~) = 1
+    END
+  END
+BUT_ONLY
+
+COPY ~%comp_dir%/itemexcl.2da~ override
+
+ACTION_PHP_EACH items AS item => int BEGIN
+  COPY_EXISTING ~%item%.itm~ override
+    READ_STRREF NAME2 name
+    INNER_PATCH_SAVE plus ~%name%~ BEGIN
+      found = INDEX_BUFFER (CASE_INSENSITIVE EVALUATE_REGEXP ~.*\+\([0-9]+\).*~)
+      PATCH_IF found != "-1" BEGIN
+        REPLACE_EVALUATE CASE_INSENSITIVE ~.*\+\([0-9]+\).*~ BEGIN END ~%MATCH1%~
+      END
+    END
+    PATCH_IF found != "-1" BEGIN
+      LPF unstack_armor_bonus INT_VAR bonus = plus stacking_id_base = effect_stacking_id_base END
+    END ELSE BEGIN
+      PATCH_PRINT ~%SOURCE_FILE% - plus value not found~
+    END    
+  BUT_ONLY
+END

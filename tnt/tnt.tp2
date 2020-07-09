@@ -139,6 +139,7 @@ OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @350
+GROUP @300 /* Traps */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
 INCLUDE ~%components%/davaeorns_battle_horrors/main.tpa~
 // end traps
@@ -261,6 +262,7 @@ OUTER_SPRINT comp_name ~really_mirrored_eyes~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @236 /* Unlimited goodberries stacking */
+GROUP @200 /* Items */
 INCLUDE ~%components%/goodberries_stacking/main.tpa~
 
 BEGIN @250 /* Improved Shandalar's cloak */
@@ -269,12 +271,13 @@ REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~clck22.itm~ @251 /* Shandalar's cloak not
 OUTER_SPRINT comp_name ~shandalars_cloak~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
-BEGIN @252 /* EE-style Algernon's cloak */
+BEGIN @252 /* Algernon's cloak usable once per day */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/algernons_cloak/main.tpa~
 
 BEGIN @260 /* Improved Equalizer */
+GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
@@ -283,6 +286,12 @@ BEGIN @261 /* Distinct color for Perdue's sword */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/perdue_sword/main.tpa~
+
+BEGIN @210 /* Really PnP protection items */
+GROUP @200 /* Items */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+OUTER_SPRINT comp_name ~pnp_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+INCLUDE ~%components%/%comp_name%/main.tpa~
 // END ITEM TWEAKS
 
 // SPELL TWEAKS
@@ -407,6 +416,7 @@ GROUP @1100 /* Gameplay and rules */
 INCLUDE ~%components%/true_true_grandmastery/main.tpa~
 
 BEGIN @1105 /* Sensible multiclass restrictions */
+GROUP @1100 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 // end gameplay and rules
