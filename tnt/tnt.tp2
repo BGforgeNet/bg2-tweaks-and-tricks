@@ -39,19 +39,18 @@ LABEL ~g_tnt_traps_range~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 
-BEGIN @312
-GROUP @300 /* Traps */
-LABEL ~g_tnt_traps_reminders_generic~
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
-REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-SUBCOMPONENT @311
 BEGIN @313
 GROUP @300 /* Traps */
 LABEL ~g_tnt_traps_reminders_specific~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @311
-
+BEGIN @312
+GROUP @300 /* Traps */
+LABEL ~g_tnt_traps_reminders_generic~
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
+REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
+SUBCOMPONENT @311
 
 BEGIN @302
 GROUP @300 /* Traps */
@@ -289,7 +288,7 @@ INCLUDE ~%components%/perdue_sword/main.tpa~
 
 BEGIN @210 /* Really PnP protection items */
 GROUP @200 /* Items */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128 /* Requires Classic ToB engine */
 OUTER_SPRINT comp_name ~pnp_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%components%/%comp_name%/main.tpa~
 // END ITEM TWEAKS
