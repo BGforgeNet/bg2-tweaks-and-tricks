@@ -12,7 +12,7 @@
 
 A collection of tweaks to fix some annoying and/or unrealistic aspects of the game, add some flavour, make some things easier and other things harder.
 
-_Probably not all components are for everyone, but most everyone may find a component for them._
+_Probably not all components are for everyone, but most everyone may find a component for themselves._
 
 It will work with any IE game, but not all components are applicable to all games.
 
@@ -30,9 +30,8 @@ Components are many and varied. Refer to the individual sections for the details
 - [Assorted convenience components](docs/convenience.md)
 
 ## Installation
-- Download tnt.zip from the [latest release page](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest).
-- Unzip it.
-- Move "tnt" and "setup-tnt.exe" into the game directory.
+- Download zip from the [latest release page](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest).
+- Extract it into main game directory.
 - Launch setup-tnt.exe.
 - Install the desired components.
 
