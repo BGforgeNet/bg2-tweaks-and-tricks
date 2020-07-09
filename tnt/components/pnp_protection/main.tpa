@@ -57,7 +57,7 @@ COPY ~%comp_dir%/itemexcl.2da~ override
 
 ACTION_PHP_EACH items AS item => int BEGIN
   COPY_EXISTING ~%item%.itm~ override
-    LPF infer_armor_enchantment RET enchantment END
+    LPF INFER_ARMOR_ENCHANTMENT RET enchantment END
     LPF unstack_armor_bonus INT_VAR bonus = enchantment stacking_id_base = effect_stacking_id_base END
   BUT_ONLY
 END
