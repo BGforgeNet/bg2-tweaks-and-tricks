@@ -1,49 +1,5 @@
 INCLUDE ~%lib_dir%/tobex.tpa~
 
-// ACTION_DEFINE_ASSOCIATIVE_ARRAY savetypes BEGIN
-//   OPCODE_save_vs_spells_mod => "ss"
-//   OPCODE_save_vs_wands_mod => "sw"
-//   OPCODE_save_vs_breath_weapons_mod => "sb"
-//   OPCODE_save_vs_death_mod => "sd"
-//   OPCODE_save_vs_petrification_polymorph_mod => "sp"
-// END
-
-// ACTION_FOR_EACH i IN 1 2 3 4 5 6 BEGIN
-//   OUTER_PATCH test BEGIN
-//     FOR (j=1;j<=i;++j) BEGIN
-//       SET $fx_ids(~%i%%j%~) = j
-//     END
-//   END
-//   // ACTION_PHP_EACH savetypes AS type => slug BEGIN
-//   //   LAF CREATE_EFFECT
-//   //     INT_VAR
-//   //       opcode = EVAL ~%%type%%~
-//   //       target = TARGET_FEATURE_self
-//   //       timing = TIMING_while_equipped
-//   //       parameter1 = 1 // amount
-//   //       savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
-//   //       special = (effect_stacking_id_base + i)
-//   //     STR_VAR
-//   //       effect = ~g_bon%slug%%i%~
-//   //   END
-//   // END
-// END
-
-// ACTION_PHP_EACH fx_ids AS id => stacking_id BEGIN
-//   LAF CREATE_EFFECT
-//     INT_VAR
-//       opcode = OPCODE_ac_vs_damage_type_mod
-//       target = TARGET_FEATURE_self
-//       timing = TIMING_while_equipped
-//       parameter1 = 1 // amount
-//       savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
-//       special = (effect_stacking_id_base + stacking_id)
-//       power = id
-//     STR_VAR
-//       effect = ~g_bona%id%~
-//   END
-// END
-
 ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_opcodes BEGIN
   OPCODE_ac_vs_damage_type_mod => 1
   OPCODE_save_vs_death_mod => 1
