@@ -6,14 +6,13 @@
 [![Discord chat](https://img.shields.io/discord/420268540700917760?logo=discord)](https://discord.gg/4Yqfggm)
 
 [__Download__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
- | [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
- | [__Discussion__](https://forums.bgforge.net/viewtopic.php?f=4&t=15&p=33)
- | [__Help translating__](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
+| [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
+| [__Discussion__](https://forums.bgforge.net/viewforum.php?f=31)
+| [__Help translating__](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 
-This is a collection of tweaks to:
-- make some things easier
-- make other things harder
-- fix some annoying and/or unrealistic aspects of the game
+A collection of tweaks to fix some annoying and/or unrealistic aspects of the game, add some flavour, make some things easier and other things harder.
+
+_Probably not all components are for everyone, but most everyone may find a component for them._
 
 It will work with any IE game, but not all components are applicable to all games.
 
