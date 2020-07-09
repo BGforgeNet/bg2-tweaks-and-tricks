@@ -1,7 +1,11 @@
 LAF list_web_spells RET_ARRAY web_spells = spells END
 
 COPY_EXISTING ~clck22.itm~  ~override~
-  SAY DESC @1
+  SAY NAME1 @1
+  SAY NAME2 @2
+  SAY UNIDENTIFIED_DESC @3
+  SAY DESC @4
+  WRITE_SHORT ITM_lore_to_id 170
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_protection_from_opcode
