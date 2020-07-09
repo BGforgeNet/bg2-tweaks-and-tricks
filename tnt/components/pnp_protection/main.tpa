@@ -16,6 +16,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_power BEGIN
   clck31 => 2
   ring06 => 1
   ring07 => 2
+  ring25 => 1
   ring41 => 3
 END
 
@@ -56,17 +57,7 @@ COPY ~%comp_dir%/itemexcl.2da~ override
 
 ACTION_PHP_EACH items AS item => int BEGIN
   COPY_EXISTING ~%item%.itm~ override
-    READ_STRREF NAME2 name
-    INNER_PATCH_SAVE plus ~%name%~ BEGIN
-      found = INDEX_BUFFER (CASE_INSENSITIVE EVALUATE_REGEXP ~.*\+\([0-9]+\).*~)
-      PATCH_IF found != "-1" BEGIN
-        REPLACE_EVALUATE CASE_INSENSITIVE ~.*\+\([0-9]+\).*~ BEGIN END ~%MATCH1%~
-      END
-    END
-    PATCH_IF found != "-1" BEGIN
-      LPF unstack_armor_bonus INT_VAR bonus = plus stacking_id_base = effect_stacking_id_base END
-    END ELSE BEGIN
-      PATCH_PRINT ~%SOURCE_FILE% - plus value not found~
-    END    
+    LPF infer_armor_enchantment RET enchantment END
+    LPF unstack_armor_bonus INT_VAR bonus = enchantment stacking_id_base = effect_stacking_id_base END
   BUT_ONLY
 END
