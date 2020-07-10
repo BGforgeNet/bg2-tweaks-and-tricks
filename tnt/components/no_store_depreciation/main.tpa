@@ -1,3 +1,4 @@
 COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
   WRITE_LONG STO_depreciation_rate 0  // disable depreciation
+  WRITE_LONG STO_buy_price_markup 20 // always give depreciated prices
 BUT_ONLY

@@ -1,12 +1,18 @@
 ## Stores
 
-- [Stores always buy goods at the same price](#stores-always-buy-goods-at-the-same-price)
+- [Stores always buy goods at the same (low) price](#stores-always-buy-goods-at-the-same-low-price)
 - [Close store steal exploit](#close-store-steal-exploit)
 - [More ankheg armors by Taerom](#more-ankheg-armors-by-taerom)
 - [Limited stock](#limited-stock)
 
-### Stores always buy goods at the same price
-Disables depreciation in stores. Makes store buying price constant, regardless of how many items are already in stock. Now, you don't have to pile up equipment before selling to get the max money for it. The price is always the same!
+### Stores always buy goods at the same (low) price
+Depreciation never worked properly in BG, it's recalculated upon pressing Sell button, which is why selling items in batches to get the highest return value is an (in)famous exploit. And that leads to much inventory tetris, of course.
+
+This component:
+1. Disables depreciation in stores. Makes store buying price constant, regardless of how many items are already in stock.
+2. Set the buy markup to a constant value of 20% (as if the items were already depreciated to the maximum).
+
+The effect is that on one hand, you won't have to worry about when to sell what and to whom. But on the other hand, you'll get less gold overall. If you have been using batch selling heavily, you'll get _much_ less gold overall. **You've been warned.**
 
 ### Close shop steal exploit
 Close infinite money "steal-sell-steal" exploit. Options are:

@@ -362,9 +362,9 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/ma
 
 
 // Stores
-BEGIN @505 /* Stores always buy goods at the same price */
+BEGIN @505 /* Stores always buy goods at the same (low) price */
 GROUP @500 /* Stores */
-INCLUDE ~%components%/no_shop_depreciation/main.tpa~
+INCLUDE ~%components%/no_store_depreciation/main.tpa~
 
 BEGIN @501 /* Can't steal from fences */
 GROUP @500 /* Stores */
