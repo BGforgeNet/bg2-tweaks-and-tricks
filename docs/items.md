@@ -2,12 +2,11 @@
 
 A collection of various item tweaks, mostly of QoL and "make sense" nature.
 
-- [Hassle-free ammo](#hassle--free-ammo)
+- [Hassle-free ammo](#hassle-free-ammo)
 - [Throwing weapons damage type](#throwing-weapons-damage-type)
 - [Remove blur graphics from items](#remove-blur-graphics-from-items)
 - [Effects of scrolls and potions do not stack with themselves](#effects-of-scrolls-and-potions-do-not-stack-with-themselves)
 - [Sensible Cloak of Mirroring](#sensible-cloak-of-mirroring)
-- [Weightless ammo](#weightless-ammo)
 - [Sensible Wand of Frost](#sensible-wand-of-frost)
 - [Potion of really mirrored eyes](#potion-of-really-mirrored-eyes)
 - [Unlimited goodberries stacking](#unlimited-goodberries-stacking)
@@ -16,6 +15,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
 - [Really PnP protection items](#really-pnp-protection-items)
+
 ### Hassle-free ammo
 An inventory management pain killer:
 - Changes all ammo and stackable throwing weapons to have 0 weight. Kind of cheese.
