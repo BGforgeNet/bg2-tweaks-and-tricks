@@ -1062,7 +1062,7 @@ msgid "More ankheg armors by Taerom"
 msgstr ""
 
 #: setup.tra:505
-msgid "Stores always buy goods at the same price"
+msgid "Stores always buy goods at the same (low) price"
 msgstr ""
 
 #: setup.tra:506
