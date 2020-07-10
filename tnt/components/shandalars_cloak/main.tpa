@@ -6,21 +6,25 @@ COPY_EXISTING ~clck22.itm~  ~override~
   SAY UNIDENTIFIED_DESC @3
   SAY DESC @4
   WRITE_SHORT ITM_lore_to_id 170
+  WRITE_LONG ITM_usability_flags 0
+
+  LPF DELETE_ITEM_HEADER INT_VAR header_type = "-1" END // some leftover
+
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_protection_from_opcode
-      target = TARGET_HEADER_self
+      target = TARGET_FEATURE_self
       timing = TIMING_while_equipped
       parameter2 = OPCODE_web_effect
-      resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
+      resist_dispel = NONMAGICAL
   END
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_prevent_special_effect_icon
-      target = TARGET_HEADER_self
+      target = TARGET_FEATURE_self
       timing = TIMING_while_equipped
       parameter2 = ICON_webbed
-      resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
+      resist_dispel = NONMAGICAL
   END
 
   // extra protection from individual spells
@@ -28,9 +32,9 @@ COPY_EXISTING ~clck22.itm~  ~override~
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
         opcode = OPCODE_protection_from_spell
-        target = TARGET_HEADER_self
+        target = TARGET_FEATURE_self
         timing = TIMING_while_equipped
-        resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
+        resist_dispel = NONMAGICAL
       STR_VAR
         resource = EVAL ~%spell%~
     END
@@ -40,10 +44,11 @@ COPY_EXISTING ~clck22.itm~  ~override~
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_save_vs_death_mod
-      target = TARGET_HEADER_self
+      target = TARGET_FEATURE_self
       timing = TIMING_while_equipped
-      parameter2 = 2 //amount
-      resist_dispel = DISPELLABLE | IGNORE_MAGIC_RESISTANCE
+      parameter1 = 2 //amount
+      parameter2 = MOD_TYPE_cumulative
+      resist_dispel = NONMAGICAL
   END
 
   // web spell ability
@@ -55,19 +60,22 @@ COPY_EXISTING ~clck22.itm~  ~override~
       charges = 1
       depletion = DEPLETION_recharges
       flags = FLAG_HEADER_recharge_after_rest
+      target = TARGET_HEADER_area
     STR_VAR
       icon = ~%icon%~
   END 
+  LPF ALTER_ITEM_HEADER INT_VAR identify = 1 END
 
   // web spell
   LPF ADD_ITEM_EFFECT
     INT_VAR
       opcode = OPCODE_cast_spell_at_point
       parameter1 = 10 // default casting level from items
-      parameter2 = 1 // cast instantly
+      parameter2 = CASTING_TYPE_instant
       timing = TIMING_permanent
+      target = TARGET_FEATURE_self // doesn't work without it for some reason
     STR_VAR
-      resource = WIZARD_WEB
+      resource = ~%WIZARD_WEB%~
   END
 
 BUT_ONLY
