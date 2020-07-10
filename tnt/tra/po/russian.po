@@ -1265,7 +1265,7 @@ msgstr "Таэром может делать больше панцирей из 
 #: setup.tra:505
 #, fuzzy
 #| msgid "Shops always buy goods at the same price"
-msgid "Stores always buy goods at the same price"
+msgid "Stores always buy goods at the same (low) price"
 msgstr "Магазины покупают товар по неизменной цене"
 
 #: setup.tra:506
