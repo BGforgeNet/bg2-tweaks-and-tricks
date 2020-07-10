@@ -22,7 +22,7 @@ BEGIN
     READ_SHORT fx_off opcode
     PATCH_IF opcode == OPCODE_ac_vs_damage_type_mod BEGIN
       READ_LONG (fx_off + FEATURE_parameter2) type
-      PATCH_IF type == 16 BEGIN // base ac settting
+      PATCH_IF type == AC_MOD_TYPE_set_base BEGIN
         READ_LONG (fx_off + FEATURE_parameter1) ac_mod
         WRITE_LONG (fx_off + FEATURE_parameter1) (ac_mod + bonus)
         found = 1
@@ -38,7 +38,7 @@ BEGIN
           timing = TIMING_while_equipped
           insert_point = "-1"
           parameter1 = 1 // amount
-          parameter2 = 0 // any damage type
+          parameter2 = AC_MOD_TYPE_all
           savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
           special = (stacking_id_base + i)
           probability1 = (100 + i) // see main.tpa
