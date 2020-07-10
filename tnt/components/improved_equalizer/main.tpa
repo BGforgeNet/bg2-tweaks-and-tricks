@@ -1,6 +1,6 @@
 // thac0, damage bonuses
 OUTER_SET probability1 = 99
-OUTER_SET target = TARGET_FEATURE_self
+OUTER_SET target = TARGET_EFF_self
 OUTER_SET timing = TIMING_while_equipped
 ACTION_FOR_EACH i IN 1 2 3 4 BEGIN
   OUTER_SET parameter1 = i // amount
@@ -24,7 +24,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   SAY DESC @1
 
   opcode = OPCODE_use_eff_file
-  target = TARGET_FEATURE_self
+  target = TARGET_EFF_self
   timing = TIMING_while_equipped
   parameter2 = EFFECT_IDS_align
 

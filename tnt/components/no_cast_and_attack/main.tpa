@@ -10,14 +10,14 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
       PHP_EACH fx_array AS int2 => fx_off BEGIN
         READ_SHORT fx_off fx_type
         PATCH_IF fx_type = OPCODE_cast_spell_at_creature BEGIN
-          READ_ASCII (fx_off + FEATURE_resource) fx_res
+          READ_ASCII (fx_off + EFF_resource) fx_res
 //          PATCH_PRINT ~item %SOURCE_FILE% has spell %fx_res% in ability index %int% available for use at location %use_loc%~
           TO_LOWER fx_res
           PATCH_IF NOT VARIABLE_IS_SET $spell_list(~%fx_res%~) BEGIN
             SET $spell_list(~%fx_res%~) = i
             i+=1
           END
-          WRITE_ASCIIE (fx_off+ FEATURE_resource) ~g_nc%i%~ #8
+          WRITE_ASCIIE (fx_off + EFF_resource) ~g_nc%i%~ #8
         END
       END
     END
@@ -42,7 +42,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
         OR fx_type == OPCODE_cast_spell_at_point
         OR fx_type == OPCODE_cast_spell_on_condition
       BEGIN
-        READ_ASCII (fx_off + FEATURE_resource) fx_res
+        READ_ASCII (fx_off + EFF_resource) fx_res
 //        PATCH_PRINT ~spell %SOURCE_FILE% has spell %fx_res% in ability index %int% cast by effect type %fx_type%~
         TO_LOWER fx_res
         PATCH_IF NOT VARIABLE_IS_SET $spell_list(~%fx_res%~) BEGIN
@@ -70,7 +70,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
           parameter1 = 0 //0 apr
           parameter2 = 1 //flat mod
           duration = delay
-          target = TARGET_FEATURE_self
+          target = TARGET_EFF_self
           resist_dispel = 0
           header = int
       END

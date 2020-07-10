@@ -37,7 +37,7 @@ OUTER_SPRINT trap_spl ~%modder_prefix%trap~
 LAF CREATE_SPELL STR_VAR spell = ~%trap_spl%~ END
 COPY_EXISTING ~%trap_spl%.spl~ override
   LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEADER_self END
-  LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_find_traps target = TARGET_FEATURE_self END
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_find_traps target = TARGET_EFF_self END
 BUT_ONLY
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY struct_types BEGIN

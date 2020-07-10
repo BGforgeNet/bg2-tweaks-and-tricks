@@ -13,7 +13,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_protection_from_opcode
-      target = TARGET_FEATURE_self
+      target = TARGET_EFF_self
       timing = TIMING_while_equipped
       parameter2 = OPCODE_web_effect
       resist_dispel = NONMAGICAL
@@ -21,7 +21,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_prevent_special_effect_icon
-      target = TARGET_FEATURE_self
+      target = TARGET_EFF_self
       timing = TIMING_while_equipped
       parameter2 = ICON_webbed
       resist_dispel = NONMAGICAL
@@ -32,7 +32,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
         opcode = OPCODE_protection_from_spell
-        target = TARGET_FEATURE_self
+        target = TARGET_EFF_self
         timing = TIMING_while_equipped
         resist_dispel = NONMAGICAL
       STR_VAR
@@ -44,7 +44,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_save_vs_death_mod
-      target = TARGET_FEATURE_self
+      target = TARGET_EFF_self
       timing = TIMING_while_equipped
       parameter1 = 2 //amount
       parameter2 = MOD_TYPE_cumulative
@@ -73,7 +73,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
       parameter1 = 10 // default casting level from items
       parameter2 = CASTING_TYPE_instant
       timing = TIMING_permanent
-      target = TARGET_FEATURE_self // doesn't work without it for some reason
+      target = TARGET_EFF_self // doesn't work without it for some reason
     STR_VAR
       resource = ~%WIZARD_WEB%~
   END

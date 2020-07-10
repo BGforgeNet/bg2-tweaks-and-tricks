@@ -30,7 +30,7 @@ ACTION_PHP_EACH protection_power AS item => power BEGIN
         LPF ADD_ITEM_EQEFFECT
           INT_VAR
             opcode = EVAL ~%%opcode%%~
-            target = TARGET_FEATURE_self
+            target = TARGET_EFF_self
             timing = TIMING_while_equipped
             parameter1 = 1 // amount
             savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
