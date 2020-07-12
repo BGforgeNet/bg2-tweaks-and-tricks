@@ -2,23 +2,41 @@
 OUTER_SET probability1 = 99
 OUTER_SET target = TARGET_EFF_self
 OUTER_SET timing = TIMING_while_equipped
-ACTION_FOR_EACH i IN 1 2 3 4 9 BEGIN
+ACTION_FOR_EACH i IN 2 4 BEGIN
   OUTER_SET parameter1 = i // amount
   LAF CREATE_EFFECT
     INT_VAR
       probability1 target timing parameter1
       opcode = OPCODE_thac0_mod
-    STR_VAR
-      effect = EVAL ~g_equat%i%~ //thac0
+    STR_VAR effect = EVAL ~g_equat%i%~ //thac0
   END
   LAF CREATE_EFFECT
     INT_VAR
       probability1 target timing parameter1
       opcode = OPCODE_extra_damage_mod
-    STR_VAR
-      effect = EVAL ~g_equad%i%~ //damage
+    STR_VAR effect = EVAL ~g_equad%i%~ //damage
   END
 END
+
+
+OUTER_SPRINT law_chaos_spell ~g_eq_lc~
+OUTER_SPRINT good_evil_spell ~g_eq_ge~
+
+ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
+  LAF CREATE_EFFECT
+    INT_VAR
+      probability1 timing parameter1
+      opcode = OPCODE_cast_spell_at_creature
+      parameter2 = CASTING_TYPE_instant
+      target = TARGET_EFF_preset
+    STR_VAR
+      resource = ~%spell%~
+      effect = ~%spell%~
+  END
+END
+
+LAF CREATE_SHELL_SPELL INT_VAR duration = 12 STR_VAR spell = ~%law_chaos_spell%~ type = blindness END
+LAF CREATE_SHELL_SPELL INT_VAR duration = 12 STR_VAR spell = ~%good_evil_spell%~ type = blindness END
 
 COPY_EXISTING ~sw1h54.itm~ ~override~
   SAY IDENTIFIED_DESC @1
@@ -29,15 +47,11 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   parameter2 = EFFECT_IDS_align
 
   DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
-    NEUTRAL => 4 // True Neutral
+    NEUTRAL => 4
     LAWFUL_NEUTRAL => 2
     CHAOTIC_NEUTRAL => 2
     NEUTRAL_GOOD => 2
     NEUTRAL_EVIL => 2
-    // CHAOTIC_GOOD => 0
-    // LAWFUL_EVIL => 0
-//    LAWFUL_GOOD => 0
-//    CHAOTIC_EVIL => 0
   END
   PHP_EACH align_effnum AS align => i BEGIN
     LPF ADD_ITEM_EQEFFECT
@@ -53,6 +67,31 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
       STR_VAR resource = "g_equad%i%"
     END
   END
+
+  DEFINE_ASSOCIATIVE_ARRAY align_spell BEGIN
+    MASK_GOOD => ~%good_evil_spell%~
+    MASK_EVIL => ~%good_evil_spell%~
+    MASK_LAWFUL => ~%law_chaos_spell%~
+    MASK_CHAOTIC => ~%law_chaos_spell%~
+  END
+
+  PHP_EACH align_spell AS align => spell BEGIN
+    PATCH_PRINT ~adding %align% %spell%~
+    LPF ADD_ITEM_EFFECT
+      INT_VAR
+        opcode = OPCODE_use_eff_file
+        target = TARGET_EFF_preset
+        timing = TIMING_instant
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+        parameter2 = EFFECT_IDS_align
+        savingthrow = FLAG_SAVINGTHROW_spell
+        header = 1
+        type = 1 // melee
+        probability1 = 100
+      STR_VAR resource = ~%spell%~
+    END
+  END
+
 
   WRITE_LONG ITM_enchantment 4
 
