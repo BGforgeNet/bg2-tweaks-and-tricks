@@ -43,7 +43,7 @@ Disables the possibility of XP farming in the most tempting spots in BG1:
 Use if you can't resist yourself.
 
 #### Can't steal Carsomyr
-You really think that you can steal an enormous greatsword from an ancient red dragon? Come, Bilbo, get real.
+You really think that you can steal an enormous greatsword from an ancient red dragon? Come on, Bilbo, get real.
 
 ### True True Grandmastery
 It's well known that Grandmastery was nerfed in BG2 by Bioware for "balance". And there's a mod by W. Weimer that restores it to the original, unnerfed condition, much to the joy of many a fighter. And there's an option to open Grandmastery to multiclass characters, as well.
