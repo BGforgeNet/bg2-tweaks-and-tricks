@@ -59,6 +59,7 @@ BEGIN
   END
   ACTION_MATCH 1 WITH
     ~blindness~ STR_EQ ~%type%~ BEGIN LAF CREATE_SHELL_BLINDNESS INT_VAR duration STR_VAR spell END END
+    ~confusion~ STR_EQ ~%type%~ BEGIN LAF CREATE_SHELL_CONFUSION INT_VAR duration STR_VAR spell END END
     DEFAULT WARN ~CREATE_SHELL_SPELL: unknown type %type%~
   END
 END
@@ -111,6 +112,47 @@ BEGIN
           parameter2 = 1 // play over target attached
         STR_VAR resource = ~%vvc%~
       END
+    END
+  BUT_ONLY
+END
+
+DEFINE_ACTION_FUNCTION CREATE_SHELL_CONFUSION
+  INT_VAR duration = 0
+  STR_VAR spell = ~~
+BEGIN
+  COPY_EXISTING ~%spell%.spl~ ~override~
+    target = TARGET_EFF_preset
+    timing = TIMING_duration
+
+    LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEADER_creature END
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_confusion target timing duration END
+    confused_strref = 14782
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        target
+        opcode = OPCODE_text_display_string
+        timing = TIMING_instant
+        parameter1 = confused_strref
+    END
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        target timing duration
+        opcode = OPCODE_display_special_effect_icon
+        parameter2 = ICON_confusion
+    END
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        target timing duration
+        opcode = OPCODE_play_3d_effect
+        parameter2 = 1 // play over target attached
+      STR_VAR resource = ~spconfus~
+    END
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        target duration
+        opcode = OPCODE_play_sound_effect
+        timing = TIMING_delayed
+      STR_VAR resource = ~eff_e05.wav~
     END
   BUT_ONLY
 END

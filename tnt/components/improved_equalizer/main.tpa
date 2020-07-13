@@ -1,31 +1,60 @@
-// thac0, damage bonuses
+// thac0, damage bonuses for the wielder
 OUTER_SET probability1 = 99
 OUTER_SET target = TARGET_EFF_self
 OUTER_SET timing = TIMING_while_equipped
-ACTION_FOR_EACH i IN 2 4 BEGIN
-  OUTER_SET parameter1 = i // amount
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY wielder BEGIN
+  MASK_GENEUTRAL => 1
+  MASK_LCNEUTRAL => 1
+END
+LAF CREATE_EFFECT
+  INT_VAR
+    opcode = OPCODE_thac0_mod
+    parameter1 = 2 // amount
+    probability1 timing target
+  STR_VAR effect = ~g_eqwt~
+END
+LAF CREATE_EFFECT
+  INT_VAR
+    opcode = OPCODE_extra_damage_mod
+    parameter1 = 2 // amount
+    probability1 timing target
+  STR_VAR effect = ~g_eqwd~
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY enemy BEGIN
+  MASK_GOOD => g
+  MASK_EVIL => e
+  MASK_LAWFUL => l
+  MASK_CHAOTIC => c
+END
+OUTER_SET parameter2 = IDS_align
+ACTION_PHP_EACH enemy AS slug => align BEGIN
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 target timing parameter1
-      opcode = OPCODE_thac0_mod
-    STR_VAR effect = EVAL ~g_equat%i%~ //thac0
+      opcode = OPCODE_thac0_vs_creature_type_mod
+      parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      probability1 timing target parameter2
+    STR_VAR effect = ~g_eqtt%slug%~
   END
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 target timing parameter1
-      opcode = OPCODE_extra_damage_mod
-    STR_VAR effect = EVAL ~g_equad%i%~ //damage
+      opcode = OPCODE_damage_vs_creature_type_mod
+      parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      probability1 timing target parameter2
+    STR_VAR effect = ~g_eqtd%slug%~
   END
 END
 
-
+// blindness and confusion
 OUTER_SPRINT law_chaos_spell ~g_eq_lc~
 OUTER_SPRINT good_evil_spell ~g_eq_ge~
+OUTER_SET duration = 12
 
 ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
   LAF CREATE_EFFECT
     INT_VAR
-      probability1 timing parameter1
+      probability1 timing
       opcode = OPCODE_cast_spell_at_creature
       parameter2 = CASTING_TYPE_instant
       target = TARGET_EFF_preset
@@ -35,48 +64,66 @@ ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
   END
 END
 
-LAF CREATE_SHELL_SPELL INT_VAR duration = 12 STR_VAR spell = ~%law_chaos_spell%~ type = blindness END
-LAF CREATE_SHELL_SPELL INT_VAR duration = 12 STR_VAR spell = ~%good_evil_spell%~ type = blindness END
+LAF CREATE_SHELL_SPELL INT_VAR duration STR_VAR spell = ~%law_chaos_spell%~ type = blindness END
+LAF CREATE_SHELL_SPELL INT_VAR duration STR_VAR spell = ~%good_evil_spell%~ type = confusion END
 
 COPY_EXISTING ~sw1h54.itm~ ~override~
   SAY IDENTIFIED_DESC @1
+  WRITE_LONG ITM_enchantment 4
 
+  // fixpack original bonuses
+  LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_use_eff_file END
+
+  // wielder bonuses
   opcode = OPCODE_use_eff_file
-  target = TARGET_EFF_self
   timing = TIMING_while_equipped
   parameter2 = EFFECT_IDS_align
-
-  DEFINE_ASSOCIATIVE_ARRAY align_effnum BEGIN
-    NEUTRAL => 4
-    LAWFUL_NEUTRAL => 2
-    CHAOTIC_NEUTRAL => 2
-    NEUTRAL_GOOD => 2
-    NEUTRAL_EVIL => 2
-  END
-  PHP_EACH align_effnum AS align => i BEGIN
+  target = TARGET_EFF_self
+  PHP_EACH wielder AS align => int BEGIN
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
-        opcode target timing parameter2 probability1
+        opcode timing parameter2 probability1 target
         parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
-      STR_VAR resource = "g_equat%i%"
+      STR_VAR resource = "g_eqwt"
     END
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
-        opcode target timing parameter2 probability1
+        opcode timing parameter2 probability1 target
         parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
-      STR_VAR resource = "g_equad%i%"
+      STR_VAR resource = "g_eqwd"
     END
   END
 
-  DEFINE_ASSOCIATIVE_ARRAY align_spell BEGIN
-    MASK_GOOD => ~%good_evil_spell%~
-    MASK_EVIL => ~%good_evil_spell%~
-    MASK_LAWFUL => ~%law_chaos_spell%~
-    MASK_CHAOTIC => ~%law_chaos_spell%~
+  parameter2 = EFFECT_IDS_ea
+  PHP_EACH enemy AS align => slug BEGIN
+    LPF ADD_ITEM_EFFECT
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~ea~ ~anyone~)
+        header = 1 type = 1 // melee
+      STR_VAR resource = "g_eqtt%slug%"
+    END
+    LPF ADD_ITEM_EFFECT
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~ea~ ~anyone~)
+        header = 1 type = 1 // melee
+      STR_VAR resource = EVAL "g_eqtd%slug%"
+    END
   END
 
-  PHP_EACH align_spell AS align => spell BEGIN
-    PATCH_PRINT ~adding %align% %spell%~
+  // custom effects on hit
+  DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
+    MASK_GOOD, FLAG_SAVINGTHROW_spell => ~%good_evil_spell%~
+    MASK_EVIL, FLAG_SAVINGTHROW_spell  => ~%good_evil_spell%~
+    MASK_LAWFUL, FLAG_SAVINGTHROW_breath  => ~%law_chaos_spell%~
+    MASK_CHAOTIC, FLAG_SAVINGTHROW_breath => ~%law_chaos_spell%~
+  END
+
+  PHP_EACH spell AS align_sthrow => spell BEGIN
+    SPRINT align $align_sthrow(0)
+    SPRINT sthrow $align_sthrow(1)
+    sthrow = EVAL ~%%sthrow%%~
     LPF ADD_ITEM_EFFECT
       INT_VAR
         opcode = OPCODE_use_eff_file
@@ -84,16 +131,12 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
         timing = TIMING_instant
         parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
         parameter2 = EFFECT_IDS_align
-        savingthrow = FLAG_SAVINGTHROW_spell
-        header = 1
-        type = 1 // melee
-        probability1 = 100
+        savingthrow = ~%sthrow%~
+        header = 1 type = 1 // melee
+        probability1 = 50
       STR_VAR resource = ~%spell%~
     END
   END
-
-
-  WRITE_LONG ITM_enchantment 4
 
   // know alightnment ability
   READ_ASCII SPL_icon icon
