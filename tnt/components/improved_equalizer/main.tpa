@@ -49,11 +49,10 @@ ACTION_PHP_EACH enemy AS align_slug => bonus BEGIN
       INT_VAR
         opcode = OPCODE_hp_damage
         parameter1 = bonus
-        parameter2 = 16777216 // slashing
+        parameter2 = DAMAGETYPE_slashing
         probability1
         timing = TIMING_instant
         target = TARGET_EFF_preset
-        parameter3 = bonus
       STR_VAR effect = ~g_eqtd%bonus%~
     END
   END
