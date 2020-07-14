@@ -4,6 +4,11 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
 
   // fixpack original bonuses
   LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_use_eff_file END
+  LPF ALTER_ITEM_HEADER
+    INT_VAR
+      header_type = 1 // melee
+      speed = 1
+  END
 BUT_ONLY
 INCLUDE ~%comp_dir%/wielder.tpa~
 INCLUDE ~%comp_dir%/target.tpa~
