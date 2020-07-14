@@ -275,8 +275,8 @@ INCLUDE ~%components%/algernons_cloak/main.tpa~
 BEGIN @260 /* Improved Equalizer */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-OUTER_SPRINT comp_name ~improved_equalizer~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+OUTER_SPRINT comp_name ~improved_equalizer~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @261 /* Distinct color for Perdue's sword */
 GROUP @200 /* Items */

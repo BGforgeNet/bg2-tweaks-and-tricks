@@ -1,0 +1,64 @@
+// thac0, damage bonuses against target
+OUTER_SET probability1 = 99
+OUTER_SET target = TARGET_EFF_self
+OUTER_SET timing = TIMING_while_equipped
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY enemy BEGIN
+  LAWFUL_NEUTRAL, ln => 2
+  CHAOTIC_NEUTRAL, cn => 2
+  NEUTRAL_GOOD, ng => 2
+  NEUTRAL_EVIL, ne => 2
+  LAWFUL_GOOD, lg => 4
+  LAWFUL_EVIL, le => 4
+  CHAOTIC_GOOD, cg => 4
+  CHAOTIC_EVIL, ce => 4
+END
+OUTER_SET parameter2 = IDS_align
+ACTION_PHP_EACH enemy AS align_slug => bonus BEGIN
+  OUTER_SPRINT align $align_slug(0)
+  OUTER_SPRINT slug $align_slug(1)
+  LAF CREATE_EFFECT
+    INT_VAR
+      opcode = OPCODE_thac0_vs_creature_type_mod
+      parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      probability1 timing target parameter2
+      parameter3 = bonus
+    STR_VAR effect = ~g_eqtt%slug%~
+  END
+  ACTION_IF NOT FILE_EXISTS_IN_GAME ~g_eqtd%bonus%.eff~ BEGIN
+    LAF CREATE_EFFECT
+      INT_VAR
+        opcode = OPCODE_hp_damage
+        parameter1 = bonus
+        parameter2 = DAMAGETYPE_slashing
+        probability1
+        timing = TIMING_instant
+        target = TARGET_EFF_preset
+      STR_VAR effect = ~g_eqtd%bonus%~
+    END
+  END
+END
+
+COPY_EXISTING ~sw1h54.itm~ ~override~
+  // target type bonuses
+  PHP_EACH enemy AS align_slug => bonus BEGIN
+    SPRINT align $align_slug(0)
+    SPRINT slug $align_slug(1)
+    LPF ADD_ITEM_EQEFFECT // thac0 bonus is global
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~ea~ ~anyone~)
+        parameter2 = IDS_ea
+      STR_VAR resource = "g_eqtt%slug%"
+    END
+    LPF ADD_ITEM_EFFECT // damage is on hit only
+      INT_VAR
+        opcode timing parameter2 probability1
+        target = TARGET_EFF_preset
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+        parameter2 = IDS_align
+        header = 1 type = 1 // melee
+      STR_VAR resource = EVAL "g_eqtd%bonus%"
+    END
+  END
+BUT_ONLY

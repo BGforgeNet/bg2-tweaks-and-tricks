@@ -1,0 +1,95 @@
+// blindness and confusion effects
+
+OUTER_SPRINT law_chaos_spell ~g_eq_lc~
+OUTER_SPRINT good_evil_spell ~g_eq_ge~
+
+// immunity effects for target - set as melee effect for wielder
+ACTION_DEFINE_ASSOCIATIVE_ARRAY wmelee_effects BEGIN
+  MASK_GOOD     => ~%good_evil_spell%m~
+  MASK_EVIL     => ~%good_evil_spell%m~
+  MASK_LAWFUL   => ~%law_chaos_spell%m~
+  MASK_CHAOTIC  => ~%law_chaos_spell%m~
+END
+
+ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
+  // on hit effect: cast spell
+  LAF CREATE_EFFECT
+    INT_VAR
+      opcode = OPCODE_cast_spell_at_creature
+      target = TARGET_EFF_preset
+      timing = TIMING_instant
+      parameter2 = CASTING_TYPE_instant
+    STR_VAR
+      resource = ~%spell%~
+      effect = ~%spell%~
+  END
+  // target immunity effect
+  LAF CREATE_EFFECT
+    INT_VAR
+      timing = TIMING_duration
+      duration = 1
+      opcode = OPCODE_protection_from_spell
+      target = TARGET_EFF_self
+    STR_VAR
+      resource = ~%spell%~
+      effect = ~%spell%i~
+  END
+  // wielder melee effect: apply target immunity
+  LAF CREATE_EFFECT
+    INT_VAR
+      timing = TIMING_while_equipped
+      opcode = OPCODE_set_melee_effect
+      target = TARGET_EFF_self
+    STR_VAR
+      resource = ~%spell%i~
+      effect = ~%spell%m~
+  END
+END  
+
+OUTER_SET duration = 12
+LAF CREATE_SHELL_SPELL
+  INT_VAR duration savingthrow = FLAG_SAVINGTHROW_breath
+  STR_VAR spell = ~%law_chaos_spell%~ type = blindness
+END
+LAF CREATE_SHELL_SPELL
+  INT_VAR duration savingthrow = FLAG_SAVINGTHROW_spell
+  STR_VAR spell = ~%good_evil_spell%~ type = confusion
+END
+
+// target is only affected by the spell if it matches by alignment
+ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
+  MASK_GOOD     => ~%good_evil_spell%~
+  MASK_EVIL     => ~%good_evil_spell%~
+  MASK_LAWFUL   => ~%law_chaos_spell%~
+  MASK_CHAOTIC  => ~%law_chaos_spell%~
+END
+
+COPY_EXISTING ~sw1h54.itm~ ~override~
+  // melee effects add immunity to spell effects if wielder align is not a match
+  PATCH_PHP_EACH wmelee_effects AS walign => eff BEGIN
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode = OPCODE_use_eff_file
+        target = TARGET_EFF_self
+        timing = TIMING_while_equipped
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%walign%~)
+        parameter2 = EFFECT_IDS_align
+      STR_VAR resource = ~%eff%~
+    END
+  END
+
+  PHP_EACH spell AS align => spell BEGIN
+    LPF ADD_ITEM_EFFECT
+      INT_VAR
+        opcode = OPCODE_use_eff_file
+        target = TARGET_EFF_preset
+        timing = TIMING_instant
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+        parameter2 = EFFECT_IDS_align
+        header = 1 type = 1 // melee
+        probability1 = 49
+      STR_VAR resource = ~%spell%~
+    END
+  END
+
+BUT_ONLY

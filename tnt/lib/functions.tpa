@@ -48,24 +48,29 @@ BEGIN
 END
 
 DEFINE_ACTION_FUNCTION CREATE_SHELL_SPELL
-  INT_VAR duration = 0
+  INT_VAR
+    duration = 0
+    sectype = 0
+    savingthrow = 0
   STR_VAR
     spell = ~~
     type = ~~
 BEGIN
   LAF CREATE_SPELL
-    INT_VAR flags = FLAG_SPL_ignore_dead_wild_magic
+    INT_VAR
+      flags = FLAG_SPL_ignore_dead_wild_magic
+      sectype
     STR_VAR spell
   END
   ACTION_MATCH 1 WITH
-    ~blindness~ STR_EQ ~%type%~ BEGIN LAF CREATE_SHELL_BLINDNESS INT_VAR duration STR_VAR spell END END
-    ~confusion~ STR_EQ ~%type%~ BEGIN LAF CREATE_SHELL_CONFUSION INT_VAR duration STR_VAR spell END END
+    ~blindness~ STR_EQ ~%type%~ BEGIN LAF CREATE_SHELL_BLINDNESS INT_VAR duration savingthrow STR_VAR spell END END
+    ~confusion~ STR_EQ ~%type%~ BEGIN LAF CREATE_SHELL_CONFUSION INT_VAR duration savingthrow STR_VAR spell END END
     DEFAULT WARN ~CREATE_SHELL_SPELL: unknown type %type%~
   END
 END
 
 DEFINE_ACTION_FUNCTION CREATE_SHELL_BLINDNESS
-  INT_VAR duration = 0
+  INT_VAR duration = 0 savingthrow = 0
   STR_VAR spell = ~~
 BEGIN
   COPY_EXISTING ~%spell%.spl~ ~override~
@@ -73,31 +78,34 @@ BEGIN
     timing = TIMING_duration
 
     LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEADER_creature END
-    LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_blindness target timing duration END
+    LPF ADD_SPELL_EFFECT INT_VAR
+      opcode = OPCODE_blindness
+      target timing duration savingthrow
+    END
     LPF ADD_SPELL_EFFECT
       INT_VAR
         opcode = OPCODE_colour_glow_pulse
-        target timing duration
+        target timing duration savingthrow
         parameter1 = 0x7f7f7f00 // rgb
         parameter2 = 0x14 // cycle speed = 20
     END
     blinded_strref = 1474
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target
+        target savingthrow
         opcode = OPCODE_text_display_string
         timing = TIMING_instant
         parameter1 = blinded_strref
     END
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target timing duration
+        target timing duration savingthrow
         opcode = OPCODE_display_special_effect_icon
         parameter2 = ICON_blind
     END
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target duration
+        target duration savingthrow
         opcode = OPCODE_play_sound_effect
         timing = TIMING_delayed
       STR_VAR resource = ~eff_e07.wav~
@@ -105,7 +113,7 @@ BEGIN
     PATCH_FOR_EACH vvc IN ~sph1hi01~ ~sphlhi02~ BEGIN
       LPF ADD_SPELL_EFFECT
         INT_VAR
-          target duration
+          target duration savingthrow
           opcode = OPCODE_play_3d_effect
           timing = TIMING_instant
           duration = 3
@@ -117,7 +125,7 @@ BEGIN
 END
 
 DEFINE_ACTION_FUNCTION CREATE_SHELL_CONFUSION
-  INT_VAR duration = 0
+  INT_VAR duration = 0 savingthrow = 0
   STR_VAR spell = ~~
 BEGIN
   COPY_EXISTING ~%spell%.spl~ ~override~
@@ -125,31 +133,34 @@ BEGIN
     timing = TIMING_duration
 
     LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEADER_creature END
-    LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_confusion target timing duration END
+    LPF ADD_SPELL_EFFECT INT_VAR
+      opcode = OPCODE_confusion
+      target timing duration savingthrow
+    END
     confused_strref = 14782
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target
+        target savingthrow
         opcode = OPCODE_text_display_string
         timing = TIMING_instant
         parameter1 = confused_strref
     END
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target timing duration
+        target timing duration savingthrow
         opcode = OPCODE_display_special_effect_icon
         parameter2 = ICON_confusion
     END
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target timing duration
+        target timing duration savingthrow
         opcode = OPCODE_play_3d_effect
         parameter2 = 1 // play over target attached
       STR_VAR resource = ~spconfus~
     END
     LPF ADD_SPELL_EFFECT
       INT_VAR
-        target duration
+        target duration savingthrow
         opcode = OPCODE_play_sound_effect
         timing = TIMING_delayed
       STR_VAR resource = ~eff_e05.wav~

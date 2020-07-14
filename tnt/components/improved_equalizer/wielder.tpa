@@ -1,0 +1,49 @@
+// thac0, damage bonuses for the wielder
+
+OUTER_SET probability1 = 99
+OUTER_SET target = TARGET_EFF_self
+OUTER_SET timing = TIMING_while_equipped
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY wielder BEGIN
+  MASK_GENEUTRAL => 1
+  MASK_LCNEUTRAL => 1
+END
+LAF CREATE_EFFECT
+  INT_VAR
+    opcode = OPCODE_to_hit_mod
+    parameter1 = 2 // amount
+    probability1 timing target
+  STR_VAR effect = ~g_eqwt~
+END
+LAF CREATE_EFFECT
+  INT_VAR
+    opcode = OPCODE_extra_damage_mod
+    parameter1 = 2 // amount
+    probability1 timing target
+  STR_VAR effect = ~g_eqwd~
+END
+
+COPY_EXISTING ~sw1h54.itm~ ~override~
+  // fixpack original bonuses
+  LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_use_eff_file END
+  
+  // wielder bonuses
+  opcode = OPCODE_use_eff_file
+  timing = TIMING_while_equipped
+  parameter2 = EFFECT_IDS_align
+  target = TARGET_EFF_self
+  PHP_EACH wielder AS align => int BEGIN
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      STR_VAR resource = "g_eqwt"
+    END
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      STR_VAR resource = "g_eqwd"
+    END
+  END
+BUT_ONLY
