@@ -1,5 +1,5 @@
 @1 = ~Long Sword: The Equalizer
-The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hand. The sword dislikes to serve anyone who does not value balance in the least, and becomes extremely unwieldy in their hands.
+The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands.
 
 In addition, The Equalizer allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.
 
@@ -8,8 +8,8 @@ STATISTICS:
 Enchantment: +4
 
 Combat Abilities:
-  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates
-  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates
+  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hand of a character who is Neutral on Good/Evil axis.
+  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hand of a character who is Neutral on Lawful/Chaotic axis.
 
 THAC0 & Damage:
   vs True Neutral: +0 to hit, +0 damage
