@@ -1,0 +1,11 @@
+OUTER_SET equalizer_state = 54
+<<<<<<<< .../tnt-inlined/improved_equalizer/wsmith01.d
+REPLACE_SAY wsmith01 %equalizer_state% @2
+REPLACE_TRANS_TRIGGER wsmith01 BEGIN %equalizer_state% END BEGIN END
+  ~PartyGoldGT(7499)~ ~PartyGoldGT(12499)~
+REPLACE_TRANS_ACTION wsmith01 BEGIN %equalizer_state% END BEGIN END
+  ~TakePartyGold(7500)~ ~TakePartyGold(12500)~
+REPLACE_TRANS_ACTION wsmith01 BEGIN %equalizer_state% END BEGIN END
+  ~DestroyGold(7500)~ ~DestroyGold(12500)~
+>>>>>>>>
+COMPILE EVAL ~.../tnt-inlined/improved_equalizer/wsmith01.d~

@@ -16,3 +16,4 @@ INCLUDE ~%comp_dir%/wielder.tpa~
 INCLUDE ~%comp_dir%/target.tpa~
 INCLUDE ~%comp_dir%/know_alignment.tpa~
 INCLUDE ~%comp_dir%/spell.tpa~
+INCLUDE ~%comp_dir%/price.tpa~
