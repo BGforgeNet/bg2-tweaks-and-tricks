@@ -1111,7 +1111,7 @@ msgstr "Неограниченное складывание хороших яг�
 #: setup.tra:240
 #, fuzzy
 #| msgid "Throwing weapons damage"
-msgid "Throwing axes and hammers damage"
+msgid "Throwing weapons damage type"
 msgstr "Урон от метательного оружия"
 
 #: setup.tra:241

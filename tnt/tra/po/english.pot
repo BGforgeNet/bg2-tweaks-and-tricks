@@ -931,7 +931,7 @@ msgid "Unlimited goodberries stacking"
 msgstr ""
 
 #: setup.tra:240
-msgid "Throwing axes and hammers damage"
+msgid "Throwing weapons damage type"
 msgstr ""
 
 #: setup.tra:241
