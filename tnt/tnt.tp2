@@ -212,17 +212,17 @@ INCLUDE ~%components%/hassle_free_ammo/main.tpa~
 
 BEGIN @241 /* Add strength bonus */
 GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing axes and hammers damage */
+SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 1 OUTER_SET damage = 0
 INCLUDE ~%components%/throwing_damage/main.tpa~
 BEGIN @242 /* Make axes slashing and hammers blunt */
 GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing axes and hammers damage */
+SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 0 OUTER_SET damage = 1
 INCLUDE ~%components%/throwing_damage/main.tpa~
 BEGIN @243 /* Both of the above options */
 GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing axes and hammers damage */
+SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 1 OUTER_SET damage = 1
 INCLUDE ~%components%/throwing_damage/main.tpa~
 
