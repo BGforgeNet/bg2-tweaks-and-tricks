@@ -14,6 +14,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Algernon's cloak: usable once per day](#algernons-cloak-usable-once-per-day)
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
+- [Distinct color for Perdue's sword](distinct-color-for-perdues-sword)
 - [Really PnP protection items](#really-pnp-protection-items)
 
 ### Hassle-free ammo
@@ -32,7 +33,7 @@ Removes eye-straining blur graphics from several items. Doesn't change the actua
 Currently includes:
 - Semaj's cloak
 - [Claw of Kazgaroth](https://pihwiki.bgforge.net/Baldur's_Gate:_Claw_of_Kazgaroth)
-- Cloak of Displacement.
+- Cloak of Displacement
 
 ### Sensible Cloak of Mirroring
 It turns out that the Cloak of Mirroring with BG2 Fixpack protects from area effect spells, which doesn't make much sense. And it doesn't protect from Call Lighting, which also is strange. This compoment fixes both issues.
