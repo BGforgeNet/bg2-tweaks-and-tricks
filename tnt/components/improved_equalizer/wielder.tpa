@@ -23,6 +23,29 @@ LAF CREATE_EFFECT
   STR_VAR effect = ~g_eqwd~
 END
 
+// extreme alignments get penalties instead
+ACTION_DEFINE_ASSOCIATIVE_ARRAY extreme BEGIN
+  LAWFUL_GOOD => 1
+  CHAOTIC_GOOD => 1
+  LAWFUL_EVIL => 1
+  CHAOTIC_EVIL => 1
+END
+LAF CREATE_EFFECT
+  INT_VAR
+    opcode = OPCODE_to_hit_mod
+    parameter1 = "-20" // amount
+    probability1 timing target
+  STR_VAR effect = ~g_eqwext~
+END
+LAF CREATE_EFFECT
+  INT_VAR
+    opcode = OPCODE_extra_damage_mod
+    parameter1 = "-20" // amount
+    probability1 timing target
+  STR_VAR effect = ~g_eqwexd~
+END
+
+
 COPY_EXISTING ~sw1h54.itm~ ~override~
   // fixpack original bonuses
   LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_use_eff_file END
@@ -46,4 +69,20 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
       STR_VAR resource = "g_eqwd"
     END
   END
+
+  PHP_EACH extreme AS align => int BEGIN
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      STR_VAR resource = "g_eqwext"
+    END
+    LPF ADD_ITEM_EQEFFECT
+      INT_VAR
+        opcode timing parameter2 probability1 target
+        parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
+      STR_VAR resource = "g_eqwexd"
+    END
+  END
+
 BUT_ONLY
