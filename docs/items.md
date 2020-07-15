@@ -69,7 +69,7 @@ Algernon's cloak is also known as the Cloak of Cheese, because it has nigh unlim
 ### Improved Equalizer
 Equalizer seems a bit underpowered. It's one of three weapons that require over 2 components to assemble, yet by the time you get it, it's vastly overshadowed by already available weapons.
 
-TnT increases its power considerably, providing additional bonuses based on _wielder's_ alignment. Hint: True Neutral characters will find it most useful.
+TnT increases its power considerably, providing additional bonuses based on _wielder's_ alignment. True Neutral characters will be able to get the most of it.
 
 ### Working protection from poison
 Multiple items in BG2 boast to grant the wielder "immunity to all poisons". Unfortunately, none really do. What they do provide is immunity to poison effect - so you can't get poisoned. But certain spells such as Cloudkill apply poison damage directly, and immunity is bypassed. This component fixes the items so that the wielder is really immune to poisons.
