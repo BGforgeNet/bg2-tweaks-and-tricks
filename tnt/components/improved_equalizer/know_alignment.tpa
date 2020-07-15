@@ -1,6 +1,11 @@
+// know alightnment ability
+
+COPY_EXISTING ~%WIZARD_KNOW_ALIGNMENT%.spl~ override
+  READ_LONG SPL_ext_header_offset eh_off
+  READ_ASCII (eh_off + SPL_HEADER_memorized_icon) icon
+BUT_ONLY
+
 COPY_EXISTING ~sw1h54.itm~ ~override~
-  // know alightnment ability
-  READ_ASCII SPL_icon icon
   LPF ADD_ITEM_HEADER
     INT_VAR
       charges = 3

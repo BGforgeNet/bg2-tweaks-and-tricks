@@ -8,8 +8,8 @@ STATISTICS:
 Enchantment: +4
 
 Combat Abilities:
-  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is Neutral on Good/Evil axis.
-  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is Neutral on Lawful/Chaotic axis.
+  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.
+  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.
 
 THAC0 & Damage:
   vs True Neutral: +0 to hit, +0 damage
@@ -19,7 +19,7 @@ THAC0 & Damage:
 Extra bonuses based on wielder's alignment:
   True Neutral: +4 to hit, +4 damage
   Non-extreme alignments: +2 to hit, +2 damage
-  Extreme alignments: -20 to hit, -10 damage
+  Extreme alignments: can't use
 
 All combat effects are independent and stack with each other.
 
@@ -30,7 +30,7 @@ Abilities:
 
 Damage type: slashing
 Weight: 3
-Speed Factor: 3
+Speed Factor: 1
 Proficiency Type: Long Sword
 Type: 1-handed
 Requires: 6 Strength

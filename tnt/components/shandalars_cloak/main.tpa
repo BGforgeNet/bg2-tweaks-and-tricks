@@ -1,5 +1,10 @@
 LAF list_web_spells RET_ARRAY web_spells = spells END
 
+COPY_EXISTING ~%WIZARD_WEB%.spl~ override
+  READ_LONG SPL_ext_header_offset eh_off
+  READ_ASCII (eh_off + SPL_HEADER_memorized_icon) web_icon
+BUT_ONLY
+
 COPY_EXISTING ~clck22.itm~  ~override~
   SAY NAME1 @1
   SAY NAME2 @2
@@ -52,7 +57,6 @@ COPY_EXISTING ~clck22.itm~  ~override~
   END
 
   // web spell ability
-  READ_ASCII SPL_icon icon
   LPF ADD_ITEM_HEADER
     INT_VAR
       range = 60 // I think 60 is correct?
@@ -62,7 +66,7 @@ COPY_EXISTING ~clck22.itm~  ~override~
       flags = FLAG_HEADER_recharge_after_rest
       target = TARGET_HEADER_area
     STR_VAR
-      icon = ~%icon%~
+      icon = ~%web_icon%~
   END 
   LPF ALTER_ITEM_HEADER INT_VAR identify = 1 END
 
