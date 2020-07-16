@@ -2,7 +2,7 @@
 
 Exploring dungeons can be annoying in IE, especially if it's a familiar one, and you spend a lot of time for Find Traps to tick.
 
-Improved traps offres multiple components to change trap mechannics.
+Improved traps offers multiple components to change trap mechannics.
 
 - [Instant detection](#instant-detection)
 - [Increase detection range](#increase-detection-range)
@@ -29,7 +29,7 @@ Based on intuition, multiple actions may be taken:
 - Pause game on all traps, or just ground ones.
 - Toggle Find Traps automatically, provided that the character's class allows it.
 - Center on the character, or on location of the supposed trap.
-- Play the "trap found" sound
+- Play the "trap found" sound.
 
 ### Core
 Core is required to enable the selected components. Components installed after Core won't work.
