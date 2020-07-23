@@ -22,8 +22,9 @@
 - Can't steal Carsomyr.
 - Distinct color for Perdue's sword.
 - Faster loading times.
-- Greater Command AoE.
+- [Greater Command](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Divine_Spells_List#Greater_Command) AoE.
 - Improved Equalizer.
+- Improved Shandalar's cloak.
 - Limited stock.
 - More map notes.
 - Mod romance cheats: Saerileth, Amber, Tyris.
@@ -31,13 +32,12 @@
 - Really PnP protection items.
 - Sensible Blade spins.
 - Sensible multiclass restrictions.
-- Shandalar's cloak.
 - Throwing damage type.
 - True True Grandmastery.
-- Unstack Chaos Shield.
-- Uncheese Mislead.
-- Uncheese Project Image.
-- Working Non-Detection.
+- Unstack [Chaos Shield](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Chaos_Shield).
+- Uncheese [Mislead](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Mislead).
+- Uncheese [Project Image](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Project_Image).
+- Working [Non-Detection](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Non-Detection).
 - Working protection from poison.
 
 #### Improved traps
@@ -67,7 +67,7 @@ Massive rewrite under the hood.
 #### Remove Blur graphics
 Now includes Cloak of Displacement.
 
-#### True True Sight
+#### True [True Sight](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#True_Sight)
 Now includes Inquisitor's ability.
 
 #### Hassle-free ammo
