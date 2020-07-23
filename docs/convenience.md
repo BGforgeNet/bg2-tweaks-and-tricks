@@ -32,7 +32,7 @@ For original Bioware characters, there's long been a tweak that allows multiple 
 - Tyris
 - Saerileth
 
-**Beware** that if you install this, and then hit **any** bug with such character, you'll likely will get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
+**Beware** that if you install this, and then hit **any** bug with such character, you'll likely get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
 
 ### Disable intro movies
 Disables BIS logo movie and stuff (not the actual game movies).
