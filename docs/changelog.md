@@ -20,6 +20,7 @@
 - Algernon's cloak: usable once per day.
 - Bloodless deeds.
 - Can't steal Carsomyr.
+- Distinct color for Perdue's sword.
 - Faster loading times.
 - Greater Command AoE.
 - Improved Equalizer.
@@ -27,7 +28,7 @@
 - More map notes.
 - Mod romance cheats: Saerileth, Amber, Tyris.
 - No lightning during rain.
-- Really PnP protection item.
+- Really PnP protection items.
 - Sensible Blade spins.
 - Sensible multiclass restrictions.
 - Shandalar's cloak.
