@@ -27,6 +27,7 @@
 - More map notes.
 - Mod romance cheats: Saerileth, Amber, Tyris.
 - No lightning during rain.
+- Really PnP protection item.
 - Sensible Blade spins.
 - Sensible multiclass restrictions.
 - Shandalar's cloak.
