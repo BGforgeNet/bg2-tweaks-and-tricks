@@ -5,7 +5,7 @@ Various components to change spells and abilities, mostly to "make sense".
 - [Spider form ignores web](#spider-form-ignores-web)
 - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
 - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
-- [True true sight](#true-true-sight)
+- [True True Sight](#true-true-sight)
 - [Sensible Otiluke's Sphere](#sensible-otilukes-phere)
 - [Greater Command AoE](#greater-command-aoe)
 - [Working Non-Detection](#working-non-detection)
