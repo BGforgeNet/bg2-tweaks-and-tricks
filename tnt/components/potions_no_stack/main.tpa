@@ -37,8 +37,15 @@ ACTION_FOR_EACH file IN ~rr#pnp36.spl~ ~rr#pnp39.spl~ BEGIN
 END
 
 PRINT ~Patching scrolls...~
+ACTION_DEFINE_ARRAY scrolls BEGIN
+  SCROLL_protection_from_acid
+  SCROLL_protection_from_cold
+  SCROLL_protection_from_electricity
+  SCROLL_protection_from_fire
+END
 OUTER_SPRINT ~refresh_strref~ @27
-ACTION_FOR_EACH item IN scrl03 scrl04 scrl05 scrl06 BEGIN 
+ACTION_PHP_EACH scrolls AS int => item BEGIN
+  OUTER_SPRINT item EVAL ~%%item%%~
   OUTER_SPRINT ~item_to_unstack~ ~%item%~
   OUTER_SPRINT ~spellname~ ~g_%item%~
   LAM ~UNSTACK_ITEM~
