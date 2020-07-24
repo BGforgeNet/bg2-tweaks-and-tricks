@@ -283,6 +283,11 @@ GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/perdue_sword/main.tpa~
 
+BEGIN @208 /* Working protection from poison */
+GROUP @200 /* Items */
+OUTER_SPRINT comp_name ~poison_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+INCLUDE ~%components%/%comp_name%/main.tpa~
+
 BEGIN @210 /* Really PnP protection items */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128 /* Requires Classic ToB engine */
