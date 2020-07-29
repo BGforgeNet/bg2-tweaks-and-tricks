@@ -1,6 +1,6 @@
 ## Soundsets
 
-- [Extended soundsets for NPC](extended-soundsets-for-npc)
+- [Extended soundsets for NPC](#extended-soundsets-for-npc)
 - [BG1-style party interaction system](#bg1-style-party-interaction-system)
 - [No talking while hiding in shadows](#no-talking-while-hiding-in-shadows)
 - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
