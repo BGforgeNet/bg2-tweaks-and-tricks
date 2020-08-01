@@ -5,7 +5,7 @@ COPY_EXISTING ~plyspid.itm~  ~override~
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
         opcode = OPCODE_protection_from_spell
-        target = TARGET_EFF_self
+        target = TARGET_FX_self
         timing = TIMING_while_equipped
         resist_dispel = BYPASS_MR
       STR_VAR

@@ -24,19 +24,19 @@ OUTER_FOR (i=0;i<items;i+=1) BEGIN
     GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
       //thac0 bonus
-      WRITE_SHORT (ab_off + ITM_HEADER_thac0_bonus) 0
+      WRITE_SHORT (ab_off + ITM_HEAD_thac0_bonus) 0
 
       //add strength bonus to axe, remove from others
       PATCH_IF (~%item%~ STRING_EQUAL ~axe~) BEGIN
-        WRITE_LONG (ab_off + ITM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
+        WRITE_LONG (ab_off + ITM_HEAD_flags) (THIS BAND FLAG_HEAD_add_strength_bonus)
       END ELSE BEGIN
-        WRITE_LONG (ab_off + ITM_HEADER_flags) (THIS BAND BNOT FLAG_HEADER_add_strength_bonus)
+        WRITE_LONG (ab_off + ITM_HEAD_flags) (THIS BAND BNOT FLAG_HEAD_add_strength_bonus)
       END
 
       //damage bonus
-      WRITE_SHORT (ab_off + ITM_HEADER_damage_bonus) damagebonus
+      WRITE_SHORT (ab_off + ITM_HEAD_damage_bonus) damagebonus
       //speed
-      WRITE_BYTE (ab_off + ITM_HEADER_speed) speed
+      WRITE_BYTE (ab_off + ITM_HEAD_speed) speed
     END
 
   BUT_ONLY

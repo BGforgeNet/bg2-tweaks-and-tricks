@@ -9,7 +9,7 @@ COPY_EXISTING ~spwi413a.spl~ ~override~
       parameter1 = 0 //blind
       parameter2 = 1 //flat mod
       duration = 60
-      target = TARGET_EFF_preset
+      target = TARGET_FX_preset
       resist_dispel = DISPEL | BYPASS_MR
   END
 BUT_ONLY

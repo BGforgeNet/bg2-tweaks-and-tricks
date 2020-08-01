@@ -1,6 +1,6 @@
 // thac0, damage bonuses against target
 OUTER_SET probability1 = 99
-OUTER_SET target = TARGET_EFF_self
+OUTER_SET target = TARGET_FX_self
 OUTER_SET timing = TIMING_while_equipped
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY enemy BEGIN
@@ -33,7 +33,7 @@ ACTION_PHP_EACH enemy AS align_slug => bonus BEGIN
         parameter2 = DAMAGETYPE_slashing
         probability1
         timing = TIMING_instant
-        target = TARGET_EFF_preset
+        target = TARGET_FX_preset
       STR_VAR effect = ~g_eqtd%bonus%~
     END
   END
@@ -54,7 +54,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
     LPF ADD_ITEM_EFFECT // damage is on hit only
       INT_VAR
         opcode timing parameter2 probability1
-        target = TARGET_EFF_preset
+        target = TARGET_FX_preset
         parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
         parameter2 = IDS_align
         header = 1 type = 1 // melee

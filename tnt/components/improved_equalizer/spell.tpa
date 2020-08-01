@@ -16,7 +16,7 @@ ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
   LAF CREATE_EFFECT
     INT_VAR
       opcode = OPCODE_cast_spell_at_creature
-      target = TARGET_EFF_preset
+      target = TARGET_FX_preset
       timing = TIMING_instant
       parameter2 = CASTING_TYPE_instant
     STR_VAR
@@ -29,7 +29,7 @@ ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
       timing = TIMING_duration
       duration = 1
       opcode = OPCODE_protection_from_spell
-      target = TARGET_EFF_self
+      target = TARGET_FX_self
     STR_VAR
       resource = ~%spell%~
       effect = ~%spell%i~
@@ -39,7 +39,7 @@ ACTION_FOR_EACH spell IN ~%law_chaos_spell%~ ~%good_evil_spell%~ BEGIN
     INT_VAR
       timing = TIMING_while_equipped
       opcode = OPCODE_set_melee_effect
-      target = TARGET_EFF_self
+      target = TARGET_FX_self
     STR_VAR
       resource = ~%spell%i~
       effect = ~%spell%m~
@@ -70,7 +70,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
         opcode = OPCODE_use_eff_file
-        target = TARGET_EFF_self
+        target = TARGET_FX_self
         timing = TIMING_while_equipped
         parameter1 = IDS_OF_SYMBOL (~align~ ~%walign%~)
         parameter2 = EFFECT_IDS_align
@@ -82,7 +82,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
     LPF ADD_ITEM_EFFECT
       INT_VAR
         opcode = OPCODE_use_eff_file
-        target = TARGET_EFF_preset
+        target = TARGET_FX_preset
         timing = TIMING_instant
         parameter1 = IDS_OF_SYMBOL (~align~ ~%align%~)
         parameter2 = EFFECT_IDS_align

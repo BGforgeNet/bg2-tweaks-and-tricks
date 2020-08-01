@@ -8,7 +8,7 @@ COPY_EXISTING_REGEXP ~^.*\.spl$~ ~override~
   gaze = 0
   GET_OFFSET_ARRAY h_array SPL_V10_HEADERS
   PHP_EACH h_array AS int => h_off BEGIN
-    READ_SHORT (h_off + SPL_HEADER_projectile) pro
+    READ_SHORT (h_off + SPL_HEAD_projectile) pro
     PATCH_IF pro == gaze_id BEGIN
       gaze = 1
     END
@@ -40,7 +40,7 @@ COPY_EXISTING ~potn38.itm~ ~override~ //mirrored eyes
     PHP_EACH fx_array AS int => fx_off BEGIN
       READ_SHORT fx_off fx_type
       PATCH_IF fx_type = OPCODE_protection_from_spell BEGIN
-        READ_ASCII fx_off + EFF_resource spell
+        READ_ASCII fx_off + FX_resource spell
         DEFINE_ASSOCIATIVE_ARRAY old_list BEGIN ~%j%~ => ~%spell%~ END
         j+=1
       END
@@ -60,7 +60,7 @@ COPY_EXISTING ~potn38.itm~ ~override~ //mirrored eyes
           opcode = OPCODE_protection_from_spell
           parameter1 = 0 //no feedback line
           duration = 60
-          target = TARGET_EFF_self
+          target = TARGET_FX_self
           resist_dispel = DISPEL
           power = 4 //potion power
         STR_VAR

@@ -13,8 +13,8 @@ ACTION_FOR_EACH spl IN ~%WIZARD_CHAOS_SHIELD%~ ~%WIZARD_IMPROVED_CHAOS_SHIELD%~ 
     PHP_EACH ab_array AS int => ab_off BEGIN
       GET_OFFSET_ARRAY2 fx_array ab_off SPL_V10_HEAD_EFFECTS
       PHP_EACH fx_array AS int => fx_off BEGIN
-        WRITE_LONG fx_off + EFF_savingthrow THIS BOR FLAG_SAVINGTHROW_tobex_limit_effect_stacking
-        WRITE_LONG fx_off + EFF_tobex_stacking_id (effect_stacking_id_base + stacking_id)
+        WRITE_LONG fx_off + FX_save_type THIS BOR FLAG_SAVINGTHROW_limit_effect_stacking_Ex
+        WRITE_LONG fx_off + FX_stacking_id_Ex (effect_stacking_id_base + stacking_id)
       END
     END
     stacking_id += 1 // for chaos shield, each opcode is unique per header, so using the same id for the whole header

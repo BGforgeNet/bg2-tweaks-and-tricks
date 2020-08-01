@@ -33,7 +33,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
     LPF ADD_ITEM_EFFECT
       INT_VAR
         opcode = OPCODE_text_display_string
-        target = TARGET_EFF_self
+        target = TARGET_FX_self
         parameter1 = 16233 //"Gulp!"
         power = 4
         timing = TIMING_instant
@@ -46,7 +46,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
   LPF ADD_ITEM_EFFECT
     INT_VAR
       opcode = OPCODE_remove_secondary_type
-      target = TARGET_EFF_preset
+      target = TARGET_FX_preset
       power = 4
       parameter1 = 10 //max level
       parameter2 = ~%sectype_id%~ //remove our secondary type
@@ -58,7 +58,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
   LPF ADD_ITEM_EFFECT
     INT_VAR
       opcode = OPCODE_cast_spell_at_creature
-      target = TARGET_EFF_preset
+      target = TARGET_FX_preset
       power = 4
       parameter2 = 1 //instant cast
       timing = TIMING_instant

@@ -1,7 +1,7 @@
 // thac0, damage bonuses for the wielder
 
 OUTER_SET probability1 = 99
-OUTER_SET target = TARGET_EFF_self
+OUTER_SET target = TARGET_FX_self
 OUTER_SET timing = TIMING_while_equipped
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY wielder BEGIN
@@ -54,7 +54,7 @@ COPY_EXISTING ~sw1h54.itm~ ~override~
   opcode = OPCODE_use_eff_file
   timing = TIMING_while_equipped
   parameter2 = EFFECT_IDS_align
-  target = TARGET_EFF_self
+  target = TARGET_FX_self
   PHP_EACH wielder AS align => int BEGIN
     LPF ADD_ITEM_EQEFFECT
       INT_VAR

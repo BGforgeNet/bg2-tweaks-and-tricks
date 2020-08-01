@@ -4,8 +4,8 @@ OUTER_SET i=0
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
   PHP_EACH ab_array AS int => ab_off BEGIN
-    READ_BYTE (ab_off + ITM_HEADER_location) use_loc
-    PATCH_IF use_loc = ITM_HEADER_LOCATION_weapon BEGIN
+    READ_BYTE (ab_off + ITM_HEAD_location) use_loc
+    PATCH_IF use_loc = ITM_HEAD_LOCATION_weapon BEGIN
       GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
       PHP_EACH fx_array AS int2 => fx_off BEGIN
         READ_SHORT fx_off fx_type
@@ -70,7 +70,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
           parameter1 = 0 //0 apr
           parameter2 = 1 //flat mod
           duration = delay
-          target = TARGET_EFF_self
+          target = TARGET_FX_self
           resist_dispel = 0
           header = int
       END

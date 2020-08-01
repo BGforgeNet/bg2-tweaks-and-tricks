@@ -30,10 +30,10 @@ ACTION_PHP_EACH protection_power AS item => power BEGIN
         LPF ADD_ITEM_EQEFFECT
           INT_VAR
             opcode = EVAL ~%%opcode%%~
-            target = TARGET_EFF_self
+            target = TARGET_FX_self
             timing = TIMING_while_equipped
             parameter1 = 1 // amount
-            savingthrow = FLAG_SAVINGTHROW_tobex_limit_effect_stacking
+            savingthrow = FLAG_SAVINGTHROW_limit_effect_stacking_Ex
             special = (effect_stacking_id_base + i) // opcodes not overlapping with Chaos Shield, so no problem
             probability1 = (100 + i)  // this is necessary to prevent engine from confusing which effects belong to which items. Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
         END

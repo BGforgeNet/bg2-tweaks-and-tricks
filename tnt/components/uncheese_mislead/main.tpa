@@ -17,13 +17,13 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
     INT_VAR
       opcode = OPCODE_cure_level_drain_restoration
       insert_point = 0
-      target = TARGET_EFF_self
+      target = TARGET_FX_self
   END
   LPF ADD_SPELL_EFFECT // recover lost HP after restoration
     INT_VAR
       opcode = OPCODE_hp_current_hp_mod
       insert_point = 1
-      target = TARGET_EFF_self
+      target = TARGET_FX_self
       parameter1 = 20 // %
       parameter2 = CURRENT_HP_MOD_TYPE_percentage
   END
@@ -41,7 +41,7 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
     LPF ADD_SPELL_EFFECT
       INT_VAR
         opcode = OPCODE_button_disable_button
-        target = TARGET_EFF_self
+        target = TARGET_FX_self
         timing = TIMING_permanent
         parameter2 = EVAL ~%%btn%%~
     END
@@ -60,7 +60,7 @@ COPY_EXISTING ~%WIZARD_MISLEAD%.spl~ override
       opcode = OPCODE_script_modify_global_variable
       parameter1 = clone_gvar_mislead
       parameter2 = 0 // set global
-      target = TARGET_EFF_self // crashes without it
+      target = TARGET_FX_self // crashes without it
       insert_point = 0
     STR_VAR resource = ~%clone_gvar%~
   END
@@ -72,7 +72,7 @@ COPY_EXISTING ~%WIZARD_SIMULACRUM%.spl~ override
       opcode = OPCODE_script_modify_global_variable
       parameter1 = clone_gvar_simulacrum
       parameter2 = 0 // set global
-      target = TARGET_EFF_self
+      target = TARGET_FX_self
       insert_point = 0
     STR_VAR resource = ~%clone_gvar%~
   END
@@ -84,7 +84,7 @@ COPY_EXISTING ~simulacr.spl~ override
   LPF ADD_SPELL_CFEFFECT
     INT_VAR
       opcode = OPCODE_set_ai_script
-      target = TARGET_EFF_self
+      target = TARGET_FX_self
       timing = TIMING_permanent
       parameter2 = SCRIPT_TYPE_override
     STR_VAR
