@@ -11,6 +11,6 @@ COPY_EXISTING ~clck26.itm~   ~override~
       target = TARGET_FX_self
       timing = TIMING_while_equipped
     STR_VAR
-      resource = ~sppr302~
+      resource = ~%CLERIC_CALL_LIGHTNING%~
   END
 BUT_ONLY
