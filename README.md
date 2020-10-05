@@ -24,7 +24,7 @@ Components are many and varied. Refer to the individual sections for the details
 - [Improved traps](docs/traps.md)
 - [Soundsets](docs/soundsets.md)
 - [Items](docs/items.md)
-- [Spell and abilities](docs/spells.md)
+- [Spells and abilities](docs/spells.md)
 - [Gameplay and rules](docs/gameplay.md)
 - [Quest and dialog tweaks](docs/quests.md)
 - [Assorted convenience components](docs/convenience.md)
