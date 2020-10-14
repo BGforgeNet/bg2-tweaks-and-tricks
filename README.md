@@ -26,6 +26,7 @@ Components are many and varied. Refer to the individual sections for the details
 - [Items](docs/items.md)
 - [Spells and abilities](docs/spells.md)
 - [Gameplay and rules](docs/gameplay.md)
+- [Stores](docs/stores.md)
 - [Quest and dialog tweaks](docs/quests.md)
 - [Assorted convenience components](docs/convenience.md)
 
