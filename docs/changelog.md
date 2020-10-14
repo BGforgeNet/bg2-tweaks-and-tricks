@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.2](#version-82)
 - [Version 8.1](#version-81)
 - [Version 8](#version-8)
 - [Version 7](#version-7)
@@ -9,6 +10,9 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.2
+Fixed certain "Throwing damage type" subcomponents [failing to install](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/36).
 
 ### Version 8.1
 Fixed "Working protection from poison" missing from components list.
