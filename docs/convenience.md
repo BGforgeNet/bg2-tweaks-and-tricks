@@ -11,7 +11,7 @@ Here are various QoL components that didn't really fit into any other sections.
 - [Add BG1 tome stats bonuses to new BG2 characters](#add-bg1-tome-stats-bonuses-to-new-bg2-characters)
 - [Starting bags](#starting-bags)
 
-#### Less autosaves
+### Less autosaves
 Disables autosaves on area transitions. This **only** affects transitions that **don't go through worldmap**.
 
 It saves some time, but on the other hand you should treat your saves more carefully. **You've been warned.**
