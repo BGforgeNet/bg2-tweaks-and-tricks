@@ -21,7 +21,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
           PATCH_FOR_EACH off IN IDENTIFIED_DESC UNIDENTIFIED_DESC BEGIN
             LPF REPLACE_STRREF_TRA
               INT_VAR
-                offset = EVAL ~%%off%%~
+                offset = EVAL ~%off%~
                 old_substring_traref = 253 //missile (piercing)
                 new_substring_traref = damage_tra
             END
