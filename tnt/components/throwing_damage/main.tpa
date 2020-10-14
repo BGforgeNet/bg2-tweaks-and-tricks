@@ -19,8 +19,6 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
         PATCH_IF damage == 1 BEGIN
           WRITE_SHORT (h_off + ITM_HEAD_damage_type) damage_type
           PATCH_FOR_EACH off IN DESC UNIDENTIFIED_DESC BEGIN
-            test = EVAL ~%off%~
-            PATCH_PRINT ~test = %test%~
             LPF REPLACE_STRREF_TRA
               INT_VAR
                 offset = EVAL ~%off%~
