@@ -59,7 +59,7 @@ Strangely, Potion of Mirrored Eyes doesn't protect from all gaze attacks. Demons
 ### Unlimited goodberries stacking
 Goodberries stack size is 5 by default, and if created regularly, they quickly clutter the inventory. Especially so if you're using an AI script from a mod like SCS that creates them automatically.
 
-That is is silly, of course - just how much space a berry takes? Now you can stuff them all into a single slot.
+That is silly, of course - just how much space a berry takes? Now you can stuff them all into a single slot.
 
 ### Improved Shandalar's cloak
 A cloak that an archmage sends a group of adventurers to get must be something important, right? However, in game it's just a rag with no abilities, which is a bummer. TnT changes the cloak into something worthwhile.
