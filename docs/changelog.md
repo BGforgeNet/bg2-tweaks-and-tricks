@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.4](#version-84)
 - [Version 8.3](#version-83)
 - [Version 8.2](#version-82)
 - [Version 8.1](#version-81)
@@ -11,6 +12,9 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.4
+Throwing daggers are also excluded from Limited Stock.
 
 ### Version 8.3
 Non-magical ammo and throwing weapons are now [skipped](https://forums.bgforge.net/viewtopic.php?f=31&t=272) from Limited Stock.

@@ -3,6 +3,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY allow_infinite BEGIN
   ax1h04 => 1
   bolt01 => 1
   bull01 => 1
+  dagg04 => 1
   dart01 => 1
 END
 
