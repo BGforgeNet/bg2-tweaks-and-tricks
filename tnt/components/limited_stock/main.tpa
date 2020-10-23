@@ -1,8 +1,18 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY allow_infinite BEGIN
+  arow01 => 1
+  ax1h04 => 1
+  bolt01 => 1
+  bull01 => 1
+  dart01 => 1
+END
+
 COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
   GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
   PHP_EACH sold AS int => it_off BEGIN
     READ_LONG (it_off + STO_ITEM_SALE_infinite) infinite
-    PATCH_IF infinite == 1 BEGIN
+    READ_ASCII (it_off + STO_ITEM_SALE_name) name
+    TO_LOWER name
+    PATCH_IF infinite == 1 AND (!VARIABLE_IS_SET $allow_infinite(~%name%~) ) BEGIN
       WRITE_LONG (it_off + STO_ITEM_SALE_infinite) 0
       WRITE_LONG (it_off + STO_ITEM_SALE_amount) 10
       READ_ASCII it_off item_name

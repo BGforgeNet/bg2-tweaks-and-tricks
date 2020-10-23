@@ -27,4 +27,4 @@ Just disable stealing in all shops.
 It seems silly that Taerom constantly complains how **the business is slow**, yet he will only make you one suite of ankheg plate, and not more, even if you have both money and materials. This component enabled him to make as many as you need.
 
 ### Limited stock
-Having unlimited of anything in a store looks strange. Even more so then the items are magical - scrolls, potions, etc. This just can't be in FR setting. Thus, the stocks of any "infinite" item in any store is limited to a max of 10.
+Having unlimited of anything in a store looks strange. Even more so then the items are magical - scrolls, potions, etc. This just can't be in FR setting. Thus, the stocks of any "infinite" item in any store is limited to a max of 10. _Except_ non-magical ammo and throwing weapons.
