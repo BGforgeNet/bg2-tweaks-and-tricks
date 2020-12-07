@@ -11,6 +11,7 @@ Various components to change spells and abilities, mostly to "make sense".
 - [Working Non-Detection](#working-non-detection)
 - [Unstack Chaos Shield](#unstack-chaos-shield)
 - [Uncheese Mislead](#uncheese-mislead)
+- [Uncheese Project Image](#uncheese-project-image)
 - [Sensible Blade spins](#sensible-blade-spins)
 
 ### Spider form ignores web
