@@ -13,6 +13,9 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.5
+Updated IElib for better PI compatibility.
+
 ### Version 8.4
 Throwing daggers are also excluded from Limited Stock.
 
