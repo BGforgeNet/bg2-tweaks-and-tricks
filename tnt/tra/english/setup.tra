@@ -9,6 +9,7 @@
 @127 = ~Only non-EE engines~
 @128 = ~Requires Classic ToB engine~
 @129 = ~BGT only~
+@130 = ~Requires Classic ToB or BG(2)EE engine~
 
 @200 = ~Items~
 @201 = ~Hassle-free ammo~
