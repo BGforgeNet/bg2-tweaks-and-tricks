@@ -238,7 +238,7 @@ INCLUDE ~%components%/cloak_of_mirroring/main.tpa~
 
 BEGIN @204 /* Effects of scrolls and potions do not stack with themselves */
 GROUP @200 /* Items */
-REQUIRE_PREDICATE (ENGINE_IS ~tob~ OR ENGINE_IS ~bgee bg2ee~) @130 /* Requires Classic ToB or BG(2)EE engine */
+REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee iwdee~) @130 /* Requires Classic ToB or BG(2)EE or IWDEE engine */
 INCLUDE ~%components%/potions_no_stack/main.tpa~
 
 BEGIN @206 //AoE
