@@ -1,4 +1,5 @@
-//"item_to_unstack" - item we want to stop stack, "spellname" is name for hidden spell, "refresh_strref" appears upon refreshing spell. Both without extensions.
+// "item_to_unstack" - item we want to stop stack, "spellname" is name for hidden spell. Both without extensions.
+// "refresh_strref" appears upon refreshing spell.
 DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 
 ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
