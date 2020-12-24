@@ -1065,7 +1065,7 @@ msgstr "Только для BGT"
 #: setup.tra:130
 #, fuzzy
 #| msgid "Requires ToB or EE engine"
-msgid "Requires Classic ToB or BG(2)EE engine"
+msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
 msgstr "Требует движок ToB или EE"
 
 #: setup.tra:200
