@@ -886,6 +886,10 @@ msgstr ""
 msgid "BGT only"
 msgstr ""
 
+#: setup.tra:130
+msgid "Requires Classic ToB or BG(2)EE engine"
+msgstr ""
+
 #: setup.tra:200
 msgid "Items"
 msgstr ""
