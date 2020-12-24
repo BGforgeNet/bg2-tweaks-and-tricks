@@ -9,6 +9,7 @@
 @127 = ~Only non-EE engines~
 @128 = ~Requires Classic ToB engine~
 @129 = ~Только для BGT~
+@130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
 @200 = ~Предметы~
 @201 = ~Более удобные снаряды~
 @202 = ~Убрать визуальный эффект размытия с предметов~
