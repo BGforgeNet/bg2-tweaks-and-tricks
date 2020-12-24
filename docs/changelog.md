@@ -16,7 +16,7 @@
 - [Version 1](#version-1)
 
 ### Version 8.6
-Unstacking potions and scrolls now can be installed on BG(2)EE #40.
+Unstacking potions and scrolls now can be [installed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/40) on BG(2)EE.
 
 ### Version 8.5
 Updated IElib for better PI compatibility.
