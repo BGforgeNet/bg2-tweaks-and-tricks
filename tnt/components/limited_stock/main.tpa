@@ -16,7 +16,6 @@ COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
     PATCH_IF infinite == 1 AND (!VARIABLE_IS_SET $allow_infinite(~%name%~) ) BEGIN
       WRITE_LONG (it_off + STO_ITEM_SALE_infinite) 0
       WRITE_LONG (it_off + STO_ITEM_SALE_amount) 10
-      READ_ASCII it_off item_name
     END
   END
 BUT_ONLY
