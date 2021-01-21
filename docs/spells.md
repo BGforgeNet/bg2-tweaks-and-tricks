@@ -6,7 +6,7 @@ Various components to change spells and abilities, mostly to "make sense".
 - [Cheesy Slayer: full heal on change](#cheesy-slayer-full-heal-on-change)
 - [Cheesy Slayer: reputation](#cheesy-slayer-reputation)
 - [True True Sight](#true-true-sight)
-- [Sensible Otiluke's Sphere](#sensible-otilukes-phere)
+- [Sensible Otiluke's Sphere](#sensible-otilukes-sphere)
 - [Greater Command AoE](#greater-command-aoe)
 - [Working Non-Detection](#working-non-detection)
 - [Unstack Chaos Shield](#unstack-chaos-shield)
