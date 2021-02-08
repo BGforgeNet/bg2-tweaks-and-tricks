@@ -4,78 +4,80 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-02-09 14:13+0000\n"
+"Last-Translator: Felipe <felipefplzx@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/"
+"infinity-engine/tweaks-and-tricks/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: bgforge_po v.1.0.0\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
-msgstr ""
+msgstr "Uh, eu cheiro uma armadilha."
 
 #: easy_traps.tra:2
 msgid "Careful. Something's not quite right here."
-msgstr ""
+msgstr "Cuidado. Algo não está certo aqui."
 
 #: easy_traps.tra:3
 msgid "Stop! It's a trap!"
-msgstr ""
+msgstr "Pare! É uma armadilha!"
 
 #: easy_traps.tra:4
 msgid "I sense a trap!"
-msgstr ""
+msgstr "Eu sinto uma armadilha!"
 
 #: easy_traps.tra:5
 msgid "Hmm... We should tread lightly here."
-msgstr ""
+msgstr "Hmm... Nós devemos pisar leve por aqui."
 
 #: easy_traps.tra:6
 msgid "Wait, wait. Let's take a closer look at this."
-msgstr ""
+msgstr "Espere, espere. Vamos dar uma olhada mais de perto nisto."
 
 #: easy_traps.tra:7
 msgid "I sense danger."
-msgstr ""
+msgstr "Eu sinto perigo."
 
 #: easy_traps.tra:8
 msgid "Watch your step. Looks suspicious."
-msgstr ""
+msgstr "Cuidado aonde pisa. Parece suspeito."
 
 #: easy_traps.tra:9
 msgid "Hold on. See this?"
-msgstr ""
+msgstr "Espera. Vê isto?"
 
 #: easy_traps.tra:98
 msgid "Trap"
-msgstr ""
+msgstr "Armadilha"
 
 #: easy_traps.tra:99
 msgid "trap"
-msgstr ""
+msgstr "armadilha"
 
 #: easy_traps.tra:100
 msgid "Unknown"
-msgstr ""
+msgstr "Desconhecido"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
-msgstr ""
+msgstr "Armadilha pra Segurar Pessoa"
 
 #: easy_traps.tra:102
 msgid "Silence trap"
-msgstr ""
+msgstr "Armadilha do silêncio"
 
 #: easy_traps.tra:103
 msgid "Call Lightning trap"
-msgstr ""
+msgstr "Armadilha pra Chamar Raio"
 
 #: easy_traps.tra:104
 msgid "Miscast Magic trap"
-msgstr ""
+msgstr "Armadilha pra Errar a Mágica"
 
 #: easy_traps.tra:105
 msgid "Flamestrike trap"
@@ -83,11 +85,11 @@ msgstr ""
 
 #: easy_traps.tra:106
 msgid "Chromatic orb trap"
-msgstr ""
+msgstr "Armadilha do Globo Cromático"
 
 #: easy_traps.tra:107
 msgid "Confusion trap"
-msgstr ""
+msgstr "Armadilha da Confusão"
 
 #: easy_traps.tra:108
 msgid "Dire Charm trap"
@@ -95,23 +97,23 @@ msgstr ""
 
 #: easy_traps.tra:109
 msgid "Fireball trap"
-msgstr ""
+msgstr "Armadilha da Bola de Fogo"
 
 #: easy_traps.tra:110
 msgid "Lightning bolt trap"
-msgstr ""
+msgstr "Armadilha do Raio"
 
 #: easy_traps.tra:111
 msgid "Magic Missile trap"
-msgstr ""
+msgstr "Armadilha do Míssil Mágico"
 
 #: easy_traps.tra:112
 msgid "Stinking Cloud trap"
-msgstr ""
+msgstr "Armadilha da Nuvem Fedida"
 
 #: easy_traps.tra:113
 msgid "Arrow trap"
-msgstr ""
+msgstr "Armadilha da Flecha"
 
 #: easy_traps.tra:114
 msgid "Slaying arrow trap"
@@ -224,7 +226,7 @@ msgstr ""
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
 msgid "Die your final death!"
-msgstr ""
+msgstr "Morra sua morte final!"
 
 #: extended_soundsets.tra:38
 msgctxt "minsc57"
@@ -872,7 +874,7 @@ msgstr ""
 
 #: setup.tra:126
 msgid "Requires BG2"
-msgstr ""
+msgstr "Requer BG2"
 
 #: setup.tra:127
 msgid "Only non-EE engines"
