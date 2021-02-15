@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.7](#version-87)
 - [Version 8.6](#version-86)
 - [Version 8.5](#version-85)
 - [Version 8.4](#version-84)
@@ -14,6 +15,11 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.7
+- [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/42) Improved Traps installation on EET.
+- Allowed [unstacking](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/40) potions and scrolls in IWDEE.
+- Enabled initial Portuguese/Brasilian translation.
 
 ### Version 8.6
 Unstacking potions and scrolls now can be [installed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/40) on BG(2)EE.
