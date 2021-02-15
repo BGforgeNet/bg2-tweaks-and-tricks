@@ -1,6 +1,6 @@
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
-VERSION ~v8.6~
+VERSION ~v8.7~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
@@ -11,6 +11,7 @@ END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
 LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
+LANGUAGE ~Portuguese (Brazilian)~ ~pt_br~ ~tnt/tra/pt_br/game.tra~ ~tnt/tra/pt_br/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
