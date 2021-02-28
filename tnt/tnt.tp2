@@ -11,7 +11,7 @@ END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
 LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
-LANGUAGE ~Portuguese (Brazilian)~ ~pt_br~ ~tnt/tra/pt_br/game.tra~ ~tnt/tra/pt_br/setup.tra~
+LANGUAGE ~Portuguese~ ~portuguese~ ~tnt/tra/portuguese/game.tra~ ~tnt/tra/portuguese/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
