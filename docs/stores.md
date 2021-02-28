@@ -1,7 +1,7 @@
 ## Stores
 
 - [Stores always buy goods at the same (low) price](#stores-always-buy-goods-at-the-same-low-price)
-- [Close store steal exploit](#close-store-steal-exploit)
+- [Close shop steal exploit](#close-shop-steal-exploit)
 - [More ankheg armors by Taerom](#more-ankheg-armors-by-taerom)
 - [Limited stock](#limited-stock)
 
