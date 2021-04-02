@@ -16,6 +16,9 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.8
+- Fixed Nemphre's dialog being [messed up](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/43) by Bloodless Deeds.
+
 ### Version 8.7
 - [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/42) Improved Traps installation on EET.
 - Allowed [unstacking](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/40) potions and scrolls in IWDEE.
