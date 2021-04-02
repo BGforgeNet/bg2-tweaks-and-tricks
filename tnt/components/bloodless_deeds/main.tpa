@@ -2,6 +2,7 @@ COPY_EXISTING ~nemphr.dlg~ ~override~
     // tutu: TakePartyItem("MACAMUL1")
     // bg classic: TakePartyItem("AMUL13")
     // bgee: TakePartyItem("OHAMUL13")
+  DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH // bgt
       ~TakePartyItemNum("BGAMUL13",1)~
       ~TakePartyItem("BGAMUL13")~
