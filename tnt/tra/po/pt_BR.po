@@ -4,9 +4,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2021-03-13 14:13+0000\n"
+"PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/"
+"infinity-engine/tweaks-and-tricks/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,15 +121,15 @@ msgstr ""
 
 #: easy_traps.tra:115
 msgid "Acid arrow trap"
-msgstr ""
+msgstr "Armadilha da flecha de ácido"
 
 #: easy_traps.tra:116
 msgid "Biting arrow trap"
-msgstr ""
+msgstr "Armadilha da flecha mordedora"
 
 #: easy_traps.tra:117
 msgid "Detonation arrow trap"
-msgstr ""
+msgstr "Armadilha da flecha de detonação"
 
 #: easy_traps.tra:118
 msgid "Dispelling arrow trap"
@@ -136,27 +137,27 @@ msgstr ""
 
 #: easy_traps.tra:119
 msgid "Fire arrow trap"
-msgstr ""
+msgstr "Armadilha da flecha de fogo"
 
 #: easy_traps.tra:120
 msgid "Ice arrow trap"
-msgstr ""
+msgstr "Armadilha da flecha de gelo"
 
 #: easy_traps.tra:121
 msgid "Piercing arrow trap"
-msgstr ""
+msgstr "Armadilha da flecha perfurante"
 
 #: easy_traps.tra:122
 msgid "Monster Summoning trap"
-msgstr ""
+msgstr "Armadilha da invocação de monstro"
 
 #: easy_traps.tra:123
 msgid "Frost trap"
-msgstr ""
+msgstr "Armadilha de congelamento"
 
 #: easy_traps.tra:124
 msgid "Cloudkill trap"
-msgstr ""
+msgstr "Armadilha da nuvem da morte"
 
 #: easy_traps.tra:125
 msgid "Minor Lightning Bolt trap"
@@ -164,7 +165,7 @@ msgstr ""
 
 #: easy_traps.tra:126
 msgid "Underwater Bite trap"
-msgstr ""
+msgstr "Armadilha da mordida sub-aquática"
 
 #: easy_traps.tra:127
 msgid "Hallway Spikes trap"
@@ -176,43 +177,43 @@ msgstr ""
 
 #: easy_traps.tra:129
 msgid "Shadow Death trap"
-msgstr ""
+msgstr "Armadilha da sombra da morte"
 
 #: easy_traps.tra:130
 msgid "Guillotine trap"
-msgstr ""
+msgstr "Armadilha da guilhotina"
 
 #: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
 msgid "Lightning orb trap"
-msgstr ""
+msgstr "Armadilha do globo do raio"
 
 #: easy_traps.tra:134
 msgid "Crushing trap"
-msgstr ""
+msgstr "Armadilha do esmagamento"
 
 #: easy_traps.tra:135
 msgid "Skull trap"
-msgstr ""
+msgstr "Armadilha da caveira"
 
 #: easy_traps.tra:136
 msgid "Stone trap"
-msgstr ""
+msgstr "Armadilha da pedra"
 
 #: easy_traps.tra:137
 msgid "Summon Djinn trap"
-msgstr ""
+msgstr "Armadilha da invocação do Djinn"
 
 #: easy_traps.tra:138
 msgid "Spear trap"
-msgstr ""
+msgstr "Armadilha da lança"
 
 #: easy_traps.tra:139
 msgid "Slime trap"
-msgstr ""
+msgstr "Armadilha do lôdo"
 
 #: easy_traps.tra:140
 msgid "Dart trap"
-msgstr ""
+msgstr "Armadilha dos dardos"
 
 #: easy_traps.tra:141
 msgid "Vent trap"
@@ -220,7 +221,7 @@ msgstr ""
 
 #: easy_traps.tra:142
 msgid "Pendulum trap"
-msgstr ""
+msgstr "Armadilha do pêndulo"
 
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
@@ -230,17 +231,17 @@ msgstr "Morra sua morte final!"
 #: extended_soundsets.tra:38
 msgctxt "minsc57"
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr ""
+msgstr "Aaargh!  Matar diz Boo, matar faz Minsc!"
 
 #: extended_soundsets.tra:39
 msgctxt "g_ttmin1"
 msgid "Prepare to feel the wrath of my hamster!"
-msgstr ""
+msgstr "Prepare pra sentir a ira do meu hamster!"
 
 #: extended_soundsets.tra:40
 msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
-msgstr ""
+msgstr "Seu fim está próximo, lamente se você precisar!!"
 
 #: extended_soundsets.tra:41
 msgctxt "alora02"
@@ -252,52 +253,53 @@ msgstr ""
 #: extended_soundsets.tra:42
 msgctxt "quayl01"
 msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr ""
+msgstr "Caminhar só na estrada costeira! Quão esperto é isto?"
 
 #: extended_soundsets.tra:43
 msgctxt "khald02"
 msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr ""
+msgstr "Acalme-se querido, nós devemos proseguir c-c-com cuidado."
 
 #: extended_soundsets.tra:44
 msgctxt "g_ttyos1"
 msgid "Let us get this over with!"
-msgstr ""
+msgstr "Vamos pôr um fim nisto!"
 
 #: extended_soundsets.tra:45
 msgctxt "aerie95"
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr ""
+msgstr "Ahhh!!  Me ajuda!  me ajuda, por favooorr!!"
 
 #: extended_soundsets.tra:46
 msgctxt "aeri2540"
 msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr ""
+msgstr "Oh, isto vai machucar você MUITO mais do que eu!"
 
 #: extended_soundsets.tra:47
 msgctxt "aeri2541"
 msgid "By all that is decent, I fight!"
-msgstr ""
+msgstr "Por tudo que é decente, eu luto!"
 
 #: extended_soundsets.tra:48
 msgctxt "g_ttkor1"
 msgid "Killing is our business, and business be good!"
-msgstr ""
+msgstr "Matar é nosso negócio e o negócio é bom!"
 
 #: extended_soundsets.tra:49
+#, fuzzy
 msgctxt "g_ttkor2"
 msgid "Hahahaha!"
-msgstr ""
+msgstr "Hahahaha!"
 
 #: extended_soundsets.tra:50
 msgctxt "g_ttkel1"
 msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr ""
+msgstr "Em nome de Tyr nós seremos vitoriosos de uma vez por todas!"
 
 #: extended_soundsets.tra:51
 msgctxt "g_ttkag1"
 msgid "What can I do for you?"
-msgstr ""
+msgstr "O que eu posso fazer por você?"
 
 #: extended_soundsets.tra:52
 msgctxt "montr01"
@@ -319,27 +321,28 @@ msgstr ""
 #: extended_soundsets.tra:55
 msgctxt "nali2520"
 msgid "Evil falls today!"
-msgstr ""
+msgstr "O mal cai hoje!"
 
 #: extended_soundsets.tra:56
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
 msgstr ""
+"Se você lutar você morre!  Você não consegue se igualar com nosso poder!!"
 
 #: extended_soundsets.tra:57
 msgctxt "anom2539"
 msgid "Helm's fury upon you all!!"
-msgstr ""
+msgstr "Que a fúria de Helm caia sobre todos vocês!!"
 
 #: extended_soundsets.tra:58
 msgctxt "anom2540"
 msgid "By skill and might we shall prevail!!"
-msgstr ""
+msgstr "Pela técnica e poder nós prevaleceremos!!"
 
 #: extended_soundsets.tra:59
 msgctxt "g_ttval1"
 msgid "You will not pass!"
-msgstr ""
+msgstr "Vocês não passarão!"
 
 #: extended_soundsets.tra:60
 msgctxt "g_tthae1"
@@ -349,12 +352,12 @@ msgstr ""
 #: extended_soundsets.tra:61
 msgctxt "sarevo13"
 msgid "We children of Bhaal cannot be stopped!"
-msgstr ""
+msgstr "Nós, crianças de Bhaal não podemos ser paradas!"
 
 #: extended_soundsets.tra:62
 msgctxt "sarevo14"
 msgid "Ha!  This arena I know well!!"
-msgstr ""
+msgstr "Ha!  Esta arena eu conheço bem!!"
 
 #: extended_soundsets.tra:63
 msgctxt "sarevo35"
@@ -364,17 +367,17 @@ msgstr ""
 #: extended_soundsets.tra:64
 msgctxt "sarevo36"
 msgid "As you wish."
-msgstr ""
+msgstr "Como você desejar."
 
 #: extended_soundsets.tra:65
 msgctxt "sarevo37"
 msgid "Hmph.  Not what I would have done."
-msgstr ""
+msgstr "Hmph.  Não o que eu teria feito."
 
 #: extended_soundsets.tra:66
 msgctxt "sarevo38"
 msgid "So you say."
-msgstr ""
+msgstr "Assim você diz."
 
 #: extended_soundsets.tra:67
 msgctxt "garrk30"
@@ -382,21 +385,23 @@ msgid ""
 "My music is superior to yours, Eldoth, I was taught at the college in "
 "Berdusk."
 msgstr ""
+"Minha música é superior a sua, Eldoth, me foi ensinado na faculdade em "
+"Berdusk."
 
 #: extended_soundsets.tra:68
 msgctxt "garrk06"
 msgid "I can't stand by and just let this happen."
-msgstr ""
+msgstr "Eu não posso ficar parado e simplesmente deixar isto acontecer."
 
 #: extended_soundsets.tra:69
 msgctxt "g_ttbra1"
 msgid "By the ice breath of Auril!"
-msgstr ""
+msgstr "Pelo sopro gelado de Auril!"
 
 #: extended_soundsets.tra:70
 msgctxt "skiee04"
 msgid "You're the finest group of friends I've ever had."
-msgstr ""
+msgstr "Vocês são o melhor grupo de amigos que eu já tive."
 
 #: extended_soundsets.tra:71
 msgctxt "xzarr01"
@@ -411,17 +416,17 @@ msgstr ""
 #: extended_soundsets.tra:130
 msgctxt "g_ttaja1"
 msgid "You evil ways end here!"
-msgstr ""
+msgstr "Seus caminhos malignos terminam aqui!"
 
 #: extended_soundsets.tra:131
 msgctxt "g_ttaja2"
 msgid "Draw steel!"
-msgstr ""
+msgstr "Saque o aço!"
 
 #: extended_soundsets.tra:132
 msgctxt "g_ttkiv1"
 msgid "Defend yourselves!"
-msgstr ""
+msgstr "Defendam-se!"
 
 #: extended_soundsets.tra:133
 msgctxt "g_ttkel2"
@@ -430,15 +435,16 @@ msgstr ""
 
 #: game.tra:26
 msgid "Potion effect refreshed"
-msgstr ""
+msgstr "Efeito da poção atualizado"
 
 #: game.tra:27
 msgid "Protection scroll effect refreshed"
-msgstr ""
+msgstr "Efeito do pergaminho de proteção atualizado"
 
 #: game.tra:28
+#, fuzzy
 msgid "Thorius"
-msgstr ""
+msgstr "Thorius"
 
 #: game.tra:136
 msgid "Theater earnings are ready."
@@ -446,7 +452,7 @@ msgstr ""
 
 #: game.tra:137
 msgid "The apprentices must have finished the task. Time to check up on them."
-msgstr ""
+msgstr "Os aprendizes devem ter acabado a tarefa. Hora de dar uma olhada neles."
 
 #: game.tra:138
 msgid "The Grove awaits."
@@ -454,19 +460,19 @@ msgstr ""
 
 #: game.tra:139
 msgid "It's time to visit the cabin."
-msgstr ""
+msgstr "É hora de visitar a cabine."
 
 #: game.tra:140
 msgid "The people of de'Arnise keep need presence of their Lord."
-msgstr ""
+msgstr "O povo do Forte de'Arnise precisa da presença do seu senhor."
 
 #: game.tra:141
 msgid "Morul has prepared a new batch of potions."
-msgstr ""
+msgstr "O Morul preparou um novo lote de poções."
 
 #: game.tra:142
 msgid "The potions are on the table in the laboratory <SIRMAAM>."
-msgstr ""
+msgstr "As poções estão na mesa no laboratório <SIRMAAM>."
 
 #: game.tra:143
 msgid ""
