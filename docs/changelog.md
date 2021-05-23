@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.8](#version-88)
 - [Version 8.7](#version-87)
 - [Version 8.6](#version-86)
 - [Version 8.5](#version-85)
