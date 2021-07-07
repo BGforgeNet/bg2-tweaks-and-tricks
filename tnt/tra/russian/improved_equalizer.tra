@@ -1,42 +1,45 @@
-@1 = ~Long Sword: The Equalizer
-The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands. The Equalizer actively resists being used by characters of extreme alignments.
+@1 = ~Длинный меч: Уравнитель
+Возраст этого меча настолько велик, что тайна его происхождения потеряна во тьме веков, но отметки подсказывают, что он мог быть создан для служения Хелму. Также называемый «Мечом нейтралитета», он, похоже, предназначен для поиска и уничтожения крайностей, для приближения вселенной к гармоничному балансу. Чем дальше жертва отходит от истинного равновесия, тем больший урон она получит. Чем ближе владелец к истинному равновесию, тем сильнее меч в его руках. Уравнитель активно сопротивляется использованию себя персонажами с крайним мировоззрением.
 
-In addition, the sword allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.
+Кроме того, меч позволяет своему владельцу 3 раза в день узнавать мировоззрение ближайших существ.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Enchantment: +4
+Свойства экипировки:
+– Иммунитет к очарованию и замешательству
 
-Combat Abilities:
-  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.
-  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.
+Боевые возможности:
+– Считается оружием +4
+– 50% шанса замешательства противника доброго или злого мировоззрения при попадении на 2 раунда (спасбросок против заклинания). Только если носитель не доброго и не злого мировоззрения.
+– 50% шанса наложить ослепление или хаос на законопослушного или хаотичного противника на 2 раунда (спасбросок против дыхания). Только если носитель не доброго и не злого мировоззрения.
 
-THAC0 & Damage:
-  vs True Neutral: +0 to hit, +0 damage
-  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 to hit, +2 damage
-  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 damage
+ТНАС0 и урон:
+  против истинно-нейтральных: +0 к атаке, + 0 к урону
+  против хаотично/законопослушных нейтральных, нейтрально добрых/злых: +2 к атаке, + 2 к урону
+  против хаотично добрых/злых, законопослушных добрых/злых: +4 к атаке, + 4 к урону
 
-Extra bonuses based on wielder's alignment:
-  True Neutral: +4 to hit, +4 damage
-  Non-extreme alignments: +2 to hit, +2 damage
-  Extreme alignments: -20 to hit, -20 damage.
+Дополнительные бонусы в зависимости от мировоззрения носителя:
+  Истинно нейтральный: +4 к атаке, + 4 к урону
+  Хаотично/законопослушный нейтральный, нейтрально добрый/злой: +2 к атаке, + 2 к урону
+  Остальные мировоззрения: -20 к атаке, - 20 к урону
 
-All combat effects are independent and stack with each other.
+Все боевые эффекты независимы друг от друга и работают совместно.
 
-Equipped Abilities: Immunity to Charm and Confusion
+Свойства зарядов:
+  Узнать характер 3 раза в день.
 
-Abilities:
-  Know Alignment 3 times per day.
+Тип урона: рубящий
+Фактор скорости: 1
+Навык: длинный меч
+Тип: одноручное
+Требования:
+ Сила 6
 
-Damage type: slashing
-Weight: 3
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: 1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
-@2 = ~Two things, me friend. It will cost ye 12,500 gp for the work, no less, and without an apprentice, ye'll have to stay here a full day and help me run the forge.~
+Вес: 3
+
+Не используется:
+ Друид
+ Священник
+ Маг
+ Хозяин зверей~
+@2 = ~Две вещи, друг мой. Работа обойдется тебе в 12500 монет, не меньше, и из-за отсутствия подмастерья тебе придется остаться здесь на целый день и помогать мне управлять кузницей.~
