@@ -37,6 +37,11 @@ Beregost, 2080, 2925 => 25 // Firebead's house
 
 HighHedge, 3655, 1474 => 26 // Kivan
 
+MutaminsGarden, 433, 1467 => 27 // Korax
+MutaminsGarden, 3056, 1937 => 28 // Kirian's band
+MutaminsGarden, 1991, 994 => 29 // Mutamin
+MutaminsGarden, 1426, 821 => 30 // Tamah
+
 END
 
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
