@@ -834,6 +834,22 @@ msgstr ""
 msgid "Kivan"
 msgstr ""
 
+#: more_map_notes.tra:27
+msgid "Korax"
+msgstr ""
+
+#: more_map_notes.tra:28
+msgid "Kirian's band"
+msgstr ""
+
+#: more_map_notes.tra:29
+msgid "Mutamin"
+msgstr ""
+
+#: more_map_notes.tra:30
+msgid "Tamah"
+msgstr ""
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr ""
