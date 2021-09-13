@@ -14,7 +14,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Algernon's cloak: usable once per day](#algernons-cloak-usable-once-per-day)
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
-- [Distinct color for Perdue's sword](distinct-color-for-perdues-sword)
+- [Distinct items](distinct-items)
 - [Really PnP protection items](#really-pnp-protection-items)
 
 ### Hassle-free ammo
@@ -80,8 +80,13 @@ Currently affects:
 - Periart of Proof against Poison
 - Protection from Poison scrolls
 
-### Distinct color for Perdue's sword
-Perdue's sword is annoying to search for, because it looks just like any other short sword. This simply gives it another color, to make it stand out.
+### Distinct items
+Some quests require annoying search for items that don't stand out in any way. Example: Perdue's sword looks just like any other short sword.
+This simply gives such items slightly different color, to make them stand out.
+
+Currently includes:
+- Perdue's sword
+- Nester's dagger
 
 ### Really PnP protection items
 BG2 always restricted wearing rings of protection (and other similar jewelry) with magical armor. That is a crude way to enforce a PnP rule saying that their bonuses shouldn't stack. Gameplay-wise, though, it leads to much inventory tetris a frustration. There are tweaks to address it, but they work in an unperfect way, still forcing the tetris or stacking AC.

@@ -1,0 +1,12 @@
+
+// perdue's sword
+COPY ~%components%/distinct_items/g_perdue.bam~ override
+COPY_EXISTING ~sw1h17.itm~ override
+  WRITE_ASCIIT ITM_inventory_icon ~g_perdue~
+BUT_ONLY
+
+// nester's dagger
+COPY ~%components%/distinct_items/g_nester.bam~ override
+COPY_EXISTING ~dagg06.itm~ override
+  WRITE_ASCIIT ITM_inventory_icon ~g_nester~
+BUT_ONLY

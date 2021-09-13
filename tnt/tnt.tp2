@@ -279,10 +279,10 @@ REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_equalizer~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
-BEGIN @261 /* Distinct color for Perdue's sword */
+BEGIN @261 /* Distinct items */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
-INCLUDE ~%components%/perdue_sword/main.tpa~
+INCLUDE ~%components%/distinct_items/main.tpa~
 
 BEGIN @208 /* Working protection from poison */
 GROUP @200 /* Items */
