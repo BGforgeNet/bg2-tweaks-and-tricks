@@ -18,6 +18,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_power BEGIN
   ring07 => 2
   ring25 => 1
   ring41 => 3
+
+  // thalantyr item upgrade
+  thclck01 => 1 // Improved Cloak of Non-Detection +1
+  thclck03 => 2 // Improved Cloak of Balduran +2
+  thring01 => 1 // Ring of Free Action +1
+  thring02 => 2 // RoFA +2
 END
 
 ACTION_PHP_EACH protection_power AS item => power BEGIN
@@ -41,6 +47,42 @@ ACTION_PHP_EACH protection_power AS item => power BEGIN
     END
   BUT_ONLY IF_EXISTS
 END
+
+
+// same as above, but without AC
+ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_opcodes_saves BEGIN
+  OPCODE_save_vs_death_mod => 1
+  OPCODE_save_vs_wands_mod => 1
+  OPCODE_save_vs_petrification_polymorph_mod => 1
+  OPCODE_save_vs_breath_weapons_mod => 1
+  OPCODE_save_vs_spells_mod => 1
+END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_power_saves BEGIN
+  // thalantyr item upgrade
+  thamul01 => 1 // Improved Shield Amulet: sets AC instead of giving a bonus
+END
+ACTION_PHP_EACH protection_power_saves AS item => power BEGIN
+  COPY_EXISTING ~%item%.itm~ override
+    PHP_EACH protection_opcodes_saves AS opcode => int BEGIN
+      LPF DELETE_EFFECT INT_VAR match_opcode = EVAL ~%%opcode%%~ END
+    END
+    FOR (i=1;i<=power;++i) BEGIN
+      PHP_EACH protection_opcodes_saves AS opcode => int BEGIN
+        LPF ADD_ITEM_EQEFFECT
+          INT_VAR
+            opcode = EVAL ~%%opcode%%~
+            target = TARGET_FX_self
+            timing = TIMING_while_equipped
+            parameter1 = 1 // amount
+            savingthrow = FLAG_SAVINGTHROW_limit_effect_stacking_Ex
+            special = (effect_stacking_id_base + i) // opcodes not overlapping with Chaos Shield, so no problem
+            probability1 = (100 + i)  // this is necessary to prevent engine from confusing which effects belong to which items. Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
+        END
+      END
+    END
+  BUT_ONLY IF_EXISTS
+END
+// end same
 
 COPY_EXISTING ~itemexcl.2da~ override
   READ_2DA_ENTRIES_NOW itemexcl 2
