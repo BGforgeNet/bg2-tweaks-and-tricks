@@ -1014,6 +1014,58 @@ msgstr ""
 msgid "Tamah"
 msgstr ""
 
+#: more_map_notes.tra:31
+#, fuzzy
+#| msgid "Solianna"
+msgid "Corianna"
+msgstr "Солианна"
+
+#: more_map_notes.tra:32
+msgid "Hobgoblin camp"
+msgstr ""
+
+#: more_map_notes.tra:33
+msgid "Portalbendarwinden"
+msgstr ""
+
+#: more_map_notes.tra:34
+#, fuzzy
+#| msgid "Basilisk"
+msgid "Basillus"
+msgstr "Василиск"
+
+#: more_map_notes.tra:35
+msgid "Waterfall"
+msgstr ""
+
+#: more_map_notes.tra:36
+msgid "Albert"
+msgstr ""
+
+#: more_map_notes.tra:37
+msgid "Rufie"
+msgstr ""
+
+#: more_map_notes.tra:38
+msgid "Samuel"
+msgstr ""
+
+#: more_map_notes.tra:39
+msgid "Sarhedra"
+msgstr ""
+
+#: more_map_notes.tra:40
+msgid "Fahrington"
+msgstr ""
+
+#: more_map_notes.tra:41
+msgid "Faldorn"
+msgstr ""
+
+#: more_map_notes.tra:42
+msgid "Ajantis"
+msgstr ""
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr ""
@@ -2063,9 +2115,6 @@ msgstr ""
 
 #~ msgid "Sunin"
 #~ msgstr "Сунин"
-
-#~ msgid "Basilisk"
-#~ msgstr "Василиск"
 
 #~ msgid "Uh, this one is locked."
 #~ msgstr "Эм, это заперто."
