@@ -47,6 +47,23 @@ Temple, 4614, 3451 => 31 // Corianna
 NorthNashkelRoad, 3275, 728 => 32 // Hobgoblin camp
 NorthNashkelRoad, 4087, 2793 => 33 // Portalbendarwinden
 
+RedCanyons, 4249, 279 => 34 // Basillus
+
+FishermansLake, 1781, 3331 => 35 // Waterfall
+
+FireLeafForest, 1226, 845 => 36 // Albert
+FireLeafForest, 3804, 695 => 37 // Rufie
+
+GibberlingMountains, 3178, 2388 => 38 // Samuel
+
+LonelyPeaks, 4755, 1714 => 39 // Sarhedra
+
+SpiderWood, 1485, 1069 => 40 // Fahrington
+
+CloakwoodDruids, 651, 2886 => 41 // Faldorn
+
+FishingVillage, 1577, 3133 => 42 // Ajantis
+
 END
 
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
