@@ -18,7 +18,7 @@ All traps will be detected nearly instantly, provided that the detecting charact
 Increases the range to line of sight.
 
 ### Trap reminders
-A detected trap will display a float, show it's type, or just "Trap", based on selection.
+A detected trap will display a float, show its type, or just "Trap", based on selection.
 
 ### Trap intuition
 Before a trap is "detected" by thief skill, a party member will "sense" it: notice that something's wrong, and possibly take an action based on that.
