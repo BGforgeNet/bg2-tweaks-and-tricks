@@ -1038,7 +1038,7 @@ msgid "Improved Equalizer"
 msgstr ""
 
 #: setup.tra:261
-msgid "Distinct color for Perdue's sword"
+msgid "Distinct items"
 msgstr ""
 
 #: setup.tra:300
