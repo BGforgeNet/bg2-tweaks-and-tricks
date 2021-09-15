@@ -7,9 +7,13 @@ OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
 OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
 
-OUTER_SPRINT traps_minion ~g_traps~
-LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~%traps_minion%~ END
-COMPILE ~%comp_baf_dir%/%traps_minion%.baf~
+// Global minion for autopause. Traps can't PauseGame themsselves, and ActionOverride on PC will interrupt PC actions.
+OUTER_SPRINT traps_minion_pause ~g_traps1~
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion_pause%~ script = ~%traps_minion_pause%~ END
+COMPILE ~%comp_baf_dir%/%traps_minion_pause%.baf~
+// temp minion for DisplayString centered on actual trap
+OUTER_SPRINT traps_minion_notification ~g_traps2~
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion_notification%~ END
 
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
