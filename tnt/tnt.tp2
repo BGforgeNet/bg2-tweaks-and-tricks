@@ -242,15 +242,15 @@ GROUP @200 /* Items */
 REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee iwdee~) @130 /* Requires Classic ToB or BG(2)EE or IWDEE engine */
 INCLUDE ~%components%/potions_no_stack/main.tpa~
 
-BEGIN @206 //AoE
-GROUP @200 /* Items */
-SUBCOMPONENT @205 /* Sensible wand of frost */
-OUTER_SET cone = 1
-INCLUDE ~%components%/wand_of_frost/main.tpa~
-BEGIN @207 //Single target
+BEGIN @206 // Single target
 GROUP @200 /* Items */
 SUBCOMPONENT @205 /* Sensible wand of frost */
 OUTER_SET cone = 0
+INCLUDE ~%components%/wand_of_frost/main.tpa~
+BEGIN @207 // AoE
+GROUP @200 /* Items */
+SUBCOMPONENT @205 /* Sensible wand of frost */
+OUTER_SET cone = 1
 INCLUDE ~%components%/wand_of_frost/main.tpa~
 
 BEGIN @223 /* Potion of really mirrored eyes */
