@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.9](#version-89)
 - [Version 8.8](#version-88)
 - [Version 8.7](#version-87)
 - [Version 8.6](#version-86)
@@ -16,6 +17,13 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.9
+- Fixed swapped Wand of Frost subcomponents.
+- Improved Traps doesn't bloat savegames anymore.
+- Recolored Nester's dagger in addition to Perdue's sword, the component is renamed to "Distinct items".
+- PnP protection items now compatible with Thalantyr Item Upgrade (certain items were stacking bonuses, now they don't).
+- More map notes added.
 
 ### Version 8.8
 - Fixed Nemphre's dialog being [messed up](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/43) by Bloodless Deeds.
