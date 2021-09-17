@@ -21,7 +21,7 @@
 
 ### Version 8.10
 - Improved Traps: fixed a few traps not giving out notifications in BG1 part of BGT.
-- Improved Traps: fixed sometimes being unabled to sleep after disarming traps and switching areas.
+- Improved Traps: fixed sometimes being unable to sleep after disarming traps and switching areas.
 
 ### Version 8.9
 - Fixed swapped Wand of Frost subcomponents.
