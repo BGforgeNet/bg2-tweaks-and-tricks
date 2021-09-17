@@ -97,6 +97,7 @@ THEN
   RESPONSE #1
     MoveGlobal("MYAREA","%traps_minion_pause%", [0.0])
     ActionOverride("%traps_minion_pause%", PauseGame())
+    ActionOverride("%traps_minion_pause%", DestroySelf())
     Continue()
 END
 
