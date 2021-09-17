@@ -92,20 +92,44 @@ BEGIN
   END
 END
 
-DEFINE_PATCH_FUNCTION get_spell_res_from_baf
-  INT_VAR spell_index_buffer = 0
+DEFINE_PATCH_FUNCTION get_spell_res_from_baf_buffer
   RET spell_res
 BEGIN
-  start	= INDEX_BUFFER (~,~ spell_index_buffer)
-  PATCH_IF start != ~-1~	BEGIN
-    end	= INDEX_BUFFER	(~)~ start)
-    PATCH_IF end != ~-1~	BEGIN
-      READ_ASCII (start + 1) label (end - start - 1)
-      PATCH_IF FILE_CONTAINS_EVALUATED (~spell.ids~	~[ %TAB%]%label%[ %TAB%%WNL%%MNL%%LNL%$]~)	BEGIN
-        LPF	RES_NUM_OF_SPELL_NAME	STR_VAR	spell_name = EVAL ~%label%~	RET	spell_res	END	TO_UPPER spell_res
-      END ELSE BEGIN spell_res = spell TO_UPPER spell_res END
+  SPRINT spell_res ~~
+
+  // Symbolic
+  res = 0
+  spell = INDEX_BUFFER ( CASE_INSENSITIVE EVALUATE_REGEXP ~[ %TAB%^]\(Spell\|ForceSpell\|ReallyForceSpell\|ApplySpell\|SpellNoDec\|ReallyForceSpellDead\)\(Point\)? ?(.+,~ )
+
+  // RES
+  PATCH_IF spell == "-1" BEGIN
+    spell = INDEX_BUFFER ( CASE_INSENSITIVE EVALUATE_REGEXP ~[ %TAB%^]\(Spell\|ForceSpell\|ReallyForceSpell\|ApplySpell\|SpellNoDec\|ReallyForceSpellDead\)[\(Point\)]?RES ?(~)
+    PATCH_IF spell != "-1" BEGIN res = 1 END
+  END
+
+  PATCH_IF spell != "-1" BEGIN
+    PATCH_IF res == 0 BEGIN // Symbolic
+      start = INDEX_BUFFER (~,~ spell)
+      PATCH_IF start != "-1" BEGIN
+        end = INDEX_BUFFER (~)~ start)
+        PATCH_IF end != "-1" BEGIN
+          READ_ASCII (start + 1) label (end - start - 1)
+          LPF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = EVAL ~%label%~ RET spell_res END
+        END
+      END
+    END ELSE BEGIN // RES
+      start = INDEX_BUFFER ( ~(~ spell)
+      PATCH_IF start != "-1" BEGIN
+        end = INDEX_BUFFER ( ~,~ start)
+        PATCH_IF end != "-1" BEGIN
+          READ_ASCII (start + 1) label (end - start - 1)
+          INNER_PATCH_SAVE spell_res ~%label%~ BEGIN REPLACE_TEXTUALLY ~"~ ~~ END
+        END
+      END
     END
   END
+
+  TO_UPPER spell_res
 END
 
 DEFINE_PATCH_FUNCTION calculate_trap_warning_string

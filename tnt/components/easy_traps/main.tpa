@@ -73,11 +73,11 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
           COPY_EXISTING ~%s%.bcs~ override
             DECOMPILE_AND_PATCH BEGIN
               triggered = INDEX_BUFFER (CASE_INSENSITIVE EXACT_MATCH ~%trigger%~ )
-              spell = INDEX_BUFFER (CASE_INSENSITIVE EVALUATE_REGEXP ~[ %TAB%^]\(Spell\|ForceSpell\|ReallyForceSpell\|ApplySpell\|SpellNoDec\|ReallyForceSpellDead\)\(Point\)? ?(.+,~ )
-              PATCH_IF triggered != "-1" AND spell != "-1" BEGIN
+              LPF get_spell_res_from_baf_buffer RET spell_res END
+
+              PATCH_IF triggered != "-1" AND NOT (~%spell_res%~ STRING_EQUAL ~~) BEGIN
                 valid_trap_script = 1
                 trap_index += 1  // trap index inside area, to distinguish local vars
-                LPF get_spell_res_from_baf INT_VAR spell_index_buffer = spell RET spell_res END
                 PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) BEGIN
                   LPF GET_UNIQUE_FILE_NAME
                     STR_VAR
@@ -128,6 +128,8 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                 END ELSE BEGIN
                   SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~)
                 END
+              END ELSE BEGIN
+                PATCH_PRINT ~script %s% is not a normal trap. triggered=%triggered%, spell_res="%spell_res%"~
               END
             END
           BUT_ONLY
