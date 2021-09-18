@@ -83,3 +83,9 @@ COPY_EXISTING ~clck22.itm~  ~override~
   END
 
 BUT_ONLY
+
+// set unidentified, 1 charge
+COPY_EXISTING ~dezkie.cre~  ~override~
+  REMOVE_CRE_ITEM ~clck22~
+  ADD_CRE_ITEM ~clck22~ #1 #0 #0 ~none~ ~cloak~
+BUT_ONLY
