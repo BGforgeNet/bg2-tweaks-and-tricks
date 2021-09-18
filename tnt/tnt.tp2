@@ -264,7 +264,7 @@ INCLUDE ~%components%/goodberries_stacking/main.tpa~
 
 BEGIN @250 /* Improved Shandalar's cloak */
 GROUP @200 /* Items */
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~clck22.itm~ @251 /* Shandalar's cloak not present in game */
+REQUIRE_PREDICATE GAME_INCLUDES ~totsc~ @131 /* Requires TotSC content */
 OUTER_SPRINT comp_name ~shandalars_cloak~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 

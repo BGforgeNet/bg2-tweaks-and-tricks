@@ -10,6 +10,7 @@
 @128 = ~Requires Classic ToB engine~
 @129 = ~BGT only~
 @130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
+@131 = ~Requires TotSC content~
 
 @200 = ~Items~
 @201 = ~Hassle-free ammo~
@@ -34,7 +35,6 @@
 @243 = ~Both of the above options~
 
 @250 = ~Improved Shandalar's cloak~
-@251 = ~Shandalar's cloak not present in game~
 @252 = ~Algernon's cloak: usable once per day~
 
 @260 = ~Improved Equalizer~
