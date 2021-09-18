@@ -10,6 +10,7 @@
 @128 = ~Requires Classic ToB engine~
 @129 = ~Только для BGT~
 @130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
+@131 = ~Requires TotSC content~
 @200 = ~Предметы~
 @201 = ~Более удобные снаряды~
 @202 = ~Убрать визуальный эффект размытия с предметов~
@@ -27,7 +28,6 @@
 @242 = ~Сделать топоры рубящими, а молоты крушащими~
 @243 = ~И то, и другое~
 @250 = ~Improved Shandalar's cloak~
-@251 = ~Shandalar's cloak not present in game~
 @252 = ~Algernon's cloak: usable once per day~
 @260 = ~Improved Equalizer~
 @261 = ~Distinct items~
