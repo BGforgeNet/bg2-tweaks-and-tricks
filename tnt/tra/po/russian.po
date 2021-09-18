@@ -1136,6 +1136,12 @@ msgstr "Только для BGT"
 msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
 msgstr "Требует движок ToB или EE"
 
+#: setup.tra:131
+#, fuzzy
+#| msgid "Requires ToB or EE engine"
+msgid "Requires TotSC content"
+msgstr "Требует движок ToB или EE"
+
 #: setup.tra:200
 msgid "Items"
 msgstr "Предметы"
@@ -1202,10 +1208,6 @@ msgstr "И то, и другое"
 
 #: setup.tra:250
 msgid "Improved Shandalar's cloak"
-msgstr ""
-
-#: setup.tra:251
-msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252

@@ -954,6 +954,10 @@ msgstr ""
 msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
 msgstr ""
 
+#: setup.tra:131
+msgid "Requires TotSC content"
+msgstr ""
+
 #: setup.tra:200
 msgid "Items"
 msgstr ""
@@ -1016,10 +1020,6 @@ msgstr ""
 
 #: setup.tra:250
 msgid "Improved Shandalar's cloak"
-msgstr ""
-
-#: setup.tra:251
-msgid "Shandalar's cloak not present in game"
 msgstr ""
 
 #: setup.tra:252
