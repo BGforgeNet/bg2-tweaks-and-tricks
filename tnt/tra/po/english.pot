@@ -1378,25 +1378,14 @@ msgid ""
 msgstr ""
 
 #: shandalars_cloak.tra:1
-msgid "Shandalar's Cloak"
-msgstr ""
-
-#: shandalars_cloak.tra:2
 msgid "Cloak of Arachnida"
 msgstr ""
 
-#: shandalars_cloak.tra:3
+#: shandalars_cloak.tra:2
 msgid ""
-"This cloak was originally stolen from Shandalar by the powerful mage Semia, "
-"presumably for the powerful magics woven into the fabric. How it has come to"
-" be in your possession and the fate of Semia are complete mysteries, and "
-"ones not likely to be solved. Much like the exact workings of the cloak, "
-"which would remain a mystery even to a powerful mage."
-msgstr ""
-
-#: shandalars_cloak.tra:4
-msgid ""
-"This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
+"This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.\n"
+"\n"
+"The cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
 "\n"
 "In addition, the cloak allows to cast Web once per day, and provides extra protection from poison.\n"
 "\n"
