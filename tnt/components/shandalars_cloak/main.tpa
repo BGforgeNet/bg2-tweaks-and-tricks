@@ -6,10 +6,10 @@ COPY_EXISTING ~%WIZARD_WEB%.spl~ override
 BUT_ONLY
 
 COPY_EXISTING ~clck22.itm~  ~override~
-  SAY NAME1 @1
-  SAY NAME2 @2
-  SAY UNIDENTIFIED_DESC @3
-  SAY DESC @4
+  READ_STRREF NAME2 name_shandalars_cloak
+  SAY NAME1 ~%name_shandalars_cloak%~
+  SAY NAME2 @1
+  SAY DESC @2
   WRITE_SHORT ITM_lore_to_id 170
   WRITE_LONG ITM_usability_flags 0
 
