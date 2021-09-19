@@ -82,16 +82,12 @@ END
 //Thorius Candlekeep
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   COPY ~%comp_dir%/g_bag.cre~ ~override/g_bag.cre~
-  SAY NAME1 @28
-  SAY NAME2 @28
+  SAY CRE_name @28
+  SAY CRE_tooltip @28
   WRITE_ASCII DEATHVAR ~G_BAGS~ #32
   WRITE_ASCII DIALOG ~G_BAGS~ #8
   COMPILE EVAL ~%comp_dir%/g_bag.d~
-
-  ACTION_IF GAME_IS ~bgee~ BEGIN OUTER_SPRINT candle_area ~ar2600~ END //bgee
-    ELSE BEGIN OUTER_SPRINT candle_area ~ar0015~ END //bgt
-  
-  EXTEND_BOTTOM ~%candle_area%.bcs~ ~%comp_dir%/candle.baf~ EVAL
+  EXTEND_BOTTOM ~%Candlekeep%.bcs~ ~%comp_dir%/candle.baf~ EVAL
 END
 
 ACTION_IF GAME_INCLUDES ~bg2~ BEGIN //Picture in Irenicus dungeon
