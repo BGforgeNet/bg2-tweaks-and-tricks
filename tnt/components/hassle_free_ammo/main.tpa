@@ -27,7 +27,7 @@ OUTER_FOR (i=0;i<items;i+=1) BEGIN
       WRITE_SHORT (ab_off + ITM_HEAD_thac0_bonus) 0
 
       //add strength bonus to axe, remove from others
-      PATCH_IF (~%item%~ STRING_EQUAL ~axe~) BEGIN
+      PATCH_IF (~%item%~ STRING_EQUAL ~axe~) OR ( (~%item%~ STRING_EQUAL ~dagg~) AND ENGINE_IS ~bgee bg2ee~ ) BEGIN
         WRITE_LONG (ab_off + ITM_HEAD_flags) (THIS BAND FLAG_HEAD_add_strength_bonus)
       END ELSE BEGIN
         WRITE_LONG (ab_off + ITM_HEAD_flags) (THIS BAND BNOT FLAG_HEAD_add_strength_bonus)
