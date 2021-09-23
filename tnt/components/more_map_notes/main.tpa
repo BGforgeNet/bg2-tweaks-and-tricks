@@ -43,13 +43,14 @@ MutaminsGarden, 1991, 994 => 29 // Mutamin
 MutaminsGarden, 1426, 821 => 30 // Tamah
 
 Temple, 4614, 3451 => 31 // Corianna
+Temple, 3008, 1281 => 48 // Galileus
 
 NorthNashkelRoad, 3275, 728 => 32 // Hobgoblin camp
 NorthNashkelRoad, 4087, 2793 => 33 // Portalbendarwinden
 
 RedCanyons, 4249, 279 => 34 // Basillus
 
-FishermansLake, 1781, 3331 => 35 // Waterfall
+DryadFalls, 1781, 3331 => 35 // Waterfall
 
 FireLeafForest, 1226, 845 => 36 // Albert
 FireLeafForest, 3804, 695 => 37 // Rufie
@@ -63,6 +64,14 @@ SpiderWood, 1485, 1069 => 40 // Fahrington
 CloakwoodDruids, 651, 2886 => 41 // Faldorn
 
 FishingVillage, 1577, 3133 => 42 // Ajantis
+
+ShipwrecksCoast, 2889, 2081 => 43 // Surgeon
+ShipwrecksCoast, 2010, 1281 => 44 // Mad Arcand
+
+Lighthouse, 3510, 1660 => 45 // Pallonia
+Lighthouse, 3498, 2959 => 46 // Arkushule
+Lighthouse, 3746, 2394 => 47 // Safana
+
 
 END
 
