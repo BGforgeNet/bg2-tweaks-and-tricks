@@ -898,6 +898,30 @@ msgstr ""
 msgid "Ajantis"
 msgstr ""
 
+#: more_map_notes.tra:43
+msgid "Surgeon"
+msgstr ""
+
+#: more_map_notes.tra:44
+msgid "Mad Arcand"
+msgstr ""
+
+#: more_map_notes.tra:45
+msgid "Pallonia"
+msgstr ""
+
+#: more_map_notes.tra:46
+msgid "Arkushule"
+msgstr ""
+
+#: more_map_notes.tra:47
+msgid "Safana"
+msgstr ""
+
+#: more_map_notes.tra:48
+msgid "Galileus"
+msgstr ""
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr ""
