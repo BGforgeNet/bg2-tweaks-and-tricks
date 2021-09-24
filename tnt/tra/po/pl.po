@@ -1,0 +1,1821 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 1970-1-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: bgforge_po v.1.0.0\n"
+
+#: easy_traps.tra:1
+msgid "Uh, I smell a trap."
+msgstr ""
+
+#: easy_traps.tra:2
+msgid "Careful. Something's not quite right here."
+msgstr ""
+
+#: easy_traps.tra:3
+msgid "Stop! It's a trap!"
+msgstr ""
+
+#: easy_traps.tra:4
+msgid "I sense a trap!"
+msgstr ""
+
+#: easy_traps.tra:5
+msgid "Hmm... We should tread lightly here."
+msgstr ""
+
+#: easy_traps.tra:6
+msgid "Wait, wait. Let's take a closer look at this."
+msgstr ""
+
+#: easy_traps.tra:7
+msgid "I sense danger."
+msgstr ""
+
+#: easy_traps.tra:8
+msgid "Watch your step. Looks suspicious."
+msgstr ""
+
+#: easy_traps.tra:9
+msgid "Hold on. See this?"
+msgstr ""
+
+#: easy_traps.tra:98
+msgid "Trap"
+msgstr ""
+
+#: easy_traps.tra:99
+msgid "trap"
+msgstr ""
+
+#: easy_traps.tra:100
+msgid "Unknown"
+msgstr ""
+
+#: easy_traps.tra:101
+msgid "Hold Person trap"
+msgstr ""
+
+#: easy_traps.tra:102
+msgid "Silence trap"
+msgstr ""
+
+#: easy_traps.tra:103
+msgid "Call Lightning trap"
+msgstr ""
+
+#: easy_traps.tra:104
+msgid "Miscast Magic trap"
+msgstr ""
+
+#: easy_traps.tra:105
+msgid "Flamestrike trap"
+msgstr ""
+
+#: easy_traps.tra:106
+msgid "Chromatic orb trap"
+msgstr ""
+
+#: easy_traps.tra:107
+msgid "Confusion trap"
+msgstr ""
+
+#: easy_traps.tra:108
+msgid "Dire Charm trap"
+msgstr ""
+
+#: easy_traps.tra:109
+msgid "Fireball trap"
+msgstr ""
+
+#: easy_traps.tra:110
+msgid "Lightning bolt trap"
+msgstr ""
+
+#: easy_traps.tra:111
+msgid "Magic Missile trap"
+msgstr ""
+
+#: easy_traps.tra:112
+msgid "Stinking Cloud trap"
+msgstr ""
+
+#: easy_traps.tra:113
+msgid "Arrow trap"
+msgstr ""
+
+#: easy_traps.tra:114
+msgid "Slaying arrow trap"
+msgstr ""
+
+#: easy_traps.tra:115
+msgid "Acid arrow trap"
+msgstr ""
+
+#: easy_traps.tra:116
+msgid "Biting arrow trap"
+msgstr ""
+
+#: easy_traps.tra:117
+msgid "Detonation arrow trap"
+msgstr ""
+
+#: easy_traps.tra:118
+msgid "Dispelling arrow trap"
+msgstr ""
+
+#: easy_traps.tra:119
+msgid "Fire arrow trap"
+msgstr ""
+
+#: easy_traps.tra:120
+msgid "Ice arrow trap"
+msgstr ""
+
+#: easy_traps.tra:121
+msgid "Piercing arrow trap"
+msgstr ""
+
+#: easy_traps.tra:122
+msgid "Monster Summoning trap"
+msgstr ""
+
+#: easy_traps.tra:123
+msgid "Frost trap"
+msgstr ""
+
+#: easy_traps.tra:124
+msgid "Cloudkill trap"
+msgstr ""
+
+#: easy_traps.tra:125
+msgid "Minor Lightning Bolt trap"
+msgstr ""
+
+#: easy_traps.tra:126
+msgid "Underwater Bite trap"
+msgstr ""
+
+#: easy_traps.tra:127
+msgid "Hallway Spikes trap"
+msgstr ""
+
+#: easy_traps.tra:128
+msgid "Muck trap"
+msgstr ""
+
+#: easy_traps.tra:129
+msgid "Shadow Death trap"
+msgstr ""
+
+#: easy_traps.tra:130
+msgid "Guillotine trap"
+msgstr ""
+
+#: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
+msgid "Lightning orb trap"
+msgstr ""
+
+#: easy_traps.tra:134
+msgid "Crushing trap"
+msgstr ""
+
+#: easy_traps.tra:135
+msgid "Skull trap"
+msgstr ""
+
+#: easy_traps.tra:136
+msgid "Stone trap"
+msgstr ""
+
+#: easy_traps.tra:137
+msgid "Summon Djinn trap"
+msgstr ""
+
+#: easy_traps.tra:138
+msgid "Spear trap"
+msgstr ""
+
+#: easy_traps.tra:139
+msgid "Slime trap"
+msgstr ""
+
+#: easy_traps.tra:140
+msgid "Dart trap"
+msgstr ""
+
+#: easy_traps.tra:141
+msgid "Vent trap"
+msgstr ""
+
+#: easy_traps.tra:142
+msgid "Pendulum trap"
+msgstr ""
+
+#: extended_soundsets.tra:37
+msgctxt "g_ttjah1"
+msgid "Die your final death!"
+msgstr ""
+
+#: extended_soundsets.tra:38
+msgctxt "minsc57"
+msgid "Aaargh!  Kill says Boo, kill does Minsc!"
+msgstr ""
+
+#: extended_soundsets.tra:39
+msgctxt "g_ttmin1"
+msgid "Prepare to feel the wrath of my hamster!"
+msgstr ""
+
+#: extended_soundsets.tra:40
+msgctxt "g_ttedw1"
+msgid "Your end is near at hand, wail if you must!!"
+msgstr ""
+
+#: extended_soundsets.tra:41
+msgctxt "alora02"
+msgid ""
+"Blast and bother!  These locks have always given me trouble!  Trouble they "
+"are!"
+msgstr ""
+
+#: extended_soundsets.tra:42
+msgctxt "quayl01"
+msgid "Walking alone on the Coastway road!  How smart is this?"
+msgstr ""
+
+#: extended_soundsets.tra:43
+msgctxt "khald02"
+msgid "Calm yourself dear, we must proceed c-c-carefully."
+msgstr ""
+
+#: extended_soundsets.tra:44
+msgctxt "g_ttyos1"
+msgid "Let us get this over with!"
+msgstr ""
+
+#: extended_soundsets.tra:45
+msgctxt "aerie95"
+msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
+msgstr ""
+
+#: extended_soundsets.tra:46
+msgctxt "aeri2540"
+msgid "Oh, this is going to hurt you a LOT more than me!"
+msgstr ""
+
+#: extended_soundsets.tra:47
+msgctxt "aeri2541"
+msgid "By all that is decent, I fight!"
+msgstr ""
+
+#: extended_soundsets.tra:48
+msgctxt "g_ttkor1"
+msgid "Killing is our business, and business be good!"
+msgstr ""
+
+#: extended_soundsets.tra:49
+msgctxt "g_ttkor2"
+msgid "Hahahaha!"
+msgstr ""
+
+#: extended_soundsets.tra:50
+msgctxt "g_ttkel1"
+msgid "In Tyr's name we shall be victorious once and for all!"
+msgstr ""
+
+#: extended_soundsets.tra:51
+msgctxt "g_ttkag1"
+msgid "What can I do for you?"
+msgstr ""
+
+#: extended_soundsets.tra:52
+msgctxt "montr01"
+msgid ""
+"Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
+msgstr ""
+
+#: extended_soundsets.tra:53
+msgctxt "yeslk01"
+msgid ""
+"Aye, who's there now?  More smithing, or did ye burrow into another river?"
+msgstr ""
+
+#: extended_soundsets.tra:54
+msgctxt "g_ttxan1"
+msgid "I have languished in these dismal vaults too long."
+msgstr ""
+
+#: extended_soundsets.tra:55
+msgctxt "nali2520"
+msgid "Evil falls today!"
+msgstr ""
+
+#: extended_soundsets.tra:56
+msgctxt "nali2521"
+msgid "If you fight, you die!  You cannot match our power!!"
+msgstr ""
+
+#: extended_soundsets.tra:57
+msgctxt "anom2539"
+msgid "Helm's fury upon you all!!"
+msgstr ""
+
+#: extended_soundsets.tra:58
+msgctxt "anom2540"
+msgid "By skill and might we shall prevail!!"
+msgstr ""
+
+#: extended_soundsets.tra:59
+msgctxt "g_ttval1"
+msgid "You will not pass!"
+msgstr ""
+
+#: extended_soundsets.tra:60
+msgctxt "g_tthae1"
+msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
+msgstr ""
+
+#: extended_soundsets.tra:61
+msgctxt "sarevo13"
+msgid "We children of Bhaal cannot be stopped!"
+msgstr ""
+
+#: extended_soundsets.tra:62
+msgctxt "sarevo14"
+msgid "Ha!  This arena I know well!!"
+msgstr ""
+
+#: extended_soundsets.tra:63
+msgctxt "sarevo35"
+msgid "I shall carve a path, if need be."
+msgstr ""
+
+#: extended_soundsets.tra:64
+msgctxt "sarevo36"
+msgid "As you wish."
+msgstr ""
+
+#: extended_soundsets.tra:65
+msgctxt "sarevo37"
+msgid "Hmph.  Not what I would have done."
+msgstr ""
+
+#: extended_soundsets.tra:66
+msgctxt "sarevo38"
+msgid "So you say."
+msgstr ""
+
+#: extended_soundsets.tra:67
+msgctxt "garrk30"
+msgid ""
+"My music is superior to yours, Eldoth, I was taught at the college in "
+"Berdusk."
+msgstr ""
+
+#: extended_soundsets.tra:68
+msgctxt "garrk06"
+msgid "I can't stand by and just let this happen."
+msgstr ""
+
+#: extended_soundsets.tra:69
+msgctxt "g_ttbra1"
+msgid "By the ice breath of Auril!"
+msgstr ""
+
+#: extended_soundsets.tra:70
+msgctxt "skiee04"
+msgid "You're the finest group of friends I've ever had."
+msgstr ""
+
+#: extended_soundsets.tra:71
+msgctxt "xzarr01"
+msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
+msgstr ""
+
+#: extended_soundsets.tra:72
+msgctxt "shart34"
+msgid "How would you like my sword tickling your innards?"
+msgstr ""
+
+#: extended_soundsets.tra:130
+msgctxt "g_ttaja1"
+msgid "You evil ways end here!"
+msgstr ""
+
+#: extended_soundsets.tra:131
+msgctxt "g_ttaja2"
+msgid "Draw steel!"
+msgstr ""
+
+#: extended_soundsets.tra:132
+msgctxt "g_ttkiv1"
+msgid "Defend yourselves!"
+msgstr ""
+
+#: extended_soundsets.tra:133
+msgctxt "g_ttkel2"
+msgid "You soul is forfeit!"
+msgstr ""
+
+#: game.tra:26
+msgid "Potion effect refreshed"
+msgstr ""
+
+#: game.tra:27
+msgid "Protection scroll effect refreshed"
+msgstr ""
+
+#: game.tra:28
+msgid "Thorius"
+msgstr ""
+
+#: game.tra:136
+msgid "Theater earnings are ready."
+msgstr ""
+
+#: game.tra:137
+msgid "The apprentices must have finished the task. Time to check up on them."
+msgstr ""
+
+#: game.tra:138
+msgid "The Grove awaits."
+msgstr ""
+
+#: game.tra:139
+msgid "It's time to visit the cabin."
+msgstr ""
+
+#: game.tra:140
+msgid "The people of de'Arnise keep need presence of their Lord."
+msgstr ""
+
+#: game.tra:141
+msgid "Morul has prepared a new batch of potions."
+msgstr ""
+
+#: game.tra:142
+msgid "The potions are on the table in the laboratory <SIRMAAM>."
+msgstr ""
+
+#: game.tra:143
+msgid ""
+"Your presence is required at the church. The needs of the faithful must be "
+"tended to."
+msgstr ""
+
+#: game.tra:147
+msgid ""
+"The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Effect:  Cone of Cold\n"
+"Damage:  8D6 (save vs. wands for half)\n"
+"Range:  100\n"
+"Area of effect:  Special\n"
+"Not usable by:\n"
+" Fighter\n"
+" Cleric\n"
+" Druid\n"
+" Thief\n"
+" Paladin\n"
+" Ranger\n"
+msgstr ""
+
+#: game.tra:149
+msgid "Gem bag"
+msgstr ""
+
+#: game.tra:150
+msgid "This small bag is ideally suited for holding gems."
+msgstr ""
+
+#: game.tra:151
+msgid "Scroll case"
+msgstr ""
+
+#: game.tra:152
+msgid ""
+"This sturdy container allows dozens of scrolls to be placed in it, safe from"
+" exposure to fire, rain, or lightning -- common hazards faced by any "
+"adventuring wizard."
+msgstr ""
+
+#: game.tra:153
+msgid "Potion case"
+msgstr ""
+
+#: game.tra:154
+msgid ""
+"Typically carried by travelling healers, this leather case folds open and "
+"allows the user to strap delicate potion bottles to its cushioned side with "
+"numerous leather thongs for safe storage during travel."
+msgstr ""
+
+#: game.tra:155
+msgid "Ammo belt"
+msgstr ""
+
+#: game.tra:156
+msgid ""
+"This shoulder belt is ideally suited for holding sling bullets, darts, "
+"arrows or bolts."
+msgstr ""
+
+#: game.tra:157
+msgid "Bag of Holding"
+msgstr ""
+
+#: game.tra:158
+msgid ""
+"As with other magical bags, this one appears to be a common cloth sack of "
+"about 2 feet by 4 feet in size. The bag of holding opens into a "
+"nondimensional space, and its inside is larger than its outside dimensions. "
+"Regardless of what is put into this item, the bag always weighs a fixed "
+"amount."
+msgstr ""
+
+#: game.tra:160
+msgid "Returning throwing axe"
+msgstr ""
+
+#: game.tra:161
+msgid ""
+"The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.\n"
+"\n"
+"This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Damage:  1D6 +1\n"
+"Damage type:  missile (piercing)\n"
+"Weight: 5\n"
+"Speed Factor: 4\n"
+"Proficiency Type:  Axe\n"
+"Type:  1-handed\n"
+"Requires: 4 Strength\n"
+"Not Usable By:\n"
+" Druid\n"
+" Cleric\n"
+" Mage \n"
+" Thief"
+msgstr ""
+
+#: game.tra:162
+msgid "Returning throwing dagger"
+msgstr ""
+
+#: game.tra:163
+msgid ""
+"The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.\n"
+"\n"
+"This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Damage:  1D4\n"
+"Damage type:   missile (piercing)\n"
+"Weight: 1\n"
+"Speed Factor: 2\n"
+"Proficiency Type: Dagger\n"
+"Type:  1-handed\n"
+"Requires: 3 Strength\n"
+"Not Usable By:\n"
+" Cleric"
+msgstr ""
+
+#: game.tra:164
+msgid "Returning dart"
+msgstr ""
+
+#: game.tra:165
+msgid ""
+"The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.\n"
+"\n"
+"This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Damage:  1D3\n"
+"Damage type:  missile (piercing)\n"
+"Weight: 0\n"
+"Speed Factor: 2\n"
+"Proficiency Type: Dart\n"
+"Type:  1-handed\n"
+"Not Usable By:\n"
+" Cleric"
+msgstr ""
+
+#: game.tra:166 setup.tra:201
+msgid "Hassle-free ammo"
+msgstr ""
+
+#: game.tra:215
+msgid "Quiver of Plenty"
+msgstr ""
+
+#: game.tra:216
+msgid ""
+"Enchanted quivers like this one are highly sought after by professional archers.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Unlimited plain arrows"
+msgstr ""
+
+#: game.tra:217
+msgid "Case of Plenty"
+msgstr ""
+
+#: game.tra:218
+msgid ""
+"Enchanted bolt cases like this one are highly sought after by professional crossbow users.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Unlimited plain bolts"
+msgstr ""
+
+#: game.tra:219
+msgid "Bag of Plenty"
+msgstr ""
+
+#: game.tra:220
+msgid ""
+"Enchanted bullet bags like this one are highly sought after by professional slingers.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Unlimited plain bullets"
+msgstr ""
+
+#: game.tra:253
+msgid "missile (piercing)"
+msgstr ""
+
+#: game.tra:254
+msgid "crushing"
+msgstr ""
+
+#: game.tra:255
+msgid "slashing"
+msgstr ""
+
+#: improved_equalizer.tra:1
+msgid ""
+"Long Sword: The Equalizer\n"
+"The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the \"Sword of Neutrality,\" it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands. The Equalizer actively resists being used by characters of extreme alignments.\n"
+"\n"
+"In addition, the sword allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Enchantment: +4\n"
+"\n"
+"Combat Abilities:\n"
+"  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.\n"
+"  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.\n"
+"\n"
+"THAC0 & Damage:\n"
+"  vs True Neutral: +0 to hit, +0 damage\n"
+"  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 to hit, +2 damage\n"
+"  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 damage\n"
+"\n"
+"Extra bonuses based on wielder's alignment:\n"
+"  True Neutral: +4 to hit, +4 damage\n"
+"  Non-extreme alignments: +2 to hit, +2 damage\n"
+"  Extreme alignments: -20 to hit, -20 damage.\n"
+"\n"
+"All combat effects are independent and stack with each other.\n"
+"\n"
+"Equipped Abilities: Immunity to Charm and Confusion\n"
+"\n"
+"Abilities:\n"
+"  Know Alignment 3 times per day.\n"
+"\n"
+"Damage type: slashing\n"
+"Weight: 3\n"
+"Speed Factor: 1\n"
+"Proficiency Type: Long Sword\n"
+"Type: 1-handed\n"
+"Requires: 6 Strength\n"
+"Not Usable By:\n"
+" Druid\n"
+" Cleric\n"
+" Mage\n"
+" Beast Master"
+msgstr ""
+
+#: improved_equalizer.tra:2
+msgid ""
+"Two things, me friend. It will cost ye 12,500 gp for the work, no less, and "
+"without an apprentice, ye'll have to stay here a full day and help me run "
+"the forge."
+msgstr ""
+
+#: more_map_notes.tra:1
+msgid "Degrodel's house"
+msgstr ""
+
+#: more_map_notes.tra:2
+msgid "Pheirkas' house"
+msgstr ""
+
+#: more_map_notes.tra:3
+msgid "Nadine's house"
+msgstr ""
+
+#: more_map_notes.tra:4
+msgid "Arkion's house"
+msgstr ""
+
+#: more_map_notes.tra:5
+msgid "Sunin's house"
+msgstr ""
+
+#: more_map_notes.tra:6
+msgid "Cordyr's house"
+msgstr ""
+
+#: more_map_notes.tra:7
+msgid "Nadarin's warehouse"
+msgstr ""
+
+#: more_map_notes.tra:8
+msgid "Noralee"
+msgstr ""
+
+#: more_map_notes.tra:9
+msgid "Ghorak's house"
+msgstr ""
+
+#: more_map_notes.tra:10
+msgid "Nemphre's house"
+msgstr ""
+
+#: more_map_notes.tra:11
+msgid "Nadarin's house"
+msgstr ""
+
+#: more_map_notes.tra:12
+msgid "Fenten's house"
+msgstr ""
+
+#: more_map_notes.tra:13
+msgid "Evalt"
+msgstr ""
+
+#: more_map_notes.tra:14
+msgid "Taloun"
+msgstr ""
+
+#: more_map_notes.tra:15
+msgid "Kaishas Gan"
+msgstr ""
+
+#: more_map_notes.tra:16
+msgid "Maralee"
+msgstr ""
+
+#: more_map_notes.tra:17
+msgid "Jorin"
+msgstr ""
+
+#: more_map_notes.tra:18
+msgid "Farthing"
+msgstr ""
+
+#: more_map_notes.tra:19
+msgid "Delainy"
+msgstr ""
+
+#: more_map_notes.tra:20
+msgid "Lahl"
+msgstr ""
+
+#: more_map_notes.tra:21
+msgid "Solianna"
+msgstr ""
+
+#: more_map_notes.tra:22
+msgid "Phlydia"
+msgstr ""
+
+#: more_map_notes.tra:23
+msgid "Mirianne's house"
+msgstr ""
+
+#: more_map_notes.tra:24
+msgid "Kagain's house"
+msgstr ""
+
+#: more_map_notes.tra:25
+msgid "Firebead's house"
+msgstr ""
+
+#: more_map_notes.tra:26
+msgid "Kivan"
+msgstr ""
+
+#: more_map_notes.tra:27
+msgid "Korax"
+msgstr ""
+
+#: more_map_notes.tra:28
+msgid "Kirian's band"
+msgstr ""
+
+#: more_map_notes.tra:29
+msgid "Mutamin"
+msgstr ""
+
+#: more_map_notes.tra:30
+msgid "Tamah"
+msgstr ""
+
+#: more_map_notes.tra:31
+msgid "Corianna"
+msgstr ""
+
+#: more_map_notes.tra:32
+msgid "Hobgoblin camp"
+msgstr ""
+
+#: more_map_notes.tra:33
+msgid "Portalbendarwinden"
+msgstr ""
+
+#: more_map_notes.tra:34
+msgid "Basillus"
+msgstr ""
+
+#: more_map_notes.tra:35
+msgid "Waterfall"
+msgstr ""
+
+#: more_map_notes.tra:36
+msgid "Albert"
+msgstr ""
+
+#: more_map_notes.tra:37
+msgid "Rufie"
+msgstr ""
+
+#: more_map_notes.tra:38
+msgid "Samuel"
+msgstr ""
+
+#: more_map_notes.tra:39
+msgid "Sarhedra"
+msgstr ""
+
+#: more_map_notes.tra:40
+msgid "Fahrington"
+msgstr ""
+
+#: more_map_notes.tra:41
+msgid "Faldorn"
+msgstr ""
+
+#: more_map_notes.tra:42
+msgid "Ajantis"
+msgstr ""
+
+#: more_map_notes.tra:43
+msgid "Surgeon"
+msgstr ""
+
+#: more_map_notes.tra:44
+msgid "Mad Arcand"
+msgstr ""
+
+#: more_map_notes.tra:45
+msgid "Pallonia"
+msgstr ""
+
+#: more_map_notes.tra:46
+msgid "Arkushule"
+msgstr ""
+
+#: more_map_notes.tra:47
+msgid "Safana"
+msgstr ""
+
+#: more_map_notes.tra:48
+msgid "Galileus"
+msgstr ""
+
+#: really_mirrored_eyes.tra:1
+msgid "gaze"
+msgstr ""
+
+#: sensible_spins.tra:1
+msgid "Spin stopped"
+msgstr ""
+
+#: sensible_spins.tra:2
+msgid "Cancel Spin"
+msgstr ""
+
+#: setup.tra:101
+msgid "BGT or EET only"
+msgstr ""
+
+#: setup.tra:102
+msgid "BG1 content not present"
+msgstr ""
+
+#: setup.tra:103
+msgid "Windows only"
+msgstr ""
+
+#: setup.tra:122
+msgid "BG saga only"
+msgstr ""
+
+#: setup.tra:123
+msgid ""
+"EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-"
+"awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-"
+"iwdee instead."
+msgstr ""
+
+#: setup.tra:124
+msgid "Requires ToB or EE engine"
+msgstr ""
+
+#: setup.tra:125
+msgid "Requires BG2 or EE engine"
+msgstr ""
+
+#: setup.tra:126
+msgid "Requires BG2"
+msgstr ""
+
+#: setup.tra:127
+msgid "Only non-EE engines"
+msgstr ""
+
+#: setup.tra:128
+msgid "Requires Classic ToB engine"
+msgstr ""
+
+#: setup.tra:129
+msgid "BGT only"
+msgstr ""
+
+#: setup.tra:130
+msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
+msgstr ""
+
+#: setup.tra:131
+msgid "Requires TotSC content"
+msgstr ""
+
+#: setup.tra:200
+msgid "Items"
+msgstr ""
+
+#: setup.tra:202
+msgid "Remove blur graphics from items"
+msgstr ""
+
+#: setup.tra:203
+msgid "Sensible Cloak of Mirroring"
+msgstr ""
+
+#: setup.tra:204
+msgid "Effects of scrolls and potions do not stack with themselves"
+msgstr ""
+
+#: setup.tra:205
+msgid "Sensible wand of frost"
+msgstr ""
+
+#: setup.tra:206
+msgid "Single target"
+msgstr ""
+
+#: setup.tra:207
+msgid "AoE"
+msgstr ""
+
+#: setup.tra:208
+msgid "Working protection from poison"
+msgstr ""
+
+#: setup.tra:210
+msgid "Really PnP protection items"
+msgstr ""
+
+#: setup.tra:223
+msgid "Potion of Really Mirrored Eyes"
+msgstr ""
+
+#: setup.tra:236
+msgid "Unlimited goodberries stacking"
+msgstr ""
+
+#: setup.tra:240
+msgid "Throwing weapons damage type"
+msgstr ""
+
+#: setup.tra:241
+msgid "Add strength bonus"
+msgstr ""
+
+#: setup.tra:242
+msgid "Make axes slashing and hammers blunt"
+msgstr ""
+
+#: setup.tra:243
+msgid "Both of the above options"
+msgstr ""
+
+#: setup.tra:250
+msgid "Improved Shandalar's cloak"
+msgstr ""
+
+#: setup.tra:252
+msgid "Algernon's cloak: usable once per day"
+msgstr ""
+
+#: setup.tra:260
+msgid "Improved Equalizer"
+msgstr ""
+
+#: setup.tra:261
+msgid "Distinct items"
+msgstr ""
+
+#: setup.tra:300
+msgid "Traps"
+msgstr ""
+
+#: setup.tra:301
+msgid "Trap intuition"
+msgstr ""
+
+#: setup.tra:302
+msgid "not in combat"
+msgstr ""
+
+#: setup.tra:303
+msgid "works in combat"
+msgstr ""
+
+#: setup.tra:304
+msgid "Intuition not selected, skipping"
+msgstr ""
+
+#: setup.tra:305
+msgid "Trap intuition: pause game"
+msgstr ""
+
+#: setup.tra:306
+msgid "ground traps only"
+msgstr ""
+
+#: setup.tra:307
+msgid "all traps"
+msgstr ""
+
+#: setup.tra:308
+msgid "Trap intuition: center screen"
+msgstr ""
+
+#: setup.tra:309
+msgid "on the character"
+msgstr ""
+
+#: setup.tra:310
+msgid "on the supposed trap"
+msgstr ""
+
+#: setup.tra:311
+msgid "Trap reminders"
+msgstr ""
+
+#: setup.tra:312
+msgid "generic"
+msgstr ""
+
+#: setup.tra:313
+msgid "disclose trap type"
+msgstr ""
+
+#: setup.tra:314
+msgid "Trap intuition: toggle Find Traps automatically"
+msgstr ""
+
+#: setup.tra:315
+msgid "Improved trap detection: increase trap sense range"
+msgstr ""
+
+#: setup.tra:316
+msgid "Trap intuition: play \"trap found\" sound"
+msgstr ""
+
+#: setup.tra:317
+msgid ""
+"Improved trap detection: core (REQUIRED for any of previous traps components"
+" to work)"
+msgstr ""
+
+#: setup.tra:318
+msgid "Improved trap detection: instant detection"
+msgstr ""
+
+#: setup.tra:319
+msgid "All Improved Traps components must be installed BEFORE core"
+msgstr ""
+
+#: setup.tra:350
+msgid "Non-disarmable Davaeorn's Battle Horrors"
+msgstr ""
+
+#: setup.tra:500
+msgid "Stores"
+msgstr ""
+
+#: setup.tra:501
+msgid "Can't steal from fences"
+msgstr ""
+
+#: setup.tra:502
+msgid "Close shop steal exploit"
+msgstr ""
+
+#: setup.tra:503
+msgid "Can't steal from any stores"
+msgstr ""
+
+#: setup.tra:504
+msgid "More ankheg armors by Taerom"
+msgstr ""
+
+#: setup.tra:505
+msgid "Stores always buy goods at the same (low) price"
+msgstr ""
+
+#: setup.tra:506
+msgid "Limited stock"
+msgstr ""
+
+#: setup.tra:600
+msgid "Assorted convenience components"
+msgstr ""
+
+#: setup.tra:601
+msgid "Less autosaves"
+msgstr ""
+
+#: setup.tra:602
+msgid "More map notes"
+msgstr ""
+
+#: setup.tra:603
+msgid "Disable lightning during rain"
+msgstr ""
+
+#: setup.tra:604
+msgid "Mod romance cheats"
+msgstr ""
+
+#: setup.tra:605
+msgid "Disable intro movies"
+msgstr ""
+
+#: setup.tra:606
+msgid "Faster loading times"
+msgstr ""
+
+#: setup.tra:607
+msgid "Add BG1 tomes stats bonuses to new BG2 characters"
+msgstr ""
+
+#: setup.tra:608
+msgid "Each stat gets +1"
+msgstr ""
+
+#: setup.tra:609
+msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
+msgstr ""
+
+#: setup.tra:610
+msgid "Starting bags"
+msgstr ""
+
+#: setup.tra:611
+msgid "Gem, scroll, potion, ammo (GSPA)"
+msgstr ""
+
+#: setup.tra:612
+msgid "GSPA + holding"
+msgstr ""
+
+#: setup.tra:613
+msgid "GSPA + holding - all bottomless!"
+msgstr ""
+
+#: setup.tra:700
+msgid "Quest and dialog tweaks"
+msgstr ""
+
+#: setup.tra:701
+msgid "Bloodless deeds"
+msgstr ""
+
+#: setup.tra:702
+msgid "Improved strongholds"
+msgstr ""
+
+#: setup.tra:800
+msgid "Spells and abilities"
+msgstr ""
+
+#: setup.tra:801
+msgid "Spider form ignores web"
+msgstr ""
+
+#: setup.tra:802
+msgid "Cheesy Slayer: full heal on change"
+msgstr ""
+
+#: setup.tra:803
+msgid "Cheesy Slayer: reputation"
+msgstr ""
+
+#: setup.tra:804
+msgid "no loss"
+msgstr ""
+
+#: setup.tra:805
+msgid "reduced loss"
+msgstr ""
+
+#: setup.tra:806
+msgid "True True Sight"
+msgstr ""
+
+#: setup.tra:807
+msgid "Sensible Otiluke's Resilient Sphere"
+msgstr ""
+
+#: setup.tra:808
+msgid "Greater Command AoE"
+msgstr ""
+
+#: setup.tra:809
+msgid "Working Non-Detection"
+msgstr ""
+
+#: setup.tra:810
+msgid "Non-Detection spell is not present in game"
+msgstr ""
+
+#: setup.tra:811
+msgid "Unstack Chaos Shield"
+msgstr ""
+
+#: setup.tra:812
+msgid "Chaos Shield spells are not present in game"
+msgstr ""
+
+#: setup.tra:813
+msgid "Uncheese Project Image"
+msgstr ""
+
+#: setup.tra:814
+msgid "Project Image spell is not present in game"
+msgstr ""
+
+#: setup.tra:815
+msgid "Uncheese Mislead"
+msgstr ""
+
+#: setup.tra:816
+msgid "Mislead spell is not present in game"
+msgstr ""
+
+#: setup.tra:818
+msgid "Sensible Blade spins"
+msgstr ""
+
+#: setup.tra:900
+msgid "Familiars"
+msgstr ""
+
+#: setup.tra:901
+msgid "Smarter familiars"
+msgstr ""
+
+#: setup.tra:902
+msgid "More resilient familiars"
+msgstr ""
+
+#: setup.tra:1000
+msgid "Soundsets"
+msgstr ""
+
+#: setup.tra:1001
+msgid "BG1-style party interaction system"
+msgstr ""
+
+#: setup.tra:1002
+msgid "Reintroduce"
+msgstr ""
+
+#: setup.tra:1003
+msgid "Reintroduce and adjust to framerate"
+msgstr ""
+
+#: setup.tra:1004
+msgid "Disable"
+msgstr ""
+
+#: setup.tra:1010
+msgid "Extended soundsets for NPC"
+msgstr ""
+
+#: setup.tra:1011
+msgid "Additions only"
+msgstr ""
+
+#: setup.tra:1012
+msgid "Prefer BG1 sounds"
+msgstr ""
+
+#: setup.tra:1013
+msgid "Prefer BG2 sounds"
+msgstr ""
+
+#: setup.tra:1020
+msgid "No talking when hiding in shadows"
+msgstr ""
+
+#: setup.tra:1021
+msgid "Make NPC soundsets available to PC"
+msgstr ""
+
+#: setup.tra:1100
+msgid "Gameplay, rules, difficulty"
+msgstr ""
+
+#: setup.tra:1102
+msgid "No XP farming"
+msgstr ""
+
+#: setup.tra:1103
+msgid "Can't steal Carsomyr"
+msgstr ""
+
+#: setup.tra:1104
+msgid "True True Grandmastery"
+msgstr ""
+
+#: setup.tra:1105
+msgid "Sensible multiclass restrictions"
+msgstr ""
+
+#: setup.tra:1110
+msgid "Fair fights"
+msgstr ""
+
+#: setup.tra:1111
+msgid "Just a few selected enemies"
+msgstr ""
+
+#: setup.tra:1112
+msgid ""
+"Also remove undroppable items granting unfair advantages from ALL enemies"
+msgstr ""
+
+#: shandalars_cloak.tra:1
+msgid "Cloak of Arachnida"
+msgstr ""
+
+#: shandalars_cloak.tra:2
+msgid ""
+"This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.\n"
+"\n"
+"The cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
+"\n"
+"In addition, the cloak allows to cast Web once per day, and provides extra protection from poison.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Saving Throws:  +2 bonus vs Poison.\n"
+"Special: The wearer is immune to webs, and can cast Web once per day."
+msgstr ""
+
+#: smarter_familiars.tra:15
+msgid "Boss, your pack is full."
+msgstr ""
+
+#: smarter_familiars.tra:167
+msgid "Let's change formation."
+msgstr ""
+
+#: smarter_familiars.tra:168
+msgid "I want to give you new instructions about the loot."
+msgstr ""
+
+#: smarter_familiars.tra:169
+msgid "We need to discuss combat."
+msgstr ""
+
+#: smarter_familiars.tra:170
+msgid "Yes, boss?"
+msgstr ""
+
+#: smarter_familiars.tra:171
+msgid "Follow me at all times."
+msgstr ""
+
+#: smarter_familiars.tra:172
+msgid "Stop following me all the time."
+msgstr ""
+
+#: smarter_familiars.tra:173
+msgid "Actually, nevermind. Distance is fine for now."
+msgstr ""
+
+#: smarter_familiars.tra:174
+msgid "If you see any danger, jump to my pack right away!"
+msgstr ""
+
+#: smarter_familiars.tra:175
+msgid "Don't hide in my pack when you see enemies."
+msgstr ""
+
+#: smarter_familiars.tra:176
+msgid "When you're injured, rush to my pack immediately."
+msgstr ""
+
+#: smarter_familiars.tra:177
+msgid "When you're badly injured, rush to my pack immediately."
+msgstr ""
+
+#: smarter_familiars.tra:178
+msgid "When the enemies are gone, get out of the pack by yourself."
+msgstr ""
+
+#: smarter_familiars.tra:179
+msgid "After hiding in my pack, stay there. One cannot be too careful."
+msgstr ""
+
+#: smarter_familiars.tra:180
+msgid "Ah, maybe later."
+msgstr ""
+
+#: smarter_familiars.tra:181
+msgid "Stop picking up any items, okay?"
+msgstr ""
+
+#: smarter_familiars.tra:182
+msgid "I want you to bring me everything. Any valuables."
+msgstr ""
+
+#: smarter_familiars.tra:183
+msgid "Pick up any gold that you find."
+msgstr ""
+
+#: smarter_familiars.tra:184
+msgid "Don't pick up the gold that you find."
+msgstr ""
+
+#: smarter_familiars.tra:185
+msgid "Pick up any jewels that you find."
+msgstr ""
+
+#: smarter_familiars.tra:186
+msgid "Pick up only valuable and magical jewelry."
+msgstr ""
+
+#: smarter_familiars.tra:187
+msgid "Pick up only magical jewelry."
+msgstr ""
+
+#: smarter_familiars.tra:188
+msgid "Don't pick up the jewelry."
+msgstr ""
+
+#: smarter_familiars.tra:189
+msgid "Pick up any magical ammo that you find."
+msgstr ""
+
+#: smarter_familiars.tra:190
+msgid "Don't pick up the ammo."
+msgstr ""
+
+#: smarter_familiars.tra:191
+msgid "If you find any potions, bring them to me!"
+msgstr ""
+
+#: smarter_familiars.tra:192
+msgid "Stop picking up potions."
+msgstr ""
+
+#: smarter_familiars.tra:193
+msgid "Get me any scrolls that you can find."
+msgstr ""
+
+#: smarter_familiars.tra:194
+msgid "I don't need you to bring any more scrolls."
+msgstr ""
+
+#: smarter_familiars.tra:195
+msgid ""
+"Fetch scalps from those bandits we kill. There's a nice bounty for them."
+msgstr ""
+
+#: smarter_familiars.tra:196
+msgid "Stop that scalping, will you? It's disgusting."
+msgstr ""
+
+#: smarter_familiars.tra:197
+msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
+msgstr ""
+
+#: smarter_familiars.tra:198
+msgid "No more pelts or scales, we're stocked."
+msgstr ""
+
+#: smarter_familiars.tra:199
+msgid "No, nothing."
+msgstr ""
+
+#: smarter_familiars.tra:200
+msgid "As you wish, master."
+msgstr ""
+
+#: smarter_familiars.tra:201
+msgid "Let's talk about your gear."
+msgstr ""
+
+#: smarter_familiars.tra:202
+msgid ""
+"Take this returning dart. I think you're better off attacking from distance."
+msgstr ""
+
+#: smarter_familiars.tra:203
+msgid "OK, boss."
+msgstr ""
+
+#: smarter_familiars.tra:204
+msgid "Done."
+msgstr ""
+
+#: smarter_familiars.tra:205
+msgid "No, actually I think your gear is fine."
+msgstr ""
+
+#: smarter_familiars.tra:207
+msgid "Don't bother me with your whining, I don't care if you're hurt."
+msgstr ""
+
+#: smarter_familiars.tra:208
+msgid "After fight, if you're hurt, let me know."
+msgstr ""
+
+#: smarter_familiars.tra:209
+msgid "After fight, if you're badly hurt, let me know."
+msgstr ""
+
+#: smarter_familiars.tra:210
+msgid "I'm hurting here, Boss."
+msgstr ""
+
+#: smarter_familiars.tra:211
+msgid "I'm really hurting here, Boss."
+msgstr ""
+
+#: smarter_familiars.tra:212
+msgid "Move faster, will you? Don't lag behind."
+msgstr ""
+
+#: smarter_familiars.tra:213
+msgid "Don't run so fast. I can't catch up to you."
+msgstr ""
+
+#: smarter_familiars.tra:214
+msgid "Ouch!"
+msgstr ""
+
+#: smarter_familiars.tra:221
+msgid ""
+"When you're being attacked, disengage for a short time, then get back at the"
+" enemy."
+msgstr ""
+
+#: smarter_familiars.tra:222
+msgid "Don't disengage, even if you're being attacked."
+msgstr ""
+
+#: smarter_familiars.tra:223
+msgid "In combat, don't attack enemies, unless I tell you to."
+msgstr ""
+
+#: smarter_familiars.tra:224
+msgid "In combat, attack enemies when you see them."
+msgstr ""
+
+#: smarter_familiars.tra:225
+msgid ""
+"In combat, attack enemies when you see them, prioritizing spellcasters."
+msgstr ""
+
+#: smarter_familiars.tra:226
+msgid "Here, take this potion."
+msgstr ""
+
+#: smarter_familiars.tra:227
+msgid "(Give a Healing potion)."
+msgstr ""
+
+#: smarter_familiars.tra:228
+msgid "(Give an Extra Healing potion)."
+msgstr ""
+
+#: smarter_familiars.tra:229
+msgid "(Give a Superior Healing potion)."
+msgstr ""
+
+#: smarter_familiars.tra:230
+msgid "(Give a Fire Resistance potion)."
+msgstr ""
+
+#: smarter_familiars.tra:231
+msgid "(Give an Invisibility potion)."
+msgstr ""
+
+#: smarter_familiars.tra:232
+msgid "(Give a oil of Speed)."
+msgstr ""
+
+#: smarter_familiars.tra:233
+msgid "(Give an elixir of Health)."
+msgstr ""
+
+#: smarter_familiars.tra:234
+msgid "(Give a potion of Absorption)."
+msgstr ""
+
+#: smarter_familiars.tra:235
+msgid "(Give a potion of Agility)."
+msgstr ""
+
+#: smarter_familiars.tra:236
+msgid "(Give an Antidote)."
+msgstr ""
+
+#: smarter_familiars.tra:237
+msgid "(Give a potion of Clarity)."
+msgstr ""
+
+#: smarter_familiars.tra:238
+msgid "(Give a Cold Resistance potion)."
+msgstr ""
+
+#: smarter_familiars.tra:239
+msgid "(Give a potion of Defence)."
+msgstr ""
+
+#: smarter_familiars.tra:240
+msgid "(Give a potion of Fortitude)."
+msgstr ""
+
+#: smarter_familiars.tra:241
+msgid "(Give a potion of Insulation)."
+msgstr ""
+
+#: smarter_familiars.tra:242
+msgid "(Give a potion of Magic Blocking)."
+msgstr ""
+
+#: smarter_familiars.tra:243
+msgid "(Give a potion of Magic Resistance)."
+msgstr ""
+
+#: smarter_familiars.tra:244
+msgid "(Give a potion of Magic Shielding)."
+msgstr ""
+
+#: smarter_familiars.tra:245
+msgid "(Give a potion of Mirrored Eyes)."
+msgstr ""
+
+#: smarter_familiars.tra:246
+msgid "(Give a potion of Power)."
+msgstr ""
+
+#: smarter_familiars.tra:247
+msgid "(Give a potion of Regeneration)."
+msgstr ""
+
+#: smarter_familiars.tra:248
+msgid "(Give a potion of Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:249
+msgid "(Give a potion of Freedom)."
+msgstr ""
+
+#: smarter_familiars.tra:250
+msgid "(Give a potion of Stone Form)."
+msgstr ""
+
+#: smarter_familiars.tra:251
+msgid "Actually, take a goodberry."
+msgstr ""
+
+#: smarter_familiars.tra:256
+msgid "(Give a potion of Hill Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:257
+msgid "(Give a potion of Frost Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:258
+msgid "(Give a potion of Fire Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:259
+msgid "(Give a potion of Cloud Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:260
+msgid "(Give a potion of Storm Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:261
+msgid "(Give a potion of Heroism)."
+msgstr ""
+
+#: smarter_familiars.tra:262
+msgid "(Give a potion of Invulnerability)."
+msgstr ""
+
+#: smarter_familiars.tra:263
+msgid "(Give a potion of Stone Giant Strength)."
+msgstr ""
+
+#: smarter_familiars.tra:264
+msgid "(Give a potion of Master Thievery)."
+msgstr ""
+
+#: smarter_familiars.tra:265
+msgid "(Give a potion of Mind Focusing)."
+msgstr ""
+
+#: smarter_familiars.tra:266
+msgid "(Give a potion of Perception)."
+msgstr ""
+
+#: smarter_familiars.tra:267
+msgid "(Give a Rogue's potion of Frost Giant Strength)."
+msgstr ""
+
+#: true_true_sight.tra:1
+msgid "each round"
+msgstr ""
+
+#: true_true_sight.tra:2
+msgid "each second"
+msgstr ""
+
+#: working_non_detection.tra:1
+msgid "Invisibility Purge"
+msgstr ""
+
+#: working_non_detection.tra:2
+msgid "Invisibility Purge and True Sight"
+msgstr ""
+
+#: working_non_detection.tra:3
+msgid " Non-detection, "
+msgstr ""
+
+#: working_non_detection.tra:4
+msgid " "
+msgstr ""
+
+#: working_non_detection.tra:5
+msgid ", and Non-Detection."
+msgstr ""
+
+#: working_non_detection.tra:6
+msgid "."
+msgstr ""
