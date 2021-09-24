@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.11](#version-811)
 - [Version 8.10](#version-810)
 - [Version 8.9](#version-89)
 - [Version 8.8](#version-88)
@@ -18,6 +19,13 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+
+### Version 8.11
+- Starting bags don't fail to install on EET/TuTu.
+- Throwing daggers from Hassle-free ammo get strength damage bonus on EEs, in line with other daggers.
+- Shandalar's cloak is unidentified when found, and has a charge.
+- More map notes.
 
 ### Version 8.10
 - Improved Traps: fixed a few traps not giving out notifications in BG1 part of BGT.
