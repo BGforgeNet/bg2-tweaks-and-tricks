@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2021-09-24 12:43+0000\n"
+"PO-Revision-Date: 2021-09-25 07:05+0000\n"
 "Last-Translator: Full Name <jadedjade@tutanota.com>\n"
 "Language-Team: Polish <https://tra.bgforge.net/projects/infinity-engine/"
 "tweaks-and-tricks/pl/>\n"
@@ -38,27 +38,27 @@ msgstr "Hmm... Powinniśmy stąpać ostrożnie."
 
 #: easy_traps.tra:6
 msgid "Wait, wait. Let's take a closer look at this."
-msgstr ""
+msgstr "Czekajcie, czekajcie. Przyjrzyjmy się temu bliżej."
 
 #: easy_traps.tra:7
 msgid "I sense danger."
-msgstr ""
+msgstr "Wyczuwam zagrożenie."
 
 #: easy_traps.tra:8
 msgid "Watch your step. Looks suspicious."
-msgstr ""
+msgstr "Uważajcie. Wygląda podejrzanie."
 
 #: easy_traps.tra:9
 msgid "Hold on. See this?"
-msgstr ""
+msgstr "Zaczekajcie. Widzicie to?"
 
 #: easy_traps.tra:98
 msgid "Trap"
-msgstr ""
+msgstr "Pułapka"
 
 #: easy_traps.tra:99
 msgid "trap"
-msgstr ""
+msgstr "pułapka"
 
 #: easy_traps.tra:100
 msgid "Unknown"
