@@ -435,7 +435,7 @@ GROUP @700 /* Quest and dialog tweaks */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 INCLUDE ~%components%/improved_strongholds/main.tpa~
 
-BEGIN @702 /* Save Melicamp */
+BEGIN @703 /* Save Melicamp */
 GROUP @700 /* Quest and dialog tweaks */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 OUTER_TEXT_SPRINT comp_name ~save_melicamp~
