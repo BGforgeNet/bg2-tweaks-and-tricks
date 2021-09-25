@@ -1,0 +1,5 @@
+// Bayard, cellar of Durlag's Tower
+// Has 100% magic resistance for no reason
+COPY_EXISTING ~bayard.cre~ ~override~
+  WRITE_BYTE CRE_magic_resistance 0
+BUT_ONLY IF_EXISTS

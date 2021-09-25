@@ -1,6 +1,7 @@
 OUTER_TEXT_SPRINT comp_dir ~%components%/fair_fights~
 
 INCLUDE ~%comp_dir%/arkanis.tpa~
+INCLUDE ~%comp_dir%/bayard.tpa~
 INCLUDE ~%comp_dir%/borda.tpa~
 INCLUDE ~%comp_dir%/kahrk.tpa~
 INCLUDE ~%comp_dir%/malchor.tpa~
