@@ -48,14 +48,16 @@ Temple, 3008, 1281 => 48 // Galileus
 NorthNashkelRoad, 3275, 728 => 32 // Hobgoblin camp
 NorthNashkelRoad, 4087, 2793 => 33 // Portalbendarwinden
 
-RedCanyons, 4249, 279 => 34 // Basillus
+RedCanyons, 4249, 2842 => 34 // Basillus
 
 DryadFalls, 1781, 3331 => 35 // Waterfall
 
 FireLeafForest, 1226, 845 => 36 // Albert
 FireLeafForest, 3804, 695 => 37 // Rufie
+FireLeafForest, 4262, 3465 => 49 // Larry, Darryl and Darryl
 
-GibberlingMountains, 3178, 2388 => 38 // Samuel
+GibberlingMountains, 3178, 2388 => 38 // Lena and Samuel
+GibberlingMountains, 896, 798 => 50 // Hafiz
 
 LonelyPeaks, 4755, 1714 => 39 // Sarhedra
 
