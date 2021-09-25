@@ -1460,8 +1460,8 @@ msgid "Bloodless deeds"
 msgstr ""
 
 #: setup.tra:702
-msgid "Improved strongholds"
-msgstr "Улучшенные стронгхолды"
+msgid "Save Melicamp"
+msgstr ""
 
 #: setup.tra:800
 msgid "Spells and abilities"
@@ -2060,6 +2060,9 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "Improved strongholds"
+#~ msgstr "Улучшенные стронгхолды"
 
 #~ msgid "Weightless ammo"
 #~ msgstr "Невесомые снаряды"

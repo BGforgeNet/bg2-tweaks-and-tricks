@@ -1254,7 +1254,7 @@ msgid "Bloodless deeds"
 msgstr ""
 
 #: setup.tra:702
-msgid "Improved strongholds"
+msgid "Save Melicamp"
 msgstr ""
 
 #: setup.tra:800
