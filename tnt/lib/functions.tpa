@@ -44,6 +44,8 @@ BEGIN
           probability1 = (100 + i) // see main.tpa
       END
     END
+  END ELSE BEGIN
+    PATCH_WARN ~unstack_armor_bonus: didn't find "set AC" effect in %SOURCE_FILE%~
   END
 END
 
