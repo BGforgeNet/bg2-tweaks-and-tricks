@@ -1,0 +1,3 @@
+INCLUDE ~%MOD_FOLDER%/libs/scs/alter_script.tpa~
+LAF DELETE_SCRIPT_BLOCK STR_VAR script=~thalantr~ match=~Trigger(1)~ END
+EXTEND_BOTTOM ~thalantr.bcs~ ~%comp_dir%/thalantyr.baf~
