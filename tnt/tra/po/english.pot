@@ -1063,7 +1063,7 @@ msgid "Improved Equalizer"
 msgstr ""
 
 #: setup.tra:261
-msgid "Distinct items"
+msgid "Distinct quest items"
 msgstr ""
 
 #: setup.tra:300
