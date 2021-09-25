@@ -872,7 +872,7 @@ msgid "Rufie"
 msgstr ""
 
 #: more_map_notes.tra:38
-msgid "Samuel"
+msgid "Lena and Samuel"
 msgstr ""
 
 #: more_map_notes.tra:39
@@ -913,6 +913,14 @@ msgstr ""
 
 #: more_map_notes.tra:48
 msgid "Galileus"
+msgstr ""
+
+#: more_map_notes.tra:49
+msgid "Larry, Darryl and Darryl"
+msgstr ""
+
+#: more_map_notes.tra:50
+msgid "Hafiz"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
