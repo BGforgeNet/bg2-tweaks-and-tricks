@@ -930,6 +930,54 @@ msgstr ""
 msgid "Hafiz"
 msgstr ""
 
+#: more_map_notes.tra:51
+msgid "Gambling tent"
+msgstr ""
+
+#: more_map_notes.tra:52
+msgid "Scrolls store"
+msgstr ""
+
+#: more_map_notes.tra:53
+msgid "Weapons store"
+msgstr ""
+
+#: more_map_notes.tra:54
+msgid "Zeke"
+msgstr ""
+
+#: more_map_notes.tra:55
+msgid "Ranged weapons store"
+msgstr ""
+
+#: more_map_notes.tra:56
+msgid "Potion dealer"
+msgstr ""
+
+#: more_map_notes.tra:57
+msgid "Enchanted items trader"
+msgstr ""
+
+#: more_map_notes.tra:58
+msgid "Exotic potion store"
+msgstr ""
+
+#: more_map_notes.tra:59
+msgid "Branwen"
+msgstr ""
+
+#: more_map_notes.tra:60
+msgid "Armor shop"
+msgstr ""
+
+#: more_map_notes.tra:61
+msgid "Tent of special pleasures"
+msgstr ""
+
+#: more_map_notes.tra:62
+msgid "Joseph's house"
+msgstr ""
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr ""
