@@ -30,7 +30,7 @@
 @250 = ~Improved Shandalar's cloak~
 @252 = ~Algernon's cloak: usable once per day~
 @260 = ~Improved Equalizer~
-@261 = ~Distinct items~
+@261 = ~Distinct quest items~
 @300 = ~Traps~
 @301 = ~Trap intuition~
 @302 = ~not in combat~
@@ -75,7 +75,8 @@
 @613 = ~GSPA + holding - all bottomless!~
 @700 = ~Quest and dialog tweaks~
 @701 = ~Bloodless deeds~
-@702 = ~Save Melicamp~
+@702 = ~Improved strongholds~
+@703 = ~Save Melicamp~
 @800 = ~Spells and abilities~
 @801 = ~Spider form ignores web~
 @802 = ~Cheesy Slayer: full heal on change~
