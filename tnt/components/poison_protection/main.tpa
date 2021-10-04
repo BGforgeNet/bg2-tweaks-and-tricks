@@ -10,6 +10,7 @@ ACTION_FOR_EACH item IN ~amul22~ ~ring39~ ~ring46~ BEGIN
         probability1 = 99
         timing = TIMING_while_equipped
         resist_dispel = BYPASS_MR
+        target = TARGET_FX_self
     END
   BUT_ONLY IF_EXISTS
 END
@@ -22,5 +23,6 @@ COPY_EXISTING ~%SCROLL_protection_from_poison%.itm~ ~override~
       probability1 = 99
       duration = 1800
       resist_dispel = DISPEL | BYPASS_MR
+      target = TARGET_FX_preset
   END
 BUT_ONLY
