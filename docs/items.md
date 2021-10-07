@@ -89,7 +89,7 @@ Currently includes:
 - Nester's dagger
 
 ### Really PnP protection items
-BG2 always restricted wearing rings of protection (and other similar jewelry) with magical armor. That is a crude way to enforce a PnP rule saying that their bonuses shouldn't stack. Gameplay-wise, though, it leads to much inventory tetris a frustration. There are tweaks to address it, but they work in an unperfect way, still forcing the tetris or stacking AC.
+BG2 always restricted wearing rings of protection (and other similar jewelry) with magical armor. That is a crude way to enforce a PnP rule saying that their bonuses shouldn't stack. Gameplay-wise, though, it leads to much inventory tetris and frustration. There are tweaks to address it, but they work in an unperfect way, still forcing the tetris or stacking AC.
 
 Now you can wear whatever you want at the same time. But only the highest bonuses will apply. As it should have been.
 
