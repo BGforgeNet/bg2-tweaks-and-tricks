@@ -14,7 +14,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Algernon's cloak: usable once per day](#algernons-cloak-usable-once-per-day)
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
-- [Distinct items](distinct-items)
+- [Distinct quest items](#distinct-quest-items)
 - [Really PnP protection items](#really-pnp-protection-items)
 
 ### Hassle-free ammo
@@ -80,7 +80,7 @@ Currently affects:
 - Periart of Proof against Poison
 - Protection from Poison scrolls
 
-### Distinct items
+### Distinct quest items
 Some quests require annoying search for items that don't stand out in any way. Example: Perdue's sword looks just like any other short sword.
 This simply gives such items slightly different color, to make them stand out.
 
