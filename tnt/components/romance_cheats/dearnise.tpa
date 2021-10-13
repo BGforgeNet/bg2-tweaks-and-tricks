@@ -74,30 +74,31 @@ THEN
 END
 >>>>>>>>
 
-OUTER_SET jah1 = STATE_WHICH_SAYS 1505 IN ~dearnise/%s/pgnallt.tra~ FROM ~jaheiraj~
-OUTER_SET jah2 = STATE_WHICH_SAYS 1506 IN ~dearnise/%s/pgnallt.tra~ FROM ~jaheiraj~
-OUTER_SET nal1 = STATE_WHICH_SAYS 1507 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
-OUTER_SET nal2 = STATE_WHICH_SAYS 1508 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
-OUTER_SET vic1 = STATE_WHICH_SAYS 1540 IN ~dearnise/%s/pgnallt.tra~ FROM ~bviconi~
-OUTER_SET nal3 = STATE_WHICH_SAYS 1541 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
-OUTER_SET nal4 = STATE_WHICH_SAYS 1542 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
-OUTER_SET aer1 = STATE_WHICH_SAYS 1585 IN ~dearnise/%s/pgnallt.tra~ FROM ~baerie~
-OUTER_SET nal5 = STATE_WHICH_SAYS 1582 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
-OUTER_SET nal6 = STATE_WHICH_SAYS 1583 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
-<<<<<<<< .../tnt-inlined/romance_cheats/dearnise_dont_kill_romance.d
-  REPLACE_TRANS_ACTION jaheiraj BEGIN %jah1% %jah2% END BEGIN END
-    ~SetGlobal("JaheiraRomanceActive","GLOBAL",3)~ ~~
-  REPLACE_TRANS_ACTION bviconi BEGIN %vic1% END BEGIN END
-    ~SetGlobal("ViconiaRomanceActive","GLOBAL",3)~ ~~
-  REPLACE_TRANS_ACTION baerie BEGIN %aer1% END BEGIN END
-    ~SetGlobal("AerieRomanceActive","GLOBAL",3)~ ~~
-  REPLACE_TRANS_ACTION naliaj BEGIN %nal1% %nal2% %nal3% %nal4% %nal5% %nal6% END BEGIN END
-    ~SetGlobal("PGNaliaRomanceActive","GLOBAL",3)~ ~~
->>>>>>>>
 
 
-ACTION_IF MOD_IS_INSTALLED ~dearnise/dearnise.tp2~ 0 BEGIN
-  COPY_EXISTING ~nalia.bcs~ ~override~
+ACTION_IF MOD_IS_INSTALLED ~dearnise.tp2~ 0 BEGIN
+	OUTER_SET jah1 = STATE_WHICH_SAYS 1505 IN ~dearnise/%s/pgnallt.tra~ FROM ~jaheiraj~
+	OUTER_SET jah2 = STATE_WHICH_SAYS 1506 IN ~dearnise/%s/pgnallt.tra~ FROM ~jaheiraj~
+	OUTER_SET nal1 = STATE_WHICH_SAYS 1507 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
+	OUTER_SET nal2 = STATE_WHICH_SAYS 1508 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
+	OUTER_SET vic1 = STATE_WHICH_SAYS 1540 IN ~dearnise/%s/pgnallt.tra~ FROM ~bviconi~
+	OUTER_SET nal3 = STATE_WHICH_SAYS 1541 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
+	OUTER_SET nal4 = STATE_WHICH_SAYS 1542 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
+	OUTER_SET aer1 = STATE_WHICH_SAYS 1585 IN ~dearnise/%s/pgnallt.tra~ FROM ~baerie~
+	OUTER_SET nal5 = STATE_WHICH_SAYS 1582 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
+	OUTER_SET nal6 = STATE_WHICH_SAYS 1583 IN ~dearnise/%s/pgnallt.tra~ FROM ~naliaj~
+	<<<<<<<< .../tnt-inlined/romance_cheats/dearnise_dont_kill_romance.d
+		REPLACE_TRANS_ACTION jaheiraj BEGIN %jah1% %jah2% END BEGIN END
+			~SetGlobal("JaheiraRomanceActive","GLOBAL",3)~ ~~
+		REPLACE_TRANS_ACTION bviconi BEGIN %vic1% END BEGIN END
+			~SetGlobal("ViconiaRomanceActive","GLOBAL",3)~ ~~
+		REPLACE_TRANS_ACTION baerie BEGIN %aer1% END BEGIN END
+			~SetGlobal("AerieRomanceActive","GLOBAL",3)~ ~~
+		REPLACE_TRANS_ACTION naliaj BEGIN %nal1% %nal2% %nal3% %nal4% %nal5% %nal6% END BEGIN END
+			~SetGlobal("PGNaliaRomanceActive","GLOBAL",3)~ ~~
+	>>>>>>>>
+
+	COPY_EXISTING ~nalia.bcs~ ~override~
     R_B_B CASE_INSENSITIVE
       ~.../tnt-inlined/romance_cheats/dearnise_concurrent.baf~
       ~.../tnt-inlined/romance_cheats/dearnise_empty.baf~
