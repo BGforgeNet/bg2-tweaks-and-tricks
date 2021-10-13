@@ -1,5 +1,6 @@
 OUTER_SPRINT comp_dir ~%components%/romance_cheats~
 
 INCLUDE ~%comp_dir%/amber.tpa~
+INCLUDE ~%comp_dir%/dearnise.tpa~
 INCLUDE ~%comp_dir%/tyris.tpa~
 INCLUDE ~%comp_dir%/saerileth.tpa~
