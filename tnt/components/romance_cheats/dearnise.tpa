@@ -106,16 +106,5 @@ ACTION_IF MOD_IS_INSTALLED ~dearnise/dearnise.tp2~ 0 BEGIN
       ~.../tnt-inlined/romance_cheats/dearnise_match_always.baf~
   BUT_ONLY
 
-  COPY_EXISTING ~naliaj.dlg~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
-        ~SetGlobal("AerieRomanceActive","GLOBAL",3)~ ~~
-      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
-        ~SetGlobal("JaheiraRomanceActive","GLOBAL",3)~ ~~
-      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
-        ~SetGlobal("ViconiaRomanceActive","GLOBAL",3)~ ~~
-    END
-  BUT_ONLY
-
   COMPILE EVAL ~.../tnt-inlined/romance_cheats/dearnise_dont_kill_romance.d~
 END
