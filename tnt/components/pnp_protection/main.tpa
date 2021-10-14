@@ -27,6 +27,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY protection_power BEGIN
 
   // bg1npc
   x#iamul => 1 // birthday present from Imoen = custom AoP+1
+
+  // bgttweak
+  ring25b => 2 // Upgraded Koveras' Ring of Protection
 END
 
 ACTION_PHP_EACH protection_power AS item => power BEGIN
