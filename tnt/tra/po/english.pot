@@ -763,8 +763,9 @@ msgstr ""
 msgid "Nemphre's house"
 msgstr ""
 
-#: more_map_notes.tra:11
-msgid "Nadarin's house"
+#. LEAVE empty space in translation
+#: more_map_notes.tra:11 working_non_detection.tra:4
+msgid " "
 msgstr ""
 
 #: more_map_notes.tra:12
@@ -1866,10 +1867,6 @@ msgstr ""
 
 #: working_non_detection.tra:3
 msgid " Non-detection, "
-msgstr ""
-
-#: working_non_detection.tra:4
-msgid " "
 msgstr ""
 
 #: working_non_detection.tra:5
