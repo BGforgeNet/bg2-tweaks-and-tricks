@@ -10,12 +10,12 @@ EBaldursGate, 1587, 3180 => 4 // Arkion's house
 SWBaldursGate, 1714, 2476 => 5  // Sunin's house
 
 BaldursGateDocks, 3066, 879 => 6 // Cordyr' house
-BaldursGateDocks, 3261, 1141 => 7 // Nadarin's warehouse
+BaldursGateDocks, 3261, 1141 => 7 // Nadarin's warehouse (with basilisk)
 BaldursGateDocks, 3548, 1516 => 8 // Noralee
 BaldursGateDocks, 4227, 1920 => 9 // Ghorak's house
 
 SEBaldursGate, 1737, 238 => 10 // Nemphre's house
-SEBaldursGate, 818, 2000 => 11 // Nadarin's house
+SEBaldursGate, 818, 2000 => 7 // Nadarin's warehouse (with Nadarin)
 
 WBaldursGate, 3411, 3154 => 12 // Fenten's house
 
