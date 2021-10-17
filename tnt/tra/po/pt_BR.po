@@ -759,7 +759,7 @@ msgid "Nadarin's warehouse"
 msgstr ""
 
 #: more_map_notes.tra:8
-msgid "Noralee"
+msgid "Noralee's warehouse"
 msgstr ""
 
 #: more_map_notes.tra:9
@@ -770,9 +770,8 @@ msgstr ""
 msgid "Nemphre's house"
 msgstr ""
 
-#. LEAVE empty space in translation
-#: more_map_notes.tra:11 working_non_detection.tra:4
-msgid " "
+#: more_map_notes.tra:11
+msgid "Nadarin's office"
 msgstr ""
 
 #: more_map_notes.tra:12
@@ -977,6 +976,14 @@ msgstr ""
 
 #: more_map_notes.tra:62
 msgid "Joseph's house"
+msgstr ""
+
+#: more_map_notes.tra:63
+msgid "Tavern"
+msgstr ""
+
+#: more_map_notes.tra:64
+msgid "General store"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
@@ -1876,6 +1883,10 @@ msgstr ""
 
 #: working_non_detection.tra:3
 msgid " Non-detection, "
+msgstr ""
+
+#: working_non_detection.tra:4
+msgid " "
 msgstr ""
 
 #: working_non_detection.tra:5

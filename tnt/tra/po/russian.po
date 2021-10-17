@@ -909,8 +909,10 @@ msgid "Nadarin's warehouse"
 msgstr "Склад Надарина"
 
 #: more_map_notes.tra:8
-msgid "Noralee"
-msgstr "Норали"
+#, fuzzy
+#| msgid "Nadarin's warehouse"
+msgid "Noralee's warehouse"
+msgstr "Склад Надарина"
 
 #: more_map_notes.tra:9
 #, fuzzy
@@ -924,10 +926,10 @@ msgstr "Гхорак"
 msgid "Nemphre's house"
 msgstr "Немфре"
 
-#. LEAVE empty space in translation
-#: more_map_notes.tra:11 working_non_detection.tra:4
-msgid " "
-msgstr ""
+#: more_map_notes.tra:11
+#, fuzzy
+msgid "Nadarin's office"
+msgstr "Надарин"
 
 #: more_map_notes.tra:12
 #, fuzzy
@@ -1144,6 +1146,16 @@ msgstr ""
 #| msgid "Nemphre"
 msgid "Joseph's house"
 msgstr "Немфре"
+
+#: more_map_notes.tra:63
+msgid "Tavern"
+msgstr ""
+
+#: more_map_notes.tra:64
+#, fuzzy
+#| msgid "Scroll case"
+msgid "General store"
+msgstr "Футляр для свитков"
 
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
@@ -2100,6 +2112,10 @@ msgstr ""
 msgid " Non-detection, "
 msgstr ""
 
+#: working_non_detection.tra:4
+msgid " "
+msgstr ""
+
 #: working_non_detection.tra:5
 msgid ", and Non-Detection."
 msgstr ""
@@ -2108,9 +2124,8 @@ msgstr ""
 msgid "."
 msgstr ""
 
-#, fuzzy
-#~ msgid "Nadarin's house"
-#~ msgstr "Надарин"
+#~ msgid "Noralee"
+#~ msgstr "Норали"
 
 #~ msgid "Weightless ammo"
 #~ msgstr "Невесомые снаряды"
