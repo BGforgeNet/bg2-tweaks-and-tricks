@@ -8,14 +8,16 @@ CentralBaldursGate, 4157, 873 => 3 // Nadine's house
 EBaldursGate, 1587, 3180 => 4 // Arkion's house
 
 SWBaldursGate, 1714, 2476 => 5  // Sunin's house
+SWBaldursGate, 1141, 2219 => 62  // Tavern
+SWBaldursGate, 2259, 2653 => 64  // General store
 
-BaldursGateDocks, 3066, 879 => 6 // Cordyr' house
-BaldursGateDocks, 3261, 1141 => 7 // Nadarin's warehouse (with basilisk)
-BaldursGateDocks, 3548, 1516 => 8 // Noralee
+BaldursGateDocks, 3066, 879 => 6 // Cordyr's house
+BaldursGateDocks, 3261, 1141 => 7 // Nadarin's warehouse (basilisk)
+BaldursGateDocks, 3548, 1516 => 8 // Noralee's warehouse
 BaldursGateDocks, 4227, 1920 => 9 // Ghorak's house
 
 SEBaldursGate, 1737, 238 => 10 // Nemphre's house
-SEBaldursGate, 818, 2000 => 7 // Nadarin's warehouse (with Nadarin)
+SEBaldursGate, 818, 2000 => 11 // Nadarin's office
 
 WBaldursGate, 3411, 3154 => 12 // Fenten's house
 

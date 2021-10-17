@@ -5,10 +5,10 @@
 @5 = ~Sunin's house~
 @6 = ~Cordyr's house~
 @7 = ~Nadarin's warehouse~
-@8 = ~Noralee~
+@8 = ~Noralee's warehouse~
 @9 = ~Ghorak's house~
 @10 = ~Nemphre's house~
-// @11 = ~~
+@11 = ~Nadarin's office~
 @12 = ~Fenten's house~
 @13 = ~Evalt~
 @14 = ~Taloun~
@@ -60,3 +60,5 @@
 @60 = ~Armor shop~
 @61 = ~Tent of special pleasures~
 @62 = ~Joseph's house~
+@63 = ~Tavern~
+@64 = ~General store~
