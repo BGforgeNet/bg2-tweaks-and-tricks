@@ -91,6 +91,73 @@ NashkelCarnival, 4810, 2212 => 61 // Tent of special pleasures
 
 Nashkel, 4203, 2911 => 62 // Joseph's house
 
+WBaldursGate, 873, 640 => 65 // Tremain's house
+
+NBaldursGate, 1207, 2808 => 66 // Rinnie's house
+NBaldursGate, 760, 2680 => 67 // Bheren's house
+NBaldursGate, 2449, 1214 => 68 // Jardak's house
+
+NWBaldursGate, 3681, 2223 => 69 // Quinn's house
+NWBaldursGate, 2757, 22533 => 70 // House of Laerta and Louise
+
+CentralSewers, 3901, 2896 => 71 // To South District, Harbor Master's Building
+CentralSewers, 3621, 2758 => 72 // To South District, westside
+CentralSewers, 1908, 984 => 73 // To Central District, Felonius Gist's Manor
+CentralSewers, 1749, 837 => 74 // To North District, Bheren's house
+CentralSewers, 2202, 894 => 75 // To North District, Three Old Kegs
+CentralSewers, 3217, 646 => 75 // To North District, Three Old Kegs
+CentralSewers, 3607, 332 => 76 // To North District, Ramazith's tower
+CentralSewers, 3895, 535 => 77 // To North District, Ramazith's tower
+CentralSewers, 3892, 1013 => 77 // To Central District, Oberon's estate
+CentralSewers, 3538, 978 => 78 // To Central District, Poultry store
+CentralSewers, 3623, 1534 => 79 // To Central District, westside
+CentralSewers, 3930, 1774 => 80 // To Central District, Nadine's house
+CentralSewers, 3806, 2205 => 81 // To South District, eastside
+CentralSewers, 2501, 1905 => 82 // To Central District, Jopalin tavern
+CentralSewers, 2131, 1769 => 83 // To Central District, southside
+CentralSewers, 2038, 2004 => 84 // To South District, Iron Throne
+CentralSewers, 2165, 3237 => 85 // To Undercellar
+CentralSewers, 3749, 3300 => 86 // To East Sewers
+CentralSewers, 3900, 1142 => 86 // To East Sewers
+CentralSewers, 1501, 2760 => 87 // To West Sewers
+CentralSewers, 1069, 2307 => 87 // To West Sewers
+
+BaldursGate_Undercellars, 384, 124 => 88 // To Central Sewers
+BaldursGate_Undercellars, 2486, 304 => 87 // To West Sewers
+
+ESewers, 109, 120 => 88 // To Central Sewers
+ESewers, 1858, 452 => 90 // To NE District, Ilmater's Shrine
+ESewers, 3768, 824 => 91 // To NE District, Counting House
+ESewers, 3141, 1328 => 92 // To East District, Sorcerous Sundries
+ESewers, 3432, 1461 => 92 // To East District, Sorcerous Sundries
+ESewers, 3543, 2634 => 93 // To SE District, Blade and Stars
+ESewers, 2198, 2296 => 94 // To SE District, NE corner
+ESewers, 2776, 1803 => 95 // To East District, Elfsong tavern
+ESewers, 2584, 1991 => 96 // To East District, Maltz's Weapon Shop
+ESewers, 1776, 2764 => 97 // To SE District, east side
+ESewers, 1566, 1611 => 98 // To SE District, north side
+ESewers, 1099, 1524 => 99 // To SE District, behind Sorcerous Sundries
+ESewers, 102, 1333 => 85 // To Undercellar
+ESewers, 92, 725 => 89 // To Central Sewers
+
+WSewers, 2119, 2793 => 89 // To Central Sewers
+WSewers, 2960, 2727 => 89 // To Central Sewers
+WSewers, 2710, 2384 => 100 // To SW district, Sunin's house
+WSewers, 2679, 2251 => 101 // To SW district, behind Merchant's league
+WSewers, 2342, 2274 => 102 // To SW district, NE corner
+WSewers, 2365, 2413 => 103 // To SW district, center
+WSewers, 2090, 1723 => 104 // To W district, NE corner
+WSewers, 1881, 1863 => 105 // To SW district, Seven Suns
+WSewers, 437, 2201 => 106 // To SW district, behind Flaming Fist headquarters
+WSewers, 748, 2069 => 107 // To SW district, east side
+WSewers, 831, 905 => 108 // To NW district, east of Helm and Cloak
+WSewers, 1139, 754 => 109 // To NW district, west of Helm and Cloak
+WSewers, 690, 317 => 110 // To NW district, NE corner
+WSewers, 352, 341 => 111 // To NW district, east side
+WSewers, 100, 832 => 95 // To Undercellar
+WSewers, 1689, 1288 => 112 // To NE district, center
+WSewers, 1346, 1314 => 113 // To NE district, Pheirkas' house
+
 END
 
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
