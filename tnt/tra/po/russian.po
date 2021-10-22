@@ -1359,6 +1359,10 @@ msgstr ""
 msgid "To Northeast district, Pheirkas' house"
 msgstr ""
 
+#: more_map_notes.tra:114
+msgid "Thieves' Guild"
+msgstr ""
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr ""
