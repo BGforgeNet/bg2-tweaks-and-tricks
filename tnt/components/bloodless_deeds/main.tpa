@@ -1,3 +1,4 @@
+// for some reason TakePartyItem/Num marks the item unstealable?
 COPY_EXISTING ~nemphr.dlg~ ~override~
   DECOMPILE_AND_PATCH BEGIN
     // bgt
