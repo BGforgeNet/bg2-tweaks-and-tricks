@@ -31,6 +31,7 @@ For original Bioware characters, there's long been a tweak that allows multiple 
 - Amber
 - Tyris
 - Saerileth
+- Nalia (Dearnise Romance)
 
 **Beware** that if you install this, and then hit **any** bug with such character, you'll likely get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
 

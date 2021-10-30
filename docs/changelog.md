@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.12](#version-812)
 - [Version 8.11](#version-811)
 - [Version 8.10](#version-810)
 - [Version 8.9](#version-89)
@@ -20,6 +21,19 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+
+### Version 8.12
+- More map notes: Nashel, Carnival, Baldur's Gate.
+- Fair Fights: included Dushai, Bayard.
+- Improved traps: don't alert about false exit skeleton trap in Durlag's level 3.
+- Smarter familiars: giving a familiar a potion doesn't prevent saving.
+- Poison protection: fixed scroll so it actually works.
+- Starting bags: subcomponent names fixed (cosmetic only).
+- Romance cheats: added Dearnise Romance.
+- PnP protection items: compatibility with BG1NPC - added Imoen's gift amulet to the list of the items. Also, improved Koveras' ring of protection from BGTTweak.
+- Store price depreciation: skip officer Vai, so that scalps can be sold at full price.
+- Bloodless deeds: actually works now.
+- New component: Save Melicamp.
 
 ### Version 8.11
 - Starting bags don't fail to install on EET/TuTu.

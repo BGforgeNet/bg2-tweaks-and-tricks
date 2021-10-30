@@ -22,6 +22,8 @@ A few opponents in the game basically cheat, or just have unrealistic stats. Som
 - Phandalyn, the fanatic paladin in Baldur's Gate (innocent no longer, since he attacks first)
 - Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
 - Winski Perorate in the labyrinth (innocent no longer, since he's not)
+- Dushai: removed innate fire and magic resistances.
+- Bayard: removed innate magic resistance.
 
 If you do break the plot by killing a critical NPC - that's on you. **You've been warned.**
 
