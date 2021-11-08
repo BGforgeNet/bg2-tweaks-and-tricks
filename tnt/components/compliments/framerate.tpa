@@ -22,7 +22,7 @@ END
 ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
   AT_NOW ~%comp_dir%/framerate.bat~
 END ELSE BEGIN
-  AT_NOW ~wineconsole %comp_dir%/framerate.bat~
+  AT_NOW ~wine cmd /c %comp_dir%/framerate.bat~
 END
 
 OUTER_SET wav_filesize_off = 0x4
