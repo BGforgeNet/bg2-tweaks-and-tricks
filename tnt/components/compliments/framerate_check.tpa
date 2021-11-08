@@ -1,7 +1,7 @@
-//decompress to WAV
+// check if wine is present
 ACTION_IF NOT ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
   AT_NOW wineconsole_rc ~wineconsole -h~ 
-END
-ACTION_IF wineconsole_rc != 0 BEGIN 
-  FAIL ~You must have wineconsole in PATH for this component~
+  ACTION_IF wineconsole_rc != 0 BEGIN
+    FAIL ~You must have wineconsole in PATH for this component~
+  END
 END

@@ -173,20 +173,19 @@ OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 
+BEGIN @1003 /* Reintroduce and adjust to framerate */
+GROUP @1000 /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
+SUBCOMPONENT @1001 /* BG1-style party interaction system */
+INCLUDE ~%components%/compliments/framerate_check.tpa~
+INCLUDE ~%components%/compliments/main.tpa~
+INCLUDE ~%components%/compliments/framerate.tpa~
+
 BEGIN @1002 /* Reintroduce */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
 SUBCOMPONENT @1001 /* BG1-style party interaction system */
 INCLUDE ~%components%/compliments/main.tpa~
-
-BEGIN @1003 /* Reintroduce and adjust to framerate */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-REQUIRE_PREDICATE (~%WEIDU_OS%~ STR_EQ ~win32~) @103 /* Windows only */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
-INCLUDE ~%components%/compliments/framerate_check.tpa~
-INCLUDE ~%components%/compliments/main.tpa~
-INCLUDE ~%components%/compliments/framerate.tpa~
 
 BEGIN @1004 /* Disable */
 GROUP @1000 /* Soundsets */
