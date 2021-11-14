@@ -10,19 +10,23 @@
 - [Prefer BG1 sounds](#prefer-bg1-sounds)
 - [Prefer BG2 sounds](#prefer-bg2-sounds)
 
-This component extends NPC soundsets by re-using their sounds from BG1 in BG2 and vice-versa.
+This component extends some NPC soundsets by re-using their sounds from BG1 in BG2 and vice-versa.
 
-Example: BG1 Jaheira has only 1 battle cry: "For the fallen!". So the whole game you listen to that over and over.
+Example: BG1 Jaheira has only 1 battle cry: `For the fallen!`. So the whole game you listen to that over and over.
 
 But, BG2 Jaheira has 2 more battle cries:
-- "Fall creature! And feed the earth!"
-- "Nature take the life she gave!"
+```
+- Fall, creature! And feed the earth!
+- Nature take the life she gave!
+```
 
 This component adds those extra battle cries to BG1 Jaheira. And adds one more, from a voiced dialogue line. So in the end, both BG1 and BG2 Jaheira have 4 battle cries:
-- "For the fallen!"
-- "Fall creature! And feed the earth!"
-- "Nature take the life she gave!"
-- "Die your final death!"
+```
+- For the fallen!
+- Fall, creature! And feed the earth!
+- Nature take the life she gave!
+- Die your final death!
+```
 
 In some cases, there are too many sounds to fit into one soundset. So the 3 subcomponents are:
 
@@ -46,8 +50,8 @@ In BG1, party interaction was based not on banters, but rather on occasional chi
 
 Example:
 ```
-- **Jaheira**: "You are amusing, in a "what the hell is wrong with you" kind of way."
-- **Edwin**: "Watch your words when addressing me, lest they be fed to you on the end of my boot!"
+- Jaheira: "You are amusing, in a 'what the hell is wrong with you' kind of way."
+- Edwin: "Watch your words when addressing me, lest they be fed to you on the end of my boot!"
 ```
 
 Now you can have it in BG2 part, too. (Only on BGT/EET installs).
