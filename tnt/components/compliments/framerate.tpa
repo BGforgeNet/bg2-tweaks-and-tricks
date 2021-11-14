@@ -18,7 +18,7 @@ OUTER_SPRINT tools_dir ~%MOD_FOLDER%\tools~
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
   COPY_EXISTING ~%sound%.wav~ ~override~
   ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-    AT_NOW rc ~wine %tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
+    AT_NOW rc ~wine %tools_dir%\\wavc.exe override\\%sound%.wav override\\%sound%.wav~ EXACT
   END ELSE BEGIN
     AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
   END
