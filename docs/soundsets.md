@@ -1,7 +1,7 @@
 ## Soundsets
 
 - [Extended soundsets for NPC](#extended-soundsets-for-npc)
-- [Compliments and insults in party](#compliments-and-insults-in-party)
+- [Compliments and insults](#compliments-and-insults)
 - [No talking while hiding in shadows](#no-talking-while-hiding-in-shadows)
 - [Make NPC soundsets available to PC](#make-npc-soundsets-available-to-pc)
 
