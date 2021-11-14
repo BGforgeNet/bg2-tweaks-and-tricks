@@ -19,10 +19,10 @@ ACTION_PHP_EACH sound_list AS index => sound BEGIN
   COPY_EXISTING ~%sound%.wav~ ~override~
   PRINT ~WEIDU_OS is %WEIDU_OS%~
   ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-    PRINT ~unix/mac~
+    PRINT ~%WEIDU_OS% = unix/mac~
     AT_NOW rc ~wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
   END ELSE BEGIN
-    PRINT ~windows~
+    PRINT ~%WEIDU_OS% = win32~
     AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
   END
   ACTION_IF rc != 0 BEGIN
