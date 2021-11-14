@@ -177,7 +177,7 @@ BEGIN @1003 /* Reintroduce and adjust to framerate */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
 SUBCOMPONENT @1001 /* BG1-style party interaction system */
-INCLUDE ~%components%/compliments/framerate_check.tpa~
+INCLUDE ~%components%/compliments/wine_check.tpa~
 INCLUDE ~%components%/compliments/main.tpa~
 INCLUDE ~%components%/compliments/framerate.tpa~
 
