@@ -1,6 +1,6 @@
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
-VERSION ~v8.12~
+VERSION ~v8.13~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
@@ -148,8 +148,8 @@ INCLUDE ~%components%/davaeorns_battle_horrors/main.tpa~
 BEGIN @1011 /* Additions only */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended Soundsets for NPC */
-OUTER_SET dominate = 0
+SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+OUTER_SET prefer = 0
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
@@ -157,8 +157,8 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 BEGIN @1012 /* Prefer BG1 sounds */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended Soundsets for NPC */
-OUTER_SET dominate = 1
+SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+OUTER_SET prefer = 1
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
@@ -166,8 +166,8 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 BEGIN @1013 /* Prefer BG2 sounds */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended Soundsets for NPC */
-OUTER_SET dominate = 2
+SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+OUTER_SET prefer = 2
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
@@ -176,7 +176,7 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 BEGIN @1003 /* Reintroduce and adjust to framerate */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
+SUBCOMPONENT @1001 /* Compliments and insults */
 INCLUDE ~%components%/compliments/wine_check.tpa~
 INCLUDE ~%components%/compliments/main.tpa~
 INCLUDE ~%components%/compliments/framerate.tpa~
@@ -184,13 +184,13 @@ INCLUDE ~%components%/compliments/framerate.tpa~
 BEGIN @1002 /* Reintroduce */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
+SUBCOMPONENT @1001 /* Compliments and insults */
 INCLUDE ~%components%/compliments/main.tpa~
 
 BEGIN @1004 /* Disable */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
+SUBCOMPONENT @1001 /* Compliments and insults */
 INCLUDE ~%components%/compliments/disable.tpa~
 
 BEGIN @1020 /* No talking when hiding in shadows */

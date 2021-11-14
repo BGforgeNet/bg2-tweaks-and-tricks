@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.13](#version-813)
 - [Version 8.12](#version-812)
 - [Version 8.11](#version-811)
 - [Version 8.10](#version-810)
@@ -21,6 +22,8 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.13
+Fixed installation of BG1-style party interaction with framerate adjustment on Windows, also allowed to install on Unix if wine is present. Renamed the component to "Compliments and insults".
 
 ### Version 8.12
 - More map notes: Nashel, Carnival, Baldur's Gate.
