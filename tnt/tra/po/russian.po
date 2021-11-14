@@ -1829,8 +1829,8 @@ msgid "Soundsets"
 msgstr "Саундсеты"
 
 #: setup.tra:1001
-msgid "BG1-style party interaction system"
-msgstr "Система разговоров в стиле BG1"
+msgid "Compliments and insults"
+msgstr ""
 
 #: setup.tra:1002
 msgid "Reintroduce"
@@ -1847,7 +1847,7 @@ msgstr "Отключить"
 #: setup.tra:1010
 #, fuzzy
 #| msgid "Extended Soundsets for NPC"
-msgid "Extended soundsets for NPC"
+msgid "Extended soundsets for joinable NPCs"
 msgstr "Расширенные саундсеты для NPC"
 
 #: setup.tra:1011
@@ -2329,6 +2329,9 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "BG1-style party interaction system"
+#~ msgstr "Система разговоров в стиле BG1"
 
 #~ msgid "Noralee"
 #~ msgstr "Норали"

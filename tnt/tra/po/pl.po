@@ -1594,7 +1594,7 @@ msgid "Soundsets"
 msgstr ""
 
 #: setup.tra:1001
-msgid "BG1-style party interaction system"
+msgid "Compliments and insults"
 msgstr ""
 
 #: setup.tra:1002
@@ -1610,7 +1610,7 @@ msgid "Disable"
 msgstr ""
 
 #: setup.tra:1010
-msgid "Extended soundsets for NPC"
+msgid "Extended soundsets for joinable NPCs"
 msgstr ""
 
 #: setup.tra:1011
