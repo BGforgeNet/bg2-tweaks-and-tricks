@@ -99,11 +99,11 @@
 @901 = ~Умные фамильяры~
 @902 = ~More resilient familiars~
 @1000 = ~Саундсеты~
-@1001 = ~Система разговоров в стиле BG1~
+@1001 = ~Compliments and insults~
 @1002 = ~Восстановить~
 @1003 = ~Восстановить и приспособить к скорости игры~
 @1004 = ~Отключить~
-@1010 = ~Extended soundsets for NPC~
+@1010 = ~Extended soundsets for joinable NPCs~
 @1011 = ~Только добавления~
 @1012 = ~Prefer BG1 sounds~
 @1013 = ~Prefer BG2 sounds~

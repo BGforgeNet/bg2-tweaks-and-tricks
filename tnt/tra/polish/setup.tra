@@ -99,11 +99,11 @@
 @901 = ~Smarter familiars~
 @902 = ~More resilient familiars~
 @1000 = ~Soundsets~
-@1001 = ~BG1-style party interaction system~
+@1001 = ~Compliments and insults~
 @1002 = ~Reintroduce~
 @1003 = ~Reintroduce and adjust to framerate~
 @1004 = ~Disable~
-@1010 = ~Extended soundsets for NPC~
+@1010 = ~Extended soundsets for joinable NPCs~
 @1011 = ~Additions only~
 @1012 = ~Prefer BG1 sounds~
 @1013 = ~Prefer BG2 sounds~
