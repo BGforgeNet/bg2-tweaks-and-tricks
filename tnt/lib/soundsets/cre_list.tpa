@@ -201,7 +201,7 @@ END
 ACTION_DEFINE_ARRAY bg1_viconia_cre BEGIN
   viconi
   viconi4
-  viconi61
+  ~%tutu_viconi6%~
 END
 
 ACTION_DEFINE_ARRAY bg2_viconia_cre BEGIN
