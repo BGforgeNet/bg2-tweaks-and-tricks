@@ -1,8 +1,8 @@
-## Improved traps
+## Improved Traps
 
 Exploring dungeons can be annoying in IE, especially if it's a familiar one, and you spend a lot of time for Find Traps to tick.
 
-Improved traps offres multiple components to change trap mechannics.
+Improved Traps offers multiple components to change trap mechannics.
 
 - [Instant detection](#instant-detection)
 - [Increase detection range](#increase-detection-range)
