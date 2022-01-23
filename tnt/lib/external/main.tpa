@@ -7,3 +7,6 @@ OUTER_SPRINT area_lib_dir ~%external%/bg1npc~
 INCLUDE ~%area_lib_dir%/g3_bgee_cpmvars.tpa~
 INCLUDE ~%area_lib_dir%/g3_bgt_cpmvars.tpa~
 INCLUDE ~%area_lib_dir%/g3_tutu_cpmvars.tpa~
+ACTION_IF GAME_IS ~eet~ BEGIN
+    INCLUDE  ~EET/other/cpmvars/eet_cpmvars.tpa~
+END
