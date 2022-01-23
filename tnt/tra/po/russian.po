@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2020-06-30 14:14+0000\n"
-"Last-Translator: egornovivan <egornov.ivan@gmail.com>\n"
+"PO-Revision-Date: 2021-09-27 12:42+0000\n"
+"Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
@@ -63,24 +63,18 @@ msgid "Unknown"
 msgstr "Неизвестно"
 
 #: easy_traps.tra:101
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Hold Person trap"
 msgstr "Удерживающая ловушка"
 
 #: easy_traps.tra:102
-#, fuzzy
 msgid "Silence trap"
-msgstr "Безмолвная ловушка"
+msgstr "Ловушка Молчания"
 
 #: easy_traps.tra:103
-#, fuzzy
-#| msgid "Disable lightning during rain"
 msgid "Call Lightning trap"
-msgstr "Призывающая молнии ловушка"
+msgstr "Ловушка Призвания Молнии"
 
 #: easy_traps.tra:104
-#, fuzzy
 msgid "Miscast Magic trap"
 msgstr "Антимагическая ловушка"
 
@@ -827,25 +821,29 @@ msgstr "рубящее"
 #: improved_equalizer.tra:1
 msgid ""
 "Long Sword: The Equalizer\n"
-"The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the \"Sword of Neutrality,\" it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hand.\n"
+"The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the \"Sword of Neutrality,\" it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands. The Equalizer actively resists being used by characters of extreme alignments.\n"
 "\n"
-"In addition, The Equalizer allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.\n"
+"In addition, the sword allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
-"Always considered to be of +4 enchantment when determining what it can hit.\n"
+"Enchantment: +4\n"
+"\n"
+"Combat Abilities:\n"
+"  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.\n"
+"  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.\n"
+"\n"
 "THAC0 & Damage:\n"
 "  vs True Neutral: +0 to hit, +0 damage\n"
-"  vs Chaotic Neutral, Lawful Neutral: +1 to hit, +2 damage\n"
-"  vs Neutral Good, Neutral Evil: +2 to hit, +4 damage\n"
-"  vs other alignments: +3 to hit, +6 damage\n"
+"  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 to hit, +2 damage\n"
+"  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 damage\n"
 "\n"
 "Extra bonuses based on wielder's alignment:\n"
 "  True Neutral: +4 to hit, +4 damage\n"
-"  Chaotic Neutral, Lawful Neutral: +3 to hit, +3 damage\n"
-"  Neutral Good, Neutral Evil: +2 to hit, +2 damage\n"
-"  Chaotic Good, Lawful Evil: +1 to hit, +1 damage\n"
-"  Other alignments: +0 to hit, +0 damage\n"
+"  Non-extreme alignments: +2 to hit, +2 damage\n"
+"  Extreme alignments: -20 to hit, -20 damage.\n"
+"\n"
+"All combat effects are independent and stack with each other.\n"
 "\n"
 "Equipped Abilities: Immunity to Charm and Confusion\n"
 "\n"
@@ -854,7 +852,7 @@ msgid ""
 "\n"
 "Damage type: slashing\n"
 "Weight: 3\n"
-"Speed Factor: 3\n"
+"Speed Factor: 1\n"
 "Proficiency Type: Long Sword\n"
 "Type: 1-handed\n"
 "Requires: 6 Strength\n"
@@ -863,6 +861,13 @@ msgid ""
 " Cleric\n"
 " Mage\n"
 " Beast Master"
+msgstr ""
+
+#: improved_equalizer.tra:2
+msgid ""
+"Two things, me friend. It will cost ye 12,500 gp for the work, no less, and "
+"without an apprentice, ye'll have to stay here a full day and help me run "
+"the forge."
 msgstr ""
 
 #: more_map_notes.tra:1
@@ -904,8 +909,10 @@ msgid "Nadarin's warehouse"
 msgstr "Склад Надарина"
 
 #: more_map_notes.tra:8
-msgid "Noralee"
-msgstr "Норали"
+#, fuzzy
+#| msgid "Nadarin's warehouse"
+msgid "Noralee's warehouse"
+msgstr "Склад Надарина"
 
 #: more_map_notes.tra:9
 #, fuzzy
@@ -921,8 +928,7 @@ msgstr "Немфре"
 
 #: more_map_notes.tra:11
 #, fuzzy
-#| msgid "Nadarin"
-msgid "Nadarin's house"
+msgid "Nadarin's office"
 msgstr "Надарин"
 
 #: more_map_notes.tra:12
@@ -985,6 +991,376 @@ msgstr ""
 
 #: more_map_notes.tra:26
 msgid "Kivan"
+msgstr ""
+
+#: more_map_notes.tra:27
+msgid "Korax"
+msgstr ""
+
+#: more_map_notes.tra:28
+msgid "Kirian's band"
+msgstr ""
+
+#: more_map_notes.tra:29
+msgid "Mutamin"
+msgstr ""
+
+#: more_map_notes.tra:30
+msgid "Tamah"
+msgstr ""
+
+#: more_map_notes.tra:31
+#, fuzzy
+#| msgid "Solianna"
+msgid "Corianna"
+msgstr "Солианна"
+
+#: more_map_notes.tra:32
+msgid "Hobgoblin camp"
+msgstr ""
+
+#: more_map_notes.tra:33
+msgid "Portalbendarwinden"
+msgstr ""
+
+#: more_map_notes.tra:34
+#, fuzzy
+#| msgid "Basilisk"
+msgid "Basillus"
+msgstr "Василиск"
+
+#: more_map_notes.tra:35
+msgid "Waterfall"
+msgstr ""
+
+#: more_map_notes.tra:36
+msgid "Albert"
+msgstr ""
+
+#: more_map_notes.tra:37
+msgid "Rufie"
+msgstr ""
+
+#: more_map_notes.tra:38
+msgid "Lena and Samuel"
+msgstr ""
+
+#: more_map_notes.tra:39
+msgid "Sarhedra"
+msgstr ""
+
+#: more_map_notes.tra:40
+msgid "Fahrington"
+msgstr ""
+
+#: more_map_notes.tra:41
+msgid "Faldorn"
+msgstr ""
+
+#: more_map_notes.tra:42
+msgid "Ajantis"
+msgstr ""
+
+#: more_map_notes.tra:43
+msgid "Surgeon"
+msgstr ""
+
+#: more_map_notes.tra:44
+msgid "Mad Arcand"
+msgstr ""
+
+#: more_map_notes.tra:45
+msgid "Pallonia"
+msgstr ""
+
+#: more_map_notes.tra:46
+msgid "Arkushule"
+msgstr ""
+
+#: more_map_notes.tra:47
+msgid "Safana"
+msgstr ""
+
+#: more_map_notes.tra:48
+msgid "Galileus"
+msgstr ""
+
+#: more_map_notes.tra:49
+msgid "Larry, Darryl and Darryl"
+msgstr ""
+
+#: more_map_notes.tra:50
+msgid "Hafiz"
+msgstr ""
+
+#: more_map_notes.tra:51
+msgid "Gambling tent"
+msgstr ""
+
+#: more_map_notes.tra:52
+#, fuzzy
+#| msgid "Scroll case"
+msgid "Scrolls store"
+msgstr "Футляр для свитков"
+
+#: more_map_notes.tra:53
+msgid "Weapons store"
+msgstr ""
+
+#: more_map_notes.tra:54
+msgid "Zeke"
+msgstr ""
+
+#: more_map_notes.tra:55
+msgid "Ranged weapons store"
+msgstr ""
+
+#: more_map_notes.tra:56
+#, fuzzy
+#| msgid "Potion case"
+msgid "Potion dealer"
+msgstr "Футляр для зельев"
+
+#: more_map_notes.tra:57
+msgid "Enchanted items trader"
+msgstr ""
+
+#: more_map_notes.tra:58
+msgid "Exotic potion store"
+msgstr ""
+
+#: more_map_notes.tra:59
+msgid "Branwen"
+msgstr ""
+
+#: more_map_notes.tra:60
+msgid "Armor shop"
+msgstr ""
+
+#: more_map_notes.tra:61
+msgid "Tent of special pleasures"
+msgstr ""
+
+#: more_map_notes.tra:62
+#, fuzzy
+#| msgid "Nemphre"
+msgid "Joseph's house"
+msgstr "Немфре"
+
+#: more_map_notes.tra:63
+msgid "Tavern"
+msgstr ""
+
+#: more_map_notes.tra:64
+#, fuzzy
+#| msgid "Scroll case"
+msgid "General store"
+msgstr "Футляр для свитков"
+
+#: more_map_notes.tra:65
+#, fuzzy
+#| msgid "Arkion"
+msgid "Tremain's house"
+msgstr "Аркион"
+
+#: more_map_notes.tra:66
+#, fuzzy
+#| msgid "Nadine"
+msgid "Rinnie's house"
+msgstr "Надин"
+
+#: more_map_notes.tra:67
+#, fuzzy
+#| msgid "Fenten"
+msgid "Bheren's house"
+msgstr "Фентен"
+
+#: more_map_notes.tra:68
+#, fuzzy
+#| msgid "Ghorak"
+msgid "Jardak's house"
+msgstr "Гхорак"
+
+#: more_map_notes.tra:69
+#, fuzzy
+#| msgid "Sunin's house"
+msgid "Quinn's house"
+msgstr "Дом Сунина"
+
+#: more_map_notes.tra:70
+msgid "House of Laerta and Louise"
+msgstr ""
+
+#: more_map_notes.tra:71
+msgid "To South district, Harbor Master's Building"
+msgstr ""
+
+#: more_map_notes.tra:72
+msgid "To South district, westside"
+msgstr ""
+
+#: more_map_notes.tra:73
+msgid "To Central District, Felonius Gist's Manor"
+msgstr ""
+
+#: more_map_notes.tra:74
+msgid "To North District, Bheren's house"
+msgstr ""
+
+#: more_map_notes.tra:75
+msgid "To North District, Three Old Kegs"
+msgstr ""
+
+#: more_map_notes.tra:76
+msgid "To North District, Ramazith's tower"
+msgstr ""
+
+#: more_map_notes.tra:77
+msgid "To Central District, Oberon's estate"
+msgstr ""
+
+#: more_map_notes.tra:78
+msgid "To Central District, Poultry store"
+msgstr ""
+
+#: more_map_notes.tra:79
+msgid "To Central District, westside"
+msgstr ""
+
+#: more_map_notes.tra:80
+msgid "To Central District, Nadine's house"
+msgstr ""
+
+#: more_map_notes.tra:81
+msgid "To South District, eastside"
+msgstr ""
+
+#: more_map_notes.tra:82
+msgid "To Central District, Jopalin tavern"
+msgstr ""
+
+#: more_map_notes.tra:83
+msgid "To Central District, southside"
+msgstr ""
+
+#: more_map_notes.tra:84
+msgid "To South District, Iron Throne"
+msgstr ""
+
+#: more_map_notes.tra:85
+msgid "To Undercellar"
+msgstr ""
+
+#: more_map_notes.tra:86
+msgid "To East Sewers"
+msgstr ""
+
+#: more_map_notes.tra:87
+msgid "To West Sewers"
+msgstr ""
+
+#: more_map_notes.tra:88
+msgid "To Central Sewers"
+msgstr ""
+
+#: more_map_notes.tra:90
+msgid "To Northeast District, Ilmater's Shrine"
+msgstr ""
+
+#: more_map_notes.tra:91
+msgid "To Northeast District, Counting House"
+msgstr ""
+
+#: more_map_notes.tra:92
+msgid "To East District, Sorcerous Sundries"
+msgstr ""
+
+#: more_map_notes.tra:93
+msgid "To Southeast District, Blade and Stars"
+msgstr ""
+
+#: more_map_notes.tra:94
+msgid "To Southeast District, NE corner"
+msgstr ""
+
+#: more_map_notes.tra:95
+msgid "To East District, Elfsong tavern"
+msgstr ""
+
+#: more_map_notes.tra:96
+msgid "To East District, Maltz's Weapon Shop"
+msgstr ""
+
+#: more_map_notes.tra:97
+msgid "To Southeast District, east side"
+msgstr ""
+
+#: more_map_notes.tra:98
+msgid "To Southeast District, north side"
+msgstr ""
+
+#: more_map_notes.tra:99
+msgid "To Southeast District, behind Sorcerous Sundries"
+msgstr ""
+
+#: more_map_notes.tra:100
+msgid "To Southwest district, Sunin's house"
+msgstr ""
+
+#: more_map_notes.tra:101
+msgid "To Southwest district, behind Merchant's league"
+msgstr ""
+
+#: more_map_notes.tra:102
+msgid "To Southwest district, NE corner"
+msgstr ""
+
+#: more_map_notes.tra:103
+msgid "To Southwest district, center"
+msgstr ""
+
+#: more_map_notes.tra:104
+msgid "To West district, NE corner"
+msgstr ""
+
+#: more_map_notes.tra:105
+msgid "To Southwest district, Seven Suns"
+msgstr ""
+
+#: more_map_notes.tra:106
+msgid "To Southwest district, behind Flaming Fist headquarters"
+msgstr ""
+
+#: more_map_notes.tra:107
+msgid "To Southwest district, east side"
+msgstr ""
+
+#: more_map_notes.tra:108
+msgid "To Northwest district, east of Helm and Cloak"
+msgstr ""
+
+#: more_map_notes.tra:109
+msgid "To Northwest district, west of Helm and Cloak"
+msgstr ""
+
+#: more_map_notes.tra:110
+msgid "To Northwest district, NE corner"
+msgstr ""
+
+#: more_map_notes.tra:111
+msgid "To Northwest district, east side"
+msgstr ""
+
+#: more_map_notes.tra:112
+msgid "To Northeast district, center"
+msgstr ""
+
+#: more_map_notes.tra:113
+msgid "To Northeast district, Pheirkas' house"
+msgstr ""
+
+#: more_map_notes.tra:114
+msgid "Thieves' Guild"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
@@ -1051,6 +1427,18 @@ msgstr "Требует движок ToB или EE"
 msgid "BGT only"
 msgstr "Только для BGT"
 
+#: setup.tra:130
+#, fuzzy
+#| msgid "Requires ToB or EE engine"
+msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
+msgstr "Требует движок ToB или EE"
+
+#: setup.tra:131
+#, fuzzy
+#| msgid "Requires ToB or EE engine"
+msgid "Requires TotSC content"
+msgstr "Требует движок ToB или EE"
+
 #: setup.tra:200
 msgid "Items"
 msgstr "Предметы"
@@ -1100,7 +1488,7 @@ msgstr "Неограниченное складывание хороших яг�
 #: setup.tra:240
 #, fuzzy
 #| msgid "Throwing weapons damage"
-msgid "Throwing axes and hammers damage"
+msgid "Throwing weapons damage type"
 msgstr "Урон от метательного оружия"
 
 #: setup.tra:241
@@ -1119,10 +1507,6 @@ msgstr "И то, и другое"
 msgid "Improved Shandalar's cloak"
 msgstr ""
 
-#: setup.tra:251
-msgid "Shandalar's cloak not present in game"
-msgstr ""
-
 #: setup.tra:252
 msgid "Algernon's cloak: usable once per day"
 msgstr ""
@@ -1132,7 +1516,7 @@ msgid "Improved Equalizer"
 msgstr ""
 
 #: setup.tra:261
-msgid "Distinct color for Perdue's sword"
+msgid "Distinct quest items"
 msgstr ""
 
 #: setup.tra:300
@@ -1265,7 +1649,7 @@ msgstr "Таэром может делать больше панцирей из 
 #: setup.tra:505
 #, fuzzy
 #| msgid "Shops always buy goods at the same price"
-msgid "Stores always buy goods at the same price"
+msgid "Stores always buy goods at the same (low) price"
 msgstr "Магазины покупают товар по неизменной цене"
 
 #: setup.tra:506
@@ -1344,6 +1728,10 @@ msgstr ""
 msgid "Improved strongholds"
 msgstr "Улучшенные стронгхолды"
 
+#: setup.tra:703
+msgid "Save Melicamp"
+msgstr ""
+
 #: setup.tra:800
 msgid "Spells and abilities"
 msgstr "Заклинания и способности"
@@ -1385,7 +1773,7 @@ msgid "Greater Command AoE"
 msgstr "Великая Команда - действие на площадь"
 
 #: setup.tra:809
-msgid "Non-Detection blocks True Sight and other divination spells"
+msgid "Working Non-Detection"
 msgstr ""
 
 #: setup.tra:810
@@ -1441,8 +1829,8 @@ msgid "Soundsets"
 msgstr "Саундсеты"
 
 #: setup.tra:1001
-msgid "BG1-style party interaction system"
-msgstr "Система разговоров в стиле BG1"
+msgid "Compliments and insults"
+msgstr ""
 
 #: setup.tra:1002
 msgid "Reintroduce"
@@ -1459,7 +1847,7 @@ msgstr "Отключить"
 #: setup.tra:1010
 #, fuzzy
 #| msgid "Extended Soundsets for NPC"
-msgid "Extended soundsets for NPC"
+msgid "Extended soundsets for joinable NPCs"
 msgstr "Расширенные саундсеты для NPC"
 
 #: setup.tra:1011
@@ -1520,25 +1908,14 @@ msgid ""
 msgstr ""
 
 #: shandalars_cloak.tra:1
-msgid "Shandalar's Cloak"
-msgstr ""
-
-#: shandalars_cloak.tra:2
 msgid "Cloak of Arachnida"
 msgstr ""
 
-#: shandalars_cloak.tra:3
+#: shandalars_cloak.tra:2
 msgid ""
-"This cloak was originally stolen from Shandalar by the powerful mage Semia, "
-"presumably for the powerful magics woven into the fabric. How it has come to"
-" be in your possession and the fate of Semia are complete mysteries, and "
-"ones not likely to be solved. Much like the exact workings of the cloak, "
-"which would remain a mystery even to a powerful mage."
-msgstr ""
-
-#: shandalars_cloak.tra:4
-msgid ""
-"This cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
+"This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.\n"
+"\n"
+"The cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.\n"
 "\n"
 "In addition, the cloak allows to cast Web once per day, and provides extra protection from poison.\n"
 "\n"
@@ -1953,6 +2330,12 @@ msgstr ""
 msgid "."
 msgstr ""
 
+#~ msgid "BG1-style party interaction system"
+#~ msgstr "Система разговоров в стиле BG1"
+
+#~ msgid "Noralee"
+#~ msgstr "Норали"
+
 #~ msgid "Weightless ammo"
 #~ msgstr "Невесомые снаряды"
 
@@ -2030,9 +2413,6 @@ msgstr ""
 
 #~ msgid "Sunin"
 #~ msgstr "Сунин"
-
-#~ msgid "Basilisk"
-#~ msgstr "Василиск"
 
 #~ msgid "Uh, this one is locked."
 #~ msgstr "Эм, это заперто."

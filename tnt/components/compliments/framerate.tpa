@@ -1,6 +1,6 @@
 INCLUDE ~%comp_dir%/sound_list.tpa~ // define a sound_list array with compliments and insults
 
-//get framerate
+// get framerate
 COPY ~baldur.ini~ ~baldur.ini~
   SPRINT string ~~
   offset = 0
@@ -13,20 +13,22 @@ COPY ~baldur.ini~ ~baldur.ini~
   PATCH_PRINT ~Current framerate is: %framerate%~
 BUT_ONLY
 
-//Copy wavc sounds that we need to adjust
+// Copy wavc sounds and decompress to wav
+OUTER_SPRINT tools_dir ~%MOD_FOLDER%/tools~
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
   COPY_EXISTING ~%sound%.wav~ ~override~
+  ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
+    AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
+  END ELSE BEGIN
+    AT_NOW rc ~wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
+  END
+  ACTION_IF rc != 0 BEGIN
+    FAIL ~Failed to decompress %sound% wavc~
+  END
 END
 
-//decompress to WAV
-ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-  AT_NOW ~%comp_dir%/framerate.bat~
-END ELSE BEGIN
-  AT_NOW ~wineconsole %comp_dir%/framerate.bat~
-END
-
-OUTER_SET wav_filesize_off 0x4
-OUTER_SET wav_datesize_off 0x2a
+OUTER_SET wav_filesize_off = 0x4
+OUTER_SET wav_datesize_off = 0x2a
 //adjust WAV
 ACTION_PHP_EACH sound_list AS index => sound BEGIN
   COPY_EXISTING ~%sound%.wav~ ~override~

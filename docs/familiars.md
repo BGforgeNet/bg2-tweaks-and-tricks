@@ -4,8 +4,8 @@ Familiars aren't very useful in IE games, especially later stages, and even more
 
 TnT changes that, but not by boosting their stats. Instead, it enables the player to give them various orders, which they will carry out. See below for details.
 
-- [Smarter familiars](smarter-familiars)
-- [Resilient familiars](resilient-familiars)
+- [Smarter familiars](#smarter-familiars)
+- [Resilient familiars](#resilient-familiars)
 
 ### Smarter familiars
 Adds a great deal of customization to familiars behaviour. Now you can:

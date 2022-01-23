@@ -1,6 +1,6 @@
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
-VERSION ~v8~
+VERSION ~v8.13~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
@@ -11,6 +11,7 @@ END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
 LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
+LANGUAGE ~Portuguese~ ~portuguese~ ~tnt/tra/portuguese/game.tra~ ~tnt/tra/portuguese/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
@@ -147,8 +148,8 @@ INCLUDE ~%components%/davaeorns_battle_horrors/main.tpa~
 BEGIN @1011 /* Additions only */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended Soundsets for NPC */
-OUTER_SET dominate = 0
+SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+OUTER_SET prefer = 0
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
@@ -156,8 +157,8 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 BEGIN @1012 /* Prefer BG1 sounds */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended Soundsets for NPC */
-OUTER_SET dominate = 1
+SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+OUTER_SET prefer = 1
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
@@ -165,32 +166,31 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 BEGIN @1013 /* Prefer BG2 sounds */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended Soundsets for NPC */
-OUTER_SET dominate = 2
+SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+OUTER_SET prefer = 2
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 
-BEGIN @1002 /* Reintroduce */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
-INCLUDE ~%components%/compliments/main.tpa~
-
 BEGIN @1003 /* Reintroduce and adjust to framerate */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-REQUIRE_PREDICATE (~%WEIDU_OS%~ STR_EQ ~win32~) @103 /* Windows only */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
-INCLUDE ~%components%/compliments/framerate_check.tpa~
+SUBCOMPONENT @1001 /* Compliments and insults */
+INCLUDE ~%components%/compliments/wine_check.tpa~
 INCLUDE ~%components%/compliments/main.tpa~
 INCLUDE ~%components%/compliments/framerate.tpa~
+
+BEGIN @1002 /* Reintroduce */
+GROUP @1000 /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
+SUBCOMPONENT @1001 /* Compliments and insults */
+INCLUDE ~%components%/compliments/main.tpa~
 
 BEGIN @1004 /* Disable */
 GROUP @1000 /* Soundsets */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
-SUBCOMPONENT @1001 /* BG1-style party interaction system */
+SUBCOMPONENT @1001 /* Compliments and insults */
 INCLUDE ~%components%/compliments/disable.tpa~
 
 BEGIN @1020 /* No talking when hiding in shadows */
@@ -212,17 +212,17 @@ INCLUDE ~%components%/hassle_free_ammo/main.tpa~
 
 BEGIN @241 /* Add strength bonus */
 GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing axes and hammers damage */
+SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 1 OUTER_SET damage = 0
 INCLUDE ~%components%/throwing_damage/main.tpa~
 BEGIN @242 /* Make axes slashing and hammers blunt */
 GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing axes and hammers damage */
+SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 0 OUTER_SET damage = 1
 INCLUDE ~%components%/throwing_damage/main.tpa~
 BEGIN @243 /* Both of the above options */
 GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing axes and hammers damage */
+SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 1 OUTER_SET damage = 1
 INCLUDE ~%components%/throwing_damage/main.tpa~
 
@@ -238,18 +238,18 @@ INCLUDE ~%components%/cloak_of_mirroring/main.tpa~
 
 BEGIN @204 /* Effects of scrolls and potions do not stack with themselves */
 GROUP @200 /* Items */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee iwdee~) @130 /* Requires Classic ToB or BG(2)EE or IWDEE engine */
 INCLUDE ~%components%/potions_no_stack/main.tpa~
 
-BEGIN @206 //AoE
-GROUP @200 /* Items */
-SUBCOMPONENT @205 /* Sensible wand of frost */
-OUTER_SET cone = 1
-INCLUDE ~%components%/wand_of_frost/main.tpa~
-BEGIN @207 //Single target
+BEGIN @206 // Single target
 GROUP @200 /* Items */
 SUBCOMPONENT @205 /* Sensible wand of frost */
 OUTER_SET cone = 0
+INCLUDE ~%components%/wand_of_frost/main.tpa~
+BEGIN @207 // AoE
+GROUP @200 /* Items */
+SUBCOMPONENT @205 /* Sensible wand of frost */
+OUTER_SET cone = 1
 INCLUDE ~%components%/wand_of_frost/main.tpa~
 
 BEGIN @223 /* Potion of really mirrored eyes */
@@ -263,7 +263,7 @@ INCLUDE ~%components%/goodberries_stacking/main.tpa~
 
 BEGIN @250 /* Improved Shandalar's cloak */
 GROUP @200 /* Items */
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~clck22.itm~ @251 /* Shandalar's cloak not present in game */
+REQUIRE_PREDICATE GAME_INCLUDES ~totsc~ @131 /* Requires TotSC content */
 OUTER_SPRINT comp_name ~shandalars_cloak~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
@@ -275,13 +275,18 @@ INCLUDE ~%components%/algernons_cloak/main.tpa~
 BEGIN @260 /* Improved Equalizer */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-OUTER_SPRINT comp_name ~improved_equalizer~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+OUTER_SPRINT comp_name ~improved_equalizer~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
-BEGIN @261 /* Distinct color for Perdue's sword */
+BEGIN @261 /* Distinct items */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
-INCLUDE ~%components%/perdue_sword/main.tpa~
+INCLUDE ~%components%/distinct_items/main.tpa~
+
+BEGIN @208 /* Working protection from poison */
+GROUP @200 /* Items */
+OUTER_SPRINT comp_name ~poison_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+INCLUDE ~%components%/%comp_name%/main.tpa~
 
 BEGIN @210 /* Really PnP protection items */
 GROUP @200 /* Items */
@@ -362,9 +367,9 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/ma
 
 
 // Stores
-BEGIN @505 /* Stores always buy goods at the same price */
+BEGIN @505 /* Stores always buy goods at the same (low) price */
 GROUP @500 /* Stores */
-INCLUDE ~%components%/no_shop_depreciation/main.tpa~
+INCLUDE ~%components%/no_store_depreciation/main.tpa~
 
 BEGIN @501 /* Can't steal from fences */
 GROUP @500 /* Stores */
@@ -428,6 +433,13 @@ BEGIN @702 /* Improved strongholds */
 GROUP @700 /* Quest and dialog tweaks */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
 INCLUDE ~%components%/improved_strongholds/main.tpa~
+
+BEGIN @703 /* Save Melicamp */
+GROUP @700 /* Quest and dialog tweaks */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+OUTER_TEXT_SPRINT comp_name ~save_melicamp~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+INCLUDE ~%comp_dir%/main.tpa~
 //End quest and dialog tweaks
 
 
@@ -472,21 +484,21 @@ SUBCOMPONENT @607 /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY ~%components%/stat_bonuses/g_stat2.spl~ ~override/g_tomes.spl~
 EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
-BEGIN @610 /* Gem, scroll, potion, ammo (GSPA) */
+BEGIN @611 /* Gem, scroll, potion, ammo (GSPA) */
 GROUP @600 /* Assorted convenience components */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @610 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
 INCLUDE ~%components%/starting_bags/main.tpa~
 
-BEGIN @611 /* GSPA + holding */
+BEGIN @612 /* GSPA + holding */
 GROUP @600 /* Assorted convenience components */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @610 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~%components%/starting_bags/main.tpa~
 
-BEGIN @612 /* GSPA + holding - all bottomless! */
+BEGIN @613 /* GSPA + holding - all bottomless! */
 GROUP @600 /* Assorted convenience components */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @610 /* Starting bags */

@@ -1,0 +1,30 @@
+// know alightnment ability
+
+COPY_EXISTING ~%WIZARD_KNOW_ALIGNMENT%.spl~ override
+  READ_LONG SPL_extended_headers_offset eh_off
+  READ_ASCII (eh_off + SPL_HEAD_memorised_icon) icon
+BUT_ONLY
+
+COPY_EXISTING ~sw1h54.itm~ ~override~
+  LPF ADD_ITEM_HEADER
+    INT_VAR
+      charges = 3
+      depletion = DEPLETION_recharges
+      flags = FLAG_HEAD_recharge_after_rest
+      target = TARGET_HEAD_creature
+      range = 30
+    STR_VAR
+      icon = ~%icon%~
+  END 
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      opcode = OPCODE_cast_spell_at_creature
+      parameter1 = 10 // default casting level from items
+      parameter2 = CASTING_TYPE_instant
+      timing = TIMING_instant
+      header = 2
+      target = TARGET_FX_preset
+    STR_VAR
+      resource = ~%WIZARD_KNOW_ALIGNMENT%~
+  END
+BUT_ONLY

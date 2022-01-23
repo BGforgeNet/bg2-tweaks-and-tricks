@@ -52,7 +52,7 @@ COPY_EXISTING ~%WIZARD_PROJECT_IMAGE%.spl~ override
   LPF ADD_SPELL_EFFECT
     INT_VAR
       opcode = OPCODE_use_eff_file // external effect to get rid of smoke cloud on spy creation
-      target = TARGET_FEATURE_self
+      target = TARGET_FX_self
       insert_point = 0
       duration = 1000
       timing = TIMING_duration
@@ -93,7 +93,7 @@ COPY_EXISTING ~projimag.spl~ override
   LPF ADD_SPELL_CFEFFECT
     INT_VAR
       opcode = OPCODE_set_ai_script
-      target = TARGET_FEATURE_self
+      target = TARGET_FX_self
       timing = TIMING_permanent
       parameter2 = SCRIPT_TYPE_override 
     STR_VAR

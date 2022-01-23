@@ -11,8 +11,10 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("%trap_var_base%_timer", "MYAREA", %notification_delay%)
-    CreateCreatureImpassableAllowOverlap("%traps_minion%", [%x%.%y%], 0)
-    DisplayStringNoNameHead("%traps_minion%", ~%trap_warning_string%~)
-    ActionOverride("%traps_minion%", DestroySelf())
+    // Using a minion for DisplayString allows to put the notification into the center of the trap.
+    // If calling DisplayString directly from trap script, it's off, and sometimes very much off, misleading the player.
+    CreateCreatureImpassableAllowOverlap("%traps_minion_notification%", [%x%.%y%], 0)
+    DisplayStringNoNameHead("%traps_minion_notification%", ~%trap_warning_string%~)
+    ActionOverride("%traps_minion_notification%", DestroySelf())
     Continue()
 END

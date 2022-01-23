@@ -8,9 +8,9 @@ COPY_EXISTING ~clck26.itm~   ~override~
   LPF ADD_ITEM_EQEFFECT
     INT_VAR
       opcode = OPCODE_protection_from_spell //spell immunity
-      target = TARGET_FEATURE_self
+      target = TARGET_FX_self
       timing = TIMING_while_equipped
     STR_VAR
-      resource = ~sppr302~
+      resource = ~%CLERIC_CALL_LIGHTNING%~
   END
 BUT_ONLY

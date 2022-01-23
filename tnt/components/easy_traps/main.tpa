@@ -7,9 +7,13 @@ OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
 OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
 
-OUTER_SPRINT traps_minion ~g_traps~
-LAF CREATE_MINION STR_VAR cre = ~%traps_minion%~ script = ~%traps_minion%~ END
-COMPILE ~%comp_baf_dir%/%traps_minion%.baf~
+// Global minion for autopause. Traps can't PauseGame themsselves, and ActionOverride on PC will interrupt PC actions.
+OUTER_SPRINT traps_minion_pause ~g_traps1~
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion_pause%~ script = ~%traps_minion_pause%~ END
+COMPILE ~%comp_baf_dir%/%traps_minion_pause%.baf~
+// temp minion for DisplayString centered on actual trap
+OUTER_SPRINT traps_minion_notification ~g_traps2~
+LAF CREATE_MINION STR_VAR cre = ~%traps_minion_notification%~ END
 
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
@@ -36,8 +40,8 @@ END
 OUTER_SPRINT trap_spl ~%modder_prefix%trap~
 LAF CREATE_SPELL STR_VAR spell = ~%trap_spl%~ END
 COPY_EXISTING ~%trap_spl%.spl~ override
-  LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEADER_self END
-  LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_find_traps target = TARGET_FEATURE_self END
+  LPF ADD_SPELL_HEADER INT_VAR target = TARGET_HEAD_self END
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = OPCODE_find_traps target = TARGET_FX_self END
 BUT_ONLY
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY struct_types BEGIN
@@ -53,93 +57,99 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
     LPF GET_AREA_DETECTABLE_TRAP_SCRIPTS STR_VAR type RET found = count RET_ARRAY scripts END
     PATCH_IF found > 0 BEGIN
       PHP_EACH scripts AS i => s BEGIN
-        valid_trap_script = 0
-        idx = ~%i_0%~
-        SPRINT type ~%i_1%~
-        detection = ~%i_2%~
-        removal = ~%i_3%~
-        resets = ~%i_4%~
-        trap_index = 0 // this is used for unique MYAREA vars
-        SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
 
-        // location for minion to display the string at actual trap location, not trap launch point
-        LPF GET_AREA_STRUCTURE_CENTER_POINT INT_VAR index = idx STR_VAR type RET x y END
+        PATCH_IF NOT (~%s%~ STR_EQ ~TRPSKEL~) BEGIN // durlag tower level 3 skeleton trap (false exit)
 
-        INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
-          COPY_EXISTING ~%s%.bcs~ override
-            DECOMPILE_AND_PATCH BEGIN
-              triggered = INDEX_BUFFER (CASE_INSENSITIVE EXACT_MATCH ~%trigger%~ )
-              spell = INDEX_BUFFER (CASE_INSENSITIVE EVALUATE_REGEXP ~[ %TAB%^]\(Spell\|ForceSpell\|ReallyForceSpell\|ApplySpell\|SpellNoDec\|ReallyForceSpellDead\)\(Point\)? ?(.+,~ )
-              PATCH_IF triggered != "-1" AND spell != "-1" BEGIN
-                valid_trap_script = 1
-                trap_index += 1  // trap index inside area, to distinguish local vars
-                LPF get_spell_res_from_baf INT_VAR spell_index_buffer = spell RET spell_res END
-                PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) BEGIN
-                  LPF GET_UNIQUE_FILE_NAME
-                    STR_VAR
-                      extension = ~bcs~
-                      base = ~%modder_prefix%tnt_traps_%s%_%type%_%trap_index%_%detection%_%removal%_%resets%_%spell_res%_%x%_%y%~
-                    RET new_script = filename
-                  END
-                  SPRINT $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) ~%new_script%~
+          valid_trap_script = 0
+          idx = ~%i_0%~
+          SPRINT type ~%i_1%~
+          detection = ~%i_2%~
+          removal = ~%i_3%~
+          resets = ~%i_4%~
+          trap_index = 0 // this is used for unique MYAREA vars
+          SPRINT are_file ~%SOURCE_FILE%~ // record to reset after inner action
 
-                  INNER_ACTION BEGIN COPY_EXISTING ~%s%.bcs~ ~override/%new_script%.bcs~ END
-                  SPRINT trap_var_base ~%modder_prefix%tnt_traps%new_script%~
+          // location for minion to display the string at actual trap location, not trap launch point
+          LPF GET_AREA_STRUCTURE_CENTER_POINT INT_VAR index = idx STR_VAR type RET x y END
 
-                  // regions can be "inactive"
-                  SPRINT is_active ~~ // containers and doors
-                  PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN SPRINT is_active ~IsActive(Myself)~ END
+          INNER_ACTION BEGIN // should be INNER_PATCH_FILE, but weidu has a bug https://github.com/WeiDUorg/weidu/issues/168
+            COPY_EXISTING ~%s%.bcs~ override
+              DECOMPILE_AND_PATCH BEGIN
+                triggered = INDEX_BUFFER (CASE_INSENSITIVE EXACT_MATCH ~%trigger%~ )
+                LPF get_spell_res_from_baf_buffer RET spell_res END
 
-                  // autopause handling
-                  SPRINT traps_baf_pause_toggle ~False()~
-                  PATCH_IF autopause == 1 AND (~%type%~ STR_EQ ~region~) BEGIN SPRINT traps_baf_pause_toggle ~~ END
-                  PATCH_IF autopause == 2 BEGIN SPRINT traps_baf_pause_toggle ~~ END
-
-                  // trap floats
-                  PATCH_IF reminders != 0 BEGIN
-                    simple_floats = 1 // disclose type?
-                    PATCH_IF reminders == 2 BEGIN simple_floats = 0 END
-                    LPF calculate_trap_warning_string
-                      INT_VAR simple = simple_floats
+                PATCH_IF triggered != "-1" AND NOT (~%spell_res%~ STRING_EQUAL ~~) BEGIN
+                  valid_trap_script = 1
+                  trap_index += 1  // trap index inside area, to distinguish local vars
+                  PATCH_IF NOT VARIABLE_IS_SET $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) BEGIN
+                    LPF GET_UNIQUE_FILE_NAME
                       STR_VAR
-                        spell_res
-                        unknown = ~%unknown_trap_name%~
-                        trap_lower
-                        trap_capitalized
-                      RET trap_warning_string = string
+                        extension = ~bcs~
+                        base = ~%modder_prefix%tnt_traps_%s%_%type%_%trap_index%_%detection%_%removal%_%resets%_%spell_res%_%x%_%y%~
+                      RET new_script = filename
                     END
-                  END
+                    SPRINT $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~) ~%new_script%~
 
-                  INNER_ACTION BEGIN
-                    EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/main.baf~ EVAL
-                    ACTION_IF reminders != 0 BEGIN
-                      EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/displaystring.baf~ EVAL
-                    END
-                    ACTION_IF intuition == 1 BEGIN
-                      EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/intuition.baf~ EVAL
-                    END
-                    EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/detection.baf~ EVAL
-                  END
+                    INNER_ACTION BEGIN COPY_EXISTING ~%s%.bcs~ ~override/%new_script%.bcs~ END
+                    SPRINT trap_var_base ~%modder_prefix%tnt_traps%new_script%~
 
+                    // regions can be "inactive"
+                    SPRINT is_active ~~ // containers and doors
+                    PATCH_IF (~%type%~ STR_EQ ~region~) BEGIN SPRINT is_active ~IsActive(Myself)~ END
+
+                    // autopause handling
+                    SPRINT traps_baf_pause_toggle ~False()~
+                    PATCH_IF autopause == 1 AND (~%type%~ STR_EQ ~region~) BEGIN SPRINT traps_baf_pause_toggle ~~ END
+                    PATCH_IF autopause == 2 BEGIN SPRINT traps_baf_pause_toggle ~~ END
+
+                    // trap floats
+                    PATCH_IF reminders != 0 BEGIN
+                      simple_floats = 1 // disclose type?
+                      PATCH_IF reminders == 2 BEGIN simple_floats = 0 END
+                      LPF calculate_trap_warning_string
+                        INT_VAR simple = simple_floats
+                        STR_VAR
+                          spell_res
+                          unknown = ~%unknown_trap_name%~
+                          trap_lower
+                          trap_capitalized
+                        RET trap_warning_string = string
+                      END
+                    END
+
+                    INNER_ACTION BEGIN
+                      EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/main.baf~ EVAL
+                      ACTION_IF reminders != 0 BEGIN
+                        EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/displaystring.baf~ EVAL
+                      END
+                      ACTION_IF intuition == 1 BEGIN
+                        EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/intuition.baf~ EVAL
+                      END
+                      EXTEND_TOP ~%new_script%.bcs~ ~%comp_baf_dir%/detection.baf~ EVAL
+                    END
+
+                  END ELSE BEGIN
+                    SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~)
+                  END
                 END ELSE BEGIN
-                  SPRINT new_script $script_map(~%s%~ ~%type%~ ~%trap_index%~ ~%detection%~ ~%removal%~ ~%resets%~ ~%spell_res%~ ~%x%~ ~%y%~)
+                  PATCH_PRINT ~script %s% is not a normal trap. triggered=%triggered%, spell_res="%spell_res%"~
                 END
               END
+            BUT_ONLY
+          END // inner action end
+
+          // Reset vars after inner action. Workaround for weidu bug https://github.com/WeiDUorg/weidu/issues/168
+          INNER_ACTION BEGIN COPY_EXISTING ~%are_file%~ override BUT_ONLY END
+          // assign new script
+          PATCH_IF valid_trap_script == 1 BEGIN
+            LPF ALTER_AREA_STRUCTURE_SCRIPT
+              INT_VAR index = idx
+              STR_VAR script = ~%new_script%~ type = ~%type%~
             END
-          BUT_ONLY
-        END // inner action end
-
-        // Reset vars after inner action. Workaround for weidu bug https://github.com/WeiDUorg/weidu/issues/168
-        INNER_ACTION BEGIN COPY_EXISTING ~%are_file%~ override BUT_ONLY END
-        // assign new script
-        PATCH_IF valid_trap_script == 1 BEGIN
-          LPF ALTER_AREA_STRUCTURE_SCRIPT
-            INT_VAR index = idx
-            STR_VAR script = ~%new_script%~ type = ~%type%~
           END
-        END
 
-      END
-    END
+        END // single script patch
+      END // PHP_EACH scripts
+    END // if found > 0
   END
 BUT_ONLY

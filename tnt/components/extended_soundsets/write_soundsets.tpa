@@ -1,5 +1,5 @@
 //Calculate soundsets. "bg1_cre" and "bg2_cre" are identical as far as only "npc_name" is used
-ACTION_IF dominate = 0 BEGIN   //Additions only
+ACTION_IF prefer = 0 BEGIN  // Additions only
   ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
     ACTION_PHP_EACH ~bg2_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
       OUTER_FOR (i=0; i<100; i+=1) BEGIN   //loop through CRE sound slots
@@ -14,7 +14,7 @@ ACTION_IF dominate = 0 BEGIN   //Additions only
   END
   OUTER_SET overwrite = 0 //used in WRITE_SOUNDSET later
 END
-ACTION_IF dominate = 1 BEGIN   //BG1 prevail
+ACTION_IF prefer = 1 BEGIN // BG1
   ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
     ACTION_PHP_EACH ~bg2_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
       OUTER_FOR (i=0; i<100; i+=1) BEGIN   //loop through CRE sound slots
@@ -29,7 +29,7 @@ ACTION_IF dominate = 1 BEGIN   //BG1 prevail
   END
   OUTER_SET overwrite = 1 //used in WRITE_SOUNDSET later
 END
-ACTION_IF dominate = 2 BEGIN   //BG2 prevail
+ACTION_IF prefer = 2 BEGIN // BG2
   ACTION_PHP_EACH bg2_cre AS npc_name => npc_cre BEGIN   //loop through NPCs
     ACTION_PHP_EACH ~bg2_%npc_name%_cre~ AS index => cre BEGIN   //loop through NPC CRE's
       OUTER_FOR (i=0; i<100; i+=1) BEGIN   //loop through CRE sound slots

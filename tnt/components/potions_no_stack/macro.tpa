@@ -1,4 +1,5 @@
-//"item_to_unstack" - item we want to stop stack, "spellname" is name for hidden spell, "refresh_strref" appears upon refreshing spell. Both without extensions.
+// "item_to_unstack" - item we want to stop stack, "spellname" is name for hidden spell. Both without extensions.
+// "refresh_strref" appears upon refreshing spell.
 DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 
 ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
@@ -33,7 +34,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
     LPF ADD_ITEM_EFFECT
       INT_VAR
         opcode = OPCODE_text_display_string
-        target = TARGET_FEATURE_self
+        target = TARGET_FX_self
         parameter1 = 16233 //"Gulp!"
         power = 4
         timing = TIMING_instant
@@ -46,7 +47,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
   LPF ADD_ITEM_EFFECT
     INT_VAR
       opcode = OPCODE_remove_secondary_type
-      target = TARGET_FEATURE_preset
+      target = TARGET_FX_preset
       power = 4
       parameter1 = 10 //max level
       parameter2 = ~%sectype_id%~ //remove our secondary type
@@ -58,7 +59,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
   LPF ADD_ITEM_EFFECT
     INT_VAR
       opcode = OPCODE_cast_spell_at_creature
-      target = TARGET_FEATURE_preset
+      target = TARGET_FX_preset
       power = 4
       parameter2 = 1 //instant cast
       timing = TIMING_instant

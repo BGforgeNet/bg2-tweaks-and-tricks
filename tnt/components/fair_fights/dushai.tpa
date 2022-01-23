@@ -1,0 +1,7 @@
+// Dushai, Ulgoth's beard
+// Some nonsense resistances
+COPY_EXISTING ~dushai.cre~ ~override~
+  WRITE_BYTE CRE_fire_resistance 0
+  WRITE_BYTE CRE_magic_resistance 0
+  WRITE_BYTE CRE_magic_fire_resistance 0
+BUT_ONLY IF_EXISTS

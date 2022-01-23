@@ -17,18 +17,18 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
       READ_BYTE h_off attack_type
       PATCH_IF attack_type == ITM_ATTACK_TYPE_ranged BEGIN
         PATCH_IF damage == 1 BEGIN
-          WRITE_SHORT (h_off + ITM_HEADER_damage_type) damage_type
+          WRITE_SHORT (h_off + ITM_HEAD_damage_type) damage_type
           PATCH_FOR_EACH off IN DESC UNIDENTIFIED_DESC BEGIN
             LPF REPLACE_STRREF_TRA
               INT_VAR
-                offset = off
+                offset = EVAL ~%off%~
                 old_substring_traref = 253 //missile (piercing)
                 new_substring_traref = damage_tra
             END
           END
         END
         PATCH_IF strength == 1 BEGIN
-          WRITE_LONG (h_off + ITM_HEADER_flags) (THIS BAND FLAG_HEADER_add_strength_bonus)
+          WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BAND FLAG_HEAD_add_strength_bonus)
         END
       END
     END

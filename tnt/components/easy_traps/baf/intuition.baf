@@ -80,13 +80,24 @@ THEN
     Continue()
 END
 
+// intuition: autopause - create global minion, once per game
+IF
+  Global("g_traps_minion_pause", "GLOBAL", 0)
+THEN
+  RESPONSE #1
+    CreateCreature("%traps_minion_pause%", [-1.-1], 0)
+    SetGlobal("g_traps_minion_pause", "GLOBAL", 1)
+    Continue()
+END
 // intuition: autopause
 IF
   %traps_baf_pause_toggle%
   Global("%trap_var_base%_intuition", "MYAREA", 1)
 THEN
   RESPONSE #1
-    CreateCreature("%traps_minion%", [-1.-1], 0)
+    MoveGlobal("MYAREA","%traps_minion_pause%", [0.0])
+    ActionOverride("%traps_minion_pause%", PauseGame())
+    ActionOverride("%traps_minion_pause%", DestroySelf())
     Continue()
 END
 

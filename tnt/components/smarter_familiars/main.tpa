@@ -297,26 +297,22 @@ END
 
 
 
-//New dialog options
+// New dialog options
 ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
     COMPILE EVAL ~%comp_dir%/familiars.d~
   END
 END
 
-//Speed spells
+// Speed spells
 COPY ~%comp_dir%/g_fsped0.spl~ ~override~
 COPY ~%comp_dir%/g_fsped1.spl~ ~override~
 COPY ~%comp_dir%/g_fsped2.spl~ ~override~
 
 
-//potion spy
-COPY_EXISTING ~cutspy.cre~ ~override/g_spy1.cre~
-  WRITE_ASCIIT DEATHVAR ~g_spy1~
-  WRITE_ASCIIT SCRIPT_OVERRIDE ~g_spy1~
-BUT_ONLY
-
-//script for potion spy
+// potion spy
+LAF CREATE_MINION STR_VAR cre = ~g_spy1~ script = ~g_spy1~ END
+// script for potion spy
 <<<<<<<< .../tnt-inlined/g_spy1.baf
 IF
   True()

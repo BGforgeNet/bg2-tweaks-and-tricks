@@ -1,3 +1,0 @@
-COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
-  WRITE_LONG STO_depreciation_rate 0  // disable depreciation
-BUT_ONLY

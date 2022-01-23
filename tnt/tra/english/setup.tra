@@ -9,6 +9,8 @@
 @127 = ~Only non-EE engines~
 @128 = ~Requires Classic ToB engine~
 @129 = ~BGT only~
+@130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
+@131 = ~Requires TotSC content~
 
 @200 = ~Items~
 @201 = ~Hassle-free ammo~
@@ -27,18 +29,17 @@
 
 @236 = ~Unlimited goodberries stacking~
 
-@240 = ~Throwing axes and hammers damage~
+@240 = ~Throwing weapons damage type~
 @241 = ~Add strength bonus~
 @242 = ~Make axes slashing and hammers blunt~
 @243 = ~Both of the above options~
 
 @250 = ~Improved Shandalar's cloak~
-@251 = ~Shandalar's cloak not present in game~
 @252 = ~Algernon's cloak: usable once per day~
 
 @260 = ~Improved Equalizer~
 
-@261 = ~Distinct color for Perdue's sword~
+@261 = ~Distinct quest items~
 
 @300 = ~Traps~
 @301 = ~Trap intuition~
@@ -69,7 +70,7 @@
 @502 = ~Close shop steal exploit~
 @503 = ~Can't steal from any stores~
 @504 = ~More ankheg armors by Taerom~
-@505 = ~Stores always buy goods at the same price~
+@505 = ~Stores always buy goods at the same (low) price~
 @506 = ~Limited stock~
 
 
@@ -92,6 +93,7 @@
 @700 = ~Quest and dialog tweaks~
 @701 = ~Bloodless deeds~
 @702 = ~Improved strongholds~
+@703 = ~Save Melicamp~
 
 
 @800 = ~Spells and abilities~
@@ -103,7 +105,7 @@
 @806 = ~True True Sight~
 @807 = ~Sensible Otiluke's Resilient Sphere~
 @808 = ~Greater Command AoE~
-@809 = ~Non-Detection blocks True Sight and other divination spells~
+@809 = ~Working Non-Detection~
 @810 = ~Non-Detection spell is not present in game~
 @811 = ~Unstack Chaos Shield~
 @812 = ~Chaos Shield spells are not present in game~
@@ -120,12 +122,12 @@
 
 
 @1000 = ~Soundsets~
-@1001 = ~BG1-style party interaction system~
+@1001 = ~Compliments and insults~
 @1002 = ~Reintroduce~
 @1003 = ~Reintroduce and adjust to framerate~
 @1004 = ~Disable~
 
-@1010 = ~Extended soundsets for NPC~
+@1010 = ~Extended soundsets for joinable NPCs~
 @1011 = ~Additions only~
 @1012 = ~Prefer BG1 sounds~
 @1013 = ~Prefer BG2 sounds~

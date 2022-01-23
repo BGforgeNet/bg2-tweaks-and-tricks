@@ -7,11 +7,19 @@ jobs:
   tagged-release:
     name: "Tagged Release"
     runs-on: "ubuntu-latest"
-
     steps:
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Get tag name
+        uses: little-core-labs/get-git-tag@v3.0.2
+        id: tagName
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          tag_name: ${{ env.GIT_TAG_NAME }}
+          release_name: ${{ env.GIT_TAG_NAME }}
+          draft: false
           prerelease: false
 
   CreateIEModZipPackagesUploadToPublishedRelease:

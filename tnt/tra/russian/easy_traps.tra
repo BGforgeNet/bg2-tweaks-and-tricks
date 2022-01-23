@@ -10,10 +10,10 @@
 @98 = ~Ловушка~
 @99 = ~ловушка~
 @100 = ~Неизвестно~
-@101 = ~Hold Person trap~
-@102 = ~Silence trap~
-@103 = ~Call Lightning trap~
-@104 = ~Miscast Magic trap~
+@101 = ~Удерживающая ловушка~
+@102 = ~Ловушка Молчания~
+@103 = ~Ловушка Призвания Молнии~
+@104 = ~Антимагическая ловушка~
 @105 = ~Flamestrike trap~
 @106 = ~Chromatic orb trap~
 @107 = ~Confusion trap~

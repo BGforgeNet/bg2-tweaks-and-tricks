@@ -1,0 +1,7 @@
+// check if wine is present
+ACTION_IF NOT ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
+  AT_NOW wine_rc ~wine --help~
+  ACTION_IF wine_rc != 0 BEGIN
+    FAIL ~You must have wine in PATH for this component~
+  END
+END

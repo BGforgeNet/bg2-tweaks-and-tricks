@@ -11,7 +11,7 @@ Here are various QoL components that didn't really fit into any other sections.
 - [Add BG1 tome stats bonuses to new BG2 characters](#add-bg1-tome-stats-bonuses-to-new-bg2-characters)
 - [Starting bags](#starting-bags)
 
-#### Less autosaves
+### Less autosaves
 Disables autosaves on area transitions. This **only** affects transitions that **don't go through worldmap**.
 
 It saves some time, but on the other hand you should treat your saves more carefully. **You've been warned.**
@@ -31,8 +31,9 @@ For original Bioware characters, there's long been a tweak that allows multiple 
 - Amber
 - Tyris
 - Saerileth
+- Nalia (Dearnise Romance)
 
-**Beware** that if you install this, and then hit **any** bug with such character, you'll likely will get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
+**Beware** that if you install this, and then hit **any** bug with such character, you'll likely get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
 
 ### Disable intro movies
 Disables BIS logo movie and stuff (not the actual game movies).

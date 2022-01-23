@@ -1,4 +1,4 @@
-OUTER_SET tobex_redist_version = 26
+OUTER_SET tobex_redist_version = 28
 
 DEFINE_ACTION_FUNCTION tobex_copy STR_VAR file = "nul" BEGIN
   ACTION_IF NOT FILE_EXISTS_IN_GAME "%file%" BEGIN

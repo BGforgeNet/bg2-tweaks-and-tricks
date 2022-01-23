@@ -1,9 +1,21 @@
+// for some reason TakePartyItem/Num marks the item unstealable?
 COPY_EXISTING ~nemphr.dlg~ ~override~
-    // tutu: TakePartyItem("MACAMUL1")
-    // bg classic: TakePartyItem("AMUL13")
-    // bgee: TakePartyItem("OHAMUL13")
-    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH // bgt
+  DECOMPILE_AND_PATCH BEGIN
+    // bgt
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
       ~TakePartyItemNum("BGAMUL13",1)~
-      ~TakePartyItem("BGAMUL13")~
+      ~TakePartyItemNum("BGAMUL13",1) DestroyItem("BGAMUL13") CreateItem("BGAMUL13",0,0,0)~
+    // tutu
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+      ~TakePartyItem("MACAMUL1",1)~
+      ~TakePartyItem("MACAMUL1",1) DestroyItem("MACAMUL1") CreateItem("MACAMUL1",0,0,0)~
+    // bg1
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+      ~TakePartyItem("AMUL13")~
+      ~TakePartyItem("AMUL13") DestroyItem("AMUL13") CreateItem("AMUL13",0,0,0)~
+    // bgee
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH
+      ~TakePartyItem("OHAMUL13")~
+      ~TakePartyItem("OHAMUL13") DestroyItem("OHAMUL13") CreateItem("OHAMUL13",0,0,0)~
   END
 BUT_ONLY
