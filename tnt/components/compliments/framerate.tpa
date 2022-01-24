@@ -1,17 +1,42 @@
 INCLUDE ~%comp_dir%/sound_list.tpa~ // define a sound_list array with compliments and insults
 
-// get framerate
-COPY ~baldur.ini~ ~baldur.ini~
-  SPRINT string ~~
-  offset = 0
-  WHILE !(~Rate=~ STRING_EQUAL ~%string%~) BEGIN
-    READ_ASCII offset string (5)
-    SET offset = (offset + 1)
+DEFINE_ACTION_FUNCTION get_framerate
+  RET framerate
+BEGIN
+  OUTER_SET framerate = 30
+  ACTION_IF GAME_IS ~bgt~ BEGIN
+    COPY ~baldur.ini~ ~baldur.ini~
+      SPRINT string ~~
+      offset = 0
+      WHILE !(~Rate=~ STRING_EQUAL ~%string%~) BEGIN
+        READ_ASCII offset string (5)
+        SET offset = (offset + 1)
+      END
+      offset = (offset + 4)
+      READ_ASCII offset framerate (2)
+      PATCH_PRINT ~Current framerate is: %framerate%~
+    BUT_ONLY
   END
-  offset = (offset + 4)
-  READ_ASCII offset framerate (2)
-  PATCH_PRINT ~Current framerate is: %framerate%~
-BUT_ONLY
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    ACTION_TRY
+      COPY ~%USER_DIRECTORY%/baldur.lua~ ~%USER_DIRECTORY%/baldur.lua~
+        SPRINT string ~~
+        offset = 0
+        WHILE !(~Rate','~ STRING_EQUAL ~%string%~) BEGIN
+          READ_ASCII offset string (7)
+          SET offset = (offset + 1)
+        END
+        offset = (offset + 6)
+        READ_ASCII offset framerate (2)
+        PATCH_PRINT ~Current framerate is: %framerate%~
+      BUT_ONLY
+      WITH ~g_dummy~ BEGIN END
+      DEFAULT PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua, using default=30~
+    END
+  END
+END
+
+LAF get_framerate RET framerate END
 
 // Copy wavc sounds and decompress to wav
 OUTER_SPRINT tools_dir ~%MOD_FOLDER%/tools~
