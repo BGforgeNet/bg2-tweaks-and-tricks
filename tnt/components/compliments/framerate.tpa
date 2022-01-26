@@ -20,7 +20,7 @@ BEGIN
   ACTION_IF GAME_IS ~eet~ BEGIN
     ACTION_IF FILE_EXISTS ~%USER_DIRECTORY%/baldur.lua~ BEGIN
       ACTION_IF FILE_CONTAINS ~%USER_DIRECTORY%/baldur.lua~ ~Rate','~ BEGIN
-        COPY ~%USER_DIRECTORY%/baldur.lua~  ~%USER_DIRECTORY%/baldur.lua~
+        COPY ~%USER_DIRECTORY%/baldur.lua~ ~%USER_DIRECTORY%/baldur.lua~
           SPRINT string ~~
           offset = 0
           WHILE !(~Rate','~ STRING_EQUAL ~%string%~) BEGIN
