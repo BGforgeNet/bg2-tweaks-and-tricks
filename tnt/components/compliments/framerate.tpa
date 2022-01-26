@@ -10,7 +10,7 @@ BEGIN
       offset = 0
       WHILE !(~Rate=~ STRING_EQUAL ~%string%~) BEGIN
         READ_ASCII offset string (5)
-        SET offset = (offset + 1)
+        offset = (offset + 1)
       END
       offset = (offset + 4)
       READ_ASCII offset framerate (2)
@@ -20,18 +20,22 @@ BEGIN
   ACTION_IF GAME_IS ~eet~ BEGIN
     ACTION_TRY
       COPY ~%USER_DIRECTORY%/baldur.lua~ ~%USER_DIRECTORY%/baldur.lua~
-        SPRINT string ~~
-        offset = 0
-        WHILE !(~Rate','~ STRING_EQUAL ~%string%~) BEGIN
-          READ_ASCII offset string (7)
-          SET offset = (offset + 1)
+        PATCH_TRY
+            SPRINT string ~~
+            offset = 0
+            WHILE !(~Rate','~ STRING_EQUAL ~%string%~) BEGIN
+              READ_ASCII offset string (7)
+              offset = (offset + 1)
+            END
+            offset = (offset + 6)
+            READ_ASCII offset framerate (2)
+            PATCH_PRINT ~Current framerate is: %framerate%~
+          WITH ~g_dummy~ BEGIN END
+          DEFAULT PATCH_PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua, using default = 30~
         END
-        offset = (offset + 6)
-        READ_ASCII offset framerate (2)
-        PATCH_PRINT ~Current framerate is: %framerate%~
       BUT_ONLY
       WITH ~g_dummy~ BEGIN END
-      DEFAULT PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua, using default=30~
+      DEFAULT PRINT ~%USER_DIRECTORY%/baldur.lua not found, using default framerate = 30~
     END
   END
 END
