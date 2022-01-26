@@ -19,15 +19,17 @@ BEGIN
   END
   ACTION_IF GAME_IS ~eet~ AND FILE_EXISTS ~%USER_DIRECTORY%/baldur.lua~ BEGIN
     ACTION_IF FILE_CONTAINS ~%USER_DIRECTORY%/baldur.lua~ ~Rate','~ BEGIN
-      SPRINT string ~~
-      offset = 0
-      WHILE !(~Rate','~ STRING_EQUAL ~%string%~) BEGIN
-        READ_ASCII offset string (7)
-        offset = (offset + 1)
-      END
-      offset = (offset + 6)
-      READ_ASCII offset framerate (2)
-      PATCH_PRINT ~Current framerate is: %framerate%~
+      COPY ~%USER_DIRECTORY%/baldur.lua~  ~%USER_DIRECTORY%/baldur.lua~
+        SPRINT string ~~
+        offset = 0
+        WHILE !(~Rate','~ STRING_EQUAL ~%string%~) BEGIN
+          READ_ASCII offset string (7)
+          offset = (offset + 1)
+        END
+        offset = (offset + 6)
+        READ_ASCII offset framerate (2)
+        PATCH_PRINT ~Current framerate is: %framerate%~
+      BUT_ONLY
     END ELSE BEGIN
       PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua not found, using default = 30~
     END
