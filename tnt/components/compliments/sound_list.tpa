@@ -1,96 +1,113 @@
 // List sounds
-ACTION_DEFINE_ARRAY sound_list BEGIN
-  jaher35
-  jaher37
-  jaher30
-  jaher36
+ACTION_DEFINE_ASSOCIATIVE_ARRAY sound_list BEGIN
+  jaher35 => 1
+  jaher37 => 1
+  jaher30 => 1
+  jaher36 => 1
 
-  bgmnsc35
-  bgmnsc36
-  bgmnsc29
-  bgmnsc37
+  vicon36 => 1
+  vicon31 => 1
+  vicon35 => 1
 
-  bedwin35
-  bedwin36
-  bedwin37
-  bedwin30
+  ajant37 => 1
+  ajant27 => 1
+  ajant28 => 1
+  ajant36 => 1
 
-  vicon36
-  vicon31
-  vicon35
+  alora35 => 1
+  alora36 => 1
+  alora37 => 1
 
-  ajant37
-  ajant27
-  ajant28
-  ajant36
+  faldn37 => 1
+  faldn35 => 1
+  faldn36 => 1
 
-  alora35
-  alora36
-  alora37
+  eldot36 => 1
+  eldot37 => 1
+  eldot35 => 1
 
-  faldn37
-  faldn35
-  faldn36
+  skiee35 => 1
+  skiee36 => 1
+  skiee37 => 1
 
-  eldot36
-  eldot37
-  eldot35
+  khald35 => 1
+  khald30 => 1
+  khald31 => 1
+  khald37 => 1
 
-  skiee35
-  skiee36
-  skiee37
+  xannn35 => 1
+  xannn36 => 1
+  xannn37 => 1
 
-  khald35
-  khald30
-  khald31
-  khald37
+  coran35 => 1
+  coran36 => 1
+  coran37 => 1
 
-  xannn35
-  xannn36
-  xannn37
+  kivan37 => 1
+  kivan35 => 1
+  kivan36 => 1
 
-  coran35
-  coran36
-  coran37
+  montr35 => 1
+  montr36 => 1
+  montr37 => 1
 
-  kivan37
-  kivan35
-  kivan36
+  dynah35 => 1
+  dynah37 => 1
 
-  montr35
-  montr36
-  montr37
+  yeslk37 => 1
+  yeslk31 => 1
+  yeslk36 => 1
 
-  dynah35
-  dynah37
+  garrk37 => 1
+  garrk35 => 1
 
-  yeslk37
-  yeslk31
-  yeslk36
+  branw37 => 1
+  branw35 => 1
+  branw29 => 1
+  branw36 => 1
+  branw30 => 1
 
-  garrk37
-  garrk35
+  safan37 => 1
+  safan35 => 1
+  safan36 => 1
 
-  branw37
-  branw35
-  branw29
-  branw36
-  branw30
+  quayl37 => 1
+  quayl35 => 1
+  quayl36 => 1
 
-  safan37
-  safan35
-  safan36
+  kagan35 => 1
+  kagan37 => 1
 
-  quayl37
-  quayl35
-  quayl36
+  shart35 => 1
+  shart36 => 1
+  shart37 => 1
 
-  kagan35
-  kagan37
-
-  shart35
-  shart36
-  shart37
-
-  tiaxx35
+  tiaxx35 => 1
 END //sound_list
+
+ACTION_IF GAME_IS ~bgt~ BEGIN
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY sound_list BEGIN
+    bgmnsc35 => 1
+    bgmnsc36 => 1
+    bgmnsc29 => 1
+    bgmnsc37 => 1
+
+    bedwin35 => 1
+    bedwin36 => 1
+    bedwin37 => 1
+    bedwin30 => 1
+  END
+END
+ACTION_IF GAME_IS ~eet~ BEGIN
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY sound_list BEGIN
+    minsc35_ => 1
+    minsc36_ => 1
+    minsc29_ => 1
+    minsc37_ => 1
+
+    edwin35_ => 1
+    edwin36_ => 1
+    edwin37_ => 1
+    edwin30_ => 1
+  END
+END
