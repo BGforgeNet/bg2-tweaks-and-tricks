@@ -31,10 +31,38 @@ BEGIN
           READ_ASCII offset framerate (2)
           PATCH_PRINT ~Current framerate is: %framerate%~
         BUT_ONLY
-      END
+      END ELSE BEGIN PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua, using default = 30~ END
+    END ELSE BEGIN PRINT ~%USER_DIRECTORY%/baldur.lua not found, using framerate default = 30~ END
+  END
+END
+
+DEFINE_ACTION_FUNCTION decompress_sound
+  STR_VAR filename = ~~
+BEGIN
+  OUTER_SPRINT tools_dir ~%MOD_FOLDER%/tools~
+  OUTER_SET rc = 1
+  ACTION_IF GAME_IS ~bgt~ BEGIN
+    ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
+      AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
     END ELSE BEGIN
-      PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua, using default = 30~
+      AT_NOW rc ~wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
     END
+  END
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    COPY + ~override/%sound%.wav~ ~override/g_temp.wavc~ // oggdec needs an intermediate file
+    ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
+      AT_NOW rc ~%tools_dir%\oggdec.exe override\g_temp.wavc -o override\%sound%.wav~
+    END
+    ACTION_IF ~%WEIDU_OS%~ STR_EQ ~unix~ BEGIN
+      AT_NOW rc ~oggdec override/g_temp.wavc -o override/%sound%.wav~
+    END
+    ACTION_IF ~%WEIDU_OS%~ STR_EQ ~mac~ BEGIN
+      AT_NOW rc ~sox override/g_temp.wavc override/%sound%.wav~
+    END
+    DELETE + ~override/g_temp.wavc~
+  END
+  ACTION_IF rc != 0 BEGIN
+    FAIL ~Failed to decompress %sound% wavc~
   END
 END
 
@@ -42,17 +70,10 @@ LAF get_framerate RET framerate END
 
 ACTION_IF framerate != 30 BEGIN
   // Copy wavc sounds and decompress to wav
-  OUTER_SPRINT tools_dir ~%MOD_FOLDER%/tools~
+
   ACTION_PHP_EACH sound_list AS index => sound BEGIN
-    COPY_EXISTING ~%sound%.wav~ ~override~
-    ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-      AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
-    END ELSE BEGIN
-      AT_NOW rc ~wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
-    END
-    ACTION_IF rc != 0 BEGIN
-      FAIL ~Failed to decompress %sound% wavc~
-    END
+    COPY_EXISTING ~%sound%.wav~ ~override/%sound%.wav~
+    LAF decompress_sound STR_VAR filename = ~%sound%.wav~ END
   END
 
   OUTER_SET wav_filesize_off = 0x4
