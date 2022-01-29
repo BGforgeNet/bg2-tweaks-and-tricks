@@ -31,8 +31,8 @@ BEGIN
           READ_ASCII offset framerate (2)
           PATCH_PRINT ~Current framerate is: %framerate%~
         BUT_ONLY
-      END ELSE BEGIN PRINT ~framerate not found in %USER_DIRECTORY%/baldur.lua, using default = 30~ END
-    END ELSE BEGIN PRINT ~%USER_DIRECTORY%/baldur.lua not found, using framerate default = 30~ END
+      END ELSE BEGIN PRINT ~framerate not found in baldur.lua, using default = 30~ END
+    END ELSE BEGIN PRINT ~baldur.lua not found, using framerate default = 30~ END
   END
 END
 
