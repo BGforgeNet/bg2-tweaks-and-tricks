@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.14](#version-814)
 - [Version 8.13](#version-813)
 - [Version 8.12](#version-812)
 - [Version 8.11](#version-811)
@@ -21,6 +22,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+
+### Version 8.14
+- Fixed Extended Soundsets, Compliments and insults installation on EET.
 
 ### Version 8.13
 Fixed installation of BG1-style party interaction with framerate adjustment on Windows, also allowed to install on Unix if wine is present. Renamed the component to "Compliments and insults".
