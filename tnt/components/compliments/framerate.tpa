@@ -51,7 +51,7 @@ BEGIN
   ACTION_IF GAME_IS ~eet~ BEGIN
     COPY + ~override/%sound%.wav~ ~override/g_temp.wavc~ // oggdec needs an intermediate file
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-      AT_NOW rc ~%tools_dir%\oggdec.exe override\g_temp.wavc -o override\%sound%.wav~
+      AT_NOW rc ~%tools_dir%\oggdec.exe override\g_temp.wavc -w override\%sound%.wav~
     END
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~unix~ BEGIN
       AT_NOW rc ~oggdec override/g_temp.wavc -o override/%sound%.wav~
