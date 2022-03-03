@@ -1,9 +1,14 @@
 # Tweaks and Tricks mod for Baldur's Gate 2
 
-[![Translation status](https://tra.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 [![Build Status](https://golem.bgforge.net/mods/tweaks-and-tricks/status.svg)](https://golem.bgforge.net/mods/tweaks-and-tricks)
+[![Translation status](https://tra.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
+
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Discord chat](https://img.shields.io/discord/420268540700917760?logo=discord)](https://discord.gg/4Yqfggm)
+[![Patreon](https://img.shields.io/badge/Patreon-donate-FF424D?logo=Patreon&labelColor=141518)](https://www.patreon.com/BGforge)
+
+[![Telegram](https://img.shields.io/badge/telegram-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange?logo=telegram)](https://t.me/bgforge)
+[![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
+[![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
 
 [__Download__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
 | [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
