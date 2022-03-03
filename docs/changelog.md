@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.16](#version-816)
 - [Version 8.15](#version-815)
 - [Version 8.14](#version-814)
 - [Version 8.13](#version-813)
@@ -23,6 +24,9 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.16
+- [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/54) Melicamp not reverting back when Infinity Animations is installed.
 
 ### Version 8.15
 - Fixed Compliments and Insults installation on EET+Windows.
