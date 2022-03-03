@@ -1,5 +1,5 @@
 IF
-	Trigger(1)
+  Trigger(1)
   Global("g_melicamp_sequence", "GLOBAL", 0) // not started
 THEN
   RESPONSE #1
@@ -87,7 +87,7 @@ THEN
     SetGlobal("g_melicamp_roll", "GLOBAL", 10)
 END
 
-// Bless only can be cast green-circle characters
+// Bless only can be cast on green-circle characters
 // IF
 // 	Global("g_melicamp_sequence", "GLOBAL",1)
 // 	Global("g_melicamp_bless", "LOCALS", 0)
@@ -99,31 +99,31 @@ END
 // //    DisplayStringHead(Myself, ~roll improved by bless~)
 // END
 IF
-	Global("g_melicamp_sequence", "GLOBAL",1)
-	Global("g_melicamp_aid", "LOCALS", 0)
+  Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_aid", "LOCALS", 0)
   StateCheck("Melicamp", STATE_AID)
 THEN
-	RESPONSE #1
+  RESPONSE #1
     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
     SetGlobal("g_melicamp_aid", "LOCALS", 1)
 //    DisplayStringHead(Myself, ~roll improved by aid~)
 END
 IF
-	Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL",1)
   Global("g_melicamp_luck", "LOCALS", 0)
   StateCheck("Melicamp", STATE_LUCK)
 THEN
-	RESPONSE #1
+  RESPONSE #1
     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
     SetGlobal("g_melicamp_luck", "LOCALS", 1)
 //    DisplayStringHead(Myself, ~roll improved by luck~)
 END
 IF
-	Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL",1)
   Global("g_melicamp_deathward", "LOCALS", 0)
   CheckStatGT("Melicamp", 0, SCRIPTINGSTATE2) // death ward
 THEN
-	RESPONSE #1
+  RESPONSE #1
     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
     SetGlobal("g_melicamp_deathward", "LOCALS", 1)
 //    DisplayStringHead(Myself, ~roll improved by death ward~)
@@ -134,32 +134,32 @@ IF
   Global("g_melicamp_sequence", "GLOBAL",1)
   GlobalGT("g_melicamp_roll", "GLOBAL", 5)
 THEN
-	RESPONSE #1
-		StartCutSceneMode()
-		Face(1)
-		SmallWait(1)
-		ForceSpell("Melicamp", EFFECT_ONLY)
-		Wait(1)
-		ActionOverride("Melicamp", Polymorph(MAGE_MALE_HUMAN_LOW))
-		Wait(1)
-		Dialog([PC])
+  RESPONSE #1
+    StartCutSceneMode()
+    Face(1)
+    SmallWait(1)
+    ForceSpell("Melicamp", EFFECT_ONLY)
+    Wait(1)
+    ActionOverride("Melicamp", Polymorph(MAGE_MALE_HUMAN))
+    Wait(1)
+    Dialog([PC])
     SetGlobal("g_melicamp_sequence", "GLOBAL", 2) // done
-		EndCutSceneMode()
+    EndCutSceneMode()
 END
 IF
   Global("g_melicamp_sequence", "GLOBAL",1)
   GlobalLT("g_melicamp_roll", "GLOBAL", 6)
 THEN
   RESPONSE #50
-		StartCutSceneMode()
-		Face(1)
-		SmallWait(1)
-		ForceSpell("Melicamp", EFFECT_ONLY)
-		Wait(1)
-		ActionOverride("Melicamp", Polymorph(MAGE_MALE_HUMAN_LOW))
-		Kill("Melicamp")
-		Wait(1)
-		Dialog([PC])
+    StartCutSceneMode()
+    Face(1)
+    SmallWait(1)
+    ForceSpell("Melicamp", EFFECT_ONLY)
+    Wait(1)
+    ActionOverride("Melicamp", Polymorph(MAGE_MALE_HUMAN))
+    Kill("Melicamp")
+    Wait(1)
+    Dialog([PC])
     SetGlobal("g_melicamp_sequence", "GLOBAL", 2)
-		EndCutSceneMode()
+    EndCutSceneMode()
 END
