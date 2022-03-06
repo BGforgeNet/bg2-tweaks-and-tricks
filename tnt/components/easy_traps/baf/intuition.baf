@@ -53,7 +53,29 @@ THEN
     Continue()
 END
 
-// intuition: start searching for traps
+// intuition: sound
+IF
+  %traps_baf_sound_toggle%
+  Global("%trap_var_base%_intuition", "MYAREA", 1)
+THEN
+  RESPONSE #1
+    PlaySound("act_09")
+    Continue()
+END
+
+// intuition: autopause
+IF
+  %traps_baf_pause_toggle%
+  Global("%trap_var_base%_intuition", "MYAREA", 1)
+  !GlobalTimerNotExpired("%pause_timer%", "GLOBAL") // don't spam pause, global timer in case there's multiple traps in sight
+THEN
+  RESPONSE #1
+    SetGlobalTimer("%pause_timer%", "GLOBAL", %pause_delay%)
+    ActionOverride(LastSeenBy, PauseGame()) // interrupts player orders
+    Continue()
+END
+
+// intuition: start searching for traps - after pause because pausing interrupts modal actions too
 IF
   %traps_baf_force_find_traps_toggle%
   Global("%trap_var_base%_intuition", "MYAREA", 1)
@@ -67,37 +89,6 @@ IF
 THEN
 	RESPONSE #1
     ActionOverride(LastSeenBy, FindTraps())
-    Continue()
-END
-
-// intuition: sound
-IF
-  %traps_baf_sound_toggle%
-  Global("%trap_var_base%_intuition", "MYAREA", 1)
-THEN
-  RESPONSE #1
-    PlaySound("act_09")
-    Continue()
-END
-
-// intuition: autopause - create global minion, once per game
-IF
-  Global("g_traps_minion_pause", "GLOBAL", 0)
-THEN
-  RESPONSE #1
-    CreateCreature("%traps_minion_pause%", [-1.-1], 0)
-    SetGlobal("g_traps_minion_pause", "GLOBAL", 1)
-    Continue()
-END
-// intuition: autopause
-IF
-  %traps_baf_pause_toggle%
-  Global("%trap_var_base%_intuition", "MYAREA", 1)
-THEN
-  RESPONSE #1
-    MoveGlobal("MYAREA","%traps_minion_pause%", [0.0])
-    ActionOverride("%traps_minion_pause%", PauseGame())
-    ActionOverride("%traps_minion_pause%", DestroySelf())
     Continue()
 END
 

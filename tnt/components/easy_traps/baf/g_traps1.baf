@@ -1,9 +1,0 @@
-// Without MakeGlobal and AddFamiliar PauseGame doesn't work
-IF
-  OnCreation()
-THEN
-  RESPONSE #100
-    MakeGlobal()
-    AddFamiliar()
-    SmallWait(1)
-END

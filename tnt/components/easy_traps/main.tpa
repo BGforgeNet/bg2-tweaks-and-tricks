@@ -2,10 +2,12 @@ INCLUDE ~%lib_dir%/tobex.tpa~
 OUTER_SPRINT comp_baf_dir ~%comp_dir%/baf~
 OUTER_SET notification_delay = 12
 OUTER_SET intuition_delay = 24
+OUTER_SET pause_delay = 36
 OUTER_SPRINT unknown_trap_name (AT 100)
 OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
 OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
+OUTER_SPRINT pause_timer ~%modder_prefix%traps_pause_timer~
 
 // On EE, DisplayStringNoNameHead disappears nearly instantly, adding a delay
 ACTION_IF ENGINE_IS ~bgee bg2ee eet iwdee pstee~ BEGIN
@@ -14,10 +16,6 @@ END ELSE BEGIN
   OUTER_SPRINT ee_trap_type_string_delay ~~
 END
 
-// Global minion for autopause. Traps can't PauseGame themsselves, and ActionOverride on PC will interrupt PC actions.
-OUTER_SPRINT traps_minion_pause ~g_traps1~
-LAF CREATE_MINION STR_VAR cre = ~%traps_minion_pause%~ script = ~%traps_minion_pause%~ END
-COMPILE ~%comp_baf_dir%/%traps_minion_pause%.baf~
 // temp minion for DisplayString centered on actual trap
 OUTER_SPRINT traps_minion_notification ~g_traps2~
 LAF CREATE_MINION STR_VAR cre = ~%traps_minion_notification%~ END
