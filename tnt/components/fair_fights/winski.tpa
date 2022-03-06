@@ -34,7 +34,7 @@ BEGIN
   END
 END
 
-//instakill on attacking one of the dukes
+// BGT: instakill on attacking one of the dukes
 <<<<<<<< .../tnt-inlined/fair_fights/dukes.baf
 IF
   AttackedBy([PC],DEFAULT)
@@ -48,11 +48,13 @@ THEN
     SetInterrupt(TRUE)
 END
 >>>>>>>>
-ACTION_FOR_EACH script IN ~belt~ ~liia~
-BEGIN
-  COPY_EXISTING ~%script%.bcs~ ~override~
-    R_B_B CASE_INSENSITIVE
-      ~.../tnt-inlined/fair_fights/dukes.baf~
-      ~.../tnt-inlined/fair_fights/empty.baf~
-  BUT_ONLY
+ACTION_IF GAME_IS ~bgt~ BEGIN
+  ACTION_FOR_EACH script IN ~belt~ ~liia~
+  BEGIN
+    COPY_EXISTING ~%script%.bcs~ ~override~
+      R_B_B CASE_INSENSITIVE
+        ~.../tnt-inlined/fair_fights/dukes.baf~
+        ~.../tnt-inlined/fair_fights/empty.baf~
+    BUT_ONLY
+  END
 END
