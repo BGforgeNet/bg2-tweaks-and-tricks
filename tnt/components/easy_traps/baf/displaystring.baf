@@ -15,6 +15,7 @@ THEN
     // If calling DisplayString directly from trap script, it's off, and sometimes very much off, misleading the player.
     CreateCreatureImpassableAllowOverlap("%traps_minion_notification%", [%x%.%y%], 0)
     DisplayStringNoNameHead("%traps_minion_notification%", ~%trap_warning_string%~)
+    %ee_trap_type_string_delay% // On EE, DisplayStringNoNameHead disappears nearly instantly
     ActionOverride("%traps_minion_notification%", DestroySelf())
     Continue()
 END

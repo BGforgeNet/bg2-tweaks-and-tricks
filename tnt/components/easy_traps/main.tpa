@@ -7,6 +7,13 @@ OUTER_SPRINT trap_lower (AT 99)
 OUTER_SPRINT trap_capitalized (AT 98)
 OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
 
+// On EE, DisplayStringNoNameHead disappears nearly instantly, adding a delay
+ACTION_IF ENGINE_IS ~bgee bg2ee eet iwdee pstee~ BEGIN
+  OUTER_SPRINT ee_trap_type_string_delay ~Wait(4)~
+END ELSE BEGIN
+  OUTER_SPRINT ee_trap_type_string_delay ~~
+END
+
 // Global minion for autopause. Traps can't PauseGame themsselves, and ActionOverride on PC will interrupt PC actions.
 OUTER_SPRINT traps_minion_pause ~g_traps1~
 LAF CREATE_MINION STR_VAR cre = ~%traps_minion_pause%~ script = ~%traps_minion_pause%~ END
