@@ -48,7 +48,7 @@ END
 IF
   Global("%trap_var_base%_intuition", "MYAREA", 1)
 THEN
-	RESPONSE #1
+  RESPONSE #1
     %traps_baf_view%
     Continue()
 END
@@ -87,7 +87,7 @@ IF
   !CheckStatLT(LastSeenBy, %detection%, TRAPS)
   !TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
 THEN
-	RESPONSE #1
+  RESPONSE #1
     ActionOverride(LastSeenBy, FindTraps())
     Continue()
 END

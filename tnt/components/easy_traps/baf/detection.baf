@@ -20,7 +20,7 @@ IF
   TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
   ActionListEmpty()
 THEN
-	RESPONSE #1
+  RESPONSE #1
     ReallyForceSpellRES("%trap_spl%", Myself)
     SetGlobal("%trap_var_base%_detected", "MYAREA", 1)
     Continue()
