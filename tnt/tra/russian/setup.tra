@@ -57,13 +57,13 @@
 @502 = ~Закрыть эксплоит с воровством из магазинов~
 @503 = ~Can't steal from any stores~
 @504 = ~Таэром может делать больше панцирей из анкегов~
-@505 = ~Stores always buy goods at the same (low) price~
+@505 = ~Stores always buy goods at the same (low) price | POWER USER component, consult readme~
 @506 = ~Limited stock~
 @600 = ~Assorted convenience components~
-@601 = ~Меньше автосохранений~
+@601 = ~Less autosaves | POWER USER component, consult readme~
 @602 = ~Больше отметок на карте~
 @603 = ~Отключить молнию во время дождя~
-@604 = ~Читы для романов с персонажами из модов~
+@604 = ~Mod romance cheats | POWER USER component, consult readme~
 @605 = ~Disable intro movies~
 @606 = ~Faster loading times~
 @607 = ~Добавить бонусы характеристик от томов из БГ1 персонажам, созданным в БГ2~
@@ -115,5 +115,5 @@
 @1104 = ~True True Grandmastery~
 @1105 = ~Sensible multiclass restrictions~
 @1110 = ~Честные схватки~
-@1111 = ~Just a few selected enemies~
-@1112 = ~Also remove undroppable items granting unfair advantages from ALL enemies~
+@1111 = ~Just a few select enemies | POWER USER component, consult readme~
+@1112 = ~Also remove undroppable items granting unfair advantages from all enemies | POWER USER component, consult readme~

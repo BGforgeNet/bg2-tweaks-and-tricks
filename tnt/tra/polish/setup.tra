@@ -57,13 +57,13 @@
 @502 = ~Close shop steal exploit~
 @503 = ~Can't steal from any stores~
 @504 = ~More ankheg armors by Taerom~
-@505 = ~Stores always buy goods at the same (low) price~
+@505 = ~Stores always buy goods at the same (low) price | POWER USER component, consult readme~
 @506 = ~Limited stock~
 @600 = ~Assorted convenience components~
-@601 = ~Less autosaves~
+@601 = ~Less autosaves | POWER USER component, consult readme~
 @602 = ~More map notes~
 @603 = ~Disable lightning during rain~
-@604 = ~Mod romance cheats~
+@604 = ~Mod romance cheats | POWER USER component, consult readme~
 @605 = ~Disable intro movies~
 @606 = ~Faster loading times~
 @607 = ~Add BG1 tomes stats bonuses to new BG2 characters~
@@ -115,5 +115,5 @@
 @1104 = ~True True Grandmastery~
 @1105 = ~Sensible multiclass restrictions~
 @1110 = ~Fair fights~
-@1111 = ~Just a few selected enemies~
-@1112 = ~Also remove undroppable items granting unfair advantages from ALL enemies~
+@1111 = ~Just a few select enemies | POWER USER component, consult readme~
+@1112 = ~Also remove undroppable items granting unfair advantages from all enemies | POWER USER component, consult readme~
