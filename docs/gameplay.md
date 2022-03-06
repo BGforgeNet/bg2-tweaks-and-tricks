@@ -13,27 +13,27 @@ Changes to various rules, combat options, etc.
 ### Fair fights
 A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
 
-#### Just a few selected enemies
+#### Just a few select enemies
 - Arkanis Gath, the Renal's guard (now you can fight him)
 - Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
 - Laskal, the Cloakwood shadow druid (innocent no longer, since he attacks first)
-- Kahrk, the mightiest ogre mage (permanent spell turning removed)
+- Kahrk, the mightiest ogre mage (free spell turning removed)
 - Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him)
 - Phandalyn, the fanatic paladin in Baldur's Gate (innocent no longer, since he attacks first)
-- Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer)
+- Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer). *Note* this does not give him a better combat script. Use some AI mod for this fight to actually become a challenge.
 - Winski Perorate in the labyrinth (innocent no longer, since he's not)
 - Dushai: removed innate fire and magic resistances.
 - Bayard: removed innate magic resistance.
 
 If you do break the plot by killing a critical NPC - that's on you. **You've been warned.**
 
-#### Also remove undroppable items granting unfair advantages from ALL enemies
+#### Also remove undroppable items granting unfair advantages from all enemies
 
-In addition to the above list, many creatures in the game are wearing items that grant them various protections and buffs such as Globe of Minor Invulnerability, sometimes even undispellable (Kahrk being one example, but there's more).
+In addition to the above list, quite a few creatures in the game are wearing items that grant them various protections and buffs such as Globe of Minor Invulnerability, Speed, etc (Kahrk being one notorious example, but there's more).
 
 Presumably, the developers' intention was to compensate for the lacking AI. However, nowadays there are many AI-enhancing mods, such as SCS (which lets enemies pre-buff, too). With powerful AI, having extra free protections seems unjustified and plain unfair. This removes all such items from all creatures.
 
-This is a power user component as it hasn't been thouroughly tested.  **You've been warned.**
+This is a power user component as it hasn't been thouroughly tested. **You've been warned.**
 
 #### No XP farming
 Disables the possibility of XP farming in the most tempting spots in BG1:
