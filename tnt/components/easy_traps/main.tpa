@@ -24,22 +24,28 @@ INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
 INCLUDE ~%comp_dir%/functions.tpa~
 
-OUTER_SPRINT traps_baf_class ~~
+// baf class check
+OUTER_SPRINT traps_baf_class ~
+  Detect([GOODCUTOFF.0.0.THIEF_ALL])
+  Detect([GOODCUTOFF.0.0.MONK])
+~
+OUTER_SET or_count = 2
 // shaman is in ee only
 ACTION_IF IDS_OF_SYMBOL (~class~ ~shaman~) != "-1" BEGIN
-  OUTER_SPRINT traps_baf_class
-  ~OR(3)
-    Detect([GOODCUTOFF.0.0.THIEF_ALL])
-    Detect([GOODCUTOFF.0.0.MONK])
-    Detect([GOODCUTOFF.0.0.SHAMAN])
-~
-END ELSE BEGIN
-  OUTER_SPRINT traps_baf_class
-  ~OR(2)
-    Detect([GOODCUTOFF.0.0.THIEF_ALL])
-    Detect([GOODCUTOFF.0.0.MONK])
-~
+  OUTER_SPRINT traps_baf_class ~%traps_baf_class% Detect([GOODCUTOFF.0.0.SHAMAN])~
+  OUTER_SET or_count += 1
 END
+// https://github.com/Gibberlings3/Skills-and-Abilities/tree/main/skills-and-abilities
+ACTION_IF MOD_IS_INSTALLED ~skills-and-abilities.tp2~ (ID_OF_LABEL ~skills-and-abilities.tp2~ ~SkillsAndAbilitiesBard2~) BEGIN
+  OUTER_SPRINT traps_baf_class ~%traps_baf_class% Detect([GOODCUTOFF.0.0.BARD_ALL])~
+  OUTER_SET or_count += 1
+END
+ACTION_IF MOD_IS_INSTALLED ~skills-and-abilities.tp2~ (ID_OF_LABEL ~skills-and-abilities.tp2~ ~SkillsAndAbilitiesRang~) BEGIN
+  OUTER_SPRINT traps_baf_class ~%traps_baf_class% Detect([GOODCUTOFF.0.0.RANGER_ALL])~
+  OUTER_SET or_count += 1
+END
+//apply OR
+OUTER_SPRINT traps_baf_class ~OR(%or_count%) %traps_baf_class%~
 
 // instant detection spell
 OUTER_SPRINT trap_spl ~%modder_prefix%trap~
