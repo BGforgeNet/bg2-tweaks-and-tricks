@@ -1649,7 +1649,9 @@ msgstr "Таэром может делать больше панцирей из 
 #: setup.tra:505
 #, fuzzy
 #| msgid "Shops always buy goods at the same price"
-msgid "Stores always buy goods at the same (low) price"
+msgid ""
+"Stores always buy goods at the same (low) price | POWER USER component, "
+"consult readme"
 msgstr "Магазины покупают товар по неизменной цене"
 
 #: setup.tra:506
@@ -1661,8 +1663,8 @@ msgid "Assorted convenience components"
 msgstr ""
 
 #: setup.tra:601
-msgid "Less autosaves"
-msgstr "Меньше автосохранений"
+msgid "Less autosaves | POWER USER component, consult readme"
+msgstr ""
 
 #: setup.tra:602
 msgid "More map notes"
@@ -1673,8 +1675,8 @@ msgid "Disable lightning during rain"
 msgstr "Отключить молнию во время дождя"
 
 #: setup.tra:604
-msgid "Mod romance cheats"
-msgstr "Читы для романов с персонажами из модов"
+msgid "Mod romance cheats | POWER USER component, consult readme"
+msgstr ""
 
 #: setup.tra:605
 msgid "Disable intro movies"
@@ -1899,12 +1901,13 @@ msgid "Fair fights"
 msgstr "Честные схватки"
 
 #: setup.tra:1111
-msgid "Just a few selected enemies"
+msgid "Just a few select enemies"
 msgstr ""
 
 #: setup.tra:1112
 msgid ""
-"Also remove undroppable items granting unfair advantages from ALL enemies"
+"Also remove undroppable items granting unfair advantages from all enemies | "
+"POWER USER component, consult readme"
 msgstr ""
 
 #: shandalars_cloak.tra:1
@@ -2329,6 +2332,12 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "Less autosaves"
+#~ msgstr "Меньше автосохранений"
+
+#~ msgid "Mod romance cheats"
+#~ msgstr "Читы для романов с персонажами из модов"
 
 #~ msgid "BG1-style party interaction system"
 #~ msgstr "Система разговоров в стиле BG1"
