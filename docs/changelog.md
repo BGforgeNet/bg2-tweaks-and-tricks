@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.17](#version-817)
 - [Version 8.16](#version-816)
 - [Version 8.15](#version-815)
 - [Version 8.14](#version-814)
@@ -24,6 +25,12 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.17
+- Fixed trap intuition autopause sometimes making it [impossible](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/49) to save.
+- Allow fast trap detection for [bards and rangers](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/53) from Skills and Abilities.
+- Fixed trap type notifications flashing [too fast](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/52) on EEs.
+- Fixed harmless Fair Fights installation [warning](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/51) on EEs.
 
 ### Version 8.16
 - [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/54) Melicamp not reverting back when Infinity Animations is installed.
