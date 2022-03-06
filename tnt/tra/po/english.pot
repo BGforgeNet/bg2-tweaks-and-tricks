@@ -1425,7 +1425,9 @@ msgid "More ankheg armors by Taerom"
 msgstr ""
 
 #: setup.tra:505
-msgid "Stores always buy goods at the same (low) price"
+msgid ""
+"Stores always buy goods at the same (low) price | POWER USER component, "
+"consult readme"
 msgstr ""
 
 #: setup.tra:506
@@ -1437,7 +1439,7 @@ msgid "Assorted convenience components"
 msgstr ""
 
 #: setup.tra:601
-msgid "Less autosaves"
+msgid "Less autosaves | POWER USER component, consult readme"
 msgstr ""
 
 #: setup.tra:602
@@ -1449,7 +1451,7 @@ msgid "Disable lightning during rain"
 msgstr ""
 
 #: setup.tra:604
-msgid "Mod romance cheats"
+msgid "Mod romance cheats | POWER USER component, consult readme"
 msgstr ""
 
 #: setup.tra:605
@@ -1657,12 +1659,13 @@ msgid "Fair fights"
 msgstr ""
 
 #: setup.tra:1111
-msgid "Just a few selected enemies"
+msgid "Just a few select enemies"
 msgstr ""
 
 #: setup.tra:1112
 msgid ""
-"Also remove undroppable items granting unfair advantages from ALL enemies"
+"Also remove undroppable items granting unfair advantages from all enemies | "
+"POWER USER component, consult readme"
 msgstr ""
 
 #: shandalars_cloak.tra:1
