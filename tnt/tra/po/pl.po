@@ -1660,7 +1660,7 @@ msgid "Fair fights"
 msgstr ""
 
 #: setup.tra:1111
-msgid "Just a few select enemies"
+msgid "Just a few select enemies | POWER USER component, consult readme"
 msgstr ""
 
 #: setup.tra:1112
