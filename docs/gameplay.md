@@ -3,7 +3,7 @@
 Changes to various rules, combat options, etc.
 
 - [Fair fights](#fair-fights)
-  - [Just a few selected enemies](#just-a-few-selected-enemies)
+  - [Just a few select enemies](#just-a-few-select-enemies)
   - [Also remove undroppable items granting unfair advantages from ALL enemies](#also-remove-undroppable-items-granting-unfair-advantages-from-all-enemies)
 - [No XP farming](#no-xp-farming)
 - [Can't steal Carsomyr](#cant-steal-carsomyr)
