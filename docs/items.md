@@ -25,7 +25,10 @@ An inventory management pain killer:
 ### Throwing weapons damage type
 In BG2, all throwing weapons does missile (piercing) damage. Including axes, and even hammers. Also both axes and hammers are missing strength bonus. This was likely done for balance purposes, but seems a bit silly.
 
-This component allows to change either, or both.
+This component allows to:
+1. Make axes and hammers do slashing and blunt damage, respectively.
+2. And/or add strength bonus to axes and hammers.
+   In Classic, strength bonus will be applied to both THAC0 and damage (engine limitation). In EEs, just damage bonus will be granted.
 
 ### Remove blur graphics from items
 Removes eye-straining blur graphics from several items. Doesn't change the actual Blur spell.
