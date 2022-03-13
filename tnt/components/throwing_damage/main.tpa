@@ -28,7 +28,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
           END
         END
         PATCH_IF strength == 1 BEGIN
-          WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BAND FLAG_HEAD_add_strength_bonus)
+          WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BOR FLAG_HEAD_add_strength_bonus)
         END
       END
     END
