@@ -28,7 +28,11 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
           END
         END
         PATCH_IF strength == 1 BEGIN
-          WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BOR FLAG_HEAD_add_strength_bonus)
+          PATCH_IF ENGINE_IS ~bgee bg2ee iwdee pstee~ BEGIN // EE split THAC0 and damage bonus, adding only damage
+            WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BOR FLAG_HEAD_damage_strength_bonus_EE)
+          END ELSE BEGIN // Classic
+            WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BOR FLAG_HEAD_add_strength_bonus)
+          END
         END
       END
     END
