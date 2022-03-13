@@ -26,6 +26,9 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.18
+Fixed Throwing Damage Type [breaking strength bonus](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/59) on EEs and potentially causing other bugs with affected items.
+
 ### Version 8.17
 - Fixed trap intuition autopause sometimes making it [impossible](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/49) to save.
 - Allow fast trap detection for [bards and rangers](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/53) from Skills and Abilities.
