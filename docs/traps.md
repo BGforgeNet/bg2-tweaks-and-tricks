@@ -26,7 +26,7 @@ Before a trap is "detected" by thief skill, a party member will "sense" it: noti
 You can choose to use intuition just out of combat, or in combat too.
 
 Based on intuition, multiple actions may be taken:
-- Pause game on all traps, or just ground ones.
+- Pause game on all traps, or just ground ones. This is not the same as game option "trap found". Game option pause triggers when trap is detected. This component adds an extra pause when a party member "suspects" that a trap might be nearby. Before it's detected.
 - Toggle Find Traps automatically, provided that the character's class allows it.
 - Center on the character, or on location of the supposed trap.
 - Play the "trap found" sound.
