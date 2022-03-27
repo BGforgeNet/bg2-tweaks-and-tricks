@@ -1,5 +1,7 @@
 # Changelog
 
+- [Version 8.19](#version-819)
+- [Version 8.18](#version-818)
 - [Version 8.17](#version-817)
 - [Version 8.16](#version-816)
 - [Version 8.15](#version-815)
@@ -25,6 +27,9 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.19
+Fixed Sensible Otiluke's component [not working](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/60).
 
 ### Version 8.18
 Fixed Throwing Damage Type [breaking strength bonus](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/59) on EEs and potentially causing other bugs with affected items.
