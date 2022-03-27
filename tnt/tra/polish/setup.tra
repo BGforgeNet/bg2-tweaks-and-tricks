@@ -11,6 +11,7 @@
 @129 = ~BGT only~
 @130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
 @131 = ~Requires TotSC content~
+@132 = ~Couldn't detect your platform, failing.~
 @200 = ~Items~
 @201 = ~Hassle-free ammo~
 @202 = ~Remove blur graphics from items~
