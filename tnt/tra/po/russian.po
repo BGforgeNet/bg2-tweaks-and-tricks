@@ -1439,6 +1439,10 @@ msgstr "Требует движок ToB или EE"
 msgid "Requires TotSC content"
 msgstr "Требует движок ToB или EE"
 
+#: setup.tra:132
+msgid "Couldn't detect your platform, failing."
+msgstr ""
+
 #: setup.tra:200
 msgid "Items"
 msgstr "Предметы"
