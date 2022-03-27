@@ -1,14 +1,14 @@
 OUTER_SET fail = 1
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi413c.spl~ BEGIN // bg2fixpack
-  ACTION_DEFINE_ARRAY spells BEGIN ~spwi413a spwi413c spcl415a~ END
+  ACTION_DEFINE_ARRAY spells BEGIN ~spwi413a~ ~spwi413c~ ~spcl415a~ END
   OUTER_SET fail = 0
 END ELSE BEGIN
   ACTION_IF ENGINE_IS ~soa tob~ BEGIN // vanilla, no fixpack
-    ACTION_DEFINE_ARRAY spells BEGIN ~spwi413 spcl415~ END
+    ACTION_DEFINE_ARRAY spells BEGIN ~spwi413~ ~spcl415~ END
     OUTER_SET fail = 0
   END
   ACTION_IF ENGINE_IS ~bgee bg2ee~ BEGIN // EEs
-    ACTION_DEFINE_ARRAY spells BEGIN ~spwi413a spcl415a~ END
+    ACTION_DEFINE_ARRAY spells BEGIN ~spwi413a~ ~spcl415a~ END
     OUTER_SET fail = 0
   END
 END
