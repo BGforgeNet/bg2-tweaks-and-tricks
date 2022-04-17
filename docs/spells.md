@@ -42,7 +42,7 @@ With BG2 fixpack, [Otiluke's Resilient Sphere](https://pihwiki.bgforge.net/Baldu
 
 TnT removes stun effect, allowing healing, buffing, etc inside the sphere.
 
-Note: this might mess with AI of enemies stuck in a Sphere, scripts probably won't account for this behaviour change. But no such issues have been reported so far. **You've been warned.**
+Note: this might mess with AI of enemies stuck in the Sphere, scripts probably won't account for this behaviour change. But no such issues have been reported so far. **You've been warned.**
 
 ### Greater Command AoE
 Strangely, [Greater Command](https://pihwiki.bgforge.net/Baldur's_Gate:_Divine_Spells_List#Greater_Command) affects an area, but must target a creature. This seems inconsistent. TnT changes it so that it can be cast on an area.
