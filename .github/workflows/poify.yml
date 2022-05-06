@@ -2,7 +2,7 @@ name: Poify/Unpoify
 on:
   push:
     paths:
-      - "tnt/tra/**.tra"
+      - "tnt/tra/**"
 
 jobs:
   build:
