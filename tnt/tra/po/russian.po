@@ -4,15 +4,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2021-09-27 12:42+0000\n"
+"PO-Revision-Date: 2022-05-09 09:20+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
-"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
+"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
+"tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
@@ -193,7 +195,7 @@ msgstr "Ловушка с небольшим разрядом молнии"
 
 #: easy_traps.tra:126
 msgid "Underwater Bite trap"
-msgstr ""
+msgstr "Ловушка Подводного Укуса"
 
 #: easy_traps.tra:127
 #, fuzzy
@@ -975,39 +977,39 @@ msgstr "Солианна"
 
 #: more_map_notes.tra:22
 msgid "Phlydia"
-msgstr ""
+msgstr "Флидия"
 
 #: more_map_notes.tra:23
 msgid "Mirianne's house"
-msgstr ""
+msgstr "Дом Мирианны"
 
 #: more_map_notes.tra:24
 msgid "Kagain's house"
-msgstr ""
+msgstr "Дом Кагаина"
 
 #: more_map_notes.tra:25
 msgid "Firebead's house"
-msgstr ""
+msgstr "Дом Файрбида"
 
 #: more_map_notes.tra:26
 msgid "Kivan"
-msgstr ""
+msgstr "Киван"
 
 #: more_map_notes.tra:27
 msgid "Korax"
-msgstr ""
+msgstr "Коракс"
 
 #: more_map_notes.tra:28
 msgid "Kirian's band"
-msgstr ""
+msgstr "Банда Кириана"
 
 #: more_map_notes.tra:29
 msgid "Mutamin"
-msgstr ""
+msgstr "Мутамин"
 
 #: more_map_notes.tra:30
 msgid "Tamah"
-msgstr ""
+msgstr "Тама"
 
 #: more_map_notes.tra:31
 #, fuzzy
@@ -1017,11 +1019,11 @@ msgstr "Солианна"
 
 #: more_map_notes.tra:32
 msgid "Hobgoblin camp"
-msgstr ""
+msgstr "Лагерь хобгоблинов"
 
 #: more_map_notes.tra:33
 msgid "Portalbendarwinden"
-msgstr ""
+msgstr "Порталбендарвинден"
 
 #: more_map_notes.tra:34
 #, fuzzy
@@ -1031,11 +1033,11 @@ msgstr "Василиск"
 
 #: more_map_notes.tra:35
 msgid "Waterfall"
-msgstr ""
+msgstr "Водопад"
 
 #: more_map_notes.tra:36
 msgid "Albert"
-msgstr ""
+msgstr "Альберт"
 
 #: more_map_notes.tra:37
 msgid "Rufie"
