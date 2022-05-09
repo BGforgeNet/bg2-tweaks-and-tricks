@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2022-05-09 09:20+0000\n"
+"PO-Revision-Date: 2022-05-09 11:36+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
 "tweaks-and-tricks/ru/>\n"
@@ -81,17 +81,14 @@ msgid "Miscast Magic trap"
 msgstr "Антимагическая ловушка"
 
 #: easy_traps.tra:105
-#, fuzzy
 msgid "Flamestrike trap"
 msgstr "Пламенная ловушка"
 
 #: easy_traps.tra:106
-#, fuzzy
 msgid "Chromatic orb trap"
 msgstr "Призматическая ловушка"
 
 #: easy_traps.tra:107
-#, fuzzy
 msgid "Confusion trap"
 msgstr "Запутывающая ловушка"
 
