@@ -1,8 +1,7 @@
 # Tweaks and Tricks mod for Baldur's Gate 2
 
 [![Build Status](https://golem.bgforge.net/mods/tweaks-and-tricks/status.svg)](https://golem.bgforge.net/mods/tweaks-and-tricks)
-[![Translation status](https://tra.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
-
+[![Translation status](https://hive.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Patreon](https://img.shields.io/badge/Patreon-donate-FF424D?logo=Patreon&labelColor=141518)](https://www.patreon.com/BGforge)
 
@@ -13,7 +12,7 @@
 [__Download__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
 | [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
 | [__Discussion__](https://forums.bgforge.net/viewforum.php?f=31)
-| [__Help translating__](https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
+| [__Help translating__](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 
 A collection of tweaks to fix some annoying and/or unrealistic aspects of the game, add some flavour, make some things easier and other things harder.
 
