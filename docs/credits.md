@@ -7,7 +7,7 @@
 - [G3 Debugging Suite](http://www.gibberlings3.net/debug/)
 - [NearInfinity](https://github.com/Argent77/NearInfinity)
 - [BGforge MLS](https://bgforge.net/mls/)
-- [BGforge translation system](https://tra.bgforge.net)
+- [BGforge translation system](https://hive.bgforge.net)
 - [Golem](https://bgforge.net/golem/)
 - [Happy IE](https://bgforge.net/happy-ie/)
 
