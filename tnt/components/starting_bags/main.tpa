@@ -87,7 +87,7 @@ ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   WRITE_ASCII DEATHVAR ~G_BAGS~ #32
   WRITE_ASCII DIALOG ~G_BAGS~ #8
   COMPILE EVAL ~%comp_dir%/g_bag.d~
-  EXTEND_BOTTOM ~%Candlekeep%.bcs~ ~%comp_dir%/candle.baf~ EVAL
+  EXTEND_BOTTOM ~%Candlekeep_BCS%.bcs~ ~%comp_dir%/candle.baf~ EVAL
 END
 
 ACTION_IF GAME_INCLUDES ~bg2~ BEGIN //Picture in Irenicus dungeon
