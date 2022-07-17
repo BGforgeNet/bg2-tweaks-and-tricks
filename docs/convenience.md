@@ -51,7 +51,7 @@ To brand new BG2 charaters, gives the stat bonuses that they were supposed to ga
 ### Starting bags
 AKA inventory management painkiller. In both Candlekeep and Irenicus' dungeon, you can find a few bags to start the adventure with. Come on, a gem bag is basically a piece of cloth, how come you have to jump through hoops just to get one?
 
-Where to find the bag:
+Where to find the bags:
 - In Candlekeep, talk to Thorius - near the cellars.
 - In the dungeon, check the painting.
 
