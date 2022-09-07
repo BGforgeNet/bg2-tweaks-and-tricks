@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2022-09-07 12:30+0000\n"
+"PO-Revision-Date: 2022-09-07 13:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -810,7 +810,7 @@ msgstr ""
 
 #: more_map_notes.tra:22
 msgid "Phlydia"
-msgstr ""
+msgstr "Phlydia"
 
 #: more_map_notes.tra:23
 msgid "Mirianne's house"
@@ -826,11 +826,11 @@ msgstr ""
 
 #: more_map_notes.tra:26
 msgid "Kivan"
-msgstr ""
+msgstr "Kivan"
 
 #: more_map_notes.tra:27
 msgid "Korax"
-msgstr ""
+msgstr "Korax"
 
 #: more_map_notes.tra:28
 msgid "Kirian's band"
