@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2022-09-07 15:30+0000\n"
+"PO-Revision-Date: 2022-09-07 16:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -152,31 +152,31 @@ msgstr ""
 
 #: easy_traps.tra:123
 msgid "Frost trap"
-msgstr ""
+msgstr "Frostfälla"
 
 #: easy_traps.tra:124
 msgid "Cloudkill trap"
-msgstr ""
+msgstr "Dödsmolnsfälla"
 
 #: easy_traps.tra:125
 msgid "Minor Lightning Bolt trap"
-msgstr ""
+msgstr "Liten Blixtfälla"
 
 #: easy_traps.tra:126
 msgid "Underwater Bite trap"
-msgstr ""
+msgstr "Undervattenbetsfälla"
 
 #: easy_traps.tra:127
 msgid "Hallway Spikes trap"
-msgstr ""
+msgstr "Spikkorridorsfälla"
 
 #: easy_traps.tra:128
 msgid "Muck trap"
-msgstr ""
+msgstr "Smutsfälla"
 
 #: easy_traps.tra:129
 msgid "Shadow Death trap"
-msgstr ""
+msgstr "Skuggdödsfälla"
 
 #: easy_traps.tra:130
 msgid "Guillotine trap"
