@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2022-09-07 14:30+0000\n"
+"PO-Revision-Date: 2022-09-07 15:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -48,31 +48,31 @@ msgstr "Se upp. Det här ser misstänkt ut."
 
 #: easy_traps.tra:9
 msgid "Hold on. See this?"
-msgstr ""
+msgstr "Vänta lite. Ser du det här?"
 
 #: easy_traps.tra:98
 msgid "Trap"
-msgstr ""
+msgstr "Fälla"
 
 #: easy_traps.tra:99
 msgid "trap"
-msgstr ""
+msgstr "fälla"
 
 #: easy_traps.tra:100
 msgid "Unknown"
-msgstr ""
+msgstr "Okänt"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
-msgstr ""
+msgstr "Håll personfälla"
 
 #: easy_traps.tra:102
 msgid "Silence trap"
-msgstr ""
+msgstr "Tystnadsfälla"
 
 #: easy_traps.tra:103
 msgid "Call Lightning trap"
-msgstr ""
+msgstr "Kalla på Blixt-fälla"
 
 #: easy_traps.tra:104
 msgid "Miscast Magic trap"
@@ -84,11 +84,11 @@ msgstr ""
 
 #: easy_traps.tra:106
 msgid "Chromatic orb trap"
-msgstr ""
+msgstr "Kromatisk Sfärsfälla"
 
 #: easy_traps.tra:107
 msgid "Confusion trap"
-msgstr ""
+msgstr "Förvirringsfälla"
 
 #: easy_traps.tra:108
 msgid "Dire Charm trap"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: easy_traps.tra:109
 msgid "Fireball trap"
-msgstr ""
+msgstr "Eldklotsfälla"
 
 #: easy_traps.tra:110
 msgid "Lightning bolt trap"
