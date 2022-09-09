@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2022-09-08 15:30+0000\n"
+"PO-Revision-Date: 2022-09-09 10:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -100,19 +100,19 @@ msgstr "Eldklotsfälla"
 
 #: easy_traps.tra:110
 msgid "Lightning bolt trap"
-msgstr ""
+msgstr "Blixtfälla"
 
 #: easy_traps.tra:111
 msgid "Magic Missile trap"
-msgstr ""
+msgstr "Fälla med magiska missiler"
 
 #: easy_traps.tra:112
 msgid "Stinking Cloud trap"
-msgstr ""
+msgstr "Stinkande molnsfälla"
 
 #: easy_traps.tra:113
 msgid "Arrow trap"
-msgstr ""
+msgstr "Pilfälla"
 
 #: easy_traps.tra:114
 msgid "Slaying arrow trap"
