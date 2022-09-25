@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 1970-1-01 00:00+0000\n"
-"PO-Revision-Date: 2022-09-09 10:30+0000\n"
+"PO-Revision-Date: 2022-09-25 20:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -76,11 +76,11 @@ msgstr "Kalla på Blixt-fälla"
 
 #: easy_traps.tra:104
 msgid "Miscast Magic trap"
-msgstr ""
+msgstr "Misslyckad Magisk Fälla"
 
 #: easy_traps.tra:105
 msgid "Flamestrike trap"
-msgstr ""
+msgstr "Flamslagsfälla"
 
 #: easy_traps.tra:106
 msgid "Chromatic orb trap"
