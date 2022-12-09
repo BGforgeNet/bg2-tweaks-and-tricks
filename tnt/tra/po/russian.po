@@ -3,17 +3,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 1970-1-01 00:00+0000\n"
+"POT-Creation-Date: 2022-12-09-07:56+0000\n"
 "PO-Revision-Date: 2022-10-25 15:43+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
-"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/"
-"tweaks-and-tricks/ru/>\n"
+"Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.12.2\n"
 
 #: easy_traps.tra:1
@@ -865,9 +863,9 @@ msgid ""
 "without an apprentice, ye'll have to stay here a full day and help me run "
 "the forge."
 msgstr ""
-"Две вещи, друг мой. Работа обойдется тебе в 12500 золотых, не меньше, и, раз "
-"у меня нет подмастерья, тебе придется остаться здесь на весь день, помочь с "
-"кузницей."
+"Две вещи, друг мой. Работа обойдется тебе в 12500 золотых, не меньше, и, раз"
+" у меня нет подмастерья, тебе придется остаться здесь на весь день, помочь с"
+" кузницей."
 
 #: more_map_notes.tra:1
 #, fuzzy
@@ -941,12 +939,16 @@ msgid "Evalt"
 msgstr "Ивалт"
 
 #: more_map_notes.tra:14
-msgid "Taloun"
-msgstr "Талун"
+#, fuzzy
+#| msgid "Arkion"
+msgid "Taloun's house"
+msgstr "Аркион"
 
 #: more_map_notes.tra:15
-msgid "Kaishas Gan"
-msgstr "Каишас Ган"
+#, fuzzy
+#| msgid "Kagain's house"
+msgid "Kaishas' house"
+msgstr "Дом Кагаина"
 
 #: more_map_notes.tra:16
 msgid "Maralee"
@@ -2337,6 +2339,12 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "Taloun"
+#~ msgstr "Талун"
+
+#~ msgid "Kaishas Gan"
+#~ msgstr "Каишас Ган"
 
 #~ msgid "Less autosaves"
 #~ msgstr "Меньше автосохранений"

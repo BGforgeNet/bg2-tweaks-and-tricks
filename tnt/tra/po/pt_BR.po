@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 1970-1-01 00:00+0000\n"
+"POT-Creation-Date: 2022-12-09-07:56+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -783,11 +783,11 @@ msgid "Evalt"
 msgstr ""
 
 #: more_map_notes.tra:14
-msgid "Taloun"
+msgid "Taloun's house"
 msgstr ""
 
 #: more_map_notes.tra:15
-msgid "Kaishas Gan"
+msgid "Kaishas' house"
 msgstr ""
 
 #: more_map_notes.tra:16
