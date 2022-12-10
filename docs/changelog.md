@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.20](#version-820)
 - [Version 8.19](#version-819)
 - [Version 8.18](#version-818)
 - [Version 8.17](#version-817)
@@ -27,6 +28,12 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+
+### Version 8.20
+- Fixed Granmastery tweak erroneously limiting 2 weapons style.
+- Archers and Kensai now can get High Mastery.
+- Minor fixes for map notes.
 
 ### Version 8.19
 Fixed Sensible Otiluke's component [not working](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/60).

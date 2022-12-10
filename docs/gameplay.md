@@ -50,13 +50,19 @@ You really think that you can steal an enormous greatsword from an ancient red d
 ### True True Grandmastery
 It's well known that Grandmastery was nerfed in BG2 by Bioware for "balance". And there's a mod by W. Weimer that restores it to the original, unnerfed condition, much to the joy of many a fighter. And there's an option to open Grandmastery to multiclass characters, as well.
 
-However, not every fighter is supposed to be able to become a Grand Master. Certainly not multiclass, and not even **kits**. It should be available only to a single class, true class Fighter. That is his one edge over the kitted ones. And it's been taken away from him. (Although, pretty much all true classes in BG2 share the same fate - they are overshadowed by their kits.)
+However, not every fighter is supposed to be able to become a Grand Master. Certainly not multiclass, and not even kits. It should be available only to a single class, true class Fighter. That is his one edge over the kitted ones. And it's been taken away from him. (Although, pretty much all true classes in BG2 share the same fate - they are overshadowed by their kits.)
 
-This component does the following changes:
-- Only true class Fighters get Grand Mastery. (Specifically, Archers are also limited to 2 pips.)
-- Grand Mastery grants one extra attack over Specialist (the "unnerfed" version).
+This component perfoms the following changes:
+- Grand Mastery (5 pips) grants one extra attack over Specialist (the "unnerfed" version, as in Baldurdash and Tweaks Anthology).
+- Only true class Fighter can get Grand Mastery.
+- Archer can get High Mastery (4 pips) with bows and crossbows.
+- Kensai can get High Mastery with swords. Swords don't include daggers.
+- 2 weapons style limits are unchanged.
+- Every other class/proficiency combination is limited to 2 pips, unless a more severe restriction is already in place. E.g.:
+  - Clerics are already limited to 1 pip in each proficiency, so nothing's changed for them.
+  - Berserkers, are now limited to 2 pips in every proficiency, except for 2 weapons style in which they can get 3, and they keep their original restriction of 1 pip max in ranged weapons.
 
-This version does not proclaim to be "better", "more balanced", or "more PnP" than other GM mods. It's just different, and I think it's more "fair" to the good old fighters.
+This provides certain incentive to start a true class fighter, or even dual into a fighter.
 
 ### Sensible multiclass restrictions
 Somehow certain classes are available to some races, but multiclasses with the same classes are not. For example, a halfling can be a cleric and a thief, but not cleric/thief. This was likely done for "balance" purposes. I don't know if it's the same in PnP, and if it is, how it's explained there, but it strikes me as odd.

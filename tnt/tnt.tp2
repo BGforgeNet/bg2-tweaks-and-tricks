@@ -1,6 +1,6 @@
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
-VERSION ~v8.19~
+VERSION ~v8.20~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
