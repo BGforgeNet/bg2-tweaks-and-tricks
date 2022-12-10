@@ -2,7 +2,6 @@ INCLUDE ~%lib_dir%/tobex.tpa~
 
 //APR table stolen from cdtweaks, goes to level 50
 COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
-UNLESS ~50~
 
 // limit max pips
 COPY_EXISTING ~weapprof.2da~ override
@@ -10,26 +9,31 @@ COPY_EXISTING ~weapprof.2da~ override
   fighter_column = $col_index(FIGHTER)
   kensai_column = $col_index(KENSAI)
   archer_column = $col_index(FERALAN)
-  start_column = 5 // should be MAGE column
+  start_column = 4 // 0-indexed, MAGE column
   COUNT_2DA_COLS columns
 
-  READ_2DA_ENTRIES_NOW weapprof_read columns  // skip first row
+  READ_2DA_ENTRIES_NOW weapprof_read columns  // skip headers
   FOR (r=0; r<weapprof_read; ++r) BEGIN
-    FOR(c=start_column; c<columns; ++c) BEGIN
+    FOR (c=start_column; c<columns; ++c) BEGIN
 
       pip_limit = 2
+      // archer
       PATCH_IF (c == archer_column) BEGIN pip_limit = 4 END
+      // kensai
+      r0 = r + 1 // row_index is 0 indexed
       PATCH_IF (c == kensai_column) BEGIN
-        PATCH_IF (r == $row_index(BASTARDSWORD))
-          OR (r == $row_index(LONGSWORD))
-          OR (r == $row_index(SHORTSWORD))
-          OR (r == $row_index(TWOHANDEDSWORD))
-          OR (r == $row_index(KATANA))
-          OR (r == $row_index(SCIMITARWAKISASHININJATO))
+        PATCH_IF (r0 == $row_index(BASTARDSWORD))
+          OR (r0 == $row_index(LONGSWORD))
+          OR (r0 == $row_index(SHORTSWORD))
+          OR (r0 == $row_index(TWOHANDEDSWORD))
+          OR (r0 == $row_index(KATANA))
+          OR (r0 == $row_index(SCIMITARWAKISASHININJATO))
         BEGIN
           pip_limit = 4
         END
       END
+      // 2 weapons style
+      PATCH_IF (r0 == $row_index(2WEAPON)) BEGIN pip_limit = 3 END
 
       PATCH_IF c != fighter_column BEGIN  // skip true fighter
         READ_2DA_ENTRY_FORMER weapprof_read r c allowed_pips
