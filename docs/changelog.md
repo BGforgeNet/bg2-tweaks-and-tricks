@@ -31,7 +31,7 @@
 
 
 ### Version 8.20
-- Fixed Granmastery tweak erroneously limiting 2 weapons style.
+- Fixed Grandmastery tweak erroneously limiting 2 weapons style.
 - Archers and Kensai now can get High Mastery.
 - Minor fixes for map notes.
 
