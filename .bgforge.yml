@@ -1,5 +1,6 @@
 translation:
   tra_dir: tnt/tra
+
 golem:
   mod_dir: tnt
   platforms:
@@ -10,3 +11,7 @@ golem:
     - sod
     - eet
   happy: true
+
+mls:
+  translation:
+    directory: tnt/tra/english
