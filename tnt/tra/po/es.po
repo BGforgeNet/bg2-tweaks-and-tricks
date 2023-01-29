@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-09-07:56+0000\n"
+"POT-Creation-Date: 2023-01-29-11:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1173,6 +1173,10 @@ msgstr ""
 
 #: more_map_notes.tra:114
 msgid "Thieves' Guild"
+msgstr ""
+
+#: more_map_notes.tra:120
+msgid "Gandolar Luckyfoot"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
