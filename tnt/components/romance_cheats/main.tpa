@@ -4,3 +4,4 @@ INCLUDE ~%comp_dir%/amber.tpa~
 INCLUDE ~%comp_dir%/dearnise.tpa~
 INCLUDE ~%comp_dir%/tyris.tpa~
 INCLUDE ~%comp_dir%/saerileth.tpa~
+INCLUDE ~%comp_dir%/bg1npc.tpa~

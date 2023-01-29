@@ -1,0 +1,79 @@
+// Branwen
+<<<<<<<< .../tnt-inlined/romance_cheats/branwen_match.baf
+IF
+    Global("P#BranMatch","GLOBAL",0)
+    InParty(Myself)
+THEN
+    RESPONSE #100
+        SetGlobal("P#BranMatch","GLOBAL",1)
+END
+>>>>>>>>
+ACTION_IF FILE_EXISTS "override/x#branwenromance.g3" BEGIN
+    PRINT ~BG1NPC: Branwen~
+    COPY_EXISTING ~%BRANWEN_BCS%.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            // Dynaheir checks
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#DynaheirRomanceActive","GLOBAL",1)~ ~False()~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#DynaheirRomanceActive","GLOBAL",2)~ ~False()~
+            // Shar-Teel checks
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#SharInterest","GLOBAL",1)~ ~False()~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#SharInterest","GLOBAL",2)~ ~False()~
+        END 
+    BUT_ONLY
+    // custom match all
+    EXTEND_TOP ~%BRANWEN_BCS%.bcs~ ~.../tnt-inlined/romance_cheats/branwen_match.baf~
+END
+
+
+// Dynaheir
+<<<<<<<< .../tnt-inlined/romance_cheats/dynaheir_match.baf
+IF
+    Global("X#DynahMatch","GLOBAL",0)
+    InParty(Myself)
+THEN
+    RESPONSE #100
+        SetGlobal("X#DynahMatch","GLOBAL",1)
+END
+>>>>>>>>
+ACTION_IF FILE_EXISTS "override/x#dynaheirromance.g3" BEGIN
+    PRINT ~BG1NPC: Dynaheir~
+    COPY_EXISTING ~%DYNAHEIR_BCS%.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            // Branwen checks
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",1)~ ~False()~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",2)~ ~False()~
+            // kill rep check            
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~ReputationGT(Player1,\d+)~ ~~
+        END 
+    BUT_ONLY
+    // custom match all
+    EXTEND_TOP ~%DYNAHEIR_BCS%.bcs~ ~.../tnt-inlined/romance_cheats/dynaheir_match.baf~
+END
+
+// Shar-Teel
+<<<<<<<< .../tnt-inlined/romance_cheats/sharteel_match.baf
+IF
+    Global("X#SharMatch","GLOBAL",0)
+    InParty(Myself)
+THEN
+    RESPONSE #100
+        SetGlobal("X#SharMatch","GLOBAL",1)
+END
+>>>>>>>>
+ACTION_IF FILE_EXISTS "override/x#sharteelromance.g3" BEGIN
+    PRINT ~BG1NPC: Shar-Teel~
+    COPY_EXISTING ~%SHARTEEL_BCS%.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+            // Branwen checks
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",1)~ ~False()~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",2)~ ~False()~
+            // kill romance repuration checks
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~ReputationLT(Player1,\d+)~ ~~
+            // don't let her leave the party because of the reputation
+            REPLACE_TEXTUALLY ~Global("X#ShHighReputation","GLOBAL",[01])~ ~ False()~
+            REPLACE_TEXTUALLY ~Global("X#ShHighMale","GLOBAL",[01])~ ~ False()~
+        END 
+    BUT_ONLY
+    // custom match all
+    EXTEND_TOP ~%SHARTEEL_BCS%.bcs~ ~.../tnt-inlined/romance_cheats/sharteel_match.baf~
+END
