@@ -181,51 +181,50 @@ END
 
 //potions available to all
 ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to tra
-  potn08 => 227 //healing
-  potn52 => 228 //extra healing
-  potn55 => 229 //superior healing
-  potn17 => 233 //health
-  potn20 => 236 //antidote
-  potn02 => 230 //fire res
-  potn10 => 231 //invis
-  potn14 => 232 //speed
-  potn18 => 234 //absorption
-  potn19 => 235 //agility
-  potn20 => 236 //antidote
-  potn21 => 237 //clarity
-  potn22 => 238 //cold res
-  potn24 => 239 //defence
-  potn28 => 240 //fortitude
-  potn31 => 241 //insulation
-  potn33 => 242 //magic blocking
-  potn34 => 243 //magic res
-  potn35 => 244 //magic shield
-  potn37 => 265 //mind focusing
-  potn38 => 245 //mirrored eyes
-  potn41 => 246 //power
-  potn42 => 247 //regen
-  potn44 => 248 //strength
-  potn45 => 249 //freedom
-  potn46 => 250 //stone form
+  potn08 => 701  // healing
+  potn52 => 702  // extra healing
+  potn55 => 703  // superior healing
+  potn02 => 704  // fire res
+  potn10 => 705  // invis
+  potn14 => 706  // speed
+  potn17 => 707  // health
+  potn18 => 708  // absorption
+  potn19 => 709  // agility
+  potn20 => 710  // antidote
+  potn21 => 711  // clarity
+  potn22 => 712  // cold res
+  potn24 => 713  // defence
+  potn28 => 714  // fortitude
+  potn31 => 715  // insulation
+  potn33 => 716  // magic blocking
+  potn34 => 717  // magic res
+  potn35 => 718  // magic shield
+  potn38 => 719  // mirrored eyes
+  potn41 => 720  // power
+  potn42 => 721  // regen
+  potn44 => 722  // strength
+  potn45 => 723  // freedom
+  potn46 => 724  // stone form
+  potn37 => 725  // mind focusing
 END
 
 //warrior type
 ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_warrior BEGIN
-  potn03 => 256 //hill giant strength
-  potn12 => 263 //stone giant strength
-  potn04 => 257 //frost giant strength
-  potn05 => 258 //fire giant strength
-  potn06 => 259 //cloud giant strength
-  potn07 => 260 //storm giant strength
-  potn09 => 261 //heroism
-  potn11 => 262 //invulnerability
+  potn03 => 740  // hill giant strength
+  potn04 => 741  // frost giant strength
+  potn05 => 742  // fire giant strength
+  potn06 => 743  // cloud giant strength
+  potn07 => 744  // storm giant strength
+  potn09 => 745  // heroism
+  potn11 => 746  // invulnerability
+  potn12 => 747  // stone giant strength
 END
 
 //thief type
 ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_thief BEGIN
-  potn36 => 264 //master thievery
-  potn39 => 266 //perception
-  potn56 => 267 //rogue's frost giant strength
+  potn36 => 760  // master thievery
+  potn39 => 761  // perception
+  potn56 => 762  // rogue's frost giant strength
 END
 
 OUTER_SPRINT action_drink ~~ //using spy because if familiar takes an item it ends in PC inventory

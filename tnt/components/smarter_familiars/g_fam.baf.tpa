@@ -28,7 +28,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
-    DisplayStringHead(Myself,@214) //Ouch!
+    DisplayStringHead(Myself,@603) //Ouch!
     %increase_speed_tmp%
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
@@ -46,7 +46,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
-    DisplayStringHead(Myself,@214) //Ouch!
+    DisplayStringHead(Myself,@603) //Ouch!
     %increase_speed_tmp%
     MoveToObject(Player1)
     GiveItemCreate("%fam_item%",Player1,0,0,0)
@@ -64,7 +64,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
-    DisplayStringHead(Myself,@210)
+    DisplayStringHead(Myself,@601)
     SetGlobal("g_FamHurtNotifDone","GLOBAL",1)
     Continue()
 END
@@ -80,7 +80,7 @@ IF
   !Dead("%death_var%")
 THEN
   RESPONSE #100
-    DisplayStringHead(Myself,@211)
+    DisplayStringHead(Myself,@602)
     SetGlobal("g_FamHurtNotifDone","GLOBAL",1)
     Continue()
 END
