@@ -1,0 +1,18 @@
+// Drizzt at Fisherman's lake
+// http://www.candlekeep.com/library/articles/drizzt-2nd.htm
+COPY_EXISTING ~drizzt.cre~ ~override~
+  WRITE_BYTE CRE_magic_resistance 82
+  WRITE_BYTE CRE_THAC0 5
+  WRITE_BYTE CRE_attacks_per_round 5
+  WRITE_BYTE CRE_natural_AC "-8"
+  WRITE_BYTE CRE_effective_AC "-8"
+  WRITE_BYTE CRE_slashing_resistance 0
+  WRITE_BYTE CRE_crushing_resistance 0
+  WRITE_BYTE CRE_missile_resistance 0
+  // "+2 on saves vs. magic", we take it that all PC has is magic, so +2 to all
+  WRITE_BYTE CRE_save_vs_death 2
+  WRITE_BYTE CRE_save_vs_wand 4
+  WRITE_BYTE CRE_save_vs_polymorph 3
+  WRITE_BYTE CRE_save_vs_breath 2
+  WRITE_BYTE CRE_save_vs_spell 5
+BUT_ONLY

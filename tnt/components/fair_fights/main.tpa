@@ -8,7 +8,10 @@ INCLUDE ~%comp_dir%/kahrk.tpa~
 INCLUDE ~%comp_dir%/malchor.tpa~
 INCLUDE ~%comp_dir%/non_innocents.tpa~
 INCLUDE ~%comp_dir%/shandalar.tpa~
-ACTION_IF GAME_INCLUDES ~bg1~ BEGIN INCLUDE ~%comp_dir%/winski.tpa~ END
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
+  INCLUDE ~%comp_dir%/drizzt.tpa~
+  INCLUDE ~%comp_dir%/winski.tpa~
+END
 
 ACTION_IF remove_items == 1 BEGIN
   INCLUDE ~%comp_dir%/mages.tpa~
