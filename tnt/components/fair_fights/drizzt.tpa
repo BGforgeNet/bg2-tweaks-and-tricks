@@ -4,8 +4,8 @@ COPY_EXISTING ~drizzt.cre~ ~override~
   WRITE_BYTE CRE_magic_resistance 82
   WRITE_BYTE CRE_THAC0 5
   WRITE_BYTE CRE_attacks_per_round 5
-  WRITE_BYTE CRE_natural_AC "-8"
-  WRITE_BYTE CRE_effective_AC "-8"
+  WRITE_SHORT CRE_natural_AC "-8"
+  WRITE_SHORT CRE_effective_AC "-8"
   WRITE_BYTE CRE_slashing_resistance 0
   WRITE_BYTE CRE_crushing_resistance 0
   WRITE_BYTE CRE_missile_resistance 0
