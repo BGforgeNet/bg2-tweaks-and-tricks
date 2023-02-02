@@ -20,7 +20,7 @@ END
 
 OUTER_SPRINT JumpToPackInjured ~
 IF
-  Global("g_FamJumpToPackInjured","GLOBAL",1)
+  GlobalGT("g_FamJumpToPack","GLOBAL",1)
   HPPercentLT(Myself,70)
   OR(2)
     !CombatCounterLT(1)
@@ -38,7 +38,7 @@ END
 
 OUTER_SPRINT JumpToPackBadlyInjured ~
 IF
-  Global("g_FamJumpToPackBadlyInjured","GLOBAL",1)
+  Global("g_FamJumpToPack","GLOBAL",3)
   HPPercentLT(Myself,30)
   OR(2)
     !CombatCounterLT(1)

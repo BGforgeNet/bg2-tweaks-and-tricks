@@ -37,35 +37,34 @@ END
 
 APPEND %dialog%
   IF ~~ g_familiar_combat
+    /* g_FamJumpToPack
+      0: never hide
+      1: hide when see enemies
+      2: hide when see enemies and injured
+      3: hide when see enemies and badly injured
+    */
     SAY @100
 
-    + ~Global("g_FamJumpToPack","GLOBAL",0)~ //hide on sight
-    + @301 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",1)
-               SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)
-               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",0)
-              ~
+    // hide when see enemies
+    + ~!Global("g_FamJumpToPack","GLOBAL",1)~
+    + @301 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",1)~
     + g_familiar_confirm
 
-    + ~Global("g_FamJumpToPack","GLOBAL",1)~ //never hide
-    + @302 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)
-               SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)
-               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",0)
-              ~
+     // hide when injured
+    + ~!Global("g_FamJumpToPack","GLOBAL",2)~
+    + @303 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",2)~
     + g_familiar_confirm
 
-    + ~Global("g_FamJumpToPackInjured","GLOBAL",0)~ //hide when injured
-    + @303 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)
-               SetGlobal("g_FamJumpToPackInjured","GLOBAL",1)
-               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",0)
-              ~
+    // hide when badly injured
+    + ~!Global("g_FamJumpToPack","GLOBAL",3)~
+    + @304 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",3)~
     + g_familiar_confirm
 
-    + ~Global("g_FamJumpToPackBadlyInjured","GLOBAL",0)~ //hide when badly injured
-    + @304 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)
-               SetGlobal("g_FamJumpToPackInjured","GLOBAL",0)
-               SetGlobal("g_FamJumpToPackBadlyInjured","GLOBAL",1)
-              ~
+    // never hide
+    + ~!Global("g_FamJumpToPack","GLOBAL",0)~
+    + @302 DO ~SetGlobal("g_FamJumpToPack","GLOBAL",0)~
     + g_familiar_confirm
+
 
     + ~Global("g_FamiliarJumpOut","GLOBAL",0)~ //jump out self
     + @306 DO ~SetGlobal("g_FamiliarJumpOut","GLOBAL",1)~
