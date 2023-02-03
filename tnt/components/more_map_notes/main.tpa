@@ -70,7 +70,9 @@ SpiderWood, 1485, 1069 => 40 // Fahrington
 
 CloakwoodDruids, 651, 2886 => 41 // Faldorn
 
-FishingVillage, 1577, 3133 => 42 // Ajantis
+FishingVillage, 771, 2618 => 83001 // Fishermen
+FishingVillage, 1577, 3133 => 83002 // Ajantis
+FishingVillage, 3935, 1094 => 83003 // Gerde (approximate)
 
 ShipwrecksCoast, 2889, 2081 => 43 // Surgeon
 ShipwrecksCoast, 2010, 1281 => 44 // Mad Arcand

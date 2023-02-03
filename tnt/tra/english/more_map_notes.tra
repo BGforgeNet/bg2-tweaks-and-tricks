@@ -39,7 +39,6 @@
 @39 = ~Sarhedra~
 @40 = ~Fahrington~
 @41 = ~Faldorn~
-@42 = ~Ajantis~
 @43 = ~Surgeon~
 @44 = ~Mad Arcand~
 @45 = ~Pallonia~
@@ -117,3 +116,7 @@
 @114 = ~Thieves' Guild~
 
 @120 = ~Gandolar Luckyfoot~
+
+@83001 = ~Fishermen~
+@83002 = ~Ajantis~
+@83003 = ~Gerde~
