@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31-14:34+0000\n"
+"POT-Creation-Date: 2023-02-03-18:56+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -894,10 +894,6 @@ msgstr ""
 msgid "Faldorn"
 msgstr ""
 
-#: more_map_notes.tra:42
-msgid "Ajantis"
-msgstr ""
-
 #: more_map_notes.tra:43
 msgid "Surgeon"
 msgstr ""
@@ -1184,6 +1180,18 @@ msgstr ""
 
 #: more_map_notes.tra:120
 msgid "Gandolar Luckyfoot"
+msgstr ""
+
+#: more_map_notes.tra:83001
+msgid "Fishermen"
+msgstr ""
+
+#: more_map_notes.tra:83002
+msgid "Ajantis"
+msgstr ""
+
+#: more_map_notes.tra:83003
+msgid "Gerde"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
