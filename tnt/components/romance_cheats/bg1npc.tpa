@@ -13,11 +13,9 @@ ACTION_IF FILE_EXISTS "override/x#branwenromance.g3" BEGIN
     COPY_EXISTING ~%BRANWEN_BCS%.bcs~ ~override~
         DECOMPILE_AND_PATCH BEGIN
             // Dynaheir checks
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#DynaheirRomanceActive","GLOBAL",1)~ ~False()~
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#DynaheirRomanceActive","GLOBAL",2)~ ~False()~
+            REPLACE_TEXTUALLY ~[ %TAB%]Global("X#DynaheirRomanceActive","GLOBAL",[12])~ ~ False()~
             // Shar-Teel checks
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#SharInterest","GLOBAL",1)~ ~False()~
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("X#SharInterest","GLOBAL",2)~ ~False()~
+            REPLACE_TEXTUALLY ~[ %TAB%]Global("X#SharInterest","GLOBAL",[12])~ ~ False()~
         END 
     BUT_ONLY
     // custom match all
@@ -40,10 +38,9 @@ ACTION_IF FILE_EXISTS "override/x#dynaheirromance.g3" BEGIN
     COPY_EXISTING ~%DYNAHEIR_BCS%.bcs~ ~override~
         DECOMPILE_AND_PATCH BEGIN
             // Branwen checks
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",1)~ ~False()~
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",2)~ ~False()~
+            REPLACE_TEXTUALLY ~[ %TAB%]Global("P#BranwenRomanceActive","GLOBAL",[12])~ ~ False()~
             // kill rep check            
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~ReputationGT(Player1,\d+)~ ~~
+            REPLACE_TEXTUALLY ~ReputationGT(Player1,\d+)~ ~~
         END 
     BUT_ONLY
     // custom match all
@@ -65,14 +62,13 @@ ACTION_IF FILE_EXISTS "override/x#sharteelromance.g3" BEGIN
     COPY_EXISTING ~%SHARTEEL_BCS%.bcs~ ~override~
         DECOMPILE_AND_PATCH BEGIN
             // Branwen checks
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",1)~ ~False()~
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("P#BranwenRomanceActive","GLOBAL",2)~ ~False()~
+            REPLACE_TEXTUALLY ~[ %TAB%]Global("P#BranwenRomanceActive","GLOBAL",[12])~ ~ False()~
             // kill romance repuration checks
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~ReputationLT(Player1,\d+)~ ~~
+            REPLACE_TEXTUALLY ~[ %TAB%]ReputationLT(Player1,\d+)~ ~~
             // don't let her leave the party because of the reputation
-            REPLACE_TEXTUALLY ~Global("X#ShHighReputation","GLOBAL",[01])~ ~ False()~
-            REPLACE_TEXTUALLY ~Global("X#ShHighMale","GLOBAL",[01])~ ~ False()~
-        END 
+            REPLACE_TEXTUALLY ~[ %TAB%]Global("X#ShHighReputation","GLOBAL",[01])~ ~ False()~
+            REPLACE_TEXTUALLY ~[ %TAB%]Global("X#ShHighMale","GLOBAL",[01])~ ~ False()~
+        END
     BUT_ONLY
     // custom match all
     EXTEND_TOP ~%SHARTEEL_BCS%.bcs~ ~.../tnt-inlined/romance_cheats/sharteel_match.baf~
