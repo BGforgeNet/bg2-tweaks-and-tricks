@@ -21,7 +21,9 @@
 @206 = ~Одиночная цель~
 @207 = ~Действие на область~
 @208 = ~Working protection from poison~
-@210 = ~Really PnP protection items~
+@210 = ~PnP-like protection items~
+@211 = ~2E-like: saving throws stack, AC doesn't~
+@212 = ~3E-like: no stacking, best bonus takes effect~
 @223 = ~Potion of Really Mirrored Eyes~
 @236 = ~Неограниченное складывание хороших ягод~
 @240 = ~Throwing weapons damage type~

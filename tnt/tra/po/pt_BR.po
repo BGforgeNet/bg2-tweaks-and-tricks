@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-03-18:56+0000\n"
+"POT-Creation-Date: 2023-02-05-12:11+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -1298,7 +1298,15 @@ msgid "Working protection from poison"
 msgstr ""
 
 #: setup.tra:210
-msgid "Really PnP protection items"
+msgid "PnP-like protection items"
+msgstr ""
+
+#: setup.tra:211
+msgid "2E-like: saving throws stack, AC doesn't"
+msgstr ""
+
+#: setup.tra:212
+msgid "3E-like: no stacking, best bonus takes effect"
 msgstr ""
 
 #: setup.tra:223
