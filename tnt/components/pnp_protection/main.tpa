@@ -15,29 +15,53 @@ END
  */
 
 // Saving throw bonuses
-ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
-  amul14 => 1  // Amulet of Protection +1
-  clck01 => 1  // Cloak of Protection +1
-  clck02 => 2  // CoP +2
-  clck31 => 2  // Improved CoP +2
-  ring06 => 1  // Ring of Protection + 1
-  ring07 => 2  // RoP +2
-  ring25 => 1  // RoP +1 - Koveras
-  ring41 => 3  // RoP +3
+ACTION_IF (EDITION == 2) BEGIN
+  // 2E style, only rings of protection can't stack
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
+    ring06 => 1  // Ring of Protection +1
+    ring07 => 2  // RoP +2
+    ring25 => 1  // RoP +1 - Koveras
+    ring41 => 3  // RoP +3
 
-  // thalantyr item upgrade
-  thring01 => 1  // Ring of Free Action +1
-  thring02 => 2  // RoFA +2
+    // thalantyr item upgrade
+    thring01 => 1  // Ring of Free Action +1
+    thring02 => 2  // RoFA +2
 
-  // bgttweak
-  ring25b => 2  // RoP +2 - upgraded Koveras'
+    // bgttweak
+    ring25b => 2  // RoP +2 - upgraded Koveras'
 
-  // weimer's item upgrade
-  c2amul01 => 3  // Amulet of Ilmater
-  c2ring01 => 1  // Ring of Preservation +1
-  c2ring02 => 2  // Ring of Preservation +2
-  // c2brac01 => 1  // Gloves of the Master Thief
-  c2ring04 => 1  // Sorcerian Ring
+    // weimer's item upgrade
+    c2ring01 => 1  // Ring of Preservation +1
+    c2ring02 => 2  // Ring of Preservation +2
+    // c2brac01 => 1  // Gloves of the Master Thief
+    c2ring04 => 1  // Sorcerian Ring
+  END
+END ELSE BEGIN
+  // 3E style, no items of protection can stack
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
+    amul14 => 1  // Amulet of Protection +1
+    clck01 => 1  // Cloak of Protection +1
+    clck02 => 2  // CoP +2
+    clck31 => 2  // Improved CoP +2
+    ring06 => 1  // Ring of Protection + 1
+    ring07 => 2  // RoP +2
+    ring25 => 1  // RoP +1 - Koveras
+    ring41 => 3  // RoP +3
+
+    // thalantyr item upgrade
+    thring01 => 1  // Ring of Free Action +1
+    thring02 => 2  // RoFA +2
+
+    // bgttweak
+    ring25b => 2  // RoP +2 - upgraded Koveras'
+
+    // weimer's item upgrade
+    c2amul01 => 3  // Amulet of Ilmater
+    c2ring01 => 1  // Ring of Preservation +1
+    c2ring02 => 2  // Ring of Preservation +2
+    // c2brac01 => 1  // Gloves of the Master Thief
+    c2ring04 => 1  // Sorcerian Ring
+  END
 END
 
 // Armor Class bonuses. For armor, they should be inferred and assigned automatically later. No armor in this list!

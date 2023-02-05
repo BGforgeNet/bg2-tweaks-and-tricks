@@ -1,3 +1,4 @@
+/** @tra setup.tra */
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
 VERSION ~v8.20~
@@ -288,10 +289,20 @@ GROUP @200 /* Items */
 OUTER_SPRINT comp_name ~poison_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%components%/%comp_name%/main.tpa~
 
-BEGIN @210 /* Really PnP protection items */
+BEGIN @211 /* 2E-like: saving throws stack, AC doesn't */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128 /* Requires Classic ToB engine */
+SUBCOMPONENT @210 /* PnP-like protection items */
 OUTER_SPRINT comp_name ~pnp_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+OUTER_SET EDITION = 2
+INCLUDE ~%components%/%comp_name%/main.tpa~
+
+BEGIN @212 /* 3E-like: no stacking, best bonus takes effect */
+GROUP @200 /* Items */
+REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128 /* Requires Classic ToB engine */
+SUBCOMPONENT @210 /* PnP-like protection items */
+OUTER_SPRINT comp_name ~pnp_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+OUTER_SET EDITION = 3
 INCLUDE ~%components%/%comp_name%/main.tpa~
 // END ITEM TWEAKS
 
