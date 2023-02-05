@@ -150,7 +150,7 @@ COPY_EXISTING ~itemexcl.2da~ override
   FOR (i=1;i<itemexcl;++i) BEGIN
     READ_2DA_ENTRY_FORMER itemexcl i 0 item
     TO_LOWER item
-    PATCH_IF NOT VARIABLE_IS_SET $item_savebonus(~%item%~) BEGIN
+    PATCH_IF NOT VARIABLE_IS_SET $item_acbonus(~%item%~) BEGIN
       SET $items(~%item%~) = 1
     END
   END
