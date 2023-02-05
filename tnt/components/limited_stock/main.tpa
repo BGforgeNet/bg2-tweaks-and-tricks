@@ -22,7 +22,7 @@ COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
     // check unknown items - are they magical?
     PATCH_IF NOT VARIABLE_IS_SET $magical("%name%") BEGIN
       INNER_ACTION BEGIN
-        COPY_EXISTING "%name%.item" "override"
+        COPY_EXISTING "%name%.itm" "override"
           READ_LONG ITM_flags flags
           SET $magical("%name%") = 0
           PATCH_IF (flags BAND BIT_MAGICAL) BEGIN
