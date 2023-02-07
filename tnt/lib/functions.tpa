@@ -3,14 +3,18 @@ APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 CLEAR_IDS_MAP
 
 // list web spells to build immunity
-DEFINE_ACTION_FUNCTION list_web_spells
+DEFINE_ACTION_FUNCTION LIST_WEB_SPELLS
   RET_ARRAY spells
 BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~dw#0w215.spl~ BEGIN //SCS spider shapeshift token
-    ACTION_DEFINE_ARRAY spells BEGIN spin683 spin575 spdr201 spwi215 dw#0w215 END
-  END ELSE BEGIN
-    ACTION_DEFINE_ARRAY spells BEGIN spin683 spin575 spdr201 spwi215 END
-  END  
+  // wow, so lazy... just a hand-picked list, really?
+  ACTION_DEFINE_ARRAY spells BEGIN
+    spin683
+    spin575
+    spdr201
+    spwi215
+    dw#0w215  // SCS spider single target web
+    wtpin05  // WTP spider innate web
+  END
 END
 
 DEFINE_PATCH_FUNCTION unstack_armor_bonus

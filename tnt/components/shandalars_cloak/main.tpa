@@ -1,4 +1,4 @@
-LAF list_web_spells RET_ARRAY web_spells = spells END
+LAF LIST_WEB_SPELLS RET_ARRAY web_spells = spells END
 
 COPY_EXISTING ~%WIZARD_WEB%.spl~ override
   READ_LONG SPL_extended_headers_offset eh_off
@@ -34,14 +34,16 @@ COPY_EXISTING ~clck22.itm~  ~override~
 
   // extra protection from individual spells
   PHP_EACH web_spells AS index => spell BEGIN
-    LPF ADD_ITEM_EQEFFECT
-      INT_VAR
-        opcode = OPCODE_protection_from_spell
-        target = TARGET_FX_self
-        timing = TIMING_while_equipped
-        resist_dispel = NONMAGICAL
-      STR_VAR
-        resource = EVAL ~%spell%~
+    PATCH_IF FILE_EXISTS_IN_GAME "%spell%.spl" BEGIN
+      LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+          opcode = OPCODE_protection_from_spell
+          target = TARGET_FX_self
+          timing = TIMING_while_equipped
+          resist_dispel = NONMAGICAL
+        STR_VAR
+          resource = EVAL ~%spell%~
+      END
     END
   END
 
