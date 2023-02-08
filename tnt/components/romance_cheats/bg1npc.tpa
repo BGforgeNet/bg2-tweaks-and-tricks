@@ -95,10 +95,16 @@ ACTION_IF FILE_EXISTS "override/x#sharteelromance.g3" BEGIN
         END
     BUT_ONLY
 
-    COPY_EXISTING ~%SHARTEEL_JOINED%.dlg~ ~override~
+    COPY_EXISTING ~%SHARTEEL_POST%.dlg~ ~override~
         DECOMPILE_AND_PATCH BEGIN
             // make sure she doesn't leave for good after being kicked from party
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~^[ %TAB%]*HappinessLT(Myself,0)~ ~False()~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~^HappinessLT(Myself,0)~ ~False()~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~[ %TAB%]*HappinessLT(Myself,0)~ ~False()~
+        END
+    BUT_ONLY
+
+    COPY_EXISTING ~%SHARTEEL_JOINED%.dlg~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
             // not sure if necessary
             REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~^ReputationGT(Player1,13)~ ~False()~
             REPLACE_TEXTUALLY CASE_INSENSITIVE EVALUATE_REGEXP ~[ %TAB%]ReputationGT(Player1,13)~ ~False()~
