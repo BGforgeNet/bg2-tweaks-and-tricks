@@ -11,7 +11,7 @@ COPY_EXISTING_REGEXP ~.*\.cre~ ~override~
     ~mage06~
     ~stonskin~
 
-  // Aldeth uses mage04 as a key to open Merchant's League door
+  // Aldeth uses mage04 as a key to open Merchants League door
   PATCH_IF NOT ("%SOURCE_RES%" STR_EQ "aldeth") BEGIN
     REMOVE_CRE_ITEM ~mage04~
   END
