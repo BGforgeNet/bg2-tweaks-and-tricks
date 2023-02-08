@@ -1,13 +1,19 @@
 // All the cheating mages...
 COPY_EXISTING_REGEXP ~.*\.cre~ ~override~
+
   REMOVE_CRE_ITEM
     ~mageamul~
     ~magebrac~
 //    ~mage01~ // invisibility. Needed for bridge guardian in unseeing eye quest
     ~mage02~
     ~mage03~
-    ~mage04~
     ~mage05~
     ~mage06~
     ~stonskin~
+
+  // Aldeth uses mage04 as a key to open Merchant's League door
+  PATCH_IF NOT ("%SOURCE_RES%" STR_EQ "aldeth") BEGIN
+    REMOVE_CRE_ITEM ~mage04~
+  END
+
 BUT_ONLY
