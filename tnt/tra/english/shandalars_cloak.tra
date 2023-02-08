@@ -1,11 +1,15 @@
+// https://baldursgate.fandom.com/wiki/Shandalar%27s_Cloak
+// https://www.purpleworm.org/rules/DMG/DD00915.htm
 @1 = ~Cloak of Arachnida~
 @2 = ~This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.
 
-The cloak is woven from spider silk and imbued with powerful magic. It protects the wearer from entrapment in web and any web-like spells. However, it doesn't offer any protection against other movement impairing effects.
+The cloak is woven from spider silk and radiates a strong aura of alteration magic. It grants the wearer immunity to entrapment by webs of any sort.
 
-In addition, the cloak allows to cast Web once per day, and provides extra protection from poison.
+Once per day the wearer of this cloak can cast a double-sized web. This operates like the 2nd-level wizard spell.
+
+Also, the wearer is less subject to poison.
 
 STATISTICS:
 
 Saving Throws:  +2 bonus vs Poison.
-Special: The wearer is immune to webs, and can cast Web once per day.~
+Special:  The wearer is immune to webs, and can cast a double-sized Web once per day.~

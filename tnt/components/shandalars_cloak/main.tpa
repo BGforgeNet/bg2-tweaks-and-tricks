@@ -1,10 +1,33 @@
+// separate immunity for individual spells
+// because many spell erroneously use paralyse opcode in addition to web
 LAF LIST_WEB_SPELLS RET_ARRAY web_spells = spells END
 
+// icon for item ability
 COPY_EXISTING ~%WIZARD_WEB%.spl~ override
   READ_LONG SPL_extended_headers_offset eh_off
   READ_ASCII (eh_off + SPL_HEAD_memorised_icon) web_icon
 BUT_ONLY
 
+OUTER_SPRINT custom_web ~g_web2x~
+COPY_EXISTING ~web.pro~ ~override/%custom_web%.pro~
+// not using var because of how ADD_PROJECTILE works, but this must be the same as spell name
+ADD_PROJECTILE ~override/g_web2x.pro~
+OUTER_SET pro_id = "%g_web2x%"
+
+COPY_EXISTING ~%WIZARD_WEB%.spl~ ~override/%custom_web%.spl~
+  READ_LONG SPL_extended_headers_offset eh_off
+  WRITE_SHORT (eh_off + SPL_HEAD_projectile) ~%pro_id%~
+BUT_ONLY
+
+// double size
+OUTER_SET PRO_trigger_radius_offset = 0x204
+OUTER_SET PRO_aoe_size_offset = 0x206
+COPY_EXISTING ~%custom_web%.pro~ ~override~
+  WRITE_SHORT PRO_trigger_radius_offset 362 // 256 * sqrt(2)
+  WRITE_SHORT PRO_aoe_size_offset 362 // 256 * sqrt(2)
+BUT_ONLY
+
+// actual cloak
 COPY_EXISTING ~clck22.itm~  ~override~
   READ_STRREF NAME2 name_shandalars_cloak
   SAY NAME1 ~%name_shandalars_cloak%~
@@ -46,6 +69,16 @@ COPY_EXISTING ~clck22.itm~  ~override~
       END
     END
   END
+  // and from self
+  LPF ADD_ITEM_EQEFFECT
+    INT_VAR
+      opcode = OPCODE_protection_from_spell
+      target = TARGET_FX_self
+      timing = TIMING_while_equipped
+      resist_dispel = NONMAGICAL
+    STR_VAR
+      resource = ~%custom_web%~
+  END
 
   // save vs poison bonus
   LPF ADD_ITEM_EQEFFECT
@@ -81,10 +114,11 @@ COPY_EXISTING ~clck22.itm~  ~override~
       timing = TIMING_permanent
       target = TARGET_FX_self // doesn't work without it for some reason
     STR_VAR
-      resource = ~%WIZARD_WEB%~
+      resource = ~%custom_web%~
   END
 
 BUT_ONLY
+
 
 // set unidentified, 1 charge
 COPY_EXISTING ~dezkie.cre~  ~override~
