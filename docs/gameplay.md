@@ -12,22 +12,22 @@ Changes to various rules, combat options, etc.
 
 ### Fair fights
 
-A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square. Currently affects:
+A few opponents in the game basically cheat, or just have unrealistic stats. Sometimes it's to prevent you from breaking the plot, sometimes not. Anyway, if you know what you're doing - why not? This component will allow you to fight them fair and square.
 
 #### Just a few select enemies
 
-- Arkanis Gath, the Renal's guard (now you can fight him)
+- Arkanis Gath, the Renal's guard (now you can fight him).
 - Bayard, the adventurer in Durlag tower's cellar: removed innate magic resistance.
-- Borda, the magic merchant cheat in BG1 (100% magic resistance - removed)
+- Borda, the magic merchant cheat in BG1 - 100% magic resistance removed.
 - Dushai, the halfling adventurer in Ulgoth's Beard: removed innate fire and magic resistances.
-- Drizzt, BG1 version - AC, saving throws, resistances and APR toned down to [PnP version](http://www.candlekeep.com/library/articles/drizzt-2nd.htm). He's still a powerhouse by BG1 standards, just not so ridiculous.
-- Laskal, the Cloakwood shadow druid (innocent no longer, since he attacks first)
-- Kahrk, the mightiest ogre mage (free spell turning removed)
-- Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping (now you can fight him).
-- Phandalyn, the fanatic paladin in Baldur's Gate (innocent no longer, since he attacks first).
-- Shandalar, the Ulgoth's Beard archmage (90% all resistances removed, innocent no longer).
+- Drizzt, BG1 version: AC, saving throws, resistances and APR toned down to [PnP version](http://www.candlekeep.com/library/articles/drizzt-2nd.htm). He's still a powerhouse by BG1 standards, just not so ridiculous.
+- Laskal, the Cloakwood shadow druid: innocent no longer, since he attacks first.
+- Kahrk, the mightiest ogre mage: free spell turning removed.
+- Malchor Harpell, the Drizzt's friend that imprisons the whole party without a chance of escaping. Now you can fight him.
+- Phandalyn, the fanatic paladin in Baldur's Gate: innocent no longer, since he attacks first.
+- Shandalar, the Ulgoth's Beard archmage: 90% all resistances removed, innocent no longer.
   **Note** this does not give him a better combat script. Use some AI mod (e.g. SCS) for this fight to actually become a challenge.
-- Winski Perorate in the labyrinth (innocent no longer, since he's not).
+- Winski Perorate in the labyrinth - innocent no longer, since he's not.
 
 If you do break the plot by killing a critical NPC - that's on you. **You've been warned.**
 
