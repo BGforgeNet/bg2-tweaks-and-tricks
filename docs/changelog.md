@@ -1,6 +1,7 @@
 # Changelog
 
-- [Version 8.20](#version-821)
+- [Version 8.21](#version-821)
+- [Version 8.20](#version-820)
 - [Version 8.19](#version-819)
 - [Version 8.18](#version-818)
 - [Version 8.17](#version-817)
