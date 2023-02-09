@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-08-19:10+0000\n"
+"POT-Creation-Date: 2023-02-09-07:10+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1678,17 +1678,16 @@ msgid "Sensible multiclass restrictions"
 msgstr ""
 
 #: setup.tra:1110
-msgid "Fair fights"
+msgid "Fair fights | POWER USER component, consult readme"
 msgstr ""
 
 #: setup.tra:1111
-msgid "Just a few select enemies | POWER USER component, consult readme"
+msgid "Just a few select enemies"
 msgstr ""
 
 #: setup.tra:1112
 msgid ""
-"Also remove undroppable items granting unfair advantages from all enemies | "
-"POWER USER component, consult readme"
+"Also remove undroppable items granting unfair advantages from all enemies"
 msgstr ""
 
 #: shandalars_cloak.tra:1
