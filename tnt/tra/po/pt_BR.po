@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-09-07:10+0000\n"
+"POT-Creation-Date: 2023-02-09-07:35+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -1592,7 +1592,7 @@ msgid "Chaos Shield spells are not present in game"
 msgstr ""
 
 #: setup.tra:813
-msgid "Uncheese Project Image"
+msgid "Uncheese Project Image | POWER USER component, consult readme"
 msgstr ""
 
 #: setup.tra:814
