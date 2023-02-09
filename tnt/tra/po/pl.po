@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-09-07:35+0000\n"
+"POT-Creation-Date: 2023-02-09-15:58+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1186,6 +1186,10 @@ msgstr ""
 
 #: more_map_notes.tra:83003
 msgid "Gerde"
+msgstr ""
+
+#: more_map_notes.tra:88001
+msgid "Tiber"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1

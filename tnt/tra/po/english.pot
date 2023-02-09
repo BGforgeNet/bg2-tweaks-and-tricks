@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-09-07:35+0000\n"
+"POT-Creation-Date: 2023-02-09-15:58+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1184,6 +1184,10 @@ msgstr ""
 
 #: more_map_notes.tra:83003
 msgid "Gerde"
+msgstr ""
+
+#: more_map_notes.tra:88001
+msgid "Tiber"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
