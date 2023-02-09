@@ -32,7 +32,7 @@ While it's nice to have a bit of bad weather, and a lighting strike hitting a ch
 
 ### Mod romance cheats
 
-For original Bioware characters, there's long been a tweak that allows multiple romances. Characters from mods, however, are usually less forgiving. This component allows to multi-romance them as well as skipping other checks (stats, gender, etc - this is maintained on best-effort basis, and likely not comprehensive. If your love interest still turns you away, make reports).
+For original Bioware characters, there's long been a tweak that allows multiple romances. Characters from mods, however, are usually less forgiving. This component allows to multi-romance them as well as skipping other checks (stats, gender, etc).
 
 Currently includes:
 
@@ -44,7 +44,9 @@ Currently includes:
 - Saerileth
 - Shar-Teel (BG1NPC)
 
-**Beware** that if you install this, and then hit **any** bug with such character, you'll likely get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
+This is maintained on best-effort basis, and likely not comprehensive. If your love interest still turns you away, make reports. It is quite possible that you'll still experience romance breakage, so if you're not prepared to deal with it, don't cheat.
+
+**Beware** that if you install this component, and then hit **any** bug with such character, you'll likely get no support from the corresponding mod authors, only be ridiculed and chased away instead. **You've been warned.**
 
 ### Disable intro movies
 
