@@ -77,7 +77,7 @@ The same argumentation as with [Mislead](#uncheese-mislead) applies. While some 
 
 The TnT version of PI is an actual projection, and it spends spells from the real caster.
 
-**It might be not 100% abuse-proof**, but it _should_ work reasonably well.
+This is a complicated component. It _should_ work reasonably well, but it might not be flawless. **You've been warned.**
 
 To clarify, the purpose of this component is to give _a normally working spell_ to the players who _don't want to cheese_ in the first place. The purpose is not to close every possible PI exploit.
 
