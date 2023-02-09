@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-08-19:10+0000\n"
+"POT-Creation-Date: 2023-02-09-07:10+0000\n"
 "PO-Revision-Date: 2022-10-25 15:43+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1922,19 +1922,18 @@ msgid "Sensible multiclass restrictions"
 msgstr "Более адекватная сфера Отилюка"
 
 #: setup.tra:1110
-msgid "Fair fights"
-msgstr "Честные схватки"
-
-#: setup.tra:1111
 #, fuzzy
 #| msgid "Shops always buy goods at the same price"
-msgid "Just a few select enemies | POWER USER component, consult readme"
+msgid "Fair fights | POWER USER component, consult readme"
 msgstr "Магазины покупают товар по неизменной цене"
+
+#: setup.tra:1111
+msgid "Just a few select enemies"
+msgstr ""
 
 #: setup.tra:1112
 msgid ""
-"Also remove undroppable items granting unfair advantages from all enemies | "
-"POWER USER component, consult readme"
+"Also remove undroppable items granting unfair advantages from all enemies"
 msgstr ""
 
 #: shandalars_cloak.tra:1
@@ -2369,6 +2368,9 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "Fair fights"
+#~ msgstr "Честные схватки"
 
 #~ msgid "Taloun"
 #~ msgstr "Талун"
