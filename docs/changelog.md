@@ -1,6 +1,6 @@
 # Changelog
 
-- [Version 8.20](#version-820)
+- [Version 8.20](#version-821)
 - [Version 8.19](#version-819)
 - [Version 8.18](#version-818)
 - [Version 8.17](#version-817)
@@ -29,37 +29,57 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.21
+
+- Ever more map notes.
+- Familiars can be told to stay out of pack when (badly) injured.
+- PnP protection supports Weimer's Item Upgrade items.
+- PnP protection is split into 2E-like and 3E-like options.
+- Romance cheats include Shar-Teel, Branwen, Viconia from BG1NPC.
+- Limited Stock non-magical item limite raised to 30 (magical left at 10).
+- Arachnida cloak is more PnP-like.
+- Fair Fights includes BG1 Drizzt.
+- Fair Fights will no longer prevent Aldeth from opening doors to Merchants League.
 
 ### Version 8.20
+
 - Fixed Grandmastery tweak erroneously limiting 2 weapons style.
 - Archers and Kensai now can get High Mastery.
 - Minor fixes for map notes.
 
 ### Version 8.19
+
 Fixed Sensible Otiluke's component [not working](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/60).
 
 ### Version 8.18
+
 Fixed Throwing Damage Type [breaking strength bonus](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/59) on EEs and potentially causing other bugs with affected items.
 
 ### Version 8.17
+
 - Fixed trap intuition autopause sometimes making it [impossible](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/49) to save.
 - Allow fast trap detection for [bards and rangers](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/53) from Skills and Abilities.
 - Fixed trap type notifications flashing [too fast](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/52) on EEs.
 - Fixed harmless Fair Fights installation [warning](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/51) on EEs.
 
 ### Version 8.16
+
 - [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/54) Melicamp not reverting back when Infinity Animations is installed.
 
 ### Version 8.15
+
 - Fixed Compliments and Insults installation on EET+Windows.
 
 ### Version 8.14
+
 - Fixed Extended Soundsets, Compliments and Insults installation on EET.
 
 ### Version 8.13
+
 Fixed installation of BG1-style party interaction with framerate adjustment on Windows, also allowed to install on Unix if wine is present. Renamed the component to "Compliments and insults".
 
 ### Version 8.12
+
 - More map notes: Nashel, Carnival, Baldur's Gate.
 - Fair Fights: included Dushai, Bayard.
 - Improved traps: don't alert about false exit skeleton trap in Durlag's level 3.
@@ -73,16 +93,19 @@ Fixed installation of BG1-style party interaction with framerate adjustment on W
 - New component: Save Melicamp.
 
 ### Version 8.11
+
 - Starting bags don't fail to install on EET/TuTu.
 - Throwing daggers from Hassle-free ammo get strength damage bonus on EEs, in line with other daggers.
 - Shandalar's cloak is unidentified when found, and has a charge.
 - More map notes.
 
 ### Version 8.10
+
 - Improved Traps: fixed a few traps not giving out notifications in BG1 part of BGT.
 - Improved Traps: fixed sometimes being unable to sleep after disarming traps and switching areas if intuition pause is enabled.
 
 ### Version 8.9
+
 - Fixed swapped Wand of Frost subcomponents.
 - Improved Traps doesn't bloat savegames anymore.
 - Recolored Nester's dagger in addition to Perdue's sword, the component is renamed to "Distinct items".
@@ -90,39 +113,49 @@ Fixed installation of BG1-style party interaction with framerate adjustment on W
 - More map notes added.
 
 ### Version 8.8
+
 - Fixed Nemphre's dialog being [messed up](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/43) by Bloodless Deeds.
 
 ### Version 8.7
+
 - [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/42) Improved Traps installation on EET.
 - Allowed [unstacking](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/40) potions and scrolls in IWDEE.
 - Enabled initial Portuguese/Brasilian translation.
 
 ### Version 8.6
+
 Unstacking potions and scrolls now can be [installed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/40) on BG(2)EE.
 
 ### Version 8.5
+
 Updated IElib for better PI compatibility.
 
 ### Version 8.4
+
 Throwing daggers are also excluded from Limited Stock.
 
 ### Version 8.3
+
 Non-magical ammo and throwing weapons are now [skipped](https://forums.bgforge.net/viewtopic.php?f=31&t=272) from Limited Stock.
 
 ### Version 8.2
+
 Fixed certain "Throwing damage type" subcomponents [failing to install](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/36).
 
 ### Version 8.1
+
 Fixed "Working protection from poison" missing from components list.
 
 ### Version 8
 
 #### General
+
 - Ensured EE, SoD compatibility.
 - Removed dummy component detection files, switched to `LABEL`, only using it for some components.
 - Added Russian translation.
 
 #### New components
+
 - Algernon's cloak: usable once per day.
 - Bloodless deeds.
 - Can't steal Carsomyr.
@@ -147,7 +180,9 @@ Fixed "Working protection from poison" missing from components list.
 - Working protection from poison.
 
 #### Improved traps
+
 Massive rewrite under the hood.
+
 - Allowed instant detection.
 - Allowed to increase detection range.
 - Added an option to center on the trap, rather than the character.
@@ -159,6 +194,7 @@ Massive rewrite under the hood.
 - Added an option to make Davaeorn's Battle Horrors non-disarmable.
 
 #### Smarter familiars
+
 - Improved looting speed.
 - Fixed wrong dialog for WTP's imp.
 - Added combat tactics options.
@@ -166,29 +202,36 @@ Massive rewrite under the hood.
 - Fixed quasit, dust mephit, fairy dragon missing their scripts.
 
 #### Fair Fights
+
 - Fixed Shandalar's AC and saves to correspond to a normal human.
 - Winski Perorate - disabled instakill upon attacking Sarevok in the Ducal Palace.
 - Now affects all mages in game, removing items that pre-cast "spells" on them.
 
 #### Remove Blur graphics
+
 Now includes Cloak of Displacement.
 
 #### True [True Sight](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#True_Sight)
+
 Now includes Inquisitor's ability.
 
 #### Hassle-free ammo
+
 - Fixed THAC0/damage bonuses for new returning items.
 - Maximized stack size for all ammo and throwing weapons.
 
 #### Extended soundsets
+
 - Fixed Skie's happy line being silent.
 - Custom sounds changed to install on English only for now.
 - Allowed to install framerate-adjusted sound on Linux if wine is present.
 
 #### Potion of really mirrored eyes
+
 Added more comprehensive check to include various Gaze spells.
 
 ### Version 7
+
 - Added spider form/web protection component.
 - Fixed Viconia's dialog_default and area_city in extended soundsets.
 - Easy Traps:
@@ -218,6 +261,7 @@ Added more comprehensive check to include various Gaze spells.
 - Added potion of really mirrored eyes component.
 
 ### Version 6
+
 - Extended soundsets: more sounds.
 - Easy traps: fixed missing vent trap.
 - Smarter familiars: fixed quasit missing in ToB.
@@ -229,6 +273,7 @@ Added more comprehensive check to include various Gaze spells.
   - General code cleanup.
 
 ### Version 5
+
 - Added "easy traps" component.
 - Added "less autosaves" component.
 - Added Laskal, Phandalyn and Winski Perorate to "Fair fight" (remove innocent flag).
@@ -238,17 +283,20 @@ Added more comprehensive check to include various Gaze spells.
 - Made "unstackable potions" compatible with Rogue Rebalancing.
 
 ### Version 4
+
 - Added "no shop depreciation" component.
 - Added "no XP farming" component.
 - Added "resilient familiars" component.
 - Fixed version tag.
 
 ### Version 3
+
 - Added a few new components.
 - Revised all code.
 - Actually released it.
 
 ### Version 2
+
 - Merged in Tweaks-And-Tricks.
 - Renamed the mod.
 - Updated the components.

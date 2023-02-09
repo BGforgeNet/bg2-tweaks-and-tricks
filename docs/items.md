@@ -15,7 +15,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
 - [Distinct quest items](#distinct-quest-items)
-- [Really PnP protection items](#really-pnp-protection-items)
+- [PnP-like protection items](#really-pnp-protection-items)
 
 ### Hassle-free ammo
 An inventory management pain killer:
@@ -91,11 +91,26 @@ Currently includes:
 - Perdue's sword
 - Nester's dagger
 
-### Really PnP protection items
-BG2 always restricted wearing rings of protection (and other similar jewelry) with magical armor. That is a crude way to enforce a PnP rule saying that their bonuses shouldn't stack. Gameplay-wise, though, it leads to much inventory tetris and frustration. There are tweaks to address it, but they work in an unperfect way, still forcing the tetris or stacking AC.
+### PnP-like protection items
+BG2 always restricted wearing rings of protection (and other similar jewelry) with magical armor. That is a crude way to enforce a PnP rule saying that their bonuses shouldn't stack. Gameplay-wise, though, it leads to much inventory tetris and frustration.
 
-Now you can wear whatever you want at the same time. But only the highest bonuses will apply. As it should have been.
+There are tweaks to address it, but they work in an imperfect way, still forcing the tetris game or stacking AC.
 
-For example, if a character wears a Leather Armor +3, a Ring of Protection +1 and a Ring of Protection +2, he will receive a total bonus of +3 AC and +2 Saving Throws (compared to another character who wears just plain Leather Armor).
+Also, PnP stacking rules are not that simple. You can read more about it [here](https://forums.bgforge.net/viewtopic.php?f=31&p=1176).
+
+This component allows you to wear whatever you want at the same time, with the following rules:
+- AC bonuses don't stack, best bonus applies (that includes bonus from magical armor).
+- Rings of Protection don't stack, best bonus applies.
+- Saving throw bonuses from different items of protection: varies, see below subcomponents.
 
 Unfortunately, only available to Classic Edition users.
+
+#### 2E-like
+Saving throw bonuses from different items of protection stack.
+
+If a character wears a Leather Armor +3, an Amulet of Protection +1 and a Ring of Protection +2, he will receive a total bonus of +3 AC and +3 Saving Throws (compared to another character who wears just plain Leather Armor).
+
+#### 3E-like
+No stacking at all. Best bonus takes effect.
+
+If a character wears a Leather Armor +3, an Amulet of Protection +1 and a Ring of Protection +2, he will receive a total bonus of +3 AC and +2 Saving Throws.
