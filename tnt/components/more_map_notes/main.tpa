@@ -83,13 +83,13 @@ Lighthouse, 3746, 2394 => 47 // Safana
 
 NashkelCarnival, 1560, 2931 => 51 // Gambling tent
 NashkelCarnival, 1962, 2867 => 51 // Gambling tent
-NashkelCarnival, 2518, 2833 => 52 // Scrolls store
-NashkelCarnival, 2826, 3014 => 53 // Weapons store
+NashkelCarnival, 2518, 2833 => 52 // Scrolls shop
+NashkelCarnival, 2826, 3014 => 53 // Weapons shop
 NashkelCarnival, 3058, 3093 => 54 // Zeke
-NashkelCarnival, 3194, 2371 => 55 // Ranged weapons store
+NashkelCarnival, 3199, 3239 => 55 // Ranged weapons shop
 NashkelCarnival, 2828, 3384 => 56 // Potion dealer
 NashkelCarnival, 2340, 3575 => 57 // Enchanted items trader
-NashkelCarnival, 1857, 3522 => 58 // Exotic potion store
+NashkelCarnival, 1857, 3522 => 58 // Exotic potions shop
 NashkelCarnival, 3247, 2877 => 59 // Branwen
 NashkelCarnival, 3218, 2616 => 60 // Armor shop
 NashkelCarnival, 4810, 2212 => 61 // Tent of special pleasures
