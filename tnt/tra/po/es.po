@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-09-15:58+0000\n"
+"POT-Creation-Date: 2023-02-10-15:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -919,50 +919,6 @@ msgstr ""
 msgid "Hafiz"
 msgstr ""
 
-#: more_map_notes.tra:51
-msgid "Gambling tent"
-msgstr ""
-
-#: more_map_notes.tra:52
-msgid "Scrolls store"
-msgstr ""
-
-#: more_map_notes.tra:53
-msgid "Weapons store"
-msgstr ""
-
-#: more_map_notes.tra:54
-msgid "Zeke"
-msgstr ""
-
-#: more_map_notes.tra:55
-msgid "Ranged weapons store"
-msgstr ""
-
-#: more_map_notes.tra:56
-msgid "Potion dealer"
-msgstr ""
-
-#: more_map_notes.tra:57
-msgid "Enchanted items trader"
-msgstr ""
-
-#: more_map_notes.tra:58
-msgid "Exotic potion store"
-msgstr ""
-
-#: more_map_notes.tra:59
-msgid "Branwen"
-msgstr ""
-
-#: more_map_notes.tra:60
-msgid "Armor shop"
-msgstr ""
-
-#: more_map_notes.tra:61
-msgid "Tent of special pleasures"
-msgstr ""
-
 #: more_map_notes.tra:62
 msgid "Joseph's house"
 msgstr ""
@@ -1175,6 +1131,42 @@ msgstr ""
 msgid "Gandolar Luckyfoot"
 msgstr ""
 
+#: more_map_notes.tra:38001
+msgid "Gambling tent"
+msgstr ""
+
+#: more_map_notes.tra:38002
+msgid "Scrolls store"
+msgstr ""
+
+#: more_map_notes.tra:38003
+msgid "Weapons store"
+msgstr ""
+
+#: more_map_notes.tra:38004
+msgid "Zeke"
+msgstr ""
+
+#: more_map_notes.tra:38005
+msgid "Ranged weapons store"
+msgstr ""
+
+#: more_map_notes.tra:38006
+msgid "Potion dealer"
+msgstr ""
+
+#: more_map_notes.tra:38007
+msgid "Enchanted items trader"
+msgstr ""
+
+#: more_map_notes.tra:38008
+msgid "Exotic potion store"
+msgstr ""
+
+#: more_map_notes.tra:38009
+msgid "Branwen"
+msgstr ""
+
 #: more_map_notes.tra:83001
 msgid "Fishermen"
 msgstr ""
@@ -1189,6 +1181,14 @@ msgstr ""
 
 #: more_map_notes.tra:88001
 msgid "Tiber"
+msgstr ""
+
+#: more_map_notes.tra:380010
+msgid "Armor shop"
+msgstr ""
+
+#: more_map_notes.tra:380011
+msgid "Tent of special pleasures"
 msgstr ""
 
 #: really_mirrored_eyes.tra:1
