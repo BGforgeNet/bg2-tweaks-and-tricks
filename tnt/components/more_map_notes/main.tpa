@@ -81,20 +81,20 @@ Lighthouse, 3510, 1660 => 45 // Pallonia
 Lighthouse, 3498, 2959 => 46 // Arkushule
 Lighthouse, 3746, 2394 => 47 // Safana
 
-NashkelCarnival, 1560, 2931 => 51 // Gambling tent
-NashkelCarnival, 1962, 2867 => 51 // Gambling tent
-NashkelCarnival, 2518, 2833 => 52 // Scrolls shop
-NashkelCarnival, 2826, 3014 => 53 // Weapons shop
-NashkelCarnival, 3058, 3093 => 54 // Zeke
-NashkelCarnival, 3199, 3239 => 55 // Ranged weapons shop
-NashkelCarnival, 2828, 3384 => 56 // Potion dealer
-NashkelCarnival, 2340, 3575 => 57 // Enchanted items trader
-NashkelCarnival, 1857, 3522 => 58 // Exotic potions shop
-NashkelCarnival, 3247, 2877 => 59 // Branwen
-NashkelCarnival, 3218, 2616 => 60 // Armor shop
-NashkelCarnival, 4810, 2212 => 61 // Tent of special pleasures
-
 Nashkel, 4203, 2911 => 62 // Joseph's house
+
+NashkelCarnival, 1560, 2931 => 38001  // Gambling tent
+NashkelCarnival, 1962, 2867 => 38001  // Gambling tent
+NashkelCarnival, 2518, 2833 => 38002  // Scrolls shop
+NashkelCarnival, 2826, 3014 => 38003  // Weapons shop
+NashkelCarnival, 3058, 3093 => 38004  // Zeke
+NashkelCarnival, 3199, 3239 => 38005  // Ranged weapons shop
+NashkelCarnival, 2828, 3384 => 38006  // Potion dealer
+NashkelCarnival, 2340, 3575 => 38007  // Enchanted items trader
+NashkelCarnival, 1857, 3522 => 38008  // Exotic potions shop
+NashkelCarnival, 3247, 2877 => 38009  // Branwen
+NashkelCarnival, 3218, 2616 => 380010  // Armor shop
+NashkelCarnival, 4810, 2212 => 380011  // Tent of special pleasures
 
 WBaldursGate, 873, 640 => 65 // Tremain's house
 
