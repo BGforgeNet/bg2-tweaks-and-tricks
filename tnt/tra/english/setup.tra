@@ -74,8 +74,8 @@
 @503 = ~Can't steal from any stores~
 @504 = ~More ankheg armors by Taerom~
 @505 = ~Stores always buy goods at the same (low) price | POWER USER component, consult readme~
-@506 = ~Limited stock~
-
+@506 = ~Cleanup stores~
+@507 = ~Limited stock~
 
 @600 = ~Assorted convenience components~
 @601 = ~Less autosaves | POWER USER component, consult readme~

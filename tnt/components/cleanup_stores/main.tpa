@@ -1,0 +1,165 @@
+/**
+ * Returns a list of duplicated items in the store
+ * @ret {list}
+ */
+DEFINE_PATCH_FUNCTION LIST_STORE_DUPES
+    RET_ARRAY instance2
+BEGIN
+    SPRINT prefix "LIST_STORE_DUPES"
+    GET_OFFSET_ARRAY items STO_V10_ITEMS_SOLD
+
+    // count items
+    PHP_EACH items AS int => off BEGIN
+        READ_ASCII off name
+        PATCH_IF VARIABLE_IS_SET $instance("%name%") BEGIN
+            count = $instance("%name%") + 1
+            SET $instance("%name%") = count
+        END ELSE BEGIN
+            SET $instance("%name%") = 1
+        END
+    END
+
+    // list dupes
+    PHP_EACH instance AS name => count BEGIN
+        PATCH_IF count > 1 BEGIN
+            PATCH_PRINT "%prefix%: %SOURCE_FILE% - %name% - %count% instances"
+            SET $instance2("%name%") = count
+        END
+    END
+END
+
+
+/**
+ * Counts array length
+ * @arg {string} array - array name
+ * @ret {int} length - count of items
+ */
+DEFINE_PATCH_FUNCTION ARRAY_LENGTH
+    STR_VAR array = "g_none"
+    RET length
+BEGIN
+    SPRINT prefix "ARRAY_LENGTH"
+    PATCH_IF "%array%" STR_EQ "g_none" BEGIN
+        PATCH_FAIL ~%prefix%: empty array arg~
+    END
+    length = 0
+    PHP_EACH "%array%" AS int => item BEGIN
+        length += 1
+    END
+END
+
+/**
+ * Returns total amount of an item in the store (counting dupes)
+ * @arg {resref} item
+ * @ret {int} total - if any of the instances has infinite flag set, this equals to -1
+ */
+DEFINE_PATCH_FUNCTION GET_STORE_DUPE_TOTAL
+    STR_VAR item = ""
+    RET total
+BEGIN
+    SPRINT prefix "GET_STORE_DUPE_TOTAL"
+    PATCH_IF item STR_EQ "" BEGIN
+        PATCH_FAIL ~%prefix%: empty item arg~
+    END
+    total = 0
+    GET_OFFSET_ARRAY items STO_V10_ITEMS_SOLD
+    PHP_EACH items AS int => off BEGIN
+        PATCH_IF total != "-1" BEGIN
+            READ_ASCII off name
+            PATCH_IF "%name%" STR_EQ "%item%" BEGIN
+                // READ_LONG (off + STO_ITEM_infinite) infinite
+                READ_LONG (off + 0x18) infinite
+                PATCH_IF infinite == 1 BEGIN
+                    total = "-1"
+                END ELSE BEGIN
+                    // READ_LONG (off + STO_ITEM_amount) current_amount
+                    READ_LONG (off + 0x14) current_amount
+                    total += current_amount
+                END
+            END
+        END
+    END
+    PATCH_PRINT "%prefix%: %SOURCE_FILE% - %item% - total=%total%"
+END
+
+
+/**
+ * Set the first instance of `item` in the store to have `total` amount.
+ * And delete other instances.
+ * @arg {int} total - total amount. Can be `-1` to indicate infinite.
+ * @arg {resref} item - item name
+ */
+DEFINE_PATCH_FUNCTION REMOVE_STORE_DUPES
+    INT_VAR total = "0"
+    STR_VAR item = ""
+BEGIN
+    SPRINT prefix "REMOVE_STORE_DUPES"
+    PATCH_IF total == 0 BEGIN
+        PATCH_FAIL ~%prefix%: empty total arg~
+    END
+    PATCH_IF item STR_EQ "" BEGIN
+        PATCH_FAIL ~%prefix%: empty item arg~
+    END
+
+    STO_ITEM_size = 0x1c
+
+    found = 0
+    GET_OFFSET_ARRAY items STO_V10_ITEMS_SOLD
+
+    LPF ARRAY_LENGTH STR_VAR array = "items" RET length END
+    deleted = 0
+    count = 0
+
+    PHP_EACH items AS int => off BEGIN
+        count += 1
+        PATCH_IF (count + deleted > length) BEGIN
+            PATCH_PRINT "%prefix%: %SOURCE_FILE% - end of items section reached"
+        END ELSE BEGIN
+            READ_ASCII off name
+            PATCH_IF "%name%" STR_EQ "%item%" BEGIN
+                PATCH_IF found == 0 BEGIN
+                    found = 1
+                    // infinite
+                    PATCH_IF total == "-1" BEGIN
+                        // WRITE_LONG (off + STO_ITEM_infinite) infinite
+                        WRITE_LONG (off + 0x18) infinite
+                    END ELSE BEGIN
+                        // WRITE_LONG (off + STO_ITEM_amount) total
+                        WRITE_LONG (off + 0x14) total
+                    END
+                END ELSE BEGIN  // already found first, this is a dupe
+                    DELETE_BYTES off STO_ITEM_size
+                    deleted += 1
+                END
+            END
+        END
+    END
+
+    PATCH_IF deleted > 0 BEGIN
+        // WRITE_LONG STO_items_count (THIS - deleted)
+        WRITE_LONG 0x38 (THIS - deleted)
+        LPF ~__A7_UPDATE_OFFSETS~
+        INT_VAR
+          value = 0 - (STO_ITEM_size * deleted)
+        //   skip_offset = STO_items_offset
+          skip_offset = 0x34
+        END
+    END ELSE BEGIN
+        PATCH_FAIL "%prefix%: %SOURCE_FILE% - %item% dupes not found"
+    END
+
+END
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
+    // delete useless items
+    REMOVE_STORE_ITEM belt01 boot06 brac05 brac12
+
+    // dedupe
+    CLEAR_ARRAY dupes
+    LPF LIST_STORE_DUPES RET_ARRAY dupes = instance2 END
+    PHP_EACH dupes AS item => count BEGIN
+        LPF GET_STORE_DUPE_TOTAL STR_VAR item RET total END
+        LPF REMOVE_STORE_DUPES INT_VAR total STR_VAR item END
+    END
+
+BUT_ONLY

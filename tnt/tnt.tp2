@@ -387,7 +387,7 @@ GROUP @500 /* Stores */
 SUBCOMPONENT @502 /* Close store steal exploit */
 INCLUDE ~%components%/no_shop_steal/fence.tpa~
 
-BEGIN @503 /* Can't steal from any Stores */
+BEGIN @503 /* Can't steal from any stores */
 GROUP @500 /* Stores */
 SUBCOMPONENT @502 /* Close store steal exploit */
 INCLUDE ~%components%/no_shop_steal/all.tpa~
@@ -397,7 +397,11 @@ GROUP @500 /* Stores */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
 INCLUDE ~%components%/more_ankhegs/main.tpa~
 
-BEGIN @506 /* Limited stock */
+BEGIN @506 /* Cleanup stores */
+GROUP @500 /* Stores */
+INCLUDE ~%components%/cleanup_stores/main.tpa~
+
+BEGIN @507 /* Limited stock */
 GROUP @500 /* Stores */
 INCLUDE ~%components%/limited_stock/main.tpa~
 // end Stores
