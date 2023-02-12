@@ -1,5 +1,5 @@
 COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
-  PATCH_IF NOT (~%SOURCE_RES%~ STR_EQ ~stovai~) BEGIN // skip officer Vai's buyinh scalps
+  PATCH_IF NOT (~%SOURCE_RES%~ STR_EQ ~stovai~) BEGIN // skip officer Vai's buying scalps
     READ_LONG STO_buy_markup buy_markup
     PATCH_IF buy_markup > 0 BEGIN // skip bags
       WRITE_LONG STO_depreciation 0  // disable depreciation
