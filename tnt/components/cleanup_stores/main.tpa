@@ -119,7 +119,7 @@ BEGIN
                     found = 1
                     // infinite
                     PATCH_IF total == "-1" BEGIN
-                        WRITE_LONG (off + STO_ITEM_infinite) infinite
+                        WRITE_LONG (off + STO_ITEM_infinite) 1
                     END ELSE BEGIN
                         WRITE_LONG (off + STO_ITEM_amount) total
                     END
@@ -155,7 +155,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY replacements BEGIN
     slhd12 => shld01
     slhd99 => shld01
 
-    // medium sheilds
+    // medium shields
     slhd13 => shld03
     slhd14 => shld03
 
