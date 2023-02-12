@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12-15:38+0000\n"
+"POT-Creation-Date: 2023-02-12-21:40+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1460,6 +1460,10 @@ msgid ""
 msgstr ""
 
 #: setup.tra:506
+msgid "Cleanup stores"
+msgstr ""
+
+#: setup.tra:507
 msgid "Limited stock"
 msgstr ""
 

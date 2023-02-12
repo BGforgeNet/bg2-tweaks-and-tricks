@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12-15:38+0000\n"
+"POT-Creation-Date: 2023-02-12-21:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1459,6 +1459,10 @@ msgid ""
 msgstr ""
 
 #: setup.tra:506
+msgid "Cleanup stores"
+msgstr ""
+
+#: setup.tra:507
 msgid "Limited stock"
 msgstr ""
 
