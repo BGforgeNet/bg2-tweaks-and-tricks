@@ -15,8 +15,7 @@ END
 COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
   GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
   PHP_EACH sold AS int => it_off BEGIN
-    READ_LONG (it_off + STO_ITEM_SALE_infinite) infinite
-    READ_ASCII (it_off + STO_ITEM_SALE_name) name
+    READ_ASCII (it_off + STO_ITEM_name) name
     TO_LOWER name
 
     // check unknown items - are they magical?
@@ -32,15 +31,24 @@ COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
     END
 
     // default
-    max_count = MAX_NONMAGICAL
+    max_amount = MAX_NONMAGICAL
     // magical is more limited
     PATCH_IF $magical("%name%") == 1 BEGIN
-      max_count = MAX_MAGICAL
+      max_amount = MAX_MAGICAL
     END
 
+    // limit infinite
+    READ_LONG (it_off + STO_ITEM_infinite) infinite
     PATCH_IF infinite == 1 AND (!VARIABLE_IS_SET $allow_infinite(~%name%~) ) BEGIN
-      WRITE_LONG (it_off + STO_ITEM_SALE_infinite) 0
-      WRITE_LONG (it_off + STO_ITEM_SALE_amount) max_count
+      WRITE_LONG (it_off + STO_ITEM_infinite) 0
+      WRITE_LONG (it_off + STO_ITEM_amount) max_amount
+    END ELSE BEGIN
+      // limit finite
+      READ_LONG (it_off + STO_ITEM_amount) amount
+      PATCH_IF amount > max_amount BEGIN
+        WRITE_LONG (it_off + STO_ITEM_amount) max_amount
+      END
     END
+
   END
 BUT_ONLY
