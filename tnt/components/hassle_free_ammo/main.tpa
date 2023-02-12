@@ -61,13 +61,13 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
     match = 0
     PATCH_MATCH type
       WITH
-        ITM_TYPE_arrows
-        ITM_TYPE_bullets
-        ITM_TYPE_dagger
-        ITM_TYPE_hammer
-        ITM_TYPE_dart
-        ITM_TYPE_axe
-        ITM_TYPE_bolts
+        ITEM_TYPE_arrow
+        ITEM_TYPE_bullet
+        ITEM_TYPE_dagger
+        ITEM_TYPE_hammer
+        ITEM_TYPE_dart
+        ITEM_TYPE_axe
+        ITEM_TYPE_bolt
       BEGIN
         GET_OFFSET_ARRAY h_array ITM_V10_HEADERS
         PHP_EACH h_array AS int => h_off BEGIN

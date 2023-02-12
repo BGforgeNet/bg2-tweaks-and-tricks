@@ -1,15 +1,15 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY typedamage BEGIN
-  EVAL ~%ITM_TYPE_hammer%~ => 2 //hammer - crushing
-  EVAL ~%ITM_TYPE_axe%~ => 3 //axe - slashing
+  EVAL ~%ITEM_TYPE_hammer%~ => 2  // hammer - crushing
+  EVAL ~%ITEM_TYPE_axe%~    => 3  // axe - slashing
 END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY typetra BEGIN
-  EVAL ~%ITM_TYPE_hammer%~ => 254 //crushing
-  EVAL ~%ITM_TYPE_axe%~ => 255 //slashing
+  EVAL ~%ITEM_TYPE_hammer%~ => 254  // crushing
+  EVAL ~%ITEM_TYPE_axe%~    => 255  // slashing
 END
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT ITM_type type
-  PATCH_IF type == ITM_TYPE_axe OR type == ITM_TYPE_hammer BEGIN
+  PATCH_IF type == ITEM_TYPE_axe OR type == ITEM_TYPE_hammer BEGIN
     damage_type = $typedamage(~%type%~)
     damage_tra = $typetra(~%type%~)
     GET_OFFSET_ARRAY h_array ITM_V10_HEADERS

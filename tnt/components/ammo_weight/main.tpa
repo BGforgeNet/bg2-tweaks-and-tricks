@@ -3,7 +3,7 @@ COPY_EXISTING_REGEXP GLOB ~^.*\.itm$~ ~override~
   READ_SHORT ITM_stack_amount stack
   READ_LONG ITM_weight weight
   PATCH_MATCH type WITH
-    ITM_TYPE_dart ITM_TYPE_axe ITM_TYPE_dagger WHEN stack > 1
+    ITEM_TYPE_dart ITEM_TYPE_axe ITEM_TYPE_dagger WHEN stack > 1
     BEGIN
       WRITE_LONG ITM_weight 0
     END

@@ -30,7 +30,7 @@ COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
 
   //add "gulp" to the item if needed
   READ_SHORT ITM_type item_type
-  PATCH_IF (item_type = ITM_TYPE_potion) BEGIN //if potion
+  PATCH_IF (item_type = ITEM_TYPE_potion) BEGIN  // if potion
     LPF ADD_ITEM_EFFECT
       INT_VAR
         opcode = OPCODE_text_display_string
