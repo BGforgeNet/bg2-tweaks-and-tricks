@@ -169,6 +169,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
     // delete useless items
     REMOVE_STORE_ITEM belt01 boot06 brac05 brac12
 
+    // replace identical items
     PHP_EACH replacement AS old => new BEGIN
         LPF REPLACE_STORE_ITEM_MATCH STR_VAR match_item = old new_item = new END
     END
