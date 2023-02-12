@@ -144,9 +144,34 @@ BEGIN
 
 END
 
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY replacements BEGIN
+    // bucklers
+    slhd09 => shld08
+    slhd10 => shld08
+
+    // small shields
+    slhd11 => shld01
+    slhd12 => shld01
+    slhd99 => shld01
+
+    // medium sheilds
+    slhd13 => shld03
+    slhd14 => shld03
+
+    // large shields
+    shld15 => shld05
+    shld16 => shld05
+    shld18 => shld05
+END
+
 COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
     // delete useless items
     REMOVE_STORE_ITEM belt01 boot06 brac05 brac12
+
+    PHP_EACH replacement AS old => new BEGIN
+        LPF REPLACE_STORE_ITEM_MATCH STR_VAR match_item = old new_item = new END
+    END
 
     // dedupe
     CLEAR_ARRAY dupes
