@@ -5,7 +5,7 @@
 DEFINE_PATCH_FUNCTION LIST_STORE_DUPES
     RET_ARRAY instance2
 BEGIN
-    SPRINT prefix "LIST_STORE_DUPES"
+    SPRINT log_prefix "LIST_STORE_DUPES: %SOURCE_FILE% -"
     GET_OFFSET_ARRAY items STO_V10_ITEMS_SOLD
 
     // count items
@@ -22,7 +22,7 @@ BEGIN
     // list dupes
     PHP_EACH instance AS name => count BEGIN
         PATCH_IF count > 1 BEGIN
-            PATCH_PRINT "%prefix%: %SOURCE_FILE% - %name% - %count% instances"
+            PATCH_PRINT "%log_prefix% %name% - %count% instances"
             SET $instance2("%name%") = count
         END
     END
@@ -38,9 +38,9 @@ DEFINE_PATCH_FUNCTION ARRAY_LENGTH
     STR_VAR array = "g_none"
     RET length
 BEGIN
-    SPRINT prefix "ARRAY_LENGTH"
+    SPRINT log_prefix "ARRAY_LENGTH: %SOURCE_FILE% -"
     PATCH_IF "%array%" STR_EQ "g_none" BEGIN
-        PATCH_FAIL ~%prefix%: empty array arg~
+        PATCH_FAIL ~%log_prefix%: empty array arg~
     END
     length = 0
     PHP_EACH "%array%" AS int => item BEGIN
@@ -57,9 +57,9 @@ DEFINE_PATCH_FUNCTION GET_STORE_DUPE_TOTAL
     STR_VAR item = ""
     RET total
 BEGIN
-    SPRINT prefix "GET_STORE_DUPE_TOTAL"
+    SPRINT log_prefix "GET_STORE_DUPE_TOTAL: %SOURCE_FILE% -"
     PATCH_IF item STR_EQ "" BEGIN
-        PATCH_FAIL ~%prefix%: empty item arg~
+        PATCH_FAIL ~%log_prefix% empty item arg~
     END
     total = 0
     GET_OFFSET_ARRAY items STO_V10_ITEMS_SOLD
@@ -67,19 +67,17 @@ BEGIN
         PATCH_IF total != "-1" BEGIN
             READ_ASCII off name
             PATCH_IF "%name%" STR_EQ "%item%" BEGIN
-                // READ_LONG (off + STO_ITEM_infinite) infinite
-                READ_LONG (off + 0x18) infinite
+                READ_LONG (off + STO_ITEM_infinite) infinite
                 PATCH_IF infinite == 1 BEGIN
                     total = "-1"
                 END ELSE BEGIN
-                    // READ_LONG (off + STO_ITEM_amount) current_amount
-                    READ_LONG (off + 0x14) current_amount
+                    READ_LONG (off + STO_ITEM_amount) current_amount
                     total += current_amount
                 END
             END
         END
     END
-    PATCH_PRINT "%prefix%: %SOURCE_FILE% - %item% - total=%total%"
+    PATCH_PRINT "%log_prefix% %item% - total=%total%"
 END
 
 
@@ -93,12 +91,12 @@ DEFINE_PATCH_FUNCTION REMOVE_STORE_DUPES
     INT_VAR total = "0"
     STR_VAR item = ""
 BEGIN
-    SPRINT prefix "REMOVE_STORE_DUPES"
+    SPRINT log_prefix "REMOVE_STORE_DUPES: %SOURCE_FILE% -"
     PATCH_IF total == 0 BEGIN
-        PATCH_FAIL ~%prefix%: empty total arg~
+        PATCH_FAIL ~%log_prefix% empty total arg~
     END
     PATCH_IF item STR_EQ "" BEGIN
-        PATCH_FAIL ~%prefix%: empty item arg~
+        PATCH_FAIL ~%log_prefix% empty item arg~
     END
 
     STO_ITEM_size = 0x1c
@@ -113,7 +111,7 @@ BEGIN
     PHP_EACH items AS int => off BEGIN
         count += 1
         PATCH_IF (count + deleted > length) BEGIN
-            PATCH_PRINT "%prefix%: %SOURCE_FILE% - end of items section reached"
+            PATCH_PRINT "%log_prefix% end of items section reached"
         END ELSE BEGIN
             READ_ASCII off name
             PATCH_IF "%name%" STR_EQ "%item%" BEGIN
@@ -121,11 +119,9 @@ BEGIN
                     found = 1
                     // infinite
                     PATCH_IF total == "-1" BEGIN
-                        // WRITE_LONG (off + STO_ITEM_infinite) infinite
-                        WRITE_LONG (off + 0x18) infinite
+                        WRITE_LONG (off + STO_ITEM_infinite) infinite
                     END ELSE BEGIN
-                        // WRITE_LONG (off + STO_ITEM_amount) total
-                        WRITE_LONG (off + 0x14) total
+                        WRITE_LONG (off + STO_ITEM_amount) total
                     END
                 END ELSE BEGIN  // already found first, this is a dupe
                     DELETE_BYTES off STO_ITEM_size
@@ -136,16 +132,14 @@ BEGIN
     END
 
     PATCH_IF deleted > 0 BEGIN
-        // WRITE_LONG STO_items_count (THIS - deleted)
-        WRITE_LONG 0x38 (THIS - deleted)
+        WRITE_LONG STO_items_count (THIS - deleted)
         LPF ~__A7_UPDATE_OFFSETS~
         INT_VAR
           value = 0 - (STO_ITEM_size * deleted)
-        //   skip_offset = STO_items_offset
-          skip_offset = 0x34
+          skip_offset = STO_items_offset
         END
     END ELSE BEGIN
-        PATCH_FAIL "%prefix%: %SOURCE_FILE% - %item% dupes not found"
+        PATCH_FAIL "%log_prefix% %item% dupes not found"
     END
 
 END
