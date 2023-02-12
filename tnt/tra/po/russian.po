@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-10-15:52+0000\n"
+"POT-Creation-Date: 2023-02-12-15:38+0000\n"
 "PO-Revision-Date: 2022-10-25 15:43+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1237,7 +1237,7 @@ msgid "To East District, Elfsong tavern"
 msgstr ""
 
 #: more_map_notes.tra:96
-msgid "To East District, Maltz's Weapon Shop"
+msgid "To East District, Maltz's Weapons shop"
 msgstr ""
 
 #: more_map_notes.tra:97
@@ -1349,7 +1349,7 @@ msgid "Enchanted items trader"
 msgstr ""
 
 #: more_map_notes.tra:38008
-msgid "Exotic potion store"
+msgid "Exotic potions store"
 msgstr ""
 
 #: more_map_notes.tra:38009
@@ -1373,8 +1373,10 @@ msgid "Tiber"
 msgstr ""
 
 #: more_map_notes.tra:380010
-msgid "Armor shop"
-msgstr ""
+#, fuzzy
+#| msgid "Scroll case"
+msgid "Armor store"
+msgstr "Футляр для свитков"
 
 #: more_map_notes.tra:380011
 msgid "Tent of special pleasures"
