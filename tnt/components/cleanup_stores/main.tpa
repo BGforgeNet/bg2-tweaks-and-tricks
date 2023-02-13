@@ -147,17 +147,17 @@ END
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY replacements BEGIN
     // bucklers
-    slhd09 => shld08
-    slhd10 => shld08
+    shld09 => shld08
+    shld10 => shld08
 
     // small shields
-    slhd11 => shld01
-    slhd12 => shld01
-    slhd99 => shld01
+    shld11 => shld01
+    shld12 => shld01
+    shld99 => shld01
 
     // medium shields
-    slhd13 => shld03
-    slhd14 => shld03
+    shld13 => shld03
+    shld14 => shld03
 
     // large shields
     shld15 => shld05
