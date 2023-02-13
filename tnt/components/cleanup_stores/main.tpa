@@ -31,25 +31,6 @@ END
 
 
 /**
- * Counts array length
- * @arg {string} array - array name
- * @ret {int} length - count of items
- */
-DEFINE_PATCH_FUNCTION ARRAY_LENGTH
-    STR_VAR array = "g_none"
-    RET length
-BEGIN
-    SPRINT log_prefix "ARRAY_LENGTH: %SOURCE_FILE% -"
-    PATCH_IF "%array%" STR_EQ "g_none" BEGIN
-        PATCH_FAIL ~%log_prefix%: empty array arg~
-    END
-    length = 0
-    PHP_EACH "%array%" AS int => item BEGIN
-        length += 1
-    END
-END
-
-/**
  * Returns total amount of an item in the store (counting dupes)
  * @arg {resref} item
  * @ret {int} total - if any of the instances has infinite flag set, this equals to -1
@@ -103,7 +84,6 @@ BEGIN
     STO_ITEM_size = 0x1c
     first_found = 0
     deleted = 0
-    LPF ARRAY_LENGTH STR_VAR array = "items" RET length END
 
     READ_LONG STO_items_count items_cnt
     READ_LONG STO_items_offset items_off
