@@ -114,7 +114,6 @@ BEGIN
         READ_ASCII off name
         PATCH_IF "%name%" STR_EQ "%item%" BEGIN
             PATCH_IF first_found == 0 BEGIN
-                PATCH_PRINT ~found first %item%~
                 first_found = 1
                 // infinite
                 PATCH_IF total == "-1" BEGIN
@@ -123,7 +122,6 @@ BEGIN
                     WRITE_LONG (off + STO_ITEM_amount) total
                 END
             END ELSE BEGIN  // already found first, this is a dupe
-                PATCH_PRINT "deleted %item%"
                 DELETE_BYTES off STO_ITEM_size
                 deleted += 1
                 i -= 1
