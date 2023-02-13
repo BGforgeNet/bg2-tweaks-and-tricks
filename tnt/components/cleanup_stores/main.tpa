@@ -37,10 +37,13 @@ BEGIN
 
     // count items
     PHP_EACH items AS int => off BEGIN
-        READ_ASCII off name
         READ_LONG (off + STO_ITEM_amount) amount
         PATCH_IF amount == 0 BEGIN
-            PATCH_PRINT "%log_prefix% %name% - amount is 0"
+            READ_LONG (off + STO_ITEM_infinite) infinite
+            PATCH_IF infinite == 0 BEGIN
+                READ_ASCII off name
+                PATCH_PRINT "%log_prefix% %name% - amount is 0"
+            END
         END
     END
 END
