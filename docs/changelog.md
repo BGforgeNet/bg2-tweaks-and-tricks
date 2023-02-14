@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.22](#version-822)
 - [Version 8.21](#version-821)
 - [Version 8.20](#version-820)
 - [Version 8.19](#version-819)
@@ -29,6 +30,13 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.22
+
+- More map notes.
+- New component: Cleanup Stores.
+- Fix familiar dialog options mixup.
+- Limited stock more liberal on non-magical items.
 
 ### Version 8.21
 
