@@ -3,8 +3,8 @@
 EXTEND_TOP %dialog% %state%
   +~InPartySlot(LastTalkedToBy,0)~+ @101 + g_familiar_follow
   +~InPartySlot(LastTalkedToBy,0)~+ @102 + g_familiar_combat
-  +~InPartySlot(LastTalkedToBy,0)~+ @103 + g_familiar_potions
-  +~InPartySlot(LastTalkedToBy,0)~+ @104 + g_familiar_loot
+  +~InPartySlot(LastTalkedToBy,0)~+ @103 + g_familiar_loot
+  +~InPartySlot(LastTalkedToBy,0)~+ @104 + g_familiar_potions
 END
 
 
