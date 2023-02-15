@@ -3,16 +3,24 @@
 COPY_EXISTING ~drizzt.cre~ ~override~
   WRITE_BYTE CRE_magic_resistance 82
   WRITE_BYTE CRE_THAC0 5
-  WRITE_BYTE CRE_attacks_per_round 5
-  WRITE_SHORT CRE_natural_AC "-8"
-  WRITE_SHORT CRE_effective_AC "-8"
+
+  // APR=5, 1 extra comes from boots speed
+  WRITE_BYTE CRE_attacks_per_round 4
+
+  // Adding armor and Dex bonus, this gives him AC -8 in game
+  WRITE_SHORT CRE_natural_AC 2
+  WRITE_SHORT CRE_effective_AC 2
+
+  // These just have no reason to be in game
   WRITE_BYTE CRE_slashing_resistance 0
   WRITE_BYTE CRE_crushing_resistance 0
+  WRITE_BYTE CRE_piercing_resistance 0
   WRITE_BYTE CRE_missile_resistance 0
-  // "+2 on saves vs. magic", we take it that all PC has is magic, so +2 to all
-  WRITE_BYTE CRE_save_vs_death 2
-  WRITE_BYTE CRE_save_vs_wand 4
-  WRITE_BYTE CRE_save_vs_polymorph 3
-  WRITE_BYTE CRE_save_vs_breath 2
+
+  // "+2 on saves vs. magic", let's say it's vs spell. Rest is consistent with a level 16 ranger.
+  WRITE_BYTE CRE_save_vs_death 4
+  WRITE_BYTE CRE_save_vs_wand 6
+  WRITE_BYTE CRE_save_vs_polymorph 5
+  WRITE_BYTE CRE_save_vs_breath 4
   WRITE_BYTE CRE_save_vs_spell 5
 BUT_ONLY
