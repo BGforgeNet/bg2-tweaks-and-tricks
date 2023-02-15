@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.23](#version-823)
 - [Version 8.22](#version-822)
 - [Version 8.21](#version-821)
 - [Version 8.20](#version-820)
@@ -30,6 +31,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.23
+
+- Fixed Drizzt's AC, removed save bonus from sources other than spells.
 
 ### Version 8.22
 
