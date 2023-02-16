@@ -41,7 +41,6 @@
 - More map notes.
 - New component: Cleanup Stores.
 - Fix familiar dialog options mixup.
-- Limited stock more liberal on non-magical items.
 
 ### Version 8.21
 
@@ -50,7 +49,7 @@
 - PnP protection supports Weimer's Item Upgrade items.
 - PnP protection is split into 2E-like and 3E-like options.
 - Romance cheats include Shar-Teel, Branwen, Viconia from BG1NPC.
-- Limited Stock non-magical item limite raised to 30 (magical left at 10).
+- Limited Stock non-magical item limit raised to 30 (magical left at 10).
 - Arachnida cloak is more PnP-like.
 - Fair Fights includes BG1 Drizzt.
 - Fair Fights will no longer prevent Aldeth from opening doors to Merchants League.
