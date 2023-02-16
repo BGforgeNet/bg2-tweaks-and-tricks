@@ -35,7 +35,7 @@ It seems silly that Taerom constantly complains how **the business is slow**, ye
 
 ### Cleanup stores
 
-Remove various items polluting the stores. Store interface only displays 4 items at a time, and scrolling quickly get annoying.
+Remove various items polluting the stores. Store interface only displays 4 items at a time, and scrolling quickly gets annoying.
 
 - Non-magical boots, bracers, belts are removed from all stores. They are useless anyway.
 - Many stores sell multiple copies of the same item (not to be confused with stacks), or functionally identical items. For example, there are several kinds of plain bucklers, the only difference between them being color.
