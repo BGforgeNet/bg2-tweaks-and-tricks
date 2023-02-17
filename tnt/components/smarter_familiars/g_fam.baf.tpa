@@ -20,7 +20,7 @@ END
 
 OUTER_SPRINT JumpToPackInjured ~
 IF
-  GlobalGT("g_FamJumpToPack","GLOBAL",1)
+  Global("g_FamJumpToPack","GLOBAL",2)
   HPPercentLT(Myself,70)
   OR(2)
     !CombatCounterLT(1)

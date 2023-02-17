@@ -32,15 +32,19 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.24
+
+Fixed familiars jumping into pack too early if set to hide when badly injured (introduced in v8.21).
+
 ### Version 8.23
 
-- Fixed Drizzt's AC, removed save bonus from sources other than spells.
+Fixed Drizzt's AC, removed save bonus from sources other than spells.
 
 ### Version 8.22
 
 - More map notes.
 - New component: Cleanup Stores.
-- Fix familiar dialog options mixup.
+- Fix familiar dialog options mixup (introduced in v8.21).
 
 ### Version 8.21
 
