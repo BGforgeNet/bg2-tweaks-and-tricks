@@ -8,6 +8,17 @@ ALWAYS
   CLEAR_EVERYTHING
   OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
   INCLUDE ~%lib_dir%/init.tpa~
+ACTION_DEFINE_ARRAY tntnoconvert BEGIN END
+ACTION_DEFINE_ARRAY tntreload BEGIN setup game END
+
+LAF HANDLE_CHARSETS
+INT_VAR
+infer_charsets = 1
+STR_VAR
+tra_path = EVAL ~%MOD_FOLDER%/tra~
+noconvert_array = tntnoconvert
+reload_array = tntreload
+END
 END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
