@@ -13,9 +13,13 @@ Here are various QoL components that didn't really fit into any other sections.
 
 ### Less autosaves
 
-Disables autosaves on area transitions. This **only** affects transitions that **don't go through worldmap**.
+Disables autosaves on area transitions. This only affects transitions that don't go through worldmap.
 
-It saves some time, but on the other hand you should treat your saves more carefully. **You've been warned.**
+It saves some time, but on the other hand you should treat your saves more carefully.
+
+A side effect is that it allows enemies to follow you through more area transitions. For example, Kangaxx might follow you to the streets of Athkatla.
+
+**You've been warned.**
 
 ### More map notes
 
