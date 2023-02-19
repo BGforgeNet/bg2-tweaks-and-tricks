@@ -13,7 +13,8 @@ BEGIN
     spdr201
     spwi215
     dw#0w215  // SCS spider single target web
-    wtpin05  // WTP spider innate web
+    dw#web    // and another one?
+    wtpin05   // WTP spider innate web
   END
 END
 
