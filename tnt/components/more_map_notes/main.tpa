@@ -163,7 +163,7 @@ WSewers, 100, 832 => 95 // To Undercellar
 WSewers, 1689, 1288 => 112 // To NE district, center
 WSewers, 1346, 1314 => 113 // To NE district, Pheirkas' house
 
-CloakwoodNest, 4448, 1426 => 88001 // Tiber
+CloakwoodNest, 4655, 1203 => 88001 // Tiber
 
 END
 
