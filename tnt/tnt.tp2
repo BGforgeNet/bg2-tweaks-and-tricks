@@ -447,6 +447,11 @@ BEGIN @1105 /* Sensible multiclass restrictions */
 GROUP @1100 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
+
+BEGIN @1120 /* More BG2 scrolls in BG1 */
+GROUP @1100 /* Gameplay and rules */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+INCLUDE ~%components%/more_bg2_scrolls/main.tpa~
 // end gameplay and rules
 
 //Quest and dialog tweaks

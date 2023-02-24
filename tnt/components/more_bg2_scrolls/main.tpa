@@ -1,0 +1,20 @@
+COPY_EXISTING ulgoth.sto override
+    LPF ADD_STORE_ITEM_EX
+        INT_VAR stack = 3 overwrite = 1
+        STR_VAR
+            item_name = EVAL "%SCROLL_WIZARD_SPELL_THRUST%"
+            position = EVAL "BEFORE %SCROLL_WIZARD_REMOVE_CURSE%"
+    END
+    LPF ADD_STORE_ITEM_EX
+        INT_VAR stack = 3 overwrite = 1
+        STR_VAR
+            item_name = EVAL "%SCROLL_WIZARD_SECRET_WORD%"
+            position = EVAL "BEFORE %SCROLL_WIZARD_REMOVE_CURSE%"
+    END
+BUT_ONLY
+
+COPY_EXISTING
+    kahrk.cre override
+    shandal2.cre override
+  ADD_CRE_ITEM "%SCROLL_WIZARD_BREACH%" #1 #0 #0 none inv
+BUT_ONLY
