@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12-21:40+0000\n"
+"POT-Creation-Date: 2023-02-24-07:19+0000\n"
 "PO-Revision-Date: 2022-09-25 20:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
@@ -1153,7 +1153,7 @@ msgid "Ranged weapons store"
 msgstr ""
 
 #: more_map_notes.tra:38006
-msgid "Potion dealer"
+msgid "Potions dealer"
 msgstr ""
 
 #: more_map_notes.tra:38007
