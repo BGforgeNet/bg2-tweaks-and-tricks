@@ -1,13 +1,15 @@
-@1 = ~Cloak of Arachnida~
-@2 = ~This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.
+@1 = ~Плащ Арахнида~
+@2 = ~Изначально этот плащ был украден у Шандалара могущественным магом Семией, по-видимому, из-за мощной магии, вплетённой в его ткань. Судьба Семии и то, как этот плащ попал к тебе в руки, останутся полной тайной, которая, скорее всего, так и не будет раскрыта.
+Этот плащ соткан из паучьего шёлка и пропитан мощной магией. Он защищает владельца от попадания в паутину. Однако он не даёт никакой защиты от других эффектов, ограничивающих передвижение.
 
-The cloak is woven from spider silk and radiates a strong aura of alteration magic. It grants the wearer immunity to entrapment by webs of any sort.
+ПАРАМЕТРЫ:
 
-Once per day the wearer of this cloak can cast a double-sized web. This operates like the 2nd-level wizard spell.
+Свойства экипировки:
+– спасброски: +2 против яда
+– иммунитет к паутине
 
-Also, the wearer is less subject to poison.
+Свойства зарядов:
+– «Паутина» раз в день.
+Особенность: радиус 30 футов
 
-STATISTICS:
-
-Saving Throws:  +2 bonus vs Poison.
-Special:  The wearer is immune to webs, and can cast a double-sized Web once per day.~
+Вес: 3~
