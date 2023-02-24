@@ -2,14 +2,14 @@ COPY_EXISTING ulgoth.sto override
     LPF ADD_STORE_ITEM_EX
         INT_VAR stack = 3 overwrite = 1
         STR_VAR
-            item_name = EVAL ~%SCROLL_WIZARD_SPELL_THRUST%~
-            position = EVAL ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
+            item_name = ~%SCROLL_WIZARD_SPELL_THRUST%~
+            position = ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
     END
     LPF ADD_STORE_ITEM_EX
         INT_VAR stack = 3 overwrite = 1
         STR_VAR
-            item_name = EVAL ~%SCROLL_WIZARD_SECRET_WORD%~
-            position = EVAL ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
+            item_name = ~%SCROLL_WIZARD_SECRET_WORD%~
+            position = ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
     END
 BUT_ONLY
 
