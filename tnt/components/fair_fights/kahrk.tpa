@@ -1,5 +1,5 @@
 //Kahrk, the mightiest ogre mage - in Firewine
-COPY_EXISTING_REGEXP ~kahrk.cre~ ~override~
+COPY_EXISTING ~kahrk.cre~ ~override~
   REMOVE_CRE_ITEM
     ~mageamul~
     ~magebrac~
