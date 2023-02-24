@@ -1,9 +1,9 @@
-//Laskal, shadow druid with a "message"
+// Laskal, shadow druid with a "message"
 COPY_EXISTING ~laskal.cre~ ~override~
   WRITE_BYTE CRE_class IDS_OF_SYMBOL (~class~ ~druid~)
 BUT_ONLY IF_EXISTS
 
-//Phandalyn, BG1 tavern paladin
+// Phandalyn, BG1 tavern paladin
 COPY_EXISTING ~phanda.cre~ ~override~
   WRITE_BYTE CRE_class IDS_OF_SYMBOL (~class~ ~paladin~)
 BUT_ONLY IF_EXISTS
