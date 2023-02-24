@@ -1,3 +1,4 @@
+// Ulgoth
 COPY_EXISTING ulgoth.sto override
     LPF ADD_STORE_ITEM_EX
         INT_VAR stack = 3 overwrite = 1
@@ -13,6 +14,26 @@ COPY_EXISTING ulgoth.sto override
     END
 BUT_ONLY
 
+// Potions for Thalantyr
+OUTER_SPRINT POTION_mind_focusing ~potn37~
+OUTER_SPRINT POTION_genius ~potn29~
+OUTER_SPRINT POTION_freedom ~potn45~
+COPY_EXISTING highhedg.sto override
+    LPF ADD_STORE_ITEM_EX
+        INT_VAR stack = 2 overwrite = 1
+        STR_VAR
+            item_name = ~%POTION_mind_focusing%~
+            position = ~AFTER %POTION_freedom%~
+    END
+    LPF ADD_STORE_ITEM_EX
+        INT_VAR stack = 2 overwrite = 1
+        STR_VAR
+            item_name = ~%POTION_genius%~
+            position = ~BEFORE %POTION_freedom%~
+    END
+BUT_ONLY
+
+// Karhk and Shandalar
 COPY_EXISTING
     kahrk.cre override
     shandal2.cre override
