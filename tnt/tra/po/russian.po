@@ -115,14 +115,10 @@ msgid "Arrow trap"
 msgstr "Ловушка со стрелой"
 
 #: easy_traps.tra:114
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Slaying arrow trap"
 msgstr "Ловушка с убийственной стрелой"
 
 #: easy_traps.tra:115
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Acid arrow trap"
 msgstr "Ловушка с кислотной стрелой"
 
@@ -143,8 +139,6 @@ msgid "Fire arrow trap"
 msgstr "Ловушка с огненной огня"
 
 #: easy_traps.tra:120
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Ice arrow trap"
 msgstr "Ловушка с ледяной стрелой"
 
@@ -157,8 +151,6 @@ msgid "Monster Summoning trap"
 msgstr "Ловушка вызова монстров"
 
 #: easy_traps.tra:123
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Frost trap"
 msgstr "Замораживающая ловушка"
 
@@ -175,7 +167,6 @@ msgid "Underwater Bite trap"
 msgstr "Подводная язвенная ловушка"
 
 #: easy_traps.tra:127
-#, fuzzy
 msgid "Hallway Spikes trap"
 msgstr "Ловушка с шипами"
 
@@ -192,8 +183,6 @@ msgid "Guillotine trap"
 msgstr "Ловушка-гильотина"
 
 #: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Lightning orb trap"
 msgstr "Ловушка с шаровой молнией"
 
@@ -206,8 +195,6 @@ msgid "Skull trap"
 msgstr "Череп-ловушка"
 
 #: easy_traps.tra:136
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Stone trap"
 msgstr "Каменная ловушка"
 
@@ -224,8 +211,6 @@ msgid "Slime trap"
 msgstr "Ловушка-слизь"
 
 #: easy_traps.tra:140
-#, fuzzy
-#| msgid "Arrow trap"
 msgid "Dart trap"
 msgstr "Ловушка с дротиком"
 
@@ -2020,8 +2005,6 @@ msgid "Actually, nevermind. Distance is fine for now."
 msgstr "Неважно, с дистанцией всё нормально."
 
 #: smarter_familiars.tra:301
-#, fuzzy
-#| msgid "If you see any danger, jump to my pack right away!"
 msgid "If you see any danger, jump into my backpack right away."
 msgstr "Если ты заметил опасность, сразу прыгай в мой рюкзак!"
 
@@ -2030,14 +2013,10 @@ msgid "Don't hide in my pack when you see enemies."
 msgstr "Не прячься в рюкзаке, когда заметил врагов"
 
 #: smarter_familiars.tra:303
-#, fuzzy
-#| msgid "When you're injured, rush to my pack immediately."
 msgid "When you're injured, rush into my backpack immediately."
 msgstr "Если ты ранен, немедленно прыгай в мой рюкзак."
 
 #: smarter_familiars.tra:304
-#, fuzzy
-#| msgid "When you're badly injured, rush to my pack immediately."
 msgid "When you're badly injured, rush into my pack immediately."
 msgstr "Если ты тяжело ранен, немедленно прыгай в мой рюкзак."
 
@@ -2181,8 +2160,6 @@ msgstr ""
 "расстоянии."
 
 #: smarter_familiars.tra:502
-#, fuzzy
-#| msgid "OK, boss."
 msgid "Okay, boss."
 msgstr "Хорошо, хозяин."
 
