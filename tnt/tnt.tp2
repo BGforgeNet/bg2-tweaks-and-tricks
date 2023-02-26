@@ -448,12 +448,6 @@ GROUP @1100 /* Gameplay and rules */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 
-BEGIN @1120 /* More BG2 scrolls in BG1 */
-GROUP @1100 /* Gameplay and rules */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
-INCLUDE ~%components%/more_bg2_scrolls/main.tpa~
-// end gameplay and rules
-
 //Quest and dialog tweaks
 BEGIN @701 /* Bloodless deeds */
 GROUP @700 /* Quest and dialog tweaks */
@@ -536,4 +530,11 @@ SUBCOMPONENT @610 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
 INCLUDE ~%components%/starting_bags/main.tpa~
 INCLUDE ~%components%/starting_bags/bottomless.tpa~
+
+BEGIN @620
+GROUP @600
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102
+INCLUDE ~%components%/more_bg2_scrolls/main.tpa~
+// end gameplay and rules
+
 // end convenience
