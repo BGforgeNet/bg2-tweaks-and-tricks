@@ -1,6 +1,7 @@
 OUTER_SET MAX_NONMAGICAL = 30
 OUTER_SET MAX_MAGICAL = 10
 OUTER_SET BIT_MAGICAL = BIT6
+OUTER_SET STO_TYPE_container = 5
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY allow_infinite BEGIN
   arow01 => 1
@@ -11,51 +12,53 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY allow_infinite BEGIN
   dart01 => 1
 END
 
-
 COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
-  GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
-  // looks like INNER_ACTION messes with SOURCE_RES
-  SPRINT sto_res ~%SOURCE_RES%~
-  PHP_EACH sold AS int => it_off BEGIN
-    READ_ASCII (it_off + STO_ITEM_name) name
-    TO_LOWER name
+  READ_LONG type STO_type
+  PATCH_IF type != STO_TYPE_container BEGIN
+    GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
+    // looks like INNER_ACTION messes with SOURCE_RES
+    SPRINT sto_res ~%SOURCE_RES%~
+    PHP_EACH sold AS int => it_off BEGIN
+      READ_ASCII (it_off + STO_ITEM_name) name
+      TO_LOWER name
 
-    // check unknown items - are they magical?
-    PATCH_IF NOT VARIABLE_IS_SET $magical("%name%") BEGIN
-      SET $magical("%name%") = 0
-      INNER_ACTION BEGIN
-        ACTION_IF FILE_EXISTS_IN_GAME "%name%.itm" BEGIN
-          COPY_EXISTING "%name%.itm" "override"
-            READ_LONG ITM_flags flags
-            PATCH_IF (flags BAND BIT_MAGICAL) BEGIN
-              SET $magical("%name%") = 1
-            END
-          BUT_ONLY
-        END ELSE BEGIN
-          WARN ~Non-existent item %name% is referenced in store %sto_res%~
+      // check unknown items - are they magical?
+      PATCH_IF NOT VARIABLE_IS_SET $magical("%name%") BEGIN
+        SET $magical("%name%") = 0
+        INNER_ACTION BEGIN
+          ACTION_IF FILE_EXISTS_IN_GAME "%name%.itm" BEGIN
+            COPY_EXISTING "%name%.itm" "override"
+              READ_LONG ITM_flags flags
+              PATCH_IF (flags BAND BIT_MAGICAL) BEGIN
+                SET $magical("%name%") = 1
+              END
+            BUT_ONLY
+          END ELSE BEGIN
+            WARN ~Non-existent item %name% is referenced in store %sto_res%~
+          END
         END
       END
-    END
 
-    // default
-    max_amount = MAX_NONMAGICAL
-    // magical is more limited
-    PATCH_IF $magical("%name%") == 1 BEGIN
-      max_amount = MAX_MAGICAL
-    END
-
-    // limit infinite
-    READ_LONG (it_off + STO_ITEM_infinite) infinite
-    PATCH_IF infinite == 1 AND (!VARIABLE_IS_SET $allow_infinite(~%name%~) ) BEGIN
-      WRITE_LONG (it_off + STO_ITEM_infinite) 0
-      WRITE_LONG (it_off + STO_ITEM_amount) max_amount
-    END ELSE BEGIN
-      // limit finite
-      READ_LONG (it_off + STO_ITEM_amount) amount
-      PATCH_IF amount > max_amount BEGIN
-        WRITE_LONG (it_off + STO_ITEM_amount) max_amount
+      // default
+      max_amount = MAX_NONMAGICAL
+      // magical is more limited
+      PATCH_IF $magical("%name%") == 1 BEGIN
+        max_amount = MAX_MAGICAL
       END
-    END
 
+      // limit infinite
+      READ_LONG (it_off + STO_ITEM_infinite) infinite
+      PATCH_IF infinite == 1 AND (!VARIABLE_IS_SET $allow_infinite(~%name%~) ) BEGIN
+        WRITE_LONG (it_off + STO_ITEM_infinite) 0
+        WRITE_LONG (it_off + STO_ITEM_amount) max_amount
+      END ELSE BEGIN
+        // limit finite
+        READ_LONG (it_off + STO_ITEM_amount) amount
+        PATCH_IF amount > max_amount BEGIN
+          WRITE_LONG (it_off + STO_ITEM_amount) max_amount
+        END
+      END
+
+    END
   END
 BUT_ONLY
