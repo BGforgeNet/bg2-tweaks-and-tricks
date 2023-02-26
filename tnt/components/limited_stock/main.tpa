@@ -21,12 +21,17 @@ COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
     // check unknown items - are they magical?
     PATCH_IF NOT VARIABLE_IS_SET $magical("%name%") BEGIN
       INNER_ACTION BEGIN
-        COPY_EXISTING "%name%.itm" "override"
-          READ_LONG ITM_flags flags
-          SET $magical("%name%") = 0
-          PATCH_IF (flags BAND BIT_MAGICAL) BEGIN
-            SET $magical("%name%") = 1
-          END
+        ACTION_IF FILE_EXISTS_IN_GAME "%name%.itm" BEGIN
+          COPY_EXISTING "%name%.itm" "override"
+            READ_LONG ITM_flags flags
+            SET $magical("%name%") = 0
+            PATCH_IF (flags BAND BIT_MAGICAL) BEGIN
+              SET $magical("%name%") = 1
+            END
+          BUT_ONLY
+        END ELSE BEGIN
+          WARN ~Non-existent item %name% is referenced in store %SOURCE_RES%~
+        END
       END
     END
 
