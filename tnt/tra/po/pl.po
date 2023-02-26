@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24-12:01+0000\n"
+"POT-Creation-Date: 2023-02-26-18:27+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1523,6 +1523,10 @@ msgstr ""
 msgid "GSPA + holding - all bottomless!"
 msgstr ""
 
+#: setup.tra:620
+msgid "More BG2 scrolls in BG1"
+msgstr ""
+
 #: setup.tra:700
 msgid "Quest and dialog tweaks"
 msgstr ""
@@ -1698,10 +1702,6 @@ msgstr ""
 #: setup.tra:1112
 msgid ""
 "Also remove undroppable items granting unfair advantages from all enemies"
-msgstr ""
-
-#: setup.tra:1120
-msgid "More BG2 scrolls in BG1"
 msgstr ""
 
 #: shandalars_cloak.tra:1
