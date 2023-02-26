@@ -13,7 +13,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY allow_infinite BEGIN
 END
 
 COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
-  READ_LONG type STO_type
+  READ_LONG STO_type type
   PATCH_IF type != STO_TYPE_container BEGIN
     GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
     // looks like INNER_ACTION messes with SOURCE_RES
