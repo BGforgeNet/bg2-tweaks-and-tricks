@@ -400,7 +400,6 @@ msgid "By the ice breath of Auril!"
 msgstr "Во имя ледяного дыхания Аурил!"
 
 #: extended_soundsets.tra:70
-#| msgctxt "skie04"
 msgctxt "skiee04"
 msgid "You're the finest group of friends I've ever had."
 msgstr "Вы самые лучшие друзья, которые у меня когда-либо были."
