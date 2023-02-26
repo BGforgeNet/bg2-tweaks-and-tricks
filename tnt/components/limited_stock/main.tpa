@@ -14,6 +14,8 @@ END
 
 COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
   GET_OFFSET_ARRAY sold STO_V10_ITEMS_SOLD
+  // looks like INNER_ACTION messes with SOURCE_RES
+  SPRINT sto_res ~%SOURCE_RES%~
   PHP_EACH sold AS int => it_off BEGIN
     READ_ASCII (it_off + STO_ITEM_name) name
     TO_LOWER name
@@ -30,7 +32,7 @@ COPY_EXISTING_REGEXP GLOB "^.+\.sto$" override
             END
           BUT_ONLY
         END ELSE BEGIN
-          WARN ~Non-existent item %name% is referenced in store %SOURCE_RES%~
+          WARN ~Non-existent item %name% is referenced in store %sto_res%~
         END
       END
     END
