@@ -21,9 +21,9 @@ ALWAYS
   END
 END
 
-LANGUAGE ~English~ ~english~ ~tnt/tra/english/setup.tra~
-LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/setup.tra~
-LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra/portuguese/setup.tra~
+LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra/english/setup.tra~
+LANGUAGE ~Russian~ ~russian~ ~%MOD_FOLDER%/tra/russian/setup.tra~
+LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~%MOD_FOLDER%/tra/portuguese/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
