@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24-12:01+0000\n"
+"POT-Creation-Date: 2023-02-26-18:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: BGforge/msg2po v.1.1.9\n"
+"X-Generator: BGforge/msg2po v.1.1.11\n"
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
@@ -1521,6 +1521,10 @@ msgstr ""
 msgid "GSPA + holding - all bottomless!"
 msgstr ""
 
+#: setup.tra:620
+msgid "More BG2 scrolls in BG1"
+msgstr ""
+
 #: setup.tra:700
 msgid "Quest and dialog tweaks"
 msgstr ""
@@ -1696,10 +1700,6 @@ msgstr ""
 #: setup.tra:1112
 msgid ""
 "Also remove undroppable items granting unfair advantages from all enemies"
-msgstr ""
-
-#: setup.tra:1120
-msgid "More BG2 scrolls in BG1"
 msgstr ""
 
 #: shandalars_cloak.tra:1
