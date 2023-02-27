@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-26-18:27+0000\n"
+"POT-Creation-Date: 2023-02-27-13:44+0000\n"
 "PO-Revision-Date: 2022-10-25 15:43+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -434,169 +434,11 @@ msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
 msgstr "Твоя душа потеряна!"
 
-#: game.tra:26
-msgid "Potion effect refreshed"
-msgstr "Эффект зелья обновлён"
-
-#: game.tra:27
-msgid "Protection scroll effect refreshed"
-msgstr "Эффект свитка защиты обновлён"
-
-#: game.tra:28
-msgid "Thorius"
-msgstr "Ториус"
-
-#: game.tra:136
-msgid "Theater earnings are ready."
-msgstr "Поступил доход от театра."
-
-#: game.tra:137
-msgid "The apprentices must have finished the task. Time to check up on them."
-msgstr "Ученики уже должны были закончить задание. Пора к ним наведаться."
-
-#: game.tra:138
-msgid "The Grove awaits."
-msgstr "Роща ожидает."
-
-#: game.tra:139
-msgid "It's time to visit the cabin."
-msgstr "Пора посетить хижину следопыта."
-
-#: game.tra:140
-msgid "The people of de'Arnise keep need presence of their Lord."
-msgstr "Людям крепости де'Арниз требуется присутствие их господина."
-
-#: game.tra:141
-msgid "Morul has prepared a new batch of potions."
-msgstr "Морул подготовил новую порцию зелий."
-
-#: game.tra:142
-msgid "The potions are on the table in the laboratory <SIRMAAM>."
-msgstr "Зелья на столе в лаборатории, <SIRMAAM>."
-
-#: game.tra:143
-msgid ""
-"Your presence is required at the church. The needs of the faithful must be "
-"tended to."
-msgstr ""
-"Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
-
-#: game.tra:147
-msgid ""
-"The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
-"\n"
-"STATISTICS:\n"
-"\n"
-"Effect:  Cone of Cold\n"
-"Damage:  8D6 (save vs. wands for half)\n"
-"Range:  100\n"
-"Area of effect:  Special\n"
-"Not usable by:\n"
-" Fighter\n"
-" Cleric\n"
-" Druid\n"
-" Thief\n"
-" Paladin\n"
-" Ranger\n"
-msgstr ""
-"Жезл мороза действует как заклинание «Конус холода». Струя кристалликов снега и льда вылетает из этого жезла, охлаждая всё в области до -70 градусов по Цельсию. Как и все жезлы, жезл мороза может быть использован ограниченное количество раз, прежде чем растает в безвредную лужицу воды.\n"
-"\n"
-"ПАРАМЕТРЫ:\n"
-"\n"
-"Свойства зарядов:\n"
-"– Конус холода\n"
-"  Урон: 8d6 холодом (половина при успешном спасброске против жезлов)\n"
-"  Дистанция: 100 футов\n"
-"  Зона действия: 17-футовый конус с углом раствора 90 градусов\n"
-"\n"
-"Требования:\n"
-" Интеллект 9\n"
-"\n"
-"Вес: 1\n"
-
-#: game.tra:149
-msgid "Gem bag"
-msgstr "Мешочек для самоцветов"
-
-#: game.tra:150
-msgid "This small bag is ideally suited for holding gems."
-msgstr ""
-"Этот мешочек идеально подходит для хранения самоцветов.\n"
-"\n"
-"ПАРАМЕТРЫ:\n"
-"\n"
-"Вес: 2"
-
-#: game.tra:151
-msgid "Scroll case"
-msgstr "Ящик для свитков"
-
-#: game.tra:152
-msgid ""
-"This sturdy container allows dozens of scrolls to be placed in it, safe from"
-" exposure to fire, rain, or lightning -- common hazards faced by any "
-"adventuring wizard."
-msgstr ""
-"Этот крепкий ящик позволяет хранить десятки свитков, уберегая их от действия огня, дождя или молнии — обычных неприятностей, которым подвергается странствующий волшебник.\n"
-"\n"
-"ПАРАМЕТРЫ:\n"
-"\n"
-"Вес: 2"
-
-#: game.tra:153
-msgid "Potion case"
-msgstr "Сумка для зелий"
-
-#: game.tra:154
-msgid ""
-"Typically carried by travelling healers, this leather case folds open and "
-"allows the user to strap delicate potion bottles to its cushioned side with "
-"numerous leather thongs for safe storage during travel."
-msgstr ""
-"Этот кожаный мешок обычно носят странствующие целители, его складки расправляются и позволяют обладателю прикрепить хрупкие бутыли с зельями к его мягкому валику с многочисленными кожаными ремешками для безопасной перевозки.\n"
-"\n"
-"ПАРАМЕТРЫ:\n"
-"\n"
-"Вес: 2"
-
-#: game.tra:155
-msgid "Ammo belt"
-msgstr "Перевязь для амуниции"
-
-#: game.tra:156
-msgid ""
-"This shoulder belt is ideally suited for holding sling bullets, darts, "
-"arrows or bolts."
-msgstr ""
-"Этот наплечный ремень идеален для хранения снарядов, дротиков, стрел и арбалетных болтов.\n"
-"\n"
-"ПАРАМЕТРЫ:\n"
-"\n"
-"Вес: 2"
-
-#: game.tra:157
-msgid "Bag of Holding"
-msgstr "Безразмерный мешок"
-
-#: game.tra:158
-msgid ""
-"As with other magical bags, this one appears to be a common cloth sack of "
-"about 2 feet by 4 feet in size. The bag of holding opens into a "
-"nondimensional space, and its inside is larger than its outside dimensions. "
-"Regardless of what is put into this item, the bag always weighs a fixed "
-"amount."
-msgstr ""
-"Как и другие магические мешки, этот кажется обычной сумкой из ткани размером примерно 2 на 4 фута. Безразмерный мешок открывается в безразмерное пространство, и внутри он больше, чем снаружи. Что бы ни было в него положено, он всегда весит одинаково.\n"
-"\n"
-"ПАРАМЕТРЫ:\n"
-"\n"
-"Вес: 5"
-
-#: game.tra:160
+#: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
 msgstr "Возвращающийся метательный топор"
 
-#: game.tra:161
+#: hassle_free_ammo.tra:2
 msgid ""
 "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.\n"
 "\n"
@@ -634,11 +476,11 @@ msgstr ""
 "\n"
 "Вес: 5"
 
-#: game.tra:162
+#: hassle_free_ammo.tra:3
 msgid "Returning throwing dagger"
 msgstr "Возвращающийся метательный кинжал"
 
-#: game.tra:163
+#: hassle_free_ammo.tra:4
 msgid ""
 "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.\n"
 "\n"
@@ -673,11 +515,11 @@ msgstr ""
 "\n"
 "Вес: 1"
 
-#: game.tra:164
+#: hassle_free_ammo.tra:5
 msgid "Returning dart"
 msgstr "Возвращающийся дротик"
 
-#: game.tra:165
+#: hassle_free_ammo.tra:6
 msgid ""
 "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.\n"
 "\n"
@@ -708,15 +550,11 @@ msgstr ""
 "\n"
 "Вес: 0"
 
-#: game.tra:166 setup.tra:201
-msgid "Hassle-free ammo"
-msgstr "Более удобные снаряды"
-
-#: game.tra:215
+#: hassle_free_ammo.tra:7
 msgid "Quiver of Plenty"
 msgstr "Колчан изобилия"
 
-#: game.tra:216
+#: hassle_free_ammo.tra:8
 msgid ""
 "Enchanted quivers like this one are highly sought after by professional archers.\n"
 "\n"
@@ -732,11 +570,11 @@ msgstr ""
 "\n"
 "Вес: 0"
 
-#: game.tra:217
+#: hassle_free_ammo.tra:9
 msgid "Case of Plenty"
 msgstr "Чехол изобилия"
 
-#: game.tra:218
+#: hassle_free_ammo.tra:10
 msgid ""
 "Enchanted bolt cases like this one are highly sought after by professional crossbow users.\n"
 "\n"
@@ -752,11 +590,11 @@ msgstr ""
 "\n"
 "Вес: 0"
 
-#: game.tra:219
+#: hassle_free_ammo.tra:11
 msgid "Bag of Plenty"
 msgstr "Сумка изобилия"
 
-#: game.tra:220
+#: hassle_free_ammo.tra:12
 msgid ""
 "Enchanted bullet bags like this one are highly sought after by professional slingers.\n"
 "\n"
@@ -771,18 +609,6 @@ msgstr ""
 "Бесконечные снаряды для пращи\n"
 "\n"
 "Вес: 0"
-
-#: game.tra:253
-msgid "missile (piercing)"
-msgstr "метательное (колющее)"
-
-#: game.tra:254
-msgid "crushing"
-msgstr "дробящее"
-
-#: game.tra:255
-msgid "slashing"
-msgstr "рубящее"
 
 #: improved_equalizer.tra:1
 msgid ""
@@ -882,6 +708,41 @@ msgstr ""
 "Две вещи, друг мой. Работа обойдется тебе в 12500 монет, не меньше, и из-за "
 "отсутствия подмастерья тебе придется остаться здесь на целый день и помогать"
 " мне управлять кузницей."
+
+#: improved_strongholds.tra:1
+msgid "Theater earnings are ready."
+msgstr "Поступил доход от театра."
+
+#: improved_strongholds.tra:2
+msgid "The apprentices must have finished the task. Time to check up on them."
+msgstr "Ученики уже должны были закончить задание. Пора к ним наведаться."
+
+#: improved_strongholds.tra:3
+msgid "The Grove awaits."
+msgstr "Роща ожидает."
+
+#: improved_strongholds.tra:4
+msgid "It's time to visit the cabin."
+msgstr "Пора посетить хижину следопыта."
+
+#: improved_strongholds.tra:5
+msgid "The people of de'Arnise keep need presence of their Lord."
+msgstr "Людям крепости де'Арниз требуется присутствие их господина."
+
+#: improved_strongholds.tra:6
+msgid "Morul has prepared a new batch of potions."
+msgstr "Морул подготовил новую порцию зелий."
+
+#: improved_strongholds.tra:7
+msgid "The potions are on the table in the laboratory <SIRMAAM>."
+msgstr "Зелья на столе в лаборатории, <SIRMAAM>."
+
+#: improved_strongholds.tra:8
+msgid ""
+"Your presence is required at the church. The needs of the faithful must be "
+"tended to."
+msgstr ""
+"Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
 
 #: more_map_notes.tra:1
 msgid "Degrodel's house"
@@ -1351,6 +1212,14 @@ msgstr "Магазин доспехов"
 msgid "Tent of special pleasures"
 msgstr "Палатка особых удовольствий"
 
+#: potions_no_stack.tra:1
+msgid "Potion effect refreshed"
+msgstr "Эффект зелья обновлён"
+
+#: potions_no_stack.tra:2
+msgid "Protection scroll effect refreshed"
+msgstr "Эффект свитка защиты обновлён"
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr "взгляд"
@@ -1434,6 +1303,10 @@ msgstr ""
 #: setup.tra:200
 msgid "Items"
 msgstr "Предметы"
+
+#: setup.tra:201
+msgid "Hassle-free ammo"
+msgstr "Более удобные снаряды"
 
 #: setup.tra:202
 msgid "Remove blur graphics from items"
@@ -2330,6 +2203,100 @@ msgstr "(Дать зелье восприятия)."
 msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr "(Дать зелье силы морозного великана для плутов)."
 
+#: starting_bags.tra:1
+msgid "Thorius"
+msgstr "Ториус"
+
+#: starting_bags.tra:2
+msgid "Gem bag"
+msgstr "Мешочек для самоцветов"
+
+#: starting_bags.tra:3
+msgid "This small bag is ideally suited for holding gems."
+msgstr ""
+"Этот мешочек идеально подходит для хранения самоцветов.\n"
+"\n"
+"ПАРАМЕТРЫ:\n"
+"\n"
+"Вес: 2"
+
+#: starting_bags.tra:4
+msgid "Scroll case"
+msgstr "Ящик для свитков"
+
+#: starting_bags.tra:5
+msgid ""
+"This sturdy container allows dozens of scrolls to be placed in it, safe from"
+" exposure to fire, rain, or lightning -- common hazards faced by any "
+"adventuring wizard."
+msgstr ""
+"Этот крепкий ящик позволяет хранить десятки свитков, уберегая их от действия огня, дождя или молнии — обычных неприятностей, которым подвергается странствующий волшебник.\n"
+"\n"
+"ПАРАМЕТРЫ:\n"
+"\n"
+"Вес: 2"
+
+#: starting_bags.tra:6
+msgid "Potion case"
+msgstr "Сумка для зелий"
+
+#: starting_bags.tra:7
+msgid ""
+"Typically carried by travelling healers, this leather case folds open and "
+"allows the user to strap delicate potion bottles to its cushioned side with "
+"numerous leather thongs for safe storage during travel."
+msgstr ""
+"Этот кожаный мешок обычно носят странствующие целители, его складки расправляются и позволяют обладателю прикрепить хрупкие бутыли с зельями к его мягкому валику с многочисленными кожаными ремешками для безопасной перевозки.\n"
+"\n"
+"ПАРАМЕТРЫ:\n"
+"\n"
+"Вес: 2"
+
+#: starting_bags.tra:8
+msgid "Ammo belt"
+msgstr "Перевязь для амуниции"
+
+#: starting_bags.tra:9
+msgid ""
+"This shoulder belt is ideally suited for holding sling bullets, darts, "
+"arrows or bolts."
+msgstr ""
+"Этот наплечный ремень идеален для хранения снарядов, дротиков, стрел и арбалетных болтов.\n"
+"\n"
+"ПАРАМЕТРЫ:\n"
+"\n"
+"Вес: 2"
+
+#: starting_bags.tra:10
+msgid "Bag of Holding"
+msgstr "Безразмерный мешок"
+
+#: starting_bags.tra:11
+msgid ""
+"As with other magical bags, this one appears to be a common cloth sack of "
+"about 2 feet by 4 feet in size. The bag of holding opens into a "
+"nondimensional space, and its inside is larger than its outside dimensions. "
+"Regardless of what is put into this item, the bag always weighs a fixed "
+"amount."
+msgstr ""
+"Как и другие магические мешки, этот кажется обычной сумкой из ткани размером примерно 2 на 4 фута. Безразмерный мешок открывается в безразмерное пространство, и внутри он больше, чем снаружи. Что бы ни было в него положено, он всегда весит одинаково.\n"
+"\n"
+"ПАРАМЕТРЫ:\n"
+"\n"
+"Вес: 5"
+
+#: throwing_damage.tra:1
+msgid "missile (piercing)"
+msgstr "метательное (колющее)"
+
+#: throwing_damage.tra:2
+msgid "crushing"
+msgstr "дробящее"
+
+#: throwing_damage.tra:3
+msgid "slashing"
+msgstr "рубящее"
+
 #: true_true_sight.tra:1
 msgid "each round"
 msgstr "каждый раунд"
@@ -2337,6 +2304,39 @@ msgstr "каждый раунд"
 #: true_true_sight.tra:2
 msgid "each second"
 msgstr "каждую секунду"
+
+#: wand_of_frost.tra:1
+msgid ""
+"The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Effect:  Cone of Cold\n"
+"Damage:  8D6 (save vs. wands for half)\n"
+"Range:  100\n"
+"Area of effect:  Special\n"
+"Not usable by:\n"
+" Fighter\n"
+" Cleric\n"
+" Druid\n"
+" Thief\n"
+" Paladin\n"
+" Ranger\n"
+msgstr ""
+"Жезл мороза действует как заклинание «Конус холода». Струя кристалликов снега и льда вылетает из этого жезла, охлаждая всё в области до -70 градусов по Цельсию. Как и все жезлы, жезл мороза может быть использован ограниченное количество раз, прежде чем растает в безвредную лужицу воды.\n"
+"\n"
+"ПАРАМЕТРЫ:\n"
+"\n"
+"Свойства зарядов:\n"
+"– Конус холода\n"
+"  Урон: 8d6 холодом (половина при успешном спасброске против жезлов)\n"
+"  Дистанция: 100 футов\n"
+"  Зона действия: 17-футовый конус с углом раствора 90 градусов\n"
+"\n"
+"Требования:\n"
+" Интеллект 9\n"
+"\n"
+"Вес: 1\n"
 
 #: working_non_detection.tra:1
 msgid "Invisibility Purge"

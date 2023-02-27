@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-26-18:27+0000\n"
+"POT-Creation-Date: 2023-02-27-13:44+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -428,129 +428,11 @@ msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
 msgstr ""
 
-#: game.tra:26
-msgid "Potion effect refreshed"
-msgstr ""
-
-#: game.tra:27
-msgid "Protection scroll effect refreshed"
-msgstr ""
-
-#: game.tra:28
-msgid "Thorius"
-msgstr ""
-
-#: game.tra:136
-msgid "Theater earnings are ready."
-msgstr ""
-
-#: game.tra:137
-msgid "The apprentices must have finished the task. Time to check up on them."
-msgstr ""
-
-#: game.tra:138
-msgid "The Grove awaits."
-msgstr ""
-
-#: game.tra:139
-msgid "It's time to visit the cabin."
-msgstr ""
-
-#: game.tra:140
-msgid "The people of de'Arnise keep need presence of their Lord."
-msgstr ""
-
-#: game.tra:141
-msgid "Morul has prepared a new batch of potions."
-msgstr ""
-
-#: game.tra:142
-msgid "The potions are on the table in the laboratory <SIRMAAM>."
-msgstr ""
-
-#: game.tra:143
-msgid ""
-"Your presence is required at the church. The needs of the faithful must be "
-"tended to."
-msgstr ""
-
-#: game.tra:147
-msgid ""
-"The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
-"\n"
-"STATISTICS:\n"
-"\n"
-"Effect:  Cone of Cold\n"
-"Damage:  8D6 (save vs. wands for half)\n"
-"Range:  100\n"
-"Area of effect:  Special\n"
-"Not usable by:\n"
-" Fighter\n"
-" Cleric\n"
-" Druid\n"
-" Thief\n"
-" Paladin\n"
-" Ranger\n"
-msgstr ""
-
-#: game.tra:149
-msgid "Gem bag"
-msgstr ""
-
-#: game.tra:150
-msgid "This small bag is ideally suited for holding gems."
-msgstr ""
-
-#: game.tra:151
-msgid "Scroll case"
-msgstr ""
-
-#: game.tra:152
-msgid ""
-"This sturdy container allows dozens of scrolls to be placed in it, safe from"
-" exposure to fire, rain, or lightning -- common hazards faced by any "
-"adventuring wizard."
-msgstr ""
-
-#: game.tra:153
-msgid "Potion case"
-msgstr ""
-
-#: game.tra:154
-msgid ""
-"Typically carried by travelling healers, this leather case folds open and "
-"allows the user to strap delicate potion bottles to its cushioned side with "
-"numerous leather thongs for safe storage during travel."
-msgstr ""
-
-#: game.tra:155
-msgid "Ammo belt"
-msgstr ""
-
-#: game.tra:156
-msgid ""
-"This shoulder belt is ideally suited for holding sling bullets, darts, "
-"arrows or bolts."
-msgstr ""
-
-#: game.tra:157
-msgid "Bag of Holding"
-msgstr ""
-
-#: game.tra:158
-msgid ""
-"As with other magical bags, this one appears to be a common cloth sack of "
-"about 2 feet by 4 feet in size. The bag of holding opens into a "
-"nondimensional space, and its inside is larger than its outside dimensions. "
-"Regardless of what is put into this item, the bag always weighs a fixed "
-"amount."
-msgstr ""
-
-#: game.tra:160
+#: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
 msgstr ""
 
-#: game.tra:161
+#: hassle_free_ammo.tra:2
 msgid ""
 "The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.\n"
 "\n"
@@ -572,11 +454,11 @@ msgid ""
 " Thief"
 msgstr ""
 
-#: game.tra:162
+#: hassle_free_ammo.tra:3
 msgid "Returning throwing dagger"
 msgstr ""
 
-#: game.tra:163
+#: hassle_free_ammo.tra:4
 msgid ""
 "The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.\n"
 "\n"
@@ -595,11 +477,11 @@ msgid ""
 " Cleric"
 msgstr ""
 
-#: game.tra:164
+#: hassle_free_ammo.tra:5
 msgid "Returning dart"
 msgstr ""
 
-#: game.tra:165
+#: hassle_free_ammo.tra:6
 msgid ""
 "The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.\n"
 "\n"
@@ -617,15 +499,11 @@ msgid ""
 " Cleric"
 msgstr ""
 
-#: game.tra:166 setup.tra:201
-msgid "Hassle-free ammo"
-msgstr ""
-
-#: game.tra:215
+#: hassle_free_ammo.tra:7
 msgid "Quiver of Plenty"
 msgstr ""
 
-#: game.tra:216
+#: hassle_free_ammo.tra:8
 msgid ""
 "Enchanted quivers like this one are highly sought after by professional archers.\n"
 "\n"
@@ -634,11 +512,11 @@ msgid ""
 "Unlimited plain arrows"
 msgstr ""
 
-#: game.tra:217
+#: hassle_free_ammo.tra:9
 msgid "Case of Plenty"
 msgstr ""
 
-#: game.tra:218
+#: hassle_free_ammo.tra:10
 msgid ""
 "Enchanted bolt cases like this one are highly sought after by professional crossbow users.\n"
 "\n"
@@ -647,29 +525,17 @@ msgid ""
 "Unlimited plain bolts"
 msgstr ""
 
-#: game.tra:219
+#: hassle_free_ammo.tra:11
 msgid "Bag of Plenty"
 msgstr ""
 
-#: game.tra:220
+#: hassle_free_ammo.tra:12
 msgid ""
 "Enchanted bullet bags like this one are highly sought after by professional slingers.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
 "Unlimited plain bullets"
-msgstr ""
-
-#: game.tra:253
-msgid "missile (piercing)"
-msgstr ""
-
-#: game.tra:254
-msgid "crushing"
-msgstr ""
-
-#: game.tra:255
-msgid "slashing"
 msgstr ""
 
 #: improved_equalizer.tra:1
@@ -722,6 +588,40 @@ msgid ""
 "Two things, me friend. It will cost ye 12,500 gp for the work, no less, and "
 "without an apprentice, ye'll have to stay here a full day and help me run "
 "the forge."
+msgstr ""
+
+#: improved_strongholds.tra:1
+msgid "Theater earnings are ready."
+msgstr ""
+
+#: improved_strongholds.tra:2
+msgid "The apprentices must have finished the task. Time to check up on them."
+msgstr ""
+
+#: improved_strongholds.tra:3
+msgid "The Grove awaits."
+msgstr ""
+
+#: improved_strongholds.tra:4
+msgid "It's time to visit the cabin."
+msgstr ""
+
+#: improved_strongholds.tra:5
+msgid "The people of de'Arnise keep need presence of their Lord."
+msgstr ""
+
+#: improved_strongholds.tra:6
+msgid "Morul has prepared a new batch of potions."
+msgstr ""
+
+#: improved_strongholds.tra:7
+msgid "The potions are on the table in the laboratory <SIRMAAM>."
+msgstr ""
+
+#: improved_strongholds.tra:8
+msgid ""
+"Your presence is required at the church. The needs of the faithful must be "
+"tended to."
 msgstr ""
 
 #: more_map_notes.tra:1
@@ -1192,6 +1092,14 @@ msgstr ""
 msgid "Tent of special pleasures"
 msgstr ""
 
+#: potions_no_stack.tra:1
+msgid "Potion effect refreshed"
+msgstr ""
+
+#: potions_no_stack.tra:2
+msgid "Protection scroll effect refreshed"
+msgstr ""
+
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
 msgstr ""
@@ -1265,6 +1173,10 @@ msgstr ""
 
 #: setup.tra:200
 msgid "Items"
+msgstr ""
+
+#: setup.tra:201
+msgid "Hassle-free ammo"
 msgstr ""
 
 #: setup.tra:202
@@ -2093,12 +2005,100 @@ msgstr ""
 msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr ""
 
+#: starting_bags.tra:1
+msgid "Thorius"
+msgstr ""
+
+#: starting_bags.tra:2
+msgid "Gem bag"
+msgstr ""
+
+#: starting_bags.tra:3
+msgid "This small bag is ideally suited for holding gems."
+msgstr ""
+
+#: starting_bags.tra:4
+msgid "Scroll case"
+msgstr ""
+
+#: starting_bags.tra:5
+msgid ""
+"This sturdy container allows dozens of scrolls to be placed in it, safe from"
+" exposure to fire, rain, or lightning -- common hazards faced by any "
+"adventuring wizard."
+msgstr ""
+
+#: starting_bags.tra:6
+msgid "Potion case"
+msgstr ""
+
+#: starting_bags.tra:7
+msgid ""
+"Typically carried by travelling healers, this leather case folds open and "
+"allows the user to strap delicate potion bottles to its cushioned side with "
+"numerous leather thongs for safe storage during travel."
+msgstr ""
+
+#: starting_bags.tra:8
+msgid "Ammo belt"
+msgstr ""
+
+#: starting_bags.tra:9
+msgid ""
+"This shoulder belt is ideally suited for holding sling bullets, darts, "
+"arrows or bolts."
+msgstr ""
+
+#: starting_bags.tra:10
+msgid "Bag of Holding"
+msgstr ""
+
+#: starting_bags.tra:11
+msgid ""
+"As with other magical bags, this one appears to be a common cloth sack of "
+"about 2 feet by 4 feet in size. The bag of holding opens into a "
+"nondimensional space, and its inside is larger than its outside dimensions. "
+"Regardless of what is put into this item, the bag always weighs a fixed "
+"amount."
+msgstr ""
+
+#: throwing_damage.tra:1
+msgid "missile (piercing)"
+msgstr ""
+
+#: throwing_damage.tra:2
+msgid "crushing"
+msgstr ""
+
+#: throwing_damage.tra:3
+msgid "slashing"
+msgstr ""
+
 #: true_true_sight.tra:1
 msgid "each round"
 msgstr ""
 
 #: true_true_sight.tra:2
 msgid "each second"
+msgstr ""
+
+#: wand_of_frost.tra:1
+msgid ""
+"The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
+"\n"
+"STATISTICS:\n"
+"\n"
+"Effect:  Cone of Cold\n"
+"Damage:  8D6 (save vs. wands for half)\n"
+"Range:  100\n"
+"Area of effect:  Special\n"
+"Not usable by:\n"
+" Fighter\n"
+" Cleric\n"
+" Druid\n"
+" Thief\n"
+" Paladin\n"
+" Ranger\n"
 msgstr ""
 
 #: working_non_detection.tra:1
