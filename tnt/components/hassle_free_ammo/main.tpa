@@ -14,34 +14,34 @@ OUTER_FOR (i=0;i<items;i+=1) BEGIN
 
     SAY NAME1 ( AT name )
     SAY NAME2 ( AT name )
-    WRITE_SHORT ITM_lore_to_id 0 //lore
+    WRITE_SHORT ITM_lore_to_id 0  // lore
     SAY UNIDENTIFIED_DESC ( AT desc )
-    WRITE_LONG DESC "-1" //identified desc
-    WRITE_LONG ITM_price 300 //price
-    WRITE_LONG ITM_enchantment 0 //enchantment
+    WRITE_LONG DESC "-1"  // identified desc
+    WRITE_LONG ITM_price 300  // price
+    WRITE_LONG ITM_enchantment 0  // enchantment
 
-    //minor patching to ensure consistency
+    // minor patching to ensure consistency
     GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
-      //thac0 bonus
+      // thac0 bonus
       WRITE_SHORT (ab_off + ITM_HEAD_thac0_bonus) 0
 
-      //add strength bonus to axe, remove from others
+      // add strength bonus to axe, remove from others
       PATCH_IF (~%item%~ STRING_EQUAL ~axe~) OR ( (~%item%~ STRING_EQUAL ~dagg~) AND ENGINE_IS ~bgee bg2ee~ ) BEGIN
         WRITE_LONG (ab_off + ITM_HEAD_flags) (THIS BAND FLAG_HEAD_add_strength_bonus)
       END ELSE BEGIN
         WRITE_LONG (ab_off + ITM_HEAD_flags) (THIS BAND BNOT FLAG_HEAD_add_strength_bonus)
       END
 
-      //damage bonus
+      // damage bonus
       WRITE_SHORT (ab_off + ITM_HEAD_damage_bonus) damagebonus
-      //speed
+      // speed
       WRITE_BYTE (ab_off + ITM_HEAD_speed) speed
     END
 
   BUT_ONLY
 
-  //add to Taerom and Ribald
+  // add to Taerom and Ribald
   ACTION_FOR_EACH store IN taerum ribald BEGIN
     ACTION_IF FILE_EXISTS_IN_GAME ~%store%.sto~ BEGIN
       COPY_EXISTING ~%store%.sto~ ~override~
@@ -53,7 +53,7 @@ OUTER_FOR (i=0;i<items;i+=1) BEGIN
 END
 
 
-//remove weight and maximize stack
+// remove weight and maximize stack
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   READ_SHORT ITM_stack_amount stack
   PATCH_IF stack > 1 BEGIN
@@ -73,7 +73,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
         PHP_EACH h_array AS int => h_off BEGIN
           READ_BYTE h_off attack_type
           PATCH_IF attack_type == ITM_ATTACK_TYPE_ranged BEGIN
-            match = 1 // found ranged weapon which stacks
+            match = 1  // found ranged weapon which stacks
           END
         END
       END

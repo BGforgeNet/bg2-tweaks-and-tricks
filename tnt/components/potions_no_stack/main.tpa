@@ -1,7 +1,7 @@
 INCLUDE ~%components%/potions_no_stack/macro.tpa~
 
 PRINT ~Patching potions...~
-OUTER_SPRINT ~refresh_strref~ @26
+OUTER_SPRINT ~refresh_strref~ @1
 ACTION_FOR_EACH item IN
   potn02
   potn22
@@ -43,7 +43,7 @@ ACTION_DEFINE_ARRAY scrolls BEGIN
   SCROLL_protection_from_electricity
   SCROLL_protection_from_fire
 END
-OUTER_SPRINT ~refresh_strref~ @27
+OUTER_SPRINT ~refresh_strref~ @2
 ACTION_PHP_EACH scrolls AS int => item BEGIN
   OUTER_SPRINT item EVAL ~%%item%%~
   OUTER_SPRINT ~item_to_unstack~ ~%item%~

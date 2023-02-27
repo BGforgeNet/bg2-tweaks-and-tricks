@@ -1,75 +1,76 @@
 OUTER_TEXT_SPRINT comp_dir ~%components%/starting_bags~
 
-//gem bag
+// gem bag
 COPY ~%comp_dir%/g_gem.itm~ ~override/g_gem.itm~
-  SAY NAME1 @149
-  SAY NAME2 @149
-  SAY IDENTIFIED_DESC @150
+  SAY NAME1 @2
+  SAY NAME2 @2
+  SAY IDENTIFIED_DESC @3
 COPY ~%comp_dir%/g_gem.sto~ ~override/g_gem.sto~
-  SAY NAME2 @149
+  SAY NAME2 @2
 COPY ~%comp_dir%/g_gem.itm~ ~override/g_gem2.itm~
-  SAY NAME1 @149
-  SAY NAME2 @149
-  SAY IDENTIFIED_DESC @150
+  SAY NAME1 @2
+  SAY NAME2 @2
+  SAY IDENTIFIED_DESC @3
 COPY ~%comp_dir%/g_gem.sto~ ~override/g_gem2.sto~
-  SAY NAME2 @149
-//scroll case
+  SAY NAME2 @2
+
+// scroll case
 COPY ~%comp_dir%/g_scr.itm~ ~override/g_scr.itm~
-  SAY NAME1 @151
-  SAY NAME2 @151
-  SAY IDENTIFIED_DESC @152
+  SAY NAME1 @4
+  SAY NAME2 @4
+  SAY IDENTIFIED_DESC @5
 COPY ~%comp_dir%/g_scr.sto~ ~override/g_scr.sto~
-  SAY NAME2 @151
+  SAY NAME2 @4
 COPY ~%comp_dir%/g_scr.itm~ ~override/g_scr2.itm~
-  SAY NAME1 @151
-  SAY NAME2 @151
-  SAY IDENTIFIED_DESC @152
+  SAY NAME1 @4
+  SAY NAME2 @4
+  SAY IDENTIFIED_DESC @5
 COPY ~%comp_dir%/g_scr.sto~ ~override/g_scr2.sto~
-  SAY NAME2 @151
+  SAY NAME2 @4
 
-//potion case
+// potion case
 COPY ~%comp_dir%/g_pot.itm~ ~override/g_pot.itm~
-  SAY NAME1 @153
-  SAY NAME2 @153
-  SAY IDENTIFIED_DESC @154
+  SAY NAME1 @6
+  SAY NAME2 @6
+  SAY IDENTIFIED_DESC @7
 COPY ~%comp_dir%/g_pot.sto~ ~override/g_pot.sto~
-  SAY NAME2 @153
+  SAY NAME2 @6
 COPY ~%comp_dir%/g_pot.itm~ ~override/g_pot2.itm~
-  SAY NAME1 @153
-  SAY NAME2 @153
-  SAY IDENTIFIED_DESC @154
+  SAY NAME1 @6
+  SAY NAME2 @6
+  SAY IDENTIFIED_DESC @7
 COPY ~%comp_dir%/g_pot.sto~ ~override/g_pot2.sto~
-  SAY NAME2 @153
+  SAY NAME2 @6
 
-//ammo quiver
+// ammo belt
 COPY ~%comp_dir%/g_ammo.itm~ ~override/g_ammo.itm~
-  SAY NAME1 @155
-  SAY NAME2 @155
-  SAY IDENTIFIED_DESC @156
+  SAY NAME1 @8
+  SAY NAME2 @8
+  SAY IDENTIFIED_DESC @9
 COPY ~%comp_dir%/g_ammo.sto~ ~override/g_ammo.sto~
-  SAY NAME2 @155
+  SAY NAME2 @8
 COPY ~%comp_dir%/g_ammo.itm~ ~override/g_ammo2.itm~
-  SAY NAME1 @155
-  SAY NAME2 @155
-  SAY IDENTIFIED_DESC @156
+  SAY NAME1 @8
+  SAY NAME2 @8
+  SAY IDENTIFIED_DESC @9
 COPY ~%comp_dir%/g_ammo.sto~ ~override/g_ammo2.sto~
-  SAY NAME2 @155
+  SAY NAME2 @8
 
-//holding
+// holding
 COPY ~%comp_dir%/g_hold.itm~ ~override/g_hold.itm~
-  SAY NAME1 @157
-  SAY NAME2 @157
-  SAY IDENTIFIED_DESC @158
+  SAY NAME1 @10
+  SAY NAME2 @10
+  SAY IDENTIFIED_DESC @11
 COPY ~%comp_dir%/g_hold.sto~ ~override/g_hold.sto~
-  SAY NAME2 @157
+  SAY NAME2 @10
 COPY ~%comp_dir%/g_hold.itm~ ~override/g_hold2.itm~
-  SAY NAME1 @157
-  SAY NAME2 @157
-  SAY IDENTIFIED_DESC @158
+  SAY NAME1 @10
+  SAY NAME2 @10
+  SAY IDENTIFIED_DESC @11
 COPY ~%comp_dir%/g_hold.sto~ ~override/g_hold2.sto~
-  SAY NAME2 @157
+  SAY NAME2 @10
 
-//Build actions
+// Build actions
 OUTER_TEXT_SPRINT NewLine ~
 ~
 OUTER_TEXT_SPRINT action_bg1_bags ~~
@@ -79,17 +80,18 @@ ACTION_PHP_EACH bags AS index => bag BEGIN
   OUTER_TEXT_SPRINT action_bg2_bags ~%action_bg2_bags%%NewLine%ActionOverride("Jailkeep Table",CreateItem("g_%bag%2",0,0,0))~
 END
 
-//Thorius Candlekeep
+// Thorius Candlekeep
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
   COPY ~%comp_dir%/g_bag.cre~ ~override/g_bag.cre~
-  SAY CRE_name @28
-  SAY CRE_tooltip @28
+  SAY CRE_name @1
+  SAY CRE_tooltip @1
   WRITE_ASCII DEATHVAR ~G_BAGS~ #32
   WRITE_ASCII DIALOG ~G_BAGS~ #8
   COMPILE EVAL ~%comp_dir%/g_bag.d~
   EXTEND_BOTTOM ~%Candlekeep_BCS%.bcs~ ~%comp_dir%/candle.baf~ EVAL
 END
 
-ACTION_IF GAME_INCLUDES ~bg2~ BEGIN //Picture in Irenicus dungeon
+// Picture in Irenicus' dungeon
+ACTION_IF GAME_INCLUDES ~bg2~ BEGIN
   EXTEND_BOTTOM ~ar0602.bcs~ ~%comp_dir%/ar0602.baf~ EVAL
 END

@@ -3,8 +3,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY typedamage BEGIN
   EVAL ~%ITEM_TYPE_axe%~    => 3  // axe - slashing
 END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY typetra BEGIN
-  EVAL ~%ITEM_TYPE_hammer%~ => 254  // crushing
-  EVAL ~%ITEM_TYPE_axe%~    => 255  // slashing
+  EVAL ~%ITEM_TYPE_hammer%~ => 2  // crushing
+  EVAL ~%ITEM_TYPE_axe%~    => 3  // slashing
 END
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
@@ -22,15 +22,15 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
             LPF REPLACE_STRREF_TRA
               INT_VAR
                 offset = EVAL ~%off%~
-                old_substring_traref = 253 //missile (piercing)
+                old_substring_traref = 1 //missile (piercing)
                 new_substring_traref = damage_tra
             END
           END
         END
         PATCH_IF strength == 1 BEGIN
-          PATCH_IF ENGINE_IS ~bgee bg2ee iwdee pstee~ BEGIN // EE split THAC0 and damage bonus, adding only damage
+          PATCH_IF ENGINE_IS ~bgee bg2ee iwdee pstee~ BEGIN  // EE split THAC0 and damage bonus, adding only damage
             WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BOR FLAG_HEAD_damage_strength_bonus_EE)
-          END ELSE BEGIN // Classic
+          END ELSE BEGIN  // Classic
             WRITE_LONG (h_off + ITM_HEAD_flags) (THIS BOR FLAG_HEAD_add_strength_bonus)
           END
         END

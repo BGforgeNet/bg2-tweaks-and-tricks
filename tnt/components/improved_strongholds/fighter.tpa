@@ -1,12 +1,12 @@
-//Fighter keep
-COPY_EXISTING ~baldur.bcs~ ~override~ //create keep messenger next to the player
+// Fighter keep
+COPY_EXISTING ~baldur.bcs~ ~override~  // create keep messenger next to the player
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE
       ~CreateCreatureObjectOffScreen("kprunn01",Player1,0,0,0)~
       ~CreateCreatureObject("kprunn01",Player1,0,0,0)~
   END
 BUT_ONLY
-COPY_EXISTING ~kprunn01.cre~ ~override~ //speed up keep messenger
+COPY_EXISTING ~kprunn01.cre~ ~override~  // speed up keep messenger
   ADD_CRE_ITEM ~boot01~ #0 #0 #0 ~unstealable&undroppable~ ~boots~
 BUT_ONLY
 <<<<<<<< .../tnt-inlined/improved_strongholds/fighter.baf
@@ -21,7 +21,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_fighter_notif","GLOBAL",1)
-    DisplayString(Player1,@140) //The people of de'Arnise keep need presence of their Lord.
+    DisplayString(Player1, @5)  // The people of de'Arnise keep need presence of their Lord.
 END
 IF
   GlobalTimerNotExpired("KPPlotTime","GLOBAL")

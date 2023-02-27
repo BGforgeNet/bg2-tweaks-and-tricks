@@ -1,4 +1,4 @@
-//Add notification about apprenti items
+// Add notification about apprenti items
 <<<<<<<< .../tnt-inlined/improved_strongholds/mage.baf
 IF
   GlobalTimerNotExpired("ApprentiBuildTimer","GLOBAL")
@@ -17,13 +17,13 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_mage_notif","GLOBAL",1)
-    DisplayString(Player1,@137) //The apprentices must have finished the task. Time to check up on them.
+    DisplayString(Player1, @2)  // The apprentices must have finished the task. Time to check up on them.
 END
 >>>>>>>>
 EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/mage.baf~ EVAL
 
 
-//Ensure Natula spawns again if he couldn't talk the first time
+// Ensure Natula spawns again if he couldn't talk the first time.
 COPY_EXISTING ~baldur.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~SetGlobal("NatulaSpawn","GLOBAL",1)~ ~~
@@ -39,7 +39,7 @@ SetGlobal("NatulaSpawn","GLOBAL",1)
 COMPILE ~.../tnt-inlined/improved_strongholds/mgass01.d~
 
 
-//Make Morul create a batch of potions every week
+// Make Morul create a batch of potions every week
 <<<<<<<< .../tnt-inlined/improved_strongholds/mage_potion.baf
 IF
   GlobalTimerNotExpired("MorulMaking","GLOBAL")
@@ -54,12 +54,12 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_mage_potion_notif","GLOBAL",1)
-    DisplayString(Player1,@141) //Morul has prepared a new batch of potions.
-    IncrementGlobal("g_tnt_mage_potion_count","GLOBAL",5) //count of potions
+    DisplayString(Player1, @6)  // Morul has prepared a new batch of potions.
+    IncrementGlobal("g_tnt_mage_potion_count","GLOBAL",5)  // Count of potions
     SetGlobalTimer("MorulMaking","GLOBAL",SEVEN_DAYS)
 END
 >>>>>>>>
-EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/mage_potion.baf~ EVAL //notification and count
+EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/mage_potion.baf~ EVAL  // notification and count
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY g_potions BEGIN
   POTN02 => ~Potion of Fire Resistance~
@@ -117,7 +117,7 @@ ACTION_PHP_EACH g_potions AS item => name BEGIN
 END
 
 
-//old bcs block to set timer
+// old bcs block to set timer
 <<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_old1.baf
 IF
   GlobalTimerExpired("MorulMaking","GLOBAL")
@@ -129,7 +129,7 @@ THEN
 END
 >>>>>>>>
 
-//old bcs block to give potions
+// old bcs block to give potions
 <<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_old2.baf
 IF
   Global("mgPotionMade","AR0411",1)
@@ -165,11 +165,11 @@ THEN
 END
 >>>>>>>>
 
-//empty bcs block for replacement
+// empty bcs block for replacement
 <<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_empty.baf
 >>>>>>>>
 
-//new bcs block to create potions on table in golem room
+// new bcs block to create potions on table in golem room
 <<<<<<<< .../tnt-inlined/improved_strongholds/ar0411_new.baf
 IF
   GlobalGT("g_tnt_mage_potion_count","GLOBAL",0)
@@ -177,9 +177,9 @@ THEN
 %potion_create_action%
 END
 >>>>>>>>
-EXTEND_BOTTOM ~ar0411.bcs~ ~.../tnt-inlined/improved_strongholds/ar0411_new.baf~ EVAL //actually create potions
+EXTEND_BOTTOM ~ar0411.bcs~ ~.../tnt-inlined/improved_strongholds/ar0411_new.baf~ EVAL  // actually create potions
 
-COPY_EXISTING ~ar0411.bcs~ ~override~ //disable original potions given by area script
+COPY_EXISTING ~ar0411.bcs~ ~override~   // disable original potions given by area script
   R_B_B CASE_INSENSITIVE
     ~.../tnt-inlined/improved_strongholds/ar0411_old1.baf~
     ~.../tnt-inlined/improved_strongholds/ar0411_empty.baf~
@@ -204,7 +204,7 @@ COPY_EXISTING ~ar0411.bcs~ ~override~ //disable original potions given by area s
     END
 BUT_ONLY
 
-//Disable old potion lines in Morul dialogue
+// Disable old potion lines in Morul dialogue
 <<<<<<<< .../tnt-inlined/improved_strongholds/mgappr02.d
 ADD_STATE_TRIGGER mgappr02 118 ~False()~ 119
 
@@ -212,7 +212,7 @@ APPEND mgappr02
   IF ~InPartySlot(LastTalkedToBy,0)
       Global("MageStrongHoldDone","AR0411",3)~
   BEGIN g_potions
-    SAY @142
+    SAY @7
     IF ~~ THEN EXIT
   END
 END

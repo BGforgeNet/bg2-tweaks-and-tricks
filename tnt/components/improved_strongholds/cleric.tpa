@@ -1,4 +1,4 @@
-//cleric | helm
+// cleric | helm
 <<<<<<<< .../tnt-inlined/improved_strongholds/cleric.baf
 IF
   GlobalTimerExpired("HelmbyrReturn","GLOBAL")
@@ -11,7 +11,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_cleric_notif","GLOBAL",1)
-    DisplayString(Player1,@143) //Your presence is required at the church. The needs of the faithful must be tended to.
+    DisplayString(Player1, @8)  //Your presence is required at the church. The needs of the faithful must be tended to.
 END
 IF
   GlobalTimerNotExpired("HelmbyrReturn","GLOBAL")
@@ -33,7 +33,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_cleric_notif","GLOBAL",1)
-    DisplayString(Player1,@143) //Your presence is required at the church. The needs of the faithful must be tended to.
+    DisplayString(Player1, @8)
 END
 IF
   GlobalTimerNotExpired("LatlaraReturn","GLOBAL")
@@ -55,7 +55,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_cleric_notif","GLOBAL",1)
-    DisplayString(Player1,@143) //Your presence is required at the church. The needs of the faithful must be tended to.
+    DisplayString(Player1, @8)
 END
 IF
   GlobalTimerNotExpired("TalvilonReturn","GLOBAL")

@@ -1,5 +1,5 @@
 // Bard
-COPY_EXISTING  //speed up Meck
+COPY_EXISTING  // speed up Meck
   ~bdgoph01.cre~ ~override~
   ~bdgoph02.cre~ ~override~
   ADD_CRE_ITEM ~boot01~ #0 #0 #0 ~unstealable&undroppable~ ~boots~
@@ -9,6 +9,6 @@ COPY_EXISTING ~baldur.bcs~ ~override~ //Better notifications, distinguish from d
     REPLACE_TEXTUALLY CASE_INSENSITIVE
 ~SetGlobalTimer("BardMoneyTime","GLOBAL",SEVEN_DAYS)[%G_BLANK%]+DisplayString(Player1,47142)~
 ~SetGlobalTimer("BardMoneyTime","GLOBAL",SEVEN_DAYS)
-DisplayString(Player1,@136)~ //Theater earnings are ready.
+DisplayString(Player1,@1)~  // Theater earnings are ready.
   END
 BUT_ONLY

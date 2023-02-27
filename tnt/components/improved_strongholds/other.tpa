@@ -1,4 +1,4 @@
 // Jan quest
-COPY_EXISTING ~beeloo.cre~ ~override~ //speed up Beeloo
+COPY_EXISTING ~beeloo.cre~ ~override~  // speed up Beeloo
   ADD_CRE_ITEM ~boot01~ #0 #0 #0 ~unstealable&undroppable~ ~boots~
 BUT_ONLY

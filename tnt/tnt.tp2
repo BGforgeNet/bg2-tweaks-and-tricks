@@ -10,7 +10,7 @@ ALWAYS
   INCLUDE ~%lib_dir%/init.tpa~
 
   ACTION_DEFINE_ARRAY tntnoconvert BEGIN setup END
-  ACTION_DEFINE_ARRAY tntreload BEGIN game END
+  ACTION_DEFINE_ARRAY tntreload BEGIN END
   LAF HANDLE_CHARSETS
     INT_VAR
       infer_charsets = 1
@@ -21,9 +21,9 @@ ALWAYS
   END
 END
 
-LANGUAGE ~English~ ~english~ ~tnt/tra/english/game.tra~ ~tnt/tra/english/setup.tra~
-LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/game.tra~ ~tnt/tra/russian/setup.tra~
-LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra/portuguese/game.tra~ ~tnt/tra/portuguese/setup.tra~
+LANGUAGE ~English~ ~english~ ~tnt/tra/english/setup.tra~
+LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/setup.tra~
+LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra/portuguese/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
@@ -220,23 +220,28 @@ INCLUDE ~%comp_dir%/main.tpa~
 //ITEM TWEAKS
 BEGIN @201 /* Hassle free ammo */
 GROUP @200 /* Items */
-INCLUDE ~%components%/hassle_free_ammo/main.tpa~
+OUTER_SPRINT comp_name ~hassle_free_ammo~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
 
 BEGIN @241 /* Add strength bonus */
 GROUP @200 /* Items */
 SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 1 OUTER_SET damage = 0
-INCLUDE ~%components%/throwing_damage/main.tpa~
+OUTER_SPRINT comp_name ~throwing_damage~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 BEGIN @242 /* Make axes slashing and hammers blunt */
 GROUP @200 /* Items */
 SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 0 OUTER_SET damage = 1
-INCLUDE ~%components%/throwing_damage/main.tpa~
+OUTER_SPRINT comp_name ~throwing_damage~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 BEGIN @243 /* Both of the above options */
 GROUP @200 /* Items */
 SUBCOMPONENT @240 /* Throwing weapons damage type */
 OUTER_SET strength = 1 OUTER_SET damage = 1
-INCLUDE ~%components%/throwing_damage/main.tpa~
+OUTER_SPRINT comp_name ~throwing_damage~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @202 /* Remove blur graphics from items */
 GROUP @200 /* Items */
@@ -251,18 +256,21 @@ INCLUDE ~%components%/cloak_of_mirroring/main.tpa~
 BEGIN @204 /* Effects of scrolls and potions do not stack with themselves */
 GROUP @200 /* Items */
 REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee iwdee~) @130 /* Requires Classic ToB or BG(2)EE or IWDEE engine */
-INCLUDE ~%components%/potions_no_stack/main.tpa~
+OUTER_SPRINT comp_name ~potions_no_stack~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @206 // Single target
 GROUP @200 /* Items */
 SUBCOMPONENT @205 /* Sensible wand of frost */
 OUTER_SET cone = 0
-INCLUDE ~%components%/wand_of_frost/main.tpa~
+OUTER_SPRINT comp_name ~wand_of_frost~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 BEGIN @207 // AoE
 GROUP @200 /* Items */
 SUBCOMPONENT @205 /* Sensible wand of frost */
 OUTER_SET cone = 1
-INCLUDE ~%components%/wand_of_frost/main.tpa~
+OUTER_SPRINT comp_name ~wand_of_frost~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @223 /* Potion of really mirrored eyes */
 GROUP @200 /* Items */
@@ -457,7 +465,9 @@ INCLUDE ~%components%/bloodless_deeds/main.tpa~
 BEGIN @702 /* Improved strongholds */
 GROUP @700 /* Quest and dialog tweaks */
 REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-INCLUDE ~%components%/improved_strongholds/main.tpa~
+OUTER_SPRINT comp_name ~improved_strongholds~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
 
 BEGIN @703 /* Save Melicamp */
 GROUP @700 /* Quest and dialog tweaks */
@@ -514,7 +524,8 @@ GROUP @600 /* Assorted convenience components */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @610 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
-INCLUDE ~%components%/starting_bags/main.tpa~
+OUTER_SPRINT comp_name ~starting_bags~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @612 /* GSPA + holding */
 GROUP @600 /* Assorted convenience components */
@@ -528,13 +539,14 @@ GROUP @600 /* Assorted convenience components */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @610 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
-INCLUDE ~%components%/starting_bags/main.tpa~
-INCLUDE ~%components%/starting_bags/bottomless.tpa~
+OUTER_SPRINT comp_name ~starting_bags~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+INCLUDE ~%components%/%comp_name%/bottomless.tpa~
+
 
 BEGIN @620
 GROUP @600
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102
 INCLUDE ~%components%/more_bg2_scrolls/main.tpa~
-// end gameplay and rules
 
 // end convenience

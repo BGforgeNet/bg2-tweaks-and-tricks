@@ -1,4 +1,4 @@
-//Druid
+// Druid
 <<<<<<<< .../tnt-inlined/improved_strongholds/druid.baf
 IF
   Global("DruidStronghold","GLOBAL",1)
@@ -10,7 +10,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_druid_notif","GLOBAL",1)
-    DisplayString(Player1,@138) //The Grove awaits.
+    DisplayString(Player1, @3)  // The Grove awaits.
 END
 
 IF
@@ -32,7 +32,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("g_tnt_druid_notif","GLOBAL",1)
-    DisplayString(Player1,@138) //The Grove awaits.
+    DisplayString(Player1, @3)
 END
 >>>>>>>>
 EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/improved_strongholds/druid.baf~ EVAL
