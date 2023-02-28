@@ -1,8 +1,8 @@
-@1 = ~Theater earnings are ready.~
+@1 = ~Theater earnings are ready for collection.~
 @2 = ~The apprentices must have finished the task. Time to check up on them.~
 @3 = ~The Grove awaits.~
-@4 = ~It's time to visit the cabin.~
-@5 = ~The people of de'Arnise keep need presence of their Lord.~
+@4 = ~It's time to visit the Cabin.~
+@5 = ~The people of de'Arnise keep require presence of their <PRO_LADYLORD>.~
 @6 = ~Morul has prepared a new batch of potions.~
-@7 = ~The potions are on the table in the laboratory <SIRMAAM>.~
-@8 = ~Your presence is required at the church. The needs of the faithful must be tended to.~
+@7 = ~The potions are on the table in the laboratory, <SIRMAAM>.~
+@8 = ~Your presence is required at the Temple. The needs of the faithful must be tended to.~

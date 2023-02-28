@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-27-13:44+0000\n"
+"POT-Creation-Date: 2023-02-28-10:16+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://tra.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -595,7 +595,7 @@ msgid ""
 msgstr ""
 
 #: improved_strongholds.tra:1
-msgid "Theater earnings are ready."
+msgid "Theater earnings are ready for collection."
 msgstr ""
 
 #: improved_strongholds.tra:2
@@ -608,11 +608,15 @@ msgid "The Grove awaits."
 msgstr ""
 
 #: improved_strongholds.tra:4
-msgid "It's time to visit the cabin."
+#, fuzzy
+#| msgid "It's time to visit the cabin."
+msgid "It's time to visit the Cabin."
 msgstr "É hora de visitar a cabine."
 
 #: improved_strongholds.tra:5
-msgid "The people of de'Arnise keep need presence of their Lord."
+#, fuzzy
+#| msgid "The people of de'Arnise keep need presence of their Lord."
+msgid "The people of de'Arnise keep require presence of their <PRO_LADYLORD>."
 msgstr "O povo do Forte de'Arnise precisa da presença do seu senhor."
 
 #: improved_strongholds.tra:6
@@ -620,12 +624,14 @@ msgid "Morul has prepared a new batch of potions."
 msgstr "O Morul preparou um novo lote de poções."
 
 #: improved_strongholds.tra:7
-msgid "The potions are on the table in the laboratory <SIRMAAM>."
+#, fuzzy
+#| msgid "The potions are on the table in the laboratory <SIRMAAM>."
+msgid "The potions are on the table in the laboratory, <SIRMAAM>."
 msgstr "As poções estão na mesa no laboratório <SIRMAAM>."
 
 #: improved_strongholds.tra:8
 msgid ""
-"Your presence is required at the church. The needs of the faithful must be "
+"Your presence is required at the Temple. The needs of the faithful must be "
 "tended to."
 msgstr ""
 
@@ -2068,6 +2074,33 @@ msgid ""
 "nondimensional space, and its inside is larger than its outside dimensions. "
 "Regardless of what is put into this item, the bag always weighs a fixed "
 "amount."
+msgstr ""
+
+#: starting_bags.tra:20
+msgid "<CHARNAME>, wait. I've been told that you are leaving Candlekeep."
+msgstr ""
+
+#: starting_bags.tra:21
+msgid "Hello, Thorius. Yes, Gorion told me to prepare for a travel."
+msgstr ""
+
+#: starting_bags.tra:22
+msgid "Get lost, old man. I've no time."
+msgstr ""
+
+#: starting_bags.tra:23
+msgid ""
+"You have always been my favorite pupil, I want to help you however I can. "
+"Take these things. It's no weapon or armor, but experienced adventurers know"
+" their real value."
+msgstr ""
+
+#: starting_bags.tra:24
+msgid "I'm very grateful for your lessons and your help, Thorius."
+msgstr ""
+
+#: starting_bags.tra:25
+msgid "But... Well, I see you have no need of my help."
 msgstr ""
 
 #: throwing_damage.tra:1
