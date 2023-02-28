@@ -29,3 +29,9 @@
 ПАРАМЕТРЫ:
 
 Вес: 5~
+@20 = ~<CHARNAME>, wait. I've been told that you are leaving Candlekeep.~
+@21 = ~Hello, Thorius. Yes, Gorion told me to prepare for a travel.~
+@22 = ~Get lost, old man. I've no time.~
+@23 = ~You have always been my favorite pupil, I want to help you however I can. Take these things. It's no weapon or armor, but experienced adventurers know their real value.~
+@24 = ~I'm very grateful for your lessons and your help, Thorius.~
+@25 = ~But... Well, I see you have no need of my help.~
