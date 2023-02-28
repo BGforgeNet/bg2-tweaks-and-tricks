@@ -10,7 +10,7 @@ Here are various QoL components that didn't really fit into any other sections.
 - [Faster loading times](#faster-loading-times)
 - [Add BG1 tome stats bonuses to new BG2 characters](#add-bg1-tome-stats-bonuses-to-new-bg2-characters)
 - [Starting bags](#starting-bags)
-- [More mage fencing scrolls](#more-mage-fencing-scrolls)
+- [More mage fencing scrolls in BG1](#more-mage-fencing-scrolls-in-bg1)
 
 ### Less autosaves
 
