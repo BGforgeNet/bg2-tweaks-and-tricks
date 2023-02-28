@@ -8,22 +8,14 @@ ALWAYS
   CLEAR_EVERYTHING
   OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
   INCLUDE ~%lib_dir%/init.tpa~
-
-  ACTION_DEFINE_ARRAY tntnoconvert BEGIN setup END
-  ACTION_DEFINE_ARRAY tntreload BEGIN END
-  LAF HANDLE_CHARSETS
-    INT_VAR
-      infer_charsets = 1
-    STR_VAR
-      tra_path = EVAL ~%MOD_FOLDER%/tra~
-      noconvert_array = tntnoconvert
-      reload_array = tntreload
-  END
 END
 
-LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra/english/setup.tra~
-LANGUAGE ~Russian~ ~russian~ ~%MOD_FOLDER%/tra/russian/setup.tra~
-LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~%MOD_FOLDER%/tra/portuguese/setup.tra~
+LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra_ee/english/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Polish~ ~polish~ ~%MOD_FOLDER%/tra_ee/polish/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~%MOD_FOLDER%/tra_ee/portuguese/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Russian~ ~russian~ ~%MOD_FOLDER%/tra_ee/russian/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Spanish~ ~spanish~ ~%MOD_FOLDER%/tra_ee/spanish/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Swedish~ ~swedish~ ~%MOD_FOLDER%/tra_ee/swedish/setup-%WEIDU_OS%.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */

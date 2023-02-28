@@ -1,5 +1,11 @@
 OUTER_SPRINT components ~%MOD_FOLDER%/components~
-OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
+
+ACTION_IF GAME_IS ~bgee bg2ee eet iwdee pstee~ BEGIN
+    OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra_ee~
+END ELSE BEGIN
+    OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra~
+END
+
 OUTER_SET effect_stacking_id_base = 0x675f0000 // ascii g_
 OUTER_SPRINT modder_prefix ~g_~
 OUTER_SPRINT tp2_name ~tnt.tp2~
