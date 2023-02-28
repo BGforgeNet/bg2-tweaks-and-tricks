@@ -33,7 +33,7 @@ COPY_EXISTING highhedg.sto override
     END
 BUT_ONLY
 
-// Karhk and Shandalar
+// Kahrk and Shandalar
 COPY_EXISTING
     kahrk.cre override
     shandal2.cre override

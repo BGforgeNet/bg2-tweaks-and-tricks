@@ -539,6 +539,6 @@ INCLUDE ~%components%/%comp_name%/bottomless.tpa~
 BEGIN @620
 GROUP @600
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102
-INCLUDE ~%components%/more_bg2_scrolls/main.tpa~
+INCLUDE ~%components%/more_mage_fencing/main.tpa~
 
 // end convenience
