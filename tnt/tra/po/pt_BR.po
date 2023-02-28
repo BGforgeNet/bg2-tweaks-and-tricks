@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28-10:16+0000\n"
+"POT-Creation-Date: 2023-02-28-11:17+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -1449,7 +1449,7 @@ msgid "GSPA + holding - all bottomless!"
 msgstr ""
 
 #: setup.tra:620
-msgid "More BG2 scrolls in BG1"
+msgid "More mage fencing scrolls in BG1"
 msgstr ""
 
 #: setup.tra:700
