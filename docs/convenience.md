@@ -10,6 +10,7 @@ Here are various QoL components that didn't really fit into any other sections.
 - [Faster loading times](#faster-loading-times)
 - [Add BG1 tome stats bonuses to new BG2 characters](#add-bg1-tome-stats-bonuses-to-new-bg2-characters)
 - [Starting bags](#starting-bags)
+- [More mage fencing scrolls](#more-mage-fencing-scrolls)
 
 ### Less autosaves
 
@@ -95,3 +96,20 @@ Same 4 bags, and a bag of holding. OK, this is cheating a little.
 #### GSPA + holding, bottomless
 
 Same 5 bags, all bottomless. Now, that's real cheating. But it makes life so much easier...
+
+### More mage fencing scrolls in BG1
+
+Adds several scrolls to BG1:
+
+- [Spell Thrust](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Spell_Thrust) and [Secret Word](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Secret_Word) to Ulgoth's Beard store.
+- [Breach](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Breach) to Shandalar and Kahrk.
+
+The purpose of this component is to allow SCS users to complete more BG1 content in earlier Chapters, should they so choose.
+
+Original BG1 mages weren't too smart, so lack of protection-stripping spells didn't hurt much. However, SCS boosts the AI (and often levels) considerably, making already hard battles even more annoying if the only tactic you have is to outwait enemy's protections.
+
+Spell Thrust and Secret Word additions don't change much, you could get them by rushing the plot to Baldur's Gate/Sorcerous Sundries.
+
+Breach, however, is normally not available in BG1, and its addition changes the battle dynamics. However, as SCS mages are generously using protections, I think it's a justifiable addition.
+
+Finally, this component adds a few Intelligence-boosting potions to Thalantyr, allowing for more reliable scribing for [Hardcore](https://pihwiki.bgforge.net/) characters.

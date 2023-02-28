@@ -1,5 +1,7 @@
 # Changelog
 
+- [Version 8.25](#version-825)
+- [Version 8.24](#version-824)
 - [Version 8.23](#version-823)
 - [Version 8.22](#version-822)
 - [Version 8.21](#version-821)
@@ -31,6 +33,16 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.25
+
+- Arachnida cloak web immunity now includes SCS spiders single-target web.
+- Tiber's map note location fixed.
+- New component: More mage fencing scrolls in BG1.
+- Fixed Limited Stock installation failure on BGEE.
+- Updated Russian translation.
+- Correct encoding for EE games.
+- Correct localized console messages on Linux/Mac OS.
 
 ### Version 8.24
 
