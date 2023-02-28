@@ -80,14 +80,16 @@ ACTION_PHP_EACH bags AS index => bag BEGIN
   OUTER_TEXT_SPRINT action_bg2_bags ~%action_bg2_bags%%NewLine%ActionOverride("Jailkeep Table",CreateItem("g_%bag%2",0,0,0))~
 END
 
+OUTER_SPRINT cre_id ~g_bags~
+
 // Thorius Candlekeep
 ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
-  COPY ~%comp_dir%/g_bag.cre~ ~override/g_bag.cre~
+  COPY ~%comp_dir%/%cre_id%.cre~ ~override/%cre_id%.cre~
   SAY CRE_name @1
   SAY CRE_tooltip @1
-  WRITE_ASCII DEATHVAR ~G_BAGS~ #32
-  WRITE_ASCII DIALOG ~G_BAGS~ #8
-  COMPILE EVAL ~%comp_dir%/g_bag.d~
+  WRITE_ASCII DEATHVAR ~%cre_id%~ #32
+  WRITE_ASCII DIALOG ~%cre_id%~ #8
+  COMPILE EVAL ~%comp_dir%/%cre_id%.d~
   EXTEND_BOTTOM ~%Candlekeep_BCS%.bcs~ ~%comp_dir%/candle.baf~ EVAL
 END
 

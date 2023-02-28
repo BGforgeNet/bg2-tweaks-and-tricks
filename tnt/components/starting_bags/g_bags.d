@@ -1,4 +1,4 @@
-BEGIN ~g_bags~
+BEGIN ~%cre_id%~
 IF ~NumTimesTalkedTo(0)~ BEGIN 0
   SAY ~<CHARNAME>, wait. I've been told that you are leaving Candlekeep.~IF ~~ THEN REPLY ~Hello, Thorius. Yes, Gorion told me to prepare for a travel.~ GOTO 1
 IF ~~ THEN REPLY ~Get lost, old man. I've no time.~ GOTO 2
