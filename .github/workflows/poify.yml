@@ -19,3 +19,12 @@ jobs:
           push: true
           dir2msgstr: true
           single_commit: true
+
+      - name: Handle charsets
+        uses: BGforgeNet/handle-charsets@master
+        with:
+          tra_path: tnt/tra
+          out_path: tnt/tra_ee
+          from_utf8: false
+          split_console: true
+          commit: true
