@@ -1,9 +1,9 @@
 OUTER_SPRINT components ~%MOD_FOLDER%/components~
 
 ACTION_IF GAME_IS ~bgee bg2ee eet iwdee pstee~ BEGIN
-    OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra_ee~
+    OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra_ee/%LANGUAGE%~
 END ELSE BEGIN
-    OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra~
+    OUTER_SPRINT lang_dir ~%MOD_FOLDER%/tra/%LANGUAGE%~
 END
 
 OUTER_SET effect_stacking_id_base = 0x675f0000 // ascii g_
