@@ -22,6 +22,7 @@ BEGIN @901 /* Smarter familiars */
 GROUP @900 /* Familiars */
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124 /* Requires ToB or EE engine */
 OUTER_SPRINT comp_name ~smarter_familiars~
+PRINT ~tra is %lang_dir%/%comp_name%.tra~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @902 /* More resilient familiars */
