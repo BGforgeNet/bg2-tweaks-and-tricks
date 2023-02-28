@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28-11:17+0000\n"
+"POT-Creation-Date: 2023-02-28-13:04+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -616,7 +616,8 @@ msgstr "É hora de visitar a cabine."
 #: improved_strongholds.tra:5
 #, fuzzy
 #| msgid "The people of de'Arnise keep need presence of their Lord."
-msgid "The people of de'Arnise keep require presence of their <PRO_LADYLORD>."
+msgid ""
+"The people of de'Arnise keep require the presence of their <PRO_LADYLORD>."
 msgstr "O povo do Forte de'Arnise precisa da presença do seu senhor."
 
 #: improved_strongholds.tra:6

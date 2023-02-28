@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28-11:17+0000\n"
+"POT-Creation-Date: 2023-02-28-13:04+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -607,7 +607,8 @@ msgid "It's time to visit the Cabin."
 msgstr ""
 
 #: improved_strongholds.tra:5
-msgid "The people of de'Arnise keep require presence of their <PRO_LADYLORD>."
+msgid ""
+"The people of de'Arnise keep require the presence of their <PRO_LADYLORD>."
 msgstr ""
 
 #: improved_strongholds.tra:6
