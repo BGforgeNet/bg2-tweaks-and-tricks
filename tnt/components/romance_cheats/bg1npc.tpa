@@ -65,6 +65,7 @@ IF
 THEN
     RESPONSE #100
         SetGlobal("X#SharMatch","GLOBAL",1)
+        RealSetGlobalTimer("X#SharInterestTime","GLOBAL",TWENTY_MINUTES)
 END
 >>>>>>>>
 ACTION_IF FILE_EXISTS "override/x#sharteelromance.g3" BEGIN
