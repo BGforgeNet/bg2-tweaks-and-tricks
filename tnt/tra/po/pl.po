@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28-13:04+0000\n"
+"POT-Creation-Date: 2023-03-17-15:39+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1526,6 +1526,10 @@ msgstr ""
 
 #: setup.tra:818
 msgid "Sensible Blade spins"
+msgstr ""
+
+#: setup.tra:820
+msgid "PnP Protection from Evil"
 msgstr ""
 
 #: setup.tra:900

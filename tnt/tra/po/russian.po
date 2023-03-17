@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-28-13:04+0000\n"
+"POT-Creation-Date: 2023-03-17-15:39+0000\n"
 "PO-Revision-Date: 2023-02-28 12:03+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1703,6 +1703,10 @@ msgstr ""
 #| msgid "Sensible Otiluke's sphere"
 msgid "Sensible Blade spins"
 msgstr "Более адекватная сфера Отилюка"
+
+#: setup.tra:820
+msgid "PnP Protection from Evil"
+msgstr ""
 
 #: setup.tra:900
 msgid "Familiars"
