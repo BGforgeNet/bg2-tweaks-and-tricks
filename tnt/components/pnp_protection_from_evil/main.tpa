@@ -1,4 +1,8 @@
-ACTION_DEFINE_ARRAY icons BEGIN ICON_charm ICON_dire_charm ICON_domination END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY icons BEGIN
+    ICON_charm => 1
+    ICON_dire_charm => 1
+    ICON_domination => 1
+END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
     14780 => "Dire Charmed"
     14672 => "Charmed"
@@ -19,7 +23,7 @@ BEGIN
             header duration
     END
 
-    PHP_EACH icons AS int => icon BEGIN
+    PHP_EACH icons AS icon => int BEGIN
         LPF ADD_SPELL_EFFECT
             INT_VAR
                 opcode = OPCODE_prevent_special_effect_icon
