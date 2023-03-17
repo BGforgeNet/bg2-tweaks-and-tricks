@@ -469,6 +469,8 @@ IF
     Global("g_FamTactic","GLOBAL",1)
     Global("g_FamTactic","GLOBAL",2)
   !Dead("%death_var%")
+  !ModalState(STEALTH)
+  !StateCheck(Myself,STATE_INVISIBLE)
 THEN
   RESPONSE #100
     AttackReevaluate(NearestEnemyOf(Myself),30)
@@ -481,6 +483,8 @@ IF
   See([EVILCUTOFF])
   Global("g_FamTactic","GLOBAL",2)
   !Dead("%death_var%")
+  !ModalState(STEALTH)
+  !StateCheck(Myself,STATE_INVISIBLE)
   OR(4)
     See(NearestEnemyOfType([0.GENERAL_ITEM.0.MAGE_ALL]))
     See(NearestEnemyOfType([0.GENERAL_ITEM.0.CLERIC_ALL]))
