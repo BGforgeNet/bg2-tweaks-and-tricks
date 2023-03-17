@@ -1,0 +1,68 @@
+ACTION_DEFINE_ARRAY icons BEGIN ICON_charm ICON_dire_charm ICON_domination END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
+    14780 => "Dire Charmed"
+    14672 => "Charmed"
+    8364 => "Dominated"
+END
+
+DEFINE_PATCH_FUNCTION ADD_CHARM_IMMUNITY_TO_HEADER
+    INT_VAR
+        header = 0
+        duration = 0
+BEGIN
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_protection_from_opcode
+            parameter2 = OPCODE_charm_charm_specific_creature
+            target = TARGET_FX_preset
+            power = 1
+            header duration
+    END
+
+    PHP_EACH icons AS int => icon BEGIN
+        LPF ADD_SPELL_EFFECT
+            INT_VAR
+                opcode = OPCODE_prevent_special_effect_icon
+                parameter2 = icon
+                target = TARGET_FX_preset
+                power = 1
+                header duration
+        END
+    END
+
+    PHP_EACH strings AS num => string BEGIN
+        LPF ADD_SPELL_EFFECT
+            INT_VAR
+                opcode = OPCODE_text_protection_from_display_specific_string
+                parameter1 = num
+                target = TARGET_FX_preset
+                power = 1
+                header duration
+        END
+    END
+
+END
+
+
+COPY_EXISTING ~%WIZARD_PROTECTION_FROM_EVIL%.spl~ override
+    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
+    PHP_EACH ab_array AS int => ab_off BEGIN
+        header = int + 1
+        duration = header * 12
+        LPF ADD_CHARM_IMMUNITY_TO_HEADER
+            INT_VAR header duration
+        END
+    END
+BUT_ONLY
+
+// cleric version is 3 rounds/level
+COPY_EXISTING ~%CLERIC_PROTECT_FROM_EVIL%.spl~ override
+    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
+    PHP_EACH ab_array AS int => ab_off BEGIN
+        header = int + 1
+        duration = header * 18
+        LPF ADD_CHARM_IMMUNITY_TO_HEADER
+            INT_VAR header duration
+        END
+    END
+BUT_ONLY

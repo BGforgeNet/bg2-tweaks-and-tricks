@@ -385,7 +385,12 @@ BEGIN @818 /* Sensible Blade spins */
 GROUP @800 /* Spells and abilities */
 OUTER_SPRINT comp_name ~sensible_spins~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
-//END SPELL TWEAKS
+
+BEGIN @820
+GROUP @800
+OUTER_SPRINT comp_name ~pnp_protection_from_evil~
+INCLUDE ~%components%/%comp_name%/main.tpa~
+/* END SPELL TWEAKS */
 
 
 // Stores
