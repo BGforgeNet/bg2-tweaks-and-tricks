@@ -3,10 +3,24 @@ ACTION_DEFINE_ARRAY icons BEGIN
     ICON_dire_charm
     ICON_domination
 END
+
+/*
+bg1 Charmed 14672
+bg2 Charmed 1476 Dominated 8364 Dire Charmed 14780
+bg2ee Charmed 1476 Dominated 8364
+bgee Charmed 14672, Dominated 26206
+eet Charmed 1476 Dominated 8364
+bgt Charmed 1476, 17391; Dominated 8364, dire charmed several more
+It's a mess.
+*/
+
+// This is a hack, but hopefully once there are some translations it can be done properly.
 ACTION_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
-    14780 => "Dire Charmed"
-    1467 => "Charmed"
-    8364 => "Dominated"
+    1476 => 1
+    8364 => 1
+    14672 => 1
+    14780 => 1
+    17391 => 1
 END
 
 DEFINE_PATCH_FUNCTION ADD_CHARM_IMMUNITY_TO_HEADER
@@ -21,6 +35,7 @@ BEGIN
             parameter2 = OPCODE_charm_charm_specific_creature
             target = TARGET_FX_preset
             header duration power
+            resist_dispel = DISPEL | BYPASS_MR
     END
 
     PHP_EACH icons AS int => icon BEGIN
@@ -30,16 +45,18 @@ BEGIN
                 parameter2 = EVAL ~%icon%~
                 target = TARGET_FX_preset
                 header duration power
+                resist_dispel = DISPEL | BYPASS_MR
         END
     END
 
-    PHP_EACH strings AS num => string BEGIN
+    PHP_EACH strings AS ref => int BEGIN
         LPF ADD_SPELL_EFFECT
             INT_VAR
                 opcode = OPCODE_text_protection_from_display_specific_string
-                parameter1 = num
+                parameter1 = ref
                 target = TARGET_FX_preset
                 header duration power
+                resist_dispel = DISPEL | BYPASS_MR
         END
     END
 
@@ -69,12 +86,10 @@ COPY_EXISTING ~%CLERIC_PROTECT_FROM_EVIL%.spl~ override
     END
 BUT_ONLY
 
-// cleric - 10' radius: 1 turn
+// cleric - 10' radius: 1 turn/level
 COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
-    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
-    PHP_EACH ab_array AS int => ab_off BEGIN
-        header = int + 1
-        duration = header * 60
+    FOR (header=1; header<=13; ++header) BEGIN
+        duration = (header + 6) * 60
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
             INT_VAR header duration power = 4
         END
