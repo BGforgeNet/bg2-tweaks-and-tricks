@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17-15:39+0000\n"
+"POT-Creation-Date: 2023-03-18-01:50+0000\n"
 "PO-Revision-Date: 2021-04-14 14:13+0000\n"
 "Last-Translator: Felipe <felipefplzx@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -1102,6 +1102,18 @@ msgstr ""
 
 #: more_map_notes.tra:380011
 msgid "Tent of special pleasures"
+msgstr ""
+
+#: pnp_protection_from_evil.tra:1
+msgid "Charmed"
+msgstr ""
+
+#: pnp_protection_from_evil.tra:2
+msgid "Dire Charmed"
+msgstr ""
+
+#: pnp_protection_from_evil.tra:3
+msgid "Dominated"
 msgstr ""
 
 #: potions_no_stack.tra:1
