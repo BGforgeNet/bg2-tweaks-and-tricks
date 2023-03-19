@@ -165,6 +165,8 @@ WSewers, 1346, 1314 => 113 // To NE district, Pheirkas' house
 
 CloakwoodNest, 4655, 1203 => 88001 // Tiber
 
+FirewineBridge, 477, 434 => 34001  // Bentan
+
 END
 
 ACTION_PHP_EACH notes AS loc => note_num BEGIN
