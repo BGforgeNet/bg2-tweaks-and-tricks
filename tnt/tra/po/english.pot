@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-18-01:50+0000\n"
+"POT-Creation-Date: 2023-03-19-13:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1029,6 +1029,10 @@ msgstr ""
 
 #: more_map_notes.tra:120
 msgid "Gandolar Luckyfoot"
+msgstr ""
+
+#: more_map_notes.tra:34001
+msgid "Bentan"
 msgstr ""
 
 #: more_map_notes.tra:38001
