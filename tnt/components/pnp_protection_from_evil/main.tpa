@@ -95,3 +95,45 @@ COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
         END
     END
 BUT_ONLY
+
+
+
+/* paladin: permanent protection aura https://adnd2e.fandom.com/wiki/Paladin#Protection_from_Evil */
+
+/* WIP
+// THAC0 penalty spell
+CREATE SPL ~g_palau00~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_to_hit_mod
+            timing = TIMING_duration
+            target = TARGET_FX_preset
+            parameter1 = 1  // mod
+            parameter2 = MOD_TYPE_cumulative
+    END
+
+
+
+CREATE EFF VERSION "V2.0" ~g_palau01~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_cast_spell_at_creature
+            timing = TIMING_permanent_after_death
+            target = TARGET_FX_self
+            parameter1 = 6  // frequency: 1 round
+            parameter2 = 1  // type: Apply once per 'frequency' seconds
+            resource = "g_palau01"
+    END
+
+// paladin: permanent protection aura https://adnd2e.fandom.com/wiki/Paladin#Protection_from_Evil
+CREATE SPL ~g_palau01~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_apply_repeating_eff
+            timing = TIMING_permanent_after_death
+            target = TARGET_FX_self
+            parameter1 = 6  // frequency: 1 round
+            parameter2 = 1  // type: Apply once per 'frequency' seconds
+            resource = "g_palau01"
+    END
+*/
