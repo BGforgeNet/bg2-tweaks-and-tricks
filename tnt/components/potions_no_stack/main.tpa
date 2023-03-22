@@ -19,6 +19,7 @@ ACTION_FOR_EACH item IN
   potn42
   potn46
   potn15
+  potn11
 BEGIN
   OUTER_SPRINT ~item_to_unstack~ ~%item%~
   OUTER_SPRINT ~spellname~ ~g_%item%~
