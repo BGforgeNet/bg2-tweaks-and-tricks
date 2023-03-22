@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.26](#version-826)
 - [Version 8.25](#version-825)
 - [Version 8.24](#version-824)
 - [Version 8.23](#version-823)
@@ -33,6 +34,12 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.26
+- Potion of Invulnerability included into non-stacking list.
+- Familiars won't auto attack if invisible or in stealth.
+- New component: PnP Protection from Evil.
+- Map notes: mark Bentan, unmark Pallonia.
 
 ### Version 8.25
 
