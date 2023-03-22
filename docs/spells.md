@@ -90,10 +90,9 @@ The mechanics of [Blade's](https://pihwiki.bgforge.net/Baldur's_Gate:_Classes_an
 
 ### PnP Protection from Evil
 
-In [PnP](https://adnd2e.fandom.com/wiki/Protection_from_Evil), [Protection from Evil](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Protection_from_Evil) also prevents all Charm and Domination effects. That feature is restored.
+In PnP, [Protection from Evil](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Protection_from_Evil) also prevents all Charm and Domination effects. That feature existed in original BG1, but was removed in later games. Now it is restored.
 
-The inspiration for this component is aTweaks' [PnP Fey creatures](http://readme.spellholdstudios.net/rr_fey.html). It considerably boosts fey power. In particular, their charming powers are used more extensively. However, aTweaks added no counters to those powers, leaving a gap in party's defences.
+The inspiration for this component is aTweaks [PnP Fey creatures](http://readme.spellholdstudios.net/rr_fey.html). It considerably boosts fey power. In particular, their charming powers are used more extensively. However, aTweaks added no counters to those powers, leaving a gap in party's defences.
 
-This includes wizard and priest versions. Not the native one that paladins have.
-
-This is not a full PnP implementation, as PnP includes various extraplanar and summoned creatures into protection, not just demons.
+- This includes wizard and priest versions. Not the native one that paladins have.
+- This is not a full PnP implementation, as [PnP](https://adnd2e.fandom.com/wiki/Protection_from_Evil) includes various extraplanar and summoned creatures into protection, not just demons.
