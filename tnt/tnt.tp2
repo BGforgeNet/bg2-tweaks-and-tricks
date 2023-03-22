@@ -386,6 +386,10 @@ GROUP @800 /* Spells and abilities */
 OUTER_SPRINT comp_name ~sensible_spins~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
+BEGIN @820
+GROUP @800
+OUTER_SPRINT comp_name ~pnp_protection_from_evil~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 /* END SPELL TWEAKS */
 
 
@@ -543,8 +547,3 @@ REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102
 INCLUDE ~%components%/more_mage_fencing/main.tpa~
 
 // end convenience
-
-BEGIN @820
-GROUP @800
-OUTER_SPRINT comp_name ~pnp_protection_from_evil~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
