@@ -6,7 +6,7 @@ ACTION_FOR_EACH item IN ~amul22~ ~ring39~ ~ring46~ BEGIN
     LPF ADD_ITEM_EQEFFECT
       INT_VAR
         opcode = OPCODE_poison_resist_mod
-        parameter1 = 100 // %
+        parameter1 = 100  // %
         probability1 = 99
         timing = TIMING_while_equipped
         resist_dispel = BYPASS_MR
@@ -19,7 +19,7 @@ COPY_EXISTING ~%SCROLL_protection_from_poison%.itm~ ~override~
   LPF ADD_ITEM_EFFECT
     INT_VAR
       opcode = OPCODE_poison_resist_mod
-      parameter1 = 100 // %
+      parameter1 = 100  // %
       probability1 = 99
       duration = 1800
       resist_dispel = DISPEL | BYPASS_MR
