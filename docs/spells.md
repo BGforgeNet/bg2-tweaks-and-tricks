@@ -95,3 +95,5 @@ In [PnP](https://adnd2e.fandom.com/wiki/Protection_from_Evil), [Protection from 
 The inspiration for this component is aTweaks' [PnP Fey creatures](http://readme.spellholdstudios.net/rr_fey.html). It considerably boosts fey power. In particular, their charming powers are used more extensively. However, aTweaks added no counters to those powers, leaving a gap in party's defences.
 
 This includes wizard and priest versions. Not the native one that paladins have.
+
+This is not a full PnP implementation, as PnP includes various extraplanar and summoned creatures into protection, not just demons.
