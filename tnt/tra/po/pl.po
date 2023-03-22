@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-19-13:19+0000\n"
+"POT-Creation-Date: 2023-03-22-10:03+0000\n"
 "PO-Revision-Date: 2022-02-20 12:42+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -795,10 +795,6 @@ msgstr ""
 
 #: more_map_notes.tra:44
 msgid "Mad Arcand"
-msgstr ""
-
-#: more_map_notes.tra:45
-msgid "Pallonia"
 msgstr ""
 
 #: more_map_notes.tra:46

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-19-13:19+0000\n"
+"POT-Creation-Date: 2023-03-22-10:03+0000\n"
 "PO-Revision-Date: 2023-02-28 12:03+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -924,10 +924,6 @@ msgstr "Хирург"
 #: more_map_notes.tra:44
 msgid "Mad Arcand"
 msgstr "Безумный Арканд"
-
-#: more_map_notes.tra:45
-msgid "Pallonia"
-msgstr "Паллония"
 
 #: more_map_notes.tra:46
 msgid "Arkushule"
@@ -2419,6 +2415,9 @@ msgstr ", и Необнаружение."
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "Pallonia"
+#~ msgstr "Паллония"
 
 #~ msgid "Fair fights"
 #~ msgstr "Честные схватки"
