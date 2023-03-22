@@ -13,6 +13,7 @@ Various components to change spells and abilities, mostly to "make sense".
 - [Uncheese Mislead](#uncheese-mislead)
 - [Uncheese Project Image](#uncheese-project-image)
 - [Sensible Blade spins](#sensible-blade-spins)
+- [PnP Protection from Evil](#pnp-protection-from-evil)
 
 ### Spider form ignores web
 
@@ -86,3 +87,11 @@ To clarify, the purpose of this component is to give _a normally working spell_ 
 The mechanics of [Blade's](https://pihwiki.bgforge.net/Baldur's_Gate:_Classes_and_Kits#Bard_Kits) spins don't make much sense. These abilities are not magical, basically they are just actions that Blade performs. Yet, for example, a Defensive Spin will pin you to the ground until its duration expires. This component will allow you to _cancel_ spins at will, as well as _switch_ between them seamlessly.
 
 (Of course, it doesn't affect how many times per day they can be used. If a spin is canceled, it's spent.)
+
+### PnP Protection from Evil
+
+In [PnP](https://adnd2e.fandom.com/wiki/Protection_from_Evil), Protection from Evil also prevents all Charm and Domination effects. That feature is restored.
+
+The inspiration for this component is aTweaks' [PnP Fey creatures](http://readme.spellholdstudios.net/rr_fey.html). It considerably boosts fey power. In particular, their charming powers are used more extensively. However, aTweaks added no counters to those powers, leaving a gap in party defences.
+
+This includes wizard and priest versions. Not the native one that paladins have.
