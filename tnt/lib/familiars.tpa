@@ -18,6 +18,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~wtpcat.cre~ BEGIN
     wtpfamp3 => 8
     wtpfamp4 => 7
   END
+
 END ELSE BEGIN  // original game
   OUTER_SPRINT prefix ~fam~
   ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_list BEGIN  // cre > inv.item
@@ -38,6 +39,7 @@ END ELSE BEGIN  // original game
     rab   => rab
     rab25 => rab25
   END
+
   ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN  // dlg > append_state
     famil1   => 1
     famil125 => 1
@@ -46,4 +48,24 @@ END ELSE BEGIN  // original game
     famil3   => 1
     famil325 => 1
   END
+
+  // eet has an additional set for bg1 part
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_list BEGIN  // cre > inv.item
+      cat_  => cat_
+      dust_ => dust_
+      fair_ => fair_
+      fer_  => fer_
+      imp_  => imp_
+      psd_  => psd_
+      quas_ => quas_
+      rab_  => rab_
+    END
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN  // dlg > append_state
+      famil1_  => 1
+      famil2_  => 1
+      famil3_  => 1
+    END
+  END
+
 END
