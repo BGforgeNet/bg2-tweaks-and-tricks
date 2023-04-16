@@ -121,31 +121,31 @@ THEN
 END
 >>>>>>>>
 
-//Override script
-INCLUDE ~%lib_dir%/familiars.tpa~ //familiar_list, compatibility with WTPfamiliars
+// Override script
+INCLUDE ~%lib_dir%/familiars.tpa~  // familiar_list, compatibility with WTPfamiliars
 
 ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   OUTER_SPRINT fam_cre ~%prefix%%cre%~
   OUTER_SPRINT fam_item ~%prefix%%item%~
-  OUTER_SPRINT fam_script ~g_f%item%~ // script name is limited to 8 chars
+  OUTER_SPRINT fam_script ~g_f%item%~  // script name is limited to 8 chars
   ACTION_IF FILE_EXISTS_IN_GAME ~%fam_cre%.cre~ BEGIN
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII CRE_script_name death_var
     BUT_ONLY
-    REINCLUDE ~%comp_dir%/g_fam.baf.tpa~ //ACTION to generate script. Depends on %death_var% and %fam_item%
+    REINCLUDE ~%comp_dir%/g_fam.baf.tpa~  // ACTION to generate script. Depends on %death_var% and %fam_item%
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII SCRIPT_OVERRIDE over_script
-      PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN //use existing script if possible
+      PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN  // use existing script if possible
         over_exists = 1
-      END ELSE BEGIN //or create a new one
+      END ELSE BEGIN  // or create a new one
         over_exists = 0
         WRITE_ASCIIE SCRIPT_OVERRIDE ~%fam_script%~ #8
       END
     BUT_ONLY
     ACTION_IF over_exists = 1 BEGIN
       PRINT ~extending %over_script%.bcs~
-      EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/%fam_script%.baf~ EVAL //main familiar script
-      ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN //disable WTP leaving when attacked
+      EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/%fam_script%.baf~ EVAL  // main familiar script
+      ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN  // disable WTP leaving when attacked
         COPY_EXISTING ~%over_script%.bcs~ ~override~
           DECOMPILE_AND_PATCH BEGIN
             REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~AttackedBy(Player1,DEFAULT)~ ~False()~
@@ -160,27 +160,27 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN
     ACTION_FOR_EACH script IN ~baldur.bcs~ ~baldur25.bcs~ BEGIN
       ACTION_IF FILE_EXISTS_IN_GAME ~%script%~ BEGIN
-        EXTEND_BOTTOM ~%script%~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL //jump in/out
-        COPY_EXISTING ~%script%~ ~override~ //disable WTP nagging
+        EXTEND_BOTTOM ~%script%~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL  // jump in/out
+        COPY_EXISTING ~%script%~ ~override~  // disable WTP nagging
           DECOMPILE_AND_PATCH BEGIN
             REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GlobalTimerExpired("#GWANOUT","GLOBAL")~ ~False()~
           END
         BUT_ONLY
       END
     END
-  END ELSE BEGIN //normal fams
-    ACTION_IF (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 1) BEGIN //only non-*25 familiars in SoA baldur.bcs
+  END ELSE BEGIN  // normal fams
+    ACTION_IF (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 1) BEGIN  // only non-*25 familiars in SoA baldur.bcs
       EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
     END
-    ACTION_IF (GAME_INCLUDES ~tob~ AND (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 0)) BEGIN //only *25 familiars in ToB baldur25.bcs
+    ACTION_IF (GAME_INCLUDES ~tob~ AND (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 0)) BEGIN  // only *25 familiars in ToB baldur25.bcs
       EXTEND_BOTTOM ~baldur25.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
     END
   END
 END
 
 
-//potions available to all
-ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to tra
+// potions available to all
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN  // string is a reference to tra
   potn08 => 701  // healing
   potn52 => 702  // extra healing
   potn55 => 703  // superior healing
@@ -208,7 +208,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN //string is a reference to t
   potn37 => 725  // mind focusing
 END
 
-//warrior type
+// warrior type
 ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_warrior BEGIN
   potn03 => 740  // hill giant strength
   potn04 => 741  // frost giant strength
@@ -220,14 +220,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_warrior BEGIN
   potn12 => 747  // stone giant strength
 END
 
-//thief type
+// thief type
 ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_thief BEGIN
   potn36 => 760  // master thievery
   potn39 => 761  // perception
   potn56 => 762  // rogue's frost giant strength
 END
 
-OUTER_SPRINT action_drink ~~ //using spy because if familiar takes an item it ends in PC inventory
+OUTER_SPRINT action_drink ~~  // using spy because if familiar takes an item it ends in PC inventory
 ACTION_PHP_EACH potion_string AS potion => string BEGIN
   OUTER_SPRINT EVAL action_drink
 ~~~~~
@@ -247,7 +247,7 @@ ACTION_PHP_EACH potion_string AS potion => string BEGIN
 ~~~~~
 END
 
-//warrior potions - mephit, quasit, spider (wtp)
+// warrior potions - mephit, quasit, spider (wtp)
 ACTION_PHP_EACH potion_string_warrior AS potion => string BEGIN
   OUTER_SPRINT EVAL action_drink
 ~~~~~
@@ -274,7 +274,7 @@ ACTION_PHP_EACH potion_string_warrior AS potion => string BEGIN
 END
 
 
-//thievery potions - easy to check by class
+// thievery potions - easy to check by class
 ACTION_PHP_EACH potion_string_thief AS potion => string BEGIN
   OUTER_SPRINT EVAL action_drink
 ~~~~~

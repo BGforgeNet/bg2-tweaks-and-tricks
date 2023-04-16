@@ -1,7 +1,7 @@
 ACTION_IF FILE_EXISTS_IN_GAME ~wtpcat.cre~ BEGIN
   PRINT ~WTP familiars installed, skipping original familiars~
   OUTER_SPRINT prefix ~wtp~
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_list BEGIN //cre > inv.item
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_list BEGIN  // cre > inv.item
     cat   => fmcat
     dmeph => fmmep
     fairy => fmfae
@@ -12,15 +12,15 @@ ACTION_IF FILE_EXISTS_IN_GAME ~wtpcat.cre~ BEGIN
     seudo => famps
     spide => fmspd
   END
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN //dlg > append_state
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN  // dlg > append_state
     wtpfamp1 => 8
     wtpfamp2 => 8
     wtpfamp3 => 8
     wtpfamp4 => 7
   END
-END ELSE BEGIN //original game
+END ELSE BEGIN  // original game
   OUTER_SPRINT prefix ~fam~
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_list BEGIN //cre > inv.item
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_list BEGIN  // cre > inv.item
     cat   => cat
     cat25 => cat25
     dust  => dust
@@ -38,7 +38,7 @@ END ELSE BEGIN //original game
     rab   => rab
     rab25 => rab25
   END
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN //dlg > append_state
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY familiar_dlg BEGIN  // dlg > append_state
     famil1   => 1
     famil125 => 1
     famil2   => 1
