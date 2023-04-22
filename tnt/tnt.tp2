@@ -529,7 +529,8 @@ GROUP @600 /* Assorted convenience components */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
 SUBCOMPONENT @610 /* Starting bags */
 ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
-INCLUDE ~%components%/starting_bags/main.tpa~
+OUTER_SPRINT comp_name ~starting_bags~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/starting_bags/main.tpa~ END
 
 BEGIN @613 /* GSPA + holding - all bottomless! */
 GROUP @600 /* Assorted convenience components */
