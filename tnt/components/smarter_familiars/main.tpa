@@ -116,7 +116,7 @@ THEN
   RESPONSE #100
     TakePartyItem("%fam_item%")
     DestroyItem("%fam_item%")
-    MoveGlobalObject("%fam_cre%",Player1)
+    MoveGlobalObject("%death_var%",Player1)
     Continue()
 END
 >>>>>>>>
