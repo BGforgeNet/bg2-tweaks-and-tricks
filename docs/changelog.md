@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.27](#version-827)
 - [Version 8.26](#version-826)
 - [Version 8.25](#version-825)
 - [Version 8.24](#version-824)
@@ -35,7 +36,13 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.27
+
+- Smarter Familiars is working in BG1 part of EET.
+- Fixed GSPA + holding installation failure, introduced in 8.25.
+
 ### Version 8.26
+
 - Potion of Invulnerability included into non-stacking list.
 - Familiars won't auto attack if invisible or in stealth.
 - New component: PnP Protection from Evil.

@@ -1,7 +1,7 @@
 /** @tra setup.tra */
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
-VERSION ~v8.26~
+VERSION ~v8.27~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
