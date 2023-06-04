@@ -10,7 +10,7 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 - [Sensible Wand of Frost](#sensible-wand-of-frost)
 - [Potion of really mirrored eyes](#potion-of-really-mirrored-eyes)
 - [Unlimited goodberries stacking](#unlimited-goodberries-stacking)
-- [Improved Shandalar's cloak](improved-shandalars-cloak)
+- [Improved Shandalar's cloak](#improved-shandalars-cloak)
 - [Algernon's cloak: usable once per day](#algernons-cloak-usable-once-per-day)
 - [Improved Equalizer](#improved-equalizer)
 - [Working protection from poison](#working-protection-from-poison)
