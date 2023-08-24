@@ -6,14 +6,12 @@ msgstr ""
 "POT-Creation-Date: 2023-03-22-12:17+0000\n"
 "PO-Revision-Date: 2023-05-21 09:51+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
-"Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/"
-"tweaks-and-tricks/ru/>\n"
+"Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.12.2\n"
 
 #: easy_traps.tra:1
@@ -728,32 +726,24 @@ msgid "It's time to visit the Cabin."
 msgstr "Пора посетить хижину следопыта."
 
 #: improved_strongholds.tra:5
-#, fuzzy
-#| msgid "The people of de'Arnise keep need presence of their Lord."
 msgid ""
 "The people of de'Arnise keep require the presence of their <PRO_LADYLORD>."
-msgstr "Людям крепости де'Арниз требуется присутствие их господина."
+msgstr "Жителям замка де'Арнис необходимо присутствие их <PRO_LADYLORD>а."
 
 #: improved_strongholds.tra:6
 msgid "Morul has prepared a new batch of potions."
 msgstr "Морул подготовил новую порцию зелий."
 
 #: improved_strongholds.tra:7
-#, fuzzy
-#| msgid "The potions are on the table in the laboratory <SIRMAAM>."
 msgid "The potions are on the table in the laboratory, <SIRMAAM>."
-msgstr "Зелья на столе в лаборатории, <SIRMAAM>."
+msgstr "Зелья хранятся в лаборатории на столе, <SIRMAAM>."
 
 #: improved_strongholds.tra:8
-#, fuzzy
-#| msgid ""
-#| "Your presence is required at the church. The needs of the faithful must be "
-#| "tended to."
 msgid ""
 "Your presence is required at the Temple. The needs of the faithful must be "
 "tended to."
 msgstr ""
-"Требуется ваше присутствие в церкви, чтобы позаботиться о нуждах верующих."
+"Твое присутствие необходимо в Храме. Нужно удовлетворить нужды верующих."
 
 #: more_map_notes.tra:1
 msgid "Degrodel's house"
@@ -1161,7 +1151,7 @@ msgstr "Гандолар Лакифут"
 
 #: more_map_notes.tra:34001
 msgid "Bentan"
-msgstr ""
+msgstr "Бентан"
 
 #: more_map_notes.tra:38001
 msgid "Gambling tent"
@@ -1225,17 +1215,15 @@ msgstr "Палатка особых удовольствий"
 
 #: pnp_protection_from_evil.tra:1
 msgid "Charmed"
-msgstr ""
+msgstr "Очарование"
 
 #: pnp_protection_from_evil.tra:2
-#, fuzzy
-#| msgid "Dire Charm trap"
 msgid "Dire Charmed"
-msgstr "Ловушка ужасного очарования"
+msgstr "Дикое очарование"
 
 #: pnp_protection_from_evil.tra:3
 msgid "Dominated"
-msgstr ""
+msgstr "Подчинение"
 
 #: pnp_protection_from_evil.tra:4
 msgid ""
@@ -1252,6 +1240,19 @@ msgid ""
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
 msgstr ""
+"Защита от зла (Отречение)\n"
+"Уровень: 1\n"
+"Сфера: Защита\n"
+"Дистанция: прикосновение\n"
+"Длительность: 2 раунда/уровень\n"
+"Время чтения: 1\n"
+"Зона действия: 1 существо\n"
+"Спасбросок: нет\n"
+"\n"
+"После произнесения этого заклинания вокруг цели создается магический барьер на расстоянии одного фута. Барьер перемещается вместе с целью и обладает тремя основными свойствами:\n"
+"- Во-первых, все атаки злых или зачарованных существ, направленные против существа, находящегося под защитой, получают штраф -2 к каждому броску атаки. Любые спасброски, вызванные такими атаками, совершаются существом, находящимся под защитой, с бонусом +2.\n"
+"- Во-вторых, любая попытка овладеть существом, находящимся под защитой, или установить над ним ментальный контроль (как, например, при использовании способности вампира к очарованию) блокируется этим заклинанием.\n"
+"- В-третьих, заклинание предотвращает телесный контакт с призванными демонами. Действие заклинания прекращается, если существо, находящееся под защитой, совершает атаку против защищенного существа.\n"
 
 #: pnp_protection_from_evil.tra:5
 msgid ""
@@ -1269,6 +1270,19 @@ msgid ""
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
 msgstr ""
+"Защита от зла (Отречение)\n"
+"Уровень: 1\n"
+"Сфера: Защита\n"
+"Дистанция: прикосновение\n"
+"Длительность: 3 раунда/уровень\n"
+"Время чтения: 1\n"
+"Зона действия: 1 существо\n"
+"Спасбросок: нет\n"
+"\n"
+"После произнесения этого заклинания вокруг цели создается магический барьер на расстоянии одного фута. Барьер перемещается вместе с целью и обладает тремя основными свойствами:\n"
+"- Во-первых, все атаки злых или зачарованных существ, направленные против существа, находящегося под защитой, получают штраф -2 к каждому броску атаки. Любые спасброски, вызванные такими атаками, совершаются существом, находящимся под защитой, с бонусом +2.\n"
+"- Во-вторых, любая попытка овладеть существом, находящимся под защитой, или установить над ним ментальный контроль (как, например, при использовании способности вампира к очарованию) блокируется этим заклинанием.\n"
+"- В-третьих, заклинание предотвращает телесный контакт с призванными демонами. Действие заклинания прекращается, если существо, находящееся под защитой, совершает атаку против защищенного существа.\n"
 
 #: pnp_protection_from_evil.tra:6
 msgid ""
@@ -1287,6 +1301,20 @@ msgid ""
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
 msgstr ""
+"Защита от зла в радиусе 10 футов\n"
+"(Отречение)\n"
+"Уровень: 4\n"
+"Сфера: Защита\n"
+"Дистанция: прикосновение\n"
+"Длительность: 1 раунда/уровень\n"
+"Время чтения: 7\n"
+"Зона действия: радиус 10 футов\n"
+"Спасбросок: нет\n"
+"\n"
+"После произнесения этого заклинания вокруг цели создается магический барьер на расстоянии одного фута. Барьер перемещается вместе с целью и обладает тремя основными свойствами:\n"
+"- Во-первых, все атаки злых или зачарованных существ, направленные против существа, находящегося под защитой, получают штраф -2 к каждому броску атаки. Любые спасброски, вызванные такими атаками, совершаются существом, находящимся под защитой, с бонусом +2.\n"
+"- Во-вторых, любая попытка овладеть существом, находящимся под защитой, или установить над ним ментальный контроль (как, например, при использовании способности вампира к очарованию) блокируется этим заклинанием.\n"
+"- В-третьих, заклинание предотвращает телесный контакт с призванными демонами. Действие заклинания прекращается, если существо, находящееся под защитой, совершает атаку против защищенного существа.\n"
 
 #: potions_no_stack.tra:1
 msgid "Potion effect refreshed"
@@ -2367,15 +2395,15 @@ msgstr ""
 
 #: starting_bags.tra:20
 msgid "<CHARNAME>, wait. I've been told that you are leaving Candlekeep."
-msgstr ""
+msgstr "<CHARNAME>, подожди. До меня дошли слухи, что ты покидаешь Кендлкип."
 
 #: starting_bags.tra:21
 msgid "Hello, Thorius. Yes, Gorion told me to prepare for a travel."
-msgstr ""
+msgstr "Здравствуй, Ториус. Да, Горайон велел мне готовиться к путешествию."
 
 #: starting_bags.tra:22
 msgid "Get lost, old man. I've no time."
-msgstr ""
+msgstr "Отстань, старик. У меня нет времени."
 
 #: starting_bags.tra:23
 msgid ""
@@ -2383,14 +2411,17 @@ msgid ""
 "Take these things. It's no weapon or armor, but experienced adventurers know"
 " their real value."
 msgstr ""
+"Ты навсегда останешься для меня любимым учеником, и я хочу помочь тебе, чем "
+"смогу. Возьми эти вещи. Это не оружие и не доспехи, но опытные искатели "
+"приключений по достоинству оценят их ценность."
 
 #: starting_bags.tra:24
 msgid "I'm very grateful for your lessons and your help, Thorius."
-msgstr ""
+msgstr "Благодарю тебя за уроки и помощь, Ториус."
 
 #: starting_bags.tra:25
 msgid "But... Well, I see you have no need of my help."
-msgstr ""
+msgstr "Но... Вижу, моя помощь тебе не нужна."
 
 #: throwing_damage.tra:1
 msgid "missile (piercing)"
@@ -2468,6 +2499,11 @@ msgstr ", и Необнаружение."
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+msgctxt "female"
+msgid ""
+"The people of de'Arnise keep require the presence of their <PRO_LADYLORD>."
+msgstr "Жителям замка де'Арнис необходимо присутствие их <PRO_LADYLORD>и."
 
 #~ msgid "Pallonia"
 #~ msgstr "Паллония"
