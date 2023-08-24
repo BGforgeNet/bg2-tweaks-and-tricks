@@ -1,3 +1,5 @@
+// Do not edit manually. This file is generated automatically by handle-charsets. Your changes will be lost.
+
 //notice a trap
 @1 = ~Uh, I smell a trap.~ //familiar
 @2 = ~Careful. Something's not quite right here.~
@@ -56,3 +58,4 @@
 @140 = ~Dart trap~
 @141 = ~Vent trap~
 @142 = ~Pendulum trap~
+
