@@ -55,10 +55,8 @@ msgid "Trap"
 msgstr "Ловушка"
 
 #: easy_traps.tra:100
-#, fuzzy
-#| msgid "Unknown"
 msgid "Unknown trap"
-msgstr "Неизвестно"
+msgstr "Неизвестная ловушка"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
