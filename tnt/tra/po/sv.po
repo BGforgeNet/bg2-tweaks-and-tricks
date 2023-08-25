@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22-12:17+0000\n"
+"POT-Creation-Date: 2023-08-25-09:57+0000\n"
 "PO-Revision-Date: 2022-09-25 20:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
@@ -54,12 +54,10 @@ msgstr "Vänta lite. Ser du det här?"
 msgid "Trap"
 msgstr "Fälla"
 
-#: easy_traps.tra:99
-msgid "trap"
-msgstr "fälla"
-
 #: easy_traps.tra:100
-msgid "Unknown"
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown trap"
 msgstr "Okänt"
 
 #: easy_traps.tra:101
@@ -2219,3 +2217,6 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "trap"
+#~ msgstr "fälla"

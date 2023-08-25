@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22-12:17+0000\n"
+"POT-Creation-Date: 2023-08-25-09:57+0000\n"
 "PO-Revision-Date: 2023-05-21 09:51+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -54,12 +54,10 @@ msgstr "Espera. Vê isto?"
 msgid "Trap"
 msgstr "Armadilha"
 
-#: easy_traps.tra:99
-msgid "trap"
-msgstr "armadilha"
-
 #: easy_traps.tra:100
-msgid "Unknown"
+#, fuzzy
+#| msgid "Unknown"
+msgid "Unknown trap"
 msgstr "Desconhecido"
 
 #: easy_traps.tra:101
@@ -2233,3 +2231,6 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#~ msgid "trap"
+#~ msgstr "armadilha"

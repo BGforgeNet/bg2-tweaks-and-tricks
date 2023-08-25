@@ -13,8 +13,7 @@
 
 // trap floats
 @98 = ~Trap~
-@99 = ~trap~
-@100 = ~Unknown~
+@100 = ~Unknown trap~
 
 @101 = ~Hold Person trap~
 @102 = ~Silence trap~

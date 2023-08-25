@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22-12:17+0000\n"
+"POT-Creation-Date: 2023-08-25-09:57+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: BGforge/msg2po v.1.1.12\n"
+"X-Generator: BGforge/msg2po v.1.1.14\n"
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
@@ -52,12 +52,8 @@ msgstr ""
 msgid "Trap"
 msgstr ""
 
-#: easy_traps.tra:99
-msgid "trap"
-msgstr ""
-
 #: easy_traps.tra:100
-msgid "Unknown"
+msgid "Unknown trap"
 msgstr ""
 
 #: easy_traps.tra:101
