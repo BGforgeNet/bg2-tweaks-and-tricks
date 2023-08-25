@@ -3,8 +3,7 @@ OUTER_SPRINT comp_baf_dir ~%comp_dir%/baf~
 OUTER_SET notification_delay = 12
 OUTER_SET intuition_delay = 24
 OUTER_SET pause_delay = 36
-OUTER_SPRINT unknown_trap_name (AT 100)
-OUTER_SPRINT trap_lower (AT 99)
+OUTER_SPRINT trap_unknown (AT 100)
 OUTER_SPRINT trap_capitalized (AT 98)
 OUTER_SPRINT intuition_timer ~%modder_prefix%traps_intuition_timer~
 OUTER_SPRINT pause_timer ~%modder_prefix%traps_pause_timer~
@@ -121,8 +120,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.are$~ ~override~
                         INT_VAR simple = simple_floats
                         STR_VAR
                           spell_res
-                          unknown = ~%unknown_trap_name%~
-                          trap_lower
+                          trap_unknown
                           trap_capitalized
                         RET trap_warning_string = string
                       END

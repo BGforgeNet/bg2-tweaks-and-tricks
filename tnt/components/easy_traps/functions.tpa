@@ -136,26 +136,33 @@ DEFINE_PATCH_FUNCTION calculate_trap_warning_string
   INT_VAR simple = 0
   STR_VAR
     spell_res = ~~
-    unknown = ~~
-    trap_lower = ~~
+    trap_unknown = ~~
     trap_capitalized = ~~
   RET string
 BEGIN
+  // Simple: just "Trap"
   PATCH_IF simple == 1 BEGIN
     SPRINT string ~%trap_capitalized%~
   END ELSE BEGIN
+    // default: "Unknown trap"
+    SPRINT string ~%trap_unknown%~
+
+    // check in pre-defined array
     PATCH_IF VARIABLE_IS_SET $trap_names(~%spell_res%~) BEGIN
       SPRINT string $trap_names(~%spell_res%~)
     END ELSE BEGIN
+      // not in pre-defined array, check spell name
       PATCH_IF FILE_EXISTS_IN_GAME ~%spell_res%.spl~ BEGIN
         INNER_PATCH_FILE ~%spell_res%.spl~ BEGIN
           READ_STRREF NAME1 string
-          PATCH_IF ~%string%~ STR_EQ ~<Invalid Strref -1>~ BEGIN
-            SPRINT string ~%unknown%~
+          // if spell has a name, use "Trap: Spellname"
+          PATCH_IF NOT (~%string%~ STR_EQ ~<Invalid Strref -1>~) BEGIN
+            SPRINT string ~%trap_capitalized%: ~ ^ ~%string%~
           END
+          // otherwise, keep default
         END
-        SPRINT string ~%string%~ ^ ~ %trap_lower%~
       END
     END
+
   END
 END
