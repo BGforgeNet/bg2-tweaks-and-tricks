@@ -36,6 +36,11 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.28
+
+- Better grammar for trap type notifications in non-English installations.
+- Updated Russian translation.
+
 ### Version 8.27
 
 - Smarter Familiars is working in BG1 part of EET.
