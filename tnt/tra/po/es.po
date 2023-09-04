@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-25-09:57+0000\n"
-"PO-Revision-Date: 2023-05-21 09:51+0000\n"
-"Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
+"PO-Revision-Date: 2023-09-04 00:55+0000\n"
+"Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -16,23 +16,23 @@ msgstr ""
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
-msgstr ""
+msgstr "Huelo una trampa."
 
 #: easy_traps.tra:2
 msgid "Careful. Something's not quite right here."
-msgstr ""
+msgstr "Cuidado. Algo no está bien aquí."
 
 #: easy_traps.tra:3
 msgid "Stop! It's a trap!"
-msgstr ""
+msgstr "¡Alto! ¡Es una trampa!"
 
 #: easy_traps.tra:4
 msgid "I sense a trap!"
-msgstr ""
+msgstr "¡Presiento una trampa!"
 
 #: easy_traps.tra:5
 msgid "Hmm... We should tread lightly here."
-msgstr ""
+msgstr "Hmm... Debemos andar con cuidado aquí."
 
 #: easy_traps.tra:6
 msgid "Wait, wait. Let's take a closer look at this."
