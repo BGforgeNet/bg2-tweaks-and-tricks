@@ -6,8 +6,8 @@
 @124 = ~Требует движок ToB или EE~
 @125 = ~Требует движок BG2 или EE~
 @126 = ~Требует BG2~
-@127 = ~Only non-EE engines~
-@128 = ~Requires Classic ToB engine~
+@127 = ~Кроме движков ЕЕ~
+@128 = ~Требует классический движок ToB~
 @129 = ~Только для BGT~
 @130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
 @131 = ~Requires TotSC content~
