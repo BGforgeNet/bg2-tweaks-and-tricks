@@ -548,4 +548,3 @@ REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102
 INCLUDE ~%components%/more_mage_fencing/main.tpa~
 
 // end convenience
-
