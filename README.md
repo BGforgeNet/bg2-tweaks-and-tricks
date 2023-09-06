@@ -45,3 +45,4 @@ Components are many and varied. Refer to the individual sections for the details
 - [Used software](docs/credits.md#used-software)
 - [Author](docs/credits.md#author)
 - [License](docs/credits.md#license)
+
