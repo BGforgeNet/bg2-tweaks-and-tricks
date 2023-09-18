@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25-09:57+0000\n"
+"POT-Creation-Date: 2023-09-18-16:41+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -582,6 +582,10 @@ msgid ""
 "Two things, me friend. It will cost ye 12,500 gp for the work, no less, and "
 "without an apprentice, ye'll have to stay here a full day and help me run "
 "the forge."
+msgstr ""
+
+#: improved_equalizer.tra:3
+msgid "What would be involved in that?"
 msgstr ""
 
 #: improved_strongholds.tra:1
