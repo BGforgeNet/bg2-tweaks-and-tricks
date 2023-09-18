@@ -75,6 +75,8 @@ Equalizer seems a bit underpowered. It's one of three weapons that require over 
 
 TnT increases its power considerably, providing additional bonuses based on _wielder's_ alignment. True Neutral characters will be able to get the most of it.
 
+The cost of forging the sword will be increased to match its new power.
+
 ### Working protection from poison
 Multiple items in BG2 boast to grant the wielder "immunity to all poisons". Unfortunately, none really do. What they do provide is immunity to poison effect - so you can't get poisoned. But certain spells such as Cloudkill apply poison damage directly, and immunity is bypassed. This component fixes the items so that the wielder is really immune to poisons.
 
