@@ -1,5 +1,7 @@
 # Changelog
 
+- [Version 8.29](#version-829)
+- [Version 8.28](#version-828)
 - [Version 8.27](#version-827)
 - [Version 8.26](#version-826)
 - [Version 8.25](#version-825)
@@ -35,6 +37,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.29
+
+[Fix](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/84): Improved Equalizer no longer jacks up price of several other items such as Shortbow of Gesen and Silver Blade.
 
 ### Version 8.28
 
