@@ -5,8 +5,11 @@ NWBaldursGate, 1770, 2481 => 2 // Pheirkas' house
 
 CentralBaldursGate, 4157, 873 => 3 // Nadine's house
 
-EBaldursGate, 1587, 3180 => 4 // Arkion's house
-EBaldursGate, 1447, 1235 => 114 // Thieves' Guild
+EBaldursGate, 1587, 3180 => 78001  // Arkion's house
+EBaldursGate, 1447, 1235 => 78002  // Thieves' Guild
+EBaldursGate, 3413, 1685 => 78003  // Tavern
+
+NEBaldursGate, 2185, 2513 => 64  // General store
 
 Gullykin, 726, 1212 => 120 // Gandolar Luckyfoot
 
