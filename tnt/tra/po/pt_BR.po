@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18-16:41+0000\n"
+"POT-Creation-Date: 2023-10-17-15:30+0000\n"
 "PO-Revision-Date: 2023-05-21 09:51+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -650,10 +650,6 @@ msgstr ""
 msgid "Nadine's house"
 msgstr ""
 
-#: more_map_notes.tra:4
-msgid "Arkion's house"
-msgstr ""
-
 #: more_map_notes.tra:5
 msgid "Sunin's house"
 msgstr ""
@@ -834,7 +830,7 @@ msgstr ""
 msgid "Joseph's house"
 msgstr ""
 
-#: more_map_notes.tra:63
+#: more_map_notes.tra:63 more_map_notes.tra:78003
 msgid "Tavern"
 msgstr ""
 
@@ -1034,10 +1030,6 @@ msgstr ""
 msgid "To Northeast district, Pheirkas' house"
 msgstr ""
 
-#: more_map_notes.tra:114
-msgid "Thieves' Guild"
-msgstr ""
-
 #: more_map_notes.tra:120
 msgid "Gandolar Luckyfoot"
 msgstr ""
@@ -1080,6 +1072,14 @@ msgstr ""
 
 #: more_map_notes.tra:38009
 msgid "Branwen"
+msgstr ""
+
+#: more_map_notes.tra:78001
+msgid "Arkion's house"
+msgstr ""
+
+#: more_map_notes.tra:78002
+msgid "Thieves' Guild"
 msgstr ""
 
 #: more_map_notes.tra:83001

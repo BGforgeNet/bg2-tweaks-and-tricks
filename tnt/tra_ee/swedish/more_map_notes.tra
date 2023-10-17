@@ -3,7 +3,6 @@
 @1 = ~Degrodel's house~
 @2 = ~Pheirkas' house~
 @3 = ~Nadine's house~
-@4 = ~Arkion's house~
 @5 = ~Sunin's house~
 @6 = ~Cordyr's house~
 @7 = ~Nadarin's warehouse~
@@ -99,7 +98,6 @@
 @111 = ~To Northwest district, east side~
 @112 = ~To Northeast district, center~
 @113 = ~To Northeast district, Pheirkas' house~
-@114 = ~Thieves' Guild~
 @120 = ~Gandolar Luckyfoot~
 @34001 = ~Bentan~
 @38001 = ~Gambling tent~
@@ -111,6 +109,9 @@
 @38007 = ~Enchanted items trader~
 @38008 = ~Exotic potions store~
 @38009 = ~Branwen~
+@78001 = ~Arkion's house~
+@78002 = ~Thieves' Guild~
+@78003 = ~Tavern~
 @83001 = ~Fishermen~
 @83002 = ~Ajantis~
 @83003 = ~Gerde~

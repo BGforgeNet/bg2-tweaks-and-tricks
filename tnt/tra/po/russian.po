@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18-16:41+0000\n"
+"POT-Creation-Date: 2023-10-17-15:30+0000\n"
 "PO-Revision-Date: 2023-09-04 00:55+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -757,10 +757,6 @@ msgstr "Дом Фейркас"
 msgid "Nadine's house"
 msgstr "Дом Надин"
 
-#: more_map_notes.tra:4
-msgid "Arkion's house"
-msgstr "Дом Аркиона"
-
 #: more_map_notes.tra:5
 msgid "Sunin's house"
 msgstr "Дом Сунина"
@@ -941,7 +937,7 @@ msgstr "Хафиз"
 msgid "Joseph's house"
 msgstr "Дом Джозефа"
 
-#: more_map_notes.tra:63
+#: more_map_notes.tra:63 more_map_notes.tra:78003
 msgid "Tavern"
 msgstr "Гостиница"
 
@@ -1141,10 +1137,6 @@ msgstr "К Северо-восточному, центру"
 msgid "To Northeast district, Pheirkas' house"
 msgstr "К Северо-восточному, дом Фейркас"
 
-#: more_map_notes.tra:114
-msgid "Thieves' Guild"
-msgstr "Гильдия Воров"
-
 #: more_map_notes.tra:120
 msgid "Gandolar Luckyfoot"
 msgstr "Гандолар Лакифут"
@@ -1188,6 +1180,14 @@ msgstr "Магазин экзотических зелий"
 #: more_map_notes.tra:38009
 msgid "Branwen"
 msgstr "Бранвен"
+
+#: more_map_notes.tra:78001
+msgid "Arkion's house"
+msgstr "Дом Аркиона"
+
+#: more_map_notes.tra:78002
+msgid "Thieves' Guild"
+msgstr "Гильдия Воров"
 
 #: more_map_notes.tra:83001
 msgid "Fishermen"
