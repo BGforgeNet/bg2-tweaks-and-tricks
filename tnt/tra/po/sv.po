@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-12-07:16+0000\n"
+"POT-Creation-Date: 2023-11-12-17:37+0000\n"
 "PO-Revision-Date: 2022-09-25 20:30+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
@@ -819,7 +819,7 @@ msgstr ""
 msgid "Joseph's house"
 msgstr ""
 
-#: more_map_notes.tra:63 more_map_notes.tra:78003
+#: more_map_notes.tra:63
 msgid "Tavern"
 msgstr ""
 

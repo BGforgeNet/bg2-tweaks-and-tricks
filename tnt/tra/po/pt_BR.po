@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-12-07:16+0000\n"
+"POT-Creation-Date: 2023-11-12-17:37+0000\n"
 "PO-Revision-Date: 2023-05-21 09:51+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pt_BR/>\n"
@@ -830,7 +830,7 @@ msgstr ""
 msgid "Joseph's house"
 msgstr ""
 
-#: more_map_notes.tra:63 more_map_notes.tra:78003
+#: more_map_notes.tra:63
 msgid "Tavern"
 msgstr ""
 
