@@ -1,3 +1,6 @@
+// Notes are being migrated to new format
+// @38001 means BGT AR3800, note 1
+
 @1 = ~Degrodel's house~
 @2 = ~Pheirkas' house~
 @3 = ~Nadine's house~
@@ -124,4 +127,3 @@
 
 @78001 = ~Arkion's house~
 @78002 = ~Thieves' Guild~
-@78003 = ~Tavern~
