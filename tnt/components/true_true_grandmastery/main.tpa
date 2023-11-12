@@ -1,6 +1,6 @@
 INCLUDE ~%lib_dir%/tobex.tpa~
 
-//APR table stolen from cdtweaks, goes to level 50
+// APR table stolen from cdtweaks, goes to level 50
 COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
 
 // limit max pips
