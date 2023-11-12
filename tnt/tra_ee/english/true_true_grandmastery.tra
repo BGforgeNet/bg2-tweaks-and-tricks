@@ -1,14 +1,2 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-// // 9588
-// @1 = ~You have been given proficiencies to start your character with.  These represent the ability to effectively use weapons.  You may choose from any of the selectable proficiencies available to your character class.  If your character is a fighter he will be able to choose the same proficiency up to four times. A true class fighter may choose it up to five times.  This will grant him additional levels of specialization with the weapon listed.  Keep in mind that a character can use any weapon available to his race and class whether he has proficiency with it or not.  However, if he attacks using a weapon that he is not proficient with, he suffers a minus to his attack roll.
-
-// Proficiency Slot Table:
-// 1 slot: none
-// 2 slots: +1 to hit, +2 to damage, an extra half attack.
-// 3 slots: +2 to hit, +2 to damage, an extra half attack.
-// 4 slots: +2 to hit, +3 to damage, an extra half attack. -1 to speed
-// 5 slots: +2 to hit, +4 to damage, extra 3/2 attacks. -3 to speed~
-
-// // 32120
-// @2 = ~Grand Mastery:  At this level the character receives +2 to hit and +4 to damage with the selected weapon.  He also gains extra 3/2 attacks per round with the selected weapon.  He gains a -3 to speed factor with the selected weapon.~
