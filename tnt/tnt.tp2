@@ -446,7 +446,9 @@ INCLUDE ~%components%/no_steal_carsomyr/main.tpa~
 
 BEGIN @1104 /* True True Grandmastery */
 GROUP @1100 /* Gameplay and rules */
-INCLUDE ~%components%/true_true_grandmastery/main.tpa~
+OUTER_TEXT_SPRINT comp_name ~true_true_grandmastery~
+OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
 BEGIN @1105 /* Sensible multiclass restrictions */
 GROUP @1100 /* Gameplay and rules */
