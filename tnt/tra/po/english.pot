@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-17-15:30+0000\n"
+"POT-Creation-Date: 2023-11-12-07:08+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -2165,6 +2165,26 @@ msgstr ""
 
 #: throwing_damage.tra:3
 msgid "slashing"
+msgstr ""
+
+#: true_true_grandmastery.tra:1
+msgid ""
+"You have been given proficiencies to start your character with.  These represent the ability to effectively use weapons.  You may choose from any of the selectable proficiencies available to your character class.  If your character is a fighter he will be able to choose the same proficiency up to four times. A true class fighter may choose it up to five times.  This will grant him additional levels of specialization with the weapon listed.  Keep in mind that a character can use any weapon available to his race and class whether he has proficiency with it or not.  However, if he attacks using a weapon that he is not proficient with, he suffers a minus to his attack roll.\n"
+"\n"
+"Proficiency Slot Table:\n"
+"1 slot: none\n"
+"2 slots: +1 to hit, +2 to damage, an extra half attack.\n"
+"3 slots: +2 to hit, +2 to damage, an extra half attack.\n"
+"4 slots: +2 to hit, +3 to damage, an extra half attack. -1 to speed\n"
+"5 slots: +2 to hit, +4 to damage, extra 3/2 attacks. -3 to speed"
+msgstr ""
+
+#: true_true_grandmastery.tra:2
+msgid ""
+"Grand Mastery:  At this level the character receives +2 to hit and +4 to "
+"damage with the selected weapon.  He also gains extra 3/2 attacks per round "
+"with the selected weapon.  He gains a -3 to speed factor with the selected "
+"weapon."
 msgstr ""
 
 #: true_true_sight.tra:1
