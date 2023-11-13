@@ -1,8 +1,6 @@
 // Notes are being migrated to new format
 // @38001 means BGT AR3800, note 1
 
-@1 = ~Degrodel's house~
-@2 = ~Pheirkas' house~
 @3 = ~Nadine's house~
 @5 = ~Sunin's house~
 @6 = ~Cordyr's house~
@@ -55,8 +53,6 @@
 @66 = ~Rinnie's house~
 @67 = ~Bheren's house~
 @68 = ~Jardak's house~
-@69 = ~Quinn's house~
-@70 = ~House of Laerta and Louise~
 
 @71 = ~To South district, Harbor Master's Building~
 @72 = ~To South district, westside~
@@ -105,11 +101,10 @@
 
 @120 = ~Gandolar Luckyfoot~
 
-@83001 = ~Fishermen~
-@83002 = ~Ajantis~
-@83003 = ~Gerde~
-
-@88001 = ~Tiber~
+@72001 = ~Degrodel's house~
+@72002 = ~Pheirkas' house~
+@72003 = ~Quinn's house~
+@72004 = ~Laerta and Louise's house~
 
 @34001 = ~Bentan~
 
@@ -127,3 +122,9 @@
 
 @78001 = ~Arkion's house~
 @78002 = ~Thieves' Guild~
+
+@83001 = ~Fishermen~
+@83002 = ~Ajantis~
+@83003 = ~Gerde~
+
+@88001 = ~Tiber~
