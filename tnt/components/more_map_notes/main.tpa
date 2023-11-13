@@ -131,6 +131,7 @@ CentralSewers, 3749, 3300 => 86 // To East Sewers
 CentralSewers, 3900, 1142 => 86 // To East Sewers
 CentralSewers, 1501, 2760 => 87 // To West Sewers
 CentralSewers, 1069, 2307 => 87 // To West Sewers
+CentralSewers, 76, 1350 => 87 // To West Sewers
 
 BaldursGate_Undercellars, 192, 1762 => 86  // To East Sewers
 BaldursGate_Undercellars, 2486, 304 => 87  // To West Sewers
