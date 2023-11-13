@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-12-17:37+0000\n"
+"POT-Creation-Date: 2023-11-13-17:11+0000\n"
 "PO-Revision-Date: 2023-09-04 00:55+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -745,14 +745,6 @@ msgid ""
 msgstr ""
 "Твое присутствие необходимо в Храме. Нужно удовлетворить нужды верующих."
 
-#: more_map_notes.tra:1
-msgid "Degrodel's house"
-msgstr "Дом Дегродела"
-
-#: more_map_notes.tra:2
-msgid "Pheirkas' house"
-msgstr "Дом Фейркас"
-
 #: more_map_notes.tra:3
 msgid "Nadine's house"
 msgstr "Дом Надин"
@@ -960,14 +952,6 @@ msgstr "Дом Берена"
 #: more_map_notes.tra:68
 msgid "Jardak's house"
 msgstr "Дом Джардака"
-
-#: more_map_notes.tra:69
-msgid "Quinn's house"
-msgstr "Дом Квинна"
-
-#: more_map_notes.tra:70
-msgid "House of Laerta and Louise"
-msgstr "Дом Лаэрты и Луизы"
 
 #: more_map_notes.tra:71
 msgid "To South district, Harbor Master's Building"
@@ -1180,6 +1164,24 @@ msgstr "Магазин экзотических зелий"
 #: more_map_notes.tra:38009
 msgid "Branwen"
 msgstr "Бранвен"
+
+#: more_map_notes.tra:72001
+msgid "Degrodel's house"
+msgstr "Дом Дегродела"
+
+#: more_map_notes.tra:72002
+msgid "Pheirkas' house"
+msgstr "Дом Фейркас"
+
+#: more_map_notes.tra:72003
+msgid "Quinn's house"
+msgstr "Дом Квинна"
+
+#: more_map_notes.tra:72004
+#, fuzzy
+#| msgid "House of Laerta and Louise"
+msgid "Laerta and Louise's house"
+msgstr "Дом Лаэрты и Луизы"
 
 #: more_map_notes.tra:78001
 msgid "Arkion's house"

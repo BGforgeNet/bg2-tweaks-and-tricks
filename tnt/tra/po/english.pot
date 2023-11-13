@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-12-17:37+0000\n"
+"POT-Creation-Date: 2023-11-13-17:11+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -623,14 +623,6 @@ msgid ""
 "tended to."
 msgstr ""
 
-#: more_map_notes.tra:1
-msgid "Degrodel's house"
-msgstr ""
-
-#: more_map_notes.tra:2
-msgid "Pheirkas' house"
-msgstr ""
-
 #: more_map_notes.tra:3
 msgid "Nadine's house"
 msgstr ""
@@ -837,14 +829,6 @@ msgstr ""
 
 #: more_map_notes.tra:68
 msgid "Jardak's house"
-msgstr ""
-
-#: more_map_notes.tra:69
-msgid "Quinn's house"
-msgstr ""
-
-#: more_map_notes.tra:70
-msgid "House of Laerta and Louise"
 msgstr ""
 
 #: more_map_notes.tra:71
@@ -1057,6 +1041,22 @@ msgstr ""
 
 #: more_map_notes.tra:38009
 msgid "Branwen"
+msgstr ""
+
+#: more_map_notes.tra:72001
+msgid "Degrodel's house"
+msgstr ""
+
+#: more_map_notes.tra:72002
+msgid "Pheirkas' house"
+msgstr ""
+
+#: more_map_notes.tra:72003
+msgid "Quinn's house"
+msgstr ""
+
+#: more_map_notes.tra:72004
+msgid "Laerta and Louise's house"
 msgstr ""
 
 #: more_map_notes.tra:78001
