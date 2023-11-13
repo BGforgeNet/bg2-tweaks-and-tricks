@@ -1,5 +1,6 @@
 // Notes are being migrated to new format
 // @38001 means BGT AR3800, note 1
+// Shared notes use low range
 
 @3 = ~Nadine's house~
 @5 = ~Sunin's house~

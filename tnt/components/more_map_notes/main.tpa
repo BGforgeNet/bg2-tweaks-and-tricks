@@ -1,5 +1,6 @@
 // Notes are being migrated to new format
 // @38001 means BGT AR3800, note 1
+// Shared notes use low range
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY notes BEGIN
 
@@ -131,8 +132,9 @@ CentralSewers, 3900, 1142 => 86 // To East Sewers
 CentralSewers, 1501, 2760 => 87 // To West Sewers
 CentralSewers, 1069, 2307 => 87 // To West Sewers
 
-BaldursGate_Undercellars, 384, 124 => 88 // To Central Sewers
-BaldursGate_Undercellars, 2486, 304 => 87 // To West Sewers
+BaldursGate_Undercellars, 192, 1762 => 86  // To East Sewers
+BaldursGate_Undercellars, 2486, 304 => 87  // To West Sewers
+BaldursGate_Undercellars, 384, 124 => 88  // To Central Sewers
 
 ESewers, 109, 120 => 88 // To Central Sewers
 ESewers, 1858, 452 => 90 // To NE District, Ilmater's Shrine
