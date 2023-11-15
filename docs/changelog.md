@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.30](#version-830) (WIP)
 - [Version 8.29](#version-829)
 - [Version 8.28](#version-828)
 - [Version 8.27](#version-827)
@@ -37,6 +38,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.30
+
+New componnent: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
 
 ### Version 8.29
 

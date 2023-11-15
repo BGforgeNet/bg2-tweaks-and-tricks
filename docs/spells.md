@@ -96,3 +96,7 @@ The inspiration for this component is aTweaks [PnP Fey creatures](http://readme.
 
 - This includes wizard and priest versions. Not the native one that paladins have.
 - This is not a full PnP implementation, as [PnP](https://adnd2e.fandom.com/wiki/Protection_from_Evil) includes various extraplanar and summoned creatures into protection, not just demons.
+
+### Non-hostile Grease
+
+Both [Web](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Web) and [Stinking Cloud](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Stinking_Cloud) are safe to use around the commoners, since they are considered non-hostile. This component makes [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease) safe too.
