@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13-17:11+0000\n"
+"POT-Creation-Date: 2023-11-15-15:12+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1591,6 +1591,10 @@ msgstr ""
 
 #: setup.tra:820
 msgid "PnP Protection from Evil"
+msgstr ""
+
+#: setup.tra:821
+msgid "Non-hostile Grease"
 msgstr ""
 
 #: setup.tra:900
