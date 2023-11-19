@@ -86,6 +86,8 @@ IF
   !StateCheck(LastSeenBy, CD_STATE_NOTVALID)
   !CheckStatLT(LastSeenBy, %detection%, TRAPS)
   !TriggerOverride(LastSeenBy, ModalState(DETECTTRAPS))
+  // we don't want thieves coming out of stealth automatically, there could be enemies present
+  !TriggerOverride(LastSeenBy, ModalState(STEALTH))
 THEN
   RESPONSE #1
     ActionOverride(LastSeenBy, FindTraps())
