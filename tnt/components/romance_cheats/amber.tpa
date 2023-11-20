@@ -133,5 +133,13 @@ ACTION_IF FILE_EXISTS_IN_GAME ~m#amber.bcs~ BEGIN
 
     END
   BUT_ONLY
-END
 
+  // Amber kills romance if INT or CHA too low
+  COPY_EXISTING ~m#ambern.dlg~ ~override~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~CheckStatLT(Player1,12,CHR)~ ~False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~CheckStatLT(Player1,12,INT)~ ~False()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~CheckStatGT(Player1,11,CHR)~ ~True()~
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~CheckStatGT(Player1,11,INT)~ ~True()~
+  BUT_ONLY
+
+END
