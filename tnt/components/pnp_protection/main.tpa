@@ -61,6 +61,9 @@ END ELSE BEGIN
     c2ring02 => 2  // Ring of Preservation +2
     // c2brac01 => 1  // Gloves of the Master Thief
     c2ring04 => 1  // Sorcerian Ring
+
+    // white queen
+    wqxnec2 => 1  // stylish amulet of protection = custom AoP +1
   END
 END
 
@@ -93,6 +96,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_acbonus BEGIN
   c2ring02 => 2  // Ring of Preservation +2
   // c2brac01 => 3  // Gloves of the Master Thief
   c2ring04 => 1  // Sorcerian Ring
+
+  // white queen
+  wqxnec2 => 1  // stylish amulet of protection = custom AoP +1
 END
 
 
