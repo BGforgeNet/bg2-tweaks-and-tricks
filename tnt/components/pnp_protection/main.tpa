@@ -35,6 +35,9 @@ ACTION_IF (EDITION == 2) BEGIN
     c2ring02 => 2  // Ring of Preservation +2
     // c2brac01 => 1  // Gloves of the Master Thief
     c2ring04 => 1  // Sorcerian Ring
+
+    // CtB. I think...
+    cbringp3 => 3  // custom RoP+3
   END
 END ELSE BEGIN
   // 3E style, no items of protection can stack
@@ -64,6 +67,9 @@ END ELSE BEGIN
 
     // white queen
     wqxnec2 => 1  // stylish amulet of protection = custom AoP +1
+
+    // CtB. I think...
+    cbringp3 => 3  // custom RoP+3
   END
 END
 
@@ -99,6 +105,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_acbonus BEGIN
 
   // white queen
   wqxnec2 => 1  // stylish amulet of protection = custom AoP +1
+
+  // CtB. I think...
+  cbringp3 => 3  // custom RoP+3
 END
 
 
