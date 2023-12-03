@@ -45,7 +45,7 @@ BEGIN
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
       AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
     END ELSE BEGIN
-      AT_NOW rc ~wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
+      AT_NOW rc ~WINEDEBUG=-all wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
     END
   END
   ACTION_IF GAME_IS ~eet~ BEGIN
