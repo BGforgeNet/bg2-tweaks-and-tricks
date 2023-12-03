@@ -4,12 +4,12 @@ translation:
 golem:
   mod_dir: tnt
   platforms:
-    - tob
-    - bgee
-    - bg2ee
+    - eet
     - bgt
     - sod
-    - eet
+    - bg2ee
+    - bgee
+    - tob
   happy: true
 
 mls:
