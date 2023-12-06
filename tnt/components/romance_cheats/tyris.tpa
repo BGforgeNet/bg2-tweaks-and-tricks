@@ -37,13 +37,6 @@ THEN
 END
 >>>>>>>>
 
-COPY_EXISTING ~baldur.bcs~ ~override~
-              ~baldur25.bcs~ ~override~
-  R_B_B CASE_INSENSITIVE
-    ~.../tnt-inlined/romance_cheats/tyris_match_old.baf~
-    ~.../tnt-inlined/romance_cheats/tyris_match_new.baf~
-BUT_ONLY
-
 ACTION_FOR_EACH script IN
   aerie
   jaheira
@@ -108,5 +101,13 @@ ACTION_IF FILE_EXISTS_IN_GAME ~g#tyris.bcs~ BEGIN
         ~ False()~
 
     END
+  BUT_ONLY
+
+  // tyris match
+  COPY_EXISTING ~baldur.bcs~ ~override~
+                ~baldur25.bcs~ ~override~
+    R_B_B CASE_INSENSITIVE
+      ~.../tnt-inlined/romance_cheats/tyris_match_old.baf~
+      ~.../tnt-inlined/romance_cheats/tyris_match_new.baf~
   BUT_ONLY
 END
