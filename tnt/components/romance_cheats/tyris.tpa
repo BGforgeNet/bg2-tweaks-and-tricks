@@ -1,3 +1,49 @@
+<<<<<<<< .../tnt-inlined/romance_cheats/tyris_match_old.baf
+IF
+  Global("G#TF.TyrisMatch","GLOBAL",0)
+  Global("G#TF.CheckTyrisMatch","GLOBAL",0)
+  Gender(Player1,MALE)
+  OR(3)
+    Race(Player1,HUMAN)
+    Race(Player1,HALF_ELF)
+    Race(Player1,ELF)
+THEN
+  RESPONSE #1
+    SetGlobal("G#TF.CheckTyrisMatch","GLOBAL",1)
+    SetGlobal("G#TF.TyrisMatch","GLOBAL",1)
+END
+
+IF
+  Global("G#TF.TyrisMatch","GLOBAL",0)
+  Global("G#TF.CheckTyrisMatch","GLOBAL",0)
+THEN
+  RESPONSE #1
+    SetGlobal("G#TF.CheckTyrisMatch","GLOBAL",1)
+END
+>>>>>>>>
+<<<<<<<< .../tnt-inlined/romance_cheats/tyris_match_new.baf
+IF
+  Global("G#TF.CheckTyrisMatch","GLOBAL",0)
+THEN
+  RESPONSE #1
+    SetGlobal("G#TF.CheckTyrisMatch","GLOBAL",1)
+END
+
+IF
+  Global("G#TF.TyrisMatch","GLOBAL",0)
+THEN
+  RESPONSE #1
+    SetGlobal("G#TF.TyrisMatch","GLOBAL",1)
+END
+>>>>>>>>
+
+COPY_EXISTING ~baldur.bcs~ ~override~
+              ~baldur25.bcs~ ~override~
+  R_B_B CASE_INSENSITIVE
+    ~.../tnt-inlined/romance_cheats/tyris_match_old.baf~
+    ~.../tnt-inlined/romance_cheats/tyris_match_new.baf~
+BUT_ONLY
+
 ACTION_FOR_EACH script IN
   aerie
   jaheira
