@@ -82,13 +82,13 @@ ACTION_DEFINE_ARRAY bg2_haerdalis_cre BEGIN
 END
 
 ACTION_DEFINE_ARRAY bg1_imoen_cre BEGIN
-  imoen
   imoen1
   imoen2
+  imoen4
+  imoen6
 END
 
 ACTION_DEFINE_ARRAY bg2_imoen_cre BEGIN
-  imoen6
   imoen10
   imoen15
   imoen211
