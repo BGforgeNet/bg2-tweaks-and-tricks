@@ -1,6 +1,6 @@
 # Changelog
 
-- [Version 8.30](#version-830) (WIP)
+- [Version 8.30](#version-830)
 - [Version 8.29](#version-829)
 - [Version 8.28](#version-828)
 - [Version 8.27](#version-827)
@@ -41,7 +41,18 @@
 
 ### Version 8.30
 
-New componnent: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
+- New component: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
+- Even with Extended Soundsets, BG1 Imoen will not [mention torture](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/85).
+- Mod romance cheats
+  - Tyris Flare is less picky now.
+  - Amber won't kill the romance because of PC's low INT/CHA.
+  - Shar-Teel won't leave party is PC gets belladonna for Delainy.
+- PnP protection items: added RoP+3 from CtB, Stylish AoP+1 from White Queen.
+- Map notes:
+  - East sewers note in Undercellar.
+  - Fixed Laerta and Louise's house.
+  - Fixed tavern note in SW BG.
+  - Marked tavern in east BG.
 
 ### Version 8.29
 
