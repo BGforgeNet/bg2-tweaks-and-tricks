@@ -58,6 +58,14 @@ ACTION_IF (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
   COPY ~%wav_dir%/g_ttedw1.wav~ ~override~ //@40 /* Your end is near at hand, wail if you must!! */
 END
 
+// BG1 Imoen: silence "Just like old times. Well, except for the torture and all."
+// Doesn't suit BG1 part.
+ACTION_PHP_EACH bg1_imoen_cre AS npc => cre BEGIN
+  COPY_EXISTING ~%cre%.cre~ ~override~
+    WRITE_LONG SELECT_RARE2 "-1"
+  BUT_ONLY
+END
+
 //Jaheira
 ACTION_IF (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
   ACTION_FOR_EACH game IN bg1 bg2 BEGIN
