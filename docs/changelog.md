@@ -43,10 +43,10 @@
 
 - New component: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
 - Even with Extended Soundsets, BG1 Imoen will not [mention torture](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/85).
-- Mod romance cheats
+- Mod romance cheats:
   - Tyris Flare is less picky now.
-  - Amber won't kill the romance because of PC's low INT/CHA.
-  - Shar-Teel won't leave party is PC gets belladonna for Delainy.
+  - Amber won't kill the romance midway because of PC's low INT/CHA.
+  - Shar-Teel won't leave party if PC gets belladonna for Delainy.
 - PnP protection items: added RoP+3 from CtB, Stylish AoP+1 from White Queen.
 - Map notes:
   - East sewers note in Undercellar.
