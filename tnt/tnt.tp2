@@ -297,6 +297,8 @@ INCLUDE ~%components%/distinct_items/main.tpa~
 
 BEGIN @208 /* Working protection from poison */
 GROUP @200 /* Items */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127 /* Only non-EE engines */
 OUTER_SPRINT comp_name ~poison_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%components%/%comp_name%/main.tpa~
 

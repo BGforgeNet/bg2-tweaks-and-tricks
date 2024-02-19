@@ -100,6 +100,8 @@ Currently affects:
 - Periart of Proof against Poison
 - Protection from Poison scrolls
 
+_This fix is already included in EE games._
+
 ### Distinct quest items
 
 Some quests require annoying search for items that don't stand out in any way. Example: Perdue's sword looks just like any other short sword.
