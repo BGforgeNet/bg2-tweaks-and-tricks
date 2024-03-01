@@ -17,7 +17,12 @@ END
 
 // temp minion for DisplayString centered on actual trap
 OUTER_SPRINT traps_minion_notification ~g_traps2~
-LAF CREATE_MINION STR_VAR cre = ~%traps_minion_notification%~ END
+LAF CREATE_MINION
+  STR_VAR
+    cre = ~%traps_minion_notification%~
+    script = ~%traps_minion_notification%~
+END
+COMPILE ~%comp_dir%/baf/%traps_minion_notification%.baf~
 
 INCLUDE ~%comp_dir%/traps_tra.tpa~
 INCLUDE ~%comp_dir%/subcomponents.tpa~
