@@ -39,6 +39,11 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.31
+
+- Protection from Poison component is now limited to Classic games, as EEs already include this fix.
+- On EEs, Easy Traps should no longer occasionally prevent the PC from looting the portal key in BG2 starting area.
+
 ### Version 8.30
 
 - New component: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
