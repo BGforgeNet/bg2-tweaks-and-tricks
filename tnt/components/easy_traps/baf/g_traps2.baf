@@ -2,6 +2,6 @@ IF
     ActionListEmpty()
     Delay(5)
 THEN
-    RESPONSE #100        
+    RESPONSE #100
        DestroySelf()
 END
