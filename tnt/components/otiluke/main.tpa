@@ -25,6 +25,7 @@ ACTION_PHP_EACH spells AS i => spell BEGIN
     END
     LPF ADD_SPELL_EFFECT
       INT_VAR
+        insert_point = 0
         opcode = OPCODE_visual_range // to disable using wands and stuff
         parameter1 = 0 // blind
         parameter2 = 1 // flat mod
