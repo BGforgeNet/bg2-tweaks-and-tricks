@@ -1,5 +1,7 @@
 # Changelog
 
+- [Version 8.32](#version-832)
+- [Version 8.31](#version-831)
 - [Version 8.30](#version-830)
 - [Version 8.29](#version-829)
 - [Version 8.28](#version-828)
@@ -38,6 +40,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.32
+
+- [Fix](https://forums.bgforge.net/viewtopic.php?t=432) enemies being able to case from inside of Sensible Otiluke's Resilient Sphere.
 
 ### Version 8.31
 
