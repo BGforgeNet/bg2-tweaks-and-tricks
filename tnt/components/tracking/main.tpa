@@ -1,0 +1,65 @@
+// Not sure if files are properly reindexed after patch, so doing separate loops.
+
+// Could delete these effects and limit uses per day, but is it worth it? Keeping unlimited for now.
+// COPY_EXISTING ~%RANGER_TRACKING%.spl~ ~override~
+//     LPF DELETE_SPELL_EFFECT
+//         INT_VAR opcode_to_delete = OPCODE_remove_spell
+//     END
+//     LPF DELETE_SPELL_EFFECT
+//         INT_VAR opcode_to_delete = OPCODE_give_ability
+//     END
+// BUT_ONLY
+
+// Add headers up to max level (vanilla)
+OUTER_SET MAX_LEVEL = 34
+COPY_EXISTING ~%RANGER_TRACKING%.spl~ ~override~
+    FOR (i=1; i<MAX_LEVEL; ++i) BEGIN   // start from 1 because we already have 1 header
+        LPF ADD_SPELL_HEADER INT_VAR copy_header = 1 END
+    END
+BUT_ONLY
+
+// Set range on headers and effects, not sure which one is actually in use. Also set level requirements.
+OUTER_SET INITIAL_RANGE = 104
+OUTER_SET RANGE_LEVEL_INCREASE = 56
+COPY_EXISTING ~%RANGER_TRACKING%.spl~ ~override~
+    FOR (i=0; i<MAX_LEVEL; ++i) BEGIN   // start from 0 because we modify all headers
+        LPF ALTER_SPELL_HEADER
+            INT_VAR
+                header = (i+1)
+                range = INITIAL_RANGE + i * RANGE_LEVEL_INCREASE
+                min_level = (i+1)
+        END
+    END
+
+    FOR (i=0; i<MAX_LEVEL; ++i) BEGIN
+        LPF ALTER_SPELL_EFFECT
+            INT_VAR
+                header = (i+1)
+                match_opcode = OPCODE_ranger_tracking_ability   // just a precauition
+                parameter1 = INITIAL_RANGE + i * RANGE_LEVEL_INCREASE
+        END
+    END
+BUT_ONLY
+
+// Add to kit tables from level 1
+ACTION_FOR_EACH i IN 1 2 3 4 BEGIN
+    APPEND ~clabrn0%i%.2da~
+        ~G_TRACKING    GA_SPCL922        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****~
+    // just in case
+    COPY_EXISTING ~clabrn0%i%.2da~ ~override~
+        PRETTY_PRINT_2DA
+    BUT_ONLY
+END
+
+// Disable HLA selection. Deletion is too complicated.
+COPY_EXISTING ~lura0.2da~ ~override~
+    READ_2DA_ENTRIES_NOW rows 10
+    FOR (i=0; i<rows; ++i) BEGIN
+        READ_2DA_ENTRY_FORMER rows i 1 spell
+        PATCH_IF ~%spell%~ STR_EQ ~GA_SPCL922~ BEGIN
+            SET_2DA_ENTRY_LATER newrows i 4 99 // min level
+        END
+    END
+    SET_2DA_ENTRIES_NOW newrows 10
+    PRETTY_PRINT_2DA
+BUT_ONLY

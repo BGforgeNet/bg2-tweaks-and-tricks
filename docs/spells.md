@@ -14,6 +14,7 @@ Various components to change spells and abilities, mostly to "make sense".
 - [Uncheese Project Image](#uncheese-project-image)
 - [Sensible Blade spins](#sensible-blade-spins)
 - [PnP Protection from Evil](#pnp-protection-from-evil)
+- [Tracking!](#tracking)
 
 ### Spider form ignores web
 
@@ -100,3 +101,17 @@ The inspiration for this component is aTweaks [PnP Fey creatures](http://readme.
 ### Non-hostile Grease
 
 Both [Web](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Web) and [Stinking Cloud](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Stinking_Cloud) are safe to use around the commoners, since they are considered non-hostile. This component makes [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease) safe too.
+
+### Tracking!
+
+There's no other way to put it, Tracking is the most pathetic HLA. Likely even the most pathetic spell. Waiting for epic levels to get it just adds to the insult. For reference, in AD&D any character can get proficiency in tracking from level 1, Rangers are just better at it.
+
+This component changes Tracking into an innate Ranger ability:
+
+- Available from level 1.
+- Range increases with level. Initial range is slightly higher than visual range.
+- Unlimited uses per day (same as vanilla).
+
+Actual mechanics of the spell are not changed, colored screen arrows. Note that arrows are only shown for creatures outside of viewport. Enemies on the screen, even covered in fog of war, will not get arrows. (That also means that higher screen resolution will prevent more arrows from appearing.)
+
+The ability is still at best situationally useful. But at least not as pathetic as before.
