@@ -6,16 +6,17 @@ NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
   CLEAR_EVERYTHING
-  OUTER_SPRINT lib_dir ~%MOD_FOLDER%/lib~
+  OUTER_SPRINT lib_dir ~tnt/lib~
   INCLUDE ~%lib_dir%/init.tpa~
 END
 
-LANGUAGE ~English~ ~english~ ~%MOD_FOLDER%/tra_ee/english/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Polish~ ~polish~ ~%MOD_FOLDER%/tra_ee/polish/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~%MOD_FOLDER%/tra_ee/portuguese/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Russian~ ~russian~ ~%MOD_FOLDER%/tra_ee/russian/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Spanish~ ~spanish~ ~%MOD_FOLDER%/tra_ee/spanish/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Swedish~ ~swedish~ ~%MOD_FOLDER%/tra_ee/swedish/setup-%WEIDU_OS%.tra~
+// Do not change to %MOD_FOLDER%, until relevant weidu bugs are confirmed to be fixed.
+LANGUAGE ~English~ ~english~ ~tnt/tra_ee/english/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Polish~ ~polish~ ~tnt/tra_ee/polish/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra_ee/portuguese/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Russian~ ~russian~ ~tnt/tra_ee/russian/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Spanish~ ~spanish~ ~tnt/tra_ee/spanish/setup-%WEIDU_OS%.tra~
+LANGUAGE ~Swedish~ ~swedish~ ~tnt/tra_ee/swedish/setup-%WEIDU_OS%.tra~
 
 
 // FAMILIARS
