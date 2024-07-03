@@ -1,5 +1,9 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
+@1 = ~Tracking~
+@2 = ~Tracking
+With an intimate knowledge of his surroundings and the creatures that live within them, a ranger can use the Tracking ability to give himself a general idea of what creatures are in an area and which direction they are. Red arrows at the edge of the screen will point in the general direction of the creatures in the area.~
+
 // BG1
 @100 = ~Candlekeep is a secluded and fortified library fortress known for its vast collection of books and scrolls. Monks, scholars, and guards move about, maintaining the peace and knowledge within. You know every nook and cranny here.~
 @101 = ~The Friendly Arm Inn is a fortified inn serving as a safe haven for travelers. Adventurers and guards are frequently seen here, resting or preparing for their next journey.~
@@ -25,7 +29,7 @@
 @121 = ~Wyrm's Crossing is a busy bridge leading into Baldur's Gate. You notice some signs of ankheg presense.~
 @122 = ~Werewolf Island is a dangerous place, shrouded in mystery and home to lycanthropes. You find signs of wolves, werewolves, sirines.~
 @123 = ~Ice Island is a frigid, remote location fraught with peril. You find signs of polar bears.~
-
+@124 = ~Lion's Way is a scenic path connecting Candlekeep to the wider world, marked by rolling hills and scattered trees. You find signs of wolves, bears, gibberlings.~
 
 // Just testing BG2 part
 @200 = ~The North Forest is a wild and untamed woodland, known for its thick canopy and treacherous paths. The forest floor is littered with fallen leaves and the occasional footprint of those brave enough to traverse its depths. You find signs of vampires lurking in the shadows, trolls prowling the underbrush, and yuan-ti slithering through the foliage. Additionally, there is evidence of a group of adventurers who have recently passed through, their tracks indicating a tense and cautious journey. The air is heavy with the scent of pine and the sounds of distant wildlife, warning all who enter to tread carefully.~
