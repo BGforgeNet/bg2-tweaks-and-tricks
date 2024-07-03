@@ -11,7 +11,7 @@
 // BUT_ONLY
 
 // BG1/EE miss the spell and its bam
-ACTION_IF GAME_IS ~bgee sod~ BEGIN
+ACTION_IF NOT GAME_INCLUDES ~bg2~ BEGIN
     COPY ~%comp_dir%/spcl922.spl~ ~override~
         SAY NAME1 @1
         SAY DESC @2
