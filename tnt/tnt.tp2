@@ -403,6 +403,7 @@ INCLUDE ~%components%/%comp_name%/main.tpa~
 BEGIN @822
 GROUP @800
 OUTER_SPRINT comp_name ~tracking~
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 /* END SPELL TWEAKS */
 
