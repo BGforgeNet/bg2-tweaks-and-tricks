@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-15-15:12+0000\n"
+"POT-Creation-Date: 2024-07-03-13:58+0000\n"
 "PO-Revision-Date: 2023-09-04 00:55+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1807,6 +1807,10 @@ msgstr ""
 msgid "Non-hostile Grease"
 msgstr ""
 
+#: setup.tra:822
+msgid "Tracking!"
+msgstr ""
+
 #: setup.tra:900
 msgid "Familiars"
 msgstr "Фамильяры"
@@ -2438,6 +2442,161 @@ msgstr "дробящее"
 #: throwing_damage.tra:3
 msgid "slashing"
 msgstr "рубящее"
+
+#: tracking.tra:100
+msgid ""
+"Candlekeep is a secluded and fortified library fortress known for its vast "
+"collection of books and scrolls. Monks, scholars, and guards move about, "
+"maintaining the peace and knowledge within. You know every nook and cranny "
+"here."
+msgstr ""
+
+#: tracking.tra:101
+msgid ""
+"The Friendly Arm Inn is a fortified inn serving as a safe haven for "
+"travelers. Adventurers and guards are frequently seen here, resting or "
+"preparing for their next journey."
+msgstr ""
+
+#: tracking.tra:102
+msgid ""
+"Beregost is a bustling town with shops, inns, and a temple. Townsfolk, "
+"guards, and traders fill the streets, going about their daily lives."
+msgstr ""
+
+#: tracking.tra:103
+msgid ""
+"Nashkel is a small town troubled by issues in the nearby mines. Townsfolk, "
+"militia, and merchants can be seen dealing with the recent troubles."
+msgstr ""
+
+#: tracking.tra:105
+msgid ""
+"The Nashkel Mines are a series of tunnels plagued by monsters and mysterious"
+" occurrences. You find signs of kobolds, spiders, and wolves."
+msgstr ""
+
+#: tracking.tra:106
+msgid ""
+"The Gibberling Mountains are rugged and densely forested, with steep cliffs "
+"and winding paths. You find signs of gibberlings, xvarts, and wolves in the "
+"area."
+msgstr ""
+
+#: tracking.tra:107
+msgid ""
+"Gullykin is a small village of halflings. You find signs of kobolds, wolves,"
+" and some undead nearby."
+msgstr ""
+
+#: tracking.tra:108
+msgid ""
+"The Ulcaster Ruins are the remnants of an ancient school of magic. You find "
+"signs of undead, wolves, and wandering spirits in the area."
+msgstr ""
+
+#: tracking.tra:109
+msgid ""
+"Firewine Bridge is an ancient, crumbling structure spanning a deep chasm. "
+"You find signs of undead, kobolds, ogres, and adventurers who have met their"
+" fate here."
+msgstr ""
+
+#: tracking.tra:110
+msgid ""
+"Larswood is a dense forest known for bandit activity. You find signs of "
+"bandits, wild animals, and hidden traps among the trees."
+msgstr ""
+
+#: tracking.tra:111
+msgid ""
+"Peldvale is a forested area with a reputation for being a bandit hideout. "
+"You find signs of bandits, gnolls, and other forest creatures."
+msgstr ""
+
+#: tracking.tra:112
+msgid ""
+"The Bandit Camp is a hidden encampment teeming with outlaws. You find heavy "
+"signs of bandit presense."
+msgstr ""
+
+#: tracking.tra:113
+msgid ""
+"Cloakwood Forest is a dark, dense forest filled with danger. You find signs "
+"of ettercaps, spiders, and druids who call this forest home."
+msgstr ""
+
+#: tracking.tra:114
+msgid ""
+"The Cloakwood Mines are rich in minerals but fraught with danger. You find "
+"signs of wyverns, spiders, and slaves forced to work the mines."
+msgstr ""
+
+#: tracking.tra:115
+msgid ""
+"High Hedge is a secluded estate of a powerful mage. You find signs of "
+"gnolls, spiders, and undead."
+msgstr ""
+
+#: tracking.tra:116
+msgid "You find signs of basilisks, bears, undead."
+msgstr ""
+
+#: tracking.tra:117
+msgid ""
+"The Carnival is a traveling fair filled with attractions and danger. You "
+"find signs of kobolds and ogres nearby."
+msgstr ""
+
+#: tracking.tra:118
+msgid ""
+"The Gnoll Stronghold is a fortified lair of gnolls. You find signs of heavy "
+"gnoll presence, and some xvart footprints."
+msgstr ""
+
+#: tracking.tra:119
+msgid ""
+"Dryad Falls is a picturesque waterfall area inhabited by dryads. You find "
+"signs of dryads, wolves, and occasional adventurers seeking the waterfall's "
+"beauty."
+msgstr ""
+
+#: tracking.tra:120
+msgid ""
+"Fisherman's Lake is a serene body of water surrounded by wilderness. You "
+"find signs of gnolls, hoblgoblins, and some large humanoids."
+msgstr ""
+
+#: tracking.tra:121
+msgid ""
+"Wyrm's Crossing is a busy bridge leading into Baldur's Gate. You notice some"
+" signs of ankheg presense."
+msgstr ""
+
+#: tracking.tra:122
+msgid ""
+"Werewolf Island is a dangerous place, shrouded in mystery and home to "
+"lycanthropes. You find signs of wolves, werewolves, sirines."
+msgstr ""
+
+#: tracking.tra:123
+msgid ""
+"Ice Island is a frigid, remote location fraught with peril. You find signs "
+"of polar bears."
+msgstr ""
+
+#: tracking.tra:200
+msgid ""
+"The North Forest is a wild and untamed woodland, known for its thick canopy "
+"and treacherous paths. The forest floor is littered with fallen leaves and "
+"the occasional footprint of those brave enough to traverse its depths. You "
+"find signs of vampires lurking in the shadows, trolls prowling the "
+"underbrush, and yuan-ti slithering through the foliage. Additionally, there "
+"is evidence of a group of adventurers who have recently passed through, "
+"their tracks indicating a tense and cautious journey. The air is heavy with "
+"the scent of pine and the sounds of distant wildlife, warning all who enter "
+"to tread carefully."
+msgstr ""
 
 #: true_true_sight.tra:1
 msgid "each round"
