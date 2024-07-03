@@ -114,4 +114,6 @@ This component changes Tracking into an innate Ranger ability:
 
 Actual mechanics of the spell are not changed, colored screen arrows. Note that arrows are only shown for creatures outside of viewport. Enemies on the screen, even covered in fog of war, will not get arrows. (That also means that higher screen resolution will prevent more arrows from appearing.)
 
-The ability is still at best situationally useful. But at least not as pathetic as before.
+The ability is still at best situationally useful, but at least not a complete waste of slots as before.
+
+In addition, the ability will provide tips about possible monsters in the area. This is work in progress - you can suggest additions and updates.

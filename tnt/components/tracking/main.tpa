@@ -63,3 +63,61 @@ COPY_EXISTING ~lura0.2da~ ~override~
     SET_2DA_ENTRIES_NOW newrows 10
     PRETTY_PRINT_2DA
 BUT_ONLY
+
+
+/*
+lion's way Black Bears, Diseased Gibberlings, Wolves
+high hedge skeletons, gnols, spiders
+*/
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY area_desc_bg1 BEGIN
+    Candlekeep => 100
+    FriendlyArmInn => 101
+    Beregost => 102
+    Nashkel => 103
+    NashkelMines => 105
+    GibberlingMountains => 106
+    Gullykin => 107
+    Ulcaster => 108
+    FirewineBridge => 109
+    Larswood => 110
+    Peldvale => 111
+    BanditCamp => 112
+    CloakwoodLodge => 113
+    CloakwoodMines => 114
+    HighHedge => 115
+    MutaminsGarden => 116
+    NashkelCarnival => 117
+    GnollStronghold => 118
+    DryadFalls => 119
+    FishermansLake => 120
+    WyrmsCrossing => 121
+    IsleofBalduran => 122
+    IceIsland => 123
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY area_desc_bg2 BEGIN
+    ar1800 => 200   // North Forest
+END
+
+ACTION_IF GAME_INCLUDES ~bg1~ BEGIN
+    ACTION_PHP_EACH area_desc_bg1 AS area => desc BEGIN
+        OUTER_PATCH dummy BEGIN
+            ref = RESOLVE_STR_REF (( AT desc ))
+        END
+        OUTER_SPRINT areacode EVAL ~%%area%%~
+        APPEND ~tracking.2da~ ~%areacode% O_%ref%~
+    END
+END
+ACTION_IF GAME_INCLUDES ~bg2~ BEGIN
+    ACTION_PHP_EACH area_desc_bg2 AS area => desc BEGIN
+        OUTER_PATCH dummy BEGIN
+            ref = RESOLVE_STR_REF (( AT desc ))
+        END
+        APPEND ~tracking.2da~ ~%area% O_%ref%~ UNLESS ~%area%~
+    END
+END
+
+COPY_EXISTING ~tracking.2da~ ~override~
+    PRETTY_PRINT_2DA
+BUT_ONLY

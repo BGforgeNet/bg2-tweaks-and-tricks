@@ -400,8 +400,9 @@ OUTER_SPRINT comp_name ~non_hostile_grease~
 INCLUDE ~%components%/%comp_name%/main.tpa~
 
 BEGIN @822
+GROUP @800
 OUTER_SPRINT comp_name ~tracking~
-INCLUDE ~%components%/%comp_name%/main.tpa~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 /* END SPELL TWEAKS */
 
 
