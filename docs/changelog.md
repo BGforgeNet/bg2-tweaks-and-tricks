@@ -44,11 +44,11 @@
 
 ### Version 8.33
 
-- New component: Tracking!
+New component: [Tracking!](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/spells.md#tracking)
 
 ### Version 8.32
 
-- [Fix](https://forums.bgforge.net/viewtopic.php?t=432) enemies being able to case from inside of Sensible Otiluke's Resilient Sphere.
+[Fix](https://forums.bgforge.net/viewtopic.php?t=432) enemies being able to case from inside of Sensible Otiluke's Resilient Sphere.
 
 ### Version 8.31
 
