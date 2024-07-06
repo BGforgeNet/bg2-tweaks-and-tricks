@@ -1,3 +1,5 @@
+/** @tra improved_equalizer.tra */
+
 COPY_EXISTING ~sw1h54.itm~ ~override~
   SAY IDENTIFIED_DESC @1
   WRITE_LONG ITM_enchantment 4

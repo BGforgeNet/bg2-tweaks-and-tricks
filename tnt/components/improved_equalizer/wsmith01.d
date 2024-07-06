@@ -1,3 +1,5 @@
+/** @tra improved_equalizer.tra */
+
 // The transition list is shared between items with common price.
 // So we need to disable original transition and make new one.
 
