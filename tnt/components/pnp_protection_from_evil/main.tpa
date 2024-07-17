@@ -84,7 +84,7 @@ COPY_EXISTING ~%WIZARD_PROTECTION_FROM_EVIL%.spl~ override
                 resist_dispel = DISPEL | BYPASS_MR
         END
     END
-    SAY SPL_unidentified_description @4
+    SAY SPL_description @4
 BUT_ONLY
 
 // cleric: 3 rounds/level
@@ -107,7 +107,7 @@ COPY_EXISTING ~%CLERIC_PROTECT_FROM_EVIL%.spl~ override
                 resist_dispel = DISPEL | BYPASS_MR
         END
     END
-    SAY SPL_unidentified_description @5
+    SAY SPL_description @5
 BUT_ONLY
 
 // cleric - 10' radius: 1 turn/level
@@ -128,7 +128,7 @@ COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
                 resist_dispel = DISPEL | BYPASS_MR
         END
     END
-    SAY SPL_unidentified_description @6
+    SAY SPL_description @6
 BUT_ONLY
 
 INCLUDE ~%comp_dir%/paladin.tpa~

@@ -393,7 +393,8 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/ma
 BEGIN @820
 GROUP @800
 OUTER_SPRINT comp_name ~pnp_protection_from_evil~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 
 BEGIN @821
 GROUP @800
