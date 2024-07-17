@@ -55,7 +55,7 @@ CREATE SPL ~g_palpf2~
 // Add to kit tables from level 1
 ACTION_FOR_EACH i IN 1 2 3 4 BEGIN
     APPEND ~clabrn0%i%.2da~
-        ~g_pala_aura    g_palpf2        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****~
+        ~g_pala_aura    AP_g_palpf2        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****~
     COPY_EXISTING ~clabpa0%i%.2da~ ~override~
         REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GA_SPCL213~ ~*~
         PRETTY_PRINT_2DA
