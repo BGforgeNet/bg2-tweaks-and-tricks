@@ -1,0 +1,63 @@
+/* paladin: permanent protection aura https://adnd2e.fandom.com/wiki/Paladin#Protection_from_Evil */
+
+// sectype
+ADD_SECTYPE g_palpfe ~-1~
+OUTER_SET sectype = g_palpfe  // necessary because var get overriden by ADD_PROJECTILE later
+
+// THAC0 penalty effect
+CREATE EFF VERSION "V2.0" ~g_palpfe~
+    WRITE_LONG EFF2_target TARGET_FX_preset
+    WRITE_LONG EFF2_opcode OPCODE_to_hit_mod
+    WRITE_SHORT EFF2_timing TIMING_duration
+    WRITE_LONG EFF2_parameter1 1  // penalty
+    WRITE_LONG EFF2_parameter2 MOD_TYPE_cumulative
+    WRITE_LONG EFF2_duration 1  // minimal duration
+    WRITE_LONG EFF2_sectype sectype
+
+// projectile
+ADD_PROJECTILE ~%comp_dir%/g_palpfe.pro~  // inareasm
+OUTER_SET pro = g_palpfe
+
+// THAC0 penalty spell
+CREATE SPL ~g_palpfe~
+    // remove self if already on creature
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_remove_secondary_type
+            parameter2 = sectype
+            timing = TIMING_instant
+            target = TARGET_FX_preset
+    END
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_use_eff_file
+            target = TARGET_FX_preset
+            parameter1 = IDS_align
+            parameter2 = 3  // MASK_EVIL
+            timing = TIMING_instant
+            dispel_bypass = BYPASS_MR | BYPASS_DEFLECTION
+        STR_VAR
+            resource = ~g_palpfe~
+    END
+    WRITE_SHORT SPL_HEAD_projectile pro
+
+// shell spell
+CREATE SPL ~g_palpf2~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_cast_spell_at_creature
+            target = TARGET_FX_self
+            parameter2 = CASTING_TYPE_instant
+        STR_VAR
+            resource = ~g_palpfe~
+    END
+
+// Add to kit tables from level 1
+ACTION_FOR_EACH i IN 1 2 3 4 BEGIN
+    APPEND ~clabrn0%i%.2da~
+        ~g_pala_aura    g_palpf2        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****   ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****        ****~
+    COPY_EXISTING ~clabpa0%i%.2da~ ~override~
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GA_SPCL213~ ~*~
+        PRETTY_PRINT_2DA
+    BUT_ONLY
+END
