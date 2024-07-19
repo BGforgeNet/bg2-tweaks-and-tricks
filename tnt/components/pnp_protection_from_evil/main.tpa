@@ -64,7 +64,7 @@ BEGIN
 
 END
 
-ADD_SECTYPE g_pfe ~-1~
+ADD_SECTYPE g_pfe @7
 
 // wizard: 2 rounds/level
 COPY_EXISTING ~%WIZARD_PROTECTION_FROM_EVIL%.spl~ override
