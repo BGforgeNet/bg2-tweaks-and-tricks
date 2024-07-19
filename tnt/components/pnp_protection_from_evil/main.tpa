@@ -159,7 +159,6 @@ CREATE SPL ~g_pfedis~
             timing = TIMING_instant
             target = TARGET_FX_preset
             power = 0
-            ran
             resist_dispel = BYPASS_MR | BYPASS_DEFLECTION
     END
     LPF ALTER_SPELL_HEADER INT_VAR range = 6 END    // like Fire Shields
@@ -174,8 +173,8 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~
                 opcode = OPCODE_cast_spell_on_condition
                 target = TARGET_FX_self
                 timing = TIMING_permanent
-                parameter1 = EFF2_parameter1 1      // target=LastHitter
-                parameter2 =  EFF2_parameter2 0     // HitBy([Anyone])
+                parameter1 = EFF2_parameter1 1  // target=LastHitter
+                parameter2 = EFF2_parameter2 0  // HitBy([Anyone])
                 resist_dispel = BYPASS_MR | BYPASS_DEFLECTION
             STR_VAR
                 resource = ~g_pfedis~
