@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-03-14:26+0000\n"
+"POT-Creation-Date: 2024-07-19-15:58+0000\n"
 "PO-Revision-Date: 2023-09-04 00:55+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: none\n"
@@ -1154,6 +1154,10 @@ msgid ""
 "- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.\n"
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
+msgstr ""
+
+#: pnp_protection_from_evil.tra:7
+msgid "Protection From Evil Dispelled"
 msgstr ""
 
 #: potions_no_stack.tra:1
