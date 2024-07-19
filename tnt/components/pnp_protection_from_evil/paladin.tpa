@@ -1,33 +1,46 @@
 /* paladin: permanent protection aura https://adnd2e.fandom.com/wiki/Paladin#Protection_from_Evil */
 
-// sectype
-ADD_SECTYPE g_palpfe ~-1~
-OUTER_SET sectype = g_palpfe  // necessary because var get overriden by ADD_PROJECTILE later
+INCLUDE ~%lib_dir%/tobex.tpa~
+OUTER_SET stacking_id = 4
 
 // THAC0 penalty effect
 CREATE EFF VERSION "V2.0" ~g_palpfe~
-    WRITE_LONG EFF2_target TARGET_FX_preset
     WRITE_LONG EFF2_opcode OPCODE_to_hit_mod
+    WRITE_LONG EFF2_target TARGET_FX_preset
     WRITE_SHORT EFF2_timing TIMING_duration
     WRITE_LONG EFF2_parameter1 1  // penalty
     WRITE_LONG EFF2_parameter2 MOD_TYPE_cumulative
-    WRITE_LONG EFF2_duration 1  // minimal duration
-    WRITE_LONG EFF2_sectype sectype
+    WRITE_LONG EFF2_duration 3  // small duration
+    // non-EE: prevent stacking
+    WRITE_LONG EFF2_stacking_id_tobex (effect_stacking_id_base + stacking_id)
+
+// Repeating effect, casts "aura" spell
+CREATE EFF VERSION "V2.0" ~g_palpf2~
+    WRITE_LONG EFF2_opcode OPCODE_cast_spell_at_creature
+    WRITE_LONG EFF2_target TARGET_FX_self
+    WRITE_SHORT EFF2_timing TIMING_instant
+    WRITE_ASCIIT EFF2_resource ~g_palpfe~
 
 // projectile
 ADD_PROJECTILE ~%comp_dir%/g_palpfe.pro~  // inareasm
 OUTER_SET pro = g_palpfe
 
-// THAC0 penalty spell
+// aura spell: THAC0 penalty
 CREATE SPL ~g_palpfe~
-    // remove self if already on creature
-    LPF ADD_SPELL_EFFECT
-        INT_VAR
-            opcode = OPCODE_remove_secondary_type
-            parameter2 = sectype
-            timing = TIMING_instant
-            target = TARGET_FX_preset
+    // EE: remove self if present
+    PATCH_IF ENGINE_IS ~bgee bg2ee pstee iwdee eet~ BEGIN
+        LPF ADD_SPELL_EFFECT
+            INT_VAR
+                opcode = OPCODE_remove_effects_by_resource
+                target = TARGET_FX_preset
+                parameter2 = 2  // only timed effects
+                timing = TIMING_instant
+                dispel_bypass = BYPASS_MR | BYPASS_DEFLECTION
+            STR_VAR
+                resource = ~g_palpfe~
+        END
     END
+
     LPF ADD_SPELL_EFFECT
         INT_VAR
             opcode = OPCODE_use_eff_file
@@ -41,15 +54,16 @@ CREATE SPL ~g_palpfe~
     END
     WRITE_SHORT SPL_HEAD_projectile pro
 
-// shell spell
+// CLAB spell
 CREATE SPL ~g_palpf2~
     LPF ADD_SPELL_EFFECT
         INT_VAR
-            opcode = OPCODE_cast_spell_at_creature
+            opcode = OPCODE_apply_repeating_eff
             target = TARGET_FX_self
-            parameter2 = CASTING_TYPE_instant
+            parameter1 = 1  // amount 1 - just need non-zero
+            // parameter2 = 0: apply each second
         STR_VAR
-            resource = ~g_palpfe~
+            resource = ~g_palpf2~
     END
 
 // Add to kit tables from level 1
