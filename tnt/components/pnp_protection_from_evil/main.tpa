@@ -64,8 +64,11 @@ BEGIN
 
 END
 
+ADD_SECTYPE g_pfe ~-1~
+
 // wizard: 2 rounds/level
 COPY_EXISTING ~%WIZARD_PROTECTION_FROM_EVIL%.spl~ override
+    WRITE_BYTE SPL_sectype g_pfe    // change for auto removal
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
         header = int + 1
@@ -89,6 +92,7 @@ BUT_ONLY
 
 // cleric: 3 rounds/level
 COPY_EXISTING ~%CLERIC_PROTECT_FROM_EVIL%.spl~ override
+    WRITE_BYTE SPL_sectype g_pfe    // change for auto removal
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
         header = int + 1
@@ -112,6 +116,7 @@ BUT_ONLY
 
 // cleric - 10' radius: 1 turn/level
 COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
+    WRITE_BYTE SPL_sectype g_pfe    // change for auto removal
     FOR (header=1; header<=13; ++header) BEGIN
         duration = (header + 6) * 60
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
@@ -129,6 +134,53 @@ COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
         END
     END
     SAY SPL_description @6
+BUT_ONLY
+
+// Let Breach dispel PfE again
+COPY_EXISTING ~%WIZARD_BREACH%.spl~ ~override~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_remove_secondary_type
+            parameter2 = g_pfe
+            timing = TIMING_instant
+            target = TARGET_FX_preset
+            power = 5
+            level = 9
+            resist_dispel = BYPASS_MR | BYPASS_DEFLECTION
+    END
+BUT_ONLY
+
+// dispel PfE on hit
+CREATE SPL ~g_pfedis~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+            opcode = OPCODE_remove_secondary_type
+            parameter2 = g_pfe
+            timing = TIMING_instant
+            target = TARGET_FX_preset
+            power = 0
+            ran
+            resist_dispel = BYPASS_MR | BYPASS_DEFLECTION
+    END
+    LPF ALTER_SPELL_HEADER INT_VAR range = 6 END    // like Fire Shields
+
+
+// Any summmoned
+COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~
+    READ_SHORT CRE_gender gender
+    PATCH_IF (gender == GENDER_summoned) OR (gender == GENDER_summoned_demon) BEGIN
+        LPF ADD_CRE_EFFECT
+            INT_VAR
+                opcode = OPCODE_cast_spell_on_condition
+                target = TARGET_FX_self
+                timing = TIMING_permanent
+                parameter1 = EFF2_parameter1 1      // target=LastHitter
+                parameter2 =  EFF2_parameter2 0     // HitBy([Anyone])
+                resist_dispel = BYPASS_MR | BYPASS_DEFLECTION
+            STR_VAR
+                resource = ~g_pfedis~
+        END
+    END
 BUT_ONLY
 
 INCLUDE ~%comp_dir%/paladin.tpa~
