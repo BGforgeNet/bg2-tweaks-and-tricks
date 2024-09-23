@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2022-09-25 20:30+0000\n"
+"PO-Revision-Date: 2024-09-23 06:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -55,10 +55,8 @@ msgid "Trap"
 msgstr "Fälla"
 
 #: easy_traps.tra:100
-#, fuzzy
-#| msgid "Unknown"
 msgid "Unknown trap"
-msgstr "Okänt"
+msgstr "Okänd fälla"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
