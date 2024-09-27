@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-09-27 10:09+0000\n"
+"PO-Revision-Date: 2024-09-27 14:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -116,15 +116,15 @@ msgstr "Dräpande pilfälla"
 
 #: easy_traps.tra:115
 msgid "Acid arrow trap"
-msgstr ""
+msgstr "Syradoppad pilfälla"
 
 #: easy_traps.tra:116
 msgid "Biting arrow trap"
-msgstr ""
+msgstr "Bitande pilfälla"
 
 #: easy_traps.tra:117
 msgid "Detonation arrow trap"
-msgstr ""
+msgstr "Detonerande pilfälla"
 
 #: easy_traps.tra:118
 msgid "Dispelling arrow trap"
@@ -132,19 +132,19 @@ msgstr ""
 
 #: easy_traps.tra:119
 msgid "Fire arrow trap"
-msgstr ""
+msgstr "Brinnande pilfälla"
 
 #: easy_traps.tra:120
 msgid "Ice arrow trap"
-msgstr ""
+msgstr "Ispilsfälla"
 
 #: easy_traps.tra:121
 msgid "Piercing arrow trap"
-msgstr ""
+msgstr "Genomträngande pilfälla"
 
 #: easy_traps.tra:122
 msgid "Monster Summoning trap"
-msgstr ""
+msgstr "Monsteråkallande fälla"
 
 #: easy_traps.tra:123
 msgid "Frost trap"
@@ -176,27 +176,27 @@ msgstr "Skuggdödsfälla"
 
 #: easy_traps.tra:130
 msgid "Guillotine trap"
-msgstr ""
+msgstr "Giljotinfälla"
 
 #: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
 msgid "Lightning orb trap"
-msgstr ""
+msgstr "Blixtklotsfälla"
 
 #: easy_traps.tra:134
 msgid "Crushing trap"
-msgstr ""
+msgstr "Krossande fälla"
 
 #: easy_traps.tra:135
 msgid "Skull trap"
-msgstr ""
+msgstr "Skallfälla"
 
 #: easy_traps.tra:136
 msgid "Stone trap"
-msgstr ""
+msgstr "Stenfälla"
 
 #: easy_traps.tra:137
 msgid "Summon Djinn trap"
-msgstr ""
+msgstr "Åkalla Djinn-fällan"
 
 #: easy_traps.tra:138
 msgid "Spear trap"
