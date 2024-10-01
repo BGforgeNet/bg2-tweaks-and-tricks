@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-09-27 14:09+0000\n"
+"PO-Revision-Date: 2024-10-01 20:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -200,15 +200,15 @@ msgstr "Åkalla Djinn-fällan"
 
 #: easy_traps.tra:138
 msgid "Spear trap"
-msgstr ""
+msgstr "Spjutfälla"
 
 #: easy_traps.tra:139
 msgid "Slime trap"
-msgstr ""
+msgstr "Slemfälla"
 
 #: easy_traps.tra:140
 msgid "Dart trap"
-msgstr ""
+msgstr "Pilfälla"
 
 #: easy_traps.tra:141
 msgid "Vent trap"
@@ -216,27 +216,27 @@ msgstr ""
 
 #: easy_traps.tra:142
 msgid "Pendulum trap"
-msgstr ""
+msgstr "Pendelfälla"
 
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
 msgid "Die your final death!"
-msgstr ""
+msgstr "Dö din slutliga död!"
 
 #: extended_soundsets.tra:38
 msgctxt "minsc57"
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr ""
+msgstr "Aaargh!  Döda säger Boo, döda gör Minsc!"
 
 #: extended_soundsets.tra:39
 msgctxt "g_ttmin1"
 msgid "Prepare to feel the wrath of my hamster!"
-msgstr ""
+msgstr "Förbered dig på att känna min hamsters vrede!"
 
 #: extended_soundsets.tra:40
 msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
-msgstr ""
+msgstr "Ditt slut är nära till hands, jämra dig om du måste!!"
 
 #: extended_soundsets.tra:41
 msgctxt "alora02"
