@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-01 20:09+0000\n"
+"PO-Revision-Date: 2024-10-15 14:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -212,7 +212,7 @@ msgstr "Pilfälla"
 
 #: easy_traps.tra:141
 msgid "Vent trap"
-msgstr ""
+msgstr "Ventilationsfälla"
 
 #: easy_traps.tra:142
 msgid "Pendulum trap"
@@ -244,6 +244,7 @@ msgid ""
 "Blast and bother!  These locks have always given me trouble!  Trouble they "
 "are!"
 msgstr ""
+"Bomber och besvär!  De här låsen har alltid gett mig problem!  Problem är de!"
 
 #: extended_soundsets.tra:42
 msgctxt "quayl01"
@@ -253,27 +254,27 @@ msgstr ""
 #: extended_soundsets.tra:43
 msgctxt "khald02"
 msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr ""
+msgstr "Lugna dig, kära du. Vi måste gå f-f-försiktigt fram."
 
 #: extended_soundsets.tra:44
 msgctxt "g_ttyos1"
 msgid "Let us get this over with!"
-msgstr ""
+msgstr "Låt oss få det här överstökat!"
 
 #: extended_soundsets.tra:45
 msgctxt "aerie95"
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr ""
+msgstr "Ahhh!!!  Hjälp mig! Hjälp mig, snääällaaa!"
 
 #: extended_soundsets.tra:46
 msgctxt "aeri2540"
 msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr ""
+msgstr "Det här kommer att göra MYCKET ondare på dig än på mig!"
 
 #: extended_soundsets.tra:47
 msgctxt "aeri2541"
 msgid "By all that is decent, I fight!"
-msgstr ""
+msgstr "För allt som är anständigt, kämpar jag!"
 
 #: extended_soundsets.tra:48
 msgctxt "g_ttkor1"
@@ -288,12 +289,12 @@ msgstr "Hahahaha!"
 #: extended_soundsets.tra:50
 msgctxt "g_ttkel1"
 msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr ""
+msgstr "I Tyrs namn ska vi segra en gång för alla!"
 
 #: extended_soundsets.tra:51
 msgctxt "g_ttkag1"
 msgid "What can I do for you?"
-msgstr ""
+msgstr "Vad kan jag göra för dig?"
 
 #: extended_soundsets.tra:52
 msgctxt "montr01"
@@ -310,32 +311,32 @@ msgstr ""
 #: extended_soundsets.tra:54
 msgctxt "g_ttxan1"
 msgid "I have languished in these dismal vaults too long."
-msgstr ""
+msgstr "Jag har försmäktat i dessa dystra valv alltför länge."
 
 #: extended_soundsets.tra:55
 msgctxt "nali2520"
 msgid "Evil falls today!"
-msgstr ""
+msgstr "Ondskan faller idag!"
 
 #: extended_soundsets.tra:56
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
+msgstr "Om ni slåss, dör ni!  Du kan inte matcha vår kraft!!"
 
 #: extended_soundsets.tra:57
 msgctxt "anom2539"
 msgid "Helm's fury upon you all!!"
-msgstr ""
+msgstr "Helms raseri över er alla!!"
 
 #: extended_soundsets.tra:58
 msgctxt "anom2540"
 msgid "By skill and might we shall prevail!!"
-msgstr ""
+msgstr "Med skicklighet och styrka ska vi segra!!!"
 
 #: extended_soundsets.tra:59
 msgctxt "g_ttval1"
 msgid "You will not pass!"
-msgstr ""
+msgstr "Du kommer inte att passera!"
 
 #: extended_soundsets.tra:60
 msgctxt "g_tthae1"
