@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-15 14:09+0000\n"
+"PO-Revision-Date: 2024-10-16 07:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -341,37 +341,37 @@ msgstr "Du kommer inte att passera!"
 #: extended_soundsets.tra:60
 msgctxt "g_tthae1"
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
-msgstr ""
+msgstr "Ahhh, det här är en fin strid som ska ljuda över alla plan!"
 
 #: extended_soundsets.tra:61
 msgctxt "sarevo13"
 msgid "We children of Bhaal cannot be stopped!"
-msgstr ""
+msgstr "Vi barn av Bhaal kan inte stoppas!"
 
 #: extended_soundsets.tra:62
 msgctxt "sarevo14"
 msgid "Ha!  This arena I know well!!"
-msgstr ""
+msgstr "Ha!  Den här arenan känner jag väl!"
 
 #: extended_soundsets.tra:63
 msgctxt "sarevo35"
 msgid "I shall carve a path, if need be."
-msgstr ""
+msgstr "Jag ska hugga upp en väg, om så krävs."
 
 #: extended_soundsets.tra:64
 msgctxt "sarevo36"
 msgid "As you wish."
-msgstr ""
+msgstr "Som du önskar."
 
 #: extended_soundsets.tra:65
 msgctxt "sarevo37"
 msgid "Hmph.  Not what I would have done."
-msgstr ""
+msgstr "Hmph.  Inte vad jag skulle ha gjort."
 
 #: extended_soundsets.tra:66
 msgctxt "sarevo38"
 msgid "So you say."
-msgstr ""
+msgstr "Så säger du."
 
 #: extended_soundsets.tra:67
 msgctxt "garrk30"
@@ -379,21 +379,23 @@ msgid ""
 "My music is superior to yours, Eldoth, I was taught at the college in "
 "Berdusk."
 msgstr ""
+"Min musik är överlägsen din, Eldoth, jag lärde mig på universitetet i "
+"Berdusk."
 
 #: extended_soundsets.tra:68
 msgctxt "garrk06"
 msgid "I can't stand by and just let this happen."
-msgstr ""
+msgstr "Jag kan inte bara stå bredvid och låta det här hända."
 
 #: extended_soundsets.tra:69
 msgctxt "g_ttbra1"
 msgid "By the ice breath of Auril!"
-msgstr ""
+msgstr "Vid Aurils isande vind!"
 
 #: extended_soundsets.tra:70
 msgctxt "skiee04"
 msgid "You're the finest group of friends I've ever had."
-msgstr ""
+msgstr "Ni är det bästa samling vänner jag någonsin haft."
 
 #: extended_soundsets.tra:71
 msgctxt "xzarr01"
