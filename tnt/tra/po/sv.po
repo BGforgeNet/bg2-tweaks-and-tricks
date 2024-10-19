@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-16 07:09+0000\n"
+"PO-Revision-Date: 2024-10-19 12:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -88,7 +88,7 @@ msgstr "Förvirringsfälla"
 
 #: easy_traps.tra:108
 msgid "Dire Charm trap"
-msgstr ""
+msgstr "Förskräcklig Charm-fälla"
 
 #: easy_traps.tra:109
 msgid "Fireball trap"
@@ -128,7 +128,7 @@ msgstr "Detonerande pilfälla"
 
 #: easy_traps.tra:118
 msgid "Dispelling arrow trap"
-msgstr ""
+msgstr "Magi-skingrande pilfälla"
 
 #: easy_traps.tra:119
 msgid "Fire arrow trap"
@@ -249,7 +249,7 @@ msgstr ""
 #: extended_soundsets.tra:42
 msgctxt "quayl01"
 msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr ""
+msgstr "Att gå ensam på vägen till Coastway!  Hur smart är det?"
 
 #: extended_soundsets.tra:43
 msgctxt "khald02"
@@ -279,7 +279,7 @@ msgstr "För allt som är anständigt, kämpar jag!"
 #: extended_soundsets.tra:48
 msgctxt "g_ttkor1"
 msgid "Killing is our business, and business be good!"
-msgstr ""
+msgstr "Att döda är vad vi gör, och det gå' bra!"
 
 #: extended_soundsets.tra:49
 msgctxt "g_ttkor2"
@@ -301,12 +301,15 @@ msgctxt "montr01"
 msgid ""
 "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgstr ""
+"Du e redan störd, låt mig nu vara.  Ditt sällskap e tillräckligt illa som "
+"det är."
 
 #: extended_soundsets.tra:53
 msgctxt "yeslk01"
 msgid ""
 "Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgstr ""
+"Ja, vem e de' nurå?  Mer smide, eller har ni grävt ner er i ännu en flod?"
 
 #: extended_soundsets.tra:54
 msgctxt "g_ttxan1"
@@ -400,36 +403,36 @@ msgstr "Ni är det bästa samling vänner jag någonsin haft."
 #: extended_soundsets.tra:71
 msgctxt "xzarr01"
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr ""
+msgstr "Montaron, du är så FÖRARGANDE! De' e störande för mitt uppträdande!"
 
 #: extended_soundsets.tra:72
 msgctxt "shart34"
 msgid "How would you like my sword tickling your innards?"
-msgstr ""
+msgstr "Skulle du vilja att mitt svärd kittlade dina inälvor?"
 
 #: extended_soundsets.tra:130
 msgctxt "g_ttaja1"
 msgid "You evil ways end here!"
-msgstr ""
+msgstr "Ditt onda sätt slutar här!"
 
 #: extended_soundsets.tra:131
 msgctxt "g_ttaja2"
 msgid "Draw steel!"
-msgstr ""
+msgstr "Dra stål!"
 
 #: extended_soundsets.tra:132
 msgctxt "g_ttkiv1"
 msgid "Defend yourselves!"
-msgstr ""
+msgstr "Försvara dig själv!"
 
 #: extended_soundsets.tra:133
 msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
-msgstr ""
+msgstr "Din själ är förlorad!"
 
 #: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
-msgstr ""
+msgstr "Returnerande kastyxa"
 
 #: hassle_free_ammo.tra:2
 msgid ""
