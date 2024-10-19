@@ -1,23 +1,23 @@
 @1 = ~Returnerande kastyxa~
-@2 = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.
+@2 = ~Handyxan eller kastyxan kallas också kort för yxa. Yxbladet har en vass stålspets som balanseras av en spetsig fluga. Det korta skaftet har en spets nedtill och huvudet kan ha en spets upptill, vilket gör den opraktisk att använda i närstrid.
 
-This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Denna speciella yxa har en mindre förtrollning applicerad. Den återvänder alltid till användarens hand. Ändå slår den som ett normalt vapen, inte som ett magiskt.
 
-STATISTICS:
+STATISTIK:
 
-Damage:  1D6 +1
-Damage type:  missile (piercing)
-Weight: 5
-Speed Factor: 4
-Proficiency Type:  Axe
-Type:  1-handed
-Requires: 4 Strength
-Not Usable By:
+Skada:  1D6 +1
+Skadetype: missil (genomträngande)
+Vikt: 5
+Hastighetsfaktor: 4
+Färdighetstyp:  Yxa
+Typ:  1-hands
+Kräver: 4 Styrka
+Ej användbar av:
  Druid
- Cleric
- Mage 
- Thief~
-@3 = ~Returning throwing dagger~
+ Präst
+ Magiker
+ Tjuv~
+@3 = ~Returnerande kastkniv~
 @4 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.
 
 This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
