@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-19 13:09+0000\n"
+"PO-Revision-Date: 2024-10-19 18:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -88,7 +88,7 @@ msgstr "Förvirringsfälla"
 
 #: easy_traps.tra:108
 msgid "Dire Charm trap"
-msgstr "Förskräcklig Charm-fälla"
+msgstr "Hemskeförtrollningsfälla"
 
 #: easy_traps.tra:109
 msgid "Fireball trap"
@@ -1128,7 +1128,7 @@ msgstr ""
 
 #: pnp_protection_from_evil.tra:2
 msgid "Dire Charmed"
-msgstr ""
+msgstr "Hemskeförtrollad"
 
 #: pnp_protection_from_evil.tra:3
 msgid "Dominated"
@@ -2215,6 +2215,12 @@ msgid ""
 "Tracking\n"
 "With an intimate knowledge of his surroundings and the creatures that live within them, a ranger can use the Tracking ability to give himself a general idea of what creatures are in an area and which direction they are. Red arrows at the edge of the screen will point in the general direction of the creatures in the area."
 msgstr ""
+"Spårning\n"
+"Med en ingående kunskap om sin omgivning och de varelser som lever där kan "
+"en Jägare använda förmågan Spårning för att få en allmän uppfattning om "
+"vilka varelser som finns i ett område och i vilken riktning de är. Röda "
+"pilar i skärmens kant pekar i den allmänna riktningen för varelserna i "
+"området."
 
 #: tracking.tra:100
 msgid ""
