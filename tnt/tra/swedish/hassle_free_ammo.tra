@@ -18,42 +18,42 @@ Ej användbar av:
  Magiker
  Tjuv~
 @3 = ~Returnerande kastkniv~
-@4 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.
+@4 = ~Den typiska kastdolken har ett spetsigt, oftast tveeggat blad, till skillnad från en kniv, som har en enkel egg och är lite kortare än dolken. Till skillnad från en dolk har den här ett mindre handtag och är balanserad på ett annat sätt, vilket gör den opraktisk att använda i närstrid.
 
-This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Just denna dolk har en mindre förtrollning applicerad. Den återvänder alltid till användarens hand. Ändå slår den som ett vanligt vapen, inte som ett magiskt.
 
-STATISTICS:
+STATISTIK:
 
-Damage:  1D4
-Damage type:   missile (piercing)
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type:  1-handed
-Requires: 3 Strength
-Not Usable By:
- Cleric~
-@5 = ~Returning dart~
-@6 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
+Skada:  1D4
+Skadetype: missil (genomträngande)
+Vikt: 1
+Hastighetsfaktor: 2
+Färdighetstyp: Dagger
+Typ av vapen:  1-hands
+Kräver: 3 Styrka
+Ej användbar av:
+ Präst~
+@5 = ~Återvändande kastpil~
+@6 = ~Kastpilen är ett litet, lätt dolt missilvapen som kastas i stället för att avfyras från en båge eller annan avfyrningsanordning.
 
-This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Just den här pilen har en mindre förtrollning applicerad. Den återvänder alltid till användarens hand. Ändå slår den som ett vanligt vapen, inte ett magiskt.
 
-STATISTICS:
+STATISTIK:
 
-Damage:  1D3
-Damage type:  missile (piercing)
-Weight: 0
-Speed Factor: 2
-Proficiency Type: Dart
-Type:  1-handed
-Not Usable By:
- Cleric~
+Skada:  1D3
+Skadetype: missil (genomträngande)
+Vikt: 0
+Hastighetsfaktor: 2
+Färdighetstyp: Kastpil
+Typ av vapen  1-hands
+Ej användbar av:
+ Präst~
 @7 = ~Quiver of Plenty~
-@8 = ~Enchanted quivers like this one are highly sought after by professional archers.
+@8 = ~Förtrollade koger som detta är mycket eftertraktade av professionella bågskyttar.
 
-STATISTICS:
+STATISTIK:
 
-Unlimited plain arrows~
+Obegränsat antal vanliga pilar~
 @9 = ~Case of Plenty~
 @10 = ~Enchanted bolt cases like this one are highly sought after by professional crossbow users.
 
