@@ -1,43 +1,43 @@
-@1 = ~Long Sword: The Equalizer
-The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands. The Equalizer actively resists being used by characters of extreme alignments.
+@1 = ~Långsvärd: Utjämnaren
+Detta svärd är så gammalt att dess sanna ursprung har gått förlorat i tiden, men märken antyder att det möjligen smiddes av de i Helms tjänst. Det kallas också "Neutralitetens Svärd" och verkar vara utformat för att söka och sätta stopp för extremism, för att flytta universum närmare harmonisk jämvikt. Ju längre bort ett mål befinner sig från sann balans, desto kraftigare blir skadorna. Ju närmare den som svingar svärdet är till den sanna balansen, desto starkare är svärdet i deras händer. Utjämnaren motsätter sig aktivt att användas av karaktärer med extrema inriktningar.
 
-In addition, the sword allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.
+Dessutom tillåter svärdet sin ägare att upptäcka närliggande varelsers inriktningar som med en trollkarlsbesvärjelse, 3 gånger per dag.
 
-STATISTICS:
+STATISTIK:
 
-Enchantment: +4
+Förtrollning: +4
 
-Combat Abilities:
-  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.
-  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.
+Stridsförmågor:
+  50% chans vid träff att förvirra en god eller ond fiende i 2 ronder, Räddning mot Besvärjelse negerar. Denna förmåga fungerar bara i händerna på en karaktär som varken är God eller Ond.
+  50% chans vid träff att förblinda en Laglydig eller Kaotisk fiende i 2 ronder, Räddning mot Andning negerar. Den här förmågan fungerar bara i händerna på en karaktär som varken är Laglydig eller Kaotisk.
 
-THAC0 & Damage:
-  vs True Neutral: +0 to hit, +0 damage
-  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 to hit, +2 damage
-  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 damage
+THAC0 & Skada:
+  mot Sant Neutral: +0 till träff, +0 skada
+  mot icke-extrema inriktningar (Kaotisk/Laglydig Neutral, Neutral God/Ond): +2 i träff, +2 i skada
+  mot extrema inriktningar (Kaotisk God/Ond, Laglydig God/Ond): +4 i träff, +4 i skada
 
-Extra bonuses based on wielder's alignment:
-  True Neutral: +4 to hit, +4 damage
-  Non-extreme alignments: +2 to hit, +2 damage
-  Extreme alignments: -20 to hit, -20 damage.
+Extra bonusar baserade på användarens inriktning:
+  Sant neutral: +4 i träff, +4 i skada
+  Icke-extrema inriktningar: +2 i träff, +2 i skada
+  Extrema inriktningar: -20 i träff, -20 i skada.
 
-All combat effects are independent and stack with each other.
+Alla stridseffekter är oberoende av varandra och staplas på varandra.
 
-Equipped Abilities: Immunity to Charm and Confusion
+Utrustade förmågor: Immunitet mot Charm och Förvirring
 
-Abilities:
-  Know Alignment 3 times per day.
+Förmågor:
+  Känna inriktning 3 gånger per dag.
 
-Damage type: slashing
-Weight: 3
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: 1-handed
-Requires: 6 Strength
-Not Usable By:
+Skadetype: skärande
+Vikt: 3
+Hastighetsfaktor: 1
+Färdighetstyp: Långsvärd
+Typ av vapen: 1-hands
+Kräver: 6 Styrka
+Ej användbart av:
  Druid
- Cleric
- Mage
- Beast Master~
-@2 = ~Two things, me friend. It will cost ye 12,500 gp for the work, no less, and without an apprentice, ye'll have to stay here a full day and help me run the forge.~
-@3 = ~What would be involved in that?~
+ Präst
+ Magiker
+ Bestmästare~
+@2 = ~Två sakör, min vän. Det kömma att kosta er 12 500 guld fö' arbete', inge' mindre, och utan en lärling måst' ni stanna här en heldag och hjälpa mig att sköta smedjan.~
+@3 = ~Vad skulle det innebära?~
