@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-22 08:09+0000\n"
+"PO-Revision-Date: 2024-10-22 12:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -1335,7 +1335,7 @@ msgstr ""
 
 #: setup.tra:125
 msgid "Requires BG2 or EE engine"
-msgstr ""
+msgstr "Kräver BG2- eller EE-motor"
 
 #: setup.tra:126
 msgid "Requires BG2"
@@ -1343,23 +1343,23 @@ msgstr "Kräver BG2"
 
 #: setup.tra:127
 msgid "Only non-EE engines"
-msgstr ""
+msgstr "Endast icke-EE-motorer"
 
 #: setup.tra:128
 msgid "Requires Classic ToB engine"
-msgstr ""
+msgstr "Kräver Classic ToB-motor"
 
 #: setup.tra:129
 msgid "BGT only"
-msgstr ""
+msgstr "Endast BGT"
 
 #: setup.tra:130
 msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
-msgstr ""
+msgstr "Kräver Classic ToB- eller BG(2)EE- eller IWDEE-motor"
 
 #: setup.tra:131
 msgid "Requires TotSC content"
-msgstr ""
+msgstr "Kräver TotSC-innehåll"
 
 #: setup.tra:132
 msgid "Couldn't detect your platform, failing."
