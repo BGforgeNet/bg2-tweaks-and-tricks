@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-22 12:09+0000\n"
+"PO-Revision-Date: 2024-10-23 12:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -801,15 +801,15 @@ msgstr ""
 
 #: more_map_notes.tra:15
 msgid "Kaishas' house"
-msgstr ""
+msgstr "Kaishas hus"
 
 #: more_map_notes.tra:16
 msgid "Maralee"
-msgstr ""
+msgstr "Maralee"
 
 #: more_map_notes.tra:17
 msgid "Jorin"
-msgstr ""
+msgstr "Jorin"
 
 #: more_map_notes.tra:18
 msgid "Farthing"
@@ -821,11 +821,11 @@ msgstr ""
 
 #: more_map_notes.tra:20
 msgid "Lahl"
-msgstr ""
+msgstr "Lahl"
 
 #: more_map_notes.tra:21
 msgid "Solianna"
-msgstr ""
+msgstr "Solianna"
 
 #: more_map_notes.tra:22
 msgid "Phlydia"
@@ -833,15 +833,15 @@ msgstr "Phlydia"
 
 #: more_map_notes.tra:23
 msgid "Mirianne's house"
-msgstr ""
+msgstr "Miriannes hus"
 
 #: more_map_notes.tra:24
 msgid "Kagain's house"
-msgstr ""
+msgstr "Kagains hus"
 
 #: more_map_notes.tra:25
 msgid "Firebead's house"
-msgstr ""
+msgstr "Eldpärlans hus"
 
 #: more_map_notes.tra:26
 msgid "Kivan"
@@ -1667,19 +1667,19 @@ msgstr ""
 
 #: setup.tra:804
 msgid "no loss"
-msgstr ""
+msgstr "ingen förlust"
 
 #: setup.tra:805
 msgid "reduced loss"
-msgstr ""
+msgstr "reducerad förlust"
 
 #: setup.tra:806
 msgid "True True Sight"
-msgstr ""
+msgstr "Sann sann syn"
 
 #: setup.tra:807
 msgid "Sensible Otiluke's Resilient Sphere"
-msgstr ""
+msgstr "Förnuftige Otilukes Motståndskraftiga Sfär"
 
 #: setup.tra:808
 msgid "Greater Command AoE"
@@ -1699,7 +1699,7 @@ msgstr ""
 
 #: setup.tra:812
 msgid "Chaos Shield spells are not present in game"
-msgstr ""
+msgstr "Kaossköld-trollformler finns inte i spelet"
 
 #: setup.tra:813
 msgid "Uncheese Project Image | POWER USER component, consult readme"
@@ -1707,7 +1707,7 @@ msgstr ""
 
 #: setup.tra:814
 msgid "Project Image spell is not present in game"
-msgstr ""
+msgstr "Projektera bild-trollformeln finns inte i spelet"
 
 #: setup.tra:815
 msgid "Uncheese Mislead"
