@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2024-10-23 12:09+0000\n"
+"PO-Revision-Date: 2024-10-23 17:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -1931,161 +1931,169 @@ msgid ""
 "When you're being attacked, disengage for a short time, then get back at the"
 " enemy."
 msgstr ""
+"När du blir attackerad, dra dig tillbaka en kort stund och återvänd sedan "
+"till fienden."
 
 #: smarter_familiars.tra:313
 msgid "Don't disengage, even if you're being attacked."
-msgstr ""
+msgstr "Släpp inte fokus, även om du blir attackerad."
 
 #: smarter_familiars.tra:314
 msgid "In combat, don't attack enemies, unless I tell you to."
 msgstr ""
+"I strid ska du inte attackera fiender om jag inte säger till dig att göra "
+"det."
 
 #: smarter_familiars.tra:315
 msgid "In combat, attack enemies when you see them."
-msgstr ""
+msgstr "I strid, attackera fiender när du ser dem."
 
 #: smarter_familiars.tra:316
 msgid ""
 "In combat, attack enemies when you see them, prioritizing spellcasters."
-msgstr ""
+msgstr "I strid, attackera fiender när du ser dem och prioritera magiker."
 
 #: smarter_familiars.tra:400
 msgid "Stop picking up any items, okay?"
-msgstr ""
+msgstr "Sluta plocka upp saker, okej?"
 
 #: smarter_familiars.tra:401
 msgid "I want you to bring me everything. Any valuables."
-msgstr ""
+msgstr "Jag vill att du ger mig allt. Alla värdesaker."
 
 #: smarter_familiars.tra:402
 msgid "Pick up any gold that you find."
-msgstr ""
+msgstr "Plocka upp allt guld som du hittar."
 
 #: smarter_familiars.tra:403
 msgid "Don't pick up the gold that you find."
-msgstr ""
+msgstr "Plocka inte upp guldet som du hittar."
 
 #: smarter_familiars.tra:404
 msgid "Pick up any jewels that you find."
-msgstr ""
+msgstr "Plocka upp alla juveler som du hittar."
 
 #: smarter_familiars.tra:405
 msgid "Pick up only valuable and magical jewelry."
-msgstr ""
+msgstr "Plocka bara upp värdefulla och magiska smycken."
 
 #: smarter_familiars.tra:406
 msgid "Pick up only magical jewelry."
-msgstr ""
+msgstr "Plocka bara upp magiska smycken."
 
 #: smarter_familiars.tra:407
 msgid "Don't pick up the jewelry."
-msgstr ""
+msgstr "Plocka inte upp smyckena."
 
 #: smarter_familiars.tra:408
 msgid "Pick up any magical ammo that you find."
-msgstr ""
+msgstr "Plocka upp all magisk ammunition som du hittar."
 
 #: smarter_familiars.tra:409
 msgid "Don't pick up the ammo."
-msgstr ""
+msgstr "Plocka inte upp ammunitionen."
 
 #: smarter_familiars.tra:410
 msgid "If you find any potions, bring them to me!"
-msgstr ""
+msgstr "Om du hittar några brygder, ta med dem till mig!"
 
 #: smarter_familiars.tra:411
 msgid "Stop picking up potions."
-msgstr ""
+msgstr "Sluta plocka upp brygder."
 
 #: smarter_familiars.tra:412
 msgid "Get me any scrolls that you can find."
-msgstr ""
+msgstr "Ge mig alla skriftrullar som du kan hitta."
 
 #: smarter_familiars.tra:413
 msgid "I don't need you to bring any more scrolls."
-msgstr ""
+msgstr "Du behöver inte ta med fler skriftrullar."
 
 #: smarter_familiars.tra:414
 msgid ""
 "Fetch scalps from those bandits we kill. There's a nice bounty for them."
 msgstr ""
+"Hämta skalper från de banditer vi dödar. Det finns en fin belöning för dem."
 
 #: smarter_familiars.tra:415
 msgid "Stop that scalping, will you? It's disgusting."
-msgstr ""
+msgstr "Kan du sluta med skalperingen? Det är äckligt."
 
 #: smarter_familiars.tra:416
+#, fuzzy
 msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
-msgstr ""
+msgstr "Ankheg-fjäll, vintervargskinn, wyvern-huvuden - jag behöver allt."
 
 #: smarter_familiars.tra:417
 msgid "No more pelts or scales, we're stocked."
-msgstr ""
+msgstr "Inga fler skinn eller fjäll, vi har ett helt lager."
 
 #: smarter_familiars.tra:418
 msgid "No, nothing."
-msgstr ""
+msgstr "Nej, ingenting."
 
 #: smarter_familiars.tra:419
 msgid "As you wish, master."
-msgstr ""
+msgstr "Som ni önskar, mästare."
 
 #: smarter_familiars.tra:500
 msgid "Let's talk about your gear."
-msgstr ""
+msgstr "Dags att prata om din utrustning."
 
 #: smarter_familiars.tra:501
 msgid ""
 "Take this returning dart. I think you're better off attacking from distance."
 msgstr ""
+"Ta den här återvändande kastpilen. Jag tror att det är bättre att du "
+"attackerar på avstånd."
 
 #: smarter_familiars.tra:502
 msgid "Okay, boss."
-msgstr ""
+msgstr "Okej, chefen."
 
 #: smarter_familiars.tra:503
 msgid "Done."
-msgstr ""
+msgstr "Färdig."
 
 #: smarter_familiars.tra:504
 msgid "No, actually I think your gear is fine."
-msgstr ""
+msgstr "Nej, jag tycker faktiskt att din utrustning är bra."
 
 #: smarter_familiars.tra:601
 msgid "I'm hurting here, Boss."
-msgstr ""
+msgstr "Jag har ont här, chefen."
 
 #: smarter_familiars.tra:602
 msgid "I'm really hurting here, Boss."
-msgstr ""
+msgstr "Jag har väldigt ont här, chefen."
 
 #: smarter_familiars.tra:603
 msgid "Ouch!"
-msgstr ""
+msgstr "Aj!"
 
 #: smarter_familiars.tra:701
 msgid "(Give a Healing potion)."
-msgstr ""
+msgstr "(Ge en läkande brygd)."
 
 #: smarter_familiars.tra:702
 msgid "(Give an Extra Healing potion)."
-msgstr ""
+msgstr "(Ge en extra-läkande dryck)."
 
 #: smarter_familiars.tra:703
 msgid "(Give a Superior Healing potion)."
-msgstr ""
+msgstr "(Ge en överlägsen läkande dryck)."
 
 #: smarter_familiars.tra:704
 msgid "(Give a Fire Resistance potion)."
-msgstr ""
+msgstr "(Ge en eldmotståndsdryck)."
 
 #: smarter_familiars.tra:705
 msgid "(Give an Invisibility potion)."
-msgstr ""
+msgstr "(Ge en osynlighetsdryck)."
 
 #: smarter_familiars.tra:706
 msgid "(Give a oil of Speed)."
-msgstr ""
+msgstr "(Ge en hastighetsolja)."
 
 #: smarter_familiars.tra:707
 msgid "(Give an elixir of Health)."
@@ -2217,7 +2225,7 @@ msgstr "Thorius"
 
 #: starting_bags.tra:2
 msgid "Gem bag"
-msgstr ""
+msgstr "Ädelstensväska"
 
 #: starting_bags.tra:3
 msgid "This small bag is ideally suited for holding gems."
