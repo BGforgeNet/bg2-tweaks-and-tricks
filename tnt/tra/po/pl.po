@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24-13:47+0000\n"
+"POT-Creation-Date: 2024-10-24-13:51+0000\n"
 "PO-Revision-Date: 2024-01-20 23:28+0000\n"
 "Last-Translator: ALIENQuake <alienquake@hotmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -2323,14 +2323,8 @@ msgstr ""
 
 #: tracking.tra:122
 msgid ""
-"Alongside the large, clawed tracks, you notice more delicate imprints near "
-"the shoreline - bare feet that seem too graceful and lightly pressed to "
-"belong to any human. The air around these tracks carries a faint, almost "
-"enchanting melody that lingers on the wind, suggesting the presence of "
-"beguiling creatures who may lure unwary travelers. These prints lead toward "
-"rocky outcrops near the water, intermingling with the larger, more menacing "
-"tracks that suggest the islandâ€™s more dangerous predators also roam "
-"nearby."
+"Werewolf Island is a dangerous place, shrouded in mystery and home to "
+"lycanthropes. You find signs of wolves, werewolves, sirines."
 msgstr ""
 
 #: tracking.tra:123
@@ -2344,16 +2338,6 @@ msgid ""
 "Lion's Way is a scenic path connecting Candlekeep to the wider world, marked"
 " by rolling hills and scattered trees. You find signs of wolves, bears, "
 "gibberlings."
-msgstr ""
-
-#: tracking.tra:125
-msgid ""
-"The village seems calm, with mostly human tracks leading between homes and "
-"along well-used paths. However, among them, you find occasional animal "
-"tracks - large, but not out of place in a rural setting. These prints seem "
-"to move in and out of the village, blending with everyday activity. Nothing "
-"feels immediately threatening, though the presence of such tracks suggests "
-"that wildlife might be closer to the village than one would expect."
 msgstr ""
 
 #: tracking.tra:200
