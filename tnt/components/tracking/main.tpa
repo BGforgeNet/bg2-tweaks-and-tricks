@@ -96,9 +96,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY area_desc_bg1 BEGIN
     DryadFalls => 119
     FishermansLake => 120
     WyrmsCrossing => 121
-    IsleofBalduran => 122
+    IsleofBalduranN => 122
     IceIsland => 123
     LionsWay => 124
+    IsleofBalduranS => 125
 END
 
 // BG2
