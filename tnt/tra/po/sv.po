@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-03-14:26+0000\n"
-"PO-Revision-Date: 2022-09-25 20:30+0000\n"
+"PO-Revision-Date: 2024-10-23 17:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -55,10 +55,8 @@ msgid "Trap"
 msgstr "Fälla"
 
 #: easy_traps.tra:100
-#, fuzzy
-#| msgid "Unknown"
 msgid "Unknown trap"
-msgstr "Okänt"
+msgstr "Okänd fälla"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
@@ -90,7 +88,7 @@ msgstr "Förvirringsfälla"
 
 #: easy_traps.tra:108
 msgid "Dire Charm trap"
-msgstr ""
+msgstr "Hemskeförtrollningsfälla"
 
 #: easy_traps.tra:109
 msgid "Fireball trap"
@@ -114,39 +112,39 @@ msgstr "Pilfälla"
 
 #: easy_traps.tra:114
 msgid "Slaying arrow trap"
-msgstr ""
+msgstr "Dräpande pilfälla"
 
 #: easy_traps.tra:115
 msgid "Acid arrow trap"
-msgstr ""
+msgstr "Syradoppad pilfälla"
 
 #: easy_traps.tra:116
 msgid "Biting arrow trap"
-msgstr ""
+msgstr "Bitande pilfälla"
 
 #: easy_traps.tra:117
 msgid "Detonation arrow trap"
-msgstr ""
+msgstr "Detonerande pilfälla"
 
 #: easy_traps.tra:118
 msgid "Dispelling arrow trap"
-msgstr ""
+msgstr "Magi-skingrande pilfälla"
 
 #: easy_traps.tra:119
 msgid "Fire arrow trap"
-msgstr ""
+msgstr "Brinnande pilfälla"
 
 #: easy_traps.tra:120
 msgid "Ice arrow trap"
-msgstr ""
+msgstr "Ispilsfälla"
 
 #: easy_traps.tra:121
 msgid "Piercing arrow trap"
-msgstr ""
+msgstr "Genomträngande pilfälla"
 
 #: easy_traps.tra:122
 msgid "Monster Summoning trap"
-msgstr ""
+msgstr "Monsteråkallande fälla"
 
 #: easy_traps.tra:123
 msgid "Frost trap"
@@ -178,67 +176,67 @@ msgstr "Skuggdödsfälla"
 
 #: easy_traps.tra:130
 msgid "Guillotine trap"
-msgstr ""
+msgstr "Giljotinfälla"
 
 #: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
 msgid "Lightning orb trap"
-msgstr ""
+msgstr "Blixtklotsfälla"
 
 #: easy_traps.tra:134
 msgid "Crushing trap"
-msgstr ""
+msgstr "Krossande fälla"
 
 #: easy_traps.tra:135
 msgid "Skull trap"
-msgstr ""
+msgstr "Skallfälla"
 
 #: easy_traps.tra:136
 msgid "Stone trap"
-msgstr ""
+msgstr "Stenfälla"
 
 #: easy_traps.tra:137
 msgid "Summon Djinn trap"
-msgstr ""
+msgstr "Åkalla Djinn-fällan"
 
 #: easy_traps.tra:138
 msgid "Spear trap"
-msgstr ""
+msgstr "Spjutfälla"
 
 #: easy_traps.tra:139
 msgid "Slime trap"
-msgstr ""
+msgstr "Slemfälla"
 
 #: easy_traps.tra:140
 msgid "Dart trap"
-msgstr ""
+msgstr "Pilfälla"
 
 #: easy_traps.tra:141
 msgid "Vent trap"
-msgstr ""
+msgstr "Ventilationsfälla"
 
 #: easy_traps.tra:142
 msgid "Pendulum trap"
-msgstr ""
+msgstr "Pendelfälla"
 
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
 msgid "Die your final death!"
-msgstr ""
+msgstr "Dö din slutliga död!"
 
 #: extended_soundsets.tra:38
 msgctxt "minsc57"
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr ""
+msgstr "Aaargh!  Döda säger Boo, döda gör Minsc!"
 
 #: extended_soundsets.tra:39
 msgctxt "g_ttmin1"
 msgid "Prepare to feel the wrath of my hamster!"
-msgstr ""
+msgstr "Förbered dig på att känna min hamsters vrede!"
 
 #: extended_soundsets.tra:40
 msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
-msgstr ""
+msgstr "Ditt slut är nära till hands, jämra dig om du måste!!"
 
 #: extended_soundsets.tra:41
 msgctxt "alora02"
@@ -246,41 +244,42 @@ msgid ""
 "Blast and bother!  These locks have always given me trouble!  Trouble they "
 "are!"
 msgstr ""
+"Bomber och besvär!  De här låsen har alltid gett mig problem!  Problem är de!"
 
 #: extended_soundsets.tra:42
 msgctxt "quayl01"
 msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr ""
+msgstr "Att gå ensam på vägen till Coastway!  Hur smart är det?"
 
 #: extended_soundsets.tra:43
 msgctxt "khald02"
 msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr ""
+msgstr "Lugna dig, kära du. Vi måste gå f-f-försiktigt fram."
 
 #: extended_soundsets.tra:44
 msgctxt "g_ttyos1"
 msgid "Let us get this over with!"
-msgstr ""
+msgstr "Låt oss få det här överstökat!"
 
 #: extended_soundsets.tra:45
 msgctxt "aerie95"
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr ""
+msgstr "Ahhh!!!  Hjälp mig! Hjälp mig, snääällaaa!"
 
 #: extended_soundsets.tra:46
 msgctxt "aeri2540"
 msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr ""
+msgstr "Det här kommer att göra MYCKET ondare på dig än på mig!"
 
 #: extended_soundsets.tra:47
 msgctxt "aeri2541"
 msgid "By all that is decent, I fight!"
-msgstr ""
+msgstr "För allt som är anständigt, kämpar jag!"
 
 #: extended_soundsets.tra:48
 msgctxt "g_ttkor1"
 msgid "Killing is our business, and business be good!"
-msgstr ""
+msgstr "Att döda är vad vi gör, och det gå' bra!"
 
 #: extended_soundsets.tra:49
 msgctxt "g_ttkor2"
@@ -290,89 +289,92 @@ msgstr "Hahahaha!"
 #: extended_soundsets.tra:50
 msgctxt "g_ttkel1"
 msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr ""
+msgstr "I Tyrs namn ska vi segra en gång för alla!"
 
 #: extended_soundsets.tra:51
 msgctxt "g_ttkag1"
 msgid "What can I do for you?"
-msgstr ""
+msgstr "Vad kan jag göra för dig?"
 
 #: extended_soundsets.tra:52
 msgctxt "montr01"
 msgid ""
 "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgstr ""
+"Du e redan störd, låt mig nu vara.  Ditt sällskap e tillräckligt illa som "
+"det är."
 
 #: extended_soundsets.tra:53
 msgctxt "yeslk01"
 msgid ""
 "Aye, who's there now?  More smithing, or did ye burrow into another river?"
 msgstr ""
+"Ja, vem e de' nurå?  Mer smide, eller har ni grävt ner er i ännu en flod?"
 
 #: extended_soundsets.tra:54
 msgctxt "g_ttxan1"
 msgid "I have languished in these dismal vaults too long."
-msgstr ""
+msgstr "Jag har försmäktat i dessa dystra valv alltför länge."
 
 #: extended_soundsets.tra:55
 msgctxt "nali2520"
 msgid "Evil falls today!"
-msgstr ""
+msgstr "Ondskan faller idag!"
 
 #: extended_soundsets.tra:56
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
+msgstr "Om ni slåss, dör ni!  Du kan inte matcha vår kraft!!"
 
 #: extended_soundsets.tra:57
 msgctxt "anom2539"
 msgid "Helm's fury upon you all!!"
-msgstr ""
+msgstr "Helms raseri över er alla!!"
 
 #: extended_soundsets.tra:58
 msgctxt "anom2540"
 msgid "By skill and might we shall prevail!!"
-msgstr ""
+msgstr "Med skicklighet och styrka ska vi segra!!!"
 
 #: extended_soundsets.tra:59
 msgctxt "g_ttval1"
 msgid "You will not pass!"
-msgstr ""
+msgstr "Du kommer inte att passera!"
 
 #: extended_soundsets.tra:60
 msgctxt "g_tthae1"
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
-msgstr ""
+msgstr "Ahhh, det här är en fin strid som ska ljuda över alla plan!"
 
 #: extended_soundsets.tra:61
 msgctxt "sarevo13"
 msgid "We children of Bhaal cannot be stopped!"
-msgstr ""
+msgstr "Vi barn av Bhaal kan inte stoppas!"
 
 #: extended_soundsets.tra:62
 msgctxt "sarevo14"
 msgid "Ha!  This arena I know well!!"
-msgstr ""
+msgstr "Ha!  Den här arenan känner jag väl!"
 
 #: extended_soundsets.tra:63
 msgctxt "sarevo35"
 msgid "I shall carve a path, if need be."
-msgstr ""
+msgstr "Jag ska hugga upp en väg, om så krävs."
 
 #: extended_soundsets.tra:64
 msgctxt "sarevo36"
 msgid "As you wish."
-msgstr ""
+msgstr "Som du önskar."
 
 #: extended_soundsets.tra:65
 msgctxt "sarevo37"
 msgid "Hmph.  Not what I would have done."
-msgstr ""
+msgstr "Hmph.  Inte vad jag skulle ha gjort."
 
 #: extended_soundsets.tra:66
 msgctxt "sarevo38"
 msgid "So you say."
-msgstr ""
+msgstr "Så säger du."
 
 #: extended_soundsets.tra:67
 msgctxt "garrk30"
@@ -380,55 +382,57 @@ msgid ""
 "My music is superior to yours, Eldoth, I was taught at the college in "
 "Berdusk."
 msgstr ""
+"Min musik är överlägsen din, Eldoth, jag lärde mig på universitetet i "
+"Berdusk."
 
 #: extended_soundsets.tra:68
 msgctxt "garrk06"
 msgid "I can't stand by and just let this happen."
-msgstr ""
+msgstr "Jag kan inte bara stå bredvid och låta det här hända."
 
 #: extended_soundsets.tra:69
 msgctxt "g_ttbra1"
 msgid "By the ice breath of Auril!"
-msgstr ""
+msgstr "Vid Aurils isande vind!"
 
 #: extended_soundsets.tra:70
 msgctxt "skiee04"
 msgid "You're the finest group of friends I've ever had."
-msgstr ""
+msgstr "Ni är det bästa samling vänner jag någonsin haft."
 
 #: extended_soundsets.tra:71
 msgctxt "xzarr01"
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr ""
+msgstr "Montaron, du är så FÖRARGANDE! De' e störande för mitt uppträdande!"
 
 #: extended_soundsets.tra:72
 msgctxt "shart34"
 msgid "How would you like my sword tickling your innards?"
-msgstr ""
+msgstr "Skulle du vilja att mitt svärd kittlade dina inälvor?"
 
 #: extended_soundsets.tra:130
 msgctxt "g_ttaja1"
 msgid "You evil ways end here!"
-msgstr ""
+msgstr "Ditt onda sätt slutar här!"
 
 #: extended_soundsets.tra:131
 msgctxt "g_ttaja2"
 msgid "Draw steel!"
-msgstr ""
+msgstr "Dra stål!"
 
 #: extended_soundsets.tra:132
 msgctxt "g_ttkiv1"
 msgid "Defend yourselves!"
-msgstr ""
+msgstr "Försvara dig själv!"
 
 #: extended_soundsets.tra:133
 msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
-msgstr ""
+msgstr "Din själ är förlorad!"
 
 #: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
-msgstr ""
+msgstr "Returnerande kastyxa"
 
 #: hassle_free_ammo.tra:2
 msgid ""
@@ -451,10 +455,33 @@ msgid ""
 " Mage \n"
 " Thief"
 msgstr ""
+"Handyxan eller kastyxan kallas också kort för yxa. Yxbladet har en vass "
+"stålspets som balanseras av en spetsig fluga. Det korta skaftet har en spets "
+"nedtill och huvudet kan ha en spets upptill, vilket gör den opraktisk att "
+"använda i närstrid.\n"
+"\n"
+"Denna speciella yxa har en mindre förtrollning applicerad. Den återvänder "
+"alltid till användarens hand. Ändå slår den som ett normalt vapen, inte som "
+"ett magiskt.\n"
+"\n"
+"STATISTIK:\n"
+"\n"
+"Skada:  1D6 +1\n"
+"Skadetype: missil (genomträngande)\n"
+"Vikt: 5\n"
+"Hastighetsfaktor: 4\n"
+"Färdighetstyp:  Yxa\n"
+"Typ:  1-hands\n"
+"Kräver: 4 Styrka\n"
+"Ej användbar av:\n"
+" Druid\n"
+" Präst\n"
+" Magiker\n"
+" Tjuv"
 
 #: hassle_free_ammo.tra:3
 msgid "Returning throwing dagger"
-msgstr ""
+msgstr "Returnerande kastkniv"
 
 #: hassle_free_ammo.tra:4
 msgid ""
@@ -474,10 +501,30 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"Den typiska kastdolken har ett spetsigt, oftast tveeggat blad, till skillnad "
+"från en kniv, som har en enkel egg och är lite kortare än dolken. Till "
+"skillnad från en dolk har den här ett mindre handtag och är balanserad på "
+"ett annat sätt, vilket gör den opraktisk att använda i närstrid.\n"
+"\n"
+"Just denna dolk har en mindre förtrollning applicerad. Den återvänder alltid "
+"till användarens hand. Ändå slår den som ett vanligt vapen, inte som ett "
+"magiskt.\n"
+"\n"
+"STATISTIK:\n"
+"\n"
+"Skada:  1D4\n"
+"Skadetype: missil (genomträngande)\n"
+"Vikt: 1\n"
+"Hastighetsfaktor: 2\n"
+"Färdighetstyp: Dagger\n"
+"Typ av vapen:  1-hands\n"
+"Kräver: 3 Styrka\n"
+"Ej användbar av:\n"
+" Präst"
 
 #: hassle_free_ammo.tra:5
 msgid "Returning dart"
-msgstr ""
+msgstr "Återvändande kastpil"
 
 #: hassle_free_ammo.tra:6
 msgid ""
@@ -496,6 +543,23 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"Kastpilen är ett litet, lätt dolt missilvapen som kastas i stället för att "
+"avfyras från en båge eller annan avfyrningsanordning.\n"
+"\n"
+"Just den här pilen har en mindre förtrollning applicerad. Den återvänder "
+"alltid till användarens hand. Ändå slår den som ett vanligt vapen, inte ett "
+"magiskt.\n"
+"\n"
+"STATISTIK:\n"
+"\n"
+"Skada:  1D3\n"
+"Skadetype: missil (genomträngande)\n"
+"Vikt: 0\n"
+"Hastighetsfaktor: 2\n"
+"Färdighetstyp: Kastpil\n"
+"Typ av vapen  1-hands\n"
+"Ej användbar av:\n"
+" Präst"
 
 #: hassle_free_ammo.tra:7
 msgid "Quiver of Plenty"
@@ -509,6 +573,12 @@ msgid ""
 "\n"
 "Unlimited plain arrows"
 msgstr ""
+"Förtrollade koger som detta är mycket eftertraktade av professionella "
+"bågskyttar.\n"
+"\n"
+"STATISTIK:\n"
+"\n"
+"Obegränsat antal vanliga pilar"
 
 #: hassle_free_ammo.tra:9
 msgid "Case of Plenty"
@@ -580,6 +650,61 @@ msgid ""
 " Mage\n"
 " Beast Master"
 msgstr ""
+"Långsvärd: Utjämnaren\n"
+"Detta svärd är så gammalt att dess sanna ursprung har gått förlorat i tiden, "
+"men märken antyder att det möjligen smiddes av de i Helms tjänst. Det kallas "
+"också \"Neutralitetens Svärd\" och verkar vara utformat för att söka och "
+"sätta stopp för extremism, för att flytta universum närmare harmonisk "
+"jämvikt. Ju längre bort ett mål befinner sig från sann balans, desto "
+"kraftigare blir skadorna. Ju närmare den som svingar svärdet är till den "
+"sanna balansen, desto starkare är svärdet i deras händer. Utjämnaren "
+"motsätter sig aktivt att användas av karaktärer med extrema inriktningar.\n"
+"\n"
+"Dessutom tillåter svärdet sin ägare att upptäcka närliggande varelsers "
+"inriktningar som med en trollkarlsbesvärjelse, 3 gånger per dag.\n"
+"\n"
+"STATISTIK:\n"
+"\n"
+"Förtrollning: +4\n"
+"\n"
+"Stridsförmågor:\n"
+"  50% chans vid träff att förvirra en god eller ond fiende i 2 ronder, "
+"Räddning mot Besvärjelse negerar. Denna förmåga fungerar bara i händerna på "
+"en karaktär som varken är God eller Ond.\n"
+"  50% chans vid träff att förblinda en Laglydig eller Kaotisk fiende i 2 "
+"ronder, Räddning mot Andning negerar. Den här förmågan fungerar bara i "
+"händerna på en karaktär som varken är Laglydig eller Kaotisk.\n"
+"\n"
+"THAC0 & Skada:\n"
+"  mot Sant Neutral: +0 till träff, +0 skada\n"
+"  mot icke-extrema inriktningar (Kaotisk/Laglydig Neutral, Neutral God/Ond): "
+"+2 i träff, +2 i skada\n"
+"  mot extrema inriktningar (Kaotisk God/Ond, Laglydig God/Ond): +4 i träff, +"
+"4 i skada\n"
+"\n"
+"Extra bonusar baserade på användarens inriktning:\n"
+"  Sant neutral: +4 i träff, +4 i skada\n"
+"  Icke-extrema inriktningar: +2 i träff, +2 i skada\n"
+"  Extrema inriktningar: -20 i träff, -20 i skada.\n"
+"\n"
+"Alla stridseffekter är oberoende av varandra och staplas på varandra.\n"
+"\n"
+"Utrustade förmågor: Immunitet mot Charm och Förvirring\n"
+"\n"
+"Förmågor:\n"
+"  Känna inriktning 3 gånger per dag.\n"
+"\n"
+"Skadetype: skärande\n"
+"Vikt: 3\n"
+"Hastighetsfaktor: 1\n"
+"Färdighetstyp: Långsvärd\n"
+"Typ av vapen: 1-hands\n"
+"Kräver: 6 Styrka\n"
+"Ej användbart av:\n"
+" Druid\n"
+" Präst\n"
+" Magiker\n"
+" Bestmästare"
 
 #: improved_equalizer.tra:2
 msgid ""
@@ -587,26 +712,29 @@ msgid ""
 "without an apprentice, ye'll have to stay here a full day and help me run "
 "the forge."
 msgstr ""
+"Två sakör, min vän. Det kömma att kosta er 12 500 guld fö' arbete', inge' "
+"mindre, och utan en lärling måst' ni stanna här en heldag och hjälpa mig att "
+"sköta smedjan."
 
 #: improved_equalizer.tra:3
 msgid "What would be involved in that?"
-msgstr ""
+msgstr "Vad skulle det innebära?"
 
 #: improved_strongholds.tra:1
 msgid "Theater earnings are ready for collection."
-msgstr ""
+msgstr "Intäkterna från teatern är klara att hämtas."
 
 #: improved_strongholds.tra:2
 msgid "The apprentices must have finished the task. Time to check up on them."
-msgstr ""
+msgstr "Lärlingarna måste ha avslutat uppgiften. Dags att kolla till dem."
 
 #: improved_strongholds.tra:3
 msgid "The Grove awaits."
-msgstr ""
+msgstr "Lunden väntar."
 
 #: improved_strongholds.tra:4
 msgid "It's time to visit the Cabin."
-msgstr ""
+msgstr "Det är dags att besöka Stugan."
 
 #: improved_strongholds.tra:5
 msgid ""
@@ -673,15 +801,15 @@ msgstr ""
 
 #: more_map_notes.tra:15
 msgid "Kaishas' house"
-msgstr ""
+msgstr "Kaishas hus"
 
 #: more_map_notes.tra:16
 msgid "Maralee"
-msgstr ""
+msgstr "Maralee"
 
 #: more_map_notes.tra:17
 msgid "Jorin"
-msgstr ""
+msgstr "Jorin"
 
 #: more_map_notes.tra:18
 msgid "Farthing"
@@ -693,11 +821,11 @@ msgstr ""
 
 #: more_map_notes.tra:20
 msgid "Lahl"
-msgstr ""
+msgstr "Lahl"
 
 #: more_map_notes.tra:21
 msgid "Solianna"
-msgstr ""
+msgstr "Solianna"
 
 #: more_map_notes.tra:22
 msgid "Phlydia"
@@ -705,15 +833,15 @@ msgstr "Phlydia"
 
 #: more_map_notes.tra:23
 msgid "Mirianne's house"
-msgstr ""
+msgstr "Miriannes hus"
 
 #: more_map_notes.tra:24
 msgid "Kagain's house"
-msgstr ""
+msgstr "Kagains hus"
 
 #: more_map_notes.tra:25
 msgid "Firebead's house"
-msgstr ""
+msgstr "Eldpärlans hus"
 
 #: more_map_notes.tra:26
 msgid "Kivan"
@@ -1101,7 +1229,7 @@ msgstr ""
 
 #: pnp_protection_from_evil.tra:2
 msgid "Dire Charmed"
-msgstr ""
+msgstr "Hemskeförtrollad"
 
 #: pnp_protection_from_evil.tra:3
 msgid "Dominated"
@@ -1207,31 +1335,31 @@ msgstr ""
 
 #: setup.tra:125
 msgid "Requires BG2 or EE engine"
-msgstr ""
+msgstr "Kräver BG2- eller EE-motor"
 
 #: setup.tra:126
 msgid "Requires BG2"
-msgstr ""
+msgstr "Kräver BG2"
 
 #: setup.tra:127
 msgid "Only non-EE engines"
-msgstr ""
+msgstr "Endast icke-EE-motorer"
 
 #: setup.tra:128
 msgid "Requires Classic ToB engine"
-msgstr ""
+msgstr "Kräver Classic ToB-motor"
 
 #: setup.tra:129
 msgid "BGT only"
-msgstr ""
+msgstr "Endast BGT"
 
 #: setup.tra:130
 msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
-msgstr ""
+msgstr "Kräver Classic ToB- eller BG(2)EE- eller IWDEE-motor"
 
 #: setup.tra:131
 msgid "Requires TotSC content"
-msgstr ""
+msgstr "Kräver TotSC-innehåll"
 
 #: setup.tra:132
 msgid "Couldn't detect your platform, failing."
@@ -1539,19 +1667,19 @@ msgstr ""
 
 #: setup.tra:804
 msgid "no loss"
-msgstr ""
+msgstr "ingen förlust"
 
 #: setup.tra:805
 msgid "reduced loss"
-msgstr ""
+msgstr "reducerad förlust"
 
 #: setup.tra:806
 msgid "True True Sight"
-msgstr ""
+msgstr "Sann sann syn"
 
 #: setup.tra:807
 msgid "Sensible Otiluke's Resilient Sphere"
-msgstr ""
+msgstr "Förnuftige Otilukes Motståndskraftiga Sfär"
 
 #: setup.tra:808
 msgid "Greater Command AoE"
@@ -1571,7 +1699,7 @@ msgstr ""
 
 #: setup.tra:812
 msgid "Chaos Shield spells are not present in game"
-msgstr ""
+msgstr "Kaossköld-trollformler finns inte i spelet"
 
 #: setup.tra:813
 msgid "Uncheese Project Image | POWER USER component, consult readme"
@@ -1579,7 +1707,7 @@ msgstr ""
 
 #: setup.tra:814
 msgid "Project Image spell is not present in game"
-msgstr ""
+msgstr "Projektera bild-trollformeln finns inte i spelet"
 
 #: setup.tra:815
 msgid "Uncheese Mislead"
@@ -1803,161 +1931,169 @@ msgid ""
 "When you're being attacked, disengage for a short time, then get back at the"
 " enemy."
 msgstr ""
+"När du blir attackerad, dra dig tillbaka en kort stund och återvänd sedan "
+"till fienden."
 
 #: smarter_familiars.tra:313
 msgid "Don't disengage, even if you're being attacked."
-msgstr ""
+msgstr "Släpp inte fokus, även om du blir attackerad."
 
 #: smarter_familiars.tra:314
 msgid "In combat, don't attack enemies, unless I tell you to."
 msgstr ""
+"I strid ska du inte attackera fiender om jag inte säger till dig att göra "
+"det."
 
 #: smarter_familiars.tra:315
 msgid "In combat, attack enemies when you see them."
-msgstr ""
+msgstr "I strid, attackera fiender när du ser dem."
 
 #: smarter_familiars.tra:316
 msgid ""
 "In combat, attack enemies when you see them, prioritizing spellcasters."
-msgstr ""
+msgstr "I strid, attackera fiender när du ser dem och prioritera magiker."
 
 #: smarter_familiars.tra:400
 msgid "Stop picking up any items, okay?"
-msgstr ""
+msgstr "Sluta plocka upp saker, okej?"
 
 #: smarter_familiars.tra:401
 msgid "I want you to bring me everything. Any valuables."
-msgstr ""
+msgstr "Jag vill att du ger mig allt. Alla värdesaker."
 
 #: smarter_familiars.tra:402
 msgid "Pick up any gold that you find."
-msgstr ""
+msgstr "Plocka upp allt guld som du hittar."
 
 #: smarter_familiars.tra:403
 msgid "Don't pick up the gold that you find."
-msgstr ""
+msgstr "Plocka inte upp guldet som du hittar."
 
 #: smarter_familiars.tra:404
 msgid "Pick up any jewels that you find."
-msgstr ""
+msgstr "Plocka upp alla juveler som du hittar."
 
 #: smarter_familiars.tra:405
 msgid "Pick up only valuable and magical jewelry."
-msgstr ""
+msgstr "Plocka bara upp värdefulla och magiska smycken."
 
 #: smarter_familiars.tra:406
 msgid "Pick up only magical jewelry."
-msgstr ""
+msgstr "Plocka bara upp magiska smycken."
 
 #: smarter_familiars.tra:407
 msgid "Don't pick up the jewelry."
-msgstr ""
+msgstr "Plocka inte upp smyckena."
 
 #: smarter_familiars.tra:408
 msgid "Pick up any magical ammo that you find."
-msgstr ""
+msgstr "Plocka upp all magisk ammunition som du hittar."
 
 #: smarter_familiars.tra:409
 msgid "Don't pick up the ammo."
-msgstr ""
+msgstr "Plocka inte upp ammunitionen."
 
 #: smarter_familiars.tra:410
 msgid "If you find any potions, bring them to me!"
-msgstr ""
+msgstr "Om du hittar några brygder, ta med dem till mig!"
 
 #: smarter_familiars.tra:411
 msgid "Stop picking up potions."
-msgstr ""
+msgstr "Sluta plocka upp brygder."
 
 #: smarter_familiars.tra:412
 msgid "Get me any scrolls that you can find."
-msgstr ""
+msgstr "Ge mig alla skriftrullar som du kan hitta."
 
 #: smarter_familiars.tra:413
 msgid "I don't need you to bring any more scrolls."
-msgstr ""
+msgstr "Du behöver inte ta med fler skriftrullar."
 
 #: smarter_familiars.tra:414
 msgid ""
 "Fetch scalps from those bandits we kill. There's a nice bounty for them."
 msgstr ""
+"Hämta skalper från de banditer vi dödar. Det finns en fin belöning för dem."
 
 #: smarter_familiars.tra:415
 msgid "Stop that scalping, will you? It's disgusting."
-msgstr ""
+msgstr "Kan du sluta med skalperingen? Det är äckligt."
 
 #: smarter_familiars.tra:416
+#, fuzzy
 msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
-msgstr ""
+msgstr "Ankheg-fjäll, vintervargskinn, wyvern-huvuden - jag behöver allt."
 
 #: smarter_familiars.tra:417
 msgid "No more pelts or scales, we're stocked."
-msgstr ""
+msgstr "Inga fler skinn eller fjäll, vi har ett helt lager."
 
 #: smarter_familiars.tra:418
 msgid "No, nothing."
-msgstr ""
+msgstr "Nej, ingenting."
 
 #: smarter_familiars.tra:419
 msgid "As you wish, master."
-msgstr ""
+msgstr "Som ni önskar, mästare."
 
 #: smarter_familiars.tra:500
 msgid "Let's talk about your gear."
-msgstr ""
+msgstr "Dags att prata om din utrustning."
 
 #: smarter_familiars.tra:501
 msgid ""
 "Take this returning dart. I think you're better off attacking from distance."
 msgstr ""
+"Ta den här återvändande kastpilen. Jag tror att det är bättre att du "
+"attackerar på avstånd."
 
 #: smarter_familiars.tra:502
 msgid "Okay, boss."
-msgstr ""
+msgstr "Okej, chefen."
 
 #: smarter_familiars.tra:503
 msgid "Done."
-msgstr ""
+msgstr "Färdig."
 
 #: smarter_familiars.tra:504
 msgid "No, actually I think your gear is fine."
-msgstr ""
+msgstr "Nej, jag tycker faktiskt att din utrustning är bra."
 
 #: smarter_familiars.tra:601
 msgid "I'm hurting here, Boss."
-msgstr ""
+msgstr "Jag har ont här, chefen."
 
 #: smarter_familiars.tra:602
 msgid "I'm really hurting here, Boss."
-msgstr ""
+msgstr "Jag har väldigt ont här, chefen."
 
 #: smarter_familiars.tra:603
 msgid "Ouch!"
-msgstr ""
+msgstr "Aj!"
 
 #: smarter_familiars.tra:701
 msgid "(Give a Healing potion)."
-msgstr ""
+msgstr "(Ge en läkande brygd)."
 
 #: smarter_familiars.tra:702
 msgid "(Give an Extra Healing potion)."
-msgstr ""
+msgstr "(Ge en extra-läkande dryck)."
 
 #: smarter_familiars.tra:703
 msgid "(Give a Superior Healing potion)."
-msgstr ""
+msgstr "(Ge en överlägsen läkande dryck)."
 
 #: smarter_familiars.tra:704
 msgid "(Give a Fire Resistance potion)."
-msgstr ""
+msgstr "(Ge en eldmotståndsdryck)."
 
 #: smarter_familiars.tra:705
 msgid "(Give an Invisibility potion)."
-msgstr ""
+msgstr "(Ge en osynlighetsdryck)."
 
 #: smarter_familiars.tra:706
 msgid "(Give a oil of Speed)."
-msgstr ""
+msgstr "(Ge en hastighetsolja)."
 
 #: smarter_familiars.tra:707
 msgid "(Give an elixir of Health)."
@@ -2089,7 +2225,7 @@ msgstr "Thorius"
 
 #: starting_bags.tra:2
 msgid "Gem bag"
-msgstr ""
+msgstr "Ädelstensväska"
 
 #: starting_bags.tra:3
 msgid "This small bag is ideally suited for holding gems."
@@ -2188,6 +2324,12 @@ msgid ""
 "Tracking\n"
 "With an intimate knowledge of his surroundings and the creatures that live within them, a ranger can use the Tracking ability to give himself a general idea of what creatures are in an area and which direction they are. Red arrows at the edge of the screen will point in the general direction of the creatures in the area."
 msgstr ""
+"Spårning\n"
+"Med en ingående kunskap om sin omgivning och de varelser som lever där kan "
+"en Jägare använda förmågan Spårning för att få en allmän uppfattning om "
+"vilka varelser som finns i ett område och i vilken riktning de är. Röda "
+"pilar i skärmens kant pekar i den allmänna riktningen för varelserna i "
+"området."
 
 #: tracking.tra:100
 msgid ""
