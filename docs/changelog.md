@@ -42,6 +42,10 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
+### Version 8.34
+
+[Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/88) Tracking missing specific info in the Isle of Balduran.
+
 ### Version 8.33
 
 New component: [Tracking!](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/spells.md#tracking)
