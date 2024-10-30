@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24-16:26+0000\n"
-"PO-Revision-Date: 2024-10-30 06:09+0000\n"
+"PO-Revision-Date: 2024-10-30 07:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -713,64 +713,66 @@ msgstr "Det är dags att besöka Stugan."
 msgid ""
 "The people of de'Arnise keep require the presence of their <PRO_LADYLORD>."
 msgstr ""
+"Folket i Fästningen de'Arnise kräver att deras <PRO_LADYLORD> ska vara "
+"närvarande."
 
 #: improved_strongholds.tra:6
 msgid "Morul has prepared a new batch of potions."
-msgstr ""
+msgstr "Morul har förberett en ny sats brygder."
 
 #: improved_strongholds.tra:7
 msgid "The potions are on the table in the laboratory, <SIRMAAM>."
-msgstr ""
+msgstr "Brygderna ligger på bordet i laboratoriet, <SIRMAAM>."
 
 #: improved_strongholds.tra:8
 msgid ""
 "Your presence is required at the Temple. The needs of the faithful must be "
 "tended to."
-msgstr ""
+msgstr "Din närvaro behövs vid Templet. De troendes behov måste tillgodoses."
 
 #: more_map_notes.tra:3
 msgid "Nadine's house"
-msgstr ""
+msgstr "Nadines hus"
 
 #: more_map_notes.tra:5
 msgid "Sunin's house"
-msgstr ""
+msgstr "Sunins hus"
 
 #: more_map_notes.tra:6
 msgid "Cordyr's house"
-msgstr ""
+msgstr "Cordyrs hus"
 
 #: more_map_notes.tra:7
 msgid "Nadarin's warehouse"
-msgstr ""
+msgstr "Nadarins lager"
 
 #: more_map_notes.tra:8
 msgid "Noralee's warehouse"
-msgstr ""
+msgstr "Noralees lager"
 
 #: more_map_notes.tra:9
 msgid "Ghorak's house"
-msgstr ""
+msgstr "Ghoraks hus"
 
 #: more_map_notes.tra:10
 msgid "Nemphre's house"
-msgstr ""
+msgstr "Nemphres hus"
 
 #: more_map_notes.tra:11
 msgid "Nadarin's office"
-msgstr ""
+msgstr "Nadarins kontor"
 
 #: more_map_notes.tra:12
 msgid "Fenten's house"
-msgstr ""
+msgstr "Fentens hus"
 
 #: more_map_notes.tra:13
 msgid "Evalt"
-msgstr ""
+msgstr "Evalt"
 
 #: more_map_notes.tra:14
 msgid "Taloun's house"
-msgstr ""
+msgstr "Talouns hus"
 
 #: more_map_notes.tra:15
 msgid "Kaishas' house"
@@ -786,11 +788,11 @@ msgstr "Jorin"
 
 #: more_map_notes.tra:18
 msgid "Farthing"
-msgstr ""
+msgstr "Farthing"
 
 #: more_map_notes.tra:19
 msgid "Delainy"
-msgstr ""
+msgstr "Delainy"
 
 #: more_map_notes.tra:20
 msgid "Lahl"
@@ -826,7 +828,7 @@ msgstr "Korax"
 
 #: more_map_notes.tra:28
 msgid "Kirian's band"
-msgstr ""
+msgstr "Kirians band"
 
 #: more_map_notes.tra:29
 msgid "Mutamin"
@@ -838,7 +840,7 @@ msgstr "Tamah"
 
 #: more_map_notes.tra:31
 msgid "Corianna"
-msgstr ""
+msgstr "Corianna"
 
 #: more_map_notes.tra:32
 msgid "Hobgoblin camp"
