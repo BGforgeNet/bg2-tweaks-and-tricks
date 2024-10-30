@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24-16:26+0000\n"
-"PO-Revision-Date: 2024-10-23 17:09+0000\n"
+"PO-Revision-Date: 2024-10-30 06:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -551,7 +551,7 @@ msgstr ""
 
 #: hassle_free_ammo.tra:7
 msgid "Quiver of Plenty"
-msgstr ""
+msgstr "Överflödeskoger"
 
 #: hassle_free_ammo.tra:8
 msgid ""
@@ -569,7 +569,7 @@ msgstr ""
 
 #: hassle_free_ammo.tra:9
 msgid "Case of Plenty"
-msgstr ""
+msgstr "Överflödesfodral"
 
 #: hassle_free_ammo.tra:10
 msgid ""
@@ -582,7 +582,7 @@ msgstr ""
 
 #: hassle_free_ammo.tra:11
 msgid "Bag of Plenty"
-msgstr ""
+msgstr "Överflödespåse"
 
 #: hassle_free_ammo.tra:12
 msgid ""
