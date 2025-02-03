@@ -8,11 +8,11 @@
 @8 = ~Uważajcie. To wygląda podejrzanie.~
 @9 = ~Zaczekajcie. Widzicie to?~
 @98 = ~Pułapka~
-@100 = ~Unknown trap~
-@101 = ~Hold Person trap~
-@102 = ~Silence trap~
-@103 = ~Call Lightning trap~
-@104 = ~Miscast Magic trap~
+@100 = ~Nieznana pułapka~
+@101 = ~Pułapka Unieruchamiająca~
+@102 = ~Pułapka Wyciszająca~
+@103 = ~Pułapka Wezwania Błyskawic~
+@104 = ~Pułapka Zakłócenia Magii~
 @105 = ~Flamestrike trap~
 @106 = ~Chromatic orb trap~
 @107 = ~Confusion trap~
