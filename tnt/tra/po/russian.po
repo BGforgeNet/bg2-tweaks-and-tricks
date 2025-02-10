@@ -4,14 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-24-16:26+0000\n"
-"PO-Revision-Date: 2024-08-27 14:10+0000\n"
-"Last-Translator: Pavel <pavel061090563pavel@gmail.com>\n"
-"Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
+"PO-Revision-Date: 2025-02-10 06:48+0000\n"
+"Last-Translator: Magus <magus@bgforge.net>\n"
+"Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/"
+"tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.12.2\n"
 
 #: easy_traps.tra:1
@@ -1178,8 +1180,6 @@ msgid "Quinn's house"
 msgstr "Дом Квинна"
 
 #: more_map_notes.tra:72004
-#, fuzzy
-#| msgid "House of Laerta and Louise"
 msgid "Laerta and Louise's house"
 msgstr "Дом Лаэрты и Луизы"
 
@@ -1389,16 +1389,12 @@ msgid "BGT only"
 msgstr "Только для BGT"
 
 #: setup.tra:130
-#, fuzzy
-#| msgid "Requires ToB or EE engine"
 msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
 msgstr "Требует движок ToB или EE"
 
 #: setup.tra:131
-#, fuzzy
-#| msgid "Requires ToB or EE engine"
 msgid "Requires TotSC content"
-msgstr "Требует движок ToB или EE"
+msgstr "Требует контент TotSC"
 
 #: setup.tra:132
 msgid "Couldn't detect your platform, failing."
@@ -1453,8 +1449,6 @@ msgid "3E-like: no stacking, best bonus takes effect"
 msgstr ""
 
 #: setup.tra:223
-#, fuzzy
-#| msgid "Potion of really mirrored eyes"
 msgid "Potion of Really Mirrored Eyes"
 msgstr "Зелье по-настоящему зеркальных глаз"
 
@@ -1463,10 +1457,8 @@ msgid "Unlimited goodberries stacking"
 msgstr "Неограниченное складывание хороших ягод"
 
 #: setup.tra:240
-#, fuzzy
-#| msgid "Throwing weapons damage"
 msgid "Throwing weapons damage type"
-msgstr "Урон от метательного оружия"
+msgstr "Тип урона от метательного оружия"
 
 #: setup.tra:241
 msgid "Add strength bonus"
