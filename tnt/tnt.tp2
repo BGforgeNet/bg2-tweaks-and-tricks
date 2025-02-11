@@ -1,7 +1,7 @@
 /** @tra setup.tra */
 BACKUP ~tnt/backup~
 SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
-VERSION ~v8.35~
+VERSION ~v8.36-dev~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
@@ -10,14 +10,12 @@ ALWAYS
   INCLUDE ~%lib_dir%/init.tpa~
 END
 
-// Do not change to %MOD_FOLDER%, until relevant weidu bugs are confirmed to be fixed.
-LANGUAGE ~English~ ~english~ ~tnt/tra_ee/english/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Polish~ ~polish~ ~tnt/tra_ee/polish/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra_ee/portuguese/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Russian~ ~russian~ ~tnt/tra_ee/russian/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Spanish~ ~spanish~ ~tnt/tra_ee/spanish/setup-%WEIDU_OS%.tra~
-LANGUAGE ~Swedish~ ~swedish~ ~tnt/tra_ee/swedish/setup-%WEIDU_OS%.tra~
-
+LANGUAGE ~English~                ~english~     ~tnt/tra/english/setup.tra~
+LANGUAGE ~Polish~                 ~polish~      ~tnt/tra/polish/setup.tra~
+LANGUAGE ~Brazilian Portuguese~   ~portuguese~  ~tnt/tra/portuguese/setup.tra~
+LANGUAGE ~Russian~                ~russian~     ~tnt/tra/russian/setup.tra~
+LANGUAGE ~Spanish~                ~spanish~     ~tnt/tra/spanish/setup.tra~
+LANGUAGE ~Swedish~                ~swedish~     ~tnt/tra/swedish/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
