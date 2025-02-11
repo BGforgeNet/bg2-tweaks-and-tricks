@@ -14,15 +14,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Poify/Unpoify
+      - name: Poify/Unpoify run
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         uses: BGforgeNet/msg2po@dev
         with:
           poify: true
           unpoify: true
-          push: true
           dir2msgstr: true
           single_commit: true
           handle_charsets: true
           handle_charsets_tra_path: tnt/tra
           handle_charsets_out_path: tnt/tra_ee
-          handle_charsets_from_utf8: false
+
+      - name: Poify/Unpoify test
+        if: (github.ref != 'refs/heads/master' && github.event_name == 'push') || github.event_name == 'pull_request'
+        uses: BGforgeNet/msg2po@dev
+        with:
+          poify: true
+          unpoify: true
+          dir2msgstr: true
+          single_commit: true
+          push: false
+          handle_charsets: true
+          handle_charsets_tra_path: tnt/tra
+          handle_charsets_out_path: tnt/tra_ee
