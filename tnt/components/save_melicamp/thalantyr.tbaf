@@ -1,0 +1,101 @@
+import { $obj, GLOBAL, LOCALS } from 'ielib';
+import { ActionOverride, CheckStatGT, Dialog, EFFECT_ONLY, EndCutSceneMode, Face, ForceSpell, Global, GlobalGT, GlobalLT, IncrementGlobal, Kill, MAGE_MALE_HUMAN, Polymorph, RandomNum, SetGlobal, SmallWait, StartCutSceneMode, State, STATE_AID, STATE_LUCK, StateCheck, Stats, Trigger, Wait } from 'ielib/bg2';
+
+/**
+ * Melicamp object
+ */
+const objMelicamp = $obj("Melicamp");
+
+/**
+ * 0: sequence hasn't started
+ * 1: started
+ * 2: finished
+ */
+const LVAR_sequence = "g_melicamp_sequence"
+
+/**
+ * Melicamp's random roll variable, initialized with 1-10.
+ */
+const LVAR_roll = "g_melicamp_roll"
+
+if (Trigger(1) && Global(LVAR_sequence, GLOBAL, 0)) {
+    SetGlobal(LVAR_sequence, GLOBAL, 1)
+}
+
+// Initial roll
+for (let roll = 1; roll <= 10; roll++) {
+    if (Global(LVAR_sequence, GLOBAL, 1)
+        && Global(LVAR_roll, GLOBAL, 0)
+        && RandomNum(10, roll)
+    ) {
+        SetGlobal(LVAR_roll, GLOBAL, roll)
+    }
+}
+
+
+/**
+ * Increases Melicamp's roll by 1, if state check passes.
+ * 
+ * @param spellVar tracks if block has run once already
+ * @param state State to check
+ */
+function bIncreaseRoll(spellVar: string, state: State) {
+    if (Global(LVAR_sequence, GLOBAL, 1)
+        && Global(spellVar, LOCALS, 0)
+        && StateCheck(objMelicamp, state)
+    ) {
+        IncrementGlobal(LVAR_roll, GLOBAL, 1)
+        SetGlobal(spellVar, LOCALS, 1)
+    }
+}
+
+// Death Ward. Apparently present in vanilla game, so doesn't require Detectable Spells?
+declare const SCRIPTINGSTATE2: Stats;
+
+// Bless only can be cast on green-circle characters.
+bIncreaseRoll("g_melicamp_aid", STATE_AID)
+bIncreaseRoll("g_melicamp_luck", STATE_LUCK)
+
+// Death Ward checks a Stat, not a State.
+if (Global(LVAR_sequence, GLOBAL, 1)
+    && Global("g_melicamp_deathward", LOCALS, 0)
+    && CheckStatGT(objMelicamp, 0, SCRIPTINGSTATE2)
+) {
+    IncrementGlobal(LVAR_roll, GLOBAL, 1)
+    SetGlobal("g_melicamp_deathward", LOCALS, 1)
+}
+
+
+
+// Winner!
+if (Global(LVAR_sequence, GLOBAL, 1)
+    && GlobalGT(LVAR_roll, GLOBAL, 5)
+) {
+    StartCutSceneMode()
+    Face(1)
+    SmallWait(1)
+    ForceSpell(objMelicamp, EFFECT_ONLY)
+    Wait(1)
+    ActionOverride(objMelicamp, Polymorph(MAGE_MALE_HUMAN))
+    Wait(1)
+    Dialog($obj("[PC]"))
+    SetGlobal(LVAR_sequence, GLOBAL, 2)
+    EndCutSceneMode()
+}
+
+// Loser!
+if (Global(LVAR_sequence, GLOBAL, 1)
+    && GlobalLT(LVAR_roll, GLOBAL, 6)
+) {
+    StartCutSceneMode()
+    Face(1)
+    SmallWait(1)
+    ForceSpell(objMelicamp, EFFECT_ONLY)
+    Wait(1)
+    ActionOverride(objMelicamp, Polymorph(MAGE_MALE_HUMAN))
+    Kill(objMelicamp)
+    Wait(1)
+    Dialog($obj("[PC]"))
+    SetGlobal(LVAR_sequence, GLOBAL, 2)
+    EndCutSceneMode()
+}

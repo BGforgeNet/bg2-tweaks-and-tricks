@@ -4,3 +4,6 @@ tnt/backup/*
 *.DEBUG
 tnt/weidu.log
 *.zip
+
+node_modules/
+**/_tmp.tbaf.ts

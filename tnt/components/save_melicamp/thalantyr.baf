@@ -1,9 +1,11 @@
+/* Do not edit. This file is generated from thalantyr.tbaf. Make your changes there and regenerate this file. */
+
 IF
   Trigger(1)
-  Global("g_melicamp_sequence", "GLOBAL", 0) // not started
+  Global("g_melicamp_sequence", "GLOBAL", 0)
 THEN
-  RESPONSE #1
-    SetGlobal("g_melicamp_sequence", "GLOBAL", 1) // started
+  RESPONSE #100
+    SetGlobal("g_melicamp_sequence", "GLOBAL", 1)
 END
 
 IF
@@ -11,130 +13,126 @@ IF
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 1)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 1)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 2)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 2)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 3)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 3)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 4)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 4)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 5)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 5)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 6)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 6)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 7)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 7)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 8)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 8)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 9)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 9)
 END
+
 IF
   Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_roll", "GLOBAL", 0)
   RandomNum(10, 10)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     SetGlobal("g_melicamp_roll", "GLOBAL", 10)
 END
 
-// Bless only can be cast on green-circle characters
-// IF
-// 	Global("g_melicamp_sequence", "GLOBAL",1)
-// 	Global("g_melicamp_bless", "LOCALS", 0)
-//   StateCheck("Melicamp", STATE_BLESS)
-// THEN
-// 	RESPONSE #1
-//     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
-//     SetGlobal("g_melicamp_bless", "LOCALS", 1)
-// //    DisplayStringHead(Myself, ~roll improved by bless~)
-// END
 IF
-  Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_aid", "LOCALS", 0)
   StateCheck("Melicamp", STATE_AID)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
     SetGlobal("g_melicamp_aid", "LOCALS", 1)
-//    DisplayStringHead(Myself, ~roll improved by aid~)
 END
+
 IF
-  Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_luck", "LOCALS", 0)
   StateCheck("Melicamp", STATE_LUCK)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
     SetGlobal("g_melicamp_luck", "LOCALS", 1)
-//    DisplayStringHead(Myself, ~roll improved by luck~)
 END
+
 IF
-  Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL", 1)
   Global("g_melicamp_deathward", "LOCALS", 0)
-  CheckStatGT("Melicamp", 0, SCRIPTINGSTATE2) // death ward
+  CheckStatGT("Melicamp", 0, SCRIPTINGSTATE2)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     IncrementGlobal("g_melicamp_roll", "GLOBAL", 1)
     SetGlobal("g_melicamp_deathward", "LOCALS", 1)
-//    DisplayStringHead(Myself, ~roll improved by death ward~)
 END
 
-
 IF
-  Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL", 1)
   GlobalGT("g_melicamp_roll", "GLOBAL", 5)
 THEN
-  RESPONSE #1
+  RESPONSE #100
     StartCutSceneMode()
     Face(1)
     SmallWait(1)
@@ -143,14 +141,15 @@ THEN
     ActionOverride("Melicamp", Polymorph(MAGE_MALE_HUMAN))
     Wait(1)
     Dialog([PC])
-    SetGlobal("g_melicamp_sequence", "GLOBAL", 2) // done
+    SetGlobal("g_melicamp_sequence", "GLOBAL", 2)
     EndCutSceneMode()
 END
+
 IF
-  Global("g_melicamp_sequence", "GLOBAL",1)
+  Global("g_melicamp_sequence", "GLOBAL", 1)
   GlobalLT("g_melicamp_roll", "GLOBAL", 6)
 THEN
-  RESPONSE #50
+  RESPONSE #100
     StartCutSceneMode()
     Face(1)
     SmallWait(1)
