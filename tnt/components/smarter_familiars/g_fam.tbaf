@@ -1,10 +1,10 @@
-import { attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, hitAndRun, jumpToPack, jumpToPackBadlyInjured, JumpToPackInjured, notifyHurt, notifyHurtBadly, pickupAmmoMagic, pickupAmmoMagicRare, pickupGold, pickupJewelsCommon, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, pickupPotionsCommon, pickupPotionsRare, pickupScalps, pickupScrolls, pickupTrophy, resetHurtNotification } from './lib.g_fam'
+import { attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, hitAndRun, jumpToPack, JumpToPackInjured, notifyHurt, notifyHurtBadly, pickupAmmoMagic, pickupAmmoMagicRare, pickupGold, pickupJewelsCommon, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, pickupPotionsCommon, pickupPotionsRare, pickupScalps, pickupScrolls, pickupTrophy, resetHurtNotification } from './lib.g_fam'
 
 
 // Top priority: jump into backpack
 jumpToPack()
-JumpToPackInjured()
-jumpToPackBadlyInjured()
+JumpToPackInjured(2, 70)
+JumpToPackInjured(3, 30)
 
 
 // Combat tactics

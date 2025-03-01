@@ -627,37 +627,19 @@ export function jumpToPack() {
 }
 
 /**
- * Jump to pack when there are enemies about and HP is below 70%.
- * 
+ * Jump to pack when there are enemies about.
+ *
  * When asked to hide into pack, stay there until released.
- * 
+ *
  * Once released, can go in/out of pack as directed before.
+ *
+ * @param varThreshold only when `LVAR_jumpToPack` equals to this
+ * @param hpThreshold only when HP is below this percentage
  */
-export function JumpToPackInjured() {
-    if (Global(LVAR_jumpToPack, GLOBAL, 2)
-        && HPPercentLT(Myself, 70)
+export function JumpToPackInjured(varThreshold: number, hpThreshold: number) {
+    if (Global(LVAR_jumpToPack, GLOBAL, varThreshold)
+        && HPPercentLT(Myself, hpThreshold)
         && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
-        && !Dead("%death_var%")
-    ) {
-        DisplayStringHead(Myself, $tra(603))
-        sprint()
-        MoveToObject(Player1)
-        GiveItemCreate("%fam_item%", Player1, 0, 0, 0)
-        DestroySelf()
-    }
-}
-
-/**
- * Jump to pack when there are enemies about and HP is below 30%.
- * 
- * When asked to hide into pack, stay there until released.
- * 
- * Once released, can go in/out of pack as directed before.
- */
-export function jumpToPackBadlyInjured() {
-    if (Global(LVAR_jumpToPack, GLOBAL, 3)
-        && HPPercentLT(Myself, 30)
-        && (!CombatCounterLT(1) || !See($obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
     ) {
         DisplayStringHead(Myself, $tra(603))

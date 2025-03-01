@@ -34,7 +34,7 @@ IF
   HPPercentLT(Myself, 30)
   OR(2)
     !CombatCounterLT(1)
-    !See([EVILCUTOFF])
+    See([EVILCUTOFF])
   !Dead("%death_var%")
 THEN
   RESPONSE #100
