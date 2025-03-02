@@ -288,7 +288,7 @@ IF
   Detect(Player1)
   G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  G("g_FamPickupJewelsCommon", 1)
+  G("g_FamPickupJewels", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -610,7 +610,8 @@ IF
   Detect(Player1)
   G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  G("g_FamPickupJewelsRare", 1)
+  GGT("g_FamPickupJewels", 0)
+  GLT("g_FamPickupJewels", 3)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -778,7 +779,7 @@ IF
   Detect(Player1)
   G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  G("g_FamPickupJewelsMagic", 1)
+  GGT("g_FamPickupJewels", 0)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)

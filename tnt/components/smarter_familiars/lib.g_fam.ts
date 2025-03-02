@@ -1,5 +1,5 @@
 import { $obj, $tra, GLOBAL } from "ielib";
-import { ActionListEmpty, ApplySpellRES, AttackedBy, AttackOneRound, AttackReevaluate, CombatCounterLT, Continue, Dead, DEFAULT, DestroySelf, Detect, DisplayStringHead, G, GiveItemCreate, HasItemSlot, HPPercentLT, InMyArea, LastAttackerOf, LastSeenBy, LastTargetedBy, ModalState, MoveGlobalObject, MoveToObject, Myself, NearestEnemyOf, NearestEnemyOfType, PickUpItem, Player1, RunAwayFrom, See, SetGlobal, SLOT_MISC10, SLOT_MISC11, SLOT_MISC12, SLOT_MISC13, SLOT_MISC14, SLOT_MISC15, SLOT_MISC16, SLOT_MISC17, SLOT_MISC18, SLOT_MISC3, SLOT_MISC4, SLOT_MISC5, SLOT_MISC6, SLOT_MISC7, SLOT_MISC8, SLOT_MISC9, STATE_INVISIBLE, StateCheck, STEALTH } from "ielib/bg2";
+import { ActionListEmpty, ApplySpellRES, AttackedBy, AttackOneRound, AttackReevaluate, CombatCounterLT, Continue, Dead, DEFAULT, DestroySelf, Detect, DisplayStringHead, G, GGT, GiveItemCreate, GLT, HasItemSlot, HPPercentLT, InMyArea, LastAttackerOf, LastSeenBy, LastTargetedBy, ModalState, MoveGlobalObject, MoveToObject, Myself, NearestEnemyOf, NearestEnemyOfType, PickUpItem, Player1, RunAwayFrom, See, SetGlobal, SLOT_MISC10, SLOT_MISC11, SLOT_MISC12, SLOT_MISC13, SLOT_MISC14, SLOT_MISC15, SLOT_MISC16, SLOT_MISC17, SLOT_MISC18, SLOT_MISC3, SLOT_MISC4, SLOT_MISC5, SLOT_MISC6, SLOT_MISC7, SLOT_MISC8, SLOT_MISC9, STATE_INVISIBLE, StateCheck, STEALTH } from "ielib/bg2";
 
 /**
  * Jump to backpack setting.
@@ -48,6 +48,15 @@ const LVAR_pickupPotions = "g_FamPickupPotions"
  * Pickup ammo toggle. Set in dialog.
  */
 const LVAR_pickupAmmo = "g_FamPickupAmmo"
+
+/**
+ * Pickup jewels setting. Set in dialog.
+ * - 0: don't pickup.
+ * - 1: pickup all.
+ * - 2: pickup only rare and magical
+ * - 3: pickup only magical jewelry
+ */
+const LVAR_pickupJewels = "g_FamPickupJewels"
 
 /**
  * Follow master toggle. Set in dialog.
@@ -868,7 +877,7 @@ export function pickupScalps() {
  */
 export function pickupJewelsCommon() {
     if (tCanPickup()
-        && G("g_FamPickupJewelsCommon", 1)
+        && G(LVAR_pickupJewels, 1)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -936,7 +945,8 @@ export function pickupAmmoMagic() {
  */
 export function pickupJewelsRare() {
     if (tCanPickup()
-        && G("g_FamPickupJewelsRare", 1)
+        && GGT(LVAR_pickupJewels, 0)
+        && GLT(LVAR_pickupJewels, 3)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -954,7 +964,7 @@ export function pickupJewelsRare() {
  */
 export function pickupJewelsMagic() {
     if (tCanPickup()
-        && G("g_FamPickupJewelsMagic", 1)
+        && GGT(LVAR_pickupJewels, 0)
     ) {
         sprint()
         for (const jewel of jewelsMagic) {
@@ -987,7 +997,7 @@ export function pickupAmmoMagicRare() {
  */
 export function pickupJewelsMagicRare() {
     if (tCanPickup()
-        && G("g_FamPickupJewelsMagicRare", 1)
+        && GGT(LVAR_pickupJewels, 0)
     ) {
         sprint()
         for (const jewel of jewelsMagicRare) {
@@ -1003,7 +1013,6 @@ export function pickupJewelsMagicRare() {
 export function pickupScrolls() {
     if (tCanPickup()
         && G("g_FamPickupScrolls", 1)
-
     ) {
         sprint()
         for (const scroll of scrolls) {
