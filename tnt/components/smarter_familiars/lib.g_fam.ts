@@ -842,18 +842,27 @@ function tCanPickup() {
 }
 
 /**
- * Pickup gold, 10 times.
+ * Generic pickup
  */
-export function pickupGold() {
-    if (tCanPickup()
-        && G("g_FamPickupGold", 1)
+function pickup(gvar: string, iterations: number, items: string[]) {
+    if (tCanPickup() && G(gvar, 1)
     ) {
         sprint()
-        for (let i = 0; i < 10; i++) {
-            PickUpItem("misc07")
+        for (let i = 0; i < iterations; i++) {
+            for (const item of items) {
+                PickUpItem(item)
+            }
         }
         Continue()
     }
+}
+
+
+/**
+ * Pickup gold, 10 times.
+ */
+export function pickupGold() {
+    pickup("g_FamPickupGold", 10, ["misc07"])
 }
 
 /**
@@ -865,7 +874,7 @@ export function pickupScalps() {
     ) {
         sprint()
         for (let i = 0; i < 5; i++) {
-            PickUpItem("misc07")
+            PickUpItem("misc86")
         }
         Continue()
     }

@@ -248,11 +248,11 @@ IF
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
-    PickUpItem("misc07")
-    PickUpItem("misc07")
-    PickUpItem("misc07")
-    PickUpItem("misc07")
-    PickUpItem("misc07")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
+    PickUpItem("misc86")
     Continue()
 END
 
@@ -891,7 +891,7 @@ IF
   Detect(Player1)
   G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  G("g_FamPickupJewelsMagicRare", 1)
+  GGT("g_FamPickupJewels", 0)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
