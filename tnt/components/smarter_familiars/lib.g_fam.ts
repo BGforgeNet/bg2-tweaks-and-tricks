@@ -9,7 +9,7 @@ import { ActionListEmpty, ApplySpellRES, AttackedBy, AttackOneRound, AttackReeva
  * - 3: when there's danger and badly injured
  * Set in dialog.
  */
-const LVAR_jumpToPack = "g_FamJumpToPack"
+const GVAR_jumpToPack = "g_FamJumpToPack"
 
 /**
  * Notify when hurt setting.
@@ -18,7 +18,7 @@ const LVAR_jumpToPack = "g_FamJumpToPack"
  * - 2: if badly injured
  * Set in dialog.
  */
-const LVAR_notifyHurt = "g_FamHurtNotif"
+const GVAR_notifyHurt = "g_FamHurtNotif"
 
 /**
  * Track hurt notification.
@@ -26,48 +26,48 @@ const LVAR_notifyHurt = "g_FamHurtNotif"
  * - 1: Notified already.
  * Reset to 0 at the start of each combat encounter.
  */
-const LVAR_notifyHurtDone = "g_FamHurtNotifDone"
+const GVAR_notifyHurtDone = "g_FamHurtNotifDone"
 
 /**
  * Combat tactic: hit and run.
  */
-const LVAR_hitAndRun = "g_FamHitAndRun"
+const GVAR_hitAndRun = "g_FamHitAndRun"
 
 
 /**
  * 1 if inventory is full, 0 otherwise.
  */
-const LVAR_inventoryFull = "g_FamInventoryFull"
+const GVAR_inventoryFull = "g_FamInventoryFull"
 
 /**
  * Pick up potions toggle. Set in dialog.
  */
-export const LVAR_pickupPotions = "g_FamPickupPotions"
+export const GVAR_pickupPotions = "g_FamPickupPotions"
 
 /**
  * Pickup ammo toggle. Set in dialog.
  */
-export const LVAR_pickupAmmo = "g_FamPickupAmmo"
+export const GVAR_pickupAmmo = "g_FamPickupAmmo"
 
 /**
  * Pickup gold toggle. Set in dialog.
  */
-export const LVAR_pickupGold = "g_FamPickupGold"
+export const GVAR_pickupGold = "g_FamPickupGold"
 
 /**
  * Pickup scalps toggle. Set in dialog.
  */
-export const LVAR_pickupScalps = "g_FamPickupScalps"
+export const GVAR_pickupScalps = "g_FamPickupScalps"
 
 /**
  * Pickup trophies toggle. Set in dialog.
  */
-export const LVAR_pickupTrophies = "g_FamPickupTrophy"
+export const GVAR_pickupTrophies = "g_FamPickupTrophy"
 
 /**
  * Pickup scrolls toggle. Set in dialog.
  */
-export const LVAR_pickupScrolls = "g_FamPickupScrolls"
+export const GVAR_pickupScrolls = "g_FamPickupScrolls"
 
 
 /**
@@ -77,12 +77,12 @@ export const LVAR_pickupScrolls = "g_FamPickupScrolls"
  * - 2: pickup only rare and magical
  * - 3: pickup only magical jewelry
  */
-export const LVAR_pickupJewels = "g_FamPickupJewels"
+export const GVAR_pickupJewels = "g_FamPickupJewels"
 
 /**
  * Follow master toggle. Set in dialog.
  */
-const LVAR_followMaster = "g_FamFollowMaster"
+const GVAR_followMaster = "g_FamFollowMaster"
 
 /**
  * Combat tactic. Set in dialog.
@@ -90,7 +90,7 @@ const LVAR_followMaster = "g_FamFollowMaster"
  * - 1: attack nearest
  * - 2: attack nearest, prioritising spellcasters
  */
-const LVAR_combatTactic = "g_FamTactic"
+const GVAR_combatTactic = "g_FamTactic"
 
 /**
  * Loot lists are generally oraganized from more common to less common items.
@@ -665,7 +665,7 @@ export function sprint() {
  * Once released, can go in/out of pack as directed before.
  */
 export function jumpToPack() {
-    if (G(LVAR_jumpToPack, 1)
+    if (G(GVAR_jumpToPack, 1)
         && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
     ) {
@@ -682,11 +682,11 @@ export function jumpToPack() {
  *
  * Once released, can go in/out of pack as directed before.
  *
- * @param varThreshold only when `LVAR_jumpToPack` equals to this
+ * @param varThreshold only when `GVAR_jumpToPack` equals to this
  * @param hpThreshold only when HP is below this percentage
  */
 export function JumpToPackInjured(varThreshold: number, hpThreshold: number) {
-    if (G(LVAR_jumpToPack, varThreshold)
+    if (G(GVAR_jumpToPack, varThreshold)
         && HPPercentLT(Myself, hpThreshold)
         && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
@@ -701,18 +701,18 @@ export function JumpToPackInjured(varThreshold: number, hpThreshold: number) {
 
 /**
  * Notify that familiar is hurt, when there's no danger, if directed so.
- * Uses `LVAR_notifyHurtDone` to track notification, will only notify once.
+ * Uses `GVAR_notifyHurtDone` to track notification, will only notify once.
  */
 export function notifyHurt() {
-    if (G(LVAR_notifyHurt, 1)
-        && G(LVAR_notifyHurtDone, 0)
+    if (G(GVAR_notifyHurt, 1)
+        && G(GVAR_notifyHurtDone, 0)
         && HPPercentLT(Myself, 70)
         && CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && !Dead("%death_var%")
     ) {
         DisplayStringHead(Myself, $tra(601))
-        SetGlobal(LVAR_notifyHurtDone, GLOBAL, 1)
+        SetGlobal(GVAR_notifyHurtDone, GLOBAL, 1)
         Continue()
     }
 }
@@ -722,27 +722,27 @@ export function notifyHurt() {
  */
 export function notifyHurtBadly() {
     if (G("g_FamBadlyHurtNotif", 1)
-        && G(LVAR_notifyHurtDone, 0)
+        && G(GVAR_notifyHurtDone, 0)
         && HPPercentLT(Myself, 30)
         && CombatCounterLT(1)
         && See($obj("[EVILCUTOFF]"))
         && !Dead("%death_var%")
     ) {
         DisplayStringHead(Myself, $tra(602))
-        SetGlobal(LVAR_notifyHurtDone, GLOBAL, 1)
+        SetGlobal(GVAR_notifyHurtDone, GLOBAL, 1)
         Continue()
     }
 }
 
 /**
- * Reset hurt notification (`LVAR_notifyHurtDone`). Happens each round of combat, don't cut off the rest of the script.
+ * Reset hurt notification (`GVAR_notifyHurtDone`). Happens each round of combat, don't cut off the rest of the script.
  */
 export function resetHurtNotification() {
-    if (G(LVAR_notifyHurtDone, 1)
+    if (G(GVAR_notifyHurtDone, 1)
         && !CombatCounterLT(1)
         && !Dead("%death_var%")
     ) {
-        SetGlobal(LVAR_notifyHurtDone, GLOBAL, 0)
+        SetGlobal(GVAR_notifyHurtDone, GLOBAL, 0)
         Continue()
     }
 }
@@ -753,7 +753,7 @@ export function resetHurtNotification() {
  * Keep attacking while no one attacks us. If anyone did, run away for 1 round, then get back at them.
  */
 export function hitAndRun() {
-    if (G(LVAR_hitAndRun, 1)
+    if (G(GVAR_hitAndRun, 1)
         && !Dead("%death_var%")
         && AttackedBy($obj("[EVILCUTOFF]"), DEFAULT)
     ) {
@@ -771,7 +771,7 @@ export function followMaster() {
         CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && !Detect(Player1)
-        && G(LVAR_followMaster, 1)
+        && G(GVAR_followMaster, 1)
         && !Dead("%death_var%")
     ) {
         MoveToObject(Player1)
@@ -788,7 +788,7 @@ export function followMasterBetweenAreas() {
         CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && !InMyArea(Player1)
-        && G(LVAR_followMaster, 1)
+        && G(GVAR_followMaster, 1)
         && !Dead("%death_var%")
     ) {
         MoveGlobalObject(Myself, Player1)
@@ -798,7 +798,7 @@ export function followMasterBetweenAreas() {
 
 
 /**
- * Check if PC inventory is full, set `LVAR_inventoryFull=1`.
+ * Check if PC inventory is full, set `GVAR_inventoryFull=1`.
  * 
  * I don't remember why `InventoryFull()` is not used instead, but there must've been a reason.
  * 
@@ -821,16 +821,16 @@ export function checkInventoryFull() {
         && HasItemSlot(Player1, SLOT_MISC5)
         && HasItemSlot(Player1, SLOT_MISC4)
         && HasItemSlot(Player1, SLOT_MISC3)
-        && G(LVAR_inventoryFull, 0)
+        && G(GVAR_inventoryFull, 0)
         && !Dead("%death_var%")
     ) {
-        SetGlobal(LVAR_inventoryFull, GLOBAL, 1)
+        SetGlobal(GVAR_inventoryFull, GLOBAL, 1)
         DisplayStringHead(Myself, $tra(15))
     }
 }
 
 /**
- * Check if PC inventory is not full, set `LVAR_inventoryFull=0`.
+ * Check if PC inventory is not full, set `GVAR_inventoryFull=0`.
  * 
  * I don't remember why `InventoryFull()` is not used instead, but there must've been a reason.
  * 
@@ -838,7 +838,7 @@ export function checkInventoryFull() {
  */
 export function checkInventoryNotFull() {
     if (
-        G(LVAR_inventoryFull, 1)
+        G(GVAR_inventoryFull, 1)
         && !Dead("%death_var%")
         && (
             !HasItemSlot(Player1, SLOT_MISC18)
@@ -860,7 +860,7 @@ export function checkInventoryNotFull() {
         )
 
     ) {
-        SetGlobal(LVAR_inventoryFull, GLOBAL, 0)
+        SetGlobal(GVAR_inventoryFull, GLOBAL, 0)
         Continue()
     }
 }
@@ -876,7 +876,7 @@ function tCanPickup() {
         && CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && Detect(Player1)
-        && G(LVAR_inventoryFull, 0)
+        && G(GVAR_inventoryFull, 0)
         && !Dead("%death_var%")
     )
 }
@@ -905,8 +905,8 @@ export function pickup(items: string[], gvar: string, iterations: number) {
  */
 export function pickupJewelsRare() {
     if (tCanPickup()
-        && GGT(LVAR_pickupJewels, 0)
-        && GLT(LVAR_pickupJewels, 3)
+        && GGT(GVAR_pickupJewels, 0)
+        && GLT(GVAR_pickupJewels, 3)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -924,7 +924,7 @@ export function pickupJewelsRare() {
  */
 export function pickupJewelsMagic() {
     if (tCanPickup()
-        && GGT(LVAR_pickupJewels, 0)
+        && GGT(GVAR_pickupJewels, 0)
     ) {
         sprint()
         for (const jewel of jewelsMagic) {
@@ -939,7 +939,7 @@ export function pickupJewelsMagic() {
  */
 export function pickupJewelsMagicRare() {
     if (tCanPickup()
-        && GGT(LVAR_pickupJewels, 0)
+        && GGT(GVAR_pickupJewels, 0)
     ) {
         sprint()
         for (const jewel of jewelsMagicRare) {
@@ -956,7 +956,7 @@ export function attackEnemy() {
     if (
         ActionListEmpty()
         && See($obj("[EVILCUTOFF]"))
-        && (G(LVAR_combatTactic, 1) || G(LVAR_combatTactic, 2))
+        && (G(GVAR_combatTactic, 1) || G(GVAR_combatTactic, 2))
         && !Dead("%death_var%")
         && !ModalState(STEALTH)
         && !StateCheck(Myself, STATE_INVISIBLE)
@@ -973,7 +973,7 @@ export function attackEnemyCasters() {
     if (
         ActionListEmpty()
         && See($obj("[EVILCUTOFF]"))
-        && G(LVAR_combatTactic, 2)
+        && G(GVAR_combatTactic, 2)
         && !Dead("%death_var%")
         && !ModalState(STEALTH)
         && !StateCheck(Myself, STATE_INVISIBLE)

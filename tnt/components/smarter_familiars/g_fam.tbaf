@@ -1,4 +1,4 @@
-import { ammoMagic, ammoMagicRare, attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, gold, hitAndRun, jewelsCommon, jumpToPack, JumpToPackInjured, LVAR_pickupAmmo, LVAR_pickupGold, LVAR_pickupJewels, LVAR_pickupPotions, LVAR_pickupScalps, LVAR_pickupScrolls, LVAR_pickupTrophies, notifyHurt, notifyHurtBadly, pickup, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, potionsCommon, potionsRare, resetHurtNotification, scalps, scrolls, trophies } from './lib.g_fam'
+import { ammoMagic, ammoMagicRare, attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, gold, GVAR_pickupAmmo, GVAR_pickupGold, GVAR_pickupJewels, GVAR_pickupPotions, GVAR_pickupScalps, GVAR_pickupScrolls, GVAR_pickupTrophies, hitAndRun, jewelsCommon, jumpToPack, JumpToPackInjured, notifyHurt, notifyHurtBadly, pickup, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, potionsCommon, potionsRare, resetHurtNotification, scalps, scrolls, trophies } from './lib.g_fam'
 
 // Top priority: jump into backpack
 jumpToPack()
@@ -29,40 +29,40 @@ followMaster()
 checkInventoryNotFull()
 
 checkInventoryFull()
-pickup(gold, LVAR_pickupGold, 10)
+pickup(gold, GVAR_pickupGold, 10)
 
 checkInventoryFull()
-pickup(scalps, LVAR_pickupScalps, 5)
+pickup(scalps, GVAR_pickupScalps, 5)
 
 checkInventoryFull()
-pickup(jewelsCommon, LVAR_pickupJewels, 2)
+pickup(jewelsCommon, GVAR_pickupJewels, 2)
 
 checkInventoryFull()
-pickup(potionsCommon, LVAR_pickupPotions, 3)
+pickup(potionsCommon, GVAR_pickupPotions, 3)
 
 checkInventoryFull()
-pickup(ammoMagic, LVAR_pickupAmmo, 2)
+pickup(ammoMagic, GVAR_pickupAmmo, 2)
 
 checkInventoryFull()
-pickup(trophies, LVAR_pickupTrophies, 1)
+pickup(trophies, GVAR_pickupTrophies, 1)
 
 checkInventoryFull()
 pickupJewelsRare()
 
 checkInventoryFull()
-pickup(potionsRare, LVAR_pickupPotions, 2)
+pickup(potionsRare, GVAR_pickupPotions, 2)
 
 checkInventoryFull()
 pickupJewelsMagic()
 
 checkInventoryFull()
-pickup(ammoMagicRare, LVAR_pickupAmmo, 2)
+pickup(ammoMagicRare, GVAR_pickupAmmo, 2)
 
 checkInventoryFull()
 pickupJewelsMagicRare()
 
 checkInventoryFull()
-pickup(scrolls, LVAR_pickupScrolls, 1)
+pickup(scrolls, GVAR_pickupScrolls, 1)
 
 /* Looting end */
 
