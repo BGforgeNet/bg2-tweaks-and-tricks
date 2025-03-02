@@ -1,4 +1,4 @@
-import { attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, hitAndRun, jumpToPack, JumpToPackInjured, notifyHurt, notifyHurtBadly, pickupAmmoMagic, pickupAmmoMagicRare, pickupGold, pickupJewelsCommon, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, pickupPotionsCommon, pickupPotionsRare, pickupScalps, pickupScrolls, pickupTrophy, resetHurtNotification } from './lib.g_fam'
+import { ammoMagic, ammoMagicRare, attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, gold, hitAndRun, jewelsCommon, jumpToPack, JumpToPackInjured, LVAR_pickupAmmo, LVAR_pickupGold, LVAR_pickupJewels, LVAR_pickupPotions, LVAR_pickupScalps, LVAR_pickupScrolls, LVAR_pickupTrophies, notifyHurt, notifyHurtBadly, pickup, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, potionsCommon, potionsRare, resetHurtNotification, scalps, scrolls, trophies } from './lib.g_fam'
 
 // Top priority: jump into backpack
 jumpToPack()
@@ -29,40 +29,40 @@ followMaster()
 checkInventoryNotFull()
 
 checkInventoryFull()
-pickupGold()
+pickup(gold, LVAR_pickupGold, 10)
 
 checkInventoryFull()
-pickupScalps()
+pickup(scalps, LVAR_pickupScalps, 5)
 
 checkInventoryFull()
-pickupJewelsCommon()
+pickup(jewelsCommon, LVAR_pickupJewels, 2)
 
 checkInventoryFull()
-pickupPotionsCommon()
+pickup(potionsCommon, LVAR_pickupPotions, 3)
 
 checkInventoryFull()
-pickupAmmoMagic()
+pickup(ammoMagic, LVAR_pickupAmmo, 2)
 
 checkInventoryFull()
-pickupTrophy()
+pickup(trophies, LVAR_pickupTrophies, 1)
 
 checkInventoryFull()
 pickupJewelsRare()
 
 checkInventoryFull()
-pickupPotionsRare()
+pickup(potionsRare, LVAR_pickupPotions, 2)
 
 checkInventoryFull()
 pickupJewelsMagic()
 
 checkInventoryFull()
-pickupAmmoMagicRare()
+pickup(ammoMagicRare, LVAR_pickupAmmo, 2)
 
 checkInventoryFull()
 pickupJewelsMagicRare()
 
 checkInventoryFull()
-pickupScrolls()
+pickup(scrolls, LVAR_pickupScrolls, 1)
 
 /* Looting end */
 

@@ -569,11 +569,8 @@ IF
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
-    // Winter wolf pelt
     PickUpItem("misc01")
-    // Ankheg shell
     PickUpItem("misc12")
-    // Wyvern head
     PickUpItem("misc52")
     Continue()
 END

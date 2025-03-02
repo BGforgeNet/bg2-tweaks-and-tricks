@@ -42,12 +42,33 @@ const LVAR_inventoryFull = "g_FamInventoryFull"
 /**
  * Pick up potions toggle. Set in dialog.
  */
-const LVAR_pickupPotions = "g_FamPickupPotions"
+export const LVAR_pickupPotions = "g_FamPickupPotions"
 
 /**
  * Pickup ammo toggle. Set in dialog.
  */
-const LVAR_pickupAmmo = "g_FamPickupAmmo"
+export const LVAR_pickupAmmo = "g_FamPickupAmmo"
+
+/**
+ * Pickup gold toggle. Set in dialog.
+ */
+export const LVAR_pickupGold = "g_FamPickupGold"
+
+/**
+ * Pickup scalps toggle. Set in dialog.
+ */
+export const LVAR_pickupScalps = "g_FamPickupScalps"
+
+/**
+ * Pickup trophies toggle. Set in dialog.
+ */
+export const LVAR_pickupTrophies = "g_FamPickupTrophy"
+
+/**
+ * Pickup scrolls toggle. Set in dialog.
+ */
+export const LVAR_pickupScrolls = "g_FamPickupScrolls"
+
 
 /**
  * Pickup jewels setting. Set in dialog.
@@ -56,7 +77,7 @@ const LVAR_pickupAmmo = "g_FamPickupAmmo"
  * - 2: pickup only rare and magical
  * - 3: pickup only magical jewelry
  */
-const LVAR_pickupJewels = "g_FamPickupJewels"
+export const LVAR_pickupJewels = "g_FamPickupJewels"
 
 /**
  * Follow master toggle. Set in dialog.
@@ -76,6 +97,12 @@ const LVAR_combatTactic = "g_FamTactic"
  * This is so that looting works faster in most cases.
  * It's not super reliable, though.
  */
+
+/** Gold item list. Only one item */
+export const gold = ["misc07"]
+
+/** Scalps item list. Only one item */
+export const scalps = ["misc86"]
 
 /** Common gems */
 const gemsCommon = [
@@ -133,7 +160,7 @@ const necklacesCommon = [
 ];
 
 /** Common jewels */
-const jewelsCommon = [...gemsCommon, ...ringsCommon, ...necklacesCommon]
+export const jewelsCommon = [...gemsCommon, ...ringsCommon, ...necklacesCommon]
 
 /** Common magic arrows */
 const arrowsMagic = [
@@ -177,7 +204,7 @@ const dartsMagic = [
 ]
 
 /** Common magic ammo */
-const ammoMagic = [...arrowsMagic, ...boltsMagic, ...bulletsMagic, ...dartsMagic]
+export const ammoMagic = [...arrowsMagic, ...boltsMagic, ...bulletsMagic, ...dartsMagic]
 
 /** Rare necklaces */
 const necklacesRare = [
@@ -201,7 +228,7 @@ const ringsRare = [
 const jewelsRare = [...gemsRare, ...ringsRare, ...necklacesRare]
 
 /** Common potions */
-const potionsCommon = [
+export const potionsCommon = [
     "POTN08",   // Potion of Healing
     "POTN09",   // Potion of Heroism
     "POTN10",   // Potion of Invisibility
@@ -215,7 +242,7 @@ const potionsCommon = [
 ]
 
 /** Rare potions */
-const potionsRare = [
+export const potionsRare = [
     //  "BAZPLO04",  // Breath Potion
     //  "BAZPLO07",  // Empty Breath Potion Flask
     //  "BTEST1",  // Potion of Invulnerability
@@ -327,7 +354,7 @@ const daggersRare = [
     "dagg16",
 ]
 /** Rare magic ammo */
-const ammoMagicRare = [...arrowsMagicRare, ...boltsMagicRare, ...bulletsMagicRare, ...dartsMagicRare, ...daggersRare]
+export const ammoMagicRare = [...arrowsMagicRare, ...boltsMagicRare, ...bulletsMagicRare, ...dartsMagicRare, ...daggersRare]
 
 /** Rare magic rings */
 const ringsMagicRare = [
@@ -375,8 +402,21 @@ const necklacesMagicRare = [
 /** Rare magic jewels */
 const jewelsMagicRare = [...ringsMagicRare, ...necklacesMagicRare]
 
+/**
+ * Winter wolf pelt, ankheg shell, wyvern head
+ */
+export const trophies = [
+    // Winter wolf pelt
+    "misc01",
+    // Ankheg shell
+    "misc12",
+    // Wyvern head
+    "misc52",
+]
+
+
 /** Most magic scrolls */
-const scrolls = [
+export const scrolls = [
     "SCRL03",  // Protection from Acid
     "SCRL04",  // Protection from Cold
     "SCRL05",  // Protection from Electricity
@@ -842,9 +882,12 @@ function tCanPickup() {
 }
 
 /**
- * Generic pickup
+ * Pickup items. Only works out of combat.
+ * @param items a list of items to pick up
+ * @param gvar only when gvar is 1
+ * @param iterations how many times to pick up
  */
-function pickup(gvar: string, iterations: number, items: string[]) {
+export function pickup(items: string[], gvar: string, iterations: number) {
     if (tCanPickup() && G(gvar, 1)
     ) {
         sprint()
@@ -856,98 +899,6 @@ function pickup(gvar: string, iterations: number, items: string[]) {
         Continue()
     }
 }
-
-
-/**
- * Pickup gold, 10 times.
- */
-export function pickupGold() {
-    pickup("g_FamPickupGold", 10, ["misc07"])
-}
-
-/**
- * Pickup scalps, 10 times.
- */
-export function pickupScalps() {
-    if (tCanPickup()
-        && G("g_FamPickupScalps", 1)
-    ) {
-        sprint()
-        for (let i = 0; i < 5; i++) {
-            PickUpItem("misc86")
-        }
-        Continue()
-    }
-}
-
-
-/**
- * Pickup common jewelry, 2 times.
- */
-export function pickupJewelsCommon() {
-    if (tCanPickup()
-        && G(LVAR_pickupJewels, 1)
-    ) {
-        sprint()
-        for (let i = 0; i < 2; i++) {
-            for (const jewel of jewelsCommon) {
-                PickUpItem(jewel)
-            }
-        }
-        Continue()
-    }
-}
-
-/**
- * Pickup common potions x3
- */
-export function pickupPotionsCommon() {
-    if (tCanPickup()
-        && G(LVAR_pickupPotions, 1)
-    ) {
-        sprint()
-        for (let i = 0; i < 3; i++) {
-            for (const potion of potionsCommon) {
-                PickUpItem(potion)
-            }
-        }
-        Continue()
-    }
-}
-/**
- * Pickup rare potions x2
- */
-export function pickupPotionsRare() {
-    if (tCanPickup()
-        && G(LVAR_pickupPotions, 1)
-    ) {
-        sprint()
-        for (let i = 0; i < 2; i++) {
-            for (const potion of potionsRare) {
-                PickUpItem(potion)
-            }
-        }
-        Continue()
-    }
-}
-
-/**
- * Pickup (common) magical ammo, 2 times.
- */
-export function pickupAmmoMagic() {
-    if (tCanPickup()
-        && G(LVAR_pickupAmmo, 1)
-    ) {
-        sprint()
-        for (let i = 0; i < 2; i++) {
-            for (const ammo of ammoMagic) {
-                PickUpItem(ammo)
-            }
-        }
-        Continue()
-    }
-}
-
 
 /**
  * Pickup rare jewelry.
@@ -984,25 +935,7 @@ export function pickupJewelsMagic() {
 }
 
 /**
- * Pickup (rare) magical ammo, 2 times.
- */
-export function pickupAmmoMagicRare() {
-    if (tCanPickup()
-        && G(LVAR_pickupAmmo, 1)
-    ) {
-        sprint()
-        for (let i = 0; i < 2; i++) {
-            for (const ammo of ammoMagicRare) {
-                PickUpItem(ammo)
-            }
-        }
-        Continue()
-    }
-}
-
-
-/**
- * Pickup rare magic jewelry.
+ * Pickup rare magic jewelry. Same as `pickupJewelsMagic()`, just a separate list to place it lower, have less priority.
  */
 export function pickupJewelsMagicRare() {
     if (tCanPickup()
@@ -1012,39 +945,6 @@ export function pickupJewelsMagicRare() {
         for (const jewel of jewelsMagicRare) {
             PickUpItem(jewel)
         }
-        Continue()
-    }
-}
-
-/**
- * Pickup scrolls.
- */
-export function pickupScrolls() {
-    if (tCanPickup()
-        && G("g_FamPickupScrolls", 1)
-    ) {
-        sprint()
-        for (const scroll of scrolls) {
-            PickUpItem(scroll)
-        }
-        Continue()
-    }
-}
-
-/**
- * Pickup winter wolf pelts, ankheg shells, wyvern heads.
- */
-export function pickupTrophy() {
-    if (tCanPickup()
-        && G("g_FamPickupTrophy", 1)
-    ) {
-        sprint()
-        // Winter wolf pelt
-        PickUpItem("misc01")
-        // Ankheg shell
-        PickUpItem("misc12")
-        // Wyvern head
-        PickUpItem("misc52")
         Continue()
     }
 }
