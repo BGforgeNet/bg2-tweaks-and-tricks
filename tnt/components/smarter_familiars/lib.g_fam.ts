@@ -1,5 +1,5 @@
 import { $obj, $tra, GLOBAL } from "ielib";
-import { ActionListEmpty, ApplySpellRES, AttackedBy, AttackOneRound, AttackReevaluate, CombatCounterLT, Continue, Dead, DEFAULT, DestroySelf, Detect, DisplayStringHead, GiveItemCreate, Global, HasItemSlot, HPPercentLT, InMyArea, LastAttackerOf, LastSeenBy, LastTargetedBy, ModalState, MoveGlobalObject, MoveToObject, Myself, NearestEnemyOf, NearestEnemyOfType, PickUpItem, Player1, RunAwayFrom, See, SetGlobal, SLOT_MISC10, SLOT_MISC11, SLOT_MISC12, SLOT_MISC13, SLOT_MISC14, SLOT_MISC15, SLOT_MISC16, SLOT_MISC17, SLOT_MISC18, SLOT_MISC3, SLOT_MISC4, SLOT_MISC5, SLOT_MISC6, SLOT_MISC7, SLOT_MISC8, SLOT_MISC9, STATE_INVISIBLE, StateCheck, STEALTH } from "ielib/bg2";
+import { ActionListEmpty, ApplySpellRES, AttackedBy, AttackOneRound, AttackReevaluate, CombatCounterLT, Continue, Dead, DEFAULT, DestroySelf, Detect, DisplayStringHead, G, GiveItemCreate, HasItemSlot, HPPercentLT, InMyArea, LastAttackerOf, LastSeenBy, LastTargetedBy, ModalState, MoveGlobalObject, MoveToObject, Myself, NearestEnemyOf, NearestEnemyOfType, PickUpItem, Player1, RunAwayFrom, See, SetGlobal, SLOT_MISC10, SLOT_MISC11, SLOT_MISC12, SLOT_MISC13, SLOT_MISC14, SLOT_MISC15, SLOT_MISC16, SLOT_MISC17, SLOT_MISC18, SLOT_MISC3, SLOT_MISC4, SLOT_MISC5, SLOT_MISC6, SLOT_MISC7, SLOT_MISC8, SLOT_MISC9, STATE_INVISIBLE, StateCheck, STEALTH } from "ielib/bg2";
 
 /**
  * Jump to backpack setting.
@@ -616,7 +616,7 @@ export function sprint() {
  * Once released, can go in/out of pack as directed before.
  */
 export function jumpToPack() {
-    if (Global(LVAR_jumpToPack, GLOBAL, 1)
+    if (G(LVAR_jumpToPack, 1)
         && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
     ) {
@@ -637,7 +637,7 @@ export function jumpToPack() {
  * @param hpThreshold only when HP is below this percentage
  */
 export function JumpToPackInjured(varThreshold: number, hpThreshold: number) {
-    if (Global(LVAR_jumpToPack, GLOBAL, varThreshold)
+    if (G(LVAR_jumpToPack, varThreshold)
         && HPPercentLT(Myself, hpThreshold)
         && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
@@ -655,8 +655,8 @@ export function JumpToPackInjured(varThreshold: number, hpThreshold: number) {
  * Uses `LVAR_notifyHurtDone` to track notification, will only notify once.
  */
 export function notifyHurt() {
-    if (Global(LVAR_notifyHurt, GLOBAL, 1)
-        && Global(LVAR_notifyHurtDone, GLOBAL, 0)
+    if (G(LVAR_notifyHurt, 1)
+        && G(LVAR_notifyHurtDone, 0)
         && HPPercentLT(Myself, 70)
         && CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
@@ -672,8 +672,8 @@ export function notifyHurt() {
  * Notify that familiar is badly hurt, when there's no danger, if directed so.
  */
 export function notifyHurtBadly() {
-    if (Global("g_FamBadlyHurtNotif", GLOBAL, 1)
-        && Global(LVAR_notifyHurtDone, GLOBAL, 0)
+    if (G("g_FamBadlyHurtNotif", 1)
+        && G(LVAR_notifyHurtDone, 0)
         && HPPercentLT(Myself, 30)
         && CombatCounterLT(1)
         && See($obj("[EVILCUTOFF]"))
@@ -689,7 +689,7 @@ export function notifyHurtBadly() {
  * Reset hurt notification (`LVAR_notifyHurtDone`). Happens each round of combat, don't cut off the rest of the script.
  */
 export function resetHurtNotification() {
-    if (Global(LVAR_notifyHurtDone, GLOBAL, 1)
+    if (G(LVAR_notifyHurtDone, 1)
         && !CombatCounterLT(1)
         && !Dead("%death_var%")
     ) {
@@ -704,7 +704,7 @@ export function resetHurtNotification() {
  * Keep attacking while no one attacks us. If anyone did, run away for 1 round, then get back at them.
  */
 export function hitAndRun() {
-    if (Global(LVAR_hitAndRun, GLOBAL, 1)
+    if (G(LVAR_hitAndRun, 1)
         && !Dead("%death_var%")
         && AttackedBy($obj("[EVILCUTOFF]"), DEFAULT)
     ) {
@@ -722,7 +722,7 @@ export function followMaster() {
         CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && !Detect(Player1)
-        && Global(LVAR_followMaster, GLOBAL, 1)
+        && G(LVAR_followMaster, 1)
         && !Dead("%death_var%")
     ) {
         MoveToObject(Player1)
@@ -739,9 +739,8 @@ export function followMasterBetweenAreas() {
         CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && !InMyArea(Player1)
-        && Global(LVAR_followMaster, GLOBAL, 1)
+        && G(LVAR_followMaster, 1)
         && !Dead("%death_var%")
-
     ) {
         MoveGlobalObject(Myself, Player1)
         Continue()
@@ -773,7 +772,7 @@ export function checkInventoryFull() {
         && HasItemSlot(Player1, SLOT_MISC5)
         && HasItemSlot(Player1, SLOT_MISC4)
         && HasItemSlot(Player1, SLOT_MISC3)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
+        && G(LVAR_inventoryFull, 0)
         && !Dead("%death_var%")
     ) {
         SetGlobal(LVAR_inventoryFull, GLOBAL, 1)
@@ -790,7 +789,7 @@ export function checkInventoryFull() {
  */
 export function checkInventoryNotFull() {
     if (
-        Global(LVAR_inventoryFull, GLOBAL, 1)
+        G(LVAR_inventoryFull, 1)
         && !Dead("%death_var%")
         && (
             !HasItemSlot(Player1, SLOT_MISC18)
@@ -828,7 +827,7 @@ function tCanPickup() {
         && CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && Detect(Player1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
+        && G(LVAR_inventoryFull, 0)
         && !Dead("%death_var%")
     )
 }
@@ -838,7 +837,7 @@ function tCanPickup() {
  */
 export function pickupGold() {
     if (tCanPickup()
-        && Global("g_FamPickupGold", GLOBAL, 1)
+        && G("g_FamPickupGold", 1)
     ) {
         sprint()
         for (let i = 0; i < 10; i++) {
@@ -853,7 +852,7 @@ export function pickupGold() {
  */
 export function pickupScalps() {
     if (tCanPickup()
-        && Global("g_FamPickupScalps", GLOBAL, 1)
+        && G("g_FamPickupScalps", 1)
     ) {
         sprint()
         for (let i = 0; i < 5; i++) {
@@ -869,7 +868,7 @@ export function pickupScalps() {
  */
 export function pickupJewelsCommon() {
     if (tCanPickup()
-        && Global("g_FamPickupJewelsCommon", GLOBAL, 1)
+        && G("g_FamPickupJewelsCommon", 1)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -886,7 +885,7 @@ export function pickupJewelsCommon() {
  */
 export function pickupPotionsCommon() {
     if (tCanPickup()
-        && Global(LVAR_pickupPotions, GLOBAL, 1)
+        && G(LVAR_pickupPotions, 1)
     ) {
         sprint()
         for (let i = 0; i < 3; i++) {
@@ -902,7 +901,7 @@ export function pickupPotionsCommon() {
  */
 export function pickupPotionsRare() {
     if (tCanPickup()
-        && Global(LVAR_pickupPotions, GLOBAL, 1)
+        && G(LVAR_pickupPotions, 1)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -919,7 +918,7 @@ export function pickupPotionsRare() {
  */
 export function pickupAmmoMagic() {
     if (tCanPickup()
-        && Global(LVAR_pickupAmmo, GLOBAL, 1)
+        && G(LVAR_pickupAmmo, 1)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -937,7 +936,7 @@ export function pickupAmmoMagic() {
  */
 export function pickupJewelsRare() {
     if (tCanPickup()
-        && Global("g_FamPickupJewelsRare", GLOBAL, 1)
+        && G("g_FamPickupJewelsRare", 1)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -955,7 +954,7 @@ export function pickupJewelsRare() {
  */
 export function pickupJewelsMagic() {
     if (tCanPickup()
-        && Global("g_FamPickupJewelsMagic", GLOBAL, 1)
+        && G("g_FamPickupJewelsMagic", 1)
     ) {
         sprint()
         for (const jewel of jewelsMagic) {
@@ -970,7 +969,7 @@ export function pickupJewelsMagic() {
  */
 export function pickupAmmoMagicRare() {
     if (tCanPickup()
-        && Global(LVAR_pickupAmmo, GLOBAL, 1)
+        && G(LVAR_pickupAmmo, 1)
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -988,7 +987,7 @@ export function pickupAmmoMagicRare() {
  */
 export function pickupJewelsMagicRare() {
     if (tCanPickup()
-        && Global("g_FamPickupJewelsMagicRare", GLOBAL, 1)
+        && G("g_FamPickupJewelsMagicRare", 1)
     ) {
         sprint()
         for (const jewel of jewelsMagicRare) {
@@ -1003,7 +1002,7 @@ export function pickupJewelsMagicRare() {
  */
 export function pickupScrolls() {
     if (tCanPickup()
-        && Global("g_FamPickupScrolls", GLOBAL, 1)
+        && G("g_FamPickupScrolls", 1)
 
     ) {
         sprint()
@@ -1019,7 +1018,7 @@ export function pickupScrolls() {
  */
 export function pickupTrophy() {
     if (tCanPickup()
-        && Global("g_FamPickupTrophy", GLOBAL, 1)
+        && G("g_FamPickupTrophy", 1)
     ) {
         sprint()
         // Winter wolf pelt
@@ -1039,7 +1038,7 @@ export function attackEnemy() {
     if (
         ActionListEmpty()
         && See($obj("[EVILCUTOFF]"))
-        && (Global(LVAR_combatTactic, GLOBAL, 1) || Global(LVAR_combatTactic, GLOBAL, 2))
+        && (G(LVAR_combatTactic, 1) || G(LVAR_combatTactic, 2))
         && !Dead("%death_var%")
         && !ModalState(STEALTH)
         && !StateCheck(Myself, STATE_INVISIBLE)
@@ -1056,7 +1055,7 @@ export function attackEnemyCasters() {
     if (
         ActionListEmpty()
         && See($obj("[EVILCUTOFF]"))
-        && Global(LVAR_combatTactic, GLOBAL, 2)
+        && G(LVAR_combatTactic, 2)
         && !Dead("%death_var%")
         && !ModalState(STEALTH)
         && !StateCheck(Myself, STATE_INVISIBLE)

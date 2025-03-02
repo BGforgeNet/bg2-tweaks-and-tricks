@@ -1,7 +1,7 @@
 /* Do not edit. This file is generated from g_fam.tbaf. Make your changes there and regenerate this file. */
 
 IF
-  Global("g_FamJumpToPack", "GLOBAL", 1)
+  G("g_FamJumpToPack", 1)
   OR(2)
     !CombatCounterLT(1)
     See([EVILCUTOFF])
@@ -14,7 +14,7 @@ THEN
 END
 
 IF
-  Global("g_FamJumpToPack", "GLOBAL", 2)
+  G("g_FamJumpToPack", 2)
   HPPercentLT(Myself, 70)
   OR(2)
     !CombatCounterLT(1)
@@ -30,7 +30,7 @@ THEN
 END
 
 IF
-  Global("g_FamJumpToPack", "GLOBAL", 3)
+  G("g_FamJumpToPack", 3)
   HPPercentLT(Myself, 30)
   OR(2)
     !CombatCounterLT(1)
@@ -46,7 +46,7 @@ THEN
 END
 
 IF
-  Global("g_FamHitAndRun", "GLOBAL", 1)
+  G("g_FamHitAndRun", 1)
   !Dead("%death_var%")
   AttackedBy([EVILCUTOFF], DEFAULT)
 THEN
@@ -59,7 +59,7 @@ END
 IF
   ActionListEmpty()
   See([EVILCUTOFF])
-  Global("g_FamTactic", "GLOBAL", 2)
+  G("g_FamTactic", 2)
   !Dead("%death_var%")
   !ModalState(STEALTH)
   !StateCheck(Myself, STATE_INVISIBLE)
@@ -77,8 +77,8 @@ IF
   ActionListEmpty()
   See([EVILCUTOFF])
   OR(2)
-    Global("g_FamTactic", "GLOBAL", 1)
-    Global("g_FamTactic", "GLOBAL", 2)
+    G("g_FamTactic", 1)
+    G("g_FamTactic", 2)
   !Dead("%death_var%")
   !ModalState(STEALTH)
   !StateCheck(Myself, STATE_INVISIBLE)
@@ -88,7 +88,7 @@ THEN
 END
 
 IF
-  Global("g_FamHurtNotifDone", "GLOBAL", 1)
+  G("g_FamHurtNotifDone", 1)
   !CombatCounterLT(1)
   !Dead("%death_var%")
 THEN
@@ -98,8 +98,8 @@ THEN
 END
 
 IF
-  Global("g_FamHurtNotif", "GLOBAL", 1)
-  Global("g_FamHurtNotifDone", "GLOBAL", 0)
+  G("g_FamHurtNotif", 1)
+  G("g_FamHurtNotifDone", 0)
   HPPercentLT(Myself, 70)
   CombatCounterLT(1)
   !See([EVILCUTOFF])
@@ -112,8 +112,8 @@ THEN
 END
 
 IF
-  Global("g_FamBadlyHurtNotif", "GLOBAL", 1)
-  Global("g_FamHurtNotifDone", "GLOBAL", 0)
+  G("g_FamBadlyHurtNotif", 1)
+  G("g_FamHurtNotifDone", 0)
   HPPercentLT(Myself, 30)
   CombatCounterLT(1)
   See([EVILCUTOFF])
@@ -129,7 +129,7 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   !Detect(Player1)
-  Global("g_FamFollowMaster", "GLOBAL", 1)
+  G("g_FamFollowMaster", 1)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -138,7 +138,7 @@ THEN
 END
 
 IF
-  Global("g_FamInventoryFull", "GLOBAL", 1)
+  G("g_FamInventoryFull", 1)
   !Dead("%death_var%")
   OR(16)
     !HasItemSlot(Player1, SLOT_MISC18)
@@ -180,7 +180,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -193,9 +193,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupGold", "GLOBAL", 1)
+  G("g_FamPickupGold", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -229,7 +229,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -242,9 +242,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupScalps", "GLOBAL", 1)
+  G("g_FamPickupScalps", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -273,7 +273,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -286,9 +286,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupJewelsCommon", "GLOBAL", 1)
+  G("g_FamPickupJewelsCommon", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -394,7 +394,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -407,9 +407,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupPotions", "GLOBAL", 1)
+  G("g_FamPickupPotions", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -463,7 +463,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -476,9 +476,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupAmmo", "GLOBAL", 1)
+  G("g_FamPickupAmmo", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -550,7 +550,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -563,9 +563,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupTrophy", "GLOBAL", 1)
+  G("g_FamPickupTrophy", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -595,7 +595,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -608,9 +608,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupJewelsRare", "GLOBAL", 1)
+  G("g_FamPickupJewelsRare", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -652,7 +652,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -665,9 +665,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupPotions", "GLOBAL", 1)
+  G("g_FamPickupPotions", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -763,7 +763,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -776,9 +776,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupJewelsMagic", "GLOBAL", 1)
+  G("g_FamPickupJewelsMagic", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -810,7 +810,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -823,9 +823,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupAmmo", "GLOBAL", 1)
+  G("g_FamPickupAmmo", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -875,7 +875,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -888,9 +888,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupJewelsMagicRare", "GLOBAL", 1)
+  G("g_FamPickupJewelsMagicRare", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -950,7 +950,7 @@ IF
   HasItemSlot(Player1, SLOT_MISC5)
   HasItemSlot(Player1, SLOT_MISC4)
   HasItemSlot(Player1, SLOT_MISC3)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
@@ -963,9 +963,9 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   Detect(Player1)
-  Global("g_FamInventoryFull", "GLOBAL", 0)
+  G("g_FamInventoryFull", 0)
   !Dead("%death_var%")
-  Global("g_FamPickupScrolls", "GLOBAL", 1)
+  G("g_FamPickupScrolls", 1)
 THEN
   RESPONSE #100
     ApplySpellRES("G_FSPED2", Myself)
@@ -1198,7 +1198,7 @@ IF
   CombatCounterLT(1)
   !See([EVILCUTOFF])
   !InMyArea(Player1)
-  Global("g_FamFollowMaster", "GLOBAL", 1)
+  G("g_FamFollowMaster", 1)
   !Dead("%death_var%")
 THEN
   RESPONSE #100
