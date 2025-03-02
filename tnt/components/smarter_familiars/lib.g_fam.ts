@@ -819,16 +819,26 @@ export function checkInventoryNotFull() {
 
 
 /**
- * Pickup gold, 10 times.
+ * Trigger function to check if we are available to pick up items now.
+ * @returns can pickup?
  */
-export function pickupGold() {
-    if (ActionListEmpty()
+function tCanPickup() {
+    return (
+        ActionListEmpty()
         && CombatCounterLT(1)
         && !See($obj("[EVILCUTOFF]"))
         && Detect(Player1)
-        && Global("g_FamPickupGold", GLOBAL, 1)
         && Global(LVAR_inventoryFull, GLOBAL, 0)
         && !Dead("%death_var%")
+    )
+}
+
+/**
+ * Pickup gold, 10 times.
+ */
+export function pickupGold() {
+    if (tCanPickup()
+        && Global("g_FamPickupGold", GLOBAL, 1)
     ) {
         sprint()
         for (let i = 0; i < 10; i++) {
@@ -842,13 +852,8 @@ export function pickupGold() {
  * Pickup scalps, 10 times.
  */
 export function pickupScalps() {
-    if (ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupScalps", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         for (let i = 0; i < 5; i++) {
@@ -859,18 +864,12 @@ export function pickupScalps() {
 }
 
 
-
 /**
  * Pickup common jewelry, 2 times.
  */
 export function pickupJewelsCommon() {
-    if (ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupJewelsCommon", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -886,14 +885,8 @@ export function pickupJewelsCommon() {
  * Pickup common potions x3
  */
 export function pickupPotionsCommon() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global(LVAR_pickupPotions, GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         for (let i = 0; i < 3; i++) {
@@ -908,13 +901,8 @@ export function pickupPotionsCommon() {
  * Pickup rare potions x2
  */
 export function pickupPotionsRare() {
-    if (ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global(LVAR_pickupPotions, GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -930,14 +918,8 @@ export function pickupPotionsRare() {
  * Pickup (common) magical ammo, 2 times.
  */
 export function pickupAmmoMagic() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global(LVAR_pickupAmmo, GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -954,15 +936,8 @@ export function pickupAmmoMagic() {
  * Pickup rare jewelry.
  */
 export function pickupJewelsRare() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupJewelsRare", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
-
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -979,15 +954,8 @@ export function pickupJewelsRare() {
  * Pickup magic jewelry.
  */
 export function pickupJewelsMagic() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupJewelsMagic", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
-
     ) {
         sprint()
         for (const jewel of jewelsMagic) {
@@ -1001,15 +969,8 @@ export function pickupJewelsMagic() {
  * Pickup (rare) magical ammo, 2 times.
  */
 export function pickupAmmoMagicRare() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global(LVAR_pickupAmmo, GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
-
     ) {
         sprint()
         for (let i = 0; i < 2; i++) {
@@ -1026,14 +987,8 @@ export function pickupAmmoMagicRare() {
  * Pickup rare magic jewelry.
  */
 export function pickupJewelsMagicRare() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupJewelsMagicRare", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         for (const jewel of jewelsMagicRare) {
@@ -1047,14 +1002,8 @@ export function pickupJewelsMagicRare() {
  * Pickup scrolls.
  */
 export function pickupScrolls() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupScrolls", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
 
     ) {
         sprint()
@@ -1069,14 +1018,8 @@ export function pickupScrolls() {
  * Pickup winter wolf pelts, ankheg shells, wyvern heads.
  */
 export function pickupTrophy() {
-    if (
-        ActionListEmpty()
-        && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
-        && Detect(Player1)
+    if (tCanPickup()
         && Global("g_FamPickupTrophy", GLOBAL, 1)
-        && Global(LVAR_inventoryFull, GLOBAL, 0)
-        && !Dead("%death_var%")
     ) {
         sprint()
         // Winter wolf pelt

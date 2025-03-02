@@ -51,9 +51,6 @@ checkInventoryFull()
 pickupJewelsRare()
 
 checkInventoryFull()
-pickupJewelsRare()
-
-checkInventoryFull()
 pickupPotionsRare()
 
 checkInventoryFull()
