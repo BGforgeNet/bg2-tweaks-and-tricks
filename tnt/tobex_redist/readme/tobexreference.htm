@@ -1039,7 +1039,7 @@
               <li>bit 6 [64]: the item cannot be dropped into any inventory slot of the creature</li>
             </ul>
             <br />
-            Example</p>
+            <p>Example</p>
             <table class="important">
               <tr>
                 <td></td>
@@ -2072,7 +2072,7 @@
           <i>TobEx fixes a bug so that a net negative constitution value will limit to 0 rather than wrap to 25</i></p>
           <hr />
           <a name="effects-12" id="effects-12"></a><p><strong>#12 (0x00C)  HP: Damage [12]</strong><br />
-          <i>TobEx fixes three bugs with this effect opcode:</p>
+          <i>TobEx fixes three bugs with this effect opcode:</i></p>
           <ul>
             <li>killing someone with magic fire damage would cause a WEIRD damage assertion failure, and</li>
             <li>hitting someone with magic cold damage would not play a hit sound</li>
@@ -2080,7 +2080,7 @@
           </ul>
           <p>TobEx allows the scaling of damage type by percentage by using custom scripting stats #387 to #399. Also refer to the <a href="#stats">Scripting Stats</a> section.</p>
           <p>TobEx implements bit 24 (Bypass Mirror Images) of the EFF V2.0 Header offset 0x0040 (Save Type), ITM V1.0 Feature Block offset 0x0024 (Save Type), and SPL V1.0 Feature Block offset 0x0024 (Save Type). When set the mirror image check is skipped on the target creature when checking saving throw.</p>
-          <p><strong>Option:</strong> TobEx gives the option of implementing a concentration check affecting spellcasters being hit. Instead of always being interrupted when hit, spellcasters have a chance of their spells being interrupted. In the current implementation, a spellcaster passes the concentration check if:</i></p>
+          <p><i><strong>Option:</strong> TobEx gives the option of implementing a concentration check affecting spellcasters being hit. Instead of always being interrupted when hit, spellcasters have a chance of their spells being interrupted. In the current implementation, a spellcaster passes the concentration check if:</i></p>
           <p class="important">(1D20 + luck) > (spell level + damage taken)</p>
           <p><i><strong>Option:</strong> TobEx gives the option of not interrupting a creature's spellcasting if a creature takes zero damage (i.e. immune)</i></p>
           <p><i><strong>Option:</strong> TobEx gives the option of causing sleeping creatures to awaken when hit.</i></p>
@@ -2864,8 +2864,8 @@
                   <li>bit 26: <a href="#engine-effect-stacking">internal: suspend effect application</a></li>
                 </ul>
               </td>
-            <tr>
             </tr>
+            <tr>
               <td>0x002c (dword)</td>
               <td>
                 <p>Special</p>
@@ -2916,8 +2916,8 @@
                   <li>bit 26: <a href="#engine-effect-stacking">internal: suspend effect application</a></li>
                 </ul>
               </td>
-            <tr>
             </tr>
+            <tr>
               <td>0x002c (dword)</td>
               <td>
                 <p>Special</p>
