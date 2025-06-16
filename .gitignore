@@ -4,6 +4,7 @@ tnt/backup/*
 *.DEBUG
 tnt/weidu.log
 *.zip
+.idea
 
 node_modules/
 **/_tmp.tbaf.ts
