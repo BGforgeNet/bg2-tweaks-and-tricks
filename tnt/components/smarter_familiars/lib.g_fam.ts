@@ -131,7 +131,7 @@ const gemsCommon = [
     "MISC37",   // Sphene Gem
     "MISC38",   // Black Opal
     "MISC39",   // Water Opal
-    "MISC40",   // Moonbar Gem    
+    "MISC40",   // Moonbar Gem
 ];
 
 /** Common rings */
