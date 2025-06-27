@@ -1,10 +1,42 @@
-import { ammoMagic, ammoMagicRare, attackEnemy, attackEnemyCasters, checkInventoryFull, checkInventoryNotFull, followMaster, followMasterBetweenAreas, gold, GVAR_pickupAmmo, GVAR_pickupGold, GVAR_pickupJewels, GVAR_pickupPotions, GVAR_pickupScalps, GVAR_pickupScrolls, GVAR_pickupTrophies, hitAndRun, jewelsCommon, jumpToPack, JumpToPackInjured, notifyHurt, notifyHurtBadly, pickup, pickupJewelsMagic, pickupJewelsMagicRare, pickupJewelsRare, potionsCommon, potionsRare, resetHurtNotification, scalps, scrolls, trophies } from './lib.g_fam'
+import {
+    ammoMagic,
+    ammoMagicRare,
+    attackEnemy,
+    attackEnemyCasters,
+    checkInventoryFull,
+    checkInventoryNotFull,
+    followMaster,
+    followMasterBetweenAreas,
+    gold,
+    GVAR_pickupAmmo,
+    GVAR_pickupGold,
+    GVAR_pickupJewels,
+    GVAR_pickupPotions,
+    GVAR_pickupScalps,
+    GVAR_pickupScrolls,
+    GVAR_pickupTrophies,
+    hitAndRun,
+    jewelsCommon,
+    jumpToPack,
+    JumpToPackInjured,
+    notifyHurt,
+    notifyHurtBadly,
+    pickup,
+    pickupJewelsMagic,
+    pickupJewelsMagicRare,
+    pickupJewelsRare,
+    potionsCommon,
+    potionsRare,
+    resetHurtNotification,
+    scalps,
+    scrolls,
+    trophies,
+} from "./lib.g_fam"
 
 // Top priority: jump into backpack
 jumpToPack()
 JumpToPackInjured(2, 70)
 JumpToPackInjured(3, 30)
-
 
 // Combat tactics
 hitAndRun()
@@ -18,7 +50,6 @@ notifyHurtBadly()
 
 // Follow
 followMaster()
-
 
 /**
  * Looting start.
