@@ -3,126 +3,10 @@ INCLUDE ~%lib_dir%/tobex.tpa~
 OUTER_SPRINT comp_dir ~%components%/smarter_familiars~
 OUTER_SPRINT NewLine ~
 ~
-OUTER_SPRINT g_FamPickupJewels_action ~~
-OUTER_SPRINT g_FamPickupJewelsCommon_action ~~
-OUTER_SPRINT g_FamPickupJewelsRare_action ~~
-OUTER_SPRINT g_FamPickupJewelsMagic_action ~~
-OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~~
-OUTER_SPRINT g_FamPickupAmmoMagic_action ~~
-OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~~
-OUTER_SPRINT g_FamPickupPotionsCommon_action ~~
-OUTER_SPRINT g_FamPickupPotionsRare_action ~~
-OUTER_SPRINT g_FamPickupScrolls_action ~~
 
-INCLUDE ~%comp_dir%/autoloot_lists.tpa~
-
-
-//Gems
-ACTION_PHP_EACH g_GemsCommon AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_GemsRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Rings
-ACTION_PHP_EACH g_RingsCommon AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_RingsRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_RingsMagic AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_RingsMagicRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Necklaces
-ACTION_PHP_EACH g_NecklacesCommon AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsCommon_action ~%g_FamPickupJewelsCommon_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_NecklacesRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsRare_action ~%g_FamPickupJewelsRare_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_NecklacesMagic AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsMagic_action ~%g_FamPickupJewelsMagic_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_NecklacesMagicRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupJewelsMagicRare_action ~%g_FamPickupJewelsMagicRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Ammo: arrows
-ACTION_PHP_EACH g_ArrowsMagic AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_ArrowsMagicRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Ammo: bolts
-ACTION_PHP_EACH g_BoltsMagic AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_BoltsMagicRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Ammo: darts
-ACTION_PHP_EACH g_DartsMagic AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_DartsMagicRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Ammo: bullets
-ACTION_PHP_EACH g_BulletsMagic AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagic_action ~%g_FamPickupAmmoMagic_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_BulletsMagicRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupAmmoMagicRare_action ~%g_FamPickupAmmoMagicRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Potions
-ACTION_PHP_EACH g_PotionsCommon AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupPotionsCommon_action ~%g_FamPickupPotionsCommon_action%%NewLine%PickUpItem("%code%")~
-END
-ACTION_PHP_EACH g_PotionsRare AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupPotionsRare_action ~%g_FamPickupPotionsRare_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Scrolls
-ACTION_PHP_EACH g_Scrolls AS code => name BEGIN
-  OUTER_SPRINT g_FamPickupScrolls_action ~%g_FamPickupScrolls_action%%NewLine%PickUpItem("%code%")~
-END
-
-//Daggers: there only one type of throwing daggers worth picking up: poisoned throwing daggers
-OUTER_SPRINT g_FamPickupAmmoRare_action ~%g_FamPickupAmmoRare_action%%NewLine%PickUpItem("dagg16")~
-
-//Script to jump out of the pack, added to baldur.bcs
-<<<<<<<< .../tnt-inlined/g_familiar_jumpout.baf
-IF
-  Global("g_FamiliarJumpOut","GLOBAL",1)
-  Global("g_FamStayInPack","GLOBAL",0)
-  HasItem("%fam_item%",Player1)
-  Delay(12) //check every 2 rounds
-  CombatCounterLT(1)
-  !OnScreen([EVILCUTOFF])
-  NextTriggerObject(Player1)
-  !Detect([EVILCUTOFF])
-THEN
-  RESPONSE #100
-    TakePartyItem("%fam_item%")
-    DestroyItem("%fam_item%")
-    MoveGlobalObject("%death_var%",Player1)
-    Continue()
-END
->>>>>>>>
-
-// Override script
-INCLUDE ~%lib_dir%/familiars.tpa~  // familiar_list, compatibility with WTPfamiliars
+// Sets variables: prefix, familiar_list, familiar_dlg
+// Allows compatibility with WTP familiars
+INCLUDE ~%lib_dir%/familiars.tpa~
 
 ACTION_PHP_EACH familiar_list AS cre => item BEGIN
   OUTER_SPRINT fam_cre ~%prefix%%cre%~
@@ -132,193 +16,72 @@ ACTION_PHP_EACH familiar_list AS cre => item BEGIN
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII CRE_script_name death_var
     BUT_ONLY
-    REINCLUDE ~%comp_dir%/g_fam.baf.tpa~  // ACTION to generate script. Depends on %death_var% and %fam_item%
     COPY_EXISTING ~%fam_cre%.cre~ ~override~
       READ_ASCII SCRIPT_OVERRIDE over_script
-      PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN  // use existing script if possible
+      PATCH_IF FILE_EXISTS_IN_GAME ~%over_script%.bcs~ BEGIN  // Use existing script if possible
         over_exists = 1
-      END ELSE BEGIN  // or create a new one
+      END ELSE BEGIN  // Or create a new one
         over_exists = 0
         WRITE_ASCIIE SCRIPT_OVERRIDE ~%fam_script%~ #8
       END
     BUT_ONLY
-    ACTION_IF over_exists = 1 BEGIN
-      PRINT ~extending %over_script%.bcs~
-      EXTEND_TOP ~%over_script%.bcs~ ~.../tnt-inlined/%fam_script%.baf~ EVAL  // main familiar script
-      ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN  // disable WTP leaving when attacked
-        COPY_EXISTING ~%over_script%.bcs~ ~override~
-          DECOMPILE_AND_PATCH BEGIN
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~AttackedBy(Player1,DEFAULT)~ ~False()~
-          END
-        BUT_ONLY
-      END
-    END ELSE BEGIN
-      PRINT ~compiling .../tnt-inlined/%fam_script%.baf~
-      COMPILE EVAL ~.../tnt-inlined/%fam_script%.baf~
+
+    // Actually create new script
+    ACTION_IF over_exists == 0 BEGIN
+      COPY ~%comp_dir%/empty.bcs~ ~override/%fam_script%.bcs~
+      OUTER_SPRINT over_script ~%fam_script%~
     END
+
+    // Apply main familiar script
+    PRINT ~extending %over_script%.bcs~
+    // Needs variables: fam_item, death_var
+    EXTEND_TOP ~%over_script%.bcs~ ~%comp_dir%/g_fam.baf~ EVAL
+
+    // Disable WTP leaving when attacked, that's just annoying.
+    ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN
+      COPY_EXISTING ~%over_script%.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~AttackedBy(Player1,DEFAULT)~ ~False()~
+        END
+      BUT_ONLY
+    END
+
   END
+
+  // Auto jump out of backpack
+  // WTP familiars maintain their scripts throughout the trilogy
   ACTION_IF ~%prefix%~ STR_EQ ~wtp~ BEGIN
     ACTION_FOR_EACH script IN ~baldur.bcs~ ~baldur25.bcs~ BEGIN
-      ACTION_IF FILE_EXISTS_IN_GAME ~%script%~ BEGIN
-        EXTEND_BOTTOM ~%script%~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL  // jump in/out
-        COPY_EXISTING ~%script%~ ~override~  // disable WTP nagging
-          DECOMPILE_AND_PATCH BEGIN
-            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GlobalTimerExpired("#GWANOUT","GLOBAL")~ ~False()~
-          END
-        BUT_ONLY
-      END
-    END
-  END ELSE BEGIN  // normal fams
-    ACTION_IF (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 1) BEGIN  // only non-*25 familiars in SoA baldur.bcs
-      EXTEND_BOTTOM ~baldur.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
-    END
-    ACTION_IF (GAME_INCLUDES ~tob~ AND (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 0)) BEGIN  // only *25 familiars in ToB baldur25.bcs
-      EXTEND_BOTTOM ~baldur25.bcs~ ~.../tnt-inlined/g_familiar_jumpout.baf~ EVAL
+      // Jump out
+      EXTEND_BOTTOM ~%script%~ ~%comp_dir%/jumpout.baf~ EVAL
+      // Disable WTP nagging, also annoying
+      COPY_EXISTING ~%script%~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~GlobalTimerExpired("#GWANOUT","GLOBAL")~ ~False()~
+        END
+      BUT_ONLY
     END
   END
-END
-
-
-// potions available to all
-ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN  // string is a reference to tra
-  potn08 => 701  // healing
-  potn52 => 702  // extra healing
-  potn55 => 703  // superior healing
-  potn02 => 704  // fire res
-  potn10 => 705  // invis
-  potn14 => 706  // speed
-  potn17 => 707  // health
-  potn18 => 708  // absorption
-  potn19 => 709  // agility
-  potn20 => 710  // antidote
-  potn21 => 711  // clarity
-  potn22 => 712  // cold res
-  potn24 => 713  // defence
-  potn28 => 714  // fortitude
-  potn31 => 715  // insulation
-  potn33 => 716  // magic blocking
-  potn34 => 717  // magic res
-  potn35 => 718  // magic shield
-  potn38 => 719  // mirrored eyes
-  potn41 => 720  // power
-  potn42 => 721  // regen
-  potn44 => 722  // strength
-  potn45 => 723  // freedom
-  potn46 => 724  // stone form
-  potn37 => 725  // mind focusing
-END
-
-// warrior type
-ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_warrior BEGIN
-  potn03 => 740  // hill giant strength
-  potn04 => 741  // frost giant strength
-  potn05 => 742  // fire giant strength
-  potn06 => 743  // cloud giant strength
-  potn07 => 744  // storm giant strength
-  potn09 => 745  // heroism
-  potn11 => 746  // invulnerability
-  potn12 => 747  // stone giant strength
-END
-
-// thief type
-ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_thief BEGIN
-  potn36 => 760  // master thievery
-  potn39 => 761  // perception
-  potn56 => 762  // rogue's frost giant strength
-END
-
-OUTER_SPRINT action_drink ~~  // using spy because if familiar takes an item it ends in PC inventory
-ACTION_PHP_EACH potion_string AS potion => string BEGIN
-  OUTER_SPRINT EVAL action_drink
-~~~~~
-    %action_drink%
-
-    + ~PartyHasItem("%potion%")~
-    + @%string%
-        DO ~
-          CreateCreature("g_spy1",[-1.-1],0)
-          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
-          ActionOverride("g_spy1", DestroyItem("%potion%") )
-          ActionOverride("g_spy1", DestroySelf() )
-          CreateItem("%potion%", 1, 0, 0)
-          UseItem("%potion%", Myself)
-        ~
-    + g_familiar_confirm
-~~~~~
-END
-
-// warrior potions - mephit, quasit, spider (wtp)
-ACTION_PHP_EACH potion_string_warrior AS potion => string BEGIN
-  OUTER_SPRINT EVAL action_drink
-~~~~~
-    %action_drink%
-
-    + ~PartyHasItem("%potion%")
-       OR(4)
-        Race(Myself, MEPHIT)
-        Name("FAMQUAS", Myself)
-        Name("WTPQUASI", Myself)
-        Name("WTPSPIDE", Myself)
-    ~
-    + @%string%
-        DO ~
-          CreateCreature("g_spy1",[-1.-1],0)
-          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
-          ActionOverride("g_spy1", DestroyItem("%potion%") )
-          ActionOverride("g_spy1", DestroySelf() )
-          CreateItem("%potion%", 1, 0, 0)
-          UseItem("%potion%", Myself)
-        ~
-    + g_familiar_confirm
-~~~~~
-END
-
-
-// thievery potions - easy to check by class
-ACTION_PHP_EACH potion_string_thief AS potion => string BEGIN
-  OUTER_SPRINT EVAL action_drink
-~~~~~
-    %action_drink%
-
-    + ~PartyHasItem("%potion%") Class(Myself,THIEF_ALL)~
-    + @%string%
-        DO ~
-          CreateCreature("g_spy1",[-1.-1],0)
-          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
-          ActionOverride("g_spy1", DestroyItem("%potion%") )
-          ActionOverride("g_spy1", DestroySelf() )
-          CreateItem("%potion%", 1, 0, 0)
-          UseItem("%potion%", Myself)
-        ~
-    + g_familiar_confirm
-~~~~~
-END
-
-
-
-// New dialog options
-ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
-  ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
-    COMPILE EVAL ~%comp_dir%/familiars.d~
+  // Normal familiars have different scripts in SoA vs ToB
+  ELSE BEGIN
+    // Only non-*25 familiars in SoA baldur.bcs
+    ACTION_IF (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 1) BEGIN
+      EXTEND_BOTTOM ~baldur.bcs~ ~%comp_dir%/jumpout.baf~ EVAL
+    END
+    // Only *25 familiars in ToB baldur25.bcs
+    ACTION_IF (GAME_INCLUDES ~tob~ AND (~%fam_cre%~ STRING_CONTAINS_REGEXP ~25~ = 0)) BEGIN
+      EXTEND_BOTTOM ~baldur25.bcs~ ~%comp_dir%/jumpout.baf~ EVAL
+    END
   END
 END
 
 // Speed spells
+// Set speed to normal. Used in dialog.
 COPY ~%comp_dir%/g_fsped0.spl~ ~override~
+// Permanent higher speed, to keep up with PC in Boots of Speed. Used in dialog.
 COPY ~%comp_dir%/g_fsped1.spl~ ~override~
+// Temporary sprint for hiding in backpack and looting. Used in familiar script.
 COPY ~%comp_dir%/g_fsped2.spl~ ~override~
 
-
-// potion spy
-LAF CREATE_MINION STR_VAR cre = ~g_spy1~ script = ~g_spy1~ END
-// script for potion spy
-<<<<<<<< .../tnt-inlined/g_spy1.baf
-IF
-  True()
-THEN
-  RESPONSE #100
-    DestroyAllEquipment()
-    DestroySelf()
-END
->>>>>>>>
-COMPILE ~.../tnt-inlined/g_spy1.baf~
+// New dialog options
+INCLUDE ~%comp_dir%/dialogs.tpa~

@@ -1,0 +1,101 @@
+import {
+    ammoMagic,
+    ammoMagicRare,
+    attackEnemy,
+    attackEnemyCasters,
+    checkInventoryFull,
+    checkInventoryNotFull,
+    followMaster,
+    followMasterBetweenAreas,
+    gold,
+    GVAR_pickupAmmo,
+    GVAR_pickupGold,
+    GVAR_pickupJewels,
+    GVAR_pickupPotions,
+    GVAR_pickupScalps,
+    GVAR_pickupScrolls,
+    GVAR_pickupTrophies,
+    hitAndRun,
+    jewelsCommon,
+    jumpToPack,
+    JumpToPackInjured,
+    notifyHurt,
+    notifyHurtBadly,
+    pickup,
+    pickupJewelsMagic,
+    pickupJewelsMagicRare,
+    pickupJewelsRare,
+    potionsCommon,
+    potionsRare,
+    resetHurtNotification,
+    scalps,
+    scrolls,
+    trophies,
+} from "./lib.g_fam"
+
+// Top priority: jump into backpack
+jumpToPack()
+JumpToPackInjured(2, 70)
+JumpToPackInjured(3, 30)
+
+// Combat tactics
+hitAndRun()
+attackEnemyCasters()
+attackEnemy()
+
+// After combat: notify if hurt
+resetHurtNotification()
+notifyHurt()
+notifyHurtBadly()
+
+// Follow
+followMaster()
+
+/**
+ * Looting start.
+ * This works pretty loosely.
+ * Generally, try to pick up more common items first, so that looting takes less time overall.
+ */
+
+checkInventoryNotFull()
+
+checkInventoryFull()
+pickup(gold, GVAR_pickupGold, 10)
+
+checkInventoryFull()
+pickup(scalps, GVAR_pickupScalps, 5)
+
+checkInventoryFull()
+pickup(jewelsCommon, GVAR_pickupJewels, 2)
+
+checkInventoryFull()
+pickup(potionsCommon, GVAR_pickupPotions, 3)
+
+checkInventoryFull()
+pickup(ammoMagic, GVAR_pickupAmmo, 2)
+
+checkInventoryFull()
+pickup(trophies, GVAR_pickupTrophies, 1)
+
+checkInventoryFull()
+pickupJewelsRare()
+
+checkInventoryFull()
+pickup(potionsRare, GVAR_pickupPotions, 2)
+
+checkInventoryFull()
+pickupJewelsMagic()
+
+checkInventoryFull()
+pickup(ammoMagicRare, GVAR_pickupAmmo, 2)
+
+checkInventoryFull()
+pickupJewelsMagicRare()
+
+checkInventoryFull()
+pickup(scrolls, GVAR_pickupScrolls, 1)
+
+/* Looting end */
+
+// Finally, follow between areas
+followMasterBetweenAreas()

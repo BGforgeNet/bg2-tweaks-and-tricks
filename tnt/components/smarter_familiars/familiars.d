@@ -221,9 +221,7 @@ APPEND %dialog%
 
     ++ @400
       DO ~SetGlobal("g_FamPickupGold","GLOBAL",0)
-          SetGlobal("g_FamPickupJewelsCommon","GLOBAL",0)
-          SetGlobal("g_FamPickupJewelsRare","GLOBAL",0)
-          SetGlobal("g_FamPickupJewelsMagic","GLOBAL",0)
+          SetGlobal("g_FamPickupJewels","GLOBAL",0)
           SetGlobal("g_FamPickupAmmo","GLOBAL",0)
           SetGlobal("g_FamPickupPotions","GLOBAL",0)
           SetGlobal("g_FamPickupScrolls","GLOBAL",0)
@@ -234,9 +232,7 @@ APPEND %dialog%
 
     ++ @401
       DO ~SetGlobal("g_FamPickupGold","GLOBAL",1)
-          SetGlobal("g_FamPickupJewelsCommon","GLOBAL",1)
-          SetGlobal("g_FamPickupJewelsRare","GLOBAL",1)
-          SetGlobal("g_FamPickupJewelsMagic","GLOBAL",1)
+          SetGlobal("g_FamPickupJewels","GLOBAL",1)
           SetGlobal("g_FamPickupAmmo","GLOBAL",1)
           SetGlobal("g_FamPickupPotions","GLOBAL",1)
           SetGlobal("g_FamPickupScrolls","GLOBAL",1)
@@ -248,42 +244,24 @@ APPEND %dialog%
     +~Global("g_FamPickupGold","GLOBAL",0)~+ @402 DO ~SetGlobal("g_FamPickupGold","GLOBAL",1)~ + g_familiar_confirm
     +~Global("g_FamPickupGold","GLOBAL",1)~+ @403 DO ~SetGlobal("g_FamPickupGold","GLOBAL",0)~ + g_familiar_confirm
 
-    + ~OR(3)
-        Global("g_FamPickupJewelsCommon","GLOBAL",0)
-        Global("g_FamPickupJewelsRare","GLOBAL",0)
-        Global("g_FamPickupJewelsMagic","GLOBAL",0)
-      ~
+    + ~!Global("g_FamPickupJewels","GLOBAL",1)~
     + @404
-      DO ~SetGlobal("g_FamPickupJewelsCommon","GLOBAL",1)
-          SetGlobal("g_FamPickupJewelsRare","GLOBAL",1)
-          SetGlobal("g_FamPickupJewelsMagic","GLOBAL",1)
-         ~
+      DO ~SetGlobal("g_FamPickupJewels","GLOBAL",1)~
     + g_familiar_confirm
 
-    ++ @405
-        DO ~SetGlobal("g_FamPickupJewelsCommon","GLOBAL",0)
-        SetGlobal("g_FamPickupJewelsRare","GLOBAL",1)
-        SetGlobal("g_FamPickupJewelsMagic","GLOBAL",1)
-       ~
+    + ~!Global("g_FamPickupJewels","GLOBAL",2)~
+    + @405
+        DO ~SetGlobal("g_FamPickupJewels","GLOBAL",2)~
     + g_familiar_confirm
 
-    ++ @406
-        DO ~SetGlobal("g_FamPickupJewelsCommon","GLOBAL",0)
-        SetGlobal("g_FamPickupJewelsRare","GLOBAL",0)
-        SetGlobal("g_FamPickupJewelsMagic","GLOBAL",1)
-       ~
+    + ~!Global("g_FamPickupJewels","GLOBAL",3)~
+    + @406
+        DO ~SetGlobal("g_FamPickupJewels","GLOBAL",3)~
     + g_familiar_confirm
 
-    + ~OR(3)
-        Global("g_FamPickupJewelsCommon","GLOBAL",1)
-        Global("g_FamPickupJewelsRare","GLOBAL",1)
-        Global("g_FamPickupJewelsMagic","GLOBAL",1)
-      ~
+    + ~!Global("g_FamPickupJewels","GLOBAL",0)~
     + @407
-        DO ~SetGlobal("g_FamPickupJewelsCommon","GLOBAL",0)
-        SetGlobal("g_FamPickupJewelsRare","GLOBAL",0)
-        SetGlobal("g_FamPickupJewelsMagic","GLOBAL",0)
-      ~
+        DO ~SetGlobal("g_FamPickupJewels","GLOBAL",0)~
     + g_familiar_confirm
 
     + ~Global("g_FamPickupAmmo","GLOBAL",0)~

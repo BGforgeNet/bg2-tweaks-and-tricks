@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.format.enable": false,
+    "files.exclude": {
+        "**/_tmp.tbaf.ts": true
+    }
+}

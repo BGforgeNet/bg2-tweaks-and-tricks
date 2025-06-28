@@ -1,20 +1,21 @@
 {
-  "name": "tnt",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ielib": "^0.1.2"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "eslint": "^9.29.0",
-    "typescript-eslint": "^8.35.0"
-  }
+    "name": "tnt",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ielib": "^0.1.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.29.0",
+        "eslint": "^9.29.0",
+        "typescript-eslint": "^8.35.0",
+        "prettier": "^3.6.0"
+    }
 }

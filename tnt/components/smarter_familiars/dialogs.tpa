@@ -1,0 +1,150 @@
+/* New dialog options:
+    - Set combat tactics
+    - Formation
+    - Allow to drink potions
+
+    See familiars.d.
+*/
+
+// Potion spy is used to grap potions from the party and destroy them to emulate consumption.
+// Because when a familiar grabs an item, it ends up in PC's inventory.
+LAF CREATE_MINION STR_VAR cre = ~g_spy1~ script = ~g_spy1~ END
+// Script for potion spy
+<<<<<<<< .../tnt-inlined/g_spy1.baf
+IF
+  True()
+THEN
+  RESPONSE #100
+    DestroyAllEquipment()
+    DestroySelf()
+END
+>>>>>>>>
+COMPILE ~.../tnt-inlined/g_spy1.baf~
+
+
+// potions available to all
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string BEGIN  // string is a reference to tra
+  potn08 => 701  // healing
+  potn52 => 702  // extra healing
+  potn55 => 703  // superior healing
+  potn02 => 704  // fire res
+  potn10 => 705  // invis
+  potn14 => 706  // speed
+  potn17 => 707  // health
+  potn18 => 708  // absorption
+  potn19 => 709  // agility
+  potn20 => 710  // antidote
+  potn21 => 711  // clarity
+  potn22 => 712  // cold res
+  potn24 => 713  // defence
+  potn28 => 714  // fortitude
+  potn31 => 715  // insulation
+  potn33 => 716  // magic blocking
+  potn34 => 717  // magic res
+  potn35 => 718  // magic shield
+  potn38 => 719  // mirrored eyes
+  potn41 => 720  // power
+  potn42 => 721  // regen
+  potn44 => 722  // strength
+  potn45 => 723  // freedom
+  potn46 => 724  // stone form
+  potn37 => 725  // mind focusing
+END
+
+// warrior type
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_warrior BEGIN
+  potn03 => 740  // hill giant strength
+  potn04 => 741  // frost giant strength
+  potn05 => 742  // fire giant strength
+  potn06 => 743  // cloud giant strength
+  potn07 => 744  // storm giant strength
+  potn09 => 745  // heroism
+  potn11 => 746  // invulnerability
+  potn12 => 747  // stone giant strength
+END
+
+// thief type
+ACTION_DEFINE_ASSOCIATIVE_ARRAY potion_string_thief BEGIN
+  potn36 => 760  // master thievery
+  potn39 => 761  // perception
+  potn56 => 762  // rogue's frost giant strength
+END
+
+
+// This variable is passed to familiars.d to allow the familiar to drink the potions matching its class.
+OUTER_SPRINT action_drink ~~
+
+ACTION_PHP_EACH potion_string AS potion => string BEGIN
+  OUTER_SPRINT EVAL action_drink
+~~~~~
+    %action_drink%
+
+    + ~PartyHasItem("%potion%")~
+    + @%string%
+        DO ~
+          CreateCreature("g_spy1",[-1.-1],0)
+          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
+          ActionOverride("g_spy1", DestroyItem("%potion%") )
+          ActionOverride("g_spy1", DestroySelf() )
+          CreateItem("%potion%", 1, 0, 0)
+          UseItem("%potion%", Myself)
+        ~
+    + g_familiar_confirm
+~~~~~
+END
+
+// warrior potions - mephit, quasit, spider (wtp)
+ACTION_PHP_EACH potion_string_warrior AS potion => string BEGIN
+  OUTER_SPRINT EVAL action_drink
+~~~~~
+    %action_drink%
+
+    + ~PartyHasItem("%potion%")
+       OR(4)
+        Race(Myself, MEPHIT)
+        Name("FAMQUAS", Myself)
+        Name("WTPQUASI", Myself)
+        Name("WTPSPIDE", Myself)
+    ~
+    + @%string%
+        DO ~
+          CreateCreature("g_spy1",[-1.-1],0)
+          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
+          ActionOverride("g_spy1", DestroyItem("%potion%") )
+          ActionOverride("g_spy1", DestroySelf() )
+          CreateItem("%potion%", 1, 0, 0)
+          UseItem("%potion%", Myself)
+        ~
+    + g_familiar_confirm
+~~~~~
+END
+
+
+// thievery potions - easy to check by class
+ACTION_PHP_EACH potion_string_thief AS potion => string BEGIN
+  OUTER_SPRINT EVAL action_drink
+~~~~~
+    %action_drink%
+
+    + ~PartyHasItem("%potion%") Class(Myself,THIEF_ALL)~
+    + @%string%
+        DO ~
+          CreateCreature("g_spy1",[-1.-1],0)
+          ActionOverride("g_spy1", TakePartyItemNum("%potion%",1) )
+          ActionOverride("g_spy1", DestroyItem("%potion%") )
+          ActionOverride("g_spy1", DestroySelf() )
+          CreateItem("%potion%", 1, 0, 0)
+          UseItem("%potion%", Myself)
+        ~
+    + g_familiar_confirm
+~~~~~
+END
+
+
+
+// New dialog options
+ACTION_PHP_EACH familiar_dlg AS dialog => state BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%dialog%.dlg~ BEGIN
+    COMPILE EVAL ~%comp_dir%/familiars.d~
+  END
+END

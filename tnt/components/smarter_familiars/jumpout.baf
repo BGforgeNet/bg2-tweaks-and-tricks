@@ -1,0 +1,19 @@
+// Automatically jump out of backpack if directed to do so.
+// Goes to baldur/baldur25.bcs.
+
+IF
+    Global("g_FamiliarJumpOut", "GLOBAL", 1)
+    Global("g_FamStayInPack", "GLOBAL", 0)
+    HasItem("%fam_item%", Player1)
+    Delay(12)  // check every 2 rounds
+    CombatCounterLT(1)
+    !OnScreen([EVILCUTOFF])
+    NextTriggerObject(Player1)
+    !Detect([EVILCUTOFF])
+THEN
+    RESPONSE #100
+        TakePartyItem("%fam_item%")
+        DestroyItem("%fam_item%")
+        MoveGlobalObject("%death_var%", Player1)
+        Continue()
+END
