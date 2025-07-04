@@ -12,8 +12,10 @@
 - [Happy IE](https://bgforge.net/happy-ie/)
 
 ### License
+
 - The mod is [CC BY-NC-SA v4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), except the code that was borrowed from other mods/authors.
 - Weidu is GPLv3
 
 ### Author
+
 Magus @ [BGforge](https://forums.bgforge.net)

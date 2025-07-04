@@ -47,7 +47,7 @@
 ### Version 8.36 (WIP)
 
 - New component: faster forging dialogs.
-- Slightly improved dialog compatibility witg WTP familiars.
+- Slightly improved dialog compatibility with WTP familiars.
 
 ### Version 8.35
 
