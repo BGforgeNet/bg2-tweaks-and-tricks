@@ -364,11 +364,13 @@ END
 // Cromwell dialog
 OUTER_SPRINT dlg ~wsmith01~
 // A good <DAYNIGHTALL> to ye, me friend.  Good to see ye back in me forge, it is.  Be there something that ye need?
-OUTER_SET START_STATE = 58 
+OUTER_SET START_STATE = 58
 COMPILE EVAL ~%comp_dir%/wsmith01.d~
 
-// Cespenar dialog
-OUTER_SPRINT dlg ~botsmith~
-// Cespenar gladly serve the great one!  Cespenar make good butler, yes?  Would you like me to make you shiny ones?  I have many recipes!
-OUTER_SET START_STATE = 2 
-COMPILE EVAL ~%comp_dir%/botsmith.d~
+ACTION_IF GAME_INCLUDES ~tob~ BEGIN
+    // Cespenar dialog
+    OUTER_SPRINT dlg ~botsmith~
+    // Cespenar gladly serve the great one!  Cespenar make good butler, yes?  Would you like me to make you shiny ones?  I have many recipes!
+    OUTER_SET START_STATE = 2
+    COMPILE EVAL ~%comp_dir%/botsmith.d~
+END
