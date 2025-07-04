@@ -1,0 +1,374 @@
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+
+/**
+ * Split string by delimiter and return an array of strings, as well as its length.
+ * @arg {string} string - The string to split.
+ * @arg {string} delimiter - The delimiter to split the string by.
+ * @ret {int} array_length - The length of the resulting array.
+ * @ret {list} array - The resulting array of strings.
+ */
+DEFINE_ACTION_FUNCTION SPLIT_STRING
+    STR_VAR
+        string = ""
+        delimiter = " "
+    RET array_length
+    RET_ARRAY array
+BEGIN
+    ACTION_CLEAR_ARRAY array
+    OUTER_SET i = 0
+    OUTER_PATCH ~%string%~ BEGIN
+        REPLACE_EVALUATE ~[^%delimiter%]+~ BEGIN
+            SPRINT $array("%i%") "%MATCH0%"
+            i+=1
+        END ~%MATCH0%~
+    END
+    OUTER_SET array_length = i
+END
+
+<<<<<<<< .../tnt-inlined/g_forge.2da
+ITEM    TYPE    PRICE   CROMWELL    CESPENAR    INGREDIENTS
+>>>>>>>>
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~g_forge.2da~ BEGIN
+    COPY ~.../tnt-inlined/g_forge.2da~ ~override/g_forge.2da~
+END
+APPEND g_forge.2da
+~
+## Vanilla Cromwell
+# Ankheg plate
+plat06      armor   5000    1           0           misc12
+# Crom Fayer
+hamm09      weapon  10000   1           0           scrlag,hamm07,brac06,belt08
+# Equalizer
+sw1h54      weapon  7500    1           0           sw1h54a,sw1h54b,sw1h54c
+# Gesen's bow
+bow19       weapon  7500    1           0           bow19a,bow19b
+# Mace of Disruption
+blun25      weapon  7500    1           0           blun12,misc5k
+# Red dragon scale
+plat18      armor   5000    1           0           scaler
+# Shadow Dragon Scale
+leat19      armor   5000    1           0           scaleb
+# Silver Sword
+sw2h15      weapon  7500    1           0           sw2h15a,misc8u
+# Wave halberd
+halb09      weapon  7500    1           0           halb09a,halb09b
+
+
+# WK items
+# Blessed bracers
+brac23      trinket 10000   0           1           brac22
+# Case of Plenty +2
+quiver04    trinket 10000   0           1           quiver02
+# Thieves' Hood
+helm30      trinket 5000    0           1           helm29,potn20,ring05
+# Helm of the Rock
+helm32      trinket 5000    0           1           helm31,compon12,compon13
+# Wondrous Gloves
+brac25      trinket 5000    0           1           brac24,misc42,misc45,misc43,misc41
+# Clay Golem Manual
+tome02      trinket 5000    0           1           tome01,tome02a
+# Improved cloak of Protection
+clck31      trinket 20000   0           1           clck02,scrl7q,scrl90
+# White Dragon Scale
+chan20      armor   5000    0           1           compon18
+# Aslyferund Elven Chain
+chan19      armor   40000   0           1           chan16,scrl6t
+# Erinne Sling
+slng09      weapon  5000    0           1           slng08
+# Quiver of Plenty +2
+quiver03    trinket 10000   0           1           quiver01,misc45
+# Flail of Ages
+blun30c     weapon  5000    0           1           blun14,blun30a
+blun30d     weapon  5000    0           1           blun14,blun30b
+blun30      weapon  5000    0           1           blun30c,blun30b
+blun30      weapon  5000    0           1           blun30d,blun30a
+# Club of Detonation
+blun27      weapon  5000    0           1           blun26,ring02
+# Ixil's Spike (spear)
+sper12      weapon  5000    0           1           dagg23,sper11
+# Dagger of the Star
+dagg21      weapon  5000    0           1           dagg22,5*misc41
+
+
+## Vanilla Cespenar
+# Angurvadal
+sw1h61      weapon  10000   0           1           sw1h60,compon01
+# Axe of the Unyielding
+ax1h15      weapon  50000   0           1           ax1h14,compon04
+# Bag of Plenty +2
+quiver06    trinket 10000   0           1           quiver05,misc44
+# Blue Dragon Plate
+plat20      armor   5000    0           1           compon19
+# Carsomyr +6
+sw2h19      weapon  5000    0           1           sw2h10,compon02
+# Circlet of Netheril
+helm28      trinket 5000    0           1           helm27,compon17
+# Stone Golem Manual
+tome03      trinket 10000   0           1           tome02,tome03a
+# Juggernaut Golem Manual
+tome04      trinket 15000   0           1           tome03,tome04a
+# Darkfire bow
+bow21       weapon  5000    0           1           bow20,compon10
+# Firetooth
+xbow16      weapon  5000    0           1           xbow15,compon10
+# Foebane
+sw1h63      weapon  5000    0           1           sw1h62,compon03
+# Gram the Sword of Grief
+sw2h18      weapon  5000    0           1           sw2h17,compon15
+# Heartwood ring
+ring44      trinket 5000    0           1           ring43,compon14
+# Hindo's Doom
+sw1h71      weapon  5000    0           1           sw1h70,compon07
+# Montolio's cloak
+CLCK32      trinket 5000    0           1           compon11,compon16
+# Purifier
+sw1h65      weapon  5000    0           1           sw1h64,compon02
+# Ravager +6
+halb11      weapon  5000    0           1           halb10,staf23
+# Runehammer +5
+hamm11      weapon  5000    0           1           hamm10,compon09
+# Short Sword of Mask
+sw1h59      weapon  5000    0           1           sw1h58,compon15
+# Silver Dragon Scale - EE
+ohdarmor    armor   5000    0           1           ohdscale
+# Spectral Brand
+sw1h69      weapon  5000    0           1           sw1h68,compon06
+# staff of the Ram
+staf22      weapon  5000    0           1           staf21,compon05
+# Storm Star
+blun29      weapon  5000    0           1           blun28,compon08
+# Talarash
+bow23       weapon  5000    0           1           bow22,compon10
+~
+ACTION_IF expanded_selection == 1 BEGIN
+    COPY_EXISTING ~g_forge.2da~ ~override~
+        REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH ~ 0 ~ ~ 1 ~
+    BUT_ONLY
+END
+
+
+COPY_EXISTING ~g_forge.2da~ ~override~
+    READ_2DA_ENTRIES_NOW rows 6
+    // Start from 1 to skip the header row
+    FOR (i=1; i<rows; i+=1) BEGIN
+        READ_2DA_ENTRY_FORMER rows i 0 item
+        READ_2DA_ENTRY_FORMER rows i 1 type
+        READ_2DA_ENTRY_FORMER rows i 2 price
+        READ_2DA_ENTRY_FORMER rows i 3 cromwell
+        READ_2DA_ENTRY_FORMER rows i 4 cespenar
+        READ_2DA_ENTRY_FORMER rows i 5 ingredients
+ 
+        // Don't fail on invalid/misspelled item files, just print a warning.
+        PATCH_TRY
+            // Read name as integer strref. The item must already exist in game.
+            INNER_PATCH_FILE ~%item%.itm~ BEGIN
+                READ_STRREF ITM_identified_name item_name
+                // Add dot to the end of item name to make a complete sentence.
+                strref = RESOLVE_STR_REF(~%item_name%.~)
+            END
+            // Save to items array for later use
+            SET $items(~%item%~ ~%type%~ ~%price%~ ~%cromwell%~ ~%cespenar%~ ~%ingredients%~ ~%strref%~) = 1
+            // Debug
+            PATCH_PRINT ~%item% - %type% - %price% - %cromwell% - %cespenar% - %ingredients% - %strref%~
+        WITH DEFAULT
+            PATCH_WARN ~Could not read item name from %item%.itm, skipping it.~
+        END
+
+    END
+BUT_ONLY
+
+
+/*
+    These variables hold full text of response items for the corresponding dialog states.
+    Example (1 response):
+
+    + ~PartyGoldGT(100) PartyHasItem("sw1h54a")~
+    + #999
+    + DO ~
+        TakePartyGold(100)
+        DestroyGold(100)
+        TakePartyItemNum("sw1h54a",1)
+        DestroyItem("sw1h54a")
+        GiveItemCreate("sw1h54",Player1,1,1,1)
+        CreateVisualEffect("spcrtwpn",[401.348])
+    ~
+    EXIT
+*/
+OUTER_SPRINT cromwell_weapon ~~
+OUTER_SPRINT cromwell_armor ~~
+OUTER_SPRINT cromwell_trinket ~~
+OUTER_SPRINT cespenar_weapon ~~
+OUTER_SPRINT cespenar_armor ~~
+OUTER_SPRINT cespenar_trinket ~~
+
+// Curate items list in case there a invalid rows in g_forge.2da
+ACTION_PHP_EACH items AS itemdef => _ BEGIN
+    // Default: no skip
+    OUTER_SET skip = 0
+
+    // Verify that item row is valid
+    OUTER_SPRINT item $itemdef(0)
+
+    // Skip comments
+    ACTION_IF ~%item%~ STR_EQ ~#~ BEGIN
+        OUTER_SET skip = 1
+    END
+
+    ACTION_IF skip == 0 BEGIN
+        ACTION_TRY
+            OUTER_SPRINT type $itemdef(1)
+            OUTER_SET price = $itemdef(2)
+            OUTER_SET price_limit = price - 1   // For use with PartyGoldGT
+            OUTER_SET cromwell = $itemdef(3)
+            OUTER_SET cespenar = $itemdef(4)
+            OUTER_SPRINT ingredients $itemdef(5)
+            OUTER_SPRINT strref $itemdef(6)
+            // Debug
+            PRINT ~ITEM %item% - %type% - %price% - %cromwell% - %cespenar% - %ingredients% - %strref%~
+        WITH DEFAULT
+            OUTER_SPRINT item $itemdef(0)
+            WARN ~Could not parse row for item %item%, skipping it.~
+            OUTER_SET skip = 1
+        END
+    END
+
+    // Split ingredients into an array of strings
+    OUTER_SET array_length = 0
+    ACTION_IF skip == 0 BEGIN
+        LAF SPLIT_STRING
+            STR_VAR string="%ingredients%" delimiter = ","
+            RET array_length
+            RET_ARRAY ingredients = array
+        END
+    END
+
+    ACTION_IF skip == 0 BEGIN
+        // Debug
+        PRINT ~array_length: %array_length%~
+        ACTION_IF array_length == 0 BEGIN
+            // Didn't find ingredients, skip this item
+            OUTER_SET skip = 1
+            WARN ~Could not parse ingredients for item %item%, skipping it.~
+        END
+    END
+
+    ACTION_IF skip == 0 BEGIN
+        OUTER_SET $curated_items(~%item%~ ~%type%~ ~%price%~ ~%cromwell%~ ~%cespenar%~ ~%ingredients%~ ~%strref%~) = 1
+    END
+END
+
+// Iterate through curated items and create dialog responses
+ACTION_PHP_EACH curated_items AS itemdef => _ BEGIN
+    // We know these are good
+    OUTER_SPRINT item $itemdef(0)
+    OUTER_SPRINT type $itemdef(1)
+    OUTER_SET price = $itemdef(2)
+    OUTER_SET price_limit = price - 1   // For use with PartyGoldGT
+    OUTER_SET cromwell = $itemdef(3)
+    OUTER_SET cespenar = $itemdef(4)
+    OUTER_SPRINT ingredients $itemdef(5)
+    OUTER_SPRINT strref $itemdef(6)
+
+    // Split ingredients again
+    LAF SPLIT_STRING
+        STR_VAR string="%ingredients%" delimiter = ","
+        RET_ARRAY ingredients = array
+    END
+
+    // Initial condition and action
+    OUTER_SPRINT condition ~PartyGoldGT(%price_limit%)~
+    OUTER_SPRINT action ~TakePartyGold(%price%) DestroyGold(%price%)~
+
+    OUTER_SET skip = 0
+
+    // Ingredients get validated here, because it's not easy to save them in curated list
+    ACTION_PHP_EACH ingredients AS _ => ingredient BEGIN
+        // Debug
+        PRINT ~Ingredient: %ingredient%~
+
+        // Default number of ingredients
+        OUTER_SET num_ingredients = 1
+
+        // Check for multiplier in ingredient name
+        ACTION_IF (~%ingredient%~ STRING_MATCHES_REGEXP ~^[0-9]+\*~) == 0 BEGIN
+            // Multiplier found, split it
+            // Debug
+            PRINT ~Multiple items in ingredient: %ingredient%~
+            LAF SPLIT_STRING
+                STR_VAR string="%ingredient%" delimiter = "*"
+                RET_ARRAY mult_ing = array
+            END
+            ACTION_TRY
+                OUTER_SET num_ingredients = $mult_ing(0)
+                OUTER_SPRINT ingredient $mult_ing(1)
+            WITH DEFAULT
+                WARN ~Could not parse ingredients %ingredient%, for item %item%, skipping it.~
+                OUTER_SET skip = 1
+            END
+        END
+
+        // Check if ingredient is empty
+        ACTION_IF ~%ingredient%~ STR_EQ ~~ BEGIN
+            OUTER_SET skip = 1
+            WARN ~Empty ingredient found for item %item%, skipping. Check its row for trailing comma.~
+        END ELSE BEGIN
+            // Could use NumItemsPartyGT in all cases, but PartyHasItem where applicable would probably less confusing for the viewer.
+            ACTION_IF num_ingredients == 1 BEGIN
+                OUTER_SPRINT condition ~%condition% PartyHasItem("%ingredient%")~
+            END ELSE BEGIN
+                OUTER_SPRINT condition ~%condition% NumItemsPartyGT("%ingredient%", %num_ingredients%)~
+            END
+            OUTER_SPRINT action ~%action% TakePartyItemNum("%ingredient%", %num_ingredients%) DestroyItem("%ingredient%")~
+        END
+    END
+
+    // Ingredient checks passed, populate dialog response variables.
+    ACTION_IF skip == 0  BEGIN
+        OUTER_SPRINT action ~%action% GiveItemCreate("%item%", Player1, 1, 1, 1) CreateVisualEffect("spcrtwpn", [401.348])~
+
+        // Debug
+        PRINT ~Condition: %condition%~
+        PRINT ~Action: %action%~
+
+        OUTER_SPRINT response "+ ~%condition%~ + #%strref% DO ~%action%~ EXIT"
+        // Debug
+        PRINT ~Response: %response%~
+
+        ACTION_IF cromwell == 1 BEGIN
+            ACTION_IF ~%type%~ STR_EQ ~weapon~ BEGIN
+                OUTER_SPRINT cromwell_weapon ~%cromwell_weapon% %response%~
+            END
+            ACTION_IF ~%type%~ STR_EQ ~armor~ BEGIN
+                OUTER_SPRINT cromwell_armor ~%cromwell_armor% %response%~
+            END
+            ACTION_IF NOT (~%type%~ STR_EQ ~weapon~) AND NOT ~%type%~ STR_EQ ~armor~ BEGIN
+                OUTER_SPRINT cromwell_trinket ~%cromwell_trinket% %response%~
+            END
+        END
+
+        ACTION_IF cespenar == 1 BEGIN
+            ACTION_IF ~%type%~ STR_EQ ~weapon~ BEGIN
+                OUTER_SPRINT cespenar_weapon ~%cespenar_weapon% %response%~
+            END
+            ACTION_IF ~%type%~ STR_EQ ~armor~ BEGIN
+                OUTER_SPRINT cespenar_armor ~%cespenar_armor% %response%~
+            END
+            ACTION_IF NOT (~%type%~ STR_EQ ~weapon~) AND NOT ~%type%~ STR_EQ ~armor~ BEGIN
+                OUTER_SPRINT cespenar_trinket ~%cespenar_trinket% %response%~
+            END
+        END
+    END
+
+END
+
+// Cromwell dialog
+OUTER_SPRINT dlg ~wsmith01~
+// A good <DAYNIGHTALL> to ye, me friend.  Good to see ye back in me forge, it is.  Be there something that ye need?
+OUTER_SET START_STATE = 58 
+COMPILE EVAL ~%comp_dir%/wsmith01.d~
+
+// Cespenar dialog
+OUTER_SPRINT dlg ~botsmith~
+// Cespenar gladly serve the great one!  Cespenar make good butler, yes?  Would you like me to make you shiny ones?  I have many recipes!
+OUTER_SET START_STATE = 2 
+COMPILE EVAL ~%comp_dir%/botsmith.d~

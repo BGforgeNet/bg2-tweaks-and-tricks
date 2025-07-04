@@ -11,6 +11,7 @@ Here are various QoL components that didn't really fit into any other sections.
 - [Add BG1 tome stats bonuses to new BG2 characters](#add-bg1-tome-stats-bonuses-to-new-bg2-characters)
 - [Starting bags](#starting-bags)
 - [More mage fencing scrolls in BG1](#more-mage-fencing-scrolls-in-bg1)
+- [Faster forging dialogs](#faster-forging-dialogs)
 
 ### Less autosaves
 
@@ -113,3 +114,15 @@ Spell Thrust and Secret Word additions don't change much, you could get them by 
 Breach, however, is normally not available in BG1, and its addition changes the battle dynamics. However, as SCS mages are generously using protections, I think it's a justifiable addition.
 
 Finally, this component adds a few Intelligence-boosting potions to Thalantyr, allowing for more reliable scribing for [Hardcore](https://pihwiki.bgforge.net/) characters.
+
+### Faster forging dialogs
+
+Cromwell and Cespenar's rummaging through backpacks is fairly annoying in the base game, but various mods adding more crafted items aggravate that further. This component add a dialog option to both that allows to bypass the lengthy dialog and select the desired item directly, if all ingredients are present.
+
+(However note that Item Upgrade mod in particular already has an option to add its items into a separate dialog tree).
+
+Such dialog might seem slightly immersion breaking to some players, so pick your poison.
+
+One option keeps the original recipe lists. Another one removes cross restrictions, as per Tweaks Anthology, so that Cromwell can upgrade Watcher's Keep items, and Cespenar can forge items from Cromwell's list.
+
+This component only covers vanilla items. Modders can easily add more items if desired for compatibility, see the [docs](modding.md#faster-forging-dialogs).

@@ -1,5 +1,7 @@
 # Changelog
 
+- [Version 8.35](#version-835)
+- [Version 8.34](#version-834)
 - [Version 8.33](#version-833)
 - [Version 8.32](#version-832)
 - [Version 8.31](#version-831)
@@ -41,6 +43,11 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.36 (WIP)
+
+- New component: faster forging dialogs.
+- Slightly improved dialog compatibility witg WTP familiars.
 
 ### Version 8.35
 
