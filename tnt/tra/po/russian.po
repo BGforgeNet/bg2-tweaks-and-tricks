@@ -3,17 +3,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24-16:26+0000\n"
+"POT-Creation-Date: 2025-07-04-11:58+0000\n"
 "PO-Revision-Date: 2025-02-10 06:48+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
-"Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/"
-"tweaks-and-tricks/ru/>\n"
+"Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
 "Language: russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.12.2\n"
 
 #: easy_traps.tra:1
@@ -431,6 +429,74 @@ msgstr "Защищайтесь!"
 msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
 msgstr "Твоя душа потеряна!"
+
+#: faster_forging.tra:1
+msgid "I have something I think you could forge into an item."
+msgstr ""
+
+#: faster_forging.tra:2
+msgid "Hmmmn...  Let us have a look then.  What sort of item would that be?"
+msgstr ""
+
+#: faster_forging.tra:3
+#, fuzzy
+#| msgid "Weapons store"
+msgid "Weapon."
+msgstr "Оружейный магазин"
+
+#: faster_forging.tra:4
+msgid "Armor."
+msgstr ""
+
+#: faster_forging.tra:5
+msgid "Trinket."
+msgstr ""
+
+#: faster_forging.tra:6
+#, fuzzy
+#| msgid "Actually, nevermind. Distance is fine for now."
+msgid "Actually, nevermind.  Let's get back to that later."
+msgstr "Неважно, с дистанцией всё нормально."
+
+#: faster_forging.tra:7
+msgid "Aye, what kind of weapon?"
+msgstr ""
+
+#: faster_forging.tra:8
+msgid "Aye, what kind of armor?"
+msgstr ""
+
+#: faster_forging.tra:9
+msgid "Aye, what kind of trinket?"
+msgstr ""
+
+#: faster_forging.tra:10
+#, fuzzy
+#| msgid "Actually, take a goodberry."
+msgid "Actually, another sort."
+msgstr "Возьми эту ягоду."
+
+#: faster_forging.tra:20
+msgid ""
+"You mentioned a recipe last time, I think I have all the ingredients for it "
+"now."
+msgstr ""
+
+#: faster_forging.tra:21
+msgid "What kind of shiny the great one wishes?"
+msgstr ""
+
+#: faster_forging.tra:22
+msgid "Ooo!  Pointy sharpy, yes!"
+msgstr ""
+
+#: faster_forging.tra:23
+msgid "Ooo!  I can makes armor, yes!"
+msgstr ""
+
+#: faster_forging.tra:24
+msgid "Ooo!  Cespenar likes the triksies best!"
+msgstr ""
 
 #: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
@@ -1693,6 +1759,21 @@ msgstr "КСЗС + cумка хранения - все бездонные!"
 
 #: setup.tra:620
 msgid "More mage fencing scrolls in BG1"
+msgstr ""
+
+#: setup.tra:630
+#, fuzzy
+#| msgid "Faster familiars"
+msgid "Faster forging dialogs"
+msgstr "Быстрые фамильяры"
+
+#: setup.tra:631
+msgid "Original recipe lists"
+msgstr ""
+
+#: setup.tra:632
+msgid ""
+"Both Cromwell and Cespenar can forge any item if ingredients are available"
 msgstr ""
 
 #: setup.tra:700
