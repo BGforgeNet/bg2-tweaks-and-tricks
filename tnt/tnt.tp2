@@ -562,19 +562,19 @@ GROUP @600
 REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102
 INCLUDE ~%components%/more_mage_fencing/main.tpa~
 
-BEGIN @630
-SUBCOMPONENT @631 /* Starting bags */
-GROUP @600
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
-OUTER_SET expanded_selection = 1
-OUTER_SPRINT comp_name ~faster_forging~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
-
-BEGIN @630
-SUBCOMPONENT @631 /* Starting bags */
+BEGIN @631
+SUBCOMPONENT @630
 GROUP @600
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
 OUTER_SET expanded_selection = 0
+OUTER_SPRINT comp_name ~faster_forging~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+
+BEGIN @632
+SUBCOMPONENT @630
+GROUP @600
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+OUTER_SET expanded_selection = 1
 OUTER_SPRINT comp_name ~faster_forging~
 WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
 
