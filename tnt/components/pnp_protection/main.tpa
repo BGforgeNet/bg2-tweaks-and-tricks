@@ -70,10 +70,14 @@ END ELSE BEGIN
 
     // CtB. I think...
     cbringp3 => 3  // custom RoP+3
+
+    // wild mage additions
+    wm_bear => 2  // Teddy bear of protection +2
   END
 END
 
-// Armor Class bonuses. For armor, they should be inferred and assigned automatically later. No armor in this list!
+// Armor Class bonuses. Not stacking in 2E nor 3E.
+// For armor, they should be inferred and assigned automatically later. No armor in this list!
 ACTION_DEFINE_ASSOCIATIVE_ARRAY item_acbonus BEGIN
   amul14 => 1  // Amulet of Protection +1
   clck01 => 1  // Cloak of Protection +1
@@ -108,6 +112,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_acbonus BEGIN
 
   // CtB. I think...
   cbringp3 => 3  // custom RoP+3
+
+  // wild mage additions
+  wm_bear => 2  // Teddy bear of protection +2
 END
 
 
