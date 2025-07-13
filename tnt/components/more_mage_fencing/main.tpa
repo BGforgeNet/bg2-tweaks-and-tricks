@@ -3,7 +3,7 @@ COPY_EXISTING ulgoth.sto override
     LPF ADD_STORE_ITEM_EX
         INT_VAR stack = 3 overwrite = 1
         STR_VAR
-            item_name = ~%SCROLL_WIZARD_SPELL_THRUST%~
+            item_name = ~%SCROLL_WIZARD_BREACH%~
             position = ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
     END
     LPF ADD_STORE_ITEM_EX
@@ -12,30 +12,30 @@ COPY_EXISTING ulgoth.sto override
             item_name = ~%SCROLL_WIZARD_SECRET_WORD%~
             position = ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
     END
+    LPF ADD_STORE_ITEM_EX
+        INT_VAR stack = 3 overwrite = 1
+        STR_VAR
+            item_name = ~%SCROLL_WIZARD_SPELL_THRUST%~
+            position = ~BEFORE %SCROLL_WIZARD_REMOVE_CURSE%~
+    END
 BUT_ONLY
 
-// Potions for Thalantyr
+// Potions in the Temple of Wisdom
+// Originally was 4 each, we set to 8 each
 OUTER_SPRINT POTION_mind_focusing ~potn37~
 OUTER_SPRINT POTION_genius ~potn29~
 OUTER_SPRINT POTION_freedom ~potn45~
-COPY_EXISTING highhedg.sto override
+COPY_EXISTING tem2304.sto override
     LPF ADD_STORE_ITEM_EX
-        INT_VAR stack = 2 overwrite = 1
+        INT_VAR stack = 8 overwrite = 1
         STR_VAR
             item_name = ~%POTION_mind_focusing%~
             position = ~AFTER %POTION_freedom%~
     END
     LPF ADD_STORE_ITEM_EX
-        INT_VAR stack = 2 overwrite = 1
+        INT_VAR stack = 8 overwrite = 1
         STR_VAR
             item_name = ~%POTION_genius%~
             position = ~BEFORE %POTION_freedom%~
     END
-BUT_ONLY
-
-// Kahrk and Shandalar
-COPY_EXISTING
-    kahrk.cre override
-    shandal2.cre override
-  ADD_CRE_ITEM ~%SCROLL_WIZARD_BREACH%~ #1 #0 #0 none inv
 BUT_ONLY
