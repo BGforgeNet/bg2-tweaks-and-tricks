@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-04-11:58+0000\n"
+"POT-Creation-Date: 2025-07-16-19:02+0000\n"
 "PO-Revision-Date: 2025-02-03 16:40+0000\n"
 "Last-Translator: Arthur <a.ochal22@gmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1468,7 +1468,7 @@ msgid "All Improved Traps components must be installed BEFORE core"
 msgstr ""
 
 #: setup.tra:350
-msgid "Non-disarmable Davaeorn's Battle Horrors"
+msgid "Trap fixes"
 msgstr ""
 
 #: setup.tra:500

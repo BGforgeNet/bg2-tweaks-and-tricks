@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-04-11:58+0000\n"
+"POT-Creation-Date: 2025-07-16-19:02+0000\n"
 "PO-Revision-Date: 2024-10-30 07:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
@@ -1573,7 +1573,7 @@ msgid "All Improved Traps components must be installed BEFORE core"
 msgstr ""
 
 #: setup.tra:350
-msgid "Non-disarmable Davaeorn's Battle Horrors"
+msgid "Trap fixes"
 msgstr ""
 
 #: setup.tra:500

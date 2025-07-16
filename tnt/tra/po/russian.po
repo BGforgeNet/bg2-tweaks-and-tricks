@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-04-11:58+0000\n"
+"POT-Creation-Date: 2025-07-16-19:02+0000\n"
 "PO-Revision-Date: 2025-02-10 06:48+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1656,8 +1656,10 @@ msgstr ""
 "Любые компоненты Упрощенных Ловушек должны быть установлены перед основным"
 
 #: setup.tra:350
-msgid "Non-disarmable Davaeorn's Battle Horrors"
-msgstr ""
+#, fuzzy
+#| msgid "Traps"
+msgid "Trap fixes"
+msgstr "Ловушки"
 
 #: setup.tra:500
 msgid "Stores"

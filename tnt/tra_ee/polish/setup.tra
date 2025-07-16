@@ -56,7 +56,7 @@
 @317 = ~Improved trap detection: core (REQUIRED for any of previous traps components to work)~
 @318 = ~Improved trap detection: instant detection~
 @319 = ~All Improved Traps components must be installed BEFORE core~
-@350 = ~Non-disarmable Davaeorn's Battle Horrors~
+@350 = ~Trap fixes~
 @500 = ~Stores~
 @501 = ~Can't steal from fences~
 @502 = ~Close shop steal exploit~
