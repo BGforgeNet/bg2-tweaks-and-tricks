@@ -1,6 +1,0 @@
-COPY_EXISTING ~%CloakwoodMines_L4%.are~ override
-  LPF ALTER_AREA_REGION_MATCH
-    INT_VAR trap_detect = 100 trap_remove = 100 flag_trap_detectable = 0
-    STR_VAR match_script = ~battleho~
-  END
-BUT_ONLY

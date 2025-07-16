@@ -145,7 +145,7 @@ WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
 BEGIN @350
 GROUP @300 /* Traps */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
-INCLUDE ~%components%/davaeorns_battle_horrors/main.tpa~
+INCLUDE ~%components%/trap_fixes/main.tpa~
 // end traps
 
 //SOUNDSETS
