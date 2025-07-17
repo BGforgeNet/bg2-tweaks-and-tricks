@@ -122,7 +122,7 @@ This component allows you to wear whatever you want at the same time, with the f
 
 - AC bonuses don't stack, best bonus applies (that includes bonus from magical armor).
 - Rings of Protection don't stack, best bonus applies.
-- Saving throw bonuses from different items of protection: varies, see below: [2E-like](#2e-like), [3E-like](3e-like).
+- Saving throw bonuses from different items of protection: varies, see below: [2E-like](#2e-like), [3E-like](#3e-like).
 
 Unfortunately, only available to Classic Edition users.
 
