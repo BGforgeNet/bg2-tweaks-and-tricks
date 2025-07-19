@@ -38,6 +38,9 @@ ACTION_IF (EDITION == 2) BEGIN
 
     // CtB. I think...
     cbringp3 => 3  // custom RoP+3
+
+    // Ascalon's Quest Pack - Aaron's Ring of Protection
+    acq12000 => 1  // custom RoP+1
   END
 END ELSE BEGIN
   // 3E style, no items of protection can stack
@@ -70,6 +73,9 @@ END ELSE BEGIN
 
     // CtB. I think...
     cbringp3 => 3  // custom RoP+3
+
+    // Ascalon's Quest Pack - Aaron's Ring of Protection
+    acq12000 => 1  // custom RoP+1
 
     // wild mage additions
     wm_bear => 2  // Teddy bear of protection +2
@@ -112,6 +118,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_acbonus BEGIN
 
   // CtB. I think...
   cbringp3 => 3  // custom RoP+3
+
+  // Ascalon's Quest Pack - Aaron's Ring of Protection
+  acq12000 => 1  // custom RoP+1
 
   // wild mage additions
   wm_bear => 2  // Teddy bear of protection +2
