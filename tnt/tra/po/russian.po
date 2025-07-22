@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-16-19:02+0000\n"
+"POT-Creation-Date: 2025-07-22-16:02+0000\n"
 "PO-Revision-Date: 2025-02-10 06:48+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1118,7 +1118,9 @@ msgid "To East District, Elfsong tavern"
 msgstr "К Восточному району, Таверне Эльфийской Песни"
 
 #: more_map_notes.tra:96
-msgid "To East District, Maltz's Weapons shop"
+#, fuzzy
+#| msgid "To East District, Maltz's Weapons shop"
+msgid "To East District, Maltz's Weapon shop"
 msgstr "К Восточному району, Оружейному магазину Мальца"
 
 #: more_map_notes.tra:97
@@ -1202,11 +1204,15 @@ msgid "Gambling tent"
 msgstr "Палатка азартных игр"
 
 #: more_map_notes.tra:38002
-msgid "Scrolls store"
+#, fuzzy
+#| msgid "Scrolls store"
+msgid "Scroll store"
 msgstr "Магазин свитков"
 
 #: more_map_notes.tra:38003
-msgid "Weapons store"
+#, fuzzy
+#| msgid "Weapons store"
+msgid "Weapon store"
 msgstr "Оружейный магазин"
 
 #: more_map_notes.tra:38004
@@ -1214,7 +1220,9 @@ msgid "Zeke"
 msgstr "Зеке"
 
 #: more_map_notes.tra:38005
-msgid "Ranged weapons store"
+#, fuzzy
+#| msgid "Ranged weapons store"
+msgid "Ranged weapon store"
 msgstr "Магазин дальнобойного оружия"
 
 #: more_map_notes.tra:38006
@@ -1226,7 +1234,9 @@ msgid "Enchanted items trader"
 msgstr "Торговец магическим оружием"
 
 #: more_map_notes.tra:38008
-msgid "Exotic potions store"
+#, fuzzy
+#| msgid "Exotic potions store"
+msgid "Exotic potion store"
 msgstr "Магазин экзотических зелий"
 
 #: more_map_notes.tra:38009

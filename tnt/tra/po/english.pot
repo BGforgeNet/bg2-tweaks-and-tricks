@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-16-19:02+0000\n"
+"POT-Creation-Date: 2025-07-22-16:02+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -990,7 +990,7 @@ msgid "To East District, Elfsong tavern"
 msgstr ""
 
 #: more_map_notes.tra:96
-msgid "To East District, Maltz's Weapons shop"
+msgid "To East District, Maltz's Weapon shop"
 msgstr ""
 
 #: more_map_notes.tra:97
@@ -1074,11 +1074,11 @@ msgid "Gambling tent"
 msgstr ""
 
 #: more_map_notes.tra:38002
-msgid "Scrolls store"
+msgid "Scroll store"
 msgstr ""
 
 #: more_map_notes.tra:38003
-msgid "Weapons store"
+msgid "Weapon store"
 msgstr ""
 
 #: more_map_notes.tra:38004
@@ -1086,7 +1086,7 @@ msgid "Zeke"
 msgstr ""
 
 #: more_map_notes.tra:38005
-msgid "Ranged weapons store"
+msgid "Ranged weapon store"
 msgstr ""
 
 #: more_map_notes.tra:38006
@@ -1098,7 +1098,7 @@ msgid "Enchanted items trader"
 msgstr ""
 
 #: more_map_notes.tra:38008
-msgid "Exotic potions store"
+msgid "Exotic potion store"
 msgstr ""
 
 #: more_map_notes.tra:38009
