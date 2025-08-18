@@ -166,7 +166,7 @@ WSewers, 831, 905 => 108 // To NW district, east of Helm and Cloak
 WSewers, 1139, 754 => 109 // To NW district, west of Helm and Cloak
 WSewers, 690, 317 => 110 // To NW district, NE corner
 WSewers, 352, 341 => 111 // To NW district, east side
-WSewers, 100, 832 => 95 // To Undercellar
+WSewers, 100, 832 => 85 // To Undercellar
 WSewers, 1689, 1288 => 112 // To NE district, center
 WSewers, 1346, 1314 => 113 // To NE district, Pheirkas' house
 
