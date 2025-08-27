@@ -1,0 +1,70 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
+@1 = ~Returning throwing axe~
+@2 = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.
+
+This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+
+STATISTICS:
+
+Damage:  1D6 +1
+Damage type:  missile (piercing)
+Weight: 5
+Speed Factor: 4
+Proficiency Type:  Axe
+Type:  1-handed
+Requires: 4 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief~
+@3 = ~Returning throwing dagger~
+@4 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.
+
+This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+
+STATISTICS:
+
+Damage:  1D4
+Damage type:   missile (piercing)
+Weight: 1
+Speed Factor: 2
+Proficiency Type: Dagger
+Type:  1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cleric~
+@5 = ~Returning dart~
+@6 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
+
+This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+
+STATISTICS:
+
+Damage:  1D3
+Damage type:  missile (piercing)
+Weight: 0
+Speed Factor: 2
+Proficiency Type: Dart
+Type:  1-handed
+Not Usable By:
+ Cleric~
+@7 = ~Quiver of Plenty~
+@8 = ~Enchanted quivers like this one are highly sought after by professional archers.
+
+STATISTICS:
+
+Unlimited plain arrows~
+@9 = ~Case of Plenty~
+@10 = ~Enchanted bolt cases like this one are highly sought after by professional crossbow users.
+
+STATISTICS:
+
+Unlimited plain bolts~
+@11 = ~Bag of Plenty~
+@12 = ~Enchanted bullet bags like this one are highly sought after by professional slingers.
+
+STATISTICS:
+
+Unlimited plain bullets~
