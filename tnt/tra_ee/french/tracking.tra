@@ -1,31 +1,36 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@1 = ~Tracking~
-@2 = ~Tracking
-With an intimate knowledge of his surroundings and the creatures that live within them, a ranger can use the Tracking ability to give himself a general idea of what creatures are in an area and which direction they are. Red arrows at the edge of the screen will point in the general direction of the creatures in the area.~
-@100 = ~Candlekeep is a secluded and fortified library fortress known for its vast collection of books and scrolls. Monks, scholars, and guards move about, maintaining the peace and knowledge within. You know every nook and cranny here.~
-@101 = ~The Friendly Arm Inn is a fortified inn serving as a safe haven for travelers. Adventurers and guards are frequently seen here, resting or preparing for their next journey.~
-@102 = ~Beregost is a bustling town with shops, inns, and a temple. Townsfolk, guards, and traders fill the streets, going about their daily lives.~
-@103 = ~Nashkel is a small town troubled by issues in the nearby mines. Townsfolk, militia, and merchants can be seen dealing with the recent troubles.~
-@105 = ~The Nashkel Mines are a series of tunnels plagued by monsters and mysterious occurrences. You find signs of kobolds, spiders, and wolves.~
-@106 = ~The Gibberling Mountains are rugged and densely forested, with steep cliffs and winding paths. You find signs of gibberlings, xvarts, and wolves in the area.~
-@107 = ~Gullykin is a small village of halflings. You find signs of kobolds, wolves, and some undead nearby.~
-@108 = ~The Ulcaster Ruins are the remnants of an ancient school of magic. You find signs of undead, wolves, and wandering spirits in the area.~
-@109 = ~Firewine Bridge is an ancient, crumbling structure spanning a deep chasm. You find signs of undead, kobolds, ogres, and adventurers who have met their fate here.~
-@110 = ~Larswood is a dense forest known for bandit activity. You find signs of bandits, wild animals, and hidden traps among the trees.~
-@111 = ~Peldvale is a forested area with a reputation for being a bandit hideout. You find signs of bandits, gnolls, and other forest creatures.~
-@112 = ~The Bandit Camp is a hidden encampment teeming with outlaws. You find heavy signs of bandit presense.~
-@113 = ~Cloakwood Forest is a dark, dense forest filled with danger. You find signs of ettercaps, spiders, and druids who call this forest home.~
-@114 = ~The Cloakwood Mines are rich in minerals but fraught with danger. You find signs of wyverns, spiders, and slaves forced to work the mines.~
-@115 = ~High Hedge is a secluded estate of a powerful mage. You find signs of gnolls, spiders, and undead.~
-@116 = ~You find signs of basilisks, bears, undead.~
-@117 = ~The Carnival is a traveling fair filled with attractions and danger. You find signs of kobolds and ogres nearby.~
-@118 = ~The Gnoll Stronghold is a fortified lair of gnolls. You find signs of heavy gnoll presence, and some xvart footprints.~
-@119 = ~Dryad Falls is a picturesque waterfall area inhabited by dryads. You find signs of dryads, wolves, and occasional adventurers seeking the waterfall's beauty.~
-@120 = ~Fisherman's Lake is a serene body of water surrounded by wilderness. You find signs of gnolls, hoblgoblins, and some large humanoids.~
-@121 = ~Wyrm's Crossing is a busy bridge leading into Baldur's Gate. You notice some signs of ankheg presense.~
-@122 = ~Alongside the large, clawed tracks, you notice more delicate imprints near the shoreline - bare feet that seem too graceful and lightly pressed to belong to any human. The air around these tracks carries a faint, almost enchanting melody that lingers on the wind, suggesting the presence of beguiling creatures who may lure unwary travelers. These prints lead toward rocky outcrops near the water, intermingling with the larger, more menacing tracks that suggest the island's more dangerous predators also roam nearby.~
-@123 = ~Ice Island is a frigid, remote location fraught with peril. You find signs of polar bears.~
-@124 = ~Lion's Way is a scenic path connecting Candlekeep to the wider world, marked by rolling hills and scattered trees. You find signs of wolves, bears, gibberlings.~
-@125 = ~The village seems calm, with mostly human tracks leading between homes and along well-used paths. However, among them, you find occasional animal tracks - large, but not out of place in a rural setting. These prints seem to move in and out of the village, blending with everyday activity. Nothing feels immediately threatening, though the presence of such tracks suggests that wildlife might be closer to the village than one would expect.~
-@200 = ~The North Forest is a wild and untamed woodland, known for its thick canopy and treacherous paths. The forest floor is littered with fallen leaves and the occasional footprint of those brave enough to traverse its depths. You find signs of vampires lurking in the shadows, trolls prowling the underbrush, and yuan-ti slithering through the foliage. Additionally, there is evidence of a group of adventurers who have recently passed through, their tracks indicating a tense and cautious journey. The air is heavy with the scent of pine and the sounds of distant wildlife, warning all who enter to tread carefully.~
+@1 = ~Pistage~
+@2 = ~Pistage
+Grâce à une connaissance approfondie de son environnement et des créatures qui y vivent, un ranger peut utiliser la capacité de pistage pour se faire une idée générale des créatures présentes dans une zone et de la direction dans laquelle elles se trouvent. Les flèches rouges au bord de l'écran indiquent la direction générale des créatures présentes dans la zone.~
+
+// BG1
+@100 = ~Chateausuif est une bibliothèque fortifiée et isolée, connue pour sa vaste collection de livres et de parchemins. Des moines, des érudits et des gardes se déplacent pour maintenir la paix et le savoir à l'intérieur. Vous connaissez tous les coins et recoins de cette forteresse.~
+@101 = ~L'auberge du Brasamical est une auberge fortifiée qui sert de refuge aux voyageurs. Les aventuriers et les gardes sont souvent vus ici, se reposant ou se préparant pour leur prochain voyage.~
+@102 = ~Beregost est une ville animée avec des boutiques, des auberges et un temple. Les citadins, les gardes et les marchands remplissent les rues, vaquant à leurs occupations quotidiennes.~
+@103 = ~Nashkel est une petite ville perturbée par les problèmes des mines voisines. Les habitants, la milice et les marchands peuvent être vus en train de gérer les récents problèmes.~
+// @104
+@105 = ~Les mines de Nashkel sont une série de tunnels infestés de monstres et d'événements mystérieux. On y trouve des traces de kobolds, d'araignées et de loups.~
+@106 = ~Le pied des montagnes est accidenté et densément boisé, avec des falaises abruptes et des chemins sinueux. On y trouve des traces de grouilleux, de xvarts et de loups.~
+@107 = ~Gullykin est un petit village de petites-gens. Vous trouvez des signes de kobolds, de loups et de quelques morts-vivants à proximité.~
+@108 = ~Les ruines d'Ulcaster sont les vestiges d'une ancienne école de magie. On y trouve des signes de morts-vivants, de loups et d'esprits errants.~
+@109 = ~Le pont de Flammevin est une ancienne structure en ruine qui enjambe un gouffre profond. On y trouve des traces de morts-vivants, de kobolds, d'ogres et d'aventuriers qui y ont trouvé la mort.~
+@110 = ~Le Bois de Lars est une forêt dense connue pour ses activités de banditisme. Vous trouvez des signes de bandits, des animaux sauvages et des pièges cachés dans les arbres.~
+@111 = ~le Valpeld est une région forestière qui a la réputation d'être un repaire de bandits. On y trouve des traces de bandits, de gnolls et d'autres créatures de la forêt.~
+@112 = ~Le camp des bandits est un campement caché qui grouille de hors-la-loi. Vous trouvez de nombreux signes de la présence de bandits.~
+@113 = ~La forêt de Bois-Manteau est une forêt sombre et dense, pleine de dangers. On y trouve des signes d'ettercaps, d'araignées et de druides qui ont élu domicile dans cette forêt.~
+@114 = ~Les mines de Bois-Manteau sont riches en minerais mais pleines de dangers. On y trouve des traces de wyvernes, d'araignées et d'esclaves forcés de travailler dans les mines..~
+@115 = ~Haute Haie est la propriété isolée d'un puissant mage. On y trouve des traces de gnolls, d'araignées et de morts-vivants.~
+@116 = ~Vous trouvez des traces de basilics, d'ours, de morts-vivants.~  // Mutamin's Garden
+@117 = ~Le Carnaval est une foire itinérante remplie d'attractions et de dangers. Vous trouvez des signes de kobolds et d'ogres à proximité.~
+@118 = ~La Forteresse gnoll est un repaire fortifié de gnolls. Vous y trouvez des signes d'une forte présence gnoll et des empreintes de pas de xvart.~
+@119 = ~Les Chutes de la Dryade sont une région pittoresque habitée par des dryades. On y trouve des signes de dryades, de loups et d'aventuriers occasionnels à la recherche de la beauté de la cascade.~
+@120 = ~Le lac du pécheur est une étendue d'eau sereine entourée d'une nature sauvage. On y trouve des traces de gnolls, de hobgobelins et de quelques humanoïdes de grande taille.~
+@121 = ~le Travers du Ver est un pont très fréquenté qui mène à Baldur's Gate. Vous remarquez des signes de présence d'ankheg.~
+@122 = ~À côté des grandes traces de griffes, vous remarquez des empreintes plus délicates près du rivage - des pieds nus qui semblent trop gracieux et légèrement pressés pour appartenir à un être humain. L'air autour de ces traces porte une faible mélodie, presque enchanteresse, qui persiste dans le vent, suggérant la présence de créatures séduisantes qui pourraient attirer les voyageurs imprudents. Ces empreintes se dirigent vers des affleurements rocheux proches de l'eau, se mêlant aux traces plus grandes et plus menaçantes qui suggèrent que les prédateurs les plus dangereux de l'île rôdent également dans les environs.~
+@123 = ~L'île de glace est un endroit glacial, isolé et plein de dangers. On y trouve des traces d'ours polaires.~
+@124 = ~La Voie du Lion est un chemin pittoresque qui relie Candlekeep au reste du monde, marqué par des collines ondulantes et des arbres épars. On y trouve des traces de loups, d'ours, de gibberlings.~
+@125 = ~Le village semble calme, avec principalement des traces humaines entre les maisons et le long de chemins bien fréquentés. Cependant, parmi elles, vous trouvez des traces occasionnelles d'animaux - grandes, mais pas déplacées dans un environnement rural. Ces empreintes semblent aller et venir dans le village, se mêlant à l'activité quotidienne. Rien ne semble menaçant dans l'immédiat, mais la présence de ces traces suggère que la faune est peut-être plus proche du village qu'on ne le pense.~
+
+// Just testing BG2 part
+@200 = ~La Forêt du Nord est une forêt sauvage, connue pour son épaisse canopée et ses chemins traîtres. Le sol de la forêt est jonché de feuilles mortes et des empreintes occasionnelles de ceux qui ont eu le courage d'en traverser les profondeurs. On y trouve des signes de vampires tapis dans l'ombre, de trolls rôdant dans les sous-bois et de yuan-ti se faufilant dans le feuillage. De plus, un groupe d'aventuriers est passé par là récemment, leurs traces témoignant d'un voyage tendu et prudent. L'air est lourd de l'odeur du pin et des bruits de la faune lointaine, avertissant tous ceux qui pénètrent dans les lieux qu'ils doivent être prudents.~
