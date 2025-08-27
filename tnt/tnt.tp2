@@ -16,6 +16,7 @@ LANGUAGE ~Brazilian Portuguese~   ~portuguese~  ~tnt/tra/portuguese/setup.tra~
 LANGUAGE ~Russian~                ~russian~     ~tnt/tra/russian/setup.tra~
 LANGUAGE ~Spanish~                ~spanish~     ~tnt/tra/spanish/setup.tra~
 LANGUAGE ~Swedish~                ~swedish~     ~tnt/tra/swedish/setup.tra~
+LANGUAGE ~French~                 ~french~      ~tnt/tra/french/setup.tra~
 
 // FAMILIARS
 BEGIN @901 /* Smarter familiars */
