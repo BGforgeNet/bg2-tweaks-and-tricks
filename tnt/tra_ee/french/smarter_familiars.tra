@@ -1,93 +1,114 @@
-// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+//loot: full
+@15 = ~Maître, votre sac est plein.~
 
-@15 = ~Boss, your pack is full.~
-@100 = ~Yes, boss?~
-@101 = ~Let's change formation.~
-@102 = ~We need to discuss combat.~
-@103 = ~I want to give you new instructions about the loot.~
-@104 = ~Here, take this potion.~
-@105 = ~Ah, maybe later.~
-@201 = ~Follow me at all times.~
-@202 = ~Stop following me all the time.~
-@203 = ~Move faster, will you? Don't lag behind.~
-@204 = ~Don't run so fast. I can't catch up to you.~
-@205 = ~Actually, nevermind. Distance is fine for now.~
-@301 = ~If you see any danger, jump into my backpack right away.~
-@302 = ~Don't hide in my pack when you see enemies.~
-@303 = ~When you're injured, rush into my backpack immediately.~
-@304 = ~When you're badly injured, rush into my pack immediately.~
-@306 = ~When the enemies are gone, get out of the pack by yourself.~
-@307 = ~After hiding in my pack, stay there. One cannot be too careful.~
-@309 = ~Don't bother me with your whining, I don't care if you're hurt.~
-@310 = ~After fight, if you're hurt, let me know.~
-@311 = ~After fight, if you're badly hurt, let me know.~
-@312 = ~When you're being attacked, disengage for a short time, then get back at the enemy.~
-@313 = ~Don't disengage, even if you're being attacked.~
-@314 = ~In combat, don't attack enemies, unless I tell you to.~
-@315 = ~In combat, attack enemies when you see them.~
-@316 = ~In combat, attack enemies when you see them, prioritizing spellcasters.~
-@400 = ~Stop picking up any items, okay?~
-@401 = ~I want you to bring me everything. Any valuables.~
-@402 = ~Pick up any gold that you find.~
-@403 = ~Don't pick up the gold that you find.~
-@404 = ~Pick up any jewels that you find.~
-@405 = ~Pick up only valuable and magical jewelry.~
-@406 = ~Pick up only magical jewelry.~
-@407 = ~Don't pick up the jewelry.~
-@408 = ~Pick up any magical ammo that you find.~
-@409 = ~Don't pick up the ammo.~
-@410 = ~If you find any potions, bring them to me!~
-@411 = ~Stop picking up potions.~
-@412 = ~Get me any scrolls that you can find.~
-@413 = ~I don't need you to bring any more scrolls.~
-@414 = ~Fetch scalps from those bandits we kill. There's a nice bounty for them.~
-@415 = ~Stop that scalping, will you? It's disgusting.~
-@416 = ~Ankheg scales, winter wolf pelts, wyvern heads - I need it all.~
-@417 = ~No more pelts or scales, we're stocked.~
-@418 = ~No, nothing.~
-@419 = ~As you wish, master.~
-@500 = ~Let's talk about your gear.~
-@501 = ~Take this returning dart. I think you're better off attacking from distance.~
-@502 = ~Okay, boss.~
-@503 = ~Done.~
-@504 = ~No, actually I think your gear is fine.~
-@601 = ~I'm hurting here, Boss.~
-@602 = ~I'm really hurting here, Boss.~
-@603 = ~Ouch!~
-@701 = ~(Give a Healing potion).~
-@702 = ~(Give an Extra Healing potion).~
-@703 = ~(Give a Superior Healing potion).~
-@704 = ~(Give a Fire Resistance potion).~
-@705 = ~(Give an Invisibility potion).~
-@706 = ~(Give a oil of Speed).~
-@707 = ~(Give an elixir of Health).~
-@708 = ~(Give a potion of Absorption).~
-@709 = ~(Give a potion of Agility).~
-@710 = ~(Give an Antidote).~
-@711 = ~(Give a potion of Clarity).~
-@712 = ~(Give a Cold Resistance potion).~
-@713 = ~(Give a potion of Defence).~
-@714 = ~(Give a potion of Fortitude).~
-@715 = ~(Give a potion of Insulation).~
-@716 = ~(Give a potion of Magic Blocking).~
-@717 = ~(Give a potion of Magic Resistance).~
-@718 = ~(Give a potion of Magic Shielding).~
-@719 = ~(Give a potion of Mirrored Eyes).~
-@720 = ~(Give a potion of Power).~
-@721 = ~(Give a potion of Regeneration).~
-@722 = ~(Give a potion of Strength).~
-@723 = ~(Give a potion of Freedom).~
-@724 = ~(Give a potion of Stone Form).~
-@725 = ~(Give a potion of Mind Focusing).~
-@726 = ~Actually, take a goodberry.~
-@740 = ~(Give a potion of Hill Giant Strength).~
-@741 = ~(Give a potion of Frost Giant Strength).~
-@742 = ~(Give a potion of Fire Giant Strength).~
-@743 = ~(Give a potion of Cloud Giant Strength).~
-@744 = ~(Give a potion of Storm Giant Strength).~
-@745 = ~(Give a potion of Heroism).~
-@746 = ~(Give a potion of Invulnerability).~
-@747 = ~(Give a potion of Stone Giant Strength).~
-@760 = ~(Give a potion of Master Thievery).~
-@761 = ~(Give a potion of Perception).~
-@762 = ~(Give a Rogue's potion of Frost Giant Strength).~
+// Initial menu
+@100 = ~Oui, Maître?~
+@101 = ~Changeons de formation.~
+@102 = ~Nous devons discuter du combat.~
+@103 = ~Je veux te donner de nouvelles instructions à propos du butin.~
+@104 = ~Tiens, prends cette potion.~
+@105 = ~Ah, peut-être plus tard.~
+
+// Distance
+@201 = ~Suis-moi en permanence.~
+@202 = ~Arrête de me suivre tout le temps.~
+@203 = ~Va plus vite, tu veux bien ? Ne reste pas à la traîne.~
+@204 = ~Ne cours pas si vite. Je ne peux pas te rattraper.~
+@205 = ~C'est rien, oubli. La distance est bonne pour le moment.~
+
+//combat
+// Hide in backpack
+@301 = ~Si tu vois un danger, saute dans mon sac tout de suite !~
+@302 = ~Ne te cache pas dans mon sac quand tu vois des ennemis.~
+@303 = ~Si tu es blessé, rentre immédiatement dans mon sac.~
+@304 = ~Si tu es gravement blessé, rentre immédiatement dans mon sac~
+@306 = ~Quand les ennemis sont partis, sors de mon sac tout seul.~
+@307 = ~Après t'être caché dans mon sac, reste-y. On n'est jamais trop prudent.~
+// Notification after fight
+@309 = ~Ne m'embête pas avec tes jérémiades, je me fiche que tu sois blessé.~
+@310 = ~Après le combat, si tu es blessé, fais-le moi savoir.~
+@311 = ~Après le combat, si tu es gravement blessé, fais-le moi savoir.~
+// Tactics
+@312 = ~Quand tu es attaqué, désengage-toi un court instant, puis reviens vers l'ennemi.~
+@313 = ~Ne te désengage pas, même si tu es attaqué.~
+@314 = ~En combat, n'attaque pas les ennemis, sauf si je te le demande.~
+@315 = ~Au combat, attaque les ennemis quand tu les vois.~
+@316 = ~Au combat, attaque les ennemis quand tu les vois, en donnant la priorité aux lanceurs de sorts.~
+
+
+
+// loot
+@400 = ~Arrête de prendre des objets, d'accord ?~
+@401 = ~Je veux que tu m'apportes tout. Tous les objets de valeur.~
+@402 = ~Ramasse l'or que tu trouves.~
+@403 = ~Ne ramasse pas l'or que tu trouves.~
+@404 = ~Ramasse les bijoux que tu trouves.~
+@405 = ~Ramasse uniquement les bijoux magiques et de valeur.~
+@406 = ~Ne ramasse que les bijoux magiques.~
+@407 = ~Ne ramasse pas les bijoux.~
+@408 = ~Ramasse les munitions magiques que tu trouves.~
+@409 = ~Ne ramasse pas les munitions.~
+@410 = ~Si tu trouves des potions, apporte-les moi !~
+@411 = ~Arrêtes de ramasser des potions.~
+@412 = ~Apportes-moi tous les parchemins que tu trouves.~
+@413 = ~Je n'ai pas besoin que tu m'apportes d'autres parchemins.~
+@414 = ~Récupère les scalps des bandits que nous avons tués. Il y a une belle prime à la clé.~
+@415 = ~Arrête de scalper, tu veux ? C'est dégoûtant.~
+@416 = ~Carapace d'ankheg, peaux de loups des glaces, têtes de wyvernes - j'ai besoin de tout ça.~
+@417 = ~Plus de peaux ni de carapaces, nous avons tout ce qu'il faut.~
+@418 = ~Non, rien.~
+@419 = ~Comme vous voulez, maître.~
+
+//gear - not implemented
+@500 = ~Parlons de ton équipement.~
+@501 = ~Prends cette fléchette de retour. Je pense qu'il vaut mieux que tu attaques à distance.~
+@502 = ~D'accord, Maître.~
+@503 = ~C'est fait.~
+@504 = ~Non, en fait je pense que ton équipement est très bien.~
+
+//BAF strings
+@601 = ~Là j'ai mal, Maître.~
+@602 = ~Là j'ai vraiment mal, Maître.~
+@603 = ~Ouille!~
+
+//potions
+//common
+@701 = ~(Donner une potion de soin).~
+@702 = ~(Donner une potion de grands soins).~
+@703 = ~(Donner une potion de soin majeure).~
+@704 = ~(Donner une potion de résistance au feu).~
+@705 = ~(Donner une potion d'Invisibilité).~
+@706 = ~(Donner une huile de rapidité).~
+@707 = ~(Donner un élixir de Santé).~
+@708 = ~(Donner une potion d'Absorption).~
+@709 = ~(Donner une potion d'Agilité).~
+@710 = ~(Donner un Antidote).~
+@711 = ~(Donner une potion de Clarté).~
+@712 = ~(Donner une potion de Résistance au froid).~
+@713 = ~(Donner une potion de Défense).~
+@714 = ~(Donner une potion de Force morale).~
+@715 = ~(Donner une potion d'Isolation).~
+@716 = ~(Donner une potion de Blocage de magique).~
+@717 = ~(Donner une potion de Résistance à la Magie).~
+@718 = ~(Donner une potion de Protection contre la magie).~
+@719 = ~(Donner une potion de Rétrovision).~
+@720 = ~(Donner une potion de Puissance).~
+@721 = ~(Donner une potion de Régénération).~
+@722 = ~(Donner une potion de Force).~
+@723 = ~(Donner une potion de Liberté).~
+@724 = ~(Donner une potion de Statue).~
+@725 = ~(Donner une potion de Focalisation mentale).~
+@726 = ~Tiens, prend une bonne baie.~
+//fighter
+@740 = ~(Donner une potion de force de géant des collines).~
+@741 = ~(Donner une potion de Force de géant du froid).~
+@742 = ~(Donner une potion de force de géant du feu).~
+@743 = ~(Donner une potion de Force de géant des nuages).~
+@744 = ~(Donner une potion de Force de géant des tempêtes).~
+@745 = ~(Donner une potion d'Héroïsme).~
+@746 = ~(Donner une potion d'Invulnérabilité).~
+@747 = ~(Donner une potion de Force de Géant des pierres).~
+//thief
+@760 = ~(Donner une potion de Maître-Voleur).~
+@761 = ~(Donner une potion de Perception).~
+@762 = ~(Donner une potion de force de géant du froid des voleurs).~

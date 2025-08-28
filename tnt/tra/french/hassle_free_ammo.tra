@@ -1,68 +1,72 @@
-@1 = ~Returning throwing axe~
-@2 = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.
+@1 = ~Hache de jet de retour~
+@2 = ~La hache à main, ou hache de jet, est également connue sous l'appellation de hachette. Sa lame comporte une lame d'acier tranchante, contrebalancée par une barbelure pointue. La courte poignée comporte une pointe en bas et la tête comporte parfois une pointe en haut, ce qui la rend inutilisable en mêlée.
 
-This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Cette hache a reçu un enchantement mineur. Elle revient toujours dans la main de l'utilisateur. Pourtant, elle frappe comme une arme normale, pas comme une arme magique.
 
-STATISTICS:
+PARAMETRES :
 
-Damage:  1D6 +1
-Damage type:  missile (piercing)
-Weight: 5
-Speed Factor: 4
-Proficiency Type:  Axe
-Type:  1-handed
-Requires: 4 Strength
-Not Usable By:
- Druid
- Cleric
+Dégâts : 1D6 +1
+Type de dégâts : projectile (perforant)
+Poids : 5
+Facteur de vitesse : 4
+Type de compétence : Hache
+Type : arme à 1 main
+Force nécessaire : 4
+Non utilisable par :
+ Druide
+ Clerc
  Mage 
- Thief~
-@3 = ~Returning throwing dagger~
-@4 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.
+ Voleur~
 
-This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+@3 = ~Dague de jet de retour~
+@4 = ~La dague de jet traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau qui n'a qu'un seul tranchant et est un peu moins long. Celle-ci a un manche plus court et est équilibrée différemment, ce qui la rend inutilisable en mêlée.
 
-STATISTICS:
+Cette dague a reçu un enchantement mineur. Elle revient toujours dans la main de l'utilisateur. Pourtant, elle frappe comme une arme normale, pas comme une arme magique.
 
-Damage:  1D4
-Damage type:   missile (piercing)
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type:  1-handed
-Requires: 3 Strength
-Not Usable By:
- Cleric~
-@5 = ~Returning dart~
-@6 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
+PARAMETRES :
 
-This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Dégâts : 1D4
+Type de dégâts : perforant
+Poids : 1
+Facteur de vitesse : 2
+Type de compétence : Dague
+Type : arme à 1 main
+Force nécessaire : 3
+Non utilisable par :
+ Clerc~
 
-STATISTICS:
+@5 = ~Fléchette de retour~
+@6 = ~La fléchette est un petit projectile qui peut être facilement dissimulé, lancé plutôt que tiré par un arc ou une autre arme de jet. 
 
-Damage:  1D3
-Damage type:  missile (piercing)
-Weight: 0
-Speed Factor: 2
-Proficiency Type: Dart
-Type:  1-handed
-Not Usable By:
- Cleric~
-@7 = ~Quiver of Plenty~
-@8 = ~Enchanted quivers like this one are highly sought after by professional archers.
+Cette fléchette a reçu un enchantement mineur. Elle revient toujours dans la main de l'utilisateur. Pourtant, elle frappe comme une arme normale, pas comme une arme magique.
 
-STATISTICS:
+PARAMETRES :
 
-Unlimited plain arrows~
-@9 = ~Case of Plenty~
-@10 = ~Enchanted bolt cases like this one are highly sought after by professional crossbow users.
+Dégâts : 1D3
+Type de dégâts : projectile (perforant)
+Poids : 0
+Facteur de vitesse : 2
+Type de compétence : Fléchette
+Type : arme à 1 main
+Non utilisable par :
+ Clerc~
 
-STATISTICS:
+//returning weapons
+@7 = ~Carquois d'abondance~
+@8 = ~Les carquois enchantés comme celui-ci sont très recherchés par les archers professionnels.
 
-Unlimited plain bolts~
-@11 = ~Bag of Plenty~
-@12 = ~Enchanted bullet bags like this one are highly sought after by professional slingers.
+STATISTIQUES :
 
-STATISTICS:
+Flèches ordinaires illimitées~
+@9 = ~Étui d'abondance~
+@10 = ~Les étuis à carreaux enchantés comme celui-ci sont très recherchés par les arbalétriers professionnels.
 
-Unlimited plain bullets~
+STATISTIQUES :
+
+Carreaux ordinaires illimités~
+@11 = ~Sac d'abondance~
+@12 = ~Les sacs à billes enchantés comme celui-ci sont très recherchés par les frondeurs professionnels.
+
+STATISTIQUES :
+
+Billes ordinaires illimitées~

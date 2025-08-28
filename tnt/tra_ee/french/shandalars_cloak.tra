@@ -1,15 +1,17 @@
-// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+@1 = ~Cape d'arachnide~
+@2 = ~Cette cape a été à l'origine volée à Shandalar par le puissant mage Semia, sans doute pour les puissantes magies tissées dans le tissu. La façon dont elle est arrivée en votre possession et le destin de Semia sont des mystères complets, qui n'ont aucune chance d'être résolus.
 
-@1 = ~Cloak of Arachnida~
-@2 = ~This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.
+La cape est tissée en soie d'araignée et imprégnée d'une puissante magie. Elle protège celui qui la porte de l'immobilisation par les toiles et de tous les sorts qui s'y apparentent. Cependant, elle n'offre aucune protection contre d'autres effets nuisant aux mouvements.
 
-The cloak is woven from spider silk and radiates a strong aura of alteration magic. It grants the wearer immunity to entrapment by webs of any sort.
+De plus, la cape permet de lancer Toile d'araignée une fois par jour et offre une protection supplémentaire contre le poison.
 
-Once per day the wearer of this cloak can cast a double-sized web. This operates like the 2nd-level wizard spell.
+STATISTIQUES :
 
-Also, the wearer is less subject to poison.
+Capacité d'équipement :
+Jets de sauvegarde : Bonus de +2 contre le poison.
+Immunisé contre les toiles d’araignée
 
-STATISTICS:
+Capacité de charge :
+Toile d'araignée une fois par jour.
 
-Saving Throws:  +2 bonus vs Poison.
-Special:  The wearer is immune to webs, and can cast a double-sized Web once per day.~
+Poids : 0~

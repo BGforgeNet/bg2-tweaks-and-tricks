@@ -1,18 +1,8 @@
-// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+@1 = ~Cette baguette crée une zone de froid extrême en forme de cône, qui part de la baguette et s'étend vers l'extérieur, comme le sort de 5e niveau Cône de froid. Les dégâts sont de 8d6 (en traitant tous les 1 obtenus comme des 2), avec un jet de sauvegarde contre les baguettes pour réduire de moitié les dégâts.
 
-@1 = ~The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.
+STATISTIQUES :
 
-STATISTICS:
-
-Effect:  Cone of Cold
-Damage:  8D6 (save vs. wands for half)
-Range:  100
-Area of effect:  Special
-Not usable by:
- Fighter
- Cleric
- Druid
- Thief
- Paladin
- Ranger
-~
+Effet : Cône de froid
+Dégâts : 8D6 (jet de sauvegarde contre les baguettes pour réduire de moitié)
+Portée : 30 mètres
+Zone d'effet : Spéciale~

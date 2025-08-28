@@ -1,45 +1,48 @@
-@1 = ~Charmed~
-@2 = ~Dire Charmed~
-@3 = ~Dominated~
-@4 = ~Protection From Evil (Abjuration)
-Level: 1
-Range: Touch
-Duration: 2 rounds/level
-Casting Time: 1
-Area of Effect: Creature touched
-Saving Throw: None
+@1 = ~Charmé~~Charmée~
+@2 = ~Charmé~~Charmée~
+@3 = ~Dominé~~Dominée~
 
-When this spell is cast, it creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:
-- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.
-- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.
-- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.
-~
-@5 = ~Protection From Evil (Abjuration)
-Level: 1
-Sphere: Protection
-Range: Touch
-Duration: 3 rounds/level
-Casting Time: 1
-Area of Effect: Creature touched
-Saving Throw: None
+// wizard
+@4 = ~Protection contre le mal (Abjuration)
+Niveau : 1
+Portée : Toucher
+Durée : 2 rounds/niveau
+Temps d'incantation : 1
+Zone d'effet : Créature touchée
+Jets de sauvegarde : Aucun
 
-When this spell is cast, it creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:
-- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.
-- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.
-- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.
-~
-@6 = ~Protection From Evil 10' Radius
+Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
+- Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.
+- Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.
+- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.~
+
+// cleric
+@5 = ~Protection contre le mal (Abjuration)
+Niveau : 1
+Sphère : Protection
+Portée : Toucher
+Durée : 3 rounds/niveau
+Temps d'incantation : 1
+Zone d'effet : Créature touchée
+Jets de sauvegarde : Aucun
+
+Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
+- Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.
+- Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.
+- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.~
+
+// cleric, radius
+@6 = ~Protection contre le mal Rayon de 3 mètres
 (Abjuration)
-Level: 4
-Sphere: Protection
-Range: Touch
-Duration: 1 turn/level
-Casting Time: 7
-Area of Effect: 10' radius
-Saving Throw: None
+Niveau : 4
+Sphère : Protection
+Portée : Toucher
+Durée : 1 tour/niveau
+Temps d'incantation : 7
+Zone d'effet : rayon de 3 mètres
+Jets de sauvegarde : Aucun
 
-When this spell is cast, all creatures within a 10' radius are affected individually by 'protection from evil'. It creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:
-- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.
-- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.
-- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.
-~
+Lorsque ce sort est lancé, toutes les créatures situées dans un rayon de 3 mètres sont affectées individuellement par "protection contre le mal". Il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
+- Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.
+- Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.
+- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.~
