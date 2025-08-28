@@ -14,31 +14,34 @@ Jets de sauvegarde : Aucun
 Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
 - Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.
 - Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.
-- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.~
+- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.
+~
 @5 = ~Protection contre le mal (Abjuration)
 Niveau : 1
 Sphère : Protection
-Portée : Toucher
+Portée : Contact
 Durée : 3 rounds/niveau
 Temps d'incantation : 1
 Zone d'effet : Créature touchée
-Jets de sauvegarde : Aucun
+Jet de sauvegarde : Aucun
 
 Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
 - Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.
 - Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.
-- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.~
-@6 = ~Protection contre le mal Rayon de 3 mètres
+- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.
+~
+@6 = ~Protection contre le mal sur 3 mètres
 (Abjuration)
 Niveau : 4
 Sphère : Protection
-Portée : Toucher
+Portée : Contact
 Durée : 1 tour/niveau
 Temps d'incantation : 7
 Zone d'effet : rayon de 3 mètres
-Jets de sauvegarde : Aucun
+Jet de sauvegarde : Aucun
 
 Lorsque ce sort est lancé, toutes les créatures situées dans un rayon de 3 mètres sont affectées individuellement par "protection contre le mal". Il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
 - Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.
 - Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.
-- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.~
+- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée.
+~

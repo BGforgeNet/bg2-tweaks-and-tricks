@@ -18,7 +18,7 @@
 @201 = ~Plus de probleme de munitions~
 @202 = ~Supprimer les effets de flou des objets~
 @203 = ~Cape de reflexion judicieuse~
-@204 = ~Les effets des parchemins et des potions ne s'empilent pas entre eux.~
+@204 = ~Les effets des parchemins et des potions ne se cumulent pas entre eux~
 @205 = ~Baguette de givre judicieuse~
 @206 = ~Cible unique~
 @207 = ~Zone d'effet~
@@ -107,7 +107,7 @@
 @818 = ~Spirales de maitre-lames plus pratiques~
 @820 = ~Protection contre le mal PnP~
 @821 = ~Graisse non hostile~
-@822 = ~Pistage!~
+@822 = ~Pistage !~
 @900 = ~Familiers~
 @901 = ~Familiers plus intelligents~
 @902 = ~Familiers plus resistants~
