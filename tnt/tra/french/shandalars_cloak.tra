@@ -1,17 +1,17 @@
 @1 = ~Cape d'arachnide~
-@2 = ~Cette cape a été à l'origine volée à Shandalar par le puissant mage Semia, sans doute pour les puissantes magies tissées dans le tissu. La façon dont elle est arrivée en votre possession et le destin de Semia sont des mystères complets, qui n'ont aucune chance d'être résolus.
+@2 = ~Cette cape a été à l'origine volée à Shandalar par le puissant mage Semia, sans doute pour les puissantes magies tissées dans le tissu. Les mystères qui entourent la façon dont elle est arrivée en votre possession et le destin de Semia restent entiers, et ne seront probablement jamais résolus.
 
 La cape est tissée en soie d'araignée et imprégnée d'une puissante magie. Elle protège celui qui la porte de l'immobilisation par les toiles et de tous les sorts qui s'y apparentent. Cependant, elle n'offre aucune protection contre d'autres effets nuisant aux mouvements.
 
-De plus, la cape permet de lancer Toile d'araignée une fois par jour et offre une protection supplémentaire contre le poison.
+De plus, la cape permet de lancer Toile d'araignée une fois par jour sur une surface deux fois plus grande.
 
-STATISTIQUES :
+Enfin, elle offre au porteur une protection supplémentaire contre le poison.
 
-Capacité d'équipement :
+PARAMÈTRES :
+
+Capacités d'équipement :
 Jets de sauvegarde : Bonus de +2 contre le poison.
-Immunisé contre les toiles d’araignée
+Immunité aux toiles d’araignées.
 
 Capacité de charge :
-Toile d'araignée une fois par jour.
-
-Poids : 0~
+Toile d'araignée (une fois par jour).~

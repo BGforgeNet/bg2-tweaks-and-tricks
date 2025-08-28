@@ -1,46 +1,46 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@1 = ~Épée longue : l'Egaliseur
-L'âge de cette arme est si élevé que personne ne saurait le deviner, mais des indices de fabrication suggèrent qu'elle a pu être forgée au service de Helm. Également appelée "Épée de Neutralité", elle semble avoir été conçue pour l'équilibre et l'élimination des extrêmes. Plus le comportement d'une cible est éloigné de la neutralité, plus les dégâts infligés sont importants. L'égaliseur résiste activement à une utilisation par des personnages d'alignements extrêmes.
+@1 = ~Épée longue : l'Égaliseur
+L'âge de cette arme est si élevé que personne ne saurait le deviner, mais des indices de fabrication suggèrent qu'elle a pu être forgée au service de Heaum. Également appelée "Épée de Neutralité", elle semble avoir été conçue pour l'équilibre et l'élimination des extrêmes. Plus le comportement d'une cible est éloigné de la neutralité, plus les dégâts infligés sont importants. Plus le porteur est proche de l'équilibre parfait, plus l'épée dans ses mains est puissante. L'Égaliseur résiste activement à une utilisation par des personnages d'alignements extrêmes.
 
 De plus, l'épée permet à son propriétaire de découvrir les alignements des créatures proches comme le sort de mage, 3 fois par jour.
 
-STATISTIQUES :
+PARAMÈTRES :
 
-Enchantement : +4
+Niveau d'enchantement : +4
 
 Capacités de combat :
   50% de chances en touchant un ennemi Bon ou Mauvais de le rendre confus pendant 2 rounds, sauf s'il réussi un jet de sauvetage contre les sorts. Cette capacité ne fonctionne qu'entre les mains d'un personnage qui n'est ni bon ni mauvais.
   50% de chances en touchant un ennemi Loyal ou Chaotique de l'aveugler pendant 2 rounds, sauf s'il réussi un jet de sauvetage contre les souffles. Cette capacité ne fonctionne qu'entre les mains d'un personnage qui n'est ni loyal ni chaotique.
 
-TAC0 & Dégâts :
-  contre Neutre strict : +0 au toucher, +0 aux dégâts
-  contre les alignements non extrêmes ( Chaotique/Loyal Neutre, Neutre Bon/Mauvais) : +2 au toucher, +2 aux dégâts
-  contre les alignements extrêmes (Chaotique Bon/Mauvais, Loyal Bon/Mauvais) : +4 au toucher, +4 aux dégâts
+TAC0 & Dégâts :
+  contre Neutre strict : +0 au toucher, +0 aux dégâts
+  contre les alignements non extrêmes ( Chaotique/Loyal Neutre, Neutre Bon/Mauvais) : +2 au toucher, +2 aux dégâts
+  contre les alignements extrêmes (Chaotique Bon/Mauvais, Loyal Bon/Mauvais) : +4 au toucher, +4 aux dégâts
 
-Bonus supplémentaires selon l'alignement du porteur :
-  Neutre strict : +4 au toucher, +4 aux dégâts
-  Alignements non extrêmes : +2 au toucher, +2 aux dégâts
-  Alignements extrêmes : -20 au toucher, -20 aux dégâts
+Bonus supplémentaires selon l'alignement du porteur :
+  Neutre strict : +4 au toucher, +4 aux dégâts
+  Alignements non extrêmes : +2 au toucher, +2 aux dégâts
+  Alignements extrêmes : -20 au toucher, -20 aux dégâts
 
 Tous les effets de combat sont indépendants et se cumulent les uns avec les autres.
 
-Capacités d'équipement :
-  Immunité au charme et à la confusion
+Capacités d'équipement :
+  Immunité aux charmes et à la confusion
 
-Capacités de charge :
+Capacités de charge :
   Détection de l'alignement 3 fois par jour.
 
-Type de dommages : tranchant
-Poids : 3
-Facteur de vitesse : 1
-Type de compétence : épée longue
-Type : arme à 1 main
-Force nécessaire : 6
-Non utilisable par : 
+Type de dégâts : tranchant
+Poids : 3
+Facteur de vitesse : 1
+Type de compétence : épée longue
+Type : arme à 1 main
+Force nécessaire : 6
+Non utilisable par : 
  Druide
  Clerc
- Magicien
+ Mage
  Belluaire~
 @2 = ~Deux choses, mon ami. Cela vous coûtera 12500 pièces d'or pour le travail, pas moins, et sans apprenti, vous devrez rester ici une journée entière et m'aider à faire tourner la forge.~ ~Deux choses, mon amie. Cela vous coûtera 12500 pièces d'or pour le travail, pas moins, et sans apprenti, vous devrez rester ici une journée entière et m'aider à faire tourner la forge.~
 @3 = ~Qu'est-ce que cela implique ?~

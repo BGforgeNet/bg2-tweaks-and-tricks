@@ -5,11 +5,11 @@
 @3 = ~Dominé~ ~Dominée~
 @4 = ~Protection contre le mal (Abjuration)
 Niveau : 1
-Portée : Toucher
+Portée : Contact
 Durée : 2 rounds/niveau
 Temps d'incantation : 1
 Zone d'effet : Créature touchée
-Jets de sauvegarde : Aucun
+Jet de sauvegarde : Aucun
 
 Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :
 - Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.

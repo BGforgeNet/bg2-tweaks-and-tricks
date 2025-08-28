@@ -2,16 +2,17 @@
 
 @1 = ~Cette baguette crée une zone de froid extrême en forme de cône, qui part de la baguette et s'étend vers l'extérieur, comme le sort de 5e niveau Cône de froid. Les dégâts sont de 8d6 (en traitant tous les 1 obtenus comme des 2), avec un jet de sauvegarde contre les baguettes pour réduire de moitié les dégâts.
 
-STATISTIQUES :
+PARAMÈTRES :
 
-Effet : Cône de froid
-Dégâts : 8D6 (jet de sauvegarde contre les baguettes pour réduire de moitié)
-Portée : 30 mètres
-Zone d'effet : Spéciale
-Non utilisable par :
-Guerrier
+Effet : Cône de froid
+Dégâts : 8D6 (jet de sauvegarde contre les baguettes pour réduire de moitié)
+Portée : 30 mètres
+Zone d'effet : Spéciale
+Non utilisable par :
+ Guerrier
  Clerc
  Druide
  Voleur
  Paladin
- Rôdeur~
+ Rôdeur
+~

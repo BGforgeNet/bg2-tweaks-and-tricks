@@ -1,5 +1,5 @@
 @15 = ~Maître, votre sac est plein.~
-@100 = ~Oui, Maître?~
+@100 = ~Oui, Maître ?~
 @101 = ~Changeons de formation.~
 @102 = ~Nous devons discuter du combat.~
 @103 = ~Je veux te donner de nouvelles instructions à propos du butin.~
@@ -10,10 +10,10 @@
 @203 = ~Va plus vite, tu veux bien ? Ne reste pas à la traîne.~
 @204 = ~Ne cours pas si vite. Je ne peux pas te rattraper.~
 @205 = ~C'est rien, oubli. La distance est bonne pour le moment.~
-@301 = ~Si tu vois un danger, saute dans mon sac tout de suite !~
+@301 = ~Si tu vois un danger, saute immédiatement dans mon sac.~
 @302 = ~Ne te cache pas dans mon sac quand tu vois des ennemis.~
 @303 = ~Si tu es blessé, rentre immédiatement dans mon sac.~
-@304 = ~Si tu es gravement blessé, rentre immédiatement dans mon sac~
+@304 = ~Si tu es gravement blessé, rentre immédiatement dans mon sac.~
 @306 = ~Quand les ennemis sont partis, sors de mon sac tout seul.~
 @307 = ~Après t'être caché dans mon sac, reste-y. On n'est jamais trop prudent.~
 @309 = ~Ne m'embête pas avec tes jérémiades, je me fiche que tu sois blessé.~
@@ -51,7 +51,7 @@
 @504 = ~Non, en fait je pense que ton équipement est très bien.~
 @601 = ~Là j'ai mal, Maître.~
 @602 = ~Là j'ai vraiment mal, Maître.~
-@603 = ~Ouille!~
+@603 = ~Ouille !~
 @701 = ~(Donner une potion de soin).~
 @702 = ~(Donner une potion de grands soins).~
 @703 = ~(Donner une potion de soin majeure).~
