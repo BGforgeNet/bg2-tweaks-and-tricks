@@ -1,43 +1,31 @@
-//loot: full
-@15 = ~Maître, votre sac est plein.~
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-// Initial menu
+@15 = ~Maître, votre sac est plein.~
 @100 = ~Oui, Maître?~
 @101 = ~Changeons de formation.~
 @102 = ~Nous devons discuter du combat.~
 @103 = ~Je veux te donner de nouvelles instructions à propos du butin.~
 @104 = ~Tiens, prends cette potion.~
 @105 = ~Ah, peut-être plus tard.~
-
-// Distance
 @201 = ~Suis-moi en permanence.~
 @202 = ~Arrête de me suivre tout le temps.~
 @203 = ~Va plus vite, tu veux bien ? Ne reste pas à la traîne.~
 @204 = ~Ne cours pas si vite. Je ne peux pas te rattraper.~
 @205 = ~C'est rien, oubli. La distance est bonne pour le moment.~
-
-//combat
-// Hide in backpack
 @301 = ~Si tu vois un danger, saute dans mon sac tout de suite !~
 @302 = ~Ne te cache pas dans mon sac quand tu vois des ennemis.~
 @303 = ~Si tu es blessé, rentre immédiatement dans mon sac.~
 @304 = ~Si tu es gravement blessé, rentre immédiatement dans mon sac~
 @306 = ~Quand les ennemis sont partis, sors de mon sac tout seul.~
 @307 = ~Après t'être caché dans mon sac, reste-y. On n'est jamais trop prudent.~
-// Notification after fight
 @309 = ~Ne m'embête pas avec tes jérémiades, je me fiche que tu sois blessé.~
 @310 = ~Après le combat, si tu es blessé, fais-le moi savoir.~
 @311 = ~Après le combat, si tu es gravement blessé, fais-le moi savoir.~
-// Tactics
 @312 = ~Quand tu es attaqué, désengage-toi un court instant, puis reviens vers l'ennemi.~
 @313 = ~Ne te désengage pas, même si tu es attaqué.~
 @314 = ~En combat, n'attaque pas les ennemis, sauf si je te le demande.~
 @315 = ~Au combat, attaque les ennemis quand tu les vois.~
 @316 = ~Au combat, attaque les ennemis quand tu les vois, en donnant la priorité aux lanceurs de sorts.~
-
-
-
-// loot
 @400 = ~Arrête de prendre des objets, d'accord ?~
 @401 = ~Je veux que tu m'apportes tout. Tous les objets de valeur.~
 @402 = ~Ramasse l'or que tu trouves.~
@@ -58,21 +46,14 @@
 @417 = ~Plus de peaux ni de carapaces, nous avons tout ce qu'il faut.~
 @418 = ~Non, rien.~
 @419 = ~Comme vous voulez, maître.~
-
-//gear - not implemented
 @500 = ~Parlons de ton équipement.~
 @501 = ~Prends cette fléchette de retour. Je pense qu'il vaut mieux que tu attaques à distance.~
 @502 = ~D'accord, Maître.~
 @503 = ~C'est fait.~
 @504 = ~Non, en fait je pense que ton équipement est très bien.~
-
-//BAF strings
 @601 = ~Là j'ai mal, Maître.~
 @602 = ~Là j'ai vraiment mal, Maître.~
 @603 = ~Ouille!~
-
-//potions
-//common
 @701 = ~(Donner une potion de soin).~
 @702 = ~(Donner une potion de grands soins).~
 @703 = ~(Donner une potion de soin majeure).~
@@ -99,7 +80,6 @@
 @724 = ~(Donner une potion de Statue).~
 @725 = ~(Donner une potion de Focalisation mentale).~
 @726 = ~Tiens, prend une bonne baie.~
-//fighter
 @740 = ~(Donner une potion de force de géant des collines).~
 @741 = ~(Donner une potion de Force de géant du froid).~
 @742 = ~(Donner une potion de force de géant du feu).~
@@ -108,7 +88,6 @@
 @745 = ~(Donner une potion d'Héroïsme).~
 @746 = ~(Donner une potion d'Invulnérabilité).~
 @747 = ~(Donner une potion de Force de Géant des pierres).~
-//thief
 @760 = ~(Donner une potion de Maître-Voleur).~
 @761 = ~(Donner une potion de Perception).~
 @762 = ~(Donner une potion de force de géant du froid des voleurs).~

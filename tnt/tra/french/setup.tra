@@ -12,38 +12,28 @@
 @130 = ~Necessite oToB ou BG(2)EE ou IWDEE~
 @131 = ~Necessite le contenu de TotSC~
 @132 = ~Impossible de detecter votre plateforme, echec.~
-
 @200 = ~Objets~
 @201 = ~Plus de probleme de munitions~
 @202 = ~Supprimer les effets de flou des objets~
 @203 = ~Cape de reflexion judicieuse~
 @204 = ~Les effets des parchemins et des potions ne s'empilent pas entre eux.~
-
 @205 = ~Baguette de givre judicieuse~
 @206 = ~Cible unique~
 @207 = ~Zone d'effet~
-
 @208 = ~Protection contre le poison fonctionnelle~
 @210 = ~Objets de protection vraiment PnP~
 @211 = ~Comme dans la 2eme edition : les jets de sauvegarde s'empilent, la CA ne s'empile pas~
 @212 = ~Comme dans la 3eme edition : pas d'empilement, le meilleur bonus prend effet~
-
 @223 = ~Vraie Potion de retrovision~
-
 @236 = ~Empilement illimite de bonnes baies~
-
 @240 = ~Type de degÃ¢ts des armes de jet~
 @241 = ~Ajouter un bonus de force~
 @242 = ~Rendre les haches tranchantes et les marteaux contondants~
 @243 = ~Les deux options ci-dessus~
-
 @250 = ~Cape de Shandalar amelioree~
 @252 = ~Cape d'Algernon : utilisable une fois par jour~
-
 @260 = ~Egaliseur ameliore~
-
 @261 = ~Objets de quete distincts~
-
 @300 = ~Pieges~
 @301 = ~Intuition de piege~
 @302 = ~pas en combat~
@@ -64,10 +54,7 @@
 @317 = ~Amelioration de la detection des pieges : noyau (NECESSAIRE pour que les composants precedents fonctionnent)~
 @318 = ~Detection amelioree des pieges : detection instantanee~
 @319 = ~Tous les composants de pieges ameliores doivent Ãªtre installes AVANT le noyau~
-
 @350 = ~Horreurs casquees de Davaeorn non-desarmable~
-
-
 @500 = ~Magasins~
 @501 = ~On ne peut pas voler les receleurs~
 @502 = ~Supprimer la triche du vol en boucle~
@@ -76,7 +63,6 @@
 @505 = ~Les magasins achetent toujours les marchandises au meme prix (bas) | composant pour POWER USER, consultez le readme sur Github~
 @506 = ~Nettoyer les magasins~
 @507 = ~Stock limite~
-
 @600 = ~Composants de commodite~
 @601 = ~Moins de sauvegardes automatiques | composant pour POWER USER, consultez le readme sur Github~
 @602 = ~Plus de notes sur les cartes~
@@ -92,14 +78,13 @@
 @612 = ~GSPA + de contenance~
 @613 = ~GSPA + de contenance - tous sans fond !~
 @620 = ~Plus de parchemins pour mage dans l'extension de BG1~
-
-
+@630 = ~Faster forging dialogs~
+@631 = ~Original recipe lists~
+@632 = ~Both Cromwell and Cespenar can forge any item if ingredients are available~
 @700 = ~Quetes et dialogues~
 @701 = ~Actions sans sang~
 @702 = ~Amelioration des forteresses~
 @703 = ~Sauvetage de Melicamp~
-
-
 @800 = ~Sorts et capacites~
 @801 = ~Forme d'araignee ignore la toile~
 @802 = ~Ecorcheur : soins complets en cas de changement~
@@ -121,34 +106,25 @@
 @820 = ~Protection contre le mal PnP~
 @821 = ~Graisse non hostile~
 @822 = ~Pistage!~
-
 @900 = ~Familiers~
 @901 = ~Familiers plus intelligents~
 @902 = ~Familiers plus resistants~
-
-
 @1000 = ~Ensemble de sons~
 @1001 = ~Compliments et insultes~
 @1002 = ~Reintroduire~
 @1003 = ~Reintroduire et ajuster au framerate~
 @1004 = ~Desactiver~
-
 @1010 = ~Sons etendus pour les PNJ pouvant se joindre au groupe~
 @1011 = ~Ajouts seulement~
 @1012 = ~Preferer les sons de BG1~
 @1013 = ~Preferer les sons de BG2~
-
 @1020 = ~Ne pas parler quand on se cache dans l'ombre~
 @1021 = ~Mettre les sons des PNJ a la disposition des PC~
-
-
 @1100 = ~Jeu, regles, difficulte~
-
 @1102 = ~Pas de farming d'XP~
 @1103 = ~On ne peut pas voler Carsomyr~
 @1104 = ~Vraie Vraie Grande-maitrise~
 @1105 = ~Restrictions des multi-classes plus pratiques~
-
 @1110 = ~Combats equitables | composant pour POWER USER, consultez le readme sur Github~
 @1111 = ~Quelques ennemis bien precis~
 @1112 = ~Supprimez egalement les objets recuperables accordant des avantages injustes a tous les ennemis~

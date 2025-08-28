@@ -3,13 +3,10 @@
 @1 = ~Pistage~
 @2 = ~Pistage
 Grâce à une connaissance approfondie de son environnement et des créatures qui y vivent, un ranger peut utiliser la capacité de pistage pour se faire une idée générale des créatures présentes dans une zone et de la direction dans laquelle elles se trouvent. Les flèches rouges au bord de l'écran indiquent la direction générale des créatures présentes dans la zone.~
-
-// BG1
 @100 = ~Chateausuif est une bibliothèque fortifiée et isolée, connue pour sa vaste collection de livres et de parchemins. Des moines, des érudits et des gardes se déplacent pour maintenir la paix et le savoir à l'intérieur. Vous connaissez tous les coins et recoins de cette forteresse.~
 @101 = ~L'auberge du Brasamical est une auberge fortifiée qui sert de refuge aux voyageurs. Les aventuriers et les gardes sont souvent vus ici, se reposant ou se préparant pour leur prochain voyage.~
 @102 = ~Beregost est une ville animée avec des boutiques, des auberges et un temple. Les citadins, les gardes et les marchands remplissent les rues, vaquant à leurs occupations quotidiennes.~
 @103 = ~Nashkel est une petite ville perturbée par les problèmes des mines voisines. Les habitants, la milice et les marchands peuvent être vus en train de gérer les récents problèmes.~
-// @104
 @105 = ~Les mines de Nashkel sont une série de tunnels infestés de monstres et d'événements mystérieux. On y trouve des traces de kobolds, d'araignées et de loups.~
 @106 = ~Le pied des montagnes est accidenté et densément boisé, avec des falaises abruptes et des chemins sinueux. On y trouve des traces de grouilleux, de xvarts et de loups.~
 @107 = ~Gullykin est un petit village de petites-gens. Vous trouvez des signes de kobolds, de loups et de quelques morts-vivants à proximité.~
@@ -21,7 +18,7 @@ Grâce à une connaissance approfondie de son environnement et des créatures qu
 @113 = ~La forêt de Bois-Manteau est une forêt sombre et dense, pleine de dangers. On y trouve des signes d'ettercaps, d'araignées et de druides qui ont élu domicile dans cette forêt.~
 @114 = ~Les mines de Bois-Manteau sont riches en minerais mais pleines de dangers. On y trouve des traces de wyvernes, d'araignées et d'esclaves forcés de travailler dans les mines..~
 @115 = ~Haute Haie est la propriété isolée d'un puissant mage. On y trouve des traces de gnolls, d'araignées et de morts-vivants.~
-@116 = ~Vous trouvez des traces de basilics, d'ours, de morts-vivants.~  // Mutamin's Garden
+@116 = ~Vous trouvez des traces de basilics, d'ours, de morts-vivants.~
 @117 = ~Le Carnaval est une foire itinérante remplie d'attractions et de dangers. Vous trouvez des signes de kobolds et d'ogres à proximité.~
 @118 = ~La Forteresse gnoll est un repaire fortifié de gnolls. Vous y trouvez des signes d'une forte présence gnoll et des empreintes de pas de xvart.~
 @119 = ~Les Chutes de la Dryade sont une région pittoresque habitée par des dryades. On y trouve des signes de dryades, de loups et d'aventuriers occasionnels à la recherche de la beauté de la cascade.~
@@ -31,6 +28,4 @@ Grâce à une connaissance approfondie de son environnement et des créatures qu
 @123 = ~L'île de glace est un endroit glacial, isolé et plein de dangers. On y trouve des traces d'ours polaires.~
 @124 = ~La Voie du Lion est un chemin pittoresque qui relie Candlekeep au reste du monde, marqué par des collines ondulantes et des arbres épars. On y trouve des traces de loups, d'ours, de gibberlings.~
 @125 = ~Le village semble calme, avec principalement des traces humaines entre les maisons et le long de chemins bien fréquentés. Cependant, parmi elles, vous trouvez des traces occasionnelles d'animaux - grandes, mais pas déplacées dans un environnement rural. Ces empreintes semblent aller et venir dans le village, se mêlant à l'activité quotidienne. Rien ne semble menaçant dans l'immédiat, mais la présence de ces traces suggère que la faune est peut-être plus proche du village qu'on ne le pense.~
-
-// Just testing BG2 part
 @200 = ~La Forêt du Nord est une forêt sauvage, connue pour son épaisse canopée et ses chemins traîtres. Le sol de la forêt est jonché de feuilles mortes et des empreintes occasionnelles de ceux qui ont eu le courage d'en traverser les profondeurs. On y trouve des signes de vampires tapis dans l'ombre, de trolls rôdant dans les sous-bois et de yuan-ti se faufilant dans le feuillage. De plus, un groupe d'aventuriers est passé par là récemment, leurs traces témoignant d'un voyage tendu et prudent. L'air est lourd de l'odeur du pin et des bruits de la faune lointaine, avertissant tous ceux qui pénètrent dans les lieux qu'ils doivent être prudents.~

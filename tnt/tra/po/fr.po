@@ -14,269 +14,271 @@ msgstr ""
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
-msgstr ""
+msgstr "Euh, je pressens un piège."
 
 #: easy_traps.tra:2
 msgid "Careful. Something's not quite right here."
-msgstr ""
+msgstr "Attention. Quelque chose ne va pas, par là."
 
 #: easy_traps.tra:3
 msgid "Stop! It's a trap!"
-msgstr ""
+msgstr "Stop ! C'est un piège !"
 
 #: easy_traps.tra:4
 msgid "I sense a trap!"
-msgstr ""
+msgstr "Ça sent le piège !"
 
 #: easy_traps.tra:5
 msgid "Hmm... We should tread lightly here."
-msgstr ""
+msgstr "Hmm... Nous devrions faire preuve de prudence par ici."
 
 #: easy_traps.tra:6
 msgid "Wait, wait. Let's take a closer look at this."
-msgstr ""
+msgstr "Attendez, attendez. Regardons ça de plus près."
 
 #: easy_traps.tra:7
 msgid "I sense danger."
-msgstr ""
+msgstr "Je sens du danger."
 
 #: easy_traps.tra:8
 msgid "Watch your step. Looks suspicious."
-msgstr ""
+msgstr "Attention où vous marchez. Ça paraît suspect."
 
 #: easy_traps.tra:9
 msgid "Hold on. See this?"
-msgstr ""
+msgstr "Attendez. Vous voyez ça ?"
 
 #: easy_traps.tra:98
 msgid "Trap"
-msgstr ""
+msgstr "Piège"
 
 #: easy_traps.tra:100
 msgid "Unknown trap"
-msgstr ""
+msgstr "Inconnu"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
-msgstr ""
+msgstr "Piège à Immobilisation des personnes"
 
 #: easy_traps.tra:102
 msgid "Silence trap"
-msgstr ""
+msgstr "Piège à Silence"
 
 #: easy_traps.tra:103
 msgid "Call Lightning trap"
-msgstr ""
+msgstr "Piège à Appel de la foudre"
 
 #: easy_traps.tra:104
 msgid "Miscast Magic trap"
-msgstr ""
+msgstr "Piège à Fourvoiement magique"
 
 #: easy_traps.tra:105
 msgid "Flamestrike trap"
-msgstr ""
+msgstr "Piège à Colonne de feu"
 
 #: easy_traps.tra:106
 msgid "Chromatic orb trap"
-msgstr ""
+msgstr "Piège à Orbe chromatique"
 
 #: easy_traps.tra:107
 msgid "Confusion trap"
-msgstr ""
+msgstr "Piège à Confusion"
 
 #: easy_traps.tra:108
 msgid "Dire Charm trap"
-msgstr ""
+msgstr "Piège à Charme néfaste"
 
 #: easy_traps.tra:109
 msgid "Fireball trap"
-msgstr ""
+msgstr "Piège à Boule de feu"
 
 #: easy_traps.tra:110
 msgid "Lightning bolt trap"
-msgstr ""
+msgstr "Piège à Éclair"
 
 #: easy_traps.tra:111
 msgid "Magic Missile trap"
-msgstr ""
+msgstr "Piège à Projectile magique"
 
 #: easy_traps.tra:112
 msgid "Stinking Cloud trap"
-msgstr ""
+msgstr "Piège à Nuage puant"
 
 #: easy_traps.tra:113
 msgid "Arrow trap"
-msgstr ""
+msgstr "Piège à Flèche"
 
 #: easy_traps.tra:114
 msgid "Slaying arrow trap"
-msgstr ""
+msgstr "Piège à Flèche tueuse"
 
 #: easy_traps.tra:115
 msgid "Acid arrow trap"
-msgstr ""
+msgstr "Piège à Flèche acide"
 
 #: easy_traps.tra:116
 msgid "Biting arrow trap"
-msgstr ""
+msgstr "Piège à Flèche mordante"
 
 #: easy_traps.tra:117
 msgid "Detonation arrow trap"
-msgstr ""
+msgstr "Piège à Flèche de Détonation"
 
 #: easy_traps.tra:118
 msgid "Dispelling arrow trap"
-msgstr ""
+msgstr "Piège à Flèche de Dissipation"
 
 #: easy_traps.tra:119
 msgid "Fire arrow trap"
-msgstr ""
+msgstr "Piège à Flèche de feu"
 
 #: easy_traps.tra:120
 msgid "Ice arrow trap"
-msgstr ""
+msgstr "Piège à Flèche de givre"
 
 #: easy_traps.tra:121
 msgid "Piercing arrow trap"
-msgstr ""
+msgstr "Piège à Flèche perceuse"
 
 #: easy_traps.tra:122
 msgid "Monster Summoning trap"
-msgstr ""
+msgstr "Piège à Convocation de monstres"
 
 #: easy_traps.tra:123
 msgid "Frost trap"
-msgstr ""
+msgstr "Piège à Givre"
 
 #: easy_traps.tra:124
 msgid "Cloudkill trap"
-msgstr ""
+msgstr "Piège à Nuage mortel"
 
 #: easy_traps.tra:125
 msgid "Minor Lightning Bolt trap"
-msgstr ""
+msgstr "Piège à Éclair mineur"
 
 #: easy_traps.tra:126
 msgid "Underwater Bite trap"
-msgstr ""
+msgstr "Piège à Morsures"
 
 #: easy_traps.tra:127
 msgid "Hallway Spikes trap"
-msgstr ""
+msgstr "Piège à Pointes"
 
 #: easy_traps.tra:128
 msgid "Muck trap"
-msgstr ""
+msgstr "Piège à Piège à boue"
 
 #: easy_traps.tra:129
 msgid "Shadow Death trap"
-msgstr ""
+msgstr "Piège à Ombre mortelle"
 
 #: easy_traps.tra:130
 msgid "Guillotine trap"
-msgstr ""
+msgstr "Piège à Guillotine"
 
 #: easy_traps.tra:131 easy_traps.tra:132 easy_traps.tra:133
 msgid "Lightning orb trap"
-msgstr ""
+msgstr "Piège à Orbe foudroyant"
 
 #: easy_traps.tra:134
 msgid "Crushing trap"
-msgstr ""
+msgstr "Piège à Écrasement"
 
 #: easy_traps.tra:135
 msgid "Skull trap"
-msgstr ""
+msgstr "Piège à Crane"
 
 #: easy_traps.tra:136
 msgid "Stone trap"
-msgstr ""
+msgstr "Piège à Pierre"
 
 #: easy_traps.tra:137
 msgid "Summon Djinn trap"
-msgstr ""
+msgstr "Piège à Convocation de Djinn"
 
 #: easy_traps.tra:138
 msgid "Spear trap"
-msgstr ""
+msgstr "Piège à Lance"
 
 #: easy_traps.tra:139
 msgid "Slime trap"
-msgstr ""
+msgstr "Piège à Gelée"
 
 #: easy_traps.tra:140
 msgid "Dart trap"
-msgstr ""
+msgstr "Piège à Fléchette"
 
 #: easy_traps.tra:141
 msgid "Vent trap"
-msgstr ""
+msgstr "Piège à Gaz"
 
 #: easy_traps.tra:142
 msgid "Pendulum trap"
-msgstr ""
+msgstr "Piège à Pendule"
 
 #: extended_soundsets.tra:37
 msgctxt "g_ttjah1"
 msgid "Die your final death!"
-msgstr ""
+msgstr "Mourrez de votre belle mort !"
 
 #: extended_soundsets.tra:38
 msgctxt "minsc57"
 msgid "Aaargh!  Kill says Boo, kill does Minsc!"
-msgstr ""
+msgstr "SQUICK ! AAARRRGHGH ! BOUH A DIT TUE ! ET MINSC TUE !"
 
 #: extended_soundsets.tra:39
 msgctxt "g_ttmin1"
 msgid "Prepare to feel the wrath of my hamster!"
-msgstr ""
+msgstr "Prépare-toi à subir la colère de mon hamster !"
 
 #: extended_soundsets.tra:40
 msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
-msgstr ""
+msgstr "Votre fin est proche, implorez si vous voulez !!"
 
 #: extended_soundsets.tra:41
-msgctxt "alora02"
+msgctxt "alora01"
 msgid ""
 "Blast and bother!  These locks have always given me trouble!  Trouble they "
 "are!"
 msgstr ""
+"Quelle barbe ! J'ai toujours des problèmes avec ces serrures ! Qu'est-ce que"
+" c'est ennuyeux !"
 
 #: extended_soundsets.tra:42
 msgctxt "quayl01"
 msgid "Walking alone on the Coastway road!  How smart is this?"
-msgstr ""
+msgstr "Solitaire sur la Voie Côtière ! Quel effet ça fait ?"
 
 #: extended_soundsets.tra:43
 msgctxt "khald02"
 msgid "Calm yourself dear, we must proceed c-c-carefully."
-msgstr ""
+msgstr "Du calme, chérie, nous devons procéder doucement."
 
 #: extended_soundsets.tra:44
 msgctxt "g_ttyos1"
 msgid "Let us get this over with!"
-msgstr ""
+msgstr "Finissons-en avec ça !"
 
 #: extended_soundsets.tra:45
 msgctxt "aerie95"
 msgid "Ahhh!!  Help me!  help me, pleeeaase!!"
-msgstr ""
+msgstr "AHH ! AU SECOURS ! AIDEZ-MOI, PAR PITIE !"
 
 #: extended_soundsets.tra:46
 msgctxt "aeri2540"
 msgid "Oh, this is going to hurt you a LOT more than me!"
-msgstr ""
+msgstr "Tu vas avoir BEAUCOUP plus MAL que moi !"
 
 #: extended_soundsets.tra:47
 msgctxt "aeri2541"
 msgid "By all that is decent, I fight!"
-msgstr ""
+msgstr "Au nom du Bien, je vais me battre !"
 
 #: extended_soundsets.tra:48
 msgctxt "g_ttkor1"
 msgid "Killing is our business, and business be good!"
-msgstr ""
+msgstr "Tuer est notre métier, et c'est un bon métier !"
 
 #: extended_soundsets.tra:49
 msgctxt "g_ttkor2"
@@ -286,89 +288,91 @@ msgstr ""
 #: extended_soundsets.tra:50
 msgctxt "g_ttkel1"
 msgid "In Tyr's name we shall be victorious once and for all!"
-msgstr ""
+msgstr "Au nom de Tyr, nous serons victorieux une fois pour toutes !"
 
 #: extended_soundsets.tra:51
 msgctxt "g_ttkag1"
 msgid "What can I do for you?"
-msgstr ""
+msgstr "Que puis-je faire pour toi ?"
 
 #: extended_soundsets.tra:52
 msgctxt "montr01"
 msgid ""
 "Ye already be disturbed, now leave me be.  Yer company be toil enough as is."
 msgstr ""
+"Votre esprit est assez perturbé comme ça ; laissez-moi tranquille. Votre "
+"compagnie est déjà suffisamment déplaisante."
 
 #: extended_soundsets.tra:53
 msgctxt "yeslk01"
 msgid ""
 "Aye, who's there now?  More smithing, or did ye burrow into another river?"
-msgstr ""
+msgstr "Eh, qui va là maintenant ? Encore du travail ou quoi ?"
 
 #: extended_soundsets.tra:54
 msgctxt "g_ttxan1"
 msgid "I have languished in these dismal vaults too long."
-msgstr ""
+msgstr "J'ai croupi trop longtemps dans cette horrible cave."
 
 #: extended_soundsets.tra:55
 msgctxt "nali2520"
 msgid "Evil falls today!"
-msgstr ""
+msgstr "Aujourd'hui, nous vaincrons le Mal !"
 
 #: extended_soundsets.tra:56
 msgctxt "nali2521"
 msgid "If you fight, you die!  You cannot match our power!!"
-msgstr ""
+msgstr "Notre force est trop grande ! Si tu te bats, tu mourras !"
 
 #: extended_soundsets.tra:57
 msgctxt "anom2539"
 msgid "Helm's fury upon you all!!"
-msgstr ""
+msgstr "Que la colère de Helm s'abatte sur vous !"
 
 #: extended_soundsets.tra:58
 msgctxt "anom2540"
 msgid "By skill and might we shall prevail!!"
-msgstr ""
+msgstr "Par notre vaillance et notre force, nous vaincrons !"
 
 #: extended_soundsets.tra:59
 msgctxt "g_ttval1"
 msgid "You will not pass!"
-msgstr ""
+msgstr "Vous ne passerez pas !"
 
 #: extended_soundsets.tra:60
 msgctxt "g_tthae1"
 msgid "Ahhh, this is a fine battle that shall ring throughout the planes!"
-msgstr ""
+msgstr "Ahhh, c'est une belle bataille qui résonnera dans tous les plans !"
 
 #: extended_soundsets.tra:61
 msgctxt "sarevo13"
 msgid "We children of Bhaal cannot be stopped!"
-msgstr ""
+msgstr "Nul ne peut arrêter les enfants de Bhaal !"
 
 #: extended_soundsets.tra:62
 msgctxt "sarevo14"
 msgid "Ha!  This arena I know well!!"
-msgstr ""
+msgstr "Ha ! Ça, je connais !"
 
 #: extended_soundsets.tra:63
 msgctxt "sarevo35"
 msgid "I shall carve a path, if need be."
-msgstr ""
+msgstr "Je me frayerai un chemin, s'il le faut."
 
 #: extended_soundsets.tra:64
 msgctxt "sarevo36"
 msgid "As you wish."
-msgstr ""
+msgstr "Comme tu voudras."
 
 #: extended_soundsets.tra:65
 msgctxt "sarevo37"
 msgid "Hmph.  Not what I would have done."
-msgstr ""
+msgstr "Hmpf. Ce n'est pas ce que j'aurais fait."
 
 #: extended_soundsets.tra:66
 msgctxt "sarevo38"
 msgid "So you say."
-msgstr ""
+msgstr "Tu l'as dit."
 
 #: extended_soundsets.tra:67
 msgctxt "garrk30"
@@ -376,51 +380,54 @@ msgid ""
 "My music is superior to yours, Eldoth, I was taught at the college in "
 "Berdusk."
 msgstr ""
+"Ma musique est supérieure à la tienne, Eldoth, j'ai été formé au collège de "
+"Berdusk."
 
 #: extended_soundsets.tra:68
 msgctxt "garrk06"
 msgid "I can't stand by and just let this happen."
-msgstr ""
+msgstr "Je ne peux pas attendre que ça se passe sans réagir."
 
 #: extended_soundsets.tra:69
 msgctxt "g_ttbra1"
 msgid "By the ice breath of Auril!"
-msgstr ""
+msgstr "Par le souffle glacé d'Auril !"
 
 #: extended_soundsets.tra:70
 msgctxt "skiee04"
 msgid "You're the finest group of friends I've ever had."
-msgstr ""
+msgstr "Jamais je n'ai eu meilleur groupe d'amis."
 
 #: extended_soundsets.tra:71
 msgctxt "xzarr01"
 msgid "Montaron, you are so AGGRAVATING!  'Tis disturbing to my demeanor!"
-msgstr ""
+msgstr "Montaron, vous êtes si EXASPÉRANT ! Cela nuit à mon équilibre !"
 
 #: extended_soundsets.tra:72
 msgctxt "shart34"
 msgid "How would you like my sword tickling your innards?"
 msgstr ""
+"Que diriez-vous de vous faire chatouiller les entrailles par ma lame ?"
 
 #: extended_soundsets.tra:130
 msgctxt "g_ttaja1"
 msgid "You evil ways end here!"
-msgstr ""
+msgstr "Vos mauvaises actions s'arrêtent ici !"
 
 #: extended_soundsets.tra:131
 msgctxt "g_ttaja2"
 msgid "Draw steel!"
-msgstr ""
+msgstr "Sortez vos armes !"
 
 #: extended_soundsets.tra:132
 msgctxt "g_ttkiv1"
 msgid "Defend yourselves!"
-msgstr ""
+msgstr "Défendez-vous !"
 
 #: extended_soundsets.tra:133
 msgctxt "g_ttkel2"
 msgid "You soul is forfeit!"
-msgstr ""
+msgstr "Ton âme est perdue !"
 
 #: faster_forging.tra:1
 msgid "I have something I think you could forge into an item."
@@ -486,7 +493,7 @@ msgstr ""
 
 #: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
-msgstr ""
+msgstr "Hache de jet de retour"
 
 #: hassle_free_ammo.tra:2
 msgid ""
@@ -509,10 +516,28 @@ msgid ""
 " Mage \n"
 " Thief"
 msgstr ""
+"La hache à main, ou hache de jet, est également connue sous l'appellation de hachette. Sa lame comporte une lame d'acier tranchante, contrebalancée par une barbelure pointue. La courte poignée comporte une pointe en bas et la tête comporte parfois une pointe en haut, ce qui la rend inutilisable en mêlée.\n"
+"\n"
+"Cette hache a reçu un enchantement mineur. Elle revient toujours dans la main de l'utilisateur. Pourtant, elle frappe comme une arme normale, pas comme une arme magique.\n"
+"\n"
+"PARAMETRES :\n"
+"\n"
+"Dégâts : 1D6 +1\n"
+"Type de dégâts : projectile (perforant)\n"
+"Poids : 5\n"
+"Facteur de vitesse : 4\n"
+"Type de compétence : Hache\n"
+"Type : arme à 1 main\n"
+"Force nécessaire : 4\n"
+"Non utilisable par :\n"
+" Druide\n"
+" Clerc\n"
+" Mage \n"
+" Voleur"
 
 #: hassle_free_ammo.tra:3
 msgid "Returning throwing dagger"
-msgstr ""
+msgstr "Dague de jet de retour"
 
 #: hassle_free_ammo.tra:4
 msgid ""
@@ -532,10 +557,25 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"La dague de jet traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau qui n'a qu'un seul tranchant et est un peu moins long. Celle-ci a un manche plus court et est équilibrée différemment, ce qui la rend inutilisable en mêlée.\n"
+"\n"
+"Cette dague a reçu un enchantement mineur. Elle revient toujours dans la main de l'utilisateur. Pourtant, elle frappe comme une arme normale, pas comme une arme magique.\n"
+"\n"
+"PARAMETRES :\n"
+"\n"
+"Dégâts : 1D4\n"
+"Type de dégâts : perforant\n"
+"Poids : 1\n"
+"Facteur de vitesse : 2\n"
+"Type de compétence : Dague\n"
+"Type : arme à 1 main\n"
+"Force nécessaire : 3\n"
+"Non utilisable par :\n"
+" Clerc"
 
 #: hassle_free_ammo.tra:5
 msgid "Returning dart"
-msgstr ""
+msgstr "Fléchette de retour"
 
 #: hassle_free_ammo.tra:6
 msgid ""
@@ -554,10 +594,24 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
+"La fléchette est un petit projectile qui peut être facilement dissimulé, lancé plutôt que tiré par un arc ou une autre arme de jet. \n"
+"\n"
+"Cette fléchette a reçu un enchantement mineur. Elle revient toujours dans la main de l'utilisateur. Pourtant, elle frappe comme une arme normale, pas comme une arme magique.\n"
+"\n"
+"PARAMETRES :\n"
+"\n"
+"Dégâts : 1D3\n"
+"Type de dégâts : projectile (perforant)\n"
+"Poids : 0\n"
+"Facteur de vitesse : 2\n"
+"Type de compétence : Fléchette\n"
+"Type : arme à 1 main\n"
+"Non utilisable par :\n"
+" Clerc"
 
 #: hassle_free_ammo.tra:7
 msgid "Quiver of Plenty"
-msgstr ""
+msgstr "Carquois d'abondance"
 
 #: hassle_free_ammo.tra:8
 msgid ""
@@ -567,10 +621,15 @@ msgid ""
 "\n"
 "Unlimited plain arrows"
 msgstr ""
+"Les carquois enchantés comme celui-ci sont très recherchés par les archers professionnels.\n"
+"\n"
+"STATISTIQUES :\n"
+"\n"
+"Flèches ordinaires illimitées"
 
 #: hassle_free_ammo.tra:9
 msgid "Case of Plenty"
-msgstr ""
+msgstr "Étui d'abondance"
 
 #: hassle_free_ammo.tra:10
 msgid ""
@@ -580,10 +639,15 @@ msgid ""
 "\n"
 "Unlimited plain bolts"
 msgstr ""
+"Les étuis à carreaux enchantés comme celui-ci sont très recherchés par les arbalétriers professionnels.\n"
+"\n"
+"STATISTIQUES :\n"
+"\n"
+"Carreaux ordinaires illimités"
 
 #: hassle_free_ammo.tra:11
 msgid "Bag of Plenty"
-msgstr ""
+msgstr "Sac d'abondance"
 
 #: hassle_free_ammo.tra:12
 msgid ""
@@ -593,6 +657,11 @@ msgid ""
 "\n"
 "Unlimited plain bullets"
 msgstr ""
+"Les sacs à billes enchantés comme celui-ci sont très recherchés par les frondeurs professionnels.\n"
+"\n"
+"STATISTIQUES :\n"
+"\n"
+"Billes ordinaires illimitées"
 
 #: improved_equalizer.tra:1
 msgid ""
@@ -638,6 +707,48 @@ msgid ""
 " Mage\n"
 " Beast Master"
 msgstr ""
+"Épée longue : l'Egaliseur\n"
+"L'âge de cette arme est si élevé que personne ne saurait le deviner, mais des indices de fabrication suggèrent qu'elle a pu être forgée au service de Helm. Également appelée \"Épée de Neutralité\", elle semble avoir été conçue pour l'équilibre et l'élimination des extrêmes. Plus le comportement d'une cible est éloigné de la neutralité, plus les dégâts infligés sont importants. L'égaliseur résiste activement à une utilisation par des personnages d'alignements extrêmes.\n"
+"\n"
+"De plus, l'épée permet à son propriétaire de découvrir les alignements des créatures proches comme le sort de mage, 3 fois par jour.\n"
+"\n"
+"STATISTIQUES :\n"
+"\n"
+"Enchantement : +4\n"
+"\n"
+"Capacités de combat :\n"
+"  50% de chances en touchant un ennemi Bon ou Mauvais de le rendre confus pendant 2 rounds, sauf s'il réussi un jet de sauvetage contre les sorts. Cette capacité ne fonctionne qu'entre les mains d'un personnage qui n'est ni bon ni mauvais.\n"
+"  50% de chances en touchant un ennemi Loyal ou Chaotique de l'aveugler pendant 2 rounds, sauf s'il réussi un jet de sauvetage contre les souffles. Cette capacité ne fonctionne qu'entre les mains d'un personnage qui n'est ni loyal ni chaotique.\n"
+"\n"
+"TAC0 & Dégâts :\n"
+"  contre Neutre strict : +0 au toucher, +0 aux dégâts\n"
+"  contre les alignements non extrêmes ( Chaotique/Loyal Neutre, Neutre Bon/Mauvais) : +2 au toucher, +2 aux dégâts\n"
+"  contre les alignements extrêmes (Chaotique Bon/Mauvais, Loyal Bon/Mauvais) : +4 au toucher, +4 aux dégâts\n"
+"\n"
+"Bonus supplémentaires selon l'alignement du porteur :\n"
+"  Neutre strict : +4 au toucher, +4 aux dégâts\n"
+"  Alignements non extrêmes : +2 au toucher, +2 aux dégâts\n"
+"  Alignements extrêmes : -20 au toucher, -20 aux dégâts\n"
+"\n"
+"Tous les effets de combat sont indépendants et se cumulent les uns avec les autres.\n"
+"\n"
+"Capacités d'équipement :\n"
+"  Immunité au charme et à la confusion\n"
+"\n"
+"Capacités de charge :\n"
+"  Détection de l'alignement 3 fois par jour.\n"
+"\n"
+"Type de dommages : tranchant\n"
+"Poids : 3\n"
+"Facteur de vitesse : 1\n"
+"Type de compétence : épée longue\n"
+"Type : arme à 1 main\n"
+"Force nécessaire : 6\n"
+"Non utilisable par : \n"
+" Druide\n"
+" Clerc\n"
+" Magicien\n"
+" Belluaire"
 
 #: improved_equalizer.tra:2
 msgid ""
@@ -645,81 +756,88 @@ msgid ""
 "without an apprentice, ye'll have to stay here a full day and help me run "
 "the forge."
 msgstr ""
+"Deux choses, mon ami. Cela vous coûtera 12500 pièces d'or pour le travail, "
+"pas moins, et sans apprenti, vous devrez rester ici une journée entière et "
+"m'aider à faire tourner la forge."
 
 #: improved_equalizer.tra:3
 msgid "What would be involved in that?"
-msgstr ""
+msgstr "Qu'est-ce que cela implique ?"
 
 #: improved_strongholds.tra:1
 msgid "Theater earnings are ready for collection."
-msgstr ""
+msgstr "Les recettes du théâtre sont prêtes."
 
 #: improved_strongholds.tra:2
 msgid "The apprentices must have finished the task. Time to check up on them."
 msgstr ""
+"Les apprentis doivent avoir terminé leur tâche. Il est temps de les "
+"examiner."
 
 #: improved_strongholds.tra:3
 msgid "The Grove awaits."
-msgstr ""
+msgstr "Le Bosquet attend."
 
 #: improved_strongholds.tra:4
 msgid "It's time to visit the Cabin."
-msgstr ""
+msgstr "Il est temps de visiter la cabane."
 
 #: improved_strongholds.tra:5
 msgid ""
 "The people of de'Arnise keep require the presence of their <PRO_LADYLORD>."
-msgstr ""
+msgstr "Les gens de de'Arnise ont besoin de la présence de leur Seigneur."
 
 #: improved_strongholds.tra:6
 msgid "Morul has prepared a new batch of potions."
-msgstr ""
+msgstr "Morul a préparé un nouveau lot de potions."
 
 #: improved_strongholds.tra:7
 msgid "The potions are on the table in the laboratory, <SIRMAAM>."
-msgstr ""
+msgstr "Les potions sont sur la table dans le laboratoire <SIRMAAM>."
 
 #: improved_strongholds.tra:8
 msgid ""
 "Your presence is required at the Temple. The needs of the faithful must be "
 "tended to."
 msgstr ""
+"Votre présence est requise à l'église. Les besoins des fidèles doivent être "
+"pris en charge."
 
 #: more_map_notes.tra:3
 msgid "Nadine's house"
-msgstr ""
+msgstr "Maison de Nadine"
 
 #: more_map_notes.tra:5
 msgid "Sunin's house"
-msgstr ""
+msgstr "Maison de Sunin"
 
 #: more_map_notes.tra:6
 msgid "Cordyr's house"
-msgstr ""
+msgstr "Maison de Cordyr"
 
 #: more_map_notes.tra:7
 msgid "Nadarin's warehouse"
-msgstr ""
+msgstr "Entrepôt de Nadarin"
 
 #: more_map_notes.tra:8
 msgid "Noralee's warehouse"
-msgstr ""
+msgstr "Entrepôt de Noralee"
 
 #: more_map_notes.tra:9
 msgid "Ghorak's house"
-msgstr ""
+msgstr "Maison de Ghorak"
 
 #: more_map_notes.tra:10
 msgid "Nemphre's house"
-msgstr ""
+msgstr "Maison de Nemphre"
 
 #: more_map_notes.tra:11
 msgid "Nadarin's office"
-msgstr ""
+msgstr "Bureau de Nadarin"
 
 #: more_map_notes.tra:12
 msgid "Fenten's house"
-msgstr ""
+msgstr "Maison de Fenten"
 
 #: more_map_notes.tra:13
 msgid "Evalt"
@@ -727,11 +845,11 @@ msgstr ""
 
 #: more_map_notes.tra:14
 msgid "Taloun's house"
-msgstr ""
+msgstr "Taloun"
 
 #: more_map_notes.tra:15
 msgid "Kaishas' house"
-msgstr ""
+msgstr "Kaishas Gan"
 
 #: more_map_notes.tra:16
 msgid "Maralee"
@@ -763,15 +881,15 @@ msgstr ""
 
 #: more_map_notes.tra:23
 msgid "Mirianne's house"
-msgstr ""
+msgstr "Maison de Mirianne"
 
 #: more_map_notes.tra:24
 msgid "Kagain's house"
-msgstr ""
+msgstr "Kagain"
 
 #: more_map_notes.tra:25
 msgid "Firebead's house"
-msgstr ""
+msgstr "Maison de Firebead"
 
 #: more_map_notes.tra:26
 msgid "Kivan"
@@ -783,7 +901,7 @@ msgstr ""
 
 #: more_map_notes.tra:28
 msgid "Kirian's band"
-msgstr ""
+msgstr "Groupe de Kirian"
 
 #: more_map_notes.tra:29
 msgid "Mutamin"
@@ -799,11 +917,11 @@ msgstr ""
 
 #: more_map_notes.tra:32
 msgid "Hobgoblin camp"
-msgstr ""
+msgstr "Camp de hobgobelins"
 
 #: more_map_notes.tra:33
 msgid "Portalbendarwinden"
-msgstr ""
+msgstr "Portal ben darwin den"
 
 #: more_map_notes.tra:34
 msgid "Basillus"
@@ -811,7 +929,7 @@ msgstr ""
 
 #: more_map_notes.tra:35
 msgid "Waterfall"
-msgstr ""
+msgstr "Chute d'eau"
 
 #: more_map_notes.tra:36
 msgid "Albert"
@@ -823,7 +941,7 @@ msgstr ""
 
 #: more_map_notes.tra:38
 msgid "Lena and Samuel"
-msgstr ""
+msgstr "Lena et Samuel"
 
 #: more_map_notes.tra:39
 msgid "Sarhedra"
@@ -843,7 +961,7 @@ msgstr ""
 
 #: more_map_notes.tra:44
 msgid "Mad Arcand"
-msgstr ""
+msgstr "Arcand le fou"
 
 #: more_map_notes.tra:46
 msgid "Arkushule"
@@ -867,199 +985,199 @@ msgstr ""
 
 #: more_map_notes.tra:62
 msgid "Joseph's house"
-msgstr ""
+msgstr "Maison de Joseph"
 
 #: more_map_notes.tra:63
 msgid "Tavern"
-msgstr ""
+msgstr "Taverne"
 
 #: more_map_notes.tra:64
 msgid "General store"
-msgstr ""
+msgstr "Magasin général"
 
 #: more_map_notes.tra:65
 msgid "Tremain's house"
-msgstr ""
+msgstr "Maison de Tremain"
 
 #: more_map_notes.tra:66
 msgid "Rinnie's house"
-msgstr ""
+msgstr "Maison de Rinnie"
 
 #: more_map_notes.tra:67
 msgid "Bheren's house"
-msgstr ""
+msgstr "Maison de Bheren"
 
 #: more_map_notes.tra:68
 msgid "Jardak's house"
-msgstr ""
+msgstr "Maison de Jardak"
 
 #: more_map_notes.tra:71
 msgid "To South district, Harbor Master's Building"
-msgstr ""
+msgstr "Vers le quartier Sud, Bâtisse du maître du port"
 
 #: more_map_notes.tra:72
 msgid "To South district, westside"
-msgstr ""
+msgstr "Vers le quartier Sud, coté ouest"
 
 #: more_map_notes.tra:73
 msgid "To Central District, Felonius Gist's Manor"
-msgstr ""
+msgstr "Vers le quartier central, Manoir de Felonius Gist"
 
 #: more_map_notes.tra:74
 msgid "To North District, Bheren's house"
-msgstr ""
+msgstr "Vers le quartier Nord, Maison de Bheren"
 
 #: more_map_notes.tra:75
 msgid "To North District, Three Old Kegs"
-msgstr ""
+msgstr "Vers le quartier Nord, Auberge des Trois Vieilles Chopes"
 
 #: more_map_notes.tra:76
 msgid "To North District, Ramazith's tower"
-msgstr ""
+msgstr "Vers le quartier Nord, Tour de Ramazith"
 
 #: more_map_notes.tra:77
 msgid "To Central District, Oberon's estate"
-msgstr ""
+msgstr "Vers le quartier central, Domaine d'Obéron"
 
 #: more_map_notes.tra:78
 msgid "To Central District, Poultry store"
-msgstr ""
+msgstr "Vers le quartier central, Magasin de volaille"
 
 #: more_map_notes.tra:79
 msgid "To Central District, westside"
-msgstr ""
+msgstr "Vers le quartier central, coté ouest"
 
 #: more_map_notes.tra:80
 msgid "To Central District, Nadine's house"
-msgstr ""
+msgstr "Vers le quartier central, Maison de Nadine"
 
 #: more_map_notes.tra:81
 msgid "To South District, eastside"
-msgstr ""
+msgstr "Vers le quartier Sud, coté est"
 
 #: more_map_notes.tra:82
 msgid "To Central District, Jopalin tavern"
-msgstr ""
+msgstr "Vers le quartier central, Taverne de Jopalin"
 
 #: more_map_notes.tra:83
 msgid "To Central District, southside"
-msgstr ""
+msgstr "Vers le quartier central, coté sud"
 
 #: more_map_notes.tra:84
 msgid "To South District, Iron Throne"
-msgstr ""
+msgstr "Vers le quartier Sud, Trône de fer"
 
 #: more_map_notes.tra:85
 msgid "To Undercellar"
-msgstr ""
+msgstr "Vers les caves souterraines"
 
 #: more_map_notes.tra:86
 msgid "To East Sewers"
-msgstr ""
+msgstr "Vers les égouts de l'est"
 
 #: more_map_notes.tra:87
 msgid "To West Sewers"
-msgstr ""
+msgstr "Vers les égouts de l'ouest"
 
 #: more_map_notes.tra:88
 msgid "To Central Sewers"
-msgstr ""
+msgstr "Vers les égouts centraux"
 
 #: more_map_notes.tra:90
 msgid "To Northeast District, Ilmater's Shrine"
-msgstr ""
+msgstr "Vers le quartier nord-est, Chapelle d'Ilmater"
 
 #: more_map_notes.tra:91
 msgid "To Northeast District, Counting House"
-msgstr ""
+msgstr "Vers le quartier nord-est, Bureau des comptes"
 
 #: more_map_notes.tra:92
 msgid "To East District, Sorcerous Sundries"
-msgstr ""
+msgstr "Vers le quartier est, Bazar magique"
 
 #: more_map_notes.tra:93
 msgid "To Southeast District, Blade and Stars"
-msgstr ""
+msgstr "Vers le quartier sud-est, Auberge de la Lame et des Étoiles"
 
 #: more_map_notes.tra:94
 msgid "To Southeast District, NE corner"
-msgstr ""
+msgstr "Vers le quartier sud-est, coin NE"
 
 #: more_map_notes.tra:95
 msgid "To East District, Elfsong tavern"
-msgstr ""
+msgstr "Vers le quartier est, Taverne du Chant de l'Elfe"
 
 #: more_map_notes.tra:96
 msgid "To East District, Maltz's Weapon shop"
-msgstr ""
+msgstr "Vers le quartier est, Bazar de Maltz"
 
 #: more_map_notes.tra:97
 msgid "To Southeast District, east side"
-msgstr ""
+msgstr "Vers le quartier sud-est, coté est"
 
 #: more_map_notes.tra:98
 msgid "To Southeast District, north side"
-msgstr ""
+msgstr "Vers le quartier sud-est, coté nord"
 
 #: more_map_notes.tra:99
 msgid "To Southeast District, behind Sorcerous Sundries"
-msgstr ""
+msgstr "Vers le quartier sud-est, derrière le Bazar magique"
 
 #: more_map_notes.tra:100
 msgid "To Southwest district, Sunin's house"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, Maison de Sunin"
 
 #: more_map_notes.tra:101
 msgid "To Southwest district, behind Merchant's league"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, derrière la Ligue des marchands"
 
 #: more_map_notes.tra:102
 msgid "To Southwest district, NE corner"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, coin NE"
 
 #: more_map_notes.tra:103
 msgid "To Southwest district, center"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, centre"
 
 #: more_map_notes.tra:104
 msgid "To West district, NE corner"
-msgstr ""
+msgstr "Vers le quartier ouest, coin NE"
 
 #: more_map_notes.tra:105
 msgid "To Southwest district, Seven Suns"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, Consortium des Sept Soleils"
 
 #: more_map_notes.tra:106
 msgid "To Southwest district, behind Flaming Fist headquarters"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, Quartier général du Poing Enflammé"
 
 #: more_map_notes.tra:107
 msgid "To Southwest district, east side"
-msgstr ""
+msgstr "Vers le quartier sud-ouest, coté est"
 
 #: more_map_notes.tra:108
 msgid "To Northwest district, east of Helm and Cloak"
-msgstr ""
+msgstr "Vers le quartier nord-ouest, à l'est du Heaume et de la Cape"
 
 #: more_map_notes.tra:109
 msgid "To Northwest district, west of Helm and Cloak"
-msgstr ""
+msgstr "Vers le quartier nord-ouest, à l'ouest du Heaume et de la Cape"
 
 #: more_map_notes.tra:110
 msgid "To Northwest district, NE corner"
-msgstr ""
+msgstr "Vers le quartier nord-ouest, coin NE"
 
 #: more_map_notes.tra:111
 msgid "To Northwest district, east side"
-msgstr ""
+msgstr "Vers le quartier nord-ouest, coté est"
 
 #: more_map_notes.tra:112
 msgid "To Northeast district, center"
-msgstr ""
+msgstr "Vers le quartier nord-ouest, centre"
 
 #: more_map_notes.tra:113
 msgid "To Northeast district, Pheirkas' house"
-msgstr ""
+msgstr "Vers le quartier nord-ouest, maison de Pheirka"
 
 #: more_map_notes.tra:120
 msgid "Gandolar Luckyfoot"
@@ -1155,15 +1273,15 @@ msgstr ""
 
 #: pnp_protection_from_evil.tra:1
 msgid "Charmed"
-msgstr ""
+msgstr "Charmé"
 
 #: pnp_protection_from_evil.tra:2
 msgid "Dire Charmed"
-msgstr ""
+msgstr "Charmé"
 
 #: pnp_protection_from_evil.tra:3
 msgid "Dominated"
-msgstr ""
+msgstr "Dominé"
 
 #: pnp_protection_from_evil.tra:4
 msgid ""
@@ -1180,6 +1298,18 @@ msgid ""
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
 msgstr ""
+"Protection contre le mal (Abjuration)\n"
+"Niveau : 1\n"
+"Portée : Toucher\n"
+"Durée : 2 rounds/niveau\n"
+"Temps d'incantation : 1\n"
+"Zone d'effet : Créature touchée\n"
+"Jets de sauvegarde : Aucun\n"
+"\n"
+"Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :\n"
+"- Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.\n"
+"- Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.\n"
+"- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée."
 
 #: pnp_protection_from_evil.tra:5
 msgid ""
@@ -1197,6 +1327,19 @@ msgid ""
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
 msgstr ""
+"Protection contre le mal (Abjuration)\n"
+"Niveau : 1\n"
+"Sphère : Protection\n"
+"Portée : Toucher\n"
+"Durée : 3 rounds/niveau\n"
+"Temps d'incantation : 1\n"
+"Zone d'effet : Créature touchée\n"
+"Jets de sauvegarde : Aucun\n"
+"\n"
+"Lorsque ce sort est lancé, il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :\n"
+"- Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.\n"
+"- Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.\n"
+"- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée."
 
 #: pnp_protection_from_evil.tra:6
 msgid ""
@@ -1215,42 +1358,56 @@ msgid ""
 "- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
 "- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
 msgstr ""
+"Protection contre le mal Rayon de 3 mètres\n"
+"(Abjuration)\n"
+"Niveau : 4\n"
+"Sphère : Protection\n"
+"Portée : Toucher\n"
+"Durée : 1 tour/niveau\n"
+"Temps d'incantation : 7\n"
+"Zone d'effet : rayon de 3 mètres\n"
+"Jets de sauvegarde : Aucun\n"
+"\n"
+"Lorsque ce sort est lancé, toutes les créatures situées dans un rayon de 3 mètres sont affectées individuellement par \"protection contre le mal\". Il crée une barrière magique autour du bénéficiaire. La barrière se déplace avec le bénéficiaire et a trois effets majeurs :\n"
+"- Tout d'abord, toutes les attaques effectuées par des créatures maléfiques ou enchantées contre la créature protégée subissent une pénalité de -2 au toucher. Les jets de sauvegarde provoqués par ces attaques sont effectués par la créature protégée avec un bonus de +2.\n"
+"- Deuxièmement, toute tentative de possession ou de contrôle mental (comme par la capacité de charme d'un vampire) de la créature protégée est bloquée par ce sort.\n"
+"- Troisièmement, le sort empêche tout contact corporel avec les démons invoqués. Cette protection prend fin si le personnage protégé attaque la créature bloquée."
 
 #: potions_no_stack.tra:1
 msgid "Potion effect refreshed"
-msgstr ""
+msgstr "Effet de la potion rafraîchi"
 
 #: potions_no_stack.tra:2
 msgid "Protection scroll effect refreshed"
-msgstr ""
+msgstr "Effet du parchemin rafraîchi"
 
 #: really_mirrored_eyes.tra:1
 msgid "gaze"
-msgstr ""
+msgstr "regard"
 
 #: sensible_spins.tra:1
 msgid "Spin stopped"
-msgstr ""
+msgstr "Arrêt de la spirale"
 
 #: sensible_spins.tra:2
 msgid "Cancel Spin"
-msgstr ""
+msgstr "Annuler la spirale"
 
 #: setup.tra:101
 msgid "BGT or EET only"
-msgstr ""
+msgstr "Seulement BGT ou EET"
 
 #: setup.tra:102
 msgid "BG1 content not present"
-msgstr ""
+msgstr "Le contenu de BG1 n'est pas present"
 
 #: setup.tra:103
 msgid "Windows only"
-msgstr ""
+msgstr "Windows seulement"
 
 #: setup.tra:122
 msgid "BG saga only"
-msgstr ""
+msgstr "Saga BG seulement"
 
 #: setup.tra:123
 msgid ""
@@ -1258,310 +1415,329 @@ msgid ""
 "awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-"
 "iwdee instead."
 msgstr ""
+"EE n'est pas supporte. Essayez "
+"https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-"
+"master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee a la place."
 
 #: setup.tra:124
 msgid "Requires ToB or EE engine"
-msgstr ""
+msgstr "Necessite ToB ou un jeu EE"
 
 #: setup.tra:125
 msgid "Requires BG2 or EE engine"
-msgstr ""
+msgstr "Necessite BG2 ou un jeu EE"
 
 #: setup.tra:126
 msgid "Requires BG2"
-msgstr ""
+msgstr "Necessite BG2"
 
 #: setup.tra:127
 msgid "Only non-EE engines"
-msgstr ""
+msgstr "Seulement pour les jeux non-EE"
 
 #: setup.tra:128
 msgid "Requires Classic ToB engine"
-msgstr ""
+msgstr "Necessite oToB"
 
 #: setup.tra:129
 msgid "BGT only"
-msgstr ""
+msgstr "BGT seulement"
 
 #: setup.tra:130
 msgid "Requires Classic ToB or BG(2)EE or IWDEE engine"
-msgstr ""
+msgstr "Necessite oToB ou BG(2)EE ou IWDEE"
 
 #: setup.tra:131
 msgid "Requires TotSC content"
-msgstr ""
+msgstr "Necessite le contenu de TotSC"
 
 #: setup.tra:132
 msgid "Couldn't detect your platform, failing."
-msgstr ""
+msgstr "Impossible de detecter votre plateforme, echec."
 
 #: setup.tra:200
 msgid "Items"
-msgstr ""
+msgstr "Objets"
 
 #: setup.tra:201
 msgid "Hassle-free ammo"
-msgstr ""
+msgstr "Plus de probleme de munitions"
 
 #: setup.tra:202
 msgid "Remove blur graphics from items"
-msgstr ""
+msgstr "Supprimer les effets de flou des objets"
 
 #: setup.tra:203
 msgid "Sensible Cloak of Mirroring"
-msgstr ""
+msgstr "Cape de reflexion judicieuse"
 
 #: setup.tra:204
 msgid "Effects of scrolls and potions do not stack with themselves"
-msgstr ""
+msgstr "Les effets des parchemins et des potions ne s'empilent pas entre eux."
 
 #: setup.tra:205
 msgid "Sensible wand of frost"
-msgstr ""
+msgstr "Baguette de givre judicieuse"
 
 #: setup.tra:206
 msgid "Single target"
-msgstr ""
+msgstr "Cible unique"
 
 #: setup.tra:207
 msgid "AoE"
-msgstr ""
+msgstr "Zone d'effet"
 
 #: setup.tra:208
 msgid "Working protection from poison"
-msgstr ""
+msgstr "Protection contre le poison fonctionnelle"
 
 #: setup.tra:210
 msgid "PnP-like protection items"
-msgstr ""
+msgstr "Objets de protection vraiment PnP"
 
 #: setup.tra:211
 msgid "2E-like: saving throws stack, AC doesn't"
 msgstr ""
+"Comme dans la 2eme edition : les jets de sauvegarde s'empilent, la CA ne "
+"s'empile pas"
 
 #: setup.tra:212
 msgid "3E-like: no stacking, best bonus takes effect"
 msgstr ""
+"Comme dans la 3eme edition : pas d'empilement, le meilleur bonus prend effet"
 
 #: setup.tra:223
 msgid "Potion of Really Mirrored Eyes"
-msgstr ""
+msgstr "Vraie Potion de retrovision"
 
 #: setup.tra:236
 msgid "Unlimited goodberries stacking"
-msgstr ""
+msgstr "Empilement illimite de bonnes baies"
 
 #: setup.tra:240
 msgid "Throwing weapons damage type"
-msgstr ""
+msgstr "Type de degâts des armes de jet"
 
 #: setup.tra:241
 msgid "Add strength bonus"
-msgstr ""
+msgstr "Ajouter un bonus de force"
 
 #: setup.tra:242
 msgid "Make axes slashing and hammers blunt"
-msgstr ""
+msgstr "Rendre les haches tranchantes et les marteaux contondants"
 
 #: setup.tra:243
 msgid "Both of the above options"
-msgstr ""
+msgstr "Les deux options ci-dessus"
 
 #: setup.tra:250
 msgid "Improved Shandalar's cloak"
-msgstr ""
+msgstr "Cape de Shandalar amelioree"
 
 #: setup.tra:252
 msgid "Algernon's cloak: usable once per day"
-msgstr ""
+msgstr "Cape d'Algernon : utilisable une fois par jour"
 
 #: setup.tra:260
 msgid "Improved Equalizer"
-msgstr ""
+msgstr "Egaliseur ameliore"
 
 #: setup.tra:261
 msgid "Distinct quest items"
-msgstr ""
+msgstr "Objets de quete distincts"
 
 #: setup.tra:300
 msgid "Traps"
-msgstr ""
+msgstr "Pieges"
 
 #: setup.tra:301
 msgid "Trap intuition"
-msgstr ""
+msgstr "Intuition de piege"
 
 #: setup.tra:302
 msgid "not in combat"
-msgstr ""
+msgstr "pas en combat"
 
 #: setup.tra:303
 msgid "works in combat"
-msgstr ""
+msgstr "fonctionne en combat"
 
 #: setup.tra:304
 msgid "Intuition not selected, skipping"
-msgstr ""
+msgstr "Intuition non selectionnee, sauter"
 
 #: setup.tra:305
 msgid "Trap intuition: pause game"
-msgstr ""
+msgstr "Intuition piege : mettre le jeu en pause"
 
 #: setup.tra:306
 msgid "ground traps only"
-msgstr ""
+msgstr "pieges au sol uniquement"
 
 #: setup.tra:307
 msgid "all traps"
-msgstr ""
+msgstr "Tous les pieges"
 
 #: setup.tra:308
 msgid "Trap intuition: center screen"
-msgstr ""
+msgstr "Intuition piege : centrer l'ecran"
 
 #: setup.tra:309
 msgid "on the character"
-msgstr ""
+msgstr "sur le personnage"
 
 #: setup.tra:310
 msgid "on the supposed trap"
-msgstr ""
+msgstr "sur le piege suppose"
 
 #: setup.tra:311
 msgid "Trap reminders"
-msgstr ""
+msgstr "Rappels de pieges"
 
 #: setup.tra:312
 msgid "generic"
-msgstr ""
+msgstr "generique"
 
 #: setup.tra:313
 msgid "disclose trap type"
-msgstr ""
+msgstr "reveler le type de piege"
 
 #: setup.tra:314
 msgid "Trap intuition: toggle Find Traps automatically"
 msgstr ""
+"Intuition de piege : basculer automatiquement sur la recherche de pieges"
 
 #: setup.tra:315
 msgid "Improved trap detection: increase trap sense range"
 msgstr ""
+"Amelioration de la detection des pieges : augmentation de la portee de "
+"detection des pieges"
 
 #: setup.tra:316
 msgid "Trap intuition: play \"trap found\" sound"
-msgstr ""
+msgstr "Intuition piege : jouer le son \"piege detecte\""
 
 #: setup.tra:317
 msgid ""
 "Improved trap detection: core (REQUIRED for any of previous traps components"
 " to work)"
 msgstr ""
+"Amelioration de la detection des pieges : noyau (NECESSAIRE pour que les "
+"composants precedents fonctionnent)"
 
 #: setup.tra:318
 msgid "Improved trap detection: instant detection"
-msgstr ""
+msgstr "Detection amelioree des pieges : detection instantanee"
 
 #: setup.tra:319
 msgid "All Improved Traps components must be installed BEFORE core"
 msgstr ""
+"Tous les composants de pieges ameliores doivent être installes AVANT le "
+"noyau"
 
 #: setup.tra:350
 msgid "Trap fixes"
-msgstr ""
+msgstr "Horreurs casquees de Davaeorn non-desarmable"
 
 #: setup.tra:500
 msgid "Stores"
-msgstr ""
+msgstr "Magasins"
 
 #: setup.tra:501
 msgid "Can't steal from fences"
-msgstr ""
+msgstr "On ne peut pas voler les receleurs"
 
 #: setup.tra:502
 msgid "Close shop steal exploit"
-msgstr ""
+msgstr "Supprimer la triche du vol en boucle"
 
 #: setup.tra:503
 msgid "Can't steal from any stores"
-msgstr ""
+msgstr "On ne peut pas voler dans les magasins"
 
 #: setup.tra:504
 msgid "More ankheg armors by Taerom"
-msgstr ""
+msgstr "Plus d'armures d'Ankheg par Taerom"
 
 #: setup.tra:505
 msgid ""
 "Stores always buy goods at the same (low) price | POWER USER component, "
 "consult readme"
 msgstr ""
+"Les magasins achetent toujours les marchandises au meme prix (bas) | "
+"composant pour POWER USER, consultez le readme sur Github"
 
 #: setup.tra:506
 msgid "Cleanup stores"
-msgstr ""
+msgstr "Nettoyer les magasins"
 
 #: setup.tra:507
 msgid "Limited stock"
-msgstr ""
+msgstr "Stock limite"
 
 #: setup.tra:600
 msgid "Assorted convenience components"
-msgstr ""
+msgstr "Composants de commodite"
 
 #: setup.tra:601
 msgid "Less autosaves | POWER USER component, consult readme"
 msgstr ""
+"Moins de sauvegardes automatiques | composant pour POWER USER, consultez le "
+"readme sur Github"
 
 #: setup.tra:602
 msgid "More map notes"
-msgstr ""
+msgstr "Plus de notes sur les cartes"
 
 #: setup.tra:603
 msgid "Disable lightning during rain"
-msgstr ""
+msgstr "Desactiver les eclairs pendant la pluie"
 
 #: setup.tra:604
 msgid "Mod romance cheats | POWER USER component, consult readme"
 msgstr ""
+"Triche sur les mods de romance | composant pour POWER USER, consultez le "
+"readme sur Github"
 
 #: setup.tra:605
 msgid "Disable intro movies"
-msgstr ""
+msgstr "Desactiver les films d'intro"
 
 #: setup.tra:606
 msgid "Faster loading times"
-msgstr ""
+msgstr "Reduire les temps de chargement"
 
 #: setup.tra:607
 msgid "Add BG1 tomes stats bonuses to new BG2 characters"
-msgstr ""
+msgstr "Ajouter les bonus de stats des tomes BG1 aux nouveaux personnages BG2"
 
 #: setup.tra:608
 msgid "Each stat gets +1"
-msgstr ""
+msgstr "Chaque stat obtient +1"
 
 #: setup.tra:609
 msgid "Each stat except Wisdom gets +1, Wisdom gets +3"
-msgstr ""
+msgstr "Chaque stat sauf la Sagesse obtient +1, la Sagesse obtient +3"
 
 #: setup.tra:610
 msgid "Starting bags"
-msgstr ""
+msgstr "Sacs au depart"
 
 #: setup.tra:611
 msgid "Gem, scroll, potion, ammo (GSPA)"
-msgstr ""
+msgstr "Gemmes, parchemins, potions, munitions (GSPA)"
 
 #: setup.tra:612
 msgid "GSPA + holding"
-msgstr ""
+msgstr "GSPA + de contenance"
 
 #: setup.tra:613
 msgid "GSPA + holding - all bottomless!"
-msgstr ""
+msgstr "GSPA + de contenance - tous sans fond !"
 
 #: setup.tra:620
 msgid "More mage fencing scrolls in BG1"
-msgstr ""
+msgstr "Plus de parchemins pour mage dans l'extension de BG1"
 
 #: setup.tra:630
 msgid "Faster forging dialogs"
@@ -1578,196 +1754,200 @@ msgstr ""
 
 #: setup.tra:700
 msgid "Quest and dialog tweaks"
-msgstr ""
+msgstr "Quetes et dialogues"
 
 #: setup.tra:701
 msgid "Bloodless deeds"
-msgstr ""
+msgstr "Actions sans sang"
 
 #: setup.tra:702
 msgid "Improved strongholds"
-msgstr ""
+msgstr "Amelioration des forteresses"
 
 #: setup.tra:703
 msgid "Save Melicamp"
-msgstr ""
+msgstr "Sauvetage de Melicamp"
 
 #: setup.tra:800
 msgid "Spells and abilities"
-msgstr ""
+msgstr "Sorts et capacites"
 
 #: setup.tra:801
 msgid "Spider form ignores web"
-msgstr ""
+msgstr "Forme d'araignee ignore la toile"
 
 #: setup.tra:802
 msgid "Cheesy Slayer: full heal on change"
-msgstr ""
+msgstr "Ecorcheur : soins complets en cas de changement"
 
 #: setup.tra:803
 msgid "Cheesy Slayer: reputation"
-msgstr ""
+msgstr "Ecorcheur : reputation"
 
 #: setup.tra:804
 msgid "no loss"
-msgstr ""
+msgstr "pas de perte"
 
 #: setup.tra:805
 msgid "reduced loss"
-msgstr ""
+msgstr "perte reduite"
 
 #: setup.tra:806
 msgid "True True Sight"
-msgstr ""
+msgstr "Veritable Vision veritable"
 
 #: setup.tra:807
 msgid "Sensible Otiluke's Resilient Sphere"
-msgstr ""
+msgstr "Sphere de resistance d'Otiluke plus pratique"
 
 #: setup.tra:808
 msgid "Greater Command AoE"
-msgstr ""
+msgstr "Zone d'effet d'Ordre Majeur"
 
 #: setup.tra:809
 msgid "Working Non-Detection"
-msgstr ""
+msgstr "Non-detection fonctionnelle"
 
 #: setup.tra:810
 msgid "Non-Detection spell is not present in game"
-msgstr ""
+msgstr "Le sort Non-Detection n'est pas present dans le jeu"
 
 #: setup.tra:811
 msgid "Unstack Chaos Shield"
-msgstr ""
+msgstr "Non-cumul de bouclier du chaos"
 
 #: setup.tra:812
 msgid "Chaos Shield spells are not present in game"
-msgstr ""
+msgstr "Les sorts de Bouclier du Chaos ne sont pas presents dans le jeu"
 
 #: setup.tra:813
 msgid "Uncheese Project Image | POWER USER component, consult readme"
-msgstr ""
+msgstr "Supprimer la triche avec Image Projetee"
 
 #: setup.tra:814
 msgid "Project Image spell is not present in game"
-msgstr ""
+msgstr "Le sort Image Projetee n'est pas present dans le jeu"
 
 #: setup.tra:815
 msgid "Uncheese Mislead"
-msgstr ""
+msgstr "Supprimer la triche avec Double Illusoire"
 
 #: setup.tra:816
 msgid "Mislead spell is not present in game"
-msgstr ""
+msgstr "Le sort Double Illusoire n'est pas present dans le jeu"
 
 #: setup.tra:818
 msgid "Sensible Blade spins"
-msgstr ""
+msgstr "Spirales de maitre-lames plus pratiques"
 
 #: setup.tra:820
 msgid "PnP Protection from Evil"
-msgstr ""
+msgstr "Protection contre le mal PnP"
 
 #: setup.tra:821
 msgid "Non-hostile Grease"
-msgstr ""
+msgstr "Graisse non hostile"
 
 #: setup.tra:822
 msgid "Tracking!"
-msgstr ""
+msgstr "Pistage!"
 
 #: setup.tra:900
 msgid "Familiars"
-msgstr ""
+msgstr "Familiers"
 
 #: setup.tra:901
 msgid "Smarter familiars"
-msgstr ""
+msgstr "Familiers plus intelligents"
 
 #: setup.tra:902
 msgid "More resilient familiars"
-msgstr ""
+msgstr "Familiers plus resistants"
 
 #: setup.tra:1000
 msgid "Soundsets"
-msgstr ""
+msgstr "Ensemble de sons"
 
 #: setup.tra:1001
 msgid "Compliments and insults"
-msgstr ""
+msgstr "Compliments et insultes"
 
 #: setup.tra:1002
 msgid "Reintroduce"
-msgstr ""
+msgstr "Reintroduire"
 
 #: setup.tra:1003
 msgid "Reintroduce and adjust to framerate"
-msgstr ""
+msgstr "Reintroduire et ajuster au framerate"
 
 #: setup.tra:1004
 msgid "Disable"
-msgstr ""
+msgstr "Desactiver"
 
 #: setup.tra:1010
 msgid "Extended soundsets for joinable NPCs"
-msgstr ""
+msgstr "Sons etendus pour les PNJ pouvant se joindre au groupe"
 
 #: setup.tra:1011
 msgid "Additions only"
-msgstr ""
+msgstr "Ajouts seulement"
 
 #: setup.tra:1012
 msgid "Prefer BG1 sounds"
-msgstr ""
+msgstr "Preferer les sons de BG1"
 
 #: setup.tra:1013
 msgid "Prefer BG2 sounds"
-msgstr ""
+msgstr "Preferer les sons de BG2"
 
 #: setup.tra:1020
 msgid "No talking when hiding in shadows"
-msgstr ""
+msgstr "Ne pas parler quand on se cache dans l'ombre"
 
 #: setup.tra:1021
 msgid "Make NPC soundsets available to PC"
-msgstr ""
+msgstr "Mettre les sons des PNJ a la disposition des PC"
 
 #: setup.tra:1100
 msgid "Gameplay, rules, difficulty"
-msgstr ""
+msgstr "Jeu, regles, difficulte"
 
 #: setup.tra:1102
 msgid "No XP farming"
-msgstr ""
+msgstr "Pas de farming d'XP"
 
 #: setup.tra:1103
 msgid "Can't steal Carsomyr"
-msgstr ""
+msgstr "On ne peut pas voler Carsomyr"
 
 #: setup.tra:1104
 msgid "True True Grandmastery"
-msgstr ""
+msgstr "Vraie Vraie Grande-maitrise"
 
 #: setup.tra:1105
 msgid "Sensible multiclass restrictions"
-msgstr ""
+msgstr "Restrictions des multi-classes plus pratiques"
 
 #: setup.tra:1110
 msgid "Fair fights | POWER USER component, consult readme"
 msgstr ""
+"Combats equitables | composant pour POWER USER, consultez le readme sur "
+"Github"
 
 #: setup.tra:1111
 msgid "Just a few select enemies"
-msgstr ""
+msgstr "Quelques ennemis bien precis"
 
 #: setup.tra:1112
 msgid ""
 "Also remove undroppable items granting unfair advantages from all enemies"
 msgstr ""
+"Supprimez egalement les objets recuperables accordant des avantages injustes"
+" a tous les ennemis"
 
 #: shandalars_cloak.tra:1
 msgid "Cloak of Arachnida"
-msgstr ""
+msgstr "Cape d'arachnide"
 
 #: shandalars_cloak.tra:2
 msgid ""
@@ -1784,375 +1964,402 @@ msgid ""
 "Saving Throws:  +2 bonus vs Poison.\n"
 "Special:  The wearer is immune to webs, and can cast a double-sized Web once per day."
 msgstr ""
+"Cette cape a été à l'origine volée à Shandalar par le puissant mage Semia, sans doute pour les puissantes magies tissées dans le tissu. La façon dont elle est arrivée en votre possession et le destin de Semia sont des mystères complets, qui n'ont aucune chance d'être résolus.\n"
+"\n"
+"La cape est tissée en soie d'araignée et imprégnée d'une puissante magie. Elle protège celui qui la porte de l'immobilisation par les toiles et de tous les sorts qui s'y apparentent. Cependant, elle n'offre aucune protection contre d'autres effets nuisant aux mouvements.\n"
+"\n"
+"De plus, la cape permet de lancer Toile d'araignée une fois par jour et offre une protection supplémentaire contre le poison.\n"
+"\n"
+"STATISTIQUES :\n"
+"\n"
+"Capacité d'équipement :\n"
+"Jets de sauvegarde : Bonus de +2 contre le poison.\n"
+"Immunisé contre les toiles d’araignée\n"
+"\n"
+"Capacité de charge :\n"
+"Toile d'araignée une fois par jour.\n"
+"\n"
+"Poids : 0"
 
 #: smarter_familiars.tra:15
 msgid "Boss, your pack is full."
-msgstr ""
+msgstr "Maître, votre sac est plein."
 
 #: smarter_familiars.tra:100
 msgid "Yes, boss?"
-msgstr ""
+msgstr "Oui, Maître?"
 
 #: smarter_familiars.tra:101
 msgid "Let's change formation."
-msgstr ""
+msgstr "Changeons de formation."
 
 #: smarter_familiars.tra:102
 msgid "We need to discuss combat."
-msgstr ""
+msgstr "Nous devons discuter du combat."
 
 #: smarter_familiars.tra:103
 msgid "I want to give you new instructions about the loot."
-msgstr ""
+msgstr "Je veux te donner de nouvelles instructions à propos du butin."
 
 #: smarter_familiars.tra:104
 msgid "Here, take this potion."
-msgstr ""
+msgstr "Tiens, prends cette potion."
 
 #: smarter_familiars.tra:105
 msgid "Ah, maybe later."
-msgstr ""
+msgstr "Ah, peut-être plus tard."
 
 #: smarter_familiars.tra:201
 msgid "Follow me at all times."
-msgstr ""
+msgstr "Suis-moi en permanence."
 
 #: smarter_familiars.tra:202
 msgid "Stop following me all the time."
-msgstr ""
+msgstr "Arrête de me suivre tout le temps."
 
 #: smarter_familiars.tra:203
 msgid "Move faster, will you? Don't lag behind."
-msgstr ""
+msgstr "Va plus vite, tu veux bien ? Ne reste pas à la traîne."
 
 #: smarter_familiars.tra:204
 msgid "Don't run so fast. I can't catch up to you."
-msgstr ""
+msgstr "Ne cours pas si vite. Je ne peux pas te rattraper."
 
 #: smarter_familiars.tra:205
 msgid "Actually, nevermind. Distance is fine for now."
-msgstr ""
+msgstr "C'est rien, oubli. La distance est bonne pour le moment."
 
 #: smarter_familiars.tra:301
 msgid "If you see any danger, jump into my backpack right away."
-msgstr ""
+msgstr "Si tu vois un danger, saute dans mon sac tout de suite !"
 
 #: smarter_familiars.tra:302
 msgid "Don't hide in my pack when you see enemies."
-msgstr ""
+msgstr "Ne te cache pas dans mon sac quand tu vois des ennemis."
 
 #: smarter_familiars.tra:303
 msgid "When you're injured, rush into my backpack immediately."
-msgstr ""
+msgstr "Si tu es blessé, rentre immédiatement dans mon sac."
 
 #: smarter_familiars.tra:304
 msgid "When you're badly injured, rush into my pack immediately."
-msgstr ""
+msgstr "Si tu es gravement blessé, rentre immédiatement dans mon sac"
 
 #: smarter_familiars.tra:306
 msgid "When the enemies are gone, get out of the pack by yourself."
-msgstr ""
+msgstr "Quand les ennemis sont partis, sors de mon sac tout seul."
 
 #: smarter_familiars.tra:307
 msgid "After hiding in my pack, stay there. One cannot be too careful."
 msgstr ""
+"Après t'être caché dans mon sac, reste-y. On n'est jamais trop prudent."
 
 #: smarter_familiars.tra:309
 msgid "Don't bother me with your whining, I don't care if you're hurt."
-msgstr ""
+msgstr "Ne m'embête pas avec tes jérémiades, je me fiche que tu sois blessé."
 
 #: smarter_familiars.tra:310
 msgid "After fight, if you're hurt, let me know."
-msgstr ""
+msgstr "Après le combat, si tu es blessé, fais-le moi savoir."
 
 #: smarter_familiars.tra:311
 msgid "After fight, if you're badly hurt, let me know."
-msgstr ""
+msgstr "Après le combat, si tu es gravement blessé, fais-le moi savoir."
 
 #: smarter_familiars.tra:312
 msgid ""
 "When you're being attacked, disengage for a short time, then get back at the"
 " enemy."
 msgstr ""
+"Quand tu es attaqué, désengage-toi un court instant, puis reviens vers "
+"l'ennemi."
 
 #: smarter_familiars.tra:313
 msgid "Don't disengage, even if you're being attacked."
-msgstr ""
+msgstr "Ne te désengage pas, même si tu es attaqué."
 
 #: smarter_familiars.tra:314
 msgid "In combat, don't attack enemies, unless I tell you to."
-msgstr ""
+msgstr "En combat, n'attaque pas les ennemis, sauf si je te le demande."
 
 #: smarter_familiars.tra:315
 msgid "In combat, attack enemies when you see them."
-msgstr ""
+msgstr "Au combat, attaque les ennemis quand tu les vois."
 
 #: smarter_familiars.tra:316
 msgid ""
 "In combat, attack enemies when you see them, prioritizing spellcasters."
 msgstr ""
+"Au combat, attaque les ennemis quand tu les vois, en donnant la priorité aux"
+" lanceurs de sorts."
 
 #: smarter_familiars.tra:400
 msgid "Stop picking up any items, okay?"
-msgstr ""
+msgstr "Arrête de prendre des objets, d'accord ?"
 
 #: smarter_familiars.tra:401
 msgid "I want you to bring me everything. Any valuables."
-msgstr ""
+msgstr "Je veux que tu m'apportes tout. Tous les objets de valeur."
 
 #: smarter_familiars.tra:402
 msgid "Pick up any gold that you find."
-msgstr ""
+msgstr "Ramasse l'or que tu trouves."
 
 #: smarter_familiars.tra:403
 msgid "Don't pick up the gold that you find."
-msgstr ""
+msgstr "Ne ramasse pas l'or que tu trouves."
 
 #: smarter_familiars.tra:404
 msgid "Pick up any jewels that you find."
-msgstr ""
+msgstr "Ramasse les bijoux que tu trouves."
 
 #: smarter_familiars.tra:405
 msgid "Pick up only valuable and magical jewelry."
-msgstr ""
+msgstr "Ramasse uniquement les bijoux magiques et de valeur."
 
 #: smarter_familiars.tra:406
 msgid "Pick up only magical jewelry."
-msgstr ""
+msgstr "Ne ramasse que les bijoux magiques."
 
 #: smarter_familiars.tra:407
 msgid "Don't pick up the jewelry."
-msgstr ""
+msgstr "Ne ramasse pas les bijoux."
 
 #: smarter_familiars.tra:408
 msgid "Pick up any magical ammo that you find."
-msgstr ""
+msgstr "Ramasse les munitions magiques que tu trouves."
 
 #: smarter_familiars.tra:409
 msgid "Don't pick up the ammo."
-msgstr ""
+msgstr "Ne ramasse pas les munitions."
 
 #: smarter_familiars.tra:410
 msgid "If you find any potions, bring them to me!"
-msgstr ""
+msgstr "Si tu trouves des potions, apporte-les moi !"
 
 #: smarter_familiars.tra:411
 msgid "Stop picking up potions."
-msgstr ""
+msgstr "Arrêtes de ramasser des potions."
 
 #: smarter_familiars.tra:412
 msgid "Get me any scrolls that you can find."
-msgstr ""
+msgstr "Apportes-moi tous les parchemins que tu trouves."
 
 #: smarter_familiars.tra:413
 msgid "I don't need you to bring any more scrolls."
-msgstr ""
+msgstr "Je n'ai pas besoin que tu m'apportes d'autres parchemins."
 
 #: smarter_familiars.tra:414
 msgid ""
 "Fetch scalps from those bandits we kill. There's a nice bounty for them."
 msgstr ""
+"Récupère les scalps des bandits que nous avons tués. Il y a une belle prime "
+"à la clé."
 
 #: smarter_familiars.tra:415
 msgid "Stop that scalping, will you? It's disgusting."
-msgstr ""
+msgstr "Arrête de scalper, tu veux ? C'est dégoûtant."
 
 #: smarter_familiars.tra:416
 msgid "Ankheg scales, winter wolf pelts, wyvern heads - I need it all."
 msgstr ""
+"Carapace d'ankheg, peaux de loups des glaces, têtes de wyvernes - j'ai "
+"besoin de tout ça."
 
 #: smarter_familiars.tra:417
 msgid "No more pelts or scales, we're stocked."
-msgstr ""
+msgstr "Plus de peaux ni de carapaces, nous avons tout ce qu'il faut."
 
 #: smarter_familiars.tra:418
 msgid "No, nothing."
-msgstr ""
+msgstr "Non, rien."
 
 #: smarter_familiars.tra:419
 msgid "As you wish, master."
-msgstr ""
+msgstr "Comme vous voulez, maître."
 
 #: smarter_familiars.tra:500
 msgid "Let's talk about your gear."
-msgstr ""
+msgstr "Parlons de ton équipement."
 
 #: smarter_familiars.tra:501
 msgid ""
 "Take this returning dart. I think you're better off attacking from distance."
 msgstr ""
+"Prends cette fléchette de retour. Je pense qu'il vaut mieux que tu attaques "
+"à distance."
 
 #: smarter_familiars.tra:502
 msgid "Okay, boss."
-msgstr ""
+msgstr "D'accord, Maître."
 
 #: smarter_familiars.tra:503
 msgid "Done."
-msgstr ""
+msgstr "C'est fait."
 
 #: smarter_familiars.tra:504
 msgid "No, actually I think your gear is fine."
-msgstr ""
+msgstr "Non, en fait je pense que ton équipement est très bien."
 
 #: smarter_familiars.tra:601
 msgid "I'm hurting here, Boss."
-msgstr ""
+msgstr "Là j'ai mal, Maître."
 
 #: smarter_familiars.tra:602
 msgid "I'm really hurting here, Boss."
-msgstr ""
+msgstr "Là j'ai vraiment mal, Maître."
 
 #: smarter_familiars.tra:603
 msgid "Ouch!"
-msgstr ""
+msgstr "Ouille!"
 
 #: smarter_familiars.tra:701
 msgid "(Give a Healing potion)."
-msgstr ""
+msgstr "(Donner une potion de soin)."
 
 #: smarter_familiars.tra:702
 msgid "(Give an Extra Healing potion)."
-msgstr ""
+msgstr "(Donner une potion de grands soins)."
 
 #: smarter_familiars.tra:703
 msgid "(Give a Superior Healing potion)."
-msgstr ""
+msgstr "(Donner une potion de soin majeure)."
 
 #: smarter_familiars.tra:704
 msgid "(Give a Fire Resistance potion)."
-msgstr ""
+msgstr "(Donner une potion de résistance au feu)."
 
 #: smarter_familiars.tra:705
 msgid "(Give an Invisibility potion)."
-msgstr ""
+msgstr "(Donner une potion d'Invisibilité)."
 
 #: smarter_familiars.tra:706
 msgid "(Give a oil of Speed)."
-msgstr ""
+msgstr "(Donner une huile de rapidité)."
 
 #: smarter_familiars.tra:707
 msgid "(Give an elixir of Health)."
-msgstr ""
+msgstr "(Donner un élixir de Santé)."
 
 #: smarter_familiars.tra:708
 msgid "(Give a potion of Absorption)."
-msgstr ""
+msgstr "(Donner une potion d'Absorption)."
 
 #: smarter_familiars.tra:709
 msgid "(Give a potion of Agility)."
-msgstr ""
+msgstr "(Donner une potion d'Agilité)."
 
 #: smarter_familiars.tra:710
 msgid "(Give an Antidote)."
-msgstr ""
+msgstr "(Donner un Antidote)."
 
 #: smarter_familiars.tra:711
 msgid "(Give a potion of Clarity)."
-msgstr ""
+msgstr "(Donner une potion de Clarté)."
 
 #: smarter_familiars.tra:712
 msgid "(Give a Cold Resistance potion)."
-msgstr ""
+msgstr "(Donner une potion de Résistance au froid)."
 
 #: smarter_familiars.tra:713
 msgid "(Give a potion of Defence)."
-msgstr ""
+msgstr "(Donner une potion de Défense)."
 
 #: smarter_familiars.tra:714
 msgid "(Give a potion of Fortitude)."
-msgstr ""
+msgstr "(Donner une potion de Force morale)."
 
 #: smarter_familiars.tra:715
 msgid "(Give a potion of Insulation)."
-msgstr ""
+msgstr "(Donner une potion d'Isolation)."
 
 #: smarter_familiars.tra:716
 msgid "(Give a potion of Magic Blocking)."
-msgstr ""
+msgstr "(Donner une potion de Blocage de magique)."
 
 #: smarter_familiars.tra:717
 msgid "(Give a potion of Magic Resistance)."
-msgstr ""
+msgstr "(Donner une potion de Résistance à la Magie)."
 
 #: smarter_familiars.tra:718
 msgid "(Give a potion of Magic Shielding)."
-msgstr ""
+msgstr "(Donner une potion de Protection contre la magie)."
 
 #: smarter_familiars.tra:719
 msgid "(Give a potion of Mirrored Eyes)."
-msgstr ""
+msgstr "(Donner une potion de Rétrovision)."
 
 #: smarter_familiars.tra:720
 msgid "(Give a potion of Power)."
-msgstr ""
+msgstr "(Donner une potion de Puissance)."
 
 #: smarter_familiars.tra:721
 msgid "(Give a potion of Regeneration)."
-msgstr ""
+msgstr "(Donner une potion de Régénération)."
 
 #: smarter_familiars.tra:722
 msgid "(Give a potion of Strength)."
-msgstr ""
+msgstr "(Donner une potion de Force)."
 
 #: smarter_familiars.tra:723
 msgid "(Give a potion of Freedom)."
-msgstr ""
+msgstr "(Donner une potion de Liberté)."
 
 #: smarter_familiars.tra:724
 msgid "(Give a potion of Stone Form)."
-msgstr ""
+msgstr "(Donner une potion de Statue)."
 
 #: smarter_familiars.tra:725
 msgid "(Give a potion of Mind Focusing)."
-msgstr ""
+msgstr "(Donner une potion de Focalisation mentale)."
 
 #: smarter_familiars.tra:726
 msgid "Actually, take a goodberry."
-msgstr ""
+msgstr "Tiens, prend une bonne baie."
 
 #: smarter_familiars.tra:740
 msgid "(Give a potion of Hill Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de force de géant des collines)."
 
 #: smarter_familiars.tra:741
 msgid "(Give a potion of Frost Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de Force de géant du froid)."
 
 #: smarter_familiars.tra:742
 msgid "(Give a potion of Fire Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de force de géant du feu)."
 
 #: smarter_familiars.tra:743
 msgid "(Give a potion of Cloud Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de Force de géant des nuages)."
 
 #: smarter_familiars.tra:744
 msgid "(Give a potion of Storm Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de Force de géant des tempêtes)."
 
 #: smarter_familiars.tra:745
 msgid "(Give a potion of Heroism)."
-msgstr ""
+msgstr "(Donner une potion d'Héroïsme)."
 
 #: smarter_familiars.tra:746
 msgid "(Give a potion of Invulnerability)."
-msgstr ""
+msgstr "(Donner une potion d'Invulnérabilité)."
 
 #: smarter_familiars.tra:747
 msgid "(Give a potion of Stone Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de Force de Géant des pierres)."
 
 #: smarter_familiars.tra:760
 msgid "(Give a potion of Master Thievery)."
-msgstr ""
+msgstr "(Donner une potion de Maître-Voleur)."
 
 #: smarter_familiars.tra:761
 msgid "(Give a potion of Perception)."
-msgstr ""
+msgstr "(Donner une potion de Perception)."
 
 #: smarter_familiars.tra:762
 msgid "(Give a Rogue's potion of Frost Giant Strength)."
-msgstr ""
+msgstr "(Donner une potion de force de géant du froid des voleurs)."
 
 #: starting_bags.tra:1
 msgid "Thorius"
@@ -2160,15 +2367,15 @@ msgstr ""
 
 #: starting_bags.tra:2
 msgid "Gem bag"
-msgstr ""
+msgstr "Sac à gemmes"
 
 #: starting_bags.tra:3
 msgid "This small bag is ideally suited for holding gems."
-msgstr ""
+msgstr "Ce petit sac est idéal pour contenir des gemmes."
 
 #: starting_bags.tra:4
 msgid "Scroll case"
-msgstr ""
+msgstr "Étui à parchemins"
 
 #: starting_bags.tra:5
 msgid ""
@@ -2176,10 +2383,13 @@ msgid ""
 " exposure to fire, rain, or lightning -- common hazards faced by any "
 "adventuring wizard."
 msgstr ""
+"Ce conteneur robuste permet de placer des dizaines de parchemins à l'abri du"
+" feu, de la pluie ou de la foudre - des risques courants pour tout magicien "
+"aventurier."
 
 #: starting_bags.tra:6
 msgid "Potion case"
-msgstr ""
+msgstr "Boite à potions"
 
 #: starting_bags.tra:7
 msgid ""
@@ -2187,20 +2397,25 @@ msgid ""
 "allows the user to strap delicate potion bottles to its cushioned side with "
 "numerous leather thongs for safe storage during travel."
 msgstr ""
+"Généralement utilisé par les guérisseurs itinérants, cette boîte de cuir aux"
+" renforts de plumes et aux lanières de cuir permet de protéger des chocs les"
+" potions et les fioles les plus fragiles."
 
 #: starting_bags.tra:8
 msgid "Ammo belt"
-msgstr ""
+msgstr "Ceinture à Munitions"
 
 #: starting_bags.tra:9
 msgid ""
 "This shoulder belt is ideally suited for holding sling bullets, darts, "
 "arrows or bolts."
 msgstr ""
+"Cette ceinture d'épaule est idéale pour tenir des balles de fronde, des "
+"fléchettes, des flèches ou des carreaux."
 
 #: starting_bags.tra:10
 msgid "Bag of Holding"
-msgstr ""
+msgstr "Sac de contenance"
 
 #: starting_bags.tra:11
 msgid ""
@@ -2210,18 +2425,22 @@ msgid ""
 "Regardless of what is put into this item, the bag always weighs a fixed "
 "amount."
 msgstr ""
+"Comme d'autres sacs magiques, celui-ci ressemble à un sac de tissu "
+"classique, d'environ 60 cm sur 1,20 m. Ce sac sans fond ouvre sur un espace "
+"non dimensionnel, et l'intérieur est plus grand que l'extérieur. Le poids du"
+" sac reste inchangé, quels que soient les objets qui y sont déposés."
 
 #: starting_bags.tra:20
 msgid "<CHARNAME>, wait. I've been told that you are leaving Candlekeep."
-msgstr ""
+msgstr "<CHARNAME>, attend. On m'a dit que tu quittais Chateausuif."
 
 #: starting_bags.tra:21
 msgid "Hello, Thorius. Yes, Gorion told me to prepare for a travel."
-msgstr ""
+msgstr "Bonjour, Thorius. Oui, Gorion m'a dit de me préparer à un voyage."
 
 #: starting_bags.tra:22
 msgid "Get lost, old man. I've no time."
-msgstr ""
+msgstr "Disparais, vieil homme. Je n'ai pas le temps."
 
 #: starting_bags.tra:23
 msgid ""
@@ -2229,36 +2448,42 @@ msgid ""
 "Take these things. It's no weapon or armor, but experienced adventurers know"
 " their real value."
 msgstr ""
+"Tu as toujours été mon élève préféré, je veux t'aider du mieux que je peux. "
+"Prends ces objets. Ce ne sont ni des armes ni des armures, mais les "
+"aventuriers expérimentés connaissent leur valeur réelle."
 
 #: starting_bags.tra:24
 msgid "I'm very grateful for your lessons and your help, Thorius."
 msgstr ""
+"Je vous suis très reconnaissant pour vos leçons et votre aide, Thorius."
 
 #: starting_bags.tra:25
 msgid "But... Well, I see you have no need of my help."
-msgstr ""
+msgstr "Mais... Je vois que tu n'as pas besoin de mon aide."
 
 #: throwing_damage.tra:1
 msgid "missile (piercing)"
-msgstr ""
+msgstr "missile (perçant)"
 
 #: throwing_damage.tra:2
 msgid "crushing"
-msgstr ""
+msgstr "contondant"
 
 #: throwing_damage.tra:3
 msgid "slashing"
-msgstr ""
+msgstr "tranchant"
 
 #: tracking.tra:1
 msgid "Tracking"
-msgstr ""
+msgstr "Pistage"
 
 #: tracking.tra:2
 msgid ""
 "Tracking\n"
 "With an intimate knowledge of his surroundings and the creatures that live within them, a ranger can use the Tracking ability to give himself a general idea of what creatures are in an area and which direction they are. Red arrows at the edge of the screen will point in the general direction of the creatures in the area."
 msgstr ""
+"Pistage\n"
+"Grâce à une connaissance approfondie de son environnement et des créatures qui y vivent, un ranger peut utiliser la capacité de pistage pour se faire une idée générale des créatures présentes dans une zone et de la direction dans laquelle elles se trouvent. Les flèches rouges au bord de l'écran indiquent la direction générale des créatures présentes dans la zone."
 
 #: tracking.tra:100
 msgid ""
@@ -2267,6 +2492,10 @@ msgid ""
 "maintaining the peace and knowledge within. You know every nook and cranny "
 "here."
 msgstr ""
+"Chateausuif est une bibliothèque fortifiée et isolée, connue pour sa vaste "
+"collection de livres et de parchemins. Des moines, des érudits et des gardes"
+" se déplacent pour maintenir la paix et le savoir à l'intérieur. Vous "
+"connaissez tous les coins et recoins de cette forteresse."
 
 #: tracking.tra:101
 msgid ""
@@ -2274,24 +2503,36 @@ msgid ""
 "travelers. Adventurers and guards are frequently seen here, resting or "
 "preparing for their next journey."
 msgstr ""
+"L'auberge du Brasamical est une auberge fortifiée qui sert de refuge aux "
+"voyageurs. Les aventuriers et les gardes sont souvent vus ici, se reposant "
+"ou se préparant pour leur prochain voyage."
 
 #: tracking.tra:102
 msgid ""
 "Beregost is a bustling town with shops, inns, and a temple. Townsfolk, "
 "guards, and traders fill the streets, going about their daily lives."
 msgstr ""
+"Beregost est une ville animée avec des boutiques, des auberges et un temple."
+" Les citadins, les gardes et les marchands remplissent les rues, vaquant à "
+"leurs occupations quotidiennes."
 
 #: tracking.tra:103
 msgid ""
 "Nashkel is a small town troubled by issues in the nearby mines. Townsfolk, "
 "militia, and merchants can be seen dealing with the recent troubles."
 msgstr ""
+"Nashkel est une petite ville perturbée par les problèmes des mines voisines."
+" Les habitants, la milice et les marchands peuvent être vus en train de "
+"gérer les récents problèmes."
 
 #: tracking.tra:105
 msgid ""
 "The Nashkel Mines are a series of tunnels plagued by monsters and mysterious"
 " occurrences. You find signs of kobolds, spiders, and wolves."
 msgstr ""
+"Les mines de Nashkel sont une série de tunnels infestés de monstres et "
+"d'événements mystérieux. On y trouve des traces de kobolds, d'araignées et "
+"de loups."
 
 #: tracking.tra:106
 msgid ""
@@ -2299,18 +2540,25 @@ msgid ""
 "and winding paths. You find signs of gibberlings, xvarts, and wolves in the "
 "area."
 msgstr ""
+"Le pied des montagnes est accidenté et densément boisé, avec des falaises "
+"abruptes et des chemins sinueux. On y trouve des traces de grouilleux, de "
+"xvarts et de loups."
 
 #: tracking.tra:107
 msgid ""
 "Gullykin is a small village of halflings. You find signs of kobolds, wolves,"
 " and some undead nearby."
 msgstr ""
+"Gullykin est un petit village de petites-gens. Vous trouvez des signes de "
+"kobolds, de loups et de quelques morts-vivants à proximité."
 
 #: tracking.tra:108
 msgid ""
 "The Ulcaster Ruins are the remnants of an ancient school of magic. You find "
 "signs of undead, wolves, and wandering spirits in the area."
 msgstr ""
+"Les ruines d'Ulcaster sont les vestiges d'une ancienne école de magie. On y "
+"trouve des signes de morts-vivants, de loups et d'esprits errants."
 
 #: tracking.tra:109
 msgid ""
@@ -2318,58 +2566,81 @@ msgid ""
 "You find signs of undead, kobolds, ogres, and adventurers who have met their"
 " fate here."
 msgstr ""
+"Le pont de Flammevin est une ancienne structure en ruine qui enjambe un "
+"gouffre profond. On y trouve des traces de morts-vivants, de kobolds, "
+"d'ogres et d'aventuriers qui y ont trouvé la mort."
 
 #: tracking.tra:110
 msgid ""
 "Larswood is a dense forest known for bandit activity. You find signs of "
 "bandits, wild animals, and hidden traps among the trees."
 msgstr ""
+"Le Bois de Lars est une forêt dense connue pour ses activités de banditisme."
+" Vous trouvez des signes de bandits, des animaux sauvages et des pièges "
+"cachés dans les arbres."
 
 #: tracking.tra:111
 msgid ""
 "Peldvale is a forested area with a reputation for being a bandit hideout. "
 "You find signs of bandits, gnolls, and other forest creatures."
 msgstr ""
+"le Valpeld est une région forestière qui a la réputation d'être un repaire "
+"de bandits. On y trouve des traces de bandits, de gnolls et d'autres "
+"créatures de la forêt."
 
 #: tracking.tra:112
 msgid ""
 "The Bandit Camp is a hidden encampment teeming with outlaws. You find heavy "
 "signs of bandit presense."
 msgstr ""
+"Le camp des bandits est un campement caché qui grouille de hors-la-loi. Vous"
+" trouvez de nombreux signes de la présence de bandits."
 
 #: tracking.tra:113
 msgid ""
 "Cloakwood Forest is a dark, dense forest filled with danger. You find signs "
 "of ettercaps, spiders, and druids who call this forest home."
 msgstr ""
+"La forêt de Bois-Manteau est une forêt sombre et dense, pleine de dangers. "
+"On y trouve des signes d'ettercaps, d'araignées et de druides qui ont élu "
+"domicile dans cette forêt."
 
 #: tracking.tra:114
 msgid ""
 "The Cloakwood Mines are rich in minerals but fraught with danger. You find "
 "signs of wyverns, spiders, and slaves forced to work the mines."
 msgstr ""
+"Les mines de Bois-Manteau sont riches en minerais mais pleines de dangers. "
+"On y trouve des traces de wyvernes, d'araignées et d'esclaves forcés de "
+"travailler dans les mines.."
 
 #: tracking.tra:115
 msgid ""
 "High Hedge is a secluded estate of a powerful mage. You find signs of "
 "gnolls, spiders, and undead."
 msgstr ""
+"Haute Haie est la propriété isolée d'un puissant mage. On y trouve des "
+"traces de gnolls, d'araignées et de morts-vivants."
 
 #: tracking.tra:116
 msgid "You find signs of basilisks, bears, undead."
-msgstr ""
+msgstr "Vous trouvez des traces de basilics, d'ours, de morts-vivants."
 
 #: tracking.tra:117
 msgid ""
 "The Carnival is a traveling fair filled with attractions and danger. You "
 "find signs of kobolds and ogres nearby."
 msgstr ""
+"Le Carnaval est une foire itinérante remplie d'attractions et de dangers. "
+"Vous trouvez des signes de kobolds et d'ogres à proximité."
 
 #: tracking.tra:118
 msgid ""
 "The Gnoll Stronghold is a fortified lair of gnolls. You find signs of heavy "
 "gnoll presence, and some xvart footprints."
 msgstr ""
+"La Forteresse gnoll est un repaire fortifié de gnolls. Vous y trouvez des "
+"signes d'une forte présence gnoll et des empreintes de pas de xvart."
 
 #: tracking.tra:119
 msgid ""
@@ -2377,18 +2648,26 @@ msgid ""
 "signs of dryads, wolves, and occasional adventurers seeking the waterfall's "
 "beauty."
 msgstr ""
+"Les Chutes de la Dryade sont une région pittoresque habitée par des dryades."
+" On y trouve des signes de dryades, de loups et d'aventuriers occasionnels à"
+" la recherche de la beauté de la cascade."
 
 #: tracking.tra:120
 msgid ""
 "Fisherman's Lake is a serene body of water surrounded by wilderness. You "
 "find signs of gnolls, hoblgoblins, and some large humanoids."
 msgstr ""
+"Le lac du pécheur est une étendue d'eau sereine entourée d'une nature "
+"sauvage. On y trouve des traces de gnolls, de hobgobelins et de quelques "
+"humanoïdes de grande taille."
 
 #: tracking.tra:121
 msgid ""
 "Wyrm's Crossing is a busy bridge leading into Baldur's Gate. You notice some"
 " signs of ankheg presense."
 msgstr ""
+"le Travers du Ver est un pont très fréquenté qui mène à Baldur's Gate. Vous "
+"remarquez des signes de présence d'ankheg."
 
 #: tracking.tra:122
 msgid ""
@@ -2400,12 +2679,23 @@ msgid ""
 "rocky outcrops near the water, intermingling with the larger, more menacing "
 "tracks that suggest the island's more dangerous predators also roam nearby."
 msgstr ""
+"À côté des grandes traces de griffes, vous remarquez des empreintes plus "
+"délicates près du rivage - des pieds nus qui semblent trop gracieux et "
+"légèrement pressés pour appartenir à un être humain. L'air autour de ces "
+"traces porte une faible mélodie, presque enchanteresse, qui persiste dans le"
+" vent, suggérant la présence de créatures séduisantes qui pourraient attirer"
+" les voyageurs imprudents. Ces empreintes se dirigent vers des affleurements"
+" rocheux proches de l'eau, se mêlant aux traces plus grandes et plus "
+"menaçantes qui suggèrent que les prédateurs les plus dangereux de l'île "
+"rôdent également dans les environs."
 
 #: tracking.tra:123
 msgid ""
 "Ice Island is a frigid, remote location fraught with peril. You find signs "
 "of polar bears."
 msgstr ""
+"L'île de glace est un endroit glacial, isolé et plein de dangers. On y "
+"trouve des traces d'ours polaires."
 
 #: tracking.tra:124
 msgid ""
@@ -2413,6 +2703,9 @@ msgid ""
 " by rolling hills and scattered trees. You find signs of wolves, bears, "
 "gibberlings."
 msgstr ""
+"La Voie du Lion est un chemin pittoresque qui relie Candlekeep au reste du "
+"monde, marqué par des collines ondulantes et des arbres épars. On y trouve "
+"des traces de loups, d'ours, de gibberlings."
 
 #: tracking.tra:125
 msgid ""
@@ -2423,6 +2716,13 @@ msgid ""
 "feels immediately threatening, though the presence of such tracks suggests "
 "that wildlife might be closer to the village than one would expect."
 msgstr ""
+"Le village semble calme, avec principalement des traces humaines entre les "
+"maisons et le long de chemins bien fréquentés. Cependant, parmi elles, vous "
+"trouvez des traces occasionnelles d'animaux - grandes, mais pas déplacées "
+"dans un environnement rural. Ces empreintes semblent aller et venir dans le "
+"village, se mêlant à l'activité quotidienne. Rien ne semble menaçant dans "
+"l'immédiat, mais la présence de ces traces suggère que la faune est peut-"
+"être plus proche du village qu'on ne le pense."
 
 #: tracking.tra:200
 msgid ""
@@ -2436,14 +2736,23 @@ msgid ""
 "the scent of pine and the sounds of distant wildlife, warning all who enter "
 "to tread carefully."
 msgstr ""
+"La Forêt du Nord est une forêt sauvage, connue pour son épaisse canopée et "
+"ses chemins traîtres. Le sol de la forêt est jonché de feuilles mortes et "
+"des empreintes occasionnelles de ceux qui ont eu le courage d'en traverser "
+"les profondeurs. On y trouve des signes de vampires tapis dans l'ombre, de "
+"trolls rôdant dans les sous-bois et de yuan-ti se faufilant dans le "
+"feuillage. De plus, un groupe d'aventuriers est passé par là récemment, "
+"leurs traces témoignant d'un voyage tendu et prudent. L'air est lourd de "
+"l'odeur du pin et des bruits de la faune lointaine, avertissant tous ceux "
+"qui pénètrent dans les lieux qu'ils doivent être prudents."
 
 #: true_true_sight.tra:1
 msgid "each round"
-msgstr ""
+msgstr "chaque round"
 
 #: true_true_sight.tra:2
 msgid "each second"
-msgstr ""
+msgstr "chaque seconde"
 
 #: wand_of_frost.tra:1
 msgid ""
@@ -2463,18 +2772,33 @@ msgid ""
 " Paladin\n"
 " Ranger\n"
 msgstr ""
+"Cette baguette crée une zone de froid extrême en forme de cône, qui part de la baguette et s'étend vers l'extérieur, comme le sort de 5e niveau Cône de froid. Les dégâts sont de 8d6 (en traitant tous les 1 obtenus comme des 2), avec un jet de sauvegarde contre les baguettes pour réduire de moitié les dégâts.\n"
+"\n"
+"STATISTIQUES :\n"
+"\n"
+"Effet : Cône de froid\n"
+"Dégâts : 8D6 (jet de sauvegarde contre les baguettes pour réduire de moitié)\n"
+"Portée : 30 mètres\n"
+"Zone d'effet : Spéciale\n"
+"Non utilisable par :\n"
+"Guerrier\n"
+" Clerc\n"
+" Druide\n"
+" Voleur\n"
+" Paladin\n"
+" Rôdeur"
 
 #: working_non_detection.tra:1
 msgid "Invisibility Purge"
-msgstr ""
+msgstr "Purge de l'invisibilité"
 
 #: working_non_detection.tra:2
 msgid "Invisibility Purge and True Sight"
-msgstr ""
+msgstr "Purge de l'invisibilité et Vision véritable"
 
 #: working_non_detection.tra:3
 msgid " Non-detection, "
-msgstr ""
+msgstr " Non-Détection, "
 
 #: working_non_detection.tra:4
 msgid " "
@@ -2482,8 +2806,45 @@ msgstr ""
 
 #: working_non_detection.tra:5
 msgid ", and Non-Detection."
-msgstr ""
+msgstr ", et Non-Détection."
 
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+msgctxt "female"
+msgid ""
+"Two things, me friend. It will cost ye 12,500 gp for the work, no less, and "
+"without an apprentice, ye'll have to stay here a full day and help me run "
+"the forge."
+msgstr ""
+"Deux choses, mon amie. Cela vous coûtera 12500 pièces d'or pour le travail, "
+"pas moins, et sans apprenti, vous devrez rester ici une journée entière et "
+"m'aider à faire tourner la forge."
+
+msgctxt "female"
+msgid ""
+"You have always been my favorite pupil, I want to help you however I can. "
+"Take these things. It's no weapon or armor, but experienced adventurers know"
+" their real value."
+msgstr ""
+"Tu as toujours été mon élève préférée, je veux t'aider du mieux que je peux."
+" Prends ces objets. Ce ne sont ni des armes ni des armures, mais les "
+"aventuriers expérimentés connaissent leur valeur réelle."
+
+msgctxt "female"
+msgid "I'm very grateful for your lessons and your help, Thorius."
+msgstr ""
+"Je vous suis très reconnaissante pour vos leçons et votre aide, Thorius."
+
+msgctxt "female"
+msgid "Charmed"
+msgstr "Charmée"
+
+msgctxt "female"
+msgid "Dire Charmed"
+msgstr "Charmée"
+
+msgctxt "female"
+msgid "Dominated"
+msgstr "Dominée"

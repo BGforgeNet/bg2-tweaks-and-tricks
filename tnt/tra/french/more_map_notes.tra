@@ -1,7 +1,4 @@
-@1 = ~Maison de Degrodel~
-@2 = ~Maison de Pheirka~
 @3 = ~Maison de Nadine~
-@4 = ~Maison d'Arkion~
 @5 = ~Maison de Sunin~
 @6 = ~Maison de Cordyr~
 @7 = ~Entrepôt de Nadarin~
@@ -39,26 +36,13 @@
 @39 = ~Sarhedra~
 @40 = ~Fahrington~
 @41 = ~Faldorn~
-@42 = ~Ajantis~
 @43 = ~Surgeon~
 @44 = ~Arcand le fou~
-@45 = ~Pallonia~
 @46 = ~Arkushule~
 @47 = ~Safana~
 @48 = ~Galileus~
 @49 = ~Larry, Darryl and Darryl~
 @50 = ~Hafiz~
-@51 = ~Tente de jeu~
-@52 = ~Magasin de parchemins~
-@53 = ~Magasin d'armes~
-@54 = ~Zeke~
-@55 = ~Magasin d'armes à distance~
-@56 = ~Vendeur de potions~
-@57 = ~Marchand d'objets enchantés~
-@58 = ~Magasin de potions exotiques~
-@59 = ~Branwen~
-@60 = ~Magasin d'armures~
-@61 = ~Tente de plaisirs particuliers~
 @62 = ~Maison de Joseph~
 @63 = ~Taverne~
 @64 = ~Magasin général~
@@ -66,9 +50,6 @@
 @66 = ~Maison de Rinnie~
 @67 = ~Maison de Bheren~
 @68 = ~Maison de Jardak~
-@69 = ~Maison de Quinn~
-@70 = ~Maison de Laerta et Louise~
-
 @71 = ~Vers le quartier Sud, Bâtisse du maître du port~
 @72 = ~Vers le quartier Sud, coté ouest~
 @73 = ~Vers le quartier central, Manoir de Felonius Gist~
@@ -87,7 +68,6 @@
 @86 = ~Vers les égouts de l'est~
 @87 = ~Vers les égouts de l'ouest~
 @88 = ~Vers les égouts centraux~
-
 @90 = ~Vers le quartier nord-est, Chapelle d'Ilmater~
 @91 = ~Vers le quartier nord-est, Bureau des comptes~
 @92 = ~Vers le quartier est, Bazar magique~
@@ -98,7 +78,6 @@
 @97 = ~Vers le quartier sud-est, coté est~
 @98 = ~Vers le quartier sud-est, coté nord~
 @99 = ~Vers le quartier sud-est, derrière le Bazar magique~
-
 @100 = ~Vers le quartier sud-ouest, Maison de Sunin~
 @101 = ~Vers le quartier sud-ouest, derrière la Ligue des marchands~
 @102 = ~Vers le quartier sud-ouest, coin NE~
@@ -113,5 +92,26 @@
 @111 = ~Vers le quartier nord-ouest, coté est~
 @112 = ~Vers le quartier nord-ouest, centre~
 @113 = ~Vers le quartier nord-ouest, maison de Pheirka~
-
-@114 = ~Guilde des voleurs~
+@120 = ~Gandolar Luckyfoot~
+@34001 = ~Bentan~
+@38001 = ~Gambling tent~
+@38002 = ~Scroll store~
+@38003 = ~Weapon store~
+@38004 = ~Zeke~
+@38005 = ~Ranged weapon store~
+@38006 = ~Potions dealer~
+@38007 = ~Enchanted items trader~
+@38008 = ~Exotic potion store~
+@38009 = ~Branwen~
+@72001 = ~Degrodel's house~
+@72002 = ~Pheirkas' house~
+@72003 = ~Quinn's house~
+@72004 = ~Laerta and Louise's house~
+@78001 = ~Arkion's house~
+@78002 = ~Thieves' Guild~
+@83001 = ~Fishermen~
+@83002 = ~Ajantis~
+@83003 = ~Gerde~
+@88001 = ~Tiber~
+@380010 = ~Armor store~
+@380011 = ~Tent of special pleasures~

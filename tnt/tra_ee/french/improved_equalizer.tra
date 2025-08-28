@@ -1,3 +1,5 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
 @1 = ~Épée longue : l'Egaliseur
 L'âge de cette arme est si élevé que personne ne saurait le deviner, mais des indices de fabrication suggèrent qu'elle a pu être forgée au service de Helm. Également appelée "Épée de Neutralité", elle semble avoir été conçue pour l'équilibre et l'élimination des extrêmes. Plus le comportement d'une cible est éloigné de la neutralité, plus les dégâts infligés sont importants. L'égaliseur résiste activement à une utilisation par des personnages d'alignements extrêmes.
 
@@ -27,7 +29,7 @@ Capacités d'équipement :
   Immunité au charme et à la confusion
 
 Capacités de charge :
-  Detection de l'alignement 3 fois par jour.
+  Détection de l'alignement 3 fois par jour.
 
 Type de dommages : tranchant
 Poids : 3
@@ -40,6 +42,5 @@ Non utilisable par :
  Clerc
  Magicien
  Belluaire~
-
-@2 = ~Deux choses, mon ami. Cela vous coûtera 12500 pièces d'or pour le travail, pas moins, et sans apprenti, vous devrez rester ici une journée entière et m'aider à faire tourner la forge.~~Deux choses, mon amie. Cela vous coûtera 12500 pièces d'or pour le travail, pas moins, et sans apprenti, vous devrez rester ici une journée entière et m'aider à faire tourner la forge.~
+@2 = ~Deux choses, mon ami. Cela vous coûtera 12500 pièces d'or pour le travail, pas moins, et sans apprenti, vous devrez rester ici une journée entière et m'aider à faire tourner la forge.~ ~Deux choses, mon amie. Cela vous coûtera 12500 pièces d'or pour le travail, pas moins, et sans apprenti, vous devrez rester ici une journée entière et m'aider à faire tourner la forge.~
 @3 = ~Qu'est-ce que cela implique ?~

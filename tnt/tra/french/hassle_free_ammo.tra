@@ -17,7 +17,6 @@ Non utilisable par :
  Clerc
  Mage 
  Voleur~
-
 @3 = ~Dague de jet de retour~
 @4 = ~La dague de jet traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau qui n'a qu'un seul tranchant et est un peu moins long. Celle-ci a un manche plus court et est équilibrée différemment, ce qui la rend inutilisable en mêlée.
 
@@ -34,7 +33,6 @@ Type : arme à 1 main
 Force nécessaire : 3
 Non utilisable par :
  Clerc~
-
 @5 = ~Fléchette de retour~
 @6 = ~La fléchette est un petit projectile qui peut être facilement dissimulé, lancé plutôt que tiré par un arc ou une autre arme de jet. 
 
@@ -50,8 +48,6 @@ Type de compétence : Fléchette
 Type : arme à 1 main
 Non utilisable par :
  Clerc~
-
-//returning weapons
 @7 = ~Carquois d'abondance~
 @8 = ~Les carquois enchantés comme celui-ci sont très recherchés par les archers professionnels.
 

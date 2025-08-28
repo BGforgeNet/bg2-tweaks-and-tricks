@@ -1,65 +1,42 @@
-//extended soundsets
-@37 = ~Mourrez de votre belle mort !~ [g_ttjah1]
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
+@37 = ~Mourrez de votre belle mort !~ [g_ttjah1]
 @38 = ~SQUICK ! AAARRRGHGH ! BOUH A DIT TUE ! ET MINSC TUE !~ [minsc57]
 @39 = ~Prépare-toi à subir la colère de mon hamster !~ [g_ttmin1]
-
 @40 = ~Votre fin est proche, implorez si vous voulez !!~ [g_ttedw1]
-
 @41 = ~Quelle barbe ! J'ai toujours des problèmes avec ces serrures ! Qu'est-ce que c'est ennuyeux !~ [alora01]
-
 @42 = ~Solitaire sur la Voie Côtière ! Quel effet ça fait ?~ [quayl01]
-
 @43 = ~Du calme, chérie, nous devons procéder doucement.~ [khald02]
-
 @44 = ~Finissons-en avec ça !~ [g_ttyos1]
-
 @45 = ~AHH ! AU SECOURS ! AIDEZ-MOI, PAR PITIE !~ [aerie95]
 @46 = ~Tu vas avoir BEAUCOUP plus MAL que moi !~ [aeri2540]
 @47 = ~Au nom du Bien, je vais me battre !~ [aeri2541]
-
 @48 = ~Tuer est notre métier, et c'est un bon métier !~ [g_ttkor1]
 @49 = ~Hahahaha!~ [g_ttkor2]
-
 @50 = ~Au nom de Tyr, nous serons victorieux une fois pour toutes !~ [g_ttkel1]
-
 @51 = ~Que puis-je faire pour toi ?~ [g_ttkag1]
-
 @52 = ~Votre esprit est assez perturbé comme ça ; laissez-moi tranquille. Votre compagnie est déjà suffisamment déplaisante.~ [montr01]
-
 @53 = ~Eh, qui va là maintenant ? Encore du travail ou quoi ?~ [yeslk01]
-
 @54 = ~J'ai croupi trop longtemps dans cette horrible cave.~ [g_ttxan1]
-
 @55 = ~Aujourd'hui, nous vaincrons le Mal !~ [nali2520]
 @56 = ~Notre force est trop grande ! Si tu te bats, tu mourras !~ [nali2521]
-
 @57 = ~Que la colère de Helm s'abatte sur vous !~ [anom2539]
 @58 = ~Par notre vaillance et notre force, nous vaincrons !~ [anom2540]
-
 @59 = ~Vous ne passerez pas !~ [g_ttval1]
-
 @60 = ~Ahhh, c'est une belle bataille qui résonnera dans tous les plans !~ [g_tthae1]
-
 @61 = ~Nul ne peut arrêter les enfants de Bhaal !~ [sarevo13]
 @62 = ~Ha ! Ça, je connais !~ [sarevo14]
 @63 = ~Je me frayerai un chemin, s'il le faut.~ [sarevo35]
 @64 = ~Comme tu voudras.~ [sarevo36]
 @65 = ~Hmpf. Ce n'est pas ce que j'aurais fait.~ [sarevo37]
 @66 = ~Tu l'as dit.~ [sarevo38]
-
 @67 = ~Ma musique est supérieure à la tienne, Eldoth, j'ai été formé au collège de Berdusk.~ [garrk30]
 @68 = ~Je ne peux pas attendre que ça se passe sans réagir.~ [garrk06]
-
 @69 = ~Par le souffle glacé d'Auril !~ [g_ttbra1]
-
 @70 = ~Jamais je n'ai eu meilleur groupe d'amis.~ [skiee04]
-
 @71 = ~Montaron, vous êtes si EXASPÉRANT ! Cela nuit à mon équilibre !~ [xzarr01]
-
 @72 = ~Que diriez-vous de vous faire chatouiller les entrailles par ma lame ?~ [shart34]
-
-@130  = ~Vos mauvaises actions s'arrêtent ici !~ [g_ttaja1]
-@131  = ~Sortez vos armes !~ [g_ttaja2]
-@132  = ~Défendez-vous !~ [g_ttkiv1]
-@133  = ~Ton âme est perdue !~ [g_ttkel2]
+@130 = ~Vos mauvaises actions s'arrêtent ici !~ [g_ttaja1]
+@131 = ~Sortez vos armes !~ [g_ttaja2]
+@132 = ~Défendez-vous !~ [g_ttkiv1]
+@133 = ~Ton âme est perdue !~ [g_ttkel2]

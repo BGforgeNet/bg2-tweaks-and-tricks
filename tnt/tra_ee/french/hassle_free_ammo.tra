@@ -1,3 +1,5 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
 @1 = ~Hache de jet de retour~
 @2 = ~La hache à main, ou hache de jet, est également connue sous l'appellation de hachette. Sa lame comporte une lame d'acier tranchante, contrebalancée par une barbelure pointue. La courte poignée comporte une pointe en bas et la tête comporte parfois une pointe en haut, ce qui la rend inutilisable en mêlée.
 
@@ -11,8 +13,12 @@ Poids : 5
 Facteur de vitesse : 4
 Type de compétence : Hache
 Type : arme à 1 main
-Force nécessaire : 4~
-
+Force nécessaire : 4
+Non utilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur~
 @3 = ~Dague de jet de retour~
 @4 = ~La dague de jet traditionnelle a une lame pointue généralement à double tranchant, contrairement au couteau qui n'a qu'un seul tranchant et est un peu moins long. Celle-ci a un manche plus court et est équilibrée différemment, ce qui la rend inutilisable en mêlée.
 
@@ -26,8 +32,9 @@ Poids : 1
 Facteur de vitesse : 2
 Type de compétence : Dague
 Type : arme à 1 main
-Force nécessaire : 3~
-
+Force nécessaire : 3
+Non utilisable par :
+ Clerc~
 @5 = ~Fléchette de retour~
 @6 = ~La fléchette est un petit projectile qui peut être facilement dissimulé, lancé plutôt que tiré par un arc ou une autre arme de jet. 
 
@@ -40,9 +47,9 @@ Type de dégâts : projectile (perforant)
 Poids : 0
 Facteur de vitesse : 2
 Type de compétence : Fléchette
-Type : arme à 1 main~
-
-//returning weapons
+Type : arme à 1 main
+Non utilisable par :
+ Clerc~
 @7 = ~Carquois d'abondance~
 @8 = ~Les carquois enchantés comme celui-ci sont très recherchés par les archers professionnels.
 

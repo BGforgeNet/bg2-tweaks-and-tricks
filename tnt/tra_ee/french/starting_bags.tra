@@ -1,3 +1,5 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
 @1 = ~Thorius~
 @2 = ~Sac à gemmes~
 @3 = ~Ce petit sac est idéal pour contenir des gemmes.~
@@ -9,10 +11,9 @@
 @9 = ~Cette ceinture d'épaule est idéale pour tenir des balles de fronde, des fléchettes, des flèches ou des carreaux.~
 @10 = ~Sac de contenance~
 @11 = ~Comme d'autres sacs magiques, celui-ci ressemble à un sac de tissu classique, d'environ 60 cm sur 1,20 m. Ce sac sans fond ouvre sur un espace non dimensionnel, et l'intérieur est plus grand que l'extérieur. Le poids du sac reste inchangé, quels que soient les objets qui y sont déposés.~
-
 @20 = ~<CHARNAME>, attend. On m'a dit que tu quittais Chateausuif.~
 @21 = ~Bonjour, Thorius. Oui, Gorion m'a dit de me préparer à un voyage.~
 @22 = ~Disparais, vieil homme. Je n'ai pas le temps.~
-@23 = ~Tu as toujours été mon élève préféré, je veux t'aider du mieux que je peux. Prends ces objets. Ce ne sont ni des armes ni des armures, mais les aventuriers expérimentés connaissent leur valeur réelle.~~Tu as toujours été mon élève préférée, je veux t'aider du mieux que je peux. Prends ces objets. Ce ne sont ni des armes ni des armures, mais les aventuriers expérimentés connaissent leur valeur réelle.~
-@24 = ~Je vous suis très reconnaissant pour vos leçons et votre aide, Thorius.~~Je vous suis très reconnaissante pour vos leçons et votre aide, Thorius.~
+@23 = ~Tu as toujours été mon élève préféré, je veux t'aider du mieux que je peux. Prends ces objets. Ce ne sont ni des armes ni des armures, mais les aventuriers expérimentés connaissent leur valeur réelle.~ ~Tu as toujours été mon élève préférée, je veux t'aider du mieux que je peux. Prends ces objets. Ce ne sont ni des armes ni des armures, mais les aventuriers expérimentés connaissent leur valeur réelle.~
+@24 = ~Je vous suis très reconnaissant pour vos leçons et votre aide, Thorius.~ ~Je vous suis très reconnaissante pour vos leçons et votre aide, Thorius.~
 @25 = ~Mais... Je vois que tu n'as pas besoin de mon aide.~
