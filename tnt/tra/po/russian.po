@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08-13:13+0000\n"
+"POT-Creation-Date: 2025-09-08-19:01+0000\n"
 "PO-Revision-Date: 2025-02-10 06:48+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: Russian <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/ru/>\n"
@@ -1262,6 +1262,12 @@ msgstr "Дом Лаэрты и Луизы"
 #: more_map_notes.tra:72121
 msgid "To Blushing Mermaid"
 msgstr ""
+
+#: more_map_notes.tra:73241
+#, fuzzy
+#| msgid "To South District, Iron Throne"
+msgid "To Iron Throne"
+msgstr "К Юному району, Железному Трону"
 
 #: more_map_notes.tra:78001
 msgid "Arkion's house"

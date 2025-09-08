@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08-13:13+0000\n"
+"POT-Creation-Date: 2025-09-08-19:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1123,6 +1123,10 @@ msgstr ""
 
 #: more_map_notes.tra:72121
 msgid "To Blushing Mermaid"
+msgstr ""
+
+#: more_map_notes.tra:73241
+msgid "To Iron Throne"
 msgstr ""
 
 #: more_map_notes.tra:78001
