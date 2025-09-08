@@ -154,6 +154,7 @@ ESewers, 92, 725 => 88 // To Central Sewers
 
 WSewers, 2119, 2793 => 88 // To Central Sewers
 WSewers, 2960, 2727 => 88 // To Central Sewers
+WSewers, 2124, 2760 => 88 // To Central Sewers
 WSewers, 2710, 2384 => 100 // To SW district, Sunin's house
 WSewers, 2679, 2251 => 101 // To SW district, behind Merchant's league
 WSewers, 2342, 2274 => 102 // To SW district, NE corner
