@@ -136,6 +136,7 @@ CentralSewers, 76, 1350 => 87 // To West Sewers
 BaldursGate_Undercellars, 192, 1762 => 86  // To East Sewers
 BaldursGate_Undercellars, 2486, 304 => 87  // To West Sewers
 BaldursGate_Undercellars, 384, 124 => 88  // To Central Sewers
+BaldursGate_Undercellars, 2478, 1740 => 72121  // To Blushing Mermaid
 
 ESewers, 109, 120 => 88 // To Central Sewers
 ESewers, 1858, 452 => 90 // To NE District, Ilmater's Shrine
