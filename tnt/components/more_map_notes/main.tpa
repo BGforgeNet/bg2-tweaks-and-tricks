@@ -153,6 +153,7 @@ ESewers, 1099, 1524 => 99 // To SE District, behind Sorcerous Sundries
 ESewers, 102, 1333 => 85 // To Undercellar
 ESewers, 92, 725 => 88 // To Central Sewers
 
+WSewers, 48, 385 => 73241 // To Iron Throne
 WSewers, 2119, 2793 => 88 // To Central Sewers
 WSewers, 2960, 2727 => 88 // To Central Sewers
 WSewers, 2124, 2760 => 88 // To Central Sewers
