@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22-16:02+0000\n"
+"POT-Creation-Date: 2025-09-08-13:13+0000\n"
 "PO-Revision-Date: 2023-09-04 00:55+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: none\n"
@@ -1121,6 +1121,10 @@ msgstr ""
 
 #: more_map_notes.tra:72004
 msgid "Laerta and Louise's house"
+msgstr ""
+
+#: more_map_notes.tra:72121
+msgid "To Blushing Mermaid"
 msgstr ""
 
 #: more_map_notes.tra:78001
