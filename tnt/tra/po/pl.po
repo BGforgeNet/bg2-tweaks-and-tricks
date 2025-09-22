@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08-19:01+0000\n"
+"POT-Creation-Date: 2025-09-22-06:35+0000\n"
 "PO-Revision-Date: 2025-02-03 16:40+0000\n"
 "Last-Translator: Arthur <a.ochal22@gmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1643,7 +1643,7 @@ msgid "Working Non-Detection"
 msgstr ""
 
 #: setup.tra:810
-msgid "Non-Detection spell is not present in game"
+msgid "Non-Detection spell is only present in BG and IWD"
 msgstr ""
 
 #: setup.tra:811

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08-19:01+0000\n"
+"POT-Creation-Date: 2025-09-22-06:35+0000\n"
 "PO-Revision-Date: 2025-08-28 17:48+0000\n"
 "Last-Translator: RiwsPy <t.debruyne@protonmail.com>\n"
 "Language-Team: none\n"
@@ -1827,7 +1827,9 @@ msgid "Working Non-Detection"
 msgstr "Non-detection fonctionnelle"
 
 #: setup.tra:810
-msgid "Non-Detection spell is not present in game"
+#, fuzzy
+#| msgid "Non-Detection spell is not present in game"
+msgid "Non-Detection spell is only present in BG and IWD"
 msgstr "Le sort Non-Detection n'est pas present dans le jeu"
 
 #: setup.tra:811
