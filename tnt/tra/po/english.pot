@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-22-06:35+0000\n"
+"POT-Creation-Date: 2025-09-22-07:02+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1649,7 +1649,7 @@ msgid "Unstack Chaos Shield"
 msgstr ""
 
 #: setup.tra:812
-msgid "Chaos Shield spells are not present in game"
+msgid "Chaos Shield spells are only present in BG2/BGEE"
 msgstr ""
 
 #: setup.tra:813
@@ -1665,7 +1665,7 @@ msgid "Uncheese Mislead"
 msgstr ""
 
 #: setup.tra:816
-msgid "Mislead spell is not present in game"
+msgid "Mislead spell is only present in BG2"
 msgstr ""
 
 #: setup.tra:818

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-22-06:35+0000\n"
+"POT-Creation-Date: 2025-09-22-07:02+0000\n"
 "PO-Revision-Date: 2025-08-28 17:48+0000\n"
 "Last-Translator: RiwsPy <t.debruyne@protonmail.com>\n"
 "Language-Team: none\n"
@@ -1837,7 +1837,9 @@ msgid "Unstack Chaos Shield"
 msgstr "Non-cumul de bouclier du chaos"
 
 #: setup.tra:812
-msgid "Chaos Shield spells are not present in game"
+#, fuzzy
+#| msgid "Chaos Shield spells are not present in game"
+msgid "Chaos Shield spells are only present in BG2/BGEE"
 msgstr "Les sorts de Bouclier du Chaos ne sont pas presents dans le jeu"
 
 #: setup.tra:813
@@ -1853,7 +1855,9 @@ msgid "Uncheese Mislead"
 msgstr "Supprimer la triche avec Double Illusoire"
 
 #: setup.tra:816
-msgid "Mislead spell is not present in game"
+#, fuzzy
+#| msgid "Mislead spell is not present in game"
+msgid "Mislead spell is only present in BG2"
 msgstr "Le sort Double Illusoire n'est pas present dans le jeu"
 
 #: setup.tra:818
