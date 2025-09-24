@@ -9,8 +9,8 @@ BUT_ONLY
 // Make the unremovable trap in Durlag's Tower Level 3 removable
 // This is the trapped altar
 COPY_EXISTING ~%DurlagsTower_L3%.are~ override
-  LPF ALTER_AREA_REGION
+  LPF ALTER_AREA_CONTAINER
     INT_VAR trap_remove = 99
-    STR_VAR region_name = ~Container 10~
+    STR_VAR container_name = ~Container 10~
   END
 BUT_ONLY
