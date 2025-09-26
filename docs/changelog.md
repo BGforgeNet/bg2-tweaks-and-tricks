@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.36](#version-836)
 - [Version 8.35](#version-835)
 - [Version 8.34](#version-834)
 - [Version 8.33](#version-833)
