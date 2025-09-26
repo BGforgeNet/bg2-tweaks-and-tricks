@@ -44,10 +44,17 @@
 - [Version 2](#version-2)
 - [Version 1](#version-1)
 
-### Version 8.36 (WIP)
+### Version 8.36
 
 - New component: faster forging dialogs.
-- Slightly improved dialog compatibility with WTP familiars.
+- Slightly improved dialog compatibility with WTP familiars (remove duplicate follow dialog options).
+- [Setup lines](https://github.com/BGforgeNet/bg2-wildmage/issues/30) are now utf-8 encoded, should show correctly in recent Windows terminal.
+- PnP protection items now includes Teddy Bear of Protection from [Wild Mage Additions](https://github.com/BGforgeNet/bg2-wildmage/), which no longer stacks with other Protection items.
+- More mage fencing: Breach scroll is moved to Ulgoth's beard store, and extra intelligence potions to the Temple of Wisdom.
+- Map notes: several fixes and additions in BG sewers.
+- French translation added.
+- Non-disarmable Davaeorn's Battle Horrors components is renamed to Trap Fixes. Now includes a fix to the trapped altar in Durlag's Tower Level 3, making it removable.
+- [Working Non-Detection](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/93) now can be installed on EET. Same goes for Uncheese Mislead and Chaos Shield.
 
 ### Version 8.35
 
@@ -75,15 +82,15 @@ New component: [Tracking!](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/b
 - New component: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
 - Even with Extended Soundsets, BG1 Imoen will not [mention torture](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/85).
 - Mod romance cheats:
-  - Tyris Flare is less picky now.
-  - Amber won't kill the romance midway because of PC's low INT/CHA.
-  - Shar-Teel won't leave party if PC gets belladonna for Delainy.
+    - Tyris Flare is less picky now.
+    - Amber won't kill the romance midway because of PC's low INT/CHA.
+    - Shar-Teel won't leave party if PC gets belladonna for Delainy.
 - PnP protection items: added RoP+3 from CtB, Stylish AoP+1 from White Queen.
 - Map notes:
-  - East sewers note in Undercellar.
-  - Fixed Laerta and Louise's house.
-  - Fixed tavern note in SW BG.
-  - Marked tavern in east BG.
+    - East sewers note in Undercellar.
+    - Fixed Laerta and Louise's house.
+    - Fixed tavern note in SW BG.
+    - Marked tavern in east BG.
 
 ### Version 8.29
 
@@ -336,9 +343,9 @@ Added more comprehensive check to include various Gaze spells.
 - Added spider form/web protection component.
 - Fixed Viconia's dialog_default and area_city in extended soundsets.
 - Easy Traps:
-  - Disabled all traps that never fire and just give notifications (not marked as trapped but have a script).
-  - Fixed multiple Durlag's tower traps.
-  - Added compatibility with WhiteQueen.
+    - Disabled all traps that never fire and just give notifications (not marked as trapped but have a script).
+    - Fixed multiple Durlag's tower traps.
+    - Added compatibility with WhiteQueen.
 - Added True True Sight component.
 - Added Kahrk and Arkanis Gath to fair fights.
 - Improved EE compatibility.
@@ -352,13 +359,13 @@ Added more comprehensive check to include various Gaze spells.
 - Added More Ankheg Armors component.
 - Added Hassle-free Returning Weapons component.
 - Smarter familiars:
-  - Added compatibility with WTP familiars.
-  - Fixed quasit.
-  - Ensured that dead familiars don't do anything.
-  - Added option to jump into pack when badly injured, and injured notifications.
-  - Added dialog option to manage familiar speed, remove faster familiars component.
-  - Added hit and run technique.
-  - Sped up looting.
+    - Added compatibility with WTP familiars.
+    - Fixed quasit.
+    - Ensured that dead familiars don't do anything.
+    - Added option to jump into pack when badly injured, and injured notifications.
+    - Added dialog option to manage familiar speed, remove faster familiars component.
+    - Added hit and run technique.
+    - Sped up looting.
 - Added potion of really mirrored eyes component.
 
 ### Version 6
@@ -369,9 +376,9 @@ Added more comprehensive check to include various Gaze spells.
 - NPC soundsets for PC: fixed bug when 1/2 versions were the same.
 - NPC soundsets for PC: added more sounds.
 - Under the hood changes:
-  - Compliments/insults: left as .wav instead of .wavc - make DTLCEP happy.
-  - Update weidu to 239.
-  - General code cleanup.
+    - Compliments/insults: left as .wav instead of .wavc - make DTLCEP happy.
+    - Update weidu to 239.
+    - General code cleanup.
 
 ### Version 5
 
