@@ -1655,7 +1655,7 @@ msgstr ""
 
 #: setup.tra:350
 msgid "Trap fixes"
-msgstr "Horreurs casquees de Davaeorn non-desarmable"
+msgstr ""
 
 #: setup.tra:500
 msgid "Stores"
