@@ -53,7 +53,7 @@
 - More mage fencing: Breach scroll is moved to Ulgoth's beard store, and extra intelligence potions to the Temple of Wisdom.
 - Map notes: several fixes and additions in BG sewers.
 - French translation added.
-- Non-disarmable Davaeorn's Battle Horrors components is renamed to Trap Fixes. Now includes a fix to the trapped altar in Durlag's Tower Level 3, making it removable.
+- Non-disarmable Davaeorn's Battle Horrors components is renamed to Trap fixes. Now includes a fix to the trapped altar in Durlag's Tower Level 3, making it removable.
 - [Working Non-Detection](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/93) now can be installed on EET. Same goes for Uncheese Mislead and Chaos Shield.
 
 ### Version 8.35
