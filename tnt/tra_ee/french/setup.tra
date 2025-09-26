@@ -56,7 +56,7 @@
 @317 = ~Amelioration de la detection des pieges : noyau (NECESSAIRE pour que les composants precedents fonctionnent)~
 @318 = ~Detection amelioree des pieges : detection instantanee~
 @319 = ~Tous les composants de pieges ameliores doivent être installes AVANT le noyau~
-@350 = ~Horreurs casquees de Davaeorn non-desarmable~
+@350 = ~Trap Fixes~
 @500 = ~Magasins~
 @501 = ~On ne peut pas voler les receleurs~
 @502 = ~Supprimer la triche du vol en boucle~

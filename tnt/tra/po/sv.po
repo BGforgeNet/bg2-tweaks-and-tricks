@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-22-07:02+0000\n"
+"POT-Creation-Date: 2025-09-26-10:26+0000\n"
 "PO-Revision-Date: 2024-10-30 07:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
@@ -1581,7 +1581,7 @@ msgid "All Improved Traps components must be installed BEFORE core"
 msgstr ""
 
 #: setup.tra:350
-msgid "Trap fixes"
+msgid "Trap Fixes"
 msgstr ""
 
 #: setup.tra:500
