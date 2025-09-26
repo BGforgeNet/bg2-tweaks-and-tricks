@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26-10:26+0000\n"
+"POT-Creation-Date: 2025-09-26-11:31+0000\n"
 "PO-Revision-Date: 2025-08-28 17:48+0000\n"
 "Last-Translator: RiwsPy <t.debruyne@protonmail.com>\n"
 "Language-Team: none\n"
@@ -1654,9 +1654,7 @@ msgstr ""
 "noyau"
 
 #: setup.tra:350
-#, fuzzy
-#| msgid "Trap fixes"
-msgid "Trap Fixes"
+msgid "Trap fixes"
 msgstr "Horreurs casquees de Davaeorn non-desarmable"
 
 #: setup.tra:500
