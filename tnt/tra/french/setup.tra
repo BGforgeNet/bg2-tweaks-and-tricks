@@ -26,7 +26,7 @@
 @212 = ~Comme dans la 3eme edition : pas d'empilement, le meilleur bonus prend effet~
 @223 = ~Vraie Potion de retrovision~
 @236 = ~Empilement illimite de bonnes baies~
-@240 = ~Type de degÃ¢ts des armes de jet~
+@240 = ~Type de degâts des armes de jet~
 @241 = ~Ajouter un bonus de force~
 @242 = ~Rendre les haches tranchantes et les marteaux contondants~
 @243 = ~Les deux options ci-dessus~
@@ -53,7 +53,7 @@
 @316 = ~Intuition piege : jouer le son "piege detecte"~
 @317 = ~Amelioration de la detection des pieges : noyau (NECESSAIRE pour que les composants precedents fonctionnent)~
 @318 = ~Detection amelioree des pieges : detection instantanee~
-@319 = ~Tous les composants de pieges ameliores doivent Ãªtre installes AVANT le noyau~
+@319 = ~Tous les composants de pieges ameliores doivent être installes AVANT le noyau~
 @350 = ~Trap Fixes~
 @500 = ~Magasins~
 @501 = ~On ne peut pas voler les receleurs~
@@ -105,7 +105,7 @@
 @818 = ~Spirales de maitre-lames plus pratiques~
 @820 = ~Protection contre le mal PnP~
 @821 = ~Graisse non hostile~
-@822 = ~PistageÂ !~
+@822 = ~Pistage !~
 @900 = ~Familiers~
 @901 = ~Familiers plus intelligents~
 @902 = ~Familiers plus resistants~
