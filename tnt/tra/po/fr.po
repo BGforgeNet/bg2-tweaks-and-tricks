@@ -236,7 +236,7 @@ msgstr "Prépare-toi à subir la colère de mon hamster !"
 #: extended_soundsets.tra:40
 msgctxt "g_ttedw1"
 msgid "Your end is near at hand, wail if you must!!"
-msgstr "Votre fin est proche, implorez si vous voulez !!"
+msgstr "Votre fin est proche, implorez si vous voulez?!!"
 
 #: extended_soundsets.tra:41
 #, fuzzy
