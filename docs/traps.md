@@ -44,5 +44,5 @@ Core is required to enable the selected components. Components installed after C
 
 Miscellanous trap fixes. This is the only Improved Traps component that does _not_ require Core.
 
-- Davaeorn's Battle Horrors can be avoided by disarming the corresponding traps, which seems a bit silly, likely an oversight on developers part. Now they are undetectable and undisarmable.
+- Originally, Davaeorn's Battle Horrors could be avoided by disarming the corresponding traps, which seems a bit silly, likely an oversight on developers part. Now they are undetectable and undisarmable.
 - The unremovable trap (altar) in Durlag's Tower Level 3 now becomes removable.
