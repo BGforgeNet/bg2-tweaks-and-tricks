@@ -1,11 +1,21 @@
 COPY_EXISTING ~%WIZARD_NON_DETECTION%.spl~ ~override~
-  WRITE_BYTE SPL_sectype SECTYPE_specific_protections
-    LPF REPLACE_STRREF_TRA // add True Sight to description
-      INT_VAR
-        offset = UNIDENTIFIED_DESC
-        old_substring_traref = 1
-        new_substring_traref = 2
-    END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = OPCODE_protection_by_secondary_type
+      target = TARGET_FX_preset
+      timing = TIMING_duration
+      duration = 1200
+      power = 3
+      resist_dispel = DISPEL | BYPASS_MR
+      parameter2 = SECTYPE_divination_attack
+      insert_point= 0
+  END
+  LPF REPLACE_STRREF_TRA // add True Sight to description
+    INT_VAR
+      offset = UNIDENTIFIED_DESC
+      old_substring_traref = 1
+      new_substring_traref = 2
+  END
 BUT_ONLY
 
 // Remove non-detection from description
@@ -13,6 +23,7 @@ COPY_EXISTING
     ~%WIZARD_ORACLE%.spl~ override
     ~%WIZARD_TRUE_SIGHT%.spl~ override
     ~%CLERIC_TRUE_SIGHT%.spl~ override
+    ~%INQUIS_TRUE_SIGHT%.spl~ override  // BG2 Improved GUI allows to see innate descriptions
   LPF REPLACE_STRREF_TRA
     INT_VAR
       offset = UNIDENTIFIED_DESC
