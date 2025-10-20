@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.37](#version-837)
 - [Version 8.36](#version-836)
 - [Version 8.35](#version-835)
 - [Version 8.34](#version-834)
@@ -44,6 +45,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.37
+
+Working Non-Detection actually works now.
 
 ### Version 8.36
 
