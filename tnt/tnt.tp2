@@ -379,7 +379,7 @@ INCLUDE ~%comp_dir%/main.tpa~
 
 BEGIN @815 /* Uncheese Mislead */
 GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @816 /* Requires BG2 or EE engine */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee~) @125
 OUTER_TEXT_SPRINT comp_name ~uncheese_mislead~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
