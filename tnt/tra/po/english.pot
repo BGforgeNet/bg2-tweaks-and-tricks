@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26-11:31+0000\n"
+"POT-Creation-Date: 2025-10-27-07:34+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1662,10 +1662,6 @@ msgstr ""
 
 #: setup.tra:815
 msgid "Uncheese Mislead"
-msgstr ""
-
-#: setup.tra:816
-msgid "Mislead spell is only present in BG2"
 msgstr ""
 
 #: setup.tra:818

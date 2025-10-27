@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26-11:31+0000\n"
+"POT-Creation-Date: 2025-10-27-07:34+0000\n"
 "PO-Revision-Date: 2024-10-30 07:09+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
@@ -1775,12 +1775,6 @@ msgstr "Projektera bild-trollformeln finns inte i spelet"
 msgid "Uncheese Mislead"
 msgstr ""
 
-#: setup.tra:816
-#, fuzzy
-#| msgid "Project Image spell is not present in game"
-msgid "Mislead spell is only present in BG2"
-msgstr "Projektera bild-trollformeln finns inte i spelet"
-
 #: setup.tra:818
 msgid "Sensible Blade spins"
 msgstr ""
@@ -2618,6 +2612,10 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Mislead spell is only present in BG2"
+#~ msgstr "Projektera bild-trollformeln finns inte i spelet"
 
 #~ msgid "trap"
 #~ msgstr "fälla"

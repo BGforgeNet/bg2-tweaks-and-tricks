@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26-11:31+0000\n"
+"POT-Creation-Date: 2025-10-27-07:34+0000\n"
 "PO-Revision-Date: 2025-08-28 17:48+0000\n"
 "Last-Translator: RiwsPy <t.debruyne@protonmail.com>\n"
 "Language-Team: none\n"
@@ -1854,12 +1854,6 @@ msgstr "Le sort Image Projetee n'est pas present dans le jeu"
 msgid "Uncheese Mislead"
 msgstr "Supprimer la triche avec Double Illusoire"
 
-#: setup.tra:816
-#, fuzzy
-#| msgid "Mislead spell is not present in game"
-msgid "Mislead spell is only present in BG2"
-msgstr "Le sort Double Illusoire n'est pas present dans le jeu"
-
 #: setup.tra:818
 msgid "Sensible Blade spins"
 msgstr "Spirales de maitre-lames plus pratiques"
@@ -2872,3 +2866,7 @@ msgstr "Charmée"
 msgctxt "female"
 msgid "Dominated"
 msgstr "Dominée"
+
+#, fuzzy
+#~ msgid "Mislead spell is only present in BG2"
+#~ msgstr "Le sort Double Illusoire n'est pas present dans le jeu"

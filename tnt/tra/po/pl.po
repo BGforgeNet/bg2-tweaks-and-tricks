@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26-11:31+0000\n"
+"POT-Creation-Date: 2025-10-27-07:34+0000\n"
 "PO-Revision-Date: 2025-02-03 16:40+0000\n"
 "Last-Translator: Arthur <a.ochal22@gmail.com>\n"
 "Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
@@ -1664,10 +1664,6 @@ msgstr ""
 
 #: setup.tra:815
 msgid "Uncheese Mislead"
-msgstr ""
-
-#: setup.tra:816
-msgid "Mislead spell is only present in BG2"
 msgstr ""
 
 #: setup.tra:818
