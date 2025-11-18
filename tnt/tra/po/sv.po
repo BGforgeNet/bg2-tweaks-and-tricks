@@ -244,8 +244,7 @@ msgid ""
 "Blast and bother!  These locks have always given me trouble!  Trouble they "
 "are!"
 msgstr ""
-"Bomber och besvär!  De här låsen har alltid gett mig problem!  Problem är "
-"de!"
+"Bomber och besvär!  De här låsen har alltid gett mig problem!  Problem är de!"
 
 #: extended_soundsets.tra:42
 msgctxt "quayl01"
@@ -433,65 +432,68 @@ msgstr "Din själ är förlorad!"
 
 #: faster_forging.tra:1
 msgid "I have something I think you could forge into an item."
-msgstr ""
+msgstr "Jag har något jag tror att du kan smida till ett föremål."
 
 #: faster_forging.tra:2
 msgid "Hmmmn...  Let us have a look then.  What sort of item would that be?"
 msgstr ""
+"Hmmmn...  Då ska vi ta en titt.  Vad för slags föremål skulle det vara?"
 
 #: faster_forging.tra:3
 msgid "Weapon."
-msgstr ""
+msgstr "Vapen."
 
 #: faster_forging.tra:4
 msgid "Armor."
-msgstr ""
+msgstr "Rustning."
 
 #: faster_forging.tra:5
 msgid "Trinket."
-msgstr ""
+msgstr "Smycke."
 
 #: faster_forging.tra:6
 msgid "Actually, nevermind.  Let's get back to that later."
-msgstr ""
+msgstr "Egentligen, glöm det.  Vi återkommer till det senare."
 
 #: faster_forging.tra:7
 msgid "Aye, what kind of weapon?"
-msgstr ""
+msgstr "Visst, vad för slags vapen?"
 
 #: faster_forging.tra:8
 msgid "Aye, what kind of armor?"
-msgstr ""
+msgstr "Visst, vad för slags rustning?"
 
 #: faster_forging.tra:9
 msgid "Aye, what kind of trinket?"
-msgstr ""
+msgstr "Visst, vad för slags smycke?"
 
 #: faster_forging.tra:10
 msgid "Actually, another sort."
-msgstr ""
+msgstr "Faktiskt en annan sorts."
 
 #: faster_forging.tra:20
 msgid ""
 "You mentioned a recipe last time, I think I have all the ingredients for it "
 "now."
 msgstr ""
+"Du nämnde ett recept förra gången, jag tror att jag har alla ingredienser "
+"till det nu."
 
 #: faster_forging.tra:21
 msgid "What kind of shiny the great one wishes?"
-msgstr ""
+msgstr "Vilken typ av skimring önskar dess storhet?"
 
 #: faster_forging.tra:22
 msgid "Ooo!  Pointy sharpy, yes!"
-msgstr ""
+msgstr "Ooo!  Spetsig vassig, ja!"
 
 #: faster_forging.tra:23
 msgid "Ooo!  I can makes armor, yes!"
-msgstr ""
+msgstr "Ooo! Jag kan gör rustning, ja!"
 
 #: faster_forging.tra:24
 msgid "Ooo!  Cespenar likes the triksies best!"
-msgstr ""
+msgstr "Ooo!  Cespenar gillar smycklena bäst!"
 
 #: hassle_free_ammo.tra:1
 msgid "Returning throwing axe"
@@ -499,9 +501,13 @@ msgstr "Returnerande kastyxa"
 
 #: hassle_free_ammo.tra:2
 msgid ""
-"The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.\n"
+"The hand axe or throwing axe is also known as a hatchet. The axe blade has a "
+"sharp steel tip, counterbalanced by a pointed fluke. The short handle has a "
+"point on the bottom and the head may have a spike on the top, which makes it "
+"impractical to use in melee.\n"
 "\n"
-"This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
+"This particular axe has a minor enchantment applied. It always returns to "
+"user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -518,9 +524,14 @@ msgid ""
 " Mage \n"
 " Thief"
 msgstr ""
-"Handyxan eller kastyxan kallas också kort för yxa. Yxbladet har en vass stålspets som balanseras av en spetsig fluga. Det korta skaftet har en spets nedtill och huvudet kan ha en spets upptill, vilket gör den opraktisk att använda i närstrid.\n"
+"Handyxan eller kastyxan kallas också kort för yxa. Yxbladet har en vass "
+"stålspets som balanseras av en spetsig fluga. Det korta skaftet har en spets "
+"nedtill och huvudet kan ha en spets upptill, vilket gör den opraktisk att "
+"använda i närstrid.\n"
 "\n"
-"Denna speciella yxa har en mindre förtrollning applicerad. Den återvänder alltid till användarens hand. Ändå slår den som ett normalt vapen, inte som ett magiskt.\n"
+"Denna speciella yxa har en mindre förtrollning applicerad. Den återvänder "
+"alltid till användarens hand. Ändå slår den som ett normalt vapen, inte som "
+"ett magiskt.\n"
 "\n"
 "STATISTIK:\n"
 "\n"
@@ -543,9 +554,13 @@ msgstr "Returnerande kastkniv"
 
 #: hassle_free_ammo.tra:4
 msgid ""
-"The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.\n"
+"The typical throwing dagger has a pointed, usually double-edged blade, as "
+"opposed to a knife, which has a single edge and is a bit shorter than the "
+"dagger. Unlike a dagger, this one has a smaller handle and is balanced "
+"differently, which makes it impractical to use in melee.\n"
 "\n"
-"This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
+"This particular dagger has a minor enchantment applied. It always returns to "
+"user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -559,9 +574,14 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
-"Den typiska kastdolken har ett spetsigt, oftast tveeggat blad, till skillnad från en kniv, som har en enkel egg och är lite kortare än dolken. Till skillnad från en dolk har den här ett mindre handtag och är balanserad på ett annat sätt, vilket gör den opraktisk att använda i närstrid.\n"
+"Den typiska kastdolken har ett spetsigt, oftast tveeggat blad, till skillnad "
+"från en kniv, som har en enkel egg och är lite kortare än dolken. Till "
+"skillnad från en dolk har den här ett mindre handtag och är balanserad på "
+"ett annat sätt, vilket gör den opraktisk att använda i närstrid.\n"
 "\n"
-"Just denna dolk har en mindre förtrollning applicerad. Den återvänder alltid till användarens hand. Ändå slår den som ett vanligt vapen, inte som ett magiskt.\n"
+"Just denna dolk har en mindre förtrollning applicerad. Den återvänder alltid "
+"till användarens hand. Ändå slår den som ett vanligt vapen, inte som ett "
+"magiskt.\n"
 "\n"
 "STATISTIK:\n"
 "\n"
@@ -581,9 +601,11 @@ msgstr "Återvändande kastpil"
 
 #: hassle_free_ammo.tra:6
 msgid ""
-"The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.\n"
+"The dart is a small, easily concealable missile weapon that is thrown rather "
+"than fired from a bow or other launcher.\n"
 "\n"
-"This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.\n"
+"This particular dart has a minor enchantment applied. It always returns to "
+"user's hand. Still, it strikes as normal weapon, not a magical one.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -596,9 +618,12 @@ msgid ""
 "Not Usable By:\n"
 " Cleric"
 msgstr ""
-"Kastpilen är ett litet, lätt dolt missilvapen som kastas i stället för att avfyras från en båge eller annan avfyrningsanordning.\n"
+"Kastpilen är ett litet, lätt dolt missilvapen som kastas i stället för att "
+"avfyras från en båge eller annan avfyrningsanordning.\n"
 "\n"
-"Just den här pilen har en mindre förtrollning applicerad. Den återvänder alltid till användarens hand. Ändå slår den som ett vanligt vapen, inte ett magiskt.\n"
+"Just den här pilen har en mindre förtrollning applicerad. Den återvänder "
+"alltid till användarens hand. Ändå slår den som ett vanligt vapen, inte ett "
+"magiskt.\n"
 "\n"
 "STATISTIK:\n"
 "\n"
@@ -617,13 +642,15 @@ msgstr "Överflödeskoger"
 
 #: hassle_free_ammo.tra:8
 msgid ""
-"Enchanted quivers like this one are highly sought after by professional archers.\n"
+"Enchanted quivers like this one are highly sought after by professional "
+"archers.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
 "Unlimited plain arrows"
 msgstr ""
-"Förtrollade koger som detta är mycket eftertraktade av professionella bågskyttar.\n"
+"Förtrollade koger som detta är mycket eftertraktade av professionella "
+"bågskyttar.\n"
 "\n"
 "STATISTIK:\n"
 "\n"
@@ -635,12 +662,19 @@ msgstr "Överflödesfodral"
 
 #: hassle_free_ammo.tra:10
 msgid ""
-"Enchanted bolt cases like this one are highly sought after by professional crossbow users.\n"
+"Enchanted bolt cases like this one are highly sought after by professional "
+"crossbow users.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
 "Unlimited plain bolts"
 msgstr ""
+"Förtrollade fodral för armborstpilar som detta är mycket eftertraktade av "
+"professionella armborstanvändare.\n"
+"\n"
+"ATTRIBUT:\n"
+"\n"
+"Obegränsat antal vanliga armborstpilar"
 
 #: hassle_free_ammo.tra:11
 msgid "Bag of Plenty"
@@ -648,32 +682,53 @@ msgstr "Överflödespåse"
 
 #: hassle_free_ammo.tra:12
 msgid ""
-"Enchanted bullet bags like this one are highly sought after by professional slingers.\n"
+"Enchanted bullet bags like this one are highly sought after by professional "
+"slingers.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
 "Unlimited plain bullets"
 msgstr ""
+"Förtrollade kulväskor som detta är mycket eftertraktade av professionella "
+"slungare.\n"
+"\n"
+"ATTRIBUT:\n"
+"\n"
+"Obegränsat antal vanliga kulor"
 
 #: improved_equalizer.tra:1
 msgid ""
 "Long Sword: The Equalizer\n"
-"The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the \"Sword of Neutrality,\" it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands. The Equalizer actively resists being used by characters of extreme alignments.\n"
+"The age of this sword is such that its true origin has been lost to time, "
+"but markings hint that it was possibly forged by those in the service of "
+"Helm. Also called the \"Sword of Neutrality,\" it seems designed to seek and "
+"terminate extremism, to shift the universe closer to harmonious equilibrium. "
+"The further the orientation of a target from true balance, the more potent "
+"the damage they suffer. The closer the wielder to true balance, the stronger "
+"is the sword in their hands. The Equalizer actively resists being used by "
+"characters of extreme alignments.\n"
 "\n"
-"In addition, the sword allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.\n"
+"In addition, the sword allows its owner to discover alignments of nearby "
+"creatures as per wizard spell, 3 times per day.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
 "Enchantment: +4\n"
 "\n"
 "Combat Abilities:\n"
-"  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.\n"
-"  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.\n"
+"  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. "
+"Spell negates. This ability will only work in hands of a character who is "
+"neither Good nor Evil.\n"
+"  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save "
+"vs. Breath negates. This ability will only work in hands of a character who "
+"is neither Lawful nor Chaotic.\n"
 "\n"
 "THAC0 & Damage:\n"
 "  vs True Neutral: +0 to hit, +0 damage\n"
-"  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 to hit, +2 damage\n"
-"  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 damage\n"
+"  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 "
+"to hit, +2 damage\n"
+"  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 "
+"damage\n"
 "\n"
 "Extra bonuses based on wielder's alignment:\n"
 "  True Neutral: +4 to hit, +4 damage\n"
@@ -700,22 +755,36 @@ msgid ""
 " Beast Master"
 msgstr ""
 "Långsvärd: Utjämnaren\n"
-"Detta svärd är så gammalt att dess sanna ursprung har gått förlorat i tiden, men märken antyder att det möjligen smiddes av de i Helms tjänst. Det kallas också \"Neutralitetens Svärd\" och verkar vara utformat för att söka och sätta stopp för extremism, för att flytta universum närmare harmonisk jämvikt. Ju längre bort ett mål befinner sig från sann balans, desto kraftigare blir skadorna. Ju närmare den som svingar svärdet är till den sanna balansen, desto starkare är svärdet i deras händer. Utjämnaren motsätter sig aktivt att användas av karaktärer med extrema inriktningar.\n"
+"Detta svärd är så gammalt att dess sanna ursprung har gått förlorat i tiden, "
+"men märken antyder att det möjligen smiddes av de i Helms tjänst. Det kallas "
+"också \"Neutralitetens Svärd\" och verkar vara utformat för att söka och "
+"sätta stopp för extremism, för att flytta universum närmare harmonisk "
+"jämvikt. Ju längre bort ett mål befinner sig från sann balans, desto "
+"kraftigare blir skadorna. Ju närmare den som svingar svärdet är till den "
+"sanna balansen, desto starkare är svärdet i deras händer. Utjämnaren "
+"motsätter sig aktivt att användas av karaktärer med extrema inriktningar.\n"
 "\n"
-"Dessutom tillåter svärdet sin ägare att upptäcka närliggande varelsers inriktningar som med en trollkarlsbesvärjelse, 3 gånger per dag.\n"
+"Dessutom tillåter svärdet sin ägare att upptäcka närliggande varelsers "
+"inriktningar som med en trollkarlsbesvärjelse, 3 gånger per dag.\n"
 "\n"
 "STATISTIK:\n"
 "\n"
 "Förtrollning: +4\n"
 "\n"
 "Stridsförmågor:\n"
-"  50% chans vid träff att förvirra en god eller ond fiende i 2 ronder, Räddning mot Besvärjelse negerar. Denna förmåga fungerar bara i händerna på en karaktär som varken är God eller Ond.\n"
-"  50% chans vid träff att förblinda en Laglydig eller Kaotisk fiende i 2 ronder, Räddning mot Andning negerar. Den här förmågan fungerar bara i händerna på en karaktär som varken är Laglydig eller Kaotisk.\n"
+"  50% chans vid träff att förvirra en god eller ond fiende i 2 ronder, "
+"Räddning mot Besvärjelse negerar. Denna förmåga fungerar bara i händerna på "
+"en karaktär som varken är God eller Ond.\n"
+"  50% chans vid träff att förblinda en Laglydig eller Kaotisk fiende i 2 "
+"ronder, Räddning mot Andning negerar. Den här förmågan fungerar bara i "
+"händerna på en karaktär som varken är Laglydig eller Kaotisk.\n"
 "\n"
 "THAC0 & Skada:\n"
 "  mot Sant Neutral: +0 till träff, +0 skada\n"
-"  mot icke-extrema inriktningar (Kaotisk/Laglydig Neutral, Neutral God/Ond): +2 i träff, +2 i skada\n"
-"  mot extrema inriktningar (Kaotisk God/Ond, Laglydig God/Ond): +4 i träff, +4 i skada\n"
+"  mot icke-extrema inriktningar (Kaotisk/Laglydig Neutral, Neutral God/Ond): "
+"+2 i träff, +2 i skada\n"
+"  mot extrema inriktningar (Kaotisk God/Ond, Laglydig God/Ond): +4 i träff, "
+"+4 i skada\n"
 "\n"
 "Extra bonusar baserade på användarens inriktning:\n"
 "  Sant neutral: +4 i träff, +4 i skada\n"
@@ -748,8 +817,8 @@ msgid ""
 "the forge."
 msgstr ""
 "Två sakör, min vän. Det kömma att kosta er 12 500 guld fö' arbete', inge' "
-"mindre, och utan en lärling måst' ni stanna här en heldag och hjälpa mig att"
-" sköta smedjan."
+"mindre, och utan en lärling måst' ni stanna här en heldag och hjälpa mig att "
+"sköta smedjan."
 
 #: improved_equalizer.tra:3
 msgid "What would be involved in that?"
@@ -906,7 +975,7 @@ msgstr "Corianna"
 
 #: more_map_notes.tra:32
 msgid "Hobgoblin camp"
-msgstr ""
+msgstr "Trolläger"
 
 #: more_map_notes.tra:33
 msgid "Portalbendarwinden"
@@ -914,119 +983,119 @@ msgstr "Portalbendarwinden"
 
 #: more_map_notes.tra:34
 msgid "Basillus"
-msgstr ""
+msgstr "Bacill"
 
 #: more_map_notes.tra:35
 msgid "Waterfall"
-msgstr ""
+msgstr "Vattenfall"
 
 #: more_map_notes.tra:36
 msgid "Albert"
-msgstr ""
+msgstr "Albert"
 
 #: more_map_notes.tra:37
 msgid "Rufie"
-msgstr ""
+msgstr "Rufie"
 
 #: more_map_notes.tra:38
 msgid "Lena and Samuel"
-msgstr ""
+msgstr "Lena och Samuel"
 
 #: more_map_notes.tra:39
 msgid "Sarhedra"
-msgstr ""
+msgstr "Sarhedra"
 
 #: more_map_notes.tra:40
 msgid "Fahrington"
-msgstr ""
+msgstr "Fahrington"
 
 #: more_map_notes.tra:41
 msgid "Faldorn"
-msgstr ""
+msgstr "Faldorn"
 
 #: more_map_notes.tra:43
 msgid "Surgeon"
-msgstr ""
+msgstr "Kirurg"
 
 #: more_map_notes.tra:44
 msgid "Mad Arcand"
-msgstr ""
+msgstr "Galne Arcand"
 
 #: more_map_notes.tra:46
 msgid "Arkushule"
-msgstr ""
+msgstr "Arkushule"
 
 #: more_map_notes.tra:47
 msgid "Safana"
-msgstr ""
+msgstr "Safana"
 
 #: more_map_notes.tra:48
 msgid "Galileus"
-msgstr ""
+msgstr "Galileus"
 
 #: more_map_notes.tra:49
 msgid "Larry, Darryl and Darryl"
-msgstr ""
+msgstr "Larry, Darryl och Darryl"
 
 #: more_map_notes.tra:50
 msgid "Hafiz"
-msgstr ""
+msgstr "Hafiz"
 
 #: more_map_notes.tra:62
 msgid "Joseph's house"
-msgstr ""
+msgstr "Josephs hus"
 
 #: more_map_notes.tra:63
 msgid "Tavern"
-msgstr ""
+msgstr "Taverna"
 
 #: more_map_notes.tra:64
 msgid "General store"
-msgstr ""
+msgstr "Grosshandel"
 
 #: more_map_notes.tra:65
 msgid "Tremain's house"
-msgstr ""
+msgstr "Tremains hus"
 
 #: more_map_notes.tra:66
 msgid "Rinnie's house"
-msgstr ""
+msgstr "Rinnies hus"
 
 #: more_map_notes.tra:67
 msgid "Bheren's house"
-msgstr ""
+msgstr "Bherens hus"
 
 #: more_map_notes.tra:68
 msgid "Jardak's house"
-msgstr ""
+msgstr "Jardaks hus"
 
 #: more_map_notes.tra:71
 msgid "To South district, Harbor Master's Building"
-msgstr ""
+msgstr "Till södra distriktet, Hamnkaptenens byggnad"
 
 #: more_map_notes.tra:72
 msgid "To South district, westside"
-msgstr ""
+msgstr "Till södra distriktet, västra sidan"
 
 #: more_map_notes.tra:73
 msgid "To Central District, Felonius Gist's Manor"
-msgstr ""
+msgstr "Till centrala distriktet, Felonius Gists Herrgård"
 
 #: more_map_notes.tra:74
 msgid "To North District, Bheren's house"
-msgstr ""
+msgstr "Till norra distriktet, Bherens hus"
 
 #: more_map_notes.tra:75
 msgid "To North District, Three Old Kegs"
-msgstr ""
+msgstr "Till norra distriktet, Tre Gamla Kaggar"
 
 #: more_map_notes.tra:76
 msgid "To North District, Ramazith's tower"
-msgstr ""
+msgstr "Till norra distriktet, Ramaziths torn"
 
 #: more_map_notes.tra:77
 msgid "To Central District, Oberon's estate"
-msgstr ""
+msgstr "Till centrala distriktet, Oberons egendom"
 
 #: more_map_notes.tra:78
 msgid "To Central District, Poultry store"
@@ -1290,10 +1359,18 @@ msgid ""
 "Area of Effect: Creature touched\n"
 "Saving Throw: None\n"
 "\n"
-"When this spell is cast, it creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:\n"
-"- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.\n"
-"- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
-"- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
+"When this spell is cast, it creates a magical barrier around the recipient "
+"at a distance of one foot. The barrier moves with the recipient and has "
+"three major effects:\n"
+"- First, all attacks made by evil or evilly enchanted creatures against the "
+"protected creature receive a penalty of -2 to each attack roll. Any saving "
+"throws caused by such attacks are made by the protected creature with a +2 "
+"bonus.\n"
+"- Second, any attempt to possess or to exercise mental control over (as by a "
+"vampire's charm ability) the protected creature is blocked by this spell.\n"
+"- Third, the spell prevents bodily contact with summoned demons. This "
+"protection ends if the protected character makes an attack against the "
+"blocked creature.\n"
 msgstr ""
 
 #: pnp_protection_from_evil.tra:5
@@ -1307,10 +1384,18 @@ msgid ""
 "Area of Effect: Creature touched\n"
 "Saving Throw: None\n"
 "\n"
-"When this spell is cast, it creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:\n"
-"- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.\n"
-"- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
-"- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
+"When this spell is cast, it creates a magical barrier around the recipient "
+"at a distance of one foot. The barrier moves with the recipient and has "
+"three major effects:\n"
+"- First, all attacks made by evil or evilly enchanted creatures against the "
+"protected creature receive a penalty of -2 to each attack roll. Any saving "
+"throws caused by such attacks are made by the protected creature with a +2 "
+"bonus.\n"
+"- Second, any attempt to possess or to exercise mental control over (as by a "
+"vampire's charm ability) the protected creature is blocked by this spell.\n"
+"- Third, the spell prevents bodily contact with summoned demons. This "
+"protection ends if the protected character makes an attack against the "
+"blocked creature.\n"
 msgstr ""
 
 #: pnp_protection_from_evil.tra:6
@@ -1325,10 +1410,19 @@ msgid ""
 "Area of Effect: 10' radius\n"
 "Saving Throw: None\n"
 "\n"
-"When this spell is cast, all creatures within a 10' radius are affected individually by 'protection from evil'. It creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:\n"
-"- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.\n"
-"- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.\n"
-"- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.\n"
+"When this spell is cast, all creatures within a 10' radius are affected "
+"individually by 'protection from evil'. It creates a magical barrier around "
+"the recipient at a distance of one foot. The barrier moves with the "
+"recipient and has three major effects:\n"
+"- First, all attacks made by evil or evilly enchanted creatures against the "
+"protected creature receive a penalty of -2 to each attack roll. Any saving "
+"throws caused by such attacks are made by the protected creature with a +2 "
+"bonus.\n"
+"- Second, any attempt to possess or to exercise mental control over (as by a "
+"vampire's charm ability) the protected creature is blocked by this spell.\n"
+"- Third, the spell prevents bodily contact with summoned demons. This "
+"protection ends if the protected character makes an attack against the "
+"blocked creature.\n"
 msgstr ""
 
 #: potions_no_stack.tra:1
@@ -1568,8 +1662,8 @@ msgstr ""
 
 #: setup.tra:317
 msgid ""
-"Improved trap detection: core (REQUIRED for any of previous traps components"
-" to work)"
+"Improved trap detection: core (REQUIRED for any of previous traps components "
+"to work)"
 msgstr ""
 
 #: setup.tra:318
@@ -1749,7 +1843,6 @@ msgstr ""
 
 #: setup.tra:810
 #, fuzzy
-#| msgid "Project Image spell is not present in game"
 msgid "Non-Detection spell is only present in BG and IWD"
 msgstr "Projektera bild-trollformeln finns inte i spelet"
 
@@ -1759,7 +1852,6 @@ msgstr ""
 
 #: setup.tra:812
 #, fuzzy
-#| msgid "Chaos Shield spells are not present in game"
 msgid "Chaos Shield spells are only present in BG2/BGEE"
 msgstr "Kaossköld-trollformler finns inte i spelet"
 
@@ -1886,18 +1978,24 @@ msgstr ""
 
 #: shandalars_cloak.tra:2
 msgid ""
-"This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.\n"
+"This cloak was originally stolen from Shandalar by the powerful mage Semia, "
+"presumably for the powerful magics woven into the fabric. How it has come to "
+"be in your possession and the fate of Semia are complete mysteries, and ones "
+"not likely to be solved.\n"
 "\n"
-"The cloak is woven from spider silk and radiates a strong aura of alteration magic. It grants the wearer immunity to entrapment by webs of any sort.\n"
+"The cloak is woven from spider silk and radiates a strong aura of alteration "
+"magic. It grants the wearer immunity to entrapment by webs of any sort.\n"
 "\n"
-"Once per day the wearer of this cloak can cast a double-sized web. This operates like the 2nd-level wizard spell.\n"
+"Once per day the wearer of this cloak can cast a double-sized web. This "
+"operates like the 2nd-level wizard spell.\n"
 "\n"
 "Also, the wearer is less subject to poison.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
 "Saving Throws:  +2 bonus vs Poison.\n"
-"Special:  The wearer is immune to webs, and can cast a double-sized Web once per day."
+"Special:  The wearer is immune to webs, and can cast a double-sized Web once "
+"per day."
 msgstr ""
 
 #: smarter_familiars.tra:15
@@ -1986,8 +2084,8 @@ msgstr ""
 
 #: smarter_familiars.tra:312
 msgid ""
-"When you're being attacked, disengage for a short time, then get back at the"
-" enemy."
+"When you're being attacked, disengage for a short time, then get back at the "
+"enemy."
 msgstr ""
 "När du blir attackerad, dra dig tillbaka en kort stund och återvänd sedan "
 "till fienden."
@@ -2007,8 +2105,7 @@ msgid "In combat, attack enemies when you see them."
 msgstr "I strid, attackera fiender när du ser dem."
 
 #: smarter_familiars.tra:316
-msgid ""
-"In combat, attack enemies when you see them, prioritizing spellcasters."
+msgid "In combat, attack enemies when you see them, prioritizing spellcasters."
 msgstr "I strid, attackera fiender när du ser dem och prioritera magiker."
 
 #: smarter_familiars.tra:400
@@ -2295,8 +2392,8 @@ msgstr ""
 
 #: starting_bags.tra:5
 msgid ""
-"This sturdy container allows dozens of scrolls to be placed in it, safe from"
-" exposure to fire, rain, or lightning -- common hazards faced by any "
+"This sturdy container allows dozens of scrolls to be placed in it, safe from "
+"exposure to fire, rain, or lightning -- common hazards faced by any "
 "adventuring wizard."
 msgstr ""
 
@@ -2349,8 +2446,8 @@ msgstr ""
 #: starting_bags.tra:23
 msgid ""
 "You have always been my favorite pupil, I want to help you however I can. "
-"Take these things. It's no weapon or armor, but experienced adventurers know"
-" their real value."
+"Take these things. It's no weapon or armor, but experienced adventurers know "
+"their real value."
 msgstr ""
 
 #: starting_bags.tra:24
@@ -2380,10 +2477,18 @@ msgstr ""
 #: tracking.tra:2
 msgid ""
 "Tracking\n"
-"With an intimate knowledge of his surroundings and the creatures that live within them, a ranger can use the Tracking ability to give himself a general idea of what creatures are in an area and which direction they are. Red arrows at the edge of the screen will point in the general direction of the creatures in the area."
+"With an intimate knowledge of his surroundings and the creatures that live "
+"within them, a ranger can use the Tracking ability to give himself a general "
+"idea of what creatures are in an area and which direction they are. Red "
+"arrows at the edge of the screen will point in the general direction of the "
+"creatures in the area."
 msgstr ""
 "Spårning\n"
-"Med en ingående kunskap om sin omgivning och de varelser som lever där kan en Jägare använda förmågan Spårning för att få en allmän uppfattning om vilka varelser som finns i ett område och i vilken riktning de är. Röda pilar i skärmens kant pekar i den allmänna riktningen för varelserna i området."
+"Med en ingående kunskap om sin omgivning och de varelser som lever där kan "
+"en Jägare använda förmågan Spårning för att få en allmän uppfattning om "
+"vilka varelser som finns i ett område och i vilken riktning de är. Röda "
+"pilar i skärmens kant pekar i den allmänna riktningen för varelserna i "
+"området."
 
 #: tracking.tra:100
 msgid ""
@@ -2414,8 +2519,8 @@ msgstr ""
 
 #: tracking.tra:105
 msgid ""
-"The Nashkel Mines are a series of tunnels plagued by monsters and mysterious"
-" occurrences. You find signs of kobolds, spiders, and wolves."
+"The Nashkel Mines are a series of tunnels plagued by monsters and mysterious "
+"occurrences. You find signs of kobolds, spiders, and wolves."
 msgstr ""
 
 #: tracking.tra:106
@@ -2427,8 +2532,8 @@ msgstr ""
 
 #: tracking.tra:107
 msgid ""
-"Gullykin is a small village of halflings. You find signs of kobolds, wolves,"
-" and some undead nearby."
+"Gullykin is a small village of halflings. You find signs of kobolds, wolves, "
+"and some undead nearby."
 msgstr ""
 
 #: tracking.tra:108
@@ -2440,8 +2545,8 @@ msgstr ""
 #: tracking.tra:109
 msgid ""
 "Firewine Bridge is an ancient, crumbling structure spanning a deep chasm. "
-"You find signs of undead, kobolds, ogres, and adventurers who have met their"
-" fate here."
+"You find signs of undead, kobolds, ogres, and adventurers who have met their "
+"fate here."
 msgstr ""
 
 #: tracking.tra:110
@@ -2511,8 +2616,8 @@ msgstr ""
 
 #: tracking.tra:121
 msgid ""
-"Wyrm's Crossing is a busy bridge leading into Baldur's Gate. You notice some"
-" signs of ankheg presense."
+"Wyrm's Crossing is a busy bridge leading into Baldur's Gate. You notice some "
+"signs of ankheg presense."
 msgstr ""
 
 #: tracking.tra:122
@@ -2534,8 +2639,8 @@ msgstr ""
 
 #: tracking.tra:124
 msgid ""
-"Lion's Way is a scenic path connecting Candlekeep to the wider world, marked"
-" by rolling hills and scattered trees. You find signs of wolves, bears, "
+"Lion's Way is a scenic path connecting Candlekeep to the wider world, marked "
+"by rolling hills and scattered trees. You find signs of wolves, bears, "
 "gibberlings."
 msgstr ""
 
@@ -2572,7 +2677,10 @@ msgstr ""
 
 #: wand_of_frost.tra:1
 msgid ""
-"The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.\n"
+"The wand will create a cone-shaped area of extreme cold, originating at the "
+"wizard's hand and extending outward, much like 5th level wizard spell Cone "
+"of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. "
+"wands for half.\n"
 "\n"
 "STATISTICS:\n"
 "\n"
@@ -2613,9 +2721,10 @@ msgstr ""
 msgid "."
 msgstr ""
 
+#: setup.tra:816
 #, fuzzy
-#~ msgid "Mislead spell is only present in BG2"
-#~ msgstr "Projektera bild-trollformeln finns inte i spelet"
+msgid "Mislead spell is only present in BG2"
+msgstr "Projektera bild-trollformeln finns inte i spelet"
 
 #~ msgid "trap"
 #~ msgstr "fälla"
