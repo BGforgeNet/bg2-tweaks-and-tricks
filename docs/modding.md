@@ -6,7 +6,7 @@ Various notes for modders.
 
 ## Faster forging dialogs
 
-You can easily add your items to the crafting lists. Copy-paste the example into your mod and edit the list as necessary. When TnT is installed after your mod, it will see your items in `g_forge.2da` and add them to the corresponding dialogs.
+You can easily add your items to the crafting lists. Copy-paste the example into your mod and edit the APPEND list as necessary. When TnT is installed after your mod, it will see your items in `g_forge.2da` and add them to the corresponding dialogs.
 
 ```
 <<<<<<<< .../tnt-inlined/g_forge.2da
@@ -23,6 +23,7 @@ plat06      armor   5000    1           1           misc12
 hamm09      weapon  10000   1           1           scrlag,hamm07,brac06,belt08
 # Dagger of the Star
 dagg21      weapon  5000    0           1           dagg22,5*misc41
+~
 ```
 
 1. Column names are self-explaining.
