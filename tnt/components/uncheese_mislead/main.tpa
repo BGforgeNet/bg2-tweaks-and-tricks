@@ -27,16 +27,6 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
       parameter1 = 20 // %
       parameter2 = CURRENT_HP_MOD_TYPE_percentage
   END
-  // Disable physical attacks
-  LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode = OPCODE_attacks_per_round_mod
-      insert_point = 1
-      target = TARGET_FX_self
-      parameter1 = 0  // value: no attacks
-      parameter2 = 1  // mode: set to value
-      timing = TIMING_permanent
-  END
   // Some buttons are still enabled with fixpack, for some reason. Disabling them.
   PATCH_FOR_EACH btn IN
     BUTTON_use_item
