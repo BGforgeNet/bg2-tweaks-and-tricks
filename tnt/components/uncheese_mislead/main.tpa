@@ -52,8 +52,8 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
       opcode = OPCODE_ids_sex_change
       target = TARGET_FX_self
       timing = TIMING_permanent
-      parameter1 = 1  // set
-      parameter2 = GENDER_illusionary
+      parameter1 = GENDER_illusionary
+      parameter2 = 1  // set
   END
 
 // use simulacr type for mislead
