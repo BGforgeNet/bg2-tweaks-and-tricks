@@ -56,6 +56,15 @@ COPY_EXISTING ~mislead.spl~ ~override/%mislead_spell%.spl~
         parameter2 = EVAL ~%%btn%%~
     END
   END
+  // Let True Sight destroy this clone
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = OPCODE_ids_sex_change
+      target = TARGET_FX_self
+      timing = TIMING_permanent
+      parameter1 = 1  // set
+      parameter2 = GENDER_illusionary
+  END
 
 // use simulacr type for mislead
 COPY_EXISTING ~%WIZARD_MISLEAD%.spl~ override
