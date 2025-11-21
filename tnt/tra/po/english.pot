@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27-07:34+0000\n"
+"POT-Creation-Date: 2025-11-21-17:10+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -1749,7 +1749,7 @@ msgid "Can't steal Carsomyr"
 msgstr ""
 
 #: setup.tra:1104
-msgid "True True Grandmastery"
+msgid "PnP-like True Grandmastery"
 msgstr ""
 
 #: setup.tra:1105

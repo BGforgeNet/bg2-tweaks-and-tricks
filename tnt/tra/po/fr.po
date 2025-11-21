@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-27-07:34+0000\n"
+"POT-Creation-Date: 2025-11-21-17:10+0000\n"
 "PO-Revision-Date: 2025-08-28 17:48+0000\n"
 "Last-Translator: RiwsPy <t.debruyne@protonmail.com>\n"
 "Language-Team: none\n"
@@ -1939,7 +1939,9 @@ msgid "Can't steal Carsomyr"
 msgstr "On ne peut pas voler Carsomyr"
 
 #: setup.tra:1104
-msgid "True True Grandmastery"
+#, fuzzy
+#| msgid "True True Grandmastery"
+msgid "PnP-like True Grandmastery"
 msgstr "Vraie Vraie Grande-maitrise"
 
 #: setup.tra:1105
