@@ -7,7 +7,9 @@ COPY ~%components%/true_true_grandmastery/wspatck.2da~ override
 COPY_EXISTING ~weapprof.2da~ override
   LPF GET_2DA_INDEX RET_ARRAY row_index col_index END
   fighter_column = $col_index(FIGHTER)
+  berserker_column = $col_index(BERSERKER)
   kensai_column = $col_index(KENSAI)
+  wizard_slayer_column = $col_index(WIZARD_SLAYER)
   archer_column = $col_index(FERALAN)
   start_column = 4 // 0-indexed, MAGE column
   COUNT_2DA_COLS columns
@@ -16,9 +18,15 @@ COPY_EXISTING ~weapprof.2da~ override
   FOR (r=0; r<weapprof_read; ++r) BEGIN
     FOR (c=start_column; c<columns; ++c) BEGIN
 
+      // default max limit for everyone
       pip_limit = 2
-      // archer
-      PATCH_IF (c == archer_column) BEGIN pip_limit = 4 END
+
+      // archer, restrictions are the same
+      PATCH_IF (c == archer_column) BEGIN pip_limit = 5 END
+
+      // berserker, wizard slayer
+      PATCH_IF (c == berserker_column) OR (c == wizard_slayer_column) BEGIN pip_limit = 4 END
+
       // kensai
       r0 = r + 1 // row_index is 0 indexed
       PATCH_IF (c == kensai_column) BEGIN
@@ -29,7 +37,7 @@ COPY_EXISTING ~weapprof.2da~ override
           OR (r0 == $row_index(KATANA))
           OR (r0 == $row_index(SCIMITARWAKISASHININJATO))
         BEGIN
-          pip_limit = 4
+          pip_limit = 5
         END
       END
       // 2 weapons style
@@ -46,6 +54,25 @@ COPY_EXISTING ~weapprof.2da~ override
   END
   SET_2DA_ENTRIES_NOW weapprof_set columns
   PRETTY_PRINT_2DA
+BUT_ONLY
+
+// Kensai and berserker only get weapon bonuses in melee
+COPY_EXISTING
+  ~spcl141.spl~ ~override~  // kensai passive bonuses
+  ~%BERSERKER_RAGE%.spl~ ~override~
+
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode = OPCODE_extra_damage_mod
+      opcode = OPCODE_melee_weapon_damage_mod
+      verbose = 1
+  END
+  LPF ALTER_EFFECT
+    INT_VAR
+      match_opcode = OPCODE_thac0_mod
+      opcode = OPCODE_melee_thac0_mod
+      verbose = 1
+  END
 BUT_ONLY
 
 // STRING_SET 9588 @1

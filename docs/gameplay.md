@@ -3,11 +3,11 @@
 Changes to various rules, combat options, etc.
 
 - [Fair fights](#fair-fights)
-  - [Just a few select enemies](#just-a-few-select-enemies)
-  - [Also remove undroppable items granting unfair advantages from ALL enemies](#also-remove-undroppable-items-granting-unfair-advantages-from-all-enemies)
+    - [Just a few select enemies](#just-a-few-select-enemies)
+    - [Also remove undroppable items granting unfair advantages from ALL enemies](#also-remove-undroppable-items-granting-unfair-advantages-from-all-enemies)
 - [No XP farming](#no-xp-farming)
 - [Can't steal Carsomyr](#cant-steal-carsomyr)
-- [True True Grandmastery](#true-true-grandmastery)
+- [PnP-like True Grandmastery](#pnp-like-true-grandmastery)
 - [Sensible multiclass restrictions](#sensible-multiclass-restrictions)
 
 ### Fair fights
@@ -54,22 +54,20 @@ Use if you can't resist yourself.
 
 You really think that you can steal an enormous greatsword from an ancient red dragon? Come on, Bilbo, get real.
 
-### True True Grandmastery
+### PnP-like True Grandmastery
 
-It's well known that Grandmastery was nerfed in BG2 by Bioware for "balance". And there's a mod by W. Weimer that restores it to the original, unnerfed condition, much to the joy of many a fighter. And there's an option to open Grandmastery to multiclass characters, as well.
+It's well known that Grandmastery was nerfed in BG2 by Bioware for "balance". And there's a mod by W. Weimer that restores it to the original, unnerfed version; and there's an option to open Grandmastery to multiclass characters, as well.
 
-However, not every fighter is supposed to be able to become a Grand Master. Certainly not multiclass, and not even kits. It should be available only to a single class, true class Fighter. That is his one edge over the kitted ones. And it's been taken away from him. (Although, pretty much all true classes in BG2 share the same fate - they are overshadowed by their kits.)
+However, in [PnP](<https://adnd2e.fandom.com/wiki/Weapon_Mastery_(POCT)#Weapon_Mastery>), not every fighter should be able to become a Grand Master. It is only available to single class fighters. Presumably, that also includes kitted characters. Unfortunately, pretty much all true classes in BG2 share the same fate - they are overshadowed by their kits.
 
-This component perfoms the following changes:
+PnP would have High Mastery almost double critical hit chance (reduce roll requirement from 18+ to 16+). However, this doesn't seem possible to implement in IE. Instead, this component perfoms the following changes:
 
-- Grand Mastery (5 pips) grants one extra attack over Specialist (the "unnerfed" version, as in Baldurdash and Tweaks Anthology).
-- Only true class Fighter can get Grand Mastery.
-- Archer can get High Mastery (4 pips) with bows and crossbows.
-- Kensai can get High Mastery with swords. Swords don't include daggers.
-- 2 weapons style limits are unchanged.
-- Every other class/proficiency combination is limited to 2 pips, unless a more severe restriction is already in place. E.g.:
-  - Clerics are already limited to 1 pip in each proficiency, so nothing's changed for them.
-  - Berserkers, are now limited to 2 pips in every proficiency, except for 2 weapons style in which they can get 3, and they keep their original restriction of 1 pip max in ranged weapons.
+1. Grand Mastery (5 points) grants one extra attack over Specialist (the "unnerfed" version, as in Baldurdash and Tweaks Anthology). Only true class Fighter may attain Grand Mastery, with 2 exceptions:
+    - Archer can become a Grand Master with bows and crossbows.
+    - Kensai can become a Grand Master with swords. Swords don't include daggers. Kensai is limited to 2 points in non-sword melee proficiencies.
+1. High Mastery (4 points) grants 0.5 extra attack over Specialist, 0.5 less than Grand Mastery. Only fighters may attain High Mastery.
+1. Berserker and Kensai no longer receive kit speficic THAC0 and damage bonuses when using ranged versions of the weapons, such as throwing axes.
+1. Other class/proficiency combinations are unchanged.
 
 This provides certain incentive to start a true class fighter, or even dual into a fighter.
 
