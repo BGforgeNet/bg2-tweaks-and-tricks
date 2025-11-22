@@ -69,7 +69,7 @@ COPY_EXISTING
   END
   LPF ALTER_EFFECT
     INT_VAR
-      match_opcode = OPCODE_thac0_mod
+      match_opcode = OPCODE_to_hit_mod
       opcode = OPCODE_melee_thac0_mod
       verbose = 1
   END
