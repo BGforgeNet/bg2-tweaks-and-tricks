@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.38](#version-838)
 - [Version 8.37](#version-837)
 - [Version 8.36](#version-836)
 - [Version 8.35](#version-835)
@@ -45,6 +46,15 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.38
+
+- Mislead:
+    - Can be installed on [BGEE](https://forums.bgforge.net/viewtopic.php?t=1327).
+    - Can be destroyed by True Sight.
+- True True Grandmastery renamed to PnP-like Grand Mastery.
+    - Implementation changed to spread the extra attack between High and Grand Mastery.
+    - Kit eligibility and bonuses changed, see the [doc](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/gameplay.md#pnp-like-grandmastery) for details.
 
 ### Version 8.37
 

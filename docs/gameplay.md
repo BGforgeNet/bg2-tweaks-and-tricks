@@ -7,7 +7,7 @@ Changes to various rules, combat options, etc.
     - [Also remove undroppable items granting unfair advantages from ALL enemies](#also-remove-undroppable-items-granting-unfair-advantages-from-all-enemies)
 - [No XP farming](#no-xp-farming)
 - [Can't steal Carsomyr](#cant-steal-carsomyr)
-- [PnP-like True Grandmastery](#pnp-like-true-grandmastery)
+- [PnP-like Grand Mastery](#pnp-like-grand-mastery)
 - [Sensible multiclass restrictions](#sensible-multiclass-restrictions)
 
 ### Fair fights
@@ -54,9 +54,9 @@ Use if you can't resist yourself.
 
 You really think that you can steal an enormous greatsword from an ancient red dragon? Come on, Bilbo, get real.
 
-### PnP-like True Grandmastery
+### PnP-like Grand Mastery
 
-It's well known that Grandmastery was nerfed in BG2 by Bioware for "balance". And there's a mod by W. Weimer that restores it to the original, unnerfed version; and there's an option to open Grandmastery to multiclass characters, as well.
+It's well known that Grand Mastery was nerfed in BG2 by Bioware for "balance". And there's a mod by W. Weimer that restores it to the original, unnerfed version; and there's an option to open Grand Mastery to multiclass characters, as well.
 
 However, in [PnP](<https://adnd2e.fandom.com/wiki/Weapon_Mastery_(POCT)#Weapon_Mastery>), not every fighter should be able to become a Grand Master. It is only available to single class fighters. Presumably, that also includes kitted characters. Unfortunately, pretty much all true classes in BG2 share the same fate - they are overshadowed by their kits.
 
