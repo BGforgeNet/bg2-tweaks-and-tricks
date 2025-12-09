@@ -54,7 +54,7 @@
     - Can be destroyed by True Sight.
 - True True Grandmastery renamed to PnP-like Grand Mastery.
     - Implementation changed to spread the extra attack between High and Grand Mastery.
-    - Kit eligibility and bonuses changed, see the [doc](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/gameplay.md#pnp-like-grandmastery) for details.
+    - Kit eligibility and bonuses changed, see the [doc](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/gameplay.md#pnp-like-grand-mastery) for details.
 
 ### Version 8.37
 
