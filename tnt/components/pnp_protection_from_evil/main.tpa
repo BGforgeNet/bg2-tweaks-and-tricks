@@ -68,6 +68,7 @@ END
 COPY_EXISTING ~%WIZARD_PROTECTION_FROM_EVIL%.spl~ override
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
     PHP_EACH ab_array AS int => ab_off BEGIN
+        // int starts from 0, headers are 1-indexed
         header = int + 1
         duration = header * 12
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
@@ -92,7 +93,10 @@ BUT_ONLY
 
 // cleric - 10' radius: 1 turn/level
 COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
-    FOR (header=1; header<=13; ++header) BEGIN
+    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
+    PHP_EACH ab_array AS int => ab_off BEGIN
+        header = int + 1
+        // 1 turn/level, first can be cast at level 7.
         duration = (header + 6) * 60
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
             INT_VAR header duration power = 4
