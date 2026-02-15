@@ -43,26 +43,27 @@ BEGIN
   OUTER_SET rc = 1
   ACTION_IF GAME_IS ~bgt~ BEGIN
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-      AT_NOW rc ~%tools_dir%\wavc.exe override\%sound%.wav override\%sound%.wav~
+      AT_NOW rc ~%tools_dir%\wavc.exe override\%filename% override\%filename%~
     END ELSE BEGIN
-      AT_NOW rc ~WINEDEBUG=-all wine %tools_dir%/wavc.exe override/%sound%.wav override/%sound%.wav~ EXACT
+      AT_NOW rc ~WINEDEBUG=-all wine %tools_dir%/wavc.exe override/%filename% override/%filename%~ EXACT
     END
   END
   ACTION_IF GAME_IS ~eet~ BEGIN
-    COPY + ~override/%sound%.wav~ ~override/g_temp.wavc~ // oggdec needs an intermediate file
+    OUTER_SPRINT tempfile ~override/g_temp.wavc~
+    COPY + ~override/%filename%~ ~%tempfile%~ // oggdec needs an intermediate file
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~win32~ BEGIN
-      AT_NOW rc ~%tools_dir%\oggdec.exe override\g_temp.wavc -w override\%sound%.wav~
+      AT_NOW rc ~%tools_dir%\oggdec.exe %tempfile% -w override\%filename%~
     END
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~unix~ BEGIN
-      AT_NOW rc ~oggdec override/g_temp.wavc -o override/%sound%.wav~
+      AT_NOW rc ~oggdec %tempfile% -o override/%filename%~
     END
     ACTION_IF ~%WEIDU_OS%~ STR_EQ ~mac~ BEGIN
-      AT_NOW rc ~sox override/g_temp.wavc override/%sound%.wav~
+      AT_NOW rc ~sox %tempfile% override/%filename%~
     END
-    DELETE + ~override/g_temp.wavc~
+    DELETE + ~%tempfile%~
   END
   ACTION_IF rc != 0 BEGIN
-    FAIL ~Failed to decompress %sound% wavc~
+    FAIL ~Failed to decompress %filename%~
   END
 END
 
