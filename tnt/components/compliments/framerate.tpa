@@ -77,14 +77,15 @@ ACTION_IF framerate != 30 BEGIN
   END
 
   OUTER_SET wav_filesize_off = 0x4
-  OUTER_SET wav_datasize_off = 0x2a
-  //adjust WAV
+  // http://soundfile.sapp.org/doc/WaveFormat/
+  OUTER_SET wav_datasize_off = 0x28
+  // adjust WAV
   ACTION_PHP_EACH sound_list AS sound => dummy BEGIN
     COPY_EXISTING ~%sound%.wav~ ~override~
-      filesize = (SOURCE_SIZE - 8) //without header
-      datasize = (SOURCE_SIZE - 44) //actual data size
+      filesize = (SOURCE_SIZE - 8)  // without header
+      datasize = (SOURCE_SIZE - 44) // actual data size
       //lengthen it
-      delta = (datasize*framerate/30 - datasize) //BG1 original frame rate is 30
+      delta = (datasize*framerate/30 - datasize)  // BG1 original frame rate is 30
       WRITE_LONG wav_filesize_off (filesize + delta)
       WRITE_LONG wav_datasize_off (datasize + delta)
       INSERT_BYTES SOURCE_SIZE delta
