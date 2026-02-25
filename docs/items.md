@@ -21,7 +21,8 @@ A collection of various item tweaks, mostly of QoL and "make sense" nature.
 
 An inventory management pain killer:
 
-- Changes all ammo and stackable throwing weapons to have 0 weight. Kind of cheese.
+- Changes all ammo and stackable throwing weapons to have 0 weight.
+- Changes stack size for all ammo and stackable throwing weapons to virtually unlimited (65535).
 - Adds returning **non-magical** ammo and throwing weapons to Taerom and Ribald, at a fair price.
 
 ### Throwing weapons damage type
