@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.39](#version-839)
 - [Version 8.38](#version-838)
 - [Version 8.37](#version-837)
 - [Version 8.36](#version-836)
@@ -46,6 +47,11 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.39
+
+- [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/95) crash in Compliments and Insults adjusted to framerate on EEs.
+- [Fixed](https://forums.bgforge.net/viewtopic.php?t=1330) PnP Protection from Evil 10 feet missing charm protection at level 20.
 
 ### Version 8.38
 
