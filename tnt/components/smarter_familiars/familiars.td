@@ -441,7 +441,7 @@ function reply_potion(potion: ItmRef, replyTra: number) {
     const spy_obj = obj("g_spy1");
     reply(tra(replyTra))
         .action(
-            CreateCreature(spy_crename, "[-1.-1]", Direction.S),
+            CreateCreature(spy_crename, [-1, -1], Direction.S),
             ActionOverride(spy_obj, TakePartyItemNum(potion, 1)),
             ActionOverride(spy_obj, DestroyItem(potion)),
             ActionOverride(spy_obj, DestroySelf()),
