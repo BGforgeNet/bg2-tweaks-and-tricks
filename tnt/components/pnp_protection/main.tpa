@@ -1,13 +1,12 @@
 INCLUDE ~%lib_dir%/tobex.tpa~
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY save_opcodes BEGIN
-  OPCODE_save_vs_death_mod => 1
-  OPCODE_save_vs_wands_mod => 1
-  OPCODE_save_vs_petrification_polymorph_mod => 1
-  OPCODE_save_vs_breath_weapons_mod => 1
-  OPCODE_save_vs_spells_mod => 1
+    OPCODE_save_vs_death_mod                   => 1
+    OPCODE_save_vs_wands_mod                   => 1
+    OPCODE_save_vs_petrification_polymorph_mod => 1
+    OPCODE_save_vs_breath_weapons_mod          => 1
+    OPCODE_save_vs_spells_mod                  => 1
 END
-
 
 /**
  * In some mods, AC and save bonuses can be different on the same items.
@@ -16,175 +15,158 @@ END
 
 // Saving throw bonuses
 ACTION_IF (EDITION == 2) BEGIN
-  // 2E style, only rings of protection can't stack
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
-    ring06 => 1  // Ring of Protection +1
-    ring07 => 2  // RoP +2
-    ring25 => 1  // RoP +1 - Koveras
-    ring41 => 3  // RoP +3
-
-    // thalantyr item upgrade
-    thring01 => 1  // Ring of Free Action +1
-    thring02 => 2  // RoFA +2
-
-    // bgttweak
-    ring25b => 2  // RoP +2 - upgraded Koveras'
-
-    // weimer's item upgrade
-    c2ring01 => 1  // Ring of Preservation +1
-    c2ring02 => 2  // Ring of Preservation +2
-    // c2brac01 => 1  // Gloves of the Master Thief
-    c2ring04 => 1  // Sorcerian Ring
-
-    // CtB. I think...
-    cbringp3 => 3  // custom RoP+3
-
-    // Ascalon's Quest Pack - Aaron's Ring of Protection
-    acq12000 => 1  // custom RoP+1
-  END
+    // 2E style, only rings of protection can't stack
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
+        ring06   => 1  // Ring of Protection +1
+        ring07   => 2  // RoP +2
+        ring25   => 1  // RoP +1 - Koveras
+        ring41   => 3  // RoP +3
+        // thalantyr item upgrade
+        thring01 => 1  // Ring of Free Action +1
+        thring02 => 2  // RoFA +2
+        // bgttweak
+        ring25b  => 2  // RoP +2 - upgraded Koveras'
+        // weimer's item upgrade
+        c2ring01 => 1  // Ring of Preservation +1
+        c2ring02 => 2  // Ring of Preservation +2
+        // c2brac01 => 1  // Gloves of the Master Thief
+        c2ring04 => 1  // Sorcerian Ring
+        // CtB. I think...
+        cbringp3 => 3  // custom RoP+3
+        // Ascalon's Quest Pack - Aaron's Ring of Protection
+        acq12000 => 1  // custom RoP+1
+    END
 END ELSE BEGIN
-  // 3E style, no items of protection can stack
-  ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
-    amul14 => 1  // Amulet of Protection +1
-    clck01 => 1  // Cloak of Protection +1
-    clck02 => 2  // CoP +2
-    clck31 => 2  // Improved CoP +2
-    ring06 => 1  // Ring of Protection + 1
-    ring07 => 2  // RoP +2
-    ring25 => 1  // RoP +1 - Koveras
-    ring41 => 3  // RoP +3
-
-    // thalantyr item upgrade
-    thring01 => 1  // Ring of Free Action +1
-    thring02 => 2  // RoFA +2
-
-    // bgttweak
-    ring25b => 2  // RoP +2 - upgraded Koveras'
-
-    // weimer's item upgrade
-    c2amul01 => 3  // Amulet of Ilmater
-    c2ring01 => 1  // Ring of Preservation +1
-    c2ring02 => 2  // Ring of Preservation +2
-    // c2brac01 => 1  // Gloves of the Master Thief
-    c2ring04 => 1  // Sorcerian Ring
-
-    // white queen
-    wqxnec2 => 1  // stylish amulet of protection = custom AoP +1
-
-    // CtB. I think...
-    cbringp3 => 3  // custom RoP+3
-
-    // Ascalon's Quest Pack - Aaron's Ring of Protection
-    acq12000 => 1  // custom RoP+1
-
-    // wild mage additions
-    wm_bear => 2  // Teddy bear of protection +2
-  END
+    // 3E style, no items of protection can stack
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY item_savebonus BEGIN
+        amul14   => 1  // Amulet of Protection +1
+        clck01   => 1  // Cloak of Protection +1
+        clck02   => 2  // CoP +2
+        clck31   => 2  // Improved CoP +2
+        ring06   => 1  // Ring of Protection + 1
+        ring07   => 2  // RoP +2
+        ring25   => 1  // RoP +1 - Koveras
+        ring41   => 3  // RoP +3
+        // thalantyr item upgrade
+        thring01 => 1  // Ring of Free Action +1
+        thring02 => 2  // RoFA +2
+        // bgttweak
+        ring25b  => 2  // RoP +2 - upgraded Koveras'
+        // weimer's item upgrade
+        c2amul01 => 3  // Amulet of Ilmater
+        c2ring01 => 1  // Ring of Preservation +1
+        c2ring02 => 2  // Ring of Preservation +2
+        // c2brac01 => 1  // Gloves of the Master Thief
+        c2ring04 => 1  // Sorcerian Ring
+        // white queen
+        wqxnec2  => 1  // stylish amulet of protection = custom AoP +1
+        // CtB. I think...
+        cbringp3 => 3  // custom RoP+3
+        // Ascalon's Quest Pack - Aaron's Ring of Protection
+        acq12000 => 1  // custom RoP+1
+        // wild mage additions
+        wm_bear  => 2  // Teddy bear of protection +2
+    END
 END
 
 // Armor Class bonuses. Not stacking in 2E nor 3E.
 // For armor, they should be inferred and assigned automatically later. No armor in this list!
 ACTION_DEFINE_ASSOCIATIVE_ARRAY item_acbonus BEGIN
-  amul14 => 1  // Amulet of Protection +1
-  clck01 => 1  // Cloak of Protection +1
-  clck02 => 2  // CoP +2
-  clck31 => 2  // Improved CoP +2
-  ring06 => 1  // Ring of Protection + 1
-  ring07 => 2  // RoP +2
-  ring25 => 1  // RoP +1 - Koveras
-  ring41 => 3  // RoP +3
-
-  // thalantyr item upgrade
-  thclck01 => 1  // Improved Cloak of Non-Detection +1
-  thclck03 => 2  // Improved Cloak of Balduran +2
-  thring01 => 1  // Ring of Free Action +1
-  thring02 => 2  // RoFA +2
-
-  // bg1npc
-  x#iamul => 1  // birthday present from Imoen = custom AoP +1
-
-  // bgttweak
-  ring25b => 2  // RoP +2 - upgraded Koveras'
-
-  // weimer's item upgrade
-  c2amul01 => 1  // Amulet of Ilmater
-  c2ring01 => 1  // Ring of Preservation +1
-  c2ring02 => 2  // Ring of Preservation +2
-  // c2brac01 => 3  // Gloves of the Master Thief
-  c2ring04 => 1  // Sorcerian Ring
-
-  // white queen
-  wqxnec2 => 1  // stylish amulet of protection = custom AoP +1
-
-  // CtB. I think...
-  cbringp3 => 3  // custom RoP+3
-
-  // Ascalon's Quest Pack - Aaron's Ring of Protection
-  acq12000 => 1  // custom RoP+1
-
-  // wild mage additions
-  wm_bear => 2  // Teddy bear of protection +2
+    amul14   => 1  // Amulet of Protection +1
+    clck01   => 1  // Cloak of Protection +1
+    clck02   => 2  // CoP +2
+    clck31   => 2  // Improved CoP +2
+    ring06   => 1  // Ring of Protection + 1
+    ring07   => 2  // RoP +2
+    ring25   => 1  // RoP +1 - Koveras
+    ring41   => 3  // RoP +3
+    // thalantyr item upgrade
+    thclck01 => 1  // Improved Cloak of Non-Detection +1
+    thclck03 => 2  // Improved Cloak of Balduran +2
+    thring01 => 1  // Ring of Free Action +1
+    thring02 => 2  // RoFA +2
+    // bg1npc
+    x#iamul  => 1  // birthday present from Imoen = custom AoP +1
+    // bgttweak
+    ring25b  => 2  // RoP +2 - upgraded Koveras'
+    // weimer's item upgrade
+    c2amul01 => 1  // Amulet of Ilmater
+    c2ring01 => 1  // Ring of Preservation +1
+    c2ring02 => 2  // Ring of Preservation +2
+    // c2brac01 => 3  // Gloves of the Master Thief
+    c2ring04 => 1  // Sorcerian Ring
+    // white queen
+    wqxnec2  => 1  // stylish amulet of protection = custom AoP +1
+    // CtB. I think...
+    cbringp3 => 3  // custom RoP+3
+    // Ascalon's Quest Pack - Aaron's Ring of Protection
+    acq12000 => 1  // custom RoP+1
+    // wild mage additions
+    wm_bear  => 2  // Teddy bear of protection +2
 END
 
-
 // Non-stacking save bonuses
-ACTION_PHP_EACH item_savebonus AS item => power BEGIN
-  COPY_EXISTING ~%item%.itm~ override
-    PHP_EACH save_opcodes AS opcode => int BEGIN
-      LPF DELETE_EFFECT INT_VAR match_opcode = EVAL ~%%opcode%%~ END
-    END
-    FOR (i=1; i<=power; ++i) BEGIN
-      PHP_EACH save_opcodes AS opcode => int BEGIN
-        LPF ADD_ITEM_EQEFFECT
-          INT_VAR
-            opcode = EVAL ~%%opcode%%~
-            target = TARGET_FX_self
-            timing = TIMING_while_equipped
-            parameter1 = 1 // amount
-            savingthrow = FLAG_SAVINGTHROW_limit_effect_stacking_Ex
-            special = (effect_stacking_id_base + i)  // opcodes not overlapping with Chaos Shield, so no problem
-            // This is necessary to prevent engine from confusing which effects belong to which items.
-            // Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
-            probability1 = (100 + i)
+ACTION_PHP_EACH item_savebonus AS item => power  BEGIN
+    COPY_EXISTING ~%item%.itm~ override
+        PHP_EACH save_opcodes AS opcode => int  BEGIN
+            LPF DELETE_EFFECT
+                INT_VAR
+                    match_opcode = EVAL ~%%opcode%%~
+            END
         END
-      END
-    END
-  BUT_ONLY IF_EXISTS
+        FOR (i=1; i<=power; ++i) BEGIN
+            PHP_EACH save_opcodes AS opcode => int  BEGIN
+                LPF ADD_ITEM_EQEFFECT
+                    INT_VAR
+                        opcode       = EVAL ~%%opcode%%~
+                        target       = TARGET_FX_self
+                        timing       = TIMING_while_equipped
+                        parameter1   = 1  // amount
+                        savingthrow  = FLAG_SAVINGTHROW_limit_effect_stacking_Ex
+                        special      = (effect_stacking_id_base + i)  // opcodes not overlapping with Chaos Shield, so no problem
+                        // This is necessary to prevent engine from confusing which effects belong to which items.
+                        // Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
+                        probability1 = (100 + i)
+                END
+            END
+        END
+    BUT_ONLY IF_EXISTS
 END
 
 // Non-stacking AC bonuses
-ACTION_PHP_EACH item_acbonus AS item => power BEGIN
-  COPY_EXISTING ~%item%.itm~ override
-    LPF DELETE_EFFECT INT_VAR match_opcode = OPCODE_ac_vs_damage_type_mod END
-    FOR (i=1; i<=power; ++i) BEGIN
-      LPF ADD_ITEM_EQEFFECT
-        INT_VAR
-          opcode = OPCODE_ac_vs_damage_type_mod
-          target = TARGET_FX_self
-          timing = TIMING_while_equipped
-          parameter1 = 1  // amount
-          savingthrow = FLAG_SAVINGTHROW_limit_effect_stacking_Ex
-          special = (effect_stacking_id_base + i) // opcodes not overlapping with Chaos Shield, so no problem
-          // This is necessary to prevent engine from confusing which effects belong to which items.
-          // Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
-          probability1 = (100 + i)
-
-      END
-    END
-  BUT_ONLY IF_EXISTS
+ACTION_PHP_EACH item_acbonus AS item => power  BEGIN
+    COPY_EXISTING ~%item%.itm~ override
+        LPF DELETE_EFFECT
+            INT_VAR
+                match_opcode = OPCODE_ac_vs_damage_type_mod
+        END
+        FOR (i=1; i<=power; ++i) BEGIN
+            LPF ADD_ITEM_EQEFFECT
+                INT_VAR
+                    opcode       = OPCODE_ac_vs_damage_type_mod
+                    target       = TARGET_FX_self
+                    timing       = TIMING_while_equipped
+                    parameter1   = 1  // amount
+                    savingthrow  = FLAG_SAVINGTHROW_limit_effect_stacking_Ex
+                    special      = (effect_stacking_id_base + i)  // opcodes not overlapping with Chaos Shield, so no problem
+                    // This is necessary to prevent engine from confusing which effects belong to which items.
+                    // Without it, equipping RoP+1 and +2 and then re-equipping RoP+1 twice results in lost AC.
+                    probability1 = (100 + i)
+            END
+        END
+    BUT_ONLY IF_EXISTS
 END
-
 
 // Read exclusion 2da, skip all known items because we handled them
 COPY_EXISTING ~itemexcl.2da~ override
-  READ_2DA_ENTRIES_NOW itemexcl 2
-  FOR (i=1;i<itemexcl;++i) BEGIN
-    READ_2DA_ENTRY_FORMER itemexcl i 0 item
-    TO_LOWER item
-    PATCH_IF NOT VARIABLE_IS_SET $item_acbonus(~%item%~) BEGIN
-      SET $items(~%item%~) = 1
+    READ_2DA_ENTRIES_NOW itemexcl 2
+    FOR (i=1; i<itemexcl; ++i) BEGIN
+        READ_2DA_ENTRY_FORMER itemexcl i 0 item
+        TO_LOWER item
+        PATCH_IF NOT VARIABLE_IS_SET $item_acbonus(~%item%~) BEGIN
+            SET $items(~%item%~) = 1
+        END
     END
-  END
 BUT_ONLY
 
 // empty exclusion
@@ -192,9 +174,16 @@ COPY ~%comp_dir%/itemexcl.2da~ override
 
 // This will set proper AC bonus for armors
 // For non-armors, it will emit a warning. They have to be added to the above compatibility lists.
-ACTION_PHP_EACH items AS item => int BEGIN
-  COPY_EXISTING ~%item%.itm~ override
-    LPF INFER_ARMOR_ENCHANTMENT RET enchantment END
-    LPF unstack_armor_bonus INT_VAR bonus = enchantment stacking_id_base = effect_stacking_id_base END
-  BUT_ONLY
+ACTION_PHP_EACH items AS item => int  BEGIN
+    COPY_EXISTING ~%item%.itm~ override
+        LPF INFER_ARMOR_ENCHANTMENT
+            RET
+                enchantment
+        END
+        LPF unstack_armor_bonus
+            INT_VAR
+                bonus            = enchantment
+                stacking_id_base = effect_stacking_id_base
+        END
+    BUT_ONLY
 END
