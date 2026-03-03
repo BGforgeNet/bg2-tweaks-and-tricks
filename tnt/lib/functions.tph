@@ -18,6 +18,13 @@ BEGIN
   END
 END
 
+/**
+ * Makes current armor magic bonus non-stackable.
+ * Increases base AC by `bonus`, then adds `bonus` -1 AC effects,
+ * each having `stacking_id_base + n` id set, to prevent stacking with similar effects.
+ * @arg {int} bonus! Normally, armor enchantment level.
+ * @arg {int} stacking_id_base [TobEx stacking ID base](https://iesdp.bgforge.net/file_formats/ie_formats/eff_v1#effv1_Header_0x24)
+ */
 DEFINE_PATCH_FUNCTION unstack_armor_bonus
   INT_VAR bonus = 0 stacking_id_base = 0
 BEGIN
