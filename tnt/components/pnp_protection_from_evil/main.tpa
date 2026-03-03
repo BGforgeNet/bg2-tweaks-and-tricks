@@ -18,8 +18,8 @@ It's a mess.
 
 // This is a hack, but hopefully once there are some translations it can be done properly.
 ACTION_DEFINE_ASSOCIATIVE_ARRAY strings BEGIN
-    1476 => 1
-    8364 => 1
+    1476  => 1
+    8364  => 1
     14672 => 1
     14780 => 1
     17391 => 1
@@ -27,52 +27,57 @@ END
 
 DEFINE_PATCH_FUNCTION ADD_CHARM_IMMUNITY_TO_HEADER
     INT_VAR
-        header = 0
+        header   = 0
         duration = 0
-        power = 1
+        power    = 1
 BEGIN
     LPF ADD_SPELL_EFFECT
         INT_VAR
-            opcode = OPCODE_protection_from_opcode
-            parameter2 = OPCODE_charm_charm_specific_creature
-            target = TARGET_FX_preset
-            header duration power
+            opcode        = OPCODE_protection_from_opcode
+            parameter2    = OPCODE_charm_charm_specific_creature
+            target        = TARGET_FX_preset
+            header
+            duration
+            power
             resist_dispel = DISPEL | BYPASS_MR
     END
-
-    PHP_EACH icons AS int => icon BEGIN
+    PHP_EACH icons AS int => icon  BEGIN
         LPF ADD_SPELL_EFFECT
             INT_VAR
-                opcode = OPCODE_prevent_special_effect_icon
-                parameter2 = EVAL ~%icon%~
-                target = TARGET_FX_preset
-                header duration power
+                opcode        = OPCODE_prevent_special_effect_icon
+                parameter2    = EVAL ~%icon%~
+                target        = TARGET_FX_preset
+                header
+                duration
+                power
                 resist_dispel = DISPEL | BYPASS_MR
         END
     END
-
-    PHP_EACH strings AS ref => int BEGIN
+    PHP_EACH strings AS ref => int  BEGIN
         LPF ADD_SPELL_EFFECT
             INT_VAR
-                opcode = OPCODE_text_protection_from_display_specific_string
-                parameter1 = ref
-                target = TARGET_FX_preset
-                header duration power
+                opcode        = OPCODE_text_protection_from_display_specific_string
+                parameter1    = ref
+                target        = TARGET_FX_preset
+                header
+                duration
+                power
                 resist_dispel = DISPEL | BYPASS_MR
         END
     END
-
 END
 
 // wizard: 2 rounds/level
 COPY_EXISTING ~%WIZARD_PROTECTION_FROM_EVIL%.spl~ override
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
-    PHP_EACH ab_array AS int => ab_off BEGIN
+    PHP_EACH ab_array AS int => ab_off  BEGIN
         // int starts from 0, headers are 1-indexed
         header = int + 1
         duration = header * 12
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
-            INT_VAR header duration
+            INT_VAR
+                header
+                duration
         END
     END
     SAY SPL_description @4
@@ -81,11 +86,13 @@ BUT_ONLY
 // cleric: 3 rounds/level
 COPY_EXISTING ~%CLERIC_PROTECT_FROM_EVIL%.spl~ override
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
-    PHP_EACH ab_array AS int => ab_off BEGIN
+    PHP_EACH ab_array AS int => ab_off  BEGIN
         header = int + 1
         duration = header * 18
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
-            INT_VAR header duration
+            INT_VAR
+                header
+                duration
         END
     END
     SAY SPL_description @5
@@ -94,18 +101,19 @@ BUT_ONLY
 // cleric - 10' radius: 1 turn/level
 COPY_EXISTING ~%CLERIC_PROTECTION_FROM_EVIL_10_FOOT%.spl~ override
     GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
-    PHP_EACH ab_array AS int => ab_off BEGIN
+    PHP_EACH ab_array AS int => ab_off  BEGIN
         header = int + 1
         // 1 turn/level, first can be cast at level 7.
         duration = (header + 6) * 60
         LPF ADD_CHARM_IMMUNITY_TO_HEADER
-            INT_VAR header duration power = 4
+            INT_VAR
+                header
+                duration
+                power = 4
         END
     END
     SAY SPL_description @6
 BUT_ONLY
-
-
 
 /* paladin: permanent protection aura https://adnd2e.fandom.com/wiki/Paladin#Protection_from_Evil */
 
