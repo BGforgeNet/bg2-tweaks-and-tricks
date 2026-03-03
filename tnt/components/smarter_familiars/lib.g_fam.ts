@@ -1,4 +1,6 @@
-import { $obj, $tra, GLOBAL } from "ielib";
+/** @tra smarter_familiars.tra */
+
+import { GLOBAL, obj, tra } from "@bgforge/iets";
 import {
     ActionListEmpty,
     ApplySpellRES,
@@ -52,7 +54,7 @@ import {
     STATE_INVISIBLE,
     StateCheck,
     STEALTH,
-} from "ielib/bg2";
+} from "@bgforge/iets/bg2";
 
 /**
  * Jump to backpack setting.
@@ -724,7 +726,7 @@ export function sprint() {
 export function jumpToPack() {
     if (
         G(GVAR_jumpToPack, 1)
-        && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
+        && (!CombatCounterLT(1) || See(obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
     ) {
         MoveToObject(Player1);
@@ -747,10 +749,10 @@ export function JumpToPackInjured(varThreshold: number, hpThreshold: number) {
     if (
         G(GVAR_jumpToPack, varThreshold)
         && HPPercentLT(Myself, hpThreshold)
-        && (!CombatCounterLT(1) || See($obj("[EVILCUTOFF]")))
+        && (!CombatCounterLT(1) || See(obj("[EVILCUTOFF]")))
         && !Dead("%death_var%")
     ) {
-        DisplayStringHead(Myself, $tra(603));
+        DisplayStringHead(Myself, tra(603));
         sprint();
         MoveToObject(Player1);
         GiveItemCreate("%fam_item%", Player1, 0, 0, 0);
@@ -768,10 +770,10 @@ export function notifyHurt() {
         && G(GVAR_notifyHurtDone, 0)
         && HPPercentLT(Myself, 70)
         && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
+        && !See(obj("[EVILCUTOFF]"))
         && !Dead("%death_var%")
     ) {
-        DisplayStringHead(Myself, $tra(601));
+        DisplayStringHead(Myself, tra(601));
         SetGlobal(GVAR_notifyHurtDone, GLOBAL, 1);
         Continue();
     }
@@ -786,10 +788,10 @@ export function notifyHurtBadly() {
         && G(GVAR_notifyHurtDone, 0)
         && HPPercentLT(Myself, 30)
         && CombatCounterLT(1)
-        && See($obj("[EVILCUTOFF]"))
+        && See(obj("[EVILCUTOFF]"))
         && !Dead("%death_var%")
     ) {
-        DisplayStringHead(Myself, $tra(602));
+        DisplayStringHead(Myself, tra(602));
         SetGlobal(GVAR_notifyHurtDone, GLOBAL, 1);
         Continue();
     }
@@ -818,7 +820,7 @@ export function hitAndRun() {
     if (
         G(GVAR_hitAndRun, 1)
         && !Dead("%death_var%")
-        && AttackedBy($obj("[EVILCUTOFF]"), DEFAULT)
+        && AttackedBy(obj("[EVILCUTOFF]"), DEFAULT)
     ) {
         sprint();
         RunAwayFrom(LastAttackerOf(Myself), 45);
@@ -832,7 +834,7 @@ export function hitAndRun() {
 export function followMaster() {
     if (
         CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
+        && !See(obj("[EVILCUTOFF]"))
         && !Detect(Player1)
         && G(GVAR_followMaster, 1)
         && !Dead("%death_var%")
@@ -848,7 +850,7 @@ export function followMaster() {
 export function followMasterBetweenAreas() {
     if (
         CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
+        && !See(obj("[EVILCUTOFF]"))
         && !InMyArea(Player1)
         && G(GVAR_followMaster, 1)
         && !Dead("%death_var%")
@@ -887,7 +889,7 @@ export function checkInventoryFull() {
         && !Dead("%death_var%")
     ) {
         SetGlobal(GVAR_inventoryFull, GLOBAL, 1);
-        DisplayStringHead(Myself, $tra(15));
+        DisplayStringHead(Myself, tra(15));
     }
 }
 
@@ -932,7 +934,7 @@ function tCanPickup() {
     return (
         ActionListEmpty()
         && CombatCounterLT(1)
-        && !See($obj("[EVILCUTOFF]"))
+        && !See(obj("[EVILCUTOFF]"))
         && Detect(Player1)
         && G(GVAR_inventoryFull, 0)
         && !Dead("%death_var%")
@@ -1008,7 +1010,7 @@ export function pickupJewelsMagicRare() {
 export function attackEnemy() {
     if (
         ActionListEmpty()
-        && See($obj("[EVILCUTOFF]"))
+        && See(obj("[EVILCUTOFF]"))
         && (G(GVAR_combatTactic, 1) || G(GVAR_combatTactic, 2))
         && !Dead("%death_var%")
         && !ModalState(STEALTH)
@@ -1024,15 +1026,15 @@ export function attackEnemy() {
 export function attackEnemyCasters() {
     if (
         ActionListEmpty()
-        && See($obj("[EVILCUTOFF]"))
+        && See(obj("[EVILCUTOFF]"))
         && G(GVAR_combatTactic, 2)
         && !Dead("%death_var%")
         && !ModalState(STEALTH)
         && !StateCheck(Myself, STATE_INVISIBLE)
-        && (See(NearestEnemyOfType($obj("[0.GENERAL_ITEM.0.MAGE_ALL]")))
-            || See(NearestEnemyOfType($obj("[0.GENERAL_ITEM.0.CLERIC_ALL]")))
-            || See(NearestEnemyOfType($obj("[0.GENERAL_ITEM.0.DRUID_ALL]")))
-            || See(NearestEnemyOfType($obj("[0.GENERAL_ITEM.0.BARD_ALL]"))))
+        && (See(NearestEnemyOfType(obj("[0.GENERAL_ITEM.0.MAGE_ALL]")))
+            || See(NearestEnemyOfType(obj("[0.GENERAL_ITEM.0.CLERIC_ALL]")))
+            || See(NearestEnemyOfType(obj("[0.GENERAL_ITEM.0.DRUID_ALL]")))
+            || See(NearestEnemyOfType(obj("[0.GENERAL_ITEM.0.BARD_ALL]"))))
     ) {
         AttackReevaluate(LastSeenBy(Myself), 30);
     }

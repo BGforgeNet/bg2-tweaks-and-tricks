@@ -1,3 +1,5 @@
+/** @tra smarter_familiars.tra */
+
 import {
     ammoMagic,
     ammoMagicRare,
