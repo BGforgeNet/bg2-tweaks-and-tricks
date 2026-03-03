@@ -2,7 +2,10 @@ APPEND ~ea.ids~ ~0 ANYONE~ UNLESS ~ANYONE~  // so that IDS_OF_SYMBOL works prope
 APPEND ~state.ids~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
 CLEAR_IDS_MAP
 
-// list web spells to build immunity
+
+/**
+ * @ret list spells A hand-picked list of web spell resrefs
+ */
 DEFINE_ACTION_FUNCTION LIST_WEB_SPELLS
     RET_ARRAY
         spells
