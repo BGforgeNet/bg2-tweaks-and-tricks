@@ -20,7 +20,7 @@ COPY_EXISTING ~weapprof.2da~ override
     READ_2DA_ENTRIES_NOW weapprof_read columns  // skip headers
     FOR (r=0; r<weapprof_read; ++r) BEGIN
         FOR (c=start_column; c<columns; ++c) BEGIN
-            // default max limit for everyone
+            /** default max limit for everyone = 2 */ 
             pip_limit = 2
             // archer, restrictions are the same
             PATCH_IF (c == archer_column) BEGIN
