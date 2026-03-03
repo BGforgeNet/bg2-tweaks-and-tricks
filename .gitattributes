@@ -21,3 +21,6 @@ tnt/tra/ukrainian/**.tra              working-tree-encoding=cp1251
 # EE only
 tnt/tra/**/ee.tra                     working-tree-encoding=utf8
 tnt/tra/**/*_ee.tra                   working-tree-encoding=utf8
+
+*.tbaf linguist-language=TypeScript
+*.td   linguist-language=TypeScript
