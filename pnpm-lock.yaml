@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      ielib:
-        specifier: ^0.1.2
-        version: 0.1.2
+      '@bgforge/iets':
+        specifier: ^0.3.2
+        version: 0.3.2
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.1
@@ -26,6 +26,9 @@ importers:
         version: 8.48.1(eslint@9.39.1)(typescript@5.7.3)
 
 packages:
+
+  '@bgforge/iets@0.3.2':
+    resolution: {integrity: sha512-vAI2hk42s6a4B2FqECdCw6Mx9lRzxRlgUj31wPYQc82flXNgtpzXOBfadBljpP0daHR5bbTe3lLbdlDyjIWMEA==}
 
   '@eslint-community/eslint-utils@4.9.0':
     resolution: {integrity: sha512-ayVFHdtZ+hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnSL+LKUlimp4BWJqMDMLmPpx/Q9R3OAlL4g==}
@@ -303,9 +306,6 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  ielib@0.1.2:
-    resolution: {integrity: sha512-5PxOktwsCDpRwiLIK3Zq/33HGUTZ3CWZck8MRot5SGUdU53PSbYqClq4b8KzWaXZGQ3xo71yy3ZbZR9ggApSdQ==}
-
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -482,6 +482,8 @@ packages:
     engines: {node: '>=10'}
 
 snapshots:
+
+  '@bgforge/iets@0.3.2': {}
 
   '@eslint-community/eslint-utils@4.9.0(eslint@9.39.1)':
     dependencies:
@@ -796,8 +798,6 @@ snapshots:
   graphemer@1.4.0: {}
 
   has-flag@4.0.0: {}
-
-  ielib@0.1.2: {}
 
   ignore@5.3.2: {}
 
