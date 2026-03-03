@@ -3,5 +3,14 @@
     "typescript.format.enable": false,
     "files.exclude": {
         "**/_tmp.tbaf.ts": true
-    }
+    },
+    "[weidu-tp2]": {
+        "editor.defaultFormatter": "BGforge.bgforge-mls"
+    },
+    "[weidu-baf]": {
+        "editor.defaultFormatter": "BGforge.bgforge-mls"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
