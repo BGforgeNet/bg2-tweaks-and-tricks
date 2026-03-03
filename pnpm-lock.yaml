@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@bgforge/iets':
-        specifier: ^0.3.2
-        version: 0.3.2
+        specifier: ^0.4.0
+        version: 0.4.0
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.1
@@ -27,8 +27,8 @@ importers:
 
 packages:
 
-  '@bgforge/iets@0.3.2':
-    resolution: {integrity: sha512-vAI2hk42s6a4B2FqECdCw6Mx9lRzxRlgUj31wPYQc82flXNgtpzXOBfadBljpP0daHR5bbTe3lLbdlDyjIWMEA==}
+  '@bgforge/iets@0.4.0':
+    resolution: {integrity: sha512-BSgxxitF3Psol16sXCvNvqBF8hm+PyTtHPRkh4Y+oxkvVx+taR4iAC7xNpSGx/nql+2Dm2YtvqV9bmA4HvHX+A==}
 
   '@eslint-community/eslint-utils@4.9.0':
     resolution: {integrity: sha512-ayVFHdtZ+hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnSL+LKUlimp4BWJqMDMLmPpx/Q9R3OAlL4g==}
@@ -483,7 +483,7 @@ packages:
 
 snapshots:
 
-  '@bgforge/iets@0.3.2': {}
+  '@bgforge/iets@0.4.0': {}
 
   '@eslint-community/eslint-utils@4.9.0(eslint@9.39.1)':
     dependencies:
