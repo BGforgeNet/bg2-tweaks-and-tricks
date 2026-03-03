@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "lib": ["es2020"],
+        "module": "es2022",
+        "moduleResolution": "bundler",
+        "noEmit": true,
+    },
+}
