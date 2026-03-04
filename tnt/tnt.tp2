@@ -1,398 +1,436 @@
 /** @tra setup.tra */
 BACKUP ~tnt/backup~
-SUPPORT "https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
+SUPPORT "https: // github.com/BGforgeNet/bg2-tweaks-and-tricks/issues"
 VERSION ~v8.39~
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 ALWAYS
-  CLEAR_EVERYTHING
-  OUTER_SPRINT lib_dir ~tnt/lib~
-  INCLUDE ~%lib_dir%/init.tpa~
+    CLEAR_EVERYTHING
+    OUTER_SPRINT lib_dir ~tnt/lib~
+    INCLUDE ~%lib_dir%/init.tpa~
 END
 
-LANGUAGE ~English~                ~english~     ~tnt/tra/english/setup.tra~
-LANGUAGE ~Polish~                 ~polish~      ~tnt/tra/polish/setup.tra~
-LANGUAGE ~Brazilian Portuguese~   ~portuguese~  ~tnt/tra/portuguese/setup.tra~
-LANGUAGE ~Russian~                ~russian~     ~tnt/tra/russian/setup.tra~
-LANGUAGE ~Spanish~                ~spanish~     ~tnt/tra/spanish/setup.tra~
-LANGUAGE ~Swedish~                ~swedish~     ~tnt/tra/swedish/setup.tra~
-LANGUAGE ~French~                 ~french~      ~tnt/tra/french/setup.tra~
+LANGUAGE ~English~ ~english~ ~tnt/tra/english/setup.tra~
+LANGUAGE ~Polish~ ~polish~ ~tnt/tra/polish/setup.tra~
+LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra/portuguese/setup.tra~
+LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/setup.tra~
+LANGUAGE ~Spanish~ ~spanish~ ~tnt/tra/spanish/setup.tra~
+LANGUAGE ~Swedish~ ~swedish~ ~tnt/tra/swedish/setup.tra~
+LANGUAGE ~French~ ~french~ ~tnt/tra/french/setup.tra~
 
 // FAMILIARS
-BEGIN @901 /* Smarter familiars */
-GROUP @900 /* Familiars */
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124 /* Requires ToB or EE engine */
+BEGIN @901  /* Smarter familiars */
+GROUP @900  /* Familiars */
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124  /* Requires ToB or EE engine */
 OUTER_SPRINT comp_name ~smarter_familiars~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @902 /* More resilient familiars */
-GROUP @900 /* Familiars */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
+BEGIN @902  /* More resilient familiars */
+GROUP @900  /* Familiars */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125  /* Requires BG2 or EE engine */
 INCLUDE ~%components%/resilient_familiars/main.tpa~
 // End familiars
 
-
 // Traps
 BEGIN @318
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_instant~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 
 BEGIN @315
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_range~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 
 BEGIN @313
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_reminders_specific~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @311
+
 BEGIN @312
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_reminders_generic~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @311
 
 BEGIN @302
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_no_combat~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @301
 
 BEGIN @303
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_combat~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
 SUBCOMPONENT @301
 
-
 BEGIN @306
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_pause_ground_traps_only~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-REQUIRE_PREDICATE (
-  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
-  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
-  ) @304
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+    OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)) @304
 SUBCOMPONENT @305
+
 BEGIN @307
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_pause_all_traps~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-REQUIRE_PREDICATE (
-  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
-  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
-  ) @304
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+    OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)) @304
 SUBCOMPONENT @305
 
 BEGIN @314
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_toggle_find_traps~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-REQUIRE_PREDICATE (
-  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
-  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
-  ) @304
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+    OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)) @304
 
 BEGIN @309
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_center_on_character~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-REQUIRE_PREDICATE (
-  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
-  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
-  ) @304
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+    OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)) @304
 SUBCOMPONENT @308
+
 BEGIN @310
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_center_on_trap~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-REQUIRE_PREDICATE (
-  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
-  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
-  ) @304
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+    OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)) @304
 SUBCOMPONENT @308
 
 BEGIN @316
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_intuition_sound~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 REQUIRE_PREDICATE NOT MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_core~) @319
-REQUIRE_PREDICATE (
-  MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
-  OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)
-  ) @304
+REQUIRE_PREDICATE (MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_no_combat~)
+    OR MOD_IS_INSTALLED ~tnt.tp2~ (ID_OF_LABEL ~tnt.tp2~ ~g_tnt_traps_intuition_combat~)) @304
 
 BEGIN @317
-GROUP @300 /* Traps */
+GROUP @300  /* Traps */
 LABEL ~g_tnt_traps_core~
 REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee pstee~ @124
 OUTER_TEXT_SPRINT comp_name ~easy_traps~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
 BEGIN @350
-GROUP @300 /* Traps */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
+GROUP @300  /* Traps */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102  /* BG1 content not present */
 INCLUDE ~%components%/trap_fixes/main.tpa~
 // end traps
 
-//SOUNDSETS
-BEGIN @1011 /* Additions only */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+// SOUNDSETS
+BEGIN @1011  /* Additions only */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101  /* BGT or EET only */
+SUBCOMPONENT @1010  /* Extended soundsets for joinable NPCs */
 OUTER_SET prefer = 0
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
-BEGIN @1012 /* Prefer BG1 sounds */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+BEGIN @1012  /* Prefer BG1 sounds */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101  /* BGT or EET only */
+SUBCOMPONENT @1010  /* Extended soundsets for joinable NPCs */
 OUTER_SET prefer = 1
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
-BEGIN @1013 /* Prefer BG2 sounds */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1010 /* Extended soundsets for joinable NPCs */
+BEGIN @1013  /* Prefer BG2 sounds */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101  /* BGT or EET only */
+SUBCOMPONENT @1010  /* Extended soundsets for joinable NPCs */
 OUTER_SET prefer = 2
 OUTER_TEXT_SPRINT comp_name ~extended_soundsets~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
-
-BEGIN @1003 /* Reintroduce and adjust to framerate */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1001 /* Compliments and insults */
+BEGIN @1003  /* Reintroduce and adjust to framerate */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101  /* BGT or EET only */
+SUBCOMPONENT @1001  /* Compliments and insults */
 INCLUDE ~%components%/compliments/wine_check.tpa~
 INCLUDE ~%components%/compliments/main.tpa~
 INCLUDE ~%components%/compliments/framerate.tpa~
 
-BEGIN @1002 /* Reintroduce */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101 /* BGT or EET only */
-SUBCOMPONENT @1001 /* Compliments and insults */
+BEGIN @1002  /* Reintroduce */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ AND GAME_INCLUDES ~bg2~) @101  /* BGT or EET only */
+SUBCOMPONENT @1001  /* Compliments and insults */
 INCLUDE ~%components%/compliments/main.tpa~
 
-BEGIN @1004 /* Disable */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102 /* BG1 content not present */
-SUBCOMPONENT @1001 /* Compliments and insults */
+BEGIN @1004  /* Disable */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~) @102  /* BG1 content not present */
+SUBCOMPONENT @1001  /* Compliments and insults */
 INCLUDE ~%components%/compliments/disable.tpa~
 
-BEGIN @1020 /* No talking when hiding in shadows */
-GROUP @1000 /* Soundsets */
+BEGIN @1020  /* No talking when hiding in shadows */
+GROUP @1000  /* Soundsets */
 INCLUDE ~%components%/no_talk_shadows/main.tpa~
 
-BEGIN @1021 /* Make NPC soundsets available to PC */
-GROUP @1000 /* Soundsets */
-REQUIRE_PREDICATE ((GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) AND NOT GAME_IS ~bgee bg2ee eet~) @123 /* EEs not supported. Try ... instead */
+BEGIN @1021  /* Make NPC soundsets available to PC */
+GROUP @1000  /* Soundsets */
+REQUIRE_PREDICATE ((GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) AND NOT GAME_IS ~bgee bg2ee eet~) @123  /* EEs not supported. Try ... instead */
 OUTER_TEXT_SPRINT comp_dir ~%components%/npc_soundsets~
 INCLUDE ~%comp_dir%/main.tpa~
 // END SOUNDSETS
 
-
-//ITEM TWEAKS
-BEGIN @201 /* Hassle free ammo */
-GROUP @200 /* Items */
+// ITEM TWEAKS
+BEGIN @201  /* Hassle free ammo */
+GROUP @200  /* Items */
 OUTER_SPRINT comp_name ~hassle_free_ammo~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
+BEGIN @241  /* Add strength bonus */
+GROUP @200  /* Items */
+SUBCOMPONENT @240  /* Throwing weapons damage type */
+OUTER_SET strength = 1
+OUTER_SET damage = 0
+OUTER_SPRINT comp_name ~throwing_damage~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @241 /* Add strength bonus */
-GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing weapons damage type */
-OUTER_SET strength = 1 OUTER_SET damage = 0
+BEGIN @242  /* Make axes slashing and hammers blunt */
+GROUP @200  /* Items */
+SUBCOMPONENT @240  /* Throwing weapons damage type */
+OUTER_SET strength = 0
+OUTER_SET damage = 1
 OUTER_SPRINT comp_name ~throwing_damage~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
-BEGIN @242 /* Make axes slashing and hammers blunt */
-GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing weapons damage type */
-OUTER_SET strength = 0 OUTER_SET damage = 1
-OUTER_SPRINT comp_name ~throwing_damage~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
-BEGIN @243 /* Both of the above options */
-GROUP @200 /* Items */
-SUBCOMPONENT @240 /* Throwing weapons damage type */
-OUTER_SET strength = 1 OUTER_SET damage = 1
-OUTER_SPRINT comp_name ~throwing_damage~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @202 /* Remove blur graphics from items */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+BEGIN @243  /* Both of the above options */
+GROUP @200  /* Items */
+SUBCOMPONENT @240  /* Throwing weapons damage type */
+OUTER_SET strength = 1
+OUTER_SET damage = 1
+OUTER_SPRINT comp_name ~throwing_damage~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
+
+BEGIN @202  /* Remove blur graphics from items */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
 INCLUDE ~%components%/no_blur/main.tpa~
 
-BEGIN @203 /* Sensible Cloak of Mirroring */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+BEGIN @203  /* Sensible Cloak of Mirroring */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126  /* Requires BG2 */
 INCLUDE ~%components%/cloak_of_mirroring/main.tpa~
 
-BEGIN @204 /* Effects of scrolls and potions do not stack with themselves */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee iwdee~) @130 /* Requires Classic ToB or BG(2)EE or IWDEE engine */
+BEGIN @204  /* Effects of scrolls and potions do not stack with themselves */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee iwdee~) @130  /* Requires Classic ToB or BG(2)EE or IWDEE engine */
 OUTER_SPRINT comp_name ~potions_no_stack~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @206 // Single target
-GROUP @200 /* Items */
-SUBCOMPONENT @205 /* Sensible wand of frost */
+BEGIN @206  // Single target
+GROUP @200  /* Items */
+SUBCOMPONENT @205  /* Sensible wand of frost */
 OUTER_SET cone = 0
 OUTER_SPRINT comp_name ~wand_of_frost~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
-BEGIN @207 // AoE
-GROUP @200 /* Items */
-SUBCOMPONENT @205 /* Sensible wand of frost */
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
+
+BEGIN @207  // AoE
+GROUP @200  /* Items */
+SUBCOMPONENT @205  /* Sensible wand of frost */
 OUTER_SET cone = 1
 OUTER_SPRINT comp_name ~wand_of_frost~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @223 /* Potion of really mirrored eyes */
-GROUP @200 /* Items */
+BEGIN @223  /* Potion of really mirrored eyes */
+GROUP @200  /* Items */
 OUTER_SPRINT comp_name ~really_mirrored_eyes~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @236 /* Unlimited goodberries stacking */
-GROUP @200 /* Items */
+BEGIN @236  /* Unlimited goodberries stacking */
+GROUP @200  /* Items */
 INCLUDE ~%components%/goodberries_stacking/main.tpa~
 
-BEGIN @250 /* Improved Shandalar's cloak */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE GAME_INCLUDES ~totsc~ @131 /* Requires TotSC content */
+BEGIN @250  /* Improved Shandalar's cloak */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE GAME_INCLUDES ~totsc~ @131  /* Requires TotSC content */
 OUTER_SPRINT comp_name ~shandalars_cloak~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @252 /* Algernon's cloak: usable once per day */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+BEGIN @252  /* Algernon's cloak: usable once per day */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102  /* BG1 content not present */
 INCLUDE ~%components%/algernons_cloak/main.tpa~
 
-BEGIN @260 /* Improved Equalizer */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-OUTER_SPRINT comp_name ~improved_equalizer~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+BEGIN @260  /* Improved Equalizer */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126  /* Requires BG2 */
+OUTER_SPRINT comp_name ~improved_equalizer~
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
-BEGIN @261 /* Distinct items */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+BEGIN @261  /* Distinct items */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102  /* BG1 content not present */
 INCLUDE ~%components%/distinct_items/main.tpa~
 
-BEGIN @208 /* Working protection from poison */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127 /* Only non-EE engines */
-OUTER_SPRINT comp_name ~poison_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+BEGIN @208  /* Working protection from poison */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
+REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127  /* Only non-EE engines */
+OUTER_SPRINT comp_name ~poison_protection~
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%components%/%comp_name%/main.tpa~
 
-BEGIN @211 /* 2E-like: saving throws stack, AC doesn't */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128 /* Requires Classic ToB engine */
-SUBCOMPONENT @210 /* PnP-like protection items */
-OUTER_SPRINT comp_name ~pnp_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+BEGIN @211  /* 2E-like: saving throws stack, AC doesn't */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128  /* Requires Classic ToB engine */
+SUBCOMPONENT @210  /* PnP-like protection items */
+OUTER_SPRINT comp_name ~pnp_protection~
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 OUTER_SET EDITION = 2
 INCLUDE ~%components%/%comp_name%/main.tpa~
 
-BEGIN @212 /* 3E-like: no stacking, best bonus takes effect */
-GROUP @200 /* Items */
-REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128 /* Requires Classic ToB engine */
-SUBCOMPONENT @210 /* PnP-like protection items */
-OUTER_SPRINT comp_name ~pnp_protection~ OUTER_SPRINT comp_dir ~%components%/%comp_name%~
+BEGIN @212  /* 3E-like: no stacking, best bonus takes effect */
+GROUP @200  /* Items */
+REQUIRE_PREDICATE (ENGINE_IS ~tob~) @128  /* Requires Classic ToB engine */
+SUBCOMPONENT @210  /* PnP-like protection items */
+OUTER_SPRINT comp_name ~pnp_protection~
+OUTER_SPRINT comp_dir ~%components%/%comp_name%~
 OUTER_SET EDITION = 3
 INCLUDE ~%components%/%comp_name%/main.tpa~
 // END ITEM TWEAKS
 
 // SPELL TWEAKS
-BEGIN @801 /* Spider form ignores web */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+BEGIN @801  /* Spider form ignores web */
+GROUP @800  /* Spells and abilities */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
 INCLUDE ~%components%/spider_form/main.tpa~
 
-BEGIN @802 /* Cheesy Slayer: full heal on change */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+BEGIN @802  /* Cheesy Slayer: full heal on change */
+GROUP @800  /* Spells and abilities */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126  /* Requires BG2 */
 COMPILE ~%components%/slayer/heal.d~
 
-BEGIN @804 /* no loss */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
-SUBCOMPONENT @803 /* Cheesy Slayer: reputation */
+BEGIN @804  /* no loss */
+GROUP @800  /* Spells and abilities */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126  /* Requires BG2 */
+SUBCOMPONENT @803  /* Cheesy Slayer: reputation */
 COMPILE ~%components%/slayer/norep.d~
 
-BEGIN @805 /* reduced loss */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
-SUBCOMPONENT @803 /* Cheesy Slayer: reputation */
+BEGIN @805  /* reduced loss */
+GROUP @800  /* Spells and abilities */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126  /* Requires BG2 */
+SUBCOMPONENT @803  /* Cheesy Slayer: reputation */
 COMPILE ~%components%/slayer/low_rep.d~
 
-BEGIN @806 /* True True Sight */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125 /* Requires BG2 or EE engine */
+BEGIN @806  /* True True Sight */
+GROUP @800  /* Spells and abilities */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee iwdee~) @125  /* Requires BG2 or EE engine */
 OUTER_TEXT_SPRINT comp_name ~true_true_sight~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
-BEGIN @807 /* Sensible Otiluke's Sphere */
-GROUP @800 /* Spells and abilities */
+BEGIN @807  /* Sensible Otiluke's Sphere */
+GROUP @800  /* Spells and abilities */
 INCLUDE ~%components%/otiluke/main.tpa~
 
-BEGIN @808 /* Greater Command AoE */
-GROUP @800 /* Spells and abilities */
+BEGIN @808  /* Greater Command AoE */
+GROUP @800  /* Spells and abilities */
 INCLUDE ~%components%/greater_command/main.tpa~
 
-BEGIN @809 /* Working Non-Detection */
-GROUP @800 /* Spells and abilities */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~ OR GAME_INCLUDES ~sod~ OR GAME_INCLUDES ~iwd~ OR GAME_INCLUDES ~iwd2~) @810
+BEGIN @809  /* Working Non-Detection */
+GROUP @800  /* Spells and abilities */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~
+    OR GAME_INCLUDES ~bg2~
+    OR GAME_INCLUDES ~sod~
+    OR GAME_INCLUDES ~iwd~
+    OR GAME_INCLUDES ~iwd2~) @810
 OUTER_TEXT_SPRINT comp_name ~working_non_detection~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%comp_dir%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%comp_dir%/main.tpa~
+END
 
-BEGIN @811 /* Unstack Chaos Shield */
-GROUP @800 /* Spells and abilities */
+BEGIN @811  /* Unstack Chaos Shield */
+GROUP @800  /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee~) @812
 INCLUDE ~%components%/unstack_chaos_shield/main.tpa~
 
-BEGIN @813 /* Uncheese Project Image */
-GROUP @800 /* Spells and abilities */
+BEGIN @813  /* Uncheese Project Image */
+GROUP @800  /* Spells and abilities */
 REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~projimag.spl~ @814
 OUTER_TEXT_SPRINT comp_name ~uncheese_project_image~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
 
-BEGIN @815 /* Uncheese Mislead */
-GROUP @800 /* Spells and abilities */
+BEGIN @815  /* Uncheese Mislead */
+GROUP @800  /* Spells and abilities */
 REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~ OR ENGINE_IS ~bgee bg2ee~) @125
 OUTER_TEXT_SPRINT comp_name ~uncheese_mislead~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
 
-BEGIN @818 /* Sensible Blade spins */
-GROUP @800 /* Spells and abilities */
+BEGIN @818  /* Sensible Blade spins */
+GROUP @800  /* Spells and abilities */
 OUTER_SPRINT comp_name ~sensible_spins~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
 BEGIN @820
 GROUP @800
 OUTER_SPRINT comp_name ~pnp_protection_from_evil~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
 BEGIN @821
 GROUP @800
@@ -403,160 +441,190 @@ BEGIN @822
 GROUP @800
 OUTER_SPRINT comp_name ~tracking~
 OUTER_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 /* END SPELL TWEAKS */
 
-
 // Stores
-BEGIN @505 /* Stores always buy goods at the same (low) price */
-GROUP @500 /* Stores */
+BEGIN @505  /* Stores always buy goods at the same (low) price */
+GROUP @500  /* Stores */
 INCLUDE ~%components%/no_store_depreciation/main.tpa~
 
-BEGIN @501 /* Can't steal from fences */
-GROUP @500 /* Stores */
-SUBCOMPONENT @502 /* Close store steal exploit */
+BEGIN @501  /* Can't steal from fences */
+GROUP @500  /* Stores */
+SUBCOMPONENT @502  /* Close store steal exploit */
 INCLUDE ~%components%/no_shop_steal/fence.tpa~
 
-BEGIN @503 /* Can't steal from any stores */
-GROUP @500 /* Stores */
-SUBCOMPONENT @502 /* Close store steal exploit */
+BEGIN @503  /* Can't steal from any stores */
+GROUP @500  /* Stores */
+SUBCOMPONENT @502  /* Close store steal exploit */
 INCLUDE ~%components%/no_shop_steal/all.tpa~
 
-BEGIN @504 /* More ankheg armors by Taerom */
-GROUP @500 /* Stores */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+BEGIN @504  /* More ankheg armors by Taerom */
+GROUP @500  /* Stores */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102  /* BG1 content not present */
 INCLUDE ~%components%/more_ankhegs/main.tpa~
 
-BEGIN @506 /* Cleanup stores */
-GROUP @500 /* Stores */
+BEGIN @506  /* Cleanup stores */
+GROUP @500  /* Stores */
 INCLUDE ~%components%/cleanup_stores/main.tpa~
 
-BEGIN @507 /* Limited stock */
-GROUP @500 /* Stores */
+BEGIN @507  /* Limited stock */
+GROUP @500  /* Stores */
 INCLUDE ~%components%/limited_stock/main.tpa~
 // end Stores
 
 // gameplay and rules
-BEGIN @1111 /* Just a few selected enemies */
-GROUP @1100 /* Gameplay and rules */
-SUBCOMPONENT @1110 /* Fair fights */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-OUTER_SET remove_items = 0 INCLUDE ~%components%/fair_fights/main.tpa~
-BEGIN @1112 /* Also remove undroppable items granting unfair advantages from ALL enemies */
-GROUP @1100 /* Gameplay and rules */
-SUBCOMPONENT @1110 /* Fair fights */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-OUTER_SET remove_items = 1 INCLUDE ~%components%/fair_fights/main.tpa~
+BEGIN @1111  /* Just a few selected enemies */
+GROUP @1100  /* Gameplay and rules */
+SUBCOMPONENT @1110  /* Fair fights */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
+OUTER_SET remove_items = 0
+INCLUDE ~%components%/fair_fights/main.tpa~
 
-BEGIN @1102 /* No XP farming */
-GROUP @1100 /* Gameplay and rules */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+BEGIN @1112  /* Also remove undroppable items granting unfair advantages from ALL enemies */
+GROUP @1100  /* Gameplay and rules */
+SUBCOMPONENT @1110  /* Fair fights */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
+OUTER_SET remove_items = 1
+INCLUDE ~%components%/fair_fights/main.tpa~
+
+BEGIN @1102  /* No XP farming */
+GROUP @1100  /* Gameplay and rules */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102  /* BG1 content not present */
 INCLUDE ~%components%/no_xp_farm/main.tpa~
 
-BEGIN @1103 /* Can't steal Carsomyr */
-GROUP @1100 /* Gameplay and rules */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+BEGIN @1103  /* Can't steal Carsomyr */
+GROUP @1100  /* Gameplay and rules */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126  /* Requires BG2 */
 INCLUDE ~%components%/no_steal_carsomyr/main.tpa~
 
-BEGIN @1104 /* True True Grandmastery */
-GROUP @1100 /* Gameplay and rules */
+BEGIN @1104  /* True True Grandmastery */
+GROUP @1100  /* Gameplay and rules */
 OUTER_TEXT_SPRINT comp_name ~true_true_grandmastery~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @1105 /* Sensible multiclass restrictions */
-GROUP @1100 /* Gameplay and rules */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
+BEGIN @1105  /* Sensible multiclass restrictions */
+GROUP @1100  /* Gameplay and rules */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
 INCLUDE ~%components%/sensible_multiclass_restrictions/main.tpa~
 
-//Quest and dialog tweaks
-BEGIN @701 /* Bloodless deeds */
-GROUP @700 /* Quest and dialog tweaks */
-REQUIRE_PREDICATE GAME_IS ~bgt~ @129 /* BGT only */
+// Quest and dialog tweaks
+BEGIN @701  /* Bloodless deeds */
+GROUP @700  /* Quest and dialog tweaks */
+REQUIRE_PREDICATE GAME_IS ~bgt~ @129  /* BGT only */
 INCLUDE ~%components%/bloodless_deeds/main.tpa~
 
-BEGIN @702 /* Improved strongholds */
-GROUP @700 /* Quest and dialog tweaks */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
+BEGIN @702  /* Improved strongholds */
+GROUP @700  /* Quest and dialog tweaks */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126  /* Requires BG2 */
 OUTER_SPRINT comp_name ~improved_strongholds~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-
-BEGIN @703 /* Save Melicamp */
-GROUP @700 /* Quest and dialog tweaks */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102 /* BG1 content not present */
+BEGIN @703  /* Save Melicamp */
+GROUP @700  /* Quest and dialog tweaks */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg1~ @102  /* BG1 content not present */
 OUTER_TEXT_SPRINT comp_name ~save_melicamp~
 OUTER_TEXT_SPRINT comp_dir ~%components%/%comp_name%~
 INCLUDE ~%comp_dir%/main.tpa~
-//End quest and dialog tweaks
-
+// End quest and dialog tweaks
 
 // convenience
-BEGIN @601 /* Less autosaves */
-GROUP @600 /* Assorted convenience components */
+BEGIN @601  /* Less autosaves */
+GROUP @600  /* Assorted convenience components */
 INCLUDE ~%components%/less_autosaves/main.tpa~
 
-BEGIN @602 /* More map notes */
-GROUP @600 /* Assorted convenience components */
+BEGIN @602  /* More map notes */
+GROUP @600  /* Assorted convenience components */
 OUTER_SPRINT comp_name ~more_map_notes~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @603 /* Disable lightning during rain */
-GROUP @600 /* Assorted convenience components */
+BEGIN @603  /* Disable lightning during rain */
+GROUP @600  /* Assorted convenience components */
 INCLUDE ~%components%/no_lightning/main.tpa~
 
-BEGIN @604 /* Mod romance cheats */
-GROUP @600 /* Assorted convenience components */
+BEGIN @604  /* Mod romance cheats */
+GROUP @600  /* Assorted convenience components */
 INCLUDE ~%components%/romance_cheats/main.tpa~
 
-BEGIN @605 /* Disable intro movies */
-GROUP @600 /* Assorted convenience components */
+BEGIN @605  /* Disable intro movies */
+GROUP @600  /* Assorted convenience components */
 DISABLE_FROM_KEY bwdragon.mve bislogo.mve wotc.mve
 
-BEGIN @606 /* Faster loading times */
-GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127 /* Only non-EE engines */
+BEGIN @606  /* Faster loading times */
+GROUP @600  /* Assorted convenience components */
+REQUIRE_PREDICATE NOT ENGINE_IS ~bgee bg2ee iwdee pstee~ @127  /* Only non-EE engines */
 INCLUDE ~%components%/faster_loading_times/main.tpa~
 
-BEGIN @608 /* Each stat gets +1 */
-GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-SUBCOMPONENT @607 /* Add BG1 tomes stats bonuses to new BG2 characters */
+BEGIN @608  /* Each stat gets +1 */
+GROUP @600  /* Assorted convenience components */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126  /* Requires BG2 */
+SUBCOMPONENT @607  /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY ~%components%/stat_bonuses/g_stat1.spl~ ~override/g_tomes.spl~
 EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
-BEGIN @609 /* Each stat except Wisdom gets +1, Wisdom gets +3 */
-GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126 /* Requires BG2 */
-SUBCOMPONENT @607 /* Add BG1 tomes stats bonuses to new BG2 characters */
+BEGIN @609  /* Each stat except Wisdom gets +1, Wisdom gets +3 */
+GROUP @600  /* Assorted convenience components */
+REQUIRE_PREDICATE GAME_INCLUDES ~bg2~ @126  /* Requires BG2 */
+SUBCOMPONENT @607  /* Add BG1 tomes stats bonuses to new BG2 characters */
 COPY ~%components%/stat_bonuses/g_stat2.spl~ ~override/g_tomes.spl~
 EXTEND_TOP ~ar0602.bcs~ ~%components%/stat_bonuses/stats.baf~
 
-BEGIN @611 /* Gem, scroll, potion, ammo (GSPA) */
-GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-SUBCOMPONENT @610 /* Starting bags */
-ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo END
+BEGIN @611  /* Gem, scroll, potion, ammo (GSPA) */
+GROUP @600  /* Assorted convenience components */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
+SUBCOMPONENT @610  /* Starting bags */
+ACTION_DEFINE_ARRAY bags BEGIN
+    gem
+    scr
+    pot
+    ammo
+END
 OUTER_SPRINT comp_name ~starting_bags~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @612 /* GSPA + holding */
-GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-SUBCOMPONENT @610 /* Starting bags */
-ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
+BEGIN @612  /* GSPA + holding */
+GROUP @600  /* Assorted convenience components */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
+SUBCOMPONENT @610  /* Starting bags */
+ACTION_DEFINE_ARRAY bags BEGIN
+    gem
+    scr
+    pot
+    ammo
+    hold
+END
 OUTER_SPRINT comp_name ~starting_bags~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
-BEGIN @613 /* GSPA + holding - all bottomless! */
-GROUP @600 /* Assorted convenience components */
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122 /* BG saga only */
-SUBCOMPONENT @610 /* Starting bags */
-ACTION_DEFINE_ARRAY bags BEGIN gem scr pot ammo hold END
+BEGIN @613  /* GSPA + holding - all bottomless! */
+GROUP @600  /* Assorted convenience components */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg1~ OR GAME_INCLUDES ~bg2~) @122  /* BG saga only */
+SUBCOMPONENT @610  /* Starting bags */
+ACTION_DEFINE_ARRAY bags BEGIN
+    gem
+    scr
+    pot
+    ammo
+    hold
+END
 OUTER_SPRINT comp_name ~starting_bags~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 INCLUDE ~%components%/%comp_name%/bottomless.tpa~
-
 
 BEGIN @620
 GROUP @600
@@ -566,17 +634,21 @@ INCLUDE ~%components%/more_mage_fencing/main.tpa~
 BEGIN @631
 SUBCOMPONENT @630
 GROUP @600
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126  /* Requires BG2 */
 OUTER_SET expanded_selection = 0
 OUTER_SPRINT comp_name ~faster_forging~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
 BEGIN @632
 SUBCOMPONENT @630
 GROUP @600
-REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126 /* Requires BG2 */
+REQUIRE_PREDICATE (GAME_INCLUDES ~bg2~) @126  /* Requires BG2 */
 OUTER_SET expanded_selection = 1
 OUTER_SPRINT comp_name ~faster_forging~
-WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN INCLUDE ~%components%/%comp_name%/main.tpa~ END
+WITH_TRA ~%lang_dir%/%comp_name%.tra~ BEGIN
+    INCLUDE ~%components%/%comp_name%/main.tpa~
+END
 
 // end convenience
