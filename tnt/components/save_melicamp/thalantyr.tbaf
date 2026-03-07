@@ -1,6 +1,7 @@
-import { $obj, GLOBAL, LOCALS } from "ielib";
+import { GLOBAL, LOCALS, obj } from "@bgforge/iets";
 import {
     ActionOverride,
+    Animate,
     CheckStatGT,
     Dialog,
     EFFECT_ONLY,
@@ -12,25 +13,24 @@ import {
     GlobalLT,
     IncrementGlobal,
     Kill,
-    MAGE_MALE_HUMAN,
     Polymorph,
     RandomNum,
     SetGlobal,
     SmallWait,
     StartCutSceneMode,
+    Stat,
     State,
     STATE_AID,
     STATE_LUCK,
     StateCheck,
-    Stats,
     Trigger,
     Wait,
-} from "ielib/bg2";
+} from "@bgforge/iets/bg2";
 
 /**
  * Melicamp object
  */
-const objMelicamp = $obj("Melicamp");
+const objMelicamp = obj("Melicamp");
 
 /**
  * 0: sequence hasn't started
@@ -77,7 +77,7 @@ function bIncreaseRoll(spellVar: string, state: State) {
 }
 
 // Death Ward. Apparently present in vanilla game, so doesn't require Detectable Spells?
-declare const SCRIPTINGSTATE2: Stats;
+declare const SCRIPTINGSTATE2: Stat;
 
 // Bless only can be cast on green-circle characters.
 bIncreaseRoll("g_melicamp_aid", STATE_AID);
@@ -100,9 +100,9 @@ if (Global(LVAR_sequence, GLOBAL, 1) && GlobalGT(LVAR_roll, GLOBAL, 5)) {
     SmallWait(1);
     ForceSpell(objMelicamp, EFFECT_ONLY);
     Wait(1);
-    ActionOverride(objMelicamp, Polymorph(MAGE_MALE_HUMAN));
+    ActionOverride(objMelicamp, Polymorph(Animate.MAGE_MALE_HUMAN));
     Wait(1);
-    Dialog($obj("[PC]"));
+    Dialog(obj("[PC]"));
     SetGlobal(LVAR_sequence, GLOBAL, 2);
     EndCutSceneMode();
 }
@@ -114,10 +114,10 @@ if (Global(LVAR_sequence, GLOBAL, 1) && GlobalLT(LVAR_roll, GLOBAL, 6)) {
     SmallWait(1);
     ForceSpell(objMelicamp, EFFECT_ONLY);
     Wait(1);
-    ActionOverride(objMelicamp, Polymorph(MAGE_MALE_HUMAN));
+    ActionOverride(objMelicamp, Polymorph(Animate.MAGE_MALE_HUMAN));
     Kill(objMelicamp);
     Wait(1);
-    Dialog($obj("[PC]"));
+    Dialog(obj("[PC]"));
     SetGlobal(LVAR_sequence, GLOBAL, 2);
     EndCutSceneMode();
 }
