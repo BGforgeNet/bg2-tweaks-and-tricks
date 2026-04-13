@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-21-17:10+0000\n"
-"PO-Revision-Date: 2023-09-04 00:55+0000\n"
+"PO-Revision-Date: 2026-03-14 10:20+0000\n"
 "Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -52,11 +52,11 @@ msgstr ""
 
 #: easy_traps.tra:98
 msgid "Trap"
-msgstr ""
+msgstr "Trampa"
 
 #: easy_traps.tra:100
 msgid "Unknown trap"
-msgstr ""
+msgstr "Trampa desconocida"
 
 #: easy_traps.tra:101
 msgid "Hold Person trap"
