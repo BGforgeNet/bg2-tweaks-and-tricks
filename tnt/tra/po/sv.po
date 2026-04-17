@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-21-17:10+0000\n"
-"PO-Revision-Date: 2024-10-30 07:09+0000\n"
+"PO-Revision-Date: 2026-04-17 12:40+0000\n"
 "Last-Translator: tygyh <jonis9898@hotmail.com>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -1761,18 +1761,16 @@ msgid "Working Non-Detection"
 msgstr ""
 
 #: setup.tra:810
-#, fuzzy
 msgid "Non-Detection spell is only present in BG and IWD"
-msgstr "Projektera bild-trollformeln finns inte i spelet"
+msgstr "Trollformeln för att undvika upptäckning finns endast i BG och IWD"
 
 #: setup.tra:811
 msgid "Unstack Chaos Shield"
 msgstr ""
 
 #: setup.tra:812
-#, fuzzy
 msgid "Chaos Shield spells are only present in BG2/BGEE"
-msgstr "Kaossköld-trollformler finns inte i spelet"
+msgstr "Kaossköld-trollformler finns endast i BG2/BGEE"
 
 #: setup.tra:813
 msgid "Uncheese Project Image | POWER USER component, consult readme"
