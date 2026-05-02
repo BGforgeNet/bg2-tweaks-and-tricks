@@ -1,3 +1,4 @@
+/** @tra wand_of_frost.tra */
 COPY_EXISTING ~wand06.itm~ ~override~
   PATCH_IF cone = 0 BEGIN
     LPF ALTER_ITEM_HEADER
