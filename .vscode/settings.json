@@ -13,4 +13,7 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[weidu-tra]": {
+        "editor.defaultFormatter": "BGforge.bgforge-mls"
+    },
 }
