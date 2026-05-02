@@ -2,72 +2,65 @@
 // "refresh_strref" appears upon refreshing spell.
 DEFINE_ACTION_MACRO ~UNSTACK_ITEM~ BEGIN
 
-ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
-OUTER_SET sectype_id = EVAL ~%%spellname%%~
-COPY ~%lib_dir%/g_dummy.spl~ ~override/%spellname%.spl~ //dummy spell
-  //set new secondary type
-  WRITE_BYTE SPL_sectype sectype_id
-BUT_ONLY
+    ADD_SECTYPE ~%spellname%~ ~%refresh_strref%~
+    OUTER_SET sectype_id = EVAL ~%%spellname%%~
+    COPY ~%lib_dir%/g_dummy.spl~ ~override/%spellname%.spl~  // dummy spell
+        // set new secondary type
+        WRITE_BYTE SPL_sectype sectype_id
+    BUT_ONLY
 
-
-COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
-
-  //deleting feedback line
-  LPF DELETE_ITEM_EFFECT
-    INT_VAR
-      opcode_to_delete = OPCODE_text_display_string
-  END
-  //copying other effects to the shell spell
-  LPF ITEM_EFFECT_TO_SPELL
-    STR_VAR
-      new_itm_spl = ~%spellname%.spl~
-  END
-  //deleting effects
-  LPF DELETE_ITEM_EFFECT
-    INT_VAR
-      opcode_to_delete = "-1"
-  END
-
-  //add "gulp" to the item if needed
-  READ_SHORT ITM_type item_type
-  PATCH_IF (item_type = ITEM_TYPE_potion) BEGIN  // if potion
-    LPF ADD_ITEM_EFFECT
-      INT_VAR
-        opcode = OPCODE_text_display_string
-        target = TARGET_FX_self
-        parameter1 = 16233 //"Gulp!"
-        power = 4
-        timing = TIMING_instant
-        resist_dispel = 0 //nonmagical
-        duration = 0
-    END
-  END
-
-  //setting new secondary type:
-  LPF ADD_ITEM_EFFECT
-    INT_VAR
-      opcode = OPCODE_remove_secondary_type
-      target = TARGET_FX_preset
-      power = 4
-      parameter1 = 10 //max level
-      parameter2 = ~%sectype_id%~ //remove our secondary type
-      timing = TIMING_instant
-      resist_dispel = DISPEL | BYPASS_MR
-  END
-
-  //finally adding shell spell cast
-  LPF ADD_ITEM_EFFECT
-    INT_VAR
-      opcode = OPCODE_cast_spell_at_creature
-      target = TARGET_FX_preset
-      power = 4
-      parameter2 = 1 //instant cast
-      timing = TIMING_instant
-      resist_dispel = DISPEL | BYPASS_MR
-    STR_VAR
-      resource = EVAL ~%spellname%~ //which spell to cast
-  END
-
-BUT_ONLY
-
+    COPY_EXISTING ~%item_to_unstack%.itm~ ~override~
+        // deleting feedback line
+        LPF DELETE_ITEM_EFFECT
+            INT_VAR
+                opcode_to_delete = OPCODE_text_display_string
+        END
+        // copying other effects to the shell spell
+        LPF ITEM_EFFECT_TO_SPELL
+            STR_VAR
+                new_itm_spl = ~%spellname%.spl~
+        END
+        // deleting effects
+        LPF DELETE_ITEM_EFFECT
+            INT_VAR
+                opcode_to_delete = "-1"
+        END
+        // add "gulp" to the item if needed
+        READ_SHORT ITM_type item_type
+        PATCH_IF (item_type = ITEM_TYPE_potion) BEGIN  // if potion
+            LPF ADD_ITEM_EFFECT
+                INT_VAR
+                    opcode        = OPCODE_text_display_string
+                    target        = TARGET_FX_self
+                    parameter1    = 16233  // "Gulp!"
+                    power         = 4
+                    timing        = TIMING_instant
+                    resist_dispel = 0  // nonmagical
+                    duration      = 0
+            END
+        END
+        // setting new secondary type:
+        LPF ADD_ITEM_EFFECT
+            INT_VAR
+                opcode        = OPCODE_remove_secondary_type
+                target        = TARGET_FX_preset
+                power         = 4
+                parameter1    = 10  // max level
+                parameter2    = ~%sectype_id%~  // remove our secondary type
+                timing        = TIMING_instant
+                resist_dispel = DISPEL | BYPASS_MR
+        END
+        // finally adding shell spell cast
+        LPF ADD_ITEM_EFFECT
+            INT_VAR
+                opcode        = OPCODE_cast_spell_at_creature
+                target        = TARGET_FX_preset
+                power         = 4
+                parameter2    = 1  // instant cast
+                timing        = TIMING_instant
+                resist_dispel = DISPEL | BYPASS_MR
+            STR_VAR
+                resource = EVAL ~%spellname%~  // which spell to cast
+        END
+    BUT_ONLY
 END

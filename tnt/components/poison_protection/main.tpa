@@ -1,28 +1,28 @@
 INCLUDE ~%lib_dir%/tobex.tpa~
 
-//periapt of proof, ring of gaxx, ring of anti-venom
+// periapt of proof, ring of gaxx, ring of anti-venom
 ACTION_FOR_EACH item IN ~amul22~ ~ring39~ ~ring46~ BEGIN
-  COPY_EXISTING ~%item%.itm~ ~override~
-    LPF ADD_ITEM_EQEFFECT
-      INT_VAR
-        opcode = OPCODE_poison_resist_mod
-        parameter1 = 100  // %
-        probability1 = 99
-        timing = TIMING_while_equipped
-        resist_dispel = BYPASS_MR
-        target = TARGET_FX_self
-    END
-  BUT_ONLY IF_EXISTS
+    COPY_EXISTING ~%item%.itm~ ~override~
+        LPF ADD_ITEM_EQEFFECT
+            INT_VAR
+                opcode        = OPCODE_poison_resist_mod
+                parameter1    = 100  // %
+                probability1  = 99
+                timing        = TIMING_while_equipped
+                resist_dispel = BYPASS_MR
+                target        = TARGET_FX_self
+        END
+    BUT_ONLY IF_EXISTS
 END
 
 COPY_EXISTING ~%SCROLL_protection_from_poison%.itm~ ~override~
-  LPF ADD_ITEM_EFFECT
-    INT_VAR
-      opcode = OPCODE_poison_resist_mod
-      parameter1 = 100  // %
-      probability1 = 99
-      duration = 1800
-      resist_dispel = DISPEL | BYPASS_MR
-      target = TARGET_FX_preset
-  END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode        = OPCODE_poison_resist_mod
+            parameter1    = 100  // %
+            probability1  = 99
+            duration      = 1800
+            resist_dispel = DISPEL | BYPASS_MR
+            target        = TARGET_FX_preset
+    END
 BUT_ONLY
