@@ -2493,7 +2493,3 @@ msgstr ""
 #: working_non_detection.tra:6
 msgid "."
 msgstr ""
-
-msgctxt "female"
-msgid "I sense danger."
-msgstr "Presiento peligro - test"
