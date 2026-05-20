@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-21-17:10+0000\n"
-"PO-Revision-Date: 2026-05-20 16:41+0000\n"
-"Last-Translator: anonymous <hive@bgforge.net>\n"
+"PO-Revision-Date: 2026-05-20 16:55+0000\n"
+"Last-Translator: Magus <magus@bgforge.net>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr "Presiento peligro."
 
 #: easy_traps.tra:8
 msgid "Watch your step. Looks suspicious."
-msgstr ""
+msgstr "Ten cuidado por donde pisas. Parece sospechoso."
 
 #: easy_traps.tra:9
 msgid "Hold on. See this?"
