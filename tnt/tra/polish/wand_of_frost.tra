@@ -1,16 +1,16 @@
-@1 = ~The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.
+@1 = ~Dzia³anie ró¿d¿ki zimna przypomina zaklêcie Sto¿ek zimna. Z czubka ró¿d¿ki wystrzeliwuje kolumna bia³ych kryszta³owych od³amków,tworz¹c sto¿ek skrajnego zimna. Podobnie jak w przypadku innych ró¿d¿ek, równie¿ i Ró¿d¿ka zimna mo¿e byæ u¿yta ograniczon¹ iloœæ razy. Po zu¿yciu wszystkich ³adunków roztapia siê ona w nieszkodliw¹ ka³u¿ê.
 
-STATISTICS:
+PARAMETRY:
 
-Effect:  Cone of Cold
-Damage:  8D6 (save vs. wands for half)
-Range:  100
-Area of effect:  Special
-Not usable by:
- Fighter
- Cleric
+Specjalne:
+ Sto¿ek zimna
+Obra¿enia: 8K6 od zimna (po³owa po rzucie przeciw ró¿d¿kom)
+Zasiêg: 40 metrów
+Obszar dzia³ania: specjalny
+Nie mo¿e u¿ywaæ:
  Druid
- Thief
- Paladin
- Ranger
-~
+ Kap³an
+ £owca
+ Paladyn
+ Wojownik
+ Z³odziej~

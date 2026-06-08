@@ -1,91 +1,112 @@
-@15 = ~Boss, your pack is full.~
-@100 = ~Yes, boss?~
-@101 = ~Let's change formation.~
-@102 = ~We need to discuss combat.~
-@103 = ~I want to give you new instructions about the loot.~
-@104 = ~Here, take this potion.~
-@105 = ~Ah, maybe later.~
-@201 = ~Follow me at all times.~
-@202 = ~Stop following me all the time.~
-@203 = ~Move faster, will you? Don't lag behind.~
-@204 = ~Don't run so fast. I can't catch up to you.~
-@205 = ~Actually, nevermind. Distance is fine for now.~
-@301 = ~If you see any danger, jump into my backpack right away.~
-@302 = ~Don't hide in my pack when you see enemies.~
-@303 = ~When you're injured, rush into my backpack immediately.~
-@304 = ~When you're badly injured, rush into my pack immediately.~
-@306 = ~When the enemies are gone, get out of the pack by yourself.~
-@307 = ~After hiding in my pack, stay there. One cannot be too careful.~
-@309 = ~Don't bother me with your whining, I don't care if you're hurt.~
-@310 = ~After fight, if you're hurt, let me know.~
-@311 = ~After fight, if you're badly hurt, let me know.~
-@312 = ~When you're being attacked, disengage for a short time, then get back at the enemy.~
-@313 = ~Don't disengage, even if you're being attacked.~
-@314 = ~In combat, don't attack enemies, unless I tell you to.~
-@315 = ~In combat, attack enemies when you see them.~
-@316 = ~In combat, attack enemies when you see them, prioritizing spellcasters.~
-@400 = ~Stop picking up any items, okay?~
-@401 = ~I want you to bring me everything. Any valuables.~
-@402 = ~Pick up any gold that you find.~
-@403 = ~Don't pick up the gold that you find.~
-@404 = ~Pick up any jewels that you find.~
-@405 = ~Pick up only valuable and magical jewelry.~
-@406 = ~Pick up only magical jewelry.~
-@407 = ~Don't pick up the jewelry.~
-@408 = ~Pick up any magical ammo that you find.~
-@409 = ~Don't pick up the ammo.~
-@410 = ~If you find any potions, bring them to me!~
-@411 = ~Stop picking up potions.~
-@412 = ~Get me any scrolls that you can find.~
-@413 = ~I don't need you to bring any more scrolls.~
-@414 = ~Fetch scalps from those bandits we kill. There's a nice bounty for them.~
-@415 = ~Stop that scalping, will you? It's disgusting.~
-@416 = ~Ankheg scales, winter wolf pelts, wyvern heads - I need it all.~
-@417 = ~No more pelts or scales, we're stocked.~
-@418 = ~No, nothing.~
-@419 = ~As you wish, master.~
-@500 = ~Let's talk about your gear.~
-@501 = ~Take this returning dart. I think you're better off attacking from distance.~
-@502 = ~Okay, boss.~
-@503 = ~Done.~
-@504 = ~No, actually I think your gear is fine.~
-@601 = ~I'm hurting here, Boss.~
-@602 = ~I'm really hurting here, Boss.~
-@603 = ~Ouch!~
-@701 = ~(Give a Healing potion).~
-@702 = ~(Give an Extra Healing potion).~
-@703 = ~(Give a Superior Healing potion).~
-@704 = ~(Give a Fire Resistance potion).~
-@705 = ~(Give an Invisibility potion).~
-@706 = ~(Give a oil of Speed).~
-@707 = ~(Give an elixir of Health).~
-@708 = ~(Give a potion of Absorption).~
-@709 = ~(Give a potion of Agility).~
-@710 = ~(Give an Antidote).~
-@711 = ~(Give a potion of Clarity).~
-@712 = ~(Give a Cold Resistance potion).~
-@713 = ~(Give a potion of Defence).~
-@714 = ~(Give a potion of Fortitude).~
-@715 = ~(Give a potion of Insulation).~
-@716 = ~(Give a potion of Magic Blocking).~
-@717 = ~(Give a potion of Magic Resistance).~
-@718 = ~(Give a potion of Magic Shielding).~
-@719 = ~(Give a potion of Mirrored Eyes).~
-@720 = ~(Give a potion of Power).~
-@721 = ~(Give a potion of Regeneration).~
-@722 = ~(Give a potion of Strength).~
-@723 = ~(Give a potion of Freedom).~
-@724 = ~(Give a potion of Stone Form).~
-@725 = ~(Give a potion of Mind Focusing).~
-@726 = ~Actually, take a goodberry.~
-@740 = ~(Give a potion of Hill Giant Strength).~
-@741 = ~(Give a potion of Frost Giant Strength).~
-@742 = ~(Give a potion of Fire Giant Strength).~
-@743 = ~(Give a potion of Cloud Giant Strength).~
-@744 = ~(Give a potion of Storm Giant Strength).~
-@745 = ~(Give a potion of Heroism).~
-@746 = ~(Give a potion of Invulnerability).~
-@747 = ~(Give a potion of Stone Giant Strength).~
-@760 = ~(Give a potion of Master Thievery).~
-@761 = ~(Give a potion of Perception).~
-@762 = ~(Give a Rogue's potion of Frost Giant Strength).~
+// loot: full
+@15 = ~Twój plecak jest pe³ny.~
+
+// Initial menu
+@100 = ~Tak, czegoœ ci trzeba?~
+@101 = ~Zmieñmy szyk.~
+@102 = ~Musimy porozmawiaæ o walce.~
+@103 = ~Chcê daæ ci nowe wskazówki co do ³upów.~
+@104 = ~Proszê, weŸ tê miksturê.~
+@105 = ~Ju¿ nic, mo¿e póŸniej.~
+
+// Distance
+@201 = ~Ca³y czas a mn¹ pod¹¿aj.~
+@202 = ~Przestañ tak za mn¹ ³aziæ bez przerwy.~
+@203 = ~Ruszaj siê szybciej, no! Nie zostawaj w tyle.~
+@204 = ~Nie biegaj tak szybko. Nie nad¹¿am za tob¹.~
+@205 = ~W³aœciwie... niewa¿ne. Odstêp na razie mo¿e byæ.~
+
+// Combat
+// Hide in backpack
+@301 = ~Wskocz do mojego plecaka jak tylko zobaczysz niebezpieczeñstwo.~
+@302 = ~Nie chowaj siê do mojego plecaka gdy zobaczysz wrogów.~
+@303 = ~Natychmiast wskakuj do mojego plecaka, gdy odniesiesz obra¿enia.~
+@304 = ~Natychmiast wskakuj do mojego plecaka, jeœli odniesiesz powa¿ne obra¿enia.~
+@306 = ~WychodŸ z plecaka, gdy wrogowie znikn¹.~
+@307 = ~Gdy ju¿ schowasz siê w plecaku, nie ruszaj siê stamt¹d. Ostro¿noœci nigdy za wiele.~
+// Notification after fight
+@309 = ~Nie zawracaj mi g³owy jêczeniem, nie obchodzi mnie, ¿e jesteœ ranny.~
+@310 = ~Daj mi znaæ po walce, jeœli odniesiesz jakieœ obra¿enia. ~
+@311 = ~Daj mi znaæ po walce, jeœli odniesiesz powa¿ne obra¿enia.~
+// Tactics
+@312 = ~Gdy ktoœ ciê zaatakuje, wycofaj siê na chwilê, a potem ruszaj z powrotem na wroga.~
+@313 = ~Nie wycofuj siê z walki, nawet jeœli ktoœ ciê atakuje.~
+@314 = ~W czasie walki nie atakuj wrogów, dopóki ci nie ka¿ê.~
+@315 = ~W czasie walki atakuj wrogów, gdy tylko ich zobaczysz.~
+@316 = ~W czasie walki atakuj wrogów, gdy tylko ich zobaczysz, zaczynaj¹c od przeciwników czaruj¹cych.~
+
+// Loot
+@400 = ~Przestañ podnosiæ przedmioty, dobrze?~
+@401 = ~Przynoœ mi wszystko. Ka¿d¹ cenn¹ rzecz.~
+@402 = ~Podnoœ ka¿de z³oto, jakie znajdziesz.~
+@403 = ~Nie podnoœ z³ota, które znajdziesz.~
+@404 = ~Podnoœ wszystkie klejnoty, jakie znajdziesz.~
+@405 = ~Podnoœ tylko wartoœciow¹ i magiczn¹ bi¿uteriê.~
+@406 = ~Podnoœ tylko magiczn¹ bi¿uteriê.~
+@407 = ~Nie podnoœ bi¿uterii.~
+@408 = ~Podnoœ ca³¹ magiczn¹ amunicjê, jak¹ znajdziesz.~
+@409 = ~Nie podnoœ amunicji.~
+@410 = ~Jeœli znajdziesz jakieœ mikstury, natychmiast mi je przynieœ!~
+@411 = ~Przestañ zbieraæ mikstury.~
+@412 = ~Przynoœ mi wszystkie zwoje, jakie znajdziesz.~
+@413 = ~Nie potrzebujê ju¿ wiêcej zwojów.~
+@414 = ~Zabieraj skalpy bandytów, których zabijemy. Jest za nie niez³a nagroda.~
+@415 = ~Skoñcz ju¿ z tym zbieraniem skalpów, dobrze? To obrzydliwe.~
+@416 = ~Skorupy ankhegów, skóry zimowych wilków, g³owy wiwern – potrzebujê wszystkiego.~
+@417 = ~Nie chcê wiêcej skór ani skorup, mamy zapas.~
+@418 = ~Nie, niczego.~
+@419 = ~Jak sobie ¿yczysz.~
+
+// Gear - not implemented
+@500 = ~Porozmawiajmy o twoim ekwipunku.~
+@501 = ~WeŸ tê powracaj¹c¹ strza³kê. Lepiej, ¿ebyœ atakowa³ z dystansu.~
+@502 = ~Bêdzie jak chcesz.~
+@503 = ~Zrobione.~
+@504 = ~Nie, w³aœciwie twój ekwipunek jest w porz¹dku.~
+
+// BAF strings
+@601 = ~Jestem ranny.~
+@602 = ~Jestem ciê¿ko ranny.~
+@603 = ~A³a!~
+
+// Potions
+// Common
+@701 = ~(daj miksturê leczenia)~
+@702 = ~(daj miksturê dodatkowego leczenia)~
+@703 = ~(daj miksturê wiêkszego leczenia)~
+@704 = ~(daj miksturê odpornoœci na ogieñ)~
+@705 = ~(daj miksturê niewidzialnoœci)~
+@706 = ~(daj olej szybkoœci)~
+@707 = ~(daj eliksir zdrowia)~
+@708 = ~(daj miksturê wch³aniania)~
+@709 = ~(daj miksturê zrêcznoœci)~
+@710 = ~(daj antidotum)~
+@711 = ~(daj miksturê klarownoœci)~
+@712 = ~(daj miksturê odpornoœci na zimno)~
+@713 = ~(daj miksturê ochrony)~
+@714 = ~(daj miksturê wzmocnienia)~
+@715 = ~(daj miksturê izolacji)~
+@716 = ~(daj miksturê t³umienia magii)~
+@717 = ~(daj miksturê odpornoœci na magiê)~
+@718 = ~(daj miksturê magicznej zas³ony)~
+@719 = ~(daj miksturê lustrzanych oczu)~
+@720 = ~(daj miksturê mocy)~
+@721 = ~(daj miksturê regeneracji)~
+@722 = ~(daj miksturê si³y)~
+@723 = ~(daj miksturê wolnoœci)~
+@724 = ~(daj miksturê kamiennego cia³a)~
+@725 = ~(daj miksturê skupienia)~
+@726 = ~w³aœciwie, weŸ tê dobr¹ jagodê.~
+// Fighter
+@740 = ~(daj miksturê si³y wzgórzowego olbrzyma)~
+@741 = ~(daj miksturê si³y lodowego olbrzyma)~
+@742 = ~(daj miksturê si³y ognistego olbrzyma)~
+@743 = ~(daj miksturê si³y chmurnego olbrzyma)~
+@744 = ~(daj miksturê si³y burzowego olbrzyma)~
+@745 = ~(daj miksturê heroizmu)~
+@746 = ~(daj miksturê niewra¿liwoœci)~
+@747 = ~(daj miksturê si³y kamiennego olbrzyma)~
+// thief
+@760 = ~(daj miksturê z³odziejskiego mistrzostwa)~
+@761 = ~(daj miksturê percepcji)~
+@762 = ~(daj ³otrzykowsk¹ miksturê si³y lodowego olbrzyma)~

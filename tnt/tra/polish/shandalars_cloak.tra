@@ -1,13 +1,13 @@
-@1 = ~Cloak of Arachnida~
-@2 = ~This cloak was originally stolen from Shandalar by the powerful mage Semia, presumably for the powerful magics woven into the fabric. How it has come to be in your possession and the fate of Semia are complete mysteries, and ones not likely to be solved.
+// https://baldursgate.fandom.com/wiki/Shandalar%27s_Cloak
+// https://www.purpleworm.org/rules/DMG/DD00915.htm
+@1 = ~P³aszcz Arachny~
+@2 = ~Ten p³aszcz zosta³ ukradziony Shandalarowi przez arcymaga Semiê, zapewne dla potê¿nej magii, która zosta³a wpleciona w jego tkaninê. Tajemnic¹ jednak pozostaje dalszy los Semii oraz to, w jaki sposób ten p³aszcz móg³ siê znaleŸæ w twoim posiadaniu, i ma³o prawdopodobne jest jej wyjaœnienie.
 
-The cloak is woven from spider silk and radiates a strong aura of alteration magic. It grants the wearer immunity to entrapment by webs of any sort.
+P³aszcz zosta³ utkany z pajêczej sieci i emanuje siln¹ aur¹ magii przemian. Daje nosz¹cemu odpornoœæ na uwiêzienie przez wszelkiego rodzaju sieci.
 
-Once per day the wearer of this cloak can cast a double-sized web. This operates like the 2nd-level wizard spell.
+PARAMETRY:
 
-Also, the wearer is less subject to poison.
-
-STATISTICS:
-
-Saving Throws:  +2 bonus vs Poison.
-Special:  The wearer is immune to webs, and can cast a double-sized Web once per day.~
+Specjalne:
+ +2 rzutów obronnych przeciw truciznom
+ Niewra¿liwoœæ na dzia³anie Pajêczyny
+ Raz dziennie pozwala rzuciæ Pajêczynê (jak zaklêcie maga 2. poziomu) o podwojonej objêtoœci~
