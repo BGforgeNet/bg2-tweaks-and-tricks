@@ -1,70 +1,89 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@1 = ~Returning throwing axe~
-@2 = ~The hand axe or throwing axe is also known as a hatchet. The axe blade has a sharp steel tip, counterbalanced by a pointed fluke. The short handle has a point on the bottom and the head may have a spike on the top, which makes it impractical to use in melee.
+@1 = ~Powracający topór do rzucania~
+@2 = ~Siekierka ręczna, zwana również toporem do rzucania, to niewielka broń miotana. Ostrze topora zakończone jest ostrym kolcem, a krótka rękojeść zakończona jest szpicem, dzięki czemu broń dobrze nadaje się do rzucania, lecz jest mniej praktyczna w walce wręcz.
 
-This particular axe has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Ten konkretny topór został objęty niewielkim zaklęciem, dzięki któremu po rzucie wraca do właściciela. Broń nie jest jednak magiczna i zadaje obrażenia jak zwykły topór.
 
-STATISTICS:
+PARAMETRY:
 
-Damage:  1D6 +1
-Damage type:  missile (piercing)
-Weight: 5
-Speed Factor: 4
-Proficiency Type:  Axe
-Type:  1-handed
-Requires: 4 Strength
-Not Usable By:
- Druid
- Cleric
- Mage 
- Thief~
-@3 = ~Returning throwing dagger~
-@4 = ~The typical throwing dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger. Unlike a dagger, this one has a smaller handle and is balanced differently, which makes it impractical to use in melee.
+Specjalne:
+– Po rzucie wraca do właściciela
 
-This particular dagger has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+Obrażenia: 1k6 +1
+Typ obrażeń: pocisk (kłute)
+Opóźnienie: 4
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
 
-STATISTICS:
+Wymagania:
+– Siła: 4
 
-Damage:  1D4
-Damage type:   missile (piercing)
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type:  1-handed
-Requires: 3 Strength
-Not Usable By:
- Cleric~
-@5 = ~Returning dart~
-@6 = ~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher.
+Waga: 5~
 
-This particular dart has a minor enchantment applied. It always returns to user's hand. Still, it strikes as normal weapon, not a magical one.
+@3 = ~Powracający sztylet do rzucania~
+@4 = ~Sztylet do rzucania posiada spiczaste, zazwyczaj obosieczne ostrze i został specjalnie wyważony do walki na dystans. W przeciwieństwie do zwykłego sztyletu ma mniejszą rękojeść, przez co gorzej sprawdza się w walce wręcz.
 
-STATISTICS:
+Ten konkretny sztylet został objęty niewielkim zaklęciem, dzięki któremu po rzucie wraca do właściciela. Broń nie jest jednak magiczna i zadaje obrażenia jak zwykły sztylet.
 
-Damage:  1D3
-Damage type:  missile (piercing)
-Weight: 0
-Speed Factor: 2
-Proficiency Type: Dart
-Type:  1-handed
-Not Usable By:
- Cleric~
-@7 = ~Quiver of Plenty~
-@8 = ~Enchanted quivers like this one are highly sought after by professional archers.
+PARAMETRY:
 
-STATISTICS:
+Specjalne:
+– Po rzucie wraca do właściciela
 
-Unlimited plain arrows~
-@9 = ~Case of Plenty~
-@10 = ~Enchanted bolt cases like this one are highly sought after by professional crossbow users.
+Obrażenia: 1k4
+Typ obrażeń: pocisk (kłute)
+Opóźnienie: 2
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
 
-STATISTICS:
+Wymagania:
+– Siła: 3
 
-Unlimited plain bolts~
-@11 = ~Bag of Plenty~
-@12 = ~Enchanted bullet bags like this one are highly sought after by professional slingers.
+Waga: 1~
 
-STATISTICS:
+@5 = ~Powracająca strzałka~
+@6 = ~Strzałka to niewielka broń miotana, którą rzuca się ręcznie zamiast wystrzeliwać z łuku lub kuszy. Ze względu na swoje rozmiary łatwo ją ukryć i szybko dobyć.
 
-Unlimited plain bullets~
+Ta konkretna strzałka została objęta niewielkim zaklęciem, dzięki któremu po rzucie wraca do właściciela. Broń nie jest jednak magiczna i zadaje obrażenia jak zwykła strzałka.
+
+PARAMETRY:
+
+Specjalne:
+– Po rzucie wraca do właściciela
+
+Obrażenia: 1k3
+Typ obrażeń: pocisk (kłute)
+Opóźnienie: 2
+Rodzaj biegłości: strzałka
+Typ broni: 1-ręczna
+
+Waga: 0~
+
+@7 = ~Kołczan obfitości~
+@8 = ~Zaczarowane kołczany, takie jak ten, są niezwykle cenione przez zawodowych łuczników. Magia zawarta w przedmiocie sprawia, że nigdy nie zabraknie w nim strzał.
+
+PARAMETRY:
+
+Specjalne:
+– Nieograniczona ilość zwykłych strzał
+
+Waga: 1~
+@9 = ~Futerał obfitości~
+@10 = ~Zaczarowane futerały na bełty, takie jak ten, są niezwykle cenione przez zawodowych kuszników. Magia zawarta w przedmiocie sprawia, że nigdy nie zabraknie w nim bełtów.
+
+PARAMETRY:
+
+Specjalne:
+– Nieograniczona ilość zwykłych bełtów
+
+Waga: 1~
+@11 = ~Torba obfitości~
+@12 = ~Zaczarowane torby na pociski, takie jak ta, są niezwykle cenione przez zawodowych procarzy. Magia zawarta w przedmiocie sprawia, że nigdy nie zabraknie w niej pocisków.
+
+PARAMETRY:
+
+Specjalne:
+– Nieograniczona ilość zwykłych pocisków
+
+Waga: 1~

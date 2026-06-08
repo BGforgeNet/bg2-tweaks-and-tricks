@@ -1,131 +1,159 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@101 = ~BGT or EET only~
-@102 = ~BG1 content not present~
-@103 = ~Windows only~
-@122 = ~BG saga only~
-@123 = ~EE not supported. Try https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee instead.~
-@124 = ~Requires ToB or EE engine~
-@125 = ~Requires BG2 or EE engine~
-@126 = ~Requires BG2~
-@127 = ~Only non-EE engines~
-@128 = ~Requires Classic ToB engine~
-@129 = ~BGT only~
-@130 = ~Requires Classic ToB or BG(2)EE or IWDEE engine~
-@131 = ~Requires TotSC content~
-@132 = ~Couldn't detect your platform, failing.~
-@200 = ~Items~
-@201 = ~Hassle-free ammo~
-@202 = ~Remove blur graphics from items~
-@203 = ~Sensible Cloak of Mirroring~
-@204 = ~Effects of scrolls and potions do not stack with themselves~
-@205 = ~Sensible wand of frost~
-@206 = ~Single target~
-@207 = ~AoE~
-@208 = ~Working protection from poison~
-@210 = ~PnP-like protection items~
-@211 = ~2E-like: saving throws stack, AC doesn't~
-@212 = ~3E-like: no stacking, best bonus takes effect~
-@223 = ~Potion of Really Mirrored Eyes~
-@236 = ~Unlimited goodberries stacking~
-@240 = ~Throwing weapons damage type~
-@241 = ~Add strength bonus~
-@242 = ~Make axes slashing and hammers blunt~
-@243 = ~Both of the above options~
-@250 = ~Improved Shandalar's cloak~
-@252 = ~Algernon's cloak: usable once per day~
-@260 = ~Improved Equalizer~
-@261 = ~Distinct quest items~
-@300 = ~Traps~
-@301 = ~Trap intuition~
-@302 = ~not in combat~
-@303 = ~works in combat~
-@304 = ~Intuition not selected, skipping~
-@305 = ~Trap intuition: pause game~
-@306 = ~ground traps only~
-@307 = ~all traps~
-@308 = ~Trap intuition: center screen~
-@309 = ~on the character~
-@310 = ~on the supposed trap~
-@311 = ~Trap reminders~
-@312 = ~generic~
-@313 = ~disclose trap type~
-@314 = ~Trap intuition: toggle Find Traps automatically~
-@315 = ~Improved trap detection: increase trap sense range~
-@316 = ~Trap intuition: play "trap found" sound~
-@317 = ~Improved trap detection: core (REQUIRED for any of previous traps components to work)~
-@318 = ~Improved trap detection: instant detection~
-@319 = ~All Improved Traps components must be installed BEFORE core~
-@350 = ~Trap fixes~
-@500 = ~Stores~
-@501 = ~Can't steal from fences~
-@502 = ~Close shop steal exploit~
-@503 = ~Can't steal from any stores~
-@504 = ~More ankheg armors by Taerom~
-@505 = ~Stores always buy goods at the same (low) price | POWER USER component, consult readme~
-@506 = ~Cleanup stores~
-@507 = ~Limited stock~
-@600 = ~Assorted convenience components~
-@601 = ~Less autosaves | POWER USER component, consult readme~
-@602 = ~More map notes~
-@603 = ~Disable lightning during rain~
-@604 = ~Mod romance cheats | POWER USER component, consult readme~
-@605 = ~Disable intro movies~
-@606 = ~Faster loading times~
-@607 = ~Add BG1 tomes stats bonuses to new BG2 characters~
-@608 = ~Each stat gets +1~
-@609 = ~Each stat except Wisdom gets +1, Wisdom gets +3~
-@610 = ~Starting bags~
-@611 = ~Gem, scroll, potion, ammo (GSPA)~
-@612 = ~GSPA + holding~
-@613 = ~GSPA + holding - all bottomless!~
-@620 = ~More mage fencing scrolls in BG1~
-@630 = ~Faster forging dialogs~
-@631 = ~Original recipe lists~
-@632 = ~Both Cromwell and Cespenar can forge any item if ingredients are available~
-@700 = ~Quest and dialog tweaks~
-@701 = ~Bloodless deeds~
-@702 = ~Improved strongholds~
-@703 = ~Save Melicamp~
-@800 = ~Spells and abilities~
-@801 = ~Spider form ignores web~
-@802 = ~Cheesy Slayer: full heal on change~
-@803 = ~Cheesy Slayer: reputation~
-@804 = ~no loss~
-@805 = ~reduced loss~
-@806 = ~True True Sight~
-@807 = ~Sensible Otiluke's Resilient Sphere~
-@808 = ~Greater Command AoE~
-@809 = ~Working Non-Detection~
-@810 = ~Non-Detection spell is only present in BG and IWD~
-@811 = ~Unstack Chaos Shield~
-@812 = ~Chaos Shield spells are only present in BG2/BGEE~
-@813 = ~Uncheese Project Image | POWER USER component, consult readme~
-@814 = ~Project Image spell is not present in game~
-@815 = ~Uncheese Mislead~
-@818 = ~Sensible Blade spins~
-@820 = ~PnP Protection from Evil~
-@821 = ~Non-hostile Grease~
-@822 = ~Tracking!~
-@900 = ~Familiars~
-@901 = ~Smarter familiars~
-@902 = ~More resilient familiars~
-@1000 = ~Soundsets~
-@1001 = ~Compliments and insults~
-@1002 = ~Reintroduce~
-@1003 = ~Reintroduce and adjust to framerate~
-@1004 = ~Disable~
-@1010 = ~Extended soundsets for joinable NPCs~
-@1011 = ~Additions only~
-@1012 = ~Prefer BG1 sounds~
-@1013 = ~Prefer BG2 sounds~
-@1020 = ~No talking when hiding in shadows~
-@1021 = ~Make NPC soundsets available to PC~
-@1100 = ~Gameplay, rules, difficulty~
-@1102 = ~No XP farming~
-@1103 = ~Can't steal Carsomyr~
-@1104 = ~PnP-like True Grandmastery~
-@1105 = ~Sensible multiclass restrictions~
-@1110 = ~Fair fights | POWER USER component, consult readme~
-@1111 = ~Just a few select enemies~
-@1112 = ~Also remove undroppable items granting unfair advantages from all enemies~
+@101 = ~Tylko dla BGT lub EET~
+@102 = ~Brak zawartości BG1~
+@103 = ~Tylko dla Windows~
+@122 = ~Tylko dla sagi BG~
+@123 = ~EE nie jest obsługiwane. Zamiast tego wypróbuj https://forums.beamdog.com/discussion/38319/mods-awesome-soundsets-mods-master-thread-custom-soundsets-for-bgee-bg2ee-and-iwdee .~
+@124 = ~Wymaga ToB lub silnika EE~
+@125 = ~Wymaga BG2 lub silnika EE~
+@126 = ~Wymaga BG2~
+@127 = ~Tylko dla silników nie-EE~
+@128 = ~Wymaga klasycznego silnika ToB~
+@129 = ~Tylko dla BGT~
+@130 = ~Wymaga klasycznego silnika ToB, BG(2)EE lub IWDEE~
+@131 = ~Wymaga zawartości TotSC~
+@132 = ~Nie można wykryć platformy. Przerywanie instalacji.~
+
+@200 = ~Przedmioty~
+@201 = ~Tweaks and Tricks: Bezproblemowa amunicja~
+@202 = ~Tweaks and Tricks: Usuń efekt graficznego rozmycia z przedmiotów~
+@203 = ~Tweaks and Tricks: Sensowny Płaszcz odzwierciedlenia~
+@204 = ~Tweaks and Tricks: Efekty zwojów i mikstur nie nakładają się na siebie~
+
+@205 = ~Tweaks and Tricks: Rozsądne cechy różdżki zimna~
+@206 = ~Działa na pojedynczy cel~
+@207 = ~Działa obszarowo~
+
+@208 = ~Tweaks and Tricks: Działająca ochrona przed trucizną~
+@210 = ~Tweaks and Tricks: Przedmioty ochronne w stylu PnP~
+@211 = ~Jak w 2E: rzuty obronne się sumują, KP nie~
+@212 = ~Jak w 3E: brak kumulacji, działa najlepszy bonus~
+
+@223 = ~Tweaks and Tricks: Rozszerzone działanie Mikstury lustrzanych oczu~
+
+@236 = ~Tweaks and Tricks: Nieograniczone grupowanie dobrych jagód~
+
+@240 = ~Tweaks and Tricks: Typ obrażeń broni miotanej~
+@241 = ~Dodany bonus z siły~
+@242 = ~Topory zadają obrażenia sieczne, młoty obuchowe~
+@243 = ~Obie powyższe opcje~
+
+@250 = ~Tweaks and Tricks: Ulepszony płaszcz Shandalara~
+@252 = ~Tweaks and Tricks: Płaszcz Algernona możliwy do użycia raz dziennie~
+
+@260 = ~Tweaks and Tricks: Ulepszony Wyrównywacz~
+
+@261 = ~Tweaks and Tricks: Rozróżnialne przedmioty fabularne~
+
+@300 = ~Pułapki~
+@301 = ~Tweaks and Tricks: Intuicyjne wykrywanie pułapek~
+@302 = ~działa tylko poza walką~
+@303 = ~działa podczas walki~
+@304 = ~Nie wybrano opcji Intuicyjne wykrywanie pułapek~
+@305 = ~Tweaks and Tricks: Intuicyjne wykrycie pułapki zatrzymuje grę~
+@306 = ~tylko wykrycie pułapek naziemnych~
+@307 = ~wykrycie wszystkich pułapek~
+@308 = ~Tweaks and Tricks: Intuicyjne wykrycie pułapki wyśrodkowuje ekran~
+@309 = ~na postaci, która wykryła pułapkę~
+@310 = ~na domniemanej pułapce~
+@311 = ~Tweaks and Tricks: Przypomnienia o pułapkach~
+@312 = ~tylko ogólna informacja~
+@313 = ~ujawnij typ pułapki~
+@314 = ~Tweaks and Tricks: Intuicyjne wykrywanie pułapek - automatycznie włączaj Znajdowanie pułapek~
+@315 = ~Tweaks and Tricks: Ulepszone wykrywanie pułapek - zwiększ zasięg wykrywania~
+@316 = ~Tweaks and Tricks: Intuicyjne wykrywanie pułapek - odtwórz dźwięk "wykryto pułapkę"~
+@317 = ~Tweaks and Tricks: Ulepszone wykrywanie pułapek - komponent główny (WYMAGANY dla działania poprzednich komponentów pułapek)~
+@318 = ~Tweaks and Tricks: Ulepszone wykrywanie pułapek - natychmiastowe wykrywanie~
+@319 = ~Wszystkie komponenty Ulepszonych Pułapek muszą zostać zainstalowane PRZED komponentem głównym~
+
+@350 = ~Tweaks and Tricks: Poprawki pułapek~
+
+
+@500 = ~Sklepy~
+@501 = ~Nie można okradać paserów~
+@502 = ~Tweaks and Tricks: Wyeliminuj nadużywanie kradzieży w sklepach~
+@503 = ~Nie można kraść w żadnym sklepie~
+@504 = ~Tweaks and Tricks: Nieograniczona liczba zbroi z ankhega u Taeroma~
+@505 = ~Tweaks and Tricks: Sklepy zawsze kupują towary po tej samej (niskiej) cenie | UWAGA! Zapoznaj się z readme!~
+@506 = ~Tweaks and Tricks: Porządki w sklepach~
+@507 = ~Tweaks and Tricks: Ograniczone zasoby w sklepach~
+
+@600 = ~Różne komponenty ułatwiające grę~
+@601 = ~Tweaks and Tricks: Mniej autozapisów | UWAGA! Zapoznaj się z readme!~
+@602 = ~Tweaks and Tricks: Więcej punktów orientacyjnych na mapach~
+@603 = ~Tweaks and Tricks: Wyłącz błyskawice podczas deszczu~
+@604 = ~Tweaks and Tricks: Oszustwa romansowe w modach | UWAGA! Zapoznaj się z readme!~
+@605 = ~Tweaks and Tricks: Wyłącz filmy wprowadzające~
+@606 = ~Tweaks and Tricks: Szybsze czasy ładowania~
+@607 = ~Tweaks and Tricks: Dodaj bonusy do cech z grimuarów z BG1 nowym postaciom w BG2~
+@608 = ~Dodaj +1 do każdej cechy~
+@609 = ~Dodaj +1 do każdej cechy poza Mądrością (+3)~
+@610 = ~Tweaks and Tricks: Torby przechowywania na początku gry~
+@611 = ~Pojemniki na klejnoty, zwoje, mikstury i amunicję (KZMA)~
+@612 = ~(KZMA) + torba przechowywania~
+@613 = ~(KZMA) + torba przechowywania - wszystkie bezdenne!~
+@620 = ~Tweaks and Tricks: Więcej zwojów przeciw magom w BG1~
+@630 = ~Tweaks and Tricks: Szybsze dialogi wykuwania przedmiotów~
+@631 = ~Oryginalne listy receptur~
+@632 = ~Zarówno Cromwell, jak i Cespenar mogą wykuwać dowolne przedmioty, jeśli dostępne są wszystkie składniki~
+
+
+@700 = ~Poprawki zadań i dialogów~
+@701 = ~Tweaks and Tricks: Bezkrwawe rozwiązanie zadania z Arkionem i Nemphre~
+@702 = ~Tweaks and Tricks: Ulepszone twierdze~
+@703 = ~Tweaks and Tricks: Ratunek dla Melicampa~
+
+
+@800 = ~Czary i zdolności~
+@801 = ~Tweaks and Tricks: Forma pająka jest niewrażliwa na efekty pajęczyny~
+@802 = ~Tweaks and Tricks: Przemiana w Zabójcę - pełne leczenie przy przemianie~
+@803 = ~Tweaks and Tricks: Przemiana w Zabójcę - zmiana reputacji~
+@804 = ~bez straty~
+@805 = ~zmniejszona strata~
+@806 = ~Tweaks and Tricks: Praktyczniejsze Prawdziwe widzenie~
+@807 = ~Tweaks and Tricks: Rozsądna Nienaruszalna sfera Otiluka~
+@808 = ~Tweaks and Tricks: Obszarowy Potężniejszy rozkaz~
+@809 = ~Tweaks and Tricks: Działająca Niewykrywalność~
+@810 = ~Czar Niewykrywalność występuje tylko w BG oraz IWD~
+@811 = ~Tweaks and Tricks: Niekumulująca się Tarcza chaosu~
+@812 = ~Czary Tarczy Chaosu występują tylko w BG2/BGEE~
+@813 = ~Tweaks and Tricks: Ograniczona funkcjonalność czaru Projekcja duplikatu | UWAGA! Zapoznaj się z readme!~
+@814 = ~Czar Projekcja duplikatu nie występuje w grze~
+@815 = ~Tweaks and Tricks: Ograniczona funkcjonalność czaru Zwodniczy sobowtór~
+@818 = ~Tweaks and Tricks: Rozsądne Piruety~
+@820 = ~Tweaks and Tricks: Ochrona przed złem według zasad PnP~
+@821 = ~Tweaks and Tricks: Czar Śliskość nie wywołuje wrogiej reakcji~
+@822 = ~Tweaks and Tricks: Tropienie!~
+
+
+@900 = ~Chowańce~
+@901 = ~Tweaks and Tricks: Inteligentniejsze chowańce~
+@902 = ~Tweaks and Tricks: Wytrzymalsze chowańce~
+
+
+@1000 = ~Zestawy dźwięków~
+@1001 = ~Tweaks and Tricks: Komplementy i przytyki~
+@1002 = ~Przywróć~
+@1003 = ~Przywróć i dostosuj do liczby FPS~
+@1004 = ~Wyłącz~
+
+@1010 = ~Tweaks and Tricks: Rozszerzone zestawy dźwięków dla dołączalnych NPC~
+@1011 = ~Tylko brakujące kwestie~
+@1012 = ~Preferuj dźwięki z BG1~
+@1013 = ~Preferuj dźwięki z BG2~
+
+@1020 = ~Tweaks and Tricks: Brak komentarzy o udanym ukryciu się w cieniu~
+@1021 = ~Tweaks and Tricks: Udostępnij zestawy dźwięków NPC dla głównej postaci~
+
+
+@1100 = ~Rozgrywka, zasady, poziom trudności~
+
+@1102 = ~Tweaks and Tricks: Ograniczenia nabijania PD~
+@1103 = ~Tweaks and Tricks: Karsomir nie może zostać wykradziony~
+@1104 = ~Tweaks and Tricks: Prawdziwe Wielkie mistrzostwo według zasad PnP~
+@1105 = ~Tweaks and Tricks: Rozsądne ograniczenia wieloklasowe~
+
+@1110 = ~Tweaks and Tricks: Uczciwe walki | UWAGA! Zapoznaj się z readme!~
+@1111 = ~Zmiany tylko dla wybranych przeciwników~
+@1112 = ~Usuń również nieupuszczalne przedmioty dające przeciwnikom nieuczciwą przewagę~

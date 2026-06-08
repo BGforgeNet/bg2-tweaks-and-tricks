@@ -1,45 +1,34 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@1 = ~Long Sword: The Equalizer
-The age of this sword is such that its true origin has been lost to time, but markings hint that it was possibly forged by those in the service of Helm. Also called the "Sword of Neutrality," it seems designed to seek and terminate extremism, to shift the universe closer to harmonious equilibrium. The further the orientation of a target from true balance, the more potent the damage they suffer. The closer the wielder to true balance, the stronger is the sword in their hands. The Equalizer actively resists being used by characters of extreme alignments.
+@1 = ~Miecz ten jest tak stary, że jego prawdziwe początki giną w pomroce dziejów, lecz oznaczenia, które nosi, wskazują, że najprawdopodobniej wykuto go w służbie Helma. Znany jest także jako „Miecz neutralności”, gdyż zbudowany jest tak, aby wyszukiwał i eliminował wszelkie ekstrema i wiódł wszechświat w stronę harmonijnej równowagi. Im dalsza od prawdziwej równowagi jest atakowana istota, tym cięższe obrażenia zadaje miecz. Im bliżej prawdziwej równowagi jest dzierżący, tym silniejszy jest miecz w jego rękach. Wyrównywacz aktywnie opiera się użyciu przez postacie o skrajnych charakterach.
 
-In addition, the sword allows its owner to discover alignments of nearby creatures as per wizard spell, 3 times per day.
+PARAMETRY:
 
-STATISTICS:
+Specjalne:
+– Niewrażliwość na Zauroczenie i Zamęt
+– Uderza jak broń +4
+– 50% szans przy trafieniu na wywołanie u przeciwnika o charakterze dobrym lub złym Zamętu na okres dwóch rund (rzut obronny przeciw czarom neguje), w przypadku posiadacza, którego charakter nie jest ani dobry, ani zły
+– 50% szans przy trafieniu na wywołanie u przeciwnika o charakterze praworządnym lub chaotycznym Ociemniałości na okres dwóch rund (rzut obronny przeciw zionięciom neguje), w przypadku posiadacza, którego charakter nie jest ani praworządny, ani chaotyczny
+– Posiadacz o charakterze neutralnym: +4 do trafienia i obrażeń
+– Posiadacz o charakterze chaotycznym/praworządnym neutralnym, neutralnym dobrym/złym: +2 do trafienia i obrażeń
+– Posiadacz o innym charakterze: -20 do trafienia i obrażeń
 
-Enchantment: +4
+Właściwości ładunków
+– Poznanie charakteru, trzy razy dziennie
 
-Combat Abilities:
-  50% chance on hit to Confuse a Good or Evil enemy for 2 rounds, Save vs. Spell negates. This ability will only work in hands of a character who is neither Good nor Evil.
-  50% chance on hit to Blind a Lawful or Chaotic enemy for 2 rounds, Save vs. Breath negates. This ability will only work in hands of a character who is neither Lawful nor Chaotic.
+Obrażenia oraz TraK0:
+– Przeciw neutralnym: 1k8 obrażeń, +0 do trafienia
+– Przeciw chaotycznym/praworządnym neutralnym, neutralnym dobrym/złym: 1k8 +2 obrażeń, +2 do trafienia
+– Przeciw innym charakterom: 1k8 +4 obrażeń, +4 do trafienia
+Typ obrażeń: sieczne
+Opóźnienie: 3
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
 
-THAC0 & Damage:
-  vs True Neutral: +0 to hit, +0 damage
-  vs non-extreme alignments (Chaotic/Lawful Neutral, Neutral Good/Evil): +2 to hit, +2 damage
-  vs extreme alignments (Chaotic Good/Evil, Lawful Good/Evil): +4 to hit, +4 damage
+Wymagania:
+– Siła: 6
 
-Extra bonuses based on wielder's alignment:
-  True Neutral: +4 to hit, +4 damage
-  Non-extreme alignments: +2 to hit, +2 damage
-  Extreme alignments: -20 to hit, -20 damage.
+Waga: 3~
 
-All combat effects are independent and stack with each other.
-
-Equipped Abilities: Immunity to Charm and Confusion
-
-Abilities:
-  Know Alignment 3 times per day.
-
-Damage type: slashing
-Weight: 3
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: 1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
-@2 = ~Two things, me friend. It will cost ye 12,500 gp for the work, no less, and without an apprentice, ye'll have to stay here a full day and help me run the forge.~
-@3 = ~What would be involved in that?~
+@2 = ~Z dwoma rzeczami, przyjacielu. Robocizna będzie cię kosztować 12 500 sztuk złota, ani miedziaka mniej. A że nie mam czeladnika, będziesz musiał zostać tu cały dzień i pomóc mi przy kuźni.~ ~Z dwoma rzeczami, przyjaciółko. Robocizna będzie cię kosztować 12 500 sztuk złota, ani miedziaka mniej. A że nie mam czeladnika, będziesz profesjonalnie pomagać mi przy kuźni przez cały dzień.~
+@3 = ~Z czym byłoby to związane?~
