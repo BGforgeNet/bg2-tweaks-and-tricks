@@ -1,31 +1,34 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
 @1 = ~Miecz ten jest tak stary, ¿e jego prawdziwe pocz¹tki gin¹ w pomroce dziejów, lecz oznaczenia, które nosi, wskazuj¹, ¿e najprawdopodobniej wykuto go w s³u¿bie Helma. Znany jest tak¿e jako „Miecz neutralnoœci”, gdy¿ zbudowany jest tak, aby wyszukiwa³ i eliminowa³ wszelkie ekstrema i wiód³ wszechœwiat w stronê harmonijnej równowagi. Im dalsza od prawdziwej równowagi jest atakowana istota, tym ciê¿sze obra¿enia zadaje miecz. Im bli¿ej prawdziwej równowagi jest dzier¿¹cy, tym silniejszy jest miecz w jego rêkach. Wyrównywacz aktywnie opiera siê u¿yciu przez postacie o skrajnych charakterach.
 
 PARAMETRY:
 
-Przy rzutach na trafienie, zawsze zachowuje siê jak broñ +4, bazowo zadaje 1K8 pkt. obra¿eñ
-TraK0 oraz Obra¿enia:
- przeciw neutralnym: +0 do trafienia i obra¿eñ
- przeciw chaotycznym/praworz¹dnym neutralnym, neutralnym dobrym/z³ym: +2 do trafienia i obra¿eñ
- przeciwko innym charakterom: +4 do trafienia i obra¿eñ
-Typ obra¿eñ: sieczne
 Specjalne:
- Odpornoœæ na Zauroczenia i Zamêt
- Trzy razy dziennie pozwala rzuciæ Poznanie charakteru
- 50% szansa na wywo³anie przy trafieniu u przeciwnika o charakterze dobrym lub z³ym Zamêtu na okres dwóch rund (rzut obronny przeciw czarom neguje), w przypadku posiadacza, którego charakter nie jest ani dobry, ani z³y
- 50% szansa na wywo³anie przy trafieniu u przeciwnika o charakterze praworz¹dnym lub chaotycznym Ociemnia³oœci na okres dwóch rund (rzut obronny przeciw zioniêciom neguje), w przypadku posiadacza, którego charakter nie jest ani praworz¹dny, ani chaotyczny
- Posiadacz o charakterze neutralnym: +4 do trafienia i obra¿eñ
- Posiadacz o charakterze chaotycznym/praworz¹dnym neutralnym, neutralnym dobrym/z³ym: +2 do trafienia i obra¿eñ
- Posiadacz o innym charakterze: -20 do trafienia i obra¿eñ
-Waga: 3
-OpóŸnienie: 1
-Rodzaj bieg³oœci: d³ugi miecz
+– Niewra¿liwoœæ na Zauroczenie i Zamêt
+– Uderza jak broñ +4
+– 50% szans przy trafieniu na wywo³anie u przeciwnika o charakterze dobrym lub z³ym Zamêtu na okres dwóch rund (rzut obronny przeciw czarom neguje), w przypadku posiadacza, którego charakter nie jest ani dobry, ani z³y
+– 50% szans przy trafieniu na wywo³anie u przeciwnika o charakterze praworz¹dnym lub chaotycznym Ociemnia³oœci na okres dwóch rund (rzut obronny przeciw zioniêciom neguje), w przypadku posiadacza, którego charakter nie jest ani praworz¹dny, ani chaotyczny
+– Posiadacz o charakterze neutralnym: +4 do trafienia i obra¿eñ
+– Posiadacz o charakterze chaotycznym/praworz¹dnym neutralnym, neutralnym dobrym/z³ym: +2 do trafienia i obra¿eñ
+– Posiadacz o innym charakterze: -20 do trafienia i obra¿eñ
+
+W³aœciwoœci ³adunków
+– Poznanie charakteru, trzy razy dziennie
+
+Obra¿enia oraz TraK0:
+– Przeciw neutralnym: 1k8 obra¿eñ, +0 do trafienia
+– Przeciw chaotycznym/praworz¹dnym neutralnym, neutralnym dobrym/z³ym: 1k8 +2 obra¿eñ, +2 do trafienia
+– Przeciw innym charakterom: 1k8 +4 obra¿eñ, +4 do trafienia
+Typ obra¿eñ: sieczne
+OpóŸnienie: 3
+Rodzaj bieg³oœci: miecz d³ugi
 Typ broni: 1-rêczna
-Wymagana si³a: 6
-Nie mo¿e u¿ywaæ:
- Druid
- Kap³an
- Mag
- W³adca zwierz¹t~
+
+Wymagania:
+– Si³a: 6
+
+Waga: 3~
 
 @2 = ~Z dwoma rzeczami, przyjacielu. Robocizna bêdzie ciê kosztowaæ 12 500 sztuk z³ota, ani miedziaka mniej. A ¿e nie mam czeladnika, bêdziesz musia³ zostaæ tu ca³y dzieñ i pomóc mi przy kuŸni.~ ~Z dwoma rzeczami, przyjació³ko. Robocizna bêdzie ciê kosztowaæ 12 500 sztuk z³ota, ani miedziaka mniej. A ¿e nie mam czeladnika, bêdziesz profesjonalnie pomagaæ mi przy kuŸni przez ca³y dzieñ.~
 @3 = ~Z czym by³oby to zwi¹zane?~

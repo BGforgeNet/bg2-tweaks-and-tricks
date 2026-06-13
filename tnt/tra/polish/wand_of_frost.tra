@@ -1,16 +1,14 @@
-@1 = ~Dzia³anie ró¿d¿ki zimna przypomina zaklêcie Sto¿ek zimna. Z czubka ró¿d¿ki wystrzeliwuje kolumna bia³ych kryszta³owych od³amków,tworz¹c sto¿ek skrajnego zimna. Podobnie jak w przypadku innych ró¿d¿ek, równie¿ i Ró¿d¿ka zimna mo¿e byæ u¿yta ograniczon¹ iloœæ razy. Po zu¿yciu wszystkich ³adunków roztapia siê ona w nieszkodliw¹ ka³u¿ê.
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
+@1 = ~ Dzia³anie ró¿d¿ki zimna przypomina zaklêcie Sto¿ek zimna. Z czubka ró¿d¿ki wystrzeliwuje kolumna bia³ych kryszta³owych od³amków, tworz¹c sto¿ek skrajnego zimna. Podobnie jak w przypadku innych ró¿d¿ek, równie¿ i Ró¿d¿ka zimna mo¿e byæ u¿yta ograniczon¹ iloœæ razy. Po zu¿yciu wszystkich ³adunków roztapia siê ona w nieszkodliw¹ ka³u¿ê.
 
 PARAMETRY:
 
-Specjalne:
- Sto¿ek zimna
-Obra¿enia: 8K6 od zimna (po³owa po rzucie przeciw ró¿d¿kom)
-Zasiêg: 40 metrów
-Obszar dzia³ania: specjalny
-Nie mo¿e u¿ywaæ:
- Druid
- Kap³an
- £owca
- Paladyn
- Wojownik
- Z³odziej~
+W³aœciwoœci ³adunków:
+– Sto¿ek zimna
+Obra¿enia: 8k6 obra¿eñ od zimna (po³owa po rzucie obronnym przeciw ró¿d¿kom)
+Zasiêg: 30 metrów
+Obszar dzia³ania: specjalny 
+
+Waga: 1
+~

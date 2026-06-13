@@ -1,11 +1,1 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
-
-@1 = ~Twoja postaæ posiada ju¿ na pocz¹tku pewne bieg³oœci. Przedstawiaj¹ one zdolnoœæ do pos³ugiwania siê broni¹. Mo¿esz wybraæ dowolne bieg³oœci spoœród dopuszczalnych dla klasy twojej postaci. Jeœli twoja postaæ jest wojownikiem, to mo¿esz wybraæ jedn¹ bieg³oœæ nawet piêciokrotnie. Dziêki temu uzyskasz coraz wy¿sze stopnie specjalizacji w wybranej broni. Pamiêtaj, ¿e postaæ mo¿e u¿ywaæ dowolnej broni dopuszczalnej dla jej klasy i rasy, nawet jeœli nie posiada odpowiedniej bieg³oœci. Jednak¿e w takiej sytuacji postaæ bêdzie mia³a ujemny modyfikator do rzutu na atak.
-
-// Proficiency Slot Table:
-// 1 slot: none
-// 2 slots: +1 to hit, +2 to damage, an extra half attack.
-// 3 slots: +2 to hit, +2 to damage, an extra half attack.
-// 4 slots: +2 to hit, +3 to damage, an extra half attack. -1 to speed
-// 5 slots: +2 to hit, +4 to damage, extra 3/2 attacks. -3 to speed~
-@2 = ~Wielkie mistrzostwo: Na tym poziomie postaæ otrzymuje premiê +2 do TraK0 i +4 do obra¿eñ przy u¿yciu wybranej broni. Zyskuje równie¿ dodatkowe 3/2 ataku na rundê podczas walki t¹ broni¹. Ponadto otrzymuje modyfikator -3 do opóŸnienia dla wybranej broni.~

@@ -1,3 +1,5 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
 @1 = ~Powracaj¹cy topór do rzucania~
 @2 = ~Siekierka rêczna, zwana równie¿ toporem do rzucania, to niewielka broñ miotana. Ostrze topora zakoñczone jest ostrym kolcem, a krótka rêkojeœæ zakoñczona jest szpicem, dziêki czemu broñ dobrze nadaje siê do rzucania, lecz jest mniej praktyczna w walce wrêcz.
 
@@ -5,21 +7,19 @@ Ten konkretny topór zosta³ objêty niewielkim zaklêciem, dziêki któremu po rzucie
 
 PARAMETRY:
 
-Obra¿enia: 1K6 +1
-Typ obra¿eñ: pocisk (k³ute)
 Specjalne:
- Po rzucie wraca do w³aœciciela
-Waga: 5
+– Po rzucie wraca do w³aœciciela
+
+Obra¿enia: 1k6 +1
+Typ obra¿eñ: pocisk (k³ute)
 OpóŸnienie: 4
 Rodzaj bieg³oœci: topór
 Typ broni: 1-rêczna
-Wymagana si³a: 4
-Nie mo¿e u¿ywaæ:
- Druid
- Kap³an
- Mag
- Z³odziej
-~
+
+Wymagania:
+– Si³a: 4
+
+Waga: 5~
 
 @3 = ~Powracaj¹cy sztylet do rzucania~
 @4 = ~Sztylet do rzucania posiada spiczaste, zazwyczaj obosieczne ostrze i zosta³ specjalnie wywa¿ony do walki na dystans. W przeciwieñstwie do zwyk³ego sztyletu ma mniejsz¹ rêkojeœæ, przez co gorzej sprawdza siê w walce wrêcz.
@@ -28,19 +28,19 @@ Ten konkretny sztylet zosta³ objêty niewielkim zaklêciem, dziêki któremu po rzuc
 
 PARAMETRY:
 
-Obra¿enia: 1K4
-Typ obra¿eñ: pocisk (k³ute)
 Specjalne:
- Po rzucie wraca do w³aœciciela
-Waga: 1
+– Po rzucie wraca do w³aœciciela
+
+Obra¿enia: 1k4
+Typ obra¿eñ: pocisk (k³ute)
 OpóŸnienie: 2
 Rodzaj bieg³oœci: sztylet
 Typ broni: 1-rêczna
-Wymagana si³a: 3
-Nie mo¿e u¿ywaæ:
- Kap³an
 
-~
+Wymagania:
+– Si³a: 3
+
+Waga: 1~
 
 @5 = ~Powracaj¹ca strza³ka~
 @6 = ~Strza³ka to niewielka broñ miotana, któr¹ rzuca siê rêcznie zamiast wystrzeliwaæ z ³uku lub kuszy. Ze wzglêdu na swoje rozmiary ³atwo j¹ ukryæ i szybko dobyæ.
@@ -49,17 +49,16 @@ Ta konkretna strza³ka zosta³a objêta niewielkim zaklêciem, dziêki któremu po rzu
 
 PARAMETRY:
 
-Obra¿enia: 1K3
-Typ obra¿eñ: pocisk (k³ute)
 Specjalne:
- Po rzucie wraca do w³aœciciela
-Waga: 0
+– Po rzucie wraca do w³aœciciela
+
+Obra¿enia: 1k3
+Typ obra¿eñ: pocisk (k³ute)
 OpóŸnienie: 2
 Rodzaj bieg³oœci: strza³ka
 Typ broni: 1-rêczna
-Nie mo¿e u¿ywaæ:
- Kap³an
-~
+
+Waga: 0~
 
 @7 = ~Ko³czan obfitoœci~
 @8 = ~Zaczarowane ko³czany, takie jak ten, s¹ niezwykle cenione przez zawodowych ³uczników. Magia zawarta w przedmiocie sprawia, ¿e nigdy nie zabraknie w nim strza³.
@@ -68,6 +67,7 @@ PARAMETRY:
 
 Specjalne:
 – Nieograniczona iloœæ zwyk³ych strza³
+
 Waga: 1~
 @9 = ~Futera³ obfitoœci~
 @10 = ~Zaczarowane futera³y na be³ty, takie jak ten, s¹ niezwykle cenione przez zawodowych kuszników. Magia zawarta w przedmiocie sprawia, ¿e nigdy nie zabraknie w nim be³tów.
@@ -75,7 +75,8 @@ Waga: 1~
 PARAMETRY:
 
 Specjalne:
- Nieograniczona iloœæ zwyk³ych be³tów
+– Nieograniczona iloœæ zwyk³ych be³tów
+
 Waga: 1~
 @11 = ~Torba obfitoœci~
 @12 = ~Zaczarowane torby na pociski, takie jak ta, s¹ niezwykle cenione przez zawodowych procarzy. Magia zawarta w przedmiocie sprawia, ¿e nigdy nie zabraknie w niej pocisków.
@@ -83,5 +84,6 @@ Waga: 1~
 PARAMETRY:
 
 Specjalne:
- Nieograniczona iloœæ zwyk³ych pocisków
+– Nieograniczona iloœæ zwyk³ych pocisków
+
 Waga: 1~
