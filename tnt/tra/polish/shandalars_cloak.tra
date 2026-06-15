@@ -1,15 +1,15 @@
 // https://baldursgate.fandom.com/wiki/Shandalar%27s_Cloak
 // https://www.purpleworm.org/rules/DMG/DD00915.htm
-@1 = ~P³aszcz Arachny~
-@2 = ~Ten p³aszcz zosta³ ukradziony Shandalarowi przez arcymaga Semiê, zapewne dla potê¿nej magii, która zosta³a wpleciona w jego tkaninê. Tajemnic¹ jednak pozostaje dalszy los Semii oraz to, w jaki sposób ten p³aszcz móg³ siê znaleŸæ w twoim posiadaniu, i ma³o prawdopodobne jest jej wyjaœnienie.
+@1 = ~PÅ‚aszcz Arachny~
+@2 = ~Ten pÅ‚aszcz zostaÅ‚ ukradziony Shandalarowi przez arcymaga SemiÄ™, zapewne dla potÄ™Å¼nej magii, ktÃ³ra zostaÅ‚a wpleciona w jego tkaninÄ™. TajemnicÄ… jednak pozostaje dalszy los Semii oraz to, w jaki sposÃ³b ten pÅ‚aszcz mÃ³gÅ‚ siÄ™ znaleÅºÄ‡ w twoim posiadaniu, i maÅ‚o prawdopodobne jest jej wyjaÅ›nienie.
 
-P³aszcz zosta³ utkany z pajêczej sieci i emanuje siln¹ aur¹ magii przemian. Daje nosz¹cemu odpornoœæ na uwiêzienie przez wszelkiego rodzaju sieci.
+PÅ‚aszcz zostaÅ‚ utkany z pajÄ™czej sieci i emanuje silnÄ… aurÄ… magii przemian. Daje noszÄ…cemu odpornoÅ›Ä‡ na uwiÄ™zienie przez wszelkiego rodzaju sieci.
 
 PARAMETRY:
 
 Specjalne:
-– Rzuty Obronne: +2 przeciw truciznom
-– Niewra¿liwoœæ na dzia³anie Pajêczyny
+â€“ Rzuty Obronne: +2 przeciw truciznom
+â€“ NiewraÅ¼liwoÅ›Ä‡ na dziaÅ‚anie PajÄ™czyny
 
-W³aœciwoœci ³adunków:
-– Pajêczyna (jak zaklêcie maga 2. poziomu) o podwojonej objêtoœci, raz dziennie~
+WÅ‚aÅ›ciwoÅ›ci Å‚adunkÃ³w:
+â€“ PajÄ™czyna (jak zaklÄ™cie maga 2. poziomu) o podwojonej objÄ™toÅ›ci, raz dziennie~

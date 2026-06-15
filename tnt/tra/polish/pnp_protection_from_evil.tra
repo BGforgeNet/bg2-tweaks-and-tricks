@@ -3,43 +3,43 @@
 @3 = ~Dominacja~
 
 // wizard
-@4 = ~Ochrona przed z³em 
+@4 = ~Ochrona przed zÅ‚em 
 (Odrzucanie)
 
 Poziom: 1
-Zasiêg: dotyk
-Czas dzia³ania: 2 rundy/poziom
+ZasiÄ™g: dotyk
+Czas dziaÅ‚ania: 2 rundy/poziom
 Czas rzucania: 1
-Obszar dzia³ania: 1 istota
+Obszar dziaÅ‚ania: 1 istota
 Rzut obronny: brak
 
-Czar ten tworzy wokó³ wybranej istoty magiczn¹ barierê, rozci¹gaj¹c¹ siê na odleg³oœæ trzydziestu centymetrów. Bariera ta przemieszcza siê wraz z ni¹ i dzia³a na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze z³ym, lub których charakter sta³ siê z³y za pomoc¹ magii, otrzymuj¹ modyfikator -2 do ka¿dego testu ataku wykonywanego przeciw istocie chronionej barier¹. Po drugie, ka¿da próba zauroczenia lub przejêcia kontroli nad umys³em  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemo¿liwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje dzia³aæ wobec zablokowanej istoty, jeœli chroniona postaæ podejmie przeciwko niej atak.~
+Czar ten tworzy wokÃ³Å‚ wybranej istoty magicznÄ… barierÄ™, rozciÄ…gajÄ…cÄ… siÄ™ na odlegÅ‚oÅ›Ä‡ trzydziestu centymetrÃ³w. Bariera ta przemieszcza siÄ™ wraz z niÄ… i dziaÅ‚a na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze zÅ‚ym, lub ktÃ³rych charakter staÅ‚ siÄ™ zÅ‚y za pomocÄ… magii, otrzymujÄ… modyfikator -2 do kaÅ¼dego testu ataku wykonywanego przeciw istocie chronionej barierÄ…. Po drugie, kaÅ¼da prÃ³ba zauroczenia lub przejÄ™cia kontroli nad umysÅ‚em  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemoÅ¼liwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje dziaÅ‚aÄ‡ wobec zablokowanej istoty, jeÅ›li chroniona postaÄ‡ podejmie przeciwko niej atak.~
 
 // cleric
-@5 = ~Ochrona przed z³em 
+@5 = ~Ochrona przed zÅ‚em 
 (Odrzucanie)
 
 Poziom: 1
 Sfera: Ochrona
-Zasiêg: dotyk
-Czas dzia³ania: 3 rundy/poziom
+ZasiÄ™g: dotyk
+Czas dziaÅ‚ania: 3 rundy/poziom
 Czas rzucania: 1
-Obszar dzia³ania: 1 istota
+Obszar dziaÅ‚ania: 1 istota
 Rzut obronny: brak
 
-Czar ten tworzy wokó³ wybranej istoty magiczn¹ barierê, rozci¹gaj¹c¹ siê na odleg³oœæ trzydziestu centymetrów. Bariera ta przemieszcza siê wraz z ni¹ i dzia³a na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze z³ym, lub których charakter sta³ siê z³y za pomoc¹ magii, otrzymuj¹ modyfikator -2 do ka¿dego testu ataku wykonywanego przeciw istocie chronionej barier¹. Po drugie, ka¿da próba zauroczenia lub przejêcia kontroli nad umys³em  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemo¿liwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje dzia³aæ wobec zablokowanej istoty, jeœli chroniona postaæ podejmie przeciwko niej atak.~
+Czar ten tworzy wokÃ³Å‚ wybranej istoty magicznÄ… barierÄ™, rozciÄ…gajÄ…cÄ… siÄ™ na odlegÅ‚oÅ›Ä‡ trzydziestu centymetrÃ³w. Bariera ta przemieszcza siÄ™ wraz z niÄ… i dziaÅ‚a na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze zÅ‚ym, lub ktÃ³rych charakter staÅ‚ siÄ™ zÅ‚y za pomocÄ… magii, otrzymujÄ… modyfikator -2 do kaÅ¼dego testu ataku wykonywanego przeciw istocie chronionej barierÄ…. Po drugie, kaÅ¼da prÃ³ba zauroczenia lub przejÄ™cia kontroli nad umysÅ‚em  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemoÅ¼liwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje dziaÅ‚aÄ‡ wobec zablokowanej istoty, jeÅ›li chroniona postaÄ‡ podejmie przeciwko niej atak.~
 
 // cleric, radius
-@6 = ~Ochrona przed z³em, promieñ 3 metry
+@6 = ~Ochrona przed zÅ‚em, promieÅ„ 3 metry
 (Odrzucanie)
 
 Poziom: 4
 Sfera: Ochrona
-Zasiêg: dotyk
-Czas dzia³ania: 1 runda/poziom
+ZasiÄ™g: dotyk
+Czas dziaÅ‚ania: 1 runda/poziom
 Czas rzucania: 7
-Obszar dzia³ania: w promieniu 3 metrów
+Obszar dziaÅ‚ania: w promieniu 3 metrÃ³w
 Rzut obronny: brak
 
-Czar ten tworzy wokó³ ka¿dej istoty w promieniu 3 metrów magiczn¹ barierê, rozci¹gaj¹c¹ siê na odleg³oœæ trzydziestu centymetrów. Bariera ta przemieszcza siê wraz z ni¹ i dzia³a na trzy sposoby. Wszystkie istoty w promieniu 3 metrów zostaj¹ objête efektem ochrony przed z³em. Po pierwsze, wszystkie stworzenia o charakterze z³ym, lub których charakter sta³ siê z³y za pomoc¹ magii, otrzymuj¹ modyfikator -2 do ka¿dego testu ataku wykonywanego przeciw istocie chronionej barier¹. Po drugie, ka¿da próba zauroczenia lub przejêcia kontroli nad umys³em  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemo¿liwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje dzia³aæ wobec zablokowanej istoty, jeœli chroniona postaæ podejmie przeciwko niej atak.
+Czar ten tworzy wokÃ³Å‚ kaÅ¼dej istoty w promieniu 3 metrÃ³w magicznÄ… barierÄ™, rozciÄ…gajÄ…cÄ… siÄ™ na odlegÅ‚oÅ›Ä‡ trzydziestu centymetrÃ³w. Bariera ta przemieszcza siÄ™ wraz z niÄ… i dziaÅ‚a na trzy sposoby. Wszystkie istoty w promieniu 3 metrÃ³w zostajÄ… objÄ™te efektem ochrony przed zÅ‚em. Po pierwsze, wszystkie stworzenia o charakterze zÅ‚ym, lub ktÃ³rych charakter staÅ‚ siÄ™ zÅ‚y za pomocÄ… magii, otrzymujÄ… modyfikator -2 do kaÅ¼dego testu ataku wykonywanego przeciw istocie chronionej barierÄ…. Po drugie, kaÅ¼da prÃ³ba zauroczenia lub przejÄ™cia kontroli nad umysÅ‚em  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemoÅ¼liwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje dziaÅ‚aÄ‡ wobec zablokowanej istoty, jeÅ›li chroniona postaÄ‡ podejmie przeciwko niej atak.
 ~
