@@ -1,0 +1,59 @@
+// Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
+
+//notice a trap
+@1 = ~Um, wyczuwam pułapkę.~ //familiar
+@2 = ~Ostrożnie. Coś tu nie gra.~
+@3 = ~Stop! To pułapka!~
+@4 = ~Wyczuwam pułapkę!~
+@5 = ~Hmm... Powinniśmy stąpać ostrożnie.~
+@6 = ~Zaraz, zaraz. Przyjrzyjmy się temu bliżej.~
+@7 = ~Wyczuwam zagrożenie.~
+@8 = ~Uważajcie. To wygląda podejrzanie.~
+@9 = ~Zaczekajcie. Widzicie to?~
+
+// trap floats
+@98 = ~Pułapka~
+@100 = ~Nieznana pułapka~
+
+@101 = ~Pułapka unieruchamiająca~
+@102 = ~Pułapka uciszająca~
+@103 = ~Pułapka wezwania błyskawic~
+@104 = ~Pułapka pozbawienia magii~
+@105 = ~Pułapka słupa ognia~
+@106 = ~Pułapka zmiennobarwnej kuli~
+@107 = ~Pułapka zamętu~
+@108 = ~Pułapka okropnego zauroczenia~
+@109 = ~Pułapka ognistej kuli~
+@110 = ~Pułapka błyskawicy~
+@111 = ~Pułapka magicznego pocisku~
+@112 = ~Pułapka śmierdzącej chmury~
+@113 = ~Pułapka strzały~
+@114 = ~Pułapka zabójczej strzały~
+@115 = ~Pułapka kwasowej strzały~
+@116 = ~Pułapka strzały ukąszeń~
+@117 = ~Pułapka strzały wybuchów~
+@118 = ~Pułapka strzały rozproszenia~
+@119 = ~Pułapka ognistej strzały~
+@120 = ~Pułapka lodowej strzały~
+@121 = ~Pułapka strzały przebicia~
+@122 = ~Pułapka przywołania potworów~
+@123 = ~Pułapka mrozu~
+@124 = ~Pułapka zabójczej chmury~
+@125 = ~Pułapka małej błyskawicy~
+@126 = ~Pułapka podwodnego ugryzienia~
+@127 = ~Pułapka z kolcami~
+@128 = ~Pułapka błotnistej mazi~
+@129 = ~Pułapka cienistej śmierci~
+@130 = ~Pułapka gilotyny~
+@131 = ~Pułapka kuli piorunów~
+@132 = ~Pułapka kuli piorunów~
+@133 = ~Pułapka kuli piorunów~
+@134 = ~Pułapka miażdżąca~
+@135 = ~Pułapka eksplodującej czaszki~
+@136 = ~Pułapka petryfikująca~
+@137 = ~Pułapka przyzwania dżinna~
+@138 = ~Pułapka z włócznią~
+@139 = ~Pułapka ze szlamem~
+@140 = ~Pułapka ze strzałkami~
+@141 = ~Pułapka wentylacyjna~
+@142 = ~Pułapka wahadła~
