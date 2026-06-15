@@ -1,40 +1,19 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
 @1 = ~Thorius~
-@2 = ~Sakiewka na klejnoty~
-@3 = ~Jest to malutka sakiewka, doskonała do przechowywania klejnotów.
-
-PARAMETRY:
-
-Waga: 2~
-@4 = ~Tuba na zwoje~
-@5 = ~W tym mocnym pojemniku można umieścić tuziny zwojów, zabezpieczając je w ten sposób przed ogniem, deszczem i piorunami – czyli najczęstszymi zagrożeniami, jakich może spodziewać się czarodziej szukający przygód.
-
-PARAMETRY:
-
-Waga: 2~
-@6 = ~Futerał na mikstury~
-@7 = ~Zwykle noszone przez podróżnych uzdrowicieli, to pudełko rozkłada się i pozwala właścicielowi przypiąć buteleczki z miksturą do jego wyściełanego boku przy pomocy licznych skórzanych rzemyków, by bezpiecznie mogły być przechowywane w czasie podróży.
-
-PARAMETRY:
-
-Waga: 2~
-@8 = ~Pas z amunicją~
-@9 = ~Ten pas przewieszany przez ramię idealnie nadaje się do trzymania pocisków do procy, strzałek, strzał lub bełtów.
-
-PARAMETRY:
-
-Waga: 2~
-@10 = ~Torba przechowywania~
-@11 = ~Podobnie jak w przypadku innych magicznych toreb, ta również wygląda jak zwykły zgrzebny worek o wymiarach pół metra na metr. Wewnątrz sakwy istnieje jednak przestrzeń pozawymiarowa, dzięki czemu wewnątrz jest znacznie większa, niż wskazywałyby na to jej zewnętrzne wymiary. Niezależnie co włoży się do wnętrza, sakwa zawsze waży tyle samo.
-
-PARAMETRY:
-
-Waga: 2~
-
-@20 = ~<CHARNAME>, zaczekaj. Powiedziano mi, że opuszczasz Candlekeep.~
-@21 = ~Witaj, Thoriusie. Tak, Gorion kazał mi przygotować się do podróży.~
-@22 = ~Zejdź mi z oczu, starcze. Nie mam czasu.~
-@23 = ~Zawsze byłeś moim ulubionym uczniem, więc chcę pomóc ci, jak tylko mogę. Weź te rzeczy. To nie broń ani zbroja, ale doświadczeni podróżnicy znają ich prawdziwą wartość.~ ~Zawsze byłaś moją ulubioną uczennicą, więc chcę pomóc ci, jak tylko mogę. Weź te rzeczy. To nie broń ani zbroja, ale doświadczeni podróżnicy znają ich prawdziwą wartość.~
-@24 = ~Thoriusie, jestem ci bardzo wdzięczna za nauki i pomoc.~
-@25 = ~Cóż... Widzę, że moja pomoc nie jest ci potrzebna.~
+@2 = ~Gem bag~
+@3 = ~This small bag is ideally suited for holding gems.~
+@4 = ~Scroll case~
+@5 = ~This sturdy container allows dozens of scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.~
+@6 = ~Potion case~
+@7 = ~Typically carried by travelling healers, this leather case folds open and allows the user to strap delicate potion bottles to its cushioned side with numerous leather thongs for safe storage during travel.~
+@8 = ~Ammo belt~
+@9 = ~This shoulder belt is ideally suited for holding sling bullets, darts, arrows or bolts.~
+@10 = ~Bag of Holding~
+@11 = ~As with other magical bags, this one appears to be a common cloth sack of about 2 feet by 4 feet in size. The bag of holding opens into a nondimensional space, and its inside is larger than its outside dimensions. Regardless of what is put into this item, the bag always weighs a fixed amount.~
+@20 = ~<CHARNAME>, wait. I've been told that you are leaving Candlekeep.~
+@21 = ~Hello, Thorius. Yes, Gorion told me to prepare for a travel.~
+@22 = ~Get lost, old man. I've no time.~
+@23 = ~You have always been my favorite pupil, I want to help you however I can. Take these things. It's no weapon or armor, but experienced adventurers know their real value.~
+@24 = ~I'm very grateful for your lessons and your help, Thorius.~
+@25 = ~But... Well, I see you have no need of my help.~
