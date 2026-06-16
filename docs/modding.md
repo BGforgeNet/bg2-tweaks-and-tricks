@@ -1,5 +1,7 @@
 # Modding notes
 
+**Language:** English | [Polski](modding.pl.md)
+
 Various notes for modders.
 
 - [Faster forging dialogs](#faster-forging-dialogs)

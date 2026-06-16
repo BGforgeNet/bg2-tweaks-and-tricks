@@ -1,5 +1,7 @@
 ## Quest and dialog tweaks
 
+**Language:** English | [Polski](quests.pl.md)
+
 - [Bloodless deeds](#bloodless-deeds)
 - [Improved strongholds](#improved-strongholds)
 - [Save Melicamp](#save-melicamp)

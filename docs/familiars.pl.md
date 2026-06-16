@@ -1,5 +1,7 @@
 ## Chowańce
 
+**Language:** [English](familiars.md) | Polski
+
 Chowańce w grach na silniku Infinity Engine zwykle nie są zbyt użyteczne, zwłaszcza w późniejszych etapach rozgrywki, a już szczególnie w najtrudniejszych trybach gry. Najczęściej po prostu siedzą w plecaku i dają postaci premię do punktów życia.
 
 TnT to zmienia, ale nie przez podbijanie statystyk. Zamiast tego pozwala graczowi wydawać chowańcom różne polecenia, które będą wykonywać.

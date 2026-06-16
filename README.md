@@ -1,5 +1,7 @@
 # Tweaks and Tricks mod for Baldur's Gate 2
 
+**Language:** English | [Polski](README.pl.md)
+
 [![Build Status](https://golem.bgforge.net/mods/tweaks-and-tricks/status.svg)](https://golem.bgforge.net/mods/tweaks-and-tricks)
 [![Translation status](https://hive.bgforge.net/widgets/infinity-engine/-/tweaks-and-tricks/svg-badge.svg)](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

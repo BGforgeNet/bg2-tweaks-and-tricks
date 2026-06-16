@@ -1,5 +1,7 @@
 ## Modyfikacje przedmiotów
 
+**Language:** [English](items.md) | Polski
+
 Zbiór różnych usprawnień dotyczących przedmiotów – głównie poprawiających komfort gry oraz takich, które po prostu mają sens.
 
 - [Bezproblemowa amunicja](#bezproblemowa-amunicja)

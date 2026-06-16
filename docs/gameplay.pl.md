@@ -1,5 +1,7 @@
 ## Rozgrywka i zmiany zasad
 
+**Language:** [English](gameplay.md) | Polski
+
 Zmiany dotyczące różnych zasad, opcji walki itd.
 
 - [Uczciwe walki](#uczciwe-walki)

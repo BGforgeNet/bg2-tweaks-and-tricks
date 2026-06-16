@@ -1,5 +1,7 @@
 ## Gameplay and rules
 
+**Language:** English | [Polski](gameplay.pl.md)
+
 Changes to various rules, combat options, etc.
 
 - [Fair fights](#fair-fights)

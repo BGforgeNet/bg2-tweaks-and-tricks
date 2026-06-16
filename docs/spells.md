@@ -1,5 +1,7 @@
 ## Spell and abilities
 
+**Language:** English | [Polski](spells.pl.md)
+
 Various components to change spells and abilities, mostly to "make sense".
 
 - [Spider form ignores web](#spider-form-ignores-web)

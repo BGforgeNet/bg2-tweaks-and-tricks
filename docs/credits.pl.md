@@ -1,5 +1,7 @@
 ## Autorzy i inne informacje
 
+**Language:** [English](credits.md) | Polski
+
 ### Użyte oprogramowanie
 
 - [DLTCEP](http://sourceforge.net/projects/gemrb/files/Utilities/)

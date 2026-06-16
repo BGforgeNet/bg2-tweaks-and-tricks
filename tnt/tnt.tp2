@@ -11,7 +11,7 @@ ALWAYS
 END
 
 LANGUAGE ~English~ ~english~ ~tnt/tra/english/setup.tra~
-LANGUAGE ~Polish (by my_summertime, SoM Membress, part of CoB Clan)~                 ~polish~      ~tnt/tra/polish/setup.tra~
+LANGUAGE ~Polish (by my_summertime, SoM Membress, part of CoB Clan)~ ~polish~ ~tnt/tra/polish/setup.tra~
 LANGUAGE ~Brazilian Portuguese~ ~portuguese~ ~tnt/tra/portuguese/setup.tra~
 LANGUAGE ~Russian~ ~russian~ ~tnt/tra/russian/setup.tra~
 LANGUAGE ~Spanish~ ~spanish~ ~tnt/tra/spanish/setup.tra~

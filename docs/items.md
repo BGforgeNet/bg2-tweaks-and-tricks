@@ -1,5 +1,7 @@
 ## Item tweaks
 
+**Language:** English | [Polski](items.pl.md)
+
 A collection of various item tweaks, mostly of QoL and "make sense" nature.
 
 - [Hassle-free ammo](#hassle-free-ammo)

@@ -1,5 +1,7 @@
 ## Pułapki
 
+**Language:** [English](traps.md) | Polski
+
 Eksplorowanie lochów w grach na silniku Infinity Engine potrafi być męczące, zwłaszcza jeśli to miejsce dobrze znane, a gracz musi co chwilę czekać, aż Wykrycie pułapek „zaskoczy”.
 
 Tu znajdziesz kilka komponentów zmieniających działanie pułapek:

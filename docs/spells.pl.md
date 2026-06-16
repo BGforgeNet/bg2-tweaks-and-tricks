@@ -1,5 +1,7 @@
 ## Zaklęcia i zdolności
 
+**Language:** [English](spells.md) | Polski
+
 Różne komponenty zmieniające zaklęcia i zdolności – głównie po to, aby „miały sens”.
 
 - [Forma pająka jest niewrażliwa na efekt Pajęczyny](#forma-pająka-jest-niewrażliwa-na-efekt-pajęczyny)

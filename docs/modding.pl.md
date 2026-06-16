@@ -1,5 +1,7 @@
 # Uwagi dla modderów
 
+**Language:** [English](modding.md) | Polski
+
 Różne uwagi dla modderów.
 
 - [Szybsze dialogi wykuwania przedmiotów](#szybsze-dialogi-wykuwania-przedmiotów)

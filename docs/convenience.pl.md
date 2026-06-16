@@ -1,5 +1,7 @@
 ## Różne komponenty ułatwiające grę
 
+**Language:** [English](convenience.md) | Polski
+
 Oto różne komponenty poprawiające jakość gry, które nie pasowały do żadnej innej kategorii.
 
 - [Mniej autozapisów](#mniej-autozapisów)

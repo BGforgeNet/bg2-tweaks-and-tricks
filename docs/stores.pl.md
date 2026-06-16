@@ -1,5 +1,7 @@
 ## Sklepy
 
+**Language:** [English](stores.md) | Polski
+
 - [Sklepy zawsze kupują towary po tej samej niskiej cenie](#sklepy-zawsze-kupują-towary-po-tej-samej-niskiej-cenie)
 - [Eliminacja nadużyć kradzieży w sklepach](#eliminacja-nadużyć-kradzieży-w-sklepach)
 - [Nieograniczona liczba zbroi z ankhega u Taeroma](#nieograniczona-liczba-zbroi-z-ankhega-u-taeroma)

@@ -1,5 +1,7 @@
 ## Familiars
 
+**Language:** English | [Polski](familiars.pl.md)
+
 Familiars aren't very useful in IE games, especially later stages, and even more so in [Hardcore](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Tales_of_the_Sword_Coast) playthroughs. Most of the time they just sit in the backpack and grant the character an HP boost.
 
 TnT changes that, but not by boosting stats. Instead, it enables the player to give familiars various orders, which they will carry out. See below for details.

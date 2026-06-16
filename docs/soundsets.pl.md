@@ -1,5 +1,7 @@
 ## Zestawy dźwięków
 
+**Language:** [English](soundsets.md) | Polski
+
 - [Rozszerzone zestawy dźwięków dla NPC](#rozszerzone-zestawy-dźwięków-dla-npc)
 - [Komplementy i przytyki](#komplementy-i-przytyki)
 - [Brak komentarzy o udanym ukryciu się w cieniu](#brak-komentarzy-o-udanym-ukryciu-się-w-cieniu)

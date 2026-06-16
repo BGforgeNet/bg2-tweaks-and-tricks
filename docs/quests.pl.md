@@ -1,5 +1,7 @@
 ## Poprawki zadań i dialogów
 
+**Language:** [English](quests.md) | Polski
+
 - [Bezkrwawe rozwiązanie zadania z Arkionem i Nemphre](#bezkrwawe-rozwiązanie-zadania-z-arkionem-i-nemphre)
 - [Ulepszone twierdze](#ulepszone-twierdze)
 - [Ratunek dla Melicampa](#ratunek-dla-melicampa)

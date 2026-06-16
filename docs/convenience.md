@@ -1,5 +1,7 @@
 ## Assorted convenience components
 
+**Language:** English | [Polski](convenience.pl.md)
+
 Here are various QoL components that didn't really fit into any other sections.
 
 - [Less autosaves](#less-autosaves)

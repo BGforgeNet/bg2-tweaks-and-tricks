@@ -1,5 +1,7 @@
 ## Soundsets
 
+**Language:** English | [Polski](soundsets.pl.md)
+
 - [Extended soundsets for NPC](#extended-soundsets-for-npc)
 - [Compliments and insults](#compliments-and-insults)
 - [No talking while hiding in shadows](#no-talking-while-hiding-in-shadows)
