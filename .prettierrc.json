@@ -1,5 +1,5 @@
 {
-  "semi": true,
-  "tabWidth": 4,
-  "experimentalOperatorPosition": "start"
+    "semi": true,
+    "printWidth": 80,
+    "experimentalOperatorPosition": "start"
 }
