@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.40](#version-840)
 - [Version 8.39](#version-839)
 - [Version 8.38](#version-838)
 - [Version 8.37](#version-837)
@@ -47,6 +48,10 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.40
+
+Translation updates.
 
 ### Version 8.39
 
