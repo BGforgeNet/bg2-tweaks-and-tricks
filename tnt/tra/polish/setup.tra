@@ -12,38 +12,28 @@
 @130 = ~Wymaga klasycznego silnika ToB, BG(2)EE lub IWDEE~
 @131 = ~Wymaga zawartości TotSC~
 @132 = ~Nie można wykryć platformy. Przerywanie instalacji.~
-
 @200 = ~Przedmioty~
 @201 = ~Tweaks and Tricks: Bezproblemowa amunicja~
 @202 = ~Tweaks and Tricks: Usuń efekt graficznego rozmycia z przedmiotów~
 @203 = ~Tweaks and Tricks: Sensowny Płaszcz odzwierciedlenia~
 @204 = ~Tweaks and Tricks: Efekty zwojów i mikstur nie nakładają się na siebie~
-
 @205 = ~Tweaks and Tricks: Rozsądne cechy różdżki zimna~
 @206 = ~Działa na pojedynczy cel~
 @207 = ~Działa obszarowo~
-
 @208 = ~Tweaks and Tricks: Działająca ochrona przed trucizną~
 @210 = ~Tweaks and Tricks: Przedmioty ochronne w stylu PnP~
 @211 = ~Jak w 2E: rzuty obronne się sumują, KP nie~
 @212 = ~Jak w 3E: brak kumulacji, działa najlepszy bonus~
-
 @223 = ~Tweaks and Tricks: Rozszerzone działanie Mikstury lustrzanych oczu~
-
 @236 = ~Tweaks and Tricks: Nieograniczone grupowanie dobrych jagód~
-
 @240 = ~Tweaks and Tricks: Typ obrażeń broni miotanej~
 @241 = ~Dodany bonus z siły~
 @242 = ~Topory zadają obrażenia sieczne, młoty obuchowe~
 @243 = ~Obie powyższe opcje~
-
 @250 = ~Tweaks and Tricks: Ulepszony płaszcz Shandalara~
 @252 = ~Tweaks and Tricks: Płaszcz Algernona możliwy do użycia raz dziennie~
-
 @260 = ~Tweaks and Tricks: Ulepszony Wyrównywacz~
-
 @261 = ~Tweaks and Tricks: Rozróżnialne przedmioty fabularne~
-
 @300 = ~Pułapki~
 @301 = ~Tweaks and Tricks: Intuicyjne wykrywanie pułapek~
 @302 = ~działa tylko poza walką~
@@ -64,10 +54,7 @@
 @317 = ~Tweaks and Tricks: Ulepszone wykrywanie pułapek - komponent główny (WYMAGANY dla działania poprzednich komponentów pułapek)~
 @318 = ~Tweaks and Tricks: Ulepszone wykrywanie pułapek - natychmiastowe wykrywanie~
 @319 = ~Wszystkie komponenty Ulepszonych Pułapek muszą zostać zainstalowane PRZED komponentem głównym~
-
 @350 = ~Tweaks and Tricks: Poprawki pułapek~
-
-
 @500 = ~Sklepy~
 @501 = ~Nie można okradać paserów~
 @502 = ~Tweaks and Tricks: Wyeliminuj nadużywanie kradzieży w sklepach~
@@ -76,7 +63,6 @@
 @505 = ~Tweaks and Tricks: Sklepy zawsze kupują towary po tej samej (niskiej) cenie | UWAGA! Zapoznaj się z readme!~
 @506 = ~Tweaks and Tricks: Porządki w sklepach~
 @507 = ~Tweaks and Tricks: Ograniczone zasoby w sklepach~
-
 @600 = ~Różne komponenty ułatwiające grę~
 @601 = ~Tweaks and Tricks: Mniej autozapisów | UWAGA! Zapoznaj się z readme!~
 @602 = ~Tweaks and Tricks: Więcej punktów orientacyjnych na mapach~
@@ -95,14 +81,10 @@
 @630 = ~Tweaks and Tricks: Szybsze dialogi wykuwania przedmiotów~
 @631 = ~Oryginalne listy receptur~
 @632 = ~Zarówno Cromwell, jak i Cespenar mogą wykuwać dowolne przedmioty, jeśli dostępne są wszystkie składniki~
-
-
 @700 = ~Poprawki zadań i dialogów~
 @701 = ~Tweaks and Tricks: Bezkrwawe rozwiązanie zadania z Arkionem i Nemphre~
 @702 = ~Tweaks and Tricks: Ulepszone twierdze~
 @703 = ~Tweaks and Tricks: Ratunek dla Melicampa~
-
-
 @800 = ~Czary i zdolności~
 @801 = ~Tweaks and Tricks: Forma pająka jest niewrażliwa na efekty pajęczyny~
 @802 = ~Tweaks and Tricks: Przemiana w Zabójcę - pełne leczenie przy przemianie~
@@ -123,35 +105,25 @@
 @820 = ~Tweaks and Tricks: Ochrona przed złem według zasad PnP~
 @821 = ~Tweaks and Tricks: Czar Śliskość nie wywołuje wrogiej reakcji~
 @822 = ~Tweaks and Tricks: Tropienie!~
-
-
 @900 = ~Chowańce~
 @901 = ~Tweaks and Tricks: Inteligentniejsze chowańce~
 @902 = ~Tweaks and Tricks: Wytrzymalsze chowańce~
-
-
 @1000 = ~Zestawy dźwięków~
 @1001 = ~Tweaks and Tricks: Komplementy i przytyki~
 @1002 = ~Przywróć~
 @1003 = ~Przywróć i dostosuj do liczby FPS~
 @1004 = ~Wyłącz~
-
 @1010 = ~Tweaks and Tricks: Rozszerzone zestawy dźwięków dla dołączalnych NPC~
 @1011 = ~Tylko brakujące kwestie~
 @1012 = ~Preferuj dźwięki z BG1~
 @1013 = ~Preferuj dźwięki z BG2~
-
 @1020 = ~Tweaks and Tricks: Brak komentarzy o udanym ukryciu się w cieniu~
 @1021 = ~Tweaks and Tricks: Udostępnij zestawy dźwięków NPC dla głównej postaci~
-
-
 @1100 = ~Rozgrywka, zasady, poziom trudności~
-
 @1102 = ~Tweaks and Tricks: Ograniczenia nabijania PD~
 @1103 = ~Tweaks and Tricks: Karsomir nie może zostać wykradziony~
 @1104 = ~Tweaks and Tricks: Prawdziwe Wielkie mistrzostwo według zasad PnP~
 @1105 = ~Tweaks and Tricks: Rozsądne ograniczenia wieloklasowe~
-
 @1110 = ~Tweaks and Tricks: Uczciwe walki | UWAGA! Zapoznaj się z readme!~
 @1111 = ~Zmiany tylko dla wybranych przeciwników~
 @1112 = ~Usuń również nieupuszczalne przedmioty dające przeciwnikom nieuczciwą przewagę~

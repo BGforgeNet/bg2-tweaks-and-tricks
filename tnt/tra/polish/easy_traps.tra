@@ -1,5 +1,4 @@
-//notice a trap
-@1 = ~Um, wyczuwam pułapkę.~ //familiar
+@1 = ~Um, wyczuwam pułapkę.~
 @2 = ~Ostrożnie. Coś tu nie gra.~
 @3 = ~Stop! To pułapka!~
 @4 = ~Wyczuwam pułapkę!~
@@ -8,11 +7,8 @@
 @7 = ~Wyczuwam zagrożenie.~
 @8 = ~Uważajcie. To wygląda podejrzanie.~
 @9 = ~Zaczekajcie. Widzicie to?~
-
-// trap floats
 @98 = ~Pułapka~
 @100 = ~Nieznana pułapka~
-
 @101 = ~Pułapka unieruchamiająca~
 @102 = ~Pułapka uciszająca~
 @103 = ~Pułapka wezwania błyskawic~

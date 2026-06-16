@@ -1,47 +1,41 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@1 = ~Charmed~
-@2 = ~Dire Charmed~
-@3 = ~Dominated~
-@4 = ~Protection From Evil (Abjuration)
-Level: 1
-Range: Touch
-Duration: 2 rounds/level
-Casting Time: 1
-Area of Effect: Creature touched
-Saving Throw: None
+@1 = ~Zauroczenie~
+@2 = ~Okropne zauroczenie~
+@3 = ~Dominacja~
+@4 = ~Ochrona przed złem 
+(Odrzucanie)
 
-When this spell is cast, it creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:
-- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.
-- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.
-- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.
-~
-@5 = ~Protection From Evil (Abjuration)
-Level: 1
-Sphere: Protection
-Range: Touch
-Duration: 3 rounds/level
-Casting Time: 1
-Area of Effect: Creature touched
-Saving Throw: None
+Poziom: 1
+Zasięg: dotyk
+Czas działania: 2 rundy/poziom
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
 
-When this spell is cast, it creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:
-- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.
-- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.
-- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.
-~
-@6 = ~Protection From Evil 10' Radius
-(Abjuration)
-Level: 4
-Sphere: Protection
-Range: Touch
-Duration: 1 turn/level
-Casting Time: 7
-Area of Effect: 10' radius
-Saving Throw: None
+Czar ten tworzy wokół wybranej istoty magiczną barierę, rozciągającą się na odległość trzydziestu centymetrów. Bariera ta przemieszcza się wraz z nią i działa na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze złym, lub których charakter stał się zły za pomocą magii, otrzymują modyfikator -2 do każdego testu ataku wykonywanego przeciw istocie chronionej barierą. Po drugie, każda próba zauroczenia lub przejęcia kontroli nad umysłem  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemożliwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje działać wobec zablokowanej istoty, jeśli chroniona postać podejmie przeciwko niej atak.~
+@5 = ~Ochrona przed złem 
+(Odrzucanie)
 
-When this spell is cast, all creatures within a 10' radius are affected individually by 'protection from evil'. It creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has three major effects:
-- First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Any saving throws caused by such attacks are made by the protected creature with a +2 bonus.
-- Second, any attempt to possess or to exercise mental control over (as by a vampire's charm ability) the protected creature is blocked by this spell.
-- Third, the spell prevents bodily contact with summoned demons. This protection ends if the protected character makes an attack against the blocked creature.
+Poziom: 1
+Sfera: Ochrona
+Zasięg: dotyk
+Czas działania: 3 rundy/poziom
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Czar ten tworzy wokół wybranej istoty magiczną barierę, rozciągającą się na odległość trzydziestu centymetrów. Bariera ta przemieszcza się wraz z nią i działa na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze złym, lub których charakter stał się zły za pomocą magii, otrzymują modyfikator -2 do każdego testu ataku wykonywanego przeciw istocie chronionej barierą. Po drugie, każda próba zauroczenia lub przejęcia kontroli nad umysłem  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemożliwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje działać wobec zablokowanej istoty, jeśli chroniona postać podejmie przeciwko niej atak.~
+@6 = ~Ochrona przed złem, promień 3 metry
+(Odrzucanie)
+
+Poziom: 4
+Sfera: Ochrona
+Zasięg: dotyk
+Czas działania: 1 runda/poziom
+Czas rzucania: 7
+Obszar działania: w promieniu 3 metrów
+Rzut obronny: brak
+
+Czar ten tworzy wokół każdej istoty w promieniu 3 metrów magiczną barierę, rozciągającą się na odległość trzydziestu centymetrów. Bariera ta przemieszcza się wraz z nią i działa na trzy sposoby. Wszystkie istoty w promieniu 3 metrów zostają objęte efektem ochrony przed złem. Po pierwsze, wszystkie stworzenia o charakterze złym, lub których charakter stał się zły za pomocą magii, otrzymują modyfikator -2 do każdego testu ataku wykonywanego przeciw istocie chronionej barierą. Po drugie, każda próba zauroczenia lub przejęcia kontroli nad umysłem  (jak w wypadku zauroczenia przez wampira) zostaje zablokowana przez ten czar. Po trzecie, czar uniemożliwia fizyczny kontakt z przyzwanymi demonami. Ochrona ta przestaje działać wobec zablokowanej istoty, jeśli chroniona postać podejmie przeciwko niej atak.
 ~

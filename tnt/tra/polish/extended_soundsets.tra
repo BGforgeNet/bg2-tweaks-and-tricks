@@ -1,65 +1,40 @@
-//extended soundsets
 @37 = ~Teraz umrzesz naprawdę!~ [g_ttjah1]
-
 @38 = ~Aaaargh! Gdy Boo mówi „zabij”, Minsc zabija!~ [minsc57]
 @39 = ~Drżyj przed gniewem mojego chomika!~ [g_ttmin1]
-
 @40 = ~Twój kres staje się coraz bliższy... wyj, jeśli musisz!~ [g_ttedw1]
-
 @41 = ~Jasny gwint! Zawsze miałam kłopoty z tymi zamkami! Są prawdziwym utrapieniem!~ [alora02]
-
 @42 = ~Samotnie na Nadbrzeżnym Trakcie? No czy to mądre?~ [quayl01]
-
 @43 = ~U-uspokój się, skarbie, musimy zachować o-o-ostrożność.~ [khald02]
-
 @44 = ~Załatwmy to jak najszybciej!~ [g_ttyos1]
-
 @45 = ~Ahhh!!  Pomocy!  Prooszę, pomóż mi!!~ [aerie95]
 @46 = ~Och, to was zaboli!~ [aeri2540]
 @47 = ~Za wszystko co przyzwoite, ruszam do walki!~ [aeri2541]
-
 @48 = ~Zabijanie to nasz interes, a interes kręci się całkiem nieźle.~ [g_ttkor1]
 @49 = ~Hahahaha!~ [g_ttkor2]
-
 @50 = ~W imieniu Tyra, zwyciężymy raz na zawsze!~ [g_ttkel1]
-
 @51 = ~Co mogę dla ciebie zrobić?~ [g_ttkag1]
-
 @52 = ~Już mi przeszkodziliście, teraz dajcie mi spokój. Wasze towarzystwo i tak jest uciążliwe.~ [montr01]
-
 @53 = ~Hej, i kogóż my tu mamy?~ [yeslk01]
-
 @54 = ~Zbyt długo tkwiłem w tych ponurych lochach.~ [g_ttxan1]
-
 @55 = ~Wyplenimy dziś zło!~ [nali2520]
 @56 = ~Jeśli podejmiecie walkę, zginiecie! Nie sprostacie naszej potędze!~ [nali2521]
-
 @57 = ~Poznajcie furię Helma!~ [anom2539]
 @58 = ~Biegłość i siła zapewni nam zwycięstwo!~ [anom2540]
-
 @59 = ~Nie przejdziesz!~ [g_ttval1]
-
 @60 = ~Ach, oto wspaniała walka, która rozniesie się echem po wszystkich sferach!~ [g_tthae1]
-
 @61 = ~Nas, dzieci Bhaala, nie da się powstrzymać!~ [sarevo13]
 @62 = ~Ha! Zapamiętam sobie to miejsce!~ [sarevo14]
 @63 = ~Jeśli trzeba, sam wyrąbię ścieżkę.~ [sarevo35]
 @64 = ~Jak sobie życzysz.~ [sarevo36]
 @65 = ~Phi. Sam na pewno bym tego nie zrobił.~ [sarevo37]
 @66 = ~Skoro tak mówisz.~ [sarevo38]
-
 @67 = ~Moja muzyka jest lepsza od twojej, Eldoth, uczyłem się w szkole w Berdusk.~ [garrk30]
 @68 = ~Nie mogę tak po prostu stać i bezczynnie się przyglądać.~ [garrk06]
-
 @69 = ~Na lodowe tchnienie Auril!~ [g_ttbra1]
-
 @70 = ~Nigdy przedtem nie miałam tak dobrych przyjaciół.~ [skiee04]
-
 @71 = ~Montaronie, POGARSZASZ sprawę! To naprawdę psuje mi nastrój!~ [xzarr01]
-
 @72 = ~Chciałbyś, by mój miecz połaskotał cię w wątrobę?~ [shart34]
-
-@130  = ~Koniec waszym podłościom!~ [g_ttaja1]
-@131  = ~Wyciągajcie broń!~ [g_ttaja2]
-@132  = ~Brońcie się!~ [g_ttkiv1]
-@133  = ~Twoja dusza jest stracona!~ [g_ttkel2]
+@130 = ~Koniec waszym podłościom!~ [g_ttaja1]
+@131 = ~Wyciągajcie broń!~ [g_ttaja2]
+@132 = ~Brońcie się!~ [g_ttkiv1]
+@133 = ~Twoja dusza jest stracona!~ [g_ttkel2]

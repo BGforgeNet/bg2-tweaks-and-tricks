@@ -2,13 +2,10 @@
 @2 = ~Tropienie
 
 Dzięki doskonałej znajomości swojego otoczenia i istot, które w nim żyją, łowca może użyć zdolności Tropienie, by dowiedzieć się, jakie istoty zamieszkują w danym obszarze i gdzie się one w danej chwili znajdują. Czerwone strzałki przy krawędziach ekranu wskazują ogólnie kierunek, w którym znajdują się stwory przebywające w danej okolicy.~
-
-// BG1
 @100 = ~Candlekeep to odosobniona, ufortyfikowana twierdza-biblioteka, słynąca z ogromnych zbiorów ksiąg i zwojów. Mnisi, uczeni i strażnicy krążą po niej, strzegąc spokoju i wiedzy. Znasz tu każdy zakamarek.~
 @101 = ~Gospoda Pod Pomocną Dłonią to ufortyfikowana gospoda, będąca bezpieczną przystanią dla podróżnych. Często widać tu poszukiwaczy przygód i strażników, którzy odpoczywają lub szykują się do dalszej drogi.~
 @102 = ~Beregost to tętniące życiem miasteczko z licznymi sklepami, gospodami i świątynią. Ulice wypełniają mieszczanie, strażnicy i kupcy, zajęci codziennymi sprawami.~
 @103 = ~Nashkel to niewielkie miasteczko nękane problemami w pobliskich kopalniach. Mieszczanie, milicja i kupcy zmagają się tu z ostatnimi kłopotami.~
-// @104
 @105 = ~Kopalnie Nashkel to sieć tuneli, w których szerzą się potwory i tajemnicze zjawiska. Znajdujesz ślady koboldów, pająków i wilków.~
 @106 = ~Wzgórza gibberlingów są skaliste i gęsto zalesione, z urwistymi klifami i krętymi ścieżkami. W okolicy napotykasz ślady gibberlingów, xvartów i wilków.~
 @107 = ~Gullykin to niewielka wioska niziołków. W pobliżu znajdujesz ślady koboldów, wilków oraz jakichś nieumarłych.~
@@ -20,7 +17,7 @@ Dzięki doskonałej znajomości swojego otoczenia i istot, które w nim żyją, 
 @113 = ~Knieja Otulisko to mroczny, gęsty las pełen niebezpieczeństw. Napotykasz ślady etterkapów, pająków oraz druidów, dla których to miejsce jest domem.~
 @114 = ~Kopalnie w Kniei Otulisko są bogate w rudy, lecz najeżone zagrożeniami. Znajdujesz ślady wiwern, pająków oraz niewolników zmuszanych do pracy.~
 @115 = ~Wysoki Żywopłot to odosobniona posiadłość potężnego maga. W okolicy napotykasz ślady gnolli, pająków i nieumarłych.~
-@116 = ~Znajdujesz ślady bazyliszków, niedźwiedzi i nieumarłych.~  // Mutamin's Garden
+@116 = ~Znajdujesz ślady bazyliszków, niedźwiedzi i nieumarłych.~
 @117 = ~Jarmark to wędrowny festyn pełen atrakcji i niebezpieczeństw. W pobliżu natrafiasz na ślady koboldów i ogrów.~
 @118 = ~Twierdza gnolli to ufortyfikowane legowisko gnolli. Widać wyraźne oznaki nasilonej obecności gnolli oraz odciski stóp xvarta.~
 @119 = ~Wodogrzmot driad to malownicza kaskada zamieszkana przez driady. Napotykasz ślady driad, wilków oraz od czasu do czasu poszukiwaczy przygód, których przywiodło tu piękno wodospadu.~
@@ -30,6 +27,4 @@ Dzięki doskonałej znajomości swojego otoczenia i istot, które w nim żyją, 
 @123 = ~Lodowa Wyspa to mroźne, odległe miejsce pełne niebezpieczeństw. Znajdujesz ślady niedźwiedzi polarnych.~
 @124 = ~Lwi Trakt to malownicza ścieżka łącząca Candlekeep ze światem, wśród falujących wzgórz i rozrzuconych drzew. Znajdujesz ślady wilków, niedźwiedzi i gibberlingów.~
 @125 = ~Wioska wydaje się spokojna; między domami i na wydeptanych ścieżkach widać głównie ludzkie tropy. Wśród nich trafiają się jednak odciski zwierząt – duże, lecz nie dziwne dla okolicy wiejskiej. Ślady wchodzą i wychodzą z wioski, zlewając się z codziennym ruchem. Nic nie wydaje się bezpośrednio zagrażać, choć obecność takich tropów sugeruje, że dzika zwierzyna podchodzi bliżej zabudowań, niż można by przypuszczać.~
-
-// Just testing BG2 part
 @200 = ~Północny Las to dzika, nieujarzmiona puszcza, znana z gęstego sklepienia drzew i zdradliwych ścieżek. Poszycie usłane jest liśćmi i gdzieniegdzie śladami tych, którzy odważyli się zapuszczać w głąb. Znajdujesz znaki obecności wampirów czających się w mroku, trolli krążących w podszyciu i yuan-ti sunących przez gęstwinę. Widać też ślady grupy poszukiwaczy przygód, którzy niedawno tędy przeszli – ich tropy zdradzają napiętą, ostrożną wędrówkę. Powietrze ciężkie jest od zapachu żywicy i odległych odgłosów zwierzyny, ostrzegając każdego, by stąpał rozważnie.~

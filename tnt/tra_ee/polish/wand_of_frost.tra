@@ -1,18 +1,14 @@
 // Do not edit. This file is generated automatically by handle-charsets. Your changes will be lost.
 
-@1 = ~The wand will create a cone-shaped area of extreme cold, originating at the wizard's hand and extending outward, much like 5th level wizard spell Cone of Cold. The damage is 8d6 (treating all 1s rolled as 2s), with a save vs. wands for half.
+@1 = ~ Działanie różdżki zimna przypomina zaklęcie Stożek zimna. Z czubka różdżki wystrzeliwuje kolumna białych kryształowych odłamków, tworząc stożek skrajnego zimna. Podobnie jak w przypadku innych różdżek, również i Różdżka zimna może być użyta ograniczoną ilość razy. Po zużyciu wszystkich ładunków roztapia się ona w nieszkodliwą kałużę.
 
-STATISTICS:
+PARAMETRY:
 
-Effect:  Cone of Cold
-Damage:  8D6 (save vs. wands for half)
-Range:  100
-Area of effect:  Special
-Not usable by:
- Fighter
- Cleric
- Druid
- Thief
- Paladin
- Ranger
+Właściwości ładunków:
+– Stożek zimna
+Obrażenia: 8k6 obrażeń od zimna (połowa po rzucie obronnym przeciw różdżkom)
+Zasięg: 30 metrów
+Obszar działania: specjalny 
+
+Waga: 1
 ~
