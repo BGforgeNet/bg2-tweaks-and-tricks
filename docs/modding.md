@@ -29,7 +29,7 @@ dagg21      weapon  5000    0           1           dagg22,5*misc41
 ```
 
 1. Column names are self-explaining.
-1. Lines starting with __#__ are ignored.
+1. Lines starting with **#** are ignored.
 1. Ingredients are comma-separated, no spaces.
 1. Multiple items of the same type can be required like so: `5*misc41` (5 Star Saphires).
 1. `TYPE` can be `armor`, `weapon`, or `trinket`. Each goes into its own dialog tree.

@@ -72,7 +72,7 @@ Przywraca pochwały i obelgi w BG2 oraz lekko rozszerza je w BG1.
 
 Oryginalne BG1 działało w 30 FPS, a wyzwalacze pochwał i obelg były do tego dostosowane. BG2 może działać nawet w 90 FPS, co czasem powoduje nakładanie się kwestii. Ta opcja dostosowuje je do aktualnej liczby FPS.
 
-*Uwaga: na Linuxie i Macu wymagany jest wine w PATH.*
+_Uwaga: na Linuxie i Macu wymagany jest wine w PATH._
 
 #### Wyłącz
 

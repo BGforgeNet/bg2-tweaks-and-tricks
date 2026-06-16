@@ -5,8 +5,8 @@
 Changes to various rules, combat options, etc.
 
 - [Fair fights](#fair-fights)
-    - [Just a few select enemies](#just-a-few-select-enemies)
-    - [Also remove undroppable items granting unfair advantages from ALL enemies](#also-remove-undroppable-items-granting-unfair-advantages-from-all-enemies)
+  - [Just a few select enemies](#just-a-few-select-enemies)
+  - [Also remove undroppable items granting unfair advantages from ALL enemies](#also-remove-undroppable-items-granting-unfair-advantages-from-all-enemies)
 - [No XP farming](#no-xp-farming)
 - [Can't steal Carsomyr](#cant-steal-carsomyr)
 - [PnP-like Grand Mastery](#pnp-like-grand-mastery)
@@ -65,8 +65,8 @@ However, in [PnP](<https://adnd2e.fandom.com/wiki/Weapon_Mastery_(POCT)#Weapon_M
 PnP would have High Mastery almost double critical hit chance (reduce roll requirement from 18+ to 16+). However, this doesn't seem possible to implement in IE. Instead, this component perfoms the following changes:
 
 1. Grand Mastery (5 points) grants one extra attack over Specialist (the "unnerfed" version, as in Baldurdash and Tweaks Anthology). Only true class Fighter may attain Grand Mastery, with 2 exceptions:
-    - Archer can become a Grand Master with bows and crossbows.
-    - Kensai can become a Grand Master with swords. Swords don't include daggers. Kensai is limited to 2 points in non-sword melee proficiencies.
+   - Archer can become a Grand Master with bows and crossbows.
+   - Kensai can become a Grand Master with swords. Swords don't include daggers. Kensai is limited to 2 points in non-sword melee proficiencies.
 1. High Mastery (4 points) grants 0.5 extra attack over Specialist, 0.5 less than Grand Mastery. Only fighters may attain High Mastery.
 1. Berserker and Kensai no longer receive kit speficic THAC0 and damage bonuses when using ranged versions of the weapons, such as throwing axes.
 1. Other class/proficiency combinations are unchanged.

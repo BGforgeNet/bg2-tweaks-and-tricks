@@ -10,7 +10,6 @@ Różne uwagi dla modderów.
 
 Możesz łatwo dodać swoje przedmioty do list wytwarzania. Skopiuj przykład do swojego moda i odpowiednio zmodyfikuj listę `APPEND`. Jeśli TnT zostanie zainstalowany po twoim modzie, wykryje twoje przedmioty w `g_forge.2da` i doda je do odpowiednich dialogów.
 
-
 ```
 <<<<<<<< .../tnt-inlined/g_forge.2da
 ITEM    TYPE    PRICE   CROMWELL    CESPENAR    INGREDIENTS
@@ -30,7 +29,7 @@ dagg21      weapon  5000    0           1           dagg22,5*misc41
 ```
 
 1. Nazwy kolumn mówią same za siebie.
-1. Linie zaczynające się od __#__ są ignorowane.
+1. Linie zaczynające się od **#** są ignorowane.
 1. Składniki są oddzielane przecinkami, bez spacji.
 1. Można wymagać kilku przedmiotów tego samego typu, np. `5*misc41` (5 gwiezdnych szafirów).
 1. `TYPE` może mieć wartość `armor`, `weapon` albo `trinket`. Każdy typ trafia do osobnego drzewa dialogowego.

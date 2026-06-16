@@ -11,10 +11,10 @@
 [![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
 [![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
 
-[__Download__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
-| [__Support__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
-| [__Discussion__](https://forums.bgforge.net/viewforum.php?f=31)
-| [__Help translating__](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
+[**Download**](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
+| [**Support**](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
+| [**Discussion**](https://forums.bgforge.net/viewforum.php?f=31)
+| [**Help translating**](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 
 A collection of tweaks to fix some annoying and/or unrealistic aspects of the game, add some flavour, make some things easier and other things harder.
 
@@ -37,14 +37,15 @@ Components are many and varied. Refer to the individual sections for the details
 - [Assorted convenience components](docs/convenience.md)
 
 ## Installation
+
 - Download zip from the [latest release page](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest).
 - Extract it into main game directory.
 - Launch setup-tnt.exe.
 - Install the desired components.
 
 ## Credits and other details
+
 - [Changelog](docs/changelog.md)
 - [Used software](docs/credits.md#used-software)
 - [Author](docs/credits.md#author)
 - [License](docs/credits.md#license)
-

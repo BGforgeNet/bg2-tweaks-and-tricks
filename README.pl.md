@@ -11,10 +11,10 @@
 [![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
 [![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
 
-[__Pobierz__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
-| [__Wsparcie__](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
-| [__Dyskusja__](https://forums.bgforge.net/viewforum.php?f=31)
-| [__Pomóż w tłumaczeniu__](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
+[**Pobierz**](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/releases/latest)
+| [**Wsparcie**](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues)
+| [**Dyskusja**](https://forums.bgforge.net/viewforum.php?f=31)
+| [**Pomóż w tłumaczeniu**](https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/)
 
 Zbiór usprawnień, które poprawiają irytujące i/lub nierealistyczne elementy gry, dodają trochę klimatu, ułatwiają pewne rzeczy, a inne czynią trudniejszymi.
 

@@ -15,5 +15,5 @@
     },
     "[weidu-tra]": {
         "editor.defaultFormatter": "BGforge.bgforge-mls"
-    },
+    }
 }

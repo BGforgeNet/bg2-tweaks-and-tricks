@@ -61,11 +61,11 @@ Translation updates.
 ### Version 8.38
 
 - Mislead:
-    - Can be installed on [BGEE](https://forums.bgforge.net/viewtopic.php?t=1327).
-    - Can be destroyed by True Sight.
+  - Can be installed on [BGEE](https://forums.bgforge.net/viewtopic.php?t=1327).
+  - Can be destroyed by True Sight.
 - True True Grandmastery renamed to PnP-like Grand Mastery.
-    - Implementation changed to spread the extra attack between High and Grand Mastery.
-    - Kit eligibility and bonuses changed, see the [doc](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/gameplay.md#pnp-like-grand-mastery) for details.
+  - Implementation changed to spread the extra attack between High and Grand Mastery.
+  - Kit eligibility and bonuses changed, see the [doc](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/blob/master/docs/gameplay.md#pnp-like-grand-mastery) for details.
 
 ### Version 8.37
 
@@ -109,15 +109,15 @@ New component: [Tracking!](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/b
 - New component: non-hostile [Grease](https://pihwiki.bgforge.net/Baldur%27s_Gate:_Arcane_Spells_List#Grease).
 - Even with Extended Soundsets, BG1 Imoen will not [mention torture](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/85).
 - Mod romance cheats:
-    - Tyris Flare is less picky now.
-    - Amber won't kill the romance midway because of PC's low INT/CHA.
-    - Shar-Teel won't leave party if PC gets belladonna for Delainy.
+  - Tyris Flare is less picky now.
+  - Amber won't kill the romance midway because of PC's low INT/CHA.
+  - Shar-Teel won't leave party if PC gets belladonna for Delainy.
 - PnP protection items: added RoP+3 from CtB, Stylish AoP+1 from White Queen.
 - Map notes:
-    - East sewers note in Undercellar.
-    - Fixed Laerta and Louise's house.
-    - Fixed tavern note in SW BG.
-    - Marked tavern in east BG.
+  - East sewers note in Undercellar.
+  - Fixed Laerta and Louise's house.
+  - Fixed tavern note in SW BG.
+  - Marked tavern in east BG.
 
 ### Version 8.29
 
@@ -370,9 +370,9 @@ Added more comprehensive check to include various Gaze spells.
 - Added spider form/web protection component.
 - Fixed Viconia's dialog_default and area_city in extended soundsets.
 - Easy Traps:
-    - Disabled all traps that never fire and just give notifications (not marked as trapped but have a script).
-    - Fixed multiple Durlag's tower traps.
-    - Added compatibility with WhiteQueen.
+  - Disabled all traps that never fire and just give notifications (not marked as trapped but have a script).
+  - Fixed multiple Durlag's tower traps.
+  - Added compatibility with WhiteQueen.
 - Added True True Sight component.
 - Added Kahrk and Arkanis Gath to fair fights.
 - Improved EE compatibility.
@@ -386,13 +386,13 @@ Added more comprehensive check to include various Gaze spells.
 - Added More Ankheg Armors component.
 - Added Hassle-free Returning Weapons component.
 - Smarter familiars:
-    - Added compatibility with WTP familiars.
-    - Fixed quasit.
-    - Ensured that dead familiars don't do anything.
-    - Added option to jump into pack when badly injured, and injured notifications.
-    - Added dialog option to manage familiar speed, remove faster familiars component.
-    - Added hit and run technique.
-    - Sped up looting.
+  - Added compatibility with WTP familiars.
+  - Fixed quasit.
+  - Ensured that dead familiars don't do anything.
+  - Added option to jump into pack when badly injured, and injured notifications.
+  - Added dialog option to manage familiar speed, remove faster familiars component.
+  - Added hit and run technique.
+  - Sped up looting.
 - Added potion of really mirrored eyes component.
 
 ### Version 6
@@ -403,9 +403,9 @@ Added more comprehensive check to include various Gaze spells.
 - NPC soundsets for PC: fixed bug when 1/2 versions were the same.
 - NPC soundsets for PC: added more sounds.
 - Under the hood changes:
-    - Compliments/insults: left as .wav instead of .wavc - make DTLCEP happy.
-    - Update weidu to 239.
-    - General code cleanup.
+  - Compliments/insults: left as .wav instead of .wavc - make DTLCEP happy.
+  - Update weidu to 239.
+  - General code cleanup.
 
 ### Version 5
 
