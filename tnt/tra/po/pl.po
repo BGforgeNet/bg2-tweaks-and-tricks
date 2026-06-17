@@ -4,15 +4,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-21-17:10+0000\n"
-"PO-Revision-Date: 2025-02-03 16:40+0000\n"
-"Last-Translator: Arthur <a.ochal22@gmail.com>\n"
-"Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/tweaks-and-tricks/pl/>\n"
+"PO-Revision-Date: 2026-06-17 07:45+0000\n"
+"Last-Translator: Ania Ł <anna.lagowska@gmail.com>\n"
+"Language-Team: Polish <https://hive.bgforge.net/projects/infinity-engine/"
+"tweaks-and-tricks/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.2\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: easy_traps.tra:1
 msgid "Uh, I smell a trap."
@@ -284,7 +286,7 @@ msgstr "Zabijanie to nasz interes, a interes kręci się całkiem nieźle."
 #: extended_soundsets.tra:49
 msgctxt "g_ttkor2"
 msgid "Hahahaha!"
-msgstr ""
+msgstr "Hahahaha!"
 
 #: extended_soundsets.tra:50
 msgctxt "g_ttkel1"
@@ -903,7 +905,7 @@ msgstr "Dom Fentenów"
 
 #: more_map_notes.tra:13
 msgid "Evalt"
-msgstr ""
+msgstr "Evalt"
 
 #: more_map_notes.tra:14
 msgid "Taloun's house"
@@ -915,27 +917,27 @@ msgstr "Dom Kaishas"
 
 #: more_map_notes.tra:16
 msgid "Maralee"
-msgstr ""
+msgstr "Maralee"
 
 #: more_map_notes.tra:17
 msgid "Jorin"
-msgstr ""
+msgstr "Jorin"
 
 #: more_map_notes.tra:18
 msgid "Farthing"
-msgstr ""
+msgstr "Farthing"
 
 #: more_map_notes.tra:19
 msgid "Delainy"
-msgstr ""
+msgstr "Delainy"
 
 #: more_map_notes.tra:20
 msgid "Lahl"
-msgstr ""
+msgstr "Lahl"
 
 #: more_map_notes.tra:21
 msgid "Solianna"
-msgstr ""
+msgstr "Solianna"
 
 #: more_map_notes.tra:22
 msgid "Phlydia"
@@ -975,7 +977,7 @@ msgstr "Tamah"
 
 #: more_map_notes.tra:31
 msgid "Corianna"
-msgstr ""
+msgstr "Corianna"
 
 #: more_map_notes.tra:32
 msgid "Hobgoblin camp"
@@ -994,28 +996,33 @@ msgid "Waterfall"
 msgstr "Wodospad"
 
 #: more_map_notes.tra:36
+#, fuzzy
 msgid "Albert"
-msgstr ""
+msgstr "Albert"
 
 #: more_map_notes.tra:37
+#, fuzzy
 msgid "Rufie"
-msgstr ""
+msgstr "Rufie"
 
 #: more_map_notes.tra:38
 msgid "Lena and Samuel"
 msgstr "Lena i Samuel"
 
 #: more_map_notes.tra:39
+#, fuzzy
 msgid "Sarhedra"
-msgstr ""
+msgstr "Sarhedra"
 
 #: more_map_notes.tra:40
+#, fuzzy
 msgid "Fahrington"
-msgstr ""
+msgstr "Fahrington"
 
 #: more_map_notes.tra:41
+#, fuzzy
 msgid "Faldorn"
-msgstr ""
+msgstr "Faldorn"
 
 #: more_map_notes.tra:43
 msgid "Surgeon"
@@ -1026,24 +1033,28 @@ msgid "Mad Arcand"
 msgstr "Szalony Arcand"
 
 #: more_map_notes.tra:46
+#, fuzzy
 msgid "Arkushule"
-msgstr ""
+msgstr "Arkushule"
 
 #: more_map_notes.tra:47
+#, fuzzy
 msgid "Safana"
-msgstr ""
+msgstr "Safana"
 
 #: more_map_notes.tra:48
+#, fuzzy
 msgid "Galileus"
-msgstr ""
+msgstr "Galileus"
 
 #: more_map_notes.tra:49
 msgid "Larry, Darryl and Darryl"
 msgstr "Larry, Darryl i Darryl"
 
 #: more_map_notes.tra:50
+#, fuzzy
 msgid "Hafiz"
-msgstr ""
+msgstr "Hafiz"
 
 #: more_map_notes.tra:62
 msgid "Joseph's house"
@@ -1246,8 +1257,9 @@ msgid "Gandolar Luckyfoot"
 msgstr "Gandolar Szczęśliwa Stopa"
 
 #: more_map_notes.tra:34001
+#, fuzzy
 msgid "Bentan"
-msgstr ""
+msgstr "Bentan"
 
 #: more_map_notes.tra:38001
 msgid "Gambling tent"
@@ -1262,8 +1274,9 @@ msgid "Weapon store"
 msgstr "Sklep z bronią"
 
 #: more_map_notes.tra:38004
+#, fuzzy
 msgid "Zeke"
-msgstr ""
+msgstr "Zeke"
 
 #: more_map_notes.tra:38005
 msgid "Ranged weapon store"
@@ -1282,8 +1295,9 @@ msgid "Exotic potion store"
 msgstr "Sklep z egzotycznymi miksturami"
 
 #: more_map_notes.tra:38009
+#, fuzzy
 msgid "Branwen"
-msgstr ""
+msgstr "Branwen"
 
 #: more_map_notes.tra:72001
 msgid "Degrodel's house"
@@ -1322,16 +1336,19 @@ msgid "Fishermen"
 msgstr "Rybacy"
 
 #: more_map_notes.tra:83002
+#, fuzzy
 msgid "Ajantis"
-msgstr ""
+msgstr "Ajantis"
 
 #: more_map_notes.tra:83003
+#, fuzzy
 msgid "Gerde"
-msgstr ""
+msgstr "Gerde"
 
 #: more_map_notes.tra:88001
+#, fuzzy
 msgid "Tiber"
-msgstr ""
+msgstr "Tiber"
 
 #: more_map_notes.tra:380010
 msgid "Armor store"
@@ -2448,8 +2465,9 @@ msgid "(Give a Rogue's potion of Frost Giant Strength)."
 msgstr "*daj łotrzykowską miksturę siły lodowego olbrzyma*"
 
 #: starting_bags.tra:1
+#, fuzzy
 msgid "Thorius"
-msgstr ""
+msgstr "Thorius"
 
 #: starting_bags.tra:2
 msgid "Gem bag"
