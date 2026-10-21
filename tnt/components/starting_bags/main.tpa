@@ -61,14 +61,16 @@ COPY ~%comp_dir%/g_hold.itm~ ~override/g_hold.itm~
   SAY NAME1 @10
   SAY NAME2 @10
   SAY IDENTIFIED_DESC @11
-COPY ~%comp_dir%/g_hold.sto~ ~override/g_hold.sto~
-  SAY NAME2 @10
 COPY ~%comp_dir%/g_hold.itm~ ~override/g_hold2.itm~
   SAY NAME1 @10
   SAY NAME2 @10
   SAY IDENTIFIED_DESC @11
-COPY ~%comp_dir%/g_hold.sto~ ~override/g_hold2.sto~
+COPY
+  ~%comp_dir%/g_hold.sto~ ~override/g_hold.sto~
+  ~%comp_dir%/g_hold.sto~ ~override/g_hold2.sto~
   SAY NAME2 @10
+  // Hats (SoD) are missing from the purchased types.
+  LPF ADD_STORE_PURCHASE INT_VAR category = ITEM_TYPE_hat END
 
 // Build actions
 OUTER_TEXT_SPRINT NewLine ~
