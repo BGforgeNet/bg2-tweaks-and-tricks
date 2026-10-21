@@ -33,25 +33,25 @@ import {
     scalps,
     scrolls,
     trophies,
-} from "./lib.g_fam"
+} from "./lib.g_fam";
 
 // Top priority: jump into backpack
-jumpToPack()
-JumpToPackInjured(2, 70)
-JumpToPackInjured(3, 30)
+jumpToPack();
+JumpToPackInjured(2, 70);
+JumpToPackInjured(3, 30);
 
 // Combat tactics
-hitAndRun()
-attackEnemyCasters()
-attackEnemy()
+hitAndRun();
+attackEnemyCasters();
+attackEnemy();
 
 // After combat: notify if hurt
-resetHurtNotification()
-notifyHurt()
-notifyHurtBadly()
+resetHurtNotification();
+notifyHurt();
+notifyHurtBadly();
 
 // Follow
-followMaster()
+followMaster();
 
 /**
  * Looting start.
@@ -59,45 +59,45 @@ followMaster()
  * Generally, try to pick up more common items first, so that looting takes less time overall.
  */
 
-checkInventoryNotFull()
+checkInventoryNotFull();
 
-checkInventoryFull()
-pickup(gold, GVAR_pickupGold, 10)
+checkInventoryFull();
+pickup(gold, GVAR_pickupGold, 10);
 
-checkInventoryFull()
-pickup(scalps, GVAR_pickupScalps, 5)
+checkInventoryFull();
+pickup(scalps, GVAR_pickupScalps, 5);
 
-checkInventoryFull()
-pickup(jewelsCommon, GVAR_pickupJewels, 2)
+checkInventoryFull();
+pickup(jewelsCommon, GVAR_pickupJewels, 2);
 
-checkInventoryFull()
-pickup(potionsCommon, GVAR_pickupPotions, 3)
+checkInventoryFull();
+pickup(potionsCommon, GVAR_pickupPotions, 3);
 
-checkInventoryFull()
-pickup(ammoMagic, GVAR_pickupAmmo, 2)
+checkInventoryFull();
+pickup(ammoMagic, GVAR_pickupAmmo, 2);
 
-checkInventoryFull()
-pickup(trophies, GVAR_pickupTrophies, 1)
+checkInventoryFull();
+pickup(trophies, GVAR_pickupTrophies, 1);
 
-checkInventoryFull()
-pickupJewelsRare()
+checkInventoryFull();
+pickupJewelsRare();
 
-checkInventoryFull()
-pickup(potionsRare, GVAR_pickupPotions, 2)
+checkInventoryFull();
+pickup(potionsRare, GVAR_pickupPotions, 2);
 
-checkInventoryFull()
-pickupJewelsMagic()
+checkInventoryFull();
+pickupJewelsMagic();
 
-checkInventoryFull()
-pickup(ammoMagicRare, GVAR_pickupAmmo, 2)
+checkInventoryFull();
+pickup(ammoMagicRare, GVAR_pickupAmmo, 2);
 
-checkInventoryFull()
-pickupJewelsMagicRare()
+checkInventoryFull();
+pickupJewelsMagicRare();
 
-checkInventoryFull()
-pickup(scrolls, GVAR_pickupScrolls, 1)
+checkInventoryFull();
+pickup(scrolls, GVAR_pickupScrolls, 1);
 
 /* Looting end */
 
 // Finally, follow between areas
-followMasterBetweenAreas()
+followMasterBetweenAreas();

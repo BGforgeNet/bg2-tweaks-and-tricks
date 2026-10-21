@@ -1,5 +1,5 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "oxc.oxc-vscode",
     "typescript.format.enable": false,
     "files.exclude": {
         "**/_tmp.tbaf.ts": true
@@ -11,7 +11,7 @@
         "editor.defaultFormatter": "BGforge.bgforge-mls"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "oxc.oxc-vscode"
     },
     "[weidu-tra]": {
         "editor.defaultFormatter": "BGforge.bgforge-mls"

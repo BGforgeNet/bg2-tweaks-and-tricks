@@ -1,0 +1,8 @@
+{
+    "semi": true,
+    "printWidth": 80,
+    "experimentalOperatorPosition": "start",
+    "sortPackageJson": false,
+    "associations": [{ "files": ["*.tbaf"], "language": "typescript" }],
+    "ignorePatterns": ["tnt/tobex_redist/", "pnpm-lock.yaml"]
+}
