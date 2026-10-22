@@ -1,5 +1,6 @@
 # Changelog
 
+- [Version 8.41](#version-841)
 - [Version 8.40](#version-840)
 - [Version 8.39](#version-839)
 - [Version 8.38](#version-838)
@@ -48,6 +49,11 @@
 - [Version 3](#version-3)
 - [Version 2](#version-2)
 - [Version 1](#version-1)
+
+### Version 8.41
+
+- [Fixed](https://github.com/BGforgeNet/bg2-tweaks-and-tricks/issues/98) Bag of Holding not accepting hats.
+- Polish translation update.
 
 ### Version 8.40
 
